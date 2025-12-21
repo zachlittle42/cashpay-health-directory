@@ -10,11 +10,17 @@ interface Region {
   population?: string;
 }
 
+interface HealthSystem {
+  name: string;
+  rank?: string;
+}
+
 interface StateData {
   name: string;
   abbreviation: string;
   population: string;
   regions: Region[];
+  healthSystems?: { [regionName: string]: HealthSystem[] };
 }
 
 const statesData: StateData[] = [
@@ -70,17 +76,79 @@ const statesData: StateData[] = [
     abbreviation: 'CA',
     population: '39M',
     regions: [
-      { name: 'San Francisco Bay Area', cities: 'San Francisco, San Jose, Oakland' },
-      { name: 'Los Angeles Metro', cities: 'Los Angeles, Long Beach, Pasadena' },
-      { name: 'San Diego County', cities: 'San Diego, Chula Vista' },
-      { name: 'Orange County', cities: 'Anaheim, Irvine, Santa Ana' },
-      { name: 'Inland Empire', cities: 'Riverside, San Bernardino, Ontario' },
-      { name: 'Central Valley', cities: 'Sacramento, Fresno, Bakersfield, Modesto' },
-      { name: 'Central Coast', cities: 'San Luis Obispo, Santa Barbara, Monterey' },
-      { name: 'North Coast', cities: 'Eureka, Mendocino' },
-      { name: 'High Sierra', cities: 'Lake Tahoe, Mammoth Lakes' },
-      { name: 'Shasta Cascade', cities: 'Redding, Mount Shasta' },
+      { name: 'Bay Area - San Francisco', cities: 'San Francisco, Oakland, Berkeley', population: '~4.7M' },
+      { name: 'Bay Area - South Bay/Peninsula', cities: 'San Jose, Palo Alto, Mountain View', population: '~3M' },
+      { name: 'Sacramento Valley', cities: 'Sacramento, Stockton, Modesto', population: '~3.5M' },
+      { name: 'Los Angeles Metro', cities: 'Los Angeles, Pasadena, Long Beach', population: '~10M' },
+      { name: 'Orange County', cities: 'Irvine, Anaheim, Newport Beach', population: '~3.2M' },
+      { name: 'San Diego', cities: 'San Diego, Chula Vista', population: '~3.3M' },
+      { name: 'Inland Empire', cities: 'Riverside, San Bernardino, Ontario', population: '~4.6M' },
+      { name: 'Central Valley / San Joaquin', cities: 'Fresno, Bakersfield, Visalia', population: '~4M' },
+      { name: 'Central Coast', cities: 'Santa Barbara, San Luis Obispo, Monterey', population: '~1.5M' },
+      { name: 'Far North / Superior California', cities: 'Redding, Chico, Eureka', population: '~600K' },
     ],
+    healthSystems: {
+      'Bay Area - San Francisco': [
+        { name: 'UCSF Health', rank: '#10 nationally' },
+        { name: 'Sutter CPMC' },
+        { name: 'Kaiser San Francisco' },
+        { name: 'Zuckerberg SF General' },
+      ],
+      'Bay Area - South Bay/Peninsula': [
+        { name: 'Stanford Health Care', rank: '#12 nationally' },
+        { name: 'El Camino Health' },
+        { name: 'Kaiser Santa Clara' },
+        { name: 'Good Samaritan' },
+      ],
+      'Sacramento Valley': [
+        { name: 'UC Davis Medical Center', rank: 'Top academic center' },
+        { name: 'Sutter Medical Center Sacramento' },
+        { name: 'Kaiser Sacramento' },
+        { name: 'Dignity Health Mercy General' },
+      ],
+      'Los Angeles Metro': [
+        { name: 'Cedars-Sinai', rank: '#7 nationally' },
+        { name: 'UCLA Medical Center', rank: '#4 nationally' },
+        { name: 'Keck Medical Center of USC' },
+        { name: "Providence Saint John's" },
+      ],
+      'Orange County': [
+        { name: 'Hoag Hospital' },
+        { name: 'UCI Medical Center' },
+        { name: 'MemorialCare Orange Coast' },
+        { name: 'Providence Mission' },
+      ],
+      'San Diego': [
+        { name: 'UC San Diego Health', rank: '#15 nationally' },
+        { name: 'Scripps La Jolla' },
+        { name: 'Sharp Memorial' },
+        { name: 'Kaiser San Diego' },
+      ],
+      'Inland Empire': [
+        { name: 'Loma Linda University Medical Center', rank: 'Top academic center' },
+        { name: 'Riverside Community Hospital' },
+        { name: 'Kaiser Riverside' },
+        { name: 'Arrowhead Regional' },
+      ],
+      'Central Valley / San Joaquin': [
+        { name: 'St. Agnes Medical Center (Fresno)' },
+        { name: 'Community Medical Center (Fresno)' },
+        { name: 'Adventist Health Bakersfield' },
+        { name: 'Kaweah Health (Visalia)' },
+      ],
+      'Central Coast': [
+        { name: 'Santa Barbara Cottage Hospital' },
+        { name: 'Community Hospital of Monterey Peninsula' },
+        { name: 'Sierra Vista Regional (SLO)' },
+        { name: 'Marian Regional (Santa Maria)' },
+      ],
+      'Far North / Superior California': [
+        { name: 'Mercy Medical Center (Redding)', rank: '#1 in region' },
+        { name: 'Shasta Regional Medical Center' },
+        { name: 'Enloe Medical Center (Chico)' },
+        { name: 'Providence St. Joseph (Eureka)' },
+      ],
+    },
   },
   {
     name: 'Colorado',
@@ -767,25 +835,46 @@ export default function USHealthcareByRegionGuide() {
                 </div>
 
                 <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-                  {state.regions.map((region) => (
-                    <div
-                      key={region.name}
-                      className="rounded-lg border border-gray-200 p-5 hover:border-blue-300 hover:shadow-md transition-all"
-                    >
-                      <h3 className="font-bold text-gray-900 mb-2">{region.name}</h3>
-                      <p className="text-sm text-gray-600 mb-4">
-                        <span className="font-medium">Cities:</span> {region.cities}
-                      </p>
-                      {region.population && (
-                        <p className="text-xs text-gray-500">Pop: {region.population}</p>
-                      )}
-                      <div className="mt-4 pt-4 border-t border-gray-100">
-                        <p className="text-xs text-gray-500 italic">
-                          Health system data coming soon
+                  {state.regions.map((region) => {
+                    const healthSystems = state.healthSystems?.[region.name];
+
+                    return (
+                      <div
+                        key={region.name}
+                        className="rounded-lg border border-gray-200 p-5 hover:border-blue-300 hover:shadow-md transition-all"
+                      >
+                        <h3 className="font-bold text-gray-900 mb-2">{region.name}</h3>
+                        <p className="text-sm text-gray-600 mb-4">
+                          <span className="font-medium">Cities:</span> {region.cities}
                         </p>
+                        {region.population && (
+                          <p className="text-xs text-gray-500 mb-2">Pop: {region.population}</p>
+                        )}
+
+                        <div className="mt-4 pt-4 border-t border-gray-100">
+                          {healthSystems && healthSystems.length > 0 ? (
+                            <>
+                              <h4 className="text-xs font-semibold text-gray-700 mb-2">Top Health Systems:</h4>
+                              <ul className="space-y-1">
+                                {healthSystems.map((system, idx) => (
+                                  <li key={idx} className="text-xs text-gray-600">
+                                    • {system.name}
+                                    {system.rank && (
+                                      <span className="text-blue-600 font-medium ml-1">({system.rank})</span>
+                                    )}
+                                  </li>
+                                ))}
+                              </ul>
+                            </>
+                          ) : (
+                            <p className="text-xs text-gray-500 italic">
+                              Health system data coming soon
+                            </p>
+                          )}
+                        </div>
                       </div>
-                    </div>
-                  ))}
+                    );
+                  })}
                 </div>
               </div>
             ))}
