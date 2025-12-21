@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import USAMap from '@/components/USAMap';
 
 interface Region {
   name: string;
@@ -719,26 +720,23 @@ export default function USHealthcareByRegionGuide() {
         </div>
       </section>
 
-      {/* Quick State Navigation */}
-      <section className="border-b border-gray-200 px-4 py-6">
-        <div className="mx-auto max-w-5xl">
-          <h2 className="text-sm font-semibold text-gray-500 mb-3">Jump to State</h2>
-          <div className="flex flex-wrap gap-2">
-            {filteredStates.map((state) => (
-              <a
-                key={state.name}
-                href={`#${state.name.toLowerCase().replace(/\s+/g, '-')}`}
-                onClick={() => setSelectedState(state.name)}
-                className={`rounded-full border px-4 py-1.5 text-sm transition-colors ${
-                  selectedState === state.name
-                    ? 'border-blue-500 bg-blue-50 text-blue-700 font-medium'
-                    : 'border-gray-300 text-gray-700 hover:border-blue-400 hover:text-blue-600'
-                }`}
-              >
-                {state.name}
-              </a>
-            ))}
+      {/* Interactive Map */}
+      <section className="border-b border-gray-200 px-4 py-8 bg-white">
+        <div className="mx-auto max-w-4xl">
+          <h2 className="text-sm font-semibold text-gray-500 mb-6 text-center">Select Your State</h2>
+          <div className="bg-gray-50 rounded-lg p-6">
+            <USAMap
+              onStateClick={(stateName) => {
+                setSelectedState(stateName);
+                const element = document.getElementById(stateName.toLowerCase().replace(/\s+/g, '-'));
+                element?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              }}
+              selectedState={selectedState}
+            />
           </div>
+          <p className="text-center text-sm text-gray-500 mt-4">
+            Click any state to view its healthcare regions
+          </p>
         </div>
       </section>
 
