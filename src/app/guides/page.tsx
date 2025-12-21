@@ -65,6 +65,14 @@ const guides = [
     readTime: '10 min',
     icon: '🛡️',
   },
+  {
+    slug: 'us-healthcare-by-region',
+    title: 'US Healthcare by Region',
+    description: 'Comprehensive guide to top hospitals and health systems across California, Texas, Florida, New York, Arizona, and Colorado.',
+    category: 'Research',
+    readTime: '20 min',
+    icon: '🏥',
+  },
 ];
 
 export default function GuidesIndex() {
