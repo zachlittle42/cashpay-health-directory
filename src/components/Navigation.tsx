@@ -30,7 +30,7 @@ export default function Navigation() {
                   <div>
                     <div className="text-xs font-bold text-blue-600 uppercase mb-3">Telehealth</div>
                     <div className="space-y-1.5">
-                      <Link href="/labs" className="block text-sm text-gray-700 hover:text-blue-600">🧪 At-Home Labs</Link>
+                      <Link href="/labs" className="block text-sm text-gray-700 hover:text-blue-600">🧪 At-Home Lab Testing</Link>
                       <Link href="/glp1" className="block text-sm text-gray-700 hover:text-blue-600">💊 GLP-1 Programs</Link>
                       <Link href="/trt" className="block text-sm text-gray-700 hover:text-blue-600">💪 TRT & Hormones</Link>
                     </div>

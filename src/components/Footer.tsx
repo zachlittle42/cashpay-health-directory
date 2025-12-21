@@ -9,7 +9,7 @@ export default function Footer() {
           <div>
             <h3 className="text-sm font-semibold text-gray-900 mb-4">Telehealth</h3>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/labs" className="text-gray-600 hover:text-blue-600">At-Home Labs</Link></li>
+              <li><Link href="/labs" className="text-gray-600 hover:text-blue-600">At-Home Lab Testing</Link></li>
               <li><Link href="/glp1" className="text-gray-600 hover:text-blue-600">GLP-1 Programs</Link></li>
               <li><Link href="/trt" className="text-gray-600 hover:text-blue-600">TRT & Hormones</Link></li>
             </ul>
