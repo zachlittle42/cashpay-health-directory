@@ -7,8 +7,22 @@ export const metadata: Metadata = {
 };
 
 export default function MedicalTravelInsuranceGuide() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'Medical Travel Insurance Guide: What You Actually Need',
+    description: 'Complete guide to insurance for medical tourism including what standard travel insurance covers vs medical tourism insurance, and recommendations by procedure.',
+    author: { '@type': 'Organization', name: 'VitalityScout' },
+    publisher: { '@type': 'Organization', name: 'VitalityScout' },
+    datePublished: '2024-12-01',
+    dateModified: '2024-12-21',
+    mainEntityOfPage: 'https://vitalityscout.com/guides/medical-travel-insurance-guide',
+    keywords: ['medical tourism insurance', 'travel insurance', 'medical complications coverage', 'medical evacuation']
+  };
+
   return (
     <main className="min-h-screen bg-white">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <header className="border-b border-gray-200 px-4 py-4">
         <div className="mx-auto max-w-4xl">
           <Link href="/" className="text-sm text-blue-600 hover:underline">

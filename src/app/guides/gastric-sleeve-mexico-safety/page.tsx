@@ -7,8 +7,22 @@ export const metadata: Metadata = {
 };
 
 export default function GastricSleeveGuide() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'Gastric Sleeve in Mexico: Safety Guide, Costs & What to Expect',
+    description: 'Complete safety guide to bariatric surgery in Mexico including complication data, surgeon selection, costs, and recovery expectations.',
+    author: { '@type': 'Organization', name: 'VitalityScout' },
+    publisher: { '@type': 'Organization', name: 'VitalityScout' },
+    datePublished: '2024-12-01',
+    dateModified: '2024-12-21',
+    mainEntityOfPage: 'https://vitalityscout.com/guides/gastric-sleeve-mexico-safety',
+    keywords: ['gastric sleeve Mexico', 'bariatric surgery Tijuana', 'weight loss surgery', 'medical tourism safety', 'Mexico Bariatric Center']
+  };
+
   return (
     <main className="min-h-screen bg-white">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <header className="border-b border-gray-200 px-4 py-4">
         <div className="mx-auto max-w-4xl">
           <Link href="/" className="text-sm text-blue-600 hover:underline">

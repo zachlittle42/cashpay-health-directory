@@ -7,8 +7,22 @@ export const metadata: Metadata = {
 };
 
 export default function DexaScanGuide() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'DEXA Scan Guide: What It Measures, Cost & Why You Need One',
+    description: 'Complete guide to DEXA body composition scans including what DEXA measures, accuracy, costs, and why it beats BMI for fitness tracking.',
+    author: { '@type': 'Organization', name: 'VitalityScout' },
+    publisher: { '@type': 'Organization', name: 'VitalityScout' },
+    datePublished: '2024-12-01',
+    dateModified: '2024-12-21',
+    mainEntityOfPage: 'https://vitalityscout.com/guides/dexa-scan-guide',
+    keywords: ['DEXA scan', 'body composition', 'bone density', 'body fat percentage', 'visceral fat']
+  };
+
   return (
     <main className="min-h-screen bg-white">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <header className="border-b border-gray-200 px-4 py-4">
         <div className="mx-auto max-w-4xl">
           <Link href="/" className="text-sm text-blue-600 hover:underline">
