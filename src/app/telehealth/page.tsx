@@ -9,8 +9,30 @@ export const metadata: Metadata = {
 };
 
 export default function TelehealthHub() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'MedicalWebPage',
+    name: 'Telehealth & Cash-Pay Services',
+    description: 'Compare cash-pay telehealth services including at-home lab testing, GLP-1 weight loss programs, and TRT. No insurance needed.',
+    url: 'https://vitalityscout.com/telehealth',
+    about: {
+      '@type': 'MedicalBusiness',
+      name: 'Telehealth Services Directory',
+      medicalSpecialty: ['Telemedicine', 'Laboratory Medicine', 'Endocrinology']
+    },
+    mainEntity: [
+      { '@type': 'MedicalTest', name: 'At-Home Lab Testing' },
+      { '@type': 'MedicalTherapy', name: 'GLP-1 Weight Loss Programs' },
+      { '@type': 'MedicalTherapy', name: 'Testosterone Replacement Therapy' }
+    ]
+  };
+
   return (
     <main className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Navigation />
 
       {/* Hero */}
