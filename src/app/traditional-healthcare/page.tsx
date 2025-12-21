@@ -64,7 +64,7 @@ const states = [
   { name: 'Wyoming', abbr: 'WY', slug: 'wyoming' },
 ];
 
-// Featured specialties to highlight
+// Featured specialties to highlight initially
 const featuredSpecialties = [
   'Cancer',
   'Cardiology & Heart Surgery',
@@ -77,21 +77,28 @@ const featuredSpecialties = [
 export default function TraditionalHealthcareLanding() {
   const [searchQuery, setSearchQuery] = useState('');
   const [showAllHospitals, setShowAllHospitals] = useState(false);
+  const [showAllSpecialties, setShowAllSpecialties] = useState(false);
+  const [expandedSpecialty, setExpandedSpecialty] = useState<string | null>(null);
 
   const honorRollHospitals = getHonorRollHospitals();
   const specialtyLeaders = getSpecialtyLeaders();
   const displayedHospitals = showAllHospitals
     ? honorRollHospitals
     : honorRollHospitals.slice(0, 6);
-  const featuredLeaders = specialtyLeaders.filter((s) =>
-    featuredSpecialties.includes(s.specialty)
-  );
+
+  const displayedSpecialties = showAllSpecialties
+    ? specialtyLeaders
+    : specialtyLeaders.filter((s) => featuredSpecialties.includes(s.specialty));
 
   const filteredStates = states.filter(
     (state) =>
       state.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
       state.abbr.toLowerCase().includes(searchQuery.toLowerCase())
   );
+
+  const toggleSpecialty = (slug: string) => {
+    setExpandedSpecialty(expandedSpecialty === slug ? null : slug);
+  };
 
   return (
     <main className="min-h-screen bg-white">
@@ -165,23 +172,33 @@ export default function TraditionalHealthcareLanding() {
               #1 Ranked by Specialty
             </h2>
             <p className="text-gray-600">
-              The nation&apos;s best hospitals for each medical specialty
+              Click any specialty to see the top hospitals
             </p>
           </div>
 
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {featuredLeaders.map((specialty) => (
-              <SpecialtyLeaderCard key={specialty.slug} specialty={specialty} />
+            {displayedSpecialties.map((specialty) => (
+              <SpecialtyLeaderCard
+                key={specialty.slug}
+                specialty={specialty}
+                isExpanded={expandedSpecialty === specialty.slug}
+                onToggle={() => toggleSpecialty(specialty.slug)}
+              />
             ))}
           </div>
 
           <div className="text-center mt-6">
-            <Link
-              href="/specialties"
+            <button
+              onClick={() => {
+                setShowAllSpecialties(!showAllSpecialties);
+                setExpandedSpecialty(null);
+              }}
               className="text-blue-600 hover:text-blue-800 font-medium"
             >
-              View All 15 Specialty Rankings &rarr;
-            </Link>
+              {showAllSpecialties
+                ? 'Show Featured Specialties'
+                : `View All ${specialtyLeaders.length} Specialty Rankings`}
+            </button>
           </div>
         </div>
       </section>
@@ -331,33 +348,121 @@ function HospitalCard({
   );
 }
 
-function SpecialtyLeaderCard({ specialty }: { specialty: SpecialtyLeader }) {
+function SpecialtyLeaderCard({
+  specialty,
+  isExpanded,
+  onToggle,
+}: {
+  specialty: SpecialtyLeader;
+  isExpanded: boolean;
+  onToggle: () => void;
+}) {
   return (
-    <Link
-      href={`/health-systems/${specialty.leader.slug}`}
-      className="block rounded-lg border-2 border-yellow-200 bg-yellow-50 p-5 hover:border-yellow-400 hover:shadow-lg transition-all"
+    <div
+      className={`rounded-lg border-2 transition-all ${
+        isExpanded
+          ? 'border-yellow-400 bg-yellow-50 shadow-lg col-span-full'
+          : 'border-yellow-200 bg-yellow-50 hover:border-yellow-400 hover:shadow-lg'
+      }`}
     >
-      <div className="flex items-center gap-2 mb-2">
-        <span className="text-xl">🏆</span>
-        <span className="text-sm font-bold text-yellow-800">
-          #1 {specialty.specialty}
-        </span>
-      </div>
+      {/* Header - Always visible, clickable to toggle */}
+      <button
+        onClick={onToggle}
+        className="w-full text-left p-5"
+      >
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <span className="text-xl">🏆</span>
+            <span className="text-sm font-bold text-yellow-800">
+              #1 {specialty.specialty}
+            </span>
+          </div>
+          <span className="text-yellow-600 text-lg">
+            {isExpanded ? '−' : '+'}
+          </span>
+        </div>
 
-      <h3 className="text-lg font-bold text-gray-900 mb-1">
-        {specialty.leader.name}
-      </h3>
-      <p className="text-sm text-gray-600 mb-2">{specialty.leader.location}</p>
+        <h3 className="text-lg font-bold text-gray-900 mt-2 mb-1">
+          {specialty.leader.name}
+        </h3>
+        <p className="text-sm text-gray-600">{specialty.leader.location}</p>
 
-      {specialty.leader.consecutiveYears && (
-        <p className="text-xs text-gray-500">
-          {specialty.leader.consecutiveYears} consecutive years
-        </p>
+        {specialty.leader.consecutiveYears && (
+          <p className="text-xs text-gray-500 mt-1">
+            {specialty.leader.consecutiveYears} consecutive years
+          </p>
+        )}
+
+        {!isExpanded && (
+          <div className="mt-3 pt-2 border-t border-yellow-200 text-sm text-yellow-700">
+            Click to see top hospitals &rarr;
+          </div>
+        )}
+      </button>
+
+      {/* Expanded content - Top hospitals list */}
+      {isExpanded && (
+        <div className="px-5 pb-5 border-t border-yellow-200">
+          <div className="mt-4">
+            <h4 className="text-sm font-semibold text-gray-700 mb-3">
+              Top Hospitals for {specialty.specialty}
+            </h4>
+
+            {/* Top 3 list */}
+            {specialty.topThree && specialty.topThree.length > 0 && (
+              <div className="space-y-3">
+                {specialty.topThree.map((hospital, index) => (
+                  <div
+                    key={index}
+                    className="flex items-center gap-3 bg-white rounded-lg p-3 border border-yellow-200"
+                  >
+                    <span
+                      className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold ${
+                        index === 0
+                          ? 'bg-yellow-400 text-yellow-900'
+                          : index === 1
+                          ? 'bg-gray-300 text-gray-700'
+                          : 'bg-orange-300 text-orange-900'
+                      }`}
+                    >
+                      {index + 1}
+                    </span>
+                    <div className="flex-1 min-w-0">
+                      <div className="font-medium text-gray-900 truncate">
+                        {hospital.name}
+                      </div>
+                      <div className="text-sm text-gray-500">
+                        {hospital.location}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+
+            {/* Description */}
+            <p className="text-sm text-gray-600 mt-4">
+              {specialty.description}
+            </p>
+
+            {/* Achievement highlight */}
+            <div className="mt-4 p-3 bg-yellow-100 rounded-lg">
+              <p className="text-sm text-yellow-800">
+                <strong>Why {specialty.leader.name}?</strong>{' '}
+                {specialty.leader.achievement}
+              </p>
+            </div>
+
+            {/* Link to leader detail page */}
+            <Link
+              href={`/health-systems/${specialty.leader.slug}`}
+              className="mt-4 inline-block text-sm font-medium text-blue-600 hover:text-blue-800"
+            >
+              Learn more about {specialty.leader.name} &rarr;
+            </Link>
+          </div>
+        </div>
       )}
-
-      <div className="mt-3 pt-2 border-t border-yellow-200 text-sm text-yellow-700">
-        Learn More &rarr;
-      </div>
-    </Link>
+    </div>
   );
 }
