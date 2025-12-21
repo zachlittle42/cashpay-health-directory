@@ -49,12 +49,10 @@ export default function Home() {
       <section className="bg-gradient-to-b from-blue-50 to-white px-4 py-16 sm:py-20">
         <div className="mx-auto max-w-4xl text-center">
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-            Cash-Pay Health Services
+            Compare Healthcare Options: Traditional, Cash-Pay & Abroad
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Compare prices for labs, GLP-1 programs, dental work, hair transplants, and more.
-            <br />
-            <span className="font-medium">Transparent pricing. No insurance needed.</span>
+            From insurance-based hospitals to telehealth and medical tourism—find the right care at the right price.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3 text-sm">
             <a
@@ -69,18 +67,18 @@ export default function Home() {
             >
               Local Independent Clinics
             </a>
-            <Link
-              href="/traditional-healthcare"
-              className="rounded-full bg-orange-100 px-4 py-1.5 text-orange-700 hover:bg-orange-200 transition-colors"
-            >
-              Traditional Healthcare
-            </Link>
             <a
               href="#medical-tourism"
               className="rounded-full bg-purple-100 px-4 py-1.5 text-purple-700 hover:bg-purple-200 transition-colors cursor-pointer"
             >
               Medical Tourism
             </a>
+            <Link
+              href="/traditional-healthcare"
+              className="rounded-full bg-orange-100 px-4 py-1.5 text-orange-700 hover:bg-orange-200 transition-colors"
+            >
+              Traditional Healthcare
+            </Link>
           </div>
         </div>
       </section>
