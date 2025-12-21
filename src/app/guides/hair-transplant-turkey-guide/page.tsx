@@ -7,8 +7,32 @@ export const metadata: Metadata = {
 };
 
 export default function HairTransplantTurkeyGuide() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'Hair Transplant in Turkey: Complete Safety & Cost Guide',
+    description: 'Everything you need to know about hair transplants in Istanbul including FUE vs DHI techniques, safety, JCI accreditation, choosing clinics, and expected costs.',
+    author: {
+      '@type': 'Organization',
+      name: 'VitalityScout'
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'VitalityScout'
+    },
+    datePublished: '2024-12-01',
+    dateModified: '2024-12-21',
+    mainEntityOfPage: 'https://vitalityscout.com/guides/hair-transplant-turkey-guide',
+    articleSection: 'Medical Tourism Guides',
+    keywords: ['hair transplant Turkey', 'Istanbul hair transplant', 'FUE vs DHI', 'medical tourism', 'JCI accredited clinics']
+  };
+
   return (
     <main className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* Header */}
       <header className="border-b border-gray-200 px-4 py-4">
         <div className="mx-auto max-w-4xl">
