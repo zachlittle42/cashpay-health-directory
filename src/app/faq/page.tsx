@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import Navigation from '@/components/Navigation';
+import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: 'FAQ: Cash-Pay Healthcare, Medical Tourism & Self-Pay Services',
@@ -23,13 +25,7 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
 export default function GeneralFAQ() {
   return (
     <main className="min-h-screen bg-white">
-      <header className="border-b border-gray-200 px-4 py-4">
-        <div className="mx-auto max-w-4xl">
-          <Link href="/" className="text-sm text-blue-600 hover:underline">
-            ← Back to directory
-          </Link>
-        </div>
-      </header>
+      <Navigation />
 
       <section className="bg-gradient-to-b from-blue-50 to-white px-4 py-12">
         <div className="mx-auto max-w-4xl">
@@ -401,13 +397,7 @@ export default function GeneralFAQ() {
         </div>
       </section>
 
-      <footer className="border-t border-gray-200 px-4 py-8">
-        <div className="mx-auto max-w-4xl text-center text-sm text-gray-500">
-          <p>
-            Have a question not answered here? We&apos;re continuously updating our FAQs based on reader questions.
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </main>
   );
 }

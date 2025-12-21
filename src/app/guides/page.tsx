@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import Navigation from '@/components/Navigation';
+import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: 'Health Guides: Lab Testing, GLP-1, Hair Transplants & More | VitalityScout',
@@ -76,14 +78,7 @@ const guides = [
 export default function GuidesIndex() {
   return (
     <main className="min-h-screen bg-white">
-      {/* Header */}
-      <header className="border-b border-gray-200 px-4 py-4">
-        <div className="mx-auto max-w-6xl">
-          <Link href="/" className="text-sm text-blue-600 hover:underline">
-            ← Back to directory
-          </Link>
-        </div>
-      </header>
+      <Navigation />
 
       {/* Hero */}
       <section className="bg-gradient-to-b from-blue-50 to-white px-4 py-16">
@@ -191,15 +186,7 @@ export default function GuidesIndex() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="border-t border-gray-200 px-4 py-8">
-        <div className="mx-auto max-w-4xl text-center text-sm text-gray-500">
-          <p className="font-medium text-gray-700">VitalityScout Health Guides</p>
-          <p className="mt-1">
-            Evidence-based information for informed health decisions.
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </main>
   );
 }
