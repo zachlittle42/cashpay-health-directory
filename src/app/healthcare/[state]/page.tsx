@@ -3,11 +3,12 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getStateBySlug, getAllStateSlugs, getPriorityStates } from '@/lib/states';
 import {
-  getHealthSystemsByState,
-  getStateOverview,
+  getStateHealthcareData,
+  getStateRegions,
   hasStateContent,
   type HealthSystem,
-  type StateHealthcareOverview,
+  type StateRegion,
+  type StateHealthcareData,
 } from '@/lib/health-systems';
 
 interface PageProps {
@@ -31,133 +32,113 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 function HealthSystemCard({ system, index }: { system: HealthSystem; index: number }) {
   return (
-    <div className="rounded-xl border border-gray-200 bg-white p-6 hover:shadow-lg transition-shadow">
-      <div className="flex items-start justify-between">
-        <div className="flex items-start gap-4">
-          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-teal-100 text-lg font-bold text-teal-700">
-            {index + 1}
-          </div>
-          <div>
-            <h3 className="text-xl font-bold text-gray-900">{system.name}</h3>
-            <div className="mt-1 flex flex-wrap items-center gap-2 text-sm text-gray-600">
-              {system.nationalRank && (
-                <span className="rounded-full bg-yellow-100 px-2 py-0.5 text-xs font-medium text-yellow-800">
-                  #{system.nationalRank} Nationally
-                </span>
-              )}
-              <span className="rounded-full bg-gray-100 px-2 py-0.5 text-xs font-medium text-gray-700">
-                {system.type.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase())}
+    <div className="rounded-lg border border-gray-200 bg-white p-4 hover:shadow-md transition-shadow">
+      <div className="flex items-start gap-3">
+        <div className="flex h-8 w-8 items-center justify-center rounded-full bg-teal-100 text-sm font-bold text-teal-700 flex-shrink-0">
+          {index + 1}
+        </div>
+        <div className="flex-1 min-w-0">
+          <div className="flex items-start justify-between gap-2">
+            <h4 className="font-semibold text-gray-900">{system.name}</h4>
+            {system.nationalRank && (
+              <span className="rounded-full bg-yellow-100 px-2 py-0.5 text-xs font-medium text-yellow-800 whitespace-nowrap">
+                {system.nationalRank}
               </span>
-              {system.beds && (
-                <span className="text-gray-500">{system.beds} beds</span>
-              )}
-            </div>
+            )}
           </div>
-        </div>
-      </div>
+          <div className="mt-1 text-xs text-gray-500">{system.type}</div>
+          <p className="mt-2 text-sm text-gray-600 line-clamp-2">{system.description}</p>
 
-      <p className="mt-4 text-gray-600">{system.description}</p>
-
-      {/* Specialties */}
-      <div className="mt-4">
-        <h4 className="text-sm font-semibold text-gray-700">Top Specialties</h4>
-        <div className="mt-2 flex flex-wrap gap-2">
-          {system.specialties.map((specialty) => (
-            <span
-              key={specialty}
-              className="rounded-full bg-blue-50 px-3 py-1 text-xs font-medium text-blue-700"
-            >
-              {specialty}
-            </span>
-          ))}
-        </div>
-      </div>
-
-      {/* Highlights */}
-      <div className="mt-4">
-        <h4 className="text-sm font-semibold text-gray-700">Highlights</h4>
-        <ul className="mt-2 space-y-1">
-          {system.highlights.map((highlight, i) => (
-            <li key={i} className="flex items-start gap-2 text-sm text-gray-600">
-              <svg
-                className="mt-0.5 h-4 w-4 flex-shrink-0 text-teal-500"
-                fill="currentColor"
-                viewBox="0 0 20 20"
+          {/* Specialties */}
+          <div className="mt-2 flex flex-wrap gap-1">
+            {system.specialties.slice(0, 4).map((specialty) => (
+              <span
+                key={specialty}
+                className="rounded bg-blue-50 px-2 py-0.5 text-xs text-blue-700"
               >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clipRule="evenodd"
-                />
-              </svg>
-              {highlight}
-            </li>
-          ))}
-        </ul>
-      </div>
+                {specialty}
+              </span>
+            ))}
+            {system.specialties.length > 4 && (
+              <span className="text-xs text-gray-500">+{system.specialties.length - 4} more</span>
+            )}
+          </div>
 
-      {/* Awards */}
-      {system.awards && system.awards.length > 0 && (
-        <div className="mt-4 flex flex-wrap gap-2">
-          {system.awards.map((award) => (
-            <span
-              key={award}
-              className="inline-flex items-center gap-1 rounded-full bg-yellow-50 px-3 py-1 text-xs font-medium text-yellow-800"
-            >
-              <span>🏆</span>
-              {award}
-            </span>
-          ))}
+          {/* Highlights */}
+          <ul className="mt-2 space-y-1">
+            {system.highlights.slice(0, 2).map((highlight, i) => (
+              <li key={i} className="flex items-start gap-1 text-xs text-gray-600">
+                <svg
+                  className="mt-0.5 h-3 w-3 flex-shrink-0 text-teal-500"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+                {highlight}
+              </li>
+            ))}
+          </ul>
         </div>
-      )}
-
-      {/* Website Link */}
-      <div className="mt-4 pt-4 border-t border-gray-100">
-        <a
-          href={system.website}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-1 text-sm font-medium text-teal-600 hover:text-teal-700"
-        >
-          Visit Website
-          <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-            />
-          </svg>
-        </a>
       </div>
     </div>
   );
 }
 
-function StateOverviewSection({ overview }: { overview: StateHealthcareOverview }) {
+function RegionSection({ region }: { region: StateRegion }) {
+  return (
+    <div className="mb-10">
+      <div className="mb-4 flex items-center justify-between">
+        <div>
+          <h3 className="text-xl font-bold text-gray-900">{region.name}</h3>
+          <div className="mt-1 flex items-center gap-3 text-sm text-gray-500">
+            <span>{region.cities.join(', ')}</span>
+            <span className="text-gray-300">|</span>
+            <span>{region.population} population</span>
+          </div>
+        </div>
+        <div className="rounded-full bg-teal-100 px-3 py-1 text-sm font-medium text-teal-700">
+          {region.healthSystems.length} systems
+        </div>
+      </div>
+
+      <div className="grid gap-4 md:grid-cols-2">
+        {region.healthSystems.map((system, index) => (
+          <HealthSystemCard key={system.name} system={system} index={index} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function StateOverviewSection({ data }: { data: StateHealthcareData }) {
   return (
     <section className="mx-auto max-w-6xl px-4 py-12">
       <div className="rounded-xl bg-gradient-to-br from-teal-50 to-blue-50 p-8">
         <h2 className="text-2xl font-bold text-gray-900 mb-4">Healthcare Overview</h2>
-        <p className="text-gray-700 leading-relaxed">{overview.overview}</p>
+        <p className="text-gray-700 leading-relaxed">{data.overview}</p>
 
         {/* Key Stats */}
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           <div className="rounded-lg bg-white p-4 shadow-sm">
-            <div className="text-2xl font-bold text-teal-600">{overview.population}</div>
+            <div className="text-2xl font-bold text-teal-600">{data.population}</div>
             <div className="text-sm text-gray-600">Population</div>
           </div>
           <div className="rounded-lg bg-white p-4 shadow-sm">
-            <div className="text-2xl font-bold text-teal-600">{overview.uninsuredRate}</div>
+            <div className="text-2xl font-bold text-teal-600">{data.uninsuredRate}</div>
             <div className="text-sm text-gray-600">Uninsured Rate</div>
           </div>
           <div className="rounded-lg bg-white p-4 shadow-sm">
-            <div className="text-2xl font-bold text-teal-600">{overview.avgHealthcareCost}</div>
+            <div className="text-2xl font-bold text-teal-600">{data.avgHealthcareCost}</div>
             <div className="text-sm text-gray-600">Avg. Healthcare Costs</div>
           </div>
           <div className="rounded-lg bg-white p-4 shadow-sm">
-            <div className="text-2xl font-bold text-teal-600">{overview.majorMetros.length}</div>
-            <div className="text-sm text-gray-600">Major Metro Areas</div>
+            <div className="text-2xl font-bold text-teal-600">{data.regions.length}</div>
+            <div className="text-sm text-gray-600">Healthcare Regions</div>
           </div>
         </div>
 
@@ -166,7 +147,7 @@ function StateOverviewSection({ overview }: { overview: StateHealthcareOverview 
           <div>
             <h3 className="font-semibold text-gray-900 mb-3">Healthcare Highlights</h3>
             <ul className="space-y-2">
-              {overview.healthcareHighlights.map((highlight, i) => (
+              {data.highlights.map((highlight, i) => (
                 <li key={i} className="flex items-start gap-2 text-sm text-gray-700">
                   <svg
                     className="mt-0.5 h-4 w-4 flex-shrink-0 text-green-500"
@@ -187,7 +168,7 @@ function StateOverviewSection({ overview }: { overview: StateHealthcareOverview 
           <div>
             <h3 className="font-semibold text-gray-900 mb-3">Challenges to Consider</h3>
             <ul className="space-y-2">
-              {overview.challenges.map((challenge, i) => (
+              {data.challenges.map((challenge, i) => (
                 <li key={i} className="flex items-start gap-2 text-sm text-gray-700">
                   <svg
                     className="mt-0.5 h-4 w-4 flex-shrink-0 text-amber-500"
@@ -207,17 +188,18 @@ function StateOverviewSection({ overview }: { overview: StateHealthcareOverview 
           </div>
         </div>
 
-        {/* Major Metros */}
+        {/* Region Quick Links */}
         <div className="mt-6">
-          <h3 className="font-semibold text-gray-900 mb-3">Major Metro Areas</h3>
+          <h3 className="font-semibold text-gray-900 mb-3">Jump to Region</h3>
           <div className="flex flex-wrap gap-2">
-            {overview.majorMetros.map((metro) => (
-              <span
-                key={metro}
-                className="rounded-full bg-white px-3 py-1 text-sm font-medium text-gray-700 shadow-sm"
+            {data.regions.map((region) => (
+              <a
+                key={region.slug}
+                href={`#${region.slug}`}
+                className="rounded-full bg-white px-3 py-1 text-sm font-medium text-gray-700 shadow-sm hover:bg-teal-50 hover:text-teal-700 transition-colors"
               >
-                {metro}
-              </span>
+                {region.name}
+              </a>
             ))}
           </div>
         </div>
@@ -288,8 +270,11 @@ export default async function StatePage({ params }: PageProps) {
   }
 
   const hasContent = hasStateContent(stateSlug);
-  const healthSystems = getHealthSystemsByState(stateSlug);
-  const overview = getStateOverview(stateSlug);
+  const stateData = getStateHealthcareData(stateSlug);
+  const regions = getStateRegions(stateSlug);
+
+  // Count total health systems
+  const totalSystems = regions.reduce((acc, r) => acc + r.healthSystems.length, 0);
 
   return (
     <main className="min-h-screen bg-white">
@@ -324,53 +309,57 @@ export default async function StatePage({ params }: PageProps) {
               </div>
               <p className="mt-2 text-gray-600">
                 {hasContent
-                  ? `Top health systems, hospitals, and healthcare insights for ${state.name}`
+                  ? `${regions.length} regions, ${totalSystems} health systems covered`
                   : `Healthcare guide for ${state.name} - Coming soon`}
               </p>
             </div>
           </div>
 
           {/* Quick Stats Bar */}
-          {hasContent && overview && (
+          {hasContent && stateData && (
             <div className="mt-8 flex flex-wrap gap-6 text-sm">
               <div className="flex items-center gap-2">
                 <span className="text-gray-500">Population:</span>
-                <span className="font-semibold text-gray-900">{overview.population}</span>
+                <span className="font-semibold text-gray-900">{stateData.population}</span>
               </div>
               <div className="flex items-center gap-2">
                 <span className="text-gray-500">Uninsured:</span>
-                <span className="font-semibold text-gray-900">{overview.uninsuredRate}</span>
+                <span className="font-semibold text-gray-900">{stateData.uninsuredRate}</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-gray-500">Top Systems:</span>
-                <span className="font-semibold text-gray-900">{healthSystems.length}</span>
+                <span className="text-gray-500">Regions:</span>
+                <span className="font-semibold text-gray-900">{regions.length}</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-gray-500">Health Systems:</span>
+                <span className="font-semibold text-gray-900">{totalSystems}</span>
               </div>
             </div>
           )}
         </div>
       </section>
 
-      {hasContent && overview ? (
+      {hasContent && stateData ? (
         <>
           {/* Overview Section */}
-          <StateOverviewSection overview={overview} />
+          <StateOverviewSection data={stateData} />
 
-          {/* Health Systems */}
+          {/* Regions with Health Systems */}
           <section className="mx-auto max-w-6xl px-4 py-12">
             <div className="mb-8">
               <h2 className="text-2xl font-bold text-gray-900">
-                Top Health Systems in {state.name}
+                Health Systems by Region
               </h2>
               <p className="mt-2 text-gray-600">
-                Ranked by US News &amp; World Report and quality metrics
+                Explore top hospitals and health systems across {state.name}&apos;s {regions.length} healthcare regions
               </p>
             </div>
 
-            <div className="space-y-6">
-              {healthSystems.map((system, index) => (
-                <HealthSystemCard key={system.id} system={system} index={index} />
-              ))}
-            </div>
+            {regions.map((region) => (
+              <div key={region.slug} id={region.slug}>
+                <RegionSection region={region} />
+              </div>
+            ))}
           </section>
 
           {/* Related States */}

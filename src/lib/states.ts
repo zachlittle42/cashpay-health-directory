@@ -13,10 +13,11 @@ export interface State {
 export const STATES: State[] = [
   // Tier 1 - Priority states (large population, high healthcare costs, medical tourism potential)
   { name: 'California', slug: 'california', abbreviation: 'CA', population: '39M', tier: 1, region: 'west', hasContent: true },
-  { name: 'Texas', slug: 'texas', abbreviation: 'TX', population: '30M', tier: 1, region: 'southwest', hasContent: false },
-  { name: 'Florida', slug: 'florida', abbreviation: 'FL', population: '22M', tier: 1, region: 'southeast', hasContent: false },
-  { name: 'New York', slug: 'new-york', abbreviation: 'NY', population: '19M', tier: 1, region: 'northeast', hasContent: false },
-  { name: 'Arizona', slug: 'arizona', abbreviation: 'AZ', population: '7M', tier: 1, region: 'southwest', hasContent: false },
+  { name: 'Texas', slug: 'texas', abbreviation: 'TX', population: '30M', tier: 1, region: 'southwest', hasContent: true },
+  { name: 'Florida', slug: 'florida', abbreviation: 'FL', population: '22M', tier: 1, region: 'southeast', hasContent: true },
+  { name: 'New York', slug: 'new-york', abbreviation: 'NY', population: '19M', tier: 1, region: 'northeast', hasContent: true },
+  { name: 'Arizona', slug: 'arizona', abbreviation: 'AZ', population: '7M', tier: 1, region: 'southwest', hasContent: true },
+  { name: 'Colorado', slug: 'colorado', abbreviation: 'CO', population: '5.8M', tier: 1, region: 'west', hasContent: true },
 
   // Tier 2 - Expansion states
   { name: 'Pennsylvania', slug: 'pennsylvania', abbreviation: 'PA', population: '13M', tier: 2, region: 'northeast', hasContent: false },
@@ -29,7 +30,6 @@ export const STATES: State[] = [
   { name: 'Alabama', slug: 'alabama', abbreviation: 'AL', population: '5.1M', tier: 3, region: 'southeast', hasContent: false },
   { name: 'Alaska', slug: 'alaska', abbreviation: 'AK', population: '733K', tier: 3, region: 'west', hasContent: false },
   { name: 'Arkansas', slug: 'arkansas', abbreviation: 'AR', population: '3M', tier: 3, region: 'southeast', hasContent: false },
-  { name: 'Colorado', slug: 'colorado', abbreviation: 'CO', population: '5.9M', tier: 3, region: 'west', hasContent: false },
   { name: 'Connecticut', slug: 'connecticut', abbreviation: 'CT', population: '3.6M', tier: 3, region: 'northeast', hasContent: false },
   { name: 'Delaware', slug: 'delaware', abbreviation: 'DE', population: '1M', tier: 3, region: 'northeast', hasContent: false },
   { name: 'Hawaii', slug: 'hawaii', abbreviation: 'HI', population: '1.4M', tier: 3, region: 'west', hasContent: false },
