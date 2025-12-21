@@ -9,8 +9,26 @@ export const metadata: Metadata = {
 };
 
 export default function LocalClinicsHub() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'MedicalWebPage',
+    name: 'Local Cash-Pay Clinics & Services',
+    description: 'Find local independent clinics offering DEXA scans, VO2 max testing, IV therapy, and longevity services without insurance.',
+    url: 'https://vitalityscout.com/local-clinics',
+    mainEntity: [
+      { '@type': 'MedicalTest', name: 'DEXA Body Composition Scan' },
+      { '@type': 'MedicalTest', name: 'VO2 Max Testing' },
+      { '@type': 'MedicalProcedure', name: 'IV Vitamin Therapy' },
+      { '@type': 'MedicalClinic', name: 'Longevity Clinics' }
+    ]
+  };
+
   return (
     <main className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Navigation />
 
       {/* Hero */}

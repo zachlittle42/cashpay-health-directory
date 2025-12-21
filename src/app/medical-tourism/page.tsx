@@ -9,8 +9,38 @@ export const metadata: Metadata = {
 };
 
 export default function MedicalTourismHub() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'MedicalWebPage',
+    name: 'Medical Tourism: Save 50-80% on Procedures Abroad',
+    description: 'Compare medical tourism options for dental, hair transplants, bariatric surgery, and more. JCI-accredited facilities, safety guides, and trip planning.',
+    url: 'https://vitalityscout.com/medical-tourism',
+    about: {
+      '@type': 'MedicalBusiness',
+      name: 'Medical Tourism Directory',
+      geo: {
+        '@type': 'Place',
+        address: {
+          '@type': 'PostalAddress',
+          addressCountry: ['Mexico', 'Turkey', 'South Korea', 'Spain']
+        }
+      }
+    },
+    mainEntity: [
+      { '@type': 'MedicalProcedure', name: 'Dental Implants' },
+      { '@type': 'MedicalProcedure', name: 'Hair Transplant' },
+      { '@type': 'MedicalProcedure', name: 'Bariatric Surgery' },
+      { '@type': 'MedicalProcedure', name: 'Plastic Surgery' },
+      { '@type': 'MedicalProcedure', name: 'Fertility Treatment' }
+    ]
+  };
+
   return (
     <main className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Navigation />
 
       {/* Hero */}
