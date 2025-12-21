@@ -18,11 +18,6 @@ export default function Navigation() {
               Home
             </Link>
 
-            {/* US Hospitals - Direct Link */}
-            <Link href="/traditional-healthcare" className="text-gray-700 hover:text-gray-900 font-medium">
-              US Hospitals
-            </Link>
-
             {/* Browse Services - Mega Menu */}
             <div className="relative group">
               <button className="text-gray-700 hover:text-gray-900 font-medium flex items-center gap-1">
@@ -162,6 +157,43 @@ export default function Navigation() {
                     <Link href="/faq/hair-transplant" className="block text-sm text-gray-700 hover:text-blue-600 py-1">
                       💇 Hair Transplant FAQ
                     </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* US Healthcare Directory - Far Right Dropdown */}
+            <div className="relative group">
+              <button className="text-gray-700 hover:text-gray-900 font-medium flex items-center gap-1">
+                US Healthcare
+                <span className="text-xs">▼</span>
+              </button>
+              <div className="absolute right-0 mt-2 w-72 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all bg-white rounded-lg shadow-xl border border-gray-200 py-3 z-50">
+                <div className="px-4">
+                  <Link href="/traditional-healthcare" className="block text-sm font-medium text-gray-900 hover:text-blue-600 py-2 mb-2">
+                    🏥 US Healthcare Directory
+                  </Link>
+                  <div className="border-t border-gray-200 pt-2 mb-2">
+                    <div className="text-xs font-semibold text-gray-500 uppercase mb-2">Explore</div>
+                  </div>
+                  <div className="space-y-1.5 mb-4">
+                    <Link href="/traditional-healthcare#national-champions" className="block text-sm text-gray-700 hover:text-blue-600 py-1">
+                      🏆 National Champions
+                      <span className="block text-xs text-gray-500">Top-ranked hospitals & #1 by specialty</span>
+                    </Link>
+                    <Link href="/traditional-healthcare#state-directory" className="block text-sm text-gray-700 hover:text-blue-600 py-1">
+                      📍 State Directory
+                      <span className="block text-xs text-gray-500">Browse hospitals by state</span>
+                    </Link>
+                  </div>
+                  <div className="border-t border-gray-200 pt-2 mb-2">
+                    <div className="text-xs font-semibold text-gray-500 uppercase mb-2">Featured States</div>
+                  </div>
+                  <div className="grid grid-cols-2 gap-1">
+                    <Link href="/traditional-healthcare/california" className="text-xs text-gray-600 hover:text-blue-600 py-1">California</Link>
+                    <Link href="/traditional-healthcare/texas" className="text-xs text-gray-600 hover:text-blue-600 py-1">Texas</Link>
+                    <Link href="/traditional-healthcare/florida" className="text-xs text-gray-600 hover:text-blue-600 py-1">Florida</Link>
+                    <Link href="/traditional-healthcare/new-york" className="text-xs text-gray-600 hover:text-blue-600 py-1">New York</Link>
                   </div>
                 </div>
               </div>
