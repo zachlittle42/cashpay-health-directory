@@ -57,21 +57,36 @@ export default function Home() {
             <span className="font-medium">Transparent pricing. No insurance needed.</span>
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3 text-sm">
-            <span className="rounded-full bg-blue-100 px-4 py-1.5 text-blue-700">
+            <a
+              href="#telehealth"
+              className="rounded-full bg-blue-100 px-4 py-1.5 text-blue-700 hover:bg-blue-200 transition-colors cursor-pointer"
+            >
               US Telehealth
-            </span>
-            <span className="rounded-full bg-green-100 px-4 py-1.5 text-green-700">
-              Local Clinics
-            </span>
-            <span className="rounded-full bg-purple-100 px-4 py-1.5 text-purple-700">
+            </a>
+            <a
+              href="#local-independent"
+              className="rounded-full bg-green-100 px-4 py-1.5 text-green-700 hover:bg-green-200 transition-colors cursor-pointer"
+            >
+              Local Independent Clinics
+            </a>
+            <Link
+              href="/guides/us-healthcare-by-region"
+              className="rounded-full bg-orange-100 px-4 py-1.5 text-orange-700 hover:bg-orange-200 transition-colors"
+            >
+              Traditional Healthcare
+            </Link>
+            <a
+              href="#medical-tourism"
+              className="rounded-full bg-purple-100 px-4 py-1.5 text-purple-700 hover:bg-purple-200 transition-colors cursor-pointer"
+            >
               Medical Tourism
-            </span>
+            </a>
           </div>
         </div>
       </section>
 
       {/* Telehealth Section */}
-      <section className="mx-auto max-w-6xl px-4 py-12">
+      <section id="telehealth" className="mx-auto max-w-6xl px-4 py-12">
         <div className="mb-6">
           <div className="flex items-center gap-2">
             <span className="rounded-full bg-blue-100 px-3 py-1 text-xs font-medium text-blue-700">
@@ -91,16 +106,16 @@ export default function Home() {
       </section>
 
       {/* Local Section */}
-      <section className="mx-auto max-w-6xl px-4 py-12 border-t border-gray-100">
+      <section id="local-independent" className="mx-auto max-w-6xl px-4 py-12 border-t border-gray-100">
         <div className="mb-6">
           <div className="flex items-center gap-2">
             <span className="rounded-full bg-green-100 px-3 py-1 text-xs font-medium text-green-700">
-              Local
+              Local Independent Clinics
             </span>
             <h2 className="text-xl font-bold text-gray-900">Find Near You</h2>
           </div>
           <p className="mt-1 text-sm text-gray-500">
-            Services that require an in-person visit at a local facility.
+            Cash-pay services that require an in-person visit at a local facility.
           </p>
         </div>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -111,7 +126,7 @@ export default function Home() {
       </section>
 
       {/* Medical Tourism Section */}
-      <section className="bg-gradient-to-b from-white to-purple-50 px-4 py-12">
+      <section id="medical-tourism" className="bg-gradient-to-b from-white to-purple-50 px-4 py-12">
         <div className="mx-auto max-w-6xl">
           <div className="mb-6">
             <div className="flex items-center gap-2">
