@@ -18,6 +18,11 @@ export default function Navigation() {
               Home
             </Link>
 
+            {/* US Hospitals - Direct Link */}
+            <Link href="/traditional-healthcare" className="text-gray-700 hover:text-gray-900 font-medium">
+              US Hospitals
+            </Link>
+
             {/* Browse Services - Mega Menu */}
             <div className="relative group">
               <button className="text-gray-700 hover:text-gray-900 font-medium flex items-center gap-1">
