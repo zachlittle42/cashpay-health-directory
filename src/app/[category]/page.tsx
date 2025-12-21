@@ -228,6 +228,137 @@ export default function CategoryPage({
             </div>
           </div>
         )}
+
+        {/* Related Resources */}
+        <div className="mt-16 bg-blue-50 border border-blue-200 rounded-lg p-8">
+          <h3 className="text-xl font-bold text-gray-900 mb-6 text-center">
+            Related Resources
+          </h3>
+          <div className="grid gap-6 md:grid-cols-2">
+            {/* Category-specific guide links */}
+            {categorySlug === 'glp1' && (
+              <>
+                <Link href="/guides/glp1-weight-loss-complete-guide" className="block rounded-lg bg-white border border-blue-200 p-5 hover:shadow-md transition-shadow">
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl">📖</span>
+                    <div>
+                      <div className="font-semibold text-gray-900">GLP-1 Complete Guide</div>
+                      <div className="text-sm text-gray-600 mt-1">How GLP-1s work, results, and side effects</div>
+                    </div>
+                  </div>
+                </Link>
+                <Link href="/faq/glp1" className="block rounded-lg bg-white border border-blue-200 p-5 hover:shadow-md transition-shadow">
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl">❓</span>
+                    <div>
+                      <div className="font-semibold text-gray-900">GLP-1 FAQ</div>
+                      <div className="text-sm text-gray-600 mt-1">Common questions about insurance, stopping, and more</div>
+                    </div>
+                  </div>
+                </Link>
+              </>
+            )}
+            {categorySlug === 'hair_transplant' && (
+              <>
+                <Link href="/guides/hair-transplant-turkey-guide" className="block rounded-lg bg-white border border-purple-200 p-5 hover:shadow-md transition-shadow">
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl">📖</span>
+                    <div>
+                      <div className="font-semibold text-gray-900">Turkey Safety Guide</div>
+                      <div className="text-sm text-gray-600 mt-1">FUE vs DHI, choosing clinics, safety checklist</div>
+                    </div>
+                  </div>
+                </Link>
+                <Link href="/guides/turkey-hair-transplant-trip-planner" className="block rounded-lg bg-white border border-purple-200 p-5 hover:shadow-md transition-shadow">
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl">✈️</span>
+                    <div>
+                      <div className="font-semibold text-gray-900">Trip Planner</div>
+                      <div className="text-sm text-gray-600 mt-1">7-day Istanbul itinerary and packing list</div>
+                    </div>
+                  </div>
+                </Link>
+              </>
+            )}
+            {categorySlug === 'labs' && (
+              <>
+                <Link href="/guides/at-home-lab-testing-guide" className="block rounded-lg bg-white border border-blue-200 p-5 hover:shadow-md transition-shadow">
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl">📖</span>
+                    <div>
+                      <div className="font-semibold text-gray-900">Lab Testing Guide</div>
+                      <div className="text-sm text-gray-600 mt-1">How it works, accuracy, and what to test</div>
+                    </div>
+                  </div>
+                </Link>
+                <Link href="/faq/labs" className="block rounded-lg bg-white border border-blue-200 p-5 hover:shadow-md transition-shadow">
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl">❓</span>
+                    <div>
+                      <div className="font-semibold text-gray-900">Labs FAQ</div>
+                      <div className="text-sm text-gray-600 mt-1">Fasting, accuracy, interpreting results</div>
+                    </div>
+                  </div>
+                </Link>
+              </>
+            )}
+            {categorySlug === 'bariatric' && (
+              <>
+                <Link href="/guides/gastric-sleeve-mexico-safety" className="block rounded-lg bg-white border border-green-200 p-5 hover:shadow-md transition-shadow">
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl">📖</span>
+                    <div>
+                      <div className="font-semibold text-gray-900">Gastric Sleeve Safety Guide</div>
+                      <div className="text-sm text-gray-600 mt-1">Safety data, complications, and expectations</div>
+                    </div>
+                  </div>
+                </Link>
+                <Link href="/guides/mexico-medical-tourism-planner" className="block rounded-lg bg-white border border-green-200 p-5 hover:shadow-md transition-shadow">
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl">✈️</span>
+                    <div>
+                      <div className="font-semibold text-gray-900">Mexico Trip Planner</div>
+                      <div className="text-sm text-gray-600 mt-1">Border crossing, packing, and timeline</div>
+                    </div>
+                  </div>
+                </Link>
+              </>
+            )}
+            {categorySlug === 'dexa' && (
+              <Link href="/guides/dexa-scan-guide" className="block rounded-lg bg-white border border-blue-200 p-5 hover:shadow-md transition-shadow md:col-span-2">
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl">📖</span>
+                  <div>
+                    <div className="font-semibold text-gray-900">DEXA Scan Complete Guide</div>
+                    <div className="text-sm text-gray-600 mt-1">What DEXA measures, why it beats BMI, and how to use it</div>
+                  </div>
+                </div>
+              </Link>
+            )}
+            {(categorySlug === 'dental' || categorySlug === 'plastic_surgery' || categorySlug === 'fertility') && (
+              <>
+                <Link href="/guides/mexico-medical-tourism-planner" className="block rounded-lg bg-white border border-purple-200 p-5 hover:shadow-md transition-shadow">
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl">✈️</span>
+                    <div>
+                      <div className="font-semibold text-gray-900">Mexico Trip Planner</div>
+                      <div className="text-sm text-gray-600 mt-1">Complete border crossing and planning guide</div>
+                    </div>
+                  </div>
+                </Link>
+                <Link href="/faq/medical-tourism" className="block rounded-lg bg-white border border-purple-200 p-5 hover:shadow-md transition-shadow">
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl">❓</span>
+                    <div>
+                      <div className="font-semibold text-gray-900">Medical Tourism FAQ</div>
+                      <div className="text-sm text-gray-600 mt-1">Safety, insurance, and planning questions</div>
+                    </div>
+                  </div>
+                </Link>
+              </>
+            )}
+          </div>
+        </div>
       </section>
 
       <Footer />
