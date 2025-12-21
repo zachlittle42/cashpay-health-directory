@@ -7,8 +7,36 @@ export const metadata: Metadata = {
 };
 
 export default function GLP1Guide() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'GLP-1 for Weight Loss: Complete Guide to Semaglutide & Tirzepatide',
+    description: 'Comprehensive guide to GLP-1 medications for weight loss including how they work, expected results, side effects, costs, and provider comparisons.',
+    author: {
+      '@type': 'Organization',
+      name: 'VitalityScout'
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'VitalityScout',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://vitalityscout.com/logo.png'
+      }
+    },
+    datePublished: '2024-12-01',
+    dateModified: '2024-12-21',
+    mainEntityOfPage: 'https://vitalityscout.com/guides/glp1-weight-loss-complete-guide',
+    articleSection: 'Health Guides',
+    keywords: ['GLP-1', 'semaglutide', 'tirzepatide', 'Ozempic', 'Wegovy', 'weight loss', 'telehealth']
+  };
+
   return (
     <main className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* Header */}
       <header className="border-b border-gray-200 px-4 py-4">
         <div className="mx-auto max-w-4xl">
