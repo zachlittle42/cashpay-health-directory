@@ -1,6 +1,21 @@
+'use client';
+
+import { useState } from 'react';
 import Link from 'next/link';
 
 export default function Navigation() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [expandedSection, setExpandedSection] = useState<string | null>(null);
+
+  const toggleSection = (section: string) => {
+    setExpandedSection(expandedSection === section ? null : section);
+  };
+
+  const closeMenu = () => {
+    setMobileMenuOpen(false);
+    setExpandedSection(null);
+  };
+
   return (
     <nav className="border-b border-gray-200 bg-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -11,7 +26,7 @@ export default function Navigation() {
             <span className="text-xl font-bold text-gray-900">VitalityScout</span>
           </Link>
 
-          {/* Main Navigation */}
+          {/* Main Navigation - Desktop */}
           <div className="hidden lg:flex items-center gap-6">
             {/* Home */}
             <Link href="/" className="text-gray-700 hover:text-gray-900 font-medium">
@@ -201,10 +216,249 @@ export default function Navigation() {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="lg:hidden">
-            <Link href="/" className="text-sm text-blue-600 font-medium">
-              Menu
+          <button
+            type="button"
+            className="lg:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-expanded={mobileMenuOpen}
+            aria-label="Toggle navigation menu"
+          >
+            <span className="sr-only">Open main menu</span>
+            {mobileMenuOpen ? (
+              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            ) : (
+              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            )}
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile Menu Overlay */}
+      {mobileMenuOpen && (
+        <div
+          className="lg:hidden fixed inset-0 z-40 bg-black bg-opacity-25"
+          onClick={closeMenu}
+          aria-hidden="true"
+        />
+      )}
+
+      {/* Mobile Menu Panel */}
+      <div
+        className={`lg:hidden fixed inset-y-0 right-0 z-50 w-full max-w-sm bg-white shadow-xl transform transition-transform duration-300 ease-in-out ${
+          mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
+        }`}
+      >
+        <div className="flex items-center justify-between px-4 py-4 border-b border-gray-200">
+          <span className="text-lg font-bold text-gray-900">Menu</span>
+          <button
+            type="button"
+            className="p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100"
+            onClick={closeMenu}
+          >
+            <span className="sr-only">Close menu</span>
+            <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+        <div className="overflow-y-auto h-full pb-20">
+          <div className="px-4 py-4 space-y-1">
+            {/* Home */}
+            <Link
+              href="/"
+              className="block py-3 text-base font-medium text-gray-900 hover:bg-gray-50 rounded-lg px-3"
+              onClick={closeMenu}
+            >
+              Home
             </Link>
+
+            {/* Browse Services - Accordion */}
+            <div className="border-t border-gray-100 pt-1">
+              <button
+                type="button"
+                className="w-full flex items-center justify-between py-3 text-base font-medium text-gray-900 hover:bg-gray-50 rounded-lg px-3"
+                onClick={() => toggleSection('services')}
+              >
+                <span>Browse Services</span>
+                <svg
+                  className={`h-5 w-5 text-gray-500 transform transition-transform ${
+                    expandedSection === 'services' ? 'rotate-180' : ''
+                  }`}
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+              </button>
+              {expandedSection === 'services' && (
+                <div className="pl-4 pb-2 space-y-4">
+                  {/* Telehealth */}
+                  <div>
+                    <div className="text-xs font-bold text-blue-600 uppercase mb-2 px-3">Telehealth</div>
+                    <div className="space-y-1">
+                      <Link href="/labs" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🧪 At-Home Lab Testing</Link>
+                      <Link href="/glp1" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>💊 GLP-1 Programs</Link>
+                      <Link href="/trt" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>💪 TRT & Hormones</Link>
+                    </div>
+                  </div>
+                  {/* Local Clinics */}
+                  <div>
+                    <div className="text-xs font-bold text-green-600 uppercase mb-2 px-3">Local Clinics</div>
+                    <div className="space-y-1">
+                      <Link href="/dexa" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>📊 DEXA Scans</Link>
+                      <Link href="/vo2max" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🫀 VO2 Max</Link>
+                      <Link href="/iv" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>💧 IV Therapy</Link>
+                      <Link href="/longevity" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>⏳ Longevity</Link>
+                    </div>
+                  </div>
+                  {/* Medical Tourism */}
+                  <div>
+                    <div className="text-xs font-bold text-purple-600 uppercase mb-2 px-3">Medical Tourism</div>
+                    <div className="space-y-1">
+                      <Link href="/dental" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🦷 Dental</Link>
+                      <Link href="/hair_transplant" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>💇 Hair Transplant</Link>
+                      <Link href="/bariatric" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>⚖️ Bariatric</Link>
+                      <Link href="/plastic_surgery" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>✨ Plastic Surgery</Link>
+                      <Link href="/fertility" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🍼 Fertility/IVF</Link>
+                      <Link href="/orthopedic" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🦴 Orthopedic</Link>
+                      <Link href="/cardiac" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>❤️ Cardiac</Link>
+                      <Link href="/vision" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>👁️ Vision</Link>
+                    </div>
+                  </div>
+                  {/* Traditional */}
+                  <div>
+                    <div className="text-xs font-bold text-orange-600 uppercase mb-2 px-3">Traditional</div>
+                    <div className="space-y-1">
+                      <Link href="/traditional-healthcare" className="block py-2 text-sm font-medium text-gray-900 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🏥 All 50 States</Link>
+                      <Link href="/traditional-healthcare/california" className="block py-2 text-xs text-gray-600 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>California</Link>
+                      <Link href="/traditional-healthcare/texas" className="block py-2 text-xs text-gray-600 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>Texas</Link>
+                      <Link href="/traditional-healthcare/florida" className="block py-2 text-xs text-gray-600 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>Florida</Link>
+                      <Link href="/traditional-healthcare/new-york" className="block py-2 text-xs text-gray-600 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>New York</Link>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Guides - Accordion */}
+            <div className="border-t border-gray-100 pt-1">
+              <button
+                type="button"
+                className="w-full flex items-center justify-between py-3 text-base font-medium text-gray-900 hover:bg-gray-50 rounded-lg px-3"
+                onClick={() => toggleSection('guides')}
+              >
+                <span>Guides</span>
+                <svg
+                  className={`h-5 w-5 text-gray-500 transform transition-transform ${
+                    expandedSection === 'guides' ? 'rotate-180' : ''
+                  }`}
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+              </button>
+              {expandedSection === 'guides' && (
+                <div className="pl-4 pb-2 space-y-1">
+                  <div className="text-xs font-semibold text-gray-500 uppercase mb-2 px-3">Procedure Guides</div>
+                  <Link href="/guides/glp1-weight-loss-complete-guide" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>💊 GLP-1 for Weight Loss</Link>
+                  <Link href="/guides/hair-transplant-turkey-guide" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>💇 Hair Transplant in Turkey</Link>
+                  <Link href="/guides/at-home-lab-testing-guide" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🧪 At-Home Lab Testing</Link>
+                  <Link href="/guides/gastric-sleeve-mexico-safety" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>⚖️ Gastric Sleeve in Mexico</Link>
+                  <Link href="/guides/dexa-scan-guide" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>📊 DEXA Scan Guide</Link>
+                  <div className="border-t border-gray-100 my-2"></div>
+                  <div className="text-xs font-semibold text-gray-500 uppercase mb-2 px-3">Trip Planning</div>
+                  <Link href="/guides/mexico-medical-tourism-planner" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🇲🇽 Mexico Trip Planner</Link>
+                  <Link href="/guides/turkey-hair-transplant-trip-planner" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🇹🇷 Turkey Trip Planner</Link>
+                  <Link href="/guides/medical-travel-insurance-guide" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🛡️ Medical Travel Insurance</Link>
+                  <div className="border-t border-gray-100 my-2"></div>
+                  <Link href="/guides" className="block py-2 text-sm font-medium text-blue-600 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>View All Guides →</Link>
+                </div>
+              )}
+            </div>
+
+            {/* FAQ - Accordion */}
+            <div className="border-t border-gray-100 pt-1">
+              <button
+                type="button"
+                className="w-full flex items-center justify-between py-3 text-base font-medium text-gray-900 hover:bg-gray-50 rounded-lg px-3"
+                onClick={() => toggleSection('faq')}
+              >
+                <span>FAQ</span>
+                <svg
+                  className={`h-5 w-5 text-gray-500 transform transition-transform ${
+                    expandedSection === 'faq' ? 'rotate-180' : ''
+                  }`}
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+              </button>
+              {expandedSection === 'faq' && (
+                <div className="pl-4 pb-2 space-y-1">
+                  <Link href="/faq" className="block py-2 text-sm font-medium text-gray-900 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>General FAQ</Link>
+                  <div className="border-t border-gray-100 my-2"></div>
+                  <div className="text-xs font-semibold text-gray-500 uppercase mb-2 px-3">Topic-Specific FAQs</div>
+                  <Link href="/faq/glp1" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>💊 GLP-1 Weight Loss FAQ</Link>
+                  <Link href="/faq/medical-tourism" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>✈️ Medical Tourism FAQ</Link>
+                  <Link href="/faq/labs" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🧪 Lab Testing FAQ</Link>
+                  <Link href="/faq/hair-transplant" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>💇 Hair Transplant FAQ</Link>
+                </div>
+              )}
+            </div>
+
+            {/* US Healthcare - Accordion */}
+            <div className="border-t border-gray-100 pt-1">
+              <button
+                type="button"
+                className="w-full flex items-center justify-between py-3 text-base font-medium text-gray-900 hover:bg-gray-50 rounded-lg px-3"
+                onClick={() => toggleSection('healthcare')}
+              >
+                <span>US Healthcare</span>
+                <svg
+                  className={`h-5 w-5 text-gray-500 transform transition-transform ${
+                    expandedSection === 'healthcare' ? 'rotate-180' : ''
+                  }`}
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+              </button>
+              {expandedSection === 'healthcare' && (
+                <div className="pl-4 pb-2 space-y-1">
+                  <Link href="/traditional-healthcare" className="block py-2 text-sm font-medium text-gray-900 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🏥 US Healthcare Directory</Link>
+                  <div className="border-t border-gray-100 my-2"></div>
+                  <div className="text-xs font-semibold text-gray-500 uppercase mb-2 px-3">Explore</div>
+                  <Link href="/traditional-healthcare#national-champions" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>
+                    🏆 National Champions
+                  </Link>
+                  <Link href="/traditional-healthcare#state-directory" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>
+                    📍 State Directory
+                  </Link>
+                  <div className="border-t border-gray-100 my-2"></div>
+                  <div className="text-xs font-semibold text-gray-500 uppercase mb-2 px-3">Featured States</div>
+                  <Link href="/traditional-healthcare/california" className="block py-2 text-sm text-gray-600 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>California</Link>
+                  <Link href="/traditional-healthcare/texas" className="block py-2 text-sm text-gray-600 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>Texas</Link>
+                  <Link href="/traditional-healthcare/florida" className="block py-2 text-sm text-gray-600 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>Florida</Link>
+                  <Link href="/traditional-healthcare/new-york" className="block py-2 text-sm text-gray-600 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>New York</Link>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>
