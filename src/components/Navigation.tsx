@@ -24,7 +24,7 @@ export default function Navigation() {
                 Browse Services
                 <span className="text-xs">▼</span>
               </button>
-              <div className="absolute left-0 mt-2 w-[900px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all bg-white rounded-lg shadow-xl border border-gray-200 py-4 z-50 max-h-[80vh] overflow-y-auto">
+              <div className="absolute left-1/2 -translate-x-1/2 mt-2 w-[800px] max-w-[calc(100vw-2rem)] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all bg-white rounded-lg shadow-xl border border-gray-200 py-4 z-50 max-h-[80vh] overflow-y-auto">
                 <div className="grid grid-cols-4 gap-6 px-6">
                   {/* Telehealth */}
                   <div>
