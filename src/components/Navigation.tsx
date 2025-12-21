@@ -15,7 +15,7 @@ export default function Navigation() {
           <div className="hidden md:flex items-center gap-8">
             <div className="relative group">
               <button className="text-gray-700 hover:text-gray-900 font-medium flex items-center gap-1">
-                Categories
+                Service Categories
                 <span className="text-xs">▼</span>
               </button>
               <div className="absolute left-0 mt-2 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50">
