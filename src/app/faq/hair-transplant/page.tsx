@@ -160,7 +160,7 @@ export default function HairTransplantFAQ() {
                 <li>Overharvesting damages the donor area</li>
                 <li>Dense packing can damage surrounding follicles</li>
               </ul>
-              <p><strong>Quality > quantity.</strong> A well-designed 3,000 graft transplant with natural hairline looks better than a poorly executed 5,000 graft procedure.</p>
+              <p><strong>Quality over quantity.</strong> A well-designed 3,000 graft transplant with natural hairline looks better than a poorly executed 5,000 graft procedure.</p>
             </>
           }
         />
