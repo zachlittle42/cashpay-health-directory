@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import { CATEGORIES, type Category } from '@/lib/types';
+import StateSearch from '@/components/StateSearch';
+import { getPriorityStates } from '@/lib/states';
 
 // Group categories for display
 const telehealthCategories: Category[] = ['labs', 'glp1', 'trt'];
@@ -62,6 +64,12 @@ export default function Home() {
             <span className="rounded-full bg-purple-100 px-4 py-1.5 text-purple-700">
               Medical Tourism
             </span>
+            <Link
+              href="/healthcare"
+              className="rounded-full bg-teal-100 px-4 py-1.5 text-teal-700 hover:bg-teal-200 transition-colors"
+            >
+              Traditional Healthcare
+            </Link>
           </div>
         </div>
       </section>
@@ -151,6 +159,63 @@ export default function Home() {
                 </Link>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Traditional Healthcare Section */}
+      <section className="bg-gradient-to-b from-white to-teal-50 px-4 py-12">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-6">
+            <div className="flex items-center gap-2">
+              <span className="rounded-full bg-teal-100 px-3 py-1 text-xs font-medium text-teal-700">
+                Traditional Healthcare
+              </span>
+              <h2 className="text-xl font-bold text-gray-900">Find Top Health Systems by State</h2>
+            </div>
+            <p className="mt-1 text-sm text-gray-500">
+              Compare hospitals, health systems, and surgery centers across the United States.
+            </p>
+          </div>
+
+          {/* Search Bar */}
+          <div className="mb-8 max-w-xl">
+            <StateSearch variant="compact" placeholder="Search for your state..." />
+          </div>
+
+          {/* Priority States */}
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+            {getPriorityStates().map((state) => (
+              <Link
+                key={state.slug}
+                href={`/healthcare/${state.slug}`}
+                className="group flex items-center gap-3 rounded-lg border border-teal-200 bg-white p-4 hover:border-teal-400 hover:shadow-md transition-all"
+              >
+                <span className="text-2xl">🏥</span>
+                <div className="flex-1">
+                  <div className="font-semibold text-gray-900 group-hover:text-teal-600">
+                    {state.name}
+                  </div>
+                  <div className="text-xs text-gray-500">{state.population} population</div>
+                  {state.hasContent && (
+                    <div className="mt-1 text-xs text-teal-600">Guide ready</div>
+                  )}
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          {/* Browse All Link */}
+          <div className="mt-6 text-center">
+            <Link
+              href="/healthcare"
+              className="inline-flex items-center gap-2 rounded-lg bg-teal-600 px-6 py-3 text-sm font-medium text-white hover:bg-teal-700 transition-colors"
+            >
+              Browse All 50 States
+              <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
           </div>
         </div>
       </section>
