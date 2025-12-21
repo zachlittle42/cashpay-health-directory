@@ -15,6 +15,8 @@ const medicalTourismCategories: Category[] = [
   'orthopedic',
 ];
 
+const resourceCategories: Category[] = ['insurance', 'pharma', 'drug_registry'];
+
 function CategoryCard({ slug }: { slug: Category }) {
   const cat = CATEGORIES[slug];
   return (
@@ -95,6 +97,12 @@ export default function Home() {
               className="rounded-full bg-orange-100 px-4 py-1.5 text-orange-700 hover:bg-orange-200 transition-colors"
             >
               Traditional Healthcare
+            </Link>
+            <Link
+              href="#healthcare-resources"
+              className="rounded-full bg-red-100 px-4 py-1.5 text-red-700 hover:bg-red-200 transition-colors"
+            >
+              Insurance & Pharma
             </Link>
           </div>
         </div>
@@ -186,6 +194,26 @@ export default function Home() {
               ))}
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Healthcare Resources Section */}
+      <section id="healthcare-resources" className="mx-auto max-w-6xl px-4 py-12 border-t border-gray-100">
+        <div className="mb-6">
+          <div className="flex items-center gap-2">
+            <span className="rounded-full bg-red-100 px-3 py-1 text-xs font-medium text-red-700">
+              Healthcare Resources
+            </span>
+            <h2 className="text-xl font-bold text-gray-900">Research & Information</h2>
+          </div>
+          <p className="mt-1 text-sm text-gray-500">
+            Insurance companies, pharmaceutical manufacturers, and drug information databases.
+          </p>
+        </div>
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {resourceCategories.map((slug) => (
+            <CategoryCard key={slug} slug={slug} />
+          ))}
         </div>
       </section>
 

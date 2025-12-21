@@ -39,8 +39,8 @@ export default function Navigation() {
                 Browse Services
                 <span className="text-xs">▼</span>
               </button>
-              <div className="absolute left-1/2 -translate-x-1/2 mt-2 w-[800px] max-w-[calc(100vw-2rem)] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all bg-white rounded-lg shadow-xl border border-gray-200 py-4 z-50 max-h-[80vh] overflow-y-auto">
-                <div className="grid grid-cols-4 gap-6 px-6">
+              <div className="absolute left-1/2 -translate-x-1/2 mt-2 w-[900px] max-w-[calc(100vw-2rem)] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all bg-white rounded-lg shadow-xl border border-gray-200 py-4 z-50 max-h-[80vh] overflow-y-auto">
+                <div className="grid grid-cols-5 gap-6 px-6">
                   {/* Telehealth */}
                   <div>
                     <div className="text-xs font-bold text-blue-600 uppercase mb-3">Telehealth</div>
@@ -88,6 +88,16 @@ export default function Navigation() {
                       <Link href="/traditional-healthcare/florida" className="block text-xs text-gray-600 hover:text-orange-600">Florida</Link>
                       <Link href="/traditional-healthcare/new-york" className="block text-xs text-gray-600 hover:text-orange-600">New York</Link>
                       <Link href="/traditional-healthcare/pennsylvania" className="block text-xs text-gray-600 hover:text-orange-600">Pennsylvania</Link>
+                    </div>
+                  </div>
+
+                  {/* Healthcare Resources */}
+                  <div>
+                    <div className="text-xs font-bold text-red-600 uppercase mb-3">Resources</div>
+                    <div className="space-y-1.5">
+                      <Link href="/insurance" className="block text-sm text-gray-700 hover:text-red-600">🛡️ Insurance Companies</Link>
+                      <Link href="/pharma" className="block text-sm text-gray-700 hover:text-red-600">🏭 Pharma Companies</Link>
+                      <Link href="/drug_registry" className="block text-sm text-gray-700 hover:text-red-600">💊 Drug Registries</Link>
                     </div>
                   </div>
                 </div>
@@ -341,6 +351,15 @@ export default function Navigation() {
                       <Link href="/traditional-healthcare/texas" className="block py-2 text-xs text-gray-600 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>Texas</Link>
                       <Link href="/traditional-healthcare/florida" className="block py-2 text-xs text-gray-600 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>Florida</Link>
                       <Link href="/traditional-healthcare/new-york" className="block py-2 text-xs text-gray-600 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>New York</Link>
+                    </div>
+                  </div>
+                  {/* Healthcare Resources */}
+                  <div>
+                    <div className="text-xs font-bold text-red-600 uppercase mb-2 px-3">Resources</div>
+                    <div className="space-y-1">
+                      <Link href="/insurance" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🛡️ Insurance Companies</Link>
+                      <Link href="/pharma" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🏭 Pharma Companies</Link>
+                      <Link href="/drug_registry" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>💊 Drug Registries</Link>
                     </div>
                   </div>
                 </div>
