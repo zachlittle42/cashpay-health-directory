@@ -57,7 +57,65 @@
 
 ---
 
-## 🎯 Top 5 Current Priorities
+## 💰 Money Pages vs Supporting Pages
+
+Understanding which pages drive revenue vs. which pages build authority is critical for prioritization.
+
+### Money Pages (Conversion-Focused)
+These pages are designed to convert visitors into revenue through affiliate clicks, lead gen, or referrals.
+
+| Page Type | URLs | Monetization Method |
+|-----------|------|---------------------|
+| **Telehealth comparisons** | `/labs`, `/glp1`, `/trt` | Affiliate links to providers (Hims, Ro, Everlywell, etc.) |
+| **Individual provider pages** | `/providers/[slug]` | Direct CTA → affiliate conversion |
+| **Local clinic categories** | `/dexa`, `/vo2max`, `/iv`, `/longevity` | Lead gen, booking referrals |
+| **Medical tourism procedures** | `/dental`, `/hair_transplant`, `/bariatric`, `/plastic_surgery`, `/fertility` | Clinic referral fees, lead gen |
+| **Destination + procedure** | `/destinations/mexico`, `/destinations/turkey` | High-intent users → clinic CTAs |
+
+**Characteristics of Money Pages:**
+- Comparison tables with clear CTAs
+- "Best for" recommendations
+- Pricing information
+- Direct links to providers/clinics
+- Users have purchase/booking intent
+
+### Supporting Pages (Authority & Traffic)
+These pages build topical authority, rank for informational keywords, and funnel users to money pages.
+
+| Page Type | URLs | Purpose |
+|-----------|------|---------|
+| **Guides** | `/guides/glp1-weight-loss-complete-guide`, etc. | Rank for "how to" queries → link to money pages |
+| **FAQs** | `/faq`, `/faq/glp1`, `/faq/medical-tourism` | Answer questions → build trust → internal links |
+| **Traditional healthcare** | `/traditional-healthcare/[state]` | Local SEO traffic, authority building |
+| **Health system pages** | `/health-systems/[slug]`, `/california/health-systems/[slug]` | Informational, no direct monetization yet |
+| **Hub pages** | `/telehealth`, `/local-clinics`, `/medical-tourism` | Navigation/discovery → route to money pages |
+
+**Characteristics of Supporting Pages:**
+- Educational/informational content
+- Internal links to money pages
+- Build E-E-A-T (Experience, Expertise, Authority, Trust)
+- Target top-of-funnel keywords
+- May include soft CTAs to money pages
+
+### Current Monetization Gaps
+
+| Section | Status | Opportunity |
+|---------|--------|-------------|
+| Telehealth | ✅ Ready | Apply to affiliate programs, add tracking |
+| Local Clinics | 🔴 Empty | Build out providers, then monetize |
+| Medical Tourism | 🟡 Partial | Add lead capture, clinic partnerships |
+| Traditional Healthcare | 🔴 No monetization | Add cash-pay alternative CTAs, Centurion spotlight |
+
+### Internal Linking Strategy
+Supporting pages should always link to relevant money pages:
+- Guides → Category comparison pages
+- FAQs → Relevant provider pages
+- Traditional healthcare → Cash-pay alternatives (telehealth, local clinics)
+- All pages → Centurion spotlight where relevant
+
+---
+
+## 🎯 Top 6 Current Priorities
 
 ### Priority 1: Build Out Local Clinics Section
 **Status:** 🔴 Not Started
