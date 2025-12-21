@@ -7,8 +7,22 @@ export const metadata: Metadata = {
 };
 
 export default function TurkeyTripPlanner() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'Turkey Hair Transplant Trip Planner: 7-Day Istanbul Guide',
+    description: 'Complete planning guide for hair transplant trip to Istanbul including flights, hotels, packing list, day-by-day timeline, and recovery tips.',
+    author: { '@type': 'Organization', name: 'VitalityScout' },
+    publisher: { '@type': 'Organization', name: 'VitalityScout' },
+    datePublished: '2024-12-01',
+    dateModified: '2024-12-21',
+    mainEntityOfPage: 'https://vitalityscout.com/guides/turkey-hair-transplant-trip-planner',
+    keywords: ['Turkey hair transplant', 'Istanbul trip planning', 'medical tourism Turkey', 'hair transplant travel']
+  };
+
   return (
     <div className="min-h-screen bg-white">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <header className="border-b border-gray-200 px-4 py-4">
         <div className="mx-auto max-w-4xl">
           <Link href="/" className="text-sm text-blue-600 hover:underline">

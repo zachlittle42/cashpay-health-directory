@@ -7,8 +7,22 @@ export const metadata: Metadata = {
 };
 
 export default function MexicoTripPlanner() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'Mexico Medical Tourism: Complete Trip Planning Guide',
+    description: 'Step-by-step guide to planning medical tourism in Mexico including border crossing, Tijuana vs Los Algodones, packing checklist, and trip timeline.',
+    author: { '@type': 'Organization', name: 'VitalityScout' },
+    publisher: { '@type': 'Organization', name: 'VitalityScout' },
+    datePublished: '2024-12-01',
+    dateModified: '2024-12-21',
+    mainEntityOfPage: 'https://vitalityscout.com/guides/mexico-medical-tourism-planner',
+    keywords: ['Mexico medical tourism', 'Tijuana border crossing', 'Los Algodones', 'medical tourism planning', 'bariatric surgery Mexico']
+  };
+
   return (
     <main className="min-h-screen bg-white">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <header className="border-b border-gray-200 px-4 py-4">
         <div className="mx-auto max-w-4xl">
           <Link href="/" className="text-sm text-blue-600 hover:underline">
