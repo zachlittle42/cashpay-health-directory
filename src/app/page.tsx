@@ -1,111 +1,211 @@
 import Link from 'next/link';
-import { CATEGORIES } from '@/lib/types';
-import { getProvidersByCategory } from '@/lib/providers';
+import { CATEGORIES, type Category } from '@/lib/types';
+
+// Group categories for display
+const telehealthCategories: Category[] = ['labs', 'glp1', 'trt'];
+const localCategories: Category[] = ['dexa', 'vo2max', 'longevity'];
+const medicalTourismCategories: Category[] = [
+  'dental',
+  'hair_transplant',
+  'plastic_surgery',
+  'bariatric',
+  'fertility',
+  'orthopedic',
+];
+
+function CategoryCard({ slug }: { slug: Category }) {
+  const cat = CATEGORIES[slug];
+  return (
+    <Link
+      href={`/${slug}`}
+      className="group block rounded-lg border border-gray-200 p-5 hover:border-blue-500 hover:shadow-md transition-all"
+    >
+      <div className="flex items-start gap-3">
+        <span className="text-2xl">{cat.icon}</span>
+        <div className="flex-1">
+          <h3 className="font-semibold text-gray-900 group-hover:text-blue-600">
+            {cat.name}
+          </h3>
+          <p className="mt-1 text-sm text-gray-600 line-clamp-2">{cat.description}</p>
+          {cat.typicalSavings && (
+            <p className="mt-2 text-xs font-medium text-green-600">
+              Save {cat.typicalSavings} abroad
+            </p>
+          )}
+        </div>
+      </div>
+    </Link>
+  );
+}
 
 export default function Home() {
-  const telehealthCategories = CATEGORIES.filter(c => c.type === 'telehealth');
-  const medicalTourismCategories = CATEGORIES.filter(c => c.type === 'medical-tourism');
-
   return (
-    <div className="min-h-screen bg-gray-50">
-      {/* Header */}
-      <header className="bg-white shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <h1 className="text-3xl font-bold text-gray-900">
-            Cash-Pay Health Directory
+    <main className="min-h-screen bg-white">
+      {/* Hero */}
+      <section className="bg-gradient-to-b from-blue-50 to-white px-4 py-16 sm:py-20">
+        <div className="mx-auto max-w-4xl text-center">
+          <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+            Cash-Pay Health Services
           </h1>
-          <p className="mt-2 text-lg text-gray-600">
-            Quality healthcare without insurance - telehealth and medical tourism options
+          <p className="mt-6 text-lg leading-8 text-gray-600">
+            Compare prices for labs, GLP-1 programs, dental work, hair transplants, and more.
+            <br />
+            <span className="font-medium">Transparent pricing. No insurance needed.</span>
+          </p>
+          <div className="mt-8 flex flex-wrap justify-center gap-3 text-sm">
+            <span className="rounded-full bg-blue-100 px-4 py-1.5 text-blue-700">
+              US Telehealth
+            </span>
+            <span className="rounded-full bg-green-100 px-4 py-1.5 text-green-700">
+              Local Clinics
+            </span>
+            <span className="rounded-full bg-purple-100 px-4 py-1.5 text-purple-700">
+              Medical Tourism
+            </span>
+          </div>
+        </div>
+      </section>
+
+      {/* Telehealth Section */}
+      <section className="mx-auto max-w-6xl px-4 py-12">
+        <div className="mb-6">
+          <div className="flex items-center gap-2">
+            <span className="rounded-full bg-blue-100 px-3 py-1 text-xs font-medium text-blue-700">
+              Telehealth
+            </span>
+            <h2 className="text-xl font-bold text-gray-900">Ship to Your Door</h2>
+          </div>
+          <p className="mt-1 text-sm text-gray-500">
+            No travel required. Order online, get results or medications shipped.
           </p>
         </div>
-      </header>
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {telehealthCategories.map((slug) => (
+            <CategoryCard key={slug} slug={slug} />
+          ))}
+        </div>
+      </section>
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        {/* Telehealth Section */}
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">
-            Telehealth Services
-          </h2>
-          <p className="text-gray-600 mb-8">
-            Access lab testing, prescriptions, and specialized care from home
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {telehealthCategories.map(category => {
-              const providers = getProvidersByCategory(category.slug);
-              return (
-                <Link
-                  key={category.slug}
-                  href={`/${category.slug}`}
-                  className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow"
-                >
-                  <div className="text-4xl mb-4">{category.icon}</div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                    {category.name}
-                  </h3>
-                  <p className="text-gray-600 text-sm mb-4">
-                    {category.description}
-                  </p>
-                  <p className="text-blue-600 font-medium">
-                    {providers.length} providers →
-                  </p>
-                </Link>
-              );
-            })}
+      {/* Local Section */}
+      <section className="mx-auto max-w-6xl px-4 py-12 border-t border-gray-100">
+        <div className="mb-6">
+          <div className="flex items-center gap-2">
+            <span className="rounded-full bg-green-100 px-3 py-1 text-xs font-medium text-green-700">
+              Local
+            </span>
+            <h2 className="text-xl font-bold text-gray-900">Find Near You</h2>
           </div>
-        </section>
-
-        {/* Medical Tourism Section */}
-        <section>
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">
-            Medical Tourism
-          </h2>
-          <p className="text-gray-600 mb-8">
-            World-class procedures abroad at a fraction of US costs
+          <p className="mt-1 text-sm text-gray-500">
+            Services that require an in-person visit at a local facility.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {medicalTourismCategories.map(category => {
-              const providers = getProvidersByCategory(category.slug);
-              return (
-                <Link
-                  key={category.slug}
-                  href={`/${category.slug}`}
-                  className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow"
-                >
-                  <div className="text-4xl mb-4">{category.icon}</div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                    {category.name}
-                  </h3>
-                  <p className="text-gray-600 text-sm mb-4">
-                    {category.description}
-                  </p>
-                  <p className="text-blue-600 font-medium">
-                    {providers.length} providers →
-                  </p>
-                </Link>
-              );
-            })}
+        </div>
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {localCategories.map((slug) => (
+            <CategoryCard key={slug} slug={slug} />
+          ))}
+        </div>
+      </section>
+
+      {/* Medical Tourism Section */}
+      <section className="bg-gradient-to-b from-white to-purple-50 px-4 py-12">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-6">
+            <div className="flex items-center gap-2">
+              <span className="rounded-full bg-purple-100 px-3 py-1 text-xs font-medium text-purple-700">
+                Medical Tourism
+              </span>
+              <h2 className="text-xl font-bold text-gray-900">Save 50-80% Abroad</h2>
+            </div>
+            <p className="mt-1 text-sm text-gray-500">
+              Major procedures at a fraction of US prices. We help you compare destinations.
+            </p>
           </div>
-        </section>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {medicalTourismCategories.map((slug) => (
+              <CategoryCard key={slug} slug={slug} />
+            ))}
+          </div>
 
-        {/* Disclaimer */}
-        <section className="mt-16 bg-amber-50 border border-amber-200 rounded-lg p-6">
-          <h3 className="text-lg font-semibold text-amber-800 mb-2">
-            Important Disclaimer
-          </h3>
-          <p className="text-amber-700 text-sm">
-            This directory is for informational purposes only and does not constitute medical advice.
-            Always consult with qualified healthcare providers before making medical decisions.
-            We are not affiliated with any providers listed and do not receive compensation for referrals.
-          </p>
-        </section>
-      </main>
+          {/* Destination Quick Links */}
+          <div className="mt-10 rounded-lg border border-purple-200 bg-white p-6">
+            <h3 className="font-semibold text-gray-900 mb-4">Popular Destinations</h3>
+            <div className="flex flex-wrap gap-3">
+              {[
+                { name: 'Mexico', flag: '🇲🇽', specialties: 'Dental, Bariatric' },
+                { name: 'Turkey', flag: '🇹🇷', specialties: 'Hair Transplant, Dental' },
+                { name: 'South Korea', flag: '🇰🇷', specialties: 'Plastic Surgery' },
+                { name: 'Thailand', flag: '🇹🇭', specialties: 'Cosmetic, Orthopedic' },
+                { name: 'Spain', flag: '🇪🇸', specialties: 'Fertility/IVF' },
+                { name: 'India', flag: '🇮🇳', specialties: 'Cardiac, Orthopedic' },
+              ].map((dest) => (
+                <Link
+                  key={dest.name}
+                  href={`/destinations/${dest.name.toLowerCase().replace(' ', '-')}`}
+                  className="flex items-center gap-2 rounded-lg border border-gray-200 px-4 py-2 hover:border-purple-400 hover:bg-purple-50 transition-colors"
+                >
+                  <span className="text-xl">{dest.flag}</span>
+                  <div>
+                    <div className="font-medium text-gray-900 text-sm">{dest.name}</div>
+                    <div className="text-xs text-gray-500">{dest.specialties}</div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Value Props */}
+      <section className="bg-gray-50 px-4 py-16">
+        <div className="mx-auto max-w-4xl">
+          <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">
+            Why Use This Directory?
+          </h2>
+          <div className="grid gap-8 sm:grid-cols-3">
+            <div className="text-center">
+              <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-blue-100 text-xl mb-3">
+                $
+              </div>
+              <h3 className="font-semibold">Transparent Pricing</h3>
+              <p className="mt-2 text-sm text-gray-600">
+                Real prices, not &quot;contact us&quot;. We do the research so you don&apos;t have to.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-green-100 text-xl mb-3">
+                ✓
+              </div>
+              <h3 className="font-semibold">Curated Quality</h3>
+              <p className="mt-2 text-sm text-gray-600">
+                Not everyone gets listed. We vet for quality, accreditation, and reputation.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-purple-100 text-xl mb-3">
+                ⚖️
+              </div>
+              <h3 className="font-semibold">Honest Comparisons</h3>
+              <p className="mt-2 text-sm text-gray-600">
+                Pros AND cons. &quot;Best for X&quot; recommendations. Editorial opinions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Footer */}
-      <footer className="bg-gray-800 text-gray-300 py-8 mt-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p>&copy; 2024 Cash-Pay Health Directory. All rights reserved.</p>
+      <footer className="border-t border-gray-200 px-4 py-8">
+        <div className="mx-auto max-w-4xl text-center text-sm text-gray-500">
+          <p className="font-medium text-gray-700">Cash-Pay Health Directory</p>
+          <p className="mt-1">
+            Compare cash-pay health services. No insurance required.
+          </p>
+          <p className="mt-4 text-xs">
+            Disclaimer: This directory is for informational purposes only. Always consult with
+            qualified healthcare providers before making medical decisions.
+          </p>
         </div>
       </footer>
-    </div>
+    </main>
   );
 }

@@ -1,0 +1,257 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ============================================
+// PROVIDER DIRECTORY
+// ============================================
+
+model Provider {
+  id          String   @id @default(cuid())
+  slug        String   @unique
+  name        String
+  description String
+  category    Category
+
+  // Services offered
+  services    String[]
+
+  // Pricing
+  pricingDisplay    String    // e.g., "$99-299/panel" or "$2,500-4,000"
+  pricingNotes      String?   // e.g., "Includes hotel + transfers"
+  pricingComparison String?   // e.g., "vs $15,000 in US"
+  savingsPercent    Int?      // e.g., 70 for "70% savings"
+
+  // Delivery & Coverage
+  deliveryModel       DeliveryModel
+  geographicCoverage  String[]  // ["National"] or ["CA", "TX"] or ["Mexico", "Tijuana"]
+
+  // Medical Tourism specific
+  destinationCountry  String?   // "Turkey", "Mexico", "Korea"
+  destinationCity     String?   // "Istanbul", "Tijuana", "Seoul"
+  typicalTripLength   String?   // "5-7 days"
+  includesInPackage   String[]  // ["Hotel", "Airport transfer", "Translator"]
+  recoveryNotes       String?   // "Plan 7-10 days before flying home"
+
+  // Accreditation & Trust
+  accreditations      String[]  // ["JCI", "ISO 9001"]
+  yearsInBusiness     Int?
+  procedureVolume     String?   // "10,000+ procedures/year"
+
+  // Links & Referrals
+  url          String
+  referralType ReferralType
+  affiliateId  String?      // For tracking
+
+  // Editorial Content
+  ourTake   String   // 2-3 sentence editorial opinion
+  bestFor   String[] // ["Budget-conscious", "First-timers", "Premium experience"]
+  pros      String[]
+  cons      String[]
+
+  // Media
+  logoUrl       String?
+  heroImageUrl  String?
+  galleryUrls   String[]
+
+  // Metadata
+  featured     Boolean  @default(false)
+  active       Boolean  @default(true)
+  lastVerified DateTime @default(now())
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  // Relations
+  clicks    Click[]
+  leads     Lead[]
+
+  @@index([category])
+  @@index([category, destinationCountry])
+  @@index([active, featured])
+  @@index([destinationCountry])
+}
+
+// Expanded categories for medical tourism
+enum Category {
+  // Telehealth (US-based, no travel)
+  labs
+  glp1
+  trt
+
+  // Local (US, you go to them)
+  dexa
+  vo2max
+  iv
+  longevity
+
+  // Can be local OR medical tourism
+  dental
+  plastic_surgery
+  hair_transplant
+  bariatric
+  fertility
+  orthopedic
+  cardiac
+  vision
+}
+
+enum DeliveryModel {
+  telehealth_national       // Ship to you / video visits (US)
+  telehealth_state_limited  // Some US states only
+  in_person_local           // You go to them, your area
+  in_person_destination     // Medical tourism - you travel to them
+  hybrid                    // Offers multiple options
+}
+
+enum ReferralType {
+  affiliate_link
+  lead_form
+  direct_link
+}
+
+// ============================================
+// DESTINATIONS (for medical tourism)
+// ============================================
+
+model Destination {
+  id          String   @id @default(cuid())
+  slug        String   @unique  // "turkey", "mexico-tijuana"
+  country     String   // "Turkey"
+  city        String?  // "Istanbul" (optional for country-level)
+
+  // Content
+  displayName   String   // "Istanbul, Turkey"
+  description   String   // Overview of destination for medical tourism
+  whyGoHere     String   // Key selling points
+  considerations String  // Things to know before going
+
+  // Practical Info
+  flightTimeFromUS  String?  // "10-12 hours from NYC"
+  visaRequired      Boolean  @default(false)
+  visaNotes         String?  // "E-visa available online, $50"
+  languageNotes     String?  // "English widely spoken in clinics"
+  currency          String?  // "Turkish Lira (TRY)"
+
+  // Best for categories
+  knownFor          String[] // ["hair_transplant", "dental"]
+
+  // Media
+  heroImageUrl      String?
+
+  // Metadata
+  active       Boolean  @default(true)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@index([country])
+}
+
+// ============================================
+// PROCEDURE INFO (educational content)
+// ============================================
+
+model Procedure {
+  id          String   @id @default(cuid())
+  slug        String   @unique  // "hair-transplant-fue"
+  category    Category
+
+  // Content
+  name            String   // "FUE Hair Transplant"
+  description     String   // What it is
+  typicalCostUS   String   // "$10,000-20,000"
+  typicalDuration String   // "4-8 hours"
+  recoveryTime    String   // "7-14 days before travel"
+
+  // Comparison
+  destinationPricing Json?  // {"Turkey": "$2,000-4,000", "Mexico": "$4,000-6,000"}
+
+  // Trust content
+  whatToAsk       String[] // Questions to ask providers
+  redFlags        String[] // Warning signs
+
+  // Metadata
+  active       Boolean  @default(true)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@index([category])
+}
+
+// ============================================
+// ANALYTICS
+// ============================================
+
+model Click {
+  id         String   @id @default(cuid())
+  providerId String
+  provider   Provider @relation(fields: [providerId], references: [id])
+
+  // Attribution
+  source     String?  // utm_source
+  medium     String?  // utm_medium
+  campaign   String?  // utm_campaign
+
+  // Context
+  userAgent  String?
+  ipHash     String?  // Hashed for privacy
+
+  createdAt  DateTime @default(now())
+
+  @@index([providerId])
+  @@index([createdAt])
+}
+
+model Lead {
+  id         String   @id @default(cuid())
+  providerId String
+  provider   Provider @relation(fields: [providerId], references: [id])
+
+  // Lead info (for providers who pay per lead)
+  email      String
+  name       String?
+  phone      String?
+  notes      String?
+
+  // Status
+  status     LeadStatus @default(pending)
+
+  // Attribution
+  source     String?
+
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@index([providerId])
+  @@index([status])
+}
+
+enum LeadStatus {
+  pending
+  sent
+  converted
+  rejected
+}
+
+// ============================================
+// ADMIN (optional, for CMS)
+// ============================================
+
+model AdminUser {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  name      String?
+  role      AdminRole @default(editor)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+enum AdminRole {
+  admin
+  editor
+}

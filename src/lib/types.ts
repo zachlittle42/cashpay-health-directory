@@ -1,129 +1,269 @@
-export type CategorySlug =
+// Provider types matching Prisma schema
+
+export type Category =
+  // Telehealth (US-based, no travel)
   | 'labs'
   | 'glp1'
   | 'trt'
+  // Local (US, you go to them)
   | 'dexa'
-  | 'dental-mexico'
-  | 'hair-turkey'
-  | 'bariatric-mexico'
-  | 'plastic-korea'
-  | 'fertility-europe';
+  | 'vo2max'
+  | 'iv'
+  | 'longevity'
+  // Can be local OR medical tourism
+  | 'dental'
+  | 'plastic_surgery'
+  | 'hair_transplant'
+  | 'bariatric'
+  | 'fertility'
+  | 'orthopedic'
+  | 'cardiac'
+  | 'vision';
 
-export type CategoryType = 'telehealth' | 'medical-tourism';
+export type DeliveryModel =
+  | 'telehealth_national'
+  | 'telehealth_state_limited'
+  | 'in_person_local'
+  | 'in_person_destination'
+  | 'hybrid';
 
-export interface Category {
-  slug: CategorySlug;
-  name: string;
-  shortName: string;
-  description: string;
-  type: CategoryType;
-  icon: string;
-}
+export type ReferralType = 'affiliate_link' | 'lead_form' | 'direct_link';
 
-export interface BaseProvider {
+export interface Provider {
   slug: string;
   name: string;
-  category: CategorySlug;
   description: string;
+  category: Category;
+
+  // Services
+  services: string[];
+
+  // Pricing
   pricingDisplay: string;
-  pricingComparison: string;
+  pricingNotes?: string;
+  pricingComparison?: string;
+  savingsPercent?: number;
+
+  // Delivery
+  deliveryModel: DeliveryModel;
+  geographicCoverage: string[];
+
+  // Medical Tourism
+  destinationCountry?: string;
+  destinationCity?: string;
+  typicalTripLength?: string;
+  includesInPackage?: string[];
+  recoveryNotes?: string;
+
+  // Trust
+  accreditations?: string[];
+  yearsInBusiness?: number;
+  procedureVolume?: string;
+
+  // Links
+  url: string;
+  referralType: ReferralType;
+
+  // Editorial
+  ourTake: string;
   bestFor: string[];
   pros: string[];
   cons: string[];
-  ourTake: string;
-  deliveryModel: string;
-  featured: boolean;
+
+  // Media
+  logoUrl?: string;
+  heroImageUrl?: string;
+
+  // Metadata
+  featured?: boolean;
+  lastVerified: string;
 }
 
-export interface TelehealthProvider extends BaseProvider {
-  type: 'telehealth';
+export interface Destination {
+  slug: string;
+  country: string;
+  city?: string;
+  displayName: string;
+  description: string;
+  whyGoHere: string;
+  considerations: string;
+  flightTimeFromUS?: string;
+  visaRequired: boolean;
+  visaNotes?: string;
+  languageNotes?: string;
+  currency?: string;
+  knownFor: Category[];
+  heroImageUrl?: string;
 }
 
-export interface MedicalTourismProvider extends BaseProvider {
-  type: 'medical-tourism';
-  destinationCountry: string;
-  destinationCity: string;
-  typicalTripLength: string;
-  includesInPackage: string[];
+// Category metadata for UI
+export interface CategoryInfo {
+  slug: Category;
+  name: string;
+  description: string;
+  icon: string;
+  hasMedicalTourism: boolean;
+  hasLocalUS: boolean;
+  hasTelehealth: boolean;
+  topDestinations?: string[];
+  typicalSavings?: string;
 }
 
-export type Provider = TelehealthProvider | MedicalTourismProvider;
-
-export const CATEGORIES: Category[] = [
-  {
+export const CATEGORIES: Record<Category, CategoryInfo> = {
+  // Telehealth only
+  labs: {
     slug: 'labs',
-    name: 'At-Home Lab Testing',
-    shortName: 'Labs',
-    description: 'Comprehensive blood work and biomarker testing from home without a doctor visit',
-    type: 'telehealth',
+    name: 'At-Home Labs',
+    description: 'Blood panels, hormone testing, and biomarkers delivered to your door',
     icon: '🧪',
+    hasMedicalTourism: false,
+    hasLocalUS: false,
+    hasTelehealth: true,
   },
-  {
+  glp1: {
     slug: 'glp1',
-    name: 'GLP-1 Weight Loss',
-    shortName: 'GLP-1',
-    description: 'Semaglutide and tirzepatide prescriptions for weight management',
-    type: 'telehealth',
+    name: 'GLP-1 Programs',
+    description: 'Semaglutide, tirzepatide, and weight loss medications',
     icon: '💊',
+    hasMedicalTourism: false,
+    hasLocalUS: true,
+    hasTelehealth: true,
   },
-  {
+  trt: {
     slug: 'trt',
-    name: 'Testosterone Replacement',
-    shortName: 'TRT',
-    description: 'Testosterone therapy and hormone optimization for men',
-    type: 'telehealth',
+    name: 'TRT & Hormones',
+    description: 'Testosterone replacement and hormone optimization',
     icon: '💪',
+    hasMedicalTourism: false,
+    hasLocalUS: true,
+    hasTelehealth: true,
   },
-  {
-    slug: 'dexa',
-    name: 'DEXA Body Scans',
-    shortName: 'DEXA',
-    description: 'Precise body composition and bone density measurement',
-    type: 'telehealth',
-    icon: '📊',
-  },
-  {
-    slug: 'dental-mexico',
-    name: 'Dental Work in Mexico',
-    shortName: 'Dental Mexico',
-    description: 'High-quality dental implants, crowns, and full-mouth restoration at 50-70% savings',
-    type: 'medical-tourism',
-    icon: '🦷',
-  },
-  {
-    slug: 'hair-turkey',
-    name: 'Hair Transplants in Turkey',
-    shortName: 'Hair Turkey',
-    description: 'World-renowned hair restoration clinics with all-inclusive packages',
-    type: 'medical-tourism',
-    icon: '💇',
-  },
-  {
-    slug: 'bariatric-mexico',
-    name: 'Bariatric Surgery in Mexico',
-    shortName: 'Bariatric Mexico',
-    description: 'Gastric sleeve and bypass surgery with experienced surgeons',
-    type: 'medical-tourism',
-    icon: '⚖️',
-  },
-  {
-    slug: 'plastic-korea',
-    name: 'Plastic Surgery in Korea',
-    shortName: 'Plastic Korea',
-    description: 'Advanced cosmetic procedures in the plastic surgery capital of the world',
-    type: 'medical-tourism',
-    icon: '✨',
-  },
-  {
-    slug: 'fertility-europe',
-    name: 'Fertility Treatment in Europe',
-    shortName: 'Fertility Europe',
-    description: 'IVF and fertility treatments in top European clinics at lower costs',
-    type: 'medical-tourism',
-    icon: '👶',
-  },
-];
 
-export function getCategoryBySlug(slug: string): Category | undefined {
-  return CATEGORIES.find(c => c.slug === slug);
-}
+  // Local US only
+  dexa: {
+    slug: 'dexa',
+    name: 'DEXA Scans',
+    description: 'Body composition and bone density testing',
+    icon: '📊',
+    hasMedicalTourism: false,
+    hasLocalUS: true,
+    hasTelehealth: false,
+  },
+  vo2max: {
+    slug: 'vo2max',
+    name: 'VO2 Max Testing',
+    description: 'Metabolic and cardiovascular fitness assessments',
+    icon: '🫀',
+    hasMedicalTourism: false,
+    hasLocalUS: true,
+    hasTelehealth: false,
+  },
+  iv: {
+    slug: 'iv',
+    name: 'IV Therapy',
+    description: 'Vitamin infusions and hydration therapy',
+    icon: '💧',
+    hasMedicalTourism: false,
+    hasLocalUS: true,
+    hasTelehealth: false,
+  },
+  longevity: {
+    slug: 'longevity',
+    name: 'Longevity Clinics',
+    description: 'Comprehensive health optimization and preventive care',
+    icon: '⏳',
+    hasMedicalTourism: false,
+    hasLocalUS: true,
+    hasTelehealth: true,
+  },
+
+  // Medical tourism categories
+  dental: {
+    slug: 'dental',
+    name: 'Dental',
+    description: 'Implants, crowns, veneers, and full-mouth restoration',
+    icon: '🦷',
+    hasMedicalTourism: true,
+    hasLocalUS: true,
+    hasTelehealth: false,
+    topDestinations: ['Mexico', 'Costa Rica', 'Thailand'],
+    typicalSavings: '50-70%',
+  },
+  hair_transplant: {
+    slug: 'hair_transplant',
+    name: 'Hair Transplant',
+    description: 'FUE and FUT hair restoration procedures',
+    icon: '💇',
+    hasMedicalTourism: true,
+    hasLocalUS: true,
+    hasTelehealth: false,
+    topDestinations: ['Turkey', 'Mexico'],
+    typicalSavings: '50-75%',
+  },
+  plastic_surgery: {
+    slug: 'plastic_surgery',
+    name: 'Plastic Surgery',
+    description: 'Cosmetic and reconstructive procedures',
+    icon: '✨',
+    hasMedicalTourism: true,
+    hasLocalUS: true,
+    hasTelehealth: false,
+    topDestinations: ['South Korea', 'Thailand', 'Brazil', 'Turkey'],
+    typicalSavings: '40-60%',
+  },
+  bariatric: {
+    slug: 'bariatric',
+    name: 'Bariatric Surgery',
+    description: 'Gastric sleeve, bypass, and weight loss surgery',
+    icon: '⚖️',
+    hasMedicalTourism: true,
+    hasLocalUS: true,
+    hasTelehealth: false,
+    topDestinations: ['Mexico', 'Turkey'],
+    typicalSavings: '60-80%',
+  },
+  fertility: {
+    slug: 'fertility',
+    name: 'Fertility & IVF',
+    description: 'IVF, egg freezing, and reproductive services',
+    icon: '🍼',
+    hasMedicalTourism: true,
+    hasLocalUS: true,
+    hasTelehealth: false,
+    topDestinations: ['Spain', 'Czech Republic', 'Greece'],
+    typicalSavings: '40-70%',
+  },
+  orthopedic: {
+    slug: 'orthopedic',
+    name: 'Orthopedic Surgery',
+    description: 'Knee replacement, hip replacement, and joint surgery',
+    icon: '🦴',
+    hasMedicalTourism: true,
+    hasLocalUS: true,
+    hasTelehealth: false,
+    topDestinations: ['India', 'Thailand', 'Mexico'],
+    typicalSavings: '50-80%',
+  },
+  cardiac: {
+    slug: 'cardiac',
+    name: 'Cardiac Procedures',
+    description: 'Heart surgery, bypass, and cardiovascular procedures',
+    icon: '❤️',
+    hasMedicalTourism: true,
+    hasLocalUS: true,
+    hasTelehealth: false,
+    topDestinations: ['India', 'Thailand'],
+    typicalSavings: '70-90%',
+  },
+  vision: {
+    slug: 'vision',
+    name: 'Vision Surgery',
+    description: 'LASIK, cataract surgery, and eye procedures',
+    icon: '👁️',
+    hasMedicalTourism: true,
+    hasLocalUS: true,
+    hasTelehealth: false,
+    topDestinations: ['Mexico', 'Turkey', 'India'],
+    typicalSavings: '50-70%',
+  },
+};
