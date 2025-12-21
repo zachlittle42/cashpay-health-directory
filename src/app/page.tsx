@@ -209,7 +209,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             <Link
               href="/guides/glp1-weight-loss-complete-guide"
               className="group rounded-lg border-2 border-gray-200 p-6 hover:border-blue-400 hover:shadow-lg transition-all"
@@ -250,6 +250,20 @@ export default function Home() {
                 Border crossing tips, packing list, and trip timeline.
               </p>
               <span className="text-sm font-medium text-green-600">Read guide →</span>
+            </Link>
+
+            <Link
+              href="/guides/us-healthcare-by-region"
+              className="group rounded-lg border-2 border-gray-200 p-6 hover:border-orange-400 hover:shadow-lg transition-all"
+            >
+              <div className="text-3xl mb-3">🏥</div>
+              <h3 className="font-bold text-gray-900 group-hover:text-orange-600 mb-2">
+                US Healthcare by Region
+              </h3>
+              <p className="text-sm text-gray-600 mb-3">
+                Top hospitals and health systems across major US regions.
+              </p>
+              <span className="text-sm font-medium text-orange-600">Read guide →</span>
             </Link>
           </div>
 
