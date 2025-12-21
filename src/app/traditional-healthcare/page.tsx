@@ -4,7 +4,12 @@ import Link from 'next/link';
 import { useState } from 'react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
-import USAMap from '@/components/USAMap';
+import {
+  getHonorRollHospitals,
+  getSpecialtyLeaders,
+  type NationalHealthSystem,
+  type SpecialtyLeader,
+} from '@/lib/national-health-systems';
 
 const states = [
   { name: 'Alabama', abbr: 'AL', slug: 'alabama' },
@@ -59,13 +64,33 @@ const states = [
   { name: 'Wyoming', abbr: 'WY', slug: 'wyoming' },
 ];
 
+// Featured specialties to highlight
+const featuredSpecialties = [
+  'Cancer',
+  'Cardiology & Heart Surgery',
+  'Orthopedics',
+  'Neurology & Neurosurgery',
+  'Rehabilitation',
+  'Ophthalmology',
+];
+
 export default function TraditionalHealthcareLanding() {
   const [searchQuery, setSearchQuery] = useState('');
-  const [selectedState, setSelectedState] = useState<string | null>(null);
+  const [showAllHospitals, setShowAllHospitals] = useState(false);
 
-  const filteredStates = states.filter(state =>
-    state.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-    state.abbr.toLowerCase().includes(searchQuery.toLowerCase())
+  const honorRollHospitals = getHonorRollHospitals();
+  const specialtyLeaders = getSpecialtyLeaders();
+  const displayedHospitals = showAllHospitals
+    ? honorRollHospitals
+    : honorRollHospitals.slice(0, 6);
+  const featuredLeaders = specialtyLeaders.filter((s) =>
+    featuredSpecialties.includes(s.specialty)
+  );
+
+  const filteredStates = states.filter(
+    (state) =>
+      state.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      state.abbr.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
   return (
@@ -76,71 +101,125 @@ export default function TraditionalHealthcareLanding() {
       <section className="bg-gradient-to-b from-blue-50 to-white px-4 py-16">
         <div className="mx-auto max-w-5xl text-center">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            Traditional Healthcare by State
+            Traditional Healthcare in the US
           </h1>
           <p className="text-xl text-gray-600 mb-6">
-            Find top hospitals, health systems, and medical centers in your state.
+            Discover America&apos;s top-ranked hospitals and health systems
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-sm">
-            <span className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full">50 States</span>
-            <span className="bg-green-100 text-green-800 px-4 py-2 rounded-full">200+ Regions</span>
-            <span className="bg-purple-100 text-purple-800 px-4 py-2 rounded-full">Top-Ranked Facilities</span>
+            <span className="bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full">
+              15+ Honor Roll Hospitals
+            </span>
+            <span className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full">
+              50 States
+            </span>
+            <span className="bg-green-100 text-green-800 px-4 py-2 rounded-full">
+              200+ Healthcare Regions
+            </span>
           </div>
         </div>
       </section>
 
-      {/* Search */}
-      <section className="border-b border-gray-200 px-4 py-6 bg-gray-50">
-        <div className="mx-auto max-w-5xl">
-          <div className="relative">
-            <input
-              type="text"
-              placeholder="Search for your state..."
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full rounded-lg border-2 border-gray-300 px-4 py-3 text-lg focus:border-blue-500 focus:outline-none"
-            />
-            {searchQuery && (
+      {/* National Champions - Honor Roll */}
+      <section className="bg-white px-4 py-12 border-b border-gray-200">
+        <div className="mx-auto max-w-6xl">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold text-gray-900 mb-2">
+              America&apos;s Best Hospitals
+            </h2>
+            <p className="text-gray-600">
+              US News & World Report 2024-2025 Honor Roll
+            </p>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {displayedHospitals.map((hospital, index) => (
+              <HospitalCard
+                key={hospital.slug}
+                hospital={hospital}
+                rank={index + 1}
+              />
+            ))}
+          </div>
+
+          {honorRollHospitals.length > 6 && (
+            <div className="text-center mt-8">
               <button
-                onClick={() => setSearchQuery('')}
-                className="absolute right-3 top-3 text-gray-400 hover:text-gray-600 text-xl"
+                onClick={() => setShowAllHospitals(!showAllHospitals)}
+                className="text-blue-600 hover:text-blue-800 font-medium"
               >
-                ✕
+                {showAllHospitals
+                  ? 'Show Less'
+                  : `View All ${honorRollHospitals.length} Honor Roll Hospitals`}
               </button>
-            )}
+            </div>
+          )}
+        </div>
+      </section>
+
+      {/* Specialty Leaders */}
+      <section className="bg-gray-50 px-4 py-12 border-b border-gray-200">
+        <div className="mx-auto max-w-6xl">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold text-gray-900 mb-2">
+              #1 Ranked by Specialty
+            </h2>
+            <p className="text-gray-600">
+              The nation&apos;s best hospitals for each medical specialty
+            </p>
+          </div>
+
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {featuredLeaders.map((specialty) => (
+              <SpecialtyLeaderCard key={specialty.slug} specialty={specialty} />
+            ))}
+          </div>
+
+          <div className="text-center mt-6">
+            <Link
+              href="/specialties"
+              className="text-blue-600 hover:text-blue-800 font-medium"
+            >
+              View All 15 Specialty Rankings &rarr;
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* Interactive Map */}
-      <section className="px-4 py-12 bg-white">
+      {/* Search & State List */}
+      <section className="bg-white px-4 py-12">
         <div className="mx-auto max-w-5xl">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-            Select Your State
-          </h2>
-          <div className="bg-gray-50 rounded-lg p-8">
-            <USAMap
-              onStateClick={(stateName) => {
-                const state = states.find(s => s.name === stateName);
-                if (state) {
-                  window.location.href = `/traditional-healthcare/${state.slug}`;
-                }
-              }}
-              selectedState={selectedState}
-            />
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold text-gray-900 mb-2">
+              Browse by State
+            </h2>
+            <p className="text-gray-600">
+              Find top hospitals and health systems in your area
+            </p>
           </div>
-          <p className="text-center text-sm text-gray-500 mt-6">
-            Click any state to view its healthcare regions and top hospitals
-          </p>
-        </div>
-      </section>
 
-      {/* State List */}
-      <section className="bg-gray-50 px-4 py-12 border-t border-gray-200">
-        <div className="mx-auto max-w-5xl">
-          <h2 className="text-xl font-bold text-gray-900 mb-6">
-            Browse by State
-          </h2>
+          {/* Search */}
+          <div className="mb-8">
+            <div className="relative max-w-md mx-auto">
+              <input
+                type="text"
+                placeholder="Search for your state..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-full rounded-lg border-2 border-gray-300 px-4 py-3 text-lg focus:border-blue-500 focus:outline-none"
+              />
+              {searchQuery && (
+                <button
+                  onClick={() => setSearchQuery('')}
+                  className="absolute right-3 top-3 text-gray-400 hover:text-gray-600 text-xl"
+                >
+                  &times;
+                </button>
+              )}
+            </div>
+          </div>
+
+          {/* State Grid */}
           <div className="grid gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             {filteredStates.map((state) => (
               <Link
@@ -157,24 +236,128 @@ export default function TraditionalHealthcareLanding() {
       </section>
 
       {/* CTA */}
-      <section className="bg-white px-4 py-16">
+      <section className="bg-blue-50 px-4 py-16 border-t border-blue-100">
         <div className="mx-auto max-w-4xl text-center">
           <h3 className="text-2xl font-bold text-gray-900 mb-4">
             Looking for Cash-Pay Alternatives?
           </h3>
           <p className="text-gray-600 mb-6">
-            Explore telehealth, local clinics, and medical tourism with transparent pricing.
+            Explore telehealth, local clinics, and medical tourism with
+            transparent pricing.
           </p>
           <Link
             href="/"
             className="inline-block rounded-lg bg-blue-600 px-8 py-4 text-lg font-medium text-white hover:bg-blue-700"
           >
-            Browse Cash-Pay Services →
+            Browse Cash-Pay Services &rarr;
           </Link>
         </div>
       </section>
 
       <Footer />
     </main>
+  );
+}
+
+function HospitalCard({
+  hospital,
+  rank,
+}: {
+  hospital: NationalHealthSystem;
+  rank: number;
+}) {
+  const topSpecialties = hospital.specialties
+    .filter((s) => s.isTopTen)
+    .slice(0, 3);
+
+  return (
+    <Link
+      href={`/health-systems/${hospital.slug}`}
+      className="block rounded-lg border-2 border-gray-200 bg-white p-6 hover:border-blue-400 hover:shadow-lg transition-all"
+    >
+      <div className="flex items-start justify-between mb-3">
+        <div className="flex items-center gap-2">
+          {rank <= 3 && (
+            <span className="text-2xl">
+              {rank === 1 ? '🥇' : rank === 2 ? '🥈' : '🥉'}
+            </span>
+          )}
+          <span className="bg-blue-100 text-blue-800 text-sm font-medium px-2 py-1 rounded">
+            #{rank}
+          </span>
+        </div>
+        {hospital.ranking.worldRank && hospital.ranking.worldRank <= 5 && (
+          <span className="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded">
+            #{hospital.ranking.worldRank} World
+          </span>
+        )}
+      </div>
+
+      <h3 className="text-lg font-bold text-gray-900 mb-1">{hospital.name}</h3>
+      <p className="text-sm text-gray-500 mb-3">
+        {hospital.location.city}, {hospital.location.state}
+      </p>
+
+      {topSpecialties.length > 0 && (
+        <div className="space-y-1">
+          {topSpecialties.map((specialty) => (
+            <div
+              key={specialty.specialty}
+              className="flex items-center justify-between text-sm"
+            >
+              <span className="text-gray-600 truncate">
+                {specialty.specialty}
+              </span>
+              <span
+                className={`font-medium ${
+                  specialty.rank === 1
+                    ? 'text-yellow-600'
+                    : specialty.rank <= 3
+                    ? 'text-blue-600'
+                    : 'text-green-600'
+                }`}
+              >
+                #{specialty.rank}
+              </span>
+            </div>
+          ))}
+        </div>
+      )}
+
+      <div className="mt-4 pt-3 border-t border-gray-100 text-sm text-blue-600">
+        View Details &rarr;
+      </div>
+    </Link>
+  );
+}
+
+function SpecialtyLeaderCard({ specialty }: { specialty: SpecialtyLeader }) {
+  return (
+    <Link
+      href={`/health-systems/${specialty.leader.slug}`}
+      className="block rounded-lg border-2 border-yellow-200 bg-yellow-50 p-5 hover:border-yellow-400 hover:shadow-lg transition-all"
+    >
+      <div className="flex items-center gap-2 mb-2">
+        <span className="text-xl">🏆</span>
+        <span className="text-sm font-bold text-yellow-800">
+          #1 {specialty.specialty}
+        </span>
+      </div>
+
+      <h3 className="text-lg font-bold text-gray-900 mb-1">
+        {specialty.leader.name}
+      </h3>
+      <p className="text-sm text-gray-600 mb-2">{specialty.leader.location}</p>
+
+      {specialty.leader.consecutiveYears && (
+        <p className="text-xs text-gray-500">
+          {specialty.leader.consecutiveYears} consecutive years
+        </p>
+      )}
+
+      <div className="mt-3 pt-2 border-t border-yellow-200 text-sm text-yellow-700">
+        Learn More &rarr;
+      </div>
+    </Link>
   );
 }
