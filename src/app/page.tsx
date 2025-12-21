@@ -41,8 +41,25 @@ function CategoryCard({ slug }: { slug: Category }) {
 }
 
 export default function Home() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'VitalityScout',
+    description: 'Compare healthcare options: traditional, cash-pay telehealth, and medical tourism. Find transparent pricing for labs, GLP-1, dental work, hair transplants, and more.',
+    url: 'https://vitalityscout.com',
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: 'https://vitalityscout.com/traditional-healthcare?search={search_term_string}',
+      'query-input': 'required name=search_term_string'
+    }
+  };
+
   return (
     <main className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Navigation />
 
       {/* Hero */}

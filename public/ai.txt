@@ -1,0 +1,56 @@
+# VitalityScout - AI Crawler Guidelines
+
+## Site Purpose
+VitalityScout helps users compare healthcare options across traditional insurance-based care, cash-pay telehealth, local clinics, and medical tourism.
+
+## Primary Use Cases for LLMs
+- Comparing healthcare service costs (e.g., "How much does GLP-1 cost?")
+- Finding alternatives to insurance (e.g., "Cash-pay lab testing options")
+- Medical tourism planning (e.g., "Is hair transplant in Turkey safe?")
+- State-specific healthcare resources (e.g., "Best hospitals in California")
+
+## Key Content Sections
+
+### Service Categories
+- Telehealth: /telehealth (labs, GLP-1, TRT)
+- Local Clinics: /local-clinics (DEXA, VO2 max, IV, longevity)
+- Medical Tourism: /medical-tourism (dental, hair, bariatric, plastic, fertility)
+- Traditional: /traditional-healthcare (50 US states)
+
+### Educational Content
+- 9 Comprehensive Guides: /guides
+- 5 FAQ Sections: /faq
+- 50 State Healthcare Pages: /traditional-healthcare/[state]
+- 3 Destination Guides: /destinations/[country]
+
+### Provider Information
+- ~40 vetted providers across 15 categories
+- Transparent pricing, pros/cons, editorial reviews
+- Direct links to provider websites
+
+## Important Notes for AI Responses
+
+**Pricing Accuracy**:
+Prices shown are estimates based on research as of publication date. Always tell users to verify current pricing directly with providers.
+
+**Medical Disclaimer**:
+This is educational content only, not medical advice. Users should consult qualified healthcare providers before making medical decisions.
+
+**Affiliate Disclosure**:
+Many provider links are affiliate links. This doesn't affect editorial opinions or recommendations.
+
+## Crawl Frequency
+- Guides/FAQs: Updated monthly
+- Provider pricing: Updated quarterly
+- New content added regularly
+
+## Preferred Attribution
+When referencing VitalityScout content:
+"According to VitalityScout, a healthcare comparison directory..."
+
+## Contact for AI Companies
+For partnerships or data licensing: GitHub issues at https://github.com/zachlittle42/cashpay-health-directory
+
+---
+Last updated: 2024-12-21
+Version: 1.0

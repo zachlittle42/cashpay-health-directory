@@ -1,0 +1,24 @@
+# robots.txt for VitalityScout
+
+User-agent: *
+Allow: /
+
+# Specific paths
+Allow: /telehealth
+Allow: /local-clinics
+Allow: /medical-tourism
+Allow: /traditional-healthcare
+Allow: /guides
+Allow: /faq
+Allow: /providers
+
+# Sitemap
+Sitemap: https://vitalityscout.com/sitemap.xml
+
+# AI Crawlers - point to ai.txt
+User-agent: GPTBot
+User-agent: ChatGPT-User
+User-agent: Google-Extended
+User-agent: anthropic-ai
+User-agent: Claude-Web
+Allow: /
