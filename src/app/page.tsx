@@ -70,7 +70,7 @@ export default function Home() {
               Local Independent Clinics
             </a>
             <Link
-              href="/guides/us-healthcare-by-region"
+              href="/traditional-healthcare"
               className="rounded-full bg-orange-100 px-4 py-1.5 text-orange-700 hover:bg-orange-200 transition-colors"
             >
               Traditional Healthcare
