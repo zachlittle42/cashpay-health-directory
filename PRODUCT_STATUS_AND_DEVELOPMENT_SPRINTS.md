@@ -196,35 +196,116 @@ The Local Clinics section is completely empty - no providers for any category:
 
 ---
 
-### Priority 5: Affiliate Program Setup & Monetization
+### Priority 5: Affiliate & Referral Program Setup
 **Status:** 🔴 Not Started
+**Sprint:** High Priority for Monetization
 
 **Current State:**
 - Affiliate links present in provider data
 - `referralType` field defined (affiliate_link, lead_form, direct_link)
 - No tracking implementation yet
+- No active affiliate partnerships
 
-**Next Steps:**
-1. **Apply to Affiliate Programs:**
-   - Impact.com (aggregator for health brands)
-   - Individual programs: Hims/Hers, Ro, Marek Health, Function Health
-   - Medical tourism: Vera Clinic, Mexico Bariatric Center
+**Telehealth Affiliate Opportunities:**
+| Provider | Program Type | Est. Commission | Status |
+|----------|-------------|-----------------|--------|
+| Hims/Hers | Affiliate (Impact) | $50-100/signup | Not Applied |
+| Ro | Affiliate | $50-80/signup | Not Applied |
+| Marek Health | Affiliate | TBD | Not Applied |
+| Function Health | Referral | TBD | Not Applied |
+| Everlywell | Affiliate (CJ) | 10-15% | Not Applied |
+| LetsGetChecked | Affiliate | 10-20% | Not Applied |
+| InsideTracker | Affiliate | 15-20% | Not Applied |
 
-2. **Implement Tracking:**
-   - Add UTM parameters to all outbound links
-   - Track clicks in Vercel Analytics or custom DB
-   - A/B test different CTAs
+**Local Clinics Referral Strategy:**
+- DEXA/VO2 Max clinics: Negotiate direct referral fees ($10-25/booking)
+- IV Therapy chains: Affiliate programs or lead gen fees
+- Longevity clinics: High-ticket = potential for $100+ referral fees
 
-3. **Compliance:**
-   - Add affiliate disclosure to all provider pages (already present)
-   - Ensure FTC compliance
+**Medical Tourism Referral Strategy:**
+- Direct clinic partnerships (negotiate 5-10% of procedure cost)
+- Facilitator partnerships (they handle logistics, we send leads)
+- Lead gen model: Sell qualified leads to clinics ($25-100/lead)
+
+**Implementation Steps:**
+1. **Phase 1 - Telehealth (Easiest):**
+   - [ ] Apply to Impact.com affiliate network
+   - [ ] Apply to Hims/Hers, Ro, Everlywell programs
+   - [ ] Replace placeholder URLs with affiliate links
+   - [ ] Add click tracking (UTM parameters + event logging)
+
+2. **Phase 2 - Local Clinics:**
+   - [ ] Reach out to BodySpec, DexaFit for partnership
+   - [ ] Contact IV therapy chains (Drip Hydration, IV Bars)
+   - [ ] Negotiate referral terms with longevity clinics
+
+3. **Phase 3 - Medical Tourism:**
+   - [ ] Contact top clinics directly (Vera Clinic, Mercy Dental, etc.)
+   - [ ] Set up lead capture forms for high-intent users
+   - [ ] Explore facilitator partnerships
+
+4. **Tracking & Compliance:**
+   - [ ] Add UTM parameters to all outbound links
+   - [ ] Implement click tracking in Vercel Analytics or Prisma DB
+   - [ ] Ensure FTC-compliant affiliate disclosures on all pages
+   - [ ] A/B test CTA placements and copy
 
 **Why Important:**
-- Revenue generation
-- Sustainability
-- Reinvest in content creation
+- Primary revenue model for sustainability
+- Telehealth has highest volume + easiest setup
+- Medical tourism has highest per-conversion value
 
-**ETA:** 1-2 weeks
+**ETA:** Phase 1 in 1 week, Phases 2-3 ongoing
+
+---
+
+### Priority 6: Centurion Product Spotlight
+**Status:** 🔴 Not Started
+**Sprint:** High Priority for Cross-Promotion
+
+**Goal:**
+Add prominent Centurion product placement throughout VitalityScout to drive:
+- Page views to Centurion
+- App downloads
+- User sign-ups
+- Brand awareness
+
+**Placement Strategy:**
+1. **Homepage Spotlight:**
+   - Dedicated section introducing Centurion
+   - Clear value prop and CTA
+
+2. **Contextual Placements:**
+   - In relevant guides (health optimization, longevity, etc.)
+   - On local clinics pages (if Centurion relates to health tracking)
+   - Sidebar widgets on high-traffic pages
+
+3. **Navigation Integration:**
+   - Add to main nav or footer
+   - "Powered by" or "From the makers of" messaging
+
+4. **Content Marketing:**
+   - Create guide content that naturally leads to Centurion
+   - Case studies or use cases
+
+**Implementation Tasks:**
+- [ ] Define Centurion value prop for VitalityScout audience
+- [ ] Design spotlight component/section
+- [ ] Identify highest-traffic pages for placement
+- [ ] Create tracking links (UTM) to measure conversions
+- [ ] A/B test different messaging and placements
+
+**Metrics to Track:**
+- Clicks to Centurion from VitalityScout
+- Sign-up/download conversion rate
+- Which placements drive most engagement
+
+**Why Important:**
+- Cross-promotion synergy
+- Drive users to owned product
+- Potential for higher LTV than affiliate commissions
+
+**ETA:** 1 week for initial implementation
 
 ---
 
