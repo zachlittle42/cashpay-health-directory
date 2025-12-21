@@ -2,6 +2,8 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { CATEGORIES, type Category, type Provider } from '@/lib/types';
 import { getProvidersByCategory } from '@/lib/providers';
+import Navigation from '@/components/Navigation';
+import Footer from '@/components/Footer';
 
 function ProviderCard({ provider }: { provider: Provider }) {
   return (
@@ -91,14 +93,7 @@ export default function CategoryPage({
 
   return (
     <main className="min-h-screen bg-white">
-      {/* Header */}
-      <header className="border-b border-gray-200 px-4 py-4">
-        <div className="mx-auto max-w-6xl">
-          <Link href="/" className="text-sm text-blue-600 hover:underline">
-            ← Back to all categories
-          </Link>
-        </div>
-      </header>
+      <Navigation />
 
       {/* Category Header */}
       <section className={`px-4 py-12 ${hasMedicalTourism ? 'bg-gradient-to-b from-purple-50 to-white' : 'bg-gray-50'}`}>
@@ -235,14 +230,7 @@ export default function CategoryPage({
         )}
       </section>
 
-      {/* Footer */}
-      <footer className="border-t border-gray-200 px-4 py-8">
-        <div className="mx-auto max-w-4xl text-center text-sm text-gray-500">
-          <p>
-            Prices shown are estimates based on our research. Always confirm directly with providers.
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </main>
   );
 }

@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import { CATEGORIES, type Category } from '@/lib/types';
+import Navigation from '@/components/Navigation';
+import Footer from '@/components/Footer';
 
 // Group categories for display
 const telehealthCategories: Category[] = ['labs', 'glp1', 'trt'];
@@ -41,6 +43,8 @@ function CategoryCard({ slug }: { slug: Category }) {
 export default function Home() {
   return (
     <main className="min-h-screen bg-white">
+      <Navigation />
+
       {/* Hero */}
       <section className="bg-gradient-to-b from-blue-50 to-white px-4 py-16 sm:py-20">
         <div className="mx-auto max-w-4xl text-center">
@@ -193,19 +197,74 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="border-t border-gray-200 px-4 py-8">
-        <div className="mx-auto max-w-4xl text-center text-sm text-gray-500">
-          <p className="font-medium text-gray-700">Cash-Pay Health Directory</p>
-          <p className="mt-1">
-            Compare cash-pay health services. No insurance required.
-          </p>
-          <p className="mt-4 text-xs">
-            Disclaimer: This directory is for informational purposes only. Always consult with
-            qualified healthcare providers before making medical decisions.
-          </p>
+      {/* Featured Guides */}
+      <section className="bg-white px-4 py-16">
+        <div className="mx-auto max-w-6xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Learn Before You Book
+            </h2>
+            <p className="text-lg text-gray-600">
+              Evidence-based guides to help you make informed decisions.
+            </p>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <Link
+              href="/guides/glp1-weight-loss-complete-guide"
+              className="group rounded-lg border-2 border-gray-200 p-6 hover:border-blue-400 hover:shadow-lg transition-all"
+            >
+              <div className="text-3xl mb-3">💊</div>
+              <h3 className="font-bold text-gray-900 group-hover:text-blue-600 mb-2">
+                GLP-1 Weight Loss Guide
+              </h3>
+              <p className="text-sm text-gray-600 mb-3">
+                How semaglutide works, expected results, and real costs.
+              </p>
+              <span className="text-sm font-medium text-blue-600">Read guide →</span>
+            </Link>
+
+            <Link
+              href="/guides/hair-transplant-turkey-guide"
+              className="group rounded-lg border-2 border-gray-200 p-6 hover:border-purple-400 hover:shadow-lg transition-all"
+            >
+              <div className="text-3xl mb-3">💇</div>
+              <h3 className="font-bold text-gray-900 group-hover:text-purple-600 mb-2">
+                Hair Transplant in Turkey
+              </h3>
+              <p className="text-sm text-gray-600 mb-3">
+                Safety checklist, choosing clinics, and what to expect.
+              </p>
+              <span className="text-sm font-medium text-purple-600">Read guide →</span>
+            </Link>
+
+            <Link
+              href="/guides/mexico-medical-tourism-planner"
+              className="group rounded-lg border-2 border-gray-200 p-6 hover:border-green-400 hover:shadow-lg transition-all"
+            >
+              <div className="text-3xl mb-3">🇲🇽</div>
+              <h3 className="font-bold text-gray-900 group-hover:text-green-600 mb-2">
+                Mexico Trip Planner
+              </h3>
+              <p className="text-sm text-gray-600 mb-3">
+                Border crossing tips, packing list, and trip timeline.
+              </p>
+              <span className="text-sm font-medium text-green-600">Read guide →</span>
+            </Link>
+          </div>
+
+          <div className="text-center mt-8">
+            <Link
+              href="/guides"
+              className="inline-block rounded-lg bg-gray-900 px-6 py-3 text-sm font-medium text-white hover:bg-gray-800 transition-colors"
+            >
+              View All Guides →
+            </Link>
+          </div>
         </div>
-      </footer>
+      </section>
+
+      <Footer />
     </main>
   );
 }
