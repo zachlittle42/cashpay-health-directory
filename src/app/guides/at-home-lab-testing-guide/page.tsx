@@ -7,8 +7,22 @@ export const metadata: Metadata = {
 };
 
 export default function LabTestingGuide() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'At-Home Lab Testing Guide: How It Works & What to Test',
+    description: 'Complete guide to at-home blood tests including how they work, accuracy comparison with traditional labs, what biomarkers to test, and which services to use.',
+    author: { '@type': 'Organization', name: 'VitalityScout' },
+    publisher: { '@type': 'Organization', name: 'VitalityScout' },
+    datePublished: '2024-12-01',
+    dateModified: '2024-12-21',
+    mainEntityOfPage: 'https://vitalityscout.com/guides/at-home-lab-testing-guide',
+    keywords: ['at-home lab testing', 'direct to consumer labs', 'biomarker testing', 'Quest', 'LabCorp']
+  };
+
   return (
     <main className="min-h-screen bg-white">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <header className="border-b border-gray-200 px-4 py-4">
         <div className="mx-auto max-w-4xl">
           <Link href="/" className="text-sm text-blue-600 hover:underline">
