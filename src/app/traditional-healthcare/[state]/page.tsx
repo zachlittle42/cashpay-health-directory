@@ -202,7 +202,7 @@ export default function StatePage({ params }: { params: { state: string } }) {
       <section className="bg-blue-50 px-4 py-12 border-t border-blue-100">
         <div className="mx-auto max-w-4xl text-center">
           <h3 className="text-2xl font-bold text-gray-900 mb-3">
-            Tired of Insurance Hassles?
+            Medical Tourism
           </h3>
           <p className="text-gray-600 mb-6">
             Explore cash-pay alternatives: telehealth, local clinics, and medical tourism.
@@ -222,7 +222,7 @@ export default function StatePage({ params }: { params: { state: string } }) {
             </Link>
             <Link
               href="/dental"
-              className="inline-block rounded-lg border-2 border-blue-600 px-6 py-3 font-medium text-blue-600 hover:bg-blue-50"
+              className="inline-block rounded-lg bg-blue-600 px-6 py-3 font-medium text-white hover:bg-blue-700"
             >
               Dental Abroad
             </Link>
