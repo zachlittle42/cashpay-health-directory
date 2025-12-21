@@ -58,14 +58,6 @@ const guides = [
     icon: '🇲🇽',
   },
   {
-    slug: 'turkey-hair-transplant-trip-planner',
-    title: 'Turkey Hair Transplant: Trip Planner',
-    description: 'Your 7-day Istanbul itinerary: flights, hotels, what to pack, and recovery-friendly activities.',
-    category: 'Trip Planning',
-    readTime: '14 min',
-    icon: '🇹🇷',
-  },
-  {
     slug: 'medical-travel-insurance-guide',
     title: 'Medical Travel Insurance Guide',
     description: 'What standard travel insurance covers vs doesn\'t, medical tourism-specific insurance, and what you actually need.',
