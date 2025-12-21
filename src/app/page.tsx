@@ -55,24 +55,24 @@ export default function Home() {
             From insurance-based hospitals to telehealth and medical tourism—find the right care at the right price.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3 text-sm">
-            <a
-              href="#telehealth"
-              className="rounded-full bg-blue-100 px-4 py-1.5 text-blue-700 hover:bg-blue-200 transition-colors cursor-pointer"
+            <Link
+              href="/telehealth"
+              className="rounded-full bg-blue-100 px-4 py-1.5 text-blue-700 hover:bg-blue-200 transition-colors"
             >
               US Telehealth
-            </a>
-            <a
-              href="#local-independent"
-              className="rounded-full bg-green-100 px-4 py-1.5 text-green-700 hover:bg-green-200 transition-colors cursor-pointer"
+            </Link>
+            <Link
+              href="/local-clinics"
+              className="rounded-full bg-green-100 px-4 py-1.5 text-green-700 hover:bg-green-200 transition-colors"
             >
               Local Independent Clinics
-            </a>
-            <a
-              href="#medical-tourism"
-              className="rounded-full bg-purple-100 px-4 py-1.5 text-purple-700 hover:bg-purple-200 transition-colors cursor-pointer"
+            </Link>
+            <Link
+              href="/medical-tourism"
+              className="rounded-full bg-purple-100 px-4 py-1.5 text-purple-700 hover:bg-purple-200 transition-colors"
             >
               Medical Tourism
-            </a>
+            </Link>
             <Link
               href="/traditional-healthcare"
               className="rounded-full bg-orange-100 px-4 py-1.5 text-orange-700 hover:bg-orange-200 transition-colors"
