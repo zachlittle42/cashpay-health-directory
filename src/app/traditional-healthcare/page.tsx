@@ -128,7 +128,7 @@ export default function TraditionalHealthcareLanding() {
       </section>
 
       {/* National Champions - Honor Roll */}
-      <section className="bg-white px-4 py-12 border-b border-gray-200">
+      <section id="national-champions" className="bg-white px-4 py-12 border-b border-gray-200 scroll-mt-20">
         <div className="mx-auto max-w-6xl">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-gray-900 mb-2">
@@ -204,7 +204,7 @@ export default function TraditionalHealthcareLanding() {
       </section>
 
       {/* Search & State List */}
-      <section className="bg-white px-4 py-12">
+      <section id="state-directory" className="bg-white px-4 py-12 scroll-mt-20">
         <div className="mx-auto max-w-5xl">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-gray-900 mb-2">
