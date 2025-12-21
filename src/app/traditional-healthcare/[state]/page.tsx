@@ -2,122 +2,16 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
-
-// Temporary: Import from the old guide page until we fully migrate data
-// TODO: Move this to shared lib/us-healthcare-data.ts
-interface Region {
-  name: string;
-  cities: string;
-  population?: string;
-}
-
-interface HealthSystem {
-  name: string;
-  rank?: string;
-}
-
-interface StateData {
-  name: string;
-  abbreviation: string;
-  slug: string;
-  population: string;
-  regions: Region[];
-  healthSystems?: { [regionName: string]: HealthSystem[] };
-}
-
-// For now, just California has full data - others will show regions only
-const statesDataMap: Record<string, StateData> = {
-  'california': {
-    name: 'California',
-    abbreviation: 'CA',
-    slug: 'california',
-    population: '39M',
-    regions: [
-      { name: 'Bay Area - San Francisco', cities: 'San Francisco, Oakland, Berkeley', population: '~4.7M' },
-      { name: 'Bay Area - South Bay/Peninsula', cities: 'San Jose, Palo Alto, Mountain View', population: '~3M' },
-      { name: 'Sacramento Valley', cities: 'Sacramento, Stockton, Modesto', population: '~3.5M' },
-      { name: 'Los Angeles Metro', cities: 'Los Angeles, Pasadena, Long Beach', population: '~10M' },
-      { name: 'Orange County', cities: 'Irvine, Anaheim, Newport Beach', population: '~3.2M' },
-      { name: 'San Diego', cities: 'San Diego, Chula Vista', population: '~3.3M' },
-      { name: 'Inland Empire', cities: 'Riverside, San Bernardino, Ontario', population: '~4.6M' },
-      { name: 'Central Valley / San Joaquin', cities: 'Fresno, Bakersfield, Visalia', population: '~4M' },
-      { name: 'Central Coast', cities: 'Santa Barbara, San Luis Obispo, Monterey', population: '~1.5M' },
-      { name: 'Far North / Superior California', cities: 'Redding, Chico, Eureka', population: '~600K' },
-    ],
-    healthSystems: {
-      'Bay Area - San Francisco': [
-        { name: 'UCSF Health', rank: '#10 nationally' },
-        { name: 'Sutter CPMC' },
-        { name: 'Kaiser San Francisco' },
-        { name: 'Zuckerberg SF General' },
-      ],
-      'Bay Area - South Bay/Peninsula': [
-        { name: 'Stanford Health Care', rank: '#12 nationally' },
-        { name: 'El Camino Health' },
-        { name: 'Kaiser Santa Clara' },
-        { name: 'Good Samaritan' },
-      ],
-      'Sacramento Valley': [
-        { name: 'UC Davis Medical Center', rank: 'Top academic center' },
-        { name: 'Sutter Medical Center Sacramento' },
-        { name: 'Kaiser Sacramento' },
-        { name: 'Dignity Health Mercy General' },
-      ],
-      'Los Angeles Metro': [
-        { name: 'Cedars-Sinai', rank: '#7 nationally' },
-        { name: 'UCLA Medical Center', rank: '#4 nationally' },
-        { name: 'Keck Medical Center of USC' },
-        { name: "Providence Saint John's" },
-      ],
-      'Orange County': [
-        { name: 'Hoag Hospital' },
-        { name: 'UCI Medical Center' },
-        { name: 'MemorialCare Orange Coast' },
-        { name: 'Providence Mission' },
-      ],
-      'San Diego': [
-        { name: 'UC San Diego Health', rank: '#15 nationally' },
-        { name: 'Scripps La Jolla' },
-        { name: 'Sharp Memorial' },
-        { name: 'Kaiser San Diego' },
-      ],
-      'Inland Empire': [
-        { name: 'Loma Linda University Medical Center', rank: 'Top academic center' },
-        { name: 'Riverside Community Hospital' },
-        { name: 'Kaiser Riverside' },
-        { name: 'Arrowhead Regional' },
-      ],
-      'Central Valley / San Joaquin': [
-        { name: 'St. Agnes Medical Center (Fresno)' },
-        { name: 'Community Medical Center (Fresno)' },
-        { name: 'Adventist Health Bakersfield' },
-        { name: 'Kaweah Health (Visalia)' },
-      ],
-      'Central Coast': [
-        { name: 'Santa Barbara Cottage Hospital' },
-        { name: 'Community Hospital of Monterey Peninsula' },
-        { name: 'Sierra Vista Regional (SLO)' },
-        { name: 'Marian Regional (Santa Maria)' },
-      ],
-      'Far North / Superior California': [
-        { name: 'Mercy Medical Center (Redding)', rank: '#1 in region' },
-        { name: 'Shasta Regional Medical Center' },
-        { name: 'Enloe Medical Center (Chico)' },
-        { name: 'Providence St. Joseph (Eureka)' },
-      ],
-    },
-  },
-  // Add other states as we research them
-};
+import { getStateBySlug, getAllStateSlugs, type StateData } from '@/lib/us-healthcare-data';
 
 export function generateStaticParams() {
-  return Object.keys(statesDataMap).map((slug) => ({
+  return getAllStateSlugs().map((slug) => ({
     state: slug,
   }));
 }
 
 export default function StatePage({ params }: { params: { state: string } }) {
-  const stateData = statesDataMap[params.state];
+  const stateData = getStateBySlug(params.state);
 
   if (!stateData) {
     notFound();
