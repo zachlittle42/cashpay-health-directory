@@ -90,13 +90,13 @@ export default function TelehealthHub() {
             >
               <div className="text-4xl mb-3">🧪</div>
               <h3 className="text-xl font-bold text-gray-900 group-hover:text-blue-600 mb-2">
-                At-Home Labs
+                At-Home Lab Testing
               </h3>
               <p className="text-gray-600 mb-4">
                 Comprehensive blood panels, hormone testing, and biomarker analysis—no doctor visit required.
               </p>
               <div className="text-sm text-gray-500 mb-3">
-                <strong>Pricing:</strong> $50-850 per panel
+                <strong>Pricing:</strong> $17-300/month
               </div>
               <span className="text-blue-600 font-medium">View Providers →</span>
             </Link>

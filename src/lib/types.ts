@@ -113,7 +113,7 @@ export const CATEGORIES: Record<Category, CategoryInfo> = {
   // Telehealth only
   labs: {
     slug: 'labs',
-    name: 'At-Home Labs',
+    name: 'At-Home Lab Testing',
     description: 'Blood panels, hormone testing, and biomarkers delivered to your door',
     icon: '🧪',
     hasMedicalTourism: false,

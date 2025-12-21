@@ -212,7 +212,7 @@ export default function StatePage({ params }: { params: { state: string } }) {
               href="/labs"
               className="inline-block rounded-lg bg-blue-600 px-6 py-3 font-medium text-white hover:bg-blue-700"
             >
-              At-Home Labs
+              At-Home Lab Testing
             </Link>
             <Link
               href="/glp1"
