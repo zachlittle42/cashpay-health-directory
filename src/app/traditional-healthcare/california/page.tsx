@@ -77,15 +77,29 @@ export default function CaliforniaHealthcarePage() {
 
       {/* Regions */}
       <section className="mx-auto max-w-5xl px-4 py-12">
-        <h2 className="text-2xl font-bold text-gray-900 mb-8">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">
           Healthcare Regions
         </h2>
+
+        {/* Region Quick Navigation */}
+        <div className="flex flex-wrap gap-2 mb-8">
+          {CALIFORNIA_REGIONS.map((region) => (
+            <a
+              key={region.slug}
+              href={`#${region.slug}`}
+              className="px-3 py-1.5 text-sm bg-blue-50 text-blue-700 rounded-full hover:bg-blue-100 transition-colors"
+            >
+              {region.name}
+            </a>
+          ))}
+        </div>
 
         <div className="space-y-6">
           {CALIFORNIA_REGIONS.map((region) => (
             <div
               key={region.slug}
-              className="rounded-lg border-2 border-gray-200 bg-white overflow-hidden hover:border-blue-300 hover:shadow-lg transition-all"
+              id={region.slug}
+              className="rounded-lg border-2 border-gray-200 bg-white overflow-hidden hover:border-blue-300 hover:shadow-lg transition-all scroll-mt-4"
             >
               {/* Region Header */}
               <div className="p-6 border-b border-gray-100 bg-gray-50">
