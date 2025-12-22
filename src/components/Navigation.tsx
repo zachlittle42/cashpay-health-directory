@@ -132,6 +132,24 @@ export default function Navigation() {
                   </div>
 
                   <div className="border-t border-gray-200 pt-3 mb-2">
+                    <div className="text-xs font-semibold text-gray-500 uppercase mb-2">Longevity & Stem Cells</div>
+                  </div>
+                  <div className="space-y-1.5 mb-4">
+                    <Link href="/longevity" className="block text-sm text-gray-700 hover:text-blue-600 py-1">
+                      ⏳ Longevity Hub
+                    </Link>
+                    <Link href="/guides/mexico-stem-cell-guide" className="block text-sm text-gray-700 hover:text-blue-600 py-1">
+                      🇲🇽 Stem Cells in Mexico
+                    </Link>
+                    <Link href="/guides/panama-stem-cell-guide" className="block text-sm text-gray-700 hover:text-blue-600 py-1">
+                      🇵🇦 Panama Stem Cells
+                    </Link>
+                    <Link href="/guides/cayman-islands-stem-cell-guide" className="block text-sm text-gray-700 hover:text-blue-600 py-1">
+                      🇰🇾 Cayman Islands Stem Cells
+                    </Link>
+                  </div>
+
+                  <div className="border-t border-gray-200 pt-3 mb-2">
                     <div className="text-xs font-semibold text-gray-500 uppercase mb-2">Trip Planning</div>
                   </div>
                   <div className="space-y-1.5 mb-4">
@@ -394,6 +412,12 @@ export default function Navigation() {
                   <Link href="/guides/at-home-lab-testing-guide" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🧪 At-Home Lab Testing</Link>
                   <Link href="/guides/gastric-sleeve-mexico-safety" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>⚖️ Gastric Sleeve in Mexico</Link>
                   <Link href="/guides/dexa-scan-guide" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>📊 DEXA Scan Guide</Link>
+                  <div className="border-t border-gray-100 my-2"></div>
+                  <div className="text-xs font-semibold text-gray-500 uppercase mb-2 px-3">Longevity & Stem Cells</div>
+                  <Link href="/longevity" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>⏳ Longevity Hub</Link>
+                  <Link href="/guides/mexico-stem-cell-guide" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🇲🇽 Stem Cells in Mexico</Link>
+                  <Link href="/guides/panama-stem-cell-guide" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🇵🇦 Panama Stem Cells</Link>
+                  <Link href="/guides/cayman-islands-stem-cell-guide" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🇰🇾 Cayman Islands Stem Cells</Link>
                   <div className="border-t border-gray-100 my-2"></div>
                   <div className="text-xs font-semibold text-gray-500 uppercase mb-2 px-3">Trip Planning</div>
                   <Link href="/guides/mexico-medical-tourism-planner" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🇲🇽 Mexico Trip Planner</Link>
