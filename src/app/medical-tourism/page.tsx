@@ -298,6 +298,46 @@ export default function MedicalTourismHub() {
             </div>
           </Link>
         </div>
+
+        {/* Longevity & Stem Cell Destinations */}
+        <div className="mt-8">
+          <h3 className="font-semibold text-gray-900 mb-3 flex items-center gap-2">
+            <span className="text-xl">🧬</span> Stem Cell & Longevity Destinations
+          </h3>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <Link href="/destinations/panama" className="flex items-center gap-3 rounded-lg border border-teal-200 bg-teal-50 p-5 hover:border-teal-400 hover:shadow-md transition-all">
+              <span className="text-3xl">🇵🇦</span>
+              <div>
+                <div className="font-bold text-gray-900">Panama</div>
+                <div className="text-sm text-gray-600">Stem Cells, Golden Cells</div>
+              </div>
+            </Link>
+
+            <Link href="/destinations/cayman-islands" className="flex items-center gap-3 rounded-lg border border-teal-200 bg-teal-50 p-5 hover:border-teal-400 hover:shadow-md transition-all">
+              <span className="text-3xl">🇰🇾</span>
+              <div>
+                <div className="font-bold text-gray-900">Cayman Islands</div>
+                <div className="text-sm text-gray-600">Expanded Stem Cells</div>
+              </div>
+            </Link>
+
+            <Link href="/destinations/colombia" className="flex items-center gap-3 rounded-lg border border-teal-200 bg-teal-50 p-5 hover:border-teal-400 hover:shadow-md transition-all">
+              <span className="text-3xl">🇨🇴</span>
+              <div>
+                <div className="font-bold text-gray-900">Colombia</div>
+                <div className="text-sm text-gray-600">BioXcellerator, MSCs</div>
+              </div>
+            </Link>
+
+            <Link href="/destinations/dubai" className="flex items-center gap-3 rounded-lg border border-teal-200 bg-teal-50 p-5 hover:border-teal-400 hover:shadow-md transition-all">
+              <span className="text-3xl">🇦🇪</span>
+              <div>
+                <div className="font-bold text-gray-900">Dubai</div>
+                <div className="text-sm text-gray-600">Luxury Longevity</div>
+              </div>
+            </Link>
+          </div>
+        </div>
       </section>
 
       {/* Travel Guides Hub */}
@@ -392,6 +432,65 @@ export default function MedicalTourismHub() {
                   <div>
                     <div className="font-bold text-gray-900 mb-1">Gastric Sleeve in Mexico</div>
                     <div className="text-sm text-gray-600">Safety data, complication rates, surgeon selection</div>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          </div>
+
+          {/* Longevity & Stem Cell Guides */}
+          <div className="mb-10">
+            <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+              <span className="text-2xl">🧬</span> Longevity & Stem Cell Guides
+              <span className="text-sm font-normal text-gray-500 ml-2">— Regenerative medicine destinations</span>
+            </h3>
+            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+              <Link href="/guides/panama-stem-cell-guide" className="bg-white rounded-lg border border-teal-200 p-5 hover:shadow-lg transition-shadow">
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl">🇵🇦</span>
+                  <div>
+                    <div className="font-bold text-gray-900 mb-1">Panama Stem Cells</div>
+                    <div className="text-sm text-gray-600">Golden Cells, Stem Cell Institute</div>
+                  </div>
+                </div>
+              </Link>
+
+              <Link href="/guides/cayman-islands-stem-cell-guide" className="bg-white rounded-lg border border-teal-200 p-5 hover:shadow-lg transition-shadow">
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl">🇰🇾</span>
+                  <div>
+                    <div className="font-bold text-gray-900 mb-1">Cayman Islands Stem Cells</div>
+                    <div className="text-sm text-gray-600">DVC Stem, Regenexx Cayman</div>
+                  </div>
+                </div>
+              </Link>
+
+              <Link href="/guides/us-vs-mexico-stem-cells" className="bg-white rounded-lg border border-teal-200 p-5 hover:shadow-lg transition-shadow">
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl">🆚</span>
+                  <div>
+                    <div className="font-bold text-gray-900 mb-1">US vs Mexico Stem Cells</div>
+                    <div className="text-sm text-gray-600">Cost, legality, and safety comparison</div>
+                  </div>
+                </div>
+              </Link>
+
+              <Link href="/guides/panama-vs-cayman-stem-cells" className="bg-white rounded-lg border border-teal-200 p-5 hover:shadow-lg transition-shadow">
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl">🔄</span>
+                  <div>
+                    <div className="font-bold text-gray-900 mb-1">Panama vs Cayman</div>
+                    <div className="text-sm text-gray-600">Premium destination comparison</div>
+                  </div>
+                </div>
+              </Link>
+
+              <Link href="/longevity" className="bg-white rounded-lg border border-teal-200 p-5 hover:shadow-lg transition-shadow">
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl">⏳</span>
+                  <div>
+                    <div className="font-bold text-gray-900 mb-1">Longevity Hub</div>
+                    <div className="text-sm text-gray-600">US clinics, treatments, regional guides</div>
                   </div>
                 </div>
               </Link>

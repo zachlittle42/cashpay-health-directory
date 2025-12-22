@@ -93,6 +93,22 @@ const guides = [
   },
   // Comparison Guides
   {
+    slug: 'us-vs-mexico-stem-cells',
+    title: 'US vs Mexico Stem Cell Therapy',
+    description: 'Cost, legality, and safety comparison. FDA regulations vs COFEPRIS, and which approach is right for you.',
+    category: 'Comparison',
+    readTime: '15 min',
+    icon: '🆚',
+  },
+  {
+    slug: 'panama-vs-cayman-stem-cells',
+    title: 'Panama vs Cayman Islands Stem Cells',
+    description: 'Premium destination comparison: Golden Cells vs expanded autologous, single trip vs two-trip process.',
+    category: 'Comparison',
+    readTime: '14 min',
+    icon: '🔄',
+  },
+  {
     slug: 'mexico-vs-costa-rica-dental',
     title: 'Mexico vs Costa Rica for Dental Work',
     description: 'Which country is better for your dental work? Price comparison, quality, convenience, and recommendations.',

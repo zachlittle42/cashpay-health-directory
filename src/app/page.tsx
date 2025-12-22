@@ -173,12 +173,14 @@ export default function Home() {
             <h3 className="font-semibold text-gray-900 mb-4">Popular Destinations</h3>
             <div className="flex flex-wrap gap-3">
               {[
-                { name: 'Mexico', flag: '🇲🇽', specialties: 'Dental, Bariatric' },
+                { name: 'Mexico', flag: '🇲🇽', specialties: 'Dental, Bariatric, Stem Cells' },
                 { name: 'Turkey', flag: '🇹🇷', specialties: 'Hair Transplant, Dental' },
                 { name: 'South Korea', flag: '🇰🇷', specialties: 'Plastic Surgery' },
                 { name: 'Thailand', flag: '🇹🇭', specialties: 'Cosmetic, Orthopedic' },
                 { name: 'Spain', flag: '🇪🇸', specialties: 'Fertility/IVF' },
-                { name: 'India', flag: '🇮🇳', specialties: 'Cardiac, Orthopedic' },
+                { name: 'Panama', flag: '🇵🇦', specialties: 'Stem Cells' },
+                { name: 'Cayman Islands', flag: '🇰🇾', specialties: 'Stem Cells' },
+                { name: 'Colombia', flag: '🇨🇴', specialties: 'Stem Cells' },
               ].map((dest) => (
                 <Link
                   key={dest.name}
@@ -311,17 +313,17 @@ export default function Home() {
             </Link>
 
             <Link
-              href="/guides/us-healthcare-by-region"
-              className="group rounded-lg border-2 border-gray-200 p-6 hover:border-orange-400 hover:shadow-lg transition-all"
+              href="/longevity"
+              className="group rounded-lg border-2 border-gray-200 p-6 hover:border-teal-400 hover:shadow-lg transition-all"
             >
-              <div className="text-3xl mb-3">🏥</div>
-              <h3 className="font-bold text-gray-900 group-hover:text-orange-600 mb-2">
-                US Healthcare by Region
+              <div className="text-3xl mb-3">🧬</div>
+              <h3 className="font-bold text-gray-900 group-hover:text-teal-600 mb-2">
+                Longevity & Stem Cells
               </h3>
               <p className="text-sm text-gray-600 mb-3">
-                Top hospitals and health systems across major US regions.
+                US clinics, international options, and treatment guides.
               </p>
-              <span className="text-sm font-medium text-orange-600">Read guide →</span>
+              <span className="text-sm font-medium text-teal-600">Explore hub →</span>
             </Link>
           </div>
 
