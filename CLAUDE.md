@@ -92,9 +92,17 @@ src/
 3. Run `npm run build` before committing to verify compilation
 4. Write clear commit messages describing what changed and why
 
+## Git & Deployment Workflow
+
+- **Commit frequently** as you complete features (don't batch everything at the end)
+- **Run `npm run build`** before each commit to verify compilation
+- **Push to main** triggers auto-deploy to Vercel (production)
+- **After significant work sessions**, ensure all changes are committed and pushed
+- **Update PRODUCT_STATUS_AND_DEVELOPMENT_SPRINTS.md** with completed work before ending sessions
+
 ## Documentation Files
 
 - `README.md` - Repository documentation
-- `STRATEGY.md` - Business strategy and monetization
-- `STATUS.md` - Current status and development sprints
+- `BUSINESS_PLAN.md` - Business strategy and monetization
+- `PRODUCT_STATUS_AND_DEVELOPMENT_SPRINTS.md` - Current status and development sprints
 - `CLAUDE.md` - This file (Claude Code instructions)
