@@ -18,7 +18,11 @@ export type Category =
   | 'fertility'
   | 'orthopedic'
   | 'cardiac'
-  | 'vision';
+  | 'vision'
+  // Healthcare Resources
+  | 'insurance'
+  | 'pharma'
+  | 'drug_registry';
 
 export type DeliveryModel =
   | 'telehealth_national'
@@ -265,5 +269,34 @@ export const CATEGORIES: Record<Category, CategoryInfo> = {
     hasTelehealth: false,
     topDestinations: ['Mexico', 'Turkey', 'India'],
     typicalSavings: '50-70%',
+  },
+
+  // Healthcare Resources
+  insurance: {
+    slug: 'insurance',
+    name: 'Insurance Companies',
+    description: 'Compare health insurance providers, plans, and coverage options',
+    icon: '🛡️',
+    hasMedicalTourism: false,
+    hasLocalUS: true,
+    hasTelehealth: true,
+  },
+  pharma: {
+    slug: 'pharma',
+    name: 'Pharmaceutical Companies',
+    description: 'Major drug manufacturers and patient assistance programs',
+    icon: '🏭',
+    hasMedicalTourism: false,
+    hasLocalUS: true,
+    hasTelehealth: false,
+  },
+  drug_registry: {
+    slug: 'drug_registry',
+    name: 'Drug Registries',
+    description: 'FDA databases, drug lookup tools, and medication information resources',
+    icon: '💊',
+    hasMedicalTourism: false,
+    hasLocalUS: true,
+    hasTelehealth: true,
   },
 };

@@ -3,6 +3,9 @@
 import { Provider, Category } from './types';
 import telehealthProviders from './providers-telehealth';
 import medicalTourismProviders from './providers-medical-tourism';
+import insuranceProviders from './providers-insurance';
+import pharmaProviders from './providers-pharma';
+import drugRegistryProviders from './providers-drug-registry';
 
 // Combine all providers into a single lookup
 export const ALL_PROVIDERS: Record<Category, Provider[]> = {
@@ -28,6 +31,11 @@ export const ALL_PROVIDERS: Record<Category, Provider[]> = {
   orthopedic: [],
   cardiac: [],
   vision: [],
+
+  // Healthcare Resources
+  insurance: insuranceProviders.insurance,
+  pharma: pharmaProviders.pharma,
+  drug_registry: drugRegistryProviders.drug_registry,
 };
 
 // Get providers by category
@@ -67,4 +75,4 @@ export function getProviderCountByCategory(): Record<Category, number> {
 }
 
 // Re-export individual provider arrays for direct import
-export { telehealthProviders, medicalTourismProviders };
+export { telehealthProviders, medicalTourismProviders, insuranceProviders, pharmaProviders, drugRegistryProviders };
