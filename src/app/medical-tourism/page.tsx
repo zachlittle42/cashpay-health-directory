@@ -22,7 +22,7 @@ export default function MedicalTourismHub() {
         '@type': 'Place',
         address: {
           '@type': 'PostalAddress',
-          addressCountry: ['Mexico', 'Turkey', 'South Korea', 'Spain']
+          addressCountry: ['Mexico', 'Turkey', 'South Korea', 'Thailand', 'India', 'Costa Rica', 'Spain', 'Czech Republic']
         }
       }
     },
@@ -227,10 +227,13 @@ export default function MedicalTourismHub() {
 
       {/* Destinations */}
       <section className="mx-auto max-w-6xl px-4 py-12">
-        <h2 className="text-2xl font-bold text-gray-900 mb-6">
+        <h2 className="text-2xl font-bold text-gray-900 mb-3">
           Popular Destinations
         </h2>
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <p className="text-gray-600 mb-6">
+          Each destination has its specialties. Click through for detailed guides, costs, and what to expect.
+        </p>
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           <Link href="/destinations/mexico" className="flex items-center gap-3 rounded-lg border border-gray-200 bg-white p-5 hover:border-purple-400 hover:shadow-md transition-all">
             <span className="text-3xl">🇲🇽</span>
             <div>
@@ -243,7 +246,7 @@ export default function MedicalTourismHub() {
             <span className="text-3xl">🇹🇷</span>
             <div>
               <div className="font-bold text-gray-900">Turkey</div>
-              <div className="text-sm text-gray-600">Hair Transplant</div>
+              <div className="text-sm text-gray-600">Hair Transplant, Dental</div>
             </div>
           </Link>
 
@@ -254,45 +257,174 @@ export default function MedicalTourismHub() {
               <div className="text-sm text-gray-600">Plastic Surgery</div>
             </div>
           </Link>
+
+          <Link href="/destinations/thailand" className="flex items-center gap-3 rounded-lg border border-gray-200 bg-white p-5 hover:border-purple-400 hover:shadow-md transition-all">
+            <span className="text-3xl">🇹🇭</span>
+            <div>
+              <div className="font-bold text-gray-900">Thailand</div>
+              <div className="text-sm text-gray-600">Hospitals, Dental, Cosmetic</div>
+            </div>
+          </Link>
+
+          <Link href="/destinations/india" className="flex items-center gap-3 rounded-lg border border-gray-200 bg-white p-5 hover:border-purple-400 hover:shadow-md transition-all">
+            <span className="text-3xl">🇮🇳</span>
+            <div>
+              <div className="font-bold text-gray-900">India</div>
+              <div className="text-sm text-gray-600">Cardiac, Orthopedic</div>
+            </div>
+          </Link>
+
+          <Link href="/destinations/costa-rica" className="flex items-center gap-3 rounded-lg border border-gray-200 bg-white p-5 hover:border-purple-400 hover:shadow-md transition-all">
+            <span className="text-3xl">🇨🇷</span>
+            <div>
+              <div className="font-bold text-gray-900">Costa Rica</div>
+              <div className="text-sm text-gray-600">Dental, Cosmetic</div>
+            </div>
+          </Link>
+
+          <Link href="/destinations/spain" className="flex items-center gap-3 rounded-lg border border-gray-200 bg-white p-5 hover:border-purple-400 hover:shadow-md transition-all">
+            <span className="text-3xl">🇪🇸</span>
+            <div>
+              <div className="font-bold text-gray-900">Spain</div>
+              <div className="text-sm text-gray-600">Fertility, IVF</div>
+            </div>
+          </Link>
+
+          <Link href="/destinations/czech-republic" className="flex items-center gap-3 rounded-lg border border-gray-200 bg-white p-5 hover:border-purple-400 hover:shadow-md transition-all">
+            <span className="text-3xl">🇨🇿</span>
+            <div>
+              <div className="font-bold text-gray-900">Czech Republic</div>
+              <div className="text-sm text-gray-600">IVF, Dental</div>
+            </div>
+          </Link>
         </div>
       </section>
 
-      {/* Planning Resources */}
-      <section className="bg-purple-50 px-4 py-12">
+      {/* Travel Guides Hub */}
+      <section className="bg-purple-50 px-4 py-16">
         <div className="mx-auto max-w-6xl">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">
-            Planning Your Trip
+          <h2 className="text-3xl font-bold text-gray-900 mb-3 text-center">
+            Medical Tourism Guides
           </h2>
-          <div className="grid gap-6 md:grid-cols-3">
-            <Link href="/guides/mexico-medical-tourism-planner" className="bg-white rounded-lg border border-purple-200 p-6 hover:shadow-lg transition-shadow">
-              <div className="flex items-start gap-3">
-                <span className="text-3xl">🇲🇽</span>
-                <div>
-                  <div className="font-bold text-gray-900 mb-1">Mexico Trip Planner</div>
-                  <div className="text-sm text-gray-600">Border crossing, packing list, timeline</div>
-                </div>
-              </div>
-            </Link>
+          <p className="text-gray-600 mb-10 text-center max-w-2xl mx-auto">
+            Everything you need to plan your trip, choose the right procedure, and travel safely.
+          </p>
 
-            <Link href="/guides/turkey-hair-transplant-trip-planner" className="bg-white rounded-lg border border-purple-200 p-6 hover:shadow-lg transition-shadow">
-              <div className="flex items-start gap-3">
-                <span className="text-3xl">🇹🇷</span>
-                <div>
-                  <div className="font-bold text-gray-900 mb-1">Turkey Trip Planner</div>
-                  <div className="text-sm text-gray-600">7-day Istanbul itinerary</div>
+          {/* Trip Planners */}
+          <div className="mb-10">
+            <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+              <span className="text-2xl">🗺️</span> Trip Planners
+              <span className="text-sm font-normal text-gray-500 ml-2">— Logistics, flights, packing, what to expect</span>
+            </h3>
+            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+              <Link href="/guides/mexico-medical-tourism-planner" className="bg-white rounded-lg border border-purple-200 p-5 hover:shadow-lg transition-shadow">
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl">🇲🇽</span>
+                  <div>
+                    <div className="font-bold text-gray-900 mb-1">Mexico Trip Planner</div>
+                    <div className="text-sm text-gray-600">Border crossing, Tijuana vs Los Algodones, packing list</div>
+                  </div>
                 </div>
-              </div>
-            </Link>
+              </Link>
 
-            <Link href="/guides/medical-travel-insurance-guide" className="bg-white rounded-lg border border-purple-200 p-6 hover:shadow-lg transition-shadow">
-              <div className="flex items-start gap-3">
-                <span className="text-3xl">🛡️</span>
-                <div>
-                  <div className="font-bold text-gray-900 mb-1">Travel Insurance Guide</div>
-                  <div className="text-sm text-gray-600">What you actually need</div>
+              <Link href="/guides/turkey-hair-transplant-trip-planner" className="bg-white rounded-lg border border-purple-200 p-5 hover:shadow-lg transition-shadow">
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl">🇹🇷</span>
+                  <div>
+                    <div className="font-bold text-gray-900 mb-1">Turkey Trip Planner</div>
+                    <div className="text-sm text-gray-600">7-day Istanbul itinerary, hotels, recovery</div>
+                  </div>
                 </div>
-              </div>
-            </Link>
+              </Link>
+
+              <Link href="/guides/thailand-medical-tourism-guide" className="bg-white rounded-lg border border-purple-200 p-5 hover:shadow-lg transition-shadow">
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl">🇹🇭</span>
+                  <div>
+                    <div className="font-bold text-gray-900 mb-1">Thailand Complete Guide</div>
+                    <div className="text-sm text-gray-600">Bangkok hospitals, Bumrungrad, trip planning</div>
+                  </div>
+                </div>
+              </Link>
+
+              <Link href="/guides/costa-rica-dental-guide" className="bg-white rounded-lg border border-purple-200 p-5 hover:shadow-lg transition-shadow">
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl">🇨🇷</span>
+                  <div>
+                    <div className="font-bold text-gray-900 mb-1">Costa Rica Dental Guide</div>
+                    <div className="text-sm text-gray-600">US-trained dentists, San Jose clinics, costs</div>
+                  </div>
+                </div>
+              </Link>
+
+              <Link href="/guides/spain-fertility-ivf-guide" className="bg-white rounded-lg border border-purple-200 p-5 hover:shadow-lg transition-shadow">
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl">🇪🇸</span>
+                  <div>
+                    <div className="font-bold text-gray-900 mb-1">Spain IVF Guide</div>
+                    <div className="text-sm text-gray-600">Fertility clinics, donor eggs, success rates</div>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          </div>
+
+          {/* Procedure Guides */}
+          <div className="mb-10">
+            <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+              <span className="text-2xl">🔬</span> Procedure Guides
+              <span className="text-sm font-normal text-gray-500 ml-2">— Safety, choosing providers, what to expect</span>
+            </h3>
+            <div className="grid gap-4 md:grid-cols-2">
+              <Link href="/guides/hair-transplant-turkey-guide" className="bg-white rounded-lg border border-purple-200 p-5 hover:shadow-lg transition-shadow">
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl">💇</span>
+                  <div>
+                    <div className="font-bold text-gray-900 mb-1">Hair Transplant in Turkey</div>
+                    <div className="text-sm text-gray-600">FUE vs DHI, safety checklist, choosing clinics, red flags</div>
+                  </div>
+                </div>
+              </Link>
+
+              <Link href="/guides/gastric-sleeve-mexico-safety" className="bg-white rounded-lg border border-purple-200 p-5 hover:shadow-lg transition-shadow">
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl">⚖️</span>
+                  <div>
+                    <div className="font-bold text-gray-900 mb-1">Gastric Sleeve in Mexico</div>
+                    <div className="text-sm text-gray-600">Safety data, complication rates, surgeon selection</div>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          </div>
+
+          {/* Practical Resources */}
+          <div>
+            <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+              <span className="text-2xl">📋</span> Practical Resources
+              <span className="text-sm font-normal text-gray-500 ml-2">— Insurance, costs, general planning</span>
+            </h3>
+            <div className="grid gap-4 md:grid-cols-2">
+              <Link href="/guides/medical-travel-insurance-guide" className="bg-white rounded-lg border border-purple-200 p-5 hover:shadow-lg transition-shadow">
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl">🛡️</span>
+                  <div>
+                    <div className="font-bold text-gray-900 mb-1">Medical Travel Insurance</div>
+                    <div className="text-sm text-gray-600">What&apos;s covered, what&apos;s not, what you actually need</div>
+                  </div>
+                </div>
+              </Link>
+
+              <Link href="/faq/medical-tourism" className="bg-white rounded-lg border border-purple-200 p-5 hover:shadow-lg transition-shadow">
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl">❓</span>
+                  <div>
+                    <div className="font-bold text-gray-900 mb-1">Medical Tourism FAQ</div>
+                    <div className="text-sm text-gray-600">Common questions, red flags, how to vet clinics</div>
+                  </div>
+                </div>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -328,36 +460,6 @@ export default function MedicalTourismHub() {
           <p>
             Our <Link href="/faq/medical-tourism" className="text-blue-600 hover:underline">Medical Tourism FAQ</Link> covers safety in detail, including red flags to avoid and how to verify clinic credentials.
           </p>
-        </div>
-      </section>
-
-      {/* Related Guides */}
-      <section className="bg-gray-50 px-4 py-12">
-        <div className="mx-auto max-w-6xl">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">
-            Essential Reading Before You Book
-          </h2>
-          <div className="grid gap-6 md:grid-cols-2">
-            <Link href="/guides/hair-transplant-turkey-guide" className="bg-white rounded-lg border border-purple-200 p-6 hover:shadow-lg transition-shadow">
-              <div className="flex items-start gap-4">
-                <span className="text-4xl">💇</span>
-                <div>
-                  <div className="font-bold text-gray-900 mb-1 text-lg">Hair Transplant in Turkey</div>
-                  <div className="text-sm text-gray-600">Safety checklist, FUE vs DHI, choosing clinics</div>
-                </div>
-              </div>
-            </Link>
-
-            <Link href="/guides/gastric-sleeve-mexico-safety" className="bg-white rounded-lg border border-purple-200 p-6 hover:shadow-lg transition-shadow">
-              <div className="flex items-start gap-4">
-                <span className="text-4xl">⚖️</span>
-                <div>
-                  <div className="font-bold text-gray-900 mb-1 text-lg">Gastric Sleeve in Mexico</div>
-                  <div className="text-sm text-gray-600">Safety data, complication rates, surgeon selection</div>
-                </div>
-              </div>
-            </Link>
-          </div>
         </div>
       </section>
 

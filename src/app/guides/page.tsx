@@ -9,6 +9,47 @@ export const metadata: Metadata = {
 };
 
 const guides = [
+  // Procedure-Specific Guides (High-intent)
+  {
+    slug: 'mexico-stem-cell-guide',
+    title: 'Stem Cell Therapy in Mexico: Complete Guide',
+    description: 'Clinics in Tijuana, Los Cabos, Puerto Vallarta & Cancun. Costs from $3,750, what to expect, safety considerations, and regulatory disclaimers.',
+    category: 'Procedure Guide',
+    readTime: '20 min',
+    icon: '🧬',
+  },
+  {
+    slug: 'mexico-dental-guide',
+    title: 'Mexico Dental Guide: Tijuana, Los Algodones, Cancun',
+    description: 'Complete guide to dental work in Mexico. Implants from $750, All-on-4 from $7,500. Compare destinations, find safe clinics.',
+    category: 'Procedure Guide',
+    readTime: '16 min',
+    icon: '🦷',
+  },
+  {
+    slug: 'plastic-surgery-korea-guide',
+    title: 'Plastic Surgery in Korea: Gangnam Clinics Guide',
+    description: 'Why Seoul is the world capital of cosmetic surgery. Rhinoplasty, double eyelid, V-line. Top clinics, costs, recovery.',
+    category: 'Procedure Guide',
+    readTime: '18 min',
+    icon: '✨',
+  },
+  {
+    slug: 'hair-transplant-turkey-guide',
+    title: 'Hair Transplant in Turkey: Complete Guide',
+    description: 'FUE vs DHI techniques, choosing a safe clinic, costs, and what to expect from Istanbul.',
+    category: 'Procedure Guide',
+    readTime: '15 min',
+    icon: '💇',
+  },
+  {
+    slug: 'gastric-sleeve-mexico-safety',
+    title: 'Gastric Sleeve in Mexico: Safety Guide',
+    description: 'Is bariatric surgery in Tijuana safe? Safety data, choosing a surgeon, and what to expect.',
+    category: 'Procedure Guide',
+    readTime: '12 min',
+    icon: '⚖️',
+  },
   {
     slug: 'glp1-weight-loss-complete-guide',
     title: 'GLP-1 for Weight Loss: Complete Guide',
@@ -17,38 +58,32 @@ const guides = [
     readTime: '12 min',
     icon: '💊',
   },
+  // Comparison Guides
   {
-    slug: 'hair-transplant-turkey-guide',
-    title: 'Hair Transplant in Turkey: Complete Guide',
-    description: 'FUE vs DHI techniques, choosing a safe clinic, costs, and what to expect from Istanbul.',
-    category: 'Medical Tourism',
-    readTime: '15 min',
-    icon: '💇',
-  },
-  {
-    slug: 'at-home-lab-testing-guide',
-    title: 'At-Home Lab Testing Guide',
-    description: 'How at-home blood tests work, accuracy vs doctor labs, and what biomarkers to track.',
-    category: 'Telehealth',
-    readTime: '10 min',
-    icon: '🧪',
-  },
-  {
-    slug: 'gastric-sleeve-mexico-safety',
-    title: 'Gastric Sleeve in Mexico: Safety Guide',
-    description: 'Is bariatric surgery in Tijuana safe? Safety data, choosing a surgeon, and what to expect.',
-    category: 'Medical Tourism',
-    readTime: '12 min',
+    slug: 'mexico-vs-costa-rica-dental',
+    title: 'Mexico vs Costa Rica for Dental Work',
+    description: 'Which country is better for your dental work? Price comparison, quality, convenience, and recommendations.',
+    category: 'Comparison',
+    readTime: '8 min',
     icon: '⚖️',
   },
   {
-    slug: 'dexa-scan-guide',
-    title: 'DEXA Scan: Complete Guide',
-    description: 'What DEXA measures, why it beats BMI, costs, and how to use it to track real fitness progress.',
-    category: 'Local Services',
-    readTime: '8 min',
-    icon: '📊',
+    slug: 'spain-vs-czech-ivf',
+    title: 'Spain vs Czech Republic for IVF',
+    description: 'Europe\'s top IVF destinations compared. Success rates, donor availability, costs, and which to choose.',
+    category: 'Comparison',
+    readTime: '10 min',
+    icon: '⚖️',
   },
+  {
+    slug: 'turkey-vs-mexico-medical-tourism',
+    title: 'Turkey vs Mexico: Medical Tourism Compared',
+    description: 'The world\'s two biggest medical tourism destinations. Which is better for your procedure?',
+    category: 'Comparison',
+    readTime: '10 min',
+    icon: '⚖️',
+  },
+  // Destination Trip Planners
   {
     slug: 'mexico-medical-tourism-planner',
     title: 'Mexico Medical Tourism: Trip Planner',
@@ -64,6 +99,47 @@ const guides = [
     category: 'Trip Planning',
     readTime: '14 min',
     icon: '🇹🇷',
+  },
+  {
+    slug: 'thailand-medical-tourism-guide',
+    title: 'Thailand Medical Tourism: Complete Guide',
+    description: 'Bangkok\'s JCI-accredited hospitals, costs, trip planning. Bumrungrad, Samitivej, BNH reviews.',
+    category: 'Trip Planning',
+    readTime: '18 min',
+    icon: '🇹🇭',
+  },
+  {
+    slug: 'costa-rica-dental-guide',
+    title: 'Costa Rica Dental Tourism Guide',
+    description: 'US-trained dentists, premium implants, 50-70% savings. San Jose clinics and trip planning.',
+    category: 'Trip Planning',
+    readTime: '14 min',
+    icon: '🇨🇷',
+  },
+  {
+    slug: 'spain-fertility-ivf-guide',
+    title: 'Spain IVF & Fertility Tourism Guide',
+    description: 'Europe\'s #1 fertility destination. Donor egg success rates 55-60%, clinic comparisons, costs.',
+    category: 'Trip Planning',
+    readTime: '16 min',
+    icon: '🇪🇸',
+  },
+  // Practical & Reference
+  {
+    slug: 'at-home-lab-testing-guide',
+    title: 'At-Home Lab Testing Guide',
+    description: 'How at-home blood tests work, accuracy vs doctor labs, and what biomarkers to track.',
+    category: 'Telehealth',
+    readTime: '10 min',
+    icon: '🧪',
+  },
+  {
+    slug: 'dexa-scan-guide',
+    title: 'DEXA Scan: Complete Guide',
+    description: 'What DEXA measures, why it beats BMI, costs, and how to use it to track real fitness progress.',
+    category: 'Local Services',
+    readTime: '8 min',
+    icon: '📊',
   },
   {
     slug: 'medical-travel-insurance-guide',
@@ -144,13 +220,13 @@ export default function GuidesIndex() {
               TRT & Hormone Optimization
             </span>
             <span className="rounded-full bg-gray-200 px-4 py-1.5 text-gray-700">
-              Dental Implants Abroad
+              India Cardiac Surgery
             </span>
             <span className="rounded-full bg-gray-200 px-4 py-1.5 text-gray-700">
-              Fertility Treatment Overseas
+              US Longevity Clinics by Region
             </span>
             <span className="rounded-full bg-gray-200 px-4 py-1.5 text-gray-700">
-              Plastic Surgery in Korea
+              Panama Stem Cell Guide
             </span>
           </div>
         </div>
