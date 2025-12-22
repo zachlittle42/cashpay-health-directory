@@ -9,15 +9,48 @@ export const metadata: Metadata = {
 };
 
 const guides = [
-  // Procedure-Specific Guides (High-intent)
+  // Longevity & Stem Cell Guides
   {
     slug: 'mexico-stem-cell-guide',
     title: 'Stem Cell Therapy in Mexico: Complete Guide',
     description: 'Clinics in Tijuana, Los Cabos, Puerto Vallarta & Cancun. Costs from $3,750, what to expect, safety considerations, and regulatory disclaimers.',
-    category: 'Procedure Guide',
+    category: 'Longevity',
     readTime: '20 min',
-    icon: '🧬',
+    icon: '🇲🇽',
   },
+  {
+    slug: 'panama-stem-cell-guide',
+    title: 'Panama Stem Cell Therapy: Golden Cells Guide',
+    description: 'Stem Cell Institute, Golden Cells (umbilical cord MSCs), NFL athlete testimonials. Premium destination at $25,000-60,000.',
+    category: 'Longevity',
+    readTime: '20 min',
+    icon: '🇵🇦',
+  },
+  {
+    slug: 'colombia-stem-cell-guide',
+    title: 'Colombia Stem Cell Therapy: BioXcellerator Guide',
+    description: 'Medellin\'s all-inclusive stem cell packages. BioXcellerator, 300M+ cells, 40-60% savings vs Panama.',
+    category: 'Longevity',
+    readTime: '18 min',
+    icon: '🇨🇴',
+  },
+  {
+    slug: 'cayman-islands-stem-cell-guide',
+    title: 'Cayman Islands Stem Cells: Expanded Cells Guide',
+    description: 'DVC Stem, Regenexx-C. Only destination with expanded stem cells AND strict US/UK-level regulation.',
+    category: 'Longevity',
+    readTime: '16 min',
+    icon: '🇰🇾',
+  },
+  {
+    slug: 'dubai-longevity-guide',
+    title: 'Dubai Longevity & Stem Cell Guide',
+    description: 'AEON Clinic at Atlantis The Royal, Victor Longevity. Luxury regenerative medicine in the desert.',
+    category: 'Longevity',
+    readTime: '15 min',
+    icon: '🇦🇪',
+  },
+  // Procedure-Specific Guides (High-intent)
   {
     slug: 'mexico-dental-guide',
     title: 'Mexico Dental Guide: Tijuana, Los Algodones, Cancun',
@@ -217,16 +250,16 @@ export default function GuidesIndex() {
           </p>
           <div className="flex flex-wrap justify-center gap-3 text-sm">
             <span className="rounded-full bg-gray-200 px-4 py-1.5 text-gray-700">
-              TRT & Hormone Optimization
+              US Longevity Clinics by Region
+            </span>
+            <span className="rounded-full bg-gray-200 px-4 py-1.5 text-gray-700">
+              Peptide Therapy Guide
             </span>
             <span className="rounded-full bg-gray-200 px-4 py-1.5 text-gray-700">
               India Cardiac Surgery
             </span>
             <span className="rounded-full bg-gray-200 px-4 py-1.5 text-gray-700">
-              US Longevity Clinics by Region
-            </span>
-            <span className="rounded-full bg-gray-200 px-4 py-1.5 text-gray-700">
-              Panama Stem Cell Guide
+              TRT & Hormone Optimization
             </span>
           </div>
         </div>
