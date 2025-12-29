@@ -9,6 +9,55 @@ export const metadata: Metadata = {
 };
 
 const guides = [
+  // NEW: High-Priority SEO Content (Tier 1)
+  {
+    slug: 'compounded-semaglutide',
+    title: 'Compounded Semaglutide: What You Need to Know in 2025',
+    description: 'FDA status, legal changes, safety concerns, costs vs brand-name, and what alternatives exist now that the shortage has ended.',
+    category: 'Telehealth',
+    readTime: '10 min',
+    icon: '⚠️',
+  },
+  {
+    slug: 'trt-testosterone-therapy',
+    title: 'TRT Guide: Complete Testosterone Replacement Therapy Explained',
+    description: 'Symptoms of low T, treatment options, costs ($150-250/mo), benefits, risks, and how to get started with online TRT clinics.',
+    category: 'Telehealth',
+    readTime: '15 min',
+    icon: '💪',
+  },
+  {
+    slug: 'hims-vs-ro-vs-calibrate',
+    title: 'Hims vs Ro vs Calibrate: GLP-1 Weight Loss Comparison',
+    description: 'Side-by-side comparison of the three most popular telehealth weight loss programs—pricing, medications, coaching, and which is best for you.',
+    category: 'Comparison',
+    readTime: '8 min',
+    icon: '⚖️',
+  },
+  {
+    slug: 'all-on-4-dental-implants-mexico',
+    title: 'All-on-4 Dental Implants in Mexico: Complete Guide',
+    description: 'Save 60-70% on full-arch implants. Costs ($8K-12K vs $20K+ in US), top clinics in Tijuana & Cancun, and trip planning.',
+    category: 'Dental Tourism',
+    readTime: '12 min',
+    icon: '🦷',
+  },
+  {
+    slug: 'hair-transplant-grafts-guide',
+    title: 'How Many Hair Grafts Do I Need?',
+    description: 'Norwood scale explained, graft estimates by hair loss stage, density calculations, and cost per graft by country.',
+    category: 'Hair Transplant',
+    readTime: '10 min',
+    icon: '📊',
+  },
+  {
+    slug: 'best-online-trt-clinics',
+    title: 'Best Online TRT Clinics Compared (2025)',
+    description: 'Fountain TRT vs Marek Health vs TRT Nation: pricing, services, and which clinic is best for your needs.',
+    category: 'Comparison',
+    readTime: '10 min',
+    icon: '🏆',
+  },
   // Longevity & Stem Cell Guides
   {
     slug: 'mexico-stem-cell-guide',
@@ -266,16 +315,16 @@ export default function GuidesIndex() {
           </p>
           <div className="flex flex-wrap justify-center gap-3 text-sm">
             <span className="rounded-full bg-gray-200 px-4 py-1.5 text-gray-700">
-              US Longevity Clinics by Region
-            </span>
-            <span className="rounded-full bg-gray-200 px-4 py-1.5 text-gray-700">
               Peptide Therapy Guide
             </span>
             <span className="rounded-full bg-gray-200 px-4 py-1.5 text-gray-700">
-              India Cardiac Surgery
+              NAD+ Therapy Guide
             </span>
             <span className="rounded-full bg-gray-200 px-4 py-1.5 text-gray-700">
-              TRT & Hormone Optimization
+              FUE vs DHI Comparison
+            </span>
+            <span className="rounded-full bg-gray-200 px-4 py-1.5 text-gray-700">
+              India Cardiac Surgery
             </span>
           </div>
         </div>
