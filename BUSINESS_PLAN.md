@@ -175,11 +175,14 @@ Build what healthcare lacks:
 ## Goals & Milestones
 
 ### 1 Week Goals
+
+> **See `SEO_GROWTH_PLAN.md` for detailed keyword research and content priorities.**
+
 - [ ] Add 5 new providers to existing categories (focus on featured gaps)
 - [ ] Create first state page template (Texas as pilot—large population, medical tourism border)
 - [ ] Set up Google Analytics / Plausible for traffic tracking
 - [ ] Claim Google Business Profile and submit to Google Search Console
-- [ ] Write 2-3 SEO-focused blog posts (e.g., "How to Save 70% on Dental Implants")
+- [ ] Write 2-3 SEO-focused content pieces (priority: Compounded Semaglutide Guide, TRT Guide)
 
 ### 1 Month Goals
 - [ ] Expand to 50+ total providers across all categories
@@ -326,6 +329,19 @@ Each state page should include:
 - Keyword rankings (top 20 procedure terms)
 - Domain authority
 - Backlinks from healthcare publications
+
+---
+
+## SEO & Content Strategy
+
+For the complete SEO and content growth strategy, see **`SEO_GROWTH_PLAN.md`**, which includes:
+
+- **Keyword Research**: Top search terms by category with monthly volumes
+- **Content Roadmap**: Prioritized list of money pages, guides, and comparisons to create
+- **Local SEO Strategy**: City-specific directories and destination guides
+- **Provider Directory Expansion**: Categories to populate and provider requirements
+- **Content Calendar**: Month-by-month content creation schedule
+- **Tracking & Measurement**: KPIs and monthly review checklist
 
 ---
 
