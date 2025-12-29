@@ -238,6 +238,39 @@ export default function TelehealthHub() {
         </div>
       </section>
 
+      {/* Centurion Coach Promo */}
+      <section className="mx-auto max-w-4xl px-4 py-12">
+        <div className="bg-gradient-to-r from-cyan-500 to-sky-500 rounded-2xl p-8 md:p-12 text-white">
+          <div className="flex flex-col md:flex-row items-center gap-8">
+            <div className="flex-1">
+              <div className="inline-flex items-center gap-2 rounded-full bg-white/20 px-3 py-1 text-sm font-medium mb-4">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
+                </span>
+                Free iOS App
+              </div>
+              <h3 className="text-2xl md:text-3xl font-bold mb-4">
+                Track Your Health Journey with Centurion Coach
+              </h3>
+              <p className="text-cyan-100 mb-6">
+                Using telehealth for labs, GLP-1, or TRT? Track your nutrition, supplements, and progress in one place. Get AI-powered coaching to optimize your results.
+              </p>
+              <Link
+                href="/centurioncoach"
+                className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 font-semibold text-cyan-600 hover:bg-cyan-50 transition-colors"
+              >
+                Learn More
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </Link>
+            </div>
+            <div className="text-6xl md:text-8xl">🏛️</div>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </main>
   );
