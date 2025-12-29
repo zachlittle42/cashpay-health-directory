@@ -105,4 +105,13 @@ src/
 - `README.md` - Repository documentation
 - `BUSINESS_PLAN.md` - Business strategy and monetization
 - `PRODUCT_STATUS_AND_DEVELOPMENT_SPRINTS.md` - Current status and development sprints
+- `SEO_GROWTH_PLAN.md` - SEO keyword strategy, content roadmap, and growth marketing plan
 - `CLAUDE.md` - This file (Claude Code instructions)
+
+## Content Creation Guidelines
+
+When creating new content, reference `SEO_GROWTH_PLAN.md` for:
+- Priority keywords to target
+- Content templates (money pages, guides, comparisons)
+- Missing content opportunities by category
+- FAQ expansion topics

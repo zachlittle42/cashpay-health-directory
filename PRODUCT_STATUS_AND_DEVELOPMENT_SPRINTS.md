@@ -420,12 +420,17 @@ Add prominent Centurion product placement throughout VitalityScout to drive:
 
 ## 📝 Content Roadmap
 
+> **See `SEO_GROWTH_PLAN.md` for the complete content strategy**, including keyword research, search volumes, and prioritized content calendar.
+
 ### Next Guides to Create (in priority order)
-1. TRT/Hormone Optimization Guide
-2. Dental Implants Abroad Complete Guide
-3. Fertility Treatment Overseas Guide
-4. Direct Primary Care (DPC) Explainer
-5. VO2 Max Testing Guide
+1. Compounded Semaglutide Guide (HIGH PRIORITY - 25K+ monthly searches)
+2. Complete TRT/Testosterone Guide (MAJOR GAP - 10K+ monthly searches)
+3. Hims vs Ro vs Calibrate Comparison (15K+ monthly searches)
+4. All-on-4 Dental Implants Mexico (6K+ monthly searches)
+5. How Many Hair Grafts Guide/Calculator (7K+ monthly searches)
+6. TRT/Hormone Optimization Guide
+7. Direct Primary Care (DPC) Explainer
+8. VO2 Max Testing Guide
 
 ### State Pages Priority (after TX, FL, NY, AZ, CO)
 1. Pennsylvania
