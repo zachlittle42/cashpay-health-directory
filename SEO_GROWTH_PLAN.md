@@ -235,16 +235,16 @@ This document outlines the SEO and content growth strategy for VitalityScout. Th
 
 ## Content Roadmap
 
-### Tier 1: Build ASAP (High Volume + High Conversion)
+### Tier 1: Build ASAP (High Volume + High Conversion) ✅ COMPLETED
 
-| # | Content Piece | Type | Category | Est. Impact |
-|---|--------------|------|----------|-------------|
-| 1 | Compounded Semaglutide Guide | Guide | GLP-1 | Very High |
-| 2 | Hims vs Ro vs Calibrate Comparison | Comparison | GLP-1 | Very High |
-| 3 | Complete TRT/Testosterone Guide | Guide | TRT | High |
-| 4 | All-on-4 Dental Implants Mexico | Procedure | Dental | High |
-| 5 | How Many Hair Grafts Calculator/Guide | Tool/Guide | Hair | High |
-| 6 | Best Online TRT Clinics Compared | Comparison | TRT | High |
+| # | Content Piece | Type | Category | Status |
+|---|--------------|------|----------|--------|
+| 1 | Compounded Semaglutide Guide | Guide | GLP-1 | ✅ `/guides/compounded-semaglutide` |
+| 2 | Hims vs Ro vs Calibrate Comparison | Comparison | GLP-1 | ✅ `/guides/hims-vs-ro-vs-calibrate` |
+| 3 | Complete TRT/Testosterone Guide | Guide | TRT | ✅ `/guides/trt-testosterone-therapy` |
+| 4 | All-on-4 Dental Implants Mexico | Procedure | Dental | ✅ `/guides/all-on-4-dental-implants-mexico` |
+| 5 | How Many Hair Grafts Calculator/Guide | Tool/Guide | Hair | ✅ `/guides/hair-transplant-grafts-guide` |
+| 6 | Best Online TRT Clinics Compared | Comparison | TRT | ✅ `/guides/best-online-trt-clinics` |
 
 ### Tier 2: Build Soon (Medium Volume, Good Fit)
 
