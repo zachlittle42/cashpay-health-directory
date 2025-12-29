@@ -58,6 +58,71 @@ const guides = [
     readTime: '10 min',
     icon: '🏆',
   },
+  // NEW: Tier 2 SEO Content
+  {
+    slug: 'fue-vs-dhi',
+    title: 'FUE vs DHI Hair Transplant: Complete Comparison',
+    description: 'Detailed comparison of FUE and DHI hair transplant techniques—costs, recovery, results, and which method is best for your hair loss pattern.',
+    category: 'Comparison',
+    readTime: '12 min',
+    icon: '💇',
+  },
+  {
+    slug: 'bbl-surgery-mexico',
+    title: 'BBL Surgery in Mexico: Safety & Cost Guide',
+    description: 'Brazilian Butt Lift in Mexico: costs ($3,500-7,000), safety data, mortality rates, choosing surgeons, and critical safety information.',
+    category: 'Procedure Guide',
+    readTime: '15 min',
+    icon: '🍑',
+  },
+  {
+    slug: 'bodyspec-vs-dexafit',
+    title: 'BodySpec vs DexaFit: DEXA Scan Comparison',
+    description: 'Compare the two leading body composition scanning services—pricing ($40-60 vs $119-179), locations, reports, and which is best for you.',
+    category: 'Comparison',
+    readTime: '8 min',
+    icon: '📊',
+  },
+  {
+    slug: 'nad-therapy-guide',
+    title: 'NAD+ Therapy: IV Infusions & Evidence Guide',
+    description: 'Complete NAD+ therapy guide covering IV infusions, oral supplements, costs ($250-2,000), and what the science actually says.',
+    category: 'Longevity',
+    readTime: '15 min',
+    icon: '🧬',
+  },
+  {
+    slug: 'los-algodones-dental-guide',
+    title: 'Los Algodones Dental Guide: Molar City',
+    description: '350+ dental clinics, 50-70% savings. Complete guide to "Molar City"—choosing a dentist, border crossing, and trip planning.',
+    category: 'Destination Guide',
+    readTime: '18 min',
+    icon: '🦷',
+  },
+  {
+    slug: 'everlywell-vs-letsgetchecked',
+    title: 'Everlywell vs LetsGetChecked Comparison',
+    description: 'At-home lab test comparison—pricing, test selection, accuracy, turnaround time, and which service is best for different needs.',
+    category: 'Comparison',
+    readTime: '10 min',
+    icon: '🧪',
+  },
+  {
+    slug: 'peptide-therapy-guide',
+    title: 'Peptide Therapy: BPC-157, TB-500 & More',
+    description: 'Complete peptide guide covering BPC-157, TB-500, growth hormone secretagogues. FDA regulations, costs, and what science says.',
+    category: 'Longevity',
+    readTime: '18 min',
+    icon: '💉',
+  },
+  {
+    slug: 'mommy-makeover-mexico',
+    title: 'Mommy Makeover in Mexico: Complete Guide',
+    description: 'Mommy makeover surgery in Mexico: costs ($5,500-14,000 vs $20K+ in US), procedures, choosing a surgeon, and recovery planning.',
+    category: 'Procedure Guide',
+    readTime: '16 min',
+    icon: '👶',
+  },
   // Longevity & Stem Cell Guides
   {
     slug: 'mexico-stem-cell-guide',
@@ -315,16 +380,16 @@ export default function GuidesIndex() {
           </p>
           <div className="flex flex-wrap justify-center gap-3 text-sm">
             <span className="rounded-full bg-gray-200 px-4 py-1.5 text-gray-700">
-              Peptide Therapy Guide
-            </span>
-            <span className="rounded-full bg-gray-200 px-4 py-1.5 text-gray-700">
-              NAD+ Therapy Guide
-            </span>
-            <span className="rounded-full bg-gray-200 px-4 py-1.5 text-gray-700">
-              FUE vs DHI Comparison
-            </span>
-            <span className="rounded-full bg-gray-200 px-4 py-1.5 text-gray-700">
               India Cardiac Surgery
+            </span>
+            <span className="rounded-full bg-gray-200 px-4 py-1.5 text-gray-700">
+              Rhinoplasty in Korea
+            </span>
+            <span className="rounded-full bg-gray-200 px-4 py-1.5 text-gray-700">
+              HRT for Women Guide
+            </span>
+            <span className="rounded-full bg-gray-200 px-4 py-1.5 text-gray-700">
+              Germany Cancer Treatment
             </span>
           </div>
         </div>
