@@ -42,7 +42,7 @@ export default function CenturionCoachPage() {
             <Link href="#faq" className="text-sm text-gray-600 hover:text-gray-900 hidden sm:block">FAQ</Link>
             <a
               href="#cta"
-              className="rounded-full bg-gradient-to-r from-emerald-500 to-teal-500 px-4 py-2 text-sm font-semibold text-white hover:from-emerald-600 hover:to-teal-600 transition-all"
+              className="rounded-full bg-gradient-to-r from-cyan-500 to-sky-500 px-4 py-2 text-sm font-semibold text-white hover:from-cyan-600 hover:to-sky-600 transition-all"
             >
               Join Beta
             </a>
@@ -54,17 +54,17 @@ export default function CenturionCoachPage() {
       <section className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white px-4 py-20 md:py-32">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2UwZTBlMCIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyaWQpIi8+PC9zdmc+')] opacity-50"></div>
         <div className="relative mx-auto max-w-4xl text-center">
-          <div className="inline-flex items-center gap-2 rounded-full bg-emerald-50 border border-emerald-200 px-4 py-1.5 text-sm font-medium text-emerald-700 mb-6">
+          <div className="inline-flex items-center gap-2 rounded-full bg-cyan-50 border border-cyan-200 px-4 py-1.5 text-sm font-medium text-cyan-700 mb-6">
             <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
             </span>
             Beta Now Available on iOS
           </div>
 
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
             Your AI-Powered<br />
-            <span className="bg-gradient-to-r from-emerald-500 to-teal-500 bg-clip-text text-transparent">Wellness Coach</span>
+            <span className="bg-gradient-to-r from-cyan-500 to-sky-500 bg-clip-text text-transparent">Wellness Coach</span>
           </h1>
 
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
@@ -74,7 +74,7 @@ export default function CenturionCoachPage() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href="#cta"
-              className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-emerald-500 to-teal-500 px-8 py-4 text-lg font-semibold text-white hover:from-emerald-600 hover:to-teal-600 transition-all shadow-lg shadow-emerald-500/25"
+              className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-cyan-500 to-sky-500 px-8 py-4 text-lg font-semibold text-white hover:from-cyan-600 hover:to-sky-600 transition-all shadow-lg shadow-cyan-500/25"
             >
               Join the Beta
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -124,7 +124,7 @@ export default function CenturionCoachPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Feature 1: AI Coach */}
             <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-lg transition-shadow">
-              <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 text-white text-2xl mb-6">
+              <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-gradient-to-r from-cyan-500 to-sky-500 text-white text-2xl mb-6">
                 💬
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">AI Coach</h3>
@@ -220,7 +220,7 @@ export default function CenturionCoachPage() {
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 text-2xl font-bold mb-6">
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-cyan-100 text-cyan-600 text-2xl font-bold mb-6">
                 1
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Download & Set Your Goals</h3>
@@ -230,7 +230,7 @@ export default function CenturionCoachPage() {
             </div>
 
             <div className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 text-2xl font-bold mb-6">
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-cyan-100 text-cyan-600 text-2xl font-bold mb-6">
                 2
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Track Daily</h3>
@@ -240,7 +240,7 @@ export default function CenturionCoachPage() {
             </div>
 
             <div className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 text-2xl font-bold mb-6">
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-cyan-100 text-cyan-600 text-2xl font-bold mb-6">
                 3
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Get Coached</h3>
@@ -266,29 +266,29 @@ export default function CenturionCoachPage() {
               <thead>
                 <tr>
                   <th className="text-left py-4 px-6 bg-gray-100 rounded-tl-lg font-semibold text-gray-600">Other Apps</th>
-                  <th className="text-left py-4 px-6 bg-emerald-500 rounded-tr-lg font-semibold text-white">Centurion Coach</th>
+                  <th className="text-left py-4 px-6 bg-cyan-500 rounded-tr-lg font-semibold text-white">Centurion Coach</th>
                 </tr>
               </thead>
               <tbody>
                 <tr className="border-b border-gray-100">
                   <td className="py-4 px-6 text-gray-600">Track data, figure it out yourself</td>
-                  <td className="py-4 px-6 text-gray-900 bg-emerald-50 font-medium">Track data, get AI-powered guidance</td>
+                  <td className="py-4 px-6 text-gray-900 bg-cyan-50 font-medium">Track data, get AI-powered guidance</td>
                 </tr>
                 <tr className="border-b border-gray-100">
                   <td className="py-4 px-6 text-gray-600">Generic advice for everyone</td>
-                  <td className="py-4 px-6 text-gray-900 bg-emerald-50 font-medium">Personalized to your goals and patterns</td>
+                  <td className="py-4 px-6 text-gray-900 bg-cyan-50 font-medium">Personalized to your goals and patterns</td>
                 </tr>
                 <tr className="border-b border-gray-100">
                   <td className="py-4 px-6 text-gray-600">Nutrition OR fitness OR supplements</td>
-                  <td className="py-4 px-6 text-gray-900 bg-emerald-50 font-medium">All-in-one: nutrition, training, supplements, metrics</td>
+                  <td className="py-4 px-6 text-gray-900 bg-cyan-50 font-medium">All-in-one: nutrition, training, supplements, metrics</td>
                 </tr>
                 <tr className="border-b border-gray-100">
                   <td className="py-4 px-6 text-gray-600">Confusing dashboards</td>
-                  <td className="py-4 px-6 text-gray-900 bg-emerald-50 font-medium">Clean, focused interface</td>
+                  <td className="py-4 px-6 text-gray-900 bg-cyan-50 font-medium">Clean, focused interface</td>
                 </tr>
                 <tr>
                   <td className="py-4 px-6 text-gray-600 rounded-bl-lg">No education, just numbers</td>
-                  <td className="py-4 px-6 text-gray-900 bg-emerald-50 font-medium rounded-br-lg">Learn how your body works as you go</td>
+                  <td className="py-4 px-6 text-gray-900 bg-cyan-50 font-medium rounded-br-lg">Learn how your body works as you go</td>
                 </tr>
               </tbody>
             </table>
@@ -338,12 +338,12 @@ export default function CenturionCoachPage() {
       </section>
 
       {/* CTA Section */}
-      <section id="cta" className="bg-gradient-to-r from-emerald-500 to-teal-500 px-4 py-20">
+      <section id="cta" className="bg-gradient-to-r from-cyan-500 to-sky-500 px-4 py-20">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
             Ready to take control of your health?
           </h2>
-          <p className="text-xl text-emerald-100 mb-8">
+          <p className="text-xl text-cyan-100 mb-8">
             Join the beta and be among the first to experience AI-powered wellness coaching. Free during beta. Available now on iOS.
           </p>
 
@@ -351,7 +351,7 @@ export default function CenturionCoachPage() {
             href="https://apps.apple.com/app/centurion-coach"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 rounded-full bg-white px-8 py-4 text-lg font-semibold text-emerald-600 hover:bg-emerald-50 transition-all shadow-lg"
+            className="inline-flex items-center gap-3 rounded-full bg-white px-8 py-4 text-lg font-semibold text-cyan-600 hover:bg-cyan-50 transition-all shadow-lg"
           >
             <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
               <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
@@ -359,7 +359,7 @@ export default function CenturionCoachPage() {
             Get Early Access
           </a>
 
-          <p className="mt-6 text-emerald-200">
+          <p className="mt-6 text-cyan-200">
             Questions? Reach out at{' '}
             <a href="mailto:hello@centurioncoach.com" className="underline hover:text-white">
               hello@centurioncoach.com
