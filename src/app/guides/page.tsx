@@ -68,6 +68,14 @@ const guides = [
     icon: '💇',
   },
   {
+    slug: 'hair-transplant-recovery-timeline',
+    title: 'Hair Transplant Recovery Timeline: Day-by-Day Guide',
+    description: 'Complete recovery timeline from day 1 to month 18—what to expect, healing stages, when to return to work, exercise, and see final results.',
+    category: 'Recovery Guide',
+    readTime: '15 min',
+    icon: '📅',
+  },
+  {
     slug: 'bbl-surgery-mexico',
     title: 'BBL Surgery in Mexico: Safety & Cost Guide',
     description: 'Brazilian Butt Lift in Mexico: costs ($3,500-7,000), safety data, mortality rates, choosing surgeons, and critical safety information.',
