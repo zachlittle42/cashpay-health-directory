@@ -159,6 +159,41 @@ export default function LocalClinicsHub() {
         </div>
       </section>
 
+      {/* Regional Guides */}
+      <section className="mx-auto max-w-6xl px-4 py-12">
+        <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">Browse by Region</h2>
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <Link
+            href="/local-clinics/southern-california"
+            className="group bg-gradient-to-br from-orange-50 to-amber-50 rounded-lg border-2 border-orange-200 p-6 hover:border-orange-400 hover:shadow-lg transition-all"
+          >
+            <div className="text-3xl mb-3">🌴</div>
+            <h3 className="text-lg font-bold text-gray-900 group-hover:text-orange-600 mb-2">
+              Southern California
+            </h3>
+            <p className="text-sm text-gray-600 mb-3">
+              Los Angeles, Orange County, San Diego. DEXA scans from $40, IV therapy, longevity clinics, VO2 max testing.
+            </p>
+            <div className="flex flex-wrap gap-2 text-xs">
+              <span className="bg-white text-gray-600 px-2 py-1 rounded">20+ clinics</span>
+              <span className="bg-white text-gray-600 px-2 py-1 rounded">5 categories</span>
+            </div>
+          </Link>
+
+          <div className="bg-gray-50 rounded-lg border-2 border-dashed border-gray-300 p-6 flex flex-col items-center justify-center text-center">
+            <div className="text-3xl mb-3 opacity-50">🌉</div>
+            <h3 className="text-lg font-bold text-gray-400 mb-2">Bay Area</h3>
+            <p className="text-sm text-gray-400">Coming soon</p>
+          </div>
+
+          <div className="bg-gray-50 rounded-lg border-2 border-dashed border-gray-300 p-6 flex flex-col items-center justify-center text-center">
+            <div className="text-3xl mb-3 opacity-50">🏙️</div>
+            <h3 className="text-lg font-bold text-gray-400 mb-2">New York Metro</h3>
+            <p className="text-sm text-gray-400">Coming soon</p>
+          </div>
+        </div>
+      </section>
+
       {/* Related Guide */}
       <section className="mx-auto max-w-4xl px-4 py-12">
         <div className="bg-green-50 border border-green-200 rounded-lg p-8">
