@@ -172,19 +172,30 @@ export default function LocalClinicsHub() {
               Southern California
             </h3>
             <p className="text-sm text-gray-600 mb-3">
-              Los Angeles, Orange County, San Diego. DEXA scans from $40, IV therapy, longevity clinics, VO2 max testing.
+              Los Angeles, Orange County, San Diego, Inland Empire. DEXA scans from $40, IV therapy, longevity clinics, VO2 max testing.
             </p>
             <div className="flex flex-wrap gap-2 text-xs">
-              <span className="bg-white text-gray-600 px-2 py-1 rounded">20+ clinics</span>
-              <span className="bg-white text-gray-600 px-2 py-1 rounded">5 categories</span>
+              <span className="bg-white text-gray-600 px-2 py-1 rounded">60+ clinics</span>
+              <span className="bg-white text-gray-600 px-2 py-1 rounded">8 regions</span>
             </div>
           </Link>
 
-          <div className="bg-gray-50 rounded-lg border-2 border-dashed border-gray-300 p-6 flex flex-col items-center justify-center text-center">
-            <div className="text-3xl mb-3 opacity-50">🌉</div>
-            <h3 className="text-lg font-bold text-gray-400 mb-2">Bay Area</h3>
-            <p className="text-sm text-gray-400">Coming soon</p>
-          </div>
+          <Link
+            href="/local-clinics/bay-area"
+            className="group bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg border-2 border-blue-200 p-6 hover:border-blue-400 hover:shadow-lg transition-all"
+          >
+            <div className="text-3xl mb-3">🌉</div>
+            <h3 className="text-lg font-bold text-gray-900 group-hover:text-blue-600 mb-2">
+              San Francisco Bay Area
+            </h3>
+            <p className="text-sm text-gray-600 mb-3">
+              San Francisco, Peninsula, South Bay, East Bay. DEXA from $45, IV therapy, longevity clinics, performance testing.
+            </p>
+            <div className="flex flex-wrap gap-2 text-xs">
+              <span className="bg-white text-gray-600 px-2 py-1 rounded">35+ clinics</span>
+              <span className="bg-white text-gray-600 px-2 py-1 rounded">4 regions</span>
+            </div>
+          </Link>
 
           <div className="bg-gray-50 rounded-lg border-2 border-dashed border-gray-300 p-6 flex flex-col items-center justify-center text-center">
             <div className="text-3xl mb-3 opacity-50">🏙️</div>
