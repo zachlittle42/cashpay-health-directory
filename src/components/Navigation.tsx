@@ -41,24 +41,18 @@ export default function Navigation() {
               </button>
               <div className="absolute left-1/2 -translate-x-1/2 mt-2 w-[900px] max-w-[calc(100vw-2rem)] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all bg-white rounded-lg shadow-xl border border-gray-200 py-4 z-50 max-h-[80vh] overflow-y-auto">
                 <div className="grid grid-cols-5 gap-6 px-6">
-                  {/* Telehealth */}
+                  {/* US Services */}
                   <div>
-                    <div className="text-xs font-bold text-blue-600 uppercase mb-3">Telehealth</div>
+                    <div className="text-xs font-bold text-blue-600 uppercase mb-3">US Services</div>
                     <div className="space-y-1.5">
-                      <Link href="/labs" className="block text-sm text-gray-700 hover:text-blue-600">🧪 At-Home Lab Testing</Link>
-                      <Link href="/glp1" className="block text-sm text-gray-700 hover:text-blue-600">💊 GLP-1 Programs</Link>
-                      <Link href="/trt" className="block text-sm text-gray-700 hover:text-blue-600">💪 TRT & Hormones</Link>
-                    </div>
-                  </div>
-
-                  {/* Local Clinics */}
-                  <div>
-                    <div className="text-xs font-bold text-green-600 uppercase mb-3">Local Clinics</div>
-                    <div className="space-y-1.5">
-                      <Link href="/dexa" className="block text-sm text-gray-700 hover:text-green-600">📊 DEXA Scans</Link>
-                      <Link href="/vo2max" className="block text-sm text-gray-700 hover:text-green-600">🫀 VO2 Max</Link>
-                      <Link href="/iv" className="block text-sm text-gray-700 hover:text-green-600">💧 IV Therapy</Link>
-                      <Link href="/longevity" className="block text-sm text-gray-700 hover:text-green-600">⏳ Longevity</Link>
+                      <Link href="/labs" className="block text-sm text-gray-700 hover:text-blue-600">🧪 At-Home Labs</Link>
+                      <Link href="/hormone-therapy" className="block text-sm font-medium text-gray-900 hover:text-blue-600">💪 Hormone Therapy</Link>
+                      <Link href="/weight-loss" className="block text-sm font-medium text-gray-900 hover:text-blue-600">💊 Weight Loss / GLP-1</Link>
+                      <div className="text-xs text-gray-500 mt-2 mb-1">Performance Testing:</div>
+                      <Link href="/dexa" className="block text-xs text-gray-600 hover:text-blue-600">DEXA Scans</Link>
+                      <Link href="/vo2max" className="block text-xs text-gray-600 hover:text-blue-600">VO2 Max</Link>
+                      <Link href="/iv" className="block text-xs text-gray-600 hover:text-blue-600">IV Therapy</Link>
+                      <Link href="/longevity" className="block text-xs text-gray-600 hover:text-blue-600">Longevity Clinics</Link>
                     </div>
                   </div>
 
@@ -66,10 +60,20 @@ export default function Navigation() {
                   <div>
                     <div className="text-xs font-bold text-purple-600 uppercase mb-3">Medical Tourism</div>
                     <div className="space-y-1.5">
-                      <Link href="/dental" className="block text-sm text-gray-700 hover:text-purple-600">🦷 Dental</Link>
+                      <Link href="/stem-cells" className="block text-sm font-medium text-gray-900 hover:text-purple-600">🧬 Stem Cells</Link>
+                      <Link href="/stem-cells/mexico" className="block text-xs text-gray-600 hover:text-purple-600 pl-3">Mexico</Link>
+                      <Link href="/stem-cells/panama" className="block text-xs text-gray-600 hover:text-purple-600 pl-3">Panama</Link>
                       <Link href="/hair_transplant" className="block text-sm text-gray-700 hover:text-purple-600">💇 Hair Transplant</Link>
-                      <Link href="/bariatric" className="block text-sm text-gray-700 hover:text-purple-600">⚖️ Bariatric</Link>
                       <Link href="/plastic_surgery" className="block text-sm text-gray-700 hover:text-purple-600">✨ Plastic Surgery</Link>
+                      <Link href="/dental" className="block text-sm text-gray-700 hover:text-purple-600">🦷 Dental</Link>
+                      <Link href="/bariatric" className="block text-sm text-gray-700 hover:text-purple-600">⚖️ Bariatric</Link>
+                    </div>
+                  </div>
+
+                  {/* More Medical Tourism */}
+                  <div>
+                    <div className="text-xs font-bold text-purple-600 uppercase mb-3">More Procedures</div>
+                    <div className="space-y-1.5">
                       <Link href="/fertility" className="block text-sm text-gray-700 hover:text-purple-600">🍼 Fertility/IVF</Link>
                       <Link href="/orthopedic" className="block text-sm text-gray-700 hover:text-purple-600">🦴 Orthopedic</Link>
                       <Link href="/cardiac" className="block text-sm text-gray-700 hover:text-purple-600">❤️ Cardiac</Link>
@@ -327,19 +331,13 @@ export default function Navigation() {
               </button>
               {expandedSection === 'services' && (
                 <div className="pl-4 pb-2 space-y-4">
-                  {/* Telehealth */}
+                  {/* US Services */}
                   <div>
-                    <div className="text-xs font-bold text-blue-600 uppercase mb-2 px-3">Telehealth</div>
+                    <div className="text-xs font-bold text-blue-600 uppercase mb-2 px-3">US Services</div>
                     <div className="space-y-1">
-                      <Link href="/labs" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🧪 At-Home Lab Testing</Link>
-                      <Link href="/glp1" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>💊 GLP-1 Programs</Link>
-                      <Link href="/trt" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>💪 TRT & Hormones</Link>
-                    </div>
-                  </div>
-                  {/* Local Clinics */}
-                  <div>
-                    <div className="text-xs font-bold text-green-600 uppercase mb-2 px-3">Local Clinics</div>
-                    <div className="space-y-1">
+                      <Link href="/labs" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🧪 At-Home Labs</Link>
+                      <Link href="/hormone-therapy" className="block py-2 text-sm font-medium text-gray-900 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>💪 Hormone Therapy</Link>
+                      <Link href="/weight-loss" className="block py-2 text-sm font-medium text-gray-900 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>💊 Weight Loss / GLP-1</Link>
                       <Link href="/dexa" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>📊 DEXA Scans</Link>
                       <Link href="/vo2max" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🫀 VO2 Max</Link>
                       <Link href="/iv" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>💧 IV Therapy</Link>
@@ -350,10 +348,13 @@ export default function Navigation() {
                   <div>
                     <div className="text-xs font-bold text-purple-600 uppercase mb-2 px-3">Medical Tourism</div>
                     <div className="space-y-1">
-                      <Link href="/dental" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🦷 Dental</Link>
+                      <Link href="/stem-cells" className="block py-2 text-sm font-medium text-gray-900 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🧬 Stem Cells</Link>
+                      <Link href="/stem-cells/mexico" className="block py-2 text-xs text-gray-600 hover:bg-gray-50 rounded-lg px-3 pl-6" onClick={closeMenu}>Mexico</Link>
+                      <Link href="/stem-cells/panama" className="block py-2 text-xs text-gray-600 hover:bg-gray-50 rounded-lg px-3 pl-6" onClick={closeMenu}>Panama</Link>
                       <Link href="/hair_transplant" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>💇 Hair Transplant</Link>
-                      <Link href="/bariatric" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>⚖️ Bariatric</Link>
                       <Link href="/plastic_surgery" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>✨ Plastic Surgery</Link>
+                      <Link href="/dental" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🦷 Dental</Link>
+                      <Link href="/bariatric" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>⚖️ Bariatric</Link>
                       <Link href="/fertility" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🍼 Fertility/IVF</Link>
                       <Link href="/orthopedic" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🦴 Orthopedic</Link>
                       <Link href="/cardiac" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>❤️ Cardiac</Link>

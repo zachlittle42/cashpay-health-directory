@@ -1,4 +1,8 @@
 import { MetadataRoute } from 'next';
+import { HORMONE_STATES } from '@/lib/hormone-clinic-types';
+import { WEIGHTLOSS_STATES } from '@/lib/weightloss-clinic-types';
+import { getCitiesWithClinics } from '@/data/hormone-clinics-index';
+import { getWeightLossCitiesWithClinics } from '@/data/weightloss-clinics-index';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://vitalityscout.com';
@@ -12,6 +16,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/traditional-healthcare',
     '/guides',
     '/faq',
+    '/hormone-therapy',
+    '/weight-loss',
+    '/stem-cells',
+    '/stem-cells/mexico',
+    '/stem-cells/panama',
+    '/stem-cells/usa',
   ];
 
   // Category pages
@@ -111,5 +121,43 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly' as const,
       priority: 0.7,
     },
+
+    // Hormone Therapy state pages
+    ...HORMONE_STATES.map((state) => ({
+      url: `${baseUrl}/hormone-therapy/${state.slug}`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    })),
+
+    // Hormone Therapy city pages
+    ...HORMONE_STATES.flatMap((state) => {
+      const cities = getCitiesWithClinics(state.slug);
+      return cities.map((city) => ({
+        url: `${baseUrl}/hormone-therapy/${state.slug}/${city.citySlug}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly' as const,
+        priority: 0.6,
+      }));
+    }),
+
+    // Weight Loss state pages
+    ...WEIGHTLOSS_STATES.map((state) => ({
+      url: `${baseUrl}/weight-loss/${state.slug}`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    })),
+
+    // Weight Loss city pages
+    ...WEIGHTLOSS_STATES.flatMap((state) => {
+      const cities = getWeightLossCitiesWithClinics(state.slug);
+      return cities.map((city) => ({
+        url: `${baseUrl}/weight-loss/${state.slug}/${city.citySlug}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly' as const,
+        priority: 0.6,
+      }));
+    }),
   ];
 }

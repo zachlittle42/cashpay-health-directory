@@ -471,16 +471,47 @@ export default function BestOnlineTRTClinicsGuide() {
 
           {/* CTA */}
           <div className="bg-gradient-to-r from-blue-50 to-green-50 border border-blue-200 rounded-lg p-8 my-12 text-center">
-            <h3 className="text-2xl font-bold text-gray-900 mb-3">Compare All TRT Providers</h3>
+            <h3 className="text-2xl font-bold text-gray-900 mb-3">Find TRT Treatment</h3>
             <p className="text-gray-600 mb-6">
-              View our full directory of online TRT clinics with detailed profiles and pricing.
+              Choose telehealth convenience or find local hormone clinics with in-person care.
             </p>
-            <Link
-              href="/trt"
-              className="inline-block rounded-lg bg-blue-600 px-8 py-4 text-lg font-medium text-white hover:bg-blue-700 transition-colors"
-            >
-              View TRT Provider Directory →
-            </Link>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link
+                href="/trt"
+                className="inline-block rounded-lg bg-blue-600 px-6 py-3 font-medium text-white hover:bg-blue-700 transition-colors"
+              >
+                Telehealth TRT Providers →
+              </Link>
+              <Link
+                href="/hormone-therapy"
+                className="inline-block rounded-lg border-2 border-blue-600 px-6 py-3 font-medium text-blue-600 hover:bg-blue-50 transition-colors"
+              >
+                Local Hormone Clinics →
+              </Link>
+            </div>
+          </div>
+
+          {/* Related Resources */}
+          <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 my-8">
+            <h4 className="font-bold text-gray-900 mb-4">Related Resources</h4>
+            <div className="grid md:grid-cols-2 gap-4">
+              <Link href="/guides/trt-testosterone-therapy" className="block p-4 bg-white rounded-lg border border-gray-200 hover:border-blue-400 transition-colors">
+                <div className="font-medium text-gray-900 mb-1">Complete TRT Guide</div>
+                <div className="text-sm text-gray-600">Everything you need to know about testosterone replacement</div>
+              </Link>
+              <Link href="/hormone-therapy" className="block p-4 bg-white rounded-lg border border-gray-200 hover:border-blue-400 transition-colors">
+                <div className="font-medium text-gray-900 mb-1">Find Local TRT Clinics</div>
+                <div className="text-sm text-gray-600">In-person hormone therapy clinics in Texas, Florida, Arizona</div>
+              </Link>
+              <Link href="/guides/peptide-therapy-guide" className="block p-4 bg-white rounded-lg border border-gray-200 hover:border-blue-400 transition-colors">
+                <div className="font-medium text-gray-900 mb-1">Peptide Therapy Guide</div>
+                <div className="text-sm text-gray-600">BPC-157, Sermorelin, and other peptides often used with TRT</div>
+              </Link>
+              <Link href="/guides/glp1-weight-loss-complete-guide" className="block p-4 bg-white rounded-lg border border-gray-200 hover:border-blue-400 transition-colors">
+                <div className="font-medium text-gray-900 mb-1">GLP-1 Weight Loss Guide</div>
+                <div className="text-sm text-gray-600">Many men combine TRT with GLP-1s for body composition</div>
+              </Link>
+            </div>
           </div>
 
           {/* Disclaimer */}

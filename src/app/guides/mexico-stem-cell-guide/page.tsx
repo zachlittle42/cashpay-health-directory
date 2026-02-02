@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import Navigation from '@/components/Navigation';
+import Footer from '@/components/Footer';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -21,15 +23,21 @@ export default function MexicoStemCellGuide() {
   };
 
   return (
-    <main className="min-h-screen bg-white">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <header className="border-b border-gray-200 px-4 py-4">
-        <div className="mx-auto max-w-4xl">
-          <Link href="/guides" className="text-sm text-blue-600 hover:underline">
-            ← Back to all guides
-          </Link>
+    <>
+      <Navigation />
+      <main className="min-h-screen bg-white">
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+        <div className="bg-gray-50 border-b border-gray-200">
+          <div className="mx-auto max-w-4xl px-4 py-3">
+            <nav className="text-sm text-gray-600">
+              <Link href="/" className="hover:text-blue-600">Home</Link>
+              <span className="mx-2">→</span>
+              <Link href="/guides" className="hover:text-blue-600">Guides</Link>
+              <span className="mx-2">→</span>
+              <span className="text-gray-900">Mexico Stem Cell Guide</span>
+            </nav>
+          </div>
         </div>
-      </header>
 
       <section className="bg-gradient-to-b from-emerald-50 to-white px-4 py-12">
         <div className="mx-auto max-w-4xl">
@@ -464,18 +472,41 @@ export default function MexicoStemCellGuide() {
           </p>
         </div>
 
-        {/* CTA */}
+        {/* Primary CTA - View Mexico Clinics */}
         <div className="bg-gradient-to-r from-emerald-50 to-blue-50 border border-emerald-200 rounded-lg p-8 my-12 text-center">
-          <h3 className="text-2xl font-bold text-gray-900 mb-3">Exploring Longevity Options?</h3>
+          <h3 className="text-2xl font-bold text-gray-900 mb-3">Ready to Explore Mexico Stem Cell Clinics?</h3>
           <p className="text-gray-600 mb-6">
-            Learn more about regenerative medicine and longevity treatments.
+            Compare top-rated stem cell clinics in Tijuana, Los Cabos, Puerto Vallarta, and Cancun with pricing and treatment details.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link href="/destinations/mexico" className="inline-block rounded-lg bg-emerald-600 px-6 py-3 font-medium text-white hover:bg-emerald-700">
+            <Link href="/stem-cells/mexico" className="inline-block rounded-lg bg-emerald-600 px-6 py-3 font-medium text-white hover:bg-emerald-700">
+              View Mexico Clinics →
+            </Link>
+            <Link href="/destinations/mexico" className="inline-block rounded-lg border-2 border-emerald-600 px-6 py-3 font-medium text-emerald-600 hover:bg-emerald-50">
               Mexico Destination Guide
             </Link>
-            <Link href="/guides/mexico-medical-tourism-planner" className="inline-block rounded-lg border-2 border-emerald-600 px-6 py-3 font-medium text-emerald-600 hover:bg-emerald-50">
-              Mexico Trip Planner
+          </div>
+        </div>
+
+        {/* Related Resources */}
+        <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 my-8">
+          <h4 className="font-bold text-gray-900 mb-4">Related Resources</h4>
+          <div className="grid md:grid-cols-2 gap-4">
+            <Link href="/stem-cells" className="block p-4 bg-white rounded-lg border border-gray-200 hover:border-indigo-400 transition-colors">
+              <div className="font-medium text-gray-900 mb-1">Stem Cell Hub</div>
+              <div className="text-sm text-gray-600">Compare Mexico, Panama, and US options</div>
+            </Link>
+            <Link href="/stem-cells/panama" className="block p-4 bg-white rounded-lg border border-gray-200 hover:border-indigo-400 transition-colors">
+              <div className="font-medium text-gray-900 mb-1">Panama Stem Cells</div>
+              <div className="text-sm text-gray-600">Premium clinics with culture-expanded cells</div>
+            </Link>
+            <Link href="/guides/mexico-medical-tourism-planner" className="block p-4 bg-white rounded-lg border border-gray-200 hover:border-indigo-400 transition-colors">
+              <div className="font-medium text-gray-900 mb-1">Mexico Trip Planner</div>
+              <div className="text-sm text-gray-600">Plan your medical tourism trip</div>
+            </Link>
+            <Link href="/longevity" className="block p-4 bg-white rounded-lg border border-gray-200 hover:border-indigo-400 transition-colors">
+              <div className="font-medium text-gray-900 mb-1">Longevity Hub</div>
+              <div className="text-sm text-gray-600">Explore all longevity treatment options</div>
             </Link>
           </div>
         </div>
@@ -494,13 +525,8 @@ export default function MexicoStemCellGuide() {
         </div>
       </article>
 
-      <footer className="border-t border-gray-200 px-4 py-8">
-        <div className="mx-auto max-w-4xl text-center">
-          <Link href="/guides" className="text-blue-600 hover:underline text-sm">
-            ← Back to all guides
-          </Link>
-        </div>
-      </footer>
-    </main>
+      </main>
+      <Footer />
+    </>
   );
 }
