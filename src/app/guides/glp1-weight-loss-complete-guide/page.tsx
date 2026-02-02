@@ -407,16 +407,47 @@ export default function GLP1Guide() {
 
         {/* CTA to Providers */}
         <div className="bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-200 rounded-lg p-8 my-12 text-center">
-          <h3 className="text-2xl font-bold text-gray-900 mb-3">Ready to Explore GLP-1 Options?</h3>
+          <h3 className="text-2xl font-bold text-gray-900 mb-3">Ready to Find GLP-1 Treatment?</h3>
           <p className="text-gray-600 mb-6">
-            Compare telehealth providers offering semaglutide and tirzepatide with transparent pricing.
+            Choose telehealth convenience or local in-person care for your weight loss journey.
           </p>
-          <Link
-            href="/glp1"
-            className="inline-block rounded-lg bg-blue-600 px-8 py-4 text-lg font-medium text-white hover:bg-blue-700 transition-colors"
-          >
-            Compare GLP-1 Providers →
-          </Link>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link
+              href="/glp1"
+              className="inline-block rounded-lg bg-blue-600 px-6 py-3 font-medium text-white hover:bg-blue-700 transition-colors"
+            >
+              Telehealth GLP-1 Providers →
+            </Link>
+            <Link
+              href="/weight-loss"
+              className="inline-block rounded-lg border-2 border-blue-600 px-6 py-3 font-medium text-blue-600 hover:bg-blue-50 transition-colors"
+            >
+              Local Weight Loss Clinics →
+            </Link>
+          </div>
+        </div>
+
+        {/* Related Resources */}
+        <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 my-8">
+          <h4 className="font-bold text-gray-900 mb-4">Related Resources</h4>
+          <div className="grid md:grid-cols-2 gap-4">
+            <Link href="/guides/compounded-semaglutide" className="block p-4 bg-white rounded-lg border border-gray-200 hover:border-blue-400 transition-colors">
+              <div className="font-medium text-gray-900 mb-1">Compounded Semaglutide Guide</div>
+              <div className="text-sm text-gray-600">FDA updates, costs, and what&apos;s legal in 2025</div>
+            </Link>
+            <Link href="/guides/hims-vs-ro-vs-calibrate" className="block p-4 bg-white rounded-lg border border-gray-200 hover:border-blue-400 transition-colors">
+              <div className="font-medium text-gray-900 mb-1">Hims vs Ro vs Calibrate</div>
+              <div className="text-sm text-gray-600">Compare the top telehealth weight loss programs</div>
+            </Link>
+            <Link href="/guides/trt-testosterone-therapy" className="block p-4 bg-white rounded-lg border border-gray-200 hover:border-blue-400 transition-colors">
+              <div className="font-medium text-gray-900 mb-1">TRT Guide for Men</div>
+              <div className="text-sm text-gray-600">Preserve muscle during weight loss with optimized testosterone</div>
+            </Link>
+            <Link href="/faq/glp1" className="block p-4 bg-white rounded-lg border border-gray-200 hover:border-blue-400 transition-colors">
+              <div className="font-medium text-gray-900 mb-1">GLP-1 FAQ</div>
+              <div className="text-sm text-gray-600">Common questions about insurance, side effects, and more</div>
+            </Link>
+          </div>
         </div>
 
         {/* Medical Disclaimer */}

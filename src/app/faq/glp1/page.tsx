@@ -226,7 +226,10 @@ export default function GLP1FAQ() {
 
         {/* Related Resources */}
         <div className="bg-blue-50 border border-blue-200 rounded-lg p-8 mt-12 text-center">
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">Learn More About GLP-1s</h3>
+          <h3 className="text-2xl font-bold text-gray-900 mb-4">Find GLP-1 Treatment</h3>
+          <p className="text-gray-600 mb-6">
+            Compare telehealth providers or find local clinics with in-person care.
+          </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
               href="/guides/glp1-weight-loss-complete-guide"
@@ -238,7 +241,13 @@ export default function GLP1FAQ() {
               href="/glp1"
               className="inline-block rounded-lg border-2 border-blue-600 px-6 py-3 font-medium text-blue-600 hover:bg-blue-50"
             >
-              Compare GLP-1 Providers
+              Telehealth GLP-1 Providers
+            </Link>
+            <Link
+              href="/weight-loss"
+              className="inline-block rounded-lg border-2 border-green-600 px-6 py-3 font-medium text-green-600 hover:bg-green-50"
+            >
+              Local Weight Loss Clinics
             </Link>
           </div>
         </div>

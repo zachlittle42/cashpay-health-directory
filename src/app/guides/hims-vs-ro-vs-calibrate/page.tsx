@@ -478,18 +478,41 @@ export default function HimsVsRoVsCalibrateGuide() {
             </p>
           </div>
 
-          {/* CTA */}
-          <div className="bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-200 rounded-lg p-8 my-12 text-center">
-            <h3 className="text-2xl font-bold text-gray-900 mb-3">Compare All GLP-1 Providers</h3>
-            <p className="text-gray-600 mb-6">
-              See the full comparison of telehealth weight loss providers including Found, Noom Med, and more.
+          {/* Local Alternative */}
+          <div className="bg-green-50 border border-green-200 rounded-lg p-6 my-8">
+            <h4 className="font-bold text-green-900 mb-3">Prefer In-Person Care?</h4>
+            <p className="text-green-800 mb-4">
+              Telehealth isn&apos;t for everyone. If you want hands-on support, body composition tracking, or more personalized care,
+              local weight loss clinics may be a better fit.
             </p>
             <Link
-              href="/glp1"
-              className="inline-block rounded-lg bg-blue-600 px-8 py-4 text-lg font-medium text-white hover:bg-blue-700 transition-colors"
+              href="/weight-loss"
+              className="inline-block text-sm font-medium text-green-700 hover:text-green-800"
             >
-              View Full Provider Directory →
+              Browse Local Weight Loss Clinics →
             </Link>
+          </div>
+
+          {/* CTA */}
+          <div className="bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-200 rounded-lg p-8 my-12 text-center">
+            <h3 className="text-2xl font-bold text-gray-900 mb-3">Find Your GLP-1 Provider</h3>
+            <p className="text-gray-600 mb-6">
+              Compare all telehealth options or find local clinics near you.
+            </p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link
+                href="/glp1"
+                className="inline-block rounded-lg bg-blue-600 px-6 py-3 font-medium text-white hover:bg-blue-700 transition-colors"
+              >
+                All Telehealth Providers →
+              </Link>
+              <Link
+                href="/weight-loss"
+                className="inline-block rounded-lg border-2 border-blue-600 px-6 py-3 font-medium text-blue-600 hover:bg-blue-50 transition-colors"
+              >
+                Local Clinics by State →
+              </Link>
+            </div>
           </div>
 
           {/* Disclaimer */}

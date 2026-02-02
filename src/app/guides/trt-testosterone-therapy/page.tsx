@@ -557,16 +557,47 @@ export default function TRTGuide() {
 
           {/* CTA */}
           <div className="bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-200 rounded-lg p-8 my-12 text-center">
-            <h3 className="text-2xl font-bold text-gray-900 mb-3">Compare Online TRT Clinics</h3>
+            <h3 className="text-2xl font-bold text-gray-900 mb-3">Find TRT Treatment</h3>
             <p className="text-gray-600 mb-6">
-              See pricing, services, and reviews from the top telehealth TRT providers.
+              Choose telehealth convenience or find local hormone clinics with hands-on care.
             </p>
-            <Link
-              href="/trt"
-              className="inline-block rounded-lg bg-blue-600 px-8 py-4 text-lg font-medium text-white hover:bg-blue-700 transition-colors"
-            >
-              Compare TRT Providers →
-            </Link>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link
+                href="/trt"
+                className="inline-block rounded-lg bg-blue-600 px-6 py-3 font-medium text-white hover:bg-blue-700 transition-colors"
+              >
+                Telehealth TRT Providers →
+              </Link>
+              <Link
+                href="/hormone-therapy"
+                className="inline-block rounded-lg border-2 border-blue-600 px-6 py-3 font-medium text-blue-600 hover:bg-blue-50 transition-colors"
+              >
+                Local Hormone Clinics →
+              </Link>
+            </div>
+          </div>
+
+          {/* Related Resources */}
+          <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 my-8">
+            <h4 className="font-bold text-gray-900 mb-4">Related Resources</h4>
+            <div className="grid md:grid-cols-2 gap-4">
+              <Link href="/guides/best-online-trt-clinics" className="block p-4 bg-white rounded-lg border border-gray-200 hover:border-blue-400 transition-colors">
+                <div className="font-medium text-gray-900 mb-1">Best Online TRT Clinics</div>
+                <div className="text-sm text-gray-600">Compare Fountain, Marek, TRT Nation and more</div>
+              </Link>
+              <Link href="/hormone-therapy" className="block p-4 bg-white rounded-lg border border-gray-200 hover:border-blue-400 transition-colors">
+                <div className="font-medium text-gray-900 mb-1">Local Hormone Therapy Clinics</div>
+                <div className="text-sm text-gray-600">Find in-person TRT clinics in your state</div>
+              </Link>
+              <Link href="/guides/glp1-weight-loss-complete-guide" className="block p-4 bg-white rounded-lg border border-gray-200 hover:border-blue-400 transition-colors">
+                <div className="font-medium text-gray-900 mb-1">GLP-1 Weight Loss Guide</div>
+                <div className="text-sm text-gray-600">Optimize body composition with GLP-1s alongside TRT</div>
+              </Link>
+              <Link href="/guides/peptide-therapy-guide" className="block p-4 bg-white rounded-lg border border-gray-200 hover:border-blue-400 transition-colors">
+                <div className="font-medium text-gray-900 mb-1">Peptide Therapy Guide</div>
+                <div className="text-sm text-gray-600">BPC-157, Sermorelin, and peptides often combined with HRT</div>
+              </Link>
+            </div>
           </div>
 
           {/* Disclaimer */}

@@ -386,16 +386,39 @@ export default function CompoundedSemaglutideGuide() {
 
           {/* CTA */}
           <div className="bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-200 rounded-lg p-8 my-12 text-center">
-            <h3 className="text-2xl font-bold text-gray-900 mb-3">Compare GLP-1 Providers</h3>
+            <h3 className="text-2xl font-bold text-gray-900 mb-3">Find GLP-1 Treatment Options</h3>
             <p className="text-gray-600 mb-6">
-              See current pricing and medication options from telehealth weight loss providers.
+              Compare telehealth providers or find local weight loss clinics with in-person care.
             </p>
-            <Link
-              href="/glp1"
-              className="inline-block rounded-lg bg-blue-600 px-8 py-4 text-lg font-medium text-white hover:bg-blue-700 transition-colors"
-            >
-              Compare GLP-1 Providers →
-            </Link>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link
+                href="/glp1"
+                className="inline-block rounded-lg bg-blue-600 px-6 py-3 font-medium text-white hover:bg-blue-700 transition-colors"
+              >
+                Telehealth GLP-1 Providers →
+              </Link>
+              <Link
+                href="/weight-loss"
+                className="inline-block rounded-lg border-2 border-blue-600 px-6 py-3 font-medium text-blue-600 hover:bg-blue-50 transition-colors"
+              >
+                Local Weight Loss Clinics →
+              </Link>
+            </div>
+          </div>
+
+          {/* Related Resources */}
+          <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 my-8">
+            <h4 className="font-bold text-gray-900 mb-4">Related Resources</h4>
+            <div className="grid md:grid-cols-2 gap-4">
+              <Link href="/guides/glp1-weight-loss-complete-guide" className="block p-4 bg-white rounded-lg border border-gray-200 hover:border-blue-400 transition-colors">
+                <div className="font-medium text-gray-900 mb-1">Complete GLP-1 Guide</div>
+                <div className="text-sm text-gray-600">Everything about semaglutide and tirzepatide</div>
+              </Link>
+              <Link href="/guides/hims-vs-ro-vs-calibrate" className="block p-4 bg-white rounded-lg border border-gray-200 hover:border-blue-400 transition-colors">
+                <div className="font-medium text-gray-900 mb-1">Hims vs Ro vs Calibrate</div>
+                <div className="text-sm text-gray-600">Compare the top telehealth weight loss programs</div>
+              </Link>
+            </div>
           </div>
 
           {/* Disclaimer */}
