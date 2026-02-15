@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import type { Metadata } from 'next';
+import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 
 export const metadata: Metadata = {
   title: 'Peptide Therapy Guide: BPC-157, TB-500, CJC-1295 & More (2025) | VitalityScout',
@@ -526,6 +527,14 @@ export default function PeptideTherapyGuide() {
             </ul>
           </div>
         </article>
+
+        <div className="mx-auto max-w-4xl px-4 py-8">
+          <EmailCaptureCard
+            title="Get Our Peptide Therapy Research Guide"
+            description="BPC-157, TB-500, and more: evidence summaries, sourcing tips, and protocol guides."
+            source="guide_peptide_therapy"
+          />
+        </div>
       </main>
       <Footer />
     </>

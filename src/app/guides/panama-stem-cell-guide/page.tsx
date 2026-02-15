@@ -2,6 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 
 export const metadata: Metadata = {
   title: 'Panama Stem Cell Therapy Guide: Golden Cells, Costs & Clinics | VitalityScout',
@@ -559,6 +560,14 @@ export default function PanamaStemCellGuide() {
           </p>
         </div>
       </section>
+
+      <div className="mx-auto max-w-4xl px-4 py-8">
+        <EmailCaptureCard
+          title="Get Our Stem Cell Clinic Comparison Guide"
+          description="Panama vs Mexico vs Cayman Islands: detailed cost and quality comparisons."
+          source="guide_panama_stem_cell"
+        />
+      </div>
 
       <Footer />
     </main>
