@@ -11,10 +11,10 @@ export function middleware(request: NextRequest) {
   const isBeta =
     hostname.startsWith('beta.') || subdomainParam === 'beta';
 
+  // Subdomain routing: beta.vitalityscout.com → /beta (for future use)
   if (isBeta && url.pathname === '/') {
-    // Strip the subdomain param so it doesn't appear in the rewritten URL
     url.searchParams.delete('subdomain');
-    url.pathname = '/v2';
+    url.pathname = '/beta';
     return NextResponse.rewrite(url);
   }
 
