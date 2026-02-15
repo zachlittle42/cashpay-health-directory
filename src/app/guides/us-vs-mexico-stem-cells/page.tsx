@@ -2,6 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 
 export const metadata: Metadata = {
   title: 'US vs Mexico Stem Cell Therapy: Cost, Legality & Safety Comparison | VitalityScout',
@@ -436,6 +437,14 @@ export default function USvsMexicoStemCells() {
           </p>
         </div>
       </section>
+
+      <div className="mx-auto max-w-4xl px-4 py-8">
+        <EmailCaptureCard
+          title="Get Our Stem Cell Clinic Comparison Guide"
+          description="US vs Mexico: detailed cost breakdowns, clinic profiles, and patient outcomes."
+          source="guide_us_vs_mexico_stem_cells"
+        />
+      </div>
 
       <Footer />
     </main>

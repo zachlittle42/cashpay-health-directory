@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 
 export const metadata: Metadata = {
   title: 'GLP-1 for Weight Loss: Complete Guide (2024) | Semaglutide & Tirzepatide',
@@ -470,6 +471,14 @@ export default function GLP1Guide() {
           </ul>
         </div>
       </article>
+
+      <div className="mx-auto max-w-4xl px-4 py-8">
+        <EmailCaptureCard
+          title="Get Weekly Weight Loss Research Updates"
+          description="New GLP-1 studies, price drops, and provider comparisons delivered weekly."
+          source="guide_glp1"
+        />
+      </div>
 
       {/* Footer */}
       <footer className="border-t border-gray-200 px-4 py-8">

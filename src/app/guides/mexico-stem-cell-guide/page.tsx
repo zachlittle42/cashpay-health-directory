@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import type { Metadata } from 'next';
+import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 
 export const metadata: Metadata = {
   title: 'Stem Cell Therapy in Mexico: Clinics, Costs & What to Know (2024)',
@@ -524,6 +525,14 @@ export default function MexicoStemCellGuide() {
           </ul>
         </div>
       </article>
+
+      <div className="mx-auto max-w-4xl px-4 py-8">
+        <EmailCaptureCard
+          title="Get Our Stem Cell Clinic Comparison Guide"
+          description="Side-by-side pricing, accreditations, and patient reviews for top Mexico clinics."
+          source="guide_mexico_stem_cell"
+        />
+      </div>
 
       </main>
       <Footer />
