@@ -767,7 +767,7 @@ export function generateMetadata({ params }: { params: { destination: string } }
   if (!destination) return { title: 'Destination Not Found' };
 
   return {
-    title: `${destination.displayName} Medical Tourism Guide | VitalityScout`,
+    title: `${destination.displayName} Medical Tourism Guide`,
     description: destination.metaDescription,
   };
 }

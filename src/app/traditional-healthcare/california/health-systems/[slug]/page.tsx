@@ -47,7 +47,7 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
 
   const { system, region } = result;
   return {
-    title: `${system.name} - ${region.name}, California | VitalityScout`,
+    title: `${system.name} - ${region.name}, California`,
     description: `${system.name} is a ${system.type} health system in ${region.name}, California. ${system.highlights[0]}. Compare with other ${region.name} hospitals.`,
   };
 }

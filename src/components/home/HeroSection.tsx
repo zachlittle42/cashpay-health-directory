@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import SearchBar from '@/components/SearchBar';
 
 const categoryPills = [
   { label: 'Stem Cells', href: '/longevity', featured: true },
@@ -33,6 +34,8 @@ export default function HeroSection() {
           Independent research on stem cells, GLP-1 weight loss, TRT, longevity clinics, and 20+
           cash-pay healthcare categories. Real pricing. Honest comparisons.
         </p>
+
+        <SearchBar />
 
         <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
           <Link

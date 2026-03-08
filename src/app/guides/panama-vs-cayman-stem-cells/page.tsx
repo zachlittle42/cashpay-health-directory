@@ -4,7 +4,7 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Panama vs Cayman Islands Stem Cells: Which Premium Destination? | VitalityScout',
+  title: 'Panama vs Cayman Islands Stem Cells: Which Premium Destination?',
   description: 'Compare premium stem cell destinations: Panama (Stem Cell Institute, Golden Cells) vs Cayman Islands (DVC Stem, Regenexx). Cost, approach, and who each is best for.',
 };
 

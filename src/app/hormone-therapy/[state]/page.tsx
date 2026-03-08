@@ -21,13 +21,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const stateInfo = HORMONE_STATES.find(s => s.slug === stateSlug);
 
   if (!stateInfo) {
-    return { title: 'State Not Found | VitalityScout' };
+    return { title: 'State Not Found' };
   }
 
   const clinics = getHormoneClinicsByState(stateSlug);
 
   return {
-    title: `${stateInfo.name} TRT & HRT Clinics: ${clinics.length}+ Hormone Therapy Options | VitalityScout`,
+    title: `${stateInfo.name} TRT & HRT Clinics: ${clinics.length}+ Hormone Therapy Options`,
     description: `Find hormone therapy clinics in ${stateInfo.name}. TRT for men, HRT for women. ${stateInfo.cities.slice(0, 3).join(', ')} and more. Compare prices, services, and reviews.`,
   };
 }

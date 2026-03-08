@@ -4,7 +4,7 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'California Longevity Clinics: Bay Area, LA, San Diego | VitalityScout',
+  title: 'California Longevity Clinics: Bay Area, LA, San Diego',
   description: 'Find longevity clinics in California. Human Longevity (SF), Next Health (LA), Beverly Hills concierge. Stem cells, NAD+, peptides, executive health.',
 };
 

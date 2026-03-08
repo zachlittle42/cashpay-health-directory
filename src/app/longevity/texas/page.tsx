@@ -4,7 +4,7 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Texas Longevity Clinics: Austin, Dallas, Houston | VitalityScout',
+  title: 'Texas Longevity Clinics: Austin, Dallas, Houston',
   description: 'Find longevity clinics in Texas. Fountain Life Dallas, Humanaut Health Austin. Stem cells, NAD+, peptides, executive health.',
 };
 

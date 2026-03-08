@@ -78,7 +78,6 @@ export default function Footer() {
             <div className="flex gap-6 text-sm text-gray-500">
               <Link href="/faq" className="hover:text-gray-700">FAQ</Link>
               <Link href="/guides" className="hover:text-gray-700">Guides</Link>
-              <a href="https://github.com/zachlittle42/cashpay-health-directory" target="_blank" rel="noopener" className="hover:text-gray-700">GitHub</a>
             </div>
           </div>
           <p className="mt-4 text-xs text-gray-500">

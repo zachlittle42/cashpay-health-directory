@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 import { getCountriesWithClinics, allStemCellClinics, countryMetadata } from '@/data/stem-cell-clinics-index';
 
 export const metadata: Metadata = {
-  title: 'Stem Cell Therapy Clinics: Mexico, Panama & US Options | VitalityScout',
+  title: 'Stem Cell Therapy Clinics: Mexico, Panama & US Options',
   description: 'Compare stem cell clinics in Mexico, Panama, and the US. Find treatments for autoimmune, orthopedic, and neurological conditions. Prices, reviews, and clinic comparisons.',
 };
 

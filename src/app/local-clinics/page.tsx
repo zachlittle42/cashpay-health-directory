@@ -4,7 +4,7 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Local Cash-Pay Clinics | DEXA, VO2 Max, IV Therapy | VitalityScout',
+  title: 'Local Cash-Pay Clinics | DEXA, VO2 Max, IV Therapy',
   description: 'Find local independent clinics offering cash-pay services. DEXA scans, VO2 max testing, IV therapy, and longevity clinics near you—no insurance needed.',
 };
 

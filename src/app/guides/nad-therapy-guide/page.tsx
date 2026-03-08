@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'NAD+ Therapy Guide: IV Infusions, Costs & Evidence (2025) | VitalityScout',
+  title: 'NAD+ Therapy Guide: IV Infusions, Costs & Evidence (2025)',
   description: 'Complete NAD+ therapy guide covering IV infusions, oral supplements, costs ($250-2,000), what the science actually shows, and whether it\'s worth the investment.',
   keywords: ['NAD+ therapy', 'NAD+ IV infusion', 'NAD+ supplement', 'anti-aging', 'longevity', 'NAD+ cost', 'nicotinamide riboside', 'NMN'],
 };

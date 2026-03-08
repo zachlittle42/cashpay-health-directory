@@ -4,7 +4,7 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Health Guides: Lab Testing, GLP-1, Hair Transplants & More | VitalityScout',
+  title: 'Health Guides: Lab Testing, GLP-1, Hair Transplants & More',
   description: 'Expert guides on cash-pay health services. Learn about GLP-1 weight loss, at-home lab testing, medical tourism, and more.',
 };
 

@@ -4,7 +4,7 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Telehealth & Cash-Pay Services | Labs, GLP-1, TRT | VitalityScout',
+  title: 'Telehealth & Cash-Pay Services | Labs, GLP-1, TRT',
   description: 'Explore cash-pay telehealth services shipped to your door. Compare at-home lab testing, GLP-1 weight loss programs, TRT, and more—no insurance needed.',
 };
 

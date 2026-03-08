@@ -4,7 +4,7 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'New York Longevity Clinics: NYC, Princeton NJ | VitalityScout',
+  title: 'New York Longevity Clinics: NYC, Princeton NJ',
   description: 'Find longevity clinics in New York. Fountain Life NYC, Eleven Eleven Wellness, Princeton Longevity Center. Stem cells, NAD+, executive health.',
 };
 

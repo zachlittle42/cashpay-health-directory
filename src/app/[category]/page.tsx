@@ -1,9 +1,17 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import type { Metadata } from 'next';
 import { CATEGORIES, type Category, type Provider } from '@/lib/types';
 import { getProvidersByCategory } from '@/lib/providers';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import { buildCategoryListSchema } from '@/lib/jsonLd';
+
+export function generateMetadata({ params }: { params: { category: string } }): Metadata {
+  const cat = CATEGORIES[params.category as Category];
+  if (!cat) return {};
+  return { title: `${cat.name} Compared — Pricing & Reviews` };
+}
 
 function ProviderCard({ provider }: { provider: Provider }) {
   return (
@@ -38,6 +46,12 @@ function ProviderCard({ provider }: { provider: Provider }) {
               </span>
             ))}
           </div>
+
+          {provider.lastVerified && (
+            <p className="mt-2 text-xs text-gray-400">
+              Updated {new Date(provider.lastVerified).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}
+            </p>
+          )}
 
           {provider.includesInPackage && provider.includesInPackage.length > 0 && (
             <p className="mt-3 text-xs text-gray-500">
@@ -91,8 +105,14 @@ export default function CategoryPage({
   const hasMedicalTourism = category.hasMedicalTourism;
   const destinations = hasMedicalTourism ? category.topDestinations : [];
 
+  const categoryListSchema = buildCategoryListSchema(category.name, providers);
+
   return (
     <main className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(categoryListSchema) }}
+      />
       <Navigation />
 
       {/* Category Header */}

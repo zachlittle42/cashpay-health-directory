@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
   title: 'Lab Testing FAQ: At-Home Blood Tests & Direct-to-Consumer Labs (2024)',
@@ -21,8 +22,21 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
 }
 
 export default function LabsFAQ() {
+  const faqSchema = buildFAQSchema([
+    { question: 'Are at-home lab tests as accurate as tests ordered by my doctor?', answer: 'Yes, if they use professional labs like Quest or LabCorp. Services like Marek Health and Function Health send you to the same facilities your doctor would use. Finger-prick kits are slightly less accurate (±3-5% variance) but fine for screening.' },
+    { question: 'Do I need to fast before lab tests?', answer: 'Depends on the test. Fasting required for lipid panel, fasting glucose, insulin. No fasting needed for hormones, thyroid, vitamin D, CBC. Morning is best for testosterone and cortisol.' },
+    { question: 'What labs should I get as a baseline?', answer: 'Start with CBC, Comprehensive Metabolic Panel, Lipid Panel, HbA1c, TSH, and Vitamin D (~$150-250 total). Add hormones if optimizing performance.' },
+    { question: 'Can I get lab tests without insurance?', answer: 'Yes! No insurance, referral, or pre-authorization needed. Just order, get tested, and receive results. You can use HSA/FSA funds since it\'s a qualified medical expense.' },
+    { question: 'How often should I get labs done?', answer: 'Healthy baseline: once per year. Optimizing/making changes: every 3-6 months. On medications: every 3-6 months or as prescribed.' },
+    { question: 'What do I do if my results show something abnormal?', answer: 'If slightly out of range: don\'t panic, retest in a few weeks, consider context. If significantly abnormal: see a doctor ASAP and bring your lab results.' },
+  ]);
+
   return (
     <main className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <header className="border-b border-gray-200 px-4 py-4">
         <div className="mx-auto max-w-4xl">
           <Link href="/faq" className="text-sm text-blue-600 hover:underline">

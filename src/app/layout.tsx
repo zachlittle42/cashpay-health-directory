@@ -8,7 +8,10 @@ import OutboundClickTracker from '@/components/tracking/OutboundClickTracker';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Cash-Pay Health Directory | Compare Prices, Find Providers',
+  title: {
+    default: 'VitalityScout | Compare Cash-Pay Healthcare Providers',
+    template: '%s | VitalityScout',
+  },
   description:
     'Discover and compare cash-pay health services. Transparent pricing for labs, GLP-1, TRT, DEXA scans, and more. No insurance needed.',
   keywords: [

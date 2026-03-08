@@ -4,7 +4,7 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'US Stem Cell Options: FDA Regulations & What\'s Available | VitalityScout',
+  title: 'US Stem Cell Options: FDA Regulations & What\'s Available',
   description: 'Understanding stem cell therapy options in the United States. FDA regulations, what\'s legally available, and why many Americans travel abroad for treatment.',
 };
 

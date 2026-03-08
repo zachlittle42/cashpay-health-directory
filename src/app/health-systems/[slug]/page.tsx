@@ -26,7 +26,7 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
     .join(', ');
 
   return {
-    title: `${system.name} - ${system.location.city}, ${system.location.state} | VitalityScout`,
+    title: `${system.name} - ${system.location.city}, ${system.location.state}`,
     description: `${system.name} is ${system.ranking.honorRoll ? 'a US News Honor Roll hospital' : 'a nationally recognized health system'}. ${specialtyText ? `Top-ranked for ${specialtyText}.` : ''} Learn about their specialties, rankings, and achievements.`,
   };
 }

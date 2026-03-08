@@ -5,7 +5,7 @@ import type { Metadata } from 'next';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 
 export const metadata: Metadata = {
-  title: 'Peptide Therapy Guide: BPC-157, TB-500, CJC-1295 & More (2025) | VitalityScout',
+  title: 'Peptide Therapy Guide: BPC-157, TB-500, CJC-1295 & More (2025)',
   description: 'Complete peptide therapy guide covering BPC-157, TB-500, CJC-1295, and other peptides. Learn about uses, costs, FDA regulations, and what the science says.',
   keywords: ['peptide therapy', 'BPC-157', 'TB-500', 'CJC-1295', 'peptides for healing', 'peptides for muscle', 'growth hormone peptides'],
 };

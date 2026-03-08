@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Hair Transplant Recovery Timeline: Day-by-Day Guide (2025) | VitalityScout',
+  title: 'Hair Transplant Recovery Timeline: Day-by-Day Guide (2025)',
   description: 'Complete hair transplant recovery timeline from day 1 to month 18. What to expect, healing stages, when to return to work, exercise, and see final results.',
   keywords: ['hair transplant recovery', 'hair transplant timeline', 'FUE recovery', 'DHI recovery', 'hair transplant healing', 'hair transplant results', 'shock loss', 'hair growth after transplant'],
 };

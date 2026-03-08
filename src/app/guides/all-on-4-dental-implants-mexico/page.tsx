@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'All-on-4 Dental Implants in Mexico: Complete Guide (2025) | VitalityScout',
+  title: 'All-on-4 Dental Implants in Mexico: Complete Guide (2025)',
   description: 'Everything you need to know about All-on-4 dental implants in Mexico: costs ($8,000-12,000 vs $20,000+ in US), top clinics, what to expect, and how to plan your trip.',
   keywords: ['All-on-4 dental implants Mexico', 'full mouth dental implants Mexico', 'dental implants Tijuana', 'dental implants Cancun', 'dental tourism Mexico', 'All-on-4 cost'],
 };

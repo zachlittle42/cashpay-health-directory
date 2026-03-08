@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 import { getStatesWithClinics, allHormoneClinics } from '@/data/hormone-clinics-index';
 
 export const metadata: Metadata = {
-  title: 'Hormone Therapy Clinics: TRT & HRT Near You | VitalityScout',
+  title: 'Hormone Therapy Clinics: TRT & HRT Near You',
   description: 'Find local TRT and HRT clinics in Texas, Florida, and Arizona. Compare testosterone replacement and hormone therapy options - telehealth vs in-person clinics.',
 };
 
