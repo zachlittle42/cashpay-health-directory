@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 import { SOCAL_REGIONS, getClinicCount, getCategoryStats } from '@/lib/socal-clinics-data';
 
 export const metadata: Metadata = {
-  title: 'Southern California Cash-Pay Clinics: DEXA, IV Therapy, Longevity | VitalityScout',
+  title: 'Southern California Cash-Pay Clinics: DEXA, IV Therapy, Longevity',
   description: 'Find cash-pay health clinics in Los Angeles, Orange County, San Diego, Inland Empire. 60+ clinics offering DEXA scans, IV therapy, longevity services—no insurance needed.',
   keywords: ['DEXA scan Los Angeles', 'IV therapy Orange County', 'longevity clinic San Diego', 'VO2 max Southern California', 'cash pay health clinics', 'DEXA San Diego', 'IV therapy Laguna Beach', 'longevity clinic Carlsbad'],
 };

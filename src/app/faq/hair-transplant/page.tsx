@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
   title: 'Hair Transplant FAQ: FUE, DHI, Results & Recovery (2024)',
@@ -21,8 +22,22 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
 }
 
 export default function HairTransplantFAQ() {
+  const faqSchema = buildFAQSchema([
+    { question: 'Does a hair transplant hurt?', answer: 'Local anesthesia is used so the procedure itself is painless. You may feel pressure or pulling but not pain. Post-procedure discomfort is mild and manageable with over-the-counter pain medication.' },
+    { question: 'When will I see results?', answer: 'Transplanted hair falls out at 2-4 weeks (normal). New growth starts at 3-4 months. Noticeable improvement at 6-8 months. Final results at 12-18 months.' },
+    { question: 'Will people be able to tell I had a hair transplant?', answer: 'With modern FUE/DHI techniques, results look completely natural when done by an experienced surgeon. The key is natural hairline design and proper graft placement.' },
+    { question: 'Do I need to take finasteride or minoxidil after a transplant?', answer: 'Recommended but not required. These medications help preserve your existing non-transplanted hair from further loss. Transplanted hairs are permanent regardless.' },
+    { question: 'How many grafts do I need?', answer: 'Depends on the area of loss: receding hairline 1,500-2,500 grafts, crown thinning 1,500-3,000 grafts, significant loss 3,000-5,000+ grafts. A consultation with photos can give an accurate estimate.' },
+    { question: 'Can I fly immediately after the procedure?', answer: 'Most surgeons recommend waiting 2-3 days after surgery before flying. The altitude changes and dry cabin air can affect healing. Many clinics include post-op hotel stays for this reason.' },
+    { question: 'What\'s the difference between 3,000 grafts and 5,000 grafts?', answer: 'Each graft contains 1-4 hairs. More grafts = more density and coverage. 3,000 grafts is typical for moderate hair loss, while 5,000+ is for extensive coverage or maximum density.' },
+  ]);
+
   return (
     <main className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <header className="border-b border-gray-200 px-4 py-4">
         <div className="mx-auto max-w-4xl">
           <Link href="/faq" className="text-sm text-blue-600 hover:underline">

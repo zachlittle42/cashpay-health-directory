@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
   title: 'Medical Tourism FAQ: Safety, Planning & What to Expect (2024)',
@@ -21,8 +22,20 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
 }
 
 export default function MedicalTourismFAQ() {
+  const faqSchema = buildFAQSchema([
+    { question: 'How do I know if a foreign clinic is legitimate?', answer: 'Look for JCI accreditation (international gold standard), board-certified surgeons with high procedure volumes, verifiable patient reviews, and facilities that specifically cater to international patients.' },
+    { question: 'What if I have complications after I return home?', answer: 'Reputable facilities offer 24/7 support lines, remote follow-up via video consultations, US partner doctors for local care, and complication coverage policies. Always confirm aftercare protocols before booking.' },
+    { question: 'Should I get travel insurance for medical tourism?', answer: 'Yes, highly recommended. Get a policy that specifically covers medical tourism, complications from elective procedures, and emergency medical evacuation. Standard travel insurance usually excludes elective procedures.' },
+    { question: 'How much time off work do I need?', answer: 'Varies by procedure: hair transplants 5-7 days, dental work 3-5 days, bariatric surgery 2-3 weeks, plastic surgery 2-4 weeks. Always add buffer days for travel and unexpected recovery needs.' },
+    { question: 'Can I bring someone with me?', answer: 'Yes, and it\'s recommended for surgical procedures. Many medical tourism packages include companion accommodations. Having support during recovery is valuable for both practical help and emotional comfort.' },
+  ]);
+
   return (
     <main className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <header className="border-b border-gray-200 px-4 py-4">
         <div className="mx-auto max-w-4xl">
           <Link href="/faq" className="text-sm text-blue-600 hover:underline">

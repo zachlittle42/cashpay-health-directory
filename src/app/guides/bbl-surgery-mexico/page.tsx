@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'BBL Surgery in Mexico: Complete Safety & Cost Guide (2025) | VitalityScout',
+  title: 'BBL Surgery in Mexico: Complete Safety & Cost Guide (2025)',
   description: 'BBL Brazilian Butt Lift surgery in Mexico: costs ($3,500-7,000), safety data, mortality rates, choosing surgeons, and what you must know before traveling.',
   keywords: ['BBL Mexico', 'Brazilian Butt Lift Mexico', 'BBL surgery cost', 'BBL safety', 'BBL Tijuana', 'plastic surgery Mexico', 'BBL mortality rate'],
 };

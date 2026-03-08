@@ -43,7 +43,7 @@ export default function CookieConsent() {
   if (!visible) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 p-4 md:left-4 md:right-auto md:bottom-4 md:max-w-md">
+    <div className="fixed bottom-0 left-0 right-0 z-[9999] p-4 md:left-4 md:right-auto md:bottom-4 md:max-w-md">
       <div className="rounded-xl border border-gray-200 bg-white p-5 shadow-lg">
         <p className="mb-4 text-sm text-gray-700">
           We use cookies to analyze site traffic and improve your experience.

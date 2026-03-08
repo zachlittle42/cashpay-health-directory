@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
   title: 'GLP-1 FAQ: Common Questions About Semaglutide & Weight Loss (2024)',
@@ -21,8 +22,23 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
 }
 
 export default function GLP1FAQ() {
+  const faqSchema = buildFAQSchema([
+    { question: 'Will my insurance cover GLP-1 medications for weight loss?', answer: 'Maybe, but probably not. Wegovy & Zepbound are FDA-approved for weight loss but many insurers don\'t cover them. Ozempic & Mounjaro are only approved for diabetes. Compounded semaglutide is never covered. Cash-pay telehealth at $199-499/month is often simpler.' },
+    { question: 'What happens when I stop taking GLP-1 medications?', answer: 'Most people regain about 2/3 of weight lost within 12 months. Build sustainable eating habits, add strength training, and consider maintenance doses rather than stopping completely.' },
+    { question: 'Can I drink alcohol while taking GLP-1s?', answer: 'Yes, but with caution. Alcohol stays in your stomach longer, you may get drunk faster, and it can cause severe nausea. Many people naturally drink less on GLP-1s.' },
+    { question: 'How long until I see weight loss results?', answer: 'Weeks 1-4: 2-5 lbs. Months 2-3: 1-2 lbs/week. Months 4-12: peak weight loss. Average total: 10-15% of body weight in real-world use.' },
+    { question: 'Do the injections hurt?', answer: 'Most people find them painless or barely noticeable. The needles are very small, similar to insulin pens, injected into fatty tissue.' },
+    { question: 'Can I take GLP-1s while breastfeeding or pregnant?', answer: 'No. GLP-1 medications are contraindicated during pregnancy and breastfeeding. Stop at least 2 months before trying to conceive.' },
+    { question: 'What\'s the difference between Ozempic and Wegovy?', answer: 'Same active ingredient (semaglutide). Ozempic is approved for diabetes (max 2mg/week), Wegovy for weight loss (max 2.4mg/week). In practice, they\'re the same medication at different doses.' },
+    { question: 'Can I just use GLP-1s without changing my diet?', answer: 'Technically yes, but you\'d lose muscle mass without adequate protein, risk nutrient deficiencies, and regain weight faster when stopping. Minimum: 80-100g protein daily.' },
+  ]);
+
   return (
     <main className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <header className="border-b border-gray-200 px-4 py-4">
         <div className="mx-auto max-w-4xl">
           <Link href="/faq" className="text-sm text-blue-600 hover:underline">

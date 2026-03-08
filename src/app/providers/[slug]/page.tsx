@@ -1,12 +1,23 @@
 import Link from 'next/link';
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getProviderBySlug, getTotalProviderCount } from '@/lib/providers';
 import { CATEGORIES } from '@/lib/types';
+import { buildProviderSchema } from '@/lib/jsonLd';
 
 export function generateStaticParams() {
   // This would ideally get all provider slugs
   // For now, returning empty array means pages are generated on-demand
   return [];
+}
+
+export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
+  const provider = getProviderBySlug(params.slug);
+  if (!provider) return {};
+  return {
+    title: `${provider.name} — ${CATEGORIES[provider.category].name} Provider`,
+    description: provider.description,
+  };
 }
 
 export default function ProviderDetailPage({
@@ -23,8 +34,14 @@ export default function ProviderDetailPage({
   const category = CATEGORIES[provider.category];
   const isMedicalTourism = provider.destinationCountry !== undefined;
 
+  const providerSchema = buildProviderSchema(provider);
+
   return (
     <main className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(providerSchema) }}
+      />
       {/* Header */}
       <header className="border-b border-gray-200 px-4 py-4">
         <div className="mx-auto max-w-5xl">

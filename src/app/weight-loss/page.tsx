@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 import { getWeightLossStatesWithClinics, allWeightLossClinics } from '@/data/weightloss-clinics-index';
 
 export const metadata: Metadata = {
-  title: 'Medical Weight Loss Clinics: GLP-1 & Semaglutide Near You | VitalityScout',
+  title: 'Medical Weight Loss Clinics: GLP-1 & Semaglutide Near You',
   description: 'Find local GLP-1 weight loss clinics in Texas, Florida, and Arizona. Compare semaglutide and tirzepatide options - telehealth vs in-person medical weight loss.',
 };
 

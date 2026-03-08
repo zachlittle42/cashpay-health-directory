@@ -4,7 +4,7 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Medical Tourism: Save 50-80% on Procedures Abroad | VitalityScout',
+  title: 'Medical Tourism: Save 50-80% on Procedures Abroad',
   description: 'Complete guide to medical tourism. Compare dental work in Mexico, hair transplants in Turkey, bariatric surgery, and more. Save 50-80% with quality care abroad.',
 };
 

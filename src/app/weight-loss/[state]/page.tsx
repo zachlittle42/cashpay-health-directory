@@ -21,13 +21,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const stateInfo = WEIGHTLOSS_STATES.find(s => s.slug === stateSlug);
 
   if (!stateInfo) {
-    return { title: 'State Not Found | VitalityScout' };
+    return { title: 'State Not Found' };
   }
 
   const clinics = getWeightLossClinicsByState(stateSlug);
 
   return {
-    title: `${stateInfo.name} GLP-1 & Weight Loss Clinics: ${clinics.length}+ Options | VitalityScout`,
+    title: `${stateInfo.name} GLP-1 & Weight Loss Clinics: ${clinics.length}+ Options`,
     description: `Find medical weight loss clinics in ${stateInfo.name}. Semaglutide, tirzepatide, and GLP-1 programs in ${stateInfo.cities.slice(0, 3).join(', ')}. Compare prices and reviews.`,
   };
 }

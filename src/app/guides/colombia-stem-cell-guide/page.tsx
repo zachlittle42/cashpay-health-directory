@@ -4,7 +4,7 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Colombia Stem Cell Therapy Guide: BioXcellerator, Medellin Clinics | VitalityScout',
+  title: 'Colombia Stem Cell Therapy Guide: BioXcellerator, Medellin Clinics',
   description: 'Complete guide to stem cell therapy in Colombia. BioXcellerator, Medellin clinics, all-inclusive packages. Costs $8,000-35,000 with 40-60% savings.',
 };
 

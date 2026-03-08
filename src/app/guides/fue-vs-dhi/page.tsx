@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'FUE vs DHI Hair Transplant: Complete Comparison Guide (2025) | VitalityScout',
+  title: 'FUE vs DHI Hair Transplant: Complete Comparison Guide (2025)',
   description: 'FUE vs DHI hair transplant comparison. Learn the differences in technique, cost, recovery, results, and which method is best for your hair loss pattern.',
   keywords: ['FUE hair transplant', 'DHI hair transplant', 'FUE vs DHI', 'hair transplant techniques', 'Choi pen', 'hair transplant Turkey', 'hair restoration'],
 };

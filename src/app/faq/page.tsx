@@ -2,6 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
   title: 'FAQ: Cash-Pay Healthcare, Medical Tourism & Self-Pay Services',
@@ -23,8 +24,27 @@ function FAQItem({ question, answer }: { question: string; answer: React.ReactNo
 }
 
 export default function GeneralFAQ() {
+  const faqSchema = buildFAQSchema([
+    { question: 'What is cash-pay healthcare?', answer: 'Cash-pay (self-pay) healthcare means paying directly for medical services without using insurance. This is growing popular because many people have high deductibles, some services aren\'t covered, cash-pay is often cheaper, and there are no pre-authorization hassles.' },
+    { question: 'Is cash-pay healthcare actually cheaper?', answer: 'Often, yes. Lab testing can be 50-80% cheaper, GLP-1 medications at $199/mo vs $1,000+ retail, dental work in Mexico is 50-70% less, and bariatric surgery at $4,500 in Mexico vs $15,000-25,000 in the US.' },
+    { question: 'Can I use my HSA or FSA for cash-pay services?', answer: 'Yes! HSA and FSA funds can be used for most legitimate medical expenses, including lab testing, prescription medications, DEXA scans, dental procedures, and medical procedures abroad.' },
+    { question: 'Do I need a doctor\'s referral for these services?', answer: 'Usually no. Lab testing, telehealth consultations, DEXA scans, and medical tourism facilities generally don\'t require referrals.' },
+    { question: 'Is medical tourism safe?', answer: 'It depends on the facility you choose. Use JCI-accredited facilities with board-certified surgeons and high procedure volumes. Countries like Turkey, Mexico, and South Korea have world-class facilities.' },
+    { question: 'What if something goes wrong after I return home?', answer: 'Reputable facilities offer 24/7 support lines, remote follow-up via video consultations, US partner doctors, and complication coverage.' },
+    { question: 'How much should I budget for medical tourism beyond the procedure?', answer: 'Add $1,000-2,500 for flights ($400-1,200), extra hotel nights ($50-200/night), meals ($20-60/day), visa fees ($0-100), and travel insurance ($50-150).' },
+    { question: 'How do telehealth prescriptions work?', answer: 'Complete an online questionnaire, have a virtual consultation, receive a prescription if appropriate, get medication shipped to your door in 3-7 days, with ongoing monitoring.' },
+    { question: 'Are telehealth providers legitimate doctors?', answer: 'Yes, reputable services employ board-certified physicians or nurse practitioners licensed in your state, following standard medical protocols.' },
+    { question: 'Do you make money from these referrals?', answer: 'Yes, many links are affiliate links. This doesn\'t change the price you pay. We only list providers we\'d personally consider and turn down those that don\'t meet quality standards.' },
+    { question: 'How do you vet providers before listing them?', answer: 'Every provider must have proper licensing, an established track record, transparent pricing, and clear refund/complication policies. For medical tourism, we prioritize JCI-accredited facilities.' },
+    { question: 'Should I tell my regular doctor I\'m using cash-pay services?', answer: 'Yes, absolutely. Your primary care doctor should know about any medications, planned procedures, and lab results from cash-pay services.' },
+  ]);
+
   return (
     <main className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <Navigation />
 
       <section className="bg-gradient-to-b from-blue-50 to-white px-4 py-12">

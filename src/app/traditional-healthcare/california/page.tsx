@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import { CALIFORNIA_REGIONS } from '@/lib/california-healthcare-data';
 
 export const metadata = {
-  title: 'California Healthcare - Top Hospitals by Region | VitalityScout',
+  title: 'California Healthcare - Top Hospitals by Region',
   description:
     'Explore California\'s top hospitals and health systems across 10 regions. Compare UCSF, Stanford, UCLA, Cedars-Sinai, and more with detailed regional guides.',
 };

@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Compounded Semaglutide: What You Need to Know in 2025 | VitalityScout',
+  title: 'Compounded Semaglutide: What You Need to Know in 2025',
   description: 'Complete guide to compounded semaglutide: FDA status, legal changes, safety concerns, costs vs brand-name, and what alternatives exist now that the shortage has ended.',
   keywords: ['compounded semaglutide', 'compounding pharmacy', 'Ozempic alternative', 'semaglutide cost', 'FDA shortage', 'telehealth weight loss'],
 };

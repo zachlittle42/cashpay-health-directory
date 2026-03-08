@@ -4,7 +4,7 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Dubai Longevity & Stem Cell Guide: AEON Clinic, Victor Longevity | VitalityScout',
+  title: 'Dubai Longevity & Stem Cell Guide: AEON Clinic, Victor Longevity',
   description: 'Complete guide to luxury longevity medicine in Dubai. AEON Clinic at Atlantis, stem cells, anti-aging. Costs $15,000-50,000 with world-class hospitality.',
 };
 
