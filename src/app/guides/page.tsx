@@ -58,6 +58,38 @@ const guides = [
     readTime: '10 min',
     icon: '🏆',
   },
+  {
+    slug: 'hair-transplant-techniques-guide',
+    title: 'Hair Transplant Techniques: From Strip Surgery to Robotic FUE',
+    description: 'How hair transplant technology evolved from punch grafts to robotic FUE. Compare FUT, FUE, Sapphire FUE, DHI, and robotic options.',
+    category: 'Hair Transplant',
+    readTime: '18 min',
+    icon: '🔬',
+  },
+  {
+    slug: 'top-turkey-hair-transplant-clinics',
+    title: 'Top 4 Turkey Hair Transplant Clinics Compared',
+    description: 'Side-by-side comparison of Vera Clinic, ASMED, Smile Hair, and Dr. Serkan Aygin — pricing, techniques, reviews, and which clinic is best for you.',
+    category: 'Comparison',
+    readTime: '14 min',
+    icon: '🏆',
+  },
+  {
+    slug: 'hair-transplant-us-guide',
+    title: 'Hair Transplant in the U.S.: Complete Domestic Options Guide',
+    description: 'U.S. hair transplant costs ($8K-20K), how to vet surgeons (ABHRS, ISHRS), top practices, and when staying domestic makes sense vs going abroad.',
+    category: 'Procedure Guide',
+    readTime: '14 min',
+    icon: '🇺🇸',
+  },
+  {
+    slug: 'hair-transplant-mexico-guide',
+    title: 'Hair Transplant in Mexico: Tijuana & Guadalajara Guide',
+    description: 'FUE in Mexico for $2,800-5,000. Tijuana (30 min from San Diego) and Guadalajara clinics, safety, and trip planning for Americans.',
+    category: 'Medical Tourism',
+    readTime: '12 min',
+    icon: '🇲🇽',
+  },
   // NEW: Tier 2 SEO Content
   {
     slug: 'fue-vs-dhi',

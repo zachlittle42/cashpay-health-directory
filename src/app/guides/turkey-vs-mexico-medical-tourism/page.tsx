@@ -139,7 +139,7 @@ export default function TurkeyVsMexicoMedicalTourism() {
 
         <h2>Hair Transplants: Turkey Is the Clear Winner</h2>
         <p>
-          This is Turkey&apos;s specialty. The country performs <strong>60% of the world&apos;s hair transplants</strong>. It&apos;s not even close:
+          This is Turkey&apos;s specialty. The country performs <strong>roughly 40% of the world&apos;s hair transplants</strong>. It&apos;s not even close:
         </p>
 
         <div className="bg-red-50 border border-red-200 rounded-lg p-6 my-8">

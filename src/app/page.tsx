@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 
 // Group categories for display
 const telehealthCategories: Category[] = ['labs', 'glp1', 'trt'];
-const localCategories: Category[] = ['dexa', 'vo2max', 'longevity'];
+const localCategories: Category[] = ['dexa', 'longevity'];
 const medicalTourismCategories: Category[] = [
   'dental',
   'hair_transplant',
@@ -73,6 +73,9 @@ export default function Home() {
           <p className="mt-6 text-lg leading-8 text-gray-600">
             From insurance-based hospitals to telehealth and medical tourism—find the right care at the right price.
           </p>
+          <p className="mt-2 text-sm text-gray-500">
+            Built for U.S. patients paying out of pocket — at home or abroad.
+          </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3 text-sm">
             <Link
               href="/telehealth"
@@ -104,6 +107,44 @@ export default function Home() {
             >
               Insurance & Pharma
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Which Option Is Right for You? */}
+      <section className="mx-auto max-w-6xl px-4 py-12">
+        <h2 className="text-2xl font-bold text-gray-900 mb-2 text-center">Which Option Is Right for You?</h2>
+        <p className="text-sm text-gray-500 text-center mb-8">
+          Not sure where to start? Here&apos;s a quick guide to the four paths Americans use for cash-pay healthcare.
+        </p>
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="rounded-lg border border-orange-200 bg-orange-50 p-5">
+            <div className="text-2xl mb-2">🏥</div>
+            <h3 className="font-semibold text-gray-900 mb-2">Stay with Insurance</h3>
+            <p className="text-sm text-gray-700">
+              Best when you have good coverage, need emergency care, or want a provider network you already trust.
+            </p>
+          </div>
+          <div className="rounded-lg border border-blue-200 bg-blue-50 p-5">
+            <div className="text-2xl mb-2">💻</div>
+            <h3 className="font-semibold text-gray-900 mb-2">Try Telehealth</h3>
+            <p className="text-sm text-gray-700">
+              Best for labs, prescriptions (GLP-1, TRT), and routine care. No travel, medications shipped to your door.
+            </p>
+          </div>
+          <div className="rounded-lg border border-green-200 bg-green-50 p-5">
+            <div className="text-2xl mb-2">📍</div>
+            <h3 className="font-semibold text-gray-900 mb-2">Local Cash-Pay Clinic</h3>
+            <p className="text-sm text-gray-700">
+              Best for in-person services like body composition scans, IV therapy, and longevity treatments near you.
+            </p>
+          </div>
+          <div className="rounded-lg border border-purple-200 bg-purple-50 p-5">
+            <div className="text-2xl mb-2">✈️</div>
+            <h3 className="font-semibold text-gray-900 mb-2">Go Abroad</h3>
+            <p className="text-sm text-gray-700">
+              Best for major procedures (dental, hair transplant, bariatric) where international clinics offer 50-80% savings with comparable quality.
+            </p>
           </div>
         </div>
       </section>
@@ -151,6 +192,13 @@ export default function Home() {
       {/* Medical Tourism Section */}
       <section id="medical-tourism" className="bg-gradient-to-b from-white to-purple-50 px-4 py-12">
         <div className="mx-auto max-w-6xl">
+          {/* What is Medical Tourism? */}
+          <div className="mb-8 rounded-lg border border-purple-200 bg-purple-50 p-6">
+            <h3 className="font-semibold text-purple-900 mb-2">What is medical tourism?</h3>
+            <p className="text-sm text-purple-800">
+              Medical tourism means traveling to another country for a medical procedure — usually because it&apos;s significantly cheaper, higher quality for that specialty, or not available at home. Millions of Americans do it every year, most commonly for dental work, hair transplants, and bariatric surgery. The clinics we list are <Link href="/medical-tourism" className="font-medium underline hover:text-purple-600">vetted for accreditation and safety</Link>.
+            </p>
+          </div>
           <div className="mb-6">
             <div className="flex items-center gap-2">
               <span className="rounded-full bg-purple-100 px-3 py-1 text-xs font-medium text-purple-700">

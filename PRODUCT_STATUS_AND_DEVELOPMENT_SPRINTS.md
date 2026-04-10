@@ -35,7 +35,7 @@
 5. `/longevity` - US clinics by region + international stem cell destinations
 
 **Educational Content:**
-- 16 comprehensive guides (~25,000 words)
+- 20 comprehensive guides (~33,000 words)
 - 5 FAQ sections (~7,000 words)
 - 12 destination guides (Mexico, Turkey, South Korea, Thailand, India, Costa Rica, Spain, Czech Republic, Panama, Colombia, Cayman Islands, Dubai)
 - 50 state pages with 200+ regional breakdowns
@@ -47,7 +47,7 @@
 - TRT: 5 providers (Fountain, Marek, TRT Nation, Henry Meds)
 - DEXA: 2 providers (BodySpec, DexaFit)
 - Dental (Mexico): 4 clinics
-- Hair (Turkey): 4 clinics
+- Hair (Turkey): 4 clinics, (US): 3 practices, (Mexico): 2 clinics
 - Bariatric (Mexico): 3 centers
 - Plastic (Korea): 5 clinics
 - Fertility (Europe): 4 centers

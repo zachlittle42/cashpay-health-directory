@@ -90,7 +90,7 @@ const DESTINATIONS = {
     country: 'Turkey',
     displayName: 'Turkey',
     flag: '🇹🇷',
-    heroDescription: 'The global capital of hair transplants. Istanbul clinics perform 60% of the world\'s hair restoration procedures. Turkey hosted 2 million medical tourists in 2024, generating $3 billion in revenue.',
+    heroDescription: 'The global capital of hair transplants. Istanbul clinics perform roughly 40% of the world\'s hair restoration procedures. Turkey hosted 2 million medical tourists in 2024, generating $3 billion in revenue.',
     metaDescription: 'Turkey hair transplant guide: FUE & DHI costs $1,500-6,000 in Istanbul. Compare 350+ clinics, understand packages, avoid "hair mills."',
     stats: {
       tourists: '2M medical tourists (2024)',
