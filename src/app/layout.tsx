@@ -5,6 +5,7 @@ import TrackingScripts from '@/components/tracking/TrackingScripts';
 import CookieConsent from '@/components/tracking/CookieConsent';
 import UTMCapture from '@/components/tracking/UTMCapture';
 import OutboundClickTracker from '@/components/tracking/OutboundClickTracker';
+import PostHogProvider from '@/components/tracking/PostHogProvider';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -37,6 +38,7 @@ export default function RootLayout({
         <CookieConsent />
         <UTMCapture />
         <OutboundClickTracker />
+        <PostHogProvider />
         <Analytics />
         <SpeedInsights />
       </body>
