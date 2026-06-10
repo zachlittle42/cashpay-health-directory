@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import MedicalDisclaimer from '@/components/MedicalDisclaimer';
 import { getWeightLossClinicsByState, getWeightLossCitiesWithClinics, weightLossStateMetadata } from '@/data/weightloss-clinics-index';
 import { WEIGHTLOSS_STATES } from '@/lib/weightloss-clinic-types';
 
@@ -205,6 +206,7 @@ export default async function StateWeightLoss({ params }: Props) {
         </div>
       </section>
 
+      <MedicalDisclaimer />
       <Footer />
     </main>
   );
