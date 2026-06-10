@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import MedicalDisclaimer from '@/components/MedicalDisclaimer';
 import { getHormoneClinicsByState, getCitiesWithClinics, stateMetadata } from '@/data/hormone-clinics-index';
 import { HORMONE_STATES } from '@/lib/hormone-clinic-types';
 
@@ -231,6 +232,7 @@ export default async function StateHormoneTherapy({ params }: Props) {
         </div>
       </section>
 
+      <MedicalDisclaimer />
       <Footer />
     </main>
   );
