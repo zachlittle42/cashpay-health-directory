@@ -5,12 +5,14 @@ import { WeightLossClinic, WEIGHTLOSS_STATES } from '@/lib/weightloss-clinic-typ
 import { texasWeightLossClinics, getTexasWeightLossClinicsByCity, getTexasWeightLossCitiesWithClinics } from './weightloss-clinics-texas';
 import { floridaWeightLossClinics, getFloridaWeightLossClinicsByCity, getFloridaWeightLossCitiesWithClinics } from './weightloss-clinics-florida';
 import { arizonaWeightLossClinics, getArizonaWeightLossClinicsByCity, getArizonaWeightLossCitiesWithClinics } from './weightloss-clinics-arizona';
+import { californiaWeightLossClinics, getCaliforniaWeightLossClinicsByCity, getCaliforniaWeightLossCitiesWithClinics } from './weightloss-clinics-california';
 
 // All weight loss clinics combined
 export const allWeightLossClinics: WeightLossClinic[] = [
   ...texasWeightLossClinics,
   ...floridaWeightLossClinics,
   ...arizonaWeightLossClinics,
+  ...californiaWeightLossClinics,
 ];
 
 // Get clinics by state
@@ -22,6 +24,8 @@ export function getWeightLossClinicsByState(stateSlug: string): WeightLossClinic
       return floridaWeightLossClinics;
     case 'arizona':
       return arizonaWeightLossClinics;
+    case 'california':
+      return californiaWeightLossClinics;
     default:
       return [];
   }
@@ -36,6 +40,8 @@ export function getWeightLossClinicsByCity(stateSlug: string, citySlug: string):
       return getFloridaWeightLossClinicsByCity(citySlug);
     case 'arizona':
       return getArizonaWeightLossClinicsByCity(citySlug);
+    case 'california':
+      return getCaliforniaWeightLossClinicsByCity(citySlug);
     default:
       return [];
   }
@@ -50,6 +56,8 @@ export function getWeightLossCitiesWithClinics(stateSlug: string): { city: strin
       return getFloridaWeightLossCitiesWithClinics();
     case 'arizona':
       return getArizonaWeightLossCitiesWithClinics();
+    case 'california':
+      return getCaliforniaWeightLossCitiesWithClinics();
     default:
       return [];
   }
