@@ -5,12 +5,14 @@ import { HormoneClinic, HORMONE_STATES } from '@/lib/hormone-clinic-types';
 import { texasHormoneClinics, getTexasClinicsByCity, getTexasCitiesWithClinics } from './hormone-clinics-texas';
 import { floridaHormoneClinics, getFloridaClinicsByCity, getFloridaCitiesWithClinics } from './hormone-clinics-florida';
 import { arizonaHormoneClinics, getArizonaClinicsByCity, getArizonaCitiesWithClinics } from './hormone-clinics-arizona';
+import { californiaHormoneClinics, getCaliforniaHormoneClinicsByCity, getCaliforniaHormoneCitiesWithClinics } from './hormone-clinics-california';
 
 // All hormone clinics combined
 export const allHormoneClinics: HormoneClinic[] = [
   ...texasHormoneClinics,
   ...floridaHormoneClinics,
   ...arizonaHormoneClinics,
+  ...californiaHormoneClinics,
 ];
 
 // Get clinics by state
@@ -22,6 +24,8 @@ export function getHormoneClinicsByState(stateSlug: string): HormoneClinic[] {
       return floridaHormoneClinics;
     case 'arizona':
       return arizonaHormoneClinics;
+    case 'california':
+      return californiaHormoneClinics;
     default:
       return [];
   }
@@ -36,6 +40,8 @@ export function getHormoneClinicsByCity(stateSlug: string, citySlug: string): Ho
       return getFloridaClinicsByCity(citySlug);
     case 'arizona':
       return getArizonaClinicsByCity(citySlug);
+    case 'california':
+      return getCaliforniaHormoneClinicsByCity(citySlug);
     default:
       return [];
   }
@@ -50,6 +56,8 @@ export function getCitiesWithClinics(stateSlug: string): { city: string; citySlu
       return getFloridaCitiesWithClinics();
     case 'arizona':
       return getArizonaCitiesWithClinics();
+    case 'california':
+      return getCaliforniaHormoneCitiesWithClinics();
     default:
       return [];
   }
