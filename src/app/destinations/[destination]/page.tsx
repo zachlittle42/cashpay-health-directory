@@ -752,6 +752,130 @@ const DESTINATIONS = {
       { title: 'Dubai Longevity Guide', href: '/guides/dubai-longevity-guide' },
     ],
   },
+
+  brazil: {
+    slug: 'brazil',
+    country: 'Brazil',
+    displayName: 'Brazil',
+    flag: '🇧🇷',
+    heroDescription: 'The world capital of plastic surgery. Brazil performs more cosmetic procedures per capita than almost any country, with São Paulo and Rio home to internationally trained surgeons in the legacy of Ivo Pitanguy. The Brazilian Butt Lift originated here.',
+    metaDescription: 'Brazil plastic surgery guide: BBL, breast augmentation, and tummy tucks at 40-60% off US prices. São Paulo & Rio board-certified (SBCP) surgeon recommendations.',
+    stats: {
+      tourists: '1.5M+ cosmetic procedures/year',
+      savings: '40-60%',
+      topProcedures: 'Plastic Surgery, Bariatric',
+      flightTime: '9-11 hours',
+    },
+    whyGoHere: [
+      'Highest volume of cosmetic surgery in the world - unmatched surgeon experience',
+      'Birthplace of the Brazilian Butt Lift and advanced body-contouring techniques',
+      'Internationally trained, board-certified (SBCP) plastic surgeons',
+      'Combine surgery with recovery in São Paulo or beachside Rio',
+      'Strong aftercare culture with dedicated recovery facilities',
+    ],
+    considerations: [
+      'Long flight from the US (9-11 hours) - factor into recovery planning',
+      'Portuguese is the primary language; confirm English-speaking staff',
+      'Verify SBCP (Sociedade Brasileira de Cirurgia Plástica) board certification',
+      'BBL carries real risk - choose high-volume, accredited surgeons only',
+      'Plan 2-3 weeks in-country for body procedures before flying',
+    ],
+    topCities: [
+      {
+        name: 'São Paulo',
+        description: "Brazil's medical capital with the highest concentration of elite plastic surgeons and accredited hospitals.",
+        bestFor: ['Plastic Surgery', 'Bariatric'],
+        travelTip: 'Major international hub - direct flights from most US gateways.',
+      },
+      {
+        name: 'Rio de Janeiro',
+        description: 'Cosmetic-surgery destination pairing experienced surgeons with beachside recovery.',
+        bestFor: ['Plastic Surgery'],
+        travelTip: 'Recover in Barra da Tijuca; many clinics arrange recovery housing.',
+      },
+    ],
+    categories: ['plastic_surgery', 'bariatric'],
+    practicalInfo: {
+      visa: 'US citizens may need an e-visa - check current requirements before booking',
+      currency: 'Brazilian Real (BRL). Cards widely accepted in clinics.',
+      language: 'Portuguese. English common in private cosmetic clinics.',
+      timezone: '1-2 hours ahead of US East Coast',
+      insurance: 'US insurance does not cover elective cosmetic surgery. Travel medical + recovery insurance recommended.',
+    },
+    costExamples: [
+      { procedure: 'Brazilian Butt Lift (BBL)', usPrice: '$8,000-15,000', brazilPrice: '$3,500-6,000' },
+      { procedure: 'Breast Augmentation', usPrice: '$8,000-15,000', brazilPrice: '$3,000-5,500' },
+      { procedure: 'Tummy Tuck', usPrice: '$8,000-15,000', brazilPrice: '$3,500-6,000' },
+      { procedure: 'Liposuction', usPrice: '$6,000-12,000', brazilPrice: '$2,500-5,000' },
+      { procedure: 'Gastric Sleeve', usPrice: '$18,000-27,000', brazilPrice: '$6,000-9,000' },
+    ],
+    guideLinks: [
+      { title: 'Plastic Surgery Providers', href: '/plastic_surgery' },
+      { title: 'Bariatric Surgery Providers', href: '/bariatric' },
+    ],
+  },
+
+  hungary: {
+    slug: 'hungary',
+    country: 'Hungary',
+    displayName: 'Hungary',
+    flag: '🇭🇺',
+    heroDescription: 'The dental capital of Europe. Budapest has one of the highest densities of dentists in the world, drawing patients across Europe and beyond for implants and full-mouth work at a fraction of Western prices - within EU quality and regulatory standards.',
+    metaDescription: 'Hungary dental tourism guide: implants, crowns, and all-on-4 in Budapest at 50-70% off US/UK prices. EU-regulated clinics, English-speaking dentists.',
+    stats: {
+      tourists: '100,000+ dental tourists/year',
+      savings: '50-70%',
+      topProcedures: 'Dental, Cosmetic',
+      flightTime: '9-11 hours (from US)',
+    },
+    whyGoHere: [
+      'One of the highest concentrations of dentists in the world (Budapest)',
+      'EU quality + regulatory standards with major cost savings',
+      'Decades of dental-tourism infrastructure built for foreign patients',
+      'English-speaking clinics, many with US/UK-trained dentists',
+      "Combine treatment with one of Europe's great capital cities",
+    ],
+    considerations: [
+      'Long flight from the US - more established for European patients',
+      'Complex implant cases often require 2 trips (months apart) for healing',
+      'Hungarian is the language; confirm English staff and a written quote',
+      "Verify the clinic's own lab + guarantees on the work",
+      'Factor a follow-up visit into the total cost comparison',
+    ],
+    topCities: [
+      {
+        name: 'Budapest',
+        description: 'The dental capital of Europe - hundreds of clinics, many purpose-built for international patients.',
+        bestFor: ['Dental', 'Cosmetic'],
+        travelTip: 'Many clinics offer airport pickup + hotel packages; Districts V/VI cluster the top clinics.',
+      },
+      {
+        name: 'Sopron',
+        description: 'Border city near Austria known as a dental hub for Western European patients.',
+        bestFor: ['Dental'],
+        travelTip: 'A popular day-trip dental destination from Vienna.',
+      },
+    ],
+    categories: ['dental', 'plastic_surgery'],
+    practicalInfo: {
+      visa: 'Schengen area - US citizens visa-free up to 90 days',
+      currency: 'Hungarian Forint (HUF). Euros and cards widely accepted in clinics.',
+      language: 'Hungarian. English standard in dental-tourism clinics.',
+      timezone: '6 hours ahead of US East Coast',
+      insurance: 'US dental insurance rarely covers overseas work. Get a written treatment plan + guarantee.',
+    },
+    costExamples: [
+      { procedure: 'Dental Implant', usPrice: '$3,000-5,000', hungaryPrice: '$700-1,200' },
+      { procedure: 'All-on-4 (per arch)', usPrice: '$20,000-30,000', hungaryPrice: '$7,000-11,000' },
+      { procedure: 'Porcelain Crown', usPrice: '$1,000-2,500', hungaryPrice: '$300-500' },
+      { procedure: 'Dental Veneer (per tooth)', usPrice: '$1,000-2,500', hungaryPrice: '$300-550' },
+      { procedure: 'Full-Mouth Restoration', usPrice: '$30,000-60,000', hungaryPrice: '$10,000-20,000' },
+    ],
+    guideLinks: [
+      { title: 'Dental Tourism Providers', href: '/dental' },
+      { title: 'Medical Tourism Hub', href: '/medical-tourism' },
+    ],
+  },
 };
 
 type DestinationSlug = keyof typeof DESTINATIONS;
