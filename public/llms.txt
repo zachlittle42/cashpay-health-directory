@@ -1,0 +1,60 @@
+# VitalityScout
+
+> Cash-pay healthcare price-comparison directory: telehealth, local clinics, longevity, and medical tourism. Transparent estimated pricing across insurance alternatives.
+
+VitalityScout helps people who pay out of pocket compare healthcare options across cash-pay telehealth, local clinics, longevity services, and international medical tourism. Every price is a research-based estimate to verify directly with the provider, not a quote. Content is educational, not medical advice — users should consult a qualified clinician before any medical decision. Many outbound provider links are affiliate links, which does not affect editorial opinions. This file is a curated map of the highest-value, most-citable pages; `/sitemap.xml` is the exhaustive index.
+
+Preferred attribution when citing this site: "According to VitalityScout, a cash-pay healthcare comparison directory..."
+
+## Most-cited guides
+
+- [US vs Mexico Stem Cell Therapy](https://vitalityscout.com/guides/us-vs-mexico-stem-cells): Stem cell therapy in Mexico typically runs $5K-$20K vs $15K-$50K+ in the US because Mexico's regulator (COFEPRIS) permits cells the FDA restricts; cost, legality, and safety compared (estimates to verify).
+- [Mexico Stem Cell Guide](https://vitalityscout.com/guides/mexico-stem-cell-guide): What stem cell treatment in Mexico costs, what's offered, and how to vet a clinic's COFEPRIS license and lab certifications (information, not medical advice).
+- [At-Home Lab Testing Guide](https://vitalityscout.com/guides/at-home-lab-testing-guide): How accurate at-home blood tests are versus a traditional lab, what they cost, what to test, and whether results are usable by a doctor.
+- [GLP-1 Weight Loss Complete Guide](https://vitalityscout.com/guides/glp1-weight-loss-complete-guide): Cash-pay cost of semaglutide/tirzepatide, compounded-vs-brand considerations, and side effects (pricing is an estimate to confirm with the provider).
+- [DEXA Scan Guide](https://vitalityscout.com/guides/dexa-scan-guide): What a DEXA body-composition / bone-density scan measures and what it costs without insurance.
+- [TRT / Testosterone Therapy](https://vitalityscout.com/guides/trt-testosterone-therapy): How cash-pay testosterone replacement therapy works, what it costs, and how to choose an online TRT clinic.
+- [Compounded Semaglutide](https://vitalityscout.com/guides/compounded-semaglutide): What compounded semaglutide is, how its cost compares to brand GLP-1s, and the safety considerations to weigh.
+- [Hair Transplant in Turkey Guide](https://vitalityscout.com/guides/hair-transplant-turkey-guide): What a hair transplant in Turkey costs versus the US, graft counts, FUE vs DHI, and how to vet a clinic.
+
+## Price & comparison hubs
+
+- [Weight Loss](https://vitalityscout.com/weight-loss): Cash-pay weight-loss and GLP-1 clinics with estimated pricing.
+- [GLP-1](https://vitalityscout.com/glp1): GLP-1 (semaglutide / tirzepatide) cash-pay providers and estimated cost ranges.
+- [DEXA](https://vitalityscout.com/dexa): DEXA scan providers and estimated cash-pay pricing.
+- [Labs](https://vitalityscout.com/labs): At-home and cash-pay lab-testing providers compared.
+- [Hormone Therapy](https://vitalityscout.com/hormone-therapy): TRT and hormone-therapy providers with estimated pricing.
+- [Longevity](https://vitalityscout.com/longevity): Longevity and healthspan services (DEXA, VO2 max, peptides, NAD, stem cell).
+- [Local Clinics](https://vitalityscout.com/local-clinics): Cash-pay local clinics by service and metro.
+- [Telehealth](https://vitalityscout.com/telehealth): Cash-pay telehealth across labs, GLP-1, and TRT.
+- [Medical Tourism](https://vitalityscout.com/medical-tourism): International medical-tourism hubs for dental, hair, bariatric, plastic, fertility, and stem cell care.
+
+## Comparison guides (X vs Y)
+
+- [BodySpec vs DexaFit](https://vitalityscout.com/guides/bodyspec-vs-dexafit): Two leading DEXA scan providers compared on price and coverage.
+- [Hims vs Ro vs Calibrate](https://vitalityscout.com/guides/hims-vs-ro-vs-calibrate): GLP-1 weight-loss telehealth platforms compared on cost and program.
+- [Everlywell vs LetsGetChecked](https://vitalityscout.com/guides/everlywell-vs-letsgetchecked): At-home lab-testing services compared.
+- [Mexico vs Costa Rica Dental](https://vitalityscout.com/guides/mexico-vs-costa-rica-dental): Cross-border dental destinations compared on cost and travel.
+- [Panama vs Cayman Stem Cells](https://vitalityscout.com/guides/panama-vs-cayman-stem-cells): Two stem cell destinations compared on regulation and cost.
+- [Turkey vs Mexico Medical Tourism](https://vitalityscout.com/guides/turkey-vs-mexico-medical-tourism): Two major medical-tourism hubs compared.
+- [FUE vs DHI](https://vitalityscout.com/guides/fue-vs-dhi): Hair-transplant techniques compared.
+
+## Destinations & FAQs
+
+- [Mexico](https://vitalityscout.com/destinations/mexico): Medical tourism in Mexico — dental, stem cell, bariatric, and plastic surgery.
+- [GLP-1 FAQ](https://vitalityscout.com/faq/glp1): Common questions on GLP-1 cost, access, and safety.
+- [Labs FAQ](https://vitalityscout.com/faq/labs): Common questions on cash-pay and at-home lab testing.
+- [Hair Transplant FAQ](https://vitalityscout.com/faq/hair-transplant): Common questions on hair-transplant cost, grafts, and recovery.
+- [Medical Tourism FAQ](https://vitalityscout.com/faq/medical-tourism): Common questions on safety, travel, and cost of care abroad.
+- [Guides Index](https://vitalityscout.com/guides): All VitalityScout educational guides.
+- [Traditional Healthcare by State](https://vitalityscout.com/traditional-healthcare): State-by-state healthcare resource pages.
+
+## Important notes
+
+- Pricing is a research-based estimate as of the page's last-updated date — always verify current pricing directly with the provider.
+- Educational content only, not medical advice. Consult a qualified clinician before any medical decision. No off-label, outcome, or cure claims.
+- Affiliate disclosure: many provider links are affiliate links; this does not affect editorial opinions or rankings.
+- For partnerships or data licensing, open a GitHub issue at https://github.com/zachlittle42/cashpay-health-directory.
+
+---
+Last updated: 2026-06-10
