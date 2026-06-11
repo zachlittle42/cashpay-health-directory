@@ -43,6 +43,8 @@ const DESTINATION_SLUGS = [
   'colombia',
   'cayman-islands',
   'dubai',
+  'brazil',
+  'hungary',
 ];
 
 // ---------------------------------------------------------------------------
