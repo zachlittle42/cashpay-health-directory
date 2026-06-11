@@ -48,6 +48,13 @@ export const DEXA_STATES = [
   { name: 'New York',   slug: 'new-york',   cities: ['New York City'] },
   { name: 'Colorado',   slug: 'colorado',   cities: ['Denver'] },
   { name: 'Washington', slug: 'washington', cities: ['Seattle'] },
+  { name: 'Florida',       slug: 'florida',       cities: ['Miami'] },
+  { name: 'Arizona',       slug: 'arizona',       cities: ['Phoenix', 'Scottsdale'] },
+  { name: 'Washington DC', slug: 'washington-dc', cities: ['Washington'] },
+  { name: 'Georgia',       slug: 'georgia',       cities: ['Atlanta'] },
+  { name: 'Illinois',      slug: 'illinois',      cities: ['Chicago'] },
+  { name: 'Massachusetts', slug: 'massachusetts', cities: ['Boston'] },
+  { name: 'Nevada',        slug: 'nevada',        cities: ['Las Vegas'] },
 ] as const;
 
 export type DexaState = typeof DEXA_STATES[number]['slug'];

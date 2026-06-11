@@ -20,6 +20,15 @@ import {
   getNewYorkDexaClinicsByCity,
   getNewYorkDexaCitiesWithClinics,
 } from './dexa-clinics-new-york';
+import { floridaDexaClinics, getFloridaDexaClinicsByCity, getFloridaDexaCitiesWithClinics } from './dexa-clinics-florida';
+import { arizonaDexaClinics, getArizonaDexaClinicsByCity, getArizonaDexaCitiesWithClinics } from './dexa-clinics-arizona';
+import { washingtonDcDexaClinics, getWashingtonDcDexaClinicsByCity, getWashingtonDcDexaCitiesWithClinics } from './dexa-clinics-washington-dc';
+import { georgiaDexaClinics, getGeorgiaDexaClinicsByCity, getGeorgiaDexaCitiesWithClinics } from './dexa-clinics-georgia';
+import { illinoisDexaClinics, getIllinoisDexaClinicsByCity, getIllinoisDexaCitiesWithClinics } from './dexa-clinics-illinois';
+import { massachusettsDexaClinics, getMassachusettsDexaClinicsByCity, getMassachusettsDexaCitiesWithClinics } from './dexa-clinics-massachusetts';
+import { washingtonDexaClinics, getWashingtonDexaClinicsByCity, getWashingtonDexaCitiesWithClinics } from './dexa-clinics-washington';
+import { coloradoDexaClinics, getColoradoDexaClinicsByCity, getColoradoDexaCitiesWithClinics } from './dexa-clinics-colorado';
+import { nevadaDexaClinics, getNevadaDexaClinicsByCity, getNevadaDexaCitiesWithClinics } from './dexa-clinics-nevada';
 
 // Minimum clinics for a city page to ship — thin-content guard (YMYL).
 const MIN_CLINICS_PER_CITY = 3;
@@ -29,6 +38,15 @@ export const allDexaClinics: DexaClinic[] = [
   ...californiaDexaClinics,
   ...texasDexaClinics,
   ...newYorkDexaClinics,
+  ...floridaDexaClinics,
+  ...arizonaDexaClinics,
+  ...washingtonDcDexaClinics,
+  ...georgiaDexaClinics,
+  ...illinoisDexaClinics,
+  ...massachusettsDexaClinics,
+  ...washingtonDexaClinics,
+  ...coloradoDexaClinics,
+  ...nevadaDexaClinics,
 ];
 
 // Get clinics by state.
@@ -40,6 +58,24 @@ export function getDexaClinicsByState(stateSlug: string): DexaClinic[] {
       return texasDexaClinics;
     case 'new-york':
       return newYorkDexaClinics;
+    case 'florida':
+      return floridaDexaClinics;
+    case 'arizona':
+      return arizonaDexaClinics;
+    case 'washington-dc':
+      return washingtonDcDexaClinics;
+    case 'georgia':
+      return georgiaDexaClinics;
+    case 'illinois':
+      return illinoisDexaClinics;
+    case 'massachusetts':
+      return massachusettsDexaClinics;
+    case 'washington':
+      return washingtonDexaClinics;
+    case 'colorado':
+      return coloradoDexaClinics;
+    case 'nevada':
+      return nevadaDexaClinics;
     default:
       return [];
   }
@@ -54,6 +90,24 @@ export function getDexaClinicsByCity(stateSlug: string, citySlug: string): DexaC
       return getTexasDexaClinicsByCity(citySlug);
     case 'new-york':
       return getNewYorkDexaClinicsByCity(citySlug);
+    case 'florida':
+      return getFloridaDexaClinicsByCity(citySlug);
+    case 'arizona':
+      return getArizonaDexaClinicsByCity(citySlug);
+    case 'washington-dc':
+      return getWashingtonDcDexaClinicsByCity(citySlug);
+    case 'georgia':
+      return getGeorgiaDexaClinicsByCity(citySlug);
+    case 'illinois':
+      return getIllinoisDexaClinicsByCity(citySlug);
+    case 'massachusetts':
+      return getMassachusettsDexaClinicsByCity(citySlug);
+    case 'washington':
+      return getWashingtonDexaClinicsByCity(citySlug);
+    case 'colorado':
+      return getColoradoDexaClinicsByCity(citySlug);
+    case 'nevada':
+      return getNevadaDexaClinicsByCity(citySlug);
     default:
       return [];
   }
@@ -73,6 +127,24 @@ export function getDexaCitiesWithClinics(stateSlug: string): { city: string; cit
     case 'new-york':
       cities = getNewYorkDexaCitiesWithClinics();
       break;
+    case 'florida':
+      return getFloridaDexaCitiesWithClinics();
+    case 'arizona':
+      return getArizonaDexaCitiesWithClinics();
+    case 'washington-dc':
+      return getWashingtonDcDexaCitiesWithClinics();
+    case 'georgia':
+      return getGeorgiaDexaCitiesWithClinics();
+    case 'illinois':
+      return getIllinoisDexaCitiesWithClinics();
+    case 'massachusetts':
+      return getMassachusettsDexaCitiesWithClinics();
+    case 'washington':
+      return getWashingtonDexaCitiesWithClinics();
+    case 'colorado':
+      return getColoradoDexaCitiesWithClinics();
+    case 'nevada':
+      return getNevadaDexaCitiesWithClinics();
     default:
       cities = [];
   }
