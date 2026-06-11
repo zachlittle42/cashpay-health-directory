@@ -3,26 +3,83 @@ import type { Metadata } from 'next';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
+import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
   title: 'US vs Mexico Stem Cell Therapy: Cost, Legality & Safety Comparison',
   description: 'Compare stem cell therapy in the US vs Mexico. Cost differences ($15K-$50K vs $5K-$20K), FDA regulations vs COFEPRIS, and which is right for your condition.',
 };
 
+// Real conversational/PAA questions, answered only from facts already stated
+// on this page. Each price/safety answer ends with the verify-with-provider
+// hedge (consistent with the MedicalDisclaimer wording). The visible FAQ block
+// below mirrors this schema exactly — schema clarifies the page, never invents.
+const FAQ_ITEMS = [
+  {
+    question: 'How much does stem cell therapy cost in Mexico vs the US?',
+    answer: 'Stem cell therapy in Mexico typically costs $5,000-$20,000, versus roughly $15,000-$50,000+ in the US. By condition, knee osteoarthritis runs about $3,500-$8,000 in Mexico vs $8,000-$25,000 in the US. These are estimates that vary by clinic and protocol — confirm current pricing directly with the provider.',
+  },
+  {
+    question: 'Is stem cell therapy in Mexico safe?',
+    answer: 'It can be, but quality varies dramatically between clinics. Verify the clinic is licensed by COFEPRIS, that its lab holds GMP/ISO certifications, that it can provide batch testing for cell products, and that hospital backup exists for emergencies. Treat any clinic that guarantees results or claims a "cure" as a red flag. This is information, not medical advice.',
+  },
+  {
+    question: 'Why is stem cell therapy legal in Mexico but restricted in the US?',
+    answer: 'Mexico\'s regulator, COFEPRIS, permits lab-expanded and donor (allogeneic) cells that the US FDA prohibits for most conditions. The FDA has approved only a limited number of stem cell products (primarily for blood disorders) and otherwise allows only "minimal manipulation" of your own cells. Mexico therefore offers a broader range of treatments, while the US is more tightly regulated.',
+  },
+  {
+    question: 'What stem cell treatments are available in Mexico that are not in the US?',
+    answer: 'Mexican clinics commonly offer lab-expanded cells (yielding far higher cell counts than same-day US procedures), allogeneic donor cells from umbilical cord, placental and Wharton\'s jelly sources, and protocols for conditions such as autoimmune and neurological disorders that the FDA does not permit. Availability and quality vary by clinic — verify credentials before booking.',
+  },
+  {
+    question: 'Should I choose the US or Mexico for stem cell therapy?',
+    answer: 'Consider the US if your condition has an FDA-approved treatment, you qualify for a clinical trial, or you need easy ongoing follow-up care. Consider Mexico if your condition is not treatable under FDA rules, you want expanded (lab-grown) cells, or cost is a major factor. Either way, consult a qualified physician and verify the clinic\'s licensing first.',
+  },
+];
+
+function FAQItem({ question, answer }: { question: string; answer: string }) {
+  return (
+    <details className="group border-b border-gray-200 py-6">
+      <summary className="flex cursor-pointer items-start justify-between text-lg font-semibold text-gray-900 hover:text-blue-600">
+        <span className="pr-4">{question}</span>
+        <span className="text-blue-600 group-open:rotate-180 transition-transform">▼</span>
+      </summary>
+      <p className="mt-4 text-gray-700">{answer}</p>
+    </details>
+  );
+}
+
 export default function USvsMexicoStemCells() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'MedicalWebPage',
     name: 'US vs Mexico Stem Cell Therapy Comparison',
-    description: 'Comprehensive comparison of stem cell therapy options in the United States versus Mexico',
-    author: { '@type': 'Organization', name: 'VitalityScout' },
-    dateModified: '2024-12-21',
+    description: 'Comprehensive comparison of stem cell therapy options in the United States versus Mexico — cost, legality, cell types, and safety.',
+    url: 'https://vitalityscout.com/guides/us-vs-mexico-stem-cells',
+    inLanguage: 'en-US',
+    medicalAudience: { '@type': 'MedicalAudience', audienceType: 'Patient' },
+    about: {
+      '@type': 'MedicalProcedure',
+      name: 'Stem cell therapy',
+      procedureType: 'https://schema.org/PercutaneousProcedure',
+    },
+    author: { '@type': 'Organization', name: 'VitalityScout', url: 'https://vitalityscout.com' },
+    reviewedBy: { '@type': 'Organization', name: 'VitalityScout Editorial Team' },
+    lastReviewed: '2026-06-10',
+    dateModified: '2026-06-10',
+    citation: [
+      { '@type': 'CreativeWork', name: 'FDA — Regenerative Medicine / Stem Cell Therapies (consumer guidance)', url: 'https://www.fda.gov/consumers/consumer-updates/fda-warns-about-stem-cell-therapies' },
+      { '@type': 'CreativeWork', name: 'COFEPRIS (Comisión Federal para la Protección contra Riesgos Sanitarios)', url: 'https://www.gob.mx/cofepris' },
+    ],
   };
+
+  const faqSchema = buildFAQSchema(FAQ_ITEMS);
 
   return (
     <main className="min-h-screen bg-white">
       <Navigation />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* Hero */}
       <section className="bg-gradient-to-b from-blue-50 to-white px-4 py-12">
@@ -45,6 +102,19 @@ export default function USvsMexicoStemCells() {
             A practical comparison: cost, legality, treatment options, and how to decide
             which approach is right for your situation.
           </p>
+
+          {/* Direct-answer lead: a self-contained 40-80 word summary of the head
+              query, restating facts detailed below — the extractable answer box. */}
+          <div className="rounded-lg border-l-4 border-blue-600 bg-blue-50 p-5">
+            <p className="aeo-answer text-base text-gray-800">
+              Stem cell therapy in Mexico typically costs <strong>$5,000-$20,000</strong> versus{' '}
+              <strong>$15,000-$50,000+</strong> in the US, because Mexico&apos;s regulator (COFEPRIS)
+              permits lab-expanded and donor (allogeneic) cells the FDA prohibits for most conditions.
+              Mexico is legal and widely available but clinic quality varies; the US is more tightly
+              regulated but limits most treatments to minimally-manipulated autologous cells. Verify any
+              clinic&apos;s COFEPRIS license and lab certifications. This is information, not medical advice.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -53,7 +123,10 @@ export default function USvsMexicoStemCells() {
         <div className="bg-red-50 border-2 border-red-200 rounded-lg p-6">
           <h3 className="text-lg font-bold text-red-900 mb-3">Important Regulatory Notice</h3>
           <p className="text-sm text-red-800 mb-3">
-            <strong>Most stem cell therapies are NOT FDA-approved for clinical use.</strong> The FDA has approved only a limited number of stem cell products (primarily for blood disorders). Many treatments advertised in both countries are considered experimental.
+            <strong>Most stem cell therapies are NOT FDA-approved for clinical use.</strong> The FDA has approved only a limited number of stem cell products (primarily for blood disorders). Many treatments advertised in both countries are considered experimental.{' '}
+            <a href="https://www.fda.gov/consumers/consumer-updates/fda-warns-about-stem-cell-therapies" target="_blank" rel="noopener noreferrer nofollow" className="underline">
+              (Source: FDA consumer guidance)
+            </a>
           </p>
           <p className="text-sm text-red-800">
             This comparison is for informational purposes. Always consult qualified medical professionals before pursuing any stem cell treatment.
@@ -374,6 +447,16 @@ export default function USvsMexicoStemCells() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* FAQ — visible block mirrors the FAQPage schema above exactly */}
+      <section className="mx-auto max-w-4xl px-4 py-12">
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+        <div>
+          {FAQ_ITEMS.map((item) => (
+            <FAQItem key={item.question} question={item.question} answer={item.answer} />
+          ))}
         </div>
       </section>
 
