@@ -6,6 +6,8 @@ import { HORMONE_STATES } from '@/lib/hormone-clinic-types';
 import { WEIGHTLOSS_STATES } from '@/lib/weightloss-clinic-types';
 import { getCitiesWithClinics } from '@/data/hormone-clinics-index';
 import { getWeightLossCitiesWithClinics } from '@/data/weightloss-clinics-index';
+import { DEXA_STATES } from '@/lib/dexa-clinic-types';
+import { getDexaCitiesWithClinics } from '@/data/dexa-clinics-index';
 import { ALL_PROVIDERS } from '@/lib/providers';
 import { getAllStateSlugs } from '@/lib/us-healthcare-data';
 import { getAllHealthSystemSlugs } from '@/lib/national-health-systems';
@@ -200,6 +202,15 @@ function buildDynamicUrls(): string[] {
     // getWeightLossCitiesWithClinics returns [] for unwired states → no dead URLs.
     for (const city of getWeightLossCitiesWithClinics(state.slug)) {
       urls.push(`/weight-loss/${state.slug}/${city.citySlug}`);
+    }
+  }
+
+  // dexa-scans/[state] + [state]/[city]
+  for (const state of DEXA_STATES) {
+    urls.push(`/dexa-scans/${state.slug}`);
+    // getDexaCitiesWithClinics returns [] for unwired/empty states → no dead URLs.
+    for (const city of getDexaCitiesWithClinics(state.slug)) {
+      urls.push(`/dexa-scans/${state.slug}/${city.citySlug}`);
     }
   }
 
