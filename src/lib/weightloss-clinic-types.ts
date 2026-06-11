@@ -44,6 +44,15 @@ export const WEIGHTLOSS_STATES = [
   { name: 'Arizona', slug: 'arizona', cities: ['Phoenix', 'Scottsdale', 'Tucson'] },
   { name: 'California', slug: 'california', cities: ['Los Angeles', 'San Diego', 'San Francisco'] },
   { name: 'New York', slug: 'new-york', cities: ['New York City', 'Long Island'] },
+  { name: 'Washington DC', slug: 'washington-dc', cities: ['Washington'] },
+  { name: 'Georgia', slug: 'georgia', cities: ['Atlanta'] },
+  { name: 'Illinois', slug: 'illinois', cities: ['Chicago'] },
+  { name: 'Massachusetts', slug: 'massachusetts', cities: ['Boston'] },
+  { name: 'Washington', slug: 'washington', cities: ['Seattle', 'Bellevue'] },
+  { name: 'Colorado', slug: 'colorado', cities: ['Denver'] },
+  { name: 'Tennessee', slug: 'tennessee', cities: ['Nashville', 'Brentwood'] },
+  { name: 'Nevada', slug: 'nevada', cities: ['Las Vegas'] },
+  { name: 'North Carolina', slug: 'north-carolina', cities: ['Raleigh'] },
 ] as const;
 
 export type WeightLossState = typeof WEIGHTLOSS_STATES[number]['slug'];
