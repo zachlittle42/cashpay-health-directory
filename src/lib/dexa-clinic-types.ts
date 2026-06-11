@@ -55,6 +55,8 @@ export const DEXA_STATES = [
   { name: 'Illinois',      slug: 'illinois',      cities: ['Chicago'] },
   { name: 'Massachusetts', slug: 'massachusetts', cities: ['Boston'] },
   { name: 'Nevada',        slug: 'nevada',        cities: ['Las Vegas'] },
+  { name: 'Tennessee',      slug: 'tennessee',      cities: ['Nashville'] },
+  { name: 'North Carolina', slug: 'north-carolina', cities: ['Raleigh'] },
 ] as const;
 
 export type DexaState = typeof DEXA_STATES[number]['slug'];
