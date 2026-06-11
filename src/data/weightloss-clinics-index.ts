@@ -6,6 +6,16 @@ import { texasWeightLossClinics, getTexasWeightLossClinicsByCity, getTexasWeight
 import { floridaWeightLossClinics, getFloridaWeightLossClinicsByCity, getFloridaWeightLossCitiesWithClinics } from './weightloss-clinics-florida';
 import { arizonaWeightLossClinics, getArizonaWeightLossClinicsByCity, getArizonaWeightLossCitiesWithClinics } from './weightloss-clinics-arizona';
 import { californiaWeightLossClinics, getCaliforniaWeightLossClinicsByCity, getCaliforniaWeightLossCitiesWithClinics } from './weightloss-clinics-california';
+import { newYorkWeightLossClinics, getNewYorkWeightLossClinicsByCity, getNewYorkWeightLossCitiesWithClinics } from './weightloss-clinics-new-york';
+import { washingtonDcWeightLossClinics, getWashingtonDcWeightLossClinicsByCity, getWashingtonDcWeightLossCitiesWithClinics } from './weightloss-clinics-washington-dc';
+import { georgiaWeightLossClinics, getGeorgiaWeightLossClinicsByCity, getGeorgiaWeightLossCitiesWithClinics } from './weightloss-clinics-georgia';
+import { illinoisWeightLossClinics, getIllinoisWeightLossClinicsByCity, getIllinoisWeightLossCitiesWithClinics } from './weightloss-clinics-illinois';
+import { massachusettsWeightLossClinics, getMassachusettsWeightLossClinicsByCity, getMassachusettsWeightLossCitiesWithClinics } from './weightloss-clinics-massachusetts';
+import { washingtonWeightLossClinics, getWashingtonWeightLossClinicsByCity, getWashingtonWeightLossCitiesWithClinics } from './weightloss-clinics-washington';
+import { coloradoWeightLossClinics, getColoradoWeightLossClinicsByCity, getColoradoWeightLossCitiesWithClinics } from './weightloss-clinics-colorado';
+import { tennesseeWeightLossClinics, getTennesseeWeightLossClinicsByCity, getTennesseeWeightLossCitiesWithClinics } from './weightloss-clinics-tennessee';
+import { nevadaWeightLossClinics, getNevadaWeightLossClinicsByCity, getNevadaWeightLossCitiesWithClinics } from './weightloss-clinics-nevada';
+import { northCarolinaWeightLossClinics, getNorthCarolinaWeightLossClinicsByCity, getNorthCarolinaWeightLossCitiesWithClinics } from './weightloss-clinics-north-carolina';
 
 // All weight loss clinics combined
 export const allWeightLossClinics: WeightLossClinic[] = [
@@ -13,6 +23,16 @@ export const allWeightLossClinics: WeightLossClinic[] = [
   ...floridaWeightLossClinics,
   ...arizonaWeightLossClinics,
   ...californiaWeightLossClinics,
+  ...newYorkWeightLossClinics,
+  ...washingtonDcWeightLossClinics,
+  ...georgiaWeightLossClinics,
+  ...illinoisWeightLossClinics,
+  ...massachusettsWeightLossClinics,
+  ...washingtonWeightLossClinics,
+  ...coloradoWeightLossClinics,
+  ...tennesseeWeightLossClinics,
+  ...nevadaWeightLossClinics,
+  ...northCarolinaWeightLossClinics,
 ];
 
 // Get clinics by state
@@ -26,6 +46,26 @@ export function getWeightLossClinicsByState(stateSlug: string): WeightLossClinic
       return arizonaWeightLossClinics;
     case 'california':
       return californiaWeightLossClinics;
+    case 'new-york':
+      return newYorkWeightLossClinics;
+    case 'washington-dc':
+      return washingtonDcWeightLossClinics;
+    case 'georgia':
+      return georgiaWeightLossClinics;
+    case 'illinois':
+      return illinoisWeightLossClinics;
+    case 'massachusetts':
+      return massachusettsWeightLossClinics;
+    case 'washington':
+      return washingtonWeightLossClinics;
+    case 'colorado':
+      return coloradoWeightLossClinics;
+    case 'tennessee':
+      return tennesseeWeightLossClinics;
+    case 'nevada':
+      return nevadaWeightLossClinics;
+    case 'north-carolina':
+      return northCarolinaWeightLossClinics;
     default:
       return [];
   }
@@ -42,6 +82,26 @@ export function getWeightLossClinicsByCity(stateSlug: string, citySlug: string):
       return getArizonaWeightLossClinicsByCity(citySlug);
     case 'california':
       return getCaliforniaWeightLossClinicsByCity(citySlug);
+    case 'new-york':
+      return getNewYorkWeightLossClinicsByCity(citySlug);
+    case 'washington-dc':
+      return getWashingtonDcWeightLossClinicsByCity(citySlug);
+    case 'georgia':
+      return getGeorgiaWeightLossClinicsByCity(citySlug);
+    case 'illinois':
+      return getIllinoisWeightLossClinicsByCity(citySlug);
+    case 'massachusetts':
+      return getMassachusettsWeightLossClinicsByCity(citySlug);
+    case 'washington':
+      return getWashingtonWeightLossClinicsByCity(citySlug);
+    case 'colorado':
+      return getColoradoWeightLossClinicsByCity(citySlug);
+    case 'tennessee':
+      return getTennesseeWeightLossClinicsByCity(citySlug);
+    case 'nevada':
+      return getNevadaWeightLossClinicsByCity(citySlug);
+    case 'north-carolina':
+      return getNorthCarolinaWeightLossClinicsByCity(citySlug);
     default:
       return [];
   }
@@ -58,6 +118,26 @@ export function getWeightLossCitiesWithClinics(stateSlug: string): { city: strin
       return getArizonaWeightLossCitiesWithClinics();
     case 'california':
       return getCaliforniaWeightLossCitiesWithClinics();
+    case 'new-york':
+      return getNewYorkWeightLossCitiesWithClinics();
+    case 'washington-dc':
+      return getWashingtonDcWeightLossCitiesWithClinics();
+    case 'georgia':
+      return getGeorgiaWeightLossCitiesWithClinics();
+    case 'illinois':
+      return getIllinoisWeightLossCitiesWithClinics();
+    case 'massachusetts':
+      return getMassachusettsWeightLossCitiesWithClinics();
+    case 'washington':
+      return getWashingtonWeightLossCitiesWithClinics();
+    case 'colorado':
+      return getColoradoWeightLossCitiesWithClinics();
+    case 'tennessee':
+      return getTennesseeWeightLossCitiesWithClinics();
+    case 'nevada':
+      return getNevadaWeightLossCitiesWithClinics();
+    case 'north-carolina':
+      return getNorthCarolinaWeightLossCitiesWithClinics();
     default:
       return [];
   }
