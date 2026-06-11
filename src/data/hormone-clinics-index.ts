@@ -6,6 +6,16 @@ import { texasHormoneClinics, getTexasClinicsByCity, getTexasCitiesWithClinics }
 import { floridaHormoneClinics, getFloridaClinicsByCity, getFloridaCitiesWithClinics } from './hormone-clinics-florida';
 import { arizonaHormoneClinics, getArizonaClinicsByCity, getArizonaCitiesWithClinics } from './hormone-clinics-arizona';
 import { californiaHormoneClinics, getCaliforniaHormoneClinicsByCity, getCaliforniaHormoneCitiesWithClinics } from './hormone-clinics-california';
+import { newYorkHormoneClinics, getNewYorkHormoneClinicsByCity, getNewYorkHormoneCitiesWithClinics } from './hormone-clinics-new-york';
+import { washingtonDcHormoneClinics, getWashingtonDcHormoneClinicsByCity, getWashingtonDcHormoneCitiesWithClinics } from './hormone-clinics-washington-dc';
+import { georgiaHormoneClinics, getGeorgiaHormoneClinicsByCity, getGeorgiaHormoneCitiesWithClinics } from './hormone-clinics-georgia';
+import { illinoisHormoneClinics, getIllinoisHormoneClinicsByCity, getIllinoisHormoneCitiesWithClinics } from './hormone-clinics-illinois';
+import { massachusettsHormoneClinics, getMassachusettsHormoneClinicsByCity, getMassachusettsHormoneCitiesWithClinics } from './hormone-clinics-massachusetts';
+import { washingtonHormoneClinics, getWashingtonHormoneClinicsByCity, getWashingtonHormoneCitiesWithClinics } from './hormone-clinics-washington';
+import { coloradoHormoneClinics, getColoradoHormoneClinicsByCity, getColoradoHormoneCitiesWithClinics } from './hormone-clinics-colorado';
+import { tennesseeHormoneClinics, getTennesseeHormoneClinicsByCity, getTennesseeHormoneCitiesWithClinics } from './hormone-clinics-tennessee';
+import { nevadaHormoneClinics, getNevadaHormoneClinicsByCity, getNevadaHormoneCitiesWithClinics } from './hormone-clinics-nevada';
+import { northCarolinaHormoneClinics, getNorthCarolinaHormoneClinicsByCity, getNorthCarolinaHormoneCitiesWithClinics } from './hormone-clinics-north-carolina';
 
 // All hormone clinics combined
 export const allHormoneClinics: HormoneClinic[] = [
@@ -13,6 +23,16 @@ export const allHormoneClinics: HormoneClinic[] = [
   ...floridaHormoneClinics,
   ...arizonaHormoneClinics,
   ...californiaHormoneClinics,
+  ...newYorkHormoneClinics,
+  ...washingtonDcHormoneClinics,
+  ...georgiaHormoneClinics,
+  ...illinoisHormoneClinics,
+  ...massachusettsHormoneClinics,
+  ...washingtonHormoneClinics,
+  ...coloradoHormoneClinics,
+  ...tennesseeHormoneClinics,
+  ...nevadaHormoneClinics,
+  ...northCarolinaHormoneClinics,
 ];
 
 // Get clinics by state
@@ -26,6 +46,26 @@ export function getHormoneClinicsByState(stateSlug: string): HormoneClinic[] {
       return arizonaHormoneClinics;
     case 'california':
       return californiaHormoneClinics;
+    case 'new-york':
+      return newYorkHormoneClinics;
+    case 'washington-dc':
+      return washingtonDcHormoneClinics;
+    case 'georgia':
+      return georgiaHormoneClinics;
+    case 'illinois':
+      return illinoisHormoneClinics;
+    case 'massachusetts':
+      return massachusettsHormoneClinics;
+    case 'washington':
+      return washingtonHormoneClinics;
+    case 'colorado':
+      return coloradoHormoneClinics;
+    case 'tennessee':
+      return tennesseeHormoneClinics;
+    case 'nevada':
+      return nevadaHormoneClinics;
+    case 'north-carolina':
+      return northCarolinaHormoneClinics;
     default:
       return [];
   }
@@ -42,6 +82,26 @@ export function getHormoneClinicsByCity(stateSlug: string, citySlug: string): Ho
       return getArizonaClinicsByCity(citySlug);
     case 'california':
       return getCaliforniaHormoneClinicsByCity(citySlug);
+    case 'new-york':
+      return getNewYorkHormoneClinicsByCity(citySlug);
+    case 'washington-dc':
+      return getWashingtonDcHormoneClinicsByCity(citySlug);
+    case 'georgia':
+      return getGeorgiaHormoneClinicsByCity(citySlug);
+    case 'illinois':
+      return getIllinoisHormoneClinicsByCity(citySlug);
+    case 'massachusetts':
+      return getMassachusettsHormoneClinicsByCity(citySlug);
+    case 'washington':
+      return getWashingtonHormoneClinicsByCity(citySlug);
+    case 'colorado':
+      return getColoradoHormoneClinicsByCity(citySlug);
+    case 'tennessee':
+      return getTennesseeHormoneClinicsByCity(citySlug);
+    case 'nevada':
+      return getNevadaHormoneClinicsByCity(citySlug);
+    case 'north-carolina':
+      return getNorthCarolinaHormoneClinicsByCity(citySlug);
     default:
       return [];
   }
@@ -58,6 +118,26 @@ export function getCitiesWithClinics(stateSlug: string): { city: string; citySlu
       return getArizonaCitiesWithClinics();
     case 'california':
       return getCaliforniaHormoneCitiesWithClinics();
+    case 'new-york':
+      return getNewYorkHormoneCitiesWithClinics();
+    case 'washington-dc':
+      return getWashingtonDcHormoneCitiesWithClinics();
+    case 'georgia':
+      return getGeorgiaHormoneCitiesWithClinics();
+    case 'illinois':
+      return getIllinoisHormoneCitiesWithClinics();
+    case 'massachusetts':
+      return getMassachusettsHormoneCitiesWithClinics();
+    case 'washington':
+      return getWashingtonHormoneCitiesWithClinics();
+    case 'colorado':
+      return getColoradoHormoneCitiesWithClinics();
+    case 'tennessee':
+      return getTennesseeHormoneCitiesWithClinics();
+    case 'nevada':
+      return getNevadaHormoneCitiesWithClinics();
+    case 'north-carolina':
+      return getNorthCarolinaHormoneCitiesWithClinics();
     default:
       return [];
   }
