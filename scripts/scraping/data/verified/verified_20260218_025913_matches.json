@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Hint Health SF",
+    "address": "456 Market St, San Francisco, CA 94105",
+    "city": "San Francisco",
+    "state": "California",
+    "zip": "94105",
+    "phone": "(415) 555-0200",
+    "website": "https://www.hint.com",
+    "google_rating": "4.7",
+    "review_count": "89",
+    "category": "Direct primary care",
+    "google_maps_url": "",
+    "latitude": "37.7749",
+    "longitude": "-122.4194",
+    "place_id": "",
+    "status": "OPERATIONAL",
+    "search_query": "direct primary care",
+    "scraped_at": "2026-02-18T00:00:00",
+    "verification": {
+      "is_match": true,
+      "confidence": 1.0,
+      "positive_keywords": [
+        "direct primary care",
+        "dpc",
+        "cash pay",
+        "direct care"
+      ],
+      "negative_keywords": [],
+      "pricing_signals": 0,
+      "method": "keyword"
+    },
+    "page_title": "Hint Health | Solutions to Power Direct Care"
+  },
+  {
+    "name": "PlushCare",
+    "address": "450 Sansome St, San Francisco, CA 94111",
+    "city": "San Francisco",
+    "state": "California",
+    "zip": "94111",
+    "phone": "(415) 555-0300",
+    "website": "https://www.plushcare.com",
+    "google_rating": "4.5",
+    "review_count": "342",
+    "category": "Telehealth service",
+    "google_maps_url": "",
+    "latitude": "37.7947",
+    "longitude": "-122.4013",
+    "place_id": "",
+    "status": "OPERATIONAL",
+    "search_query": "cash pay clinic",
+    "scraped_at": "2026-02-18T00:00:00",
+    "verification": {
+      "is_match": true,
+      "confidence": 0.67,
+      "positive_keywords": [
+        "self-pay",
+        "without insurance"
+      ],
+      "negative_keywords": [],
+      "pricing_signals": 0,
+      "method": "keyword"
+    },
+    "page_title": "Online Doctor Appointments Available Now"
+  }
+]

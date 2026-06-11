@@ -169,6 +169,11 @@ const internationalDestinations = [
   },
 ];
 
+// Slugs without a /destinations/[slug] page (so we don't ship a dead "Destination Guide" link)
+const NO_DESTINATION_PAGE = new Set<string>(['bahamas']);
+// Guide-slug overrides where the real guide isn't `${slug}-stem-cell-guide`
+const GUIDE_SLUG_OVERRIDES: Record<string, string> = { dubai: 'dubai-longevity-guide' };
+
 // US Regions for longevity
 const usRegions = [
   {
@@ -400,15 +405,17 @@ export default function LongevityHub() {
                 )}
 
                 <div className="flex gap-2">
-                  <Link
-                    href={`/destinations/${dest.slug}`}
-                    className="flex-1 text-center text-sm font-medium px-3 py-2 rounded border border-gray-200 hover:border-indigo-400 hover:bg-indigo-50"
-                  >
-                    Destination Guide
-                  </Link>
+                  {!NO_DESTINATION_PAGE.has(dest.slug) && (
+                    <Link
+                      href={`/destinations/${dest.slug}`}
+                      className="flex-1 text-center text-sm font-medium px-3 py-2 rounded border border-gray-200 hover:border-indigo-400 hover:bg-indigo-50"
+                    >
+                      Destination Guide
+                    </Link>
+                  )}
                   {dest.hasGuide && (
                     <Link
-                      href={`/guides/${dest.slug}-stem-cell-guide`}
+                      href={`/guides/${GUIDE_SLUG_OVERRIDES[dest.slug] ?? `${dest.slug}-stem-cell-guide`}`}
                       className="flex-1 text-center text-sm font-medium px-3 py-2 rounded bg-indigo-600 text-white hover:bg-indigo-700"
                     >
                       Stem Cell Guide

@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="border-t border-gray-200 bg-gray-50">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-6">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-7">
           {/* Telehealth */}
           <div>
             <h3 className="text-sm font-semibold text-gray-900 mb-4">Telehealth</h3>
@@ -19,7 +19,7 @@ export default function Footer() {
           <div>
             <h3 className="text-sm font-semibold text-gray-900 mb-4">Local Services</h3>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/dexa" className="text-gray-600 hover:text-blue-600">DEXA Scans</Link></li>
+              <li><Link href="/dexa-scans" className="text-gray-600 hover:text-blue-600">DEXA Scans</Link></li>
               <li><Link href="/vo2max" className="text-gray-600 hover:text-blue-600">VO2 Max Testing</Link></li>
               <li><Link href="/longevity" className="text-gray-600 hover:text-blue-600">Longevity Clinics</Link></li>
             </ul>
@@ -34,6 +34,19 @@ export default function Footer() {
               <li><Link href="/bariatric" className="text-gray-600 hover:text-blue-600">Bariatric Surgery</Link></li>
               <li><Link href="/plastic_surgery" className="text-gray-600 hover:text-blue-600">Plastic Surgery</Link></li>
               <li><Link href="/fertility" className="text-gray-600 hover:text-blue-600">Fertility & IVF</Link></li>
+            </ul>
+          </div>
+
+          {/* Destinations */}
+          <div>
+            <h3 className="text-sm font-semibold text-gray-900 mb-4">Destinations</h3>
+            <ul className="space-y-2 text-sm">
+              <li><Link href="/medical-tourism" className="text-gray-600 hover:text-blue-600">All Destinations</Link></li>
+              <li><Link href="/destinations/mexico" className="text-gray-600 hover:text-blue-600">Mexico</Link></li>
+              <li><Link href="/destinations/turkey" className="text-gray-600 hover:text-blue-600">Turkey</Link></li>
+              <li><Link href="/destinations/south-korea" className="text-gray-600 hover:text-blue-600">South Korea</Link></li>
+              <li><Link href="/destinations/brazil" className="text-gray-600 hover:text-blue-600">Brazil</Link></li>
+              <li><Link href="/destinations/hungary" className="text-gray-600 hover:text-blue-600">Hungary</Link></li>
             </ul>
           </div>
 

@@ -39,8 +39,8 @@ export default function Navigation() {
                 Browse Services
                 <span className="text-xs">▼</span>
               </button>
-              <div className="absolute left-1/2 -translate-x-1/2 mt-2 w-[900px] max-w-[calc(100vw-2rem)] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all bg-white rounded-lg shadow-xl border border-gray-200 py-4 z-50 max-h-[80vh] overflow-y-auto">
-                <div className="grid grid-cols-5 gap-6 px-6">
+              <div className="absolute left-1/2 -translate-x-1/2 mt-2 w-[1100px] max-w-[calc(100vw-2rem)] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all bg-white rounded-lg shadow-xl border border-gray-200 py-4 z-50 max-h-[80vh] overflow-y-auto">
+                <div className="grid grid-cols-6 gap-6 px-6">
                   {/* US Services */}
                   <div>
                     <div className="text-xs font-bold text-blue-600 uppercase mb-3">US Services</div>
@@ -49,7 +49,8 @@ export default function Navigation() {
                       <Link href="/hormone-therapy" className="block text-sm font-medium text-gray-900 hover:text-blue-600">💪 Hormone Therapy</Link>
                       <Link href="/weight-loss" className="block text-sm font-medium text-gray-900 hover:text-blue-600">💊 Weight Loss / GLP-1</Link>
                       <div className="text-xs text-gray-500 mt-2 mb-1">Performance Testing:</div>
-                      <Link href="/dexa" className="block text-xs text-gray-600 hover:text-blue-600">DEXA Scans</Link>
+                      <Link href="/dexa" className="block text-xs text-gray-600 hover:text-blue-600">DEXA Providers</Link>
+                      <Link href="/dexa-scans" className="block text-xs text-gray-600 hover:text-blue-600">DEXA Scans Near You</Link>
                       <Link href="/vo2max" className="block text-xs text-gray-600 hover:text-blue-600">VO2 Max</Link>
                       <Link href="/iv" className="block text-xs text-gray-600 hover:text-blue-600">IV Therapy</Link>
                       <Link href="/longevity" className="block text-xs text-gray-600 hover:text-blue-600">Longevity Clinics</Link>
@@ -78,6 +79,23 @@ export default function Navigation() {
                       <Link href="/orthopedic" className="block text-sm text-gray-700 hover:text-purple-600">🦴 Orthopedic</Link>
                       <Link href="/cardiac" className="block text-sm text-gray-700 hover:text-purple-600">❤️ Cardiac</Link>
                       <Link href="/vision" className="block text-sm text-gray-700 hover:text-purple-600">👁️ Vision</Link>
+                    </div>
+                  </div>
+
+                  {/* By Destination */}
+                  <div>
+                    <div className="text-xs font-bold text-purple-600 uppercase mb-3">By Destination</div>
+                    <div className="space-y-1.5">
+                      <Link href="/medical-tourism" className="block text-sm font-medium text-gray-900 hover:text-purple-600">✈️ All Destinations</Link>
+                      <Link href="/destinations/mexico" className="block text-xs text-gray-600 hover:text-purple-600">🇲🇽 Mexico</Link>
+                      <Link href="/destinations/turkey" className="block text-xs text-gray-600 hover:text-purple-600">🇹🇷 Turkey</Link>
+                      <Link href="/destinations/south-korea" className="block text-xs text-gray-600 hover:text-purple-600">🇰🇷 South Korea</Link>
+                      <Link href="/destinations/thailand" className="block text-xs text-gray-600 hover:text-purple-600">🇹🇭 Thailand</Link>
+                      <Link href="/destinations/costa-rica" className="block text-xs text-gray-600 hover:text-purple-600">🇨🇷 Costa Rica</Link>
+                      <Link href="/destinations/colombia" className="block text-xs text-gray-600 hover:text-purple-600">🇨🇴 Colombia</Link>
+                      <Link href="/destinations/brazil" className="block text-xs text-gray-600 hover:text-purple-600">🇧🇷 Brazil</Link>
+                      <Link href="/destinations/hungary" className="block text-xs text-gray-600 hover:text-purple-600">🇭🇺 Hungary</Link>
+                      <Link href="/destinations/czech-republic" className="block text-xs text-gray-600 hover:text-purple-600">🇨🇿 Czech Republic</Link>
                     </div>
                   </div>
 
@@ -338,7 +356,8 @@ export default function Navigation() {
                       <Link href="/labs" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🧪 At-Home Labs</Link>
                       <Link href="/hormone-therapy" className="block py-2 text-sm font-medium text-gray-900 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>💪 Hormone Therapy</Link>
                       <Link href="/weight-loss" className="block py-2 text-sm font-medium text-gray-900 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>💊 Weight Loss / GLP-1</Link>
-                      <Link href="/dexa" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>📊 DEXA Scans</Link>
+                      <Link href="/dexa" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>📊 DEXA Providers</Link>
+                      <Link href="/dexa-scans" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>📍 DEXA Scans Near You</Link>
                       <Link href="/vo2max" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🫀 VO2 Max</Link>
                       <Link href="/iv" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>💧 IV Therapy</Link>
                       <Link href="/longevity" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>⏳ Longevity</Link>
@@ -359,6 +378,21 @@ export default function Navigation() {
                       <Link href="/orthopedic" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🦴 Orthopedic</Link>
                       <Link href="/cardiac" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>❤️ Cardiac</Link>
                       <Link href="/vision" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>👁️ Vision</Link>
+                    </div>
+                  </div>
+                  {/* By Destination */}
+                  <div>
+                    <div className="text-xs font-bold text-purple-600 uppercase mb-2 px-3">By Destination</div>
+                    <div className="space-y-1">
+                      <Link href="/medical-tourism" className="block py-2 text-sm font-medium text-gray-900 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>✈️ All Destinations</Link>
+                      <Link href="/destinations/mexico" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🇲🇽 Mexico</Link>
+                      <Link href="/destinations/turkey" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🇹🇷 Turkey</Link>
+                      <Link href="/destinations/south-korea" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🇰🇷 South Korea</Link>
+                      <Link href="/destinations/thailand" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🇹🇭 Thailand</Link>
+                      <Link href="/destinations/costa-rica" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🇨🇷 Costa Rica</Link>
+                      <Link href="/destinations/colombia" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🇨🇴 Colombia</Link>
+                      <Link href="/destinations/brazil" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🇧🇷 Brazil</Link>
+                      <Link href="/destinations/hungary" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🇭🇺 Hungary</Link>
                     </div>
                   </div>
                   {/* Traditional */}

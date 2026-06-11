@@ -1,0 +1,7 @@
+name,address,city,state,zip,phone,website,google_rating,review_count,category,google_maps_url,latitude,longitude,place_id,status,search_query,scraped_at
+Partridge Family Medicine,"1234 Main St, Sacramento, CA 95814",Sacramento,California,95814,(916) 555-0100,https://www.partridgefamilymedicine.com,4.9,127,Direct primary care physician,,38.5816,-121.4944,,OPERATIONAL,direct primary care,2026-02-18T00:00:00
+Hint Health SF,"456 Market St, San Francisco, CA 94105",San Francisco,California,94105,(415) 555-0200,https://www.hint.com,4.7,89,Direct primary care,,37.7749,-122.4194,,OPERATIONAL,direct primary care,2026-02-18T00:00:00
+PlushCare,"450 Sansome St, San Francisco, CA 94111",San Francisco,California,94111,(415) 555-0300,https://www.plushcare.com,4.5,342,Telehealth service,,37.7947,-122.4013,,OPERATIONAL,cash pay clinic,2026-02-18T00:00:00
+One Medical,"275 Sacramento St, San Francisco, CA 94111",San Francisco,California,94111,(415) 555-0400,https://www.onemedical.com,4.3,567,Membership medicine,,37.7933,-122.4028,,OPERATIONAL,membership medicine,2026-02-18T00:00:00
+Forward Health,"1 Letterman Dr, San Francisco, CA 94129",San Francisco,California,94129,(415) 555-0500,https://www.goforward.com,4.6,234,Preventive healthcare,,37.7988,-122.4485,,OPERATIONAL,concierge medicine,2026-02-18T00:00:00
+Sollis Health,"123 Pacific Heights Blvd, San Francisco, CA 94115",San Francisco,California,94115,(415) 555-0800,https://www.sollishealth.com,4.8,156,Concierge medicine,,37.7880,-122.4360,,OPERATIONAL,concierge medicine,2026-02-18T00:00:00

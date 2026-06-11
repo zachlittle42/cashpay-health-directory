@@ -1,0 +1,54 @@
+[
+  {
+    "name": "Partridge Family Medicine",
+    "address": "1234 Main St, Sacramento, CA 95814",
+    "city": "Sacramento",
+    "state": "California",
+    "zip": "95814",
+    "phone": "(916) 555-0100",
+    "website": "https://www.partridgefamilymedicine.com",
+    "google_rating": "4.9",
+    "review_count": "127",
+    "category": "Direct primary care physician",
+    "google_maps_url": "",
+    "latitude": "38.5816",
+    "longitude": "-121.4944",
+    "place_id": "",
+    "status": "OPERATIONAL",
+    "search_query": "direct primary care",
+    "scraped_at": "2026-02-18T00:00:00",
+    "verification": {
+      "is_match": false,
+      "error": "crawl_failed",
+      "method": "keywords"
+    }
+  },
+  {
+    "name": "One Medical",
+    "address": "275 Sacramento St, San Francisco, CA 94111",
+    "city": "San Francisco",
+    "state": "California",
+    "zip": "94111",
+    "phone": "(415) 555-0400",
+    "website": "https://www.onemedical.com",
+    "google_rating": "4.3",
+    "review_count": "567",
+    "category": "Membership medicine",
+    "google_maps_url": "",
+    "latitude": "37.7933",
+    "longitude": "-122.4028",
+    "place_id": "",
+    "status": "OPERATIONAL",
+    "search_query": "membership medicine",
+    "scraped_at": "2026-02-18T00:00:00",
+    "verification": {
+      "is_match": false,
+      "confidence": 0.4,
+      "positive_keywords": [],
+      "negative_keywords": [],
+      "pricing_signals": 2,
+      "method": "keyword"
+    },
+    "page_title": "Exceptional Primary Care - Find a Doctor Near You | One Medical"
+  }
+]
