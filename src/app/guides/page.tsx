@@ -9,6 +9,31 @@ export const metadata: Metadata = {
 };
 
 const guides = [
+  // Medical Tourism expansion (2026-06)
+  {
+    slug: 'stem-cell-therapy-cost',
+    title: 'Stem Cell Therapy Cost in 2026: US vs Mexico, Panama & Abroad',
+    description: 'What stem cell therapy actually costs in the US vs Mexico and Panama, by condition, plus how to vet clinics and avoid overpaying.',
+    category: 'Medical Tourism',
+    readTime: '11 min',
+    icon: '💉',
+  },
+  {
+    slug: 'stem-cell-knees-mexico',
+    title: 'Stem Cell Therapy for Knees Abroad: Cost, Mexico & What to Know (2026)',
+    description: 'Knee stem cell therapy costs, what the evidence actually shows, and how US vs Mexico options compare for osteoarthritis.',
+    category: 'Medical Tourism',
+    readTime: '10 min',
+    icon: '🦵',
+  },
+  {
+    slug: 'los-algodones-reviews',
+    title: 'Los Algodones Dentist Reviews: Is It Safe? (2026 Trust Guide)',
+    description: 'How to vet "Molar City" dentists in Los Algodones, Mexico — credentials, real review sources, pricing, and red flags before you book.',
+    category: 'Medical Tourism',
+    readTime: '9 min',
+    icon: '🦷',
+  },
   // NEW: High-Priority SEO Content (Tier 1)
   {
     slug: 'compounded-semaglutide',
