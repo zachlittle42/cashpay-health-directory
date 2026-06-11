@@ -5,7 +5,32 @@ import { CATEGORIES, type Category, type Provider } from '@/lib/types';
 import { getProvidersByCategory } from '@/lib/providers';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
-import { buildCategoryListSchema } from '@/lib/jsonLd';
+import { buildCategoryListSchema, buildFAQSchema } from '@/lib/jsonLd';
+import MedicalDisclaimer from '@/components/MedicalDisclaimer';
+
+// DEXA-specific AEO content. Answers are grounded in the live provider data in
+// src/lib/providers-telehealth.ts (BodySpec $40-45/scan, DexaFit $100-150/scan).
+// Prices are estimates to confirm with the provider. The visible direct-answer
+// + FAQ blocks below mirror this schema exactly.
+const DEXA_FAQ_ITEMS = [
+  {
+    question: 'How much does a DEXA scan cost without insurance?',
+    answer: 'A cash-pay DEXA body-composition scan typically costs about $40-150. Budget providers like BodySpec charge roughly $40-45 per scan (and lower with a membership), while full-service providers like DexaFit run about $100-150 per scan, sometimes bundled with VO2 max or RMR testing. Prices vary by city and location — confirm current pricing directly with the provider.',
+  },
+  {
+    question: 'Is a DEXA scan covered by insurance?',
+    answer: 'DEXA scans for bone-density (osteoporosis) screening are often covered when medically indicated, but DEXA scans ordered purely for body-composition or fitness tracking are generally not covered and are paid cash. Most body-composition scans listed here are cash-pay. Check with your insurer and the provider before booking.',
+  },
+  {
+    question: 'What does a DEXA scan measure?',
+    answer: 'A DEXA (DXA) scan measures body composition — total and regional body fat, lean muscle mass, visceral fat, and bone density. It is more precise than BMI or bathroom scales because it separates fat, muscle, and bone rather than estimating from weight and height.',
+  },
+  {
+    question: 'How often should I get a DEXA scan?',
+    answer: 'For body-composition tracking, many people scan once every 3-6 months to see meaningful changes in fat and muscle. Scanning more often than quarterly rarely shows change beyond normal measurement variation. Talk to a clinician about the right cadence for bone-density screening.',
+  },
+];
+
 
 export function generateMetadata({ params }: { params: { category: string } }): Metadata {
   const cat = CATEGORIES[params.category as Category];
@@ -107,12 +132,51 @@ export default function CategoryPage({
 
   const categoryListSchema = buildCategoryListSchema(category.name, providers);
 
+  const isDexa = categorySlug === 'dexa';
+  const dexaFaqSchema = isDexa ? buildFAQSchema(DEXA_FAQ_ITEMS) : null;
+  // Enriched MedicalWebPage for the DEXA price query, with per-provider
+  // priceSpecification built from the real pricingDisplay strings in the data.
+  const dexaWebPageSchema = isDexa
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'MedicalWebPage',
+        name: 'DEXA Scan Cost & Providers',
+        description: 'Cash-pay DEXA body-composition and bone-density scan pricing and providers, with estimated costs to verify with each provider.',
+        url: 'https://vitalityscout.com/dexa',
+        inLanguage: 'en-US',
+        medicalAudience: { '@type': 'MedicalAudience', audienceType: 'Patient' },
+        about: { '@type': 'MedicalTest', name: 'DEXA (DXA) body composition and bone density scan' },
+        author: { '@type': 'Organization', name: 'VitalityScout', url: 'https://vitalityscout.com' },
+        reviewedBy: { '@type': 'Organization', name: 'VitalityScout Editorial Team' },
+        lastReviewed: '2026-06-10',
+        dateModified: '2026-06-10',
+        offers: providers.map((p) => ({
+          '@type': 'Offer',
+          name: `${p.name} DEXA scan`,
+          priceSpecification: { '@type': 'PriceSpecification', price: p.pricingDisplay, priceCurrency: 'USD' },
+          seller: { '@type': 'Organization', name: p.name, url: p.url },
+        })),
+      }
+    : null;
+
   return (
     <main className="min-h-screen bg-white">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(categoryListSchema) }}
       />
+      {dexaWebPageSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(dexaWebPageSchema) }}
+        />
+      )}
+      {dexaFaqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(dexaFaqSchema) }}
+        />
+      )}
       <Navigation />
 
       {/* Category Header */}
@@ -123,6 +187,21 @@ export default function CategoryPage({
             <h1 className="text-3xl font-bold text-gray-900">{category.name}</h1>
           </div>
           <p className="text-lg text-gray-600">{category.description}</p>
+
+          {/* Direct-answer lead for the "how much is a DEXA scan" query.
+              Numbers are grounded in the live provider data below. */}
+          {isDexa && (
+            <div className="mt-6 rounded-lg border-l-4 border-blue-600 bg-blue-50 p-5">
+              <p className="aeo-answer text-base text-gray-800">
+                A cash-pay DEXA scan typically costs <strong>$40-150</strong> without insurance.
+                Budget providers like BodySpec run about <strong>$40-45 per scan</strong>, while
+                full-service providers like DexaFit run about <strong>$100-150 per scan</strong>,
+                sometimes bundled with VO2 max or RMR testing. A DEXA scan measures body fat, lean
+                muscle, visceral fat, and bone density &mdash; more precisely than BMI. Prices are
+                estimates that vary by city; confirm current pricing with the provider.
+              </p>
+            </div>
+          )}
 
           {hasMedicalTourism && (
             <div className="mt-6 flex flex-wrap items-center gap-4">
@@ -379,7 +458,27 @@ export default function CategoryPage({
             )}
           </div>
         </div>
+
+        {/* DEXA FAQ — visible block mirrors the FAQPage schema above exactly */}
+        {isDexa && (
+          <div className="mt-12">
+            <h2 className="text-xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+            <div>
+              {DEXA_FAQ_ITEMS.map((item) => (
+                <details key={item.question} className="group border-b border-gray-200 py-5">
+                  <summary className="flex cursor-pointer items-start justify-between text-base font-semibold text-gray-900 hover:text-blue-600">
+                    <span className="pr-4">{item.question}</span>
+                    <span className="text-blue-600 group-open:rotate-180 transition-transform">▼</span>
+                  </summary>
+                  <p className="mt-3 text-sm text-gray-700">{item.answer}</p>
+                </details>
+              ))}
+            </div>
+          </div>
+        )}
       </section>
+
+      {isDexa && <MedicalDisclaimer />}
 
       <Footer />
     </main>
