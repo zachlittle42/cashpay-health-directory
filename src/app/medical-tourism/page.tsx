@@ -297,6 +297,22 @@ export default function MedicalTourismHub() {
               <div className="text-sm text-gray-600">IVF, Dental</div>
             </div>
           </Link>
+
+          <Link href="/destinations/brazil" className="flex items-center gap-3 rounded-lg border border-gray-200 bg-white p-5 hover:border-purple-400 hover:shadow-md transition-all">
+            <span className="text-3xl">🇧🇷</span>
+            <div>
+              <div className="font-bold text-gray-900">Brazil</div>
+              <div className="text-sm text-gray-600">Plastic Surgery, BBL</div>
+            </div>
+          </Link>
+
+          <Link href="/destinations/hungary" className="flex items-center gap-3 rounded-lg border border-gray-200 bg-white p-5 hover:border-purple-400 hover:shadow-md transition-all">
+            <span className="text-3xl">🇭🇺</span>
+            <div>
+              <div className="font-bold text-gray-900">Hungary</div>
+              <div className="text-sm text-gray-600">Dental, Implants</div>
+            </div>
+          </Link>
         </div>
 
         {/* Longevity & Stem Cell Destinations */}
@@ -432,6 +448,75 @@ export default function MedicalTourismHub() {
                   <div>
                     <div className="font-bold text-gray-900 mb-1">Gastric Sleeve in Mexico</div>
                     <div className="text-sm text-gray-600">Safety data, complication rates, surgeon selection</div>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          </div>
+
+          {/* Cost Guides */}
+          <div className="mb-10">
+            <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+              <span className="text-2xl">💰</span> Cost Guides
+              <span className="text-sm font-normal text-gray-500 ml-2">— What procedures cost abroad vs the US</span>
+            </h3>
+            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+              <Link href="/guides/brazil-plastic-surgery-cost" className="bg-white rounded-lg border border-purple-200 p-5 hover:shadow-lg transition-shadow">
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl">🇧🇷</span>
+                  <div>
+                    <div className="font-bold text-gray-900 mb-1">Brazil Plastic Surgery Cost</div>
+                    <div className="text-sm text-gray-600">BBL, lipo, tummy tuck vs US prices</div>
+                  </div>
+                </div>
+              </Link>
+
+              <Link href="/guides/hungary-dental-cost" className="bg-white rounded-lg border border-purple-200 p-5 hover:shadow-lg transition-shadow">
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl">🇭🇺</span>
+                  <div>
+                    <div className="font-bold text-gray-900 mb-1">Hungary Dental Cost</div>
+                    <div className="text-sm text-gray-600">Implants, all-on-4, crowns vs US prices</div>
+                  </div>
+                </div>
+              </Link>
+
+              <Link href="/guides/korea-plastic-surgery-cost" className="bg-white rounded-lg border border-purple-200 p-5 hover:shadow-lg transition-shadow">
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl">🇰🇷</span>
+                  <div>
+                    <div className="font-bold text-gray-900 mb-1">Korea Plastic Surgery Cost</div>
+                    <div className="text-sm text-gray-600">Rhinoplasty, facial contouring vs US prices</div>
+                  </div>
+                </div>
+              </Link>
+
+              <Link href="/guides/colombia-plastic-surgery-cost" className="bg-white rounded-lg border border-purple-200 p-5 hover:shadow-lg transition-shadow">
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl">🇨🇴</span>
+                  <div>
+                    <div className="font-bold text-gray-900 mb-1">Colombia Plastic Surgery Cost</div>
+                    <div className="text-sm text-gray-600">BBL, lipo, breast vs US prices</div>
+                  </div>
+                </div>
+              </Link>
+
+              <Link href="/guides/czech-ivf-cost" className="bg-white rounded-lg border border-purple-200 p-5 hover:shadow-lg transition-shadow">
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl">🇨🇿</span>
+                  <div>
+                    <div className="font-bold text-gray-900 mb-1">Czech IVF Cost</div>
+                    <div className="text-sm text-gray-600">IVF & donor-egg pricing vs US</div>
+                  </div>
+                </div>
+              </Link>
+
+              <Link href="/guides/panama-dental-cost" className="bg-white rounded-lg border border-purple-200 p-5 hover:shadow-lg transition-shadow">
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl">🇵🇦</span>
+                  <div>
+                    <div className="font-bold text-gray-900 mb-1">Panama Dental Cost</div>
+                    <div className="text-sm text-gray-600">Implants & crowns vs US prices</div>
                   </div>
                 </div>
               </Link>
