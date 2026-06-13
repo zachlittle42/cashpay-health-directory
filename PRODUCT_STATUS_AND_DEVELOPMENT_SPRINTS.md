@@ -42,13 +42,15 @@ telehealth / personal products for health, wellness, longevity, and performance.
    real national-chain seed via `src/data/medspa-chains.ts` (NO fabricated local NAP), index
    with thin-content guard in `src/data/medspa-clinics-index.ts`. **Next:** add verified local
    independent listings + more states (FL, NY, AZ already stubbed) via the scraping pipeline.
-4. ⏭️ **Fill empty clinical categories** — `vo2max`, `longevity` providers, `orthopedic`,
-   `cardiac`, `vision` (currently render thin "coming soon" pages — SEO risk).
+4. ✅ **Fill empty clinical categories** — *shipped*. Added real providers to `vo2max`
+   (PNOĒ, DexaFit, Fitnescity), `iv` (Drip Hydration, Restore, Hydreight), `orthopedic`
+   (Apollo, Bumrungrad, Galenia), `cardiac` (Narayana, Fortis Escorts, Bumrungrad), and
+   `vision` (Dünyagöz, Centre for Sight, CODET). No more thin "coming soon" pages.
+   (`longevity` category intentionally left empty — served by the editorial `/longevity` hub.)
 
 ### Known SEO Gaps / Tech Debt
-- Empty taxonomy categories (`vo2max`, `iv`, `longevity` providers, `orthopedic`, `cardiac`,
-  `vision`) ship as thin "coming soon" pages — fill or `noindex`.
 - `CONTENT_OVERVIEW.md` page/word counts are stale (still say 190 pages).
+- Med-spa directory currently seeds national chains only; add verified local independents.
 
 ---
 
