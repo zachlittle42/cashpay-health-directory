@@ -87,6 +87,12 @@ export default function Home() {
               Local Independent Clinics
             </Link>
             <Link
+              href="/med-spa"
+              className="rounded-full bg-rose-100 px-4 py-1.5 text-rose-700 hover:bg-rose-200 transition-colors"
+            >
+              Med Spa &amp; Aesthetics
+            </Link>
+            <Link
               href="/longevity-performance"
               className="rounded-full bg-emerald-100 px-4 py-1.5 text-emerald-700 hover:bg-emerald-200 transition-colors"
             >
@@ -151,6 +157,14 @@ export default function Home() {
           {localCategories.map((slug) => (
             <CategoryCard key={slug} slug={slug} />
           ))}
+          <Link
+            href="/med-spa"
+            className="group rounded-lg border border-gray-200 p-5 hover:border-rose-400 hover:shadow-md transition-all"
+          >
+            <div className="mb-2 text-3xl">✨</div>
+            <h3 className="font-semibold text-gray-900 group-hover:text-rose-600">Med Spa &amp; Aesthetics</h3>
+            <p className="mt-1 text-sm text-gray-600">Botox, fillers, laser hair removal, body contouring &amp; IV therapy by city</p>
+          </Link>
         </div>
       </section>
 

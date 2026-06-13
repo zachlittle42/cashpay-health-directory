@@ -37,8 +37,11 @@ telehealth / personal products for health, wellness, longevity, and performance.
    `/womens-health` (menopause/HRT), `/mental-health` (therapy & psychiatry)). Data in
    `src/lib/telehealth-dtc.ts`; integrated into the `/telehealth` hub. Both pillars share
    `src/components/CompareCategoryPage.tsx` (section-aware) via thin adapters.
-3. ⏭️ **Med-spa & aesthetics directory** — Botox, fillers, laser, microneedling, body
-   contouring + IV therapy (state×city, reuses the clinic-directory engine; fills empty `iv`).
+3. ✅ **Med-spa & aesthetics directory** — *engine shipped + seeded* (`/med-spa` hub +
+   `/med-spa/[state]/[city]`, CA + TX metros). Types in `src/lib/medspa-clinic-types.ts`,
+   real national-chain seed via `src/data/medspa-chains.ts` (NO fabricated local NAP), index
+   with thin-content guard in `src/data/medspa-clinics-index.ts`. **Next:** add verified local
+   independent listings + more states (FL, NY, AZ already stubbed) via the scraping pipeline.
 4. ⏭️ **Fill empty clinical categories** — `vo2max`, `longevity` providers, `orthopedic`,
    `cardiac`, `vision` (currently render thin "coming soon" pages — SEO risk).
 

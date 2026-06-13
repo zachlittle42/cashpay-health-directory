@@ -53,11 +53,13 @@ export default function Navigation() {
                       <Link href="/womens-health" className="block text-xs text-gray-600 hover:text-blue-600">Menopause &amp; HRT</Link>
                       <Link href="/skincare" className="block text-xs text-gray-600 hover:text-blue-600">Prescription Skincare</Link>
                       <Link href="/mental-health" className="block text-xs text-gray-600 hover:text-blue-600">Therapy &amp; Psychiatry</Link>
+                      <div className="text-xs text-gray-500 mt-2 mb-1">Wellness &amp; Aesthetics:</div>
+                      <Link href="/med-spa" className="block text-sm font-medium text-gray-900 hover:text-rose-600">✨ Med Spa &amp; Aesthetics</Link>
+                      <Link href="/iv" className="block text-xs text-gray-600 hover:text-rose-600 pl-3">IV Therapy</Link>
                       <div className="text-xs text-gray-500 mt-2 mb-1">Performance Testing:</div>
                       <Link href="/dexa" className="block text-xs text-gray-600 hover:text-blue-600">DEXA Providers</Link>
                       <Link href="/dexa-scans" className="block text-xs text-gray-600 hover:text-blue-600">DEXA Scans Near You</Link>
                       <Link href="/vo2max" className="block text-xs text-gray-600 hover:text-blue-600">VO2 Max</Link>
-                      <Link href="/iv" className="block text-xs text-gray-600 hover:text-blue-600">IV Therapy</Link>
                       <Link href="/longevity" className="block text-xs text-gray-600 hover:text-blue-600">Longevity Clinics</Link>
                       <div className="text-xs text-gray-500 mt-2 mb-1">Longevity &amp; Performance:</div>
                       <Link href="/longevity-performance" className="block text-sm font-medium text-gray-900 hover:text-emerald-600">🧬 Shop Longevity &amp; Performance</Link>
@@ -374,6 +376,7 @@ export default function Navigation() {
                       <Link href="/mental-health" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🧠 Therapy &amp; Psychiatry</Link>
                       <Link href="/dexa" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>📊 DEXA Providers</Link>
                       <Link href="/dexa-scans" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>📍 DEXA Scans Near You</Link>
+                      <Link href="/med-spa" className="block py-2 text-sm font-medium text-gray-900 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>✨ Med Spa &amp; Aesthetics</Link>
                       <Link href="/vo2max" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🫀 VO2 Max</Link>
                       <Link href="/iv" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>💧 IV Therapy</Link>
                       <Link href="/longevity" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>⏳ Longevity</Link>
