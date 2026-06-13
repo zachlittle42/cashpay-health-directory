@@ -192,7 +192,7 @@ export default function Home() {
           >
             <div className="mb-2 text-3xl">🧬</div>
             <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600">See the Full Hub</h3>
-            <p className="mt-1 text-sm text-gray-600">Peptides, supplements &amp; recovery tech coming next</p>
+            <p className="mt-1 text-sm text-gray-600">Peptides, supplements &amp; recovery tech — all compared</p>
             <span className="mt-2 text-sm font-medium text-emerald-600">Explore →</span>
           </Link>
         </div>

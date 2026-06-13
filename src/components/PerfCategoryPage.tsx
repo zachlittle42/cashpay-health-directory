@@ -192,7 +192,7 @@ export default function PerfCategoryPage({ slug }: { slug: PerfCategorySlug }) {
               <tr>
                 <th className="px-4 py-3 font-semibold">Product</th>
                 <th className="px-4 py-3 font-semibold">Price</th>
-                <th className="px-4 py-3 font-semibold">Prescription</th>
+                <th className="px-4 py-3 font-semibold">Rx required</th>
                 <th className="px-4 py-3 font-semibold">Best for</th>
               </tr>
             </thead>
@@ -205,7 +205,7 @@ export default function PerfCategoryPage({ slug }: { slug: PerfCategorySlug }) {
                   </td>
                   <td className="px-4 py-3 font-semibold text-gray-900">{p.priceDisplay}</td>
                   <td className="px-4 py-3 text-gray-600">
-                    {p.prescriptionRequired ? 'Yes' : 'No — OTC'}
+                    {p.prescriptionRequired ? 'Yes' : 'No'}
                   </td>
                   <td className="px-4 py-3 text-gray-600">{p.bestFor}</td>
                 </tr>

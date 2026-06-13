@@ -10,7 +10,12 @@
 // or off-label use set `requiresMedicalDisclaimer` so the page renders the
 // regulatory/medical notice.
 
-export type PerfCategorySlug = 'cgm' | 'longevity-rx';
+export type PerfCategorySlug =
+  | 'cgm'
+  | 'longevity-rx'
+  | 'peptides'
+  | 'supplements'
+  | 'recovery-tech';
 
 export interface PerfProduct {
   slug: string;
@@ -132,6 +137,114 @@ export const PERF_CATEGORIES: Record<PerfCategorySlug, PerfCategory> = {
         question: 'Do I need lab work before starting?',
         answer:
           'Reputable programs require baseline bloodwork (and periodic follow-up labs) before and during treatment with medications like rapamycin or metformin, both to confirm it’s appropriate and to monitor for side effects. Be cautious of any service that prescribes these drugs with no labs and no real clinician evaluation.',
+      },
+    ],
+  },
+  peptides: {
+    slug: 'peptides',
+    name: 'Peptide Therapy',
+    shortLabel: 'Peptides',
+    icon: '🧫',
+    description:
+      'How to access peptides like BPC-157 and TB-500 the legitimate way — through clinician supervision — and the honest regulatory reality of the gray market.',
+    intro:
+      'Peptides such as BPC-157, TB-500, and the GHK-Cu skin peptide are heavily marketed for recovery, healing, and anti-aging — but the regulatory picture is messy and matters a lot. Most of these are NOT FDA-approved drugs. Some can be prescribed off-label through a licensed clinician and a compounding pharmacy; many others are sold online as "research chemicals, not for human consumption," which is an unregulated gray market with real quality and legal risk. This page focuses on the legitimate, clinician-supervised paths and explains what to watch out for — it is education, not a recommendation to buy unapproved compounds.',
+    directAnswer:
+      'Peptides are best accessed through a licensed clinician, not bought as "research chemicals." A handful of peptides can be prescribed off-label via telehealth longevity or hormone clinics (with labs and supervision), typically costing about $100–$400+ per month including the compounded medication. Most peptides are NOT FDA-approved, and in 2023 the FDA restricted compounding of several popular ones (including BPC-157). Gray-market "research" peptides are unregulated and carry quality, dosing, and legal risk. Talk to a qualified clinician before considering any peptide.',
+    priceRange: '$100–$400+/mo (supervised)',
+    requiresMedicalDisclaimer: true,
+    faqs: [
+      {
+        question: 'Are peptides like BPC-157 legal and FDA-approved?',
+        answer:
+          'Most performance and recovery peptides — including BPC-157 and TB-500 — are not FDA-approved drugs. In 2023 the FDA placed several popular peptides into a category that effectively restricts pharmacy compounding of them, citing safety data gaps. Some peptides can still be prescribed off-label by a licensed clinician in specific cases, but the "research chemicals, not for human consumption" products sold online are unapproved and unregulated. This is a legally and medically gray area — work with a clinician.',
+      },
+      {
+        question: 'How can I get peptides safely?',
+        answer:
+          'The legitimate route is a licensed clinician (often via a telehealth hormone, longevity, or sports-medicine practice) who evaluates you, orders labs, and — where appropriate and legal — prescribes a compounded peptide from a vetted pharmacy with proper dosing and monitoring. Avoid unregulated vendors selling "research only" vials, which have documented problems with purity, dosing, and contamination.',
+      },
+      {
+        question: 'How much does clinician-supervised peptide therapy cost?',
+        answer:
+          'Supervised peptide programs typically run about $100–$400+ per month once you include the clinician/membership fee, the compounded medication, and required lab work. Exact cost depends on the peptide, dose, and provider. Prices are estimates — confirm with the provider.',
+      },
+      {
+        question: 'Do peptides actually work?',
+        answer:
+          'Evidence varies widely by peptide and is mostly preliminary or animal-based for the popular recovery peptides; robust human clinical trials are limited. We make no efficacy claims. Some peptides have legitimate FDA-approved medical uses in specific conditions, but their use for general recovery, longevity, or performance is unproven. Discuss realistic expectations and risks with a qualified clinician.',
+      },
+    ],
+  },
+  supplements: {
+    slug: 'supplements',
+    name: 'Longevity Supplements',
+    shortLabel: 'Supplements',
+    icon: '💊',
+    description:
+      'Evidence-aware comparison of the most popular longevity and healthspan supplements — NAD+ precursors, urolithin A, omega-3, creatine — and the brands worth trusting.',
+    intro:
+      'The longevity supplement aisle is crowded, lightly regulated, and full of bold claims. This page cuts through it by focusing on the compounds with the most research behind them (omega-3, creatine, NAD+ precursors like NR/NMN, urolithin A) and the brands that invest in third-party testing and transparency. Supplements are not FDA-approved to treat or prevent disease, quality varies enormously between brands, and "more" is not better — so we flag what the evidence actually supports and point you to reputable products.',
+    directAnswer:
+      'Most longevity supplements cost about $20–$60 per month, though premium NAD+ precursors and urolithin A products run $40–$100+. The best-supported options for healthy adults are creatine and omega-3 (well-studied, cheap), followed by NAD+ precursors (NR/NMN) and urolithin A (Mitopure), which show promise but have more limited human evidence. Brands like Thorne, Momentous, Tru Niagen, and Timeline emphasize third-party testing. Supplements are not FDA-approved to treat disease — talk to a clinician, especially if you take medications.',
+    priceRange: '$20–$100+/mo',
+    requiresMedicalDisclaimer: true,
+    faqs: [
+      {
+        question: 'Which longevity supplements are actually backed by evidence?',
+        answer:
+          'Creatine and omega-3 (EPA/DHA) have the strongest, broadest human evidence and are inexpensive. NAD+ precursors (nicotinamide riboside / NMN) and urolithin A (Mitopure) show promising results in early human studies for cellular and muscle health but need more long-term data. Many other "anti-aging" supplements rest on animal or in-vitro data only. We make no disease claims — match the spend to the evidence.',
+      },
+      {
+        question: 'Are supplement brands regulated for quality?',
+        answer:
+          'Supplements are regulated as foods, not drugs, so the FDA does not approve them for safety or efficacy before sale, and quality varies a lot between brands. Look for third-party testing seals (NSF, NSF Certified for Sport, USP, Informed Sport), published certificates of analysis, and transparent dosing. Brands like Thorne, Momentous, Pure Encapsulations, and Tru Niagen are known for testing rigor.',
+      },
+      {
+        question: 'How much should longevity supplements cost?',
+        answer:
+          'Foundational supplements (creatine, omega-3, vitamin D) cost roughly $10–$30/month combined. Branded NAD+ precursors (Tru Niagen) and urolithin A (Timeline Mitopure) are pricier at ~$40–$100+/month. Prices are estimates — buy from the brand or an authorized retailer to avoid counterfeits.',
+      },
+      {
+        question: 'Should I talk to a doctor before taking supplements?',
+        answer:
+          'Yes, especially if you take prescription medications, are pregnant or nursing, or have a medical condition. Even "natural" supplements can interact with drugs (for example, omega-3 with blood thinners). A clinician can also help you prioritize based on your bloodwork rather than marketing.',
+      },
+    ],
+  },
+  'recovery-tech': {
+    slug: 'recovery-tech',
+    name: 'Recovery & Performance Tech',
+    shortLabel: 'Recovery Tech',
+    icon: '🔴',
+    description:
+      'Compare the recovery and performance hardware people buy for sleep, recovery, and longevity — wearables, red light, sauna, cold plunge, and percussion.',
+    intro:
+      'Recovery technology has gone mainstream: wearables that score your sleep and strain, red-light panels, infrared saunas and sauna blankets, cold plunges, and percussive massage. These are one-time (often pricey) purchases rather than subscriptions, so the question is usually "which is worth it for my goal?" This page compares the major categories on price and what they actually do, with an honest note on where the evidence is solid versus emerging.',
+    directAnswer:
+      'Recovery tech ranges from about $200 for a recovery wearable or massage gun to $5,000+ for a plumbed cold plunge or full infrared sauna. Wearables (Oura, Whoop) have the strongest evidence for actionable sleep and recovery insight; massage guns and compression help perceived recovery; red light, sauna, and cold exposure have growing but still-mixed evidence. Match the spend to your goal — these are wellness devices, not medical treatments. Prices are estimates that vary by model and sales.',
+    priceRange: '$200–$5,000+ one-time',
+    requiresMedicalDisclaimer: true,
+    faqs: [
+      {
+        question: 'What recovery technology is actually worth buying?',
+        answer:
+          'For most people, a recovery wearable (Oura or Whoop) delivers the most actionable value by quantifying sleep and recovery so you can adjust training and habits. Massage guns and compression boots reliably improve how recovered you feel. Red light, sauna, and cold plunge have enthusiastic followings and growing evidence, but results are more variable — buy those for goals you value, not as guaranteed performance boosters.',
+      },
+      {
+        question: 'How much does recovery tech cost?',
+        answer:
+          'Roughly: recovery wearables $200–$350 (Whoop is subscription-based, Oura is a device plus membership); massage guns $150–$600; sauna blankets $500–$700; red-light panels $300–$2,000 depending on size; cold plunges $500 (tubs) to $5,000+ (chillers/plumbed units); full infrared saunas $2,000–$8,000+. Prices are estimates and move with frequent sales.',
+      },
+      {
+        question: 'Are saunas and cold plunges backed by science?',
+        answer:
+          'Regular sauna use has reasonably good observational evidence linking it to cardiovascular and longevity benefits, while cold exposure has more limited and mixed evidence (clearer for mood/alertness and perceived recovery than for performance). Both are generally safe for healthy adults but carry risks for some conditions (heart disease, pregnancy) — check with a clinician before starting.',
+      },
+      {
+        question: 'Do I need a wearable if I already track workouts?',
+        answer:
+          'Not necessarily. Dedicated recovery wearables add value mainly through sleep staging, heart-rate variability, and a daily readiness score that a basic fitness tracker may not provide. If you already get reliable sleep and HRV data you act on, a separate recovery ring or band is optional.',
       },
     ],
   },
@@ -284,6 +397,256 @@ export const PERF_PRODUCTS: PerfProduct[] = [
     pros: ['Strong clinical/physician emphasis', 'Protocol-based, lab-guided care', 'Good educational content'],
     cons: ['Off-label use — benefits unproven', 'Membership + meds + labs add up', 'State availability varies'],
     url: 'https://gethealthspan.com',
+    referralType: 'direct_link',
+    lastVerified: '2026-06-13',
+  },
+
+  // --- Peptide Therapy (clinician-supervised paths) -----------------------
+  {
+    slug: 'agelessrx-peptides',
+    name: 'AgelessRx (Peptides)',
+    brand: 'AgelessRx',
+    category: 'peptides',
+    tagline: 'Telehealth practice that prescribes select peptides',
+    description:
+      'AgelessRx is a longevity-focused telehealth practice that, where clinically appropriate and legal, prescribes certain peptides alongside its other longevity medications — with online evaluation, labs, and clinician oversight rather than gray-market vials.',
+    priceDisplay: '~$100–$300/mo + meds',
+    priceNote: 'Consultation/membership plus compounded medication and labs. Estimate — verify on site.',
+    fdaStatus: 'Off-label Rx · clinician-supervised',
+    prescriptionRequired: true,
+    bestFor: 'A supervised, lab-backed alternative to gray-market peptides',
+    keyFeatures: ['Licensed clinician evaluation', 'Vetted compounding pharmacy', 'Lab ordering & monitoring', 'Part of a broader longevity menu'],
+    pros: ['Real medical oversight, not a research-chemical vendor', 'Labs and follow-up included', 'Transparent telehealth process'],
+    cons: ['Peptide availability shifts with FDA/compounding rules', 'Off-label — benefits unproven', 'State availability varies'],
+    url: 'https://agelessrx.com',
+    referralType: 'direct_link',
+    featured: true,
+    lastVerified: '2026-06-13',
+  },
+  {
+    slug: 'marek-health-peptides',
+    name: 'Marek Health',
+    brand: 'Marek Health',
+    category: 'peptides',
+    tagline: 'Hormone/optimization telehealth with clinician oversight',
+    description:
+      'Marek Health is a hormone-optimization and longevity telehealth platform built around extensive lab testing and provider supervision. Where appropriate, peptides are handled within a monitored, lab-driven protocol rather than sold as standalone unregulated products.',
+    priceDisplay: '~$100–$350/mo + meds',
+    priceNote: 'Provider/coaching fees plus medication and labs. Estimate — verify on site.',
+    fdaStatus: 'Off-label Rx · clinician-supervised',
+    prescriptionRequired: true,
+    bestFor: 'Lab-heavy optimization users who want supervision',
+    keyFeatures: ['Comprehensive lab panels', 'Provider-guided protocols', 'Hormone + peptide context', 'Ongoing monitoring'],
+    pros: ['Strong lab/monitoring culture', 'Experienced optimization providers', 'Holistic context, not just one peptide'],
+    cons: ['Lab-first model adds upfront cost', 'Off-label — benefits unproven', 'Peptide options depend on regulations'],
+    url: 'https://marekhealth.com',
+    referralType: 'direct_link',
+    lastVerified: '2026-06-13',
+  },
+
+  // --- Longevity Supplements ----------------------------------------------
+  {
+    slug: 'tru-niagen',
+    name: 'Tru Niagen (NR)',
+    brand: 'ChromaDex',
+    category: 'supplements',
+    tagline: 'Best-studied NAD+ precursor (nicotinamide riboside)',
+    description:
+      'Tru Niagen delivers nicotinamide riboside (NR), the NAD+ precursor with the most published human safety and pharmacokinetic data. It’s the go-to branded NR product for people prioritizing NAD+ support with research-backed ingredients.',
+    priceDisplay: '~$40/mo',
+    priceNote: 'Lower per month on subscription. Estimate — verify on site.',
+    fdaStatus: 'Supplement · not FDA-approved to treat disease',
+    prescriptionRequired: false,
+    bestFor: 'Research-backed NAD+ support',
+    keyFeatures: ['Patented NR (Niagen)', 'Multiple human safety studies', 'GMP / third-party tested', 'Subscription options'],
+    pros: ['Most-studied NAD+ precursor brand', 'Strong safety record', 'Consistent quality control'],
+    cons: ['Longevity benefit in humans still emerging', 'Pricier than generic niacin', 'Daily-use cost adds up'],
+    url: 'https://www.truniagen.com',
+    referralType: 'direct_link',
+    featured: true,
+    lastVerified: '2026-06-13',
+  },
+  {
+    slug: 'timeline-mitopure',
+    name: 'Timeline Mitopure (Urolithin A)',
+    brand: 'Timeline',
+    category: 'supplements',
+    tagline: 'Clinically studied urolithin A for mitochondria & muscle',
+    description:
+      'Mitopure is a purified, dosed form of urolithin A — a compound shown in human trials to support mitochondrial function and muscle strength/endurance. Timeline is the company behind most of the published urolithin A research.',
+    priceDisplay: '~$60–$90/mo',
+    priceNote: 'Cheaper on subscription / larger packs. Estimate — verify on site.',
+    fdaStatus: 'Supplement · not FDA-approved to treat disease',
+    prescriptionRequired: false,
+    bestFor: 'Mitochondrial & muscle-aging support with human data',
+    keyFeatures: ['Standardized urolithin A dose', 'Backed by human clinical trials', 'Capsules, powder, and topicals', 'Third-party tested'],
+    pros: ['Among the better-studied longevity compounds', 'Consistent, verified dosing', 'Multiple delivery formats'],
+    cons: ['Premium price', 'Benefits are modest, not dramatic', 'Best results need consistent daily use'],
+    url: 'https://www.timeline.com',
+    referralType: 'direct_link',
+    featured: true,
+    lastVerified: '2026-06-13',
+  },
+  {
+    slug: 'momentous',
+    name: 'Momentous Essentials',
+    brand: 'Momentous',
+    category: 'supplements',
+    tagline: 'NSF-certified foundations: creatine, omega-3, protein',
+    description:
+      'Momentous focuses on the evidence-backed foundations — creatine monohydrate, omega-3, vitamin D, and protein — with NSF Certified for Sport testing trusted by pro and collegiate athletes. A clean way to cover the basics that actually move the needle.',
+    priceDisplay: '~$20–$45/mo',
+    priceNote: 'Per product; bundles available. Estimate — verify on site.',
+    fdaStatus: 'Supplement · not FDA-approved to treat disease',
+    prescriptionRequired: false,
+    bestFor: 'Evidence-first foundations with athlete-grade testing',
+    keyFeatures: ['NSF Certified for Sport', 'Creatine, omega-3, vitamin D, protein', 'Trusted by pro teams', 'Transparent sourcing'],
+    pros: ['Focus on what’s actually proven', 'Highest-tier third-party testing', 'Clean formulations'],
+    cons: ['Premium vs. generic creatine/fish oil', 'Not a one-pill longevity solution', 'Costs add up across products'],
+    url: 'https://www.livemomentous.com',
+    referralType: 'direct_link',
+    lastVerified: '2026-06-13',
+  },
+  {
+    slug: 'thorne',
+    name: 'Thorne',
+    brand: 'Thorne',
+    category: 'supplements',
+    tagline: 'Broad, rigorously tested longevity & health range',
+    description:
+      'Thorne offers a wide catalog spanning NAD+ precursors, basics, and targeted formulas, with a strong reputation for quality control and clean ingredients. A good one-stop brand when you want range plus testing rigor.',
+    priceDisplay: '~$20–$60/mo',
+    priceNote: 'Varies by product. Estimate — verify on site.',
+    fdaStatus: 'Supplement · not FDA-approved to treat disease',
+    prescriptionRequired: false,
+    bestFor: 'A trusted all-rounder catalog',
+    keyFeatures: ['Wide product range', 'Strong QC reputation', 'Some NSF-certified products', 'Clinician-favored brand'],
+    pros: ['Breadth plus quality', 'Clean, well-formulated products', 'Widely available'],
+    cons: ['Range can be overwhelming', 'Premium pricing', 'Quality varies across the catalog'],
+    url: 'https://www.thorne.com',
+    referralType: 'direct_link',
+    lastVerified: '2026-06-13',
+  },
+
+  // --- Recovery & Performance Tech ----------------------------------------
+  {
+    slug: 'oura-ring',
+    name: 'Oura Ring',
+    brand: 'Oura',
+    category: 'recovery-tech',
+    tagline: 'Sleep & recovery tracking in a ring',
+    description:
+      'The Oura Ring tracks sleep stages, heart-rate variability, temperature, and a daily Readiness score from your finger — comfortable enough to wear 24/7. It’s the leading wearable for people who care most about sleep and recovery insight.',
+    priceDisplay: '~$299 + ~$6/mo',
+    priceNote: 'Device plus membership for full insights. Estimate — verify on site.',
+    fdaStatus: 'Consumer wellness device',
+    prescriptionRequired: false,
+    bestFor: 'Sleep- and recovery-focused tracking',
+    keyFeatures: ['Sleep staging & HRV', 'Daily Readiness score', 'Temperature trends', 'Long battery, discreet form'],
+    pros: ['Best-in-class sleep tracking', 'Comfortable 24/7 wear', 'Actionable daily guidance'],
+    cons: ['Requires a subscription', 'Less workout-focused than a watch', 'Ring sizing is fixed once bought'],
+    url: 'https://ouraring.com',
+    referralType: 'direct_link',
+    featured: true,
+    lastVerified: '2026-06-13',
+  },
+  {
+    slug: 'whoop',
+    name: 'WHOOP',
+    brand: 'WHOOP',
+    category: 'recovery-tech',
+    tagline: 'Strain & recovery band for serious training',
+    description:
+      'WHOOP is a screenless band that quantifies daily strain, recovery, and sleep, with a coaching app aimed at athletes optimizing training load. It’s subscription-based, with the hardware included in the membership.',
+    priceDisplay: '~$199+/yr (incl. band)',
+    priceNote: 'Membership includes the band; cheaper on longer plans. Estimate — verify on site.',
+    fdaStatus: 'Consumer wellness device',
+    prescriptionRequired: false,
+    bestFor: 'Athletes optimizing training load',
+    keyFeatures: ['Strain & recovery scores', 'Sleep coaching', 'HRV-based readiness', 'Hardware included in membership'],
+    pros: ['Excellent for training-load management', 'No upfront hardware cost', 'Strong coaching app'],
+    cons: ['Ongoing subscription required', 'No screen / passive only', 'Overkill for casual users'],
+    url: 'https://www.whoop.com',
+    referralType: 'direct_link',
+    lastVerified: '2026-06-13',
+  },
+  {
+    slug: 'joovv',
+    name: 'Joovv Red Light',
+    brand: 'Joovv',
+    category: 'recovery-tech',
+    tagline: 'Premium red / near-infrared light panels',
+    description:
+      'Joovv makes well-built red and near-infrared light panels used for skin, recovery, and circadian support. It’s the premium name in home red-light therapy, with modular panels you can scale up.',
+    priceDisplay: '~$600–$2,000+',
+    priceNote: 'Varies by panel size. Estimate — verify on site.',
+    fdaStatus: 'Consumer wellness device',
+    prescriptionRequired: false,
+    bestFor: 'Home red-light therapy enthusiasts',
+    keyFeatures: ['Red + near-infrared wavelengths', 'Modular, scalable panels', 'Build quality & support', 'App-controlled options'],
+    pros: ['Strong build and brand support', 'Scalable coverage', 'Backed by some clinical research'],
+    cons: ['Expensive vs. budget panels', 'Evidence is wavelength/dose dependent', 'Consistent daily use required'],
+    url: 'https://joovv.com',
+    referralType: 'direct_link',
+    lastVerified: '2026-06-13',
+  },
+  {
+    slug: 'plunge',
+    name: 'Plunge Cold Plunge',
+    brand: 'Plunge',
+    category: 'recovery-tech',
+    tagline: 'Self-contained cold plunge with chiller',
+    description:
+      'Plunge makes self-contained cold plunge tubs with built-in chillers and filtration, so you get consistent cold water on demand without ice. It’s a leading option for home cold exposure.',
+    priceDisplay: '~$2,000–$5,000+',
+    priceNote: 'Varies by model; tubs without chillers cost less. Estimate — verify on site.',
+    fdaStatus: 'Consumer wellness device',
+    prescriptionRequired: false,
+    bestFor: 'Committed home cold-exposure users',
+    keyFeatures: ['Built-in chiller & filtration', 'Consistent set temperature', 'No ice required', 'Indoor/outdoor models'],
+    pros: ['Convenient, repeatable cold exposure', 'Good filtration/maintenance', 'Solid build'],
+    cons: ['High upfront cost', 'Cold-exposure evidence is mixed', 'Footprint + running cost'],
+    url: 'https://plunge.com',
+    referralType: 'direct_link',
+    lastVerified: '2026-06-13',
+  },
+  {
+    slug: 'higherdose-sauna-blanket',
+    name: 'HigherDOSE Infrared Sauna Blanket',
+    brand: 'HigherDOSE',
+    category: 'recovery-tech',
+    tagline: 'Affordable at-home infrared sauna',
+    description:
+      'The HigherDOSE infrared sauna blanket delivers a sweat session at home for a fraction of a built-in sauna’s cost and footprint. It’s the popular entry point into home infrared heat therapy.',
+    priceDisplay: '~$500–$700',
+    priceNote: 'Frequent sales. Estimate — verify on site.',
+    fdaStatus: 'Consumer wellness device',
+    prescriptionRequired: false,
+    bestFor: 'Sauna benefits without a built-in unit',
+    keyFeatures: ['Infrared heat', 'Portable, foldable', 'Far cheaper than a cabin sauna', 'Easy setup'],
+    pros: ['Accessible price & footprint', 'Convenient at-home sweat', 'No installation'],
+    cons: ['Less immersive than a real sauna', 'Single-person, lie-down only', 'Cleaning/upkeep needed'],
+    url: 'https://higherdose.com',
+    referralType: 'direct_link',
+    lastVerified: '2026-06-13',
+  },
+  {
+    slug: 'theragun',
+    name: 'Therabody Theragun',
+    brand: 'Therabody',
+    category: 'recovery-tech',
+    tagline: 'Percussive massage for muscle recovery',
+    description:
+      'Theragun popularized percussive therapy — a handheld device that pummels muscles to ease soreness and improve perceived recovery. A low-cost, high-utility staple of most recovery setups.',
+    priceDisplay: '~$150–$600',
+    priceNote: 'Varies by model. Estimate — verify on site.',
+    fdaStatus: 'Consumer wellness device',
+    prescriptionRequired: false,
+    bestFor: 'Everyday soreness & warm-up/recovery',
+    keyFeatures: ['Percussive massage', 'Multiple attachments', 'Quiet motor (premium models)', 'App-guided routines'],
+    pros: ['Cheap, useful, easy to use', 'Reliable for perceived recovery', 'Portable'],
+    cons: ['Benefits mostly symptomatic/perceived', 'Premium models are pricey', 'Not a substitute for mobility work'],
+    url: 'https://www.therabody.com',
     referralType: 'direct_link',
     lastVerified: '2026-06-13',
   },

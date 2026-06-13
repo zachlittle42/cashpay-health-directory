@@ -58,6 +58,9 @@ export default function Navigation() {
                       <Link href="/longevity-performance" className="block text-sm font-medium text-gray-900 hover:text-emerald-600">🧬 Shop Longevity &amp; Performance</Link>
                       <Link href="/cgm" className="block text-xs text-gray-600 hover:text-emerald-600 pl-3">Glucose Monitors (CGM)</Link>
                       <Link href="/longevity-rx" className="block text-xs text-gray-600 hover:text-emerald-600 pl-3">Longevity Medications</Link>
+                      <Link href="/peptides" className="block text-xs text-gray-600 hover:text-emerald-600 pl-3">Peptide Therapy</Link>
+                      <Link href="/supplements" className="block text-xs text-gray-600 hover:text-emerald-600 pl-3">Longevity Supplements</Link>
+                      <Link href="/recovery-tech" className="block text-xs text-gray-600 hover:text-emerald-600 pl-3">Recovery &amp; Performance Tech</Link>
                     </div>
                   </div>
 
@@ -368,6 +371,9 @@ export default function Navigation() {
                       <Link href="/longevity-performance" className="block py-2 text-sm font-medium text-gray-900 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🧬 Longevity &amp; Performance</Link>
                       <Link href="/cgm" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>📈 Glucose Monitors (CGM)</Link>
                       <Link href="/longevity-rx" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>⏳ Longevity Medications</Link>
+                      <Link href="/peptides" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🧫 Peptide Therapy</Link>
+                      <Link href="/supplements" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>💊 Longevity Supplements</Link>
+                      <Link href="/recovery-tech" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🔴 Recovery &amp; Performance Tech</Link>
                     </div>
                   </div>
                   {/* Medical Tourism */}

@@ -24,9 +24,9 @@ export const metadata: Metadata = {
 // data-backed and link out; roadmap ones render as "coming soon" cards so the
 // hub communicates the full scope of the pillar as it expands.
 const ROADMAP = [
-  { icon: '🧫', label: 'Peptides', note: 'BPC-157, TB-500 & research peptides — sourcing and safety' },
-  { icon: '💊', label: 'Longevity Supplements', note: 'NMN, NR, creatine, omega-3 — brands compared' },
-  { icon: '🔴', label: 'Recovery & Performance Tech', note: 'Red light, sauna, cold plunge, wearables' },
+  { icon: '🧬', label: 'Biological Age Tests', note: 'Epigenetic & blood-based aging clocks (TruDiagnostic & more)' },
+  { icon: '🧠', label: 'Nootropics & Cognitive', note: 'Focus, memory & cognitive-longevity products' },
+  { icon: '😴', label: 'Sleep & Circadian', note: 'Sleep aids, light therapy & circadian tools' },
 ];
 
 export default function LongevityPerformanceHub() {
