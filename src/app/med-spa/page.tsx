@@ -186,22 +186,38 @@ export default function MedSpaHub() {
         </div>
       </section>
 
-      {/* Related guide */}
+      {/* Related guides */}
       <section className="mx-auto max-w-6xl px-4 pb-4">
-        <Link
-          href="/guides/botox-cost-guide"
-          className="block rounded-lg border border-rose-200 bg-rose-50 p-6 hover:shadow-md transition-shadow"
-        >
-          <div className="flex items-start gap-3">
-            <span className="text-2xl">📖</span>
-            <div>
-              <div className="font-semibold text-gray-900">How Much Does Botox Cost? Price Guide</div>
-              <div className="mt-1 text-sm text-gray-600">
-                Per-unit vs per-area pricing, how many units common areas take, and how to save safely.
+        <div className="grid gap-4 md:grid-cols-2">
+          <Link
+            href="/guides/botox-cost-guide"
+            className="block rounded-lg border border-rose-200 bg-rose-50 p-6 hover:shadow-md transition-shadow"
+          >
+            <div className="flex items-start gap-3">
+              <span className="text-2xl">📖</span>
+              <div>
+                <div className="font-semibold text-gray-900">How Much Does Botox Cost? Price Guide</div>
+                <div className="mt-1 text-sm text-gray-600">
+                  Per-unit vs per-area pricing, how many units common areas take, and how to save safely.
+                </div>
               </div>
             </div>
-          </div>
-        </Link>
+          </Link>
+          <Link
+            href="/guides/laser-hair-removal-cost"
+            className="block rounded-lg border border-rose-200 bg-rose-50 p-6 hover:shadow-md transition-shadow"
+          >
+            <div className="flex items-start gap-3">
+              <span className="text-2xl">📖</span>
+              <div>
+                <div className="font-semibold text-gray-900">Laser Hair Removal Cost Guide</div>
+                <div className="mt-1 text-sm text-gray-600">
+                  Per-session vs package pricing by body area, why it takes a series, and what affects cost.
+                </div>
+              </div>
+            </div>
+          </Link>
+        </div>
       </section>
 
       {/* FAQ */}

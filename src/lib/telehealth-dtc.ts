@@ -32,6 +32,14 @@ export const DTC_CATEGORIES: Record<DtcCategorySlug, CompareCategory> = {
       'Online ED treatment typically costs about $20–$90 per month and online hair-loss treatment about $10–$40 per month, using FDA-approved generics like sildenafil/tadalafil (ED) and finasteride/minoxidil (hair). Broad platforms like Hims and Ro treat both plus other concerns; BlueChew specializes in chewable ED tablets; Keeps focuses on hair loss. All require a quick online evaluation by a licensed clinician. Prices are estimates — confirm on each provider’s site.',
     priceRange: '$10–$90/mo',
     requiresMedicalDisclaimer: true,
+    relatedLinks: [
+      {
+        href: '/guides/online-ed-treatment',
+        icon: '📖',
+        title: 'How to Get ED Treatment Online',
+        desc: 'The FDA-approved options, how telehealth works, costs, and safety',
+      },
+    ],
     faqs: [
       {
         question: 'How much does online ED treatment cost without insurance?',
@@ -68,6 +76,14 @@ export const DTC_CATEGORIES: Record<DtcCategorySlug, CompareCategory> = {
       'Online prescription skincare typically costs about $20–$50 per month for a custom tretinoin-based formula. Curology offers a personalized cream combining tretinoin with ingredients like niacinamide or clindamycin; Apostrophe is dermatology-provider-backed; Musely targets concerns like melasma and anti-aging; and Hers bundles skincare with broader women’s telehealth. A licensed clinician reviews your photos and intake before prescribing. Prices are estimates — confirm with the provider.',
     priceRange: '$20–$50/mo',
     requiresMedicalDisclaimer: true,
+    relatedLinks: [
+      {
+        href: '/guides/tretinoin-online',
+        icon: '📖',
+        title: 'Tretinoin Online: How to Get It',
+        desc: 'Why it is prescription-only, what to expect, and how online derm works',
+      },
+    ],
     faqs: [
       {
         question: 'How much does prescription skincare cost online?',

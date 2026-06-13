@@ -207,6 +207,14 @@ export const PERF_CATEGORIES: Record<PerfCategorySlug, PerfCategory> = {
       'Most longevity supplements cost about $20–$60 per month, though premium NAD+ precursors and urolithin A products run $40–$100+. The best-supported options for healthy adults are creatine and omega-3 (well-studied, cheap), followed by NAD+ precursors (NR/NMN) and urolithin A (Mitopure), which show promise but have more limited human evidence. Brands like Thorne, Momentous, Tru Niagen, and Timeline emphasize third-party testing. Supplements are not FDA-approved to treat disease — talk to a clinician, especially if you take medications.',
     priceRange: '$20–$100+/mo',
     requiresMedicalDisclaimer: true,
+    relatedLinks: [
+      {
+        href: '/guides/best-nad-supplement',
+        icon: '📖',
+        title: 'NMN vs NR: Best NAD+ Supplement?',
+        desc: 'How the NAD+ precursors compare on evidence, availability, and cost',
+      },
+    ],
     faqs: [
       {
         question: 'Which longevity supplements are actually backed by evidence?',
@@ -243,6 +251,14 @@ export const PERF_CATEGORIES: Record<PerfCategorySlug, PerfCategory> = {
       'Recovery tech ranges from about $200 for a recovery wearable or massage gun to $5,000+ for a plumbed cold plunge or full infrared sauna. Wearables (Oura, Whoop) have the strongest evidence for actionable sleep and recovery insight; massage guns and compression help perceived recovery; red light, sauna, and cold exposure have growing but still-mixed evidence. Match the spend to your goal — these are wellness devices, not medical treatments. Prices are estimates that vary by model and sales.',
     priceRange: '$200–$5,000+ one-time',
     requiresMedicalDisclaimer: true,
+    relatedLinks: [
+      {
+        href: '/guides/oura-vs-whoop',
+        icon: '📖',
+        title: 'Oura Ring vs WHOOP',
+        desc: 'Sleep vs training-load tracking, price models, and which fits your goal',
+      },
+    ],
     faqs: [
       {
         question: 'What recovery technology is actually worth buying?',

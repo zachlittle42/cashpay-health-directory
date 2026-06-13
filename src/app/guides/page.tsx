@@ -9,6 +9,47 @@ export const metadata: Metadata = {
 };
 
 const guides = [
+  // Deepening cycle 2 — supporting guides for new money pages (2026-06)
+  {
+    slug: 'oura-vs-whoop',
+    title: 'Oura Ring vs WHOOP: 2026 Comparison',
+    description: 'Recovery wearables compared — ring vs band, sleep vs training-load tracking, price models, and which fits your goals. Both are consumer wellness devices, not medical devices.',
+    category: 'Comparison',
+    readTime: '10 min',
+    icon: '⌚',
+  },
+  {
+    slug: 'tretinoin-online',
+    title: 'Tretinoin Online: How to Get It in 2026',
+    description: 'How online dermatology services prescribe tretinoin for acne and anti-aging — why it is prescription-only, what to expect, costs, and how Curology, Apostrophe, and Musely compare.',
+    category: 'Telehealth',
+    readTime: '10 min',
+    icon: '🧴',
+  },
+  {
+    slug: 'online-ed-treatment',
+    title: 'How to Get ED Treatment Online (2026 Guide)',
+    description: 'The FDA-approved ED medications, how telehealth treatment works, what Hims, Ro, and BlueChew offer, costs, and safety — including when ED can signal an underlying issue.',
+    category: 'Telehealth',
+    readTime: '10 min',
+    icon: '🧔',
+  },
+  {
+    slug: 'best-nad-supplement',
+    title: 'NMN vs NR: Best NAD+ Supplement in 2026?',
+    description: 'The two main NAD+ precursors compared on evidence, regulatory status, and cost — plus how to evaluate brands and where stronger-evidence basics fit in.',
+    category: 'Longevity',
+    readTime: '11 min',
+    icon: '💊',
+  },
+  {
+    slug: 'laser-hair-removal-cost',
+    title: 'How Much Does Laser Hair Removal Cost? (2026)',
+    description: 'Per-session vs package pricing by body area, why it takes a series of treatments, pricing models (including unlimited plans), and what affects the total cost.',
+    category: 'Procedure Guide',
+    readTime: '9 min',
+    icon: '⚡',
+  },
   // Longevity, performance & wellness expansion (2026-06)
   {
     slug: 'cgm-without-diabetes',
