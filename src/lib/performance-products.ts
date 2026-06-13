@@ -57,6 +57,8 @@ export interface PerfCategory {
   faqs: { question: string; answer: string }[];
   /** Render the medical/regulatory disclaimer (Rx, off-label, etc.). */
   requiresMedicalDisclaimer: boolean;
+  /** Optional category-specific cross-links (e.g. a supporting guide). */
+  relatedLinks?: { href: string; icon: string; title: string; desc: string }[];
 }
 
 // ---------------------------------------------------------------------------
@@ -76,6 +78,14 @@ export const PERF_CATEGORIES: Record<PerfCategorySlug, PerfCategory> = {
       'A consumer CGM costs roughly $49–$199 per month without insurance. Over-the-counter sensors like Dexcom Stelo (~$99/mo) and Abbott Lingo (~$49–$89/mo) are sold directly to anyone 18+, while software-plus-coaching programs like Levels (~$199/yr membership on top of sensors) and Nutrisense (~$199–$399/mo with a dietitian) layer analysis and guidance on the same hardware. Prescription medical CGMs (Dexcom G7, FreeStyle Libre 3) are cheaper per sensor but require a clinician. Prices are estimates — confirm on each brand’s site.',
     priceRange: '$49–$399/mo',
     requiresMedicalDisclaimer: true,
+    relatedLinks: [
+      {
+        href: '/guides/cgm-without-diabetes',
+        icon: '📖',
+        title: 'CGM Without Diabetes: Guide',
+        desc: 'How healthy people use glucose monitors, what you learn, and the caveats',
+      },
+    ],
     faqs: [
       {
         question: 'How much does a continuous glucose monitor cost without insurance?',
@@ -117,6 +127,14 @@ export const PERF_CATEGORIES: Record<PerfCategorySlug, PerfCategory> = {
       'Online longevity-medication programs typically cost about $30–$150 per month plus the medication and any required labs. Providers like AgelessRx and Healthspan offer telehealth evaluation and, where appropriate, off-label prescriptions for low-dose naltrexone, metformin, rapamycin, or NAD+. None of these drugs is FDA-approved for longevity or anti-aging — they are prescribed off-label and require a licensed clinician. Prices are estimates; confirm with the provider and talk to your own doctor first.',
     priceRange: '$30–$150/mo + meds',
     requiresMedicalDisclaimer: true,
+    relatedLinks: [
+      {
+        href: '/guides/rapamycin-for-longevity',
+        icon: '📖',
+        title: 'Rapamycin for Longevity: Guide',
+        desc: 'Access, cost, and the honest (off-label, unproven) evidence picture',
+      },
+    ],
     faqs: [
       {
         question: 'Can you get rapamycin or metformin for longevity online?',

@@ -9,6 +9,47 @@ export const metadata: Metadata = {
 };
 
 const guides = [
+  // Longevity, performance & wellness expansion (2026-06)
+  {
+    slug: 'cgm-without-diabetes',
+    title: 'Continuous Glucose Monitor Without Diabetes (2026)',
+    description: 'How healthy people use OTC continuous glucose monitors (Stelo, Lingo, Levels) to see how food, exercise, and sleep move their glucose — what you learn, accuracy caveats, and costs.',
+    category: 'Longevity',
+    readTime: '10 min',
+    icon: '📈',
+  },
+  {
+    slug: 'rapamycin-for-longevity',
+    title: 'Rapamycin for Longevity: Access, Cost & Evidence (2026)',
+    description: 'The honest guide to rapamycin for longevity — why researchers are interested, the unproven off-label reality (not FDA-approved for aging), how telehealth access works, costs, and risks.',
+    category: 'Longevity',
+    readTime: '11 min',
+    icon: '⏳',
+  },
+  {
+    slug: 'online-menopause-treatment',
+    title: 'Online Menopause Treatment & HRT: 2026 Guide',
+    description: 'Perimenopause and menopause symptoms, hormone vs non-hormonal options, the modern safety picture of HRT, how telehealth menopause care works, and what it costs.',
+    category: 'Telehealth',
+    readTime: '11 min',
+    icon: '🌸',
+  },
+  {
+    slug: 'betterhelp-vs-talkspace',
+    title: 'BetterHelp vs Talkspace vs Brightside (2026)',
+    description: 'Online therapy and psychiatry compared — medication vs therapy-only, insurance coverage, format, and pricing — to help you pick the right platform.',
+    category: 'Comparison',
+    readTime: '10 min',
+    icon: '🧠',
+  },
+  {
+    slug: 'botox-cost-guide',
+    title: 'How Much Does Botox Cost? 2026 Price Guide',
+    description: 'Per-unit vs per-area Botox pricing, how many units common areas take, what affects the price, how long results last, and how to save safely at a reputable med spa.',
+    category: 'Procedure Guide',
+    readTime: '9 min',
+    icon: '💉',
+  },
   // Medical Tourism expansion (2026-06)
   {
     slug: 'thailand-cosmetic-surgery-cost',

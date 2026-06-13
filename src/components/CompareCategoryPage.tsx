@@ -260,7 +260,7 @@ export default function CompareCategoryPage({
         <div className="mx-auto max-w-5xl">
           <h2 className="mb-6 text-center text-xl font-bold text-gray-900">Keep Exploring</h2>
           <div className="grid gap-6 md:grid-cols-2">
-            {section.relatedLinks.map((link) => (
+            {[...(category.relatedLinks ?? []), ...section.relatedLinks].map((link) => (
               <Link
                 key={link.href}
                 href={link.href}

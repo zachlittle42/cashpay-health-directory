@@ -186,6 +186,24 @@ export default function MedSpaHub() {
         </div>
       </section>
 
+      {/* Related guide */}
+      <section className="mx-auto max-w-6xl px-4 pb-4">
+        <Link
+          href="/guides/botox-cost-guide"
+          className="block rounded-lg border border-rose-200 bg-rose-50 p-6 hover:shadow-md transition-shadow"
+        >
+          <div className="flex items-start gap-3">
+            <span className="text-2xl">📖</span>
+            <div>
+              <div className="font-semibold text-gray-900">How Much Does Botox Cost? Price Guide</div>
+              <div className="mt-1 text-sm text-gray-600">
+                Per-unit vs per-area pricing, how many units common areas take, and how to save safely.
+              </div>
+            </div>
+          </div>
+        </Link>
+      </section>
+
       {/* FAQ */}
       <section className="bg-gray-50 px-4 py-12">
         <div className="mx-auto max-w-4xl">

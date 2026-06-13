@@ -39,6 +39,9 @@ export interface CompareCategory {
   requiresMedicalDisclaimer: boolean;
   /** Optional prominent safety callout (e.g. mental-health crisis line). */
   safetyNotice?: string;
+  /** Optional category-specific cross-links (e.g. a supporting guide); shown
+   *  before the section's shared links in "Keep Exploring". */
+  relatedLinks?: CompareRelatedLink[];
 }
 
 export interface CompareRelatedLink {

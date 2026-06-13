@@ -104,6 +104,14 @@ export const DTC_CATEGORIES: Record<DtcCategorySlug, CompareCategory> = {
       'Online menopause/HRT care typically costs about $20–$70 per month in membership or visit fees, plus the medication (FDA-approved estradiol and progesterone are often inexpensive generics). Midi Health is clinician-led and accepts many insurance plans; Evernow and Alloy are menopause-focused direct-to-consumer services; and Hers offers menopause care within a broader women’s-health platform. A licensed clinician evaluates you before prescribing. Prices are estimates — confirm with the provider.',
     priceRange: '$20–$70/mo + meds',
     requiresMedicalDisclaimer: true,
+    relatedLinks: [
+      {
+        href: '/guides/online-menopause-treatment',
+        icon: '📖',
+        title: 'Online Menopause & HRT: Guide',
+        desc: 'Symptoms, hormone vs non-hormonal options, safety, and how online care works',
+      },
+    ],
     faqs: [
       {
         question: 'How much does online HRT for menopause cost?',
@@ -142,6 +150,14 @@ export const DTC_CATEGORIES: Record<DtcCategorySlug, CompareCategory> = {
     requiresMedicalDisclaimer: true,
     safetyNotice:
       'If you are in crisis or thinking about harming yourself, call or text 988 (the Suicide & Crisis Lifeline) in the US, available 24/7, or go to your nearest emergency room. Online therapy and psychiatry services are not for emergencies.',
+    relatedLinks: [
+      {
+        href: '/guides/betterhelp-vs-talkspace',
+        icon: '📖',
+        title: 'BetterHelp vs Talkspace vs Brightside',
+        desc: 'Therapy vs psychiatry, insurance, format, and pricing compared',
+      },
+    ],
     faqs: [
       {
         question: 'How much does online therapy cost without insurance?',
