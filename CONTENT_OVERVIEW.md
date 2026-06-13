@@ -1,8 +1,22 @@
 # VitalityScout Content Overview
 
-**Last Updated:** December 21, 2024
-**Total Pages:** 190 static pages
-**Total Content:** ~114,000 words (~148K tokens)
+**Last Updated:** June 13, 2026
+
+> ⚠️ The detailed tables below this banner are a Dec 2024 snapshot and now
+> understate the site. See the current-reality summary here.
+
+## Current Reality (June 2026)
+
+- **61 long-form guides** under `/guides`
+- **3 programmatic clinic-directory verticals** (state×city): `hormone-therapy`,
+  `weight-loss`, `dexa-scans` — 14 states each
+- **Longevity & Performance e-commerce pillar**: `/longevity-performance` hub +
+  `/cgm`, `/longevity-rx`, `/peptides`, `/supplements`, `/recovery-tech`
+- **DTC telehealth money pages**: `/mens-health`, `/skincare`, `/womens-health`, `/mental-health`
+- **Med-spa & aesthetics directory**: `/med-spa` + `/med-spa/[state]/[city]` (CA + TX seeded)
+- **Medical tourism**: 147 providers, 14 destinations; **traditional healthcare**: 50 states
+- All compare pages share one section-aware renderer (`CompareCategoryPage`); every
+  new money page has a supporting guide with bidirectional internal links
 
 ---
 

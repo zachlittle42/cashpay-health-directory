@@ -8,6 +8,8 @@ import { getCitiesWithClinics } from '@/data/hormone-clinics-index';
 import { getWeightLossCitiesWithClinics } from '@/data/weightloss-clinics-index';
 import { DEXA_STATES } from '@/lib/dexa-clinic-types';
 import { getDexaCitiesWithClinics } from '@/data/dexa-clinics-index';
+import { MEDSPA_STATES } from '@/lib/medspa-clinic-types';
+import { getMedspaCitiesWithClinics } from '@/data/medspa-clinics-index';
 import { ALL_PROVIDERS } from '@/lib/providers';
 import { getAllStateSlugs } from '@/lib/us-healthcare-data';
 import { getAllHealthSystemSlugs } from '@/lib/national-health-systems';
@@ -213,6 +215,18 @@ function buildDynamicUrls(): string[] {
     // getDexaCitiesWithClinics returns [] for unwired/empty states → no dead URLs.
     for (const city of getDexaCitiesWithClinics(state.slug)) {
       urls.push(`/dexa-scans/${state.slug}/${city.citySlug}`);
+    }
+  }
+
+  // med-spa/[state] + [state]/[city]. Only wired states (with >=1 shippable
+  // city) have a real page — the [state] route notFound()s otherwise — so guard
+  // the state URL too, not just the city URLs.
+  for (const state of MEDSPA_STATES) {
+    const medspaCities = getMedspaCitiesWithClinics(state.slug);
+    if (medspaCities.length === 0) continue;
+    urls.push(`/med-spa/${state.slug}`);
+    for (const city of medspaCities) {
+      urls.push(`/med-spa/${state.slug}/${city.citySlug}`);
     }
   }
 

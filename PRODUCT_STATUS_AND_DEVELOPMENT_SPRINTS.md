@@ -1,8 +1,56 @@
 # VitalityScout - Project Status & Development Sprints
 
-**Last Updated:** December 21, 2024 (Evening)
+**Last Updated:** June 13, 2026
 **Live Site:** https://vitalityscout.com
 **Status:** ✅ Live in Production
+
+> ⚠️ **Note:** The "Current State" and dated sprint sections below this banner are
+> historical (Dec 2024) and understate the site. The banner here reflects current reality.
+
+---
+
+## 🧭 Current Reality (June 2026)
+
+The site has grown well beyond the 2024 snapshot below. Verified footprint:
+
+- **51 long-form guides** under `/guides`
+- **3 programmatic local clinic-directory verticals** — `hormone-therapy`, `weight-loss`,
+  `dexa-scans` — each wired for **14 states** with city-level pages (e.g. 258 hormone
+  clinics in TX alone). Pattern lives in `src/data/*-clinics-*.ts` + `*-clinics-index.ts`.
+- **Medical tourism**: 147 providers across 14 destinations + deep guide/cost coverage
+- **Telehealth money pages**: `labs`, `glp1`, `trt` (+18 providers)
+- **Traditional healthcare**: 50 states + California regional/health-system deep dive
+- **Longevity / stem cells**: hub + US regions + intl stem-cell directories
+- **Healthcare resources**: insurance (13), pharma (13), drug registry (10)
+- **Infra**: auto-discovering sitemap (no dead URLs), JSON-LD across pages, `llms.txt`/AEO
+
+### Active Expansion Mandate
+Broaden coverage to **all primary cash-pay services** across three pillars:
+(1) in-person medical care, (2) in-person wellness & aesthetic services, (3) e-commerce
+telehealth / personal products for health, wellness, longevity, and performance.
+
+**Agreed build sequence:**
+1. ✅ **Longevity & Performance e-commerce** — *shipped* (`/longevity-performance` hub +
+   `/cgm`, `/longevity-rx`, `/peptides`, `/supplements`, `/recovery-tech`). Data in
+   `src/lib/performance-products.ts`; rendered by the generic `CompareCategoryPage`.
+2. ✅ **DTC telehealth money pages** — *shipped* (`/mens-health` (ED & hair), `/skincare`,
+   `/womens-health` (menopause/HRT), `/mental-health` (therapy & psychiatry)). Data in
+   `src/lib/telehealth-dtc.ts`; integrated into the `/telehealth` hub. Both pillars share
+   `src/components/CompareCategoryPage.tsx` (section-aware) via thin adapters.
+3. ✅ **Med-spa & aesthetics directory** — *engine shipped + seeded* (`/med-spa` hub +
+   `/med-spa/[state]/[city]`, CA + TX metros). Types in `src/lib/medspa-clinic-types.ts`,
+   real national-chain seed via `src/data/medspa-chains.ts` (NO fabricated local NAP), index
+   with thin-content guard in `src/data/medspa-clinics-index.ts`. **Next:** add verified local
+   independent listings + more states (FL, NY, AZ already stubbed) via the scraping pipeline.
+4. ✅ **Fill empty clinical categories** — *shipped*. Added real providers to `vo2max`
+   (PNOĒ, DexaFit, Fitnescity), `iv` (Drip Hydration, Restore, Hydreight), `orthopedic`
+   (Apollo, Bumrungrad, Galenia), `cardiac` (Narayana, Fortis Escorts, Bumrungrad), and
+   `vision` (Dünyagöz, Centre for Sight, CODET). No more thin "coming soon" pages.
+   (`longevity` category intentionally left empty — served by the editorial `/longevity` hub.)
+
+### Known SEO Gaps / Tech Debt
+- `CONTENT_OVERVIEW.md` page/word counts are stale (still say 190 pages).
+- Med-spa directory currently seeds national chains only; add verified local independents.
 
 ---
 

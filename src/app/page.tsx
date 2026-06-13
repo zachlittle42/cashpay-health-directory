@@ -87,6 +87,18 @@ export default function Home() {
               Local Independent Clinics
             </Link>
             <Link
+              href="/med-spa"
+              className="rounded-full bg-rose-100 px-4 py-1.5 text-rose-700 hover:bg-rose-200 transition-colors"
+            >
+              Med Spa &amp; Aesthetics
+            </Link>
+            <Link
+              href="/longevity-performance"
+              className="rounded-full bg-emerald-100 px-4 py-1.5 text-emerald-700 hover:bg-emerald-200 transition-colors"
+            >
+              Longevity &amp; Performance
+            </Link>
+            <Link
               href="/medical-tourism"
               className="rounded-full bg-purple-100 px-4 py-1.5 text-purple-700 hover:bg-purple-200 transition-colors"
             >
@@ -145,6 +157,58 @@ export default function Home() {
           {localCategories.map((slug) => (
             <CategoryCard key={slug} slug={slug} />
           ))}
+          <Link
+            href="/med-spa"
+            className="group rounded-lg border border-gray-200 p-5 hover:border-rose-400 hover:shadow-md transition-all"
+          >
+            <div className="mb-2 text-3xl">✨</div>
+            <h3 className="font-semibold text-gray-900 group-hover:text-rose-600">Med Spa &amp; Aesthetics</h3>
+            <p className="mt-1 text-sm text-gray-600">Botox, fillers, laser hair removal, body contouring &amp; IV therapy by city</p>
+          </Link>
+        </div>
+      </section>
+
+      {/* Longevity & Performance Section */}
+      <section id="longevity-performance" className="mx-auto max-w-6xl px-4 py-12 border-t border-gray-100">
+        <div className="mb-6">
+          <div className="flex items-center gap-2">
+            <span className="rounded-full bg-emerald-100 px-3 py-1 text-xs font-medium text-emerald-700">
+              Longevity &amp; Performance
+            </span>
+            <h2 className="text-xl font-bold text-gray-900">Buy Online to Optimize Healthspan</h2>
+          </div>
+          <p className="mt-1 text-sm text-gray-500">
+            Direct-to-consumer products and programs for metabolic health, longevity, and performance.
+          </p>
+        </div>
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <Link
+            href="/cgm"
+            className="group rounded-lg border border-gray-200 p-5 hover:border-emerald-400 hover:shadow-md transition-all"
+          >
+            <div className="mb-2 text-3xl">📈</div>
+            <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600">Glucose Monitors (CGM)</h3>
+            <p className="mt-1 text-sm text-gray-600">Stelo, Lingo, Levels &amp; more — buy without a prescription</p>
+            <p className="mt-2 text-xs text-gray-500">~$49–$399/mo</p>
+          </Link>
+          <Link
+            href="/longevity-rx"
+            className="group rounded-lg border border-gray-200 p-5 hover:border-emerald-400 hover:shadow-md transition-all"
+          >
+            <div className="mb-2 text-3xl">⏳</div>
+            <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600">Longevity Medications</h3>
+            <p className="mt-1 text-sm text-gray-600">Rapamycin, metformin &amp; NAD+ via telehealth — the honest picture</p>
+            <p className="mt-2 text-xs text-gray-500">~$30–$150/mo + meds</p>
+          </Link>
+          <Link
+            href="/longevity-performance"
+            className="group flex flex-col justify-center rounded-lg border-2 border-dashed border-emerald-200 bg-emerald-50/40 p-5 hover:border-emerald-400 transition-all"
+          >
+            <div className="mb-2 text-3xl">🧬</div>
+            <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600">See the Full Hub</h3>
+            <p className="mt-1 text-sm text-gray-600">Peptides, supplements &amp; recovery tech — all compared</p>
+            <span className="mt-2 text-sm font-medium text-emerald-600">Explore →</span>
+          </Link>
         </div>
       </section>
 

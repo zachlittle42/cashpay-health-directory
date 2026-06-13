@@ -156,6 +156,74 @@ export default function TelehealthHub() {
               </div>
               <span className="text-blue-600 font-medium">View Providers →</span>
             </Link>
+
+            <Link
+              href="/mens-health"
+              className="group bg-white rounded-lg border-2 border-gray-200 p-6 hover:border-blue-400 hover:shadow-lg transition-all"
+            >
+              <div className="text-4xl mb-3">🧔</div>
+              <h3 className="text-xl font-bold text-gray-900 group-hover:text-blue-600 mb-2">
+                Men&apos;s Health (ED &amp; Hair)
+              </h3>
+              <p className="text-gray-600 mb-4">
+                ED and hair-loss treatment with FDA-approved generics. Compare Hims, Ro, BlueChew, and Keeps.
+              </p>
+              <div className="text-sm text-gray-500 mb-3">
+                <strong>Pricing:</strong> $10-90/month
+              </div>
+              <span className="text-blue-600 font-medium">Compare Options →</span>
+            </Link>
+
+            <Link
+              href="/skincare"
+              className="group bg-white rounded-lg border-2 border-gray-200 p-6 hover:border-blue-400 hover:shadow-lg transition-all"
+            >
+              <div className="text-4xl mb-3">🧴</div>
+              <h3 className="text-xl font-bold text-gray-900 group-hover:text-blue-600 mb-2">
+                Prescription Skincare
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Custom tretinoin formulas for acne and anti-aging, prescribed online. Curology, Apostrophe, and more.
+              </p>
+              <div className="text-sm text-gray-500 mb-3">
+                <strong>Pricing:</strong> $20-50/month
+              </div>
+              <span className="text-blue-600 font-medium">Compare Options →</span>
+            </Link>
+
+            <Link
+              href="/womens-health"
+              className="group bg-white rounded-lg border-2 border-gray-200 p-6 hover:border-blue-400 hover:shadow-lg transition-all"
+            >
+              <div className="text-4xl mb-3">🌸</div>
+              <h3 className="text-xl font-bold text-gray-900 group-hover:text-blue-600 mb-2">
+                Menopause &amp; HRT
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Clinician-led menopause and hormone therapy online. Compare Midi, Alloy, and Evernow.
+              </p>
+              <div className="text-sm text-gray-500 mb-3">
+                <strong>Pricing:</strong> $20-70/month + meds
+              </div>
+              <span className="text-blue-600 font-medium">Compare Options →</span>
+            </Link>
+
+            <Link
+              href="/mental-health"
+              className="group bg-white rounded-lg border-2 border-gray-200 p-6 hover:border-blue-400 hover:shadow-lg transition-all"
+            >
+              <div className="text-4xl mb-3">🧠</div>
+              <h3 className="text-xl font-bold text-gray-900 group-hover:text-blue-600 mb-2">
+                Therapy &amp; Psychiatry
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Online therapy and psychiatry. Compare BetterHelp, Talkspace, and Brightside on price and insurance.
+              </p>
+              <div className="text-sm text-gray-500 mb-3">
+                <strong>Pricing:</strong> $65-100/week
+              </div>
+              <span className="text-blue-600 font-medium">Compare Options →</span>
+            </Link>
           </div>
         </div>
       </section>

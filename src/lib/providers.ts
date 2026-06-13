@@ -16,9 +16,9 @@ export const ALL_PROVIDERS: Record<Category, Provider[]> = {
 
   // Local
   dexa: telehealthProviders.dexa,
-  vo2max: [], // Coming soon
-  iv: [], // Coming soon
-  longevity: [], // Coming soon
+  vo2max: telehealthProviders.vo2max,
+  iv: telehealthProviders.iv,
+  longevity: [], // Served by the editorial /longevity hub
 
   // Medical Tourism
   dental: medicalTourismProviders.dental,
@@ -26,11 +26,9 @@ export const ALL_PROVIDERS: Record<Category, Provider[]> = {
   bariatric: medicalTourismProviders.bariatric,
   plastic_surgery: medicalTourismProviders.plastic_surgery,
   fertility: medicalTourismProviders.fertility,
-
-  // Coming soon
-  orthopedic: [],
-  cardiac: [],
-  vision: [],
+  orthopedic: medicalTourismProviders.orthopedic,
+  cardiac: medicalTourismProviders.cardiac,
+  vision: medicalTourismProviders.vision,
 
   // Healthcare Resources
   insurance: insuranceProviders.insurance,
