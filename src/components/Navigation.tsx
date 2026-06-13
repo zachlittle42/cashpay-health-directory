@@ -54,6 +54,10 @@ export default function Navigation() {
                       <Link href="/vo2max" className="block text-xs text-gray-600 hover:text-blue-600">VO2 Max</Link>
                       <Link href="/iv" className="block text-xs text-gray-600 hover:text-blue-600">IV Therapy</Link>
                       <Link href="/longevity" className="block text-xs text-gray-600 hover:text-blue-600">Longevity Clinics</Link>
+                      <div className="text-xs text-gray-500 mt-2 mb-1">Longevity &amp; Performance:</div>
+                      <Link href="/longevity-performance" className="block text-sm font-medium text-gray-900 hover:text-emerald-600">🧬 Shop Longevity &amp; Performance</Link>
+                      <Link href="/cgm" className="block text-xs text-gray-600 hover:text-emerald-600 pl-3">Glucose Monitors (CGM)</Link>
+                      <Link href="/longevity-rx" className="block text-xs text-gray-600 hover:text-emerald-600 pl-3">Longevity Medications</Link>
                     </div>
                   </div>
 
@@ -361,6 +365,9 @@ export default function Navigation() {
                       <Link href="/vo2max" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🫀 VO2 Max</Link>
                       <Link href="/iv" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>💧 IV Therapy</Link>
                       <Link href="/longevity" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>⏳ Longevity</Link>
+                      <Link href="/longevity-performance" className="block py-2 text-sm font-medium text-gray-900 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🧬 Longevity &amp; Performance</Link>
+                      <Link href="/cgm" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>📈 Glucose Monitors (CGM)</Link>
+                      <Link href="/longevity-rx" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>⏳ Longevity Medications</Link>
                     </div>
                   </div>
                   {/* Medical Tourism */}

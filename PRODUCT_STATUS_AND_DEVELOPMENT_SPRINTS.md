@@ -1,8 +1,50 @@
 # VitalityScout - Project Status & Development Sprints
 
-**Last Updated:** December 21, 2024 (Evening)
+**Last Updated:** June 13, 2026
 **Live Site:** https://vitalityscout.com
 **Status:** ✅ Live in Production
+
+> ⚠️ **Note:** The "Current State" and dated sprint sections below this banner are
+> historical (Dec 2024) and understate the site. The banner here reflects current reality.
+
+---
+
+## 🧭 Current Reality (June 2026)
+
+The site has grown well beyond the 2024 snapshot below. Verified footprint:
+
+- **51 long-form guides** under `/guides`
+- **3 programmatic local clinic-directory verticals** — `hormone-therapy`, `weight-loss`,
+  `dexa-scans` — each wired for **14 states** with city-level pages (e.g. 258 hormone
+  clinics in TX alone). Pattern lives in `src/data/*-clinics-*.ts` + `*-clinics-index.ts`.
+- **Medical tourism**: 147 providers across 14 destinations + deep guide/cost coverage
+- **Telehealth money pages**: `labs`, `glp1`, `trt` (+18 providers)
+- **Traditional healthcare**: 50 states + California regional/health-system deep dive
+- **Longevity / stem cells**: hub + US regions + intl stem-cell directories
+- **Healthcare resources**: insurance (13), pharma (13), drug registry (10)
+- **Infra**: auto-discovering sitemap (no dead URLs), JSON-LD across pages, `llms.txt`/AEO
+
+### Active Expansion Mandate
+Broaden coverage to **all primary cash-pay services** across three pillars:
+(1) in-person medical care, (2) in-person wellness & aesthetic services, (3) e-commerce
+telehealth / personal products for health, wellness, longevity, and performance.
+
+**Agreed build sequence:**
+1. ✅ **Longevity & Performance e-commerce** — *in progress* (`/longevity-performance` hub,
+   `/cgm`, `/longevity-rx`; data in `src/lib/performance-products.ts`, shared renderer in
+   `src/components/PerfCategoryPage.tsx`). Roadmap within: peptides, longevity supplements,
+   recovery/performance tech.
+2. ⏭️ **DTC telehealth money pages** — men's ED & hair loss, skincare, women's menopause/HRT,
+   online mental health & psychiatry.
+3. ⏭️ **Med-spa & aesthetics directory** — Botox, fillers, laser, microneedling, body
+   contouring + IV therapy (state×city, reuses the clinic-directory engine; fills empty `iv`).
+4. ⏭️ **Fill empty clinical categories** — `vo2max`, `longevity` providers, `orthopedic`,
+   `cardiac`, `vision` (currently render thin "coming soon" pages — SEO risk).
+
+### Known SEO Gaps / Tech Debt
+- Empty taxonomy categories (`vo2max`, `iv`, `longevity` providers, `orthopedic`, `cardiac`,
+  `vision`) ship as thin "coming soon" pages — fill or `noindex`.
+- `CONTENT_OVERVIEW.md` page/word counts are stale (still say 190 pages).
 
 ---
 
