@@ -30,12 +30,13 @@ Broaden coverage to **all primary cash-pay services** across three pillars:
 telehealth / personal products for health, wellness, longevity, and performance.
 
 **Agreed build sequence:**
-1. ✅ **Longevity & Performance e-commerce** — *in progress* (`/longevity-performance` hub,
-   `/cgm`, `/longevity-rx`; data in `src/lib/performance-products.ts`, shared renderer in
-   `src/components/PerfCategoryPage.tsx`). Roadmap within: peptides, longevity supplements,
-   recovery/performance tech.
-2. ⏭️ **DTC telehealth money pages** — men's ED & hair loss, skincare, women's menopause/HRT,
-   online mental health & psychiatry.
+1. ✅ **Longevity & Performance e-commerce** — *shipped* (`/longevity-performance` hub +
+   `/cgm`, `/longevity-rx`, `/peptides`, `/supplements`, `/recovery-tech`). Data in
+   `src/lib/performance-products.ts`; rendered by the generic `CompareCategoryPage`.
+2. ✅ **DTC telehealth money pages** — *shipped* (`/mens-health` (ED & hair), `/skincare`,
+   `/womens-health` (menopause/HRT), `/mental-health` (therapy & psychiatry)). Data in
+   `src/lib/telehealth-dtc.ts`; integrated into the `/telehealth` hub. Both pillars share
+   `src/components/CompareCategoryPage.tsx` (section-aware) via thin adapters.
 3. ⏭️ **Med-spa & aesthetics directory** — Botox, fillers, laser, microneedling, body
    contouring + IV therapy (state×city, reuses the clinic-directory engine; fills empty `iv`).
 4. ⏭️ **Fill empty clinical categories** — `vo2max`, `longevity` providers, `orthopedic`,

@@ -48,6 +48,11 @@ export default function Navigation() {
                       <Link href="/labs" className="block text-sm text-gray-700 hover:text-blue-600">🧪 At-Home Labs</Link>
                       <Link href="/hormone-therapy" className="block text-sm font-medium text-gray-900 hover:text-blue-600">💪 Hormone Therapy</Link>
                       <Link href="/weight-loss" className="block text-sm font-medium text-gray-900 hover:text-blue-600">💊 Weight Loss / GLP-1</Link>
+                      <div className="text-xs text-gray-500 mt-2 mb-1">Telehealth Care:</div>
+                      <Link href="/mens-health" className="block text-xs text-gray-600 hover:text-blue-600">Men&apos;s Health (ED &amp; Hair)</Link>
+                      <Link href="/womens-health" className="block text-xs text-gray-600 hover:text-blue-600">Menopause &amp; HRT</Link>
+                      <Link href="/skincare" className="block text-xs text-gray-600 hover:text-blue-600">Prescription Skincare</Link>
+                      <Link href="/mental-health" className="block text-xs text-gray-600 hover:text-blue-600">Therapy &amp; Psychiatry</Link>
                       <div className="text-xs text-gray-500 mt-2 mb-1">Performance Testing:</div>
                       <Link href="/dexa" className="block text-xs text-gray-600 hover:text-blue-600">DEXA Providers</Link>
                       <Link href="/dexa-scans" className="block text-xs text-gray-600 hover:text-blue-600">DEXA Scans Near You</Link>
@@ -363,6 +368,10 @@ export default function Navigation() {
                       <Link href="/labs" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🧪 At-Home Labs</Link>
                       <Link href="/hormone-therapy" className="block py-2 text-sm font-medium text-gray-900 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>💪 Hormone Therapy</Link>
                       <Link href="/weight-loss" className="block py-2 text-sm font-medium text-gray-900 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>💊 Weight Loss / GLP-1</Link>
+                      <Link href="/mens-health" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🧔 Men&apos;s Health (ED &amp; Hair)</Link>
+                      <Link href="/womens-health" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🌸 Menopause &amp; HRT</Link>
+                      <Link href="/skincare" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🧴 Prescription Skincare</Link>
+                      <Link href="/mental-health" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🧠 Therapy &amp; Psychiatry</Link>
                       <Link href="/dexa" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>📊 DEXA Providers</Link>
                       <Link href="/dexa-scans" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>📍 DEXA Scans Near You</Link>
                       <Link href="/vo2max" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🫀 VO2 Max</Link>
