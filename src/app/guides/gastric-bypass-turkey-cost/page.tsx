@@ -67,6 +67,7 @@ export default function GastricBypassTurkeyCost() {
     description:
       'Cost guide to Roux-en-Y gastric bypass in Turkey vs the US — all-inclusive package pricing, JCI-accredited Istanbul hospitals, risks, and how to vet a surgeon.',
     url: 'https://vitalityscout.com/guides/gastric-bypass-turkey-cost',
+    mainEntity: { '@type': 'FAQPage', '@id': 'https://vitalityscout.com/guides/gastric-bypass-turkey-cost#faq' },
     inLanguage: 'en-US',
     medicalAudience: { '@type': 'MedicalAudience', audienceType: 'Patient' },
     about: {
@@ -86,7 +87,7 @@ export default function GastricBypassTurkeyCost() {
     ],
   };
 
-  const faqSchema = buildFAQSchema(FAQ_ITEMS);
+  const faqSchema = { ...buildFAQSchema(FAQ_ITEMS), '@id': 'https://vitalityscout.com/guides/gastric-bypass-turkey-cost#faq', url: 'https://vitalityscout.com/guides/gastric-bypass-turkey-cost' };
 
   return (
     <main className="min-h-screen bg-white">

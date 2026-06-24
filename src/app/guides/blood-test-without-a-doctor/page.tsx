@@ -61,6 +61,7 @@ export default function BloodTestWithoutADoctor() {
     description:
       'How to get a blood test without a doctor in the United States — how self-order (direct-access) lab testing works, what it costs, which states restrict it, and how to prepare.',
     url: 'https://vitalityscout.com/guides/blood-test-without-a-doctor',
+    mainEntity: { '@type': 'FAQPage', '@id': 'https://vitalityscout.com/guides/blood-test-without-a-doctor#faq' },
     inLanguage: 'en-US',
     medicalAudience: { '@type': 'MedicalAudience', audienceType: 'Patient' },
     about: {
@@ -78,7 +79,7 @@ export default function BloodTestWithoutADoctor() {
     ],
   };
 
-  const faqSchema = buildFAQSchema(FAQ_ITEMS);
+  const faqSchema = { ...buildFAQSchema(FAQ_ITEMS), '@id': 'https://vitalityscout.com/guides/blood-test-without-a-doctor#faq', url: 'https://vitalityscout.com/guides/blood-test-without-a-doctor' };
 
   return (
     <main className="min-h-screen bg-white">

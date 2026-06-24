@@ -62,6 +62,7 @@ export default function DexaVsInBodyVsBodPod() {
     description:
       'A side-by-side comparison of the three most common body composition tests — DEXA, InBody (bioelectrical impedance), and Bod Pod (air displacement) — covering accuracy, cost, radiation, and what each measures.',
     url: 'https://vitalityscout.com/guides/dexa-vs-inbody-vs-bodpod',
+    mainEntity: { '@type': 'FAQPage', '@id': 'https://vitalityscout.com/guides/dexa-vs-inbody-vs-bodpod#faq' },
     inLanguage: 'en-US',
     medicalAudience: { '@type': 'MedicalAudience', audienceType: 'Patient' },
     about: {
@@ -91,7 +92,7 @@ export default function DexaVsInBodyVsBodPod() {
     ],
   };
 
-  const faqSchema = buildFAQSchema(FAQ_ITEMS);
+  const faqSchema = { ...buildFAQSchema(FAQ_ITEMS), '@id': 'https://vitalityscout.com/guides/dexa-vs-inbody-vs-bodpod#faq', url: 'https://vitalityscout.com/guides/dexa-vs-inbody-vs-bodpod' };
 
   return (
     <main className="min-h-screen bg-white">

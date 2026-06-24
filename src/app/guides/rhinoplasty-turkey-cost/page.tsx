@@ -67,6 +67,7 @@ export default function RhinoplastyTurkeyCost() {
     description:
       'What rhinoplasty costs in Turkey versus the US, what all-inclusive Istanbul packages include, and how to vet an accredited surgeon safely.',
     url: 'https://vitalityscout.com/guides/rhinoplasty-turkey-cost',
+    mainEntity: { '@type': 'FAQPage', '@id': 'https://vitalityscout.com/guides/rhinoplasty-turkey-cost#faq' },
     inLanguage: 'en-US',
     medicalAudience: { '@type': 'MedicalAudience', audienceType: 'Patient' },
     about: {
@@ -102,7 +103,7 @@ export default function RhinoplastyTurkeyCost() {
     ],
   };
 
-  const faqSchema = buildFAQSchema(FAQ_ITEMS);
+  const faqSchema = { ...buildFAQSchema(FAQ_ITEMS), '@id': 'https://vitalityscout.com/guides/rhinoplasty-turkey-cost#faq', url: 'https://vitalityscout.com/guides/rhinoplasty-turkey-cost' };
 
   return (
     <main className="min-h-screen bg-white">

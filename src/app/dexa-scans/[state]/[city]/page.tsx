@@ -11,6 +11,14 @@ interface Props {
   params: Promise<{ state: string; city: string }>;
 }
 
+// City-specific DEXA cost guides, keyed by `${stateSlug}/${citySlug}`.
+// When a city has a dedicated cost guide, the directory page links to it
+// (reciprocal internal link — the guide already links back to this page).
+const CITY_COST_GUIDES: Record<string, string> = {
+  'new-york/new-york-city': 'dexa-scan-cost-new-york',
+  'california/los-angeles': 'dexa-scan-cost-los-angeles',
+};
+
 export async function generateStaticParams() {
   const params: { state: string; city: string }[] = [];
 
@@ -67,6 +75,7 @@ export default async function CityDexa({ params }: Props) {
   }
 
   const cityName = clinics[0].city;
+  const cityCostGuide = CITY_COST_GUIDES[`${stateSlug}/${citySlug}`];
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -234,9 +243,17 @@ export default async function CityDexa({ params }: Props) {
             Compare the national chains and read our DEXA scan guide before you book.
           </p>
           <div className="flex flex-wrap gap-3">
+            {cityCostGuide && (
+              <Link
+                href={`/guides/${cityCostGuide}`}
+                className="inline-block px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-medium"
+              >
+                {cityName} DEXA Cost Guide →
+              </Link>
+            )}
             <Link
               href="/guides/bodyspec-vs-dexafit"
-              className="inline-block px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-medium"
+              className={`inline-block px-4 py-2 rounded-lg font-medium ${cityCostGuide ? 'border border-blue-300 text-blue-700 hover:bg-blue-100' : 'bg-blue-600 text-white hover:bg-blue-700'}`}
             >
               BodySpec vs DexaFit →
             </Link>
