@@ -1,13 +1,13 @@
 # VitalityScout Content Overview
 
-**Last Updated:** June 13, 2026
+**Last Updated:** June 24, 2026
 
 > ⚠️ The detailed tables below this banner are a Dec 2024 snapshot and now
 > understate the site. See the current-reality summary here.
 
 ## Current Reality (June 2026)
 
-- **61 long-form guides** under `/guides`
+- **73 long-form guides** under `/guides` (+12 cost-transparency guides shipped 2026-06-24: DEXA cost, medical-tourism comparison, at-home labs)
 - **3 programmatic clinic-directory verticals** (state×city): `hormone-therapy`,
   `weight-loss`, `dexa-scans` — 14 states each
 - **Longevity & Performance e-commerce pillar**: `/longevity-performance` hub +

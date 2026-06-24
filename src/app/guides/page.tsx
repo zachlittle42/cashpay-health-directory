@@ -9,6 +9,105 @@ export const metadata: Metadata = {
 };
 
 const guides = [
+  // Batch 1 cost-transparency cluster (2026-06-23): DEXA, medical tourism, at-home labs
+  {
+    slug: 'blood-test-without-a-doctor',
+    title: 'Blood Test Without a Doctor: Order Labs Yourself',
+    description: 'How to get a blood test without a doctor in the US: how self-order (direct-access) labs work, what they cost ($30-850), which states restrict it, and what to test.',
+    category: 'Telehealth',
+    readTime: '11 min',
+    icon: '🩸',
+  },
+  {
+    slug: 'cheapest-blood-test-panels',
+    title: 'Cheapest Blood Test Panels (2026): Prices Compared',
+    description: 'The cheapest blood test panels you can buy without a doctor — Ulta Lab Tests, Labcorp OnDemand, Quest Health, SuperPower & Function Health pricing compared by panel type, with cash-pay and HSA/FSA tips.',
+    category: 'Comparison',
+    readTime: '10 min',
+    icon: '💉',
+  },
+  {
+    slug: 'dexa-scan-cost-los-angeles',
+    title: 'DEXA Scan Cost in Los Angeles (2026): Prices by Provider',
+    description: 'What a body-composition DEXA scan costs across LA in 2026 — mobile vans from ~$39, studios $99-179, hospital $150-400 — plus real LA providers and how to save.',
+    category: 'Local Services',
+    readTime: '10 min',
+    icon: '📊',
+  },
+  {
+    slug: 'dexa-scan-cost-new-york',
+    title: 'DEXA Scan Cost in New York City (2026 Price Guide)',
+    description: 'What a body-composition DEXA scan costs in NYC in 2026 — from $39.95 BodySpec mobile vans to $255 studio packages. Six real, verified New York clinics, what drives the price, and how to book.',
+    category: 'Local Services',
+    readTime: '9 min',
+    icon: '📊',
+  },
+  {
+    slug: 'dexa-vs-inbody-vs-bodpod',
+    title: 'DEXA vs InBody vs Bod Pod: Body Composition Test Guide',
+    description:
+      'Compare the three common body composition tests — DEXA, InBody (BIA), and Bod Pod (air displacement) — on accuracy, cost ($45-179), radiation, and what each actually measures.',
+    category: 'Comparison',
+    readTime: '10 min',
+    icon: '📊',
+  },
+  {
+    slug: 'egg-freezing-abroad-cost',
+    title: 'Egg Freezing Abroad Cost (2026): Prices vs the US',
+    description: 'What egg freezing (oocyte cryopreservation) costs abroad vs the US — Spain, Czech Republic, Greece & North Cyprus per-cycle pricing, what is included, the eligibility laws that decide where you can later use your eggs, and how to choose a clinic safely.',
+    category: 'Medical Tourism',
+    readTime: '11 min',
+    icon: '🥚',
+  },
+  {
+    slug: 'gastric-bypass-turkey-cost',
+    title: 'Gastric Bypass Turkey Cost (2026): Prices vs the US',
+    description:
+      'What Roux-en-Y gastric bypass costs in Turkey vs the US — ~$4,000-$7,200 all-inclusive Istanbul packages vs $15,000-$26,000 self-pay, what is included, JCI-accredited hospitals, risks, and how to vet a surgeon before you travel.',
+    category: 'Medical Tourism',
+    readTime: '12 min',
+    icon: '💲',
+  },
+  {
+    slug: 'india-medical-tourism-guide',
+    title: 'India Medical Tourism: Cost, Hospitals & Safety Guide',
+    description: 'Cardiac, orthopedic, oncology, and IVF costs in India vs the US, JCI/NABH-accredited hospitals (Apollo, Fortis, Max, Narayana Health), the e-Medical Visa, and how to vet a clinic before you book.',
+    category: 'Medical Tourism',
+    readTime: '16 min',
+    icon: '🇮🇳',
+  },
+  {
+    slug: 'is-dexa-scan-hsa-fsa-eligible',
+    title: 'Is a DEXA Scan HSA/FSA Eligible? Rules & Costs (2026)',
+    description: 'Yes — usually. A DEXA scan is HSA/FSA/HRA eligible when it is medical care (e.g., osteoporosis screening). When you need a Letter of Medical Necessity, what it costs, and how to pay.',
+    category: 'Local Services',
+    readTime: '9 min',
+    icon: '💳',
+  },
+  {
+    slug: 'quest-vs-labcorp-pricing',
+    title: 'Quest Diagnostics vs Labcorp Prices: Self-Pay Cost Guide',
+    description: 'Quest (questhealth.com) vs Labcorp (OnDemand) self-pay lab pricing compared—starting costs, panels, locations, turnaround, and how to decide which is cheaper for your test.',
+    category: 'Comparison',
+    readTime: '9 min',
+    icon: '🧪',
+  },
+  {
+    slug: 'rhinoplasty-turkey-cost',
+    title: 'Rhinoplasty Turkey Cost (2026): Istanbul Prices vs the US',
+    description: 'What a nose job costs in Turkey vs the US — primary, ultrasonic, ethnic, and revision rhinoplasty estimates, what all-inclusive Istanbul packages include, and how to vet an accredited surgeon safely.',
+    category: 'Medical Tourism',
+    readTime: '11 min',
+    icon: '💲',
+  },
+  {
+    slug: 'tijuana-medical-tourism-guide',
+    title: 'Tijuana Medical Tourism: Dental, Bariatric & Stem Cell',
+    description: 'Mexico\'s busiest medical hub, 20 minutes from San Diego. Dental, bariatric, and stem cell care — cost estimates vs the US, border-crossing logistics, and how to vet a clinic.',
+    category: 'Destination Guide',
+    readTime: '14 min',
+    icon: '🇲🇽',
+  },
   // Deepening cycle 2 — supporting guides for new money pages (2026-06)
   {
     slug: 'oura-vs-whoop',

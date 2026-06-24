@@ -168,6 +168,27 @@ export default function Navigation() {
                   </div>
 
                   <div className="border-t border-gray-200 pt-3 mb-2">
+                    <div className="text-xs font-semibold text-gray-500 uppercase mb-2">Cost & Pricing</div>
+                  </div>
+                  <div className="space-y-1.5 mb-4">
+                    <Link href="/guides/dexa-scan-cost-new-york" className="block text-sm text-gray-700 hover:text-blue-600 py-1">
+                      📊 DEXA Scan Cost: NYC
+                    </Link>
+                    <Link href="/guides/dexa-vs-inbody-vs-bodpod" className="block text-sm text-gray-700 hover:text-blue-600 py-1">
+                      📊 DEXA vs InBody vs Bod Pod
+                    </Link>
+                    <Link href="/guides/quest-vs-labcorp-pricing" className="block text-sm text-gray-700 hover:text-blue-600 py-1">
+                      🧪 Quest vs Labcorp Prices
+                    </Link>
+                    <Link href="/guides/cheapest-blood-test-panels" className="block text-sm text-gray-700 hover:text-blue-600 py-1">
+                      💉 Cheapest Blood Test Panels
+                    </Link>
+                    <Link href="/guides/india-medical-tourism-guide" className="block text-sm text-gray-700 hover:text-blue-600 py-1">
+                      🇮🇳 India Medical Tourism
+                    </Link>
+                  </div>
+
+                  <div className="border-t border-gray-200 pt-3 mb-2">
                     <div className="text-xs font-semibold text-gray-500 uppercase mb-2">Longevity & Stem Cells</div>
                   </div>
                   <div className="space-y-1.5 mb-4">
@@ -472,6 +493,13 @@ export default function Navigation() {
                   <Link href="/guides/at-home-lab-testing-guide" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🧪 At-Home Lab Testing</Link>
                   <Link href="/guides/gastric-sleeve-mexico-safety" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>⚖️ Gastric Sleeve in Mexico</Link>
                   <Link href="/guides/dexa-scan-guide" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>📊 DEXA Scan Guide</Link>
+                  <div className="border-t border-gray-100 my-2"></div>
+                  <div className="text-xs font-semibold text-gray-500 uppercase mb-2 px-3">Cost & Pricing</div>
+                  <Link href="/guides/dexa-scan-cost-new-york" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>📊 DEXA Scan Cost: NYC</Link>
+                  <Link href="/guides/dexa-vs-inbody-vs-bodpod" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>📊 DEXA vs InBody vs Bod Pod</Link>
+                  <Link href="/guides/quest-vs-labcorp-pricing" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🧪 Quest vs Labcorp Prices</Link>
+                  <Link href="/guides/cheapest-blood-test-panels" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>💉 Cheapest Blood Test Panels</Link>
+                  <Link href="/guides/india-medical-tourism-guide" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🇮🇳 India Medical Tourism</Link>
                   <div className="border-t border-gray-100 my-2"></div>
                   <div className="text-xs font-semibold text-gray-500 uppercase mb-2 px-3">Longevity & Stem Cells</div>
                   <Link href="/longevity" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>⏳ Longevity Hub</Link>
