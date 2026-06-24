@@ -67,6 +67,7 @@ export default function TijuanaMedicalTourismGuide() {
     description:
       'A practical guide to medical tourism in Tijuana, Mexico — top procedures (dental, bariatric, stem cell), border-crossing logistics, cost estimates vs the US, and how to vet clinics safely.',
     url: 'https://vitalityscout.com/guides/tijuana-medical-tourism-guide',
+    mainEntity: { '@type': 'FAQPage', '@id': 'https://vitalityscout.com/guides/tijuana-medical-tourism-guide#faq' },
     inLanguage: 'en-US',
     medicalAudience: { '@type': 'MedicalAudience', audienceType: 'Patient' },
     about: {
@@ -96,7 +97,7 @@ export default function TijuanaMedicalTourismGuide() {
     ],
   };
 
-  const faqSchema = buildFAQSchema(FAQ_ITEMS);
+  const faqSchema = { ...buildFAQSchema(FAQ_ITEMS), '@id': 'https://vitalityscout.com/guides/tijuana-medical-tourism-guide#faq', url: 'https://vitalityscout.com/guides/tijuana-medical-tourism-guide' };
 
   return (
     <main className="min-h-screen bg-white">

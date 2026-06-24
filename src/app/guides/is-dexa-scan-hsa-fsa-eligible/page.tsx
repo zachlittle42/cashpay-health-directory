@@ -61,6 +61,7 @@ export default function DexaScanHsaFsaEligible() {
     description:
       'How HSA, FSA, and HRA eligibility works for DEXA scans — the medical-necessity test, when a Letter of Medical Necessity is required, and what a scan costs.',
     url: 'https://vitalityscout.com/guides/is-dexa-scan-hsa-fsa-eligible',
+    mainEntity: { '@type': 'FAQPage', '@id': 'https://vitalityscout.com/guides/is-dexa-scan-hsa-fsa-eligible#faq' },
     inLanguage: 'en-US',
     medicalAudience: { '@type': 'MedicalAudience', audienceType: 'Patient' },
     about: {
@@ -78,7 +79,7 @@ export default function DexaScanHsaFsaEligible() {
     ],
   };
 
-  const faqSchema = buildFAQSchema(FAQ_ITEMS);
+  const faqSchema = { ...buildFAQSchema(FAQ_ITEMS), '@id': 'https://vitalityscout.com/guides/is-dexa-scan-hsa-fsa-eligible#faq', url: 'https://vitalityscout.com/guides/is-dexa-scan-hsa-fsa-eligible' };
 
   return (
     <>

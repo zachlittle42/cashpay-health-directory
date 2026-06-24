@@ -68,6 +68,7 @@ export default function EggFreezingAbroadCost() {
     description:
       'A grounded comparison of egg-freezing (oocyte cryopreservation) costs abroad versus the United States — per-cycle pricing across Spain, the Czech Republic, Greece, and North Cyprus, what is included, eligibility laws, and how to choose a clinic safely.',
     url: 'https://vitalityscout.com/guides/egg-freezing-abroad-cost',
+    mainEntity: { '@type': 'FAQPage', '@id': 'https://vitalityscout.com/guides/egg-freezing-abroad-cost#faq' },
     inLanguage: 'en-US',
     medicalAudience: { '@type': 'MedicalAudience', audienceType: 'Patient' },
     about: {
@@ -108,7 +109,7 @@ export default function EggFreezingAbroadCost() {
     ],
   };
 
-  const faqSchema = buildFAQSchema(FAQ_ITEMS);
+  const faqSchema = { ...buildFAQSchema(FAQ_ITEMS), '@id': 'https://vitalityscout.com/guides/egg-freezing-abroad-cost#faq', url: 'https://vitalityscout.com/guides/egg-freezing-abroad-cost' };
 
   return (
     <>

@@ -67,6 +67,7 @@ export default function DexaScanCostLosAngeles() {
     description:
       'A 2026 cost guide to body-composition DEXA scans in Los Angeles — prices by provider type (mobile, studio, university, hospital), real LA-area providers, and how to save.',
     url: 'https://vitalityscout.com/guides/dexa-scan-cost-los-angeles',
+    mainEntity: { '@type': 'FAQPage', '@id': 'https://vitalityscout.com/guides/dexa-scan-cost-los-angeles#faq' },
     inLanguage: 'en-US',
     medicalAudience: { '@type': 'MedicalAudience', audienceType: 'Patient' },
     about: {
@@ -86,7 +87,7 @@ export default function DexaScanCostLosAngeles() {
     ],
   };
 
-  const faqSchema = buildFAQSchema(FAQ_ITEMS);
+  const faqSchema = { ...buildFAQSchema(FAQ_ITEMS), '@id': 'https://vitalityscout.com/guides/dexa-scan-cost-los-angeles#faq', url: 'https://vitalityscout.com/guides/dexa-scan-cost-los-angeles' };
 
   return (
     <main className="min-h-screen bg-white">

@@ -122,6 +122,7 @@ export default function DexaScanCostNewYork() {
     description:
       'A 2026 price guide to DEXA body-composition scans in New York City — what they cost, where to get one, what affects the price, and how NYC pricing compares.',
     url: 'https://vitalityscout.com/guides/dexa-scan-cost-new-york',
+    mainEntity: { '@type': 'FAQPage', '@id': 'https://vitalityscout.com/guides/dexa-scan-cost-new-york#faq' },
     inLanguage: 'en-US',
     medicalAudience: { '@type': 'MedicalAudience', audienceType: 'Patient' },
     about: {
@@ -140,7 +141,7 @@ export default function DexaScanCostNewYork() {
     ],
   };
 
-  const faqSchema = buildFAQSchema(FAQ_ITEMS);
+  const faqSchema = { ...buildFAQSchema(FAQ_ITEMS), '@id': 'https://vitalityscout.com/guides/dexa-scan-cost-new-york#faq', url: 'https://vitalityscout.com/guides/dexa-scan-cost-new-york' };
 
   return (
     <main className="min-h-screen bg-white">

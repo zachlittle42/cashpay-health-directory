@@ -71,6 +71,7 @@ export default function CheapestBloodTestPanels() {
     description:
       'Side-by-side cost comparison of the cheapest direct-access blood test panels — Ulta Lab Tests, Labcorp OnDemand, Quest Health, SuperPower, and Function Health — by panel type, with cash-pay framing.',
     url: 'https://vitalityscout.com/guides/cheapest-blood-test-panels',
+    mainEntity: { '@type': 'FAQPage', '@id': 'https://vitalityscout.com/guides/cheapest-blood-test-panels#faq' },
     inLanguage: 'en-US',
     medicalAudience: { '@type': 'MedicalAudience', audienceType: 'Patient' },
     about: {
@@ -90,7 +91,7 @@ export default function CheapestBloodTestPanels() {
     ],
   };
 
-  const faqSchema = buildFAQSchema(FAQ_ITEMS);
+  const faqSchema = { ...buildFAQSchema(FAQ_ITEMS), '@id': 'https://vitalityscout.com/guides/cheapest-blood-test-panels#faq', url: 'https://vitalityscout.com/guides/cheapest-blood-test-panels' };
 
   return (
     <main className="min-h-screen bg-white">
