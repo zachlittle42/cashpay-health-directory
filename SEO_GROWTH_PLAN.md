@@ -1,7 +1,9 @@
 # VitalityScout - SEO & Growth Marketing Plan
 
-**Last Updated:** December 29, 2024
+**Last Updated:** June 24, 2026
 **Status:** Living Document - Update as content is created
+
+> **2026-06-24 progress (Batch 1, PR #18):** Shipped 12 cited cost-transparency guides in the three themes GSC shows the site already ranks for — DEXA-scan cost (`dexa-scan-cost-new-york`, `dexa-scan-cost-los-angeles`, `is-dexa-scan-hsa-fsa-eligible`, `dexa-vs-inbody-vs-bodpod`), medical-tourism cost comparison (`india-medical-tourism-guide`, `tijuana-medical-tourism-guide`, `rhinoplasty-turkey-cost`, `gastric-bypass-turkey-cost`, `egg-freezing-abroad-cost`), and at-home labs (`quest-vs-labcorp-pricing`, `cheapest-blood-test-panels`, `blood-test-without-a-doctor`). This closes the "❌ Need guide" items below for blood-test-without-a-doctor, Quest/Labcorp pricing, and the DEXA cost intent cluster. Strategy + tracker: AgentKasten `agents/cmo/seo/CONTENT-BACKLOG.md`. Next: DEXA city/brand directory grids via `seo-page-factory`.
 
 ---
 
