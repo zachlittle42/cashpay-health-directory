@@ -314,6 +314,31 @@ export default function LongevityHub() {
         </div>
       </section>
 
+      {/* Shop Longevity & Performance (e-commerce pillar cross-link) */}
+      <section className="mx-auto max-w-6xl px-4 py-12 border-t border-gray-100">
+        <h2 className="text-2xl font-bold text-gray-900 mb-2">Shop Longevity &amp; Performance</h2>
+        <p className="text-gray-600 mb-8">
+          Prefer to start at home? Compare the products and telehealth programs people buy online to
+          track and optimize healthspan &mdash; no clinic visit required.
+        </p>
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {[
+            { href: '/longevity-performance', icon: '🧬', title: 'Longevity & Performance Hub', desc: 'CGMs, longevity Rx, peptides, supplements & recovery tech' },
+            { href: '/cgm', icon: '📈', title: 'Glucose Monitors (CGM)', desc: 'Stelo, Lingo, Levels & more — buy without a prescription' },
+            { href: '/longevity-rx', icon: '⏳', title: 'Longevity Medications', desc: 'Rapamycin, metformin & NAD+ via telehealth — the honest picture' },
+            { href: '/supplements', icon: '💊', title: 'Longevity Supplements', desc: 'NAD+ precursors, urolithin A & evidence-backed basics' },
+            { href: '/peptides', icon: '🧫', title: 'Peptide Therapy', desc: 'BPC-157, TB-500 — the clinician-supervised reality' },
+            { href: '/recovery-tech', icon: '🔴', title: 'Recovery & Performance Tech', desc: 'Oura, WHOOP, red light, sauna & cold plunge' },
+          ].map((c) => (
+            <Link key={c.href} href={c.href} className="group rounded-lg border border-gray-200 p-5 hover:border-emerald-400 hover:shadow-md transition-all">
+              <div className="mb-2 text-3xl">{c.icon}</div>
+              <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600">{c.title}</h3>
+              <p className="mt-1 text-sm text-gray-600">{c.desc}</p>
+            </Link>
+          ))}
+        </div>
+      </section>
+
       {/* Treatment Categories */}
       <section id="treatments" className="mx-auto max-w-6xl px-4 py-12">
         <h2 className="text-2xl font-bold text-gray-900 mb-2">Longevity Treatment Categories</h2>
