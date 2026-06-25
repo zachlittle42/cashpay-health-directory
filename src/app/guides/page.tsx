@@ -9,6 +9,79 @@ export const metadata: Metadata = {
 };
 
 const guides = [
+  // International expansion (2026-06-25): new-destination + cross-country comparison guides
+  {
+    slug: 'malaysia-medical-tourism-guide',
+    title: 'Malaysia Medical Tourism: Cost, Hospitals & Safety Guide',
+    description:
+      'Cardiac, fertility/IVF, dental, and orthopedic costs in Malaysia vs the US, JCI/MSQH hospitals in Kuala Lumpur & Penang (Prince Court, Sunway, Gleneagles), the 90-day visa-free entry + MDAC, and how to vet a hospital before you book.',
+    category: 'Medical Tourism',
+    readTime: '15 min',
+    icon: '🇲🇾',
+  },
+  {
+    slug: 'singapore-medical-tourism-guide',
+    title: 'Singapore Medical Tourism Cost: Premium Care Guide',
+    description:
+      'Why complex cardiac, oncology, transplant & spinal care costs more in Singapore than other Asian hubs — JCI hospitals (Mount Elizabeth, Gleneagles, Raffles, NCCS proton therapy), cost vs the US, the visa, and who it fits.',
+    category: 'Medical Tourism',
+    readTime: '15 min',
+    icon: '🇸🇬',
+  },
+  {
+    slug: 'poland-medical-tourism-guide',
+    title: 'Poland Medical Tourism: Dental & Cosmetic Cost Guide',
+    description:
+      'Dental implant, veneer, crown & cosmetic-surgery costs in Poland vs the US/UK, the EU patient protections that set it apart, clinics in Krakow, Warsaw & Wroclaw, and how to vet a clinic before you book.',
+    category: 'Medical Tourism',
+    readTime: '14 min',
+    icon: '🇵🇱',
+  },
+  {
+    slug: 'philippines-medical-tourism-guide',
+    title: 'Philippines Medical Tourism Cost: Dental & Cosmetic Guide',
+    description:
+      'Dental and cosmetic costs in the Philippines vs the US, English-speaking JCI-accredited hospitals (St. Luke’s, Makati Medical Center, Asian Hospital, The Medical City), travel logistics, and how to vet a clinic before you book.',
+    category: 'Medical Tourism',
+    readTime: '15 min',
+    icon: '🇵🇭',
+  },
+  {
+    slug: 'vietnam-medical-tourism-guide',
+    title: 'Vietnam Medical Tourism Cost: Dental & Cosmetic Guide',
+    description:
+      'Vietnam medical tourism costs — dental implants, veneers & cosmetic surgery vs the US, JCI-accredited hospitals (FV, Vinmec), the 90-day e-visa, safety, and how to vet a clinic before you book.',
+    category: 'Medical Tourism',
+    readTime: '14 min',
+    icon: '🇻🇳',
+  },
+  {
+    slug: 'argentina-medical-tourism-guide',
+    title: 'Argentina Medical Tourism Cost: Buenos Aires Guide',
+    description:
+      'Cosmetic surgery and dental costs in Buenos Aires vs the US, JCI-accredited hospitals (Hospital Italiano, Hospital Alemán, Hospital Universitario Austral), the 90-day entry rule, and how to vet a clinic before you book.',
+    category: 'Medical Tourism',
+    readTime: '13 min',
+    icon: '🇦🇷',
+  },
+  {
+    slug: 'dental-implants-abroad-cost-comparison',
+    title: 'Dental Implants Abroad: Cost Comparison by Country (2026)',
+    description:
+      'Dental implants abroad cost comparison across Mexico, Costa Rica, Colombia, Turkey, Hungary & Poland vs the US — per-implant and full-arch (All-on-4) prices, what each package includes, and how to choose.',
+    category: 'Medical Tourism',
+    readTime: '14 min',
+    icon: '🦷',
+  },
+  {
+    slug: 'plastic-surgery-abroad-cost-comparison',
+    title: 'Plastic Surgery Abroad Cost Comparison (2026): 6 Countries',
+    description:
+      'Plastic surgery abroad cost comparison across Mexico, Colombia, Brazil, Turkey, Thailand & South Korea vs the US — by procedure, what is included, safety, and how to choose.',
+    category: 'Comparison',
+    readTime: '15 min',
+    icon: '🌍',
+  },
   // GSC gap-fill batch 3b (2026-06-25): remaining 8 impression-earning gaps
   {
     slug: 'medical-tourism-packages',
