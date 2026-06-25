@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
+import { getProvidersByDestination } from '@/lib/providers-medical-tourism';
 
 // =============================================================================
 // DESTINATION DATA
@@ -907,6 +908,8 @@ export default function DestinationPage({
     notFound();
   }
 
+  const vettedProviders = getProvidersByDestination(params.destination);
+
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'TravelGuide',
@@ -1118,6 +1121,72 @@ export default function DestinationPage({
           ))}
         </div>
       </section>
+
+      {/* Vetted Providers */}
+      {vettedProviders.length > 0 && (
+        <section className="bg-gray-50 px-4 py-12">
+          <div className="mx-auto max-w-6xl">
+            <h2 className="text-xl font-bold text-gray-900 mb-2">
+              Vetted {destination.displayName} Providers
+            </h2>
+            <p className="text-sm text-gray-600 mb-6">
+              {vettedProviders.length} provider{vettedProviders.length === 1 ? '' : 's'} researched and verified by VitalityScout.
+            </p>
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {vettedProviders.map((p) => (
+                <div key={p.slug} className="flex flex-col rounded-lg bg-white border border-gray-200 p-5">
+                  <h3 className="font-bold text-gray-900 text-lg">
+                    <Link href={`/providers/${p.slug}`} className="hover:text-purple-700 hover:underline">
+                      {p.name}
+                    </Link>
+                  </h3>
+                  {p.destinationCity && (
+                    <p className="mt-1 text-sm text-gray-500">{p.destinationCity}</p>
+                  )}
+
+                  {p.services && p.services.length > 0 && (
+                    <div className="mt-3 flex flex-wrap gap-2">
+                      {p.services.slice(0, 4).map((service) => (
+                        <span
+                          key={service}
+                          className="rounded-full bg-purple-50 px-3 py-1 text-xs font-medium text-purple-700"
+                        >
+                          {service}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+
+                  {p.accreditations && p.accreditations.length > 0 && (
+                    <div className="mt-3 flex flex-wrap gap-2">
+                      {p.accreditations.map((acc) => (
+                        <span
+                          key={acc}
+                          className="rounded-full bg-green-50 px-3 py-1 text-xs font-medium text-green-700"
+                        >
+                          {acc}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+
+                  <div className="mt-auto pt-4">
+                    {p.pricingDisplay && (
+                      <p className="text-sm font-semibold text-green-600">{p.pricingDisplay}</p>
+                    )}
+                    {p.pricingComparison && (
+                      <p className="text-xs text-gray-500">{p.pricingComparison}</p>
+                    )}
+                    {p.lastVerified && (
+                      <p className="mt-2 text-xs text-gray-400">Verified {p.lastVerified}</p>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* CTA */}
       <section className="bg-gradient-to-r from-purple-50 to-blue-50 px-4 py-12">
