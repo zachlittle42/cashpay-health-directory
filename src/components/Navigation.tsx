@@ -68,6 +68,12 @@ export default function Navigation() {
                       <Link href="/peptides" className="block text-xs text-gray-600 hover:text-emerald-600 pl-3">Peptide Therapy</Link>
                       <Link href="/supplements" className="block text-xs text-gray-600 hover:text-emerald-600 pl-3">Longevity Supplements</Link>
                       <Link href="/recovery-tech" className="block text-xs text-gray-600 hover:text-emerald-600 pl-3">Recovery &amp; Performance Tech</Link>
+                      <div className="text-xs text-gray-500 mt-2 mb-1">Diagnostics &amp; Care:</div>
+                      <Link href="/imaging" className="block text-sm text-gray-700 hover:text-blue-600">🩻 Imaging (MRI/CT)</Link>
+                      <Link href="/primary_care" className="block text-xs text-gray-600 hover:text-blue-600">Online Doctor &amp; Urgent Care</Link>
+                      <Link href="/sleep" className="block text-xs text-gray-600 hover:text-blue-600">Sleep &amp; Apnea</Link>
+                      <Link href="/allergy" className="block text-xs text-gray-600 hover:text-blue-600">Allergy Testing</Link>
+                      <Link href="/surgery" className="block text-xs text-gray-600 hover:text-blue-600">Cash-Pay Surgery</Link>
                     </div>
                   </div>
 
@@ -419,6 +425,11 @@ export default function Navigation() {
                       <Link href="/peptides" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🧫 Peptide Therapy</Link>
                       <Link href="/supplements" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>💊 Longevity Supplements</Link>
                       <Link href="/recovery-tech" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🔴 Recovery &amp; Performance Tech</Link>
+                      <Link href="/imaging" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🩻 Imaging (MRI/CT)</Link>
+                      <Link href="/primary_care" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🩺 Online Doctor &amp; Urgent Care</Link>
+                      <Link href="/sleep" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>😴 Sleep &amp; Apnea</Link>
+                      <Link href="/allergy" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🤧 Allergy Testing</Link>
+                      <Link href="/surgery" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🏥 Cash-Pay Surgery</Link>
                     </div>
                   </div>
                   {/* Medical Tourism */}
