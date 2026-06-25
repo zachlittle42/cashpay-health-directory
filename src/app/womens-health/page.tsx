@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import DtcCategoryPage from '@/components/DtcCategoryPage';
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://vitalityscout.com/womens-health' },
   title: 'Best Online Menopause & HRT Care Compared — 2026',
   description:
     'Compare online menopause and HRT clinics — Midi Health, Alloy, Evernow, and Hers. Clinician-led hormone therapy, costs, insurance, and who each is best for. FDA-approved hormones prescribed online.',

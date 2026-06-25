@@ -8,6 +8,7 @@ import { MEDSPA_SERVICES } from '@/lib/medspa-clinic-types';
 import { MEDSPA_CHAINS } from '@/data/medspa-chains';
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://vitalityscout.com/med-spa' },
   title: 'Med Spa Near You: Botox, Fillers & Laser Hair Removal by City',
   description:
     'Find med-spa and aesthetics providers near you. Compare Botox, dermal fillers, laser hair removal, microneedling, body contouring, and IV therapy by city — with typical cash-pay costs and national chains.',

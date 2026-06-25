@@ -35,7 +35,11 @@ const DEXA_FAQ_ITEMS = [
 export function generateMetadata({ params }: { params: { category: string } }): Metadata {
   const cat = CATEGORIES[params.category as Category];
   if (!cat) return {};
-  return { title: `${cat.name} Compared — Pricing & Reviews` };
+  return {
+    title: `${cat.name} Compared — Pricing & Reviews`,
+    description: cat.description,
+    alternates: { canonical: `https://vitalityscout.com/${params.category}` },
+  };
 }
 
 function ProviderCard({ provider }: { provider: Provider }) {
