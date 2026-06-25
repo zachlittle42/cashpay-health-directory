@@ -9,6 +9,115 @@ export const metadata: Metadata = {
 };
 
 const guides = [
+  // Cross-country procedure comparisons (2026-06-25)
+  {
+    slug: 'hair-transplant-cost-by-country',
+    title: 'Hair Transplant Cost by Country (2026): 5 vs the US',
+    description:
+      'Hair transplant cost by country — FUE/DHI prices in Turkey, Mexico, India, Thailand & Hungary vs the US, what each package includes, savings, and the accreditation (ABHRS/ISHRS, JCI, NABH) to verify before you book.',
+    category: 'Comparison',
+    readTime: '13 min',
+    icon: '💇',
+  },
+  {
+    slug: 'gastric-sleeve-cost-by-country',
+    title: 'Gastric Sleeve Cost by Country (2026): US vs Mexico, Turkey',
+    description:
+      'Gastric sleeve cost by country — all-inclusive sleeve gastrectomy prices in Mexico, Turkey & India vs the US, what each package includes, savings, accreditation, and how to choose.',
+    category: 'Comparison',
+    readTime: '13 min',
+    icon: '⚖️',
+  },
+  {
+    slug: 'rhinoplasty-cost-by-country',
+    title: 'Rhinoplasty Cost by Country (2026): US vs Turkey & More',
+    description:
+      'Rhinoplasty (nose job) cost by country — typical 2026 prices in Turkey, Mexico, South Korea & Thailand vs the US, package inclusions, accreditation & how to choose.',
+    category: 'Comparison',
+    readTime: '13 min',
+    icon: '👃',
+  },
+  {
+    slug: 'bbl-cost-by-country',
+    title: 'BBL Cost by Country (2026): US vs 4 Top Markets',
+    description:
+      'BBL cost by country — Brazilian butt lift prices in Colombia, Mexico, Turkey & Brazil vs the US, what each package includes, savings, the accreditation to verify, and BBL safety.',
+    category: 'Comparison',
+    readTime: '14 min',
+    icon: '🍑',
+  },
+  {
+    slug: 'breast-augmentation-cost-by-country',
+    title: 'Breast Augmentation Cost by Country (2026): 4 vs US',
+    description:
+      'Breast augmentation cost by country — Mexico, Colombia, Turkey & Thailand vs the US: typical prices, what each package includes, savings, accreditation, and how to choose.',
+    category: 'Comparison',
+    readTime: '14 min',
+    icon: '🌍',
+  },
+  {
+    slug: 'tummy-tuck-cost-by-country',
+    title: 'Tummy Tuck Cost by Country (2026): US vs Mexico & More',
+    description:
+      'Tummy tuck cost by country: abdominoplasty prices in Mexico, Colombia & Turkey vs the US — what each package includes, the savings, accreditation to verify, and how to choose.',
+    category: 'Comparison',
+    readTime: '13 min',
+    icon: '💲',
+  },
+  {
+    slug: 'veneers-cost-by-country',
+    title: 'Veneers Cost by Country: US vs Mexico, Turkey & More',
+    description:
+      'Per-tooth porcelain veneer prices in Mexico, Turkey, Costa Rica & Hungary vs the US — what each smile package includes, accreditation signals, savings, and how to choose.',
+    category: 'Comparison',
+    readTime: '12 min',
+    icon: '😁',
+  },
+  {
+    slug: 'full-mouth-dental-implants-cost-by-country',
+    title: 'Full Mouth Dental Implants Cost by Country (2026)',
+    description:
+      'Full mouth dental implants abroad: choosing All-on-4 vs All-on-6 and reading a per-arch package quote in Mexico, Costa Rica, Colombia, Hungary & Turkey, with price context, safety/accreditation, and how to choose.',
+    category: 'Comparison',
+    readTime: '14 min',
+    icon: '🦷',
+  },
+  {
+    slug: 'ivf-cost-by-country',
+    title: 'IVF Cost by Country (2026): US vs Mexico, Spain & More',
+    description:
+      'IVF cost by country in 2026 — per-cycle prices in Mexico, Spain, Czech Republic, Greece & India vs the US, what each cycle includes, the donor-egg laws, and how to choose.',
+    category: 'Medical Tourism',
+    readTime: '13 min',
+    icon: '🌍',
+  },
+  {
+    slug: 'knee-replacement-cost-by-country',
+    title: 'Knee Replacement Cost by Country: US vs India & More',
+    description:
+      'Total knee replacement cost by country — India, Mexico, Thailand & Costa Rica vs the US — package prices, what each includes, JCI accreditation, savings, and how to choose.',
+    category: 'Comparison',
+    readTime: '13 min',
+    icon: '🦵',
+  },
+  {
+    slug: 'heart-bypass-cost-by-country',
+    title: 'Heart Bypass Cost by Country: US vs India, Thailand & Mexico',
+    description:
+      'Heart bypass (CABG) cost by country — India, Thailand & Mexico vs the US. Estimated per-procedure prices, what each package includes, JCI accreditation, savings, and how to choose a cardiac center abroad.',
+    category: 'Comparison',
+    readTime: '13 min',
+    icon: '❤️',
+  },
+  {
+    slug: 'lasik-cost-by-country',
+    title: 'LASIK Cost by Country (2026): US vs Mexico, Turkey & More',
+    description:
+      'LASIK cost by country compared across Mexico, Turkey, India & Thailand vs the US — per-eye and both-eyes prices, what each package includes, safety/accreditation, and how to choose.',
+    category: 'Comparison',
+    readTime: '13 min',
+    icon: '👁️',
+  },
   // International expansion (2026-06-25): new-destination + cross-country comparison guides
   {
     slug: 'malaysia-medical-tourism-guide',

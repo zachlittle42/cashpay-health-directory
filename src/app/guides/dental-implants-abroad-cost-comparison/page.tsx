@@ -26,7 +26,7 @@ const FAQ_ITEMS = [
   {
     question: 'Which country is cheapest for full-arch (All-on-4) dental implants?',
     answer:
-      'On the per-arch comparisons we reviewed, Turkey ($3,000-$6,000), Colombia ($4,500-$11,000), and Poland ($4,400-$8,000) tend to come out lowest, with Mexico ($6,000-$12,000), Costa Rica ($8,500-$12,750), and Hungary ($7,000-$14,500) higher but still well below the US ($18,000-$35,000+ per arch). Cheapest is not automatically best — implant brand, the surgeon, accreditation, and travel cost all matter. Confirm exactly what each arch quote includes before comparing.',
+      'On the per-arch comparisons we reviewed, Turkey ($3,000-$6,000), Colombia ($4,500-$11,000), Hungary ($5,000-$9,000), and Poland ($4,400-$8,000) tend to come out lowest, with Mexico ($8,000-$15,000) and Costa Rica ($8,500-$12,750) higher but still well below the US ($18,000-$35,000+ per arch). Cheapest is not automatically best — implant brand, the surgeon, accreditation, and travel cost all matter. Confirm exactly what each arch quote includes before comparing.',
   },
   {
     question: 'What does an all-inclusive dental implant package abroad include?',
@@ -173,7 +173,7 @@ export default function DentalImplantsAbroadCostComparison() {
           <ul className="text-sm text-gray-700 space-y-1 mb-0">
             <li>✓ <strong>50-80% savings</strong> vs US prices on most published comparisons (estimates)</li>
             <li>✓ <strong>Lowest single-implant pricing:</strong> Turkey, Poland, Costa Rica, Colombia</li>
-            <li>✓ <strong>Lowest full-arch (All-on-4):</strong> Turkey, Colombia, Poland</li>
+            <li>✓ <strong>Lowest full-arch (All-on-4):</strong> Turkey, Colombia, Hungary, Poland</li>
             <li>✓ <strong>Closest to the US:</strong> Mexico (border crossings; no long-haul flight)</li>
             <li>✓ <strong>EU-regulated:</strong> Hungary and Poland operate under EU clinical standards</li>
             <li>✓ <strong>Implant brands to look for:</strong> Straumann, Nobel Biocare (premium systems)</li>
@@ -321,14 +321,14 @@ export default function DentalImplantsAbroadCostComparison() {
               </tr>
               <tr>
                 <td className="border border-gray-200 px-4 py-3 text-sm font-medium text-gray-700">Mexico</td>
-                <td className="border border-gray-200 px-4 py-3 text-sm font-semibold text-green-600">$6,000 - $12,000</td>
-                <td className="border border-gray-200 px-4 py-3 text-sm font-semibold text-green-600">~60-75%</td>
+                <td className="border border-gray-200 px-4 py-3 text-sm font-semibold text-green-600">$8,000 - $15,000</td>
+                <td className="border border-gray-200 px-4 py-3 text-sm font-semibold text-green-600">~50-65%</td>
                 <td className="border border-gray-200 px-4 py-3 text-sm text-gray-600">Tijuana, Cancún, Los Algodones</td>
               </tr>
               <tr className="bg-gray-50">
                 <td className="border border-gray-200 px-4 py-3 text-sm font-medium text-gray-700">Hungary</td>
-                <td className="border border-gray-200 px-4 py-3 text-sm font-semibold text-green-600">$7,000 - $14,500</td>
-                <td className="border border-gray-200 px-4 py-3 text-sm font-semibold text-green-600">~55-70%</td>
+                <td className="border border-gray-200 px-4 py-3 text-sm font-semibold text-green-600">$5,000 - $9,000</td>
+                <td className="border border-gray-200 px-4 py-3 text-sm font-semibold text-green-600">~65-75%</td>
                 <td className="border border-gray-200 px-4 py-3 text-sm text-gray-600">Budapest; long EU dental-tourism history</td>
               </tr>
               <tr>
