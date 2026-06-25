@@ -17,6 +17,23 @@ interface Props {
 const CITY_COST_GUIDES: Record<string, string> = {
   'new-york/new-york-city': 'dexa-scan-cost-new-york',
   'california/los-angeles': 'dexa-scan-cost-los-angeles',
+  'california/san-francisco': 'dexa-scan-cost-san-francisco',
+  'california/san-diego': 'dexa-scan-cost-san-diego',
+  'california/orange-county': 'dexa-scan-cost-orange-county',
+  'texas/houston': 'dexa-scan-cost-houston',
+  'texas/austin': 'dexa-scan-cost-austin',
+  'texas/dallas': 'dexa-scan-cost-dallas',
+  'illinois/chicago': 'dexa-scan-cost-chicago',
+  'arizona/phoenix': 'dexa-scan-cost-phoenix',
+  'washington/seattle': 'dexa-scan-cost-seattle',
+  'nevada/las-vegas': 'dexa-scan-cost-las-vegas',
+  'florida/miami': 'dexa-scan-cost-miami',
+  'colorado/denver': 'dexa-scan-cost-denver',
+  'washington-dc/washington': 'dexa-scan-cost-washington-dc',
+  'tennessee/nashville': 'dexa-scan-cost-nashville',
+  'north-carolina/raleigh': 'dexa-scan-cost-raleigh',
+  'massachusetts/boston': 'dexa-scan-cost-boston',
+  'georgia/atlanta': 'dexa-scan-cost-atlanta',
 };
 
 export async function generateStaticParams() {
