@@ -2,7 +2,8 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Thailand Medical Tourism: Complete Guide to Bangkok Hospitals (2024)',
+  title: { absolute: 'Thailand Medical Tourism: Complete Guide to Bangkok Hospitals (2024)' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/thailand-medical-tourism-guide' },
   description: 'Plan your medical trip to Thailand. Bumrungrad, Samitivej, BNH hospital reviews. Costs, what to expect, and step-by-step trip planning for Americans.',
 };
 

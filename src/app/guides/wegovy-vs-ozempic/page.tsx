@@ -7,7 +7,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'Wegovy vs Ozempic: Cost, Dosing & Results (2026)',
+  title: { absolute: 'Wegovy vs Ozempic: Cost, Dosing & Results (2026)' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/wegovy-vs-ozempic' },
   description:
     'Wegovy vs Ozempic — same drug (semaglutide), different FDA uses. Compare cost ($349-$499 cash), doses, weight-loss results, and side effects in 2026.',
 };

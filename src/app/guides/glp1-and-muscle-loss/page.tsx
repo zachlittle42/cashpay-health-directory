@@ -7,7 +7,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'GLP-1 Muscle Loss: How Much & How to Protect Lean Mass',
+  title: { absolute: 'GLP-1 Muscle Loss: How Much & How to Protect Lean Mass' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/glp1-and-muscle-loss' },
   description: 'How much muscle you lose on a GLP-1 (semaglutide, tirzepatide), why it happens, and how protein, resistance training, and DEXA scans protect lean mass.',
 };
 

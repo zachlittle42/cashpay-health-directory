@@ -6,7 +6,8 @@ import type { Metadata } from 'next';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 
 export const metadata: Metadata = {
-  title: 'IVF Czech Republic Cost (2026): Prices vs US & Savings',
+  title: { absolute: 'IVF Czech Republic Cost (2026): Prices vs US & Savings' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/czech-ivf-cost' },
   description:
     'IVF in the Czech Republic costs ~€2,800-4,000 (own eggs) and ~€4,900-7,500 (donor eggs) vs $15,000-25,000 and $35,000-60,000 in the US — roughly 60-80% less. Prague clinics, what is included, and how to choose safely. Estimates to verify.',
 };

@@ -6,7 +6,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'Blood Test Without a Doctor: How to Order Labs Yourself',
+  title: { absolute: 'Blood Test Without a Doctor: How to Order Labs Yourself' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/blood-test-without-a-doctor' },
   description: 'How to get a blood test without a doctor in the US: how self-order labs work, what they cost ($30-850), which states restrict it, and what to test.',
 };
 

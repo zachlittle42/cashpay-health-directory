@@ -2,7 +2,8 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Costa Rica Dental Tourism: Complete Guide for Americans (2024)',
+  title: { absolute: 'Costa Rica Dental Tourism: Complete Guide for Americans (2024)' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/costa-rica-dental-guide' },
   description: 'Plan your dental trip to Costa Rica. San Jose clinics, implant costs ($800-1,200), veneers, All-on-4. Short flights, US-trained dentists, lifetime warranties.',
 };
 

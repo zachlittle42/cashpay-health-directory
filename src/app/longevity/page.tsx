@@ -556,6 +556,31 @@ export default function LongevityHub() {
         </div>
       </section>
 
+      {/* Longevity & Anti-Aging Guides (internal links) */}
+      <section className="mx-auto max-w-6xl px-4 py-12 border-t border-gray-100">
+        <h2 className="text-2xl font-bold text-gray-900 mb-2">Longevity &amp; Anti-Aging Guides</h2>
+        <p className="text-gray-600 mb-8">
+          Go deeper on the treatments, protocols, and clinics behind longevity medicine.
+        </p>
+
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {[
+            { href: '/guides/best-longevity-clinics', icon: '🏥', title: 'Best Longevity Clinics', desc: 'How the top US and international longevity clinics compare on price, diagnostics & focus.' },
+            { href: '/guides/nad-therapy-guide', icon: '💧', title: 'NAD+ Therapy', desc: 'IV infusions vs precursors, what to expect, costs, and the evidence behind NAD+.' },
+            { href: '/guides/peptide-therapy-guide', icon: '💉', title: 'Peptide Therapy', desc: 'BPC-157, Sermorelin and more. What works, what doesn’t, where to get them.' },
+            { href: '/guides/rapamycin-for-longevity', icon: '💊', title: 'Rapamycin for Longevity', desc: 'The off-label mTOR inhibitor: dosing research, risks, and how to access it.' },
+            { href: '/guides/dubai-longevity-guide', icon: '🇦🇪', title: 'Dubai Longevity Guide', desc: 'AEON Clinic, Victor Longevity & licensed stem cells in the UAE.' },
+          ].map((g) => (
+            <Link key={g.href} href={g.href} className="block bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow">
+              <span className="text-3xl mb-3 block">{g.icon}</span>
+              <h3 className="font-bold text-gray-900 mb-2">{g.title}</h3>
+              <p className="text-sm text-gray-600 mb-3">{g.desc}</p>
+              <span className="text-sm font-medium text-indigo-600">Read guide &rarr;</span>
+            </Link>
+          ))}
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="bg-gradient-to-r from-indigo-600 to-purple-600 px-4 py-16">
         <div className="mx-auto max-w-4xl text-center">

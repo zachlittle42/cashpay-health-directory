@@ -2,7 +2,8 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Hair Transplant in Turkey: Complete Safety & Cost Guide (2024)',
+  title: { absolute: 'Hair Transplant in Turkey: Complete Safety & Cost Guide (2024)' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/hair-transplant-turkey-guide' },
   description: 'Everything you need to know about getting a hair transplant in Istanbul. FUE vs DHI techniques, costs, safety, choosing a clinic, and what to expect.',
 };
 

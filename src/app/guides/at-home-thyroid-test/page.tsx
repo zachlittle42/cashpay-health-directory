@@ -7,7 +7,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'At-Home Thyroid Test: TSH, T3, T4 & Antibodies (2026)',
+  title: { absolute: 'At-Home Thyroid Test: TSH, T3, T4 & Antibodies (2026)' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/at-home-thyroid-test' },
   description: 'What at-home thyroid tests measure (TSH, T3, T4, TPO/Tg antibodies), how accurate finger-prick kits are, what they cost ($75-$149), and top options.',
 };
 

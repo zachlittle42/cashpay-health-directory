@@ -5,7 +5,8 @@ import MedicalDisclaimer from '@/components/MedicalDisclaimer';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'How to Get ED Treatment Online (2026 Guide)',
+  title: { absolute: 'How to Get ED Treatment Online (2026 Guide)' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/online-ed-treatment' },
   description: 'How to get ED treatment online in 2026: FDA-approved medications, how telehealth evaluation and discreet delivery work, platform comparison, costs, and safety.',
   keywords: ['ED treatment online', 'erectile dysfunction telehealth', 'online ED medication', 'sildenafil online', 'tadalafil online', 'Hims ED', 'Ro ED', 'BlueChew', 'mens health telehealth', 'buy ED medication online'],
 };

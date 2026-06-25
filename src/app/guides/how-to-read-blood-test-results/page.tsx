@@ -7,7 +7,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'How to Read Blood Test Results: CBC, CMP, A1c & More',
+  title: { absolute: 'How to Read Blood Test Results: CBC, CMP, A1c & More' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/how-to-read-blood-test-results' },
   description:
     'How to read blood test results: what CBC, CMP, lipid, A1c, and thyroid markers mean, normal reference ranges, what high/low flags suggest, and next steps.',
 };

@@ -7,7 +7,8 @@ import MedicalDisclaimer from '@/components/MedicalDisclaimer';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'Best At-Home Lab Tests (2026): Top Picks by Use Case',
+  title: { absolute: 'Best At-Home Lab Tests (2026): Top Picks by Use Case' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/best-at-home-lab-tests' },
   description: 'The best at-home lab tests in 2026 by use case — wellness, hormones, thyroid, metabolic, STI. Top providers, accuracy vs a venous draw, and how to pick.',
 };
 

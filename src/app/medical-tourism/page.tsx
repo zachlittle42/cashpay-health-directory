@@ -647,6 +647,69 @@ export default function MedicalTourismHub() {
         </div>
       </section>
 
+      {/* Related Guides */}
+      <section className="bg-purple-50 px-4 py-16">
+        <div className="mx-auto max-w-6xl">
+          <h2 className="text-3xl font-bold text-gray-900 mb-3 text-center">
+            Medical Tourism Cost &amp; Safety Guides
+          </h2>
+          <p className="text-gray-600 mb-10 text-center max-w-2xl mx-auto">
+            Dig deeper into packages, destinations, and per-procedure costs before you book.
+          </p>
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            <Link href="/guides/medical-tourism-packages" className="bg-white rounded-lg border border-purple-200 p-5 hover:shadow-lg transition-shadow">
+              <div className="font-bold text-gray-900 mb-1">All-Inclusive Medical Tourism Packages</div>
+              <div className="text-sm text-gray-600">What package pricing covers and how to compare</div>
+            </Link>
+
+            <Link href="/guides/india-medical-tourism-guide" className="bg-white rounded-lg border border-purple-200 p-5 hover:shadow-lg transition-shadow">
+              <div className="font-bold text-gray-900 mb-1">India Medical Tourism Guide</div>
+              <div className="text-sm text-gray-600">Cardiac, orthopedic, and JCI hospitals</div>
+            </Link>
+
+            <Link href="/guides/tijuana-medical-tourism-guide" className="bg-white rounded-lg border border-purple-200 p-5 hover:shadow-lg transition-shadow">
+              <div className="font-bold text-gray-900 mb-1">Tijuana Medical Tourism Guide</div>
+              <div className="text-sm text-gray-600">Border crossing, clinics, and what to expect</div>
+            </Link>
+
+            <Link href="/guides/turkey-hair-transplant-clinics" className="bg-white rounded-lg border border-purple-200 p-5 hover:shadow-lg transition-shadow">
+              <div className="font-bold text-gray-900 mb-1">Turkey Hair Transplant Clinics</div>
+              <div className="text-sm text-gray-600">Choosing clinics, accreditation, and red flags</div>
+            </Link>
+
+            <Link href="/guides/hair-transplant-turkey-cost" className="bg-white rounded-lg border border-purple-200 p-5 hover:shadow-lg transition-shadow">
+              <div className="font-bold text-gray-900 mb-1">Hair Transplant Turkey Cost</div>
+              <div className="text-sm text-gray-600">Per-graft pricing vs US prices</div>
+            </Link>
+
+            <Link href="/guides/all-inclusive-bariatric-surgery-abroad" className="bg-white rounded-lg border border-purple-200 p-5 hover:shadow-lg transition-shadow">
+              <div className="font-bold text-gray-900 mb-1">All-Inclusive Bariatric Surgery Abroad</div>
+              <div className="text-sm text-gray-600">Gastric sleeve and bypass package pricing</div>
+            </Link>
+
+            <Link href="/guides/cheapest-ivf-in-europe" className="bg-white rounded-lg border border-purple-200 p-5 hover:shadow-lg transition-shadow">
+              <div className="font-bold text-gray-900 mb-1">Cheapest IVF in Europe</div>
+              <div className="text-sm text-gray-600">Lowest-cost fertility destinations compared</div>
+            </Link>
+
+            <Link href="/guides/rhinoplasty-turkey-cost" className="bg-white rounded-lg border border-purple-200 p-5 hover:shadow-lg transition-shadow">
+              <div className="font-bold text-gray-900 mb-1">Rhinoplasty Turkey Cost</div>
+              <div className="text-sm text-gray-600">Nose-job pricing in Istanbul vs the US</div>
+            </Link>
+
+            <Link href="/guides/gastric-bypass-turkey-cost" className="bg-white rounded-lg border border-purple-200 p-5 hover:shadow-lg transition-shadow">
+              <div className="font-bold text-gray-900 mb-1">Gastric Bypass Turkey Cost</div>
+              <div className="text-sm text-gray-600">Bypass package pricing vs US prices</div>
+            </Link>
+
+            <Link href="/guides/medical-travel-insurance-guide" className="bg-white rounded-lg border border-purple-200 p-5 hover:shadow-lg transition-shadow">
+              <div className="font-bold text-gray-900 mb-1">Medical Travel Insurance Guide</div>
+              <div className="text-sm text-gray-600">What&apos;s covered, what&apos;s not, what you need</div>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </main>
   );

@@ -6,7 +6,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'Are DEXA Scans Worth It? 2026 Value & Reviews Guide',
+  title: { absolute: 'Are DEXA Scans Worth It? 2026 Value & Reviews Guide' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/are-dexa-scans-worth-it' },
   description: 'Are DEXA scans worth it in 2026? What a body-comp DEXA tells you, how accurate it is, who benefits, the real cost, and what reviewers report.',
 };
 

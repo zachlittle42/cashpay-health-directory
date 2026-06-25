@@ -6,7 +6,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'Best Longevity Clinics & Anti-Aging Companies (2026)',
+  title: { absolute: 'Best Longevity Clinics & Anti-Aging Companies (2026)' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/best-longevity-clinics' },
   description: 'The best longevity and anti-aging companies in 2026 — what they offer, real membership prices ($149-$25,000+), and evidence vs hype before you buy.',
 };
 

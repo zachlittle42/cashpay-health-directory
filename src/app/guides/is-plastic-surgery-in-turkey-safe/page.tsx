@@ -7,7 +7,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'Is Plastic Surgery in Turkey Safe? Risks & How to Vet',
+  title: { absolute: 'Is Plastic Surgery in Turkey Safe? Risks & How to Vet' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/is-plastic-surgery-in-turkey-safe' },
   description:
     'Is plastic surgery in Turkey safe? What JCI accreditation means, the real risks, the red flags, and the surgeon-vetting checklist before you book.',
 };

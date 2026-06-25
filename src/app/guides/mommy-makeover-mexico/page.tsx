@@ -4,7 +4,8 @@ import Footer from '@/components/Footer';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Mommy Makeover in Mexico: Complete Cost & Safety Guide (2025)',
+  title: { absolute: 'Mommy Makeover in Mexico: Complete Cost & Safety Guide (2025)' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/mommy-makeover-mexico' },
   description: 'Mommy makeover surgery in Mexico: costs ($5,500-14,000 vs $20,000+ in US), what\'s included, choosing a surgeon, recovery, and everything you need to know.',
   keywords: ['mommy makeover Mexico', 'mommy makeover Tijuana', 'tummy tuck Mexico', 'breast lift Mexico', 'plastic surgery Mexico', 'mommy makeover cost'],
 };

@@ -6,7 +6,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'Gastric Bypass Turkey Cost (2026): Prices vs the US',
+  title: { absolute: 'Gastric Bypass Turkey Cost (2026): Prices vs the US' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/gastric-bypass-turkey-cost' },
   description:
     'Gastric bypass in Turkey costs ~$4,000-$7,200 all-inclusive vs $15,000-$26,000 in the US. Istanbul package pricing, JCI hospitals, and surgeon vetting.',
 };

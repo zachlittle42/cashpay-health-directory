@@ -7,7 +7,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'DEXA Scan Cost Seattle: 2026 Prices & Clinics',
+  title: { absolute: 'DEXA Scan Cost Seattle: 2026 Prices & Clinics' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/dexa-scan-cost-seattle' },
   description: 'What a body-composition DEXA scan costs in Seattle in 2026 — from $39 BodySpec scans to $195 bookings. Real clinics, the price spread, and how to save.',
 };
 

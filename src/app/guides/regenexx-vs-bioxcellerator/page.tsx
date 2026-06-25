@@ -7,7 +7,8 @@ import MedicalDisclaimer from '@/components/MedicalDisclaimer';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'Regenexx vs BioXcellerator: Cost, Cells & Legality',
+  title: { absolute: 'Regenexx vs BioXcellerator: Cost, Cells & Legality' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/regenexx-vs-bioxcellerator' },
   description:
     'Regenexx vs BioXcellerator: US same-day autologous bone marrow vs Colombia lab-expanded umbilical-cord MSCs. Cost, cells, legality, evidence, safety.',
 };

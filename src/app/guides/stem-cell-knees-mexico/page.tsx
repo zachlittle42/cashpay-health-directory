@@ -6,7 +6,8 @@ import type { Metadata } from 'next';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 
 export const metadata: Metadata = {
-  title: 'Stem Cell Therapy for Knees Abroad: Cost, Mexico & What to Know (2026)',
+  title: { absolute: 'Stem Cell Therapy for Knees Abroad: Cost, Mexico & What to Know (2026)' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/stem-cell-knees-mexico' },
   description:
     'Stem cell therapy for knee osteoarthritis abroad: what it costs ($3,750-$8,000 in Mexico vs $5,000-$8,000+ per joint in the US), the regulatory status, what the evidence actually shows, and how to vet a clinic. Educational; not a treatment recommendation.',
 };

@@ -4,7 +4,8 @@ import Footer from '@/components/Footer';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Hims vs Ro vs Calibrate: GLP-1 Weight Loss Comparison (2025)',
+  title: { absolute: 'Hims vs Ro vs Calibrate: GLP-1 Weight Loss Comparison (2025)' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/hims-vs-ro-vs-calibrate' },
   description: 'Detailed comparison of Hims, Ro, and Calibrate weight loss programs. Compare pricing, medication options, coaching support, and which is best for your needs.',
   keywords: ['Hims weight loss', 'Ro weight loss', 'Calibrate', 'GLP-1 comparison', 'semaglutide', 'telehealth weight loss', 'Wegovy', 'Ozempic'],
 };

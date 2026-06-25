@@ -7,7 +7,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'Turkey Hair Transplant Clinics Compared (2026)',
+  title: { absolute: 'Turkey Hair Transplant Clinics Compared (2026)' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/turkey-hair-transplant-clinics' },
   description:
     'Vera Clinic, Cosmedica, Estepera (Este) & Vinci — 2026 Turkey hair transplant clinic prices, techniques, what packages include, and how to vet a clinic.',
 };

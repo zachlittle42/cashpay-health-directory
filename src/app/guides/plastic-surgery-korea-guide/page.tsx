@@ -2,7 +2,8 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Plastic Surgery in Korea: Gangnam Clinics, Costs, Complete Guide (2024)',
+  title: { absolute: 'Plastic Surgery in Korea: Gangnam Clinics, Costs, Complete Guide (2024)' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/plastic-surgery-korea-guide' },
   description: 'Complete guide to plastic surgery in South Korea. Rhinoplasty $3,000-9,000, double eyelid $1,500-3,500. Top Gangnam clinics, what to expect, recovery tips.',
 };
 

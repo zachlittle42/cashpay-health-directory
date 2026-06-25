@@ -402,6 +402,38 @@ export default function WeightLossHub() {
         </div>
       </section>
 
+      {/* Related Guides */}
+      <section className="mx-auto max-w-6xl px-4 py-12">
+        <h2 className="text-2xl font-bold text-gray-900 mb-2">GLP-1 Weight-Loss Guides &amp; Comparisons</h2>
+        <p className="text-gray-600 mb-8">
+          Compare medications, providers, and costs before you choose a clinic.
+        </p>
+
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {[
+            { slug: 'glp1-weight-loss-complete-guide', title: 'Complete GLP-1 Weight Loss Guide' },
+            { slug: 'wegovy-vs-ozempic', title: 'Wegovy vs Ozempic' },
+            { slug: 'mounjaro-vs-ozempic', title: 'Mounjaro vs Ozempic' },
+            { slug: 'ozempic-alternatives', title: 'Ozempic Alternatives' },
+            { slug: 'cheapest-way-to-get-semaglutide', title: 'Cheapest Way to Get Semaglutide' },
+            { slug: 'cheapest-glp1-without-insurance', title: 'Cheapest GLP-1 Without Insurance' },
+            { slug: 'best-glp1-weight-loss-programs', title: 'Best GLP-1 Weight Loss Programs' },
+            { slug: 'ro-body-weight-loss-cost', title: 'Ro Body Weight Loss Cost' },
+            { slug: 'glp1-and-muscle-loss', title: 'GLP-1 and Muscle Loss' },
+            { slug: 'hims-vs-ro-vs-calibrate', title: 'Hims vs Ro vs Calibrate' },
+          ].map((guide) => (
+            <Link
+              key={guide.slug}
+              href={`/guides/${guide.slug}`}
+              className="block rounded-lg border border-gray-200 p-5 hover:border-green-400 hover:shadow-lg transition-all"
+            >
+              <h3 className="font-bold text-gray-900 mb-1">{guide.title}</h3>
+              <span className="text-sm font-medium text-green-600">Read guide →</span>
+            </Link>
+          ))}
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="bg-gradient-to-r from-green-600 to-teal-600 px-4 py-16">
         <div className="mx-auto max-w-4xl text-center">

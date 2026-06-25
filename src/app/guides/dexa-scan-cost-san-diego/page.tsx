@@ -7,7 +7,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'DEXA Scan Cost San Diego: 2026 Prices & Clinics',
+  title: { absolute: 'DEXA Scan Cost San Diego: 2026 Prices & Clinics' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/dexa-scan-cost-san-diego' },
   description: 'What a body-composition DEXA scan costs in San Diego in 2026 — from ~$45 BodySpec mobile vans to $210 La Jolla studio scans. Real clinics and how to save.',
 };
 

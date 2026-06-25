@@ -2,7 +2,8 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'DEXA Scan Guide: What It Measures, Cost & Why You Need One (2024)',
+  title: { absolute: 'DEXA Scan Guide: What It Measures, Cost & Why You Need One (2024)' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/dexa-scan-guide' },
   description: 'Complete guide to DEXA body composition scans. Learn what DEXA measures, how it works, costs, and why it beats BMI for tracking fitness progress.',
 };
 

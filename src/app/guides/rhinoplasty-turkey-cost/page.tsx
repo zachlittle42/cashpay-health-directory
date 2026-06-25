@@ -6,7 +6,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'Rhinoplasty Turkey Cost (2026): Istanbul Prices vs the US',
+  title: { absolute: 'Rhinoplasty Turkey Cost (2026): Istanbul Prices vs the US' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/rhinoplasty-turkey-cost' },
   description: 'Rhinoplasty in Turkey costs roughly $2,500-$7,500 vs $9,000-$20,000 in the US. What is included, why Istanbul is cheaper, and how to vet a surgeon safely.',
 };
 

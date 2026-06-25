@@ -2,7 +2,8 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Spain vs Czech Republic for IVF: Which Is Better? (2024)',
+  title: { absolute: 'Spain vs Czech Republic for IVF: Which Is Better? (2024)' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/spain-vs-czech-ivf' },
   description: 'Compare IVF in Spain vs Czech Republic. Costs, success rates, donor availability, and which country is right for your fertility journey.',
 };
 

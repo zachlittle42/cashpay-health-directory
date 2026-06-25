@@ -7,7 +7,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'Cheapest DEXA Scan: How to Pay Under $50 (2026)',
+  title: { absolute: 'Cheapest DEXA Scan: How to Pay Under $50 (2026)' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/cheapest-dexa-scan' },
   description: 'The cheapest ways to get a DEXA scan in 2026 — mobile vans, memberships (~$40/scan), multi-scan packages, and university labs — plus what to watch for.',
 };
 

@@ -7,7 +7,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'DEXA Scan Cost Raleigh: 2026 Prices & Local Clinics',
+  title: { absolute: 'DEXA Scan Cost Raleigh: 2026 Prices & Local Clinics' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/dexa-scan-cost-raleigh' },
   description: 'What a body-composition scan costs in Raleigh in 2026: InBody from $30, mobile DEXA ~$40, true full-body DEXA $230 in nearby Cary. Real local clinics.',
 };
 

@@ -7,7 +7,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'DEXA Scan Cost Chicago: 2026 Price Guide & Clinics',
+  title: { absolute: 'DEXA Scan Cost Chicago: 2026 Price Guide & Clinics' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/dexa-scan-cost-chicago' },
   description: 'What a DEXA scan costs in Chicago in 2026 — from $39.95 BodySpec vans to $150 Hologic clinics. Real Chicago providers, prices, and how to save.',
 };
 

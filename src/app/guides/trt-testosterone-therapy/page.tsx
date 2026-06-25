@@ -4,7 +4,8 @@ import Footer from '@/components/Footer';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'TRT Guide: Complete Testosterone Replacement Therapy Explained (2025)',
+  title: { absolute: 'TRT Guide: Complete Testosterone Replacement Therapy Explained (2025)' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/trt-testosterone-therapy' },
   description: 'Everything you need to know about TRT: symptoms of low testosterone, treatment options, costs, benefits, risks, and how to get started with online TRT clinics.',
   keywords: ['TRT', 'testosterone replacement therapy', 'low testosterone', 'hypogonadism', 'testosterone levels', 'online TRT', 'hormone therapy'],
 };

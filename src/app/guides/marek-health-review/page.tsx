@@ -7,7 +7,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'Marek Health Review Cost: Pricing, Labs & Who It Is For',
+  title: { absolute: 'Marek Health Review Cost: Pricing, Labs & Who It Is For' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/marek-health-review' },
   description:
     'Marek Health review: what the hormone-optimization platform costs in 2026 — $250 intake, $150-$1,950 lab panels, cash-pay model, and who it actually fits.',
 };

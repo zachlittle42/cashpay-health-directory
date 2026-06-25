@@ -9,6 +9,7 @@ import PostHogProvider from '@/components/tracking/PostHogProvider';
 import './globals.css';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://vitalityscout.com'),
   title: {
     default: 'VitalityScout | Compare Cash-Pay Healthcare Providers',
     template: '%s | VitalityScout',

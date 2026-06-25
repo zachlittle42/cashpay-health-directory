@@ -7,7 +7,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'Everlywell Review Cost (2026): Prices, Accuracy & Value',
+  title: { absolute: 'Everlywell Review Cost (2026): Prices, Accuracy & Value' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/everlywell-review' },
   description:
     'An Everlywell review focused on cost: real 2026 prices ($49-$299), the Everlywell+ membership, lab accuracy, pros and cons, and cheaper alternatives.',
 };

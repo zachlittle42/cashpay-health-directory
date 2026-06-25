@@ -6,7 +6,8 @@ import type { Metadata } from 'next';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 
 export const metadata: Metadata = {
-  title: 'Hungary Dental Cost (2026): Implants, All-on-4 & Crowns',
+  title: { absolute: 'Hungary Dental Cost (2026): Implants, All-on-4 & Crowns' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/hungary-dental-cost' },
   description:
     'Dental implant, All-on-4 and crown costs in Hungary vs the US. Save 50-70%: single implants ~$850-1,400 vs $3,000-5,000; All-on-4 ~$5,000-9,000 vs $20,000+. Estimates to verify.',
 };

@@ -7,7 +7,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'DEXA Scan Cost Denver: 2026 Price Guide & CO Clinics',
+  title: { absolute: 'DEXA Scan Cost Denver: 2026 Price Guide & CO Clinics' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/dexa-scan-cost-denver' },
   description: 'What a DEXA scan costs in Denver in 2026 — from $39.95 BodySpec vans to $235 Fitnescity. Real Denver clinics, the price spread, and how to save.',
 };
 

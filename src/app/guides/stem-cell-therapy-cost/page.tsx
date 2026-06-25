@@ -6,7 +6,8 @@ import type { Metadata } from 'next';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 
 export const metadata: Metadata = {
-  title: 'Stem Cell Therapy Cost in 2026: US vs Mexico, Panama & Abroad',
+  title: { absolute: 'Stem Cell Therapy Cost in 2026: US vs Mexico, Panama & Abroad' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/stem-cell-therapy-cost' },
   description:
     'What stem cell therapy actually costs in 2026. US prices ($5,000-$25,000+) vs Mexico ($3,750-$15,000), Panama, Colombia, and Cayman. Cost by condition, what drives the price, and why insurance does not cover it. Estimates to verify with each clinic.',
 };

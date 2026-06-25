@@ -2,7 +2,8 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Mexico Dental Guide: Tijuana, Los Algodones, Cancun Costs (2024)',
+  title: { absolute: 'Mexico Dental Guide: Tijuana, Los Algodones, Cancun Costs (2024)' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/mexico-dental-guide' },
   description: 'Complete guide to dental work in Mexico. Implants from $750, All-on-4 from $7,500. Compare Tijuana vs Los Algodones, find safe clinics, plan your trip.',
 };
 

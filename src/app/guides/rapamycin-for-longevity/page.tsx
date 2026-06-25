@@ -5,7 +5,8 @@ import MedicalDisclaimer from '@/components/MedicalDisclaimer';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Rapamycin for Longevity: Access, Cost & Evidence (2026)',
+  title: { absolute: 'Rapamycin for Longevity: Access, Cost & Evidence (2026)' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/rapamycin-for-longevity' },
   description: 'An honest look at rapamycin (sirolimus) for longevity: the mTOR pathway, why use is off-label and not FDA-approved, the state of evidence, telehealth access, and costs.',
   keywords: ['rapamycin', 'sirolimus', 'rapamycin longevity', 'mTOR', 'off-label rapamycin', 'rapamycin cost', 'longevity medication', 'rapamycin telehealth'],
 };

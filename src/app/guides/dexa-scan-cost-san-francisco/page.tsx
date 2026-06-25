@@ -7,7 +7,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'DEXA Scan Cost San Francisco: 2026 Bay Area Price Guide',
+  title: { absolute: 'DEXA Scan Cost San Francisco: 2026 Bay Area Price Guide' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/dexa-scan-cost-san-francisco' },
   description: 'What a DEXA scan costs in San Francisco in 2026 — from ~$40 BodySpec vans to $119-179 Cow Hollow studios. Real SF Bay Area clinics, prices, how to save.',
 };
 

@@ -7,7 +7,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'DEXA Scan Cost Atlanta: 2026 Price Guide & Clinics',
+  title: { absolute: 'DEXA Scan Cost Atlanta: 2026 Price Guide & Clinics' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/dexa-scan-cost-atlanta' },
   description: 'What a body-composition DEXA scan costs in Atlanta in 2026 — DEXA from $75 at Sandy Springs and Buckhead studios, plus the price spread and how to save.',
 };
 

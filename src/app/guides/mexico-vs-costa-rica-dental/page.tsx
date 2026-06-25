@@ -2,7 +2,8 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Mexico vs Costa Rica for Dental Work: Which Is Better? (2024)',
+  title: { absolute: 'Mexico vs Costa Rica for Dental Work: Which Is Better? (2024)' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/mexico-vs-costa-rica-dental' },
   description: 'Honest comparison of dental tourism in Mexico vs Costa Rica. Costs, quality, safety, convenience. Which is right for your dental work?',
 };
 

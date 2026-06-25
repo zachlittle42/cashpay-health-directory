@@ -6,7 +6,8 @@ import type { Metadata } from 'next';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 
 export const metadata: Metadata = {
-  title: 'South Korea Plastic Surgery Cost (2026): Procedure Price Guide',
+  title: { absolute: 'South Korea Plastic Surgery Cost (2026): Procedure Price Guide' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/korea-plastic-surgery-cost' },
   description:
     'What plastic surgery actually costs in South Korea in 2026, procedure by procedure, vs US prices. Rhinoplasty $3,000-$9,000, double eyelid $1,500-$3,500 — typically 30-50% below US. Estimates to verify with each clinic.',
 };

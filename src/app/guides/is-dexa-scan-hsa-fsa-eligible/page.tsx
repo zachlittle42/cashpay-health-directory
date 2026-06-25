@@ -5,7 +5,8 @@ import Footer from '@/components/Footer';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'Is a DEXA Scan HSA/FSA Eligible? Rules & Costs (2026)',
+  title: { absolute: 'Is a DEXA Scan HSA/FSA Eligible? Rules & Costs (2026)' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/is-dexa-scan-hsa-fsa-eligible' },
   description: 'Yes, a DEXA scan can be HSA/FSA/HRA eligible — but it depends on medical necessity. How to use pre-tax funds, when you need a letter, and what it costs.',
   keywords: ['DEXA scan HSA eligible', 'DEXA scan FSA eligible', 'is a DEXA scan HSA FSA eligible', 'body composition scan HSA', 'DEXA letter of medical necessity', 'bone density scan FSA'],
 };

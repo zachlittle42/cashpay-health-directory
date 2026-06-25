@@ -7,7 +7,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'VO2 Max Test Cost (2026): Prices, Where & Is It Worth It',
+  title: { absolute: 'VO2 Max Test Cost (2026): Prices, Where & Is It Worth It' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/vo2-max-test-cost' },
   description: 'What a VO2 max test costs in 2026 — $99-$175 at fitness studios, $300-$600+ for a clinical CPET. Where to get one and whether it is worth it.',
 };
 

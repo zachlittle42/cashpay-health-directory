@@ -5,7 +5,8 @@ import MedicalDisclaimer from '@/components/MedicalDisclaimer';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Online Menopause Treatment & HRT: 2026 Guide',
+  title: { absolute: 'Online Menopause Treatment & HRT: 2026 Guide' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/online-menopause-treatment' },
   description: 'How online menopause care and HRT work in 2026: symptoms, FDA-approved estradiol and progesterone, non-hormonal options, the honest safety picture, and real costs.',
   keywords: ['online menopause treatment', 'menopause telehealth', 'HRT online', 'hormone replacement therapy', 'estradiol', 'progesterone', 'perimenopause treatment', 'hot flashes treatment', 'menopause clinic online'],
 };

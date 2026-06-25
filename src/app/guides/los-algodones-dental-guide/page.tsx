@@ -4,7 +4,8 @@ import Footer from '@/components/Footer';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Los Algodones Dental Guide: Complete 2025 Trip Planner',
+  title: { absolute: 'Los Algodones Dental Guide: Complete 2025 Trip Planner' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/los-algodones-dental-guide' },
   description: 'Complete Los Algodones dental tourism guide. 350+ clinics, 50-70% savings, how to choose a dentist, border crossing, and trip planning for "Molar City."',
   keywords: ['Los Algodones dental', 'Molar City', 'Mexico dental tourism', 'Los Algodones dentist', 'cheap dental work Mexico', 'dental implants Mexico', 'dental crowns Mexico'],
 };

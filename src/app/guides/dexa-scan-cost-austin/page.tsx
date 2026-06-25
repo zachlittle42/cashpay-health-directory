@@ -7,7 +7,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'DEXA Scan Cost Austin: 2026 Price Guide & Clinics',
+  title: { absolute: 'DEXA Scan Cost Austin: 2026 Price Guide & Clinics' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/dexa-scan-cost-austin' },
   description: 'What a DEXA scan costs in Austin in 2026 — from $45 BodySpec mobile vans to $99 Hologic studios. Six real Austin clinics, prices, and how to save.',
 };
 

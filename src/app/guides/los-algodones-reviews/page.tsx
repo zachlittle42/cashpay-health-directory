@@ -6,7 +6,8 @@ import type { Metadata } from 'next';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 
 export const metadata: Metadata = {
-  title: 'Los Algodones Dentist Reviews: Is It Safe? (2026 Trust Guide)',
+  title: { absolute: 'Los Algodones Dentist Reviews: Is It Safe? (2026 Trust Guide)' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/los-algodones-reviews' },
   description:
     'Is Los Algodones safe for dental work? An honest look at reviews, what to verify, and the most-established clinics ("Molar City"). How to check real reviews on Google and Trustpilot, what credentials to look for, and how to vet a dentist before you cross the border.',
 };

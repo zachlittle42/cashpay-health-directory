@@ -2,7 +2,8 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Turkey vs Mexico for Medical Tourism: Which Is Better? (2024)',
+  title: { absolute: 'Turkey vs Mexico for Medical Tourism: Which Is Better? (2024)' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/turkey-vs-mexico-medical-tourism' },
   description: 'Compare medical tourism in Turkey vs Mexico. Hair transplants, dental, bariatric surgery. Which country is right for your procedure?',
 };
 

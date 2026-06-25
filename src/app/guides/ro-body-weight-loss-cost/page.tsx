@@ -6,7 +6,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'Ro Body Weight Loss Cost (2026): Membership + GLP-1',
+  title: { absolute: 'Ro Body Weight Loss Cost (2026): Membership + GLP-1' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/ro-body-weight-loss-cost' },
   description: 'Ro Body weight loss cost in 2026: membership $39 first month then $149/mo, what is included, and GLP-1 medication prices with and without insurance.',
 };
 

@@ -7,7 +7,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'DEXA Scan Cost Las Vegas: 2026 Prices & Clinics',
+  title: { absolute: 'DEXA Scan Cost Las Vegas: 2026 Prices & Clinics' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/dexa-scan-cost-las-vegas' },
   description: 'What a body-composition DEXA scan costs in Las Vegas in 2026 — DexaFit $139, cash-pay studios, accredited imaging. Real LV clinics and how to save.',
 };
 

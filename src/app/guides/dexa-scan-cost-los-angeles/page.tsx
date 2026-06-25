@@ -6,7 +6,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'DEXA Scan Cost Los Angeles: Prices by Provider (2026)',
+  title: { absolute: 'DEXA Scan Cost Los Angeles: Prices by Provider (2026)' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/dexa-scan-cost-los-angeles' },
   description: 'What a DEXA scan costs in Los Angeles in 2026: mobile units from ~$39, studios $99-179, hospital $150-400. Real LA providers and how to save.',
 };
 

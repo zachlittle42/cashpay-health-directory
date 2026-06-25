@@ -6,7 +6,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'Cheapest Blood Test Panels (2026): Prices Compared',
+  title: { absolute: 'Cheapest Blood Test Panels (2026): Prices Compared' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/cheapest-blood-test-panels' },
   description: 'Compare the cheapest blood test panels you can buy without a doctor. Ulta, Labcorp OnDemand, Quest, SuperPower & Function pricing, by panel type.',
   keywords: [
     'cheapest blood test panels',

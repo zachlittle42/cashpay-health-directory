@@ -7,7 +7,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'DEXA Scan Cost Washington, DC: 2026 Price Guide',
+  title: { absolute: 'DEXA Scan Cost Washington, DC: 2026 Price Guide' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/dexa-scan-cost-washington-dc' },
   description: 'What a body-composition DEXA scan costs in Washington, DC in 2026 — $150-$255, the physician-order rule, real DC clinics, and how to save.',
 };
 

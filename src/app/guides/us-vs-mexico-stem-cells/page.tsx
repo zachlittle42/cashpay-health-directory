@@ -6,7 +6,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'US vs Mexico Stem Cell Therapy: Cost, Legality & Safety Comparison',
+  title: { absolute: 'US vs Mexico Stem Cell Therapy: Cost, Legality & Safety Comparison' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/us-vs-mexico-stem-cells' },
   description: 'Compare stem cell therapy in the US vs Mexico. Cost differences ($15K-$50K vs $5K-$20K), FDA regulations vs COFEPRIS, and which is right for your condition.',
 };
 

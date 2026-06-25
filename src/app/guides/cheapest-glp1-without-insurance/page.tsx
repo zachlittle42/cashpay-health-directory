@@ -7,7 +7,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'Cheapest GLP-1 Without Insurance (2026): Price Compare',
+  title: { absolute: 'Cheapest GLP-1 Without Insurance (2026): Price Compare' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/cheapest-glp1-without-insurance' },
   description:
     'The cheapest GLP-1 without insurance in 2026 — semaglutide via NovoCare, tirzepatide via LillyDirect, telehealth, compounding, and a provider price table.',
 };
