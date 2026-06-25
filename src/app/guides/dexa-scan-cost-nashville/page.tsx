@@ -7,7 +7,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'DEXA Scan Cost Nashville: 2026 Prices & Local Clinics',
+  title: { absolute: 'DEXA Scan Cost Nashville: 2026 Prices & Local Clinics' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/dexa-scan-cost-nashville' },
   description: 'What a body-composition DEXA scan costs in Nashville in 2026 — $39.95 to $215 across real local clinics, the Tennessee physician-order rule, how to save.',
 };
 

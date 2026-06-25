@@ -5,7 +5,8 @@ import MedicalDisclaimer from '@/components/MedicalDisclaimer';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Continuous Glucose Monitor Without Diabetes: 2026 Guide',
+  title: { absolute: 'Continuous Glucose Monitor Without Diabetes: 2026 Guide' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/cgm-without-diabetes' },
   description: 'Should healthy people wear a CGM? A 2026 guide to over-the-counter glucose monitors (Stelo, Lingo, Levels), what you can learn, accuracy limits, and real costs.',
   keywords: ['CGM without diabetes', 'continuous glucose monitor', 'Dexcom Stelo', 'Abbott Lingo', 'Levels', 'Nutrisense', 'glucose monitoring', 'metabolic health', 'OTC CGM'],
 };

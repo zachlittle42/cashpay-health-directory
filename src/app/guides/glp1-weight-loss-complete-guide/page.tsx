@@ -3,7 +3,8 @@ import type { Metadata } from 'next';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 
 export const metadata: Metadata = {
-  title: 'GLP-1 for Weight Loss: Complete Guide (2024) | Semaglutide & Tirzepatide',
+  title: { absolute: 'GLP-1 for Weight Loss: Complete Guide (2024) | Semaglutide & Tirzepatide' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/glp1-weight-loss-complete-guide' },
   description: 'Everything you need to know about GLP-1 medications like Ozempic, Wegovy, and Mounjaro for weight loss. How they work, results, side effects, and costs.',
 };
 

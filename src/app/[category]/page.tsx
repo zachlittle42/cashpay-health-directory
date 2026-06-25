@@ -355,6 +355,42 @@ export default function CategoryPage({
                     </div>
                   </div>
                 </Link>
+                <Link href="/guides/wegovy-vs-ozempic" className="block rounded-lg bg-white border border-blue-200 p-5 hover:shadow-md transition-shadow">
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl">⚖️</span>
+                    <div>
+                      <div className="font-semibold text-gray-900">Wegovy vs Ozempic</div>
+                      <div className="text-sm text-gray-600 mt-1">How the two semaglutide brands compare on cost and use</div>
+                    </div>
+                  </div>
+                </Link>
+                <Link href="/guides/cheapest-glp1-without-insurance" className="block rounded-lg bg-white border border-blue-200 p-5 hover:shadow-md transition-shadow">
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl">💰</span>
+                    <div>
+                      <div className="font-semibold text-gray-900">Cheapest GLP-1 Without Insurance</div>
+                      <div className="text-sm text-gray-600 mt-1">Lowest cash-pay paths to semaglutide and tirzepatide</div>
+                    </div>
+                  </div>
+                </Link>
+                <Link href="/guides/best-glp1-weight-loss-programs" className="block rounded-lg bg-white border border-blue-200 p-5 hover:shadow-md transition-shadow">
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl">🏆</span>
+                    <div>
+                      <div className="font-semibold text-gray-900">Best GLP-1 Weight-Loss Programs</div>
+                      <div className="text-sm text-gray-600 mt-1">Compared on price, telehealth, and ongoing support</div>
+                    </div>
+                  </div>
+                </Link>
+                <Link href="/guides/ozempic-alternatives" className="block rounded-lg bg-white border border-blue-200 p-5 hover:shadow-md transition-shadow">
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl">🔁</span>
+                    <div>
+                      <div className="font-semibold text-gray-900">Ozempic Alternatives</div>
+                      <div className="text-sm text-gray-600 mt-1">Other GLP-1 and non-GLP-1 options to consider</div>
+                    </div>
+                  </div>
+                </Link>
               </>
             )}
             {categorySlug === 'hair_transplant' && (
@@ -399,6 +435,78 @@ export default function CategoryPage({
                     </div>
                   </div>
                 </Link>
+                <Link href="/guides/best-at-home-lab-tests" className="block rounded-lg bg-white border border-blue-200 p-5 hover:shadow-md transition-shadow">
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl">🏆</span>
+                    <div>
+                      <div className="font-semibold text-gray-900">Best At-Home Lab Tests</div>
+                      <div className="text-sm text-gray-600 mt-1">Top kits compared on panels, price, and turnaround</div>
+                    </div>
+                  </div>
+                </Link>
+                <Link href="/guides/cheapest-blood-test-panels" className="block rounded-lg bg-white border border-blue-200 p-5 hover:shadow-md transition-shadow">
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl">💰</span>
+                    <div>
+                      <div className="font-semibold text-gray-900">Cheapest Blood Test Panels</div>
+                      <div className="text-sm text-gray-600 mt-1">Lowest cash-pay panels and where to order them</div>
+                    </div>
+                  </div>
+                </Link>
+                <Link href="/guides/quest-vs-labcorp-pricing" className="block rounded-lg bg-white border border-blue-200 p-5 hover:shadow-md transition-shadow">
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl">⚖️</span>
+                    <div>
+                      <div className="font-semibold text-gray-900">Quest vs Labcorp Pricing</div>
+                      <div className="text-sm text-gray-600 mt-1">How the two major labs compare on cash-pay cost</div>
+                    </div>
+                  </div>
+                </Link>
+                <Link href="/guides/are-at-home-blood-tests-accurate" className="block rounded-lg bg-white border border-blue-200 p-5 hover:shadow-md transition-shadow">
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl">🔬</span>
+                    <div>
+                      <div className="font-semibold text-gray-900">Are At-Home Blood Tests Accurate?</div>
+                      <div className="text-sm text-gray-600 mt-1">What the evidence says on reliability and limits</div>
+                    </div>
+                  </div>
+                </Link>
+                <Link href="/guides/how-to-read-blood-test-results" className="block rounded-lg bg-white border border-blue-200 p-5 hover:shadow-md transition-shadow">
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl">📊</span>
+                    <div>
+                      <div className="font-semibold text-gray-900">How to Read Blood Test Results</div>
+                      <div className="text-sm text-gray-600 mt-1">Reference ranges and what common markers mean</div>
+                    </div>
+                  </div>
+                </Link>
+                <Link href="/guides/at-home-thyroid-test" className="block rounded-lg bg-white border border-blue-200 p-5 hover:shadow-md transition-shadow">
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl">🦋</span>
+                    <div>
+                      <div className="font-semibold text-gray-900">At-Home Thyroid Test</div>
+                      <div className="text-sm text-gray-600 mt-1">TSH, T3, and T4 testing from home and what to expect</div>
+                    </div>
+                  </div>
+                </Link>
+                <Link href="/guides/everlywell-review" className="block rounded-lg bg-white border border-blue-200 p-5 hover:shadow-md transition-shadow">
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl">📝</span>
+                    <div>
+                      <div className="font-semibold text-gray-900">Everlywell Review</div>
+                      <div className="text-sm text-gray-600 mt-1">Panels, pricing, and accuracy of the at-home kits</div>
+                    </div>
+                  </div>
+                </Link>
+                <Link href="/guides/function-health-review" className="block rounded-lg bg-white border border-blue-200 p-5 hover:shadow-md transition-shadow">
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl">📝</span>
+                    <div>
+                      <div className="font-semibold text-gray-900">Function Health Review</div>
+                      <div className="text-sm text-gray-600 mt-1">The 100+ biomarker membership, tested and priced</div>
+                    </div>
+                  </div>
+                </Link>
               </>
             )}
             {categorySlug === 'bariatric' && (
@@ -424,15 +532,53 @@ export default function CategoryPage({
               </>
             )}
             {categorySlug === 'dexa' && (
-              <Link href="/guides/dexa-scan-guide" className="block rounded-lg bg-white border border-blue-200 p-5 hover:shadow-md transition-shadow md:col-span-2">
-                <div className="flex items-start gap-3">
-                  <span className="text-2xl">📖</span>
-                  <div>
-                    <div className="font-semibold text-gray-900">DEXA Scan Complete Guide</div>
-                    <div className="text-sm text-gray-600 mt-1">What DEXA measures, why it beats BMI, and how to use it</div>
+              <>
+                <Link href="/guides/dexa-scan-guide" className="block rounded-lg bg-white border border-blue-200 p-5 hover:shadow-md transition-shadow">
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl">📖</span>
+                    <div>
+                      <div className="font-semibold text-gray-900">DEXA Scan Complete Guide</div>
+                      <div className="text-sm text-gray-600 mt-1">What DEXA measures, why it beats BMI, and how to use it</div>
+                    </div>
                   </div>
-                </div>
-              </Link>
+                </Link>
+                <Link href="/guides/cheapest-dexa-scan" className="block rounded-lg bg-white border border-blue-200 p-5 hover:shadow-md transition-shadow">
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl">💰</span>
+                    <div>
+                      <div className="font-semibold text-gray-900">Cheapest DEXA Scan</div>
+                      <div className="text-sm text-gray-600 mt-1">Lowest cash-pay options and how to find them near you</div>
+                    </div>
+                  </div>
+                </Link>
+                <Link href="/guides/are-dexa-scans-worth-it" className="block rounded-lg bg-white border border-blue-200 p-5 hover:shadow-md transition-shadow">
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl">🤔</span>
+                    <div>
+                      <div className="font-semibold text-gray-900">Are DEXA Scans Worth It?</div>
+                      <div className="text-sm text-gray-600 mt-1">When the cost makes sense for tracking body composition</div>
+                    </div>
+                  </div>
+                </Link>
+                <Link href="/guides/dexa-vs-inbody-vs-bodpod" className="block rounded-lg bg-white border border-blue-200 p-5 hover:shadow-md transition-shadow">
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl">⚖️</span>
+                    <div>
+                      <div className="font-semibold text-gray-900">DEXA vs InBody vs BodPod</div>
+                      <div className="text-sm text-gray-600 mt-1">Accuracy, cost, and access of the three methods compared</div>
+                    </div>
+                  </div>
+                </Link>
+                <Link href="/guides/dexafit-cost" className="block rounded-lg bg-white border border-blue-200 p-5 hover:shadow-md transition-shadow">
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl">🏷️</span>
+                    <div>
+                      <div className="font-semibold text-gray-900">DexaFit Cost</div>
+                      <div className="text-sm text-gray-600 mt-1">DexaFit pricing, memberships, and what is included</div>
+                    </div>
+                  </div>
+                </Link>
+              </>
             )}
             {(categorySlug === 'dental' || categorySlug === 'plastic_surgery' || categorySlug === 'fertility') && (
               <>

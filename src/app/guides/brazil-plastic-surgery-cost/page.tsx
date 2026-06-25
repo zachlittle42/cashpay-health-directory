@@ -6,7 +6,8 @@ import type { Metadata } from 'next';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 
 export const metadata: Metadata = {
-  title: 'Brazil Plastic Surgery Cost 2026: BBL, Lipo & Tummy Tuck',
+  title: { absolute: 'Brazil Plastic Surgery Cost 2026: BBL, Lipo & Tummy Tuck' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/brazil-plastic-surgery-cost' },
   description:
     'What plastic surgery costs in Brazil vs the US in 2026. BBL ($3,500-6,000), liposuction, tummy tuck, breast augmentation & mommy makeover prices, with 40-60% typical savings. Estimates to verify with each clinic.',
 };

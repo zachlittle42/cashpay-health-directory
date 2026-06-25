@@ -7,7 +7,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'DEXA Scan Cost Houston: 2026 Price Guide & Clinics',
+  title: { absolute: 'DEXA Scan Cost Houston: 2026 Price Guide & Clinics' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/dexa-scan-cost-houston' },
   description: 'What a body-composition DEXA scan costs in Houston in 2026 — $39.95 mobile vans to ~$200 studios. Six real Houston clinics, what drives price, how to save.',
 };
 

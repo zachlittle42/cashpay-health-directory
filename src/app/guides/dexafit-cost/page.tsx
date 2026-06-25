@@ -7,7 +7,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'DexaFit Cost: DEXA, VO2 Max & RMR Prices (2026)',
+  title: { absolute: 'DexaFit Cost: DEXA, VO2 Max & RMR Prices (2026)' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/dexafit-cost' },
   description: 'What DexaFit costs in 2026 — DEXA scans, VO2 max, RMR, and 2-/3-service bundles by location ($119-$575), plus how it compares to BodySpec.',
 };
 

@@ -4,7 +4,8 @@ import Footer from '@/components/Footer';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'How Many Hair Grafts Do I Need? Complete Guide & Calculator (2025)',
+  title: { absolute: 'How Many Hair Grafts Do I Need? Complete Guide & Calculator (2025)' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/hair-transplant-grafts-guide' },
   description: 'Find out how many hair grafts you need based on your Norwood scale level. Includes graft calculator, cost estimates, and what affects your hair transplant results.',
   keywords: ['hair grafts', 'hair transplant grafts', 'Norwood scale', 'hair transplant calculator', 'FUE grafts', 'DHI grafts', 'hair transplant cost per graft'],
 };

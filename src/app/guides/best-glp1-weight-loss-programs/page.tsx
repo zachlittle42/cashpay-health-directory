@@ -6,7 +6,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'Best GLP-1 Weight Loss Programs Compared (2026)',
+  title: { absolute: 'Best GLP-1 Weight Loss Programs Compared (2026)' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/best-glp1-weight-loss-programs' },
   description:
     'Best GLP-1 weight loss programs in 2026 compared — Hims, Ro, Calibrate, Found, WeightWatchers, Henry Meds — on meds, coaching, cost, and who each fits.',
 };

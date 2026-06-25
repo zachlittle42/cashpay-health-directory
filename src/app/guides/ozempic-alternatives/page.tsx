@@ -7,7 +7,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'Ozempic Alternatives in 2026: Real Options & Costs',
+  title: { absolute: 'Ozempic Alternatives in 2026: Real Options & Costs' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/ozempic-alternatives' },
   description: 'The real Ozempic alternatives in 2026 — Wegovy, Zepbound, the oral semaglutide pill, compounded GLP-1s, and non-GLP-1 pills — with current cash prices.',
 };
 

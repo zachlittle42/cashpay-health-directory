@@ -7,7 +7,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'Are At-Home Blood Tests Accurate? 2026 Evidence Guide',
+  title: { absolute: 'Are At-Home Blood Tests Accurate? 2026 Evidence Guide' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/are-at-home-blood-tests-accurate' },
   description:
     'How accurate at-home blood tests are vs a venous draw, what hurts finger-prick accuracy, which markers are reliable, and when to confirm at a lab.',
 };

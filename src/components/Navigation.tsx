@@ -192,6 +192,12 @@ export default function Navigation() {
                     <Link href="/guides/cheapest-way-to-get-semaglutide" className="block text-sm text-gray-700 hover:text-blue-600 py-1">
                       💊 Cheapest Semaglutide
                     </Link>
+                    <Link href="/guides/best-glp1-weight-loss-programs" className="block text-sm text-gray-700 hover:text-blue-600 py-1">
+                      💊 Best GLP-1 Programs
+                    </Link>
+                    <Link href="/guides/medical-tourism-packages" className="block text-sm text-gray-700 hover:text-blue-600 py-1">
+                      ✈️ Medical Tourism Packages
+                    </Link>
                   </div>
 
                   <div className="border-t border-gray-200 pt-3 mb-2">
@@ -508,6 +514,8 @@ export default function Navigation() {
                   <Link href="/guides/india-medical-tourism-guide" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>🇮🇳 India Medical Tourism</Link>
                   <Link href="/guides/wegovy-vs-ozempic" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>💊 Wegovy vs Ozempic</Link>
                   <Link href="/guides/cheapest-way-to-get-semaglutide" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>💊 Cheapest Semaglutide</Link>
+                  <Link href="/guides/best-glp1-weight-loss-programs" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>💊 Best GLP-1 Programs</Link>
+                  <Link href="/guides/medical-tourism-packages" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>✈️ Medical Tourism Packages</Link>
                   <div className="border-t border-gray-100 my-2"></div>
                   <div className="text-xs font-semibold text-gray-500 uppercase mb-2 px-3">Longevity & Stem Cells</div>
                   <Link href="/longevity" className="block py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg px-3" onClick={closeMenu}>⏳ Longevity Hub</Link>

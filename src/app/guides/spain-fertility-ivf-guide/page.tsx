@@ -2,7 +2,8 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Spain IVF & Fertility Tourism: Complete Guide for Americans (2024)',
+  title: { absolute: 'Spain IVF & Fertility Tourism: Complete Guide for Americans (2024)' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/spain-fertility-ivf-guide' },
   description: 'Plan your fertility treatment in Spain. IVF costs $5,000-8,000, donor egg success rates 55-60%. Barcelona, Madrid, Valencia clinic recommendations.',
 };
 

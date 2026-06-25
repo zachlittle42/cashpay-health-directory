@@ -7,7 +7,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'Hair Transplant Turkey Cost (2026): FUE & DHI Prices',
+  title: { absolute: 'Hair Transplant Turkey Cost (2026): FUE & DHI Prices' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/hair-transplant-turkey-cost' },
   description:
     'What a hair transplant in Turkey costs in 2026 — FUE vs DHI per-graft and all-inclusive package prices, what packages include, and how to vet a clinic.',
 };

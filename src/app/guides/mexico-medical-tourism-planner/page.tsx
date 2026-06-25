@@ -2,7 +2,8 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Mexico Medical Tourism: Complete Trip Planning Guide (2024)',
+  title: { absolute: 'Mexico Medical Tourism: Complete Trip Planning Guide (2024)' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/mexico-medical-tourism-planner' },
   description: 'Step-by-step guide to planning medical tourism in Mexico. Border crossing, Tijuana vs Los Algodones, what to pack, and trip timeline.',
 };
 

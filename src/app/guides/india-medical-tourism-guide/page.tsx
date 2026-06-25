@@ -6,7 +6,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'India Medical Tourism: Cost, Hospitals & Safety Guide',
+  title: { absolute: 'India Medical Tourism: Cost, Hospitals & Safety Guide' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/india-medical-tourism-guide' },
   description: 'India medical tourism guide: cardiac, ortho, oncology & IVF costs vs the US, JCI/NABH hospitals (Apollo, Fortis, Max), e-Medical Visa, and vetting tips.',
 };
 

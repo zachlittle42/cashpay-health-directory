@@ -6,7 +6,8 @@ import type { Metadata } from 'next';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 
 export const metadata: Metadata = {
-  title: 'Spain IVF Cost 2026: US vs Spain Price Comparison',
+  title: { absolute: 'Spain IVF Cost 2026: US vs Spain Price Comparison' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/spain-ivf-cost' },
   description:
     'What IVF and egg donation actually cost in Spain in 2026. US IVF runs $15,000-30,000; Spain runs roughly $5,000-9,000 (40-65% less). Cost by procedure, what is included, and how to choose a clinic safely. Estimates to verify with each clinic.',
 };

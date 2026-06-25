@@ -5,7 +5,8 @@ import MedicalDisclaimer from '@/components/MedicalDisclaimer';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'How Much Does Botox Cost? 2026 Price Guide',
+  title: { absolute: 'How Much Does Botox Cost? 2026 Price Guide' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/botox-cost-guide' },
   description: 'How much does Botox cost in 2026? A clear guide to per-unit vs per-area pricing, typical units for forehead, frown lines and crow\'s feet, and how to save.',
   keywords: ['Botox cost', 'how much does Botox cost', 'Botox price per unit', 'Botox units forehead', 'Dysport cost', 'Xeomin', 'Jeuveau', 'Botox cost guide', 'neuromodulator pricing'],
 };

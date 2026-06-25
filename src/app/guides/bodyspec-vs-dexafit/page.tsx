@@ -4,7 +4,8 @@ import Footer from '@/components/Footer';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'BodySpec vs DexaFit: DEXA Scan Comparison (2025)',
+  title: { absolute: 'BodySpec vs DexaFit: DEXA Scan Comparison (2025)' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/bodyspec-vs-dexafit' },
   description: 'BodySpec vs DexaFit DEXA scan comparison. Compare pricing ($40-60 vs $119-179), locations, reports, and which body composition scanning service is best for you.',
   keywords: ['BodySpec', 'DexaFit', 'DEXA scan', 'body composition', 'body fat test', 'DEXA near me', 'bone density scan'],
 };

@@ -5,7 +5,8 @@ import MedicalDisclaimer from '@/components/MedicalDisclaimer';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Tretinoin Online: How to Get It in 2026',
+  title: { absolute: 'Tretinoin Online: How to Get It in 2026' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/tretinoin-online' },
   description: 'How to get tretinoin online in 2026: how telederm services prescribe it, typical costs ($20-$50/mo), what to expect, safety, and how to choose a provider.',
   keywords: ['tretinoin online', 'tretinoin prescription', 'retinoid online', 'online dermatology', 'Curology', 'Apostrophe', 'Musely', 'tretinoin cost', 'prescription retinoid'],
 };

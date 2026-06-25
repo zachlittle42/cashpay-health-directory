@@ -4,7 +4,8 @@ import Footer from '@/components/Footer';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Everlywell vs LetsGetChecked: At-Home Lab Test Comparison (2025)',
+  title: { absolute: 'Everlywell vs LetsGetChecked: At-Home Lab Test Comparison (2025)' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/everlywell-vs-letsgetchecked' },
   description: 'Everlywell vs LetsGetChecked comparison. Compare pricing, test accuracy, turnaround time, and which at-home lab testing service is best for your needs.',
   keywords: ['Everlywell', 'LetsGetChecked', 'at-home lab test', 'blood test at home', 'STD test', 'hormone test', 'health testing'],
 };

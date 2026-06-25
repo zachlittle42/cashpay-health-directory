@@ -6,7 +6,8 @@ import type { Metadata } from 'next';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 
 export const metadata: Metadata = {
-  title: 'Cosmetic Surgery Thailand Cost (2026): Prices vs the US',
+  title: { absolute: 'Cosmetic Surgery Thailand Cost (2026): Prices vs the US' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/thailand-cosmetic-surgery-cost' },
   description:
     'What cosmetic surgery actually costs in Thailand in 2026 — rhinoplasty, breast augmentation, facelift, liposuction, and tummy tuck — vs US prices, with 50-70% savings, what is included, and how to vet an accredited clinic. Estimates to confirm with each provider.',
 };

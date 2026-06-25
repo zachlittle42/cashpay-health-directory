@@ -6,7 +6,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'All-Inclusive Bariatric Surgery Abroad: What’s Bundled',
+  title: { absolute: 'All-Inclusive Bariatric Surgery Abroad: What’s Bundled' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/all-inclusive-bariatric-surgery-abroad' },
   description:
     'All-inclusive gastric sleeve & bypass packages abroad in 2026 — Mexico ~$4,295–$7,000, Turkey ~$3,200–$6,000. What’s bundled, what isn’t, and how to vet.',
 };

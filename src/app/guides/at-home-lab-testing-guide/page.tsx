@@ -2,7 +2,8 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'At-Home Lab Testing Guide: How It Works, Accuracy & What to Test (2024)',
+  title: { absolute: 'At-Home Lab Testing Guide: How It Works, Accuracy & What to Test (2024)' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/at-home-lab-testing-guide' },
   description: 'Complete guide to at-home blood tests. Learn how they work, accuracy vs traditional labs, what biomarkers to test, and which services to use.',
 };
 

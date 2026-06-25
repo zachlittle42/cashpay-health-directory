@@ -2,7 +2,8 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Medical Travel Insurance Guide: What You Actually Need (2024)',
+  title: { absolute: 'Medical Travel Insurance Guide: What You Actually Need (2024)' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/medical-travel-insurance-guide' },
   description: 'Complete guide to insurance for medical tourism. What standard travel insurance covers vs doesn\'t, medical tourism-specific insurance, and recommendations.',
 };
 

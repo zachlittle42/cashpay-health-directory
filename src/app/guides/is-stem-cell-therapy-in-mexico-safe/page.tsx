@@ -7,7 +7,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'Is Stem Cell Therapy in Mexico Safe? Risks & Red Flags',
+  title: { absolute: 'Is Stem Cell Therapy in Mexico Safe? Risks & Red Flags' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/is-stem-cell-therapy-in-mexico-safe' },
   description:
     'Is stem cell therapy in Mexico safe? How COFEPRIS regulation works, the documented infection risks, the red flags, and how to vet a clinic before you go.',
 };

@@ -5,7 +5,8 @@ import type { Metadata } from 'next';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 
 export const metadata: Metadata = {
-  title: 'Stem Cell Therapy in Mexico: Clinics, Costs & What to Know (2024)',
+  title: { absolute: 'Stem Cell Therapy in Mexico: Clinics, Costs & What to Know (2024)' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/mexico-stem-cell-guide' },
   description: 'Complete guide to stem cell therapy in Mexico. Tijuana, Los Cabos, Cancun clinics. Costs from $3,500. What treatments are available, safety considerations, and how to choose a clinic.',
 };
 

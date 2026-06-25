@@ -4,7 +4,8 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Cayman Islands Stem Cell Guide: DVC Stem, Regenexx-C',
+  title: { absolute: 'Cayman Islands Stem Cell Guide: DVC Stem, Regenexx-C' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/cayman-islands-stem-cell-guide' },
   description: 'Complete guide to stem cell therapy in Grand Cayman. DVC Stem, Regenexx-C expanded cells, strictest regulation. Costs $30,000-60,000.',
 };
 

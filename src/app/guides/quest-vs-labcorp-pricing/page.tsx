@@ -6,7 +6,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'Quest Diagnostics vs Labcorp Prices: Self-Pay Cost Guide',
+  title: { absolute: 'Quest Diagnostics vs Labcorp Prices: Self-Pay Cost Guide' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/quest-vs-labcorp-pricing' },
   description: 'Quest Diagnostics vs Labcorp prices for self-pay lab tests. Compare questhealth.com and Labcorp OnDemand on cost, panels, locations, and turnaround.',
 };
 

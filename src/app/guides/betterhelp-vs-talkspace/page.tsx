@@ -5,7 +5,8 @@ import MedicalDisclaimer from '@/components/MedicalDisclaimer';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'BetterHelp vs Talkspace vs Brightside (2026)',
+  title: { absolute: 'BetterHelp vs Talkspace vs Brightside (2026)' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/betterhelp-vs-talkspace' },
   description: 'Compare BetterHelp, Talkspace, and Brightside on therapy vs psychiatry, insurance coverage, messaging vs video format, and estimated monthly pricing.',
   keywords: ['BetterHelp vs Talkspace', 'online therapy', 'Brightside', 'online psychiatry', 'teletherapy', 'mental health platforms', 'online therapy cost', 'therapy vs psychiatry'],
 };

@@ -5,7 +5,8 @@ import MedicalDisclaimer from '@/components/MedicalDisclaimer';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'How Much Does Laser Hair Removal Cost? (2026)',
+  title: { absolute: 'How Much Does Laser Hair Removal Cost? (2026)' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/laser-hair-removal-cost' },
   description: 'How much does laser hair removal cost in 2026? A clear guide to per-session and full-package pricing by body area, why it takes a series of sessions, and what affects price.',
   keywords: ['laser hair removal cost', 'how much does laser hair removal cost', 'laser hair removal price', 'laser hair removal per session', 'Milan Laser cost', 'laser hair removal packages', 'laser hair removal cost by area', 'unlimited laser hair removal'],
 };

@@ -6,7 +6,8 @@ import type { Metadata } from 'next';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 
 export const metadata: Metadata = {
-  title: 'Panama Dental Cost 2026: Implants & Crowns vs US Prices',
+  title: { absolute: 'Panama Dental Cost 2026: Implants & Crowns vs US Prices' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/panama-dental-cost' },
   description:
     'Dental implants and crowns in Panama City cost 50-70% less than the US. Implants ~$1,500-2,100 (vs $3,000-6,000), crowns ~$400-750. Estimates, what is included, and how to vet a clinic safely.',
 };

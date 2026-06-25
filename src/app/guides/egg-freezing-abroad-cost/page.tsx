@@ -7,7 +7,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'Egg Freezing Abroad Cost (2026): Prices vs the US',
+  title: { absolute: 'Egg Freezing Abroad Cost (2026): Prices vs the US' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/egg-freezing-abroad-cost' },
   description:
     'Egg freezing abroad: ~€2,000-4,700/cycle vs $12,000-20,000 in the US. Spain, Czech, Greece & N. Cyprus prices, eligibility laws, how to choose a clinic.',
 };

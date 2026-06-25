@@ -7,7 +7,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'DEXA Scan Cost Orange County: 2026 Price Guide',
+  title: { absolute: 'DEXA Scan Cost Orange County: 2026 Price Guide' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/dexa-scan-cost-orange-county' },
   description: 'What a DEXA body-composition scan costs in Orange County in 2026 — from ~$39 BodySpec mobile to $119-179 DexaFit Irvine. OC clinics and how to save.',
 };
 

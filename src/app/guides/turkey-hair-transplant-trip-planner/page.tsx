@@ -2,7 +2,8 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Turkey Hair Transplant Trip Planner: 7-Day Istanbul Guide (2024)',
+  title: { absolute: 'Turkey Hair Transplant Trip Planner: 7-Day Istanbul Guide (2024)' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/turkey-hair-transplant-trip-planner' },
   description: 'Complete planning guide for your hair transplant trip to Istanbul. Flights, hotels, packing list, day-by-day timeline, and recovery tips.',
 };
 

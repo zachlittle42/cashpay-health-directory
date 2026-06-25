@@ -7,7 +7,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'CIRS Telehealth Treatment: Affordable Online Mold Plans',
+  title: { absolute: 'CIRS Telehealth Treatment: Affordable Online Mold Plans' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/cirs-telehealth-treatment' },
   description: 'Affordable CIRS telehealth in 2026: under-$300/mo plans with lab panels, teleconsults, and mailed prescriptions, plus how to choose a legit program.',
 };
 

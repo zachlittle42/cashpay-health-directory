@@ -4,7 +4,8 @@ import Footer from '@/components/Footer';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Best Online TRT Clinics Compared (2025): Fountain, Marek, TRT Nation',
+  title: { absolute: 'Best Online TRT Clinics Compared (2025): Fountain, Marek, TRT Nation' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/best-online-trt-clinics' },
   description: 'Compare the top online TRT clinics for 2025: pricing, services, medications, and which clinic is best for your needs. Fountain TRT, Marek Health, TRT Nation and more.',
   keywords: ['online TRT clinics', 'best TRT clinic', 'Fountain TRT', 'Marek Health', 'TRT Nation', 'telehealth TRT', 'testosterone replacement therapy'],
 };

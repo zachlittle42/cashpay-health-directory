@@ -7,7 +7,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'RMR Test Cost (2026): Resting Metabolic Rate Prices',
+  title: { absolute: 'RMR Test Cost (2026): Resting Metabolic Rate Prices' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/rmr-test-cost' },
   description:
     'What an RMR (resting metabolic rate) test costs in 2026 — typically $85-$179 cash-pay — how the breath test works, and how it sets your calorie target.',
 };

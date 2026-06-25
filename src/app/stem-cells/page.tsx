@@ -359,6 +359,58 @@ export default function StemCellsHub() {
         </div>
       </section>
 
+      {/* Related Guides & Comparisons */}
+      <section className="mx-auto max-w-6xl px-4 py-12">
+        <h2 className="text-2xl font-bold text-gray-900 mb-8">Guides &amp; Comparisons</h2>
+
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <Link href="/guides/stem-cell-therapy-cost" className="block bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow">
+            <span className="text-3xl mb-3 block">💰</span>
+            <h3 className="font-bold text-gray-900 mb-2">Stem Cell Therapy Cost</h3>
+            <p className="text-sm text-gray-600 mb-3">
+              What stem cell treatment actually costs by country, condition, and protocol.
+            </p>
+            <span className="text-sm font-medium text-indigo-600">Read guide →</span>
+          </Link>
+
+          <Link href="/guides/us-vs-mexico-stem-cells" className="block bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow">
+            <span className="text-3xl mb-3 block">🆚</span>
+            <h3 className="font-bold text-gray-900 mb-2">US vs Mexico Stem Cells</h3>
+            <p className="text-sm text-gray-600 mb-3">
+              How domestic options compare to crossing the border for treatment.
+            </p>
+            <span className="text-sm font-medium text-indigo-600">Read guide →</span>
+          </Link>
+
+          <Link href="/guides/regenexx-vs-bioxcellerator" className="block bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow">
+            <span className="text-3xl mb-3 block">🆚</span>
+            <h3 className="font-bold text-gray-900 mb-2">Regenexx vs BioXcellerator</h3>
+            <p className="text-sm text-gray-600 mb-3">
+              Comparing two leading providers on protocols, pricing, and outcomes.
+            </p>
+            <span className="text-sm font-medium text-indigo-600">Read guide →</span>
+          </Link>
+
+          <Link href="/guides/is-stem-cell-therapy-in-mexico-safe" className="block bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow">
+            <span className="text-3xl mb-3 block">🛡️</span>
+            <h3 className="font-bold text-gray-900 mb-2">Is Stem Cell Therapy in Mexico Safe?</h3>
+            <p className="text-sm text-gray-600 mb-3">
+              Regulation, clinic vetting, and red flags to watch before you book.
+            </p>
+            <span className="text-sm font-medium text-indigo-600">Read guide →</span>
+          </Link>
+
+          <Link href="/guides/mexico-stem-cell-guide" className="block bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow">
+            <span className="text-3xl mb-3 block">🇲🇽</span>
+            <h3 className="font-bold text-gray-900 mb-2">Stem Cell Therapy in Mexico</h3>
+            <p className="text-sm text-gray-600 mb-3">
+              Complete guide to clinics, costs, what to expect, and safety considerations.
+            </p>
+            <span className="text-sm font-medium text-indigo-600">Read guide →</span>
+          </Link>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="bg-gradient-to-r from-indigo-600 to-purple-600 px-4 py-16">
         <div className="mx-auto max-w-4xl text-center">

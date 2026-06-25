@@ -5,7 +5,8 @@ import MedicalDisclaimer from '@/components/MedicalDisclaimer';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'NMN vs NR: Best NAD+ Supplement in 2026?',
+  title: { absolute: 'NMN vs NR: Best NAD+ Supplement in 2026?' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/best-nad-supplement' },
   description: 'NMN vs NR for boosting NAD+ in 2026: how the two precursors differ in evidence, regulatory status, leading brands, cost, and how to choose a quality product.',
   keywords: ['best NAD+ supplement', 'NMN vs NR', 'nicotinamide riboside', 'nicotinamide mononucleotide', 'Tru Niagen', 'NMN supplement', 'NAD+ precursor', 'longevity supplements'],
 };

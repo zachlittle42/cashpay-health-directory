@@ -7,7 +7,8 @@ import MedicalDisclaimer from '@/components/MedicalDisclaimer';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'Medical Tourism Packages: What All-Inclusive Covers',
+  title: { absolute: 'Medical Tourism Packages: What All-Inclusive Covers' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/medical-tourism-packages' },
   description: 'How all-inclusive medical vacation packages work: what is bundled, what is NOT, prices by procedure and destination, and how to vet an operator.',
 };
 

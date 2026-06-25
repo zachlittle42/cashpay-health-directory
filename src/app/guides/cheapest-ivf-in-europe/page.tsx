@@ -7,7 +7,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'Cheapest IVF in Europe (2026): Country Cost Compare',
+  title: { absolute: 'Cheapest IVF in Europe (2026): Country Cost Compare' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/cheapest-ivf-in-europe' },
   description:
     'The cheapest IVF in Europe in 2026: Czech Republic, Poland, North Cyprus, Greece and Spain own-egg vs donor-egg cycle prices compared, and how to choose.',
 };

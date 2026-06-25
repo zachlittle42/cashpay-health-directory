@@ -7,7 +7,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'At-Home Testosterone Test: Accuracy, Cost & When to Confirm',
+  title: { absolute: 'At-Home Testosterone Test: Accuracy, Cost & When to Confirm' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/at-home-testosterone-test' },
   description:
     'How at-home testosterone tests work, how accurate finger-prick kits are vs a lab draw, what they cost, and when to confirm low results with a clinician.',
 };

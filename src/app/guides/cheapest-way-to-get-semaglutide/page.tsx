@@ -7,7 +7,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'Cheapest Way to Get Semaglutide Without Insurance (2026)',
+  title: { absolute: 'Cheapest Way to Get Semaglutide Without Insurance (2026)' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/cheapest-way-to-get-semaglutide' },
   description:
     'The cheapest legitimate ways to get semaglutide without insurance in 2026 — NovoCare self-pay from $149-$349/mo, plus what changed with compounding.',
 };

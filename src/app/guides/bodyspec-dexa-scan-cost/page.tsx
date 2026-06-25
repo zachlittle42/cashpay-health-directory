@@ -7,7 +7,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'BodySpec Cost (2026): DEXA Scan Prices & Membership',
+  title: { absolute: 'BodySpec Cost (2026): DEXA Scan Prices & Membership' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/bodyspec-dexa-scan-cost' },
   description: 'What a BodySpec DEXA scan costs in 2026: one-time scans from ~$40 (baseline ~$59.95), $39.95/mo & $49.95/qtr memberships, and how it compares.',
 };
 

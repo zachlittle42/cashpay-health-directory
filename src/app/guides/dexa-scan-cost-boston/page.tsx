@@ -7,7 +7,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'DEXA Scan Cost Boston: 2026 Price Guide & Clinics',
+  title: { absolute: 'DEXA Scan Cost Boston: 2026 Price Guide & Clinics' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/dexa-scan-cost-boston' },
   description: 'What a body-composition DEXA scan costs in Boston in 2026 — $39.95 BodySpec vans to $180 Brookline studios. Real clinics, the spread, how to save.',
 };
 

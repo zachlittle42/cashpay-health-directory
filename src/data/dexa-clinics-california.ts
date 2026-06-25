@@ -455,6 +455,26 @@ export const californiaDexaClinics: DexaClinic[] = [
     reviewSource: 'Google',
     lastVerified: '2026-06-10',
   },
+  {
+    name: 'Fitnescity San Diego',
+    slug: 'fitnescity-sd',
+    address: '9500 Gilman Dr, La Jolla, CA 92093',
+    city: 'San Diego',
+    state: 'California',
+    stateSlug: 'california',
+    citySlug: 'san-diego',
+    scanTypes: ['DEXA', 'RMR', 'VO2max'],
+    priceRange: '$210/scan',
+    membership: 'Per-scan ($210); 2-4 scan packs drop to $185-200/scan; DEXA+RMR ($385) and DEXA+RMR+VO2 max ($650) bundles',
+    byAppointment: true,
+    mobile: false,
+    website: 'https://www.fitnescity.com/dexa-scan-in-san-diego-ca',
+    phone: '+1 888-348-6372',
+    description: 'National wellness-testing platform that books DEXA at the UC San Diego site in La Jolla (9500 Gilman Dr) and delivers an online results dashboard. The most premium San Diego option, with metabolic bundles (RMR, VO2 max) for athletes and executives wanting a full workup.',
+    highlights: ['Single DEXA $210; multi-scan packs $185-200/scan', 'Bundles DEXA with RMR ($385) and VO2 max ($650)', 'UC San Diego La Jolla site', 'Online results dashboard'],
+    bestFor: 'Clients wanting a university-site scan with metabolic bundles',
+    lastVerified: '2026-06-24',
+  },
 
   // =========================================================================
   // ORANGE COUNTY

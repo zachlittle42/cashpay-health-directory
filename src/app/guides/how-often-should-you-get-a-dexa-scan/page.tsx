@@ -7,7 +7,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'How Often Should You Get a DEXA Scan? (2026 Guide)',
+  title: { absolute: 'How Often Should You Get a DEXA Scan? (2026 Guide)' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/how-often-should-you-get-a-dexa-scan' },
   description:
     'How often to get a DEXA scan: every 8-12 weeks for active body recomposition, twice a year for maintenance — plus the radiation math behind the cadence.',
 };

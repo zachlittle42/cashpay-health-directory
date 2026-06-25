@@ -6,7 +6,8 @@ import type { Metadata } from 'next';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 
 export const metadata: Metadata = {
-  title: 'Colombia Plastic Surgery Cost 2026: BBL, Lipo & Breast vs US',
+  title: { absolute: 'Colombia Plastic Surgery Cost 2026: BBL, Lipo & Breast vs US' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/colombia-plastic-surgery-cost' },
   description:
     'BBL, liposuction, breast augmentation & tummy tuck prices in Colombia vs the US — save 40-70% in Medellín, Bogotá & Cali. Estimates to verify with each clinic.',
 };

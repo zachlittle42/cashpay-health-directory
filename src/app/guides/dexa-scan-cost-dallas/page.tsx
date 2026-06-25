@@ -7,7 +7,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'DEXA Scan Cost Dallas: 2026 Price Guide & DFW Clinics',
+  title: { absolute: 'DEXA Scan Cost Dallas: 2026 Price Guide & DFW Clinics' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/dexa-scan-cost-dallas' },
   description: 'What a DEXA scan costs in Dallas in 2026 — from $99 DexaFit specials to $235 Fitnescity scans. Real DFW clinics, the price spread, and how to save.',
 };
 

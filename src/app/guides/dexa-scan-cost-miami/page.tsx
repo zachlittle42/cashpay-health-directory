@@ -7,7 +7,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'DEXA Scan Cost Miami: 2026 Price Guide & Clinics',
+  title: { absolute: 'DEXA Scan Cost Miami: 2026 Price Guide & Clinics' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/dexa-scan-cost-miami' },
   description: 'What a body-composition DEXA scan costs in Miami in 2026 — from ~$35 BOD POD to $260 Fitnescity. Real clinics, the price spread, and how to save.',
 };
 

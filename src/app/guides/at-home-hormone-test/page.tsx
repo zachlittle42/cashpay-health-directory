@@ -7,7 +7,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'At-Home Hormone Test: What to Test, Accuracy & Cost',
+  title: { absolute: 'At-Home Hormone Test: What to Test, Accuracy & Cost' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/at-home-hormone-test' },
   description: 'At-home hormone tests for cortisol, estrogen, progesterone & testosterone — what to test, how accurate they are, sample type, and 2026 cash prices.',
 };
 

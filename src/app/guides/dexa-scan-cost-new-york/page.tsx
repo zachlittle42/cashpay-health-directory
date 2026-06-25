@@ -7,7 +7,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'DEXA Scan Cost New York: 2026 Price Guide & NYC Clinics',
+  title: { absolute: 'DEXA Scan Cost New York: 2026 Price Guide & NYC Clinics' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/dexa-scan-cost-new-york' },
   description: 'What a DEXA scan costs in NYC in 2026 — from $39.95 mobile vans to $255 studio packages. Real New York clinics, prices, and how to book a scan.',
 };
 

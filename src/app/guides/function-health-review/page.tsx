@@ -7,7 +7,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'Function Health Review Cost: 2026 Pricing & Worth It?',
+  title: { absolute: 'Function Health Review Cost: 2026 Pricing & Worth It?' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/function-health-review' },
   description: 'Function Health review: $365/year for 100+ biomarkers via Quest, accuracy, HSA/FSA eligibility, and how it compares to SuperPower and InsideTracker.',
 };
 

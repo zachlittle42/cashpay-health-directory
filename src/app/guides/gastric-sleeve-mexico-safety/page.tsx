@@ -2,7 +2,8 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Gastric Sleeve in Mexico: Safety Guide, Costs & What to Expect (2024)',
+  title: { absolute: 'Gastric Sleeve in Mexico: Safety Guide, Costs & What to Expect (2024)' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/gastric-sleeve-mexico-safety' },
   description: 'Is bariatric surgery in Tijuana safe? Complete guide to gastric sleeve in Mexico including safety data, choosing a surgeon, costs, and recovery.',
 };
 

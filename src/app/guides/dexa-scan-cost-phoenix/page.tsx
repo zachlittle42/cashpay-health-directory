@@ -7,7 +7,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'DEXA Scan Cost Phoenix: 2026 Price Guide & AZ Clinics',
+  title: { absolute: 'DEXA Scan Cost Phoenix: 2026 Price Guide & AZ Clinics' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/dexa-scan-cost-phoenix' },
   description: 'What a body-composition DEXA scan costs in Phoenix in 2026 — from ~$75 Scottsdale studios to $180 bookings. Real Valley clinics, prices, how to save.',
 };
 

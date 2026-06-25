@@ -6,7 +6,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'Tijuana Medical Tourism: Dental, Bariatric & Stem Cell Guide',
+  title: { absolute: 'Tijuana Medical Tourism: Dental, Bariatric & Stem Cell Guide' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/tijuana-medical-tourism-guide' },
   description: 'Tijuana medical tourism guide: dental, bariatric, and stem cell care 20 min from San Diego. Cost estimates, how to vet clinics, and the border lane.',
 };
 

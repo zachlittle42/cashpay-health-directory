@@ -208,6 +208,40 @@ export default function DexaScansHub() {
         </div>
       </section>
 
+      {/* Related Guides */}
+      <section id="related-guides" className="bg-gray-50 px-4 py-12">
+        <div className="mx-auto max-w-6xl">
+          <h2 className="text-2xl font-bold text-gray-900 mb-2">DEXA &amp; Body Composition Guides</h2>
+          <p className="text-gray-600 mb-8">
+            Deeper reads on cost, accuracy, eligibility, and how to use your results.
+          </p>
+
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {[
+              { slug: 'dexa-scan-guide', label: 'DEXA Scan Guide' },
+              { slug: 'dexa-vs-inbody-vs-bodpod', label: 'DEXA vs InBody vs Bod Pod' },
+              { slug: 'cheapest-dexa-scan', label: 'Cheapest DEXA Scan' },
+              { slug: 'are-dexa-scans-worth-it', label: 'Are DEXA Scans Worth It?' },
+              { slug: 'is-dexa-scan-hsa-fsa-eligible', label: 'Is a DEXA Scan HSA/FSA Eligible?' },
+              { slug: 'how-to-read-dexa-results', label: 'How to Read Your DEXA Results' },
+              { slug: 'how-often-should-you-get-a-dexa-scan', label: 'How Often Should You Get a DEXA Scan?' },
+              { slug: 'vo2-max-test-cost', label: 'VO2 Max Test Cost' },
+              { slug: 'rmr-test-cost', label: 'RMR Test Cost' },
+              { slug: 'bodyspec-dexa-scan-cost', label: 'BodySpec DEXA Scan Cost' },
+              { slug: 'dexafit-cost', label: 'DexaFit Cost' },
+            ].map((guide) => (
+              <Link
+                key={guide.slug}
+                href={`/guides/${guide.slug}`}
+                className="block bg-white rounded-lg border border-gray-200 p-4 hover:border-blue-400 hover:shadow-lg transition-all"
+              >
+                <span className="text-sm font-medium text-blue-600">{guide.label} →</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <MedicalDisclaimer />
       <Footer />
     </main>

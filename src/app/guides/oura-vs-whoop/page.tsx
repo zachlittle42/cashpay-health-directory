@@ -5,7 +5,8 @@ import MedicalDisclaimer from '@/components/MedicalDisclaimer';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Oura Ring vs WHOOP: 2026 Comparison Guide',
+  title: { absolute: 'Oura Ring vs WHOOP: 2026 Comparison Guide' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/oura-vs-whoop' },
   description: 'Oura Ring vs WHOOP in 2026: how recovery wearables track sleep, HRV, readiness and strain, what each costs, and which device fits your goals best.',
   keywords: ['Oura vs WHOOP', 'Oura Ring', 'WHOOP', 'recovery wearable', 'sleep tracker', 'HRV tracking', 'readiness score', 'strain score', 'fitness wearable comparison'],
 };

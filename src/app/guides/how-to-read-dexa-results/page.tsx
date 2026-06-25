@@ -7,7 +7,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'How to Read DEXA Scan Results: Body Comp & Bone Guide',
+  title: { absolute: 'How to Read DEXA Scan Results: Body Comp & Bone Guide' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/how-to-read-dexa-results' },
   description: 'How to read DEXA scan results — body-fat %, lean mass, visceral fat (VAT), and T-scores vs Z-scores explained, with the real reference ranges to look for.',
 };
 

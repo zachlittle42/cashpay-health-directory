@@ -302,6 +302,46 @@ export default function TelehealthHub() {
                 </div>
               </div>
             </Link>
+
+            <Link href="/guides/best-glp1-weight-loss-programs" className="bg-white rounded-lg border border-blue-200 p-6 hover:shadow-lg transition-shadow">
+              <div className="flex items-start gap-3">
+                <span className="text-3xl">💊</span>
+                <div>
+                  <div className="font-bold text-gray-900 mb-1">Best GLP-1 Weight Loss Programs</div>
+                  <div className="text-sm text-gray-600">Compare top online semaglutide and tirzepatide programs</div>
+                </div>
+              </div>
+            </Link>
+
+            <Link href="/guides/ro-body-weight-loss-cost" className="bg-white rounded-lg border border-blue-200 p-6 hover:shadow-lg transition-shadow">
+              <div className="flex items-start gap-3">
+                <span className="text-3xl">💸</span>
+                <div>
+                  <div className="font-bold text-gray-900 mb-1">Ro Body Weight Loss Cost</div>
+                  <div className="text-sm text-gray-600">What Ro&apos;s GLP-1 program actually costs per month</div>
+                </div>
+              </div>
+            </Link>
+
+            <Link href="/guides/blood-test-without-a-doctor" className="bg-white rounded-lg border border-blue-200 p-6 hover:shadow-lg transition-shadow">
+              <div className="flex items-start gap-3">
+                <span className="text-3xl">🩸</span>
+                <div>
+                  <div className="font-bold text-gray-900 mb-1">Blood Test Without a Doctor</div>
+                  <div className="text-sm text-gray-600">How to order lab work online with no referral</div>
+                </div>
+              </div>
+            </Link>
+
+            <Link href="/guides/cirs-telehealth-treatment" className="bg-white rounded-lg border border-blue-200 p-6 hover:shadow-lg transition-shadow">
+              <div className="flex items-start gap-3">
+                <span className="text-3xl">🩺</span>
+                <div>
+                  <div className="font-bold text-gray-900 mb-1">CIRS Telehealth Treatment</div>
+                  <div className="text-sm text-gray-600">Online care for chronic inflammatory response syndrome</div>
+                </div>
+              </div>
+            </Link>
           </div>
         </div>
       </section>

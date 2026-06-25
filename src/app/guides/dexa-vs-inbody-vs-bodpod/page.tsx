@@ -6,7 +6,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'DEXA vs InBody vs Bod Pod: Body Composition Test Guide',
+  title: { absolute: 'DEXA vs InBody vs Bod Pod: Body Composition Test Guide' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/dexa-vs-inbody-vs-bodpod' },
   description:
     'DEXA vs InBody body composition test compared with Bod Pod: accuracy, cost ($45-179), radiation, and what each method measures. Pick the right scan.',
 };

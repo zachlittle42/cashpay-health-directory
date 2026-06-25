@@ -7,7 +7,8 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: 'Mounjaro vs Ozempic: Efficacy, Cost & Access (2026)',
+  title: { absolute: 'Mounjaro vs Ozempic: Efficacy, Cost & Access (2026)' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/mounjaro-vs-ozempic' },
   description: 'Mounjaro (tirzepatide) vs Ozempic (semaglutide) in 2026 — head-to-head efficacy, ~$1,069 vs ~$998 list price, side effects, and how to access each.',
 };
 

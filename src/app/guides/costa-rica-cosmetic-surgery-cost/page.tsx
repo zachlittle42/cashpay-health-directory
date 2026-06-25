@@ -6,7 +6,8 @@ import type { Metadata } from 'next';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 
 export const metadata: Metadata = {
-  title: 'Costa Rica Cosmetic Surgery Cost (2026): Prices vs the US',
+  title: { absolute: 'Costa Rica Cosmetic Surgery Cost (2026): Prices vs the US' },
+  alternates: { canonical: 'https://vitalityscout.com/guides/costa-rica-cosmetic-surgery-cost' },
   description:
     'What plastic surgery actually costs in Costa Rica in 2026 — breast augmentation, tummy tuck, liposuction, mommy makeover, facelift, BBL — vs US prices, with 40-65% typical savings. Estimates to verify with each clinic.',
 };
