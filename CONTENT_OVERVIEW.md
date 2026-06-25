@@ -7,7 +7,7 @@
 
 ## Current Reality (June 2026)
 
-- **73 long-form guides** under `/guides` (+12 cost-transparency guides shipped 2026-06-24: DEXA cost, medical-tourism comparison, at-home labs)
+- **113 long-form guides** under `/guides` (Batch 2, 2026-06-24: +40 — 17 DEXA city cost guides, GLP-1 cost cluster, at-home-labs depth, DEXA explainers, med-tourism safety/cost companions, national-brand guides. Batch 1 added the first 12.)
 - **3 programmatic clinic-directory verticals** (state×city): `hormone-therapy`,
   `weight-loss`, `dexa-scans` — 14 states each
 - **Longevity & Performance e-commerce pillar**: `/longevity-performance` hub +
