@@ -9,6 +9,205 @@ export const metadata: Metadata = {
 };
 
 const guides = [
+  // Category + procedure expansion (2026-06-25): imaging, mental health, derm, sleep, allergy, surgery + depth
+  {
+    slug: 'mri-cost-without-insurance',
+    title: 'MRI Cost Without Insurance (2026): Cash-Pay Price Guide',
+    description:
+      'What an MRI costs without insurance in 2026 — cash-pay prices by body part, why the same scan varies 5-10x, freestanding imaging centers (RadiologyAssist, Green Imaging, SimonMed) vs hospitals, and how to find the lowest self-pay rate.',
+    category: 'Imaging',
+    readTime: '11 min',
+    icon: '🧲',
+  },
+  {
+    slug: 'ct-scan-cost-without-insurance',
+    title: 'CT Scan Cost Without Insurance (2026): Cash-Pay Prices',
+    description:
+      'CT scan cost without insurance in 2026 by body part — head, chest, abdomen — plus imaging center vs hospital pricing, contrast costs, cash-pay programs, and how to save.',
+    category: 'Imaging',
+    readTime: '11 min',
+    icon: '🩻',
+  },
+  {
+    slug: 'full-body-mri-scan-cost',
+    title: 'Full Body MRI Scan Cost (2026): Prenuvo, Ezra, SimonMed',
+    description:
+      'Full body MRI scan cost in 2026 — Prenuvo ($2,499), Ezra/Function ($999) and SimonMed ($899) cash prices compared, what each scans, the evidence and controversy, and whether it is worth it.',
+    category: 'Comparison',
+    readTime: '11 min',
+    icon: '🧲',
+  },
+  {
+    slug: 'ultrasound-cost-without-insurance',
+    title: 'Ultrasound Cost Without Insurance (2026): Cash Prices by Type',
+    description:
+      'Ultrasound cost without insurance by type (abdominal, pelvic, transvaginal, thyroid, OB), where to get one affordably, and self-pay vs insurance.',
+    category: 'Imaging',
+    readTime: '10 min',
+    icon: '🩻',
+  },
+  {
+    slug: 'online-therapy-cost',
+    title: 'Online Therapy Cost Without Insurance (2026 Guide)',
+    description:
+      'What online therapy costs without insurance in 2026 — BetterHelp (~$70-$100/wk), Talkspace (~$99/wk), Brightside ($95-$349/mo) & Open Path ($40-$70/session) on per-session vs subscription pricing, plus HSA/FSA and how to find affordable care.',
+    category: 'Comparison',
+    readTime: '11 min',
+    icon: '🧠',
+  },
+  {
+    slug: 'ketamine-therapy-cost',
+    title: 'Ketamine Therapy Cost (2026): At-Home vs Clinic & Spravato',
+    description:
+      'Ketamine therapy cost for depression in 2026 — at-home (Mindbloom from ~$165/session, Joyous from ~$129/mo) vs in-clinic IV ($400-$700/session) and FDA-approved Spravato, what each includes, the evidence, and safety.',
+    category: 'Comparison',
+    readTime: '11 min',
+    icon: '🧠',
+  },
+  {
+    slug: 'online-psychiatry-cost',
+    title: 'Online Psychiatry Cost Without Insurance (2026 Guide)',
+    description:
+      'What online psychiatry / medication management costs without insurance — Brightside ~$95/mo, Hims/Hers from ~$49/mo, Cerebral ~$60/mo, per-visit options, and how it compares to therapy and an in-person psychiatrist.',
+    category: 'Telehealth',
+    readTime: '11 min',
+    icon: '🧠',
+  },
+  {
+    slug: 'online-dermatology-cost',
+    title: 'Online Dermatology Cost (2026): Curology, Nurx & More',
+    description:
+      'Online dermatology cost in 2026 compared across Curology, Nurx, Hers/Hims & DermatologistOnCall — the three pricing models (subscription, consult + meds, pay-per-visit), cost by condition (acne, anti-aging, rosacea), and what is included vs an in-person visit.',
+    category: 'Telehealth',
+    readTime: '11 min',
+    icon: '🧴',
+  },
+  {
+    slug: 'botox-vs-fillers-cost',
+    title: 'Botox vs Fillers Cost (2026): Per Unit vs Syringe',
+    description:
+      'Botox vs dermal fillers cost compared — per-unit vs per-syringe pricing, how long each lasts, what each treats, and how to save safely at a med spa.',
+    category: 'Comparison',
+    readTime: '10 min',
+    icon: '💉',
+  },
+  {
+    slug: 'lasik-cost-usa',
+    title: 'LASIK Cost Without Insurance USA (2026): Per-Eye Prices',
+    description:
+      'LASIK cost without insurance in the US — the ~$2,250/eye national average, what a flat fee includes, LASIK vs PRK vs SMILE vs ICL, financing & HSA/FSA, and how to vet a surgeon.',
+    category: 'Cost Guide',
+    readTime: '12 min',
+    icon: '👁️',
+  },
+  {
+    slug: 'cataract-surgery-cost',
+    title: 'Cataract Surgery Cost Without Insurance (2026 Guide)',
+    description:
+      'Cataract surgery cost without insurance in 2026 — standard vs premium lens prices per eye, surgery center vs hospital facility fees, plus what Medicare covers.',
+    category: 'Vision',
+    readTime: '11 min',
+    icon: '👁️',
+  },
+  {
+    slug: 'cash-pay-surgery-guide',
+    title: 'Cash Pay Surgery Cost: How Transparent Pricing Works',
+    description:
+      'How cash-pay surgery works — bundled, all-inclusive prices (the Surgery Center of Oklahoma model), why they can beat insurance billing, real posted prices, and how to find a transparent surgery center.',
+    category: 'Surgery',
+    readTime: '11 min',
+    icon: '🏥',
+  },
+  {
+    slug: 'knee-replacement-cost-usa',
+    title: 'Knee Replacement Cost Without Insurance (USA 2026)',
+    description:
+      'Total knee replacement cost without insurance in the US — cash surgery centers (~$15K-$25K) vs hospitals (~$30K-$50K+), what bundled pricing includes, and US vs abroad.',
+    category: 'Orthopedic',
+    readTime: '11 min',
+    icon: '🦵',
+  },
+  {
+    slug: 'sleep-study-cost',
+    title: 'Sleep Study Cost Without Insurance (2026): Lab vs Home',
+    description:
+      'Sleep study cost without insurance in 2026 — in-lab polysomnography ($1,000-$10,000) vs home sleep apnea tests ($149-$500). Accuracy, real providers (Lofta and Sleep Doctor / WatchPAT One, Dumbo Health), and how to save.',
+    category: 'Comparison',
+    readTime: '11 min',
+    icon: '😴',
+  },
+  {
+    slug: 'allergy-testing-cost',
+    title: 'Allergy Testing Cost Without Insurance (2026): Skin vs Blood',
+    description:
+      'Allergy testing cost without insurance in 2026 — skin-prick vs blood (IgE) vs at-home kits compared, what each detects, real provider prices (Everlywell $149, Quest $189, Labcorp $199), and accuracy.',
+    category: 'Labs',
+    readTime: '11 min',
+    icon: '🤧',
+  },
+  {
+    slug: 'iv-therapy-cost',
+    title: 'IV Therapy Cost (2026): Drip Prices by Type & Clinic',
+    description:
+      'IV therapy cost in 2026: Myers cocktail, NAD+, hydration & immunity drip prices, mobile vs clinic, membership savings, and is IV therapy worth it.',
+    category: 'Cost Guide',
+    readTime: '12 min',
+    icon: '💧',
+  },
+  {
+    slug: 'epigenetic-age-test-cost',
+    title: 'Biological Age Test Cost (2026): TruDiagnostic vs Elysium',
+    description:
+      'Biological / epigenetic age test cost compared — TruDiagnostic TruAge (~$499), Elysium Index (~$499), GlycanAge (~$499-549) & Tally Health (~$249): what each measures, accuracy, and whether it is worth buying.',
+    category: 'Longevity',
+    readTime: '11 min',
+    icon: '🧬',
+  },
+  {
+    slug: 'hormone-pellet-therapy-cost',
+    title: 'Hormone Pellet Therapy Cost (2026): Pellets vs Injections',
+    description:
+      'Per-insertion and annual hormone pellet therapy cost for women (~$300-$500) and men (~$650-$750), how pellets compare to injections and creams, how long they last, and FDA vs compounded.',
+    category: 'Comparison',
+    readTime: '11 min',
+    icon: '💊',
+  },
+  {
+    slug: 'iui-cost',
+    title: 'IUI Cost Without Insurance (2026): Per-Cycle Price Guide',
+    description:
+      'IUI cost without insurance in 2026 — typical $500-$4,000 per cycle, plus medication, donor sperm, monitoring, success rates by age, and IUI vs IVF cost.',
+    category: 'Telehealth',
+    readTime: '11 min',
+    icon: '🤰',
+  },
+  {
+    slug: 'egg-freezing-cost-usa',
+    title: 'Egg Freezing Cost USA (2026): Cycle, Meds & Storage',
+    description:
+      'What egg freezing costs in the US — $12,000-$20,000 all-in per cycle: procedure, medications & storage, plus clinic vs startup (Cofertility, Kindbody) pricing and US vs abroad.',
+    category: 'Comparison',
+    readTime: '12 min',
+    icon: '🥚',
+  },
+  {
+    slug: 'dental-implant-cost-usa',
+    title: 'Dental Implant Cost Without Insurance (USA, 2026)',
+    description:
+      'US dental implant cost without insurance: single tooth $3,000-$5,000, All-on-4 $20,000-$38,000 per arch. What drives price, financing, and US vs abroad.',
+    category: 'Comparison',
+    readTime: '11 min',
+    icon: '🦷',
+  },
+  {
+    slug: 'root-canal-cost-without-insurance',
+    title: 'Root Canal Cost Without Insurance (2026): By Tooth',
+    description:
+      'Root canal cost without insurance in 2026 — by tooth (front/premolar/molar), with vs without a crown, plus dental schools, the Careington 500 savings plan, HSA/FSA, and CareCredit to lower the bill.',
+    category: 'Dental',
+    readTime: '10 min',
+    icon: '🦷',
+  },
   // Cross-country procedure comparisons (2026-06-25)
   {
     slug: 'hair-transplant-cost-by-country',
