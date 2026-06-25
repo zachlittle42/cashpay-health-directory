@@ -9,6 +9,79 @@ export const metadata: Metadata = {
 };
 
 const guides = [
+  // GSC gap-fill batch 3b (2026-06-25): remaining 8 impression-earning gaps
+  {
+    slug: 'medical-tourism-packages',
+    title: 'Medical Tourism Packages: What All-Inclusive Covers & Costs',
+    description:
+      'How all-inclusive medical vacation packages work — what is bundled (procedure, hospital, hotel, transfers, aftercare), what is NOT, package prices by procedure/destination (Turkey, Mexico, Thailand), and how to vet an operator vs booking direct.',
+    category: 'Medical Tourism',
+    readTime: '12 min',
+    icon: '📦',
+  },
+  {
+    slug: 'best-glp1-weight-loss-programs',
+    title: 'Best GLP-1 Weight Loss Programs Compared (2026)',
+    description:
+      'The best GLP-1 weight loss programs in 2026 compared — Hims, Ro, Calibrate, Found, WeightWatchers Clinic & Henry Meds (plus NovoCare & LillyDirect direct-pay) — on medications offered, coaching, monthly cost with and without insurance, and who each is best for.',
+    category: 'Comparison',
+    readTime: '12 min',
+    icon: '💊',
+  },
+  {
+    slug: 'ro-body-weight-loss-cost',
+    title: 'Ro Body Weight Loss Cost (2026): Membership + GLP-1',
+    description:
+      'What Ro Body costs in 2026 — membership $39 first month then $149/mo (or ~$74 prepaid), what is included, whether medication is included (it is not), and Ro GLP-1 prices for Wegovy, Zepbound & Ozempic with vs without insurance.',
+    category: 'Telehealth',
+    readTime: '10 min',
+    icon: '💊',
+  },
+  {
+    slug: 'cheapest-ivf-in-europe',
+    title: 'Cheapest IVF in Europe (2026): Country Cost Compare',
+    description:
+      'The cheapest IVF in Europe in 2026 compared across five countries — Czech Republic, Poland, North Cyprus, Greece and Spain — own-egg and donor-egg cycle prices, what is included, the eligibility law that decides where you can be treated, and success-rate context.',
+    category: 'Medical Tourism',
+    readTime: '12 min',
+    icon: '🇪🇺',
+  },
+  {
+    slug: 'are-dexa-scans-worth-it',
+    title: 'Are DEXA Scans Worth It? 2026 Value & Reviews Guide',
+    description:
+      'Are DEXA scans worth it in 2026? What a body-comp DEXA tells you, how accurate it is (1-2% margin), who benefits, the real cost ($40-$300), what "DEXA Plus" tiers add, and what reviewers report.',
+    category: 'Local Services',
+    readTime: '10 min',
+    icon: '📊',
+  },
+  {
+    slug: 'best-at-home-lab-tests',
+    title: 'Best At-Home Lab Tests (2026): Top Picks by Use Case',
+    description:
+      'The best at-home lab tests in 2026 by use case — general wellness (Function Health), hormones & thyroid (LetsGetChecked), metabolic (Everlywell HbA1c), and STI (myLAB Box) — with accuracy vs a venous draw, cash-pay cost estimates, and how to pick.',
+    category: 'Labs',
+    readTime: '11 min',
+    icon: '🧪',
+  },
+  {
+    slug: 'turkey-hair-transplant-clinics',
+    title: 'Turkey Hair Transplant Clinics Compared (2026): Prices',
+    description:
+      'The most-searched Turkey hair transplant clinics compared in 2026 — Vera Clinic (~$2,900-$5,900), Cosmedica (from €2,550), Estepera/Este (~$1,800-$6,000), Smile Hair, Dr. Serkan Aygin, ASMED and Vinci — techniques, package pricing, what is included, and how to vet a clinic.',
+    category: 'Medical Tourism',
+    readTime: '12 min',
+    icon: '💇',
+  },
+  {
+    slug: 'all-inclusive-bariatric-surgery-abroad',
+    title: 'All-Inclusive Bariatric Surgery Abroad: What’s Bundled (2026)',
+    description:
+      'All-inclusive gastric sleeve & bypass packages abroad in 2026 — Mexico (~$4,295-$7,000) vs Turkey (~$3,200-$6,000). What the package actually bundles (surgery, hospital, hotel, aftercare), what it excludes, accreditation, and how to vet a program.',
+    category: 'Medical Tourism',
+    readTime: '13 min',
+    icon: '🧳',
+  },
   // GSC gap-fill batch (2026-06-25): pages for queries we already earn impressions for
   {
     slug: 'regenexx-vs-bioxcellerator',
