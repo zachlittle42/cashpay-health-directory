@@ -9,6 +9,41 @@ export const metadata: Metadata = {
 };
 
 const guides = [
+  // GSC gap-fill batch (2026-06-25): pages for queries we already earn impressions for
+  {
+    slug: 'regenexx-vs-bioxcellerator',
+    title: 'Regenexx vs BioXcellerator: Stem Cell Models Compared',
+    description:
+      'Regenexx (US, same-day autologous bone marrow) vs BioXcellerator (Medellín, Colombia, lab-expanded umbilical-cord MSCs) — approach, cells, conditions, cost, legality, evidence, and safety.',
+    category: 'Comparison',
+    readTime: '12 min',
+    icon: '🆚',
+  },
+  {
+    slug: 'cirs-telehealth-treatment',
+    title: 'CIRS Telehealth Treatment: Affordable Online Mold Plans (2026)',
+    description: 'How affordable online CIRS (mold illness) programs work — what an under-$300/month plan should include (lab panels, teleconsults, home-delivered prescriptions), typical costs, and how to choose a legitimate one.',
+    category: 'Telehealth',
+    readTime: '12 min',
+    icon: '🍄',
+  },
+  {
+    slug: 'cheapest-glp1-without-insurance',
+    title: 'Cheapest GLP-1 Without Insurance (2026): Price Compare',
+    description: 'The cheapest GLP-1 without insurance in 2026 across BOTH semaglutide and tirzepatide — NovoCare oral pill from ~$149/mo, LillyDirect Zepbound vials from ~$299/mo, telehealth, compounded options and their legal status, plus a full provider price comparison.',
+    category: 'Telehealth',
+    readTime: '11 min',
+    icon: '💊',
+  },
+  {
+    slug: 'best-longevity-clinics',
+    title: 'Best Longevity Clinics & Anti-Aging Companies (2026)',
+    description:
+      'The best longevity and anti-aging companies in 2026 compared — Fountain Life, Human Longevity, Lifeforce, Function Health & Hone Health — real membership prices ($149-$25,000+), what each includes, and an honest evidence-vs-hype read.',
+    category: 'Longevity',
+    readTime: '12 min',
+    icon: '🧬',
+  },
   // Batch 2 cost-transparency expansion (2026-06-24): 17 DEXA city guides, GLP-1 cost, at-home labs, DEXA explainers, med-tourism companions, brand guides
   {
     slug: 'dexa-scan-cost-san-francisco',
