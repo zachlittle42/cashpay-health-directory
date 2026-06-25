@@ -6,6 +6,7 @@ import medicalTourismProviders from './providers-medical-tourism';
 import insuranceProviders from './providers-insurance';
 import pharmaProviders from './providers-pharma';
 import drugRegistryProviders from './providers-drug-registry';
+import servicesProviders from './providers-services';
 
 // Combine all providers into a single lookup
 export const ALL_PROVIDERS: Record<Category, Provider[]> = {
@@ -29,6 +30,15 @@ export const ALL_PROVIDERS: Record<Category, Provider[]> = {
   orthopedic: medicalTourismProviders.orthopedic,
   cardiac: medicalTourismProviders.cardiac,
   vision: medicalTourismProviders.vision,
+
+  // Telehealth services
+  primary_care: servicesProviders.primary_care,
+  sleep: servicesProviders.sleep,
+  allergy: servicesProviders.allergy,
+
+  // Local services
+  imaging: servicesProviders.imaging,
+  surgery: servicesProviders.surgery,
 
   // Healthcare Resources
   insurance: insuranceProviders.insurance,

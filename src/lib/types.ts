@@ -19,6 +19,13 @@ export type Category =
   | 'orthopedic'
   | 'cardiac'
   | 'vision'
+  // Telehealth services (US-based)
+  | 'primary_care'
+  | 'sleep'
+  | 'allergy'
+  // Local services (US, in-person)
+  | 'imaging'
+  | 'surgery'
   // Healthcare Resources
   | 'insurance'
   | 'pharma'
@@ -298,5 +305,54 @@ export const CATEGORIES: Record<Category, CategoryInfo> = {
     hasMedicalTourism: false,
     hasLocalUS: true,
     hasTelehealth: true,
+  },
+
+  // Telehealth services
+  primary_care: {
+    slug: 'primary_care',
+    name: 'Online Doctor & Urgent Care',
+    description: 'Cash-pay virtual primary and urgent care visits, no insurance needed',
+    icon: '🩺',
+    hasMedicalTourism: false,
+    hasLocalUS: true,
+    hasTelehealth: true,
+  },
+  sleep: {
+    slug: 'sleep',
+    name: 'Sleep & Apnea',
+    description: 'Home sleep tests and sleep studies for apnea, cash-pay',
+    icon: '😴',
+    hasMedicalTourism: false,
+    hasLocalUS: true,
+    hasTelehealth: true,
+  },
+  allergy: {
+    slug: 'allergy',
+    name: 'Allergy Testing & Treatment',
+    description: 'Allergy testing and immunotherapy — at-home and clinic options',
+    icon: '🤧',
+    hasMedicalTourism: false,
+    hasLocalUS: true,
+    hasTelehealth: true,
+  },
+
+  // Local services
+  imaging: {
+    slug: 'imaging',
+    name: 'Imaging & Diagnostics',
+    description: 'Cash-pay MRI, CT, ultrasound, and X-ray — transparent pricing',
+    icon: '🩻',
+    hasMedicalTourism: false,
+    hasLocalUS: true,
+    hasTelehealth: false,
+  },
+  surgery: {
+    slug: 'surgery',
+    name: 'Cash-Pay Surgery',
+    description: 'Transparent-price surgery centers with bundled cash rates',
+    icon: '🏥',
+    hasMedicalTourism: false,
+    hasLocalUS: true,
+    hasTelehealth: false,
   },
 };
