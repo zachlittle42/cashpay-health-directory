@@ -3,10 +3,11 @@ import Navigation from '@/components/Navigation';
 import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
 import { LogoMark } from '@/components/Logo';
+import SearchAutocomplete from '@/components/SearchAutocomplete';
 import { NAV_GROUPS, type NavGroup } from '@/lib/nav-tree';
 import {
   Microscope, Scale, Dna, Zap, Sparkles, Stethoscope, Globe, Building2, Circle,
-  Search, Package, MapPin, Plane, ArrowRight, DollarSign, BadgeCheck, Scale as ScaleIcon,
+  Package, MapPin, Plane, ArrowRight, DollarSign, BadgeCheck, Scale as ScaleIcon,
 } from 'lucide-react';
 
 const ICONS: Record<string, any> = {
@@ -133,20 +134,9 @@ export default function Home() {
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-gray-600">
             Compare cash-pay clinics, telehealth, and treatment abroad — transparent prices, honest comparisons, no insurance maze.
           </p>
-          <form action="/search" className="mx-auto mt-8 max-w-xl">
-            <div className="relative">
-              <Search className="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-400" />
-              <input
-                type="search"
-                name="q"
-                placeholder="Search a treatment, clinic, or destination…"
-                className="w-full rounded-full border border-gray-200 bg-white py-3.5 pl-12 pr-28 text-base shadow-sm focus:border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-100"
-              />
-              <button type="submit" className="absolute right-1.5 top-1/2 -translate-y-1/2 rounded-full bg-blue-600 px-5 py-2 text-sm font-semibold text-white hover:bg-blue-700">
-                Search
-              </button>
-            </div>
-          </form>
+          <div className="mx-auto mt-8 max-w-xl">
+            <SearchAutocomplete variant="hero" placeholder="Search a treatment, clinic, or destination…" />
+          </div>
           <div className="mt-4 flex flex-wrap items-center justify-center gap-2 text-sm">
             <span className="text-gray-400">Popular:</span>
             {POPULAR_SEARCHES.map((t) => (

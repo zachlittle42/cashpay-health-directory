@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { LogoMark } from '@/components/Logo';
+import SearchAutocomplete from '@/components/SearchAutocomplete';
 import { Search, Menu, X } from 'lucide-react';
 
 const UTILITY_LINKS = [
@@ -35,17 +36,9 @@ export default function Navigation() {
           </Link>
 
           {/* Search (desktop) */}
-          <form action="/search" className="hidden w-full max-w-sm lg:flex">
-            <div className="relative w-full">
-              <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-400" />
-              <input
-                type="search"
-                name="q"
-                placeholder="Search treatments, clinics, destinations…"
-                className="w-full rounded-full border border-gray-200 bg-gray-50 py-2 pl-9 pr-4 text-sm text-gray-900 placeholder:text-gray-400 focus:border-blue-400 focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-100"
-              />
-            </div>
-          </form>
+          <div className="hidden w-full max-w-sm lg:block">
+            <SearchAutocomplete variant="bar" />
+          </div>
 
           {/* Utility links (desktop) */}
           <div className="ml-auto hidden items-center gap-6 lg:flex">
