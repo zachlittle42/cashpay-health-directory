@@ -70,10 +70,10 @@ function NavTree({ pathname, onNavigate }: { pathname: string; onNavigate?: () =
                             href={it.url}
                             onClick={onNavigate}
                             aria-current={isActive ? 'page' : undefined}
-                            className={`block rounded-md px-2 py-1.5 text-[13px] leading-snug transition-colors ${
+                            className={`block border-l-2 px-2 py-1.5 text-[13px] leading-snug transition-colors ${
                               isActive
-                                ? 'bg-blue-50 font-semibold text-blue-700'
-                                : 'font-medium text-gray-700 hover:bg-gray-100 hover:text-gray-900'
+                                ? 'rounded-r-md border-blue-600 bg-blue-50 font-semibold text-gray-900'
+                                : 'rounded-md border-transparent font-medium text-gray-700 hover:bg-gray-100 hover:text-gray-900'
                             }`}
                           >
                             {it.label}
