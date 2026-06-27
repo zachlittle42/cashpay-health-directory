@@ -1,45 +1,104 @@
 import Link from 'next/link';
-import { CATEGORIES, type Category } from '@/lib/types';
 import Navigation from '@/components/Navigation';
 import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
+import { LogoMark } from '@/components/Logo';
+import { NAV_GROUPS, type NavGroup } from '@/lib/nav-tree';
+import {
+  Microscope, Scale, Dna, Zap, Sparkles, Stethoscope, Globe, Building2, Circle,
+  Search, Package, MapPin, Plane, ArrowRight, DollarSign, BadgeCheck, Scale as ScaleIcon,
+} from 'lucide-react';
 
-// Group categories for display
-const telehealthCategories: Category[] = ['labs', 'glp1', 'trt'];
-const localCategories: Category[] = ['dexa', 'vo2max', 'longevity'];
-const medicalTourismCategories: Category[] = [
-  'dental',
-  'hair_transplant',
-  'plastic_surgery',
-  'bariatric',
-  'fertility',
-  'orthopedic',
+const ICONS: Record<string, any> = {
+  Microscope, Scale, Dna, Zap, Sparkles, Stethoscope, Globe, Building2, Circle,
+};
+
+// Per-group hub link + accent chip (literal classes so Tailwind picks them up).
+const GROUP_CARD: Record<string, { hub: string; chip: string }> = {
+  'test-diagnose': { hub: '/dexa', chip: 'bg-blue-50 text-blue-600' },
+  'lose-weight': { hub: '/glp1', chip: 'bg-emerald-50 text-emerald-600' },
+  'balance-hormones': { hub: '/hormone-therapy', chip: 'bg-violet-50 text-violet-600' },
+  'live-longer': { hub: '/longevity', chip: 'bg-amber-50 text-amber-600' },
+  'look-better': { hub: '/med-spa', chip: 'bg-rose-50 text-rose-600' },
+  'treat-see-doctor': { hub: '/telehealth', chip: 'bg-sky-50 text-sky-600' },
+  'medical-tourism': { hub: '/medical-tourism', chip: 'bg-purple-50 text-purple-600' },
+  'care-by-state': { hub: '/traditional-healthcare', chip: 'bg-orange-50 text-orange-600' },
+};
+
+const PRIMARY_GROUPS = NAV_GROUPS.filter((g) => g.id !== 'resources');
+
+const POPULAR_SEARCHES = [
+  { l: 'DEXA scan', h: '/dexa' },
+  { l: 'GLP-1', h: '/glp1' },
+  { l: 'TRT', h: '/trt' },
+  { l: 'Hair transplant', h: '/hair_transplant' },
+  { l: 'Lab testing', h: '/labs' },
 ];
 
-const resourceCategories: Category[] = ['insurance', 'pharma', 'drug_registry'];
+// Three "ways to get care" — teaches the site's three delivery modes.
+const WAYS = [
+  {
+    icon: Package, chip: 'bg-blue-50 text-blue-600',
+    title: 'Ship to your door', desc: 'No travel. Order online; results or meds arrive at home.',
+    links: [{ l: 'At-home lab testing', h: '/labs' }, { l: 'GLP-1 programs', h: '/glp1' }, { l: 'TRT & hormones', h: '/trt' }],
+  },
+  {
+    icon: MapPin, chip: 'bg-emerald-50 text-emerald-600',
+    title: 'Visit a local clinic', desc: 'Cash-pay services near you that need an in-person visit.',
+    links: [{ l: 'DEXA body scans', h: '/dexa' }, { l: 'Med spa & aesthetics', h: '/med-spa' }, { l: 'IV therapy', h: '/iv' }],
+  },
+  {
+    icon: Plane, chip: 'bg-purple-50 text-purple-600',
+    title: 'Travel & save abroad', desc: 'Major procedures at 50–80% off US prices. Compare destinations.',
+    links: [{ l: 'Hair transplant abroad', h: '/hair_transplant' }, { l: 'Dental tourism', h: '/dental' }, { l: 'All destinations', h: '/medical-tourism' }],
+  },
+];
 
-function CategoryCard({ slug }: { slug: Category }) {
-  const cat = CATEGORIES[slug];
+const FEATURED_GUIDES = [
+  { h: '/guides/glp1-weight-loss-complete-guide', emoji: '💊', t: 'GLP-1 Weight Loss Guide', d: 'How semaglutide works, expected results, and real costs.', c: 'hover:border-blue-400 group-hover:text-blue-600 text-blue-600' },
+  { h: '/guides/hair-transplant-turkey-guide', emoji: '💇', t: 'Hair Transplant in Turkey', d: 'Safety checklist, choosing clinics, and what to expect.', c: 'hover:border-purple-400 group-hover:text-purple-600 text-purple-600' },
+  { h: '/guides/mexico-medical-tourism-planner', emoji: '🇲🇽', t: 'Mexico Trip Planner', d: 'Border-crossing tips, packing list, and trip timeline.', c: 'hover:border-emerald-400 group-hover:text-emerald-600 text-emerald-600' },
+  { h: '/guides/dexa-scan-guide', emoji: '🦴', t: 'DEXA Scan Guide', d: 'What it measures, where to get one, and typical costs.', c: 'hover:border-amber-400 group-hover:text-amber-600 text-amber-600' },
+];
+
+const DESTINATIONS = [
+  { name: 'Mexico', flag: '🇲🇽', s: 'Dental · Bariatric · Stem cells', h: '/destinations/mexico' },
+  { name: 'Turkey', flag: '🇹🇷', s: 'Hair transplant · Dental', h: '/destinations/turkey' },
+  { name: 'South Korea', flag: '🇰🇷', s: 'Plastic surgery', h: '/destinations/south-korea' },
+  { name: 'Thailand', flag: '🇹🇭', s: 'Cosmetic · Orthopedic', h: '/destinations/thailand' },
+  { name: 'Spain', flag: '🇪🇸', s: 'Fertility / IVF', h: '/destinations/spain' },
+  { name: 'Panama', flag: '🇵🇦', s: 'Stem cells', h: '/destinations/panama' },
+];
+
+const VALUE_PROPS = [
+  { icon: DollarSign, chip: 'bg-blue-50 text-blue-600', t: 'Transparent pricing', d: 'Real prices, not "contact us." We do the research so you don’t have to.' },
+  { icon: BadgeCheck, chip: 'bg-emerald-50 text-emerald-600', t: 'Curated quality', d: 'Not everyone gets listed. We vet for accreditation and reputation.' },
+  { icon: ScaleIcon, chip: 'bg-violet-50 text-violet-600', t: 'Honest comparisons', d: 'Pros and cons, "best for X" picks, and editorial opinions.' },
+];
+
+function GroupCard({ group }: { group: NavGroup }) {
+  const Icon = ICONS[group.icon] || Circle;
+  const meta = GROUP_CARD[group.id];
+  const items = group.subsections.flatMap((s) => s.items).slice(0, 4);
   return (
-    <Link
-      href={`/${slug}`}
-      className="group block rounded-lg border border-gray-200 p-5 hover:border-blue-500 hover:shadow-md transition-all"
-    >
-      <div className="flex items-start gap-3">
-        <span className="text-2xl">{cat.icon}</span>
-        <div className="flex-1">
-          <h3 className="font-semibold text-gray-900 group-hover:text-blue-600">
-            {cat.name}
-          </h3>
-          <p className="mt-1 text-sm text-gray-600 line-clamp-2">{cat.description}</p>
-          {cat.typicalSavings && (
-            <p className="mt-2 text-xs font-medium text-green-600">
-              Save {cat.typicalSavings} abroad
-            </p>
-          )}
-        </div>
-      </div>
-    </Link>
+    <div className="flex flex-col rounded-2xl border border-gray-200 bg-white p-5 transition-shadow hover:shadow-md">
+      <Link href={meta.hub} className="mb-3 flex items-center gap-3">
+        <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-xl ${meta.chip}`}>
+          <Icon className="h-5 w-5" strokeWidth={2} />
+        </span>
+        <span className="font-semibold text-gray-900">{group.label}</span>
+      </Link>
+      <ul className="space-y-1.5">
+        {items.map((it) => (
+          <li key={it.url}>
+            <Link href={it.url} className="text-sm text-gray-600 hover:text-blue-700">{it.label}</Link>
+          </li>
+        ))}
+      </ul>
+      <Link href={meta.hub} className="mt-3 inline-flex items-center gap-1 text-sm font-medium text-blue-600 hover:text-blue-700">
+        View all <ArrowRight className="h-3.5 w-3.5" />
+      </Link>
+    </div>
   );
 }
 
@@ -48,391 +107,194 @@ export default function Home() {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'VitalityScout',
-    description: 'Compare healthcare options: traditional, cash-pay telehealth, and medical tourism. Find transparent pricing for labs, GLP-1, dental work, hair transplants, and more.',
+    description:
+      'Compare healthcare options: traditional, cash-pay telehealth, and medical tourism. Find transparent pricing for labs, GLP-1, dental work, hair transplants, and more.',
     url: 'https://vitalityscout.com',
     potentialAction: {
       '@type': 'SearchAction',
-      target: 'https://vitalityscout.com/traditional-healthcare?search={search_term_string}',
-      'query-input': 'required name=search_term_string'
-    }
+      target: 'https://vitalityscout.com/search?q={search_term_string}',
+      'query-input': 'required name=search_term_string',
+    },
   };
 
   return (
     <main className="min-h-screen bg-white">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Navigation />
       <SidebarShell>
 
-      {/* Hero */}
-      <section className="bg-gradient-to-b from-blue-50 to-white px-4 py-16 sm:py-20">
-        <div className="mx-auto max-w-4xl text-center">
+      {/* Hero — search forward */}
+      <section className="relative overflow-hidden border-b border-gray-100 bg-gradient-to-b from-blue-50/70 to-white">
+        <LogoMark className="pointer-events-none absolute -right-6 top-1/2 hidden h-72 w-auto -translate-y-1/2 text-blue-600/5 lg:block" />
+        <div className="relative mx-auto max-w-3xl px-4 py-16 text-center sm:py-20">
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-            Compare Healthcare Options:<br />Traditional, Cash-Pay & Abroad
+            Find the right care<br className="hidden sm:block" /> at the right price.
           </h1>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
-            From insurance-based hospitals to telehealth and medical tourism—find the right care at the right price.
+          <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-gray-600">
+            Compare cash-pay clinics, telehealth, and treatment abroad — transparent prices, honest comparisons, no insurance maze.
           </p>
-          <div className="mt-8 flex flex-wrap justify-center gap-3 text-sm">
-            <Link
-              href="/telehealth"
-              className="rounded-full bg-blue-100 px-4 py-1.5 text-blue-700 hover:bg-blue-200 transition-colors"
-            >
-              US Telehealth
-            </Link>
-            <Link
-              href="/local-clinics"
-              className="rounded-full bg-green-100 px-4 py-1.5 text-green-700 hover:bg-green-200 transition-colors"
-            >
-              Local Independent Clinics
-            </Link>
-            <Link
-              href="/med-spa"
-              className="rounded-full bg-rose-100 px-4 py-1.5 text-rose-700 hover:bg-rose-200 transition-colors"
-            >
-              Med Spa &amp; Aesthetics
-            </Link>
-            <Link
-              href="/longevity-performance"
-              className="rounded-full bg-emerald-100 px-4 py-1.5 text-emerald-700 hover:bg-emerald-200 transition-colors"
-            >
-              Longevity &amp; Performance
-            </Link>
-            <Link
-              href="/medical-tourism"
-              className="rounded-full bg-purple-100 px-4 py-1.5 text-purple-700 hover:bg-purple-200 transition-colors"
-            >
-              Medical Tourism
-            </Link>
-            <Link
-              href="/traditional-healthcare"
-              className="rounded-full bg-orange-100 px-4 py-1.5 text-orange-700 hover:bg-orange-200 transition-colors"
-            >
-              Traditional Healthcare
-            </Link>
-            <Link
-              href="#healthcare-resources"
-              className="rounded-full bg-red-100 px-4 py-1.5 text-red-700 hover:bg-red-200 transition-colors"
-            >
-              Insurance & Pharma
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Telehealth Section */}
-      <section id="telehealth" className="mx-auto max-w-6xl px-4 py-12">
-        <div className="mb-6">
-          <div className="flex items-center gap-2">
-            <span className="rounded-full bg-blue-100 px-3 py-1 text-xs font-medium text-blue-700">
-              Telehealth
-            </span>
-            <h2 className="text-xl font-bold text-gray-900">Ship to Your Door</h2>
-          </div>
-          <p className="mt-1 text-sm text-gray-500">
-            No travel required. Order online, get results or medications shipped.
-          </p>
-        </div>
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {telehealthCategories.map((slug) => (
-            <CategoryCard key={slug} slug={slug} />
-          ))}
-        </div>
-      </section>
-
-      {/* Local Section */}
-      <section id="local-independent" className="mx-auto max-w-6xl px-4 py-12 border-t border-gray-100">
-        <div className="mb-6">
-          <div className="flex items-center gap-2">
-            <span className="rounded-full bg-green-100 px-3 py-1 text-xs font-medium text-green-700">
-              Local Independent Clinics
-            </span>
-            <h2 className="text-xl font-bold text-gray-900">Find Near You</h2>
-          </div>
-          <p className="mt-1 text-sm text-gray-500">
-            Cash-pay services that require an in-person visit at a local facility.
-          </p>
-        </div>
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {localCategories.map((slug) => (
-            <CategoryCard key={slug} slug={slug} />
-          ))}
-          <Link
-            href="/med-spa"
-            className="group rounded-lg border border-gray-200 p-5 hover:border-rose-400 hover:shadow-md transition-all"
-          >
-            <div className="mb-2 text-3xl">✨</div>
-            <h3 className="font-semibold text-gray-900 group-hover:text-rose-600">Med Spa &amp; Aesthetics</h3>
-            <p className="mt-1 text-sm text-gray-600">Botox, fillers, laser hair removal, body contouring &amp; IV therapy by city</p>
-          </Link>
-        </div>
-      </section>
-
-      {/* Longevity & Performance Section */}
-      <section id="longevity-performance" className="mx-auto max-w-6xl px-4 py-12 border-t border-gray-100">
-        <div className="mb-6">
-          <div className="flex items-center gap-2">
-            <span className="rounded-full bg-emerald-100 px-3 py-1 text-xs font-medium text-emerald-700">
-              Longevity &amp; Performance
-            </span>
-            <h2 className="text-xl font-bold text-gray-900">Buy Online to Optimize Healthspan</h2>
-          </div>
-          <p className="mt-1 text-sm text-gray-500">
-            Direct-to-consumer products and programs for metabolic health, longevity, and performance.
-          </p>
-        </div>
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          <Link
-            href="/cgm"
-            className="group rounded-lg border border-gray-200 p-5 hover:border-emerald-400 hover:shadow-md transition-all"
-          >
-            <div className="mb-2 text-3xl">📈</div>
-            <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600">Glucose Monitors (CGM)</h3>
-            <p className="mt-1 text-sm text-gray-600">Stelo, Lingo, Levels &amp; more — buy without a prescription</p>
-            <p className="mt-2 text-xs text-gray-500">~$49–$399/mo</p>
-          </Link>
-          <Link
-            href="/longevity-rx"
-            className="group rounded-lg border border-gray-200 p-5 hover:border-emerald-400 hover:shadow-md transition-all"
-          >
-            <div className="mb-2 text-3xl">⏳</div>
-            <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600">Longevity Medications</h3>
-            <p className="mt-1 text-sm text-gray-600">Rapamycin, metformin &amp; NAD+ via telehealth — the honest picture</p>
-            <p className="mt-2 text-xs text-gray-500">~$30–$150/mo + meds</p>
-          </Link>
-          <Link
-            href="/longevity-performance"
-            className="group flex flex-col justify-center rounded-lg border-2 border-dashed border-emerald-200 bg-emerald-50/40 p-5 hover:border-emerald-400 transition-all"
-          >
-            <div className="mb-2 text-3xl">🧬</div>
-            <h3 className="font-semibold text-gray-900 group-hover:text-emerald-600">See the Full Hub</h3>
-            <p className="mt-1 text-sm text-gray-600">Peptides, supplements &amp; recovery tech — all compared</p>
-            <span className="mt-2 text-sm font-medium text-emerald-600">Explore →</span>
-          </Link>
-        </div>
-      </section>
-
-      {/* Medical Tourism Section */}
-      <section id="medical-tourism" className="bg-gradient-to-b from-white to-purple-50 px-4 py-12">
-        <div className="mx-auto max-w-6xl">
-          <div className="mb-6">
-            <div className="flex items-center gap-2">
-              <span className="rounded-full bg-purple-100 px-3 py-1 text-xs font-medium text-purple-700">
-                Medical Tourism
-              </span>
-              <h2 className="text-xl font-bold text-gray-900">Save 50-80% Abroad</h2>
+          <form action="/search" className="mx-auto mt-8 max-w-xl">
+            <div className="relative">
+              <Search className="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-gray-400" />
+              <input
+                type="search"
+                name="q"
+                placeholder="Search a treatment, clinic, or destination…"
+                className="w-full rounded-full border border-gray-200 bg-white py-3.5 pl-12 pr-28 text-base shadow-sm focus:border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-100"
+              />
+              <button type="submit" className="absolute right-1.5 top-1/2 -translate-y-1/2 rounded-full bg-blue-600 px-5 py-2 text-sm font-semibold text-white hover:bg-blue-700">
+                Search
+              </button>
             </div>
-            <p className="mt-1 text-sm text-gray-500">
-              Major procedures at a fraction of US prices. We help you compare destinations.
-            </p>
-          </div>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {medicalTourismCategories.map((slug) => (
-              <CategoryCard key={slug} slug={slug} />
+          </form>
+          <div className="mt-4 flex flex-wrap items-center justify-center gap-2 text-sm">
+            <span className="text-gray-400">Popular:</span>
+            {POPULAR_SEARCHES.map((t) => (
+              <Link key={t.h} href={t.h} className="rounded-full border border-gray-200 px-3 py-1 text-gray-600 hover:border-blue-300 hover:text-blue-700">
+                {t.l}
+              </Link>
             ))}
           </div>
+        </div>
+      </section>
 
-          {/* Destination Quick Links */}
-          <div className="mt-10 rounded-lg border border-purple-200 bg-white p-6">
-            <h3 className="font-semibold text-gray-900 mb-4">Popular Destinations</h3>
-            <div className="flex flex-wrap gap-3">
-              {[
-                { name: 'Mexico', flag: '🇲🇽', specialties: 'Dental, Bariatric, Stem Cells' },
-                { name: 'Turkey', flag: '🇹🇷', specialties: 'Hair Transplant, Dental' },
-                { name: 'South Korea', flag: '🇰🇷', specialties: 'Plastic Surgery' },
-                { name: 'Thailand', flag: '🇹🇭', specialties: 'Cosmetic, Orthopedic' },
-                { name: 'Spain', flag: '🇪🇸', specialties: 'Fertility/IVF' },
-                { name: 'Panama', flag: '🇵🇦', specialties: 'Stem Cells' },
-                { name: 'Cayman Islands', flag: '🇰🇾', specialties: 'Stem Cells' },
-                { name: 'Colombia', flag: '🇨🇴', specialties: 'Stem Cells' },
-              ].map((dest) => (
-                <Link
-                  key={dest.name}
-                  href={`/destinations/${dest.name.toLowerCase().replace(' ', '-')}`}
-                  className="flex items-center gap-2 rounded-lg border border-gray-200 px-4 py-2 hover:border-purple-400 hover:bg-purple-50 transition-colors"
-                >
-                  <span className="text-xl">{dest.flag}</span>
-                  <div>
-                    <div className="font-medium text-gray-900 text-sm">{dest.name}</div>
-                    <div className="text-xs text-gray-500">{dest.specialties}</div>
-                  </div>
-                </Link>
-              ))}
-            </div>
+      {/* Three ways to get care */}
+      <section className="mx-auto max-w-6xl px-4 py-14">
+        <div className="mb-8 text-center">
+          <h2 className="text-2xl font-bold text-gray-900">Three ways to get care</h2>
+          <p className="mt-2 text-gray-600">However you want to be treated, we map the options and the prices.</p>
+        </div>
+        <div className="grid gap-5 md:grid-cols-3">
+          {WAYS.map((w) => {
+            const Icon = w.icon;
+            return (
+              <div key={w.title} className="rounded-2xl border border-gray-200 bg-white p-6 transition-shadow hover:shadow-md">
+                <span className={`mb-4 inline-flex h-11 w-11 items-center justify-center rounded-xl ${w.chip}`}>
+                  <Icon className="h-5 w-5" strokeWidth={2} />
+                </span>
+                <h3 className="font-semibold text-gray-900">{w.title}</h3>
+                <p className="mt-1 text-sm text-gray-600">{w.desc}</p>
+                <ul className="mt-4 space-y-1.5 border-t border-gray-100 pt-4">
+                  {w.links.map((l) => (
+                    <li key={l.h}>
+                      <Link href={l.h} className="inline-flex items-center gap-1 text-sm text-gray-700 hover:text-blue-700">
+                        {l.l} <ArrowRight className="h-3 w-3 opacity-0 transition-opacity group-hover:opacity-100" />
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+
+      {/* Browse by goal — mirrors the sidebar's 8 consumer-goal groups */}
+      <section className="border-y border-gray-100 bg-gray-50/60 px-4 py-14">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-8">
+            <h2 className="text-2xl font-bold text-gray-900">Browse by goal</h2>
+            <p className="mt-2 text-gray-600">The whole world of cash-pay healthcare, organized by what you&apos;re trying to do.</p>
+          </div>
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {PRIMARY_GROUPS.map((g) => (
+              <GroupCard key={g.id} group={g} />
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Healthcare Resources Section */}
-      <section id="healthcare-resources" className="mx-auto max-w-6xl px-4 py-12 border-t border-gray-100">
-        <div className="mb-6">
-          <div className="flex items-center gap-2">
-            <span className="rounded-full bg-red-100 px-3 py-1 text-xs font-medium text-red-700">
-              Healthcare Resources
-            </span>
-            <h2 className="text-xl font-bold text-gray-900">Research & Information</h2>
+      {/* Featured guides */}
+      <section className="mx-auto max-w-6xl px-4 py-14">
+        <div className="mb-8 flex items-end justify-between">
+          <div>
+            <h2 className="text-2xl font-bold text-gray-900">Learn before you book</h2>
+            <p className="mt-2 text-gray-600">Evidence-based guides to help you decide with confidence.</p>
           </div>
-          <p className="mt-1 text-sm text-gray-500">
-            Insurance companies, pharmaceutical manufacturers, and drug information databases.
-          </p>
+          <Link href="/guides" className="hidden shrink-0 text-sm font-medium text-blue-600 hover:text-blue-700 sm:inline-flex sm:items-center sm:gap-1">
+            All guides <ArrowRight className="h-3.5 w-3.5" />
+          </Link>
         </div>
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {resourceCategories.map((slug) => (
-            <CategoryCard key={slug} slug={slug} />
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {FEATURED_GUIDES.map((g) => (
+            <Link key={g.h} href={g.h} className={`group rounded-2xl border border-gray-200 p-6 transition-all hover:shadow-md ${g.c.split(' ')[0]}`}>
+              <div className="mb-3 text-3xl">{g.emoji}</div>
+              <h3 className={`mb-2 font-bold text-gray-900 ${g.c.split(' ')[1]}`}>{g.t}</h3>
+              <p className="mb-3 text-sm text-gray-600">{g.d}</p>
+              <span className={`inline-flex items-center gap-1 text-sm font-medium ${g.c.split(' ')[2]}`}>
+                Read guide <ArrowRight className="h-3.5 w-3.5" />
+              </span>
+            </Link>
           ))}
         </div>
       </section>
 
-      {/* Value Props */}
-      <section className="bg-gray-50 px-4 py-16">
-        <div className="mx-auto max-w-4xl">
-          <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">
-            Why Use This Directory?
-          </h2>
-          <div className="grid gap-8 sm:grid-cols-3">
-            <div className="text-center">
-              <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-blue-100 text-xl mb-3">
-                $
-              </div>
-              <h3 className="font-semibold">Transparent Pricing</h3>
-              <p className="mt-2 text-sm text-gray-600">
-                Real prices, not &quot;contact us&quot;. We do the research so you don&apos;t have to.
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-green-100 text-xl mb-3">
-                ✓
-              </div>
-              <h3 className="font-semibold">Curated Quality</h3>
-              <p className="mt-2 text-sm text-gray-600">
-                Not everyone gets listed. We vet for quality, accreditation, and reputation.
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-purple-100 text-xl mb-3">
-                ⚖️
-              </div>
-              <h3 className="font-semibold">Honest Comparisons</h3>
-              <p className="mt-2 text-sm text-gray-600">
-                Pros AND cons. &quot;Best for X&quot; recommendations. Editorial opinions.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Featured Guides */}
-      <section className="bg-white px-4 py-16">
+      {/* Popular destinations */}
+      <section className="border-t border-gray-100 bg-gradient-to-b from-white to-purple-50/50 px-4 py-14">
         <div className="mx-auto max-w-6xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Learn Before You Book
-            </h2>
-            <p className="text-lg text-gray-600">
-              Evidence-based guides to help you make informed decisions.
-            </p>
+          <div className="mb-8">
+            <h2 className="text-2xl font-bold text-gray-900">Popular destinations</h2>
+            <p className="mt-2 text-gray-600">Where people travel for high-value care — and what each is known for.</p>
           </div>
-
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-            <Link
-              href="/guides/glp1-weight-loss-complete-guide"
-              className="group rounded-lg border-2 border-gray-200 p-6 hover:border-blue-400 hover:shadow-lg transition-all"
-            >
-              <div className="text-3xl mb-3">💊</div>
-              <h3 className="font-bold text-gray-900 group-hover:text-blue-600 mb-2">
-                GLP-1 Weight Loss Guide
-              </h3>
-              <p className="text-sm text-gray-600 mb-3">
-                How semaglutide works, expected results, and real costs.
-              </p>
-              <span className="text-sm font-medium text-blue-600">Read guide →</span>
-            </Link>
-
-            <Link
-              href="/guides/hair-transplant-turkey-guide"
-              className="group rounded-lg border-2 border-gray-200 p-6 hover:border-purple-400 hover:shadow-lg transition-all"
-            >
-              <div className="text-3xl mb-3">💇</div>
-              <h3 className="font-bold text-gray-900 group-hover:text-purple-600 mb-2">
-                Hair Transplant in Turkey
-              </h3>
-              <p className="text-sm text-gray-600 mb-3">
-                Safety checklist, choosing clinics, and what to expect.
-              </p>
-              <span className="text-sm font-medium text-purple-600">Read guide →</span>
-            </Link>
-
-            <Link
-              href="/guides/mexico-medical-tourism-planner"
-              className="group rounded-lg border-2 border-gray-200 p-6 hover:border-green-400 hover:shadow-lg transition-all"
-            >
-              <div className="text-3xl mb-3">🇲🇽</div>
-              <h3 className="font-bold text-gray-900 group-hover:text-green-600 mb-2">
-                Mexico Trip Planner
-              </h3>
-              <p className="text-sm text-gray-600 mb-3">
-                Border crossing tips, packing list, and trip timeline.
-              </p>
-              <span className="text-sm font-medium text-green-600">Read guide →</span>
-            </Link>
-
-            <Link
-              href="/longevity"
-              className="group rounded-lg border-2 border-gray-200 p-6 hover:border-teal-400 hover:shadow-lg transition-all"
-            >
-              <div className="text-3xl mb-3">🧬</div>
-              <h3 className="font-bold text-gray-900 group-hover:text-teal-600 mb-2">
-                Longevity & Stem Cells
-              </h3>
-              <p className="text-sm text-gray-600 mb-3">
-                US clinics, international options, and treatment guides.
-              </p>
-              <span className="text-sm font-medium text-teal-600">Explore hub →</span>
-            </Link>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {DESTINATIONS.map((d) => (
+              <Link key={d.h} href={d.h} className="flex items-center gap-3 rounded-xl border border-gray-200 bg-white px-4 py-3 transition-colors hover:border-purple-300 hover:bg-purple-50/40">
+                <span className="text-2xl">{d.flag}</span>
+                <div>
+                  <div className="font-medium text-gray-900">{d.name}</div>
+                  <div className="text-xs text-gray-500">{d.s}</div>
+                </div>
+              </Link>
+            ))}
           </div>
-
-          <div className="text-center mt-8">
-            <Link
-              href="/guides"
-              className="inline-block rounded-lg bg-gray-900 px-6 py-3 text-sm font-medium text-white hover:bg-gray-800 transition-colors"
-            >
-              View All Guides →
+          <div className="mt-6">
+            <Link href="/medical-tourism" className="inline-flex items-center gap-1 text-sm font-medium text-purple-700 hover:text-purple-800">
+              Compare all destinations <ArrowRight className="h-3.5 w-3.5" />
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Centurion Coach Promo */}
-      <section className="mx-auto max-w-4xl px-4 py-12">
-        <div className="bg-gradient-to-r from-cyan-500 to-sky-500 rounded-2xl p-8 md:p-12 text-white">
-          <div className="flex flex-col md:flex-row items-center gap-8">
-            <div className="flex-1">
-              <div className="inline-flex items-center gap-2 rounded-full bg-white/20 px-3 py-1 text-sm font-medium mb-4">
-                <span className="relative flex h-2 w-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
+      {/* Why use this */}
+      <section className="mx-auto max-w-5xl px-4 py-14">
+        <h2 className="mb-8 text-center text-2xl font-bold text-gray-900">Why use VitalityScout?</h2>
+        <div className="grid gap-6 sm:grid-cols-3">
+          {VALUE_PROPS.map((v) => {
+            const Icon = v.icon;
+            return (
+              <div key={v.t} className="rounded-2xl border border-gray-200 p-6 text-center">
+                <span className={`mb-3 inline-flex h-12 w-12 items-center justify-center rounded-full ${v.chip}`}>
+                  <Icon className="h-5 w-5" strokeWidth={2} />
                 </span>
-                Free iOS App
+                <h3 className="font-semibold text-gray-900">{v.t}</h3>
+                <p className="mt-2 text-sm text-gray-600">{v.d}</p>
               </div>
-              <h3 className="text-2xl md:text-3xl font-bold mb-4">
-                Track Your Health Journey with Centurion Coach
-              </h3>
-              <p className="text-cyan-100 mb-6">
-                Started a GLP-1 program? Planning medical tourism? Track your nutrition, supplements, labs, and progress all in one place with AI-powered coaching.
+            );
+          })}
+        </div>
+      </section>
+
+      {/* Centurion Coach promo */}
+      <section className="mx-auto max-w-4xl px-4 pb-16">
+        <div className="overflow-hidden rounded-2xl bg-gradient-to-r from-blue-600 to-sky-500 p-8 text-white md:p-12">
+          <div className="flex flex-col items-center gap-8 md:flex-row">
+            <div className="flex-1">
+              <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-white/20 px-3 py-1 text-sm font-medium">
+                <span className="relative flex h-2 w-2">
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-white opacity-75" />
+                  <span className="relative inline-flex h-2 w-2 rounded-full bg-white" />
+                </span>
+                Free iOS app
+              </div>
+              <h3 className="mb-4 text-2xl font-bold md:text-3xl">Track your health journey with Centurion Coach</h3>
+              <p className="mb-6 text-blue-50">
+                Started a GLP-1 program? Planning treatment abroad? Track nutrition, supplements, labs, and progress in one place with AI-powered coaching.
               </p>
-              <Link
-                href="/centurioncoach"
-                className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 font-semibold text-cyan-600 hover:bg-cyan-50 transition-colors"
-              >
-                Learn More
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
+              <Link href="/centurioncoach" className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 font-semibold text-blue-700 hover:bg-blue-50">
+                Learn more <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
-            <div className="text-6xl md:text-8xl">🏛️</div>
+            <LogoMark className="h-28 w-auto shrink-0 text-white/90" />
           </div>
         </div>
       </section>
