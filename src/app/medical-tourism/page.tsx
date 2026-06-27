@@ -5,6 +5,7 @@ import Navigation from '@/components/Navigation';
 import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
 import { Globe, ArrowRight, Plane, ShieldCheck, BadgeCheck, Tag } from 'lucide-react';
+import { DESTINATION_PHOTO_CREDITS } from '@/lib/destination-photo-credits';
 
 export const metadata: Metadata = {
   title: 'Medical Tourism: Save 50–80% on Procedures Abroad',
@@ -158,7 +159,17 @@ export default function Page() {
                 </Link>
               ))}
             </div>
-            <p className="mt-4 text-xs text-gray-400">Destination photos via Wikimedia Commons.</p>
+            <p className="mt-4 text-xs text-gray-400">
+              Destination photos via{' '}
+              <a href="https://unsplash.com/?utm_source=vitalityscout&utm_medium=referral" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-600">Unsplash</a>
+              {' — '}
+              {DESTINATION_PHOTO_CREDITS.map((c, i) => (
+                <span key={c.slug}>
+                  <a href={c.photographerUrl} target="_blank" rel="noopener noreferrer" className="hover:text-gray-600 hover:underline">{c.photographer}</a>
+                  {i < DESTINATION_PHOTO_CREDITS.length - 1 ? ', ' : '.'}
+                </span>
+              ))}
+            </p>
           </div>
         </section>
 
