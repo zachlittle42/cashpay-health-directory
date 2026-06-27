@@ -60,7 +60,7 @@ function NavTree({ pathname, onNavigate }: { pathname: string; onNavigate?: () =
               <div className="mb-1 ml-4 mt-0.5 space-y-3 border-l border-gray-200 pl-3 pb-1">
                 {g.subsections.map((s) => (
                   <div key={s.label}>
-                    <div className="mb-1 px-2 text-[10px] font-bold uppercase tracking-[0.1em] text-gray-400">{s.label}</div>
+                    <div className="mb-1.5 border-b border-gray-200 px-2 pb-1 text-[11px] font-bold uppercase tracking-wide text-blue-700">{s.label}</div>
                     <div className="space-y-px">
                       {s.items.map((it) => {
                         const isActive = it.url === pathname;

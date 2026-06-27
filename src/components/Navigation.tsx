@@ -140,7 +140,7 @@ export default function Navigation() {
                       <div className="mb-1 ml-3 mt-0.5 space-y-3 border-l border-gray-200 pl-3 pb-1">
                         {g.subsections.map((s) => (
                           <div key={s.label}>
-                            <div className="mb-1 px-2 text-[10px] font-bold uppercase tracking-[0.1em] text-gray-400">{s.label}</div>
+                            <div className="mb-1.5 border-b border-gray-200 px-2 pb-1 text-[11px] font-bold uppercase tracking-wide text-blue-700">{s.label}</div>
                             <div className="space-y-px">
                               {s.items.map((it) => (
                                 <Link key={it.url + it.label} href={it.url} onClick={() => setMobileOpen(false)} className="block rounded-md px-2 py-1.5 text-[13px] font-medium text-gray-700 hover:bg-gray-100 hover:text-gray-900">{it.label}</Link>
