@@ -23,7 +23,7 @@ const GROUP_CARD: Record<string, { hub: string; chip: string }> = {
   'look-better': { hub: '/look-better', chip: 'bg-rose-50 text-rose-600' },
   'treat-see-doctor': { hub: '/treat-see-doctor', chip: 'bg-sky-50 text-sky-600' },
   'medical-tourism': { hub: '/medical-tourism', chip: 'bg-purple-50 text-purple-600' },
-  'care-by-state': { hub: '/traditional-healthcare', chip: 'bg-orange-50 text-orange-600' },
+  'care-by-state': { hub: '/care-by-state', chip: 'bg-orange-50 text-orange-600' },
 };
 
 const PRIMARY_GROUPS = NAV_GROUPS.filter((g) => g.id !== 'resources');
