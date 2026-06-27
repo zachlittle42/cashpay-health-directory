@@ -19,7 +19,7 @@ function ProductCard({ product }: { product: CompareProduct }) {
   return (
     <div className="rounded-lg border border-gray-200 p-6 hover:border-emerald-300 transition-colors">
       <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
-        <div className="flex-1">
+        <div className="min-w-0 flex-1">
           <div className="flex flex-wrap items-center gap-2">
             <h3 className="text-lg font-semibold text-gray-900">{product.name}</h3>
             {product.featured && (

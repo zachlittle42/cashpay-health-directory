@@ -16,12 +16,12 @@ const ICONS: Record<string, any> = {
 
 // Per-group hub link + accent chip (literal classes so Tailwind picks them up).
 const GROUP_CARD: Record<string, { hub: string; chip: string }> = {
-  'test-diagnose': { hub: '/dexa', chip: 'bg-blue-50 text-blue-600' },
-  'lose-weight': { hub: '/glp1', chip: 'bg-emerald-50 text-emerald-600' },
-  'balance-hormones': { hub: '/hormone-therapy', chip: 'bg-violet-50 text-violet-600' },
-  'live-longer': { hub: '/longevity', chip: 'bg-amber-50 text-amber-600' },
-  'look-better': { hub: '/med-spa', chip: 'bg-rose-50 text-rose-600' },
-  'treat-see-doctor': { hub: '/telehealth', chip: 'bg-sky-50 text-sky-600' },
+  'test-diagnose': { hub: '/test-diagnose', chip: 'bg-blue-50 text-blue-600' },
+  'lose-weight': { hub: '/lose-weight', chip: 'bg-emerald-50 text-emerald-600' },
+  'balance-hormones': { hub: '/balance-hormones', chip: 'bg-violet-50 text-violet-600' },
+  'live-longer': { hub: '/live-longer', chip: 'bg-amber-50 text-amber-600' },
+  'look-better': { hub: '/look-better', chip: 'bg-rose-50 text-rose-600' },
+  'treat-see-doctor': { hub: '/treat-see-doctor', chip: 'bg-sky-50 text-sky-600' },
   'medical-tourism': { hub: '/medical-tourism', chip: 'bg-purple-50 text-purple-600' },
   'care-by-state': { hub: '/traditional-healthcare', chip: 'bg-orange-50 text-orange-600' },
 };

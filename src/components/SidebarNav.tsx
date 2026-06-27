@@ -13,6 +13,19 @@ const ICONS: Record<string, any> = {
   Microscope, Scale, Dna, Zap, Sparkles, Stethoscope, Globe, Building2, BookOpen, Circle,
 };
 
+// Top-level section page per nav group — the group label links here; the chevron toggles.
+const GROUP_HREF: Record<string, string> = {
+  'test-diagnose': '/test-diagnose',
+  'lose-weight': '/lose-weight',
+  'balance-hormones': '/balance-hormones',
+  'live-longer': '/live-longer',
+  'look-better': '/look-better',
+  'treat-see-doctor': '/treat-see-doctor',
+  'medical-tourism': '/medical-tourism',
+  'care-by-state': '/traditional-healthcare',
+  'resources': '/guides',
+};
+
 function groupForPath(pathname: string): string | null {
   // Find the group whose any item matches the current path (exact, then prefix).
   for (const g of NAV_GROUPS) {
@@ -45,17 +58,28 @@ function NavTree({ pathname, onNavigate }: { pathname: string; onNavigate?: () =
         const isActiveGroup = active === g.id;
         return (
           <div key={g.id}>
-            <button
-              onClick={() => toggle(g.id)}
-              aria-expanded={isOpen}
-              className={`flex w-full items-center gap-2.5 rounded-lg px-3 py-2 text-left text-sm font-semibold transition-colors ${
+            <div
+              className={`flex items-center rounded-lg transition-colors hover:bg-gray-100 ${
                 isActiveGroup ? 'text-blue-700' : 'text-gray-800'
-              } hover:bg-gray-100`}
+              }`}
             >
-              <Icon className="h-4 w-4 shrink-0 text-blue-600" strokeWidth={2} />
-              <span className="flex-1">{g.label}</span>
-              <ChevronDown className={`h-4 w-4 shrink-0 text-gray-400 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
-            </button>
+              <Link
+                href={GROUP_HREF[g.id] || '#'}
+                onClick={onNavigate}
+                className="flex flex-1 items-center gap-2.5 px-3 py-2 text-left text-sm font-semibold"
+              >
+                <Icon className="h-4 w-4 shrink-0 text-blue-600" strokeWidth={2} />
+                <span className="flex-1">{g.label}</span>
+              </Link>
+              <button
+                onClick={() => toggle(g.id)}
+                aria-expanded={isOpen}
+                aria-label={`Toggle ${g.label}`}
+                className="shrink-0 rounded-md px-2 py-2 text-gray-400 hover:text-gray-600"
+              >
+                <ChevronDown className={`h-4 w-4 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
+              </button>
+            </div>
             {isOpen && (
               <div className="mb-1 ml-4 mt-0.5 space-y-3 border-l border-gray-200 pl-3 pb-1">
                 {g.subsections.map((s) => (
