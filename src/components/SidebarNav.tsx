@@ -22,7 +22,7 @@ const GROUP_HREF: Record<string, string> = {
   'look-better': '/look-better',
   'treat-see-doctor': '/treat-see-doctor',
   'medical-tourism': '/medical-tourism',
-  'care-by-state': '/traditional-healthcare',
+  'care-by-state': '/care-by-state',
   'resources': '/guides',
 };
 
