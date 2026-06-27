@@ -5,6 +5,7 @@ import { CATEGORIES, type Category, type Provider } from '@/lib/types';
 import { getProvidersByCategory } from '@/lib/providers';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import SidebarNav from '@/components/SidebarNav';
 import { buildCategoryListSchema, buildFAQSchema } from '@/lib/jsonLd';
 import MedicalDisclaimer from '@/components/MedicalDisclaimer';
 
@@ -182,6 +183,10 @@ export default function CategoryPage({
         />
       )}
       <Navigation />
+
+      <div className="lg:flex lg:items-start">
+        <SidebarNav />
+        <div className="min-w-0 flex-1">
 
       {/* Category Header */}
       <section className={`px-4 py-12 ${hasMedicalTourism ? 'bg-gradient-to-b from-purple-50 to-white' : 'bg-gray-50'}`}>
@@ -629,6 +634,9 @@ export default function CategoryPage({
       </section>
 
       {isDexa && <MedicalDisclaimer />}
+
+        </div>
+      </div>
 
       <Footer />
     </main>
