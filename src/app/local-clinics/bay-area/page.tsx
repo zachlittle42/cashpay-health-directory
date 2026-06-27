@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import Navigation from '@/components/Navigation';
+import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
 import { BAYAREA_REGIONS, getClinicCount, getCategoryStats } from '@/lib/bayarea-clinics-data';
 
@@ -27,6 +28,7 @@ export default function BayAreaHub() {
   return (
     <>
       <Navigation />
+      <SidebarShell>
       <main className="min-h-screen bg-white">
         <script
           type="application/ld+json"
@@ -354,6 +356,7 @@ export default function BayAreaHub() {
           </div>
         </section>
       </main>
+      </SidebarShell>
       <Footer />
     </>
   );

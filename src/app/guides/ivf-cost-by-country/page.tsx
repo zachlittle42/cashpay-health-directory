@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import Navigation from '@/components/Navigation';
+import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import MedicalDisclaimer from '@/components/MedicalDisclaimer';
@@ -98,6 +99,7 @@ export default function IvfCostByCountry() {
   return (
     <main className="min-h-screen bg-white">
       <Navigation />
+      <SidebarShell>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
@@ -638,6 +640,7 @@ export default function IvfCostByCountry() {
         />
       </div>
 
+      </SidebarShell>
       <Footer />
     </main>
   );

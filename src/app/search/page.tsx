@@ -4,6 +4,7 @@ import { CATEGORIES, type Category } from '@/lib/types';
 import { ALL_PROVIDERS } from '@/lib/providers';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import SidebarShell from '@/components/SidebarShell';
 import SearchBar from '@/components/SearchBar';
 
 export const metadata: Metadata = {
@@ -21,11 +22,13 @@ export default function SearchPage({
     return (
       <main className="min-h-screen bg-white">
         <Navigation />
+        <SidebarShell>
         <section className="mx-auto max-w-4xl px-4 py-16 text-center">
           <h1 className="text-3xl font-bold text-gray-900 mb-4">Search VitalityScout</h1>
           <p className="text-gray-600 mb-8">Find providers, services, and destinations.</p>
           <SearchBar />
         </section>
+        </SidebarShell>
         <Footer />
       </main>
     );
@@ -60,6 +63,7 @@ export default function SearchPage({
     <main className="min-h-screen bg-white">
       <Navigation />
 
+      <SidebarShell>
       <section className="bg-gradient-to-b from-blue-50 to-white px-4 py-12">
         <div className="mx-auto max-w-4xl">
           <h1 className="text-3xl font-bold text-gray-900 mb-2">
@@ -136,6 +140,7 @@ export default function SearchPage({
           </div>
         )}
       </section>
+      </SidebarShell>
 
       <Footer />
     </main>

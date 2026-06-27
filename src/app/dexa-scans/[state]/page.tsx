@@ -2,6 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Navigation from '@/components/Navigation';
+import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
 import MedicalDisclaimer from '@/components/MedicalDisclaimer';
 import { getDexaClinicsByState, getDexaCitiesWithClinics, dexaStateMetadata } from '@/data/dexa-clinics-index';
@@ -76,6 +77,7 @@ export default async function StateDexa({ params }: Props) {
   return (
     <main className="min-h-screen bg-white">
       <Navigation />
+      <SidebarShell>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       {/* Hero */}
@@ -219,6 +221,7 @@ export default async function StateDexa({ params }: Props) {
       </section>
 
       <MedicalDisclaimer />
+      </SidebarShell>
       <Footer />
     </main>
   );

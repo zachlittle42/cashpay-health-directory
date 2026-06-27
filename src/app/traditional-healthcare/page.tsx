@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import Navigation from '@/components/Navigation';
+import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
 import {
   getHonorRollHospitals,
@@ -103,6 +104,7 @@ export default function TraditionalHealthcareLanding() {
   return (
     <main className="min-h-screen bg-white">
       <Navigation />
+      <SidebarShell>
 
       {/* Hero */}
       <section className="bg-gradient-to-b from-blue-50 to-white px-4 py-16">
@@ -271,6 +273,7 @@ export default function TraditionalHealthcareLanding() {
         </div>
       </section>
 
+      </SidebarShell>
       <Footer />
     </main>
   );

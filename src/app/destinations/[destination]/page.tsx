@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import Navigation from '@/components/Navigation';
+import SidebarShell from '@/components/SidebarShell';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { getProvidersByDestination } from '@/lib/providers-medical-tourism';
@@ -922,6 +924,8 @@ export default function DestinationPage({
 
   return (
     <main className="min-h-screen bg-white">
+      <Navigation />
+      <SidebarShell>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       {/* Header */}
@@ -1213,6 +1217,7 @@ export default function DestinationPage({
       </section>
 
       {/* Footer */}
+      </SidebarShell>
       <footer className="border-t border-gray-200 px-4 py-8">
         <div className="mx-auto max-w-4xl text-center">
           <p className="text-sm text-gray-500">

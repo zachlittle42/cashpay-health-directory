@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import Navigation from '@/components/Navigation';
+import SidebarShell from '@/components/SidebarShell';
 import type { Metadata } from 'next';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
@@ -35,6 +37,8 @@ export default function GLP1FAQ() {
 
   return (
     <main className="min-h-screen bg-white">
+      <Navigation />
+      <SidebarShell>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
@@ -269,6 +273,7 @@ export default function GLP1FAQ() {
         </div>
       </section>
 
+      </SidebarShell>
       <footer className="border-t border-gray-200 px-4 py-8">
         <div className="mx-auto max-w-4xl text-center">
           <Link href="/faq" className="text-blue-600 hover:underline text-sm">

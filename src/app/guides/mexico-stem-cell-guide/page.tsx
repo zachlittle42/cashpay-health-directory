@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Navigation from '@/components/Navigation';
+import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
 import type { Metadata } from 'next';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
@@ -27,6 +28,7 @@ export default function MexicoStemCellGuide() {
   return (
     <>
       <Navigation />
+      <SidebarShell>
       <main className="min-h-screen bg-white">
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <div className="bg-gray-50 border-b border-gray-200">
@@ -536,6 +538,7 @@ export default function MexicoStemCellGuide() {
       </div>
 
       </main>
+      </SidebarShell>
       <Footer />
     </>
   );

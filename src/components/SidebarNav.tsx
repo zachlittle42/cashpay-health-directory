@@ -98,9 +98,9 @@ export default function SidebarNav() {
 
   return (
     <>
-      {/* Desktop: fixed left rail */}
-      <aside className="hidden lg:block w-64 shrink-0 border-r border-gray-200 bg-white">
-        <div className="sticky top-0 max-h-screen overflow-y-auto px-3">
+      {/* Desktop: sticky left rail (pinned below the sticky top nav) */}
+      <aside className="hidden lg:block w-64 shrink-0 self-start sticky top-16 max-h-[calc(100vh-4rem)] overflow-y-auto border-r border-gray-200 bg-white">
+        <div className="px-3">
           <NavTree pathname={pathname} />
         </div>
       </aside>

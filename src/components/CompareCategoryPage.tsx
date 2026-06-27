@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import SidebarShell from '@/components/SidebarShell';
 import MedicalDisclaimer from '@/components/MedicalDisclaimer';
 import { buildFAQSchema } from '@/lib/jsonLd';
 import type {
@@ -144,6 +145,7 @@ export default function CompareCategoryPage({
       />
       <Navigation />
 
+      <SidebarShell>
       {/* Breadcrumb */}
       <div className="border-b border-gray-200 bg-gray-50">
         <div className="mx-auto max-w-5xl px-4 py-3">
@@ -280,6 +282,7 @@ export default function CompareCategoryPage({
       </section>
 
       {category.requiresMedicalDisclaimer && <MedicalDisclaimer />}
+      </SidebarShell>
 
       <Footer />
     </main>

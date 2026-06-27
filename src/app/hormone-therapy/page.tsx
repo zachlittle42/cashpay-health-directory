@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import Navigation from '@/components/Navigation';
+import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
 import { getStatesWithClinics, allHormoneClinics } from '@/data/hormone-clinics-index';
 
@@ -106,6 +107,7 @@ export default function HormoneTherapyHub() {
   return (
     <main className="min-h-screen bg-white">
       <Navigation />
+      <SidebarShell>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       {/* Hero */}
@@ -437,6 +439,7 @@ export default function HormoneTherapyHub() {
         </div>
       </section>
 
+      </SidebarShell>
       <Footer />
     </main>
   );

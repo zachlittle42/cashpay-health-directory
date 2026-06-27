@@ -3,6 +3,8 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import USAMap from '@/components/USAMap';
+import Navigation from '@/components/Navigation';
+import SidebarShell from '@/components/SidebarShell';
 
 interface Region {
   name: string;
@@ -735,6 +737,8 @@ export default function USHealthcareByRegionGuide() {
 
   return (
     <div className="min-h-screen bg-white">
+      <Navigation />
+      <SidebarShell>
       <nav className="border-b border-gray-200 bg-white">
         <div className="mx-auto max-w-7xl px-4 py-4">
           <Link href="/" className="text-blue-600 hover:underline text-sm">
@@ -899,6 +903,7 @@ export default function USHealthcareByRegionGuide() {
           </Link>
         </div>
       </section>
+      </SidebarShell>
 
       <footer className="border-t border-gray-200 px-4 py-8">
         <div className="mx-auto max-w-4xl text-center">

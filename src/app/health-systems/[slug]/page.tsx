@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import Navigation from '@/components/Navigation';
+import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
 import {
   getHealthSystemBySlug,
@@ -64,6 +65,7 @@ export default function HealthSystemPage({ params }: { params: { slug: string } 
   return (
     <main className="min-h-screen bg-white">
       <Navigation />
+      <SidebarShell>
 
       {/* Hero Section */}
       <section className="bg-gradient-to-b from-blue-50 to-white px-4 py-12">
@@ -362,6 +364,7 @@ export default function HealthSystemPage({ params }: { params: { slug: string } 
         </div>
       </section>
 
+      </SidebarShell>
       <Footer />
     </main>
   );

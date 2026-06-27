@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Navigation from '@/components/Navigation';
+import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
 import { CALIFORNIA_REGIONS } from '@/lib/california-healthcare-data';
 
@@ -24,6 +25,7 @@ export default function CaliforniaHealthcarePage() {
   return (
     <main className="min-h-screen bg-white">
       <Navigation />
+      <SidebarShell>
 
       {/* Header */}
       <section className="bg-gradient-to-b from-blue-50 to-white px-4 py-12">
@@ -219,6 +221,7 @@ export default function CaliforniaHealthcarePage() {
         </div>
       </section>
 
+      </SidebarShell>
       <Footer />
     </main>
   );
