@@ -5,7 +5,7 @@ import SidebarNav from './SidebarNav';
 // Top nav + footer stay full-width; only the content column sits beside the rail.
 export default function SidebarShell({ children }: { children: ReactNode }) {
   return (
-    <div className="lg:flex lg:items-start">
+    <div className="lg:flex lg:items-stretch">
       <SidebarNav />
       <div className="min-w-0 flex-1">{children}</div>
     </div>

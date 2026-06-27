@@ -184,7 +184,7 @@ export default function CategoryPage({
       )}
       <Navigation />
 
-      <div className="lg:flex lg:items-start">
+      <div className="lg:flex lg:items-stretch">
         <SidebarNav />
         <div className="min-w-0 flex-1">
 
