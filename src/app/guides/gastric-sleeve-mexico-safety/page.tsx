@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import Navigation from '@/components/Navigation';
+import SidebarShell from '@/components/SidebarShell';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -23,6 +25,8 @@ export default function GastricSleeveGuide() {
 
   return (
     <main className="min-h-screen bg-white">
+      <Navigation />
+      <SidebarShell>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <header className="border-b border-gray-200 px-4 py-4">
         <div className="mx-auto max-w-4xl">
@@ -290,6 +294,7 @@ export default function GastricSleeveGuide() {
         </div>
       </article>
 
+      </SidebarShell>
       <footer className="border-t border-gray-200 px-4 py-8">
         <div className="mx-auto max-w-4xl text-center">
           <Link href="/guides" className="text-blue-600 hover:underline text-sm">

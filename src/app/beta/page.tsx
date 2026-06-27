@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import Navigation from '@/components/Navigation';
+import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
 import HeroSection from '@/components/home/HeroSection';
 import CategorySpotlight from '@/components/home/CategorySpotlight';
@@ -47,6 +48,7 @@ export default function V2HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Navigation />
+      <SidebarShell>
 
       {/* Section 1: Hero */}
       <HeroSection />
@@ -267,6 +269,7 @@ export default function V2HomePage() {
         </Link>
       </section>
 
+      </SidebarShell>
       <Footer />
 
       {/* Section 8: Sticky CTA Bar */}

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Navigation from '@/components/Navigation';
+import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
 import type { Metadata } from 'next';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
@@ -39,6 +40,7 @@ export default function PeptideTherapyGuide() {
   return (
     <>
       <Navigation />
+      <SidebarShell>
       <main className="min-h-screen bg-white">
         <script
           type="application/ld+json"
@@ -537,6 +539,7 @@ export default function PeptideTherapyGuide() {
           />
         </div>
       </main>
+      </SidebarShell>
       <Footer />
     </>
   );

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import Navigation from '@/components/Navigation';
+import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
@@ -46,6 +47,7 @@ export default function GeneralFAQ() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <Navigation />
+      <SidebarShell>
 
       <section className="bg-gradient-to-b from-blue-50 to-white px-4 py-12">
         <div className="mx-auto max-w-4xl">
@@ -417,6 +419,7 @@ export default function GeneralFAQ() {
         </div>
       </section>
 
+      </SidebarShell>
       <Footer />
     </main>
   );

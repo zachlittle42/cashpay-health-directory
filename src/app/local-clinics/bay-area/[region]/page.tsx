@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import Navigation from '@/components/Navigation';
+import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
 import { BAYAREA_REGIONS, getRegionBySlug, LocalClinic } from '@/lib/bayarea-clinics-data';
 
@@ -149,6 +150,7 @@ export default function RegionPage({ params }: { params: { region: string } }) {
   return (
     <>
       <Navigation />
+      <SidebarShell>
       <main className="min-h-screen bg-white">
         <script
           type="application/ld+json"
@@ -298,6 +300,7 @@ export default function RegionPage({ params }: { params: { region: string } }) {
           </div>
         </section>
       </main>
+      </SidebarShell>
       <Footer />
     </>
   );

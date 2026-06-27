@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import Navigation from '@/components/Navigation';
+import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
 import { getStateBySlug, getAllStateSlugs, type StateData } from '@/lib/us-healthcare-data';
 
@@ -20,6 +21,7 @@ export default function StatePage({ params }: { params: { state: string } }) {
   return (
     <main className="min-h-screen bg-white">
       <Navigation />
+      <SidebarShell>
 
       {/* State Header */}
       <section className="bg-gradient-to-b from-blue-50 to-white px-4 py-12">
@@ -124,6 +126,7 @@ export default function StatePage({ params }: { params: { state: string } }) {
         </div>
       </section>
 
+      </SidebarShell>
       <Footer />
     </main>
   );

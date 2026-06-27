@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import Navigation from '@/components/Navigation';
+import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
@@ -30,6 +31,7 @@ export default function LocalClinicsHub() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Navigation />
+      <SidebarShell>
 
       {/* Hero */}
       <section className="bg-gradient-to-b from-green-50 to-white px-4 py-16">
@@ -219,6 +221,7 @@ export default function LocalClinicsHub() {
         </div>
       </section>
 
+      </SidebarShell>
       <Footer />
     </main>
   );

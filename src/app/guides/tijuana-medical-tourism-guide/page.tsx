@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import Navigation from '@/components/Navigation';
+import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
@@ -103,6 +104,7 @@ export default function TijuanaMedicalTourismGuide() {
   return (
     <main className="min-h-screen bg-white">
       <Navigation />
+      <SidebarShell>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
@@ -593,6 +595,7 @@ export default function TijuanaMedicalTourismGuide() {
         />
       </div>
 
+      </SidebarShell>
       <Footer />
     </main>
   );

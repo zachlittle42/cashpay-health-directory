@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import Navigation from '@/components/Navigation';
+import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
 import MedicalDisclaimer from '@/components/MedicalDisclaimer';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
@@ -158,6 +159,7 @@ export default function DexaScanCostSanFrancisco() {
   return (
     <main className="min-h-screen bg-white">
       <Navigation />
+      <SidebarShell>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
@@ -508,6 +510,7 @@ export default function DexaScanCostSanFrancisco() {
         />
       </div>
 
+      </SidebarShell>
       <Footer />
     </main>
   );

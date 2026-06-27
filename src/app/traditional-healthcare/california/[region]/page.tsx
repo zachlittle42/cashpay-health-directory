@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import Navigation from '@/components/Navigation';
+import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
 import {
   getCaliforniaRegionBySlug,
@@ -38,6 +39,7 @@ export default function CaliforniaRegionPage({
   return (
     <main className="min-h-screen bg-white">
       <Navigation />
+      <SidebarShell>
 
       {/* Header */}
       <section className="bg-gradient-to-b from-blue-50 to-white px-4 py-12">
@@ -219,6 +221,7 @@ export default function CaliforniaRegionPage({
         </div>
       </section>
 
+      </SidebarShell>
       <Footer />
     </main>
   );

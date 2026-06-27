@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import Navigation from '@/components/Navigation';
+import SidebarShell from '@/components/SidebarShell';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getProviderBySlug, getTotalProviderCount } from '@/lib/providers';
@@ -38,6 +40,8 @@ export default function ProviderDetailPage({
 
   return (
     <main className="min-h-screen bg-white">
+      <Navigation />
+      <SidebarShell>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(providerSchema) }}
@@ -310,6 +314,7 @@ export default function ProviderDetailPage({
       </section>
 
       {/* Footer */}
+      </SidebarShell>
       <footer className="border-t border-gray-200 px-4 py-8 mt-16">
         <div className="mx-auto max-w-4xl text-center text-sm text-gray-500">
           <p>

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import Navigation from '@/components/Navigation';
+import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
@@ -80,6 +81,7 @@ export default function QuestVsLabcorpPricing() {
   return (
     <>
       <Navigation />
+      <SidebarShell>
       <main className="min-h-screen bg-white">
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
@@ -557,6 +559,7 @@ export default function QuestVsLabcorpPricing() {
           />
         </div>
       </main>
+      </SidebarShell>
       <Footer />
     </>
   );

@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import Navigation from '@/components/Navigation';
+import SidebarShell from '@/components/SidebarShell';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -24,6 +26,8 @@ export default function CenturionCoachPage() {
 
   return (
     <main className="min-h-screen bg-white">
+      <Navigation />
+      <SidebarShell>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -417,6 +421,7 @@ export default function CenturionCoachPage() {
       </section>
 
       {/* Footer */}
+      </SidebarShell>
       <footer className="bg-gray-900 px-4 py-12">
         <div className="mx-auto max-w-6xl">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">

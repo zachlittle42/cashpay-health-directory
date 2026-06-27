@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Navigation from '@/components/Navigation';
+import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
 import MedicalDisclaimer from '@/components/MedicalDisclaimer';
 import type { Metadata } from 'next';
@@ -85,6 +86,7 @@ export default function BrazilPlasticSurgeryCostGuide() {
   return (
     <>
       <Navigation />
+      <SidebarShell>
       <main className="min-h-screen bg-white">
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
@@ -461,6 +463,7 @@ export default function BrazilPlasticSurgeryCostGuide() {
           />
         </div>
       </main>
+      </SidebarShell>
       <Footer />
     </>
   );

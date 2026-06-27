@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { CATEGORIES, type Category } from '@/lib/types';
 import Navigation from '@/components/Navigation';
+import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
 
 // Group categories for display
@@ -63,6 +64,7 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Navigation />
+      <SidebarShell>
 
       {/* Hero */}
       <section className="bg-gradient-to-b from-blue-50 to-white px-4 py-16 sm:py-20">
@@ -435,6 +437,7 @@ export default function Home() {
         </div>
       </section>
 
+      </SidebarShell>
       <Footer />
     </main>
   );
