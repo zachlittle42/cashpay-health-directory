@@ -1,10 +1,13 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import Navigation from '@/components/Navigation';
 import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
 import { LogoMark } from '@/components/Logo';
 import SearchAutocomplete from '@/components/SearchAutocomplete';
 import { NAV_GROUPS, type NavGroup } from '@/lib/nav-tree';
+import { HOME_PHOTO_CREDITS } from '@/lib/home-photo-credits';
+import { DESTINATION_PHOTO_CREDITS } from '@/lib/destination-photo-credits';
 import {
   Microscope, Scale, Dna, Zap, Sparkles, Stethoscope, Globe, Building2, Circle,
   Package, MapPin, Plane, ArrowRight, DollarSign, BadgeCheck, Scale as ScaleIcon,
@@ -39,20 +42,27 @@ const POPULAR_SEARCHES = [
 // Three "ways to get care" — teaches the site's three delivery modes.
 const WAYS = [
   {
-    icon: Package, chip: 'bg-blue-50 text-blue-600',
+    icon: Package, chip: 'bg-blue-50 text-blue-600', img: '/home/telehealth.jpg',
     title: 'Ship to your door', desc: 'No travel. Order online; results or meds arrive at home.',
     links: [{ l: 'At-home lab testing', h: '/labs' }, { l: 'GLP-1 programs', h: '/glp1' }, { l: 'TRT & hormones', h: '/trt' }],
   },
   {
-    icon: MapPin, chip: 'bg-emerald-50 text-emerald-600',
+    icon: MapPin, chip: 'bg-emerald-50 text-emerald-600', img: '/home/clinic.jpg',
     title: 'Visit a local clinic', desc: 'Cash-pay services near you that need an in-person visit.',
     links: [{ l: 'DEXA body scans', h: '/dexa' }, { l: 'Med spa & aesthetics', h: '/med-spa' }, { l: 'IV therapy', h: '/iv' }],
   },
   {
-    icon: Plane, chip: 'bg-purple-50 text-purple-600',
+    icon: Plane, chip: 'bg-purple-50 text-purple-600', img: '/home/travel.jpg',
     title: 'Travel & save abroad', desc: 'Major procedures at 50–80% off US prices. Compare destinations.',
     links: [{ l: 'Hair transplant abroad', h: '/hair_transplant' }, { l: 'Dental tourism', h: '/dental' }, { l: 'All destinations', h: '/medical-tourism' }],
   },
+];
+
+// Photo credits shown on the homepage (Unsplash attribution per their API guidelines).
+const SHOWN_DEST = ['mexico', 'turkey', 'south-korea', 'thailand', 'spain', 'panama'];
+const PHOTO_CREDITS = [
+  ...HOME_PHOTO_CREDITS.map((c) => ({ name: c.photographer, url: c.photographerUrl })),
+  ...DESTINATION_PHOTO_CREDITS.filter((c) => SHOWN_DEST.includes(c.slug)).map((c) => ({ name: c.photographer, url: c.photographerUrl })),
 ];
 
 const FEATURED_GUIDES = [
@@ -124,26 +134,37 @@ export default function Home() {
       <Navigation />
       <SidebarShell>
 
-      {/* Hero — search forward */}
-      <section className="relative overflow-hidden border-b border-gray-100 bg-gradient-to-b from-blue-50/70 to-white">
-        <LogoMark className="pointer-events-none absolute -right-6 top-1/2 hidden h-72 w-auto -translate-y-1/2 text-blue-600/5 lg:block" />
-        <div className="relative mx-auto max-w-3xl px-4 py-16 text-center sm:py-20">
-          <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-            Find the right care<br className="hidden sm:block" /> at the right price.
-          </h1>
-          <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-gray-600">
-            Compare cash-pay clinics, telehealth, and treatment abroad — transparent prices, honest comparisons, no insurance maze.
-          </p>
-          <div className="mx-auto mt-8 max-w-xl">
-            <SearchAutocomplete variant="hero" placeholder="Search a treatment, clinic, or destination…" />
+      {/* Hero — search + image */}
+      <section className="border-b border-gray-100 bg-gradient-to-b from-blue-50/70 to-white">
+        <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-14 sm:px-6 sm:py-16 lg:grid-cols-[1.1fr_0.9fr]">
+          <div>
+            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+              Find the right care at the right price.
+            </h1>
+            <p className="mt-5 max-w-xl text-lg leading-8 text-gray-600">
+              Compare cash-pay clinics, telehealth, and treatment abroad — transparent prices, honest comparisons, no insurance maze.
+            </p>
+            <div className="mt-8 max-w-xl">
+              <SearchAutocomplete variant="hero" placeholder="Search a treatment, clinic, or destination…" />
+            </div>
+            <div className="mt-4 flex flex-wrap items-center gap-2 text-sm">
+              <span className="text-gray-400">Popular:</span>
+              {POPULAR_SEARCHES.map((t) => (
+                <Link key={t.h} href={t.h} className="rounded-full border border-gray-200 bg-white/60 px-3 py-1 text-gray-600 hover:border-blue-300 hover:text-blue-700">
+                  {t.l}
+                </Link>
+              ))}
+            </div>
           </div>
-          <div className="mt-4 flex flex-wrap items-center justify-center gap-2 text-sm">
-            <span className="text-gray-400">Popular:</span>
-            {POPULAR_SEARCHES.map((t) => (
-              <Link key={t.h} href={t.h} className="rounded-full border border-gray-200 px-3 py-1 text-gray-600 hover:border-blue-300 hover:text-blue-700">
-                {t.l}
-              </Link>
-            ))}
+          <div className="relative hidden aspect-[4/5] w-full overflow-hidden rounded-3xl shadow-lg ring-1 ring-black/5 lg:block">
+            <Image
+              src="/home/hero.jpg"
+              alt="A clinician reviewing care options with a patient"
+              fill
+              sizes="(min-width: 1024px) 40vw, 0px"
+              className="object-cover"
+              priority
+            />
           </div>
         </div>
       </section>
@@ -158,21 +179,26 @@ export default function Home() {
           {WAYS.map((w) => {
             const Icon = w.icon;
             return (
-              <div key={w.title} className="rounded-2xl border border-gray-200 bg-white p-6 transition-shadow hover:shadow-md">
-                <span className={`mb-4 inline-flex h-11 w-11 items-center justify-center rounded-xl ${w.chip}`}>
-                  <Icon className="h-5 w-5" strokeWidth={2} />
-                </span>
-                <h3 className="font-semibold text-gray-900">{w.title}</h3>
-                <p className="mt-1 text-sm text-gray-600">{w.desc}</p>
-                <ul className="mt-4 space-y-1.5 border-t border-gray-100 pt-4">
-                  {w.links.map((l) => (
-                    <li key={l.h}>
-                      <Link href={l.h} className="inline-flex items-center gap-1 text-sm text-gray-700 hover:text-blue-700">
-                        {l.l} <ArrowRight className="h-3 w-3 opacity-0 transition-opacity group-hover:opacity-100" />
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
+              <div key={w.title} className="group overflow-hidden rounded-2xl border border-gray-200 bg-white transition-shadow hover:shadow-md">
+                <div className="relative aspect-[16/9] w-full overflow-hidden bg-gray-100">
+                  <Image src={w.img} alt={w.title} fill sizes="(min-width: 768px) 33vw, 100vw" className="object-cover transition-transform duration-300 group-hover:scale-105" />
+                  <span className={`absolute left-3 top-3 inline-flex h-9 w-9 items-center justify-center rounded-lg shadow-sm ${w.chip}`}>
+                    <Icon className="h-4 w-4" strokeWidth={2} />
+                  </span>
+                </div>
+                <div className="p-6">
+                  <h3 className="font-semibold text-gray-900">{w.title}</h3>
+                  <p className="mt-1 text-sm text-gray-600">{w.desc}</p>
+                  <ul className="mt-4 space-y-1.5 border-t border-gray-100 pt-4">
+                    {w.links.map((l) => (
+                      <li key={l.h}>
+                        <Link href={l.h} className="inline-flex items-center gap-1 text-sm text-gray-700 hover:text-blue-700">
+                          {l.l} <ArrowRight className="h-3 w-3 opacity-0 transition-opacity group-hover:opacity-100" />
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             );
           })}
@@ -226,13 +252,18 @@ export default function Home() {
             <h2 className="text-2xl font-bold text-gray-900">Popular destinations</h2>
             <p className="mt-2 text-gray-600">Where people travel for high-value care — and what each is known for.</p>
           </div>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {DESTINATIONS.map((d) => (
-              <Link key={d.h} href={d.h} className="flex items-center gap-3 rounded-xl border border-gray-200 bg-white px-4 py-3 transition-colors hover:border-purple-300 hover:bg-purple-50/40">
-                <span className="text-2xl">{d.flag}</span>
-                <div>
-                  <div className="font-medium text-gray-900">{d.name}</div>
-                  <div className="text-xs text-gray-500">{d.s}</div>
+              <Link key={d.h} href={d.h} className="group overflow-hidden rounded-xl border border-gray-200 bg-white transition-shadow hover:shadow-md">
+                <div className="relative aspect-[16/10] w-full overflow-hidden bg-gray-100">
+                  <Image src={`/destinations/${d.h.split('/').pop()}.jpg`} alt={d.name} fill sizes="(min-width: 1024px) 33vw, 100vw" className="object-cover transition-transform duration-300 group-hover:scale-105" />
+                </div>
+                <div className="flex items-center gap-2 p-4">
+                  <span className="text-lg">{d.flag}</span>
+                  <div>
+                    <div className="font-medium text-gray-900 group-hover:text-purple-700">{d.name}</div>
+                    <div className="text-xs text-gray-500">{d.s}</div>
+                  </div>
                 </div>
               </Link>
             ))}
@@ -287,6 +318,21 @@ export default function Home() {
             <LogoMark className="h-28 w-auto shrink-0 text-white/90" />
           </div>
         </div>
+      </section>
+
+      {/* Photo credits */}
+      <section className="mx-auto max-w-6xl px-4 pb-10 sm:px-6">
+        <p className="text-xs text-gray-400">
+          Photography via{' '}
+          <a href="https://unsplash.com/?utm_source=vitalityscout&utm_medium=referral" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-600">Unsplash</a>
+          {' — '}
+          {PHOTO_CREDITS.map((c, i) => (
+            <span key={c.url + i}>
+              <a href={c.url} target="_blank" rel="noopener noreferrer" className="hover:text-gray-600 hover:underline">{c.name}</a>
+              {i < PHOTO_CREDITS.length - 1 ? ', ' : '.'}
+            </span>
+          ))}
+        </p>
       </section>
 
       </SidebarShell>
