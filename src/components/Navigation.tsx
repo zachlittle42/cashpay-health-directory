@@ -15,29 +15,50 @@ const ICONS: Record<string, any> = {
 const PRIMARY = NAV_GROUPS.filter((g) => g.id !== 'resources');
 const RESOURCES = NAV_GROUPS.find((g) => g.id === 'resources');
 
+// Representative landing page per group (header + "View all" target in the mega-menu).
+const GROUP_HUB: Record<string, string> = {
+  'test-diagnose': '/dexa',
+  'lose-weight': '/glp1',
+  'balance-hormones': '/hormone-therapy',
+  'live-longer': '/longevity',
+  'look-better': '/med-spa',
+  'treat-see-doctor': '/telehealth',
+  'medical-tourism': '/medical-tourism',
+  'care-by-state': '/traditional-healthcare',
+};
+
+const MEGA_MAX = 6; // compact: show top N links per group in the mega-menu (full depth is in the sidebar)
+
 function GroupColumn({ group, onNavigate }: { group: typeof NAV_GROUPS[number]; onNavigate?: () => void }) {
   const Icon = ICONS[group.icon] || Circle;
+  const items = group.subsections.flatMap((s) => s.items);
+  const shown = items.slice(0, MEGA_MAX);
+  const hub = GROUP_HUB[group.id];
   return (
     <div className="min-w-0">
-      <div className="mb-2 flex items-center gap-2 text-sm font-bold text-gray-900">
+      <Link
+        href={hub || shown[0]?.url || '/'}
+        onClick={onNavigate}
+        className="mb-1.5 flex items-center gap-2 text-sm font-bold text-gray-900 hover:text-blue-700"
+      >
         <Icon className="h-4 w-4 text-blue-600" strokeWidth={2} />
         {group.label}
-      </div>
-      {group.subsections.map((s) => (
-        <div key={s.label} className="mb-2">
-          <div className="text-[10px] font-semibold uppercase tracking-wide text-gray-400">{s.label}</div>
-          {s.items.map((it) => (
-            <Link
-              key={it.url + it.label}
-              href={it.url}
-              onClick={onNavigate}
-              className="block truncate py-0.5 text-[13px] text-gray-600 hover:text-blue-600"
-            >
-              {it.label}
-            </Link>
-          ))}
-        </div>
+      </Link>
+      {shown.map((it) => (
+        <Link
+          key={it.url + it.label}
+          href={it.url}
+          onClick={onNavigate}
+          className="block truncate py-0.5 text-[13px] text-gray-600 hover:text-blue-600"
+        >
+          {it.label}
+        </Link>
       ))}
+      {items.length > shown.length && hub && (
+        <Link href={hub} onClick={onNavigate} className="mt-0.5 block text-[12px] font-medium text-blue-600 hover:text-blue-700">
+          View all {group.label} &rarr;
+        </Link>
+      )}
     </div>
   );
 }
@@ -116,13 +137,15 @@ export default function Navigation() {
                       <ChevronDown className={`h-4 w-4 text-gray-400 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
                     </button>
                     {isOpen && (
-                      <div className="ml-3 border-l border-gray-200 pl-3 pb-2">
+                      <div className="mb-1 ml-3 mt-0.5 space-y-3 border-l border-gray-200 pl-3 pb-1">
                         {g.subsections.map((s) => (
-                          <div key={s.label} className="mt-2">
-                            <div className="px-2 pb-1 text-[10px] font-semibold uppercase tracking-wide text-gray-400">{s.label}</div>
-                            {s.items.map((it) => (
-                              <Link key={it.url + it.label} href={it.url} onClick={() => setMobileOpen(false)} className="block rounded-md px-2 py-1.5 text-sm text-gray-600 hover:bg-gray-50 hover:text-blue-600">{it.label}</Link>
-                            ))}
+                          <div key={s.label}>
+                            <div className="mb-1 px-2 text-[10px] font-bold uppercase tracking-[0.1em] text-gray-400">{s.label}</div>
+                            <div className="space-y-px">
+                              {s.items.map((it) => (
+                                <Link key={it.url + it.label} href={it.url} onClick={() => setMobileOpen(false)} className="block rounded-md px-2 py-1.5 text-[13px] font-medium text-gray-700 hover:bg-gray-100 hover:text-gray-900">{it.label}</Link>
+                              ))}
+                            </div>
                           </div>
                         ))}
                       </div>

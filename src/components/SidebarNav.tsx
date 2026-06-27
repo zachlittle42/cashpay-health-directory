@@ -57,25 +57,30 @@ function NavTree({ pathname, onNavigate }: { pathname: string; onNavigate?: () =
               <ChevronDown className={`h-4 w-4 shrink-0 text-gray-400 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
             </button>
             {isOpen && (
-              <div className="ml-3 border-l border-gray-200 pl-3 pb-2">
+              <div className="mb-1 ml-4 mt-0.5 space-y-3 border-l border-gray-200 pl-3 pb-1">
                 {g.subsections.map((s) => (
-                  <div key={s.label} className="mt-2">
-                    <div className="px-2 pb-1 text-[11px] font-semibold uppercase tracking-wide text-gray-400">{s.label}</div>
-                    {s.items.map((it) => {
-                      const isActive = it.url === pathname;
-                      return (
-                        <Link
-                          key={it.url + it.label}
-                          href={it.url}
-                          onClick={onNavigate}
-                          className={`block rounded-md px-2 py-1.5 text-sm transition-colors ${
-                            isActive ? 'bg-blue-50 font-medium text-blue-700' : 'text-gray-600 hover:bg-gray-50 hover:text-blue-600'
-                          }`}
-                        >
-                          {it.label}
-                        </Link>
-                      );
-                    })}
+                  <div key={s.label}>
+                    <div className="mb-1 px-2 text-[10px] font-bold uppercase tracking-[0.1em] text-gray-400">{s.label}</div>
+                    <div className="space-y-px">
+                      {s.items.map((it) => {
+                        const isActive = it.url === pathname;
+                        return (
+                          <Link
+                            key={it.url + it.label}
+                            href={it.url}
+                            onClick={onNavigate}
+                            aria-current={isActive ? 'page' : undefined}
+                            className={`block rounded-md px-2 py-1.5 text-[13px] leading-snug transition-colors ${
+                              isActive
+                                ? 'bg-blue-50 font-semibold text-blue-700'
+                                : 'font-medium text-gray-700 hover:bg-gray-100 hover:text-gray-900'
+                            }`}
+                          >
+                            {it.label}
+                          </Link>
+                        );
+                      })}
+                    </div>
                   </div>
                 ))}
               </div>
