@@ -6,6 +6,7 @@ import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
   title: 'Hair Transplant FAQ: FUE, DHI, Results & Recovery (2024)',
+  alternates: { canonical: '/faq/hair-transplant' },
   description: 'Common questions about hair transplants. Pain, results timeline, FUE vs DHI, costs, and what to expect from your procedure.',
 };
 

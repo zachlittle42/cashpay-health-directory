@@ -22,6 +22,7 @@ export function generateMetadata({ params }: { params: { region: string } }) {
   return {
     title: `${region.name} Healthcare - Top Hospitals & Health Systems`,
     description: `Compare ${region.healthSystems.length} top health systems in ${region.name}, California. ${region.overview.slice(0, 150)}...`,
+    alternates: { canonical: `/traditional-healthcare/california/${params.region}` },
   };
 }
 

@@ -24,6 +24,7 @@ export function generateMetadata({ params }: { params: { region: string } }): Me
   return {
     title: `${region.name} Cash-Pay Clinics: DEXA, IV Therapy, Longevity`,
     description: `Find cash-pay health clinics in ${region.cities.slice(0, 3).join(', ')}. ${region.clinics.length} clinics offering DEXA scans, IV therapy, longevity services. No insurance needed.`,
+    alternates: { canonical: `/local-clinics/bay-area/${params.region}` },
     keywords: [
       `DEXA scan ${region.cities[0]}`,
       `IV therapy ${region.name}`,

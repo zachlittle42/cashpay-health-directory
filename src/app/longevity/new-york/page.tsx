@@ -6,6 +6,7 @@ import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: 'New York Longevity Clinics: NYC, Princeton NJ',
+  alternates: { canonical: '/longevity/new-york' },
   description: 'Find longevity clinics in New York. Fountain Life NYC, Eleven Eleven Wellness, Princeton Longevity Center. Stem cells, NAD+, executive health.',
 };
 

@@ -6,6 +6,7 @@ import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
   title: 'Lab Testing FAQ: At-Home Blood Tests & Direct-to-Consumer Labs (2024)',
+  alternates: { canonical: '/faq/labs' },
   description: 'Common questions about at-home lab testing. Accuracy, what to test, insurance, and interpreting your results.',
 };
 

@@ -74,6 +74,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `DEXA Scans in ${cityName}: ${clinics.length} Body Composition Clinics`,
     description: `Find DEXA scan and body-composition studios in ${cityName}, ${stateInfo.name}. Compare ${clinics.length} clinics — prices, mobile vs studio, RMR and VO2 max add-ons.`,
+    alternates: { canonical: `/dexa-scans/${stateSlug}/${citySlug}` },
+    // Thin-content guard: cities with < 3 clinics stay out of the index.
+    ...(clinics.length < 3 ? { robots: { index: false, follow: true } } : {}),
   };
 }
 

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Navigation from '@/components/Navigation';
 import SidebarShell from '@/components/SidebarShell';
@@ -9,6 +10,16 @@ export function generateStaticParams() {
   return getAllStateSlugs().map((slug) => ({
     state: slug,
   }));
+}
+
+export function generateMetadata({ params }: { params: { state: string } }): Metadata {
+  const stateData = getStateBySlug(params.state);
+  if (!stateData) return { title: 'State Not Found' };
+  return {
+    title: `${stateData.name} Hospitals & Health Systems by Region`,
+    description: `Top hospitals and health systems across ${stateData.name}'s ${stateData.regions.length} healthcare regions. Compare rankings, specialties, and locations.`,
+    alternates: { canonical: `/traditional-healthcare/${params.state}` },
+  };
 }
 
 export default function StatePage({ params }: { params: { state: string } }) {

@@ -29,6 +29,7 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
   return {
     title: `${system.name} - ${system.location.city}, ${system.location.state}`,
     description: `${system.name} is ${system.ranking.honorRoll ? 'a US News Honor Roll hospital' : 'a nationally recognized health system'}. ${specialtyText ? `Top-ranked for ${specialtyText}.` : ''} Learn about their specialties, rankings, and achievements.`,
+    alternates: { canonical: `/health-systems/${params.slug}` },
   };
 }
 

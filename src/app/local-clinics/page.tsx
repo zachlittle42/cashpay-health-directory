@@ -6,6 +6,7 @@ import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: 'Local Cash-Pay Clinics | DEXA, VO2 Max, IV Therapy',
+  alternates: { canonical: '/local-clinics' },
   description: 'Find local independent clinics offering cash-pay services. DEXA scans, VO2 max testing, IV therapy, and longevity clinics near you—no insurance needed.',
 };
 

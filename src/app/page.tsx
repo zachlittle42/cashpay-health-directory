@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import Navigation from '@/components/Navigation';
 import SidebarShell from '@/components/SidebarShell';
@@ -12,6 +13,10 @@ import {
   Microscope, Scale, Dna, Zap, Sparkles, Stethoscope, Globe, Building2, Circle,
   Package, MapPin, Plane, ArrowRight, DollarSign, BadgeCheck, Scale as ScaleIcon,
 } from 'lucide-react';
+
+export const metadata: Metadata = {
+  alternates: { canonical: '/' },
+};
 
 const ICONS: Record<string, any> = {
   Microscope, Scale, Dna, Zap, Sparkles, Stethoscope, Globe, Building2, Circle,

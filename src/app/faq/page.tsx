@@ -7,6 +7,7 @@ import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
   title: 'FAQ: Cash-Pay Healthcare, Medical Tourism & Self-Pay Services',
+  alternates: { canonical: '/faq' },
   description: 'Common questions about cash-pay health services, medical tourism, telehealth, and self-pay medical care. Get answers before you book.',
 };
 

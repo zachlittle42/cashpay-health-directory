@@ -3,6 +3,7 @@ import PerfCategoryPage from '@/components/PerfCategoryPage';
 
 export const metadata: Metadata = {
   title: 'Longevity Medications Online: Rapamycin, Metformin & NAD+ — 2026',
+  alternates: { canonical: '/longevity-rx' },
   description:
     'Compare telehealth programs that prescribe longevity medications online — rapamycin, metformin, low-dose naltrexone, and NAD+ via AgelessRx and Healthspan. Costs, what to expect, and the honest regulatory picture (none are FDA-approved for longevity).',
   keywords: [

@@ -49,6 +49,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${cityName} TRT & HRT Clinics: ${clinics.length} Hormone Therapy Options`,
     description: `Find hormone therapy clinics in ${cityName}, ${stateInfo.name}. Compare ${clinics.length} TRT and HRT clinics with prices, reviews, and services.`,
+    alternates: { canonical: `/hormone-therapy/${stateSlug}/${citySlug}` },
+    // Thin-content guard: cities with < 3 clinics stay out of the index.
+    ...(clinics.length < 3 ? { robots: { index: false, follow: true } } : {}),
   };
 }
 

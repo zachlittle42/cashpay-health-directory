@@ -4,13 +4,12 @@ import path from 'path';
 import { CATEGORIES } from '@/lib/types';
 import { HORMONE_STATES } from '@/lib/hormone-clinic-types';
 import { WEIGHTLOSS_STATES } from '@/lib/weightloss-clinic-types';
-import { getCitiesWithClinics } from '@/data/hormone-clinics-index';
-import { getWeightLossCitiesWithClinics } from '@/data/weightloss-clinics-index';
+import { getCitiesWithClinics, getHormoneClinicsByState } from '@/data/hormone-clinics-index';
+import { getWeightLossCitiesWithClinics, getWeightLossClinicsByState } from '@/data/weightloss-clinics-index';
 import { DEXA_STATES } from '@/lib/dexa-clinic-types';
-import { getDexaCitiesWithClinics } from '@/data/dexa-clinics-index';
+import { getDexaCitiesWithClinics, getDexaClinicsByState } from '@/data/dexa-clinics-index';
 import { MEDSPA_STATES } from '@/lib/medspa-clinic-types';
-import { getMedspaCitiesWithClinics } from '@/data/medspa-clinics-index';
-import { ALL_PROVIDERS } from '@/lib/providers';
+import { getMedspaCitiesWithClinics, getMedspaClinicsByState } from '@/data/medspa-clinics-index';
 import { getAllStateSlugs } from '@/lib/us-healthcare-data';
 import { getAllHealthSystemSlugs } from '@/lib/national-health-systems';
 import {
@@ -21,6 +20,12 @@ import { BAYAREA_REGIONS } from '@/lib/bayarea-clinics-data';
 import { SOCAL_REGIONS } from '@/lib/socal-clinics-data';
 
 const baseUrl = 'https://vitalityscout.com';
+
+// Grid pages (weight-loss / hormone-therapy / dexa-scans / med-spa) with fewer
+// than this many clinics are noindexed by their own template's generateMetadata,
+// so the sitemap must not advertise them either (a sitemap should never list a
+// noindexed URL). Threshold matches the templates' thin-content guard.
+const MIN_CLINICS_FOR_INDEX = 3;
 
 // Routes that exist as static pages but should NOT be advertised to crawlers
 // (utility/landing pages with no SEO value or that intentionally stay out of the index).
@@ -133,6 +138,9 @@ function priorityForStatic(route: string): number {
 
 // ---------------------------------------------------------------------------
 // 2 + 3. DYNAMIC ROUTE ENUMERATION (data-backed, never emits dead URLs)
+// providers/[slug] are omitted (prerendered but non-directory). Grid state/city
+// URLs below MIN_CLINICS_FOR_INDEX clinics are omitted to match the templates'
+// thin-content noindex, so the sitemap never advertises a noindexed URL.
 // ---------------------------------------------------------------------------
 function buildDynamicUrls(): string[] {
   const urls: string[] = [];
@@ -142,16 +150,10 @@ function buildDynamicUrls(): string[] {
     urls.push(`/${category}`);
   }
 
-  // providers/[slug] — every provider across all categories. (Previously 0.)
-  const providerSlugs = new Set<string>();
-  for (const list of Object.values(ALL_PROVIDERS)) {
-    for (const provider of list) {
-      providerSlugs.add(provider.slug);
-    }
-  }
-  for (const slug of Array.from(providerSlugs)) {
-    urls.push(`/providers/${slug}`);
-  }
+  // providers/[slug] are intentionally NOT enumerated here. All 315 are now
+  // prerendered (see providers/[slug] generateStaticParams) and self-canonical,
+  // but they carry unique editorial rather than directory-grid value, so they
+  // stay out of the sitemap to keep crawl budget on the money pages.
 
   // destinations/[destination]
   for (const slug of DESTINATION_SLUGS) {
@@ -191,41 +193,56 @@ function buildDynamicUrls(): string[] {
     urls.push(`/local-clinics/southern-california/${region.slug}`);
   }
 
-  // hormone-therapy/[state] + [state]/[city]
+  // hormone-therapy/[state] + [state]/[city]. State + city URLs with < 3 clinics
+  // are noindexed by the template, so skip them here too (city.count is the
+  // clinic count for that city).
   for (const state of HORMONE_STATES) {
-    urls.push(`/hormone-therapy/${state.slug}`);
+    if (getHormoneClinicsByState(state.slug).length >= MIN_CLINICS_FOR_INDEX) {
+      urls.push(`/hormone-therapy/${state.slug}`);
+    }
     // getCitiesWithClinics returns [] for unwired states → no dead URLs.
     for (const city of getCitiesWithClinics(state.slug)) {
+      if (city.count < MIN_CLINICS_FOR_INDEX) continue;
       urls.push(`/hormone-therapy/${state.slug}/${city.citySlug}`);
     }
   }
 
   // weight-loss/[state] + [state]/[city]
   for (const state of WEIGHTLOSS_STATES) {
-    urls.push(`/weight-loss/${state.slug}`);
+    if (getWeightLossClinicsByState(state.slug).length >= MIN_CLINICS_FOR_INDEX) {
+      urls.push(`/weight-loss/${state.slug}`);
+    }
     // getWeightLossCitiesWithClinics returns [] for unwired states → no dead URLs.
     for (const city of getWeightLossCitiesWithClinics(state.slug)) {
+      if (city.count < MIN_CLINICS_FOR_INDEX) continue;
       urls.push(`/weight-loss/${state.slug}/${city.citySlug}`);
     }
   }
 
   // dexa-scans/[state] + [state]/[city]
   for (const state of DEXA_STATES) {
-    urls.push(`/dexa-scans/${state.slug}`);
+    if (getDexaClinicsByState(state.slug).length >= MIN_CLINICS_FOR_INDEX) {
+      urls.push(`/dexa-scans/${state.slug}`);
+    }
     // getDexaCitiesWithClinics returns [] for unwired/empty states → no dead URLs.
     for (const city of getDexaCitiesWithClinics(state.slug)) {
+      if (city.count < MIN_CLINICS_FOR_INDEX) continue;
       urls.push(`/dexa-scans/${state.slug}/${city.citySlug}`);
     }
   }
 
   // med-spa/[state] + [state]/[city]. Only wired states (with >=1 shippable
-  // city) have a real page — the [state] route notFound()s otherwise — so guard
-  // the state URL too, not just the city URLs.
+  // city) have a real page — the [state] route notFound()s otherwise. City
+  // pages are already pre-filtered to >= 3 clinics by getMedspaCitiesWithClinics,
+  // but keep the guard explicit so the threshold lives in one place.
   for (const state of MEDSPA_STATES) {
     const medspaCities = getMedspaCitiesWithClinics(state.slug);
     if (medspaCities.length === 0) continue;
-    urls.push(`/med-spa/${state.slug}`);
+    if (getMedspaClinicsByState(state.slug).length >= MIN_CLINICS_FOR_INDEX) {
+      urls.push(`/med-spa/${state.slug}`);
+    }
     for (const city of medspaCities) {
+      if (city.count < MIN_CLINICS_FOR_INDEX) continue;
       urls.push(`/med-spa/${state.slug}/${city.citySlug}`);
     }
   }
@@ -244,7 +261,9 @@ function priorityForDynamic(route: string): number {
 // SITEMAP
 // ---------------------------------------------------------------------------
 export default function sitemap(): MetadataRoute.Sitemap {
-  const lastModified = new Date();
+  // No lastModified is emitted anywhere. A single identical new Date() stamped on
+  // every URL was training Google to ignore the field; an absent lastmod is the
+  // honest signal until we track real per-URL modification times.
 
   // 1. Static routes (auto-discovered, with a hardcoded fallback if fs throws).
   let staticRoutes: string[];
@@ -274,7 +293,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     seen.add(route);
     entries.push({
       url: `${baseUrl}${route === '/' ? '' : route}`,
-      lastModified,
       changeFrequency: 'weekly',
       priority: priorityForStatic(route),
     });
@@ -285,7 +303,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     seen.add(route);
     entries.push({
       url: `${baseUrl}${route}`,
-      lastModified,
       changeFrequency: 'monthly',
       priority: priorityForDynamic(route),
     });

@@ -7,6 +7,7 @@ import { getStatesWithClinics, allHormoneClinics } from '@/data/hormone-clinics-
 
 export const metadata: Metadata = {
   title: 'Hormone Therapy Clinics: TRT & HRT Near You',
+  alternates: { canonical: '/hormone-therapy' },
   description: 'Find local TRT and HRT clinics in Texas, Florida, and Arizona. Compare testosterone replacement and hormone therapy options - telehealth vs in-person clinics.',
 };
 

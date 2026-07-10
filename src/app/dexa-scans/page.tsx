@@ -8,6 +8,7 @@ import { getDexaStatesWithClinics, allDexaClinics } from '@/data/dexa-clinics-in
 
 export const metadata: Metadata = {
   title: 'DEXA Scan Near You: Body Composition & Bone Density Clinics by City',
+  alternates: { canonical: '/dexa-scans' },
   description: 'Find DEXA scan clinics near you. Compare BodySpec mobile units, DexaFit studios, and research-grade labs by city — body composition, body fat %, visceral fat, and bone density.',
 };
 

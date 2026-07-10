@@ -3,14 +3,20 @@ import Navigation from '@/components/Navigation';
 import SidebarShell from '@/components/SidebarShell';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { getProviderBySlug, getTotalProviderCount } from '@/lib/providers';
+import { getProviderBySlug, getTotalProviderCount, ALL_PROVIDERS } from '@/lib/providers';
 import { CATEGORIES } from '@/lib/types';
 import { buildProviderSchema } from '@/lib/jsonLd';
 
 export function generateStaticParams() {
-  // This would ideally get all provider slugs
-  // For now, returning empty array means pages are generated on-demand
-  return [];
+  // Prerender every provider (static editorial data — cheap at build). This
+  // replaces the prior empty-array/on-demand SSR that left ~315 pages uncrawled.
+  const slugs = new Set<string>();
+  for (const list of Object.values(ALL_PROVIDERS)) {
+    for (const provider of list) {
+      slugs.add(provider.slug);
+    }
+  }
+  return Array.from(slugs).map((slug) => ({ slug }));
 }
 
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
@@ -19,6 +25,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   return {
     title: `${provider.name} — ${CATEGORIES[provider.category].name} Provider`,
     description: provider.description,
+    alternates: { canonical: `/providers/${params.slug}` },
   };
 }
 

@@ -50,6 +50,7 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
   return {
     title: `${system.name} - ${region.name}, California`,
     description: `${system.name} is a ${system.type} health system in ${region.name}, California. ${system.highlights[0]}. Compare with other ${region.name} hospitals.`,
+    alternates: { canonical: `/traditional-healthcare/california/health-systems/${params.slug}` },
   };
 }
 

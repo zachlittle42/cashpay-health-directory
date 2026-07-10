@@ -6,6 +6,7 @@ import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
   title: 'Medical Tourism FAQ: Safety, Planning & What to Expect (2024)',
+  alternates: { canonical: '/faq/medical-tourism' },
   description: 'Common questions about medical tourism. Safety abroad, choosing facilities, planning your trip, and follow-up care.',
 };
 

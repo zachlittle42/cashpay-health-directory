@@ -7,6 +7,7 @@ import { getCountriesWithClinics, allStemCellClinics, countryMetadata } from '@/
 
 export const metadata: Metadata = {
   title: 'Stem Cell Therapy Clinics: Mexico, Panama & US Options',
+  alternates: { canonical: '/stem-cells' },
   description: 'Compare stem cell clinics in Mexico, Panama, and the US. Find treatments for autoimmune, orthopedic, and neurological conditions. Prices, reviews, and clinic comparisons.',
 };
 

@@ -31,6 +31,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${stateInfo.name} GLP-1 & Weight Loss Clinics: ${clinics.length}+ Options`,
     description: `Find medical weight loss clinics in ${stateInfo.name}. Semaglutide, tirzepatide, and GLP-1 programs in ${stateInfo.cities.slice(0, 3).join(', ')}. Compare prices and reviews.`,
+    alternates: { canonical: `/weight-loss/${stateSlug}` },
+    // Thin-content guard: states with < 3 clinics stay out of the index.
+    ...(clinics.length < 3 ? { robots: { index: false, follow: true } } : {}),
   };
 }
 

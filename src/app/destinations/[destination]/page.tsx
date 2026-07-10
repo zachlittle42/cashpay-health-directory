@@ -896,6 +896,7 @@ export function generateMetadata({ params }: { params: { destination: string } }
   return {
     title: `${destination.displayName} Medical Tourism Guide`,
     description: destination.metaDescription,
+    alternates: { canonical: `/destinations/${params.destination}` },
   };
 }
 

@@ -3,6 +3,7 @@ import PerfCategoryPage from '@/components/PerfCategoryPage';
 
 export const metadata: Metadata = {
   title: 'Best Continuous Glucose Monitors (CGM) Without a Prescription — 2026',
+  alternates: { canonical: '/cgm' },
   description:
     'Compare consumer CGMs you can buy online without diabetes: Dexcom Stelo, Abbott Lingo, Levels, Nutrisense, and Dexcom G7. Pricing (~$49–$399/mo), prescription needs, and who each is best for.',
   keywords: [

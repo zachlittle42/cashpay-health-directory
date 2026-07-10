@@ -7,6 +7,7 @@ import { BAYAREA_REGIONS, getClinicCount, getCategoryStats } from '@/lib/bayarea
 
 export const metadata: Metadata = {
   title: 'Bay Area Cash-Pay Clinics: DEXA, IV Therapy, Longevity',
+  alternates: { canonical: '/local-clinics/bay-area' },
   description: 'Find cash-pay health clinics in San Francisco, Peninsula, South Bay, East Bay. 35+ clinics offering DEXA scans, IV therapy, longevity services—no insurance needed.',
   keywords: ['DEXA scan San Francisco', 'IV therapy Palo Alto', 'longevity clinic Silicon Valley', 'VO2 max Bay Area', 'cash pay health clinics SF', 'DEXA Oakland', 'IV therapy San Jose'],
 };

@@ -6,6 +6,7 @@ import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: 'Longevity Medicine: US Clinics, Stem Cells & Regenerative Treatments',
+  alternates: { canonical: '/longevity' },
   description: 'Compare longevity clinics, stem cell therapy, peptides, NAD+ treatments. US regional clinics (Fountain Life, Next Health) and international destinations (Mexico, Panama, Cayman).',
 };
 

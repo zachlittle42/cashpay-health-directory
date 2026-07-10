@@ -6,6 +6,7 @@ import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: 'California Longevity Clinics: Bay Area, LA, San Diego',
+  alternates: { canonical: '/longevity/california' },
   description: 'Find longevity clinics in California. Human Longevity (SF), Next Health (LA), Beverly Hills concierge. Stem cells, NAD+, peptides, executive health.',
 };
 

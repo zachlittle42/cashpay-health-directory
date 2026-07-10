@@ -6,6 +6,7 @@ import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
   title: 'GLP-1 FAQ: Common Questions About Semaglutide & Weight Loss (2024)',
+  alternates: { canonical: '/faq/glp1' },
   description: 'Answers to common questions about GLP-1 medications for weight loss. Insurance coverage, side effects, stopping, and more.',
 };
 

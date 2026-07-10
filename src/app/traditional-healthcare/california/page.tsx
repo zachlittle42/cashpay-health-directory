@@ -6,6 +6,7 @@ import { CALIFORNIA_REGIONS } from '@/lib/california-healthcare-data';
 
 export const metadata = {
   title: 'California Healthcare - Top Hospitals by Region',
+  alternates: { canonical: '/traditional-healthcare/california' },
   description:
     'Explore California\'s top hospitals and health systems across 10 regions. Compare UCSF, Stanford, UCLA, Cedars-Sinai, and more with detailed regional guides.',
 };

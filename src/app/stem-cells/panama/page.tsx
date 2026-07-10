@@ -8,6 +8,7 @@ import { countryMetadata } from '@/data/stem-cell-clinics-index';
 
 export const metadata: Metadata = {
   title: 'Panama Stem Cell Clinics: Golden Cells, Stem Cell Institute',
+  alternates: { canonical: '/stem-cells/panama' },
   description: 'Compare premium stem cell clinics in Panama. Golden Cells, Stem Cell Institute, and more. Popular with NFL players. Prices $20,000-60,000. Culture-expanded cells.',
 };
 

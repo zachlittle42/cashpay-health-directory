@@ -8,6 +8,7 @@ import { countryMetadata } from '@/data/stem-cell-clinics-index';
 
 export const metadata: Metadata = {
   title: 'Mexico Stem Cell Clinics: Tijuana, Cancun, Puerto Vallarta',
+  alternates: { canonical: '/stem-cells/mexico' },
   description: 'Compare stem cell clinics in Mexico. Tijuana, Cancun, Puerto Vallarta, Los Cabos, Mexico City. Prices from $5,000-35,000. Reviews and clinic comparisons.',
 };
 

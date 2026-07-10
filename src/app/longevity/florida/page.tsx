@@ -6,6 +6,7 @@ import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: 'Florida Longevity Clinics: Miami, Naples, Orlando',
+  alternates: { canonical: '/longevity/florida' },
   description: 'Find longevity clinics in Florida. Fountain Life (Naples, Orlando), Miami Design District clinics. Stem cells, NAD+, advanced diagnostics.',
 };
 

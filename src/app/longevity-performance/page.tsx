@@ -7,6 +7,7 @@ import { getAllPerfCategories, getPerfProductsByCategory } from '@/lib/performan
 
 export const metadata: Metadata = {
   title: 'Longevity & Performance Products: CGMs, Longevity Rx & More',
+  alternates: { canonical: '/longevity-performance' },
   description:
     'The cash-pay, buy-online side of healthspan: continuous glucose monitors, longevity medications, peptides, supplements, and recovery tech — compared on price, evidence, and who they fit.',
   keywords: [
