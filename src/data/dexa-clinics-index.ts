@@ -5,6 +5,7 @@
 // Last Updated: June 2026
 
 import { DexaClinic, DEXA_STATES } from '@/lib/dexa-clinic-types';
+import { MIN_CLINICS_FOR_INDEX } from '@/lib/indexability';
 import {
   californiaDexaClinics,
   getCaliforniaDexaClinicsByCity,
@@ -31,9 +32,6 @@ import { coloradoDexaClinics, getColoradoDexaClinicsByCity, getColoradoDexaCitie
 import { nevadaDexaClinics, getNevadaDexaClinicsByCity, getNevadaDexaCitiesWithClinics } from './dexa-clinics-nevada';
 import { tennesseeDexaClinics, getTennesseeDexaClinicsByCity, getTennesseeDexaCitiesWithClinics } from './dexa-clinics-tennessee';
 import { northCarolinaDexaClinics, getNorthCarolinaDexaClinicsByCity, getNorthCarolinaDexaCitiesWithClinics } from './dexa-clinics-north-carolina';
-
-// Minimum clinics for a city page to ship — thin-content guard (YMYL).
-const MIN_CLINICS_PER_CITY = 3;
 
 // All DEXA clinics combined.
 export const allDexaClinics: DexaClinic[] = [
@@ -126,7 +124,7 @@ export function getDexaClinicsByCity(stateSlug: string, citySlug: string): DexaC
 }
 
 // Get cities with clinics for a state. Applies the thin-content guard: a city
-// only surfaces (as a page / link) once it has >= MIN_CLINICS_PER_CITY entries.
+// only surfaces (as a page / link) once it has >= MIN_CLINICS_FOR_INDEX entries.
 export function getDexaCitiesWithClinics(stateSlug: string): { city: string; citySlug: string; count: number }[] {
   let cities: { city: string; citySlug: string; count: number }[];
   switch (stateSlug) {
@@ -164,7 +162,7 @@ export function getDexaCitiesWithClinics(stateSlug: string): { city: string; cit
     default:
       cities = [];
   }
-  return cities.filter((c) => c.count >= MIN_CLINICS_PER_CITY);
+  return cities.filter((c) => c.count >= MIN_CLINICS_FOR_INDEX);
 }
 
 // Get all states with clinic counts (for the hub grid). Only states with at

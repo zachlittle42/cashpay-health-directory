@@ -6,50 +6,10 @@ import Footer from '@/components/Footer';
 import { getStatesWithClinics, allHormoneClinics } from '@/data/hormone-clinics-index';
 
 export const metadata: Metadata = {
-  title: 'Hormone Therapy Clinics: TRT & HRT Near You',
+  title: 'Hormone Therapy Clinics by State — Compare Local Providers',
   alternates: { canonical: '/hormone-therapy' },
-  description: 'Find local TRT and HRT clinics in Texas, Florida, and Arizona. Compare testosterone replacement and hormone therapy options - telehealth vs in-person clinics.',
+  description: 'Browse and compare local hormone therapy clinics by state and city. Find in-person providers near you with prices, services, and reviews. Prefer online treatment? Compare national TRT telehealth providers on our TRT page.',
 };
-
-// Telehealth providers (existing from /trt page)
-const telehealthProviders = [
-  {
-    name: 'Marek Health',
-    slug: 'marek-health',
-    priceRange: '$250-850/month',
-    focus: 'Comprehensive hormone panels + physician consultation',
-    services: ['TRT', 'Peptides', 'Labs', 'Coaching'],
-    bestFor: 'Comprehensive testing with physician guidance',
-    coverage: 'National (except NY, NJ, RI)',
-  },
-  {
-    name: 'Fountain TRT',
-    slug: 'fountain-trt',
-    priceRange: '$199/month',
-    focus: 'Simple, affordable testosterone replacement',
-    services: ['TRT', 'Labs', 'Physician consults'],
-    bestFor: 'Straightforward TRT at accessible pricing',
-    coverage: 'National (most states)',
-  },
-  {
-    name: 'Peter MD',
-    slug: 'peter-md',
-    priceRange: '$149-299/month',
-    focus: 'Men\'s health including TRT and ED',
-    services: ['TRT', 'ED treatment', 'Labs'],
-    bestFor: 'Men wanting TRT + ED treatment together',
-    coverage: 'National (most states)',
-  },
-  {
-    name: 'Hone Health',
-    slug: 'hone-health',
-    priceRange: '$145/month + labs',
-    focus: 'At-home hormone testing with treatment',
-    services: ['TRT', 'At-home labs', 'Coaching'],
-    bestFor: 'Convenience of at-home testing',
-    coverage: 'National (45+ states)',
-  },
-];
 
 // Services explained
 const hormoneServices = [
@@ -139,9 +99,6 @@ export default function HormoneTherapyHub() {
       {/* Quick Navigation */}
       <section className="mx-auto max-w-6xl px-4 py-8">
         <div className="flex flex-wrap gap-3 justify-center">
-          <a href="#telehealth" className="px-4 py-2 rounded-lg border-2 border-gray-200 hover:border-purple-400 text-sm font-medium">
-            Telehealth Options
-          </a>
           <a href="#local-clinics" className="px-4 py-2 rounded-lg border-2 border-gray-200 hover:border-purple-400 text-sm font-medium">
             Local Clinics by State
           </a>
@@ -222,58 +179,23 @@ export default function HormoneTherapyHub() {
         </div>
       </section>
 
-      {/* Telehealth Providers */}
-      <section id="telehealth" className="bg-gray-50 px-4 py-12">
-        <div className="mx-auto max-w-6xl">
-          <h2 className="text-2xl font-bold text-gray-900 mb-2">Telehealth TRT & HRT Providers</h2>
-          <p className="text-gray-600 mb-8">
-            National telehealth options for hormone therapy. Consult from home, medications shipped to your door.
-          </p>
-
-          <div className="grid gap-6 md:grid-cols-2">
-            {telehealthProviders.map((provider) => (
-              <div key={provider.slug} className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow">
-                <div className="flex justify-between items-start mb-3">
-                  <h3 className="text-xl font-bold text-gray-900">{provider.name}</h3>
-                  <span className="text-sm font-semibold text-green-600">{provider.priceRange}</span>
-                </div>
-
-                <p className="text-sm text-gray-600 mb-4">{provider.focus}</p>
-
-                <div className="flex flex-wrap gap-1 mb-4">
-                  {provider.services.map((service) => (
-                    <span key={service} className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">
-                      {service}
-                    </span>
-                  ))}
-                </div>
-
-                <div className="space-y-2 text-sm border-t border-gray-100 pt-4">
-                  <div className="flex justify-between">
-                    <span className="text-gray-500">Best for:</span>
-                    <span className="text-gray-900">{provider.bestFor}</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-500">Coverage:</span>
-                    <span className="text-gray-900">{provider.coverage}</span>
-                  </div>
-                </div>
-
-                <Link
-                  href={`/providers/${provider.slug}`}
-                  className="mt-4 block text-center text-sm font-medium px-4 py-2 rounded bg-blue-600 text-white hover:bg-blue-700"
-                >
-                  View Details
-                </Link>
-              </div>
-            ))}
+      {/* Prefer online? Cross-link to the national TRT telehealth hub.
+          The provider comparison lives on /trt — this geo directory stays
+          focused on in-person clinics by state. */}
+      <section className="mx-auto max-w-6xl px-4 py-8">
+        <div className="rounded-lg bg-blue-50 border border-blue-200 p-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <h2 className="text-lg font-bold text-blue-900 mb-1">Prefer online treatment?</h2>
+            <p className="text-sm text-blue-800">
+              Compare national TRT telehealth providers — at-home labs and medications shipped to your door.
+            </p>
           </div>
-
-          <div className="mt-6 text-center">
-            <Link href="/trt" className="text-sm font-medium text-blue-600 hover:text-blue-700">
-              View all telehealth TRT providers →
-            </Link>
-          </div>
+          <Link
+            href="/trt"
+            className="inline-block whitespace-nowrap px-5 py-2.5 rounded-lg bg-blue-600 text-white font-medium text-sm hover:bg-blue-700"
+          >
+            Compare national TRT telehealth providers →
+          </Link>
         </div>
       </section>
 

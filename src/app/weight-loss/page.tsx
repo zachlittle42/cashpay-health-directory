@@ -6,50 +6,10 @@ import Footer from '@/components/Footer';
 import { getWeightLossStatesWithClinics, allWeightLossClinics } from '@/data/weightloss-clinics-index';
 
 export const metadata: Metadata = {
-  title: 'Medical Weight Loss Clinics: GLP-1 & Semaglutide Near You',
+  title: 'Medical Weight Loss Clinics by State — Compare Local Providers',
   alternates: { canonical: '/weight-loss' },
-  description: 'Find local GLP-1 weight loss clinics in Texas, Florida, and Arizona. Compare semaglutide and tirzepatide options - telehealth vs in-person medical weight loss.',
+  description: 'Browse and compare local medical weight-loss clinics by state and city. Find in-person providers near you with prices and reviews. Prefer online treatment? Compare national GLP-1 telehealth providers on our GLP-1 page.',
 };
-
-// Telehealth providers
-const telehealthProviders = [
-  {
-    name: 'Hims/Hers',
-    slug: 'hims-hers',
-    priceRange: '$199-599/month',
-    focus: 'Compounded semaglutide with telehealth consultations',
-    services: ['Semaglutide', 'Tirzepatide', 'Telehealth', 'Shipped to door'],
-    bestFor: 'Affordable entry point for GLP-1 therapy',
-    coverage: 'National (most states)',
-  },
-  {
-    name: 'Calibrate',
-    slug: 'calibrate',
-    priceRange: '$199-499/month',
-    focus: 'Metabolic health program with GLP-1 medications',
-    services: ['Semaglutide', 'Coaching', 'Metabolic health', 'App-based'],
-    bestFor: 'Comprehensive program with behavior change focus',
-    coverage: 'National (most states)',
-  },
-  {
-    name: 'Found',
-    slug: 'found-weight-loss',
-    priceRange: '$99-249/month',
-    focus: 'Personalized weight loss with various medication options',
-    services: ['GLP-1s', 'Multiple meds', 'Coaching', 'Community'],
-    bestFor: 'Affordable option with community support',
-    coverage: 'National',
-  },
-  {
-    name: 'Ro Body',
-    slug: 'ro-body',
-    priceRange: '$145-499/month',
-    focus: 'Medical weight loss from the Ro telehealth platform',
-    services: ['Semaglutide', 'Tirzepatide', 'Coaching', 'Labs included'],
-    bestFor: 'Those familiar with Ro\'s telehealth model',
-    coverage: 'National (most states)',
-  },
-];
 
 // GLP-1 medications explained
 const medications = [
@@ -126,9 +86,6 @@ export default function WeightLossHub() {
       {/* Quick Navigation */}
       <section className="mx-auto max-w-6xl px-4 py-8">
         <div className="flex flex-wrap gap-3 justify-center">
-          <a href="#telehealth" className="px-4 py-2 rounded-lg border-2 border-gray-200 hover:border-green-400 text-sm font-medium">
-            Telehealth Options
-          </a>
           <a href="#local-clinics" className="px-4 py-2 rounded-lg border-2 border-gray-200 hover:border-green-400 text-sm font-medium">
             Local Clinics by State
           </a>
@@ -209,58 +166,23 @@ export default function WeightLossHub() {
         </div>
       </section>
 
-      {/* Telehealth Providers */}
-      <section id="telehealth" className="bg-gray-50 px-4 py-12">
-        <div className="mx-auto max-w-6xl">
-          <h2 className="text-2xl font-bold text-gray-900 mb-2">Telehealth GLP-1 Providers</h2>
-          <p className="text-gray-600 mb-8">
-            National telehealth options for GLP-1 medications. Consult from home, medications shipped to your door.
-          </p>
-
-          <div className="grid gap-6 md:grid-cols-2">
-            {telehealthProviders.map((provider) => (
-              <div key={provider.slug} className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow">
-                <div className="flex justify-between items-start mb-3">
-                  <h3 className="text-xl font-bold text-gray-900">{provider.name}</h3>
-                  <span className="text-sm font-semibold text-green-600">{provider.priceRange}</span>
-                </div>
-
-                <p className="text-sm text-gray-600 mb-4">{provider.focus}</p>
-
-                <div className="flex flex-wrap gap-1 mb-4">
-                  {provider.services.map((service) => (
-                    <span key={service} className="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">
-                      {service}
-                    </span>
-                  ))}
-                </div>
-
-                <div className="space-y-2 text-sm border-t border-gray-100 pt-4">
-                  <div className="flex justify-between">
-                    <span className="text-gray-500">Best for:</span>
-                    <span className="text-gray-900">{provider.bestFor}</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-500">Coverage:</span>
-                    <span className="text-gray-900">{provider.coverage}</span>
-                  </div>
-                </div>
-
-                <Link
-                  href={`/providers/${provider.slug}`}
-                  className="mt-4 block text-center text-sm font-medium px-4 py-2 rounded bg-green-600 text-white hover:bg-green-700"
-                >
-                  View Details
-                </Link>
-              </div>
-            ))}
+      {/* Prefer online? Cross-link to the national GLP-1 telehealth hub.
+          The provider comparison lives on /glp1 — this geo directory stays
+          focused on in-person clinics by state. */}
+      <section className="mx-auto max-w-6xl px-4 py-8">
+        <div className="rounded-lg bg-blue-50 border border-blue-200 p-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <h2 className="text-lg font-bold text-blue-900 mb-1">Prefer online treatment?</h2>
+            <p className="text-sm text-blue-800">
+              Compare national GLP-1 telehealth providers — consult from home, medications shipped to your door.
+            </p>
           </div>
-
-          <div className="mt-6 text-center">
-            <Link href="/glp1" className="text-sm font-medium text-green-600 hover:text-green-700">
-              View all telehealth GLP-1 providers →
-            </Link>
-          </div>
+          <Link
+            href="/glp1"
+            className="inline-block whitespace-nowrap px-5 py-2.5 rounded-lg bg-blue-600 text-white font-medium text-sm hover:bg-blue-700"
+          >
+            Compare national GLP-1 telehealth providers →
+          </Link>
         </div>
       </section>
 
@@ -345,7 +267,7 @@ export default function WeightLossHub() {
         <div className="prose prose-gray max-w-none">
           <p className="text-gray-700 mb-4">
             <strong>For cost-conscious patients:</strong> Telehealth offers the best value. Compounded semaglutide through
-            services like Hims/Hers or Found can cost $200-400/month vs $1,000+ for brand name at local pharmacies.
+            national telehealth programs can cost $200-400/month vs $1,000+ for brand name at local pharmacies.
             The trade-off is less personalized care and no in-person labs.
           </p>
           <p className="text-gray-700 mb-4">
@@ -421,9 +343,7 @@ export default function WeightLossHub() {
             { slug: 'cheapest-way-to-get-semaglutide', title: 'Cheapest Way to Get Semaglutide' },
             { slug: 'cheapest-glp1-without-insurance', title: 'Cheapest GLP-1 Without Insurance' },
             { slug: 'best-glp1-weight-loss-programs', title: 'Best GLP-1 Weight Loss Programs' },
-            { slug: 'ro-body-weight-loss-cost', title: 'Ro Body Weight Loss Cost' },
             { slug: 'glp1-and-muscle-loss', title: 'GLP-1 and Muscle Loss' },
-            { slug: 'hims-vs-ro-vs-calibrate', title: 'Hims vs Ro vs Calibrate' },
           ].map((guide) => (
             <Link
               key={guide.slug}

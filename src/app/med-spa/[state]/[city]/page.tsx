@@ -7,6 +7,7 @@ import Footer from '@/components/Footer';
 import MedicalDisclaimer from '@/components/MedicalDisclaimer';
 import { getMedspaClinicsByCity, getMedspaCitiesWithClinics } from '@/data/medspa-clinics-index';
 import { MEDSPA_STATES } from '@/lib/medspa-clinic-types';
+import { gridRobots } from '@/lib/indexability';
 
 interface Props {
   params: Promise<{ state: string; city: string }>;
@@ -37,8 +38,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `Med Spas in ${cityName}: Botox, Fillers & Laser Hair Removal`,
     description: `Find ${clinics.length}+ med-spa and aesthetics providers in ${cityName}, ${stateInfo.name}. Botox, dermal fillers, laser hair removal, microneedling, body contouring, and IV therapy — with typical cash-pay costs.`,
     alternates: { canonical: `/med-spa/${stateSlug}/${citySlug}` },
-    // Thin-content guard: cities with < 3 clinics stay out of the index.
-    ...(clinics.length < 3 ? { robots: { index: false, follow: true } } : {}),
+    // Thin-content guard: noindex,follow below MIN_CLINICS_FOR_INDEX (see @/lib/indexability).
+    ...gridRobots(clinics.length),
   };
 }
 

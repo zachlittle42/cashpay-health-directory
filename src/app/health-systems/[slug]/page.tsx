@@ -9,6 +9,7 @@ import {
   getSpecialtyLeaders,
   type NationalHealthSystem,
 } from '@/lib/national-health-systems';
+import { NOINDEX_FOLLOW } from '@/lib/indexability';
 
 export function generateStaticParams() {
   return getAllHealthSystemSlugs().map((slug) => ({
@@ -30,6 +31,10 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
     title: `${system.name} - ${system.location.city}, ${system.location.state}`,
     description: `${system.name} is ${system.ranking.honorRoll ? 'a US News Honor Roll hospital' : 'a nationally recognized health system'}. ${specialtyText ? `Top-ranked for ${specialtyText}.` : ''} Learn about their specialties, rankings, and achievements.`,
     alternates: { canonical: `/health-systems/${params.slug}` },
+    // Deindexed with the rest of the traditional-healthcare family (near-zero GSC
+    // demand: 7 impressions / 0 clicks in 100 days). Kept live + crawlable; the
+    // canonical above is preserved.
+    robots: NOINDEX_FOLLOW,
   };
 }
 

@@ -7,6 +7,7 @@ import Footer from '@/components/Footer';
 import MedicalDisclaimer from '@/components/MedicalDisclaimer';
 import { getDexaClinicsByState, getDexaCitiesWithClinics, dexaStateMetadata } from '@/data/dexa-clinics-index';
 import { DEXA_STATES } from '@/lib/dexa-clinic-types';
+import { gridRobots } from '@/lib/indexability';
 
 interface Props {
   params: Promise<{ state: string }>;
@@ -32,8 +33,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${stateInfo.name} DEXA Scan Clinics: ${clinics.length}+ Body Composition Studios`,
     description: `Find DEXA scan and body-composition clinics in ${stateInfo.name}. Mobile units, premium studios, and research-grade options in ${stateInfo.cities.slice(0, 3).join(', ')}. Compare prices and reviews.`,
     alternates: { canonical: `/dexa-scans/${stateSlug}` },
-    // Thin-content guard: states with < 3 clinics stay out of the index.
-    ...(clinics.length < 3 ? { robots: { index: false, follow: true } } : {}),
+    // Thin-content guard: noindex,follow below MIN_CLINICS_FOR_INDEX (see @/lib/indexability).
+    ...gridRobots(clinics.length),
   };
 }
 

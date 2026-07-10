@@ -7,6 +7,7 @@ import Footer from '@/components/Footer';
 import MedicalDisclaimer from '@/components/MedicalDisclaimer';
 import { getHormoneClinicsByCity, getCitiesWithClinics } from '@/data/hormone-clinics-index';
 import { HORMONE_STATES } from '@/lib/hormone-clinic-types';
+import { gridRobots } from '@/lib/indexability';
 
 interface Props {
   params: Promise<{ state: string; city: string }>;
@@ -50,8 +51,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${cityName} TRT & HRT Clinics: ${clinics.length} Hormone Therapy Options`,
     description: `Find hormone therapy clinics in ${cityName}, ${stateInfo.name}. Compare ${clinics.length} TRT and HRT clinics with prices, reviews, and services.`,
     alternates: { canonical: `/hormone-therapy/${stateSlug}/${citySlug}` },
-    // Thin-content guard: cities with < 3 clinics stay out of the index.
-    ...(clinics.length < 3 ? { robots: { index: false, follow: true } } : {}),
+    // Thin-content guard: noindex,follow below MIN_CLINICS_FOR_INDEX (see @/lib/indexability).
+    ...gridRobots(clinics.length),
   };
 }
 

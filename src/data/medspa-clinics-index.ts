@@ -1,10 +1,11 @@
 // Med-Spa & Aesthetics Index — central hub for the /med-spa city directory.
 // Mirrors dexa-clinics-index.ts. Only wired states return clinics; the switch
 // default returns [] so unwired states never emit dead URLs. The thin-content
-// guard keeps cities with < MIN_CLINICS_PER_CITY out of the index.
+// guard keeps cities with < MIN_CLINICS_FOR_INDEX out of the index.
 // Last Updated: June 2026
 
 import { MedspaClinic, MEDSPA_STATES } from '@/lib/medspa-clinic-types';
+import { MIN_CLINICS_FOR_INDEX } from '@/lib/indexability';
 import {
   californiaMedspaClinics,
   getCaliforniaMedspaClinicsByCity,
@@ -15,9 +16,6 @@ import {
   getTexasMedspaClinicsByCity,
   getTexasMedspaCitiesWithClinics,
 } from './medspa-clinics-texas';
-
-// Minimum clinics for a city page to ship — thin-content guard.
-const MIN_CLINICS_PER_CITY = 3;
 
 export const allMedspaClinics: MedspaClinic[] = [
   ...californiaMedspaClinics,
@@ -58,7 +56,7 @@ export function getMedspaCitiesWithClinics(stateSlug: string): { city: string; c
     default:
       cities = [];
   }
-  return cities.filter((c) => c.count >= MIN_CLINICS_PER_CITY);
+  return cities.filter((c) => c.count >= MIN_CLINICS_FOR_INDEX);
 }
 
 export function getMedspaStatesWithClinics(): { state: string; stateSlug: string; count: number; cities: string[] }[] {

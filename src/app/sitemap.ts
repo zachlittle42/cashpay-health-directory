@@ -10,22 +10,17 @@ import { DEXA_STATES } from '@/lib/dexa-clinic-types';
 import { getDexaCitiesWithClinics, getDexaClinicsByState } from '@/data/dexa-clinics-index';
 import { MEDSPA_STATES } from '@/lib/medspa-clinic-types';
 import { getMedspaCitiesWithClinics, getMedspaClinicsByState } from '@/data/medspa-clinics-index';
-import { getAllStateSlugs } from '@/lib/us-healthcare-data';
-import { getAllHealthSystemSlugs } from '@/lib/national-health-systems';
-import {
-  getAllCaliforniaRegionSlugs,
-  CALIFORNIA_REGIONS,
-} from '@/lib/california-healthcare-data';
+import { MIN_CLINICS_FOR_INDEX } from '@/lib/indexability';
 import { BAYAREA_REGIONS } from '@/lib/bayarea-clinics-data';
 import { SOCAL_REGIONS } from '@/lib/socal-clinics-data';
 
 const baseUrl = 'https://vitalityscout.com';
 
-// Grid pages (weight-loss / hormone-therapy / dexa-scans / med-spa) with fewer
-// than this many clinics are noindexed by their own template's generateMetadata,
+// Grid pages (weight-loss / hormone-therapy / dexa-scans / med-spa) below
+// MIN_CLINICS_FOR_INDEX are noindexed by their own template's generateMetadata,
 // so the sitemap must not advertise them either (a sitemap should never list a
-// noindexed URL). Threshold matches the templates' thin-content guard.
-const MIN_CLINICS_FOR_INDEX = 3;
+// noindexed URL). The threshold is imported from @/lib/indexability so the
+// sitemap and the templates can never drift apart.
 
 // Routes that exist as static pages but should NOT be advertised to crawlers
 // (utility/landing pages with no SEO value or that intentionally stay out of the index).
@@ -33,6 +28,15 @@ const EXCLUDED_STATIC_ROUTES = new Set<string>([
   '/beta',
   '/centurioncoach',
   '/search',
+  // Deindexed (noindex,follow) — kept live + crawlable but out of the index and
+  // the sitemap. Persona/section duplicates that collapse onto an already-served
+  // money vertical (/lose-weight → /glp1 + /weight-loss, /balance-hormones →
+  // /trt + /hormone-therapy) and the two static entry points of the pruned
+  // traditional-healthcare family (its dynamic pages are dropped below).
+  '/lose-weight',
+  '/balance-hormones',
+  '/traditional-healthcare',
+  '/traditional-healthcare/california',
 ]);
 
 // Destinations enumerated by destinations/[destination] generateStaticParams.
@@ -160,30 +164,13 @@ function buildDynamicUrls(): string[] {
     urls.push(`/destinations/${slug}`);
   }
 
-  // traditional-healthcare/[state] — 50 states from the data module.
-  for (const slug of getAllStateSlugs()) {
-    urls.push(`/traditional-healthcare/${slug}`);
-  }
-
-  // traditional-healthcare/california/[region]
-  for (const slug of getAllCaliforniaRegionSlugs()) {
-    urls.push(`/traditional-healthcare/california/${slug}`);
-  }
-
-  // traditional-healthcare/california/health-systems/[slug]
-  // Mirrors that route's generateStaticParams: CA systems WITHOUT a national page.
-  for (const region of CALIFORNIA_REGIONS) {
-    for (const system of region.healthSystems) {
-      if (!system.nationalSlug) {
-        urls.push(`/traditional-healthcare/california/health-systems/${system.slug}`);
-      }
-    }
-  }
-
-  // health-systems/[slug] — national health systems.
-  for (const slug of getAllHealthSystemSlugs()) {
-    urls.push(`/health-systems/${slug}`);
-  }
+  // traditional-healthcare/* and health-systems/[slug] are intentionally NOT
+  // enumerated. The whole family is deindexed (noindex,follow via the
+  // traditional-healthcare/layout.tsx and the health-systems/[slug] metadata)
+  // after a near-zero-demand GSC read, so the sitemap must not advertise it. The
+  // static hub + /traditional-healthcare/california are dropped via
+  // EXCLUDED_STATIC_ROUTES above; the dynamic state / CA region / health-system
+  // pages simply are not pushed here.
 
   // local-clinics/bay-area/[region] + southern-california/[region]
   for (const region of BAYAREA_REGIONS) {
