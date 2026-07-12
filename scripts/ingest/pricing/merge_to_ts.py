@@ -29,6 +29,7 @@ from datetime import date
 FIELD_ORDER = [
     "clinicId",
     "serviceKey",
+    "serviceLabel",
     "display",
     "low",
     "high",

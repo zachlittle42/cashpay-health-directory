@@ -27,7 +27,15 @@ for _p in (str(_HERE), str(_HERE.parent)):
 
 import _crawl  # noqa: E402
 
-SERVICE_KEYS = {"dexa-scan", "rmr-test", "vo2max-test", "body-comp-package", "other-body-comp"}
+# serviceKey enum per vertical. verify_prices takes a service_keys arg so the same
+# guard serves DEXA, GLP-1/weightloss, and labs; default stays DEXA for back-compat.
+SERVICE_KEYS_BY_VERTICAL = {
+    "dexa": {"dexa-scan", "rmr-test", "vo2max-test", "body-comp-package", "other-body-comp"},
+    "weightloss": {"semaglutide-program", "tirzepatide-program", "glp1-program",
+                   "weight-loss-program", "consult-fee", "other-weight-service"},
+    "labs": {"lab-panel", "single-test", "membership", "other-lab"},
+}
+SERVICE_KEYS = SERVICE_KEYS_BY_VERTICAL["dexa"]
 PRICE_TYPES = {"standard", "intro", "floor", "package"}
 
 # Feed caps: body-comp pages are small; caps guard against a giant homepage. The
@@ -141,19 +149,21 @@ def _coerce_num(v):
     return None
 
 
-def verify_prices(clinic, raw_prices, pages_md):
+def verify_prices(clinic, raw_prices, pages_md, service_keys=None):
     """The fabrication guard, factored out so BOTH the in-process LLM path and
     EXTERNALLY-produced rows (e.g. subagent extractors reading the dumped markdown)
     pass through identical verification.
 
     raw_prices: list of {serviceKey, display, low, high, unit, priceType, sourceUrl,
-                quote} objects (the extractor's output contract).
+                quote, serviceLabel?, medsIncluded?} objects (the extractor contract).
     pages_md:   {url: full_markdown} for the clinic's dumped pricing pages.
+    service_keys: the allowed serviceKey set for this vertical (default DEXA).
 
     Returns (kept_rows, drops). Each kept row is verified: serviceKey in enum, quote
     found verbatim (or dollar-token-fuzzy) on a real page, >=1 numeric bound, and the
     citation URL re-anchored to the page the quote was actually found on.
     """
+    keys = service_keys or SERVICE_KEYS
     prices, drops = [], []
     valid_urls = set(pages_md)
     for pr in raw_prices or []:
@@ -164,7 +174,7 @@ def verify_prices(clinic, raw_prices, pages_md):
         claimed_url = pr.get("sourceUrl") or ""
         ptype = pr.get("priceType")
 
-        if sk not in SERVICE_KEYS:
+        if sk not in keys:
             drops.append({"reason": "bad-serviceKey", "value": sk, "quote": quote[:120]})
             continue
         if ptype not in PRICE_TYPES:
@@ -192,7 +202,7 @@ def verify_prices(clinic, raw_prices, pages_md):
         unit = pr.get("unit") or ""
         cite_url = found_url if found_url in valid_urls else next(iter(valid_urls))
 
-        prices.append({
+        row = {
             "clinicId": clinic["id"],
             "clinicName": clinic.get("name", ""),
             "citySlug": clinic.get("citySlug", ""),
@@ -207,7 +217,16 @@ def verify_prices(clinic, raw_prices, pages_md):
             "_quoteFuzzy": fuzzy,
             "_boundInQuote": bool(bound_in_quote),
             "_claimedUrlMismatch": bool(claimed_url and claimed_url.rstrip("/") != cite_url.rstrip("/")),
-        })
+        }
+        # Optional cross-vertical fields, carried only when present.
+        label = pr.get("serviceLabel")
+        if label:
+            row["serviceLabel"] = label
+        if isinstance(pr.get("medsIncluded"), bool):
+            row["medsIncluded"] = pr["medsIncluded"]
+        if pr.get("_note"):
+            row["_note"] = pr["_note"]
+        prices.append(row)
     return prices, drops
 
 

@@ -68,6 +68,7 @@ def load_clinics(repo: Path, type_name: str, glob_pattern: str):
                 "state": props.get("state", ""),
                 "citySlug": props.get("citySlug", ""),
                 "stateSlug": props.get("stateSlug", ""),
+                "category": props.get("category", ""),   # providers carry this; clinics don't
                 "file": rel,
             }
             # Quarantine: no id, id disagrees with recomputed, or not in registry.
@@ -87,6 +88,24 @@ def load_clinics(repo: Path, type_name: str, glob_pattern: str):
 
 def load_dexa_clinics(repo: Path):
     return load_clinics(repo, "DexaClinic", "src/data/dexa-clinics-*.ts")
+
+
+def load_weightloss_clinics(repo: Path):
+    return load_clinics(repo, "WeightLossClinic", "src/data/weightloss-clinics-*.ts")
+
+
+# Provider categories treated as "labs / at-home testing" for the labs vertical.
+LABS_CATEGORIES = {"labs"}
+
+
+def load_labs_providers(repo: Path):
+    """Provider rows across src/lib/providers-*.ts whose category is a labs /
+    at-home-testing category. Providers key `website` off their `url` field
+    (handled by load_clinics). Returns (providers, quarantined)."""
+    clinics, quarantined = load_clinics(repo, "Provider", "src/lib/providers-*.ts")
+    labs = [c for c in clinics if c.get("category") in LABS_CATEGORIES]
+    labs_q = [q for q in quarantined if q.get("category") in LABS_CATEGORIES]
+    return labs, labs_q
 
 
 if __name__ == "__main__":

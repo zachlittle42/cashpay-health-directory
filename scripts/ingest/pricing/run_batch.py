@@ -100,8 +100,11 @@ def _mock_llm_extract(markdown, prompt, model=None, return_usage=False):
 
 
 # ---------------------------------------------------------------------------
+# vertical -> loader callable returning (clinics, quarantined). Extend, don't fork.
 VERTICALS = {
-    "dexa": ("DexaClinic", "src/data/dexa-clinics-*.ts"),
+    "dexa": _clinics.load_dexa_clinics,
+    "weightloss": _clinics.load_weightloss_clinics,
+    "labs": _clinics.load_labs_providers,
 }
 
 
@@ -167,9 +170,8 @@ def _crawl_and_discover(clinics, crawl_concurrency):
 
 def run(repo, vertical, out_dir, limit=None, mock=False, crawl_concurrency=6, extract_workers=5):
     t0 = time.time()
-    type_name, glob_pat = VERTICALS[vertical]
     registry = set(_clinics._load_registry(repo).keys())
-    clinics, quarantined_clinics = _clinics.load_clinics(repo, type_name, glob_pat)
+    clinics, quarantined_clinics = VERTICALS[vertical](repo)
     if limit:
         clinics = clinics[:limit]
 
@@ -352,8 +354,7 @@ def run_crawl_only(repo, vertical, out_dir, limit=None, crawl_concurrency=6):
     and _clinics resolution. NO ANTHROPIC key needed — extraction is handed to the
     session's subagents, which read the dumped markdown per EXTRACTION-CONTRACT.md."""
     t0 = time.time()
-    type_name, glob_pat = VERTICALS[vertical]
-    clinics, quarantined_clinics = _clinics.load_clinics(repo, type_name, glob_pat)
+    clinics, quarantined_clinics = VERTICALS[vertical](repo)
     if limit:
         clinics = clinics[:limit]
 
@@ -483,9 +484,9 @@ def run_assemble_external(repo, vertical, out_dir, crawl_concurrency=6):
     dumped markdown, run the SAME verify_prices guard + classify_confidence, and emit
     the final extractions.json / manifest.json / failures.json. No API key."""
     t0 = time.time()
-    type_name, glob_pat = VERTICALS[vertical]
     registry = set(_clinics._load_registry(repo).keys())
-    clinics, _q = _clinics.load_clinics(repo, type_name, glob_pat)
+    clinics, _q = VERTICALS[vertical](repo)
+    service_keys = extract_prices.SERVICE_KEYS_BY_VERTICAL.get(vertical)
     by_id = {}
     for c in clinics:
         by_id.setdefault(c["id"], c)
@@ -514,7 +515,8 @@ def run_assemble_external(repo, vertical, out_dir, crawl_concurrency=6):
             continue
         clinics_seen += 1
         pages_md = _load_dumped_pages(md_root / clinic_id)
-        prices, drops = extract_prices.verify_prices(clinic, raw_prices, pages_md)
+        prices, drops = extract_prices.verify_prices(clinic, raw_prices, pages_md,
+                                                     service_keys=service_keys)
         for dr in drops:
             drops_by_reason[dr.get("reason", "unknown")] += 1
             failures.append({"clinicId": clinic_id, "type": "extraction-drop", **dr})

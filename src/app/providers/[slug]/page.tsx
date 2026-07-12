@@ -6,6 +6,7 @@ import { notFound } from 'next/navigation';
 import { getProviderBySlug, getTotalProviderCount, ALL_PROVIDERS } from '@/lib/providers';
 import { CATEGORIES } from '@/lib/types';
 import { buildProviderSchema } from '@/lib/jsonLd';
+import ProviderPricingSection from '@/components/ProviderPricingSection';
 
 export function generateStaticParams() {
   // Prerender every provider (static editorial data — cheap at build). This
@@ -211,6 +212,9 @@ export default function ProviderDetailPage({
                 </div>
               </div>
             )}
+
+            {/* Verified per-clinic pricing — renders nothing when unpriced */}
+            <ProviderPricingSection clinicId={provider.id} />
           </div>
 
           {/* Right Sidebar */}

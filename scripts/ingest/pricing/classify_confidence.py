@@ -96,12 +96,19 @@ def classify_row(price_row: dict, clinic: dict, registry: set):
         "high": high,
         "unit": unit,
         "priceType": ptype,
-        # medsIncluded intentionally omitted — DEXA/body-comp are not GLP-1
         "source": source,
         "citation": {"url": citation.get("url", ""), "quote": citation.get("quote", "")},
         "confidence": conf,
         "asOf": ASOF,
     }
+    # Cross-vertical optional fields (GLP-1 medsIncluded, program/panel label),
+    # carried through only when the extractor populated them.
+    if price_row.get("serviceLabel"):
+        clinic_price["serviceLabel"] = price_row["serviceLabel"]
+    if isinstance(price_row.get("medsIncluded"), bool):
+        clinic_price["medsIncluded"] = price_row["medsIncluded"]
+    if price_row.get("_note"):
+        clinic_price["_note"] = price_row["_note"]
     return clinic_price, penalties
 
 

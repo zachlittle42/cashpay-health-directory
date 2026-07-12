@@ -38,7 +38,10 @@ import mint_ids        # noqa: E402  (_normalize_domain)
 # Strong pricing terms (score 2-3), then the broad /services + scan catch (score 1).
 _INTENT_RE = re.compile(
     r'(pric|/plans?\b|\bplans?\b|member|package|/rates?\b|\brates?\b|/fees?\b|\bfees?\b'
-    r'|/costs?\b|\bcosts?\b|how much)', re.I)
+    r'|/costs?\b|\bcosts?\b|how much'
+    # labs providers publish under products/tests/panels/shop/store as well
+    r'|/products?\b|\bproducts?\b|/tests?\b|\btests?\b|/panels?\b|\bpanels?\b|/shop\b|/store\b|/buy\b)',
+    re.I)
 _SERVICES_RE = re.compile(r'(/services?\b|\bservices?\b|scan|dexa|body[- ]comp)', re.I)
 
 # Never follow obvious non-pricing junk even if the brand name ("dexa", "body")

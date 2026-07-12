@@ -12,6 +12,7 @@ export type PriceSource = 'clinic-site' | 'call' | 'claimed' | 'estimate';
 export interface ClinicPrice {
   clinicId: string;            // Foundation #1 entity id, from scripts/ingest/id_map.json
   serviceKey: string;          // 'dexa-scan' | 'rmr-test' | 'body-comp-package' | ...
+  serviceLabel?: string;       // human program/panel name as printed ("Semaglutide monthly membership", "Comprehensive Health Panel")
   display: string;             // "$85/scan" — human-facing, verbatim-formatted
   low?: number;                // numeric compare/sort; intro/floor never populate the headline
   high?: number;

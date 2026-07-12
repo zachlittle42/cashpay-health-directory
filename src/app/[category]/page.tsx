@@ -8,6 +8,7 @@ import Footer from '@/components/Footer';
 import SidebarNav from '@/components/SidebarNav';
 import { buildCategoryListSchema, buildFAQSchema } from '@/lib/jsonLd';
 import MedicalDisclaimer from '@/components/MedicalDisclaimer';
+import LabsPriceComparison from '@/components/LabsPriceComparison';
 
 // DEXA-specific AEO content. Answers are grounded in the live provider data in
 // src/lib/providers-telehealth.ts (BodySpec $40-45/scan, DexaFit $100-150/scan).
@@ -138,6 +139,7 @@ export default function CategoryPage({
   const categoryListSchema = buildCategoryListSchema(category.name, providers);
 
   const isDexa = categorySlug === 'dexa';
+  const isLabs = categorySlug === 'labs';
   const dexaFaqSchema = isDexa ? buildFAQSchema(DEXA_FAQ_ITEMS) : null;
   // Enriched MedicalWebPage for the DEXA price query, with per-provider
   // priceSpecification built from the real pricingDisplay strings in the data.
@@ -226,6 +228,9 @@ export default function CategoryPage({
           )}
         </div>
       </section>
+
+      {/* Verified pricing module — labs only, category-gated like the DEXA AEO block */}
+      {isLabs && <LabsPriceComparison providers={providers} />}
 
       {/* Quick Stats for Medical Tourism Categories */}
       {hasMedicalTourism && (
