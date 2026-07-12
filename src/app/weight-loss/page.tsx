@@ -3,7 +3,10 @@ import type { Metadata } from 'next';
 import Navigation from '@/components/Navigation';
 import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
+import Glp1ProgramAggregate from '@/components/Glp1ProgramAggregate';
+import PriceEstimateDisclaimer from '@/components/PriceEstimateDisclaimer';
 import { getWeightLossStatesWithClinics, allWeightLossClinics } from '@/data/weightloss-clinics-index';
+import { getGlp1ProgramStats, getGlp1ProgramAsOf } from '@/lib/pricing';
 
 export const metadata: Metadata = {
   title: 'Medical Weight Loss Clinics by State — Compare Local Providers',
@@ -42,6 +45,11 @@ const medications = [
 export default function WeightLossHub() {
   const states = getWeightLossStatesWithClinics();
   const totalClinics = allWeightLossClinics.length;
+
+  // National verified GLP-1 program aggregate (standard monthly prices only),
+  // computed over the whole store and split by meds-included status.
+  const nationalStats = getGlp1ProgramStats();
+  const nationalAsOf = getGlp1ProgramAsOf();
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -185,6 +193,16 @@ export default function WeightLossHub() {
           </Link>
         </div>
       </section>
+
+      {/* National verified-price line */}
+      {nationalStats.medsIncluded.n >= 3 && (
+        <section className="mx-auto max-w-6xl px-4 pt-8">
+          <div className="rounded-lg border border-gray-200 bg-gray-50 p-5 space-y-2">
+            <Glp1ProgramAggregate stats={nationalStats} asOf={nationalAsOf} placeLabel="the US" />
+            <PriceEstimateDisclaimer />
+          </div>
+        </section>
+      )}
 
       {/* Local Clinics by State */}
       <section id="local-clinics" className="mx-auto max-w-6xl px-4 py-12">

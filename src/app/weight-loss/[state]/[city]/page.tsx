@@ -5,8 +5,12 @@ import Navigation from '@/components/Navigation';
 import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
 import MedicalDisclaimer from '@/components/MedicalDisclaimer';
+import Glp1PriceBadge from '@/components/Glp1PriceBadge';
+import Glp1ProgramAggregate from '@/components/Glp1ProgramAggregate';
+import PriceEstimateDisclaimer from '@/components/PriceEstimateDisclaimer';
 import { getWeightLossClinicsByCity, getWeightLossCitiesWithClinics } from '@/data/weightloss-clinics-index';
 import { WEIGHTLOSS_STATES } from '@/lib/weightloss-clinic-types';
+import { getGlp1ProgramStats, getGlp1ProgramAsOf, getGlp1ProgramPrice } from '@/lib/pricing';
 import { gridRobots } from '@/lib/indexability';
 
 interface Props {
@@ -73,6 +77,14 @@ export default async function CityWeightLoss({ params }: Props) {
 
   const cityName = clinics[0].city;
 
+  // Verified-pricing layer (standard monthly GLP-1 program prices only). The
+  // meds-included aggregate renders at >= 3 priced clinics; the standing
+  // disclaimer renders once whenever the page carries any verified price.
+  const clinicIds = clinics.map((c) => c.id);
+  const programStats = getGlp1ProgramStats(clinicIds);
+  const priceAsOf = getGlp1ProgramAsOf(clinicIds);
+  const hasVerifiedPricing = clinics.some((c) => getGlp1ProgramPrice(c.id));
+
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'MedicalWebPage',
@@ -124,7 +136,16 @@ export default async function CityWeightLoss({ params }: Props) {
 
       {/* All Clinics */}
       <section className="mx-auto max-w-6xl px-4 py-12">
-        <h2 className="text-2xl font-bold text-gray-900 mb-8">All Weight Loss Clinics in {cityName}</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">All Weight Loss Clinics in {cityName}</h2>
+
+        {(programStats.medsIncluded.n >= 3) || hasVerifiedPricing ? (
+          <div className="mb-8 space-y-2">
+            {programStats.medsIncluded.n >= 3 && (
+              <Glp1ProgramAggregate stats={programStats} asOf={priceAsOf} placeLabel={cityName} />
+            )}
+            {hasVerifiedPricing && <PriceEstimateDisclaimer />}
+          </div>
+        ) : null}
 
         <div className="space-y-6">
           {clinics.map((clinic) => (
@@ -159,7 +180,13 @@ export default async function CityWeightLoss({ params }: Props) {
                 </div>
 
                 <div className="md:text-right md:min-w-[200px]">
-                  <div className="text-2xl font-bold text-green-600 mb-1">{clinic.priceRange}</div>
+                  {getGlp1ProgramPrice(clinic.id) ? (
+                    <div className="mb-1">
+                      <Glp1PriceBadge clinicId={clinic.id} />
+                    </div>
+                  ) : (
+                    <div className="text-2xl font-bold text-green-600 mb-1">{clinic.priceRange}</div>
+                  )}
                   {clinic.rating && (
                     <div className="text-sm text-gray-600 mb-3">
                       <span className="text-yellow-500">★</span> {clinic.rating} ({clinic.reviewCount} {clinic.reviewSource} reviews)

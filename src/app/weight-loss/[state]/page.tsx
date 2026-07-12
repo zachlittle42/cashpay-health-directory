@@ -5,8 +5,11 @@ import Navigation from '@/components/Navigation';
 import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
 import MedicalDisclaimer from '@/components/MedicalDisclaimer';
+import Glp1ProgramAggregate from '@/components/Glp1ProgramAggregate';
+import PriceEstimateDisclaimer from '@/components/PriceEstimateDisclaimer';
 import { getWeightLossClinicsByState, getWeightLossCitiesWithClinics, weightLossStateMetadata } from '@/data/weightloss-clinics-index';
 import { WEIGHTLOSS_STATES } from '@/lib/weightloss-clinic-types';
+import { getGlp1ProgramStats, getGlp1ProgramAsOf } from '@/lib/pricing';
 import { gridRobots } from '@/lib/indexability';
 
 interface Props {
@@ -63,6 +66,12 @@ export default async function StateWeightLoss({ params }: Props) {
 
   const colors = colorClasses[meta.heroColor] || colorClasses.green;
 
+  // State-wide verified GLP-1 program aggregate (standard monthly prices only),
+  // split by meds-included status. Renders at >= 3 priced clinics in-state.
+  const stateClinicIds = clinics.map((c) => c.id);
+  const programStats = getGlp1ProgramStats(stateClinicIds);
+  const priceAsOf = getGlp1ProgramAsOf(stateClinicIds);
+
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'MedicalWebPage',
@@ -118,6 +127,16 @@ export default async function StateWeightLoss({ params }: Props) {
           </div>
         </div>
       </section>
+
+      {/* State-wide verified-price line */}
+      {programStats.medsIncluded.n >= 3 && (
+        <section className="mx-auto max-w-6xl px-4 pt-10">
+          <div className="rounded-lg border border-gray-200 bg-gray-50 p-5 space-y-2">
+            <Glp1ProgramAggregate stats={programStats} asOf={priceAsOf} placeLabel={stateInfo.name} />
+            <PriceEstimateDisclaimer />
+          </div>
+        </section>
+      )}
 
       {/* Clinics by City */}
       {cities.map((city) => {

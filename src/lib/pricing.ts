@@ -10,6 +10,7 @@
 import { ClinicPrice } from './pricing-types';
 import { DEXA_PRICING } from '@/data/pricing/dexa-pricing';
 import { LABS_PRICING } from '@/data/pricing/labs-pricing';
+import { WEIGHTLOSS_PRICING } from '@/data/pricing/weightloss-pricing';
 
 export interface CityPricingStats {
   n: number;       // distinct clinics with a standard dexa-scan price
@@ -20,12 +21,16 @@ export interface CityPricingStats {
 
 // Every verified pricing store, merged for per-clinic lookups. Clinic ids are
 // globally unique across verticals (Foundation #1), so a merge never collides.
-const ALL_PRICING: ClinicPrice[] = [...DEXA_PRICING, ...LABS_PRICING];
+const ALL_PRICING: ClinicPrice[] = [...DEXA_PRICING, ...LABS_PRICING, ...WEIGHTLOSS_PRICING];
 
 // serviceKeys whose STANDARD rows are numerically comparable / aggregatable.
 // Per-vertical single-service keys: dexa-scan (DEXA), lab-panel + single-test
 // (labs). membership + package + other-lab are deliberately excluded — they are
 // bundles/subscriptions/consults, not apples-to-apples unit prices.
+//
+// The GLP-1 program keys are deliberately NOT here: monthly recurring program
+// prices must never pool with one-time unit prices, and must split by
+// meds-included status. They aggregate only through getGlp1ProgramStats below.
 const COMPARABLE_KEYS = new Set<string>(['dexa-scan', 'lab-panel', 'single-test']);
 
 // A numerically comparable row: standard price on a comparable serviceKey.
@@ -137,6 +142,133 @@ export function getLabsMembership(clinicId: string): ClinicPrice | undefined {
   const standard = rows.filter((p) => p.priceType === 'standard');
   const pool = standard.length ? standard : rows;
   return pool.reduce((a, b) => ((a.low ?? Infinity) <= (b.low ?? Infinity) ? a : b));
+}
+
+// --- Weight-loss / GLP-1 programs -------------------------------------------
+// GLP-1 program prices are MONTHLY RECURRING and never comparable to one-time
+// prices, to non-month units, or across meds-included status. They are kept out
+// of COMPARABLE_KEYS and aggregated only here, through a dedicated stat that
+// SPLITS by whether the medication is included. A first-month hook (intro), a
+// "starting at" floor, and a multi-month package are all excluded from the
+// monthly-standard pool. See the weightloss batch Gate-P1 audit + §2.
+
+const GLP1_PROGRAM_KEYS = new Set<string>([
+  'semaglutide-program',
+  'tirzepatide-program',
+  'glp1-program',
+]);
+
+// A qualifying monthly program row: a program serviceKey, steady-state standard
+// price, priced per month. intro/floor/package and non-month units never feed
+// the aggregate — a hook or a multi-month bundle is not a monthly rate.
+function isStandardMonthlyProgram(p: ClinicPrice): boolean {
+  return (
+    GLP1_PROGRAM_KEYS.has(p.serviceKey) &&
+    p.priceType === 'standard' &&
+    p.unit === 'month' &&
+    typeof p.low === 'number'
+  );
+}
+
+// Which meds-included bucket a program row belongs to. The buckets never mix: a
+// $199/mo membership-only price and a $199/mo meds-included price are not the
+// same product, and an indeterminate row is neither.
+type MedsBucket = 'medsIncluded' | 'medsExtra' | 'unknown';
+function medsBucket(p: ClinicPrice): MedsBucket {
+  if (p.medsIncluded === true) return 'medsIncluded';
+  if (p.medsIncluded === false) return 'medsExtra';
+  return 'unknown';
+}
+
+export interface Glp1GroupStat {
+  n: number;       // distinct clinics with a qualifying monthly-standard price in this bucket
+  median: number;  // median of per-clinic cheapest qualifying price
+  low: number;
+  high: number;
+}
+export interface Glp1ProgramStats {
+  medsIncluded: Glp1GroupStat;  // price includes the medication (the headline group)
+  medsExtra: Glp1GroupStat;     // membership-only; medication billed separately
+  unknown: { n: number };       // page did not state meds inclusion — counted, never priced
+}
+
+function groupStat(perClinic: Map<string, number>): Glp1GroupStat {
+  const values = Array.from(perClinic.values()).sort((a, b) => a - b);
+  const n = values.length;
+  if (n === 0) return { n: 0, median: 0, low: 0, high: 0 };
+  const mid = Math.floor(n / 2);
+  const median = n % 2 ? values[mid] : (values[mid - 1] + values[mid]) / 2;
+  return { n, median, low: values[0], high: values[n - 1] };
+}
+
+// GLP-1 program aggregate over the passed clinic set (national when omitted),
+// SPLIT by meds-included status. Each bucket uses ONE representative price per
+// clinic — the cheapest qualifying monthly-standard row — so a clinic that
+// lists several program prices counts once. Callers gate the meds-included line
+// on n >= 3 and the meds-billed-separately split line on n >= 2.
+export function getGlp1ProgramStats(clinicIds?: string[]): Glp1ProgramStats {
+  const ids = clinicIds ? new Set(clinicIds) : null;
+  const buckets: Record<MedsBucket, Map<string, number>> = {
+    medsIncluded: new Map(),
+    medsExtra: new Map(),
+    unknown: new Map(),
+  };
+  for (const p of WEIGHTLOSS_PRICING) {
+    if (ids && !ids.has(p.clinicId)) continue;
+    if (!isStandardMonthlyProgram(p)) continue;
+    const bucket = buckets[medsBucket(p)];
+    const low = p.low as number;
+    const cur = bucket.get(p.clinicId);
+    if (cur === undefined || low < cur) bucket.set(p.clinicId, low);
+  }
+  return {
+    medsIncluded: groupStat(buckets.medsIncluded),
+    medsExtra: groupStat(buckets.medsExtra),
+    unknown: { n: buckets.unknown.size },
+  };
+}
+
+// Latest asOf among qualifying monthly-standard program rows (national when
+// clinicIds omitted) — drives the "verified {Month} {Year}" freshness stamp.
+export function getGlp1ProgramAsOf(clinicIds?: string[]): string | undefined {
+  const ids = clinicIds ? new Set(clinicIds) : null;
+  let latest: string | undefined;
+  for (const p of WEIGHTLOSS_PRICING) {
+    if (ids && !ids.has(p.clinicId)) continue;
+    if (!isStandardMonthlyProgram(p)) continue;
+    if (!latest || p.asOf > latest) latest = p.asOf;
+  }
+  return latest;
+}
+
+// The single headline monthly program price for a clinic card: the cheapest
+// qualifying monthly-standard program row. Undefined when the clinic publishes
+// no steady-state monthly program price — the card then keeps its estimate.
+export function getGlp1ProgramPrice(clinicId: string): ClinicPrice | undefined {
+  const rows = getClinicPricing(clinicId).filter(isStandardMonthlyProgram);
+  if (rows.length === 0) return undefined;
+  return rows.reduce((a, b) => ((a.low ?? Infinity) <= (b.low ?? Infinity) ? a : b));
+}
+
+// intro/floor program rows for a clinic — rendered ONLY with their qualifier
+// ("intro offer", "starting price"), never as the headline.
+export function getGlp1QualifiedPrices(clinicId: string): ClinicPrice[] {
+  return getClinicPricing(clinicId).filter(
+    (p) =>
+      GLP1_PROGRAM_KEYS.has(p.serviceKey) &&
+      (p.priceType === 'intro' || p.priceType === 'floor'),
+  );
+}
+
+// Cheapest consult / visit fee for a clinic — a secondary line on the card,
+// rendered by the caller ONLY when the clinic also has a headline program price
+// (a consult fee alone is not program pricing).
+export function getGlp1ConsultFee(clinicId: string): ClinicPrice | undefined {
+  const rows = getClinicPricing(clinicId).filter(
+    (p) => p.serviceKey === 'consult-fee' && typeof p.low === 'number',
+  );
+  if (rows.length === 0) return undefined;
+  return rows.reduce((a, b) => ((a.low ?? Infinity) <= (b.low ?? Infinity) ? a : b));
 }
 
 // Deterministic, locale-free formatting (SSR-stable, no hydration/CLS drift).
