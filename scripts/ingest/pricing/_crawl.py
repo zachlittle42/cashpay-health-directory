@@ -110,16 +110,80 @@ def crawl_pages(urls, concurrency: int = 5) -> dict:
     return asyncio.run(crawl_pages_async(urls, concurrency=concurrency))
 
 
-def llm_extract(markdown: str, prompt: str, model: str = None) -> dict:
+async def crawl_pages_detailed_async(urls, concurrency: int = 5) -> dict:
+    """Like crawl_pages_async but returns per-url dicts carrying the HTTP status so
+    callers can tell a bot wall (403/429) from an unreachable host (status None).
+
+    Returns {url: {"markdown": str, "status_code": int|None, "success": bool,
+                    "error": str|None}}.
+    """
+    from crawl4ai import AsyncWebCrawler, BrowserConfig, CrawlerRunConfig
+
+    urls = list(dict.fromkeys(u for u in urls if u))
+    out = {}
+    if not urls:
+        return out
+
+    browser_config = BrowserConfig(headless=True, verbose=False)
+    # Render-wait for SPA/JS pricing pages: a short settle delay + full-page scan
+    # recovers React/Squarespace/Square-widget prices that a bare DOM read misses,
+    # and a low word-count threshold keeps short price tables from being filtered.
+    crawler_config = CrawlerRunConfig(
+        page_timeout=_page_timeout_s() * 1000,
+        delay_before_return_html=2.0,
+        scan_full_page=True,
+        word_count_threshold=5,
+        remove_overlay_elements=True,
+    )
+    batch_delay = _batch_delay_s()
+
+    async def one(crawler, url):
+        try:
+            result = await crawler.arun(url=url, config=crawler_config)
+            return url, {
+                "markdown": (result.markdown or "") if result.success else "",
+                "status_code": getattr(result, "status_code", None),
+                "success": bool(result.success),
+                "error": None if result.success else (getattr(result, "error_message", "") or "crawl-failed"),
+            }
+        except Exception as e:                          # noqa: BLE001
+            print(f"    crawl error {url}: {e}")
+            return url, {"markdown": "", "status_code": None, "success": False, "error": str(e)}
+
+    total = len(urls)
+    async with AsyncWebCrawler(config=browser_config) as crawler:
+        for i in range(0, total, concurrency):
+            batch = urls[i:i + concurrency]
+            results = await asyncio.gather(*(one(crawler, u) for u in batch))
+            for url, rec in results:
+                out[url] = rec
+            if i + concurrency < total:
+                await asyncio.sleep(batch_delay)
+    return out
+
+
+def crawl_pages_detailed(urls, concurrency: int = 5) -> dict:
+    """Synchronous wrapper around crawl_pages_detailed_async."""
+    return asyncio.run(crawl_pages_detailed_async(urls, concurrency=concurrency))
+
+
+def llm_extract(markdown: str, prompt: str, model: str = None, return_usage: bool = False):
     """Send `markdown` + `prompt` to Claude and parse the first JSON object out of
     the reply. Returns a dict, or None on any failure (no crawl content, API error,
     or unparseable response).
 
     The prompt may contain a `{markdown}` or `{content}` placeholder; otherwise the
     page text is appended after the prompt.
+
+    When return_usage=True, returns (parsed_or_None, usage_dict) where usage_dict
+    is {"input_tokens", "output_tokens"} (zeros on failure) — for cost telemetry.
     """
+    def _ret(parsed, usage):
+        return (parsed, usage) if return_usage else parsed
+
+    zero_usage = {"input_tokens": 0, "output_tokens": 0}
     if not markdown:
-        return None
+        return _ret(None, zero_usage)
 
     if "{markdown}" in prompt:
         full = prompt.format(markdown=markdown)
@@ -136,16 +200,19 @@ def llm_extract(markdown: str, prompt: str, model: str = None) -> dict:
             max_tokens=_max_tokens(),
             messages=[{"role": "user", "content": full}],
         )
+        usage = {"input_tokens": getattr(response.usage, "input_tokens", 0),
+                 "output_tokens": getattr(response.usage, "output_tokens", 0)}
         text = response.content[0].text.strip()
         m = re.search(r'\{.*\}', text, re.DOTALL)
         if not m:
-            return None
-        return json.loads(m.group())
-    except json.JSONDecodeError:
-        return None
+            return _ret(None, usage)
+        try:
+            return _ret(json.loads(m.group()), usage)
+        except json.JSONDecodeError:
+            return _ret(None, usage)
     except Exception as e:                              # noqa: BLE001
         print(f"    llm_extract error: {e}")
-        return None
+        return _ret(None, zero_usage)
 
 
 if __name__ == "__main__":

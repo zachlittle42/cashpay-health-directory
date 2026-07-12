@@ -4,7 +4,10 @@ import Navigation from '@/components/Navigation';
 import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
 import MedicalDisclaimer from '@/components/MedicalDisclaimer';
+import PriceAggregate from '@/components/PriceAggregate';
+import PriceEstimateDisclaimer from '@/components/PriceEstimateDisclaimer';
 import { getDexaStatesWithClinics, allDexaClinics } from '@/data/dexa-clinics-index';
+import { getNationalDexaStats, getStandardDexaAsOf } from '@/lib/pricing';
 
 export const metadata: Metadata = {
   title: 'DEXA Scan Near You: Body Composition & Bone Density Clinics by City',
@@ -48,6 +51,8 @@ const chains = [
 export default function DexaScansHub() {
   const states = getDexaStatesWithClinics();
   const totalClinics = allDexaClinics.length;
+  const nationalStats = getNationalDexaStats();
+  const nationalAsOf = getStandardDexaAsOf();
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -96,6 +101,16 @@ export default function DexaScansHub() {
           </div>
         </div>
       </section>
+
+      {/* National verified-price line */}
+      {nationalStats && nationalStats.n >= 3 && (
+        <section className="mx-auto max-w-4xl px-4 pt-8">
+          <div className="rounded-lg border border-gray-200 bg-gray-50 p-5 space-y-2">
+            <PriceAggregate stats={nationalStats} asOf={nationalAsOf} placeLabel="the US" />
+            <PriceEstimateDisclaimer />
+          </div>
+        </section>
+      )}
 
       {/* Local Clinics by State */}
       <section id="local-clinics" className="mx-auto max-w-6xl px-4 py-12">

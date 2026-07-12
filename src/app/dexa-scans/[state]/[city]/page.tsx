@@ -5,7 +5,11 @@ import Navigation from '@/components/Navigation';
 import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
 import MedicalDisclaimer from '@/components/MedicalDisclaimer';
+import PriceBadge from '@/components/PriceBadge';
+import PriceAggregate from '@/components/PriceAggregate';
+import PriceEstimateDisclaimer from '@/components/PriceEstimateDisclaimer';
 import { getDexaClinicsByCity, getDexaCitiesWithClinics } from '@/data/dexa-clinics-index';
+import { getCityPricingStats, getStandardDexaPrice, getStandardDexaAsOf } from '@/lib/pricing';
 import { DEXA_STATES } from '@/lib/dexa-clinic-types';
 import { gridRobots } from '@/lib/indexability';
 
@@ -99,6 +103,14 @@ export default async function CityDexa({ params }: Props) {
   const cityName = clinics[0].city;
   const cityCostGuide = CITY_COST_GUIDES[`${stateSlug}/${citySlug}`];
 
+  // Verified-pricing layer (standard dexa-scan prices only). Aggregate line
+  // renders at >= 3 priced clinics; the standing disclaimer renders once
+  // whenever the page carries any verified price.
+  const clinicIds = clinics.map((c) => c.id);
+  const cityStats = getCityPricingStats(clinicIds);
+  const priceAsOf = getStandardDexaAsOf(clinicIds);
+  const hasVerifiedPricing = clinics.some((c) => getStandardDexaPrice(c.id));
+
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'MedicalWebPage',
@@ -152,7 +164,16 @@ export default async function CityDexa({ params }: Props) {
 
       {/* All Clinics */}
       <section className="mx-auto max-w-6xl px-4 py-12">
-        <h2 className="text-2xl font-bold text-gray-900 mb-8">All DEXA Scan Clinics in {cityName}</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">All DEXA Scan Clinics in {cityName}</h2>
+
+        {(cityStats && cityStats.n >= 3) || hasVerifiedPricing ? (
+          <div className="mb-8 space-y-2">
+            {cityStats && cityStats.n >= 3 && (
+              <PriceAggregate stats={cityStats} asOf={priceAsOf} placeLabel={cityName} />
+            )}
+            {hasVerifiedPricing && <PriceEstimateDisclaimer />}
+          </div>
+        ) : null}
 
         <div className="space-y-6">
           {clinics.map((clinic) => (
@@ -190,8 +211,14 @@ export default async function CityDexa({ params }: Props) {
                 </div>
 
                 <div className="md:text-right md:min-w-[200px]">
-                  <div className="text-2xl font-bold text-blue-600 mb-1">{clinic.priceRange}</div>
-                  <div className="text-xs text-gray-400 mb-2">estimate — verify with provider</div>
+                  {getStandardDexaPrice(clinic.id) ? (
+                    <PriceBadge clinicId={clinic.id} />
+                  ) : (
+                    <>
+                      <div className="text-2xl font-bold text-blue-600 mb-1">{clinic.priceRange}</div>
+                      <div className="text-xs text-gray-400 mb-2">estimate — verify with provider</div>
+                    </>
+                  )}
                   {clinic.membership && (
                     <div className="text-sm text-gray-600 mb-2">{clinic.membership}</div>
                   )}
