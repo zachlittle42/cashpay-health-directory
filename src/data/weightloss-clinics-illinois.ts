@@ -5,6 +5,7 @@ import { WeightLossClinic } from '@/lib/weightloss-clinic-types';
 
 export const illinoisWeightLossClinics: WeightLossClinic[] = [
   {
+    id: "c_f66be65e5d",
     name: "Chicago Skin Clinic Medical Weight Loss",
     slug: "chicago-skin-clinic-medical-weight-loss",
     address: "5440 W. Belmont Ave.",
@@ -25,6 +26,7 @@ export const illinoisWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_2f8ac1d236",
     name: "Old Town Med Spa",
     slug: "old-town-med-spa",
     address: "152 W Huron Street",
@@ -45,6 +47,7 @@ export const illinoisWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_6396405ee8",
     name: "Chicago Weight Loss & Vitality Clinic",
     slug: "chicago-weight-loss-and-vitality-clinic",
     address: "2719 N Halsted St",
@@ -65,6 +68,7 @@ export const illinoisWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_c19ed97e80",
     name: "Options Medical Weight Loss - South Loop",
     slug: "options-medical-weight-loss-south-loop",
     address: "1147 S Wabash Ave",
@@ -88,6 +92,7 @@ export const illinoisWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_880aed14e4",
     name: "Elysium Aesthetics + Longevity",
     slug: "elysium-aesthetics-longevity",
     address: "520 W Erie St, Ste 110",
@@ -108,6 +113,7 @@ export const illinoisWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_9d1b2feca3",
     name: "Better Med Spa & Wellness",
     slug: "better-med-spa-and-wellness",
     address: "2117 N Halsted St",
@@ -128,6 +134,7 @@ export const illinoisWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_8108099108",
     name: "Metro Urgent Care Medical Weight Loss",
     slug: "metro-urgent-care-medical-weight-loss",
     address: "5406 W. Fullerton Ave",
@@ -148,6 +155,7 @@ export const illinoisWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_a60f1a9631",
     name: "Accelerated Aesthetics",
     slug: "accelerated-aesthetics",
     address: "112 S. York Street",
@@ -168,6 +176,7 @@ export const illinoisWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_2e420bbbf2",
     name: "Aziz Medical Center Weight Loss Clinic",
     slug: "aziz-medical-center-weight-loss-clinic",
     address: "622 N Addison Rd",

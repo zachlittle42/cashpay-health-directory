@@ -5,6 +5,7 @@ import { HormoneClinic } from '@/lib/hormone-clinic-types';
 
 export const washingtonHormoneClinics: HormoneClinic[] = [
   {
+    id: "c_26f2d511b1",
     name: "Revibe Men's Health",
     slug: "revibe-mens-health",
     address: "1229 Madison St. Suite 890",
@@ -25,6 +26,7 @@ export const washingtonHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_6bf70e6eb3",
     name: "Allure Esthetic",
     slug: "allure-esthetic",
     address: "600 Broadway Suite 320",
@@ -45,6 +47,7 @@ export const washingtonHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_6781c0c1e9",
     name: "Water's Edge Natural Medicine",
     slug: "waters-edge-natural-medicine",
     address: "1000 2nd Ave, Suite 2920",
@@ -64,6 +67,7 @@ export const washingtonHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_8bfe236929",
     name: "Well Medical Arts",
     slug: "well-medical-arts",
     address: "9025 35th Ave SW",
@@ -83,6 +87,7 @@ export const washingtonHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_40eb4d7a81",
     name: "Revive Low T Clinic",
     slug: "revive-low-t-clinic",
     address: "4500 9th Ave NE, Suite 80",
@@ -106,6 +111,7 @@ export const washingtonHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_f9ad2a5176",
     name: "Full Potential HRT Clinic",
     slug: "full-potential-hrt-clinic",
     address: "451 SW 10th St. Suite #104",
@@ -125,6 +131,7 @@ export const washingtonHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_dcd1b2f9c3",
     name: "Vitality Medical",
     slug: "vitality-medical",
     address: "1133 164th St SW, Suite 202",
@@ -144,6 +151,7 @@ export const washingtonHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_72c7bbbfc4",
     name: "Huddle Men's Health",
     slug: "huddle-mens-health",
     address: "1515 116th Avenue NE, Suite 108",
@@ -167,6 +175,7 @@ export const washingtonHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_c7b4615f40",
     name: "Apex Health & Wellness",
     slug: "apex-health-and-wellness",
     address: "1800 116th Ave NE, Suite 104",
@@ -186,6 +195,7 @@ export const washingtonHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_552fce27a1",
     name: "Seattle Regenerative Medicine Center",
     slug: "seattle-regenerative-medicine-center",
     address: "1220 116th Ave NE, Suite 102",

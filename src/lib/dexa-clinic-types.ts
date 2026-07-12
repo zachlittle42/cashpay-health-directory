@@ -5,6 +5,7 @@
 export type ScanType = 'DEXA' | 'InBody' | 'BodPod' | '3D-scan' | 'RMR' | 'VO2max';
 
 export interface DexaClinic {
+  id: string;                // Foundation #1 — stable entity id, minted by scripts/ingest/mint_ids.py
   name: string;
   slug: string;
   address?: string;          // optional: mobile/pop-up units (BodySpec) have no fixed address

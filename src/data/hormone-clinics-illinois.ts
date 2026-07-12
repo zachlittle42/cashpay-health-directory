@@ -5,6 +5,7 @@ import { HormoneClinic } from '@/lib/hormone-clinic-types';
 
 export const illinoisHormoneClinics: HormoneClinic[] = [
   {
+    id: "c_1ecf44bbab",
     name: "Chicagoland Men's Health",
     slug: "chicagoland-mens-health",
     address: "1 East Delaware Place, Suite 502",
@@ -28,6 +29,7 @@ export const illinoisHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_16eb1da991",
     name: "Chicago Vitality",
     slug: "chicago-vitality",
     address: "10 South LaSalle Street, Suite 1130",
@@ -51,6 +53,7 @@ export const illinoisHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_7d68052813",
     name: "Millennium Park Medical Associates",
     slug: "millennium-park-medical-associates",
     address: "30 S Michigan Ave, Suite 500",
@@ -70,6 +73,7 @@ export const illinoisHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_6ba480df8b",
     name: "Metro Urgent Care TRT",
     slug: "metro-urgent-care-trt",
     address: "5406 W Fullerton Ave",
@@ -90,6 +94,7 @@ export const illinoisHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_c7cd8d2efb",
     name: "Bliss MD",
     slug: "bliss-md",
     address: "2707 N Halsted St",
@@ -110,6 +115,7 @@ export const illinoisHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_a231b73f04",
     name: "Valentin Tureanu, MD",
     slug: "valentin-tureanu-md",
     address: "5015 N Paulina St, Suite 220",
@@ -132,6 +138,7 @@ export const illinoisHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_4fe93a5cc6",
     name: "Male Medical of Chicago",
     slug: "male-medical-of-chicago",
     address: "106 E Oak Street, 3rd Floor",
@@ -152,6 +159,7 @@ export const illinoisHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_08047c040f",
     name: "SynergenX Burr Ridge",
     slug: "synergenx-burr-ridge",
     address: "11S250 South Jackson Street, Suite 102",

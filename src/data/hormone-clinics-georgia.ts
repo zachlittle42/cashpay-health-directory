@@ -5,6 +5,7 @@ import { HormoneClinic } from '@/lib/hormone-clinic-types';
 
 export const georgiaHormoneClinics: HormoneClinic[] = [
   {
+    id: "c_edad0e4797",
     name: "Atlanta Men's Clinic",
     slug: "atlanta-mens-clinic",
     address: "1800 Peachtree St NW, Suite 660",
@@ -24,6 +25,7 @@ export const georgiaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_90d9998d2b",
     name: "Gameday Men's Health Buckhead",
     slug: "gameday-mens-health-buckhead",
     address: "1801 Peachtree Street NE, Suite 125",
@@ -44,6 +46,7 @@ export const georgiaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_954976a628",
     name: "4Ever Young Atlanta Midtown",
     slug: "4ever-young-atlanta-midtown",
     address: "1080 West Peachtree Street NW, Unit 5",
@@ -63,6 +66,7 @@ export const georgiaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_5b4be61131",
     name: "Atlanta Medical Institute",
     slug: "atlanta-medical-institute",
     address: "5009 Roswell Road NE, Suite 201",
@@ -85,6 +89,7 @@ export const georgiaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_87d1f37e56",
     name: "Harley Institute",
     slug: "harley-institute",
     address: "2678 Buford Highway NE",
@@ -107,6 +112,7 @@ export const georgiaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_37a19dc8fa",
     name: "BodyLogicMD of Atlanta",
     slug: "bodylogicmd-of-atlanta",
     address: "2941 Piedmont Rd NE, Suite C",
@@ -126,6 +132,7 @@ export const georgiaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_1f080fb89e",
     name: "HealthGains Atlanta",
     slug: "healthgains-atlanta",
     address: "1140 Hammond Dr, Building G, Suite 7250",

@@ -5,6 +5,7 @@ import { WeightLossClinic } from '@/lib/weightloss-clinic-types';
 
 export const washingtonDcWeightLossClinics: WeightLossClinic[] = [
   {
+    id: "c_51ac147390",
     name: "Capitol Contours",
     slug: "capitol-contours",
     address: "1200 G Street NW, Suite 800",
@@ -25,6 +26,7 @@ export const washingtonDcWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_b7895a63b5",
     name: "Weight Loss and Vitality",
     slug: "weight-loss-and-vitality",
     address: "1800 K Street NW, Front 100",
@@ -48,6 +50,7 @@ export const washingtonDcWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_3e6c525b8f",
     name: "Ritual by Tracy Holzman NP-C",
     slug: "ritual-by-tracy-holzman-np-c",
     address: "2440 M Street NW, Suite 810",
@@ -71,6 +74,7 @@ export const washingtonDcWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_f633b16c76",
     name: "Beale Medical Weight Loss",
     slug: "beale-medical-weight-loss",
     address: "1712 I Street NW, Suite 604",
@@ -94,6 +98,7 @@ export const washingtonDcWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_6f9d3c9e07",
     name: "Medical Cosmetic & Wellness",
     slug: "medical-cosmetic-and-wellness",
     address: "2311 M Street NW, Suite 402",
@@ -114,6 +119,7 @@ export const washingtonDcWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_fcffd80bdb",
     name: "Peel Haus Aesthetics & Plastic Surgery",
     slug: "peel-haus-aesthetics-and-plastic-surgery",
     address: "1105 Pennsylvania Avenue SE",
@@ -134,6 +140,7 @@ export const washingtonDcWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_1dfcc6cc29",
     name: "Revolution Medicine, Health & Fitness",
     slug: "revolution-medicine-health-and-fitness",
     address: "1050 Connecticut Avenue NW, Suite 500",
@@ -154,6 +161,7 @@ export const washingtonDcWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_e861b497f6",
     name: "Performance Rejuvenation Center",
     slug: "performance-rejuvenation-center",
     address: "1712 Eye Street NW, Suite 200",

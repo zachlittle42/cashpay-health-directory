@@ -5,6 +5,7 @@ import { DexaClinic } from '@/lib/dexa-clinic-types';
 
 export const illinoisDexaClinics: DexaClinic[] = [
   {
+    id: "c_964f5ec671",
     name: "Bracey Performance",
     slug: "bracey-performance",
     address: "833 W Chicago Ave, L107, Lower Level, Chicago, IL 60642",
@@ -25,6 +26,7 @@ export const illinoisDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_5fbf95fa8f",
     name: "Moonshot Medical and Performance",
     slug: "moonshot-medical-performance",
     address: "542 Busse Hwy, Park Ridge, IL 60068",
@@ -46,6 +48,7 @@ export const illinoisDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_f01ae03311",
     name: "Live Lean Rx Chicago",
     slug: "live-lean-rx-chicago",
     address: "1519 W Foster Ave, Chicago, IL 60640",
@@ -66,6 +69,7 @@ export const illinoisDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_63bf68c363",
     name: "BodySpec Chicago",
     slug: "bodyspec-chicago",
     address: "1 E Delaware Pl Ste 310, Chicago, IL 60611",
@@ -86,6 +90,7 @@ export const illinoisDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_6461f78671",
     name: "DexaFit Chicago (Wheaton)",
     slug: "dexafit-chicago-wheaton",
     address: "2100 Manchester Rd, Wheaton, IL 60187",
@@ -109,6 +114,7 @@ export const illinoisDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_e75774da63",
     name: "BZ Longevity",
     slug: "bz-longevity-chicago",
     city: "Chicago",

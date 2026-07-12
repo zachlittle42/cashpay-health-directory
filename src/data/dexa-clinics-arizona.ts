@@ -5,6 +5,7 @@ import { DexaClinic } from '@/lib/dexa-clinic-types';
 
 export const arizonaDexaClinics: DexaClinic[] = [
   {
+    id: "c_12d7c623af",
     name: "Dexa Body",
     slug: "dexa-body",
     address: "11111 N. Scottsdale Rd, Suite 205, Scottsdale, AZ 85254",
@@ -25,6 +26,7 @@ export const arizonaDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_3aa5d4e1b5",
     name: "Valley Healthspan",
     slug: "valley-healthspan",
     address: "3333 E. Camelback Rd, Suite 270, Phoenix, AZ 85018",
@@ -45,6 +47,7 @@ export const arizonaDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_4f54dfbf5e",
     name: "Preamble Health Scottsdale",
     slug: "preamble-health-scottsdale",
     address: "16430 N Scottsdale Rd, Suite 110, Scottsdale, AZ 85254",
@@ -65,6 +68,7 @@ export const arizonaDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_d8c4f46035",
     name: "DexaFit Phoenix (North Phoenix)",
     slug: "dexafit-phoenix-north",
     address: "706 E. Bell Road, Suite 123, Phoenix, AZ 85022",
@@ -85,6 +89,7 @@ export const arizonaDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_5fa1a45506",
     name: "DexaFit Tempe",
     slug: "dexafit-tempe",
     address: "1730 E. Warner Road, Tempe, AZ 85284",
@@ -105,6 +110,7 @@ export const arizonaDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_2b6740a762",
     name: "Fitnescity (Phoenix)",
     slug: "fitnescity-phoenix",
     address: "4840 E. Indian School Rd, Phoenix, AZ 85018",

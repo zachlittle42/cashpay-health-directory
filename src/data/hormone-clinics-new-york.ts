@@ -5,6 +5,7 @@ import { HormoneClinic } from '@/lib/hormone-clinic-types';
 
 export const newYorkHormoneClinics: HormoneClinic[] = [
   {
+    id: "c_0f92311d3f",
     name: "Renew Vitality NYC",
     slug: "renew-vitality-nyc",
     address: "30 Central Park South, Ste 10A",
@@ -28,6 +29,7 @@ export const newYorkHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_48e5ea1375",
     name: "Gameday Men's Health Manhattan - Upper East Side",
     slug: "gameday-mens-health-manhattan-upper-east-side",
     address: "150 E 58th St #14F",
@@ -51,6 +53,7 @@ export const newYorkHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_54fb1b1624",
     name: "Atlas Men's Health - Midtown Manhattan",
     slug: "atlas-mens-health-midtown-manhattan",
     address: "505 8th Ave, Suite 600",
@@ -71,6 +74,7 @@ export const newYorkHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_adfa92baa3",
     name: "Maze Men's Health",
     slug: "maze-mens-health",
     address: "633 Third Avenue, Suite 9B",
@@ -91,6 +95,7 @@ export const newYorkHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_11dcb3a7db",
     name: "SoHo Men's Health",
     slug: "soho-mens-health",
     address: "11 Broadway, Suite 570",
@@ -111,6 +116,7 @@ export const newYorkHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_7b2e6fbf0e",
     name: "advitam",
     slug: "advitam",
     address: "535 5th Ave, 30th Floor",
@@ -133,6 +139,7 @@ export const newYorkHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_ce062ded01",
     name: "Sue Decotiis, MD",
     slug: "sue-decotiis-md",
     address: "20 E 46th St., #1201",
@@ -152,6 +159,7 @@ export const newYorkHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_2dc7b271a0",
     name: "NY Center for Integrative Health",
     slug: "ny-center-for-integrative-health",
     address: "345 7th Avenue, Suite 1601",

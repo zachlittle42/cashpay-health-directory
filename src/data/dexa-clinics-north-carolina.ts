@@ -5,6 +5,7 @@ import { DexaClinic } from '@/lib/dexa-clinic-types';
 
 export const northCarolinaDexaClinics: DexaClinic[] = [
   {
+    id: "c_794d95f87b",
     name: "Triangle Wellness & Anti-Aging",
     slug: "triangle-wellness-anti-aging",
     address: "9104 Falls of Neuse Road, Suite 206",
@@ -25,6 +26,7 @@ export const northCarolinaDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_b8737fdc9f",
     name: "Chain Effect",
     slug: "chain-effect",
     address: "2501 Blue Ridge Road, Suite G130",
@@ -45,6 +47,7 @@ export const northCarolinaDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_add3f628ab",
     name: "Gameday Men's Health Raleigh (Glenwood)",
     slug: "gameday-mens-health-raleigh-glenwood",
     address: "2626 Glenwood Avenue, Suite 170",
@@ -65,6 +68,7 @@ export const northCarolinaDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_d07a0297b7",
     name: "Fitnescity Raleigh",
     slug: "fitnescity-raleigh",
     address: "1107 Capital Blvd",

@@ -5,6 +5,7 @@ import { DexaClinic } from '@/lib/dexa-clinic-types';
 
 export const washingtonDcDexaClinics: DexaClinic[] = [
   {
+    id: "c_132f2380cc",
     name: "GWU Metabolism and Exercise Testing Laboratory",
     slug: "gwu-metabolism-exercise-testing-lab",
     address: "950 New Hampshire Avenue NW, Washington, DC 20037",
@@ -25,6 +26,7 @@ export const washingtonDcDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_c85c5d9ba6",
     name: "Composition ID",
     slug: "composition-id-washington-dc",
     address: "760 N St NW, Washington, DC 20001",
@@ -45,6 +47,7 @@ export const washingtonDcDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_5daa27dacc",
     name: "BodySpec",
     slug: "bodyspec-washington-dc",
     city: "Washington",
@@ -63,6 +66,7 @@ export const washingtonDcDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_8504d1de13",
     name: "Fitnescity",
     slug: "fitnescity-washington-dc",
     city: "Washington",

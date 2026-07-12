@@ -5,6 +5,7 @@ import { DexaClinic } from '@/lib/dexa-clinic-types';
 
 export const newYorkDexaClinics: DexaClinic[] = [
   {
+    id: "c_f4c08a3a07",
     name: "NYC Performance Lab",
     slug: "nyc-performance-lab",
     address: "11 West 36th St., 4th Floor, New York, NY 10018",
@@ -26,6 +27,7 @@ export const newYorkDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_987389e4a4",
     name: "NYC Dexa Scans",
     slug: "nyc-dexa-scans",
     address: "77 Greenwich Ave, #C, New York, NY 10014",
@@ -46,6 +48,7 @@ export const newYorkDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_fd66307f3d",
     name: "Dexaslim",
     slug: "dexaslim",
     city: "New York City",
@@ -68,6 +71,7 @@ export const newYorkDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_302187ad2a",
     name: "DexaFit NY",
     slug: "dexafit-ny",
     address: "352 7th Ave, New York, NY 10001",
@@ -88,6 +92,7 @@ export const newYorkDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_5daa27dacc",
     name: "BodySpec",
     slug: "bodyspec-nyc",
     city: "New York City",
@@ -109,6 +114,7 @@ export const newYorkDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_8504d1de13",
     name: "Fitnescity",
     slug: "fitnescity-nyc",
     address: "5 West 37th St., New York, NY 10018",

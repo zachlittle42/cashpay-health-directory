@@ -5,6 +5,7 @@ import { WeightLossClinic } from '@/lib/weightloss-clinic-types';
 
 export const nevadaWeightLossClinics: WeightLossClinic[] = [
   {
+    id: "c_6b52261e22",
     name: "Medi-Slim Weight Loss",
     slug: "medi-slim-weight-loss",
     address: "2001 S Rainbow Blvd, Suite 100",
@@ -28,6 +29,7 @@ export const nevadaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_bb4577d67a",
     name: "Modern Wellness Clinic",
     slug: "modern-wellness-clinic",
     address: "5375 S Fort Apache Rd, Suite 102 & 103",
@@ -51,6 +53,7 @@ export const nevadaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_5decf27ae3",
     name: "Premier Physicians Weight Loss & Wellness",
     slug: "premier-physicians-weight-loss-wellness",
     address: "6930 S Cimarron Rd, Suite 220",
@@ -71,6 +74,7 @@ export const nevadaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_63074ccc1b",
     name: "TrimBody M.D.",
     slug: "trimbody-md",
     address: "9310 S Eastern Ave, Suite 122",
@@ -91,6 +95,7 @@ export const nevadaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_d116a9080d",
     name: "Medical Reducing Inc.",
     slug: "medical-reducing-inc",
     address: "2466 E Desert Inn Rd, Suite C",
@@ -111,6 +116,7 @@ export const nevadaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_4289ac0703",
     name: "Kohn Medical & Weight Loss",
     slug: "kohn-medical-weight-loss",
     address: "5081 N Rainbow Blvd, Suite 110",
@@ -131,6 +137,7 @@ export const nevadaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_4d375963e2",
     name: "Sky Health Wellness Clinic",
     slug: "sky-health-wellness-clinic",
     address: "4385 N Pecos Rd, Suite 140",
@@ -151,6 +158,7 @@ export const nevadaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_948de85469",
     name: "Elite Medical Associates",
     slug: "elite-medical-associates",
     address: "2931 N Tenaya Way, Suite 204",
@@ -174,6 +182,7 @@ export const nevadaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_41e48dfeac",
     name: "RejuvLV Wellness & Aesthetics",
     slug: "rejuvlv-wellness-aesthetics",
     address: "8130 W Warm Springs Rd, Suite 150",
@@ -194,6 +203,7 @@ export const nevadaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_f4996edf96",
     name: "Advanced Medical Weight Loss & Wellness Center",
     slug: "advanced-medical-weight-loss-wellness-center",
     address: "1450 W Horizon Ridge Pkwy, Suite B-313",

@@ -5,6 +5,7 @@ import { WeightLossClinic } from '@/lib/weightloss-clinic-types';
 
 export const washingtonWeightLossClinics: WeightLossClinic[] = [
   {
+    id: "c_97615c16ce",
     name: "Seattle Plastic Surgery Medical Weight Loss Clinic",
     slug: "seattle-plastic-surgery-medical-weight-loss-clinic",
     address: "600 Broadway Suite #320",
@@ -25,6 +26,7 @@ export const washingtonWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_8bfe236929",
     name: "Well Medical Arts",
     slug: "well-medical-arts",
     address: "9025 35th Ave SW",
@@ -45,6 +47,7 @@ export const washingtonWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_fd4a3c7f46",
     name: "Rise Regenerative Medicine",
     slug: "rise-regenerative-medicine",
     address: "500 Aloha St, Ste C2",
@@ -65,6 +68,7 @@ export const washingtonWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_bc01a2518d",
     name: "Flow Wellness",
     slug: "flow-wellness",
     address: "South Lake Union",
@@ -85,6 +89,7 @@ export const washingtonWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_7999d36db3",
     name: "Skin Haven Cosmetic Clinic",
     slug: "skin-haven-cosmetic-clinic",
     address: "910 Lenora Street Suite #152",
@@ -105,6 +110,7 @@ export const washingtonWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_8695164897",
     name: "Lux Aesthetics Seattle",
     slug: "lux-aesthetics-seattle",
     address: "2425 33rd Ave W #A1",

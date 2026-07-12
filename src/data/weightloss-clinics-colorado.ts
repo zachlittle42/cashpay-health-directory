@@ -5,6 +5,7 @@ import { WeightLossClinic } from '@/lib/weightloss-clinic-types';
 
 export const coloradoWeightLossClinics: WeightLossClinic[] = [
   {
+    id: "c_7902d07476",
     name: "Aria Integrative Health",
     slug: "aria-integrative-health",
     address: "2500 18th St Suite B",
@@ -25,6 +26,7 @@ export const coloradoWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_23365a01d2",
     name: "Vitalogy Health and Integrative Medicine",
     slug: "vitalogy-health-and-integrative-medicine",
     address: "90 Madison Street, Suite 101",
@@ -48,6 +50,7 @@ export const coloradoWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_2b8cf66a0b",
     name: "Denver Regenerative Medicine",
     slug: "denver-regenerative-medicine",
     address: "455 Sherman Street, Suite 450",
@@ -68,6 +71,7 @@ export const coloradoWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_a90a641dd3",
     name: "Juicy Face Medical Esthetics",
     slug: "juicy-face-medical-esthetics",
     address: "3000 E 1st Ave Unit 114",
@@ -87,6 +91,7 @@ export const coloradoWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_a04fd9915c",
     name: "MedNOW Clinics",
     slug: "mednow-clinics",
     address: "1485 S Colorado Blvd, Suite 100",

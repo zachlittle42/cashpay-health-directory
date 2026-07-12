@@ -6,6 +6,7 @@ import { WeightLossClinic } from '@/lib/weightloss-clinic-types';
 export const floridaWeightLossClinics: WeightLossClinic[] = [
   // MIAMI
   {
+    id: 'c_6028afdee2',
     name: 'ThinWorks Miami',
     slug: 'thinworks-miami',
     address: '9155 S Dadeland Blvd #1520, Miami, FL 33156',
@@ -29,6 +30,7 @@ export const floridaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: 'c_0663ad2f56',
     name: 'South Beach Weight Loss',
     slug: 'south-beach-weight-loss',
     address: '1111 Lincoln Rd #400, Miami Beach, FL 33139',
@@ -52,6 +54,7 @@ export const floridaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: 'c_9f3e692030',
     name: 'Miami Med Spa Weight Loss',
     slug: 'miami-medspa-weight-loss',
     address: '6705 Red Road #508, Coral Gables, FL 33143',
@@ -77,6 +80,7 @@ export const floridaWeightLossClinics: WeightLossClinic[] = [
 
   // TAMPA
   {
+    id: 'c_f36909d4cb',
     name: 'Physicians Weight Loss Tampa',
     slug: 'physicians-weight-loss-tampa',
     address: '4012 Gunn Hwy #200, Tampa, FL 33618',
@@ -100,6 +104,7 @@ export const floridaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: 'c_5a276d4bc0',
     name: 'Tampa Bay Medical Weight Loss',
     slug: 'tampa-bay-weight-loss',
     address: '13801 Bruce B Downs Blvd #301, Tampa, FL 33613',
@@ -123,6 +128,7 @@ export const floridaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: 'c_5408c07369',
     name: 'Westchase Weight Loss',
     slug: 'westchase-weight-loss',
     address: '12500 Race Track Rd #201, Tampa, FL 33626',
@@ -148,6 +154,7 @@ export const floridaWeightLossClinics: WeightLossClinic[] = [
 
   // ORLANDO
   {
+    id: 'c_a5ceadb073',
     name: 'Orlando Weight Loss',
     slug: 'orlando-weight-loss',
     address: '7380 Sand Lake Rd #500, Orlando, FL 32819',
@@ -171,6 +178,7 @@ export const floridaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: 'c_a5883967e1',
     name: 'Healthy Habits Weight Loss Orlando',
     slug: 'healthy-habits-orlando',
     address: '1000 N Maitland Ave #200, Maitland, FL 32751',
@@ -196,6 +204,7 @@ export const floridaWeightLossClinics: WeightLossClinic[] = [
 
   // FORT LAUDERDALE
   {
+    id: 'c_3e1f7b2885',
     name: 'Fort Lauderdale Weight Loss',
     slug: 'fort-lauderdale-weight-loss',
     address: '2419 E Commercial Blvd #300, Fort Lauderdale, FL 33308',
@@ -219,6 +228,7 @@ export const floridaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: 'c_3dac04064b',
     name: 'Slim MD Boca Raton',
     slug: 'slim-md-boca',
     address: '951 NW 13th St #4C, Boca Raton, FL 33486',

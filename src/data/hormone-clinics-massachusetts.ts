@@ -5,6 +5,7 @@ import { HormoneClinic } from '@/lib/hormone-clinic-types';
 
 export const massachusettsHormoneClinics: HormoneClinic[] = [
   {
+    id: "c_9f6dd8c04a",
     name: "Boston Vitality",
     slug: "boston-vitality",
     address: "92 Montvale Ave, Suite 3400",
@@ -28,6 +29,7 @@ export const massachusettsHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_32de72918e",
     name: "Gameday Men's Health Back Bay",
     slug: "gameday-mens-health-back-bay",
     address: "575 Boylston St, Suite 6E",
@@ -51,6 +53,7 @@ export const massachusettsHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_978b7fe198",
     name: "Men's Health Boston",
     slug: "mens-health-boston",
     address: "200 Boylston St, A309",
@@ -73,6 +76,7 @@ export const massachusettsHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_e1f7f9aa75",
     name: "Core New England",
     slug: "core-new-england",
     address: "5 Militia Drive, Suite 303-B",
@@ -93,6 +97,7 @@ export const massachusettsHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_97c96d913e",
     name: "BodyLogicMD of Boston",
     slug: "bodylogicmd-of-boston",
     address: "Washington Street, Newton",
@@ -112,6 +117,7 @@ export const massachusettsHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_2575e666cf",
     name: "Viva Wellness Center",
     slug: "viva-wellness-center",
     address: "92 Montvale Avenue, Suite 3700",
@@ -131,6 +137,7 @@ export const massachusettsHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_72b48acaf8",
     name: "Hormonally Balanced",
     slug: "hormonally-balanced",
     address: "83 Cambridge Street, Suite 1C",
@@ -151,6 +158,7 @@ export const massachusettsHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_8594d48462",
     name: "Regeneris Medspa",
     slug: "regeneris-medspa",
     address: "315 University Ave",

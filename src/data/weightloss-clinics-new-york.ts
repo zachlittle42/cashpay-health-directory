@@ -5,6 +5,7 @@ import { WeightLossClinic } from '@/lib/weightloss-clinic-types';
 
 export const newYorkWeightLossClinics: WeightLossClinic[] = [
   {
+    id: "c_da46e312ac",
     name: "EndoSlim Clinic NY",
     slug: "endoslim-clinic-ny",
     address: "2797 Ocean Parkway, Suite 1",
@@ -25,6 +26,7 @@ export const newYorkWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_a20523d888",
     name: "W8MD Weight Loss, Sleep & Medspa",
     slug: "w8md-weight-loss-sleep-medspa",
     address: "2632 E 21st Street, Suite L2",
@@ -45,6 +47,7 @@ export const newYorkWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_e90d68d226",
     name: "Skinly Aesthetics",
     slug: "skinly-aesthetics",
     address: "157 East 64th Street, 2nd Floor",
@@ -65,6 +68,7 @@ export const newYorkWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_22e1a0d72e",
     name: "Family Medicine NYC",
     slug: "family-medicine-nyc",
     address: "160 Broadway, East Building, 11th Floor",
@@ -85,6 +89,7 @@ export const newYorkWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_b23a5a58f6",
     name: "Relive Health Upper West Side",
     slug: "relive-health-upper-west-side",
     address: "665 Columbus Ave",
@@ -105,6 +110,7 @@ export const newYorkWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_1367a12f75",
     name: "Trifecta Med Spa",
     slug: "trifecta-med-spa",
     address: "315 Madison Ave",
@@ -125,6 +131,7 @@ export const newYorkWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_08d97ee42b",
     name: "Medical Offices of Manhattan",
     slug: "medical-offices-of-manhattan",
     address: "211 East 51st Street",
@@ -145,6 +152,7 @@ export const newYorkWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_d8ac98dd2c",
     name: "Youtherapy MedSpa",
     slug: "youtherapy-medspa",
     address: "205 E 78th St, Ground Level",
@@ -165,6 +173,7 @@ export const newYorkWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_546a672eeb",
     name: "AG Care",
     slug: "ag-care",
     address: "1576 Flatbush Ave",
@@ -185,6 +194,7 @@ export const newYorkWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_7b2e6fbf0e",
     name: "advitam",
     slug: "advitam",
     address: "535 5th Ave, 30th Floor",

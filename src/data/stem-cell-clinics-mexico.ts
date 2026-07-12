@@ -6,6 +6,7 @@ import { StemCellClinic } from '@/lib/stem-cell-clinic-types';
 export const mexicoStemCellClinics: StemCellClinic[] = [
   // TIJUANA
   {
+    id: 'c_70f28ce116',
     name: 'Regenerative Medicine by Stemedix',
     slug: 'stemedix-tijuana',
     city: 'Tijuana',
@@ -30,6 +31,7 @@ export const mexicoStemCellClinics: StemCellClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: 'c_b3917ec269',
     name: 'Regenamex',
     slug: 'regenamex-tijuana',
     city: 'Tijuana',
@@ -54,6 +56,7 @@ export const mexicoStemCellClinics: StemCellClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: 'c_3e493cef7d',
     name: 'ProgenaCare Global',
     slug: 'progenacare-tijuana',
     city: 'Tijuana',
@@ -80,6 +83,7 @@ export const mexicoStemCellClinics: StemCellClinic[] = [
 
   // CANCUN
   {
+    id: 'c_d1ae750f24',
     name: 'Sportmed Centro Medico',
     slug: 'sportmed-cancun',
     city: 'Cancun',
@@ -104,6 +108,7 @@ export const mexicoStemCellClinics: StemCellClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: 'c_a9e4256c0f',
     name: 'Immunity Therapy Center',
     slug: 'immunity-therapy-cancun',
     city: 'Cancun',
@@ -130,6 +135,7 @@ export const mexicoStemCellClinics: StemCellClinic[] = [
 
   // PUERTO VALLARTA
   {
+    id: 'c_2c6e8218ac',
     name: 'Stem Cell Mexico PV',
     slug: 'stem-cell-mexico-pv',
     city: 'Puerto Vallarta',
@@ -156,6 +162,7 @@ export const mexicoStemCellClinics: StemCellClinic[] = [
 
   // LOS CABOS
   {
+    id: 'c_a5e178bd1a',
     name: 'CelGen Stem Cell Therapy',
     slug: 'celgen-los-cabos',
     city: 'Los Cabos',
@@ -182,6 +189,7 @@ export const mexicoStemCellClinics: StemCellClinic[] = [
 
   // MEXICO CITY
   {
+    id: 'c_726f0ca232',
     name: 'Angeles Hospital Stem Cells',
     slug: 'angeles-hospital-cdmx',
     city: 'Mexico City',

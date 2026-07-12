@@ -5,6 +5,7 @@ import { WeightLossClinic } from '@/lib/weightloss-clinic-types';
 
 export const georgiaWeightLossClinics: WeightLossClinic[] = [
   {
+    id: "c_5b4be61131",
     name: "Atlanta Medical Institute",
     slug: "atlanta-medical-institute",
     address: "5009 Roswell Road NE, Suite 201",
@@ -25,6 +26,7 @@ export const georgiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_cbcb54fc95",
     name: "Elevate Wellness Clinic",
     slug: "elevate-wellness-clinic",
     address: "2302 Parklake Dr NE, Suite 100",
@@ -44,6 +46,7 @@ export const georgiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_1d68f57252",
     name: "Dr. Weight Loss of Atlanta",
     slug: "dr-weight-loss-of-atlanta",
     address: "Multiple metro Atlanta locations (Buckhead, Midtown, Inman Park, Sandy Springs)",
@@ -64,6 +67,7 @@ export const georgiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_97deb6c1fb",
     name: "iClinic Atlanta",
     slug: "iclinic-atlanta",
     address: "2531 Briarcliff Rd, Suite 211",
@@ -86,6 +90,7 @@ export const georgiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_469da0e69f",
     name: "Radiance Medspa Atlanta",
     slug: "radiance-medspa-atlanta",
     address: "2810 Paces Ferry Rd SE, Suite 206",
@@ -105,6 +110,7 @@ export const georgiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_edad0e4797",
     name: "Atlanta Men's Clinic",
     slug: "atlanta-mens-clinic",
     address: "1800 Peachtree St NW, Suite 660",
@@ -124,6 +130,7 @@ export const georgiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_080c0e3e29",
     name: "Revive Atlanta MD",
     slug: "revive-atlanta-md",
     address: "2786 N Decatur Rd, Suite 230",
@@ -143,6 +150,7 @@ export const georgiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_8268b9ca71",
     name: "Excelsis Health",
     slug: "excelsis-health",
     address: "711 Canton Road, Suite 420",

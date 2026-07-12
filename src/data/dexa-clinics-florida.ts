@@ -5,6 +5,7 @@ import { DexaClinic } from '@/lib/dexa-clinic-types';
 
 export const floridaDexaClinics: DexaClinic[] = [
   {
+    id: "c_92a46cfdee",
     name: "Infinity Sports Institute",
     slug: "infinity-sports-institute",
     address: "163 NE 24th St, Miami, FL 33137",
@@ -25,6 +26,7 @@ export const floridaDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_c918e8a58e",
     name: "PURE Executive Health & Wellness",
     slug: "pure-executive-health-wellness",
     address: "4100 Salzedo St, Suite 4, Coral Gables, FL 33146",
@@ -45,6 +47,7 @@ export const floridaDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_cc9bc22387",
     name: "My Health & Wellness Medical Group",
     slug: "my-health-wellness-medical-group",
     address: "1717 N Bayshore Dr, Suite R230, Miami, FL 33132",
@@ -65,6 +68,7 @@ export const floridaDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_a237ab8e18",
     name: "University of Miami Fitness Laboratory",
     slug: "university-of-miami-fitness-laboratory",
     address: "1241 Dickinson Dr, Coral Gables, FL 33146",
@@ -85,6 +89,7 @@ export const floridaDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_8504d1de13",
     name: "Fitnescity",
     slug: "fitnescity-miami",
     city: "Miami",

@@ -12,6 +12,7 @@ export const californiaDexaClinics: DexaClinic[] = [
   // LOS ANGELES (Westside, South Bay, Central LA, San Fernando Valley)
   // =========================================================================
   {
+    id: 'c_83f0e20ffe',
     name: 'BodySpec - Santa Monica',
     slug: 'bodyspec-santa-monica',
     city: 'Los Angeles',
@@ -33,6 +34,7 @@ export const californiaDexaClinics: DexaClinic[] = [
     lastVerified: '2026-06-10',
   },
   {
+    id: 'c_8f66a59fb1',
     name: 'DexaFit West Hollywood',
     slug: 'dexafit-weho',
     address: '8383 Wilshire Blvd, Beverly Hills, CA 90211',
@@ -55,6 +57,7 @@ export const californiaDexaClinics: DexaClinic[] = [
     lastVerified: '2026-06-10',
   },
   {
+    id: 'c_69531ca6bf',
     name: 'Fitnescity Beverly Hills',
     slug: 'fitnescity-beverly-hills',
     city: 'Los Angeles',
@@ -76,6 +79,7 @@ export const californiaDexaClinics: DexaClinic[] = [
     lastVerified: '2026-06-10',
   },
   {
+    id: 'c_5b65838024',
     name: 'UCLA Exercise Physiology Lab',
     slug: 'ucla-exercise-physiology',
     address: 'UCLA Campus, Westwood, Los Angeles, CA',
@@ -99,6 +103,7 @@ export const californiaDexaClinics: DexaClinic[] = [
     lastVerified: '2026-06-10',
   },
   {
+    id: 'c_760b711227',
     name: 'BodySpec - South Bay',
     slug: 'bodyspec-south-bay-la',
     city: 'Los Angeles',
@@ -120,6 +125,7 @@ export const californiaDexaClinics: DexaClinic[] = [
     lastVerified: '2026-06-10',
   },
   {
+    id: 'c_0565e8da21',
     name: 'Torrance DEXA & Metabolic Testing',
     slug: 'torrance-dexa',
     address: 'Torrance, CA',
@@ -142,6 +148,7 @@ export const californiaDexaClinics: DexaClinic[] = [
     lastVerified: '2026-06-10',
   },
   {
+    id: 'c_7674f6b419',
     name: 'Hollywood DEXA & Performance',
     slug: 'hollywood-dexa',
     address: 'Hollywood, CA',
@@ -164,6 +171,7 @@ export const californiaDexaClinics: DexaClinic[] = [
     lastVerified: '2026-06-10',
   },
   {
+    id: 'c_741f485174',
     name: 'BodySpec - San Fernando Valley',
     slug: 'bodyspec-sfv',
     city: 'Los Angeles',
@@ -189,6 +197,7 @@ export const californiaDexaClinics: DexaClinic[] = [
   // SAN FRANCISCO / BAY AREA (SF, Peninsula, East Bay, plus South Bay/San Jose)
   // =========================================================================
   {
+    id: 'c_a7d94a662b',
     name: 'DexaFit San Francisco',
     slug: 'dexafit-sf',
     address: '2001 Union St, San Francisco, CA 94123',
@@ -211,6 +220,7 @@ export const californiaDexaClinics: DexaClinic[] = [
     lastVerified: '2026-06-10',
   },
   {
+    id: 'c_7ca7b5cacd',
     name: 'BodySpec - San Francisco',
     slug: 'bodyspec-sf',
     city: 'San Francisco',
@@ -232,6 +242,7 @@ export const californiaDexaClinics: DexaClinic[] = [
     lastVerified: '2026-06-10',
   },
   {
+    id: 'c_76f5ba709f',
     name: 'UCSF Human Performance Center',
     slug: 'ucsf-hpc',
     address: 'UCSF Mission Bay, San Francisco, CA',
@@ -255,6 +266,7 @@ export const californiaDexaClinics: DexaClinic[] = [
     lastVerified: '2026-06-10',
   },
   {
+    id: 'c_5352a3a761',
     name: 'BodySpec - Peninsula',
     slug: 'bodyspec-peninsula',
     city: 'San Francisco',
@@ -276,6 +288,7 @@ export const californiaDexaClinics: DexaClinic[] = [
     lastVerified: '2026-06-10',
   },
   {
+    id: 'c_a008238275',
     name: 'DexaFit Palo Alto',
     slug: 'dexafit-palo-alto',
     address: 'Palo Alto, CA',
@@ -298,6 +311,7 @@ export const californiaDexaClinics: DexaClinic[] = [
     lastVerified: '2026-06-10',
   },
   {
+    id: 'c_15317a832f',
     name: 'BodySpec - East Bay',
     slug: 'bodyspec-east-bay',
     city: 'San Francisco',
@@ -319,6 +333,7 @@ export const californiaDexaClinics: DexaClinic[] = [
     lastVerified: '2026-06-10',
   },
   {
+    id: 'c_a9f6748b81',
     name: 'DexaFit Walnut Creek',
     slug: 'dexafit-walnut-creek',
     address: 'Walnut Creek, CA',
@@ -345,6 +360,7 @@ export const californiaDexaClinics: DexaClinic[] = [
   // SAN JOSE / SOUTH BAY (Silicon Valley)
   // =========================================================================
   {
+    id: 'c_760b711227',
     name: 'BodySpec - South Bay',
     slug: 'bodyspec-south-bay-sj',
     city: 'San Jose',
@@ -366,6 +382,7 @@ export const californiaDexaClinics: DexaClinic[] = [
     lastVerified: '2026-06-10',
   },
   {
+    id: 'c_1640913a49',
     name: 'DexaFit San Jose',
     slug: 'dexafit-san-jose',
     address: 'San Jose, CA',
@@ -392,6 +409,7 @@ export const californiaDexaClinics: DexaClinic[] = [
   // SAN DIEGO (Central + North County)
   // =========================================================================
   {
+    id: 'c_1f3b287bf3',
     name: 'DexaFit San Diego',
     slug: 'dexafit-sd',
     address: 'San Diego, CA',
@@ -414,6 +432,7 @@ export const californiaDexaClinics: DexaClinic[] = [
     lastVerified: '2026-06-10',
   },
   {
+    id: 'c_af07314191',
     name: 'BodySpec - San Diego',
     slug: 'bodyspec-sd',
     city: 'San Diego',
@@ -435,6 +454,7 @@ export const californiaDexaClinics: DexaClinic[] = [
     lastVerified: '2026-06-10',
   },
   {
+    id: 'c_6f011daa24',
     name: 'BodySpec - North County',
     slug: 'bodyspec-north-county',
     city: 'San Diego',
@@ -456,6 +476,7 @@ export const californiaDexaClinics: DexaClinic[] = [
     lastVerified: '2026-06-10',
   },
   {
+    id: 'c_331d5f6ae3',
     name: 'Fitnescity San Diego',
     slug: 'fitnescity-sd',
     address: '9500 Gilman Dr, La Jolla, CA 92093',
@@ -480,6 +501,7 @@ export const californiaDexaClinics: DexaClinic[] = [
   // ORANGE COUNTY
   // =========================================================================
   {
+    id: 'c_617674ef21',
     name: 'DexaFit Irvine',
     slug: 'dexafit-irvine',
     address: 'Irvine, CA',
@@ -502,6 +524,7 @@ export const californiaDexaClinics: DexaClinic[] = [
     lastVerified: '2026-06-10',
   },
   {
+    id: 'c_f5b1e33e5d',
     name: 'BodySpec - Orange County',
     slug: 'bodyspec-oc',
     city: 'Orange County',
@@ -523,6 +546,7 @@ export const californiaDexaClinics: DexaClinic[] = [
     lastVerified: '2026-06-10',
   },
   {
+    id: 'c_1a5a10a079',
     name: 'BodySpec - South OC',
     slug: 'bodyspec-south-oc',
     city: 'Orange County',

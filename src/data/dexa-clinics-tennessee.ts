@@ -5,6 +5,7 @@ import { DexaClinic } from '@/lib/dexa-clinic-types';
 
 export const tennesseeDexaClinics: DexaClinic[] = [
   {
+    id: "c_833b590db7",
     name: "Transformat10n Lab",
     slug: "transformat10n-lab",
     address: "3228 Clarksville Pike, Nashville, TN 37218",
@@ -25,6 +26,7 @@ export const tennesseeDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_f05d6aba22",
     name: "Live Lean Rx Nashville",
     slug: "live-lean-rx-nashville",
     address: "4633 Trousdale Drive, Suite 210, Nashville, TN 37204",
@@ -45,6 +47,7 @@ export const tennesseeDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_8af58afd34",
     name: "Fitnescity (Nashville)",
     slug: "fitnescity-nashville",
     address: "3228 Clarksville Pike, Nashville, TN 37218",
@@ -65,6 +68,7 @@ export const tennesseeDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_5daa27dacc",
     name: "BodySpec",
     slug: "bodyspec-nashville",
     city: "Nashville",

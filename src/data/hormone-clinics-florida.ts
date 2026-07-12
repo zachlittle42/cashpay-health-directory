@@ -6,6 +6,7 @@ import { HormoneClinic } from '@/lib/hormone-clinic-types';
 export const floridaHormoneClinics: HormoneClinic[] = [
   // MIAMI
   {
+    id: 'c_d332914b3e',
     name: 'Fountain of You MD',
     slug: 'fountain-of-you-miami',
     address: '1000 Brickell Ave #715, Miami, FL 33131',
@@ -28,6 +29,7 @@ export const floridaHormoneClinics: HormoneClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: 'c_787ac99bc7',
     name: 'Renew Vitality Miami',
     slug: 'renew-vitality-miami',
     address: '9155 S Dadeland Blvd #1520, Miami, FL 33156',
@@ -51,6 +53,7 @@ export const floridaHormoneClinics: HormoneClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: 'c_73363dd1ff',
     name: 'The Hormone Zone',
     slug: 'hormone-zone-miami',
     address: '2999 NE 191st St #310, Aventura, FL 33180',
@@ -73,6 +76,7 @@ export const floridaHormoneClinics: HormoneClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: 'c_edd67d78f6',
     name: 'Miami Vitality',
     slug: 'miami-vitality',
     address: '6705 Red Road #508, Coral Gables, FL 33143',
@@ -97,6 +101,7 @@ export const floridaHormoneClinics: HormoneClinic[] = [
 
   // TAMPA
   {
+    id: 'c_80066097da',
     name: 'Elite Hormones Tampa',
     slug: 'elite-hormones-tampa',
     address: '4012 Gunn Hwy #140, Tampa, FL 33618',
@@ -119,6 +124,7 @@ export const floridaHormoneClinics: HormoneClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: 'c_15c0ec0dc2',
     name: 'Testosterone Replacement Tampa',
     slug: 'testosterone-tampa',
     address: '13901 Bruce B Downs Blvd #301, Tampa, FL 33613',
@@ -142,6 +148,7 @@ export const floridaHormoneClinics: HormoneClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: 'c_1032d619d2',
     name: 'Defy Medical',
     slug: 'defy-medical-tampa',
     address: '4235 Hillsboro Ave, Tampa, FL 33614',
@@ -166,6 +173,7 @@ export const floridaHormoneClinics: HormoneClinic[] = [
 
   // ORLANDO
   {
+    id: 'c_ef21c10f2d',
     name: 'Orlando Hormone Optimization',
     slug: 'orlando-hormone-optimization',
     address: '7380 Sand Lake Rd #500, Orlando, FL 32819',
@@ -188,6 +196,7 @@ export const floridaHormoneClinics: HormoneClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: 'c_421445322e',
     name: 'Prime Men\'s Medical Orlando',
     slug: 'prime-mens-orlando',
     address: '1000 N Maitland Ave #102, Maitland, FL 32751',
@@ -213,6 +222,7 @@ export const floridaHormoneClinics: HormoneClinic[] = [
 
   // FORT LAUDERDALE
   {
+    id: 'c_1e78dfe136',
     name: 'Hormones & Wellness',
     slug: 'hormones-wellness-ftl',
     address: '2419 E Commercial Blvd #200, Fort Lauderdale, FL 33308',
@@ -235,6 +245,7 @@ export const floridaHormoneClinics: HormoneClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: 'c_2c50bc4e71',
     name: 'Lowcountry Male Fort Lauderdale',
     slug: 'lowcountry-male-ftl',
     address: '1625 SE 3rd Ave #504, Fort Lauderdale, FL 33316',

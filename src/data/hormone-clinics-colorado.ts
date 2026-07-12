@@ -5,6 +5,7 @@ import { HormoneClinic } from '@/lib/hormone-clinic-types';
 
 export const coloradoHormoneClinics: HormoneClinic[] = [
   {
+    id: "c_843d2976fc",
     name: "Gameday Men's Health Cherry Creek",
     slug: "gameday-mens-health-cherry-creek",
     address: "55 Madison St #260",
@@ -28,6 +29,7 @@ export const coloradoHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_15af89c357",
     name: "R2 Medical Clinic",
     slug: "r2-medical-clinic",
     address: "1873 South Bellaire Street Suite 1215",
@@ -50,6 +52,7 @@ export const coloradoHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_cab9e6dd5a",
     name: "Cunningham Clinic",
     slug: "cunningham-clinic",
     address: "695 S Colorado Blvd, Suite 160",
@@ -72,6 +75,7 @@ export const coloradoHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_920262ca16",
     name: "Kenton Bruice, MD",
     slug: "kenton-bruice-md",
     address: "90 Madison Street, Suite 704",
@@ -91,6 +95,7 @@ export const coloradoHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_23365a01d2",
     name: "Vitalogy Health and Integrative Medicine",
     slug: "vitalogy-health-and-integrative-medicine",
     address: "90 Madison Street, Suite 101",
@@ -113,6 +118,7 @@ export const coloradoHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_7a3cad4f95",
     name: "Renew Vitality Testosterone Clinic of Denver",
     slug: "renew-vitality-testosterone-clinic-of-denver",
     address: "2949 Federal Blvd",

@@ -5,6 +5,7 @@ import { DexaClinic } from '@/lib/dexa-clinic-types';
 
 export const coloradoDexaClinics: DexaClinic[] = [
   {
+    id: "c_87ddc273e4",
     name: "Body Fat USA",
     slug: "body-fat-usa",
     address: "1776 S Jackson St #1111, Denver, CO 80210",
@@ -26,6 +27,7 @@ export const coloradoDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_050927b50c",
     name: "Live Lean Rx Denver South",
     slug: "live-lean-rx-denver-south",
     address: "9350 E Arapahoe Rd, Suite 205, Greenwood Village, CO 80112",
@@ -46,6 +48,7 @@ export const coloradoDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_5daa27dacc",
     name: "BodySpec",
     slug: "bodyspec",
     address: "250 Steele St, Suite 350, Denver, CO 80206",
@@ -66,6 +69,7 @@ export const coloradoDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_66e9bbd3e9",
     name: "DexaFit Denver",
     slug: "dexafit-denver",
     address: "1143 Auraria Parkway #204, Denver, CO 80204",
@@ -87,6 +91,7 @@ export const coloradoDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_bef89f2a52",
     name: "Fitnescity (Denver)",
     slug: "fitnescity-denver",
     address: "8560 Northfield Blvd, Denver, CO 80238",

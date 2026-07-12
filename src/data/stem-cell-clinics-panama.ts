@@ -5,6 +5,7 @@ import { StemCellClinic } from '@/lib/stem-cell-clinic-types';
 
 export const panamaStemCellClinics: StemCellClinic[] = [
   {
+    id: 'c_901016e766',
     name: 'Stem Cell Institute Panama',
     slug: 'stem-cell-institute-panama',
     city: 'Panama City',
@@ -30,6 +31,7 @@ export const panamaStemCellClinics: StemCellClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: 'c_2da5261a00',
     name: 'Golden Cells Panama',
     slug: 'golden-cells-panama',
     city: 'Panama City',
@@ -55,6 +57,7 @@ export const panamaStemCellClinics: StemCellClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: 'c_f508e0ad0e',
     name: 'MedStem Panama',
     slug: 'medstem-panama',
     city: 'Panama City',
@@ -79,6 +82,7 @@ export const panamaStemCellClinics: StemCellClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: 'c_f6ebb18e9e',
     name: 'Blue Horizon International',
     slug: 'blue-horizon-panama',
     city: 'Panama City',

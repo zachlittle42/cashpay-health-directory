@@ -5,6 +5,7 @@ import { DexaClinic } from '@/lib/dexa-clinic-types';
 
 export const washingtonDexaClinics: DexaClinic[] = [
   {
+    id: "c_c62fb447b8",
     name: "Seattle Performance Medicine",
     slug: "seattle-performance-medicine",
     address: "19930 Ballinger Way NE, Second Floor, Shoreline, WA 98155",
@@ -25,6 +26,7 @@ export const washingtonDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_3f77cd47c0",
     name: "Nomad Fit Lab",
     slug: "nomad-fit-lab",
     city: "Seattle",
@@ -44,6 +46,7 @@ export const washingtonDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_3976848746",
     name: "DexaFit Seattle",
     slug: "dexafit-seattle",
     address: "111 W John St, Ste 203A, Seattle, WA 98119",
@@ -64,6 +67,7 @@ export const washingtonDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_2ae71134cd",
     name: "BodySpec - Seattle (South Lake Union)",
     slug: "bodyspec-seattle",
     address: "2300 7th Ave, Seattle, WA 98121",
@@ -83,6 +87,7 @@ export const washingtonDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_7ca0761021",
     name: "Fitnescity - Seattle DEXA",
     slug: "fitnescity-seattle",
     address: "122 SW 156th St, Burien, WA 98166",

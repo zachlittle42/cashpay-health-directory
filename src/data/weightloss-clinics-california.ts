@@ -5,6 +5,7 @@ import { WeightLossClinic } from '@/lib/weightloss-clinic-types';
 
 export const californiaWeightLossClinics: WeightLossClinic[] = [
   {
+    id: "c_d4933c35c4",
     name: "Malibu CarePlus Medical Weight Loss",
     slug: "malibu-careplus-medical-weight-loss",
     address: "5783 E La Palma Ave, Anaheim, CA 92807",
@@ -28,6 +29,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_ac0c1f7877",
     name: "MD Maximum Weight Loss Medical Center",
     slug: "md-maximum-weight-loss-medical-center",
     address: "5597 E Santa Ana Canyon Rd 2nd floor, Anaheim, CA 92807",
@@ -51,6 +53,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_b4163a8d28",
     name: "Anaheim Medical Weight Control",
     slug: "anaheim-medical-weight-control",
     address: "2111 E Ball Rd, Anaheim, CA 92806",
@@ -74,6 +77,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_6373fc6979",
     name: "Renew Vitality Testosterone Clinic of Anaheim",
     slug: "renew-vitality-testosterone-clinic-of-anaheim",
     address: "3055 W Orange Ave Ste 207, Anaheim, CA 92804",
@@ -97,6 +101,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_cff66401d0",
     name: "OC Lifestyle Medicine Direct Primary Care",
     slug: "oc-lifestyle-medicine-direct-primary-care",
     address: "500 S Anaheim Hills Rd Suite 246, Anaheim, CA 92807",
@@ -120,6 +125,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_f29fc79aa7",
     name: "Lindora",
     slug: "lindora",
     address: "5642 E La Palma Ave Ste. 109, Anaheim, CA 92807",
@@ -143,6 +149,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_71e46fde20",
     name: "Weight Loss Clinic Los Angeles",
     slug: "weight-loss-clinic-los-angeles",
     address: "9301 Wilshire Blvd # 405, Beverly Hills, CA 90210",
@@ -166,6 +173,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_ce69e06734",
     name: "Achieve Health & Weight Loss",
     slug: "achieve-health-weight-loss",
     address: "8920 Wilshire Blvd, Beverly Hills, CA 90211",
@@ -189,6 +197,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_137cedebf5",
     name: "Michael Feiz, MD | Advanced Gastrointestinal & Bariatric Surgeon",
     slug: "michael-feiz-md-advanced-gastrointestinal-bariatric-surgeon",
     address: "433 N Camden Dr Suite #550, Beverly Hills, CA 90210",
@@ -212,6 +221,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_f26889988d",
     name: "Renew Vitality Testosterone Clinic of Los Angeles",
     slug: "renew-vitality-testosterone-clinic-of-los-angeles",
     address: "9301 Wilshire Blvd Suite 404, Beverly Hills, CA 90210",
@@ -235,6 +245,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_b55fdd075e",
     name: "Yucca Health",
     slug: "yucca-health",
     address: "9350 Wilshire Blvd Suite 203, Beverly Hills, CA 90212",
@@ -258,6 +269,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_d26b7c5068",
     name: "New Hope Weight Loss",
     slug: "new-hope-weight-loss",
     address: "1503 S Coast Dr Suite 322, Costa Mesa, CA 92626",
@@ -281,6 +293,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_9b1695d570",
     name: "Lindora Clinic",
     slug: "lindora-clinic-costa-mesa",
     address: "270 Bristol St #108, Costa Mesa, CA 92627",
@@ -304,6 +317,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_7758da3d96",
     name: "California Medical Weight Loss",
     slug: "california-medical-weight-loss",
     address: "1525 Mesa Verde Dr E #113, Costa Mesa, CA 92626",
@@ -327,6 +341,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_63074ccc1b",
     name: "Trimbody M.D.",
     slug: "trimbody-m-d",
     address: "1835 Newport Blvd Suite A106, Costa Mesa, CA 92627",
@@ -350,6 +365,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_e7df9af803",
     name: "LaSara Medical Group",
     slug: "lasara-medical-group",
     address: "1122 Bristol St 2nd Floor, Costa Mesa, CA 92626",
@@ -373,6 +389,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_5fec8df5d9",
     name: "BABYFACE Beauty Wellness",
     slug: "babyface-beauty-wellness",
     address: "1525 Mesa Verde Dr E Ste 226 (2nd floor, Costa Mesa, CA 92626",
@@ -396,6 +413,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_4bbe923106",
     name: "SD Medical Weight Loss Clinic & Injections",
     slug: "sd-medical-weight-loss-clinic-injections",
     address: "353 E Park Ave Suite 102, El Cajon, CA 92020",
@@ -419,6 +437,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_d84d53ffbe",
     name: "NEWLIFE Weight Loss & Wellness",
     slug: "newlife-weight-loss-wellness",
     address: "558 N 2nd St, El Cajon, CA 92021",
@@ -442,6 +461,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_d600a2273d",
     name: "Nirvana Wellness Spa (Weight Loss & Laser)",
     slug: "nirvana-wellness-spa-weight-loss-laser",
     address: "554 Broadway, El Cajon, CA 92021",
@@ -465,6 +485,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_ec48019c8f",
     name: "Better Off Medspa and Weight Loss",
     slug: "better-off-medspa-and-weight-loss",
     address: "191 N El Camino Real #206, Encinitas, CA 92024",
@@ -488,6 +509,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_a6f338697b",
     name: "The Studio Med Spa",
     slug: "the-studio-med-spa",
     address: "317 N El Camino Real 110 B, Encinitas, CA 92024",
@@ -511,6 +533,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_f1285fea0b",
     name: "Dermacare Encinitas at Schoemann Plastic Surgery",
     slug: "dermacare-encinitas-at-schoemann-plastic-surgery",
     address: "477 N El Camino Real Suite D101, Encinitas, CA 92024",
@@ -534,6 +557,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_bf69974489",
     name: "Gupta Plastic Surgery",
     slug: "gupta-plastic-surgery",
     address: "351 Santa Fe Dr # 250, Encinitas, CA 92024",
@@ -557,6 +581,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_252b7a8f36",
     name: "Set Point - Folsom, CA",
     slug: "set-point-folsom-ca",
     address: "850 Iron Point Rd #114, Folsom, CA 95630",
@@ -580,6 +605,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_f8c98556c4",
     name: "Embody Wellness",
     slug: "embody-wellness",
     address: "805 Wales Dr #2, Folsom, CA 95630",
@@ -603,6 +629,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_fe66959107",
     name: "Slim Life Solutions",
     slug: "slim-life-solutions",
     address: "1737 Creekside Dr, Folsom, CA 95630",
@@ -626,6 +653,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_7758da3d96",
     name: "California Medical Weight Loss",
     slug: "california-medical-weight-loss-glendale",
     address: "413 S Central Ave A, Glendale, CA 91204",
@@ -649,6 +677,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_9b1695d570",
     name: "Lindora Clinic",
     slug: "lindora-clinic-glendale",
     address: "1111 N Brand Blvd suite s, Glendale, CA 91202",
@@ -672,6 +701,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_1122e383e9",
     name: "Dr. V Weight Management",
     slug: "dr-v-weight-management",
     address: "425 E Colorado St # 410, Glendale, CA 91205",
@@ -695,6 +725,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_6e1677874d",
     name: "Doctors Weight Clinic",
     slug: "doctors-weight-clinic-laguna-hills",
     address: "24012 Avenida De La Carlota Suite D, Laguna Hills, CA 92653",
@@ -718,6 +749,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_7bc5d73254",
     name: "Zappy Health",
     slug: "zappy-health",
     address: "23022 La Cadena Dr Suite 101, Laguna Hills, CA 92653",
@@ -741,6 +773,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_4d37b1a472",
     name: "Soboba Medical Weight Loss Clinic",
     slug: "soboba-medical-weight-loss-clinic",
     address: "27001 Moulton Pkwy a103, Laguna Hills, CA 92656",
@@ -764,6 +797,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_9b1695d570",
     name: "Lindora Clinic",
     slug: "lindora-clinic-laguna-hills",
     address: "24100 El Toro Rd Suite F, Laguna Hills, CA 92637",
@@ -787,6 +821,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_957ff4ab64",
     name: "Gameday Men's Health Laguna Hills TRT, Peptide, and ED Clinic",
     slug: "gameday-men-s-health-laguna-hills-trt-peptide-and-ed-clinic",
     address: "25283 Cabot Rd #114, Laguna Hills, CA 92653",
@@ -810,6 +845,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_da354c2eb2",
     name: "Beach Cities Medical Weight Control",
     slug: "beach-cities-medical-weight-control-long-beach",
     address: "6420 E Spring St, Long Beach, CA 90815",
@@ -833,6 +869,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_a50278fa08",
     name: "Long Beach Medical Weight Control",
     slug: "long-beach-medical-weight-control",
     address: "1934 N Lakewood Blvd, Long Beach, CA 90815",
@@ -856,6 +893,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_9b1695d570",
     name: "Lindora Clinic",
     slug: "lindora-clinic-long-beach",
     address: "5516 E Britton Dr, Long Beach, CA 90815",
@@ -879,6 +917,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_7758da3d96",
     name: "California Medical Weight Loss",
     slug: "california-medical-weight-loss-los-angeles",
     address: "11870 Santa Monica Blvd # 209, Los Angeles, CA 90025",
@@ -902,6 +941,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_a60f8dd5ea",
     name: "The A-List Clinic",
     slug: "the-a-list-clinic",
     address: "12333 1/2 W Washington Blvd, Los Angeles, CA 90066",
@@ -925,6 +965,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_238dacbcd6",
     name: "Healthy Life Bariatrics",
     slug: "healthy-life-bariatrics",
     address: "2080 Century Pk E Suite 501, Los Angeles, CA 90067",
@@ -948,6 +989,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_b1e673530a",
     name: "UCLA Center for Obesity and METabolic Health (COMET)",
     slug: "ucla-center-for-obesity-and-metabolic-health-comet",
     address: "200 Medical Plaza Driveway Suite 214, Los Angeles, CA 90024",
@@ -971,6 +1013,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_e4ded21e2b",
     name: "Woolley Wellness Clinic |",
     slug: "woolley-wellness-clinic",
     address: "522 S Sepulveda Blvd, Los Angeles, CA 90049",
@@ -994,6 +1037,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_9eb2134f4c",
     name: "Gameday Men's Health Santa Monica TRT, ED and Weight Loss Clinic",
     slug: "gameday-men-s-health-santa-monica-trt-ed-and-weight-loss-clinic",
     address: "11500 W Olympic Blvd # 590, Los Angeles, CA 90064",
@@ -1017,6 +1061,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_9b1695d570",
     name: "Lindora Clinic",
     slug: "lindora-clinic-los-angeles",
     address: "10921 Wilshire Blvd #411, Los Angeles, CA 90024",
@@ -1040,6 +1085,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_0f778cd8d3",
     name: "Ozempic Los Angeles",
     slug: "ozempic-los-angeles",
     address: "5757 Wilshire Blvd, Los Angeles, CA 90036",
@@ -1063,6 +1109,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_cc927672d7",
     name: "Renew Vitality Testosterone Clinic of Los Gatos",
     slug: "renew-vitality-testosterone-clinic-of-los-gatos",
     address: "555 Knowles Dr #110, Los Gatos, CA 95032",
@@ -1086,6 +1133,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_5f2582cc16",
     name: "Intimate Wellness Los Gatos: Dr. Peter Castillo, Swan Medical",
     slug: "intimate-wellness-los-gatos-dr-peter-castillo-swan-medical",
     address: "15215 National Ave #104, Los Gatos, CA 95032",
@@ -1109,6 +1157,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_c874cd570f",
     name: "RefinedMD",
     slug: "refinedmd",
     address: "800 Pollard Rd Bldg. A, Los Gatos, CA 95032",
@@ -1132,6 +1181,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_499101d751",
     name: "Anti -Aging Weight Loss Clinic",
     slug: "anti-aging-weight-loss-clinic",
     address: "1580 W El Camino Real STE 1, Mountain View, CA 94040",
@@ -1155,6 +1205,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_78652b4c83",
     name: "JumpstartMD",
     slug: "jumpstartmd-mountain-view",
     address: "1503 Grant Rd #150, Mountain View, CA 94040",
@@ -1178,6 +1229,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_0ee32c8d1a",
     name: "Gameday Men's Health Mountain View TRT, Weight Loss, ED Clinic",
     slug: "gameday-men-s-health-mountain-view-trt-weight-loss-ed-clinic",
     address: "1040 N Rengstorff Ave Suite C, Mountain View, CA 94043",
@@ -1201,6 +1253,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_00a4777b9c",
     name: "My Doctor Weight Loss Clinic",
     slug: "my-doctor-weight-loss-clinic",
     address: "1941 Highland Ave, National City, CA 91950",
@@ -1224,6 +1277,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_bba395ffdb",
     name: "Slim Wellness Center",
     slug: "slim-wellness-center",
     address: "655 Euclid Ave Ste 210, National City, CA 91950",
@@ -1247,6 +1301,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_2df733a5fa",
     name: "Empower Weight Loss",
     slug: "empower-weight-loss",
     address: "1747 Sweetwater Rd #104, National City, CA 91950",
@@ -1270,6 +1325,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_eac0e0080e",
     name: "Weight No More",
     slug: "weight-no-more",
     address: "320 Superior Ave #210, Newport Beach, CA 92663",
@@ -1293,6 +1349,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_b03c47fe67",
     name: "Newport Beach Wellness and Weight Loss",
     slug: "newport-beach-wellness-and-weight-loss",
     address: "833 Dover Dr # 16, Newport Beach, CA 92663",
@@ -1316,6 +1373,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_0b8151d1ac",
     name: "Gameday Men's Health Newport Beach TRT, Weight Loss & Gainswave P Shot Erectile Dysfunction Clinic",
     slug: "gameday-men-s-health-newport-beach-trt-weight-loss-gainswave-p-shot-erectile-dysfunction-clinic",
     address: "1601 Dove St #199, Newport Beach, CA 92660",
@@ -1339,6 +1397,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_212521f185",
     name: "Newport Beach Weight Loss",
     slug: "newport-beach-weight-loss",
     address: "100 West Coast Hwy Suite 102B, Newport Beach, CA 92663",
@@ -1362,6 +1421,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_644e0110d3",
     name: "Momentum Health 360",
     slug: "momentum-health-360",
     address: "4695 MacArthur Ct Suite 1100 - #0190, Newport Beach, CA 92660",
@@ -1385,6 +1445,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_9ff165ec9d",
     name: "Hydration Station | Newport Beach",
     slug: "hydration-station-newport-beach",
     address: "3333 West Coast Hwy 4th Floor, Suite #19, Newport Beach, CA 92660",
@@ -1408,6 +1469,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_5704860d61",
     name: "Pacific Lipo Newport Beach",
     slug: "pacific-lipo-newport-beach",
     address: "301 Bayview Cir Ste 218, Newport Beach, CA 92660",
@@ -1431,6 +1493,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_d661603455",
     name: "Dr. Richland - Top Ranked Newport Beach Plastic Surgeon",
     slug: "dr-richland-top-ranked-newport-beach-plastic-surgeon",
     address: "21165 Newport Coast Dr, Newport Beach, CA 92657",
@@ -1454,6 +1517,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_18dfaf51e1",
     name: "Oceanside Medical Weight Control",
     slug: "oceanside-medical-weight-control",
     address: "3910 Vista Way Suite 112, Oceanside, CA 92056",
@@ -1477,6 +1541,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_828b2f074d",
     name: "A DOCTOR'S WEIGHT LOSS CLINIC",
     slug: "a-doctor-s-weight-loss-clinic",
     address: "2216 El Camino Real #117, Oceanside, CA 92054",
@@ -1500,6 +1565,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_a889c09b61",
     name: "Oceanside Trim Clinic",
     slug: "oceanside-trim-clinic",
     address: "3230 Waring Ct A, Oceanside, CA 92056",
@@ -1523,6 +1589,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_f17dcdcb94",
     name: "Pasadena Weight",
     slug: "pasadena-weight",
     address: "600 S Lake Ave #101, Pasadena, CA 91106",
@@ -1546,6 +1613,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_d9b580f7c2",
     name: "Healthy for Life",
     slug: "healthy-for-life",
     address: "950 S Arroyo Pkwy 3rd floor, Pasadena, CA 91105",
@@ -1569,6 +1637,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_b8967158a5",
     name: "Alda Medical Group",
     slug: "alda-medical-group",
     address: "1021 E Walnut St, Pasadena, CA 91106",
@@ -1592,6 +1661,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_6f2cafceb1",
     name: "Lean Lab Regenerative Health & Weight Loss",
     slug: "lean-lab-regenerative-health-weight-loss",
     address: "238 S Arroyo Pkwy, Pasadena, CA 91105",
@@ -1615,6 +1685,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_9b1695d570",
     name: "Lindora Clinic",
     slug: "lindora-clinic-pasadena",
     address: "257 S Fair Oaks Ave Suite 101, Pasadena, CA 91105",
@@ -1638,6 +1709,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_3ae5e2e81d",
     name: "CA Physicians Group",
     slug: "ca-physicians-group",
     address: "301 N Lake Ave, Pasadena, CA 91101, United States",
@@ -1661,6 +1733,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_26d788f273",
     name: "Gameday Men's Health Pasadena ED and TRT Clinic",
     slug: "gameday-men-s-health-pasadena-ed-and-trt-clinic",
     address: "960 E Green St Suite 207, Pasadena, CA 91106",
@@ -1684,6 +1757,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_89cb84d89a",
     name: "Rocklin Weight Loss",
     slug: "rocklin-weight-loss",
     address: "Boulevard Suite 166, Rocklin, CA 95765",
@@ -1707,6 +1781,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_0a192d5ca5",
     name: "Gameday Men's Health Rocklin, TRT, Peptide and ED clinic",
     slug: "gameday-men-s-health-rocklin-trt-peptide-and-ed-clinic",
     address: "3736 Atherton Rd Suite 150, Rocklin, CA 95765",
@@ -1730,6 +1805,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_0c2fcba85a",
     name: "Renew Vitality Testosterone Clinic of Rocklin",
     slug: "renew-vitality-testosterone-clinic-of-rocklin",
     address: "3300 Sunset Blvd Ste D, Rocklin, CA 95677",
@@ -1753,6 +1829,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_380d90f1d1",
     name: "Physicians Weight Clinic",
     slug: "physicians-weight-clinic",
     address: "100 S Harding Blvd #2, Roseville, CA 95678",
@@ -1776,6 +1853,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_633185ce59",
     name: "Set Point - Roseville, CA",
     slug: "set-point-roseville-ca",
     address: "1380 Lead Hill Blvd # 108, Roseville, CA 95661",
@@ -1799,6 +1877,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_0a257d1b24",
     name: "Gameday Roseville TRT, Peptide, and ED Clinic",
     slug: "gameday-roseville-trt-peptide-and-ed-clinic",
     address: "2436 Professional Dr #100, Roseville, CA 95661",
@@ -1822,6 +1901,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_9cc216e133",
     name: "Xplore Health - Granite Bay",
     slug: "xplore-health-granite-bay",
     address: "2510 Douglas Blvd # 200, Roseville, CA 95661",
@@ -1845,6 +1925,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_e1f0a0e93c",
     name: "Roseville Trim and Slim",
     slug: "roseville-trim-and-slim",
     address: "755 Sunrise Ave STE 120, Roseville, CA 95661",
@@ -1868,6 +1949,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_8fff12bda4",
     name: "Ideal Protocol Metabolism and Weight Management",
     slug: "ideal-protocol-metabolism-and-weight-management",
     address: "1750 Howe Ave Suite 300, Sacramento, CA 95825",
@@ -1891,6 +1973,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_b1eb468fdc",
     name: "Weight Loss & Health Clinic by Embodied Wellness",
     slug: "weight-loss-health-clinic-by-embodied-wellness",
     address: "3631 Truxel Rd #1138, Sacramento, CA 95834",
@@ -1914,6 +1997,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_366635f5fc",
     name: "SlimMed Inc.",
     slug: "slimmed-inc",
     address: "1 Scripps Dr Unit 106, Sacramento, CA 95825",
@@ -1937,6 +2021,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_5fa85fffdf",
     name: "Gameday Men's Health Southwest Sacramento, TRT, Peptide and ED clinic",
     slug: "gameday-men-s-health-southwest-sacramento-trt-peptide-and-ed-clinic",
     address: "7420 Greenhaven Dr Suite 115, Sacramento, CA 95831",
@@ -1960,6 +2045,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_0e3e6b6079",
     name: "University Total Wellness",
     slug: "university-total-wellness",
     address: "1651 Response Rd STE HQ 350, Sacramento, CA 95815",
@@ -1983,6 +2069,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_0e85734b9a",
     name: "Renew Vitality Testosterone Clinic of Sacramento",
     slug: "renew-vitality-testosterone-clinic-of-sacramento",
     address: "3508 Cody Way suite H, Sacramento, CA 95864",
@@ -2006,6 +2093,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_1d718c9b3a",
     name: "Perlman Wellness",
     slug: "perlman-wellness",
     address: "3900 Fifth Ave #340, San Diego, CA 92103",
@@ -2029,6 +2117,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_b67a0c67b9",
     name: "Viva Wellness",
     slug: "viva-wellness",
     address: "3434 Midway Dr Suite 2007, San Diego, CA 92110",
@@ -2052,6 +2141,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_bf5b7f4ad2",
     name: "MedArts Weight Loss Specialists",
     slug: "medarts-weight-loss-specialists",
     address: "3965 Fifth Ave Suite 440, San Diego, CA 92103",
@@ -2075,6 +2165,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_d84d53ffbe",
     name: "NEWLIFE Weight Loss & Wellness",
     slug: "newlife-weight-loss-wellness-san-diego",
     address: "1822 Garnet Ave, San Diego, CA 92109",
@@ -2098,6 +2189,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_87a7e3d89d",
     name: "Weight Loss MD San Diego",
     slug: "weight-loss-md-san-diego",
     address: "2727 Camino del Rio S #311, San Diego, CA 92108",
@@ -2121,6 +2213,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_97fc706ea1",
     name: "Gameday Men's Health San Diego TRT, Peptide, and ED Clinic",
     slug: "gameday-men-s-health-san-diego-trt-peptide-and-ed-clinic",
     address: "2635 Camino del Rio S #200, San Diego, CA 92108",
@@ -2144,6 +2237,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_179e86c25d",
     name: "Renew Vitality Testosterone Clinic of San Diego",
     slug: "renew-vitality-testosterone-clinic-of-san-diego",
     address: "3969 Fourth Ave Suite 204, San Diego, CA 92103",
@@ -2167,6 +2261,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_6dba34c2a9",
     name: "Restore SD Plastic Surgery: Katerina Gallus, MD, FACS",
     slug: "restore-sd-plastic-surgery-katerina-gallus-md-facs",
     address: "8899 University Center Ln UNIT 200, San Diego, CA 92122",
@@ -2190,6 +2285,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_a91c389ea2",
     name: "Be Youthful Aesthetics Weight Management",
     slug: "be-youthful-aesthetics-weight-management",
     address: "12004 Carmel Mountain Rd #76, San Diego, CA 92128",
@@ -2213,6 +2309,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_4c36096858",
     name: "Proactive Medical Weight Management",
     slug: "proactive-medical-weight-management",
     address: "13173 Black Mountain Rd Suite 3, San Diego, CA 92129",
@@ -2236,6 +2333,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_5f9ec2819e",
     name: "MD Weight Loss and Spa",
     slug: "md-weight-loss-and-spa",
     address: "16880 Bernardo Center Dr, San Diego, CA 92128",
@@ -2259,6 +2357,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_c5f2387988",
     name: "Dr. Karen E. Kohatsu, MD",
     slug: "dr-karen-e-kohatsu-md",
     address: "# 110 11939, 2074, Rancho Bernardo Rd, San Diego, CA 92128",
@@ -2282,6 +2381,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_a6f338697b",
     name: "The Studio Med Spa",
     slug: "the-studio-med-spa-san-diego",
     address: "9995 Carmel Mountain Rd Suite B-3, San Diego, CA 92129",
@@ -2305,6 +2405,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_0b346d62c2",
     name: "VedaNu Wellness",
     slug: "vedanu-wellness",
     address: "8901 Activity Rd, San Diego, CA 92126",
@@ -2328,6 +2429,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_6dd0e03e2f",
     name: "Coastal Plastic Surgeons",
     slug: "coastal-plastic-surgeons",
     address: "12264 El Camino Real suite 101, San Diego, CA 92130",
@@ -2351,6 +2453,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_aa5da36484",
     name: "Mochi Health, Corp",
     slug: "mochi-health-corp",
     address: "333 Bush St, San Francisco, CA 94104",
@@ -2374,6 +2477,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_78652b4c83",
     name: "JumpstartMD",
     slug: "jumpstartmd-san-francisco",
     address: "One Embarcadero Center, R-1203, San Francisco, CA 94111",
@@ -2397,6 +2501,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_78652b4c83",
     name: "JumpstartMD",
     slug: "jumpstartmd-san-francisco-3",
     address: "390 Laurel St Suite 207, San Francisco, CA 94118",
@@ -2420,6 +2525,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_209e2578ab",
     name: "Gameday Men's Health Downtown San Francisco TRT & ED Clinic",
     slug: "gameday-men-s-health-downtown-san-francisco-trt-ed-clinic",
     address: "465 California St Suite 610, San Francisco, CA 94104",
@@ -2443,6 +2549,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_74abf476a4",
     name: "Renew Vitality Testosterone Clinic of San Francisco",
     slug: "renew-vitality-testosterone-clinic-of-san-francisco",
     address: "447 Sutter St suite 544, San Francisco, CA 94108",
@@ -2466,6 +2573,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_d0f4eec103",
     name: "Pacific Heights Plastic Surgery",
     slug: "pacific-heights-plastic-surgery",
     address: "2100 Webster St ste. 429, San Francisco, CA 94115",
@@ -2489,6 +2597,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_52ecab08b4",
     name: "Larry Fan, MD - 77 Plastic Surgery San Francisco",
     slug: "larry-fan-md-77-plastic-surgery-san-francisco",
     address: "77 Van Ness Ave APT 302, San Francisco, CA 94102",
@@ -2512,6 +2621,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_c1b348ba8f",
     name: "San Francisco Plastic Surgery & Laser Center: Dr. Usha Rajagopal",
     slug: "san-francisco-plastic-surgery-laser-center-dr-usha-rajagopal",
     address: "1244 Larkin St Suite 200, San Francisco, CA 94109",
@@ -2534,6 +2644,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_f0ff647e83",
     name: "Revive Body MD",
     slug: "revive-body-md",
     address: "636 E Santa Clara St, San Jose, CA 95112",
@@ -2557,6 +2668,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_b3bee4ec6a",
     name: "Gameday Men's Health South San Jose",
     slug: "gameday-men-s-health-south-san-jose",
     address: "6128 Camino Verde Dr B, San Jose, CA 95119",
@@ -2579,6 +2691,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_0365ea18b8",
     name: "Renew Vitality Testosterone Clinic of San Jose",
     slug: "renew-vitality-testosterone-clinic-of-san-jose",
     address: "175 N Jackson Ave, San Jose, CA 95116",
@@ -2601,6 +2714,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_c76db8821e",
     name: "Korman Plastic Surgery & Wunderbar MedSpa",
     slug: "korman-plastic-surgery-wunderbar-medspa-san-jose",
     address: "999 Story Rd UNIT 9003, San Jose, CA 95122",
@@ -2623,6 +2737,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_ba9589fa8b",
     name: "MEDvidi",
     slug: "medvidi",
     address: "4010 Moorpark Ave, San Jose, CA 95117",
@@ -2646,6 +2761,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_91c8b3f841",
     name: "Chase Lay, MD | Facial Plastics & Asian Eyelid Surgery",
     slug: "chase-lay-md-facial-plastics-asian-eyelid-surgery",
     address: "455 O'Connor Dr #280, San Jose, CA 95128",
@@ -2669,6 +2785,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_023e05faa5",
     name: "6 Day Medical Weight Loss & Aesthetics",
     slug: "6-day-medical-weight-loss-aesthetics",
     address: "14900 Ventura Blvd # 100, Sherman Oaks, CA 91403",
@@ -2692,6 +2809,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_9552816402",
     name: "Lindora Medical Clinic",
     slug: "lindora-medical-clinic",
     address: "14843 Ventura Blvd, Sherman Oaks, CA 91403",
@@ -2715,6 +2833,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_e681ebd304",
     name: "AlphaMan Men's Health TRT & Weight Loss Clinic Los Angeles",
     slug: "alphaman-men-s-health-trt-weight-loss-clinic-los-angeles",
     address: "14044 Ventura Blvd Suite 101, Sherman Oaks, CA 91423",
@@ -2738,6 +2857,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_2df2140d5d",
     name: "HMC - Medical Weight Loss Center",
     slug: "hmc-medical-weight-loss-center",
     address: "17361 17th St, Tustin, CA 92780",
@@ -2761,6 +2881,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_9b1695d570",
     name: "Lindora Clinic",
     slug: "lindora-clinic-tustin",
     address: "15100 Kensington Park Dr Ste 500, Tustin, CA 92782",
@@ -2784,6 +2905,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_ab51b8514b",
     name: "Tustin Medical",
     slug: "tustin-medical",
     address: "275 Centennial Way Suite 100, Tustin, CA 92780",
@@ -2807,6 +2929,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_6d117762f6",
     name: "Gameday Men's Health Tustin TRT, Peptide, and ED Clinic",
     slug: "gameday-men-s-health-tustin-trt-peptide-and-ed-clinic",
     address: "14642 Newport Ave Suite 388, Tustin, CA 92780",
@@ -2830,6 +2953,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_32ac9591c3",
     name: "Van Nuys Medical Weight Control",
     slug: "van-nuys-medical-weight-control",
     address: "6411 Sepulveda Blvd 2B & 2C, Van Nuys, CA 91411",
@@ -2853,6 +2977,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_70511dc196",
     name: "Skinny Me Med",
     slug: "skinny-me-med",
     address: "7232 Van Nuys Blvd #102, Van Nuys, CA 91405",
@@ -2876,6 +3001,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_3917584df5",
     name: "Bel Air Weight Loss & Cosmetics",
     slug: "bel-air-weight-loss-cosmetics",
     address: "7218 Van Nuys Blvd Suite D, Van Nuys, CA 91405",
@@ -2899,6 +3025,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_78652b4c83",
     name: "JumpstartMD",
     slug: "jumpstartmd-walnut-creek",
     address: "1981 N Broadway Suite 200, Walnut Creek, CA 94596",
@@ -2922,6 +3049,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_c0414c989e",
     name: "Prime Health MD",
     slug: "prime-health-md",
     address: "2161 Ygnacio Valley Rd #220, Walnut Creek, CA 94598",
@@ -2945,6 +3073,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_c2f3ec4bab",
     name: "Gameday Men's Health Walnut Creek, CA TRT & ED Clinic",
     slug: "gameday-men-s-health-walnut-creek-ca-trt-ed-clinic",
     address: "1225 Alpine Rd suite 100, Walnut Creek, CA 94596",
@@ -2968,6 +3097,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_e2d7089e53",
     name: "Vital Total Health Medical Group, Inc.",
     slug: "vital-total-health-medical-group-inc-walnut-creek",
     address: "710 S Broadway Ste 212, Walnut Creek, CA 94596",
@@ -2991,6 +3121,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_6150020069",
     name: "Dr. V Weight & Pain Management",
     slug: "dr-v-weight-pain-management",
     address: "21021 Ventura Blvd #101, Woodland Hills, CA 91364",
@@ -3014,6 +3145,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_9b1695d570",
     name: "Lindora Clinic",
     slug: "lindora-clinic-woodland-hills",
     address: "21500 Ventura Blvd, Woodland Hills, CA 91364",
@@ -3037,6 +3169,7 @@ export const californiaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_d304439f07",
     name: "The Man Clinic",
     slug: "the-man-clinic",
     address: "20501 Ventura Blvd #360, Woodland Hills, CA 91364",

@@ -6,6 +6,7 @@ import { Provider } from './types';
 
 export const drugRegistryProviders: Provider[] = [
   {
+    id: 'c_9b6e7e5bfc',
     slug: 'fda-drugs',
     name: 'FDA Drug Database (Drugs@FDA)',
     description: 'Official FDA database of approved prescription and over-the-counter drugs, including labeling, approval history, and safety information.',
@@ -26,6 +27,7 @@ export const drugRegistryProviders: Provider[] = [
     lastVerified: '2024-12-21',
   },
   {
+    id: 'c_628c58e75d',
     slug: 'fda-orange-book',
     name: 'FDA Orange Book',
     description: 'Official FDA publication identifying drug products approved for safety and effectiveness, including therapeutic equivalence ratings.',
@@ -46,6 +48,7 @@ export const drugRegistryProviders: Provider[] = [
     lastVerified: '2024-12-21',
   },
   {
+    id: 'c_7d4fd9639d',
     slug: 'dailymed',
     name: 'DailyMed (NIH)',
     description: 'National Institutes of Health database providing official drug labeling (package inserts) submitted to the FDA.',
@@ -66,6 +69,7 @@ export const drugRegistryProviders: Provider[] = [
     lastVerified: '2024-12-21',
   },
   {
+    id: 'c_e3ebfb1667',
     slug: 'rxlist',
     name: 'RxList',
     description: 'Consumer-friendly drug information resource with easy-to-understand drug monographs, interactions, and pill identification.',
@@ -86,6 +90,7 @@ export const drugRegistryProviders: Provider[] = [
     lastVerified: '2024-12-21',
   },
   {
+    id: 'c_3eb49418fa',
     slug: 'drugs-com',
     name: 'Drugs.com',
     description: 'Comprehensive drug information portal with pricing, interactions, pill ID, and user reviews of medications.',
@@ -106,6 +111,7 @@ export const drugRegistryProviders: Provider[] = [
     lastVerified: '2024-12-21',
   },
   {
+    id: 'c_5c3269e1a6',
     slug: 'goodrx',
     name: 'GoodRx',
     description: 'Drug pricing comparison platform offering free coupons and discounts at pharmacies nationwide.',
@@ -126,6 +132,7 @@ export const drugRegistryProviders: Provider[] = [
     lastVerified: '2024-12-21',
   },
   {
+    id: 'c_32ea1ce3bd',
     slug: 'medlineplus',
     name: 'MedlinePlus Drug Information',
     description: 'NIH resource providing consumer-friendly drug information written for patients, not medical professionals.',
@@ -146,6 +153,7 @@ export const drugRegistryProviders: Provider[] = [
     lastVerified: '2024-12-21',
   },
   {
+    id: 'c_be36c90957',
     slug: 'epocrates',
     name: 'Epocrates',
     description: 'Clinical drug reference used by healthcare professionals, with a free version available to patients.',
@@ -166,6 +174,7 @@ export const drugRegistryProviders: Provider[] = [
     lastVerified: '2024-12-21',
   },
   {
+    id: 'c_e45dcc5bfc',
     slug: 'clinicaltrials-gov',
     name: 'ClinicalTrials.gov',
     description: 'NIH database of clinical studies conducted around the world, searchable by condition, drug, or location.',
@@ -186,6 +195,7 @@ export const drugRegistryProviders: Provider[] = [
     lastVerified: '2024-12-21',
   },
   {
+    id: 'c_70cdd7eb52',
     slug: 'rxassist',
     name: 'RxAssist',
     description: 'Database of patient assistance programs offered by pharmaceutical companies for those who can\'t afford medications.',

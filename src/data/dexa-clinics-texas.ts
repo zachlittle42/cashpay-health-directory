@@ -5,6 +5,7 @@ import { DexaClinic } from '@/lib/dexa-clinic-types';
 
 export const texasDexaClinics: DexaClinic[] = [
   {
+    id: "c_5daa27dacc",
     name: "BodySpec",
     slug: "bodyspec",
     address: "5555 N Lamar Blvd, C101, Austin, TX 78751",
@@ -29,6 +30,7 @@ export const texasDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_90d0add3e8",
     name: "Live Lean Rx Austin",
     slug: "live-lean-rx-austin",
     address: "4611 Bee Cave Road, Suite 307, West Lake Hills, TX 78746",
@@ -49,6 +51,7 @@ export const texasDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_2c5f709c92",
     name: "Blue Tree Health",
     slug: "blue-tree-health",
     address: "3508 Far West Blvd, Suite 130, Austin, TX 78731",
@@ -70,6 +73,7 @@ export const texasDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_29bf9ab2e0",
     name: "Fitness Institute of Texas (UT Austin)",
     slug: "fitness-institute-of-texas-ut-austin",
     address: "Bellmont Hall, Room 946, University of Texas at Austin, Austin, TX 78712",
@@ -90,6 +94,7 @@ export const texasDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_fadc2c49dc",
     name: "Austin Medical Partners",
     slug: "austin-medical-partners",
     address: "3705 Medical Pkwy, Suite 440, Austin, TX 78705",
@@ -111,6 +116,7 @@ export const texasDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_ad0bef95ed",
     name: "DexaFit Round Rock",
     slug: "dexafit-round-rock",
     address: "3309 Forest Creek Dr, Suite 501, Round Rock, TX 78664",
@@ -132,6 +138,7 @@ export const texasDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_4207df9fb8",
     name: "DexaFit Dallas",
     slug: "dexafit-dallas",
     address: "4222 Trinity Mills Rd Ste. 285, Dallas, TX 75287",
@@ -152,6 +159,7 @@ export const texasDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_3044ae3029",
     name: "DEXA Scan Near Me - Turtle Creek",
     slug: "dexa-scan-near-me-turtle-creek",
     address: "Turtle Creek Blvd, Dallas, TX",
@@ -174,6 +182,7 @@ export const texasDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_34faf3958a",
     name: "Fitnescity (Dallas)",
     slug: "fitnescity-dallas",
     address: "12201 Merit Dr, Dallas, TX 75251",
@@ -194,6 +203,7 @@ export const texasDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_a9569578f1",
     name: "Live Lean Rx Dallas/Fort Worth",
     slug: "live-lean-rx-dfw",
     address: "2500 NE Green Oaks Blvd Suite 201B, Arlington, TX 76006",
@@ -214,6 +224,7 @@ export const texasDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_e14e0bd5ee",
     name: "Live Lean Rx Houston",
     slug: "live-lean-rx-houston",
     address: "17000 El Camino Real, Suite 104C, Houston, TX 77058",
@@ -235,6 +246,7 @@ export const texasDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_51e8563942",
     name: "Houston Concierge Medicine & Wellness Center",
     slug: "houston-concierge-medicine",
     address: "Behind Meridian Hospital, Houston, TX",
@@ -255,6 +267,7 @@ export const texasDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_f1e635e27e",
     name: "BodySpec (Houston)",
     slug: "bodyspec-houston",
     city: "Houston",
@@ -273,6 +286,7 @@ export const texasDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_1fb5bd5a29",
     name: "Composition ID Houston",
     slug: "composition-id-houston",
     address: "3801 Kirby Dr #415, Houston, TX 77098",
@@ -293,6 +307,7 @@ export const texasDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_f49fe4234f",
     name: "DexaFit West Houston",
     slug: "dexafit-west-houston",
     address: "9432 Katy Freeway, Suite 400, Houston, TX 77055",
@@ -313,6 +328,7 @@ export const texasDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_fd1b52d198",
     name: "DexaFit Clear Lake",
     slug: "dexafit-clear-lake",
     address: "1150 Clear Lake City Blvd, Suite 205, Houston, TX 77062",

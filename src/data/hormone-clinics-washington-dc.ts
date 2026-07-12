@@ -5,6 +5,7 @@ import { HormoneClinic } from '@/lib/hormone-clinic-types';
 
 export const washingtonDcHormoneClinics: HormoneClinic[] = [
   {
+    id: "c_e861b497f6",
     name: "Performance Rejuvenation Center",
     slug: "performance-rejuvenation-center",
     address: "6856 Eastern Ave NW, Ste 205",
@@ -25,6 +26,7 @@ export const washingtonDcHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_9c22441da7",
     name: "Renew Vitality Testosterone Clinic of Washington DC",
     slug: "renew-vitality-washington-dc",
     address: "1724 20th St NW, Suite 3",
@@ -44,6 +46,7 @@ export const washingtonDcHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_58d93d2789",
     name: "Warner Wellness Institute",
     slug: "warner-wellness-institute",
     address: "106 Irving Street NW, Suite 2400N",
@@ -67,6 +70,7 @@ export const washingtonDcHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_51b8d4a834",
     name: "Karen R. Threlkel, ND",
     slug: "karen-threlkel-nd",
     address: "4801 Wisconsin Ave NW, Suite 101",
@@ -87,6 +91,7 @@ export const washingtonDcHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_961a01a806",
     name: "GW Center for Integrative Medicine",
     slug: "gw-center-for-integrative-medicine",
     address: "908 New Hampshire Ave NW, Suite 200",
@@ -106,6 +111,7 @@ export const washingtonDcHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_990beddfd7",
     name: "Condrell Primary Care",
     slug: "condrell-primary-care",
     address: "4910 Massachusetts Ave NW, #114",
@@ -125,6 +131,7 @@ export const washingtonDcHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_8cfe0bb640",
     name: "The District Injector Med Spa",
     slug: "the-district-injector",
     address: "8180 Greensboro Drive, Suite 300",
@@ -145,6 +152,7 @@ export const washingtonDcHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_89457a6ed7",
     name: "Center for Plastic Surgery - Metabolic Aesthetics",
     slug: "center-for-plastic-surgery-metabolic-aesthetics",
     address: "5550 Friendship Blvd, Suite 130",

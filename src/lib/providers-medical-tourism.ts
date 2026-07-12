@@ -7,6 +7,7 @@ import { Provider } from './types';
 export const dentalProviders: Provider[] = [
   // Los Algodones
   {
+    id: 'c_b677e3a0dc',
     slug: 'sani-dental-group',
     name: 'Sani Dental Group',
     description: 'Largest dental clinic in Los Algodones with 30+ years experience. High-volume operation with on-site lab for same-day work.',
@@ -37,6 +38,7 @@ export const dentalProviders: Provider[] = [
   },
   // Tijuana
   {
+    id: 'c_c109f9c05b',
     slug: 'pacific-implant-center',
     name: 'Pacific Implant Center',
     description: 'Premium Tijuana clinic with US-trained surgeons from Harvard, Loma Linda, and USC. 5 minutes from San Diego border.',
@@ -65,6 +67,7 @@ export const dentalProviders: Provider[] = [
     lastVerified: '2024-12-01',
   },
   {
+    id: 'c_578b0ed822',
     slug: 'dental-brush-tijuana',
     name: 'Dental Brush',
     description: 'ADA and BBB-rated Tijuana clinic with NYU-trained director. Uses CEREC and digital technology.',
@@ -92,6 +95,7 @@ export const dentalProviders: Provider[] = [
   },
   // Cancun
   {
+    id: 'c_6ddd31dcc9',
     slug: 'dental-destinations-cancun',
     name: 'Dental Destinations Cancun',
     description: 'Boutique dental clinic in Cancun hotel zone. Premium experience combining vacation with dental work.',
@@ -119,6 +123,7 @@ export const dentalProviders: Provider[] = [
     lastVerified: '2024-12-01',
   },
   {
+    id: "c_6da170b360",
     slug: "dentica-cristina-suaza",
     name: "Dentica by Cristina Suaza",
     description: "Bogot\u00e1 dental clinic led by Dr. Cristina Suaza, a Forbes-nominated maxillofacial surgeon with 23+ years of experience and a 4.9-star rating across 500+ reviews. Known for implants and full-mouth rehabilitation using Straumann components.",
@@ -147,6 +152,7 @@ export const dentalProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_3e093c4f6c",
     slug: "dental-tourism-colombia",
     name: "Dental Tourism Colombia",
     description: "A multi-city dental-tourism network with vetted dentists in Cartagena, Medell\u00edn, Cali, and Bogot\u00e1, oriented to international patients. Publishes transparent flat pricing and a written work guarantee.",
@@ -174,6 +180,7 @@ export const dentalProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_0530312489",
     slug: "dental-specialists-medellin",
     name: "Dental Specialists Medell\u00edn",
     description: "Medell\u00edn clinic in the El Tesoro Medical Tower led by Dr. Camilo Aguirre, a former faculty professor with 30 years in private practice. Focused on implants, All-on-4, and smile makeovers for international patients.",
@@ -202,6 +209,7 @@ export const dentalProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_96e2b7ec03",
     slug: "prisma-dental-costa-rica",
     name: "Prisma Dental",
     description: "Family-run San Jose clinic serving international dental patients since 1985, led by implant and full-mouth-reconstruction specialists Dr. Telma Rubinstein and Dr. Josef Cordero. Known for completing complex restorations in a single one-week trip with an in-house multi-specialist team.",
@@ -230,6 +238,7 @@ export const dentalProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_ae737b32df",
     slug: "nova-dental-costa-rica",
     name: "Nova Dental",
     description: "Escazu implant and aesthetic dental clinic led by Dr. Luis Obando, who heads Costa Rica's Implant Dentistry Society and trained in Costa Rica, Chile, and the US. Located in upscale Plaza Itzkatzu, it focuses on implants, all-on-4, and cosmetic restorations for North American patients.",
@@ -257,6 +266,7 @@ export const dentalProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_2271892693",
     slug: "advance-dental-costa-rica",
     name: "Advance Dental",
     description: "Escazu clinic located inside the JCI-accredited Hospital CIMA complex, led by Loma Linda University-trained Dr. Eugenio Brenes. Offers implants, all-on-4 full-mouth rehabilitation, veneers, and maxillofacial surgery to a largely American and Canadian patient base.",
@@ -284,6 +294,7 @@ export const dentalProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_333324e19a",
     slug: "smile-centrum-prague",
     name: "Smile Centrum",
     description: "The largest dental clinic network in the Czech Republic, established in 2011 with 12+ locations across Prague and serving over 70,000 patients including international visitors. Offers a 97.8% implant-retention guarantee with free re-implantation if integration fails.",
@@ -313,6 +324,7 @@ export const dentalProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_c074ef39da",
     slug: "yourdentist-prague",
     name: "YourDentist.cz",
     description: "English-speaking esthetic dentistry and oral-surgery practice in Prague led by Dr. Y. Oryshchak, serving local and international patients. Uses Swiss Straumann and ROOTT implant systems with bone-augmentation capability.",
@@ -340,6 +352,7 @@ export const dentalProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_8bd0511f2e",
     slug: "helvetic-clinics-budapest",
     name: "Helvetic Clinics",
     description: "Swiss-managed Budapest dental clinic repeatedly named a top clinic worldwide by Global Clinic Rating since 2014. Operates a 'clinic-hotel' model and an in-house digital lab for international patients.",
@@ -367,6 +380,7 @@ export const dentalProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_df15af0ae4",
     slug: "kreativ-dental-clinic-budapest",
     name: "Kreativ Dental Clinic",
     description: "Family-run Budapest clinic operating since 1996, a long-standing favorite of UK, Irish and Australian dental tourists. Known for one of the most extensive guarantees in European dental tourism.",
@@ -395,6 +409,7 @@ export const dentalProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_df33d8f60a",
     slug: "evergreen-dental-budapest",
     name: "Evergreen Dental",
     description: "Boutique Hungarian-American clinic on Budapest's Andrassy Avenue inside the UNESCO World Heritage zone. Ranked by Global Clinic Rating as a top Budapest clinic, with CAD/CAM same-trip cosmetic options.",
@@ -422,6 +437,7 @@ export const dentalProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_851e14b9c7",
     slug: "pacific-dental-clinic-panama",
     name: "Pacific Dental Clinic",
     description: "Premium dental practice located inside Hospital Punta Pacifica, the only Johns Hopkins Medicine International affiliate in Central America. Offers full-mouth rehabilitation, implants and All-on-4/6 with 3D imaging and multilingual staff.",
@@ -449,6 +465,7 @@ export const dentalProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_3f1f27a36e",
     slug: "centro-odontologico-paitilla",
     name: "Centro Odontologico Paitilla",
     description: "Multi-specialty dental clinic founded in 1990 in Panama City's Paitilla medical district, operating twelve fully equipped chairs. Covers implants, orthodontics, prosthetics, periodontics and cosmetic smile design under one roof.",
@@ -477,6 +494,7 @@ export const dentalProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_8d34f7560a",
     slug: "clinica-dental-almanza-carrizo",
     name: "Clinica Dental Almanza Carrizo",
     description: "Multi-specialty dental group with 25+ years of experience inside the Centro Medico Nacional next to Hospital Nacional in Panama City. Team of specialists covering implants, orthodontics, endodontics and cosmetic dentistry.",
@@ -505,6 +523,7 @@ export const dentalProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_18e093cbd0",
     slug: "minish-dental-hospital-seoul",
     name: "Minish Dental Hospital",
     description: "Award-winning 14-floor dental hospital in Gangnam known for its signature ultra-thin MINISH veneers, which refine enamel to under 0.2mm with minimal tooth reduction. Markets itself as an expat-preferred clinic with translators supporting the full treatment journey.",
@@ -532,6 +551,7 @@ export const dentalProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_7573fee234",
     slug: "dentique-dental-clinic-seoul",
     name: "Dentique Dental Clinic",
     description: "Gangnam clinic near Eonju Station led by a UC Berkeley- and Seoul National University-trained director, marketed explicitly as English-speaking and foreigner-friendly. Reports over 30,000 implant cases completed, with same-day implants, crowns, and no-prep veneers.",
@@ -560,6 +580,7 @@ export const dentalProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_7ecf86ea7b",
     slug: "yonsei-good-day-dental-seoul",
     name: "Yonsei Good Day Dental Clinic",
     description: "Multi-specialty Gangnam/Seocho dental clinic with English-fluent, internationally credentialed doctors and dedicated international-patient coordinators. Holds Invisalign Black Diamond status and is led in part by Dr. Jung Chul Park, an ITI Korea Fellow and Andre Schroeder Research Prize recipient.",
@@ -587,6 +608,7 @@ export const dentalProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_9216a49fd0",
     slug: "teknon-dental-barcelona",
     name: "Centro Medico Teknon - Dental",
     description: "The dental department of Centro Medico Teknon, a JCI-accredited Barcelona hospital continuously accredited since 2002 and named to Newsweek's World's Best Hospitals. Offers full-service implantology including All-on-4 with same-day fixed teeth.",
@@ -613,6 +635,7 @@ export const dentalProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_4e9afdd244",
     slug: "turo-park-dental-barcelona",
     name: "Turo Park Dental and Medical Center",
     description: "A multilingual private clinic in Barcelona's Sarria-Sant Gervasi district serving the international community since 2017. Its dental team of 15-plus specialists covers implants, veneers and oral surgery, with dedicated medical-tourism coordination.",
@@ -640,6 +663,7 @@ export const dentalProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_4f61ec1054",
     slug: "bangkok-international-dental-center",
     name: "Bangkok International Dental Center (BIDC)",
     description: "Thailand's first JCI-accredited dental center (since 2012) and one of its largest dental clinics, with 70+ dentists including American Board and Thai Board certified specialists. A high-volume Bangkok operation treating tens of thousands of international patients per year with a full implant and cosmetic menu.",
@@ -667,6 +691,7 @@ export const dentalProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_1938728b09",
     slug: "bidh-dental-hospital",
     name: "BIDH (Bangkok International Dental Hospital)",
     description: "Thailand's first full-fledged dental hospital, in the same group as BIDC, purpose-built with hospital-level sterilization, 3D CT imaging, on-site lab, and licensed anesthesiologists for sedation and inpatient care. Focused on complex implant, oral-surgery, and cosmetic cases for international patients.",
@@ -694,6 +719,7 @@ export const dentalProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_29abcab5ac",
     slug: "bfc-dental-bangkok",
     name: "BFC Dental",
     description: "JCI-accredited Bangkok dental clinic operating since 1994 with 25+ dentists, an in-house lab, and a focus on implants, veneers, and orthodontics. Places more than 4,600 dental implants per year and runs a dedicated international-patient line.",
@@ -721,6 +747,7 @@ export const dentalProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_2fe50d1727",
     slug: "medicover-mdental-clinic-budapest",
     name: "Medicover MDental Clinic",
     description: "Central Budapest dental clinic on Eiffel Square, part of the Medicover Medical Holding (150+ facilities across 15 countries). One of the highest-volume international implant practices in Hungary, with an in-house digital lab and surgical theatre.",
@@ -750,6 +777,7 @@ export const dentalProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_4b83eb8178",
     slug: "vitaleurope-dental-budapest",
     name: "VitalEurope",
     description: "Cross-border dental group with a consultation clinic in central London (Great Portland Street) and its full treatment clinic in Budapest. Built specifically around the UK dental-tourism patient, with London-based GDC-registered dentists for pre-treatment consults.",
@@ -779,6 +807,7 @@ export const dentalProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_7594c3f2e0",
     slug: "denis-focus-dental-mosonmagyarovar",
     name: "Denis-Focus Dental",
     description: "Long-established clinic in Mosonmagyarovar, the West-Hungarian border town (about 80 km from Vienna) that has the highest concentration of dental clinics in Hungary. Serves a heavily Austrian, German and Swiss patient base and runs a fully digital, in-house-lab workflow.",
@@ -808,6 +837,7 @@ export const dentalProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_41d9dec0b4",
     slug: "diamant-dent-mosonmagyarovar",
     name: "Diamant-Dent",
     description: "Diamant-Dent Dental Medical Institute, a Mosonmagyarovar clinic operating since 1999 near the Austrian border. Uses a digital impression workflow (TRIOS 3Shape) and offers branded All-on-4/All-on-6 protocols for international patients.",
@@ -836,6 +866,7 @@ export const dentalProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_f704808d60",
     slug: "empire-dent-mosonmagyarovar",
     name: "Empire Dent",
     description: "Mosonmagyarovar clinic with roughly two decades of dental-tourism experience, offering implants with a lifetime guarantee and a price calculator for international patients. Multilingual practice serving the Austrian, German and Slovak border market.",
@@ -864,6 +895,7 @@ export const dentalProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_969d9ec248",
     slug: "dentalklinik-dr-toka-sopron",
     name: "Dentalklinik Dr. Toka",
     description: "Family dental clinic in Sopron, the historic Austrian-border city, led by Dr. Jozsef Toka Jr., voted Dentist of the Year at the 2015 Hungarian Dental Awards. The practice traces to a 1968 family office and now runs a fully digital, computer-navigated implantology workflow.",
@@ -892,6 +924,7 @@ export const dentalProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_ca5b85d110",
     slug: "new-crown-implant-center-sopron",
     name: "New Crown & Implant Center",
     description: "Modern Sopron implant center (dental clinic opened 2023 under the Alpok Medical group) using the premium Straumann implant system. Sits in the heart of Sopron near the Austrian border and serves English-, German- and Hungarian-speaking patients.",
@@ -920,6 +953,7 @@ export const dentalProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_6f46eaa20a",
     slug: "clinica-ford-dental-spa-panama",
     name: "Clinica Ford & Dental Spa",
     description: "Established Panama City dental group with locations in the Marbella (Royal Center) and Costa del Este medical districts, led by US-trained periodontist Dr. Richard Ford. Covers dental implants, oral rehabilitation, crowns, bridges, veneers and periodontics in a spa-style setting oriented to international patients.",
@@ -947,6 +981,7 @@ export const dentalProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_8a13bcff8d",
     slug: "clinica-arango-orillac-panama",
     name: "Clinica Arango Orillac",
     description: "One of Panama's oldest and largest dental groups, operating since 1935 with more than 50 dental professionals across Panama City branches in Marbella, Costa del Este and Albrook. Offers implantology, orthodontics, aesthetic dentistry, oral rehabilitation and endodontics under one multi-specialty group.",
@@ -974,6 +1009,7 @@ export const dentalProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_9913eb4a81",
     slug: "obarrio-dental-clinic-panama",
     name: "Obarrio Dental Clinic",
     description: "Multi-specialty dental practice in Panama City's Obarrio business district (Plaza Mont Blanc), led by Dr. Franklin Halphen Marquez, a specialist in oral rehabilitation, prosthetics and dental aesthetics. Covers implants, crowns, veneers, Invisalign, endodontics and maxillofacial surgery.",
@@ -1000,6 +1036,7 @@ export const dentalProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_7afe7599da",
     slug: "odonto-smile-clinic-boquete",
     name: "Odonto Smile Clinic",
     description: "Dental-tourism-oriented clinic in Boquete, Panama's mountain expat town, led by Dr. Dagmar Rios. Serves the large English-speaking expat community and visiting patients from the US, Canada and Europe with implants, crowns, veneers, full-mouth restoration and 3D-guided implant placement.",
@@ -1026,6 +1063,7 @@ export const dentalProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_676d6f3947",
     slug: "panama-express-dental-center",
     name: "Panama Express Dental Center",
     description: "Value-focused dental practice in Panama City's Carrasquilla / Espana area (Plaza Guivil), emphasizing implants and same-day prosthetics. A multi-dentist team covering implants, crowns, dentures, veneers, whitening, root canals and extractions.",
@@ -1052,6 +1090,7 @@ export const dentalProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_ecb492c20b",
     slug: "clinica-especialidades-odontologicas-david",
     name: "Clinica de Especialidades Odontologicas (Family Dental Clinic)",
     description: "Long-running multi-specialty dental practice in David, the capital of Chiriqui province in western Panama near the Boquete highlands. Offers general dentistry, orthodontics, periodontics, implant dentistry and cosmetic options, with English-, Spanish- and German-speaking dentists serving the region's expat community.",
@@ -1077,11 +1116,11 @@ export const dentalProviders: Provider[] = [
     cons: ["Website and pricing appear dated - re-confirm before relying", "No independently verified international accreditation", "Implant systems and current credentials not clearly stated online"],
     lastVerified: "2026-06-11",
   },
-  {"slug": "cosmetic-implant-dentistry-center-algodones", "name": "Cosmetic & Implant Dentistry Center", "description": "Family-run implant-focused dental practice in Los Algodones led by American-trained Dr. Jose Valenzuela, Jr., practicing since 2002. Uses 3D cone-beam CT, PRGF, and CAD/CAM, and backs implant abutments with a 20-year warranty.", "category": "dental", "services": ["Dental implants", "All-on-4", "Crowns", "Veneers", "Dentures", "Full-mouth reconstruction", "Teeth whitening", "Emergency dentistry"], "pricingDisplay": "$1,400+/implant", "pricingNotes": "Single implant starts at $1,400; crowns and veneers $450-800 each (per official site).", "pricingComparison": "vs $3,000-5,000/implant in US", "savingsPercent": 60, "deliveryModel": "in_person_destination", "geographicCoverage": ["Mexico"], "destinationCountry": "Mexico", "destinationCity": "Los Algodones", "typicalTripLength": "3-7 days", "includesInPackage": ["Consultation", "Digital X-rays / 3D CT scan"], "recoveryNotes": "Straightforward work often completed same trip; implant cases may need a second visit.", "accreditations": ["ADA-affiliated dentist", "American-trained lead dentist (since 2002)"], "url": "https://www.algodonesdentalimplants.com/", "referralType": "direct_link", "ourTake": "This is the implant-specialist option in Los Algodones - an American-trained dentist, modern imaging (cone-beam CT, PRGF), and an unusually long 20-year abutment warranty. Pricing sits above the town's rock-bottom clinics but the warranty and technology justify it for implant cases. Best for patients who want a smaller, owner-operated practice over a high-volume factory.", "bestFor": ["Dental implants", "Want a 20-year implant warranty", "Prefer owner-operated practice", "Near Arizona (Yuma) border"], "pros": ["American-trained dentist", "20-year implant abutment warranty", "Cone-beam CT and CAD/CAM in-house", "ADA-affiliated"], "cons": ["Higher implant pricing than budget Algodones clinics", "Los Algodones is a tiny town", "Smaller practice (less surge capacity)"], "featured": false, "lastVerified": "2026-06-25"},
-  {"slug": "algodones-dental-center", "name": "Algodones Dental Center", "description": "Multi-specialist dental clinic in Los Algodones with implantologists, an oral surgeon, a prosthodontist, and a periodontist, several citing Harvard School of Dental Medicine training plus ITI and ICOI affiliations. Advertises savings of up to 80% on dental work versus US prices.", "category": "dental", "services": ["Dental implants", "Full-mouth implants", "Crowns", "Bridges", "Veneers", "Dentures", "Root canals", "Cosmetic dentistry", "Teeth whitening"], "pricingDisplay": "$790+/implant", "pricingNotes": "Single implant from $790 (vs ~$4,500 US average cited on site).", "pricingComparison": "vs ~$4,500/implant US average", "savingsPercent": 80, "deliveryModel": "in_person_destination", "geographicCoverage": ["Mexico"], "destinationCountry": "Mexico", "destinationCity": "Los Algodones", "typicalTripLength": "3-7 days", "includesInPackage": ["Consultation", "Diagnostic imaging"], "recoveryNotes": "Multi-specialist team allows complex full-mouth cases; some require a second visit.", "accreditations": ["ADA-affiliated", "ITI member", "ICOI member", "Harvard School of Dental Medicine training cited for staff"], "url": "https://www.algodonesdentalcenter.com/", "referralType": "direct_link", "ourTake": "Algodones Dental Center stands out for its bench of named specialists - implantologists, an oral surgeon, a prosthodontist, and a periodontist - rather than a single generalist. That depth, plus ITI/ICOI implant credentials, makes it a fit for complex full-mouth work at Los Algodones prices. Verify which specific dentist handles your case, since experience ranges widely across the team.", "bestFor": ["Complex full-mouth cases", "Want named specialists", "Budget implants", "Near Arizona (Yuma) border"], "pros": ["Multi-specialist team (implant, oral surgery, perio, prostho)", "ITI and ICOI implant credentials", "Implants from $790", "ADA-affiliated"], "cons": ["Experience varies across the team", "Los Algodones is a tiny town", "Savings claims (80%) are clinic-stated"], "featured": false, "lastVerified": "2026-06-25"},
-  {"slug": "dentakay-dental-clinic", "name": "Dentakay", "description": "Cosmetic dental group established in 2009 with clinics in Istanbul, Ankara, and Antalya, reporting 50,000+ patients. Specializes in implants, veneers, and Hollywood-smile makeovers using Straumann and e.max materials.", "category": "dental", "services": ["Dental implants", "All-on-4 / All-on-6", "Veneers", "Crowns", "Hollywood smile", "Teeth whitening", "Orthodontics", "Digital smile design"], "pricingDisplay": "Veneers ~€150-350/tooth", "pricingNotes": "Hollywood-smile veneers commonly ~€150-350 per tooth in Turkey; implant pricing varies by brand. Patients reported to save 50-70% vs UK/US/Europe. Estimate June 2026.", "pricingComparison": "vs $1,000-2,500/veneer in US", "savingsPercent": 65, "deliveryModel": "in_person_destination", "geographicCoverage": ["Turkey"], "destinationCountry": "Turkey", "destinationCity": "Istanbul", "typicalTripLength": "5-7 days", "includesInPackage": ["VIP airport transfers", "Optional hotel accommodation", "Multilingual support", "Aftercare (up to 2 years)"], "recoveryNotes": "Crown and veneer work often completed in one trip; complex implant cases may require a return visit.", "accreditations": ["Straumann-certified dental laboratory"], "yearsInBusiness": 16, "procedureVolume": "50,000+ patients", "url": "https://dentakay.com", "referralType": "direct_link", "ourTake": "Dentakay is a high-volume cosmetic-dentistry brand with its own Straumann-certified lab and clinics across three Turkish cities. Strong for veneers and full Hollywood-smile cases; confirm exactly which materials and implant brands your quote covers.", "bestFor": ["Veneers and Hollywood smile", "Dental implants", "Cosmetic dentistry", "International patients"], "pros": ["Established 2009", "50,000+ patients", "Straumann-certified lab", "Multi-city (Istanbul/Ankara/Antalya)", "Up to 2 years aftercare"], "cons": ["High-volume operation", "Pricing varies by materials", "10+ hour flight from US", "Confirm implant brand in quote"], "featured": false, "lastVerified": "2026-06-25"},
-  {"slug": "dentgroup-dental-clinics", "name": "Dentgroup Dental Clinics", "description": "One of Turkey's largest dental networks, founded around 2006, operating 22 clinics across 9 cities including Istanbul, Izmir, and Antalya. Offers implants, cosmetic dentistry, and orthodontics with English-language international patient support.", "category": "dental", "services": ["Dental implants", "Implant-supported prostheses", "Porcelain laminate veneers", "Digital smile design", "Teeth whitening", "Orthodontics", "Endodontics", "Periodontology"], "pricingDisplay": "Quote-based", "pricingNotes": "No public price list on site as of June 2026; international patients receive per-case quotes.", "pricingComparison": "vs US dental implant/veneer pricing", "deliveryModel": "in_person_destination", "geographicCoverage": ["Turkey"], "destinationCountry": "Turkey", "destinationCity": "Istanbul", "typicalTripLength": "5-7 days", "includesInPackage": ["Consultation", "Treatment", "English-language patient support"], "recoveryNotes": "Most cosmetic and restorative work completed within one trip; implant cases may require a follow-up visit.", "yearsInBusiness": 20, "procedureVolume": "22 clinics across 9 cities", "url": "https://dentgroup.com.tr/en", "referralType": "direct_link", "ourTake": "Dentgroup is a large domestic Turkish network (22 clinics, 9 cities) that also serves international patients in English. Useful if you want a clinic with broad local coverage and digital-dentistry workflows; request a written quote since pricing is not published.", "bestFor": ["Dental implants", "Cosmetic dentistry", "Broad city coverage", "English-speaking support"], "pros": ["22 clinics across 9 cities", "~20 years operating", "Digital dentistry workflows", "English-language international support"], "cons": ["No published pricing", "International program less prominent than tourism-first clinics", "10+ hour flight from US", "Confirm clinic location for your case"], "featured": false, "lastVerified": "2026-06-25"},
-  {"slug": "clove-dental-india", "name": "Clove Dental", "description": "India's largest dental clinic network, with 700+ clinics across more than 25 cities and over 35,000 implant cases performed. Offers implants, crowns, full-mouth rehabilitation, and a dedicated dental-tourism pathway for international patients.", "category": "dental", "services": ["Dental implants", "Crowns & veneers", "Full-mouth rehabilitation", "Root canals", "Orthodontics"], "pricingDisplay": "$400-900/implant", "pricingNotes": "Estimate. Single implant with crown; full-arch and All-on-4 cost more. Excludes travel and lodging.", "pricingComparison": "vs $3,000-5,000/implant in US", "savingsPercent": 80, "deliveryModel": "in_person_destination", "geographicCoverage": ["India"], "destinationCountry": "India", "destinationCity": "Multiple (25+ cities)", "typicalTripLength": "5-14 days", "includesInPackage": ["Consultation", "Digital X-rays / scans", "Dental-tourism coordination"], "accreditations": ["Largest dental chain in India / Asia by clinic count"], "url": "https://clovedental.in", "referralType": "direct_link", "ourTake": "Clove brings standardized protocols and branded materials to a category that is usually fragmented single-dentist clinics, which lowers the variance risk of dental tourism. Pricing runs well below US implants; for complex full-mouth work, confirm which specific clinic and dentist will handle your case and whether it needs two trips.", "bestFor": ["Implants & crowns", "Standardized chain quality", "Multiple-city flexibility", "Budget-conscious"], "pros": ["Largest dental network in India", "Standardized protocols & materials", "35,000+ implant cases", "Dental-tourism pathway"], "cons": ["Long flight from US", "Complex cases may need 2 trips", "Confirm the specific clinic and dentist"], "featured": false, "lastVerified": "2026-06-25"},
+  {"id": "c_08ed14e807", "slug": "cosmetic-implant-dentistry-center-algodones", "name": "Cosmetic & Implant Dentistry Center", "description": "Family-run implant-focused dental practice in Los Algodones led by American-trained Dr. Jose Valenzuela, Jr., practicing since 2002. Uses 3D cone-beam CT, PRGF, and CAD/CAM, and backs implant abutments with a 20-year warranty.", "category": "dental", "services": ["Dental implants", "All-on-4", "Crowns", "Veneers", "Dentures", "Full-mouth reconstruction", "Teeth whitening", "Emergency dentistry"], "pricingDisplay": "$1,400+/implant", "pricingNotes": "Single implant starts at $1,400; crowns and veneers $450-800 each (per official site).", "pricingComparison": "vs $3,000-5,000/implant in US", "savingsPercent": 60, "deliveryModel": "in_person_destination", "geographicCoverage": ["Mexico"], "destinationCountry": "Mexico", "destinationCity": "Los Algodones", "typicalTripLength": "3-7 days", "includesInPackage": ["Consultation", "Digital X-rays / 3D CT scan"], "recoveryNotes": "Straightforward work often completed same trip; implant cases may need a second visit.", "accreditations": ["ADA-affiliated dentist", "American-trained lead dentist (since 2002)"], "url": "https://www.algodonesdentalimplants.com/", "referralType": "direct_link", "ourTake": "This is the implant-specialist option in Los Algodones - an American-trained dentist, modern imaging (cone-beam CT, PRGF), and an unusually long 20-year abutment warranty. Pricing sits above the town's rock-bottom clinics but the warranty and technology justify it for implant cases. Best for patients who want a smaller, owner-operated practice over a high-volume factory.", "bestFor": ["Dental implants", "Want a 20-year implant warranty", "Prefer owner-operated practice", "Near Arizona (Yuma) border"], "pros": ["American-trained dentist", "20-year implant abutment warranty", "Cone-beam CT and CAD/CAM in-house", "ADA-affiliated"], "cons": ["Higher implant pricing than budget Algodones clinics", "Los Algodones is a tiny town", "Smaller practice (less surge capacity)"], "featured": false, "lastVerified": "2026-06-25"},
+  {"id": "c_dba064f4cd", "slug": "algodones-dental-center", "name": "Algodones Dental Center", "description": "Multi-specialist dental clinic in Los Algodones with implantologists, an oral surgeon, a prosthodontist, and a periodontist, several citing Harvard School of Dental Medicine training plus ITI and ICOI affiliations. Advertises savings of up to 80% on dental work versus US prices.", "category": "dental", "services": ["Dental implants", "Full-mouth implants", "Crowns", "Bridges", "Veneers", "Dentures", "Root canals", "Cosmetic dentistry", "Teeth whitening"], "pricingDisplay": "$790+/implant", "pricingNotes": "Single implant from $790 (vs ~$4,500 US average cited on site).", "pricingComparison": "vs ~$4,500/implant US average", "savingsPercent": 80, "deliveryModel": "in_person_destination", "geographicCoverage": ["Mexico"], "destinationCountry": "Mexico", "destinationCity": "Los Algodones", "typicalTripLength": "3-7 days", "includesInPackage": ["Consultation", "Diagnostic imaging"], "recoveryNotes": "Multi-specialist team allows complex full-mouth cases; some require a second visit.", "accreditations": ["ADA-affiliated", "ITI member", "ICOI member", "Harvard School of Dental Medicine training cited for staff"], "url": "https://www.algodonesdentalcenter.com/", "referralType": "direct_link", "ourTake": "Algodones Dental Center stands out for its bench of named specialists - implantologists, an oral surgeon, a prosthodontist, and a periodontist - rather than a single generalist. That depth, plus ITI/ICOI implant credentials, makes it a fit for complex full-mouth work at Los Algodones prices. Verify which specific dentist handles your case, since experience ranges widely across the team.", "bestFor": ["Complex full-mouth cases", "Want named specialists", "Budget implants", "Near Arizona (Yuma) border"], "pros": ["Multi-specialist team (implant, oral surgery, perio, prostho)", "ITI and ICOI implant credentials", "Implants from $790", "ADA-affiliated"], "cons": ["Experience varies across the team", "Los Algodones is a tiny town", "Savings claims (80%) are clinic-stated"], "featured": false, "lastVerified": "2026-06-25"},
+  {"id": "c_cf4696a472", "slug": "dentakay-dental-clinic", "name": "Dentakay", "description": "Cosmetic dental group established in 2009 with clinics in Istanbul, Ankara, and Antalya, reporting 50,000+ patients. Specializes in implants, veneers, and Hollywood-smile makeovers using Straumann and e.max materials.", "category": "dental", "services": ["Dental implants", "All-on-4 / All-on-6", "Veneers", "Crowns", "Hollywood smile", "Teeth whitening", "Orthodontics", "Digital smile design"], "pricingDisplay": "Veneers ~€150-350/tooth", "pricingNotes": "Hollywood-smile veneers commonly ~€150-350 per tooth in Turkey; implant pricing varies by brand. Patients reported to save 50-70% vs UK/US/Europe. Estimate June 2026.", "pricingComparison": "vs $1,000-2,500/veneer in US", "savingsPercent": 65, "deliveryModel": "in_person_destination", "geographicCoverage": ["Turkey"], "destinationCountry": "Turkey", "destinationCity": "Istanbul", "typicalTripLength": "5-7 days", "includesInPackage": ["VIP airport transfers", "Optional hotel accommodation", "Multilingual support", "Aftercare (up to 2 years)"], "recoveryNotes": "Crown and veneer work often completed in one trip; complex implant cases may require a return visit.", "accreditations": ["Straumann-certified dental laboratory"], "yearsInBusiness": 16, "procedureVolume": "50,000+ patients", "url": "https://dentakay.com", "referralType": "direct_link", "ourTake": "Dentakay is a high-volume cosmetic-dentistry brand with its own Straumann-certified lab and clinics across three Turkish cities. Strong for veneers and full Hollywood-smile cases; confirm exactly which materials and implant brands your quote covers.", "bestFor": ["Veneers and Hollywood smile", "Dental implants", "Cosmetic dentistry", "International patients"], "pros": ["Established 2009", "50,000+ patients", "Straumann-certified lab", "Multi-city (Istanbul/Ankara/Antalya)", "Up to 2 years aftercare"], "cons": ["High-volume operation", "Pricing varies by materials", "10+ hour flight from US", "Confirm implant brand in quote"], "featured": false, "lastVerified": "2026-06-25"},
+  {"id": "c_2c24e6abf4", "slug": "dentgroup-dental-clinics", "name": "Dentgroup Dental Clinics", "description": "One of Turkey's largest dental networks, founded around 2006, operating 22 clinics across 9 cities including Istanbul, Izmir, and Antalya. Offers implants, cosmetic dentistry, and orthodontics with English-language international patient support.", "category": "dental", "services": ["Dental implants", "Implant-supported prostheses", "Porcelain laminate veneers", "Digital smile design", "Teeth whitening", "Orthodontics", "Endodontics", "Periodontology"], "pricingDisplay": "Quote-based", "pricingNotes": "No public price list on site as of June 2026; international patients receive per-case quotes.", "pricingComparison": "vs US dental implant/veneer pricing", "deliveryModel": "in_person_destination", "geographicCoverage": ["Turkey"], "destinationCountry": "Turkey", "destinationCity": "Istanbul", "typicalTripLength": "5-7 days", "includesInPackage": ["Consultation", "Treatment", "English-language patient support"], "recoveryNotes": "Most cosmetic and restorative work completed within one trip; implant cases may require a follow-up visit.", "yearsInBusiness": 20, "procedureVolume": "22 clinics across 9 cities", "url": "https://dentgroup.com.tr/en", "referralType": "direct_link", "ourTake": "Dentgroup is a large domestic Turkish network (22 clinics, 9 cities) that also serves international patients in English. Useful if you want a clinic with broad local coverage and digital-dentistry workflows; request a written quote since pricing is not published.", "bestFor": ["Dental implants", "Cosmetic dentistry", "Broad city coverage", "English-speaking support"], "pros": ["22 clinics across 9 cities", "~20 years operating", "Digital dentistry workflows", "English-language international support"], "cons": ["No published pricing", "International program less prominent than tourism-first clinics", "10+ hour flight from US", "Confirm clinic location for your case"], "featured": false, "lastVerified": "2026-06-25"},
+  {"id": "c_f977302c3b", "slug": "clove-dental-india", "name": "Clove Dental", "description": "India's largest dental clinic network, with 700+ clinics across more than 25 cities and over 35,000 implant cases performed. Offers implants, crowns, full-mouth rehabilitation, and a dedicated dental-tourism pathway for international patients.", "category": "dental", "services": ["Dental implants", "Crowns & veneers", "Full-mouth rehabilitation", "Root canals", "Orthodontics"], "pricingDisplay": "$400-900/implant", "pricingNotes": "Estimate. Single implant with crown; full-arch and All-on-4 cost more. Excludes travel and lodging.", "pricingComparison": "vs $3,000-5,000/implant in US", "savingsPercent": 80, "deliveryModel": "in_person_destination", "geographicCoverage": ["India"], "destinationCountry": "India", "destinationCity": "Multiple (25+ cities)", "typicalTripLength": "5-14 days", "includesInPackage": ["Consultation", "Digital X-rays / scans", "Dental-tourism coordination"], "accreditations": ["Largest dental chain in India / Asia by clinic count"], "url": "https://clovedental.in", "referralType": "direct_link", "ourTake": "Clove brings standardized protocols and branded materials to a category that is usually fragmented single-dentist clinics, which lowers the variance risk of dental tourism. Pricing runs well below US implants; for complex full-mouth work, confirm which specific clinic and dentist will handle your case and whether it needs two trips.", "bestFor": ["Implants & crowns", "Standardized chain quality", "Multiple-city flexibility", "Budget-conscious"], "pros": ["Largest dental network in India", "Standardized protocols & materials", "35,000+ implant cases", "Dental-tourism pathway"], "cons": ["Long flight from US", "Complex cases may need 2 trips", "Confirm the specific clinic and dentist"], "featured": false, "lastVerified": "2026-06-25"},
 ];
 
 // =============================================================================
@@ -1090,6 +1129,7 @@ export const dentalProviders: Provider[] = [
 
 export const hairTransplantProviders: Provider[] = [
   {
+    id: 'c_eae17de0f2',
     slug: 'vera-clinic',
     name: 'Vera Clinic',
     description: 'Award-winning Istanbul clinic with 30,000+ procedures. Known for OxyCure technique that boosts follicle survival.',
@@ -1119,6 +1159,7 @@ export const hairTransplantProviders: Provider[] = [
     lastVerified: '2024-12-01',
   },
   {
+    id: 'c_917aeffd6b',
     slug: 'asmed-clinic',
     name: 'ASMED',
     description: 'Research-driven clinic led by Dr. Koray Erdogan, pioneer of robotic FUE in Turkey. 97% graft survival rate.',
@@ -1146,6 +1187,7 @@ export const hairTransplantProviders: Provider[] = [
     lastVerified: '2024-12-01',
   },
   {
+    id: 'c_7ec14ddc74',
     slug: 'smile-hair-clinic',
     name: 'Smile Hair Clinic',
     description: 'High-volume Istanbul clinic with competitive pricing. 4.9★ Trustpilot with 3,500+ reviews. Micro Sapphire FUE technique.',
@@ -1174,6 +1216,7 @@ export const hairTransplantProviders: Provider[] = [
     lastVerified: '2024-12-01',
   },
   {
+    id: 'c_623956384f',
     slug: 'dr-serkan-aygin',
     name: 'Dr. Serkan Aygin Clinic',
     description: 'Celebrity surgeon with 25+ years experience. Known for high-profile patients and natural-looking results.',
@@ -1200,10 +1243,10 @@ export const hairTransplantProviders: Provider[] = [
     featured: false,
     lastVerified: '2024-12-01',
   },
-  {"slug": "cosmedica-clinic", "name": "Cosmedica", "description": "Istanbul hair-transplant clinic led by Dr. Levent Acar, with 20,000+ procedures over 16+ years. Best known for its Micro Sapphire DHI technique and English-speaking, surgeon-led consultations.", "category": "hair_transplant", "services": ["FUE", "DHI", "Micro Sapphire DHI", "Sapphire FUE", "Beard transplant", "Eyebrow transplant", "Needle-free anesthesia"], "pricingDisplay": "€2,450-3,190", "pricingNotes": "All-inclusive packages from €2,450; flagship Sapphire DHI package ~€3,190 (hotel, transfers, aftercare, medication). Estimate from clinic site June 2026.", "pricingComparison": "vs $10,000-20,000 in US", "savingsPercent": 75, "deliveryModel": "in_person_destination", "geographicCoverage": ["Turkey"], "destinationCountry": "Turkey", "destinationCity": "Istanbul", "typicalTripLength": "4-6 days", "includesInPackage": ["Hotel", "Airport transfers", "Aftercare products", "Medications", "Surgeon consultation"], "recoveryNotes": "Most patients fly home within a few days. Full results visible around 12 months.", "yearsInBusiness": 16, "procedureVolume": "20,000+ procedures", "url": "https://cosmedica.com", "referralType": "direct_link", "ourTake": "Cosmedica is a surgeon-led option where Dr. Levent Acar personally consults on each case before a Micro Sapphire DHI procedure. All-inclusive package pricing from €2,450 keeps it competitive without feeling like a high-volume mill.", "bestFor": ["Surgeon-led care", "Sapphire DHI", "First-time patients", "English-speaking team"], "pros": ["Named lead surgeon (Dr. Levent Acar)", "16+ years in business", "20,000+ procedures", "Micro Sapphire DHI technique", "All-inclusive packages"], "cons": ["No JCI/ISO listed on site", "Premium DHI tier costs more", "10+ hour flight from US", "Verify candidacy before booking"], "featured": false, "lastVerified": "2026-06-25"},
-  {"slug": "estenove-clinic", "name": "Estenove", "description": "Istanbul hair-transplant clinic reporting 15,000+ procedures for patients from 125+ countries. Offers Sapphire FUE and Choi-pen DHI with painless-anesthesia technology.", "category": "hair_transplant", "services": ["Sapphire FUE", "DHI (Choi Pen)", "Beard transplant", "Eyebrow transplant", "Stem cell hair treatment", "PRP", "Painless anesthesia"], "pricingDisplay": "€2,400-3,850", "pricingNotes": "Site cites €2,400-3,850 for up to 4,000 grafts; packages include accommodation, transfers, medications, aftercare. Estimate from clinic site June 2026.", "pricingComparison": "vs $10,000-20,000 in US", "savingsPercent": 78, "deliveryModel": "in_person_destination", "geographicCoverage": ["Turkey"], "destinationCountry": "Turkey", "destinationCity": "Istanbul", "typicalTripLength": "4-6 days", "includesInPackage": ["Accommodation", "Airport transfers", "Medications", "Aftercare products"], "recoveryNotes": "Short stay; full results typically visible around 12 months.", "procedureVolume": "15,000+ transformations", "url": "https://www.estenove.com", "referralType": "direct_link", "ourTake": "Estenove pairs Sapphire FUE and Choi-pen DHI with a painless-anesthesia (Comfort-In) workflow and serves a broad international base. Procedures run at contracted facilities with a Turkish health-tourism authorization, so confirm the specific hospital and surgeon for your case.", "bestFor": ["International patients", "Sapphire FUE", "DHI", "Painless anesthesia"], "pros": ["15,000+ procedures", "Patients from 125+ countries", "Sapphire FUE + Choi-pen DHI", "Painless-anesthesia technology", "All-inclusive packages"], "cons": ["No specific JCI/ISO certification listed", "Procedures at contracted facilities", "10+ hour flight from US", "Confirm surgeon and venue"], "featured": false, "lastVerified": "2026-06-25"},
-  {"slug": "dr-cinik-clinic", "name": "Dr. Cinik Hair Transplant Clinic", "description": "Istanbul clinic led by Dr. Emrah Cinik, an ISHRS associate member, offering FUE, DHI, and unshaven hair transplants. Holds Turkish Ministry of Health authorization and carries a 4.8/5 rating across 6,000+ reviews.", "category": "hair_transplant", "services": ["FUE", "DHI", "Unshaven transplant", "Beard transplant", "Hollywood smile / dental", "Rhinoplasty", "Medical aesthetics"], "pricingDisplay": "Quote-based packages", "pricingNotes": "Clinic advertises transparent, tailored cost estimates; no fixed package price published on site as of June 2026.", "pricingComparison": "vs $10,000-20,000 in US", "savingsPercent": 75, "deliveryModel": "in_person_destination", "geographicCoverage": ["Turkey"], "destinationCountry": "Turkey", "destinationCity": "Istanbul", "typicalTripLength": "4-6 days", "includesInPackage": ["Consultation", "Surgical plan", "Aftercare protocol"], "recoveryNotes": "Short stay typical; full results around 12 months.", "accreditations": ["Turkish Ministry of Health authorization", "ISHRS associate member (Dr. Emrah Cinik)"], "procedureVolume": "6,000+ reviews (4.8/5)", "url": "https://drcinik.com", "referralType": "direct_link", "ourTake": "Dr. Cinik is a long-established Istanbul name with ISHRS membership and Turkish Ministry of Health authorization. Pricing is quote-based rather than fixed-package, so request a written estimate and confirm which procedures the named surgeon performs.", "bestFor": ["Named surgeon", "ISHRS member care", "FUE and DHI", "Established reputation"], "pros": ["ISHRS associate member surgeon", "Turkish Ministry of Health authorized", "6,000+ reviews (4.8/5)", "FUE, DHI, unshaven options"], "cons": ["No published package pricing", "High-volume operation", "10+ hour flight from US", "Confirm surgeon involvement"], "featured": false, "lastVerified": "2026-06-25"},
-  {"slug": "hermest-hair-clinic", "name": "Hermest Hair Clinic", "description": "Istanbul (Kadıköy) hair-transplant clinic co-led by Dr. Ahmet Murat with 20,000+ patients treated. Operates partly at JCI-accredited Istanbul Florence Nightingale Hospital and carries ISO 9001, ISO 10002, and TÜV certifications.", "category": "hair_transplant", "services": ["FUE", "DHI", "Unique FUE", "Unshaven transplant", "Long-hair FUE", "Beard transplant", "Female hair transplant"], "pricingDisplay": "Quote-based packages", "pricingNotes": "Pricing provided on a separate quote page; no fixed package price published on the about page as of June 2026.", "pricingComparison": "vs $10,000-20,000 in US", "savingsPercent": 75, "deliveryModel": "in_person_destination", "geographicCoverage": ["Turkey"], "destinationCountry": "Turkey", "destinationCity": "Istanbul", "typicalTripLength": "4-6 days", "includesInPackage": ["Consultation", "Surgical procedure", "Aftercare"], "recoveryNotes": "Short stay typical; full results around 12 months.", "accreditations": ["Turkish Ministry of Health certification", "JCI (via Istanbul Florence Nightingale Hospital)", "ISO 9001:2015", "ISO 10002", "TÜV certification"], "procedureVolume": "20,000+ patients", "url": "https://www.hermestclinic.com", "referralType": "direct_link", "ourTake": "Hermest stands out on the quality-system side: ISO 9001/10002, TÜV, and procedures at the JCI-accredited Florence Nightingale Hospital. With 20,000+ patients and a named co-founder surgeon, it suits patients who weight accreditation heavily.", "bestFor": ["Accreditation-focused patients", "Sapphire/Unique FUE", "Named surgeon", "Quality-system assurance"], "pros": ["Procedures at JCI-accredited hospital", "ISO 9001 + ISO 10002 + TÜV", "Turkish Ministry of Health certified", "20,000+ patients", "Named co-founder surgeon"], "cons": ["No published package pricing", "Clinic vs hospital split for procedures", "10+ hour flight from US", "Confirm venue and surgeon"], "featured": false, "lastVerified": "2026-06-25"},
+  {"id": "c_9bbf261a7b", "slug": "cosmedica-clinic", "name": "Cosmedica", "description": "Istanbul hair-transplant clinic led by Dr. Levent Acar, with 20,000+ procedures over 16+ years. Best known for its Micro Sapphire DHI technique and English-speaking, surgeon-led consultations.", "category": "hair_transplant", "services": ["FUE", "DHI", "Micro Sapphire DHI", "Sapphire FUE", "Beard transplant", "Eyebrow transplant", "Needle-free anesthesia"], "pricingDisplay": "€2,450-3,190", "pricingNotes": "All-inclusive packages from €2,450; flagship Sapphire DHI package ~€3,190 (hotel, transfers, aftercare, medication). Estimate from clinic site June 2026.", "pricingComparison": "vs $10,000-20,000 in US", "savingsPercent": 75, "deliveryModel": "in_person_destination", "geographicCoverage": ["Turkey"], "destinationCountry": "Turkey", "destinationCity": "Istanbul", "typicalTripLength": "4-6 days", "includesInPackage": ["Hotel", "Airport transfers", "Aftercare products", "Medications", "Surgeon consultation"], "recoveryNotes": "Most patients fly home within a few days. Full results visible around 12 months.", "yearsInBusiness": 16, "procedureVolume": "20,000+ procedures", "url": "https://cosmedica.com", "referralType": "direct_link", "ourTake": "Cosmedica is a surgeon-led option where Dr. Levent Acar personally consults on each case before a Micro Sapphire DHI procedure. All-inclusive package pricing from €2,450 keeps it competitive without feeling like a high-volume mill.", "bestFor": ["Surgeon-led care", "Sapphire DHI", "First-time patients", "English-speaking team"], "pros": ["Named lead surgeon (Dr. Levent Acar)", "16+ years in business", "20,000+ procedures", "Micro Sapphire DHI technique", "All-inclusive packages"], "cons": ["No JCI/ISO listed on site", "Premium DHI tier costs more", "10+ hour flight from US", "Verify candidacy before booking"], "featured": false, "lastVerified": "2026-06-25"},
+  {"id": "c_f8813e4d7b", "slug": "estenove-clinic", "name": "Estenove", "description": "Istanbul hair-transplant clinic reporting 15,000+ procedures for patients from 125+ countries. Offers Sapphire FUE and Choi-pen DHI with painless-anesthesia technology.", "category": "hair_transplant", "services": ["Sapphire FUE", "DHI (Choi Pen)", "Beard transplant", "Eyebrow transplant", "Stem cell hair treatment", "PRP", "Painless anesthesia"], "pricingDisplay": "€2,400-3,850", "pricingNotes": "Site cites €2,400-3,850 for up to 4,000 grafts; packages include accommodation, transfers, medications, aftercare. Estimate from clinic site June 2026.", "pricingComparison": "vs $10,000-20,000 in US", "savingsPercent": 78, "deliveryModel": "in_person_destination", "geographicCoverage": ["Turkey"], "destinationCountry": "Turkey", "destinationCity": "Istanbul", "typicalTripLength": "4-6 days", "includesInPackage": ["Accommodation", "Airport transfers", "Medications", "Aftercare products"], "recoveryNotes": "Short stay; full results typically visible around 12 months.", "procedureVolume": "15,000+ transformations", "url": "https://www.estenove.com", "referralType": "direct_link", "ourTake": "Estenove pairs Sapphire FUE and Choi-pen DHI with a painless-anesthesia (Comfort-In) workflow and serves a broad international base. Procedures run at contracted facilities with a Turkish health-tourism authorization, so confirm the specific hospital and surgeon for your case.", "bestFor": ["International patients", "Sapphire FUE", "DHI", "Painless anesthesia"], "pros": ["15,000+ procedures", "Patients from 125+ countries", "Sapphire FUE + Choi-pen DHI", "Painless-anesthesia technology", "All-inclusive packages"], "cons": ["No specific JCI/ISO certification listed", "Procedures at contracted facilities", "10+ hour flight from US", "Confirm surgeon and venue"], "featured": false, "lastVerified": "2026-06-25"},
+  {"id": "c_a8d8e07e61", "slug": "dr-cinik-clinic", "name": "Dr. Cinik Hair Transplant Clinic", "description": "Istanbul clinic led by Dr. Emrah Cinik, an ISHRS associate member, offering FUE, DHI, and unshaven hair transplants. Holds Turkish Ministry of Health authorization and carries a 4.8/5 rating across 6,000+ reviews.", "category": "hair_transplant", "services": ["FUE", "DHI", "Unshaven transplant", "Beard transplant", "Hollywood smile / dental", "Rhinoplasty", "Medical aesthetics"], "pricingDisplay": "Quote-based packages", "pricingNotes": "Clinic advertises transparent, tailored cost estimates; no fixed package price published on site as of June 2026.", "pricingComparison": "vs $10,000-20,000 in US", "savingsPercent": 75, "deliveryModel": "in_person_destination", "geographicCoverage": ["Turkey"], "destinationCountry": "Turkey", "destinationCity": "Istanbul", "typicalTripLength": "4-6 days", "includesInPackage": ["Consultation", "Surgical plan", "Aftercare protocol"], "recoveryNotes": "Short stay typical; full results around 12 months.", "accreditations": ["Turkish Ministry of Health authorization", "ISHRS associate member (Dr. Emrah Cinik)"], "procedureVolume": "6,000+ reviews (4.8/5)", "url": "https://drcinik.com", "referralType": "direct_link", "ourTake": "Dr. Cinik is a long-established Istanbul name with ISHRS membership and Turkish Ministry of Health authorization. Pricing is quote-based rather than fixed-package, so request a written estimate and confirm which procedures the named surgeon performs.", "bestFor": ["Named surgeon", "ISHRS member care", "FUE and DHI", "Established reputation"], "pros": ["ISHRS associate member surgeon", "Turkish Ministry of Health authorized", "6,000+ reviews (4.8/5)", "FUE, DHI, unshaven options"], "cons": ["No published package pricing", "High-volume operation", "10+ hour flight from US", "Confirm surgeon involvement"], "featured": false, "lastVerified": "2026-06-25"},
+  {"id": "c_6c000ed31a", "slug": "hermest-hair-clinic", "name": "Hermest Hair Clinic", "description": "Istanbul (Kadıköy) hair-transplant clinic co-led by Dr. Ahmet Murat with 20,000+ patients treated. Operates partly at JCI-accredited Istanbul Florence Nightingale Hospital and carries ISO 9001, ISO 10002, and TÜV certifications.", "category": "hair_transplant", "services": ["FUE", "DHI", "Unique FUE", "Unshaven transplant", "Long-hair FUE", "Beard transplant", "Female hair transplant"], "pricingDisplay": "Quote-based packages", "pricingNotes": "Pricing provided on a separate quote page; no fixed package price published on the about page as of June 2026.", "pricingComparison": "vs $10,000-20,000 in US", "savingsPercent": 75, "deliveryModel": "in_person_destination", "geographicCoverage": ["Turkey"], "destinationCountry": "Turkey", "destinationCity": "Istanbul", "typicalTripLength": "4-6 days", "includesInPackage": ["Consultation", "Surgical procedure", "Aftercare"], "recoveryNotes": "Short stay typical; full results around 12 months.", "accreditations": ["Turkish Ministry of Health certification", "JCI (via Istanbul Florence Nightingale Hospital)", "ISO 9001:2015", "ISO 10002", "TÜV certification"], "procedureVolume": "20,000+ patients", "url": "https://www.hermestclinic.com", "referralType": "direct_link", "ourTake": "Hermest stands out on the quality-system side: ISO 9001/10002, TÜV, and procedures at the JCI-accredited Florence Nightingale Hospital. With 20,000+ patients and a named co-founder surgeon, it suits patients who weight accreditation heavily.", "bestFor": ["Accreditation-focused patients", "Sapphire/Unique FUE", "Named surgeon", "Quality-system assurance"], "pros": ["Procedures at JCI-accredited hospital", "ISO 9001 + ISO 10002 + TÜV", "Turkish Ministry of Health certified", "20,000+ patients", "Named co-founder surgeon"], "cons": ["No published package pricing", "Clinic vs hospital split for procedures", "10+ hour flight from US", "Confirm venue and surgeon"], "featured": false, "lastVerified": "2026-06-25"},
 ];
 
 // =============================================================================
@@ -1212,6 +1255,7 @@ export const hairTransplantProviders: Provider[] = [
 
 export const bariatricProviders: Provider[] = [
   {
+    id: 'c_9a35f22764',
     slug: 'mexico-bariatric-center',
     name: 'Mexico Bariatric Center',
     description: 'Leading bariatric surgery center in Tijuana with 27,000+ procedures. Own state-of-the-art Hospital Azar.',
@@ -1241,6 +1285,7 @@ export const bariatricProviders: Provider[] = [
     lastVerified: '2024-12-01',
   },
   {
+    id: 'c_38df173514',
     slug: 'alo-bariatrics',
     name: 'ALO Bariatrics',
     description: 'Multi-location bariatric center with all-inclusive flat-fee pricing. Locations in Tijuana, Guadalajara, and Puerto Vallarta.',
@@ -1269,6 +1314,7 @@ export const bariatricProviders: Provider[] = [
     lastVerified: '2024-12-01',
   },
   {
+    id: 'c_ccb3bd5247',
     slug: 'renew-bariatrics',
     name: 'Renew Bariatrics',
     description: 'Budget-friendly Tijuana option with solid results and good reviews.',
@@ -1294,6 +1340,7 @@ export const bariatricProviders: Provider[] = [
     lastVerified: '2024-12-01',
   },
   {
+    id: "c_87c648e851",
     slug: "hospital-alemao-oswaldo-cruz-obesity-center",
     name: "Hospital Alem\u00e3o Oswaldo Cruz - Center for Obesity & Diabetes",
     description: "JCI-accredited S\u00e3o Paulo hospital whose Specialized Center for Obesity and Diabetes is the first integrated obesity-and-diabetes center in Latin America, led by internationally recognized surgeon Dr. Ricardo Cohen. The bariatric and metabolic program holds a Surgical Review Corporation Center of Excellence certification.",
@@ -1322,6 +1369,7 @@ export const bariatricProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_644637cf4c",
     slug: "hospital-israelita-albert-einstein-bariatric",
     name: "Hospital Israelita Albert Einstein - Bariatric & Digestive Surgery",
     description: "S\u00e3o Paulo's flagship private hospital and the first institution outside the US to earn JCI accreditation (1999), consistently ranked among the best hospitals in Latin America. Its digestive and bariatric surgery program is supported by a dedicated International Patients Center with interpreter and travel services.",
@@ -1349,6 +1397,7 @@ export const bariatricProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_9b1383b2ba",
     slug: "hospital-sirio-libanes-bariatric",
     name: "Hospital S\u00edrio-Liban\u00eas - Bariatric & Metabolic Surgery",
     description: "Century-old S\u00e3o Paulo private hospital with JCI accreditation and a dedicated International Patient department supporting English, Spanish, Portuguese, and Japanese. Offers minimally invasive and robotic bariatric and digestive surgery using Da Vinci Xi technology.",
@@ -1377,6 +1426,7 @@ export const bariatricProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_4c314ac01f",
     slug: "colombia-bariatric-center-of-excellence",
     name: "Colombia Bariatric Center of Excellence",
     description: "A bariatric medical-tourism program coordinating surgery at JCI/ICONTEC-accredited hospitals in Medell\u00edn, Rionegro, and the Manizales coffee region. Sells all-inclusive 10-12 night packages for international patients.",
@@ -1405,6 +1455,7 @@ export const bariatricProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_9c123e5a2a",
     slug: "dr-felipe-bernal-bariatric-bogota",
     name: "Dr. Felipe Bernal \u2013 Bariatric Surgery Bogot\u00e1",
     description: "Bogot\u00e1 bariatric surgeon with 10+ years and over 1,000 weight-loss surgeries, operating at the well-regarded Shaio Clinic. Runs a multidisciplinary 'Method 4 PRO' program with endocrinology, nutrition, and psychology support.",
@@ -1433,8 +1484,8 @@ export const bariatricProviders: Provider[] = [
     featured: false,
     lastVerified: "2026-06-11",
   },
-  {"slug": "endobariatric-piedras-negras", "name": "Endobariatric (Dr. Guillermo Alvarez)", "description": "Single-surgeon bariatric practice in Piedras Negras led by Dr. Guillermo Alvarez, focused exclusively on the vertical sleeve gastrectomy for over 19 years. The clinic operates from Endohospital, eight blocks from the U.S. border at Eagle Pass, Texas.", "category": "bariatric", "services": ["Gastric sleeve (vertical sleeve gastrectomy)", "Endoscopic sleeve", "Bariatric revision consultation"], "pricingDisplay": "$4,999 (promotional)", "pricingNotes": "Official site lists a promotional gastric-sleeve price of $4,999 (from $8,900). Verify current pricing at consultation.", "pricingComparison": "vs $15,000-25,000 for gastric sleeve in US", "savingsPercent": 70, "deliveryModel": "in_person_destination", "geographicCoverage": ["Mexico"], "destinationCountry": "Mexico", "destinationCity": "Piedras Negras", "typicalTripLength": "3-4 days", "includesInPackage": ["Pre-op labs", "Surgery", "Hospital stay", "Surgeon follow-up"], "recoveryNotes": "Most patients stay 2-3 nights and cross back via Eagle Pass, TX.", "accreditations": ["SRC Center of Excellence in Metabolic & Bariatric Surgery", "Surgeon: SRC Master Surgeon (2012)", "Surgeon member of ASMBS, IFSO, SAGES"], "yearsInBusiness": 19, "procedureVolume": "20,000+ sleeves performed", "url": "https://www.endobariatric.com/", "referralType": "direct_link", "ourTake": "Endobariatric is the sleeve specialist's specialist - one surgeon, one procedure, nearly two decades. The SRC Center of Excellence designation is a real, verifiable accreditation, not marketing. Piedras Negras is a quieter border crossing than Tijuana, reached via Eagle Pass, TX. Best for patients who want a high-volume, sleeve-only surgeon over a multi-service hospital.", "bestFor": ["Gastric sleeve only", "Want a sleeve-focused specialist", "Texas-area patients", "High-volume surgeon"], "pros": ["20,000+ sleeves performed", "SRC Center of Excellence accredited", "Single-procedure focus", "8 blocks from US border at Eagle Pass"], "cons": ["Sleeve only - limited revision/bypass options", "Piedras Negras is remote vs Tijuana", "Promotional pricing may not reflect final cost"], "featured": false, "lastVerified": "2026-06-25"},
-  {"slug": "obesity-control-center-tijuana", "name": "Obesity Control Center", "description": "JCI-accredited bariatric center in Tijuana led by Dr. Ariel Ortiz, operating from Hospital CYNTAR with a multi-surgeon team. Offers the full range of weight-loss procedures including its proprietary Improved Gastric Sleeve.", "category": "bariatric", "services": ["Improved Gastric Sleeve", "Gastric bypass", "Mini gastric bypass", "Gastric plication", "Endoscopic sleeve gastroplasty", "BariClip", "Revision surgery", "Robotic bariatric surgery"], "pricingDisplay": "Quote on consultation", "pricingNotes": "Pricing not published on official site; provided after virtual consultation.", "pricingComparison": "vs $15,000-25,000 for bariatric surgery in US", "deliveryModel": "in_person_destination", "geographicCoverage": ["Mexico"], "destinationCountry": "Mexico", "destinationCity": "Tijuana", "typicalTripLength": "4-6 days", "includesInPackage": ["Pre-op workup", "Surgery", "Hospital stay at Hospital CYNTAR", "Post-op monitoring"], "recoveryNotes": "Tijuana is minutes from the San Diego border; most patients stay several nights for monitoring.", "accreditations": ["Joint Commission International (JCI)", "Global Healthcare Accreditation", "Surgeon: FACS, FASMBS"], "yearsInBusiness": 20, "procedureVolume": "25,000+ surgeries (per official site)", "url": "https://www.obesitycontrolcenter.com/", "referralType": "direct_link", "ourTake": "Obesity Control Center is one of the few Tijuana bariatric programs carrying a verified Joint Commission International accreditation - the same body that accredits top US hospitals. Dr. Ariel Ortiz is FACS and FASMBS credentialed. The broad procedure menu, including robotic and revision work, makes it a strong choice for complex or revision cases rather than just first-time sleeves.", "bestFor": ["Want JCI-accredited facility", "Complex or revision cases", "Robotic bariatric surgery", "Full procedure menu"], "pros": ["JCI accredited (verified)", "FACS/FASMBS surgeon", "Handles revisions and robotic cases", "Minutes from San Diego border"], "cons": ["Pricing not transparent online", "Premium positioning", "High-volume center"], "featured": true, "lastVerified": "2026-06-25"},
+  {"id": "c_90f6583dcb", "slug": "endobariatric-piedras-negras", "name": "Endobariatric (Dr. Guillermo Alvarez)", "description": "Single-surgeon bariatric practice in Piedras Negras led by Dr. Guillermo Alvarez, focused exclusively on the vertical sleeve gastrectomy for over 19 years. The clinic operates from Endohospital, eight blocks from the U.S. border at Eagle Pass, Texas.", "category": "bariatric", "services": ["Gastric sleeve (vertical sleeve gastrectomy)", "Endoscopic sleeve", "Bariatric revision consultation"], "pricingDisplay": "$4,999 (promotional)", "pricingNotes": "Official site lists a promotional gastric-sleeve price of $4,999 (from $8,900). Verify current pricing at consultation.", "pricingComparison": "vs $15,000-25,000 for gastric sleeve in US", "savingsPercent": 70, "deliveryModel": "in_person_destination", "geographicCoverage": ["Mexico"], "destinationCountry": "Mexico", "destinationCity": "Piedras Negras", "typicalTripLength": "3-4 days", "includesInPackage": ["Pre-op labs", "Surgery", "Hospital stay", "Surgeon follow-up"], "recoveryNotes": "Most patients stay 2-3 nights and cross back via Eagle Pass, TX.", "accreditations": ["SRC Center of Excellence in Metabolic & Bariatric Surgery", "Surgeon: SRC Master Surgeon (2012)", "Surgeon member of ASMBS, IFSO, SAGES"], "yearsInBusiness": 19, "procedureVolume": "20,000+ sleeves performed", "url": "https://www.endobariatric.com/", "referralType": "direct_link", "ourTake": "Endobariatric is the sleeve specialist's specialist - one surgeon, one procedure, nearly two decades. The SRC Center of Excellence designation is a real, verifiable accreditation, not marketing. Piedras Negras is a quieter border crossing than Tijuana, reached via Eagle Pass, TX. Best for patients who want a high-volume, sleeve-only surgeon over a multi-service hospital.", "bestFor": ["Gastric sleeve only", "Want a sleeve-focused specialist", "Texas-area patients", "High-volume surgeon"], "pros": ["20,000+ sleeves performed", "SRC Center of Excellence accredited", "Single-procedure focus", "8 blocks from US border at Eagle Pass"], "cons": ["Sleeve only - limited revision/bypass options", "Piedras Negras is remote vs Tijuana", "Promotional pricing may not reflect final cost"], "featured": false, "lastVerified": "2026-06-25"},
+  {"id": "c_a3f3b49a7d", "slug": "obesity-control-center-tijuana", "name": "Obesity Control Center", "description": "JCI-accredited bariatric center in Tijuana led by Dr. Ariel Ortiz, operating from Hospital CYNTAR with a multi-surgeon team. Offers the full range of weight-loss procedures including its proprietary Improved Gastric Sleeve.", "category": "bariatric", "services": ["Improved Gastric Sleeve", "Gastric bypass", "Mini gastric bypass", "Gastric plication", "Endoscopic sleeve gastroplasty", "BariClip", "Revision surgery", "Robotic bariatric surgery"], "pricingDisplay": "Quote on consultation", "pricingNotes": "Pricing not published on official site; provided after virtual consultation.", "pricingComparison": "vs $15,000-25,000 for bariatric surgery in US", "deliveryModel": "in_person_destination", "geographicCoverage": ["Mexico"], "destinationCountry": "Mexico", "destinationCity": "Tijuana", "typicalTripLength": "4-6 days", "includesInPackage": ["Pre-op workup", "Surgery", "Hospital stay at Hospital CYNTAR", "Post-op monitoring"], "recoveryNotes": "Tijuana is minutes from the San Diego border; most patients stay several nights for monitoring.", "accreditations": ["Joint Commission International (JCI)", "Global Healthcare Accreditation", "Surgeon: FACS, FASMBS"], "yearsInBusiness": 20, "procedureVolume": "25,000+ surgeries (per official site)", "url": "https://www.obesitycontrolcenter.com/", "referralType": "direct_link", "ourTake": "Obesity Control Center is one of the few Tijuana bariatric programs carrying a verified Joint Commission International accreditation - the same body that accredits top US hospitals. Dr. Ariel Ortiz is FACS and FASMBS credentialed. The broad procedure menu, including robotic and revision work, makes it a strong choice for complex or revision cases rather than just first-time sleeves.", "bestFor": ["Want JCI-accredited facility", "Complex or revision cases", "Robotic bariatric surgery", "Full procedure menu"], "pros": ["JCI accredited (verified)", "FACS/FASMBS surgeon", "Handles revisions and robotic cases", "Minutes from San Diego border"], "cons": ["Pricing not transparent online", "Premium positioning", "High-volume center"], "featured": true, "lastVerified": "2026-06-25"},
 ];
 
 // =============================================================================
@@ -1443,6 +1494,7 @@ export const bariatricProviders: Provider[] = [
 
 export const plasticSurgeryProviders: Provider[] = [
   {
+    id: 'c_1fd221d21f',
     slug: 'jk-plastic-surgery',
     name: 'JK Plastic Surgery Center',
     description: 'Longstanding Apgujeong clinic recognized for foreign-patient systems. 1:1 interpreter from consultation to discharge.',
@@ -1470,6 +1522,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: '2024-12-01',
   },
   {
+    id: 'c_8233fb2b8b',
     slug: 'jw-plastic-surgery',
     name: 'JW Plastic Surgery',
     description: '22 years with zero complications reported. Known for safety and 3D virtual surgery simulation.',
@@ -1496,6 +1549,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: '2024-12-01',
   },
   {
+    id: 'c_85964a1e93',
     slug: 'banobagi',
     name: 'Banobagi Plastic Surgery',
     description: 'Known as "The Detailist" - meticulous attention to detail. High volume of overseas patients with full English support.',
@@ -1520,6 +1574,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: '2024-12-01',
   },
   {
+    id: 'c_f376ddd3dc',
     slug: 'id-hospital',
     name: 'ID Hospital',
     description: 'Hospital-scale facility widely known for facial contouring and bone surgery. Comprehensive offerings.',
@@ -1545,6 +1600,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: '2024-12-01',
   },
   {
+    id: 'c_4bdc43e60a',
     slug: 'grand-plastic-surgery',
     name: 'GRAND Plastic Surgery',
     description: 'Large center with 30,000+ patients from 100+ countries since 2004. One-stop system with coordinated aftercare.',
@@ -1571,6 +1627,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: '2024-12-01',
   },
   {
+    id: "c_1b5f1926de",
     slug: "vikaara-klinik-hebert-lamblet",
     name: "Vikaara Klinik (Dr. Hebert Lamblet)",
     description: "Ipanema-based plastic surgery practice led by Dr. Hebert Lamblet, an SBCP board-certified surgeon who has researched fat-grafting and the Brazilian Butt Lift for over 20 years. Multilingual practice (English, Portuguese, Italian, French) that routinely treats patients from the US, Canada, and Europe with full trip-planning support.",
@@ -1598,6 +1655,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_51114bda55",
     slug: "plastic-rio-alexandre-charao",
     name: "Plastic Rio (Dr. Alexandre Char\u00e3o)",
     description: "Full-service Rio de Janeiro practice in the upscale Laranjeiras district, led by SBCP-certified Dr. Alexandre Char\u00e3o who has operated since 2003 with training across 15+ countries. Focused on liposuction-based body contouring, fat-transfer (BBL), breast surgery, and tummy tucks, with telehealth consultations for international patients.",
@@ -1626,6 +1684,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_754fa00f5d",
     slug: "dr-thomas-benson-sao-paulo",
     name: "Dr. Thomas Benson Plastic Surgery",
     description: "S\u00e3o Paulo practice in upscale Vila Nova Concei\u00e7\u00e3o led by Dr. Thomas Benson, the only Brazilian plastic surgeon certified by the European Board of Plastic Surgery (EBOPRAS) and a full SBCP member. Specializes in deep-plane facelift, rhinoplasty, and facial rejuvenation, operating at top hospitals including Israelita Albert Einstein.",
@@ -1654,6 +1713,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_8ba160444d",
     slug: "clinica-passy-david-passy",
     name: "Cl\u00ednica Passy (Dr. David Passy)",
     description: "Long-established Rio de Janeiro cosmetic surgery clinic in Ipanema, founded by Dr. David Passy in 1981 with over 40 years of experience and American Society of Plastic Surgeons certification. Known for power-assisted liposuction and Brazilian Butt Lift with refined fat-purification techniques.",
@@ -1682,6 +1742,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_7eab133a5e",
     slug: "clinica-dhara-alfredo-hoyos",
     name: "Cl\u00ednica Dhara (Dr. Alfredo Hoyos)",
     description: "Bogot\u00e1 practice of Dr. Alfredo Hoyos, the surgeon who invented High Definition Liposculpture and trained over 2,000 surgeons across 60+ countries. A global reference for athletic body contouring and VASER 4D lipo.",
@@ -1710,6 +1771,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_673e7c6f8f",
     slug: "interquirofanos-daniela-correa",
     name: "InterQuir\u00f3fanos \u2013 Dr. Daniela Correa",
     description: "Aesthetic surgery at IQ InterQuir\u00f3fanos, the only JCI-accredited clinic in Colombia dedicated exclusively to plastic surgery, on Medell\u00edn's 'Golden Mile.' Dr. Correa is an SCCP board-certified, RETHUS-verified plastic surgeon operating there.",
@@ -1738,6 +1800,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_aeff10c2ad",
     slug: "dr-alan-gonzalez-cali",
     name: "Dr. Alan Gonzalez Plastic Surgery",
     description: "Cali-based, double board-certified plastic surgeon with 18+ years and thousands of cosmetic cases, specializing in body contouring and BBL. Member of both the SCCP and the international society ISAPS.",
@@ -1766,6 +1829,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_c00282dae1",
     slug: "plastic-surgery-center-of-costa-rica",
     name: "Plastic Surgery Center of Costa Rica",
     description: "Cosmetic surgery practice led by board-certified plastic surgeon Dr. Rodrigo Araya, operating from the JCI-accredited Hospital CIMA complex in San Jose. Dr. Araya has 30+ years of experience and reports more than 6,000 surgeries across breast, body, and facial procedures.",
@@ -1795,6 +1859,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_be173568a1",
     slug: "rosenstock-lieberman-center",
     name: "Rosenstock-Lieberman Center for Cosmetic Surgery",
     description: "One of Costa Rica's longest-running cosmetic surgery centers, founded in 1985 by Drs. Noe Rosenstock and Clara Lieberman in San Jose's Paseo Colon district. A multi-surgeon practice (now including Dr. Rashi Rosenstock) offering breast, body, facial, and hair-restoration procedures with its own accredited surgical facility.",
@@ -1823,6 +1888,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_c9eeb5851d",
     slug: "dr-jorge-badilla-plastic-surgery",
     name: "Dr. Jorge Badilla Plastic Surgery",
     description: "Costa Rican board-certified plastic surgeon based in the Escazu / Santa Ana area, with international memberships in ASPS, ISAPS, and FILACP. Trained via a plastic and reconstructive surgery residency at Hospital Mexico (CCSS), with a focus on breast, body-contouring, and facial procedures.",
@@ -1852,6 +1918,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_9fdd1743f3",
     slug: "forme-clinic-prague",
     name: "Form\u00e9 Clinic",
     description: "Private plastic and aesthetic surgery clinic in central Prague founded in 2013, popular with international patients for all-inclusive packages. Surgeons are reported to have each completed more than 1,000 operations, with hundreds of verified patient reviews.",
@@ -1880,6 +1947,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_6e28451363",
     slug: "perfect-clinic-prague",
     name: "Perfect Clinic",
     description: "Plastic, cosmetic and aesthetic-dermatology clinic established in Prague in 2010, with additional sites in Brno and Liberec. The clinic states its doctors are certified by international bodies ISAPS and IPRAS and has years of experience with foreign patients.",
@@ -1908,6 +1976,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_70b2fe4996",
     slug: "abclinic-art-beauty-prague",
     name: "ABClinic Art & Beauty",
     description: "Prague plastic-surgery and aesthetic clinic led by Dr. Otakar Luc\u00e1k, an ISAPS and IPRAS member with nearly 30 years in plastic surgery. Billed as the first Czech clinic to combine surgery, dermatology, hair restoration and snoring therapy under one roof, and the exclusive DHI hair-transplant partner for Czechia and Slovakia.",
@@ -1936,6 +2005,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_15f0764820",
     slug: "premium-plastic-surgery-budapest",
     name: "Premium Plastic Surgery",
     description: "Budapest cosmetic and reconstructive surgery clinic founded in 2010 by Dr. Gergely Pataki, with a nine-surgeon team. Faculty presented research at the ISAPS 2024 World Congress.",
@@ -1964,6 +2034,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_5a2a515968",
     slug: "pasaret-klinika-budapest",
     name: "Pasar\u00e9t Klinika (Sz\u00e9ptest)",
     description: "Private plastic surgery clinic in the green Buda hills led by veteran surgeon Dr. Zsolt L\u00e1szl\u00f3, who has run a private aesthetic practice since 2002. Operates a single dedicated operating theatre and six-bed recovery suite.",
@@ -1991,6 +2062,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_63bc675a53",
     slug: "ansari-aesthetics-budapest",
     name: "Ansari Aesthetics (Dr. Jaberansari)",
     description: "Surgeon-led cosmetic surgery practice in central Budapest run by Dr. Mohammad T. Jaberansari, established 2014. Draws international patients from the US, Canada and UK for facial and body procedures.",
@@ -2019,6 +2091,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_402b353362",
     slug: "panama-plastic-surgery-picard-ami",
     name: "Panama Plastic Surgery (Dr. Luis Picard-Ami)",
     description: "Plastic surgery practice led by Dr. Luis Picard-Ami Jr., a triple-board-certified surgeon (American Board of Plastic Surgery, Royal College of Canada, Panama) with 30+ years of experience and McGill University training. Offers the full range of aesthetic body and facial procedures.",
@@ -2047,6 +2120,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_1cabcf36da",
     slug: "clinica-setton-panama",
     name: "Clinica Setton (Dr. Joseph Setton)",
     description: "Aesthetic plastic surgery clinic led by board-certified surgeon Dr. Joseph Setton inside Pacifica Salud / Hospital Punta Pacifica, the Johns Hopkins affiliate in Panama City. Known for natural-looking results and correction of prior-surgery complications.",
@@ -2074,6 +2148,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_1fd221d21f",
     slug: "jk-plastic-surgery-seoul",
     name: "JK Plastic Surgery Center",
     description: "Longstanding Gangnam clinic operating since 1998 and built around international-patient systems, with patients from over 100 countries. Widely cited as the first Korean plastic surgery clinic accredited under the Ministry of Health and Welfare's foreign-patient framework.",
@@ -2103,6 +2178,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_7a87eb4141",
     slug: "banobagi-plastic-surgery-seoul",
     name: "Banobagi Plastic Surgery",
     description: "Gangnam clinic founded in 2000 by surgeons trained at Seoul National University, known for detail-focused facial work and a dedicated rhinoplasty unit seeing 2,000+ patients per year. Assigns foreign patients a master counselor and interpreters across eight languages from inquiry through stitch removal.",
@@ -2132,6 +2208,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_eb4b25e1a7",
     slug: "id-hospital-seoul",
     name: "ID Hospital",
     description: "Hospital-scale Gangnam facility whose Facial Bone Contouring Center has operated since 2004, with 6,000+ facial contouring and ~3,000 two-jaw procedures reported. Specializes in structural facial surgery (V-line, jaw and cheekbone reduction, orthognathic) with multilingual coordinators for international patients.",
@@ -2161,6 +2238,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_291c9da807",
     slug: "view-plastic-surgery-seoul",
     name: "VIEW Plastic Surgery",
     description: "Gangnam clinic on Bongeunsa-ro housing 13+ Korean board-certified plastic surgeons plus in-house anesthesiologists in a dedicated 19-floor building. Offers full-spectrum cosmetic surgery with a multilingual site and VIP services including airport pickup and private recovery rooms.",
@@ -2188,6 +2266,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_d6ecfc8256",
     slug: "clinica-gomez-bravo-madrid",
     name: "Clinica Gomez Bravo",
     description: "A Madrid aesthetic surgery clinic in the Salamanca district led by Dr. Francisco G. Bravo, one of Spain's most internationally credentialed plastic surgeons. Focused on facial and body aesthetic surgery for an international patient base.",
@@ -2214,6 +2293,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_f350a8744d",
     slug: "instituto-de-benito-barcelona",
     name: "Instituto Javier de Benito",
     description: "A Barcelona plastic and aesthetic surgery institute with over 40 years of history, directed by Dr. Javier de Benito, a past ISAPS Vice-President and President-Elect. Internationally recognized, particularly for facial rejuvenation surgery.",
@@ -2240,6 +2320,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_78d0cee7b9",
     slug: "clinica-planas-barcelona",
     name: "Clinica Planas",
     description: "One of Europe's oldest and most respected plastic surgery institutions, founded in Barcelona in 1971. Now led by Dr. Jorge Planas, recognized among Spain's top doctors, with more than five decades of surgical and research heritage.",
@@ -2267,6 +2348,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_90ca96a52f",
     slug: "bumrungrad-international-plastic-surgery",
     name: "Bumrungrad International Hospital",
     description: "One of Asia's most recognized JCI-accredited hospitals, with a full Plastic Surgery & Cosmetic Center inside a flagship Bangkok facility that treats over a million patients from 190+ countries each year. Multilingual international wing handles everything from rhinoplasty to body contouring under hospital-grade safety standards.",
@@ -2294,6 +2376,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_966cec7c27",
     slug: "kamol-cosmetic-hospital",
     name: "Kamol Cosmetic Hospital",
     description: "JCI-accredited Bangkok cosmetic hospital founded in 2002 by Dr. Kamol Pansritum, internationally known as one of the world's leading centers for gender-affirmation surgery alongside a full cosmetic menu. Performs over 2,000 gender-affirming procedures annually with multilingual support in 10+ languages.",
@@ -2321,6 +2404,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_2a3e181ac4",
     slug: "yanhee-international-hospital",
     name: "Yanhee International Hospital",
     description: "Large JCI-accredited Bangkok hospital with 40+ years of experience and one of the highest cosmetic-surgery volumes in Thailand, serving patients from 162 countries. Offers the full range of facial and body cosmetic procedures plus gender-affirmation surgery, all under one roof with multilingual international staff.",
@@ -2348,6 +2432,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_6c3ac05166",
     slug: "phuket-plastic-surgery-institute",
     name: "Phuket Plastic Surgery Institute (PPSI)",
     description: "Dedicated aesthetic plastic-surgery institute at Bangkok Hospital Siriroj in Phuket, part of the BDMS hospital group (one of the world's largest). All PPSI surgeons are ISAPS members and board-registered in plastic and reconstructive surgery, combining island recovery with hospital-grade safety and English-speaking support.",
@@ -2375,6 +2460,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_e7c0a88318",
     slug: "dr-lucas-carneiro-sao-paulo",
     name: "Dr. Lucas Carneiro Plastic Surgery",
     description: "S\u00e3o Paulo plastic surgery practice led by Dr. Lucas Carneiro, an SBCP-member surgeon who operates at Hospital Israelita Albert Einstein, the JCI-accredited hospital ranked among the top private hospitals in Latin America. The practice runs a dedicated international-patient track with English- and Spanish-speaking coordination, telemedicine consults, and up to 12 months of post-operative follow-up.",
@@ -2401,6 +2487,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_5ff55a6dd5",
     slug: "dr-adriano-mesquita-sao-paulo",
     name: "Dr. Adriano Mesquita Cirurgia Pl\u00e1stica",
     description: "S\u00e3o Paulo practice in the upscale Itaim Bibi district led by Dr. Adriano Mesquita, a full SBCP member who operates at top private hospitals including Hospital Israelita Albert Einstein, Hospital S\u00edrio-Liban\u00eas, Hospital Vila Nova Star, and Hospital Alem\u00e3o Oswaldo Cruz. Offers facial, breast, and body surgery alongside minimally invasive energy-based contouring, with an English-language site and WhatsApp scheduling.",
@@ -2427,6 +2514,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_fe44d033b1",
     slug: "casal-plastica-leite-rio",
     name: "Casal Pl\u00e1stica (Dr. Eduardo Porto Leite & Dr. Brunna Leite)",
     description: "Rio de Janeiro practice in Barra da Tijuca run by Dr. Eduardo Porto Leite and Dr. Brunna Leite, a married team of SBCP board-certified plastic surgeons who have operated together for over a decade. The two-surgeon model is built around combined procedures performed in a single, shorter session, with a dedicated international-patient page aimed primarily at US patients.",
@@ -2453,6 +2541,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_fea3d88489",
     slug: "dr-walter-zamarian-jr-londrina",
     name: "Dr. Walter Zamarian Jr. Plastic Surgery",
     description: "Long-established Londrina (Paran\u00e1) practice led by Dr. Walter Zamarian Jr., a full SBCP member and ASPS member with over 20 years of experience and a reported 8,000+ surgeries. An alumnus of the Professor Ivo Pitanguy school, he focuses on facial work - deep-plane facelift with fat grafting, structured rhinoplasty, and blepharoplasty - and treats a meaningful share of out-of-city and international patients.",
@@ -2481,6 +2570,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_6f2c6431c5",
     slug: "dr-geraldo-capuchinho-belo-horizonte",
     name: "Dr. Geraldo Capuchinho Cirurgia Pl\u00e1stica",
     description: "Belo Horizonte (Minas Gerais) practice led by Dr. Geraldo Capuchinho, a plastic and cranio-maxillofacial surgeon and member of the SBCP, ISAPS, and the Brazilian Rhinoplasty Society (SBR). Trained at Santa Casa de Belo Horizonte and Hospital das Cl\u00ednicas USP, with a clinical fellowship at the University of Basel, he specializes in structured, functional, and aesthetic rhinoplasty and facial procedures.",
@@ -2507,6 +2597,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_26a566f1e3",
     slug: "dr-rodrigo-rosique-ribeirao-preto",
     name: "Rosique Plastic Surgery (Dr. Rodrigo Rosique)",
     description: "Ribeir\u00e3o Preto (S\u00e3o Paulo state) practice led by Dr. Rodrigo Rosique, a titular member of the SBCP with a PhD and post-doctorate from the University of S\u00e3o Paulo (USP). An internationally recognized name in revision body contouring and liposculpture - twice awarded the ASPS journal's Best Paper Award - the practice reports patients from more than 30 countries and runs an English-language international site.",
@@ -2533,6 +2624,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_96e85af758",
     slug: "premium-care-plastic-surgery-cartagena",
     name: "Premium Care Plastic Surgery (Dr. Alex Campbell)",
     description: "Cartagena plastic-surgery center co-founded in 2012 by Dr. Alex Campbell and Dr. Carolina Restrepo, oriented entirely to international patients. Dr. Campbell is double board-certified (American Board of Plastic Surgery and the Colombian Society of Plastic Surgery, SCCP), US-trained with general-surgery training at USC. Known for mommy makeovers, body contouring, and luxury all-inclusive recovery suites.",
@@ -2561,6 +2653,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_3f71b77eca",
     slug: "dr-lina-triana-cali",
     name: "Dr. Lina Triana \u2013 Aesthetic Plastic Surgery Cali",
     description: "Cali aesthetic-surgery practice led by Dr. Lina Triana, a globally recognized plastic surgeon who served as President of ISAPS (2022-2024) and President of the Colombian Society of Plastic Surgery (SCCP, 2014-2015). An International Member of the American Society for Aesthetic Plastic Surgery (ASAPS) with a dedicated international-patient program.",
@@ -2589,6 +2682,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_2d518f6cf6",
     slug: "dr-david-delgado-medellin",
     name: "Dr. David Delgado \u2013 Plastic Surgery Medell\u00edn",
     description: "Medell\u00edn plastic surgeon Dr. David Delgado, in practice 15+ years, operating from the Torre M\u00e9dica Oviedo in El Poblado. Member of the Colombian Society of Plastic Surgery (SCCP) and the American Society for Aesthetic Plastic Surgery (ASAPS), with a remote-assessment service for international patients.",
@@ -2617,6 +2711,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_8b565c44f4",
     slug: "dr-johnatan-de-guevara-bogota",
     name: "Dr. Johnatan de Guevara \u2013 Plastic Surgery Bogot\u00e1",
     description: "Bogot\u00e1 plastic surgeon Dr. Johnatan de Guevara, an active member of the Colombian Society of Plastic, Aesthetic and Reconstructive Surgery (SCCP) with 5,000+ procedures performed. Uses VASER liposculpture and offers all-inclusive surgeries with post-op support for international patients.",
@@ -2645,6 +2740,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_8993d1ed35",
     slug: "dr-cesar-barrera-bogota",
     name: "Dr. C\u00e9sar Barrera \u2013 L'essence Clinique Bogot\u00e1",
     description: "Bogot\u00e1 plastic surgeon Dr. C\u00e9sar Barrera, 16 years in practice and founder of L'essence Clinique (2015). Member of the SCCP, the Ibero-Latin American Federation of Plastic Surgery (FILACP), IPRAS, and the American Society of Plastic Surgeons (ASPS). Reports 8,000+ patients and serves international patients in English.",
@@ -2673,6 +2769,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_d963267037",
     slug: "dr-diego-franco-pereira",
     name: "Dr. Diego Franco \u2013 Plastic Surgery Pereira",
     description: "Board-certified plastic surgeon Dr. Diego Franco, based in Pereira (Colombia's coffee region) with additional clinics in Medell\u00edn and Manizales. 15+ years of experience with advanced training in Colombia, Argentina, and Brazil. Bilingual staff and a dedicated international-patient pathway.",
@@ -2701,6 +2798,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_9c199b7708",
     slug: "dr-carolina-restrepo-cartagena",
     name: "Dr. Carolina Restrepo \u2013 Premium Care Cartagena",
     description: "Cartagena plastic surgeon Dr. Carolina Restrepo, co-founder of Premium Care Plastic Surgery and a board-certified, SCCP member. Operates the international-patient-focused Premium Care center in Bocagrande with concierge service and on-site recovery suites; known for breast and female aesthetic procedures.",
@@ -2729,6 +2827,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_dde91f5295",
     slug: "dr-victor-urzola-plastic-surgery",
     name: "Dr. Victor Urzola Plastic Surgery",
     description: "Escazu-based reconstructive and aesthetic plastic surgeon who is a past President of Costa Rica's national plastic surgery board (ACCPRE) and an active ISAPS and ASAPS member. Dr. Urzola completed his specialty at the University of Milan (Italy) and microsurgery training at Henri Poincare University (France), and is known for rhinoplasty, facial work, body contouring, and breast-implant explant cases.",
@@ -2756,6 +2855,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_21440d66ce",
     slug: "dr-oscar-suarez-plastic-surgery",
     name: "Dr. Oscar Suarez Plastic Surgery",
     description: "Costa Rican board-certified plastic surgeon with more than 30 years of experience, practicing at Avenida Escazu after founding and operating from Hospital CIMA from 2000 to 2018. Dr. Oscar Suarez Ramos is a member of ASAPS, the Costa Rican plastic surgery association (ACCPRE), FILACP, and IPRAS, with a focus on body contouring, facial rejuvenation, and breast surgery.",
@@ -2783,6 +2883,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_2b0054d7ad",
     slug: "universal-plastic-surgery-costa-rica",
     name: "Universal Plastic Surgery (Centeno)",
     description: "Long-running San Jose plastic surgery practice led by Dr. Carlos A. Centeno (40+ years of plastic, reconstructive and micro-surgery experience) and Dr. Madelein Centeno, a member of the American Society of Plastic Surgeons who trained in supermicrosurgery under Dr. Isao Koshima at Tokyo University Hospital. The practice covers facial, breast, and body-contouring procedures.",
@@ -2810,6 +2911,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_a92ba7cf36",
     slug: "costa-rica-center-of-plastic-surgery",
     name: "Costa Rica Center of Plastic Surgery (Dr. Luis Pacheco)",
     description: "San Jose cosmetic surgery practice led by Dr. Luis Pacheco, M.D., offering a full menu of facial, breast, and body-contouring procedures for international patients. The practice states that all surgeries are performed in major JCI-accredited hospitals in San Jose.",
@@ -2836,6 +2938,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_9e078d2832",
     slug: "premier-plastic-surgery-costa-rica",
     name: "Premier Plastic Surgery of Costa Rica (Dr. Jose Cohen)",
     description: "Costa Rica cosmetic surgery practice led by Dr. Jose Cohen, serving international patients with breast, body, and facial procedures. The practice states that surgeries are performed in JCI-accredited hospitals and provides free same-day price quotes via an online medical questionnaire.",
@@ -2862,6 +2965,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_adfb42cfb5",
     slug: "medical-group-of-costa-rica",
     name: "Medical Group of Costa Rica",
     description: "San Jose medical-tourism group that coordinates cosmetic and plastic surgery for international patients, packaging surgeon, hospital, and aftercare into all-inclusive quotes. The group works with board-certified Costa Rican plastic surgeons and uses accredited San Jose hospitals.",
@@ -2888,6 +2992,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_fec619c4ba",
     slug: "wonjin-plastic-surgery-seoul",
     name: "Wonjin Plastic Surgery",
     description: "One of Korea's largest single-brand plastic surgery hospitals, occupying multiple floors of the Pagoda Tower in Seocho-gu, Seoul. Offers a full cosmetic menu (eyes, nose, facial contouring, breast, body, anti-aging) and runs a dedicated international patient department with interpretation across roughly ten languages, online photo consultations, airport pickup, and accommodation assistance.",
@@ -2914,6 +3019,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_f09629c184",
     slug: "ab-plastic-surgery-seoul",
     name: "AB Plastic Surgery",
     description: "Gangnam clinic near Gangnam Station (Block 77 Building, Seocho-daero) offering eyes, nose, facial contouring, breast, body, anti-aging and non-surgical dermatology. Carries a Korean government Accreditation as a Medical Institution for International Patients (2025-2029) under the KAHF framework and provides dedicated in-house interpreters and English-language consultations.",
@@ -2940,6 +3046,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_dfa7091487",
     slug: "the-line-plastic-surgery-seoul",
     name: "The Line Plastic Surgery",
     description: "Boutique cosmetic surgery clinic on Garosu-gil in Sinsa-dong, Gangnam, Seoul, led by surgeons with three decades of experience. Offers eyes, nose, facial contouring, breast, body and anti-aging work with an emphasis on natural results and revision cases, plus international-patient messaging support via WhatsApp, WeChat and LINE.",
@@ -2966,6 +3073,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_442a519e93",
     slug: "girin-plastic-surgery-seoul",
     name: "Girin Plastic Surgery",
     description: "Gangnam-based plastic surgery and dermatology clinic offering a broad menu \u2014 eyes, nose, facial contouring, breast, body, fat grafting, hair transplant and skin treatments. Provides international-patient care with interpretation in eight-plus languages, professional coordinators, airport pickup and accommodation arrangements, and is a member of the Korea International Medical Association (KIMA).",
@@ -2992,6 +3100,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_3a1ce1d378",
     slug: "hyundai-aesthetics-plastic-surgery-seoul",
     name: "Hyundai Aesthetics Plastic Surgery",
     description: "Gangnam clinic in the Sooil Building on Dosan-daero (Nonhyeon-dong) offering eye surgery, canthoplasty, rhinoplasty, facial and body contouring, and medical skin care. Provides foreign-patient support through an English hotline plus WhatsApp, Kakao, WeChat and LINE, with site content in eight languages.",
@@ -3018,6 +3127,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_7dfa198742",
     slug: "shes-plastic-surgery-busan",
     name: "SHE'S Plastic Surgery",
     description: "Busan-based plastic surgery clinic operating since 2000 on Gwangbok-ro, known for eye surgery and facial wrinkle/anti-aging work. Recognized as a leading institution for attracting foreign patients in Busan (2022-2025) and designated an excellent foreigner-attraction institution by the Ministry of Justice, with on-site interpreters in several languages and transparent pricing identical for foreign and Korean patients.",
@@ -3044,6 +3154,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_64b444c5ea",
     slug: "samitivej-sukhumvit-plastic-surgery",
     name: "Samitivej Sukhumvit Hospital \u2014 Plastic & Esthetic Surgery Institute",
     description: "JCI-accredited Bangkok private hospital (accredited since 2007) whose Plastic & Esthetic Surgery Institute is staffed by board-certified plastic and reconstructive surgeons. Offers the full cosmetic menu \u2014 facial, breast, and body contouring \u2014 under full-hospital infrastructure with dedicated international patient coordinators.",
@@ -3072,6 +3183,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_d90d177955",
     slug: "vejthani-hospital-plastic-surgery",
     name: "Vejthani Hospital \u2014 Plastic Surgery Center",
     description: "JCI-accredited 263-bed private tertiary hospital in Bangkok's Bang Kapi district (established 1994), serving international patients from 40+ countries. Its Plastic Surgery Center is staffed by surgeons certified by the Medical Council of Thailand and, in some cases, the American Board, offering a full facial, breast, and body cosmetic menu inside a full-hospital setting.",
@@ -3100,6 +3212,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_3742c411f8",
     slug: "rattinan-medical-center-bangkok",
     name: "Rattinan Medical Center",
     description: "Bangkok cosmetic-surgery clinic established in 1999 and one of the few AACI-accredited (American Accreditation Commission International) ambulatory plastic-surgery facilities in the Asia-Pacific region. Built around board-certified plastic and bariatric surgeons, with ISO 14644-1 certified clean-room operating theatres and a focus on body contouring and liposuction.",
@@ -3128,6 +3241,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_1fac533f20",
     slug: "asia-cosmetic-hospital",
     name: "Asia Cosmetic Hospital",
     description: "Dedicated cosmetic-surgery hospital in the Bangkok metropolitan area (Nonthaburi), founded in 2012 and led by plastic surgeon Dr. Tanongsak Panyawirunroj. Operations are run under anesthesiologist and cardiologist supervision, with a focus on facial cosmetic surgery, body contouring, and gender-affirmation procedures for international patients.",
@@ -3156,6 +3270,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_c619ac50f0",
     slug: "phi-beauty-clinic-phuket",
     name: "Phi Beauty Clinic",
     description: "Standalone cosmetic-surgery clinic in Phuket Town whose surgeons are members of the International Society of Aesthetic Plastic Surgery (ISAPS) and the International Society of Hair Restoration Surgery (ISHRS), and registered with the Thai Medical Council. Focuses on breast surgery, rhinoplasty, eye surgery, and liposuction using endoscopic and VASER techniques, distinct from the hospital-based PPSI on the island.",
@@ -3184,6 +3299,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_cf45fc3447",
     slug: "masterpiece-hospital-bangkok",
     name: "Masterpiece Hospital",
     description: "Dedicated cosmetic-surgery hospital in Bangkok's Dusit district offering a full surgical menu \u2014 rhinoplasty, eye surgery, facial contouring, breast, body, and hair restoration. A Thai Ministry of Public Health-licensed cosmetic facility with English-language international support and surgeons experienced in Asian facial aesthetics.",
@@ -3212,6 +3328,7 @@ export const plasticSurgeryProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_801750f5be",
     slug: "nida-esth-cosmetic-surgery-bangkok",
     name: "Nida Esth' Cosmetic Surgery Center",
     description: "Long-running cosmetic-surgery and aesthetics center in Siam Square, central Bangkok, founded in 1999. Led by board-certified plastic surgeon Dr. Piya Rungruxsirivorn and American Board-certified dermatologist Dr. Sunida Yuthayotin, it offers facial, breast, and body cosmetic surgery alongside laser and skin work, with established international patient support.",
@@ -3239,9 +3356,9 @@ export const plasticSurgeryProviders: Provider[] = [
     featured: false,
     lastVerified: "2026-06-11",
   },
-  {"slug": "hospital-cer-plastic-surgery-tijuana", "name": "Hospital CER (Plastic Surgery)", "description": "Standalone surgical hospital in Tijuana's Zona Rio offering board-certified plastic and reconstructive surgery alongside bariatrics. Plastic surgeons include Dr. Luis Suarez and Dr. Elsy Montufar, operating in a hospital with ICU and dedicated anesthesiology.", "category": "plastic_surgery", "services": ["Tummy tuck (abdominoplasty)", "Brazilian butt lift", "Breast augmentation and lift", "Mommy makeover", "Liposuction / Lipo 360", "Rhinoplasty", "Facial rejuvenation", "Post-bariatric body contouring"], "pricingDisplay": "Quote on consultation", "pricingNotes": "Official site advertises savings up to 70% vs US/Canada but does not publish per-procedure prices; quote provided via virtual consultation.", "pricingComparison": "advertised up to 70% below US/Canada prices", "savingsPercent": 70, "deliveryModel": "in_person_destination", "geographicCoverage": ["Mexico"], "destinationCountry": "Mexico", "destinationCity": "Tijuana", "typicalTripLength": "7-10 days", "includesInPackage": ["Pre-op evaluation", "Surgery", "Hospital recovery with ICU access", "Post-op monitoring"], "recoveryNotes": "Body-contouring cases typically require a week or more of local recovery before flying.", "accreditations": ["Board-certified plastic surgeons (per official site)"], "url": "https://hospitalcer.com/", "referralType": "direct_link", "ourTake": "Hospital CER is a dedicated surgical hospital - not a clinic renting OR time - with ICU, anesthesiology, and board-certified plastic surgeons like Dr. Luis Suarez. That infrastructure matters for higher-risk body-contouring and post-bariatric cases. Note: as of mid-2026 the hospital is pursuing, but does not yet hold, JCI accreditation, so we do not claim it. Verify surgeon credentials directly for your specific procedure.", "bestFor": ["Body contouring", "Post-bariatric plastic surgery", "Want a full hospital with ICU", "Near San Diego border"], "pros": ["Standalone hospital with ICU and anesthesiology", "Board-certified plastic surgeons", "Zona Rio, minutes from San Diego", "Combines plastic and bariatric expertise"], "cons": ["No published per-procedure pricing", "JCI accreditation not yet held (in progress)", "High-volume facility"], "featured": false, "lastVerified": "2026-06-25"},
-  {"slug": "cancun-plastic-surgery-center", "name": "Cancun Plastic Surgery Center", "description": "Cancun cosmetic surgery practice led by Dr. Victor Samano, a member of the American Society of Plastic Surgeons and Mexico's Consejo Mexicano de Cirugia Plastica. Offers body, breast, and facial procedures for US and Canadian patients combining surgery with recovery in Cancun.", "category": "plastic_surgery", "services": ["Liposuction", "Brazilian butt lift", "Breast augmentation / lift / reduction", "Tummy tuck", "Mommy makeover", "Rhinoplasty", "Facelift", "Blepharoplasty", "Gynecomastia", "Post-bariatric surgery"], "pricingDisplay": "Quote on consultation", "pricingNotes": "Official site does not publish per-procedure prices; quote provided on consultation.", "pricingComparison": "Cancun cosmetic surgery commonly cited 50-65% below US prices (third-party estimate)", "deliveryModel": "in_person_destination", "geographicCoverage": ["Mexico"], "destinationCountry": "Mexico", "destinationCity": "Cancun", "typicalTripLength": "7-10 days", "includesInPackage": ["Pre-op consultation", "Surgery", "Post-op follow-up"], "recoveryNotes": "Cancun recovery is popular but flying after body surgery requires a week-plus; confirm timeline with surgeon.", "accreditations": ["Surgeon: member of American Society of Plastic Surgeons (ASPS)", "Surgeon: Consejo Mexicano de Cirugia Plastica", "Member of ISAPS"], "yearsInBusiness": 20, "url": "https://cancunplasticsurgerycenter.com/en/", "referralType": "direct_link", "ourTake": "Cancun Plastic Surgery Center pairs a board-certified, ASPS-affiliated surgeon with the draw of recovering on the Riviera Maya. Dr. Samano's ASPS and Mexican council memberships are verifiable credentials, not just badges. Best for cosmetic body and breast work where patients want a vacation-recovery setting rather than a border-town turnaround.", "bestFor": ["Cosmetic body and breast surgery", "Vacation-plus-recovery setting", "Want ASPS-affiliated surgeon", "Flying in from anywhere in US"], "pros": ["ASPS-member surgeon (verified)", "Full cosmetic procedure menu", "Cancun recovery setting", "20+ years operating"], "cons": ["No published pricing", "Flight required (no border drive)", "Premium destination positioning"], "featured": false, "lastVerified": "2026-06-25"},
-  {"slug": "estetik-international", "name": "Estetik International", "description": "Plastic and cosmetic surgery group founded by Dr. Bülent Cihantimur, with medical centers in Istanbul and Bursa. Offers rhinoplasty, breast, body, and facial surgery alongside medical aesthetics, with ISO certification and Health Türkiye authorization.", "category": "plastic_surgery", "services": ["Rhinoplasty", "Breast augmentation", "Liposuction", "Brazilian butt lift", "Facelift", "Blepharoplasty", "Botox and fillers", "Hair transplant"], "pricingDisplay": "From ~€3,600", "pricingNotes": "Third-party listings cite procedures starting around €3,600; clinic does not publish fixed prices and quotes per case. Estimate June 2026.", "pricingComparison": "vs $8,000-15,000+ in US for comparable procedures", "savingsPercent": 60, "deliveryModel": "in_person_destination", "geographicCoverage": ["Turkey"], "destinationCountry": "Turkey", "destinationCity": "Istanbul", "typicalTripLength": "7-10 days", "includesInPackage": ["Consultation", "Surgery", "Post-op follow-up"], "recoveryNotes": "Recovery varies by procedure; surgical cases generally require a longer stay and post-op checks before flying.", "accreditations": ["ISO certified", "Health Türkiye authorization", "TÜRSAB certificate", "ISAPS membership"], "url": "https://www.estetikinternational.com", "referralType": "direct_link", "ourTake": "Estetik International is one of Turkey's larger surgeon-founded aesthetic groups, spanning Istanbul and Bursa with a broad surgical menu under Dr. Bülent Cihantimur. ISO certification and Health Türkiye authorization back it; pricing is quote-based, so get a written surgical plan and surgeon name.", "bestFor": ["Plastic and cosmetic surgery", "Surgeon-founded group", "Facial and body procedures", "Established brand"], "pros": ["Founded by named plastic surgeon", "Istanbul + Bursa centers", "ISO certified", "Health Türkiye authorized", "Broad surgical menu"], "cons": ["No fixed published pricing", "Surgical recovery needs longer stay", "Limited post-op follow-up window abroad", "Confirm operating surgeon"], "featured": false, "lastVerified": "2026-06-25"},
+  {"id": "c_d31b19fd14", "slug": "hospital-cer-plastic-surgery-tijuana", "name": "Hospital CER (Plastic Surgery)", "description": "Standalone surgical hospital in Tijuana's Zona Rio offering board-certified plastic and reconstructive surgery alongside bariatrics. Plastic surgeons include Dr. Luis Suarez and Dr. Elsy Montufar, operating in a hospital with ICU and dedicated anesthesiology.", "category": "plastic_surgery", "services": ["Tummy tuck (abdominoplasty)", "Brazilian butt lift", "Breast augmentation and lift", "Mommy makeover", "Liposuction / Lipo 360", "Rhinoplasty", "Facial rejuvenation", "Post-bariatric body contouring"], "pricingDisplay": "Quote on consultation", "pricingNotes": "Official site advertises savings up to 70% vs US/Canada but does not publish per-procedure prices; quote provided via virtual consultation.", "pricingComparison": "advertised up to 70% below US/Canada prices", "savingsPercent": 70, "deliveryModel": "in_person_destination", "geographicCoverage": ["Mexico"], "destinationCountry": "Mexico", "destinationCity": "Tijuana", "typicalTripLength": "7-10 days", "includesInPackage": ["Pre-op evaluation", "Surgery", "Hospital recovery with ICU access", "Post-op monitoring"], "recoveryNotes": "Body-contouring cases typically require a week or more of local recovery before flying.", "accreditations": ["Board-certified plastic surgeons (per official site)"], "url": "https://hospitalcer.com/", "referralType": "direct_link", "ourTake": "Hospital CER is a dedicated surgical hospital - not a clinic renting OR time - with ICU, anesthesiology, and board-certified plastic surgeons like Dr. Luis Suarez. That infrastructure matters for higher-risk body-contouring and post-bariatric cases. Note: as of mid-2026 the hospital is pursuing, but does not yet hold, JCI accreditation, so we do not claim it. Verify surgeon credentials directly for your specific procedure.", "bestFor": ["Body contouring", "Post-bariatric plastic surgery", "Want a full hospital with ICU", "Near San Diego border"], "pros": ["Standalone hospital with ICU and anesthesiology", "Board-certified plastic surgeons", "Zona Rio, minutes from San Diego", "Combines plastic and bariatric expertise"], "cons": ["No published per-procedure pricing", "JCI accreditation not yet held (in progress)", "High-volume facility"], "featured": false, "lastVerified": "2026-06-25"},
+  {"id": "c_a08b568a87", "slug": "cancun-plastic-surgery-center", "name": "Cancun Plastic Surgery Center", "description": "Cancun cosmetic surgery practice led by Dr. Victor Samano, a member of the American Society of Plastic Surgeons and Mexico's Consejo Mexicano de Cirugia Plastica. Offers body, breast, and facial procedures for US and Canadian patients combining surgery with recovery in Cancun.", "category": "plastic_surgery", "services": ["Liposuction", "Brazilian butt lift", "Breast augmentation / lift / reduction", "Tummy tuck", "Mommy makeover", "Rhinoplasty", "Facelift", "Blepharoplasty", "Gynecomastia", "Post-bariatric surgery"], "pricingDisplay": "Quote on consultation", "pricingNotes": "Official site does not publish per-procedure prices; quote provided on consultation.", "pricingComparison": "Cancun cosmetic surgery commonly cited 50-65% below US prices (third-party estimate)", "deliveryModel": "in_person_destination", "geographicCoverage": ["Mexico"], "destinationCountry": "Mexico", "destinationCity": "Cancun", "typicalTripLength": "7-10 days", "includesInPackage": ["Pre-op consultation", "Surgery", "Post-op follow-up"], "recoveryNotes": "Cancun recovery is popular but flying after body surgery requires a week-plus; confirm timeline with surgeon.", "accreditations": ["Surgeon: member of American Society of Plastic Surgeons (ASPS)", "Surgeon: Consejo Mexicano de Cirugia Plastica", "Member of ISAPS"], "yearsInBusiness": 20, "url": "https://cancunplasticsurgerycenter.com/en/", "referralType": "direct_link", "ourTake": "Cancun Plastic Surgery Center pairs a board-certified, ASPS-affiliated surgeon with the draw of recovering on the Riviera Maya. Dr. Samano's ASPS and Mexican council memberships are verifiable credentials, not just badges. Best for cosmetic body and breast work where patients want a vacation-recovery setting rather than a border-town turnaround.", "bestFor": ["Cosmetic body and breast surgery", "Vacation-plus-recovery setting", "Want ASPS-affiliated surgeon", "Flying in from anywhere in US"], "pros": ["ASPS-member surgeon (verified)", "Full cosmetic procedure menu", "Cancun recovery setting", "20+ years operating"], "cons": ["No published pricing", "Flight required (no border drive)", "Premium destination positioning"], "featured": false, "lastVerified": "2026-06-25"},
+  {"id": "c_a3011d1616", "slug": "estetik-international", "name": "Estetik International", "description": "Plastic and cosmetic surgery group founded by Dr. Bülent Cihantimur, with medical centers in Istanbul and Bursa. Offers rhinoplasty, breast, body, and facial surgery alongside medical aesthetics, with ISO certification and Health Türkiye authorization.", "category": "plastic_surgery", "services": ["Rhinoplasty", "Breast augmentation", "Liposuction", "Brazilian butt lift", "Facelift", "Blepharoplasty", "Botox and fillers", "Hair transplant"], "pricingDisplay": "From ~€3,600", "pricingNotes": "Third-party listings cite procedures starting around €3,600; clinic does not publish fixed prices and quotes per case. Estimate June 2026.", "pricingComparison": "vs $8,000-15,000+ in US for comparable procedures", "savingsPercent": 60, "deliveryModel": "in_person_destination", "geographicCoverage": ["Turkey"], "destinationCountry": "Turkey", "destinationCity": "Istanbul", "typicalTripLength": "7-10 days", "includesInPackage": ["Consultation", "Surgery", "Post-op follow-up"], "recoveryNotes": "Recovery varies by procedure; surgical cases generally require a longer stay and post-op checks before flying.", "accreditations": ["ISO certified", "Health Türkiye authorization", "TÜRSAB certificate", "ISAPS membership"], "url": "https://www.estetikinternational.com", "referralType": "direct_link", "ourTake": "Estetik International is one of Turkey's larger surgeon-founded aesthetic groups, spanning Istanbul and Bursa with a broad surgical menu under Dr. Bülent Cihantimur. ISO certification and Health Türkiye authorization back it; pricing is quote-based, so get a written surgical plan and surgeon name.", "bestFor": ["Plastic and cosmetic surgery", "Surgeon-founded group", "Facial and body procedures", "Established brand"], "pros": ["Founded by named plastic surgeon", "Istanbul + Bursa centers", "ISO certified", "Health Türkiye authorized", "Broad surgical menu"], "cons": ["No fixed published pricing", "Surgical recovery needs longer stay", "Limited post-op follow-up window abroad", "Confirm operating surgeon"], "featured": false, "lastVerified": "2026-06-25"},
 ];
 
 // =============================================================================
@@ -3251,6 +3368,7 @@ export const plasticSurgeryProviders: Provider[] = [
 export const fertilityProviders: Provider[] = [
   // Czech Republic
   {
+    id: 'c_c4501f395b',
     slug: 'reprofit-international',
     name: 'Reprofit International',
     description: 'One of Europe\'s most advanced fertility centers. First specialist donor-egg IVF center in Czech Republic.',
@@ -3278,6 +3396,7 @@ export const fertilityProviders: Provider[] = [
     lastVerified: '2024-12-01',
   },
   {
+    id: 'c_27eb20ae7d',
     slug: 'sanatorium-helios',
     name: 'Sanatorium HELIOS',
     description: '25 years experience in infertility treatment. Partners with Genea (Australian fertility research leader).',
@@ -3306,6 +3425,7 @@ export const fertilityProviders: Provider[] = [
   },
   // Spain
   {
+    id: 'c_97de157438',
     slug: 'clinica-tambre',
     name: 'Clinica Tambre',
     description: 'One of the oldest fertility units in Spain with high success rates. Locations in Madrid and Alicante.',
@@ -3332,6 +3452,7 @@ export const fertilityProviders: Provider[] = [
     lastVerified: '2024-12-01',
   },
   {
+    id: 'c_5f33fb011a',
     slug: 'barcelona-ivf',
     name: 'Centro de Fertilidad Barcelona',
     description: 'Affordable IVF in Barcelona with strong support for international patients.',
@@ -3357,6 +3478,7 @@ export const fertilityProviders: Provider[] = [
     lastVerified: '2024-12-01',
   },
   {
+    id: "c_b7f0f4fa61",
     slug: "prague-fertility-centre",
     name: "Prague Fertility Centre",
     description: "Established Prague IVF clinic running its own anonymous egg-donation programme with an English-speaking coordinator for the ~35 countries it draws patients from. Reports up to 90% of couples helped within four cycles thanks to tailored protocols and an in-house lab.",
@@ -3384,6 +3506,7 @@ export const fertilityProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_4ae0c48ca2",
     slug: "reprofit-international-brno",
     name: "Reprofit International",
     description: "One of Central Europe's largest fertility groups, founded in Brno in 2006 as the first specialist donor-egg IVF centre in the Czech Republic. Reports more than 28,000 children born and treats over 3,500 couples a year across clinics in Czechia and Slovakia.",
@@ -3413,6 +3536,7 @@ export const fertilityProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_e2478b1bff",
     slug: "ivf-cube-prague",
     name: "IVF Cube",
     description: "Prague fertility clinic established in 2011 and noted as one of the Czech assisted-reproduction centres holding ESHRE ART Centre Certification. Offers a full IVF, egg-donation and genetic-testing programme with multilingual coordination for international patients.",
@@ -3440,6 +3564,7 @@ export const fertilityProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_94ce1750c3",
     slug: "panama-fertility",
     name: "Panama Fertility",
     description: "Long-established IVF and reproductive-medicine center in Panama City's Punta Pacifica medical district, reporting 35 years of experience and over 10,000 births. Physicians are trained and licensed to practice in the US, and the clinic runs the region's first donor egg bank.",
@@ -3469,6 +3594,7 @@ export const fertilityProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_ab1f2bb442",
     slug: "instituto-bernabeu-alicante",
     name: "Instituto Bernabeu",
     description: "One of Spain's largest and most established fertility centers, operating since 1985 with its flagship clinic in Alicante. Known for audited success-rate statistics and a research-driven approach, including a dedicated AI unit for embryo selection.",
@@ -3496,6 +3622,7 @@ export const fertilityProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_97de157438",
     slug: "clinica-tambre-madrid",
     name: "Clinica Tambre",
     description: "A pioneering Madrid fertility clinic with roughly five decades of experience and a second location in Alicante. One of the oldest assisted-reproduction units in Spain, with strong programs for single women and same-sex couples.",
@@ -3523,6 +3650,7 @@ export const fertilityProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_de4cab203f",
     slug: "institut-marques-barcelona",
     name: "Institut Marques",
     description: "A prestigious Barcelona fertility center with a multi-generational reproductive-medicine heritage and clinics across Spain and Italy. Internationally recognized for innovation and high reported donor-egg success rates.",
@@ -3550,6 +3678,7 @@ export const fertilityProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_4bc04a74c1",
     slug: "reproclinic-barcelona",
     name: "Reproclinic",
     description: "A Barcelona fertility clinic with a holistic, patient-centered model and strong international support. Named Best Holistic Clinic (2025) by the European Fertility Society and certified to recognized lab-quality standards.",
@@ -3577,6 +3706,7 @@ export const fertilityProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_207fa6ce51",
     slug: "jetanin-institute-assisted-reproduction",
     name: "Jetanin Institute for Assisted Reproduction",
     description: "Bangkok's first complete assisted-conception center and the first IVF clinic in Southeast Asia to earn both JCI and RTAC accreditation. Treats medical tourists from 120+ countries and pioneered TESE/ICSI for male infertility in the region.",
@@ -3604,6 +3734,7 @@ export const fertilityProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_43c08e7ef6",
     slug: "safe-fertility-group",
     name: "SAFE Fertility Group",
     description: "Bangkok fertility center that was the first clinic in Thailand to earn RTAC accreditation from the Fertility Society of Australia and New Zealand. Offers a comprehensive IVF, ICSI, and genetic-testing menu with multilingual personal assistants for overseas patients.",
@@ -3631,6 +3762,7 @@ export const fertilityProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_b6afa17a66",
     slug: "prime-fertility-center",
     name: "Prime Fertility Center",
     description: "Bangkok fertility clinic frequently cited among the city's leading IVF centers, treating roughly 4,000 international patients per year. Specializes in advanced IVF, egg cryopreservation, genetic testing, and PRP ovarian rejuvenation.",
@@ -3658,6 +3790,7 @@ export const fertilityProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_e736978c1e",
     slug: "gennet-prague",
     name: "GENNET",
     description: "A Prague-based fertility and medical-genetics group founded in 1996, with clinics in central Prague plus Liberec and \u00dast\u00ed nad Labem. It combines an assisted-reproduction centre with its own in-house genetics and immunology laboratory and runs roughly 1,500 IVF cycles a year. Specialised in egg-donation IVF since 2008 with an extensive screened donor database.",
@@ -3686,6 +3819,7 @@ export const fertilityProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_284ba6bce9",
     slug: "unica-clinic-prague-brno",
     name: "UNICA",
     description: "A reproductive-medicine group with clinics in Prague and Brno, treating infertile patients since 1994 and now with roughly three decades of operation. Known for treating complex cases (women over 40, recurrent miscarriage, repeated implantation failure) and for egg-donation outcome guarantees. Coordinators support patients in eight languages.",
@@ -3713,6 +3847,7 @@ export const fertilityProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_f76415e18d",
     slug: "pronatal-prague",
     name: "PRONATAL",
     description: "One of the Czech Republic's oldest and largest fertility networks, established in Prague in 1996, with seven clinics across Czechia (Prague, Kol\u00edn, Teplice, Karlovy Vary, \u010cesk\u00e9 Bud\u011bjovice, Ostrava) and additional centres in the Balkans. Reports tens of thousands of children born and runs an established anonymous egg-donation programme with no waiting list.",
@@ -3741,6 +3876,7 @@ export const fertilityProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_d89a314228",
     slug: "gynem-prague",
     name: "Gynem",
     description: "A family-run IVF clinic in Prague 8 founded by Dr. Milan Mr\u00e1zek, focused on IVF, egg and embryo donation and egg freezing for international patients. ISO-certified and built around an English-speaking international service, with transparent published package pricing and free initial consultations.",
@@ -3768,6 +3904,7 @@ export const fertilityProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_9eab55a39b",
     slug: "europe-ivf-prague",
     name: "Europe IVF",
     description: "A Prague fertility clinic offering own-egg and donor-egg IVF, donor sperm and embryo programmes, and genetic testing, built specifically around international patients with support in roughly ten languages. Advertises fresh (not frozen) donor gametes and an embryo-transfer guarantee on its donor-egg programme.",
@@ -3794,6 +3931,7 @@ export const fertilityProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_dee29f8505",
     slug: "genitrix-prague",
     name: "Genitrix",
     description: "An ISO 9001-certified boutique fertility clinic in Prague 3 offering IVF, egg, sperm and embryo donation, and fertility preservation, with a stated focus on personalised, mild-stimulation protocols and on difficult cases such as diminished ovarian reserve and PCOS. English-speaking service for international patients seven days a week.",
@@ -3820,6 +3958,7 @@ export const fertilityProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_6162623759",
     slug: "fertimed-olomouc",
     name: "FERTIMED",
     description: "One of the first assisted-reproduction centres in the Czech Republic, founded in Olomouc in 1992, where the country's first ICSI baby was born in 1995. Located in Olomouc with a second site in Ostrava, it performs up to 500 IVF cycles a year and operates to European directives and ISO 9001, 15189 and 14001 standards, with its specialists in ESHRE.",
@@ -3848,6 +3987,7 @@ export const fertilityProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_1ad76af2c0",
     slug: "dexeus-mujer-barcelona",
     name: "Dexeus Mujer (Dexeus Fertility)",
     description: "A landmark Barcelona women's-health and assisted-reproduction centre with more than 80 years of history. Spain's first IVF baby (1984) and first egg-donation birth (1988) were achieved here, and the unit runs one of Europe's larger IVF laboratories.",
@@ -3875,6 +4015,7 @@ export const fertilityProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_b2de3d63e2",
     slug: "ur-vistahermosa-alicante",
     name: "UR Vistahermosa",
     description: "A long-standing Alicante fertility clinic operating since 1983 within the HLA Vistahermosa hospital, giving it access to a full hospital's specialties and its own genetics unit. Known for a personalised approach and a strong international-patient programme.",
@@ -3901,6 +4042,7 @@ export const fertilityProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_f02495db9c",
     slug: "eugin-barcelona",
     name: "Eugin Clinic",
     description: "A high-volume Barcelona fertility clinic operating since the late 1990s, known for running one of the largest egg-donation programmes in Europe and a strong international-patient focus with remote-preparation options.",
@@ -3928,6 +4070,7 @@ export const fertilityProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_d9af3305c4",
     slug: "ivi-rma-valencia",
     name: "IVI-RMA Valencia",
     description: "The Valencia flagship of IVI-RMA, the world's largest assisted-reproduction group, with 30+ years of history, a large research operation and a high-volume Valencia centre led by an internationally recognised medical team.",
@@ -3955,6 +4098,7 @@ export const fertilityProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_6010244e0e",
     slug: "equipo-juana-crespo-valencia",
     name: "Equipo Juana Crespo",
     description: "A Valencia fertility clinic with 35+ years of reproductive-medicine experience that specialises specifically in high-complexity cases - low ovarian reserve, repeated implantation failure, endometriosis and recurrent miscarriage - including reproductive surgery to restore fertility.",
@@ -3981,6 +4125,7 @@ export const fertilityProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_01641bb7ea",
     slug: "fertilab-barcelona",
     name: "Fertilab Barcelona",
     description: "An established Barcelona fertility clinic with over 25 years of experience in assisted reproduction, offering a full IVF, egg-donation and egg-freezing programme with ISO-certified quality systems and professional-society memberships.",
@@ -4007,6 +4152,7 @@ export const fertilityProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_81e72fe58b",
     slug: "ivf-life-alicante",
     name: "IVF-Life Alicante",
     description: "An Alicante assisted-reproduction clinic (formerly IVF-Spain) focused on international patients and difficult cases, with a strong emphasis on reproductive immunology and advanced genetic diagnostics alongside standard IVF and egg donation.",
@@ -4032,6 +4178,7 @@ export const fertilityProviders: Provider[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_c729c71b15",
     slug: "ginemed-sevilla",
     name: "Ginemed",
     description: "An Andalusian assisted-reproduction network founded in 1998 and headquartered in Seville, with additional clinics across Spain and Portugal. It was the first clinic in Andalusia to earn UNE-EN ISO 9001 reproductive-medicine certification.",
@@ -4057,12 +4204,13 @@ export const fertilityProviders: Provider[] = [
     cons: ["Seville is less internationally connected than Barcelona/Madrid for flights", "Reported success figures need age/diagnosis context", "Smaller international profile than the Barcelona mega-clinics"],
     lastVerified: "2026-06-11",
   },
-  {"slug": "nova-ivf-fertility-india", "name": "Nova IVF Fertility", "description": "One of India's largest dedicated fertility networks, operating roughly 120 centers across 75 cities with multiple NABH-accredited labs. Offers IVF, ICSI, IUI, and egg/embryo/sperm freezing at a fraction of US cost.", "category": "fertility", "services": ["IVF", "ICSI", "IUI", "Egg / embryo / sperm freezing", "PGT genetic testing"], "pricingDisplay": "$2,500-4,000 (per IVF cycle)", "pricingNotes": "Estimate. Base IVF cycle; ICSI, donor eggs, freezing, and PGT add cost. Excludes travel and lodging.", "pricingComparison": "vs $15,000-25,000/cycle in US", "savingsPercent": 80, "deliveryModel": "in_person_destination", "geographicCoverage": ["India"], "destinationCountry": "India", "destinationCity": "Multiple (75+ cities)", "typicalTripLength": "2-4 weeks per cycle (timing-dependent)", "includesInPackage": ["Consultation", "Monitoring", "Egg retrieval & transfer", "Embryology lab work"], "accreditations": ["NABH-accredited centers", "International-protocol labs"], "url": "https://www.novaivffertility.com", "referralType": "direct_link", "ourTake": "Nova is a large, standardized fertility chain — useful when you want consistent protocols and an English-speaking international desk rather than a single boutique clinic. IVF timing ties you to your cycle, so coordinate dates carefully and confirm the specific center's NABH status and success-rate transparency before committing.", "bestFor": ["IVF / ICSI / IUI", "Standardized protocols", "Egg & embryo freezing", "Major savings"], "pros": ["Large standardized network", "NABH-accredited labs", "International-protocol labs", "English-speaking coordination"], "cons": ["Long flight from US", "IVF timing ties you to your cycle", "Success rates vary by center"], "featured": false, "lastVerified": "2026-06-25"},
-  {"slug": "indira-ivf-india", "name": "Indira IVF", "description": "India's largest dedicated fertility chain by number of clinics, with 200+ centers across more than 20 states. Offers IVF, IUI, ICSI, Micro-TESE, and cryopreservation, founded in Udaipur and now a nationwide network.", "category": "fertility", "services": ["IVF", "IUI", "ICSI", "Micro-TESE", "PGT-A", "Cryopreservation"], "pricingDisplay": "$2,000-4,000 (per IVF cycle)", "pricingNotes": "Estimate. Base IVF cycle; ICSI, donor programs, and genetic testing add cost. Excludes travel and lodging.", "pricingComparison": "vs $15,000-25,000/cycle in US", "savingsPercent": 82, "deliveryModel": "in_person_destination", "geographicCoverage": ["India"], "destinationCountry": "India", "destinationCity": "Multiple (20+ states)", "typicalTripLength": "2-4 weeks per cycle (timing-dependent)", "includesInPackage": ["Consultation", "Monitoring", "Egg retrieval & transfer", "Embryology lab work"], "accreditations": ["India's largest IVF chain by clinic count (CRISIL, Jan 2025)"], "url": "https://www.indiraivf.com", "referralType": "direct_link", "ourTake": "Indira is the widest-reaching fertility chain in India, which means scale, EMI options, and a deep procedural track record. As with any large chain, lab quality and success rates vary by location, so pick the specific center deliberately and ask for that center's own outcomes data rather than network-wide marketing figures.", "bestFor": ["IVF / IUI / ICSI", "Widest network reach", "Male-factor (Micro-TESE)", "Major savings"], "pros": ["Largest IVF network by clinic count", "Deep procedural volume", "Flexible payment options", "English-speaking coordination"], "cons": ["Long flight from US", "Quality varies by center", "Verify the specific clinic's success rates"], "featured": false, "lastVerified": "2026-06-25"},
+  {"id": "c_0da3856fee", "slug": "nova-ivf-fertility-india", "name": "Nova IVF Fertility", "description": "One of India's largest dedicated fertility networks, operating roughly 120 centers across 75 cities with multiple NABH-accredited labs. Offers IVF, ICSI, IUI, and egg/embryo/sperm freezing at a fraction of US cost.", "category": "fertility", "services": ["IVF", "ICSI", "IUI", "Egg / embryo / sperm freezing", "PGT genetic testing"], "pricingDisplay": "$2,500-4,000 (per IVF cycle)", "pricingNotes": "Estimate. Base IVF cycle; ICSI, donor eggs, freezing, and PGT add cost. Excludes travel and lodging.", "pricingComparison": "vs $15,000-25,000/cycle in US", "savingsPercent": 80, "deliveryModel": "in_person_destination", "geographicCoverage": ["India"], "destinationCountry": "India", "destinationCity": "Multiple (75+ cities)", "typicalTripLength": "2-4 weeks per cycle (timing-dependent)", "includesInPackage": ["Consultation", "Monitoring", "Egg retrieval & transfer", "Embryology lab work"], "accreditations": ["NABH-accredited centers", "International-protocol labs"], "url": "https://www.novaivffertility.com", "referralType": "direct_link", "ourTake": "Nova is a large, standardized fertility chain — useful when you want consistent protocols and an English-speaking international desk rather than a single boutique clinic. IVF timing ties you to your cycle, so coordinate dates carefully and confirm the specific center's NABH status and success-rate transparency before committing.", "bestFor": ["IVF / ICSI / IUI", "Standardized protocols", "Egg & embryo freezing", "Major savings"], "pros": ["Large standardized network", "NABH-accredited labs", "International-protocol labs", "English-speaking coordination"], "cons": ["Long flight from US", "IVF timing ties you to your cycle", "Success rates vary by center"], "featured": false, "lastVerified": "2026-06-25"},
+  {"id": "c_50b348d011", "slug": "indira-ivf-india", "name": "Indira IVF", "description": "India's largest dedicated fertility chain by number of clinics, with 200+ centers across more than 20 states. Offers IVF, IUI, ICSI, Micro-TESE, and cryopreservation, founded in Udaipur and now a nationwide network.", "category": "fertility", "services": ["IVF", "IUI", "ICSI", "Micro-TESE", "PGT-A", "Cryopreservation"], "pricingDisplay": "$2,000-4,000 (per IVF cycle)", "pricingNotes": "Estimate. Base IVF cycle; ICSI, donor programs, and genetic testing add cost. Excludes travel and lodging.", "pricingComparison": "vs $15,000-25,000/cycle in US", "savingsPercent": 82, "deliveryModel": "in_person_destination", "geographicCoverage": ["India"], "destinationCountry": "India", "destinationCity": "Multiple (20+ states)", "typicalTripLength": "2-4 weeks per cycle (timing-dependent)", "includesInPackage": ["Consultation", "Monitoring", "Egg retrieval & transfer", "Embryology lab work"], "accreditations": ["India's largest IVF chain by clinic count (CRISIL, Jan 2025)"], "url": "https://www.indiraivf.com", "referralType": "direct_link", "ourTake": "Indira is the widest-reaching fertility chain in India, which means scale, EMI options, and a deep procedural track record. As with any large chain, lab quality and success rates vary by location, so pick the specific center deliberately and ask for that center's own outcomes data rather than network-wide marketing figures.", "bestFor": ["IVF / IUI / ICSI", "Widest network reach", "Male-factor (Micro-TESE)", "Major savings"], "pros": ["Largest IVF network by clinic count", "Deep procedural volume", "Flexible payment options", "English-speaking coordination"], "cons": ["Long flight from US", "Quality varies by center", "Verify the specific clinic's success rates"], "featured": false, "lastVerified": "2026-06-25"},
 ];
 
 export const orthopedicProviders: Provider[] = [
   {
+    id: 'c_0043f7764a',
     slug: 'apollo-hospitals-orthopedic',
     name: 'Apollo Hospitals (Orthopedics)',
     description: 'One of Asia\'s largest hospital groups, with high-volume joint replacement and orthopedic programs across India.',
@@ -4089,6 +4237,7 @@ export const orthopedicProviders: Provider[] = [
     lastVerified: '2026-06-13',
   },
   {
+    id: 'c_ee3674bb09',
     slug: 'bumrungrad-orthopedic',
     name: 'Bumrungrad International (Orthopedics)',
     description: 'Bangkok\'s flagship international hospital with a large orthopedic and joint-replacement center popular with medical travelers.',
@@ -4114,6 +4263,7 @@ export const orthopedicProviders: Provider[] = [
     lastVerified: '2026-06-13',
   },
   {
+    id: 'c_99ae40c3bd',
     slug: 'galenia-hospital-orthopedic',
     name: 'Hospital Galenia (Orthopedics)',
     description: 'Cancun-based, internationally accredited hospital offering orthopedic surgery a short flight from the US.',
@@ -4138,12 +4288,13 @@ export const orthopedicProviders: Provider[] = [
     cons: ['Less savings than India/Thailand', 'Fewer ultra-high-volume surgeons', 'Verify surgeon credentials'],
     lastVerified: '2026-06-13',
   },
-  {"slug": "max-saket-orthopedic", "name": "Max Super Speciality Hospital, Saket (Orthopedics)", "description": "A JCI- and NABH-accredited 500+ bed hospital in south Delhi with a high-volume orthopedics and joint-replacement program. Part of the Max Healthcare network, it is a regional hub for knee and hip replacement.", "category": "orthopedic", "services": ["Knee replacement", "Hip replacement", "Robotic joint replacement", "Sports injury surgery", "Spine surgery"], "pricingDisplay": "$4,800-7,500 (knee)", "pricingNotes": "Estimate. Max publishes international knee-replacement pricing from roughly $4,800-6,440; bilateral and robotic cost more.", "pricingComparison": "vs $30,000-50,000 in US", "savingsPercent": 80, "deliveryModel": "in_person_destination", "geographicCoverage": ["India"], "destinationCountry": "India", "destinationCity": "New Delhi", "typicalTripLength": "10-14 days", "includesInPackage": ["Surgeon & hospital fees", "Implant", "Initial rehab", "International patient coordination"], "accreditations": ["JCI-accredited", "NABH", "NABL"], "url": "https://www.maxhealthcare.in/hospital-network/max-super-speciality-hospital-saket", "referralType": "direct_link", "ourTake": "Max Saket is one of Delhi's best-regarded JCI-accredited hospitals and publishes transparent international knee-replacement pricing, which is rarer than it should be in this category. A reliable orthopedic choice in the capital; plan home physiotherapy before you fly back.", "bestFor": ["Knee & hip replacement", "Transparent pricing", "Delhi", "Major savings"], "pros": ["JCI + NABH accredited", "Publishes international pricing", "Robotic joint-replacement option", "English widely spoken"], "cons": ["Long flight from US", "Home physiotherapy to arrange", "Delhi air quality in winter"], "featured": false, "lastVerified": "2026-06-25"},
-  {"slug": "blk-max-delhi-orthopedic", "name": "BLK-Max Super Speciality Hospital (Orthopedics)", "description": "A 650-bed JCI- and NABH-accredited hospital in central Delhi with a dedicated orthopedics and joint-reconstruction program. Now part of the Max Healthcare network, it also runs one of India's largest bone-marrow-transplant centers.", "category": "orthopedic", "services": ["Knee replacement", "Hip replacement", "Joint reconstruction", "Sports medicine", "Spine surgery"], "pricingDisplay": "$4,500-7,500 (knee)", "pricingNotes": "Estimate. Unilateral total knee replacement; bilateral and robotic cases cost more.", "pricingComparison": "vs $30,000-50,000 in US", "savingsPercent": 80, "deliveryModel": "in_person_destination", "geographicCoverage": ["India"], "destinationCountry": "India", "destinationCity": "New Delhi", "typicalTripLength": "10-14 days", "includesInPackage": ["Surgeon & hospital fees", "Implant", "Initial rehab", "International patient coordination"], "accreditations": ["JCI-accredited", "NABH", "NABL"], "url": "https://www.blkmaxhospital.com", "referralType": "direct_link", "ourTake": "BLK-Max pairs a large multi-specialty footprint with a strong orthopedic and joint-replacement program in central Delhi. Backed by the Max network's international-patient infrastructure, it's a credible alternative to Max Saket; confirm your surgeon and implant choice up front.", "bestFor": ["Knee & hip replacement", "Central Delhi", "Established multi-specialty hospital", "Major savings"], "pros": ["JCI + NABH accredited", "Large multi-specialty infrastructure", "Max network international support", "English widely spoken"], "cons": ["Long flight from US", "Home physiotherapy to arrange", "Delhi air quality in winter"], "featured": false, "lastVerified": "2026-06-25"},
+  {"id": "c_f9f06cab68", "slug": "max-saket-orthopedic", "name": "Max Super Speciality Hospital, Saket (Orthopedics)", "description": "A JCI- and NABH-accredited 500+ bed hospital in south Delhi with a high-volume orthopedics and joint-replacement program. Part of the Max Healthcare network, it is a regional hub for knee and hip replacement.", "category": "orthopedic", "services": ["Knee replacement", "Hip replacement", "Robotic joint replacement", "Sports injury surgery", "Spine surgery"], "pricingDisplay": "$4,800-7,500 (knee)", "pricingNotes": "Estimate. Max publishes international knee-replacement pricing from roughly $4,800-6,440; bilateral and robotic cost more.", "pricingComparison": "vs $30,000-50,000 in US", "savingsPercent": 80, "deliveryModel": "in_person_destination", "geographicCoverage": ["India"], "destinationCountry": "India", "destinationCity": "New Delhi", "typicalTripLength": "10-14 days", "includesInPackage": ["Surgeon & hospital fees", "Implant", "Initial rehab", "International patient coordination"], "accreditations": ["JCI-accredited", "NABH", "NABL"], "url": "https://www.maxhealthcare.in/hospital-network/max-super-speciality-hospital-saket", "referralType": "direct_link", "ourTake": "Max Saket is one of Delhi's best-regarded JCI-accredited hospitals and publishes transparent international knee-replacement pricing, which is rarer than it should be in this category. A reliable orthopedic choice in the capital; plan home physiotherapy before you fly back.", "bestFor": ["Knee & hip replacement", "Transparent pricing", "Delhi", "Major savings"], "pros": ["JCI + NABH accredited", "Publishes international pricing", "Robotic joint-replacement option", "English widely spoken"], "cons": ["Long flight from US", "Home physiotherapy to arrange", "Delhi air quality in winter"], "featured": false, "lastVerified": "2026-06-25"},
+  {"id": "c_ff3c7ddf6a", "slug": "blk-max-delhi-orthopedic", "name": "BLK-Max Super Speciality Hospital (Orthopedics)", "description": "A 650-bed JCI- and NABH-accredited hospital in central Delhi with a dedicated orthopedics and joint-reconstruction program. Now part of the Max Healthcare network, it also runs one of India's largest bone-marrow-transplant centers.", "category": "orthopedic", "services": ["Knee replacement", "Hip replacement", "Joint reconstruction", "Sports medicine", "Spine surgery"], "pricingDisplay": "$4,500-7,500 (knee)", "pricingNotes": "Estimate. Unilateral total knee replacement; bilateral and robotic cases cost more.", "pricingComparison": "vs $30,000-50,000 in US", "savingsPercent": 80, "deliveryModel": "in_person_destination", "geographicCoverage": ["India"], "destinationCountry": "India", "destinationCity": "New Delhi", "typicalTripLength": "10-14 days", "includesInPackage": ["Surgeon & hospital fees", "Implant", "Initial rehab", "International patient coordination"], "accreditations": ["JCI-accredited", "NABH", "NABL"], "url": "https://www.blkmaxhospital.com", "referralType": "direct_link", "ourTake": "BLK-Max pairs a large multi-specialty footprint with a strong orthopedic and joint-replacement program in central Delhi. Backed by the Max network's international-patient infrastructure, it's a credible alternative to Max Saket; confirm your surgeon and implant choice up front.", "bestFor": ["Knee & hip replacement", "Central Delhi", "Established multi-specialty hospital", "Major savings"], "pros": ["JCI + NABH accredited", "Large multi-specialty infrastructure", "Max network international support", "English widely spoken"], "cons": ["Long flight from US", "Home physiotherapy to arrange", "Delhi air quality in winter"], "featured": false, "lastVerified": "2026-06-25"},
 ];
 
 export const cardiacProviders: Provider[] = [
   {
+    id: 'c_27eeb04e06',
     slug: 'narayana-health',
     name: 'Narayana Health',
     description: 'India\'s renowned high-volume cardiac care network, famous for world-class heart surgery at remarkably low cost.',
@@ -4170,6 +4321,7 @@ export const cardiacProviders: Provider[] = [
     lastVerified: '2026-06-13',
   },
   {
+    id: 'c_d5fe8c9a27',
     slug: 'fortis-escorts-heart',
     name: 'Fortis Escorts Heart Institute',
     description: 'A leading dedicated cardiac hospital in Delhi, widely recognized for cardiac surgery and interventional cardiology.',
@@ -4195,6 +4347,7 @@ export const cardiacProviders: Provider[] = [
     lastVerified: '2026-06-13',
   },
   {
+    id: 'c_56b2b3e030',
     slug: 'bumrungrad-cardiac',
     name: 'Bumrungrad International (Cardiac)',
     description: 'Bangkok\'s flagship international hospital with a comprehensive heart center and concierge international-patient care.',
@@ -4219,13 +4372,14 @@ export const cardiacProviders: Provider[] = [
     cons: ['Pricier than India', 'Long flight from US', 'Follow-up travel logistics'],
     lastVerified: '2026-06-13',
   },
-  {"slug": "medanta-medicity-gurugram-cardiac", "name": "Medanta - The Medicity (Cardiac)", "description": "A 1,300+ bed JCI- and NABH-accredited multi-super-specialty hospital in Gurugram founded by cardiac surgeon Dr. Naresh Trehan. Its heart institute covers interventional cardiology, cardiac surgery, and electrophysiology at a fraction of US cost.", "category": "cardiac", "services": ["Coronary bypass (CABG)", "Heart valve surgery", "Angioplasty & stents", "Electrophysiology / pacemakers", "Cardiac diagnostics"], "pricingDisplay": "$6,000-10,000 (bypass)", "pricingNotes": "Estimate. CABG package; varies by grafts, room category, and robotic vs conventional technique.", "pricingComparison": "vs $70,000-150,000 in US", "savingsPercent": 88, "deliveryModel": "in_person_destination", "geographicCoverage": ["India"], "destinationCountry": "India", "destinationCity": "Gurugram (Delhi NCR)", "typicalTripLength": "2-4 weeks", "includesInPackage": ["Surgeon & hospital fees", "ICU & ward stay", "Initial recovery", "International patient coordination"], "accreditations": ["JCI-accredited", "NABH", "NABL"], "url": "https://www.medanta.org/hospitals-near-me/gurugram-hospital", "referralType": "direct_link", "ourTake": "Medanta was built by one of India's most decorated cardiac surgeons, and the heart program is its calling card — high volume, JCI accreditation, and a dedicated international-patient desk. A strong choice when you want a flagship cardiac center near Delhi at major savings; arrange home cardiology follow-up before you travel.", "bestFor": ["Bypass & valve surgery", "Surgeon-founded heart program", "Delhi NCR", "Major savings"], "pros": ["Founded by a leading cardiac surgeon", "JCI + NABH accredited", "Very high surgical volume", "English widely spoken"], "cons": ["Long flight from US", "Cardiac follow-up at home essential", "Delhi NCR air quality in winter"], "featured": false, "lastVerified": "2026-06-25"},
-  {"slug": "fortis-memorial-gurgaon-cardiac", "name": "Fortis Memorial Research Institute (Cardiac)", "description": "FMRI is a JCI- and NABH-accredited quaternary-care hospital in Gurugram with a comprehensive cardiac sciences program spanning surgery, interventional cardiology, and heart failure care. It is distinct from the older Fortis Escorts Heart Institute in Delhi.", "category": "cardiac", "services": ["Coronary bypass (CABG)", "Valve replacement", "Angioplasty & stents", "Electrophysiology", "Heart failure & transplant evaluation"], "pricingDisplay": "$6,000-10,000 (bypass)", "pricingNotes": "Estimate. Varies by procedure complexity and room category.", "pricingComparison": "vs $70,000-150,000 in US", "savingsPercent": 88, "deliveryModel": "in_person_destination", "geographicCoverage": ["India"], "destinationCountry": "India", "destinationCity": "Gurugram (Delhi NCR)", "typicalTripLength": "2-4 weeks", "includesInPackage": ["Surgeon & hospital fees", "ICU & ward stay", "International patient coordination"], "accreditations": ["JCI-accredited", "NABH", "NABL"], "url": "https://www.fortishealthcare.com/location/fortis-memorial-research-institute-gurgaon", "referralType": "direct_link", "ourTake": "FMRI is Fortis's flagship quaternary hospital and a different facility from the long-established Fortis Escorts Heart Institute — newer, broader, and JCI-accredited. A solid cardiac option in Delhi NCR with a strong international-patient program; confirm your specific surgeon and package before booking.", "bestFor": ["Complex cardiac care", "Delhi NCR", "Flagship Fortis facility", "Major savings"], "pros": ["JCI + NABH accredited", "Quaternary-care infrastructure", "Multidisciplinary heart team", "International patient desk"], "cons": ["Long flight from US", "Home cardiology follow-up required", "Verify surgeon and package specifics"], "featured": false, "lastVerified": "2026-06-25"},
-  {"slug": "manipal-hospitals-bangalore-cardiac", "name": "Manipal Hospitals (Cardiac)", "description": "Manipal's flagship Bangalore hospital (Old Airport Road, established 1991) anchors a large NABH-accredited network with a high-volume cardiac sciences program covering CABG, valve surgery, and angioplasty. The group spans dozens of hospitals across India.", "category": "cardiac", "services": ["Coronary bypass (CABG)", "Heart valve surgery", "Angioplasty & stents", "Cardiothoracic & vascular surgery", "Heart transplant"], "pricingDisplay": "$5,000-9,000 (bypass)", "pricingNotes": "Estimate. CABG package; varies by hospital within the network and complexity.", "pricingComparison": "vs $70,000-150,000 in US", "savingsPercent": 89, "deliveryModel": "in_person_destination", "geographicCoverage": ["India"], "destinationCountry": "India", "destinationCity": "Bangalore / multiple", "typicalTripLength": "2-4 weeks", "includesInPackage": ["Surgeon & hospital fees", "ICU & ward stay", "International patient coordination"], "accreditations": ["NABH-accredited (Old Airport Road flagship)", "NABL"], "url": "https://www.manipalhospitals.com", "referralType": "direct_link", "ourTake": "Manipal is one of India's largest hospital networks, and the Bangalore flagship has a deep cardiac surgery track record. Bangalore's milder climate and large expat presence make it an easier recovery base than Delhi; verify the specific hospital's accreditation and your surgeon, since standards vary across the network.", "bestFor": ["Bypass & valve surgery", "Bangalore recovery base", "Large established network", "Major savings"], "pros": ["Very large established network", "High cardiac surgical volume", "NABH-accredited flagship", "English widely spoken"], "cons": ["Long flight from US", "Accreditation varies by site within network", "Home cardiology follow-up required"], "featured": false, "lastVerified": "2026-06-25"},
+  {"id": "c_afa205caf4", "slug": "medanta-medicity-gurugram-cardiac", "name": "Medanta - The Medicity (Cardiac)", "description": "A 1,300+ bed JCI- and NABH-accredited multi-super-specialty hospital in Gurugram founded by cardiac surgeon Dr. Naresh Trehan. Its heart institute covers interventional cardiology, cardiac surgery, and electrophysiology at a fraction of US cost.", "category": "cardiac", "services": ["Coronary bypass (CABG)", "Heart valve surgery", "Angioplasty & stents", "Electrophysiology / pacemakers", "Cardiac diagnostics"], "pricingDisplay": "$6,000-10,000 (bypass)", "pricingNotes": "Estimate. CABG package; varies by grafts, room category, and robotic vs conventional technique.", "pricingComparison": "vs $70,000-150,000 in US", "savingsPercent": 88, "deliveryModel": "in_person_destination", "geographicCoverage": ["India"], "destinationCountry": "India", "destinationCity": "Gurugram (Delhi NCR)", "typicalTripLength": "2-4 weeks", "includesInPackage": ["Surgeon & hospital fees", "ICU & ward stay", "Initial recovery", "International patient coordination"], "accreditations": ["JCI-accredited", "NABH", "NABL"], "url": "https://www.medanta.org/hospitals-near-me/gurugram-hospital", "referralType": "direct_link", "ourTake": "Medanta was built by one of India's most decorated cardiac surgeons, and the heart program is its calling card — high volume, JCI accreditation, and a dedicated international-patient desk. A strong choice when you want a flagship cardiac center near Delhi at major savings; arrange home cardiology follow-up before you travel.", "bestFor": ["Bypass & valve surgery", "Surgeon-founded heart program", "Delhi NCR", "Major savings"], "pros": ["Founded by a leading cardiac surgeon", "JCI + NABH accredited", "Very high surgical volume", "English widely spoken"], "cons": ["Long flight from US", "Cardiac follow-up at home essential", "Delhi NCR air quality in winter"], "featured": false, "lastVerified": "2026-06-25"},
+  {"id": "c_0678598e2c", "slug": "fortis-memorial-gurgaon-cardiac", "name": "Fortis Memorial Research Institute (Cardiac)", "description": "FMRI is a JCI- and NABH-accredited quaternary-care hospital in Gurugram with a comprehensive cardiac sciences program spanning surgery, interventional cardiology, and heart failure care. It is distinct from the older Fortis Escorts Heart Institute in Delhi.", "category": "cardiac", "services": ["Coronary bypass (CABG)", "Valve replacement", "Angioplasty & stents", "Electrophysiology", "Heart failure & transplant evaluation"], "pricingDisplay": "$6,000-10,000 (bypass)", "pricingNotes": "Estimate. Varies by procedure complexity and room category.", "pricingComparison": "vs $70,000-150,000 in US", "savingsPercent": 88, "deliveryModel": "in_person_destination", "geographicCoverage": ["India"], "destinationCountry": "India", "destinationCity": "Gurugram (Delhi NCR)", "typicalTripLength": "2-4 weeks", "includesInPackage": ["Surgeon & hospital fees", "ICU & ward stay", "International patient coordination"], "accreditations": ["JCI-accredited", "NABH", "NABL"], "url": "https://www.fortishealthcare.com/location/fortis-memorial-research-institute-gurgaon", "referralType": "direct_link", "ourTake": "FMRI is Fortis's flagship quaternary hospital and a different facility from the long-established Fortis Escorts Heart Institute — newer, broader, and JCI-accredited. A solid cardiac option in Delhi NCR with a strong international-patient program; confirm your specific surgeon and package before booking.", "bestFor": ["Complex cardiac care", "Delhi NCR", "Flagship Fortis facility", "Major savings"], "pros": ["JCI + NABH accredited", "Quaternary-care infrastructure", "Multidisciplinary heart team", "International patient desk"], "cons": ["Long flight from US", "Home cardiology follow-up required", "Verify surgeon and package specifics"], "featured": false, "lastVerified": "2026-06-25"},
+  {"id": "c_e4a824c49e", "slug": "manipal-hospitals-bangalore-cardiac", "name": "Manipal Hospitals (Cardiac)", "description": "Manipal's flagship Bangalore hospital (Old Airport Road, established 1991) anchors a large NABH-accredited network with a high-volume cardiac sciences program covering CABG, valve surgery, and angioplasty. The group spans dozens of hospitals across India.", "category": "cardiac", "services": ["Coronary bypass (CABG)", "Heart valve surgery", "Angioplasty & stents", "Cardiothoracic & vascular surgery", "Heart transplant"], "pricingDisplay": "$5,000-9,000 (bypass)", "pricingNotes": "Estimate. CABG package; varies by hospital within the network and complexity.", "pricingComparison": "vs $70,000-150,000 in US", "savingsPercent": 89, "deliveryModel": "in_person_destination", "geographicCoverage": ["India"], "destinationCountry": "India", "destinationCity": "Bangalore / multiple", "typicalTripLength": "2-4 weeks", "includesInPackage": ["Surgeon & hospital fees", "ICU & ward stay", "International patient coordination"], "accreditations": ["NABH-accredited (Old Airport Road flagship)", "NABL"], "url": "https://www.manipalhospitals.com", "referralType": "direct_link", "ourTake": "Manipal is one of India's largest hospital networks, and the Bangalore flagship has a deep cardiac surgery track record. Bangalore's milder climate and large expat presence make it an easier recovery base than Delhi; verify the specific hospital's accreditation and your surgeon, since standards vary across the network.", "bestFor": ["Bypass & valve surgery", "Bangalore recovery base", "Large established network", "Major savings"], "pros": ["Very large established network", "High cardiac surgical volume", "NABH-accredited flagship", "English widely spoken"], "cons": ["Long flight from US", "Accreditation varies by site within network", "Home cardiology follow-up required"], "featured": false, "lastVerified": "2026-06-25"},
 ];
 
 export const visionProviders: Provider[] = [
   {
+    id: 'c_926016d216',
     slug: 'dunyagoz-hospital',
     name: 'Dünyagöz Hospital Group',
     description: 'A large international eye-hospital group based in Turkey, popular with medical travelers for LASIK and cataract surgery.',
@@ -4252,6 +4406,7 @@ export const visionProviders: Provider[] = [
     lastVerified: '2026-06-13',
   },
   {
+    id: 'c_2312dc6df7',
     slug: 'centre-for-sight-india',
     name: 'Centre for Sight (India)',
     description: 'A large Indian eye-care network offering LASIK, SMILE, and cataract surgery at low cost with modern technology.',
@@ -4277,6 +4432,7 @@ export const visionProviders: Provider[] = [
     lastVerified: '2026-06-13',
   },
   {
+    id: 'c_544139eeda',
     slug: 'codet-vision-mexico',
     name: 'CODET Vision Institute',
     description: 'A Tijuana-based ophthalmology institute popular with US patients for LASIK and refractive surgery a short hop across the border.',
@@ -4301,8 +4457,8 @@ export const visionProviders: Provider[] = [
     cons: ['Less savings than Asia', 'Not FDA-regulated', 'Border crossing logistics'],
     lastVerified: '2026-06-13',
   },
-  {"slug": "veni-vidi-eye-hospital", "name": "Veni Vidi Eye Hospital", "description": "Turkey's oldest private eye-hospital network, operating 30+ years with centers in Istanbul, Ankara, Izmir, Antalya, Bursa, and Kocaeli. Performs LASIK, iLASIK, Trans PRK, and SILK laser eye surgery plus cataract and corneal care.", "category": "vision", "services": ["LASIK", "iLASIK (Femto)", "Trans PRK (No Touch)", "SILK laser", "Cataract surgery", "Corneal transplant", "Intraocular lens implants", "Eyelid surgery"], "pricingDisplay": "$1,400-1,800 (LASIK)", "pricingNotes": "Third-party listings cite LASIK ~$1,400-1,800 and iLASIK from ~€1,500; Trans PRK from ~€1,100. Estimate June 2026.", "pricingComparison": "vs $4,000-6,000 in US", "savingsPercent": 65, "deliveryModel": "in_person_destination", "geographicCoverage": ["Turkey"], "destinationCountry": "Turkey", "destinationCity": "Istanbul", "typicalTripLength": "3-5 days", "includesInPackage": ["Pre-op testing", "Surgery", "Follow-up exams", "Transfers (via packages)"], "recoveryNotes": "Laser vision correction recovers quickly; short post-op follow-up window before flying home.", "yearsInBusiness": 32, "procedureVolume": "Multi-center network", "url": "https://venividieye.com", "referralType": "direct_link", "ourTake": "Veni Vidi is Turkey's oldest private eye-hospital network, with deep refractive-surgery experience across LASIK, iLASIK, Trans PRK, and newer SILK laser. A short trip makes laser vision correction affordable; confirm candidacy and which technique fits your cornea first.", "bestFor": ["LASIK and iLASIK", "Trans PRK / No-Touch laser", "Short trip", "Established eye network"], "pros": ["30+ years operating", "Multiple Turkish cities", "Full range of laser techniques", "High refractive-surgery volume"], "cons": ["No JCI/ISO listed on site", "Short post-op follow-up window abroad", "Not FDA-regulated", "Verify candidacy first"], "featured": false, "lastVerified": "2026-06-25"},
-  {"slug": "acibadem-eye-center", "name": "Acıbadem Eye Center", "description": "JCI-accredited Turkish hospital group (Acıbadem) with 45+ hospitals and clinics, offering ophthalmology and laser vision correction at its Istanbul and Izmir centers. Provides Femto LASIK, SMILE Pro, PRK, and cataract surgery through a dedicated international patient program.", "category": "vision", "services": ["Femto LASIK", "SMILE Pro", "PRK", "Excimer laser", "Cataract surgery", "Intraocular lens procedures"], "pricingDisplay": "Quote-based", "pricingNotes": "Group states it does not give one-size-fits-all pricing; costs determined after medical review. No published price as of June 2026.", "pricingComparison": "vs $4,000-6,000 in US for LASIK", "deliveryModel": "in_person_destination", "geographicCoverage": ["Turkey"], "destinationCountry": "Turkey", "destinationCity": "Istanbul", "typicalTripLength": "3-5 days", "includesInPackage": ["Ophthalmic evaluation", "Surgery", "International patient coordination"], "recoveryNotes": "Laser vision correction recovers quickly; full hospital setting supports complex cases. Short follow-up window before flying.", "accreditations": ["JCI accredited", "ISO certified"], "procedureVolume": "45+ hospitals and clinics", "url": "https://acibademinternational.com", "referralType": "direct_link", "ourTake": "Acıbadem is a JCI-accredited, ISO-certified hospital group, so its eye center carries hospital-grade infrastructure rather than standalone-clinic risk. Best for patients who want full-hospital backing and a formal international patient program; pricing is quote-based after a medical review.", "bestFor": ["JCI-accredited hospital setting", "Femto LASIK and SMILE Pro", "Complex or higher-risk cases", "Formal international program"], "pros": ["JCI accredited", "ISO certified", "45+ hospitals and clinics", "Femto LASIK + SMILE Pro", "Dedicated international patient program"], "cons": ["No published pricing", "Hospital-grade pricing above standalone clinics", "Short post-op follow-up window abroad", "Not FDA-regulated"], "featured": false, "lastVerified": "2026-06-25"},
+  {"id": "c_3dab5b3ddf", "slug": "veni-vidi-eye-hospital", "name": "Veni Vidi Eye Hospital", "description": "Turkey's oldest private eye-hospital network, operating 30+ years with centers in Istanbul, Ankara, Izmir, Antalya, Bursa, and Kocaeli. Performs LASIK, iLASIK, Trans PRK, and SILK laser eye surgery plus cataract and corneal care.", "category": "vision", "services": ["LASIK", "iLASIK (Femto)", "Trans PRK (No Touch)", "SILK laser", "Cataract surgery", "Corneal transplant", "Intraocular lens implants", "Eyelid surgery"], "pricingDisplay": "$1,400-1,800 (LASIK)", "pricingNotes": "Third-party listings cite LASIK ~$1,400-1,800 and iLASIK from ~€1,500; Trans PRK from ~€1,100. Estimate June 2026.", "pricingComparison": "vs $4,000-6,000 in US", "savingsPercent": 65, "deliveryModel": "in_person_destination", "geographicCoverage": ["Turkey"], "destinationCountry": "Turkey", "destinationCity": "Istanbul", "typicalTripLength": "3-5 days", "includesInPackage": ["Pre-op testing", "Surgery", "Follow-up exams", "Transfers (via packages)"], "recoveryNotes": "Laser vision correction recovers quickly; short post-op follow-up window before flying home.", "yearsInBusiness": 32, "procedureVolume": "Multi-center network", "url": "https://venividieye.com", "referralType": "direct_link", "ourTake": "Veni Vidi is Turkey's oldest private eye-hospital network, with deep refractive-surgery experience across LASIK, iLASIK, Trans PRK, and newer SILK laser. A short trip makes laser vision correction affordable; confirm candidacy and which technique fits your cornea first.", "bestFor": ["LASIK and iLASIK", "Trans PRK / No-Touch laser", "Short trip", "Established eye network"], "pros": ["30+ years operating", "Multiple Turkish cities", "Full range of laser techniques", "High refractive-surgery volume"], "cons": ["No JCI/ISO listed on site", "Short post-op follow-up window abroad", "Not FDA-regulated", "Verify candidacy first"], "featured": false, "lastVerified": "2026-06-25"},
+  {"id": "c_8633b6af79", "slug": "acibadem-eye-center", "name": "Acıbadem Eye Center", "description": "JCI-accredited Turkish hospital group (Acıbadem) with 45+ hospitals and clinics, offering ophthalmology and laser vision correction at its Istanbul and Izmir centers. Provides Femto LASIK, SMILE Pro, PRK, and cataract surgery through a dedicated international patient program.", "category": "vision", "services": ["Femto LASIK", "SMILE Pro", "PRK", "Excimer laser", "Cataract surgery", "Intraocular lens procedures"], "pricingDisplay": "Quote-based", "pricingNotes": "Group states it does not give one-size-fits-all pricing; costs determined after medical review. No published price as of June 2026.", "pricingComparison": "vs $4,000-6,000 in US for LASIK", "deliveryModel": "in_person_destination", "geographicCoverage": ["Turkey"], "destinationCountry": "Turkey", "destinationCity": "Istanbul", "typicalTripLength": "3-5 days", "includesInPackage": ["Ophthalmic evaluation", "Surgery", "International patient coordination"], "recoveryNotes": "Laser vision correction recovers quickly; full hospital setting supports complex cases. Short follow-up window before flying.", "accreditations": ["JCI accredited", "ISO certified"], "procedureVolume": "45+ hospitals and clinics", "url": "https://acibademinternational.com", "referralType": "direct_link", "ourTake": "Acıbadem is a JCI-accredited, ISO-certified hospital group, so its eye center carries hospital-grade infrastructure rather than standalone-clinic risk. Best for patients who want full-hospital backing and a formal international patient program; pricing is quote-based after a medical review.", "bestFor": ["JCI-accredited hospital setting", "Femto LASIK and SMILE Pro", "Complex or higher-risk cases", "Formal international program"], "pros": ["JCI accredited", "ISO certified", "45+ hospitals and clinics", "Femto LASIK + SMILE Pro", "Dedicated international patient program"], "cons": ["No published pricing", "Hospital-grade pricing above standalone clinics", "Short post-op follow-up window abroad", "Not FDA-regulated"], "featured": false, "lastVerified": "2026-06-25"},
 ];
 
 export default {

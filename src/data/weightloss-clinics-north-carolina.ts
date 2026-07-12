@@ -5,6 +5,7 @@ import { WeightLossClinic } from '@/lib/weightloss-clinic-types';
 
 export const northCarolinaWeightLossClinics: WeightLossClinic[] = [
   {
+    id: "c_2fcf21b20e",
     name: "Options Medical Weight Loss - North Raleigh",
     slug: "options-medical-weight-loss-north-raleigh",
     address: "8111 Creedmoor Rd, Ste 159",
@@ -25,6 +26,7 @@ export const northCarolinaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_a2ca74f212",
     name: "BodyLase Raleigh",
     slug: "bodylase-raleigh",
     address: "6531 Creedmoor Rd, Ste 102",
@@ -45,6 +47,7 @@ export const northCarolinaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_946a331461",
     name: "Synergy Face + Body - North Raleigh",
     slug: "synergy-face-body-north-raleigh",
     address: "8300 Health Park, Suite 229",
@@ -65,6 +68,7 @@ export const northCarolinaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_2935bfe9cf",
     name: "Medi-Weightloss Raleigh",
     slug: "medi-weightloss-raleigh",
     address: "1911 Falls Valley Drive, Suite 105",
@@ -85,6 +89,7 @@ export const northCarolinaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_5838e70c47",
     name: "Lifestyle Medical Centers Raleigh",
     slug: "lifestyle-medical-centers-raleigh",
     address: "1520 Sunday Drive, Suite 309",
@@ -105,6 +110,7 @@ export const northCarolinaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_678feba5e4",
     name: "Allure Medical Raleigh",
     slug: "allure-medical-raleigh",
     address: "1520 Sunday Dr, Suite 307",
@@ -125,6 +131,7 @@ export const northCarolinaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_d2fe011733",
     name: "Nuderma Health & Med Spa",
     slug: "nuderma-health-med-spa",
     address: "4301 Lake Boone Trail, Suite 315",
@@ -145,6 +152,7 @@ export const northCarolinaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_07c6b391b0",
     name: "Gameday Men's Health Northeast Raleigh",
     slug: "gameday-mens-health-northeast-raleigh",
     address: "1616 E Millbrook Rd, Ste 130",
@@ -165,6 +173,7 @@ export const northCarolinaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_9cc24e2f3a",
     name: "Lyle Plastic Surgery & Aesthetics Center",
     slug: "lyle-plastic-surgery-aesthetics-center",
     address: "3909 Sunset Ridge Rd, Suite 201",
@@ -185,6 +194,7 @@ export const northCarolinaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_dae6d67a03",
     name: "Injectables by Dr. V",
     slug: "injectables-by-dr-v",
     address: "6817 Falls of Neuse Rd, Suite 105",

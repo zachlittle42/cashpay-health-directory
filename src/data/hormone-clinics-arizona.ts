@@ -6,6 +6,7 @@ import { HormoneClinic } from '@/lib/hormone-clinic-types';
 export const arizonaHormoneClinics: HormoneClinic[] = [
   // PHOENIX
   {
+    id: 'c_c76eeebb3a',
     name: 'Gameday Men\'s Health Phoenix',
     slug: 'gameday-mens-phoenix',
     address: '4530 E Shea Blvd #160, Phoenix, AZ 85028',
@@ -29,6 +30,7 @@ export const arizonaHormoneClinics: HormoneClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: 'c_84e9222428',
     name: 'Limitless Male Medical Clinic',
     slug: 'limitless-male-phoenix',
     address: '14301 N 87th St #109, Scottsdale, AZ 85260',
@@ -52,6 +54,7 @@ export const arizonaHormoneClinics: HormoneClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: 'c_29b9befb49',
     name: 'Arizona Natural Health Center',
     slug: 'az-natural-health-phoenix',
     address: '7350 E Stetson Dr #127, Scottsdale, AZ 85251',
@@ -74,6 +77,7 @@ export const arizonaHormoneClinics: HormoneClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: 'c_6d10875ba3',
     name: 'Hormone Health MD',
     slug: 'hormone-health-md-phoenix',
     address: '10210 N 32nd St #A1, Phoenix, AZ 85028',
@@ -98,6 +102,7 @@ export const arizonaHormoneClinics: HormoneClinic[] = [
 
   // SCOTTSDALE
   {
+    id: 'c_c4f27a2706',
     name: 'Scottsdale Men\'s Clinic',
     slug: 'scottsdale-mens-clinic',
     address: '8777 E Via de Ventura #100, Scottsdale, AZ 85258',
@@ -121,6 +126,7 @@ export const arizonaHormoneClinics: HormoneClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: 'c_52ab1e4109',
     name: 'LifeScape Premier',
     slug: 'lifescape-scottsdale',
     address: '9312 E Raintree Dr, Scottsdale, AZ 85260',
@@ -143,6 +149,7 @@ export const arizonaHormoneClinics: HormoneClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: 'c_d1b4a048ac',
     name: 'BioTE Scottsdale - Kierland',
     slug: 'biote-scottsdale-kierland',
     address: '7047 E Greenway Pkwy #150, Scottsdale, AZ 85254',
@@ -165,6 +172,7 @@ export const arizonaHormoneClinics: HormoneClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: 'c_e7bed2acb9',
     name: 'Vibrant Vitality Clinic',
     slug: 'vibrant-vitality-scottsdale',
     address: '3815 E Bell Rd #3600, Phoenix, AZ 85032',
@@ -190,6 +198,7 @@ export const arizonaHormoneClinics: HormoneClinic[] = [
 
   // TUCSON
   {
+    id: 'c_771f6b5984',
     name: 'Tucson Men\'s Health',
     slug: 'tucson-mens-health',
     address: '6127 E Broadway Blvd #101, Tucson, AZ 85711',
@@ -213,6 +222,7 @@ export const arizonaHormoneClinics: HormoneClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: 'c_138a78558e',
     name: 'Arizona Men\'s Clinic Tucson',
     slug: 'az-mens-clinic-tucson',
     address: '6400 N Oracle Rd #111, Tucson, AZ 85704',

@@ -5,6 +5,7 @@ import { DexaClinic } from '@/lib/dexa-clinic-types';
 
 export const nevadaDexaClinics: DexaClinic[] = [
   {
+    id: "c_cd41220e5f",
     name: "Project Wellbeing",
     slug: "project-wellbeing",
     address: "7155 S. Buffalo Dr., Suite 165, Las Vegas, NV 89113",
@@ -28,6 +29,7 @@ export const nevadaDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_de67f226aa",
     name: "DexaFit Las Vegas",
     slug: "dexafit-las-vegas",
     address: "6883 W. Charleston Blvd, Suite A, Las Vegas, NV 89117",
@@ -48,6 +50,7 @@ export const nevadaDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_b2069b81a7",
     name: "Las Vegas Medical Institute",
     slug: "las-vegas-medical-institute",
     address: "851 S Rampart Blvd #220, Las Vegas, NV 89145",
@@ -69,6 +72,7 @@ export const nevadaDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_ddb5a1c918",
     name: "Fitnescity (Las Vegas Network)",
     slug: "fitnescity-las-vegas",
     address: "Spring Valley, Las Vegas, NV",
@@ -88,6 +92,7 @@ export const nevadaDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_2cd3e93fb6",
     name: "SDMI (Steinberg Diagnostic Medical Imaging)",
     slug: "sdmi-las-vegas",
     address: "2950 S Maryland Pkwy, Las Vegas, NV 89109",

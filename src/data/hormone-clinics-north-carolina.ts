@@ -5,6 +5,7 @@ import { HormoneClinic } from '@/lib/hormone-clinic-types';
 
 export const northCarolinaHormoneClinics: HormoneClinic[] = [
   {
+    id: "c_07c6b391b0",
     name: "Gameday Men's Health Northeast Raleigh",
     slug: "gameday-mens-health-northeast-raleigh",
     address: "1616 E Millbrook Rd, Ste 130",
@@ -25,6 +26,7 @@ export const northCarolinaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_13772b5321",
     name: "Gameday Men's Health Glenwood",
     slug: "gameday-mens-health-glenwood",
     address: "2626 Glenwood Ave, Ste 170",
@@ -45,6 +47,7 @@ export const northCarolinaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_f0fd03a8db",
     name: "Hormone Wellness MD",
     slug: "hormone-wellness-md",
     address: "211 East Six Forks Road, Building A, Suite 120",
@@ -65,6 +68,7 @@ export const northCarolinaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_92046806f0",
     name: "Biofunctional Med",
     slug: "biofunctional-med",
     address: "8382 Six Forks Rd., Suite 102",
@@ -84,6 +88,7 @@ export const northCarolinaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_069255dd66",
     name: "FoundationMED",
     slug: "foundationmed",
     address: "5520 McNeely Dr., #204",
@@ -103,6 +108,7 @@ export const northCarolinaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_45f597789a",
     name: "Renew Vitality Testosterone Clinic of Raleigh",
     slug: "renew-vitality-testosterone-clinic-of-raleigh",
     address: "3509 Haworth Dr, Suite 201",

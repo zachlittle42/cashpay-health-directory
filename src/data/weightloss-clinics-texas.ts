@@ -6,6 +6,7 @@ import { WeightLossClinic } from '@/lib/weightloss-clinic-types';
 export const texasWeightLossClinics: WeightLossClinic[] = [
   // HOUSTON
   {
+    id: 'c_5a09cb82a5',
     name: 'Weightcare of Houston',
     slug: 'weightcare-houston',
     address: '7373 Old Katy Rd #150, Houston, TX 77024',
@@ -29,6 +30,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: 'c_f03b181024',
     name: 'Renew Medical Weight Loss Houston',
     slug: 'renew-medical-houston',
     address: '2929 Woodland Park Dr #300, Houston, TX 77082',
@@ -52,6 +54,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: 'c_0f42a93767',
     name: 'Sculpt MD Houston',
     slug: 'sculpt-md-houston',
     address: '5000 Westheimer Rd #850, Houston, TX 77056',
@@ -75,6 +78,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: 'c_b1a7971bc3',
     name: 'Slim Clinical Houston',
     slug: 'slim-clinical-houston',
     address: '9575 Katy Fwy #345, Houston, TX 77024',
@@ -100,6 +104,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
 
   // DALLAS
   {
+    id: 'c_98ef505449',
     name: 'Dallas Medical Weight Loss',
     slug: 'dallas-medical-weight-loss',
     address: '8144 Walnut Hill Ln #850, Dallas, TX 75231',
@@ -123,6 +128,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: 'c_ef43160b05',
     name: 'Thrive Weight Loss Dallas',
     slug: 'thrive-weight-loss-dallas',
     address: '5944 Luther Lane #600, Dallas, TX 75225',
@@ -146,6 +152,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: 'c_6e64a23fc3',
     name: 'Evolve Weight Loss Dallas',
     slug: 'evolve-weight-loss-dallas',
     address: '3420 W Mockingbird Ln #100, Dallas, TX 75235',
@@ -171,6 +178,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
 
   // AUSTIN
   {
+    id: 'c_e15a4b8940',
     name: 'Austin Weight Loss & Wellness',
     slug: 'austin-weight-loss-wellness',
     address: '3801 N Capital of Texas Hwy #J100, Austin, TX 78746',
@@ -194,6 +202,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: 'c_8ea71c3004',
     name: 'Total Med Solutions Austin',
     slug: 'total-med-austin',
     address: '6500 N Mopac Expy #2200, Austin, TX 78731',
@@ -217,6 +226,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: 'c_608714edfa',
     name: 'Slim Studio Austin',
     slug: 'slim-studio-austin',
     address: '2110 S IH 35 Frontage Rd #200, Austin, TX 78704',
@@ -242,6 +252,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
 
   // SAN ANTONIO
   {
+    id: 'c_efa26e9b5c',
     name: 'San Antonio Weight Loss',
     slug: 'san-antonio-weight-loss',
     address: '18626 Hardy Oak Blvd #300, San Antonio, TX 78258',
@@ -265,6 +276,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: 'c_e873634f67',
     name: 'Alamo Medical Weight Loss',
     slug: 'alamo-medical-weight-loss',
     address: '7940 Floyd Curl Dr #200, San Antonio, TX 78229',
@@ -288,6 +300,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: "c_7ab33d6521",
     name: "Texas Weight Loss - North Austin",
     slug: "texas-weight-loss-north-austin",
     address: "11139 N Interstate Hwy 35 Ste 120, Austin, TX 78753",
@@ -311,6 +324,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_1e154f8c1a",
     name: "Blue Tree Health - Medical Weight Loss",
     slug: "blue-tree-health-medical-weight-loss",
     address: "3508 Far W Blvd #130, Austin, TX 78731",
@@ -334,6 +348,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_3aeffa1e6a",
     name: "TLC Medical Weight Loss",
     slug: "tlc-medical-weight-loss",
     address: "4301 W William Cannon Dr #B250, 4301 W William Cannon Dr Ste B250, Austin, TX 78749",
@@ -357,6 +372,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_05db9d49a1",
     name: "Medi-Weightloss Austin North",
     slug: "medi-weightloss-austin-north",
     address: "13359 N Hwy 183 Suite 403, Austin, TX 78750",
@@ -380,6 +396,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_7b906c735e",
     name: "KELM Wellness Evolution | Weight Loss & Skin Care",
     slug: "kelm-wellness-evolution-weight-loss-skin-care",
     address: "8118 Fry Rd Suite 802, Cypress, TX 77433",
@@ -403,6 +420,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_1de600639c",
     name: "Made Ya Skinny",
     slug: "made-ya-skinny",
     address: "15103 Mason Rd SPA 2, Cypress, TX 77433",
@@ -426,6 +444,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_c388e8dcb5",
     name: "Creole Contour Aesthetics",
     slug: "creole-contour-aesthetics",
     address: "15030 N Eldridge Pkwy Suite B, Cypress, TX 77429",
@@ -449,6 +468,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_4214429570",
     name: "Las Mercedes Family Clinic",
     slug: "las-mercedes-family-clinic",
     address: "20611 FM 529 STE 108, Cypress, TX 77433",
@@ -472,6 +492,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_6d913aedfe",
     name: "Texas Weight Loss - Houston Southwest",
     slug: "texas-weight-loss-houston-southwest",
     address: "11226 Southwest Fwy Ste B, Houston, TX 77031",
@@ -495,6 +516,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_6f7dfaa4ee",
     name: "The Dew Medical Clinic",
     slug: "the-dew-medical-clinic",
     address: "1505 Hwy 6 Suite 205, Houston, TX 77077",
@@ -517,6 +539,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_ccb9caee53",
     name: "Clinic 45",
     slug: "clinic-45",
     address: "8221 Gulf Fwy #400, Houston, TX 77017",
@@ -540,6 +563,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_708bcc40ca",
     name: "Clinica IDEAL Harwin",
     slug: "clinica-ideal-harwin",
     address: "7447 Harwin Dr. # 145, Houston, TX 77036, United States",
@@ -562,6 +586,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_6fabdfdb77",
     name: "Houston Weight Loss Center - Heights",
     slug: "houston-weight-loss-center-heights",
     address: "1941 W T C Jester Blvd #101, Houston, TX 77008",
@@ -585,6 +610,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_a4a1afdaf8",
     name: "1Stop Clinic",
     slug: "1stop-clinic",
     address: "3100 Hillcroft Ave, Houston, TX 77057",
@@ -607,6 +633,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_6bf0a52ce4",
     name: "Lifelong Weight Loss - Dr. Rupal Mathur, MD",
     slug: "lifelong-weight-loss-dr-rupal-mathur-md",
     address: "3100 Weslayan St #300, Houston, TX 77027",
@@ -629,6 +656,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_1d2be80383",
     name: "Anuli Aesthetics & Weightloss",
     slug: "anuli-aesthetics-weightloss",
     address: "3033 Chimney Rock Rd #519, Houston, TX 77056",
@@ -652,6 +680,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_86dcf94da5",
     name: "River Oaks Beauty and Weight Loss Center",
     slug: "river-oaks-beauty-and-weight-loss-center-houston",
     address: "510 Waugh Dr, Houston, TX 77019, United States",
@@ -674,6 +703,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_9c5a10f183",
     name: "Lean-ish: Weight, Wellness, & Aesthetics",
     slug: "lean-ish-weight-wellness-aesthetics",
     address: "7324 Southwest Fwy Suite 2-264, Houston, TX 77074",
@@ -697,6 +727,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_ece757796a",
     name: "Lean Dose Mobile",
     slug: "lean-dose-mobile",
     address: "7055 Old Katy Rd Suite 504, Houston, TX 77024",
@@ -720,6 +751,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_da8f4d2652",
     name: "Texas Laparoscopic Consultants, LLP",
     slug: "texas-laparoscopic-consultants-llp",
     address: "5115 Fannin St Suite 950, Houston, TX 77004",
@@ -743,6 +775,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_bc8a15da12",
     name: "NeuMed Modern Urgent Care + IV Therapy, Heights",
     slug: "neumed-modern-urgent-care-iv-therapy-heights",
     address: "2401 N Shepherd Dr Suite A130, Houston, TX 77008",
@@ -766,6 +799,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_691ded7132",
     name: "ENV Aesthetics",
     slug: "env-aesthetics",
     address: "2111 W Loop S Suite 110, Houston, TX 77027, United States",
@@ -789,6 +823,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_21ee0ffc56",
     name: "The DRIPBaR Houston Heights",
     slug: "the-dripbar-houston-heights",
     address: "2505 W 11th St Suite 400, Houston, TX 77008, United States",
@@ -812,6 +847,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_73f390dc86",
     name: "The Endocrine Center (Greater Heights Campus)",
     slug: "the-endocrine-center-greater-heights-campus",
     address: "1631 N Loop W Ste. 625, Houston, TX 77008, United States",
@@ -835,6 +871,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_00548c02cc",
     name: "Luxe Mobile IV: Houston",
     slug: "luxe-mobile-iv-houston",
     address: "4635 Southwest Fwy #200, Houston, TX 77027, United States",
@@ -858,6 +895,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_16900ece10",
     name: "Elevate Skin Clinic and Medspa",
     slug: "elevate-skin-clinic-and-medspa",
     address: "2446 South Blvd, Houston, TX 77098, United States",
@@ -881,6 +919,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_4cc5cfaca5",
     name: "Rodriguez Rejuvenation",
     slug: "rodriguez-rejuvenation",
     address: "4126 Southwest Fwy #1200, Houston, TX 77027, United States",
@@ -904,6 +943,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_637e89207a",
     name: "NIMS Medspa",
     slug: "nims-medspa",
     address: "3939 Washington Ave #220, Houston, TX 77007, United States",
@@ -927,6 +967,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_a60dc0153f",
     name: "Plastikos Aesthetics",
     slug: "plastikos-aesthetics",
     address: "2200 Edwards St #302, Houston, TX 77007",
@@ -950,6 +991,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_b2f120c300",
     name: "Eterna Aesthetics and Wellness",
     slug: "eterna-aesthetics-and-wellness",
     address: "12000 Westheimer Rd #304, Houston, TX 77077",
@@ -973,6 +1015,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_865a8226a9",
     name: "Eldridge Family Clinic",
     slug: "eldridge-family-clinic",
     address: "1809 Eldridge Pkwy Ste 208, Houston, TX 77077",
@@ -996,6 +1039,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_4456704e7a",
     name: "Cl\u00ednica Hispana Nuevo Horizonte",
     slug: "clinica-hispana-nuevo-horizonte",
     address: "6500 North Fwy # 116, Houston, TX 77076",
@@ -1019,6 +1063,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_04d012c091",
     name: "Cl\u00ednica Hispana Gulf Bank",
     slug: "clinica-hispana-gulf-bank",
     address: "1389 W Gulf Bank Rd, Houston, TX 77088",
@@ -1042,6 +1087,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_74a7058832",
     name: "Hillcroft Physicians PA",
     slug: "hillcroft-physicians-pa",
     address: "6400 Hillcroft St Ste 100, Houston, TX 77081",
@@ -1065,6 +1111,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_7755245553",
     name: "Memorial Hermann Surgical Specialists & Weight Loss Solutions",
     slug: "memorial-hermann-surgical-specialists-weight-loss-solutions",
     address: "10125 Katy Fwy #106, Houston, TX 77024",
@@ -1088,6 +1135,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_6efbf87fcb",
     name: "Leo Lapuerta, MD Plastic Surgery",
     slug: "leo-lapuerta-md-plastic-surgery",
     address: "1919 La Branch St, Houston, TX 77002",
@@ -1111,6 +1159,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_8f148232c6",
     name: "TeleSlim Clinic Houston",
     slug: "teleslim-clinic-houston",
     address: "708 Main St 10th Floor, Houston, TX 77002",
@@ -1134,6 +1183,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_e789a04392",
     name: "Nikko Dermatology - Houston Heights Dermatology",
     slug: "nikko-dermatology-houston-heights-dermatology",
     address: "4707 Eigel St Suite 150, Houston, TX 77007",
@@ -1157,6 +1207,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_a6d62b234b",
     name: "Stamina Weight Loss, Testosterone & ED Center",
     slug: "stamina-weight-loss-testosterone-ed-center-houston",
     address: "11811 East Fwy, Houston, TX 77029, United States",
@@ -1180,6 +1231,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_8de99cfdff",
     name: "Thrive Medicine Clinic",
     slug: "thrive-medicine-clinic-houston",
     address: "802 W 18th St, Houston, TX 77008, United States",
@@ -1203,6 +1255,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_4d3b6e4932",
     name: "iMotivate Wellness and Aesthetics",
     slug: "imotivate-wellness-and-aesthetics-houston",
     address: "947 Gessner Rd ste 215, Houston, TX 77024, United States",
@@ -1226,6 +1279,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_834eae1564",
     name: "TLC MedSpa Houston",
     slug: "tlc-medspa-houston-houston",
     address: "5115 Fannin St suite 960, Houston, TX 77004, United States",
@@ -1249,6 +1303,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_d653ba42e1",
     name: "Trava Health",
     slug: "trava-health",
     address: "21175 Tomball Pkwy, Houston, TX 77070",
@@ -1272,6 +1327,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_4ba99b0965",
     name: "Medella Urgent Care",
     slug: "medella-urgent-care",
     address: "10130 Louetta Rd Ste L, Houston, TX 77070",
@@ -1295,6 +1351,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_1f7119adf4",
     name: "Sophie JY Lee MD",
     slug: "sophie-jy-lee-md",
     address: "1313 Campbell Rd Ste F, Houston, TX 77055, United States",
@@ -1318,6 +1375,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_43c5709c7e",
     name: "Aesthetic Center for Plastic Surgery & MedSpa (ACPS)",
     slug: "aesthetic-center-for-plastic-surgery-medspa-acps-houston",
     address: "12727 Kimberley Ln Suite 300, Houston, TX 77024, United States",
@@ -1341,6 +1399,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_e1330f8749",
     name: "E-Concierge of Efficient Weight Loss & General Healthcare",
     slug: "e-concierge-of-efficient-weight-loss-general-healthcare",
     address: "2045 Space Park Dr Suite 235, Houston, TX 77058",
@@ -1364,6 +1423,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_f5c2366396",
     name: "Image Weight Loss Centers",
     slug: "image-weight-loss-centers",
     address: "11811 FM 1960 #175, Houston, TX 77065",
@@ -1387,6 +1447,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_cc6c8dcf31",
     name: "Medi-Weightloss Houston/Memorial",
     slug: "medi-weightloss-houston-memorial",
     address: "952 Echo Ln Suite 240, Houston, TX 77024",
@@ -1410,6 +1471,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_1a2f744c0c",
     name: "Serene Bold Health Clinic - Psychiatric | Medical | Weight-loss Clinic",
     slug: "serene-bold-serene-bold-health-clinic-psychiatric-medical-weight-loss-clinic",
     address: "9888 Bissonnet St, Houston, TX 77036",
@@ -1433,6 +1495,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_dba09478b6",
     name: "Elevate Integrative Healthcare - Medspa",
     slug: "elevate-integrative-healthcare-medspa",
     address: "5427 Bissonnet St #100, Houston, TX 77081",
@@ -1456,6 +1519,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_f0eb65ae2f",
     name: "Dr. Van Tran Family Practice",
     slug: "dr-van-tran-family-practice",
     address: "1919 N Loop W Suite 218, Houston, TX 77008",
@@ -1479,6 +1543,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_1be79b0064",
     name: "Texas Center for Lifestyle Medicine",
     slug: "texas-center-for-lifestyle-medicine",
     address: "333 W Loop N Fwy # 250, Houston, TX 77024",
@@ -1502,6 +1567,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_b203132664",
     name: "Ovation Med Spa",
     slug: "ovation-med-spa",
     address: "4801 Woodway Dr #150W, Houston, TX 77056, United States",
@@ -1525,6 +1591,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_69dd922eee",
     name: "Doctors Clinic Houston - Southwest Freeway",
     slug: "doctors-clinic-houston-southwest-freeway",
     address: "6535 Southwest Fwy, Houston, TX 77074, United States",
@@ -1548,6 +1615,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_f37018dc12",
     name: "SpringCare",
     slug: "springcare",
     address: "5373 W Alabama St #204, Houston, TX 77056, United States",
@@ -1571,6 +1639,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_4fbc93a294",
     name: "Santa Clara Family Clinic",
     slug: "santa-clara-family-clinic",
     address: "3420 Woodridge Dr, Houston, TX 77087",
@@ -1594,6 +1663,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_9157b5d6da",
     name: "The Skin Renewal Center",
     slug: "the-skin-renewal-center",
     address: "1512 W Alabama St, Houston, TX 77006",
@@ -1617,6 +1687,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_10e198c244",
     name: "Ricardo M Bonnor MD, FACS: Weight Loss Surgery",
     slug: "ricardo-m-bonnor-md-facs-weight-loss-surgery",
     address: "18211 Katy Fwy Suite 250, Houston, TX 77094",
@@ -1640,6 +1711,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_6f15c6e819",
     name: "WellAid Clinic",
     slug: "wellaid-clinic",
     address: "1520 Holland Ave, Houston, TX 77029",
@@ -1663,6 +1735,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_8c401aeaf2",
     name: "Victorious Wellness Center",
     slug: "victorious-wellness-center",
     address: "5615 NW Central Dr Suite C105, Houston, TX 77092",
@@ -1686,6 +1759,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_b8983aaba9",
     name: "Nowzaradan Younan MD, FACS",
     slug: "nowzaradan-younan-md-facs",
     address: "4009 Bellaire Blvd suite k, Houston, TX 77025",
@@ -1709,6 +1783,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_02bdc2765c",
     name: "Turnquest Surgical Solutions",
     slug: "turnquest-surgical-solutions",
     address: "18220 TX-249 #360, Houston, TX 77070",
@@ -1732,6 +1807,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_f95a1d85ee",
     name: "Holiday's Family Clinic",
     slug: "holiday-s-family-clinic",
     address: "16300 Kuykendahl Rd Suite 410, Houston, TX 77068",
@@ -1755,6 +1831,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_3f392c4c8e",
     name: "Rapha Health and Wellness: Nneka Edokpayi, MD",
     slug: "rapha-health-and-wellness-nneka-edokpayi-md",
     address: "17070 Red Oak Dr Suite 309, Houston, TX 77090",
@@ -1778,6 +1855,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_c3e76da571",
     name: "Ethos Endocrinology: Houston's Direct Care Endocrinologist",
     slug: "ethos-endocrinology-houston-s-direct-care-endocrinologist",
     address: "2500 Fondren Rd Suite 320, Houston, TX 77063",
@@ -1801,6 +1879,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_a38ddcad35",
     name: "Premier Primary Care : Malini Kumar, MD",
     slug: "premier-primary-care-malini-kumar-md",
     address: "5252 Hollister St Suite 114, Houston, TX 77040",
@@ -1824,6 +1903,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_895ac69f70",
     name: "LeMed Clinic (Steve Le Minh Duc, MD)",
     slug: "lemed-clinic-steve-le-minh-duc-md",
     address: "10515 Bellaire Blvd # J, Houston, TX 77072",
@@ -1847,6 +1927,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_e664db11a2",
     name: "Endocrinology Clinics of Tx Pa",
     slug: "endocrinology-clinics-of-tx-pa",
     address: "7500 Beechnut St #252, Houston, TX 77074",
@@ -1870,6 +1951,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_4829057772",
     name: "Houston Medical Wellness / Weight Loss Clinic",
     slug: "houston-medical-wellness-weight-loss-clinic-houston",
     address: "5910 Fairdale Ln, Houston, TX 77057, United States",
@@ -1893,6 +1975,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_bfa5bab032",
     name: "Clinica Medica Fuqua",
     slug: "clinica-medica-fuqua",
     address: "10594 Fuqua St, Houston, TX 77089",
@@ -1916,6 +1999,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_deac39ad99",
     name: "Selah MediSpa",
     slug: "selah-medispa",
     address: "21715 Kingsland Blvd #100, Katy, TX 77450",
@@ -1939,6 +2023,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_19449f7e3a",
     name: "Houston Weight Loss Center - Katy",
     slug: "houston-weight-loss-center-katy",
     address: "23217 Red River Dr, Katy, TX 77494",
@@ -1962,6 +2047,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_a5d021420d",
     name: "Medi-Weightloss Katy",
     slug: "medi-weightloss-katy",
     address: "22167 Westheimer Pkwy Suite 105, Katy, TX 77450",
@@ -1985,6 +2071,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_297fe648a6",
     name: "Harmony Lux Wellness Center",
     slug: "harmony-lux-wellness-center",
     address: "440 Cobia Dr suite 303, Katy, TX 77494",
@@ -2008,6 +2095,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_f76e0dbb2d",
     name: "Glow Up MD: Angie Kim, MD",
     slug: "glow-up-md-angie-kim-md",
     address: "1227 Grand W Blvd B210, Katy, TX 77449, United States",
@@ -2031,6 +2119,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_1759186a8a",
     name: "Memorial Health Urgent Care & Infusions",
     slug: "memorial-health-urgent-care-infusions",
     address: "26077 Nelson Way Suite 104, Katy, TX 77494",
@@ -2054,6 +2143,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_657a60bb0f",
     name: "Optimal Primary Care - Dr. Saba Jafri / Dr. Syed T. Jafri",
     slug: "optimal-primary-care-dr-saba-jafri-dr-syed-t-jafri",
     address: "705 S Fry Rd # 235, Katy, TX 77450",
@@ -2077,6 +2167,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_e3615aee65",
     name: "Valley Weight Loss Katy",
     slug: "valley-weight-loss-katy",
     address: "511 S Mason Rd suite 208, Katy, TX 77450",
@@ -2100,6 +2191,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_b7b1cfd6ff",
     name: "Sejal Desai, M.D. (Tula Medical Weight Loss & Wellness)",
     slug: "sejal-desai-m-d-tula-medical-weight-loss-wellness",
     address: "158 Bella Katy Dr, Katy, TX 77494",
@@ -2123,6 +2215,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_8000fe264a",
     name: "MyPCP Dr - Katy",
     slug: "mypcp-dr-katy",
     address: "21398 Provincial Blvd, Katy, TX 77450",
@@ -2146,6 +2239,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_1e9939e59a",
     name: "Dr Shazia Farooq Sheikh - Crescent Clinic",
     slug: "dr-shazia-farooq-sheikh-crescent-clinic",
     address: "23211 Red River Dr, Katy, TX 77494",
@@ -2169,6 +2263,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_4e1a94e8aa",
     name: "Macie Medical",
     slug: "macie-medical",
     address: "777 S Fry Rd Ste 206, Katy, TX 77450",
@@ -2192,6 +2287,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_7358191d16",
     name: "Mason Park Medical Clinic",
     slug: "mason-park-medical-clinic",
     address: "21770 Kingsland Blvd, Katy, TX 77450",
@@ -2215,6 +2311,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_221937b096",
     name: "Lifestyle Medicine Clinic",
     slug: "lifestyle-medicine-clinic",
     address: "26077 Nelson Way Suite #1202, Katy, TX 77494",
@@ -2238,6 +2335,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_77c7b31d81",
     name: "Amaya Antiaging And Weight Loss Center",
     slug: "amaya-antiaging-and-weight-loss-center-katy",
     address: "Between Starbucks and Alamo Drafthouse Cinema, 539 S Mason Rd, Katy, TX 77450, United States",
@@ -2261,6 +2359,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_4ae3563af1",
     name: "Healthy Horizons Clinic",
     slug: "healthy-horizons-clinic",
     address: "7106 Spencer Hwy, Pasadena, TX 77505, United States",
@@ -2284,6 +2383,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_7f5f5e1eec",
     name: "Medshape Texas Medspa and Weight Loss Clinic",
     slug: "medshape-texas-medspa-and-weight-loss-clinic",
     address: "5050 Crenshaw Rd # 200, Pasadena, TX 77505, United States",
@@ -2307,6 +2407,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_13c719ed93",
     name: "CornerstoneMD - Primary Care Clinic & Weight Loss",
     slug: "cornerstonemd-primary-care-clinic-weight-loss",
     address: "5150 Crenshaw Rd a100, Pasadena, TX 77505",
@@ -2330,6 +2431,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_162b6ffa93",
     name: "Convenient Urgent Care - Spencer",
     slug: "convenient-urgent-care-spencer",
     address: "3950 Spencer Hwy, Pasadena, TX 77504",
@@ -2353,6 +2455,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_f5c2366396",
     name: "Image Weight Loss Centers",
     slug: "image-weight-loss-centers-pearland",
     address: "6516 Broadway St STE #104, Pearland, TX 77584",
@@ -2376,6 +2479,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_110c6a6fa8",
     name: "Victory Health Texas",
     slug: "victory-health-texas",
     address: "1506 E Broadway St #101, Pearland, TX 77581",
@@ -2399,6 +2503,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_e404f47fa7",
     name: "Premier Plastic Surgery - Christopher Hankins MD",
     slug: "premier-plastic-surgery-christopher-hankins-md",
     address: "2225 County Rd 90 suite 115, Pearland, TX 77584",
@@ -2422,6 +2527,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_6efbf87fcb",
     name: "Leo Lapuerta, MD Plastic Surgery",
     slug: "leo-lapuerta-md-plastic-surgery-pearland",
     address: "2360 County Rd 94 #104, Pearland, TX 77584",
@@ -2445,6 +2551,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_9cddf9951a",
     name: "Get Well Clinic Family Health and Weight Loss",
     slug: "get-well-clinic-family-health-and-weight-loss",
     address: "8633 Broadway St #101, Pearland, TX 77584, United States",
@@ -2468,6 +2575,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_1b732a26ef",
     name: "Walter J. Family and Wellness Clinic",
     slug: "walter-j-family-and-wellness-clinic",
     address: "3129 Kingsley Dr STE 1630, Pearland, TX 77584",
@@ -2491,6 +2599,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_4ad7578289",
     name: "C.A.R.E Surgery Clinic, P.A",
     slug: "c-a-r-e-surgery-clinic-p-a",
     address: "10907 Memorial Hermann Dr #440, Pearland, TX 77584",
@@ -2514,6 +2623,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_f76c653007",
     name: "Pearland Healthcare Center (Heights Family Practice, PLLC)",
     slug: "pearland-healthcare-center-heights-family-practice-pllc",
     address: "2404 Smith Ranch Rd #200, Pearland, TX 77584",
@@ -2537,6 +2647,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_425279c722",
     name: "My Doctor Primary Care Clinic",
     slug: "my-doctor-primary-care-clinic",
     address: "9330 Broadway St Ste B306, Pearland, TX 77584",
@@ -2560,6 +2671,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_fa68d07326",
     name: "Texas Pain Physicians : Pearland",
     slug: "texas-pain-physicians-pearland",
     address: "2243 Park Ave, Pearland, TX 77581",
@@ -2583,6 +2695,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_af01870ebd",
     name: "Complete Health Clinic",
     slug: "complete-health-clinic-richmond",
     address: "10401 Mason Rd Bldg D Ste 404, Richmond, TX 77406, United States",
@@ -2606,6 +2719,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_956dbd2f9f",
     name: "Vallabelle Health and Wellness Clinic",
     slug: "vallabelle-health-and-wellness-clinic-richmond",
     address: "17627 Beechnut St, Richmond, TX 77407, United States",
@@ -2629,6 +2743,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_617d022767",
     name: "New You Medical Center",
     slug: "new-you-medical-center-richmond",
     address: "5550 Long Prairie Trace, Richmond, TX 77407, United States",
@@ -2652,6 +2767,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_91af18f67a",
     name: "Texas Weight Loss - San Antonio",
     slug: "texas-weight-loss-san-antonio",
     address: "15909 San Pedro Ave Ste 204, San Antonio, TX 78232",
@@ -2675,6 +2791,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_64364ede4e",
     name: "Medical Center Weight Loss Clinic & Spa",
     slug: "medical-center-weight-loss-clinic-spa",
     address: "2034 Babcock Rd, San Antonio, TX 78229",
@@ -2698,6 +2815,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_6d4356c898",
     name: "Medi-Weightloss San Antonio",
     slug: "medi-weightloss-san-antonio",
     address: "7410 John Smith Dr Suite 212, San Antonio, TX 78229",
@@ -2721,6 +2839,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_475c613e49",
     name: "Spring Weight Loss & B12 Clinic",
     slug: "spring-weight-loss-b12-clinic",
     address: "8515 Spring Cypress Rd # 104, Spring, TX 77379",
@@ -2744,6 +2863,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_6b3c157981",
     name: "Fit & Well, MD",
     slug: "fit-well-md",
     address: "5220 Farm to Market 2920 Ste 110, Spring, TX 77388",
@@ -2767,6 +2887,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_cf8c1b120d",
     name: "Express Family Clinic-Spring",
     slug: "express-family-clinic-spring",
     address: "610 Rayford Rd # 644, Spring, TX 77386",
@@ -2790,6 +2911,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_7180ffef60",
     name: "Accessible Family Clinic",
     slug: "accessible-family-clinic",
     address: "4736 Farm to Market 2920, Spring, TX 77388",
@@ -2813,6 +2935,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_5515a89188",
     name: "Budget Family Clinic",
     slug: "budget-family-clinic",
     address: "25422 Aldine Westfield Rd, Spring, TX 77373",
@@ -2836,6 +2959,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_a8121176d5",
     name: "KenKaizen Wellness",
     slug: "kenkaizen-wellness",
     address: "395 Sawdust Rd, Spring, TX 77380",
@@ -2859,6 +2983,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_43c62a39be",
     name: "Dr. A Patient Care",
     slug: "dr-a-patient-care",
     address: "5523 Louetta Rd STE C, Spring, TX 77379",
@@ -2882,6 +3007,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_48c736aba7",
     name: "A-Z Primary Care and Walk-in Clinic",
     slug: "a-z-primary-care-and-walk-in-clinic",
     address: "2940 FM2920 Suite 150, Spring, TX 77388",
@@ -2905,6 +3031,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_2ea71f393a",
     name: "Perfect You Health & Wellness",
     slug: "perfect-you-health-wellness",
     address: "3727 Greenbriar Dr, Stafford, TX 77477",
@@ -2928,6 +3055,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_9c5a10f183",
     name: "Lean-ish: Weight, Wellness, & Aesthetics",
     slug: "lean-ish-weight-wellness-aesthetics-stafford",
     address: "12794 Fountain Lake Cir Suite #3, Stafford, TX 77477, United States",
@@ -2951,6 +3079,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_9b2ea2c3b4",
     name: "Stafford Family Practice | Primary Care, Weight Loss, Physical Exams",
     slug: "stafford-family-practice-primary-care-weight-loss-physical-exams",
     address: "203 Brand Ln Ste 35, Stafford, TX 77477",
@@ -2974,6 +3103,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_a876e6f723",
     name: "Your Choice Wellness Center",
     slug: "your-choice-wellness-center",
     address: "11104 W Airport Blvd # 135, Stafford, TX 77477",
@@ -2997,6 +3127,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_0e86e44c5b",
     name: "Voss Family Clinic Sugar Land | Primary Care, Weight Loss, Annual Physical, Chronic Disease Management",
     slug: "voss-family-clinic-sugar-land-primary-care-weight-loss-annual-physical-chronic-disease-management",
     address: "11920 S Texas 6 #1500, Sugar Land, TX 77498",
@@ -3020,6 +3151,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_055c52ac93",
     name: "Core Primary Care",
     slug: "core-primary-care",
     address: "20403 University Blvd Suite 400, Sugar Land, TX 77478",
@@ -3043,6 +3175,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_2e58618ecc",
     name: "Serene Bold Health Clinic - Psychiatric | Medical | Weight Loss",
     slug: "serene-bold-health-clinic-psychiatric-medical-weight-loss",
     address: "7616 Branford Pl Suite 220, Sugar Land, TX 77479",
@@ -3066,6 +3199,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_45c677da58",
     name: "Focus Weight Loss Club",
     slug: "focus-weight-loss-club",
     address: "5610 W Riverpark Dr suite b, Sugar Land, TX 77479",
@@ -3089,6 +3223,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_96730e7216",
     name: "SynergenX Sugar Land | Hormone Health & TRT Clinic",
     slug: "synergenx-sugar-land-hormone-health-trt-clinic-sugar-land",
     address: "15281-B Southwest Fwy, Sugar Land, TX 77478, United States",
@@ -3112,6 +3247,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_eef8d1b9e3",
     name: "Renew Wellness Center - Sugar Land",
     slug: "renew-wellness-center-sugar-land-sugar-land",
     address: "210 Century Square Blvd Ste 100, Sugar Land, TX 77478, United States",
@@ -3135,6 +3271,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_04ca2385b3",
     name: "You Only Younger",
     slug: "you-only-younger",
     address: "7002 Riverbrook Dr, Sugar Land, TX 77479",
@@ -3158,6 +3295,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_fe6b2016c5",
     name: "Image Weight Loss",
     slug: "image-weight-loss",
     address: "16103 Lexington Blvd, Sugar Land, TX 77479",
@@ -3181,6 +3319,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_2b2f621ff6",
     name: "Elite DOC Health and Beauty: Naz Keshwani, M.D.",
     slug: "elite-doc-health-and-beauty-naz-keshwani-m-d-sugar-land",
     address: "4665 Sweetwater Blvd #200, Sugar Land, TX 77479, United States",
@@ -3204,6 +3343,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_34b320db37",
     name: "Performance Hormone Therapy & Weight Loss of Sugarland Texas",
     slug: "performance-hormone-therapy-weight-loss-of-sugarland-texas-sugar-land",
     address: "2245 Texas Dr, Sugar Land, TX 77479, United States",
@@ -3227,6 +3367,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_db3d0f0f64",
     name: "Allure Aesthetics",
     slug: "allure-aesthetics-sugar-land",
     address: "6903 Brisbane Ct Ste 100, Sugar Land, TX 77479, United States",
@@ -3250,6 +3391,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_9d646d3d99",
     name: "Lifetime Primary Care Sugar Land | Primary Care, Family Medicine And Chronic Disease Management in Sugar Land",
     slug: "lifetime-primary-care-sugar-land-primary-care-family-medicine-and-chronic-disease-management-in-sugar-land",
     address: "16645 W Airport Blvd, Sugar Land, TX 77498",
@@ -3273,6 +3415,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_86f764bc3d",
     name: "Rejuven8 Medical",
     slug: "rejuven8-medical-sugar-land",
     address: "19875 Southwest Fwy #280, Sugar Land, TX 77479, United States",
@@ -3296,6 +3439,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_0c57454027",
     name: "Weight Loss Now-The Woodlands",
     slug: "weight-loss-now-the-woodlands",
     address: "25227 Grogans Mill Rd suite 215, The Woodlands, TX 77380",
@@ -3319,6 +3463,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_344b24db47",
     name: "SGK Plastic Surgery",
     slug: "sgk-plastic-surgery",
     address: "10080 Research Forest Dr, The Woodlands, TX 77354",
@@ -3342,6 +3487,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_bb2c107329",
     name: "R\u00eave Dermatology and Aesthetics",
     slug: "r-ve-dermatology-and-aesthetics",
     address: "9323 Pinecroft Dr Suite 202, The Woodlands, TX 77380",
@@ -3365,6 +3511,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_eb179eeb61",
     name: "Slimgenetix",
     slug: "slimgenetix",
     address: "4200 Research Forest Dr Suite 150, The Woodlands, TX 77381",
@@ -3388,6 +3535,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_25c143f092",
     name: "Woodlands Primary Healthcare, Javier Sosa MD",
     slug: "woodlands-primary-healthcare-javier-sosa-md",
     address: "25511 Budde Rd Suite 3901, The Woodlands, TX 77380",
@@ -3411,6 +3559,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_9a0c53344e",
     name: "My Zoom Clinic",
     slug: "my-zoom-clinic",
     address: "1015 W. Medical Center Blvd STE 1400, Webster, TX 77598",
@@ -3434,6 +3583,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_44998cf486",
     name: "Primary Care Center of Clear Lake - Webster",
     slug: "primary-care-center-of-clear-lake-webster",
     address: "13920 Osprey Ct STE C, Webster, TX 77598",
@@ -3457,6 +3607,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_d86abaaede",
     name: "Webster Weight Loss",
     slug: "webster-weight-loss",
     address: "17080 State Hwy 3, Webster, TX 77598",
@@ -3480,6 +3631,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_c52017a5e8",
     name: "Houston Weight Loss Center - Webster/League City",
     slug: "houston-weight-loss-center-webster-league-city",
     address: "17630 State Hwy 3, Webster, TX 77598",
@@ -3503,6 +3655,7 @@ export const texasWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_8ad1d3ac31",
     name: "Amir Salim MD PA",
     slug: "amir-salim-md-pa",
     address: "450 N Texas Ave Suites B&C, Webster, TX 77598",

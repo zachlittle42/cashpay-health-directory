@@ -12,6 +12,7 @@ export const pharmaProviders: Provider[] = [
   // FEATURED: Top companies by 2024 performance + patient assistance quality
   // -----------------------------------------------------------------------------
   {
+    id: 'c_de34e70e6e',
     slug: 'pfizer',
     name: 'Pfizer',
     description: 'Global pharmaceutical giant known for vaccines (COVID-19, pneumonia), oncology drugs, and cardiovascular medications. 175+ years in business.',
@@ -33,6 +34,7 @@ export const pharmaProviders: Provider[] = [
     lastVerified: '2024-12-21',
   },
   {
+    id: 'c_04dba6b3d4',
     slug: 'johnson-johnson',
     name: 'Johnson & Johnson (Janssen)',
     description: '#1 pharma company by 2024 Rx revenue ($53.5B). Janssen pharmaceutical division focuses on immunology, oncology, and neuroscience.',
@@ -54,6 +56,7 @@ export const pharmaProviders: Provider[] = [
     lastVerified: '2024-12-21',
   },
   {
+    id: 'c_0c67723fa2',
     slug: 'novo-nordisk',
     name: 'Novo Nordisk',
     description: 'Danish pharmaceutical leader in diabetes care and obesity treatments. Makers of Ozempic, Wegovy, and Rybelsus. +26% revenue growth in 2024.',
@@ -75,6 +78,7 @@ export const pharmaProviders: Provider[] = [
     lastVerified: '2024-12-21',
   },
   {
+    id: 'c_fad1ae3af1',
     slug: 'eli-lilly',
     name: 'Eli Lilly',
     description: 'Fastest-growing major pharma (+32% in 2024). Makers of Mounjaro, Zepbound, and affordable insulin. Industry leader in patient assistance.',
@@ -96,6 +100,7 @@ export const pharmaProviders: Provider[] = [
     lastVerified: '2024-12-21',
   },
   {
+    id: 'c_55a8982688',
     slug: 'abbvie',
     name: 'AbbVie',
     description: '#2 pharma by 2024 Rx revenue ($52.7B). Known for immunology blockbusters Humira, Skyrizi, Rinvoq. Best-in-class patient support for rheumatology.',
@@ -117,6 +122,7 @@ export const pharmaProviders: Provider[] = [
     lastVerified: '2024-12-21',
   },
   {
+    id: 'c_37b8179505',
     slug: 'astrazeneca',
     name: 'AstraZeneca',
     description: 'British-Swedish pharma with +18% growth in 2024 ($54.1B revenue). Strong in oncology, respiratory, and cardiovascular medications.',
@@ -142,6 +148,7 @@ export const pharmaProviders: Provider[] = [
   // ADDITIONAL MAJOR PHARMA COMPANIES
   // -----------------------------------------------------------------------------
   {
+    id: 'c_8cba8902ad',
     slug: 'merck',
     name: 'Merck & Co.',
     description: 'Global pharmaceutical company. Makers of Keytruda (revolutionary cancer immunotherapy), Gardasil (HPV vaccine), and essential medications.',
@@ -163,6 +170,7 @@ export const pharmaProviders: Provider[] = [
     lastVerified: '2024-12-21',
   },
   {
+    id: 'c_aaef6a6c0b',
     slug: 'amgen',
     name: 'Amgen',
     description: 'Pioneer biotech company (+17% growth in 2024). Leaders in biologics for cancer, bone health, and inflammatory conditions.',
@@ -184,6 +192,7 @@ export const pharmaProviders: Provider[] = [
     lastVerified: '2024-12-21',
   },
   {
+    id: 'c_076d1bccc4',
     slug: 'gilead',
     name: 'Gilead Sciences',
     description: 'Leader in HIV treatment and prevention (Biktarvy, Descovy for PrEP). Also strong in hepatitis C cures and oncology.',
@@ -205,6 +214,7 @@ export const pharmaProviders: Provider[] = [
     lastVerified: '2024-12-21',
   },
   {
+    id: 'c_3a1088daa5',
     slug: 'regeneron',
     name: 'Regeneron Pharmaceuticals',
     description: 'Innovative biotech known for Eylea (eye disease), Dupixent (eczema/asthma, with Sanofi), and COVID-19 antibody treatments.',
@@ -226,6 +236,7 @@ export const pharmaProviders: Provider[] = [
     lastVerified: '2024-12-21',
   },
   {
+    id: 'c_86e5f64657',
     slug: 'bristol-myers-squibb',
     name: 'Bristol Myers Squibb',
     description: 'Powerhouse in cancer treatment (Opdivo, Yervoy, Revlimid) and blood disorders. Strong patient access support programs.',
@@ -247,6 +258,7 @@ export const pharmaProviders: Provider[] = [
     lastVerified: '2024-12-21',
   },
   {
+    id: 'c_73df7db36f',
     slug: 'gsk',
     name: 'GSK (GlaxoSmithKline)',
     description: 'British pharmaceutical company leading in vaccines (Shingrix, flu), respiratory medications, and HIV treatments (ViiV Healthcare).',
@@ -268,6 +280,7 @@ export const pharmaProviders: Provider[] = [
     lastVerified: '2024-12-21',
   },
   {
+    id: 'c_77bc4bb917',
     slug: 'sanofi',
     name: 'Sanofi',
     description: 'French pharmaceutical company known for Dupixent (with Regeneron), diabetes care (Lantus), vaccines, and rare disease treatments.',

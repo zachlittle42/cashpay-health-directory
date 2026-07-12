@@ -5,6 +5,7 @@ import { WeightLossClinic } from '@/lib/weightloss-clinic-types';
 
 export const massachusettsWeightLossClinics: WeightLossClinic[] = [
   {
+    id: "c_57cab08607",
     name: "Vega Vitality",
     slug: "vega-vitality",
     address: "551 Boylston Street, 4th Floor",
@@ -28,6 +29,7 @@ export const massachusettsWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_bfbbefe0a8",
     name: "Medical Aesthetics on Tremont",
     slug: "medical-aesthetics-on-tremont",
     address: "655 Tremont Street C2",
@@ -51,6 +53,7 @@ export const massachusettsWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_50fab2875f",
     name: "Boston Specialists Lifestyle and Weight Management Clinic",
     slug: "boston-specialists-lifestyle-and-weight-management-clinic",
     address: "75 Kneeland St., Floor 1",
@@ -71,6 +74,7 @@ export const massachusettsWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_616804fe39",
     name: "Boston Medical Aesthetics",
     slug: "boston-medical-aesthetics",
     address: "21 Merchants Row, Suite 3A",
@@ -94,6 +98,7 @@ export const massachusettsWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_6a4956cdf4",
     name: "Gameday Men's Health Boston",
     slug: "gameday-mens-health-boston",
     address: "575 Boylston St, Suite 6E",
@@ -114,6 +119,7 @@ export const massachusettsWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_7304fe3ecf",
     name: "Clareo Plastic Surgery",
     slug: "clareo-plastic-surgery",
     address: "500 Commonwealth Avenue, Suite 526",

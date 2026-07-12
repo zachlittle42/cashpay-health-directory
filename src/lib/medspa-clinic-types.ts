@@ -22,6 +22,7 @@ export type MedspaService =
   | 'IV Therapy';
 
 export interface MedspaClinic {
+  id: string;                // Foundation #1 — stable entity id (chain-level; stamped from ChainTemplate.id)
   name: string;
   slug: string;
   address?: string;          // omitted for multi-location chains (use their finder)

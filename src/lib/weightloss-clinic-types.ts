@@ -4,6 +4,7 @@
 export type WeightLossService = 'glp1' | 'semaglutide' | 'tirzepatide' | 'phentermine' | 'medical_supervision' | 'nutrition' | 'body_composition';
 
 export interface WeightLossClinic {
+  id: string;                // Foundation #1 — stable entity id, minted by scripts/ingest/mint_ids.py
   name: string;
   slug: string;
   address: string;

@@ -9,6 +9,7 @@
 import { MedspaClinic, MedspaService } from '@/lib/medspa-clinic-types';
 
 export interface ChainTemplate {
+  id: string;                // Foundation #1 — chain-level stable entity id, minted by scripts/ingest/mint_ids.py
   key: string;
   name: string;
   services: MedspaService[];
@@ -23,6 +24,7 @@ export interface ChainTemplate {
 
 export const MEDSPA_CHAINS: Record<string, ChainTemplate> = {
   laseraway: {
+    id: 'c_80952d7c8c',
     key: 'laseraway',
     name: 'LaserAway',
     services: ['Laser Hair Removal', 'Botox', 'Dermal Fillers', 'CoolSculpting', 'Microneedling', 'Chemical Peels'],
@@ -40,6 +42,7 @@ export const MEDSPA_CHAINS: Record<string, ChainTemplate> = {
     bestFor: 'A one-stop chain for laser + injectables with national consistency',
   },
   'ideal-image': {
+    id: 'c_c36c2350a4',
     key: 'ideal-image',
     name: 'Ideal Image',
     services: ['Laser Hair Removal', 'Botox', 'Dermal Fillers', 'CoolSculpting', 'Skin Rejuvenation'],
@@ -57,6 +60,7 @@ export const MEDSPA_CHAINS: Record<string, ChainTemplate> = {
     bestFor: 'Members who want bundled laser + injectables on a plan',
   },
   'sev-laser': {
+    id: 'c_3909b25c8a',
     key: 'sev-laser',
     name: 'SEV Laser',
     services: ['Laser Hair Removal', 'Botox', 'Dermal Fillers', 'Skin Rejuvenation', 'Microneedling'],
@@ -74,6 +78,7 @@ export const MEDSPA_CHAINS: Record<string, ChainTemplate> = {
     bestFor: 'Budget-conscious laser hair removal plus basic injectables',
   },
   'milan-laser': {
+    id: 'c_d52278158b',
     key: 'milan-laser',
     name: 'Milan Laser Hair Removal',
     services: ['Laser Hair Removal'],
@@ -91,6 +96,7 @@ export const MEDSPA_CHAINS: Record<string, ChainTemplate> = {
     bestFor: 'Laser hair removal only, with unlimited future touch-ups',
   },
   'sono-bello': {
+    id: 'c_256f6b89ed',
     key: 'sono-bello',
     name: 'Sono Bello',
     services: ['Body Contouring'],
@@ -108,6 +114,7 @@ export const MEDSPA_CHAINS: Record<string, ChainTemplate> = {
     bestFor: 'Targeted fat removal / body contouring as an in-office procedure',
   },
   restore: {
+    id: 'c_738481fc7b',
     key: 'restore',
     name: 'Restore Hyper Wellness',
     services: ['IV Therapy', 'Skin Rejuvenation'],
@@ -135,6 +142,9 @@ export function buildCityClinic(
   if (!t) throw new Error(`Unknown med-spa chain: ${chainKey}`);
   const servicesList = t.services.join(', ').toLowerCase();
   return {
+    // Chain-level entity id (Foundation #1): every city instance of a chain shares
+    // the chain's one id — the chain IS the entity. See scripts/ingest/README.md.
+    id: t.id,
     name: `${t.name} — ${opts.city}`,
     slug: `${t.key}-${opts.citySlug}`,
     city: opts.city,

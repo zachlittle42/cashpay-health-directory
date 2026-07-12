@@ -5,6 +5,7 @@ import { DexaClinic } from '@/lib/dexa-clinic-types';
 
 export const georgiaDexaClinics: DexaClinic[] = [
   {
+    id: "c_e697f36b92",
     name: "DexaFit Atlanta",
     slug: "dexafit-atlanta",
     address: "5553 Peachtree Rd Ste 180, Chamblee, GA 30341",
@@ -28,6 +29,7 @@ export const georgiaDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_31d8745bb5",
     name: "Dexa Body Atlanta",
     slug: "dexa-body-atlanta",
     address: "3355 Lenox Rd Ste 750, Atlanta, GA 30326",
@@ -48,6 +50,7 @@ export const georgiaDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_7279c5328d",
     name: "Live Lean Rx Atlanta",
     slug: "live-lean-rx-atlanta",
     address: "6100 Lake Forrest Dr Ste 125, Atlanta, GA 30328",

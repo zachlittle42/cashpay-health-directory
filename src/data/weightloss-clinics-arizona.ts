@@ -6,6 +6,7 @@ import { WeightLossClinic } from '@/lib/weightloss-clinic-types';
 export const arizonaWeightLossClinics: WeightLossClinic[] = [
   // PHOENIX
   {
+    id: 'c_3d21f47885',
     name: 'Phoenix Weight Loss Clinic',
     slug: 'phoenix-weight-loss-clinic',
     address: '4530 E Shea Blvd #200, Phoenix, AZ 85028',
@@ -29,6 +30,7 @@ export const arizonaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: 'c_4fd0bee267',
     name: 'Arizona Medical Weight Loss',
     slug: 'arizona-medical-weight-loss',
     address: '10210 N 32nd St #B1, Phoenix, AZ 85028',
@@ -52,6 +54,7 @@ export const arizonaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: 'c_49a1b6169b',
     name: 'Trim Medical Weight Loss',
     slug: 'trim-medical-phoenix',
     address: '3815 E Bell Rd #3600, Phoenix, AZ 85032',
@@ -77,6 +80,7 @@ export const arizonaWeightLossClinics: WeightLossClinic[] = [
 
   // SCOTTSDALE
   {
+    id: 'c_b4babd50a7',
     name: 'Scottsdale Weight Loss Center',
     slug: 'scottsdale-weight-loss-center',
     address: '8777 E Via de Ventura #200, Scottsdale, AZ 85258',
@@ -100,6 +104,7 @@ export const arizonaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: 'c_cf48a53f58',
     name: 'LifeScape Weight Loss Scottsdale',
     slug: 'lifescape-weight-loss-scottsdale',
     address: '9312 E Raintree Dr, Scottsdale, AZ 85260',
@@ -123,6 +128,7 @@ export const arizonaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: 'c_e316593634',
     name: 'Desert Wellness Weight Loss',
     slug: 'desert-wellness-scottsdale',
     address: '7047 E Greenway Pkwy #150, Scottsdale, AZ 85254',
@@ -148,6 +154,7 @@ export const arizonaWeightLossClinics: WeightLossClinic[] = [
 
   // TUCSON
   {
+    id: 'c_7aa77bbe14',
     name: 'Tucson Weight Loss',
     slug: 'tucson-weight-loss',
     address: '6127 E Broadway Blvd #200, Tucson, AZ 85711',
@@ -171,6 +178,7 @@ export const arizonaWeightLossClinics: WeightLossClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: 'c_09235852d3',
     name: 'Arizona Weight Loss Institute',
     slug: 'az-weight-loss-institute-tucson',
     address: '6400 N Oracle Rd #200, Tucson, AZ 85704',

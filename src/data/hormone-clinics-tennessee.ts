@@ -5,6 +5,7 @@ import { HormoneClinic } from '@/lib/hormone-clinic-types';
 
 export const tennesseeHormoneClinics: HormoneClinic[] = [
   {
+    id: "c_9306c4be76",
     name: "Gameday Men's Health Nashville - Green Hills",
     slug: "gameday-mens-health-nashville-green-hills",
     address: "4205 Hillsboro Pike, Suite 130",
@@ -28,6 +29,7 @@ export const tennesseeHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_87bcf07eb4",
     name: "Nashville Men's Health",
     slug: "nashville-mens-health",
     address: "2801 Charlotte Avenue",
@@ -48,6 +50,7 @@ export const tennesseeHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_f69e7ba7ba",
     name: "Compass Human Performance",
     slug: "compass-human-performance",
     address: "4525 Harding Pike, Suite 104",
@@ -70,6 +73,7 @@ export const tennesseeHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_568c5f1e7a",
     name: "Vitality Medical Wellness Center",
     slug: "vitality-medical-wellness-center",
     address: "125 Belle Forest Circle, Suite 100",
@@ -89,6 +93,7 @@ export const tennesseeHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_c731e08a58",
     name: "Nashville Hormone & Integrative Medicine Center",
     slug: "nashville-hormone-integrative-medicine-center",
     address: "1909 Mallory Lane, Suite 108",
@@ -111,6 +116,7 @@ export const tennesseeHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_cd33cb8f74",
     name: "Revital Health Clinics",
     slug: "revital-health-clinics",
     address: "695 Presidents Place, Suite 200",
@@ -130,6 +136,7 @@ export const tennesseeHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_fb0f379fe4",
     name: "Optimize U Brentwood",
     slug: "optimize-u-brentwood",
     address: "7909 Concord Hills Drive, Suite 105",
@@ -152,6 +159,7 @@ export const tennesseeHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_f74605d518",
     name: "Cool Springs MD",
     slug: "cool-springs-md",
     address: "1642 Westgate Circle",
@@ -171,6 +179,7 @@ export const tennesseeHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_ca8e30c6ee",
     name: "R3 Anti-Aging & Med Spa",
     slug: "r3-anti-aging-med-spa",
     address: "5020 Thoroughbred Lane",
@@ -190,6 +199,7 @@ export const tennesseeHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_a2b8daf3d2",
     name: "Restore Hormonal Vitality & Wellness Center",
     slug: "restore-hormonal-vitality-wellness-center",
     address: "1612 Westgate Circle, Suite 214",

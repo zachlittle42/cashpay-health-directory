@@ -6,6 +6,7 @@ import { HormoneClinic } from '@/lib/hormone-clinic-types';
 export const texasHormoneClinics: HormoneClinic[] = [
   // HOUSTON
   {
+    id: 'c_dd71bf2f11',
     name: 'Lowcountry Male',
     slug: 'lowcountry-male-houston',
     address: '2425 West Loop S #200, Houston, TX 77027',
@@ -29,6 +30,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: 'c_262c88b741',
     name: 'Evolve Telemedicine',
     slug: 'evolve-telemedicine-houston',
     address: '5959 West Loop S #220, Houston, TX 77401',
@@ -51,6 +53,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: 'c_383068c0ca',
     name: 'Titan Medical Center',
     slug: 'titan-medical-houston',
     address: '6550 Mapleridge St #208, Houston, TX 77081',
@@ -74,6 +77,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: 'c_10e39c4ba3',
     name: 'Her Wellness Health Center',
     slug: 'her-wellness-houston',
     address: '1415 North Loop W #200, Houston, TX 77008',
@@ -99,6 +103,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
 
   // DALLAS
   {
+    id: 'c_6ce743bd08',
     name: 'Evolve Men\'s Health Dallas',
     slug: 'evolve-mens-health-dallas',
     address: '5944 Luther Lane #700, Dallas, TX 75225',
@@ -122,6 +127,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: 'c_d84151ee30',
     name: 'Prime Men\'s Medical Center',
     slug: 'prime-mens-dallas',
     address: '4849 Greenville Ave #1470, Dallas, TX 75206',
@@ -145,6 +151,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: 'c_b0925ae3dc',
     name: 'BioTE Dallas - Lakewood',
     slug: 'biote-dallas-lakewood',
     address: '6333 E Mockingbird Ln #229, Dallas, TX 75214',
@@ -167,6 +174,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: 'c_1fd83e110c',
     name: 'The Riegel Center',
     slug: 'riegel-center-dallas',
     address: '5080 Spectrum Dr #1050E, Addison, TX 75001',
@@ -192,6 +200,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
 
   // AUSTIN
   {
+    id: 'c_281255726a',
     name: 'Aspire Regenerative',
     slug: 'aspire-regenerative-austin',
     address: '3801 N Capital of Texas Hwy E240, Austin, TX 78746',
@@ -214,6 +223,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: 'c_592f161c41',
     name: 'Prime Men\'s Medical Austin',
     slug: 'prime-mens-austin',
     address: '3107 Oak Creek Dr #140, Austin, TX 78727',
@@ -237,6 +247,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: 'c_e3f3791f99',
     name: 'Hormones by Design',
     slug: 'hormones-by-design-austin',
     address: '8701 Shoal Creek Blvd #401, Austin, TX 78757',
@@ -262,6 +273,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
 
   // SAN ANTONIO
   {
+    id: 'c_dbf5b98885',
     name: 'Gameday Men\'s Health San Antonio',
     slug: 'gameday-mens-sa',
     address: '18626 Hardy Oak Blvd #200, San Antonio, TX 78258',
@@ -285,6 +297,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: 'c_7b2ccf9fe7',
     name: 'BodyLogicMD San Antonio',
     slug: 'bodylogicmd-sa',
     address: '1202 E Sonterra Blvd #301, San Antonio, TX 78258',
@@ -307,6 +320,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: '2026-01-15',
   },
   {
+    id: "c_eb995d9056",
     name: "Renew Vitality Testosterone Clinic of Austin",
     slug: "renew-vitality-testosterone-clinic-of-austin",
     address: "300 Beardsley Ln, Bldg C Ste 101-OFC #2, Austin, TX 78746",
@@ -330,6 +344,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_42a1955dec",
     name: "Low T Center South Austin | Men's Health & TRT Clinic",
     slug: "low-t-center-south-austin-men-s-health-trt-clinic",
     address: "2500 W William Cannon Dr STE 301, Austin, TX 78745",
@@ -352,6 +367,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_bce7718cf8",
     name: "Empowered Women's Telehealth",
     slug: "empowered-women-s-telehealth",
     address: "7010 State Hwy 71 Suite 139, Unit 150, Austin, TX 78735",
@@ -375,6 +391,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_d56f6ba0c2",
     name: "Lotus Gynecology Health and Wellness",
     slug: "lotus-gynecology-health-and-wellness",
     address: "3407 Glenview Ave, Austin, TX 78703",
@@ -398,6 +415,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_dceaefb680",
     name: "Elysian Plastic Surgery | Male Enhancement & Plastic Surgeon",
     slug: "elysian-plastic-surgery-male-enhancement-plastic-surgeon",
     address: "11623 Angus Rd c15, Austin, TX 78759",
@@ -419,6 +437,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_480391a71a",
     name: "Dr. Lisa M. Jukes, MD | Modern Women's Health and Aesthetics",
     slug: "dr-lisa-m-jukes-md-modern-women-s-health-and-aesthetics",
     address: "5656 Bee Caves Rd Suite B-101, Austin, TX 78746",
@@ -442,6 +461,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_5a60441297",
     name: "Hill Country OB/GYN Associates",
     slug: "hill-country-ob-gyn-associates",
     address: "9805 Brodie Ln, Austin, TX 78748",
@@ -464,6 +484,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_246767b2b2",
     name: "Austin Cosmetic Surgery: Dr. Michelle Cabret & Dr. Kimberly Prock",
     slug: "austin-cosmetic-surgery-dr-michelle-cabret-dr-kimberly-prock",
     address: "3102 Ranch Rd 620 S, Austin, TX 78738",
@@ -486,6 +507,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_0f360a2674",
     name: "Embracing Functional Wellness",
     slug: "embracing-functional-wellness",
     address: "1915 N Frazier St Ste 104, Conroe, TX 77301",
@@ -508,6 +530,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_15c22ced69",
     name: "Core Health & Wellness",
     slug: "core-health-wellness",
     address: "2251 N Loop 336 W, Conroe, TX 77304",
@@ -530,6 +553,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_b5c5c09e73",
     name: "TransMed Center",
     slug: "transmed-center",
     address: "2510 S Loop 336 W Suite 135, Conroe, TX 77304",
@@ -552,6 +576,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_c14419bd29",
     name: "Conroe Aesthetics, Weight & Wellness",
     slug: "conroe-aesthetics-weight-wellness",
     address: "503 Medical Center Blvd #120, Conroe, TX 77304",
@@ -574,6 +599,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_7fe6d925c1",
     name: "Salvia Wellness & Aesthetics | Meagan Mitchell, FNP",
     slug: "salvia-wellness-aesthetics-meagan-mitchell-fnp",
     address: "14547 Lake Business Dr Suite 403, Conroe, TX 77304",
@@ -596,6 +622,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_71e55efff6",
     name: "Dr. Rajender K. Syal, MD",
     slug: "dr-rajender-k-syal-md",
     address: "17183 I-45 South, Suite 610, Conroe, TX 77385",
@@ -618,6 +645,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_7753514628",
     name: "Vitality Hormones and IV Bar",
     slug: "vitality-hormones-and-iv-bar",
     address: "10920 Fry Rd #100, Cypress, TX 77433",
@@ -640,6 +668,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_cca0178ab7",
     name: "Men's T Clinic\u00ae - Cypress",
     slug: "men-s-t-clinic-cypress",
     address: "12361 Barker Cypress Rd #800, Cypress, TX 77429",
@@ -663,6 +692,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_dec401992b",
     name: "Timeless Health & Wellness",
     slug: "timeless-health-wellness",
     address: "16702 House Hahl Rd bldg 8b, Cypress, TX 77433",
@@ -686,6 +716,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_273c793d76",
     name: "Infinite Health",
     slug: "infinite-health",
     address: "8118 Fry Rd Ste 201, Cypress, TX 77433",
@@ -708,6 +739,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_f65e51d0e3",
     name: "Blades Wellness and Aesthetics - Dr. Carrie Blades",
     slug: "blades-wellness-and-aesthetics-dr-carrie-blades",
     address: "10242 Greenhouse Rd #201, Cypress, TX 77433",
@@ -730,6 +762,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_295f671bc3",
     name: "Vital Clinic and Spa",
     slug: "vital-clinic-and-spa",
     address: "11590 Barker Cypress Rd, Cypress, TX 77433",
@@ -752,6 +785,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_18997ccb49",
     name: "Walk-In Wellness Family Clinic: Elaina Johnson, FNP-C",
     slug: "walk-in-wellness-family-clinic-elaina-johnson-fnp-c",
     address: "10750 Barker Cypress Rd Ste. 103, Cypress, TX 77433",
@@ -774,6 +808,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_3b553368a3",
     name: "Peak Health & Aesthetics",
     slug: "peak-health-aesthetics",
     address: "9818 Fry Rd Suite 170, Cypress, TX 77433",
@@ -796,6 +831,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_ae0f29aa16",
     name: "Aesthetica MD Med Spa",
     slug: "aesthetica-md-med-spa",
     address: "8118 Fry Rd #1304, Cypress, TX 77433",
@@ -818,6 +854,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_c5cb706c52",
     name: "AGErite Pharmacy & Wellness Center",
     slug: "agerite-pharmacy-wellness-center",
     address: "12827 Telge Rd Suite 160, Cypress, TX 77429",
@@ -840,6 +877,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_4865048ebe",
     name: "Creekside Wellness",
     slug: "creekside-wellness",
     address: "13145 Spring Cypress Rd Suite 1B, Cypress, TX 77429",
@@ -862,6 +900,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_09821908ff",
     name: "SynergenX Cypress | Hormone Health & TRT Clinic",
     slug: "synergenx-cypress-hormone-health-trt-clinic",
     address: "27002 Northwest Fwy Ste 130, Cypress, TX 77433",
@@ -884,6 +923,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_9cc18136e6",
     name: "Haven Face And Body",
     slug: "haven-face-and-body",
     address: "18512 Cypress Rose Hill Rd, Cypress, TX 77429",
@@ -906,6 +946,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_180eecc490",
     name: "MINTbody Med Spa & Wellness Fairfield",
     slug: "mintbody-med-spa-wellness-fairfield",
     address: "14131 Mueschke Rd Unit 203, Cypress, TX 77433",
@@ -928,6 +969,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_b439433c34",
     name: "Real Nurturing Family Practice",
     slug: "real-nurturing-family-practice",
     address: "17920 Huffmeister Rd Ste 220, Cypress, TX 77429",
@@ -950,6 +992,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_839a027e42",
     name: "Hammad Qureshi, MD",
     slug: "hammad-qureshi-md",
     address: "14502 Spring Cypress Rd Suite #500, Cypress, TX 77429",
@@ -972,6 +1015,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_32f61f39fc",
     name: "Nikko Dermatology - Cypress Dermatology",
     slug: "nikko-dermatology-cypress-dermatology",
     address: "27150 US-290 #100, Cypress, TX 77433",
@@ -994,6 +1038,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_2a09dfe56d",
     name: "Low T Center Friendswood | Men's Health & TRT Clinic",
     slug: "low-t-center-friendswood-men-s-health-trt-clinic",
     address: "121 E Edgewood Dr, Friendswood, TX 77546",
@@ -1016,6 +1061,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_801f2079ba",
     name: "Reset Medical",
     slug: "reset-medical",
     address: "121 W Parkwood Ave Suite A, Friendswood, TX 77546",
@@ -1038,6 +1084,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_b2354f1c4b",
     name: "RevIVe Medspa & Wellness",
     slug: "revive-medspa-wellness",
     address: "4211 Friendswood Link Rd, Friendswood, TX 77546",
@@ -1060,6 +1107,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_55072d357c",
     name: "Dr. Lisa L. Sachdev, DO- Nova Wellness Center",
     slug: "dr-lisa-l-sachdev-do-nova-wellness-center",
     address: "119 W Parkwood Ave, Friendswood, TX 77546",
@@ -1082,6 +1130,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_cc9d0fe62a",
     name: "Creekside Integrative Medical Center",
     slug: "creekside-integrative-medical-center",
     address: "3758 FM 528 Rd, Friendswood, TX 77546",
@@ -1104,6 +1153,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_27282f2658",
     name: "Titan T Center & Weight Loss",
     slug: "titan-t-center-weight-loss",
     address: "347 E Parkwood Dr ste a, Friendswood, TX 77546",
@@ -1126,6 +1176,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_43837f2424",
     name: "TMD CLINIC (TestMED): TESTOSTERONE REPLACEMENT & WEIGHT LOSS",
     slug: "tmd-clinic-testmed-testosterone-replacement-weight-loss",
     address: "12121 Westheimer Rd #120, Houston, TX 77077",
@@ -1148,6 +1199,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_f5239b3c7a",
     name: "SynergenX Vintage Park | Hormone Health & TRT Clinic",
     slug: "synergenx-vintage-park-hormone-health-trt-clinic",
     address: "130 Vintage Park Blvd Building C, Suite H, Houston, TX 77070",
@@ -1170,6 +1222,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_78364f8302",
     name: "Abacep Testosterone and Weight Loss Clinic",
     slug: "abacep-testosterone-and-weight-loss-clinic",
     address: "11242 Farm to Market 1960 Rd W # 107, Houston, TX 77065",
@@ -1192,6 +1245,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_cf09374731",
     name: "Natural Bio Health",
     slug: "natural-bio-health",
     address: "9090 Gaylord Dr # 204, Houston, TX 77024",
@@ -1214,6 +1268,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_80bb3ee2f7",
     name: "Low T Center West Houston | TRT & Weight Loss Clinic",
     slug: "low-t-center-west-houston-trt-weight-loss-clinic",
     address: "2222 Greenhouse Rd, Houston, TX 77084",
@@ -1236,6 +1291,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_2b2dd0edbd",
     name: "Complete Midlife Wellness Center",
     slug: "complete-midlife-wellness-center",
     address: "1200 Binz St #650, Houston, TX 77004",
@@ -1259,6 +1315,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_990de8e137",
     name: "Magnum Telehealth: Hormone Bio-Optimization and Wellness",
     slug: "magnum-telehealth-hormone-bio-optimization-and-wellness",
     address: "5373 W Alabama St #204, Houston, TX 77056",
@@ -1281,6 +1338,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_a9442dc45d",
     name: "Pure Health Clinics",
     slug: "pure-health-clinics",
     address: "12727 Kimberley Ln Suite #200, Houston, TX 77024",
@@ -1303,6 +1361,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_7309af3cb1",
     name: "PUUR Health and Wellness",
     slug: "puur-health-and-wellness",
     address: "12288 Westheimer Rd #310, Houston, TX 77077",
@@ -1325,6 +1384,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_a6d62b234b",
     name: "Stamina Weight Loss, Testosterone & ED Center",
     slug: "stamina-weight-loss-testosterone-ed-center",
     address: "11811 East Fwy, Houston, TX 77029",
@@ -1347,6 +1407,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_2cda0182a2",
     name: "4Ever Young",
     slug: "4ever-young",
     address: "1695 S Voss Rd, Houston, TX 77057",
@@ -1369,6 +1430,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_567b6c11d7",
     name: "Relive Health - Memorial Houston",
     slug: "relive-health-memorial-houston",
     address: "9311 Katy Fwy E, Houston, TX 77024",
@@ -1391,6 +1453,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_abbe0ae688",
     name: "Men's T Clinic\u00ae - Houston Heights",
     slug: "men-s-t-clinic-houston-heights",
     address: "1801 Durham Dr #4, Houston, TX 77007",
@@ -1414,6 +1477,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_08da500133",
     name: "iLIFE ANTI-AGING CENTER",
     slug: "ilife-anti-aging-center",
     address: "2401 Fountain View Dr #903, Houston, TX 77057",
@@ -1436,6 +1500,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_d331924a63",
     name: "Letrice Mason, MSN, APRN, FNP-C",
     slug: "letrice-mason-msn-aprn-fnp-c",
     address: "1622 W Alabama St, Houston, TX 77006",
@@ -1459,6 +1524,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_06c5406367",
     name: "NeuMed Modern Urgent Care + IV Therapy",
     slug: "neumed-modern-urgent-care-iv-therapy",
     address: "1150 Durham Dr suite 300, Houston, TX 77007",
@@ -1481,6 +1547,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_348ac6d0e4",
     name: "Cenegenics Houston",
     slug: "cenegenics-houston",
     address: "24 Greenway Plz Suite 1707, Houston, TX 77046",
@@ -1503,6 +1570,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_8de99cfdff",
     name: "Thrive Medicine Clinic",
     slug: "thrive-medicine-clinic",
     address: "802 W 18th St, Houston, TX 77008",
@@ -1525,6 +1593,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_69fce1850e",
     name: "ELARIS Med Spa | Wellness | Clinic",
     slug: "elaris-med-spa-wellness-clinic",
     address: "12234 Queenston Blvd Ste 600, Houston, TX 77095",
@@ -1547,6 +1616,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_e9d85b1cf4",
     name: "Venus Restorative Health and Wellness Center",
     slug: "venus-restorative-health-and-wellness-center",
     address: "926 N Wilcrest Dr, Houston, TX 77079",
@@ -1569,6 +1639,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_86dcf94da5",
     name: "River Oaks Beauty and Weight Loss Center",
     slug: "river-oaks-beauty-and-weight-loss-center",
     address: "510 Waugh Dr, Houston, TX 77019",
@@ -1591,6 +1662,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_3a8c6a94de",
     name: "Houston Regenerative Medicine",
     slug: "houston-regenerative-medicine",
     address: "100 Glenborough Dr suite 0403j, Houston, TX 77067",
@@ -1613,6 +1685,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_3e17eb76e6",
     name: "Beyond Wellness Center",
     slug: "beyond-wellness-center",
     address: "1500 S Dairy Ashford Rd Suite 185, Houston, TX 77077",
@@ -1635,6 +1708,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_8f48f00302",
     name: "Liquivida Wellness Center | Houston",
     slug: "liquivida-wellness-center-houston",
     address: "2800 Sage Rd Suite A200, Houston, TX 77056",
@@ -1657,6 +1731,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_048b94aab7",
     name: "Vida Aesthetics and Wellness",
     slug: "vida-aesthetics-and-wellness",
     address: "3407 Montrose Blvd # A5, Houston, TX 77006, United States",
@@ -1679,6 +1754,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_97219a3534",
     name: "The Sports and Wellness Doc",
     slug: "the-sports-and-wellness-doc",
     address: "2636 S Loop W Ste 105, Houston, TX 77054",
@@ -1701,6 +1777,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_0a94aa4aef",
     name: "IVitality MD",
     slug: "ivitality-md",
     address: "12000 Richmond Ave. Suite 230, Houston, TX 77082",
@@ -1723,6 +1800,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_c6fc7d16e1",
     name: "Vanguard Spine & Sport",
     slug: "vanguard-spine-sport",
     address: "1533 N Shepherd Dr #240, Houston, TX 77008",
@@ -1745,6 +1823,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_9f8186fbc3",
     name: "The Endocrine Center",
     slug: "the-endocrine-center",
     address: "18300 Katy Fwy Suite 465, Houston, TX 77094",
@@ -1767,6 +1846,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_21becc3f2c",
     name: "Exceptional Care Elite PLLC: Latashia Hicks, MD",
     slug: "exceptional-care-elite-pllc-latashia-hicks-md",
     address: "2000 S Dairy Ashford Rd Suite 575, Houston, TX 77077",
@@ -1789,6 +1869,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_55382fb22d",
     name: "My Pure MD - Houston",
     slug: "my-pure-md-houston",
     address: "2200 Post Oak Blvd Suite 1000, Houston, TX 77056",
@@ -1810,6 +1891,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_82830dd375",
     name: "Houston Plaza OBGYN | Obstetrics & Gynecology",
     slug: "houston-plaza-obgyn-obstetrics-gynecology",
     address: "1801 Binz St UNIT 500, Houston, TX 77004",
@@ -1833,6 +1915,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_498351f4e2",
     name: "Plastic Surgery Houston: Town & Country Plastic Surgeons & Medspa - Dr. Yarish, MD & Dr. Parikh, MD, MSHS",
     slug: "plastic-surgery-houston-town-country-plastic-surgeons-medspa-dr-yarish-md-dr-parikh-md-mshs",
     address: "950 Threadneedle St Suite 280, Houston, TX 77079",
@@ -1854,6 +1937,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_492fe8e2b7",
     name: "Artavi Med Spa- Dr. Tarina Desai, MD",
     slug: "artavi-med-spa-dr-tarina-desai-md",
     address: "714 Yale St #2k, Houston, TX 77007",
@@ -1876,6 +1960,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_52b02e11e4",
     name: "Cy-Fair HealthCare Associates, Chiropractic, Medical and Wellness",
     slug: "cy-fair-healthcare-associates-chiropractic-medical-and-wellness",
     address: "11514 Fallbrook Dr, Houston, TX 77065",
@@ -1898,6 +1983,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_295a04cda6",
     name: "DurraniMD / Dr. Omar Durrani: Male Performance Specialist + General Male & Female Urology",
     slug: "durranimd-dr-omar-durrani-male-performance-specialist-general-male-female-urology",
     address: "9440 Bellaire Blvd Suite 206, Houston, TX 77036",
@@ -1920,6 +2006,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_d1e3c40c95",
     name: "Woo Hyun Sohn, MD",
     slug: "woo-hyun-sohn-md",
     address: "915 Gessner Rd #975, Houston, TX 77024",
@@ -1943,6 +2030,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_3e054e3316",
     name: "Alexandra Pellicena, MD",
     slug: "alexandra-pellicena-md",
     address: "1919 N Loop W #215, Houston, TX 77008",
@@ -1966,6 +2054,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_ee269bb2a8",
     name: "Dr. Mohit Khera, MD",
     slug: "dr-mohit-khera-md",
     address: "7200 Cambridge St Suite 10C, Houston, TX 77030",
@@ -1988,6 +2077,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_95bbad6441",
     name: "Panamericana Family Clinic",
     slug: "panamericana-family-clinic",
     address: "9683 Southwest Fwy, Houston, TX 77074",
@@ -2010,6 +2100,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_260a44e698",
     name: "MyVita Wellness Institute",
     slug: "myvita-wellness-institute",
     address: "4011 Richmond Ave., Houston, TX 77027",
@@ -2032,6 +2123,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_d1f815e9cf",
     name: "Atlas Premier Health | Functional Medicine Clinic",
     slug: "atlas-premier-health-functional-medicine-clinic",
     address: "1616 Clear Lake City Blvd suite 102, Houston, TX 77062",
@@ -2054,6 +2146,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_54c43cebd1",
     name: "OB Men",
     slug: "ob-men",
     address: "4141 Southwest Fwy Ste 315, Houston, TX 77027",
@@ -2077,6 +2170,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_f97a3526e2",
     name: "Antiage Institute",
     slug: "antiage-institute",
     address: "3120 SW Freeway Service Rd Suite 400, Houston, TX 77098",
@@ -2099,6 +2193,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_adc68f8e79",
     name: "Houston Medical HCG Clinic",
     slug: "houston-medical-hcg-clinic",
     address: "5910 Fairdale Ln b, Houston, TX 77057",
@@ -2121,6 +2216,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_9c89170fb1",
     name: "Renew Body Contouring & MedSpa",
     slug: "renew-body-contouring-medspa",
     address: "1811 Bering Dr Suite 310, Houston, TX 77057",
@@ -2143,6 +2239,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_d7ea5c2612",
     name: "Performance Pain and Sports Medicine",
     slug: "performance-pain-and-sports-medicine",
     address: "4126 Southwest Fwy Suite 1700, Houston, TX 77027",
@@ -2165,6 +2262,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_6ff2c49c71",
     name: "Women's Health Care Center of Houston",
     slug: "women-s-health-care-center-of-houston",
     address: "929 Gessner Rd #2225, Houston, TX 77024",
@@ -2188,6 +2286,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_00b7fecd69",
     name: "Pulse East Downtown / Padilla Clinic - Dr. JoAnne Rogers, MD",
     slug: "pulse-east-downtown-padilla-clinic-dr-joanne-rogers-md",
     address: "2502 Canal St, Houston, TX 77003",
@@ -2210,6 +2309,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_fbc6681079",
     name: "Houston Regenerative Therapy",
     slug: "houston-regenerative-therapy",
     address: "11767 Katy Fwy # 155, Houston, TX 77079",
@@ -2232,6 +2332,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_a2b3574c14",
     name: "LIVE Hydration Spa Kirby",
     slug: "live-hydration-spa-kirby",
     address: "2800 Kirby Dr Suite A-110, Houston, TX 77098",
@@ -2254,6 +2355,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_89bb6d694b",
     name: "Crosspointe Medical Clinic - Houston",
     slug: "crosspointe-medical-clinic-houston",
     address: "3600 S Gessner Rd # 200, Houston, TX 77063",
@@ -2276,6 +2378,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_4829057772",
     name: "Houston Medical Wellness / Weight Loss Clinic",
     slug: "houston-medical-wellness-weight-loss-clinic",
     address: "5910 Fairdale Ln, Houston, TX 77057",
@@ -2298,6 +2401,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_dbe3891224",
     name: "Beyoutiful Anti-Aging Studio",
     slug: "beyoutiful-anti-aging-studio",
     address: "314 E 13th St, Houston, TX 77008",
@@ -2320,6 +2424,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_4d6231d8d5",
     name: "Her Garden Blooms: Integrative Gynecology & Functional Medicine",
     slug: "her-garden-blooms-integrative-gynecology-functional-medicine",
     address: "17000 El Camino Real Suite 204A, Houston, TX 77058",
@@ -2342,6 +2447,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_6795ab7127",
     name: "Platinum Medical Wellness & Aesthetics",
     slug: "platinum-medical-wellness-aesthetics",
     address: "22490 TX-249 Studio B, Houston, TX 77070",
@@ -2364,6 +2470,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_9c81aba079",
     name: "Natural Health Center",
     slug: "natural-health-center",
     address: "13384 Jones Rd, Houston, TX 77070",
@@ -2386,6 +2493,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_3918f9f901",
     name: "LIFESPAN EURO MEDICAL SPA",
     slug: "lifespan-euro-medical-spa",
     address: "4560 Farm to Market 1960 Rd W, Houston, TX 77069",
@@ -2408,6 +2516,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_bb0234b606",
     name: "DermaTouch RN",
     slug: "dermatouch-rn",
     address: "13725 Falba Rd, Houston, TX 77070",
@@ -2430,6 +2539,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_bee059ab20",
     name: "Northwest Women's Center",
     slug: "northwest-women-s-center",
     address: "13215 Dotson Rd Suite 200, Houston, TX 77070",
@@ -2452,6 +2562,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_08bcbcabf5",
     name: "Altimate Care and Services, LLC.",
     slug: "altimate-care-and-services-llc",
     address: "3960 Cypress Creek Pkwy Ste. B, Houston, TX 77068",
@@ -2474,6 +2585,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_f976c427c3",
     name: "Endocrine and Psychiatry Center",
     slug: "endocrine-and-psychiatry-center",
     address: "9539 Huffmeister Rd, Houston, TX 77095",
@@ -2496,6 +2608,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_b61c7693b6",
     name: "Northwest Endosurgical",
     slug: "northwest-endosurgical",
     address: "10425 Huffmeister Rd Suite 230, Houston, TX 77065",
@@ -2518,6 +2631,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_4e421497ef",
     name: "Vivify Wellness",
     slug: "vivify-wellness",
     address: "2323 S Voss Rd Ste. 260, Houston, TX 77057",
@@ -2540,6 +2654,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_51c1ddb706",
     name: "FACE/FIT Aesthetics & Wellness",
     slug: "face-fit-aesthetics-wellness",
     address: "1400 W Sam Houston Pkwy N Suite 100, Houston, TX 77043",
@@ -2562,6 +2677,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_d097db44b2",
     name: "Azalea Primary Care, PLLC",
     slug: "azalea-primary-care-pllc",
     address: "7825 Hwy 6 N #103, Houston, TX 77095",
@@ -2584,6 +2700,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_552bd927c8",
     name: "Clear Lake Integrative Medicine",
     slug: "clear-lake-integrative-medicine",
     address: "1335 Regents Park Dr #110, Houston, TX 77058",
@@ -2606,6 +2723,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_74dbd38617",
     name: "Monica Roberson MD",
     slug: "monica-roberson-md",
     address: "1728 Bissonnet St, Houston, TX 77005",
@@ -2629,6 +2747,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_1430606f4a",
     name: "Angelica Jackson PA-C",
     slug: "angelica-jackson-pa-c",
     address: "17300 El Camino Real #104, Houston, TX 77058",
@@ -2651,6 +2770,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_29e809ced1",
     name: "KALE Functional Medicine",
     slug: "kale-functional-medicine",
     address: "2800 Kirby Dr Ste B-210, Houston, TX 77098",
@@ -2673,6 +2793,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_219cdca5d6",
     name: "River Oaks Gynecology and Aesthetics",
     slug: "river-oaks-gynecology-and-aesthetics",
     address: "4340 Westheimer Rd #250, Houston, TX 77027",
@@ -2695,6 +2816,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_4d3b6e4932",
     name: "iMotivate Wellness and Aesthetics",
     slug: "imotivate-wellness-and-aesthetics",
     address: "947 Gessner Rd ste 215, Houston, TX 77024",
@@ -2717,6 +2839,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_0d5194826b",
     name: "Juvan MD",
     slug: "juvan-md",
     address: "2795 Katy Fwy Unit 210, Houston, TX 77007",
@@ -2739,6 +2862,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_8da9ae0fcd",
     name: "PRIMALE HEALTH: Wellness & Performance",
     slug: "primale-health-wellness-performance",
     address: "9701 N Sam Houston Pkwy E Suite 140, Humble, TX 77396",
@@ -2762,6 +2886,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_4d5b708f84",
     name: "SynergenX Atascocita | Hormone Health & TRT Clinic",
     slug: "synergenx-atascocita-hormone-health-trt-clinic",
     address: "18321 W Lake Houston Pkwy Ste. #420, Humble, TX 77346",
@@ -2784,6 +2909,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_e4898a6c6b",
     name: "Next Step Health and Wellness",
     slug: "next-step-health-and-wellness",
     address: "20121 W Lake Houston Pkwy Suite 1200, Humble, TX 77346",
@@ -2806,6 +2932,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_66d337a720",
     name: "Rooted Health & Wellness",
     slug: "rooted-health-wellness",
     address: "6621 Farm to Market 1960 Rd E Suite 151, Humble, TX 77346",
@@ -2828,6 +2955,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_3c5395f8fe",
     name: "Luminous Health &Wellness",
     slug: "luminous-health-wellness",
     address: "13531 Will Clayton Pkwy #700, Humble, TX 77346",
@@ -2850,6 +2978,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_a98b6359df",
     name: "Taylor Family Practice",
     slug: "taylor-family-practice",
     address: "1806 Humble Pl Dr, Humble, TX 77338",
@@ -2871,6 +3000,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_e5db62da34",
     name: "Hotze Health & Wellness Center",
     slug: "hotze-health-wellness-center",
     address: "20214 Braidwood Dr Suite 215, Katy, TX 77450",
@@ -2892,6 +3022,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_ae917bf7c1",
     name: "Katy Wellness Center & Family Physicians",
     slug: "katy-wellness-center-family-physicians",
     address: "21406 Provincial Blvd, Katy, TX 77450",
@@ -2913,6 +3044,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_9da008284c",
     name: "Medistop Primary Care",
     slug: "medistop-primary-care",
     address: "6052 N Fry Rd, Katy, TX 77449",
@@ -2934,6 +3066,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_1c0779c6b0",
     name: "SynergenX Katy | Hormone Health & TRT Clinic",
     slug: "synergenx-katy-hormone-health-trt-clinic",
     address: "24124 Cinco Village Center Blvd #100, Katy, TX 77494",
@@ -2956,6 +3089,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_e45bc3b300",
     name: "4Ever Young Med Spa & Wellness Center - Katy",
     slug: "4ever-young-med-spa-wellness-center-katy",
     address: "23128 Westheimer Pkwy, Katy, TX 77494",
@@ -2977,6 +3111,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_aa0a22dca7",
     name: "Regenerative Arts Anti Aging Center",
     slug: "regenerative-arts-anti-aging-center",
     address: "810 S Mason Rd Suite 204, Katy, TX 77450",
@@ -2998,6 +3133,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_a5b088b001",
     name: "Buhay Health & Wellness",
     slug: "buhay-health-wellness",
     address: "460 Park Grove Dr, Katy, TX 77450",
@@ -3019,6 +3155,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_d32bfe206c",
     name: "Sculpted MD",
     slug: "sculpted-md",
     address: "23541 Westheimer Pkwy Lot 22, Katy, TX 77494",
@@ -3041,6 +3178,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_c909bdba51",
     name: "BluVida Wellness & Med Spa",
     slug: "bluvida-wellness-med-spa",
     address: "21660 Kingsland Blvd #200, Katy, TX 77450",
@@ -3063,6 +3201,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_d7eb77c562",
     name: "Doctor Zehra Jaffer - DNP Texas Diabetes & Wellness Clinic",
     slug: "doctor-zehra-jaffer-dnp-texas-diabetes-wellness-clinic",
     address: "21720 Highland Knolls Dr, Katy, TX 77450",
@@ -3084,6 +3223,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_77c7b31d81",
     name: "Amaya Antiaging And Weight Loss Center",
     slug: "amaya-antiaging-and-weight-loss-center",
     address: "Between Starbucks and Alamo Drafthouse Cinema, 539 S Mason Rd, Katy, TX 77450",
@@ -3106,6 +3246,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_29d604ecfb",
     name: "Katy Medi Spa",
     slug: "katy-medi-spa",
     address: "21238 Kingsland Blvd Ste. 1B, Katy, TX 77450",
@@ -3128,6 +3269,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_ecab03c5bb",
     name: "TestoThera | Fulshear | Testosterone & Weight Loss Clinic",
     slug: "testothera-fulshear-testosterone-weight-loss-clinic",
     address: "6445 FM 1463 Suite 140, Katy, TX 77494",
@@ -3150,6 +3292,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_1547750bb0",
     name: "Athena Testosterone and Weight Loss",
     slug: "athena-testosterone-and-weight-loss",
     address: "29911 Jordan Crossing Blvd, Katy, TX 77494",
@@ -3172,6 +3315,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_e132ce758d",
     name: "Advanced Women's Wellness",
     slug: "advanced-women-s-wellness",
     address: "21402 Provincial Blvd, Katy, TX 77450",
@@ -3195,6 +3339,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_8d8657adb2",
     name: "Le Chlo\u00e9 Med Spa",
     slug: "le-chlo-med-spa",
     address: "2023 N Mason Rd #204, Katy, TX 77449",
@@ -3217,6 +3362,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_8c98731033",
     name: "Jenkins Obstetrics, Gynecology & Reproductive Medicine",
     slug: "jenkins-obstetrics-gynecology-reproductive-medicine",
     address: "23535 Kingsland Blvd, Katy, TX 77494",
@@ -3240,6 +3386,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_e3516d6803",
     name: "Shining Way Esthetics",
     slug: "shining-way-esthetics",
     address: "24646 Kingsland Blvd, Katy, TX 77494",
@@ -3262,6 +3409,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_90b9a439e7",
     name: "Active Life Hormone Therapy & Weight Loss",
     slug: "active-life-hormone-therapy-weight-loss",
     address: "23836 US-59, Kingwood, TX 77339",
@@ -3284,6 +3432,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_4aced87fbc",
     name: "Health in Progress",
     slug: "health-in-progress",
     address: "23802 US-59, Kingwood, TX 77339",
@@ -3306,6 +3455,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_2133817ae6",
     name: "SynergenX Kingwood | Hormone Health & TRT Clinic",
     slug: "synergenx-kingwood-hormone-health-trt-clinic",
     address: "2665 Royal Forest Dr, Kingwood, TX 77339",
@@ -3328,6 +3478,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_ce2f3c3503",
     name: "Kingwood Wellness",
     slug: "kingwood-wellness",
     address: "2316 Timber Shadows Dr STE 100, Kingwood, TX 77339",
@@ -3350,6 +3501,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_e094b6b799",
     name: "IV-LYTES & WELLNESS",
     slug: "iv-lytes-wellness",
     address: "320 Kingwood Executive Dr d, Kingwood, TX 77339",
@@ -3372,6 +3524,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_704acbad70",
     name: "Renove Medical Spa",
     slug: "renove-medical-spa",
     address: "1850 W Lake Houston Pkwy #170, Kingwood, TX 77339",
@@ -3394,6 +3547,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_19acd8e79a",
     name: "Adorn Health & Wellness | Kingwood | Testosterone | Weight Loss | IV Drip Therapy",
     slug: "adorn-health-wellness-kingwood-testosterone-weight-loss-iv-drip-therapy",
     address: "20031 W Lake Houston Pkwy Suite 400, Kingwood, TX 77346",
@@ -3416,6 +3570,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_3c9b4bda06",
     name: "4Ever Young Med Spa & Wellness Center - Kingwood",
     slug: "4ever-young-med-spa-wellness-center-kingwood",
     address: "30130 Rock Creek Dr #300, Kingwood, TX 77339",
@@ -3438,6 +3593,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_fa179d0bb7",
     name: "Titan T-Center & Weight Loss",
     slug: "titan-t-center-weight-loss-league-city",
     address: "2785 Gulf Fwy S #115, League City, TX 77573",
@@ -3460,6 +3616,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_c1738bcfe6",
     name: "Renewed Radiance Med Spa",
     slug: "renewed-radiance-med-spa",
     address: "1216 E Main St Suite B, League City, TX 77573",
@@ -3482,6 +3639,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_ca69990401",
     name: "South Shore Family Health Center - Pamela D. Morgan",
     slug: "south-shore-family-health-center-pamela-d-morgan",
     address: "3023 Marina Bay Dr #103, League City, TX 77573",
@@ -3504,6 +3662,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_81f4be6a62",
     name: "Joon Medical",
     slug: "joon-medical",
     address: "4849 FM 1488 #300, Magnolia, TX 77354",
@@ -3526,6 +3685,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_0b31e99b65",
     name: "LVWellness & Aesthetics",
     slug: "lvwellness-aesthetics",
     address: "7030 FM 1488 Suite 220, Magnolia, TX 77354",
@@ -3548,6 +3708,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_63b21368d0",
     name: "Elite Low T Men's Center",
     slug: "elite-low-t-men-s-center",
     address: "32939 Tamina Rd Suite 104, Magnolia, TX 77354",
@@ -3571,6 +3732,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_1b1f91e583",
     name: "Revolution Aesthetics and Wellness",
     slug: "revolution-aesthetics-and-wellness",
     address: "903 Honea Egypt Rd Ste A, Magnolia, TX 77354",
@@ -3593,6 +3755,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_fbe68fe5de",
     name: "Simply New You Weight and Wellness",
     slug: "simply-new-you-weight-and-wellness",
     address: "2440 Texas Pkwy Suite 140C, Missouri City, TX 77489",
@@ -3615,6 +3778,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_26c541943f",
     name: "Complete Health & Wellness",
     slug: "complete-health-wellness",
     address: "4855 Riverstone Blvd Suite 103, Missouri City, TX 77459",
@@ -3637,6 +3801,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_f100bb5251",
     name: "Provenance Aesthetics & Wellness",
     slug: "provenance-aesthetics-wellness",
     address: "4220 Cartwright Rd Suite #203, Missouri City, TX 77459",
@@ -3659,6 +3824,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_c5666c5c81",
     name: "APPLEMD Medical Services Missouri City - Primary Care, Wound Care, Hormone Replacement",
     slug: "applemd-medical-services-missouri-city-primary-care-wound-care-hormone-replacement",
     address: "4502 Riverstone Blvd Ste 801, Missouri City, TX 77459",
@@ -3681,6 +3847,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_eb890baf56",
     name: "Luminance health & beauty clinic",
     slug: "luminance-health-beauty-clinic",
     address: "4502 Riverstone Blvd Suite 605, Missouri City, TX 77459",
@@ -3703,6 +3870,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_6fbbc553bd",
     name: "Sinang Medical & Associates",
     slug: "sinang-medical-associates",
     address: "3634 Glenn Lakes Ln # 200, Missouri City, TX 77459",
@@ -3725,6 +3893,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_c14e951361",
     name: "Low T Center Pasadena | Men's Health & TRT Clinic",
     slug: "low-t-center-pasadena-men-s-health-trt-clinic",
     address: "3514 Burke Rd STE 200, Pasadena, TX 77504",
@@ -3747,6 +3916,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_4bc7b493c0",
     name: "Men's T Clinic\u00ae - Pasadena",
     slug: "men-s-t-clinic-pasadena",
     address: "5763 Fairmont Pkwy, Pasadena, TX 77505",
@@ -3770,6 +3940,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_186289327d",
     name: "Rejuvenation Laser Med Spa & Weight Loss Center",
     slug: "rejuvenation-laser-med-spa-weight-loss-center",
     address: "5119 Fairmont Pkwy suite d, Pasadena, TX 77505",
@@ -3792,6 +3963,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_901b293099",
     name: "Holland Aesthetics and Wellness",
     slug: "holland-aesthetics-and-wellness",
     address: "4111 Fairmont Pkwy Suite 110, Pasadena, TX 77504",
@@ -3813,6 +3985,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_8d59d17253",
     name: "Men's T Clinic\u00ae - Pearland",
     slug: "men-s-t-clinic-pearland",
     address: "15718 State Hwy 288 #110, Pearland, TX 77584",
@@ -3836,6 +4009,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_0e084c1ed3",
     name: "Apollo Men's Health",
     slug: "apollo-men-s-health",
     address: "2404 Smith Ranch Rd #300, Pearland, TX 77584",
@@ -3858,6 +4032,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_1e7a15109d",
     name: "Optimum Healthcare",
     slug: "optimum-healthcare",
     address: "1819 Broadway St #101, Pearland, TX 77581",
@@ -3879,6 +4054,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_7e4e302e9d",
     name: "Exclusively Radiant MedSpa",
     slug: "exclusively-radiant-medspa",
     address: "3129 Kingsley Dr Ste 1710, Pearland, TX 77584",
@@ -3900,6 +4076,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_c6ac69f7f2",
     name: "Tailored Weight Loss II",
     slug: "tailored-weight-loss-ii",
     address: "3129 Kingsley Dr ste 440, Pearland, TX 77584",
@@ -3922,6 +4099,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_956dbd2f9f",
     name: "Vallabelle Health and Wellness Clinic",
     slug: "vallabelle-health-and-wellness-clinic",
     address: "17627 Beechnut St, Richmond, TX 77407",
@@ -3944,6 +4122,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_617d022767",
     name: "New You Medical Center",
     slug: "new-you-medical-center",
     address: "5550 Long Prairie Trace, Richmond, TX 77407",
@@ -3966,6 +4145,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_30b7474fdc",
     name: "Grace Health & Wellness Clinic",
     slug: "grace-health-wellness-clinic",
     address: "1601 Main St STE 404, Richmond, TX 77469",
@@ -3988,6 +4168,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_075c028b19",
     name: "SynergenX The Woodlands | Hormone Health & TRT Clinic",
     slug: "synergenx-the-woodlands-hormone-health-trt-clinic",
     address: "19073 I-45, Shenandoah, TX 77385",
@@ -4010,6 +4191,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_065ebd43c3",
     name: "New Horizons Wellness Center & MediSpa - Weight Loss & Aesthetics Clinic in Spring, TX",
     slug: "new-horizons-wellness-center-medispa-weight-loss-aesthetics-clinic-in-spring-tx",
     address: "150 Pine Forest Dr Suite 401, Shenandoah, TX 77384",
@@ -4032,6 +4214,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_71d9ea2cbf",
     name: "Dr. Natalie Drake / Practice Happiness Med Spa",
     slug: "dr-natalie-drake-practice-happiness-med-spa",
     address: "8845 Six Pines Dr Suite 100, Shenandoah, TX 77380",
@@ -4054,6 +4237,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_3823236cf2",
     name: "Internal Healing & Wellness MD",
     slug: "internal-healing-wellness-md",
     address: "255 Ed English Dr Suite A, Shenandoah, TX 77385",
@@ -4076,6 +4260,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_78ea21ab7b",
     name: "Steelman Medical Group",
     slug: "steelman-medical-group",
     address: "150 Pine Forest Dr Suite 404, Shenandoah, TX 77384",
@@ -4098,6 +4283,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_7d18353cb4",
     name: "Sleek Wellness & Aesthetics",
     slug: "sleek-wellness-aesthetics",
     address: "260 Ed English Dr Suite D, Shenandoah, TX 77385",
@@ -4120,6 +4306,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_435aee376f",
     name: "Everson Jenna A MD",
     slug: "everson-jenna-a-md",
     address: "17183 I-45 Suite 610, Shenandoah, TX 77385",
@@ -4142,6 +4329,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_5c24c057b4",
     name: "HerKare The Woodlands | Women's Health & Hormone Therapy Clinic",
     slug: "herkare-the-woodlands-women-s-health-hormone-therapy-clinic",
     address: "6886 Woodlands Pkwy Suite C, Spring, TX 77382",
@@ -4165,6 +4353,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_b4ccb32f7c",
     name: "Vitality Hormones & IV Bar",
     slug: "vitality-hormones-iv-bar",
     address: "8701 Spring Cypress Rd E, Spring, TX 77379",
@@ -4187,6 +4376,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_f1e305268f",
     name: "Carlton Woods VIP Hormone Therapy, Weight Loss and Cognitive Therapy",
     slug: "carlton-woods-vip-hormone-therapy-weight-loss-and-cognitive-therapy",
     address: "7 Columbia Crest Pl, Spring, TX 77382",
@@ -4209,6 +4399,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_d3cf37d3b0",
     name: "Sollie Health and Wellness: Weight Loss | Testosterone - TRT | Bio-identical Hormones",
     slug: "sollie-health-and-wellness-weight-loss-testosterone-trt-bio-identical-hormones",
     address: "4740 Spring Cypress Rd C, Spring, TX 77379",
@@ -4231,6 +4422,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_2f70c2ec13",
     name: "Optimal Hormone Health & Aesthetics",
     slug: "optimal-hormone-health-aesthetics",
     address: "7115 Farm to Market 2920 Suite 200, Spring, TX 77379",
@@ -4253,6 +4445,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_bdec9069cd",
     name: "SynergenX Spring | Hormone Health & TRT Clinic",
     slug: "synergenx-spring-hormone-health-trt-clinic",
     address: "7202 Grand Pkwy, Spring, TX 77379",
@@ -4275,6 +4468,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_7985e226a3",
     name: "Low T Center The Woodlands | Men's Health & TRT Clinic",
     slug: "low-t-center-the-woodlands-men-s-health-trt-clinic",
     address: "6886 Woodlands Pkwy Suite D, Spring, TX 77382",
@@ -4297,6 +4491,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_a52d10d31a",
     name: "Men's T Clinic\u00ae - Spring",
     slug: "men-s-t-clinic-spring",
     address: "6625 Spring Stuebner Rd Suite 205, Spring, TX 77389",
@@ -4320,6 +4515,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_37cdfa8a80",
     name: "TestoThera | Rayford | Testosterone & Weight Loss Clinic",
     slug: "testothera-rayford-testosterone-weight-loss-clinic",
     address: "2833 Riley Fuzzel Rd Ste, 700, Spring, TX 77386",
@@ -4342,6 +4538,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_15e62381d1",
     name: "The Woodlands Institute for Health & Wellness",
     slug: "the-woodlands-institute-for-health-wellness",
     address: "26110 Oak Ridge Dr, Spring, TX 77380",
@@ -4364,6 +4561,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_96234e5883",
     name: "Rinkle Institute of Wellness",
     slug: "rinkle-institute-of-wellness",
     address: "8727 W Rayford Rd Suite 160, Spring, TX 77389",
@@ -4386,6 +4584,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_35d28e08b6",
     name: "King Wellness Institute",
     slug: "king-wellness-institute",
     address: "6384 Louetta Rd, Spring, TX 77379",
@@ -4408,6 +4607,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_0a87dcd731",
     name: "Integrative Health & Medicine",
     slug: "integrative-health-medicine",
     address: "2104 Farm to Market 2920, Spring, TX 77388",
@@ -4430,6 +4630,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_02861f6237",
     name: "Tru Luxe MedSpa and Wellness, LLC",
     slug: "tru-luxe-medspa-and-wellness-llc",
     address: "5519 Louetta Rd STE G, Spring, TX 77379",
@@ -4452,6 +4653,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_4a18548aeb",
     name: "ReCharge MedSpa & Wellness Cinic",
     slug: "recharge-medspa-wellness-cinic",
     address: "6640 Cypresswood Dr #200, Spring, TX 77379",
@@ -4474,6 +4676,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_394bb0acb0",
     name: "Balanced Body & Wellness, PLLC",
     slug: "balanced-body-wellness-pllc",
     address: "2530 Old Louetta Loop #110, Spring, TX 77388",
@@ -4496,6 +4699,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_013ec23f67",
     name: "Harmony Aesthetics Spa - Spring, TX",
     slug: "harmony-aesthetics-spa-spring-tx",
     address: "3466 Discovery Creek Blvd #500, Spring, TX 77386",
@@ -4518,6 +4722,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_889ffd8575",
     name: "Butterfly Medspa & Wellness",
     slug: "butterfly-medspa-wellness",
     address: "2940 Farm to Market 2920 Suite Ste 120, Spring, TX 77388",
@@ -4540,6 +4745,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_d9f691409a",
     name: "Vitality Medical Clinic Internal Medicine and Psychiatry",
     slug: "vitality-medical-clinic-internal-medicine-and-psychiatry",
     address: "2219 Sawdust Rd STE 302, Spring, TX 77380",
@@ -4562,6 +4768,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_125d502dd2",
     name: "Anchor Wellness Center: Dr. Minni Malhotra, MD",
     slug: "anchor-wellness-center-dr-minni-malhotra-md",
     address: "26111 Oak Ridge Dr, Spring, TX 77380",
@@ -4584,6 +4791,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_18b063b343",
     name: "New Wave Physicians Group",
     slug: "new-wave-physicians-group",
     address: "5220 Farm to Market 2920 Ste110, Spring, TX 77388",
@@ -4606,6 +4814,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_6393c79757",
     name: "4Ever Young Med Spa & Wellness Center - Spring",
     slug: "4ever-young-med-spa-wellness-center-spring",
     address: "6535 Grand Pkwy STE 215, Spring, TX 77389",
@@ -4628,6 +4837,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_059fcd7f1c",
     name: "Dr. Franklin Douglis",
     slug: "dr-franklin-douglis",
     address: "6611 Farm to Market 2920, Spring, TX 77379",
@@ -4650,6 +4860,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_ad8a74c0be",
     name: "Live Well - Spring",
     slug: "live-well-spring",
     address: "20008 Champion Forest Dr Ste 802, Spring, TX 77379",
@@ -4672,6 +4883,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_eacb411b55",
     name: "Elite Medical Skin and Laser Center",
     slug: "elite-medical-skin-and-laser-center",
     address: "25501 Richards Rd Unit 102, Spring, TX 77386",
@@ -4694,6 +4906,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_e05fa83405",
     name: "Kairos Health and Wellness| Weight Loss, Hormones, Root Cause Clinic",
     slug: "kairos-health-and-wellness-weight-loss-hormones-root-cause-clinic",
     address: "77 Sugar Creek Center Blvd Ste 600, Sugar Land, TX 77478",
@@ -4716,6 +4929,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_34b320db37",
     name: "Performance Hormone Therapy & Weight Loss of Sugarland Texas",
     slug: "performance-hormone-therapy-weight-loss-of-sugarland-texas",
     address: "2245 Texas Dr, Sugar Land, TX 77479",
@@ -4738,6 +4952,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_fdcb1899c9",
     name: "Sugar Land Hormones & Wellness",
     slug: "sugar-land-hormones-wellness",
     address: "16545 Southwest Fwy #150-A, Sugar Land, TX 77479",
@@ -4760,6 +4975,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_27943971af",
     name: "Sunglow Aesthetics & Wellness",
     slug: "sunglow-aesthetics-wellness",
     address: "11507 S Texas 6 Suite G, Sugar Land, TX 77498",
@@ -4782,6 +4998,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_9da008284c",
     name: "Medistop Primary Care",
     slug: "medistop-primary-care-sugar-land",
     address: "11211 S Texas 6 A, Sugar Land, TX 77498",
@@ -4804,6 +5021,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_96730e7216",
     name: "SynergenX Sugar Land | Hormone Health & TRT Clinic",
     slug: "synergenx-sugar-land-hormone-health-trt-clinic",
     address: "15281-B Southwest Fwy, Sugar Land, TX 77478",
@@ -4826,6 +5044,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_77e6673b25",
     name: "Sugar Land Medical Spa",
     slug: "sugar-land-medical-spa",
     address: "16062 Southwest Fwy, Sugar Land, TX 77479",
@@ -4848,6 +5067,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_3ac9dc4068",
     name: "Revitalife Health Spa",
     slug: "revitalife-health-spa",
     address: "4660 Sweetwater Blvd #150, Sugar Land, TX 77479",
@@ -4870,6 +5090,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_9b76f6803f",
     name: "Dr. Shel Wellness & Aesthetic Center",
     slug: "dr-shel-wellness-aesthetic-center",
     address: "1437 Hwy 6 #100, Sugar Land, TX 77478",
@@ -4892,6 +5113,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_eef8d1b9e3",
     name: "Renew Wellness Center - Sugar Land",
     slug: "renew-wellness-center-sugar-land",
     address: "210 Century Square Blvd Ste 100, Sugar Land, TX 77478",
@@ -4914,6 +5136,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_3d5d72aebc",
     name: "Balanced Body Functional Medicine: Dr. Julia Ward, MD",
     slug: "balanced-body-functional-medicine-dr-julia-ward-md",
     address: "6921 Brisbane Ct Suite 240, Sugar Land, TX 77479",
@@ -4936,6 +5159,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_4c26a8fbdd",
     name: "Rophe Wellness And Weightloss",
     slug: "rophe-wellness-and-weightloss",
     address: "118 Eldridge Rd Suite A, Sugar Land, TX 77478",
@@ -4958,6 +5182,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_0d00be9dbb",
     name: "KS Wellness MD",
     slug: "ks-wellness-md",
     address: "800 Bonaventure Wy Suite 151, Sugar Land, TX 77479",
@@ -4980,6 +5205,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_e1f87b6dc9",
     name: "InTouch Primary Care",
     slug: "intouch-primary-care",
     address: "2333 Town Ctr Dr 250 Suite 250, Sugar Land, TX 77478",
@@ -5002,6 +5228,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_faff94fdc6",
     name: "Sweetwater OB GYN Associates",
     slug: "sweetwater-ob-gyn-associates",
     address: "16545 Southwest Fwy #150, Sugar Land, TX 77479",
@@ -5024,6 +5251,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_86f764bc3d",
     name: "Rejuven8 Medical",
     slug: "rejuven8-medical",
     address: "19875 Southwest Fwy #280, Sugar Land, TX 77479",
@@ -5046,6 +5274,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_db3d0f0f64",
     name: "Allure Aesthetics",
     slug: "allure-aesthetics",
     address: "6903 Brisbane Ct Ste 100, Sugar Land, TX 77479",
@@ -5068,6 +5297,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_2b2f621ff6",
     name: "Elite DOC Health and Beauty: Naz Keshwani, M.D.",
     slug: "elite-doc-health-and-beauty-naz-keshwani-m-d",
     address: "4665 Sweetwater Blvd #200, Sugar Land, TX 77479",
@@ -5090,6 +5320,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_30fdcf7628",
     name: "Premier Health & Wellness The Woodlands",
     slug: "premier-health-wellness-the-woodlands",
     address: "9595 Six Pines Dr Ste. 8210, PMB#2439, The Woodlands, TX 77380",
@@ -5112,6 +5343,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_6ad7d72ce8",
     name: "Choose Health Wellness Center",
     slug: "choose-health-wellness-center",
     address: "1095 Evergreen Cir SUITE 200, The Woodlands, TX 773803645",
@@ -5134,6 +5366,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_9e344fed2d",
     name: "Regenerative & Sports Medicine",
     slug: "regenerative-sports-medicine",
     address: "10655 Six Pines Dr Suite 110, The Woodlands, TX 77380",
@@ -5156,6 +5389,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_bde4326d93",
     name: "Woodlands Wellness & Cosmetic Center",
     slug: "woodlands-wellness-cosmetic-center",
     address: "4850 W Panther Creek Dr #105, The Woodlands, TX 77381",
@@ -5178,6 +5412,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_c079a41728",
     name: "Forum Health The Woodlands BHRT & Aesthetics",
     slug: "forum-health-the-woodlands-bhrt-aesthetics",
     address: "4185 Technology Forest Blvd #190, The Woodlands, TX 77381",
@@ -5200,6 +5435,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_0d575fd990",
     name: "Texas Institute for Anti Aging Research (TIFAAR)",
     slug: "texas-institute-for-anti-aging-research-tifaar",
     address: "25230 Borough Park Dr Suite 201, The Woodlands, TX 77380",
@@ -5222,6 +5458,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_cdb7ebdd31",
     name: "Your Functional Edge: Hormones & Fertility",
     slug: "your-functional-edge-hormones-fertility",
     address: "26202 Oak Ridge Dr Suite B-208, The Woodlands, TX 77380",
@@ -5244,6 +5481,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_686a6e969a",
     name: "Beyond Urgent Health",
     slug: "beyond-urgent-health",
     address: "431 Nursery Rd Suite A150, The Woodlands, TX 77380",
@@ -5266,6 +5504,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_ee1bddd00e",
     name: "Progressive Rejuvenation",
     slug: "progressive-rejuvenation",
     address: "3281 College Park Dr, The Woodlands, TX 77384",
@@ -5288,6 +5527,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_da17f51ec0",
     name: "Family Weight & Wellness Clinic",
     slug: "family-weight-wellness-clinic",
     address: "25329 Budde Rd STE 402, The Woodlands, TX 77380",
@@ -5310,6 +5550,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_c2cb37fcea",
     name: "Medical Aesthetics & Laser",
     slug: "medical-aesthetics-laser",
     address: "9180 Pinecroft Dr Suite 120, The Woodlands, TX 77380",
@@ -5332,6 +5573,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_1c1f9d4159",
     name: "Woodlands Medical Aesthetics Institute: Johnny Peet, MD",
     slug: "woodlands-medical-aesthetics-institute-johnny-peet-md",
     address: "17350 St Lukes Way Ste 380, The Woodlands, TX 77384",
@@ -5354,6 +5596,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_a3969631c0",
     name: "MOI Wellness and Aesthetics",
     slug: "moi-wellness-and-aesthetics",
     address: "25311 I-45 Suite A, The Woodlands, TX 77380",
@@ -5376,6 +5619,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_7a4d7da73f",
     name: "Magnolia Family Medicine",
     slug: "magnolia-family-medicine",
     address: "10020 Research Forest Dr Unit D, The Woodlands, TX 77354",
@@ -5398,6 +5642,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_b2c1481958",
     name: "Woodlands OBGYN Associates",
     slug: "woodlands-obgyn-associates",
     address: "17183 I-45 #610, The Woodlands, TX 77385",
@@ -5420,6 +5665,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_819dc30d16",
     name: "Progressive Pain and Rehabilitation; Edward A. Nash, M.D",
     slug: "progressive-pain-and-rehabilitation-edward-a-nash-m-d",
     address: "3281 College Park Dr, The Woodlands, TX 77384",
@@ -5442,6 +5688,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_1ab4ee0426",
     name: "A Little Something Special, LLC",
     slug: "a-little-something-special-llc",
     address: "3099 College Park Dr, The Woodlands, TX 77384",
@@ -5464,6 +5711,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_384ccb43a6",
     name: "Lumos Aesthetics and Wellness",
     slug: "lumos-aesthetics-and-wellness",
     address: "8000 McBeth Way #190, The Woodlands, TX 77382",
@@ -5486,6 +5734,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_525f3ade42",
     name: "New Life Wellness and Medical Spa",
     slug: "new-life-wellness-and-medical-spa",
     address: "13426 Medical Complex Dr #150, Tomball, TX 77375",
@@ -5508,6 +5757,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_683711fa77",
     name: "LOMA Health & Wellness",
     slug: "loma-health-wellness",
     address: "640 Baker Dr Unit D, Tomball, TX 77375",
@@ -5530,6 +5780,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_fd0f4d3b3f",
     name: "New You Wellness Center",
     slug: "new-you-wellness-center",
     address: "11617 Spring Cypress Rd bldg c, Tomball, TX 77377",
@@ -5552,6 +5803,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_8baad1e9ad",
     name: "Luxe Beauty & Wellness Med Spa",
     slug: "luxe-beauty-wellness-med-spa",
     address: "26940 Kuykendahl Rd Suite 106, Tomball, TX 77375",
@@ -5574,6 +5826,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_87bf57b0c5",
     name: "Meridian Springs Primary Care",
     slug: "meridian-springs-primary-care",
     address: "25420 Kuykendahl Rd Ste D700, Tomball, TX 77375",
@@ -5596,6 +5849,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_16d979ae21",
     name: "REinvi MD - Weight Loss",
     slug: "reinvi-md-weight-loss",
     address: "17138 N Eldridge Pkwy Ste F, Tomball, TX 77377",
@@ -5618,6 +5872,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_293e315090",
     name: "SynergenX Webster | TRT & Weight Loss Clinic",
     slug: "synergenx-webster-trt-weight-loss-clinic",
     address: "19325 Gulf Fwy #120, Webster, TX 77598",
@@ -5640,6 +5895,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_2647b69392",
     name: "Mind and Body Solutions",
     slug: "mind-and-body-solutions",
     address: "210 Genesis Blvd Suite C, Webster, TX 77598",
@@ -5662,6 +5918,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_30c3b8212d",
     name: "Jihad Harmouche, MD",
     slug: "jihad-harmouche-md",
     address: "905 W. Medical Center Blvd Ste. 406, Webster, TX 77598",
@@ -5685,6 +5942,7 @@ export const texasHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_43c5709c7e",
     name: "Aesthetic Center for Plastic Surgery & MedSpa (ACPS)",
     slug: "aesthetic-center-for-plastic-surgery-medspa-acps",
     address: "300 E Medical Center Blvd, Webster, TX 77598",

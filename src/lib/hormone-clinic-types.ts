@@ -4,6 +4,7 @@
 export type HormoneService = 'trt' | 'hrt' | 'peptides' | 'thyroid' | 'growth_hormone' | 'bioidentical';
 
 export interface HormoneClinic {
+  id: string;                // Foundation #1 — stable entity id, minted by scripts/ingest/mint_ids.py
   name: string;
   slug: string;
   address: string;

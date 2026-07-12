@@ -5,6 +5,7 @@ import { WeightLossClinic } from '@/lib/weightloss-clinic-types';
 
 export const tennesseeWeightLossClinics: WeightLossClinic[] = [
   {
+    id: "c_bc400d0589",
     name: "Piqure Aesthetics",
     slug: "piqure-aesthetics",
     address: "715 Hagan Street, Unit 111",
@@ -25,6 +26,7 @@ export const tennesseeWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_4cfdd91f27",
     name: "Scale Watchers Rx",
     slug: "scale-watchers-rx",
     address: "4515 Harding Pike, Suite 100",
@@ -45,6 +47,7 @@ export const tennesseeWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_1089efb6dc",
     name: "61Five Health & Wellness",
     slug: "61five-health-wellness",
     address: "1913 Church Street",
@@ -65,6 +68,7 @@ export const tennesseeWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_3c5525cc13",
     name: "IntraVenous Solutions",
     slug: "intravenous-solutions",
     address: "2817 West End Avenue, Suite 135",
@@ -85,6 +89,7 @@ export const tennesseeWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_89d4339911",
     name: "Relive Health West Nashville",
     slug: "relive-health-west-nashville",
     address: "5300 Centennial Boulevard, Suite 104",
@@ -105,6 +110,7 @@ export const tennesseeWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_8b4c2bbf1f",
     name: "ONYX Wellness & Aesthetics",
     slug: "onyx-wellness-aesthetics",
     address: "917 8th Avenue South, Suite E",
@@ -125,6 +131,7 @@ export const tennesseeWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_3de2ac91d2",
     name: "Slim Weight Loss Clinic",
     slug: "slim-weight-loss-clinic",
     address: "3443 Dickerson Pike, Suite 364",
@@ -145,6 +152,7 @@ export const tennesseeWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_35aef305af",
     name: "Gameday Men's Health Green Hills",
     slug: "gameday-mens-health-green-hills",
     address: "4205 Hillsboro Pike, Suite 130",
@@ -165,6 +173,7 @@ export const tennesseeWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_26556a3bac",
     name: "Nashville Weight Loss Solutions",
     slug: "nashville-weight-loss-solutions",
     address: "2200 Murphy Avenue",
@@ -185,6 +194,7 @@ export const tennesseeWeightLossClinics: WeightLossClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_c150b20345",
     name: "Complete Health Partners",
     slug: "complete-health-partners",
     address: "6746 Charlotte Pike",

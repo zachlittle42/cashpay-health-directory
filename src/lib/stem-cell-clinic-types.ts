@@ -20,6 +20,7 @@ export type StemCellCondition =
   | 'diabetes';
 
 export interface StemCellClinic {
+  id: string;                // Foundation #1 — stable entity id, minted by scripts/ingest/mint_ids.py
   name: string;
   slug: string;
   city: string;

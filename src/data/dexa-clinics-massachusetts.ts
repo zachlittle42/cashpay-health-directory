@@ -5,6 +5,7 @@ import { DexaClinic } from '@/lib/dexa-clinic-types';
 
 export const massachusettsDexaClinics: DexaClinic[] = [
   {
+    id: "c_084e292f1f",
     name: "DEXA Scan Boston",
     slug: "dexa-scan-boston",
     address: "1101 Beacon Street, Suite 8W-3, Brookline, MA 02446",
@@ -24,6 +25,7 @@ export const massachusettsDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_24a7819bff",
     name: "DexaFit Boston",
     slug: "dexafit-boston",
     address: "799 Concord Ave, Cambridge, MA 02138",
@@ -44,6 +46,7 @@ export const massachusettsDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_fd406fc63e",
     name: "Fitnescity (Boston)",
     slug: "fitnescity-boston",
     address: "1101 Beacon St, Brookline, MA 02446",
@@ -64,6 +67,7 @@ export const massachusettsDexaClinics: DexaClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_5daa27dacc",
     name: "BodySpec",
     slug: "bodyspec-boston",
     city: "Boston",

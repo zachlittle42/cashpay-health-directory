@@ -5,6 +5,7 @@ import { HormoneClinic } from '@/lib/hormone-clinic-types';
 
 export const nevadaHormoneClinics: HormoneClinic[] = [
   {
+    id: "c_d417b29390",
     name: "Atlas Health Institute",
     slug: "atlas-health-institute",
     address: "6930 S. Cimarron Road, Suite 220A",
@@ -29,6 +30,7 @@ export const nevadaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_ce03e9a5d7",
     name: "Share Health & Wellness",
     slug: "share-health-and-wellness",
     address: "5524 S. Fort Apache Rd #120",
@@ -50,6 +52,7 @@ export const nevadaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_9186a1df97",
     name: "Gameday Men's Health Southwest Las Vegas",
     slug: "gameday-mens-health-southwest-las-vegas",
     address: "6111 S Buffalo Dr, Ste 300",
@@ -71,6 +74,7 @@ export const nevadaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_bb4577d67a",
     name: "Modern Wellness Clinic",
     slug: "modern-wellness-clinic",
     address: "5375 S Fort Apache Rd, Suites 102 & 103",
@@ -95,6 +99,7 @@ export const nevadaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_e1929f21f5",
     name: "Serene Path Wellness",
     slug: "serene-path-wellness",
     address: "3120 S Rainbow Blvd Suite 201",
@@ -116,6 +121,7 @@ export const nevadaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_634c2d654b",
     name: "TRTMD Health Clinic",
     slug: "trtmd-health-clinic",
     address: "1215 S. Fort Apache Rd, Suite 230",
@@ -140,6 +146,7 @@ export const nevadaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_129f5e61a0",
     name: "Genesis Lifestyle Medicine",
     slug: "genesis-lifestyle-medicine-las-vegas",
     address: "Summerlin North, Las Vegas",
@@ -161,6 +168,7 @@ export const nevadaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-11",
   },
   {
+    id: "c_d680e64aeb",
     name: "Beverly Hills Rejuvenation Center Summerlin",
     slug: "beverly-hills-rejuvenation-center-summerlin",
     address: "1825 Festival Plaza Dr #180",

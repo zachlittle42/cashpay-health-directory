@@ -14,6 +14,7 @@ import { Provider } from './types';
 
 export const traditionalInsurers: Provider[] = [
   {
+    id: 'c_9ce0ef1845',
     slug: 'united-healthcare',
     name: 'UnitedHealthcare',
     description: 'Largest health insurer in the US by revenue ($189B+), offering employer-sponsored, individual, Medicare, and Medicaid plans nationwide.',
@@ -35,6 +36,7 @@ export const traditionalInsurers: Provider[] = [
     lastVerified: '2024-12-21',
   },
   {
+    id: 'c_ccfcd27639',
     slug: 'elevance-anthem',
     name: 'Elevance Health (Anthem Blue Cross Blue Shield)',
     description: 'Second-largest health insurer ($124B revenue), operating as Anthem Blue Cross Blue Shield in 14 states with access to the national BCBS network.',
@@ -56,6 +58,7 @@ export const traditionalInsurers: Provider[] = [
     lastVerified: '2024-12-21',
   },
   {
+    id: 'c_52b32e4ab4',
     slug: 'kaiser-permanente',
     name: 'Kaiser Permanente',
     description: 'Unique integrated health system combining insurance with its own hospitals, doctors, and pharmacies. Known for coordinated care and preventive focus.',
@@ -77,6 +80,7 @@ export const traditionalInsurers: Provider[] = [
     lastVerified: '2024-12-21',
   },
   {
+    id: 'c_85b2826d6a',
     slug: 'centene-ambetter',
     name: 'Centene (Ambetter Health)',
     description: 'Largest ACA marketplace insurer (5.8M members) and largest Medicaid managed care organization. Known for affordable options for lower and middle-income families.',
@@ -98,6 +102,7 @@ export const traditionalInsurers: Provider[] = [
     lastVerified: '2024-12-21',
   },
   {
+    id: 'c_3246eb8e14',
     slug: 'aetna-cvs',
     name: 'Aetna (CVS Health)',
     description: 'Major national insurer now part of CVS Health, offering unique integration with CVS pharmacies, MinuteClinic, and HealthHUB locations.',
@@ -119,6 +124,7 @@ export const traditionalInsurers: Provider[] = [
     lastVerified: '2024-12-21',
   },
   {
+    id: 'c_f118fbbdcb',
     slug: 'cigna',
     name: 'Cigna',
     description: 'Global health services company (11% US market share) known for strong employer plans and unique international coverage options.',
@@ -140,6 +146,7 @@ export const traditionalInsurers: Provider[] = [
     lastVerified: '2024-12-21',
   },
   {
+    id: 'c_c27549da76',
     slug: 'humana',
     name: 'Humana',
     description: 'Major insurer (6.6% market share) with dominant strength in Medicare Advantage plans and senior healthcare services.',
@@ -161,6 +168,7 @@ export const traditionalInsurers: Provider[] = [
     lastVerified: '2024-12-21',
   },
   {
+    id: 'c_bab8d3523b',
     slug: 'hcsc',
     name: 'Health Care Service Corporation (HCSC)',
     description: 'Largest customer-owned health insurer in the US, operating Blue Cross Blue Shield plans in 5 major states: IL, MT, NM, OK, and TX.',
@@ -182,6 +190,7 @@ export const traditionalInsurers: Provider[] = [
     lastVerified: '2024-12-21',
   },
   {
+    id: 'c_88d42bbc80',
     slug: 'molina-healthcare',
     name: 'Molina Healthcare',
     description: 'Major Medicaid and ACA marketplace insurer specializing in affordable coverage for lower-income individuals and families.',
@@ -213,6 +222,7 @@ export const traditionalInsurers: Provider[] = [
 
 export const insuranceInnovators: Provider[] = [
   {
+    id: 'c_99c3459757',
     slug: 'oscar-health',
     name: 'Oscar Health',
     description: 'Tech-first health insurance startup focused on user experience, virtual care, and a modern approach to health coverage. Founded 2012.',
@@ -234,6 +244,7 @@ export const insuranceInnovators: Provider[] = [
     lastVerified: '2024-12-21',
   },
   {
+    id: 'c_66b39fd574',
     slug: 'clover-health',
     name: 'Clover Health',
     description: 'Medicare Advantage-focused insurtech using AI-powered Clover Assistant to help doctors make better care decisions. Heavy technology focus.',
@@ -255,6 +266,7 @@ export const insuranceInnovators: Provider[] = [
     lastVerified: '2024-12-21',
   },
   {
+    id: 'c_eba7109b61',
     slug: 'devoted-health',
     name: 'Devoted Health',
     description: 'Medicare Advantage startup founded by former Athenahealth leaders, focusing on concierge-style service for seniors.',
@@ -276,6 +288,7 @@ export const insuranceInnovators: Provider[] = [
     lastVerified: '2024-12-21',
   },
   {
+    id: 'c_35d2b3bcbe',
     slug: 'alignment-healthcare',
     name: 'Alignment Healthcare',
     description: 'Value-based Medicare Advantage company using proprietary AVA technology platform to coordinate care for complex patients.',

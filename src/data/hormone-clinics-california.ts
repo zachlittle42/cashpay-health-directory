@@ -5,6 +5,7 @@ import { HormoneClinic } from '@/lib/hormone-clinic-types';
 
 export const californiaHormoneClinics: HormoneClinic[] = [
   {
+    id: "c_fc645a0c6b",
     name: "Jennifer R. Berman, MD",
     slug: "jennifer-r-berman-md",
     address: "9400 Brighton Way #209, Beverly Hills, CA 90210",
@@ -28,6 +29,7 @@ export const californiaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_71e46fde20",
     name: "Weight Loss Clinic Los Angeles",
     slug: "weight-loss-clinic-los-angeles",
     address: "9301 Wilshire Blvd # 405, Beverly Hills, CA 90210, United States",
@@ -50,6 +52,7 @@ export const californiaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_20777301d7",
     name: "The Turek Clinic - Dr. Paul Turek",
     slug: "the-turek-clinic-dr-paul-turek",
     address: "9033 Wilshire Blvd Suite 408, Beverly Hills, CA 90211",
@@ -73,6 +76,7 @@ export const californiaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_4f00770de8",
     name: "TMS Health and Wellness",
     slug: "tms-health-and-wellness",
     address: "2900 Bristol St suite B205, Costa Mesa, CA 92626",
@@ -94,6 +98,7 @@ export const californiaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_2293bd878f",
     name: "Wave Plastic Surgery & Aesthetic Laser Center Costa Mesa",
     slug: "wave-plastic-surgery-aesthetic-laser-center-costa-mesa",
     address: "720 Paularino Ave 2nd Floor, Costa Mesa, CA 92626",
@@ -115,6 +120,7 @@ export const californiaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_e7df9af803",
     name: "LaSara Medical Group",
     slug: "lasara-medical-group",
     address: "1122 Bristol St 2nd Floor, Costa Mesa, CA 92626, United States",
@@ -137,6 +143,7 @@ export const californiaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_a443b973d8",
     name: "Thrive Wellness Center For Women",
     slug: "thrive-wellness-center-for-women",
     address: "1560 E Chevy Chase Dr # 200, Glendale, CA 91206",
@@ -160,6 +167,7 @@ export const californiaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_486bacad14",
     name: "The OB-Gyn & Incontinence Center Glendale",
     slug: "the-ob-gyn-incontinence-center-glendale",
     address: "1505 Wilson Terrace #320, Glendale, CA 91206",
@@ -183,6 +191,7 @@ export const californiaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_d0cd968fa3",
     name: "Michael Tahery, M.D.",
     slug: "michael-tahery-m-d",
     address: "503 N Central Ave #200, Glendale, CA 91203",
@@ -204,6 +213,7 @@ export const californiaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_4782924117",
     name: "New Life Male Medical Center",
     slug: "new-life-male-medical-center",
     address: "1577 E Chevy Chase Dr UNIT 240, Glendale, CA 91206",
@@ -226,6 +236,7 @@ export const californiaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_4d8ab889d4",
     name: "Lee Regenerative Medical Institute",
     slug: "lee-regenerative-medical-institute",
     address: "18800 Main St # 106, Huntington Beach, CA 92648",
@@ -248,6 +259,7 @@ export const californiaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_faf7b6f012",
     name: "Gameday Men's Health Huntington Beach (Medical Clinic) - TRT Clinic",
     slug: "gameday-men-s-health-huntington-beach-medical-clinic-trt-clinic",
     address: "7677 Center Ave Ste 201, Huntington Beach, CA 92647, United States",
@@ -271,6 +283,7 @@ export const californiaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_2a47546e3c",
     name: "Advanced TRT Clinic",
     slug: "advanced-trt-clinic",
     address: "19671 Beach Blvd 4th floor ste 415, Huntington Beach, CA 92648, United States",
@@ -294,6 +307,7 @@ export const californiaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_decad35bd3",
     name: "Morris Ahdoot, MD",
     slug: "morris-ahdoot-md",
     address: "15775 Laguna Canyon Rd #200, Irvine, CA 92618",
@@ -317,6 +331,7 @@ export const californiaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_7527c34dab",
     name: "DR. VIGOR - Testosterone and ED Experts",
     slug: "dr-vigor-testosterone-and-ed-experts",
     address: "16460 Bake Pkwy Suite 800, Irvine, CA 92618",
@@ -339,6 +354,7 @@ export const californiaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_48a23d2714",
     name: "American Male Medical \u2013 Irvine, California",
     slug: "american-male-medical-irvine-california",
     address: "62 Corporate Park #140, Irvine, CA 92606, United States",
@@ -362,6 +378,7 @@ export const californiaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_eedb6a30c8",
     name: "Kingsberg Medical Clinic",
     slug: "kingsberg-medical-clinic",
     address: "640 S San Vicente Blvd Suite 540, Los Angeles, CA 90048",
@@ -384,6 +401,7 @@ export const californiaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_78814f0f48",
     name: "Dr. Gail N. Jackson, MD",
     slug: "dr-gail-n-jackson-md",
     address: "2211 Corinth Ave #210, Los Angeles, CA 90064",
@@ -406,6 +424,7 @@ export const californiaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_bbe6c07b5d",
     name: "Dr. Philip Werthman",
     slug: "dr-philip-werthman",
     address: "2080 Century Pk E #907, Los Angeles, CA 90067",
@@ -429,6 +448,7 @@ export const californiaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_25c3a76216",
     name: "Wave Plastic Surgery",
     slug: "wave-plastic-surgery",
     address: "3680 Wilshire Blvd 2nd FL, Los Angeles, CA 90010",
@@ -451,6 +471,7 @@ export const californiaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_26d788f273",
     name: "Gameday Men's Health Pasadena ED and TRT Clinic",
     slug: "gameday-men-s-health-pasadena-ed-and-trt-clinic",
     address: "960 E Green St Suite 207, Pasadena, CA 91106, United States",
@@ -474,6 +495,7 @@ export const californiaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_2a47546e3c",
     name: "Advanced TRT Clinic",
     slug: "advanced-trt-clinic-pasadena",
     address: "215 N Marengo Ave 2nd floor ste 203, Pasadena, CA 91101, United States",
@@ -497,6 +519,7 @@ export const californiaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_d27cbdbf9d",
     name: "The Mark Men's Health",
     slug: "the-mark-men-s-health",
     address: "825 Cordova St, Pasadena, CA 91101",
@@ -520,6 +543,7 @@ export const californiaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_4cff0600bd",
     name: "San Diego Menopause",
     slug: "san-diego-menopause",
     address: "3160 Camino del Rio S Unit 315, San Diego, CA 92108",
@@ -543,6 +567,7 @@ export const californiaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_9615ad43cb",
     name: "SoCal Men's Clinic",
     slug: "socal-men-s-clinic",
     address: "2878 Camino del Rio S # 220, San Diego, CA 92108",
@@ -566,6 +591,7 @@ export const californiaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_dfc4d1c165",
     name: "Testosterone Treatment San Diego- The Man Zone",
     slug: "testosterone-treatment-san-diego-the-man-zone",
     address: "5445 Oberlin Dr # 101, San Diego, CA 92121",
@@ -589,6 +615,7 @@ export const californiaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_f09d5cf264",
     name: "Clarus Health: Ketamine and NAD clinic",
     slug: "clarus-health-ketamine-and-nad-clinic",
     address: "450 Sutter St #1504, San Francisco, CA 94108",
@@ -611,6 +638,7 @@ export const californiaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_ad09a795e4",
     name: "Dr Ricki Pollycove MD",
     slug: "dr-ricki-pollycove-md",
     address: "2100 Webster St #318, San Francisco, CA 94115",
@@ -634,6 +662,7 @@ export const californiaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_ddfd25f7c6",
     name: "Wave Plastic Surgery & Aesthetic Laser Center San Francisco",
     slug: "wave-plastic-surgery-aesthetic-laser-center-san-francisco",
     address: "450 Sutter St #1918, San Francisco, CA 94108",
@@ -656,6 +685,7 @@ export const californiaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_209e2578ab",
     name: "Gameday Men's Health Downtown San Francisco TRT & ED Clinic",
     slug: "gameday-men-s-health-downtown-san-francisco-trt-ed-clinic",
     address: "465 California St Suite 610, San Francisco, CA 94104, United States",
@@ -679,6 +709,7 @@ export const californiaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_2a47546e3c",
     name: "Advanced TRT Clinic",
     slug: "advanced-trt-clinic-san-francisco",
     address: "50 California St 30th floor ste 3050, San Francisco, CA 94111, United States",
@@ -701,6 +732,7 @@ export const californiaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_74abf476a4",
     name: "Renew Vitality Testosterone Clinic of San Francisco",
     slug: "renew-vitality-testosterone-clinic-of-san-francisco",
     address: "447 Sutter St suite 544, San Francisco, CA 94108, United States",
@@ -723,6 +755,7 @@ export const californiaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_4317259cd2",
     name: "Renew Vitality Testosterone Clinic of Santa Rosa",
     slug: "renew-vitality-testosterone-clinic-of-santa-rosa",
     address: "613 4th St #200A, Santa Rosa, CA 95404",
@@ -745,6 +778,7 @@ export const californiaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_a0b2043e27",
     name: "Gameday Men\u2019s Health Larkfield TRT Clinic ED Weight Loss",
     slug: "gameday-men-s-health-larkfield-trt-clinic-ed-weight-loss",
     address: "4855 Old Redwood Hwy, Santa Rosa, CA 95403",
@@ -768,6 +802,7 @@ export const californiaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_2a47546e3c",
     name: "Advanced TRT Clinic",
     slug: "advanced-trt-clinic-santa-rosa",
     address: "428 Aviation Blvd 1st floor, Santa Rosa, CA 95403",
@@ -790,6 +825,7 @@ export const californiaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_b6135d5455",
     name: "Renew Vitality Testosterone Clinic of Torrance",
     slug: "renew-vitality-testosterone-clinic-of-torrance",
     address: "22330 Hawthorne Blvd suite j, Torrance, CA 90505",
@@ -812,6 +848,7 @@ export const californiaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_e332a39621",
     name: "Gameday Men\u2019s Health Torrance TRT Clinic",
     slug: "gameday-men-s-health-torrance-trt-clinic",
     address: "23430 Hawthorne Blvd SUITE # 340, Torrance, CA 90505, United States",
@@ -835,6 +872,7 @@ export const californiaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_2a47546e3c",
     name: "Advanced TRT Clinic",
     slug: "advanced-trt-clinic-torrance",
     address: "1224 W 190th St 4th floor ste 420, Torrance, CA 90502, United States",
@@ -857,6 +895,7 @@ export const californiaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_6730c1d788",
     name: "Regenerate Men's Health Medical Clinic",
     slug: "regenerate-men-s-health-medical-clinic",
     address: "1776 Ygnacio Valley Rd #108, Walnut Creek, CA 94598",
@@ -880,6 +919,7 @@ export const californiaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_34c518bb55",
     name: "Ob/Gyn Specialists",
     slug: "ob-gyn-specialists",
     address: "2637 Shadelands Dr, Walnut Creek, CA 94598",
@@ -903,6 +943,7 @@ export const californiaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_7f4f9f98c1",
     name: "Vital Pain Management",
     slug: "vital-pain-management",
     address: "710 S Broadway Ste 212, Walnut Creek, CA 94596",
@@ -925,6 +966,7 @@ export const californiaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_c2f3ec4bab",
     name: "Gameday Men's Health Walnut Creek, CA TRT & ED Clinic",
     slug: "gameday-men-s-health-walnut-creek-ca-trt-ed-clinic",
     address: "1225 Alpine Rd suite 100, Walnut Creek, CA 94596, United States",
@@ -948,6 +990,7 @@ export const californiaHormoneClinics: HormoneClinic[] = [
     lastVerified: "2026-06-10",
   },
   {
+    id: "c_2a47546e3c",
     name: "Advanced TRT Clinic",
     slug: "advanced-trt-clinic-walnut-creek",
     address: "100 N Wiget Ln 2nd floor ste 200, Walnut Creek, CA 94598, United States",

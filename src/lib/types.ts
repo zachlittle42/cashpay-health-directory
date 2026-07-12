@@ -41,6 +41,7 @@ export type DeliveryModel =
 export type ReferralType = 'affiliate_link' | 'lead_form' | 'direct_link';
 
 export interface Provider {
+  id: string;                // Foundation #1 — stable entity id, minted by scripts/ingest/mint_ids.py
   slug: string;
   name: string;
   description: string;
