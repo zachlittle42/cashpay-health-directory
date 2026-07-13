@@ -523,6 +523,16 @@ export default function GastricSleeveCostByCountry() {
       <section className="mx-auto max-w-4xl px-4 py-12">
         <h2 className="text-2xl font-bold text-gray-900 mb-6">Related Guides</h2>
         <div className="grid gap-4 md:grid-cols-2">
+          <Link href="/guides/mexico-bariatric-surgery-prices" className="block bg-white rounded-lg border border-green-200 p-5 hover:shadow-lg transition-shadow">
+            <div className="flex items-center gap-3">
+              <span className="text-2xl">✅</span>
+              <div>
+                <div className="font-bold text-gray-900">Verified Mexico Bariatric Surgery Prices</div>
+                <div className="text-sm text-gray-600">Per-clinic gastric sleeve &amp; bypass prices, verified and dated</div>
+              </div>
+            </div>
+          </Link>
+
           <Link href="/guides/gastric-sleeve-mexico-safety" className="block bg-white rounded-lg border border-gray-200 p-5 hover:shadow-lg transition-shadow">
             <div className="flex items-center gap-3">
               <span className="text-2xl">⚖️</span>

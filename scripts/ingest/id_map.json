@@ -262,6 +262,20 @@
     ],
     "firstSeen": "2026-07-11"
   },
+  "c_060b560f41": {
+    "name": "Dr. Christian Rodriguez Lopez",
+    "website": "https://drchristianrodriguezlopez.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "dr-christian-rodriguez-lopez",
+        "city": "Tijuana",
+        "country": "Mexico",
+        "cluster": "mexico-bariatric"
+      }
+    ],
+    "firstSeen": "2026-07-13"
+  },
   "c_062fa2c2e6": {
     "name": "PNOĒ",
     "website": "https://www.pnoe.com",
@@ -322,6 +336,20 @@
       }
     ],
     "firstSeen": "2026-07-11"
+  },
+  "c_069f79e277": {
+    "name": "Dr. Balwi",
+    "website": "https://drbalwi.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "dr-balwi",
+        "city": "Istanbul",
+        "country": "Turkey",
+        "cluster": "turkey-hair"
+      }
+    ],
+    "firstSeen": "2026-07-13"
   },
   "c_06c5406367": {
     "name": "NeuMed Modern Urgent Care + IV Therapy",
@@ -462,6 +490,13 @@
     "website": "https://www.algodonesdentalimplants.com/",
     "occurrences": [
       {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "cosmetic-implant-dentistry-center",
+        "city": "Los Algodones",
+        "country": "Mexico",
+        "cluster": "mexico-dental"
+      },
+      {
         "file": "src/lib/providers-medical-tourism.ts",
         "slug": "cosmetic-implant-dentistry-center-algodones"
       }
@@ -556,6 +591,20 @@
       }
     ],
     "firstSeen": "2026-07-11"
+  },
+  "c_0b1a41351a": {
+    "name": "Cancun Cosmetic Dentistry",
+    "website": "https://www.cancuncosmeticdentistry.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "cancun-cosmetic-dentistry",
+        "city": "Cancun",
+        "country": "Mexico",
+        "cluster": "mexico-dental"
+      }
+    ],
+    "firstSeen": "2026-07-13"
   },
   "c_0b2541977c": {
     "name": "Ezra",
@@ -707,6 +756,20 @@
     ],
     "firstSeen": "2026-07-11"
   },
+  "c_0e37c980c7": {
+    "name": "Bokanova Dental Center",
+    "website": "https://www.bokanova.mx",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "bokanova-dental-center",
+        "city": "Playa del Carmen",
+        "country": "Mexico",
+        "cluster": "mexico-dental"
+      }
+    ],
+    "firstSeen": "2026-07-13"
+  },
   "c_0e3e6b6079": {
     "name": "University Total Wellness",
     "website": "https://www.universitytotalwellness.com",
@@ -822,6 +885,20 @@
     ],
     "firstSeen": "2026-07-11"
   },
+  "c_1031b3984e": {
+    "name": "Elias Ortiz & Company",
+    "website": "https://eliasortiz.co",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "elias-ortiz-company",
+        "city": "Tijuana",
+        "country": "Mexico",
+        "cluster": "mexico-bariatric"
+      }
+    ],
+    "firstSeen": "2026-07-13"
+  },
   "c_1032d619d2": {
     "name": "Defy Medical",
     "website": "https://defymedical.com",
@@ -925,6 +1002,20 @@
       }
     ],
     "firstSeen": "2026-07-11"
+  },
+  "c_116f3c9d2f": {
+    "name": "Elithair",
+    "website": "https://elithair.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "elithair",
+        "city": "Istanbul",
+        "country": "Turkey",
+        "cluster": "turkey-hair"
+      }
+    ],
+    "firstSeen": "2026-07-13"
   },
   "c_11dcb3a7db": {
     "name": "SoHo Men's Health",
@@ -1196,6 +1287,20 @@
       }
     ],
     "firstSeen": "2026-07-11"
+  },
+  "c_16aaa20f26": {
+    "name": "Revivacare",
+    "website": "https://revivacare.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "revivacare",
+        "city": "Istanbul",
+        "country": "Turkey",
+        "cluster": "turkey-hair"
+      }
+    ],
+    "firstSeen": "2026-07-13"
   },
   "c_16d979ae21": {
     "name": "REinvi MD - Weight Loss",
@@ -1543,6 +1648,20 @@
     ],
     "firstSeen": "2026-07-11"
   },
+  "c_1cb65bf83c": {
+    "name": "Jet Medical Tourism",
+    "website": "https://jetmedicaltourism.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "jet-medical-tourism",
+        "city": "Tijuana",
+        "country": "Mexico",
+        "cluster": "mexico-bariatric"
+      }
+    ],
+    "firstSeen": "2026-07-13"
+  },
   "c_1d2be80383": {
     "name": "Anuli Aesthetics & Weightloss",
     "website": "https://anulimedspa.com",
@@ -1829,6 +1948,20 @@
     ],
     "firstSeen": "2026-07-11"
   },
+  "c_20bfd85e2b": {
+    "name": "Meza Dental Care",
+    "website": "https://www.mezadentalcare.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "meza-dental-care",
+        "city": "San Jose",
+        "country": "Costa Rica",
+        "cluster": "costa-rica-dental"
+      }
+    ],
+    "firstSeen": "2026-07-13"
+  },
   "c_212521f185": {
     "name": "Newport Beach Weight Loss",
     "website": "https://www.newportbeachweightloss.com",
@@ -1922,6 +2055,13 @@
     "name": "Advance Dental",
     "website": "https://www.advancedentalcostarica.com",
     "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "advance-dental",
+        "city": "Escazu",
+        "country": "Costa Rica",
+        "cluster": "costa-rica-dental"
+      },
       {
         "file": "src/lib/providers-medical-tourism.ts",
         "slug": "advance-dental-costa-rica"
@@ -2651,6 +2791,20 @@
     ],
     "firstSeen": "2026-07-11"
   },
+  "c_2c8871a496": {
+    "name": "Tijuana Bariatric Center",
+    "website": "https://tijuanabariatriccenter.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "tijuana-bariatric-center",
+        "city": "Tijuana",
+        "country": "Mexico",
+        "cluster": "mexico-bariatric"
+      }
+    ],
+    "firstSeen": "2026-07-13"
+  },
   "c_2cd3e93fb6": {
     "name": "SDMI (Steinberg Diagnostic Medical Imaging)",
     "website": "https://www.sdmi-lv.com/services/dexa-scan",
@@ -2815,6 +2969,20 @@
       }
     ],
     "firstSeen": "2026-07-11"
+  },
+  "c_2fce0c5ccb": {
+    "name": "Clinicana",
+    "website": "https://www.clinicana.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "clinicana",
+        "city": "Istanbul",
+        "country": "Turkey",
+        "cluster": "turkey-hair"
+      }
+    ],
+    "firstSeen": "2026-07-13"
   },
   "c_2fcf21b20e": {
     "name": "Options Medical Weight Loss - North Raleigh",
@@ -3168,6 +3336,20 @@
     ],
     "firstSeen": "2026-07-11"
   },
+  "c_368952a1c3": {
+    "name": "Este Surgery",
+    "website": "https://www.estesurgery.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "este-surgery",
+        "city": "Istanbul",
+        "country": "Turkey",
+        "cluster": "turkey-hair"
+      }
+    ],
+    "firstSeen": "2026-07-13"
+  },
   "c_3742c411f8": {
     "name": "Rattinan Medical Center",
     "website": "https://www.rattinan.com/en/",
@@ -3283,6 +3465,13 @@
     "name": "ALO Bariatrics",
     "website": "https://alobariatrics.com",
     "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "alo-bariatrics",
+        "city": "Tijuana",
+        "country": "Mexico",
+        "cluster": "mexico-bariatric"
+      },
       {
         "file": "src/lib/providers-medical-tourism.ts",
         "slug": "alo-bariatrics"
@@ -4226,6 +4415,20 @@
     ],
     "firstSeen": "2026-07-11"
   },
+  "c_49ba972617": {
+    "name": "Dr. Mario Garita Dental Clinic",
+    "website": "https://www.dentalimplantscr.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "dr-mario-garita-dental-clinic",
+        "city": "San Jose",
+        "country": "Costa Rica",
+        "cluster": "costa-rica-dental"
+      }
+    ],
+    "firstSeen": "2026-07-13"
+  },
   "c_4a18548aeb": {
     "name": "ReCharge MedSpa & Wellness Cinic",
     "website": "https://www.rechargewellnessclinic.com",
@@ -4543,6 +4746,20 @@
     ],
     "firstSeen": "2026-07-11"
   },
+  "c_4e14c3515e": {
+    "name": "Dental Implants in Costa Rica",
+    "website": "https://www.dentalimplantsincostarica.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "dental-implants-in-costa-rica",
+        "city": "San Jose",
+        "country": "Costa Rica",
+        "cluster": "costa-rica-dental"
+      }
+    ],
+    "firstSeen": "2026-07-13"
+  },
   "c_4e1a94e8aa": {
     "name": "Macie Medical",
     "website": "https://www.maciemedical.com/",
@@ -4631,6 +4848,20 @@
       }
     ],
     "firstSeen": "2026-07-11"
+  },
+  "c_4fad9f0c08": {
+    "name": "Cancun Dental Clinic",
+    "website": "https://www.cancundentalclinic.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "cancun-dental-clinic",
+        "city": "Cancun",
+        "country": "Mexico",
+        "cluster": "mexico-dental"
+      }
+    ],
+    "firstSeen": "2026-07-13"
   },
   "c_4fbc93a294": {
     "name": "Santa Clara Family Clinic",
@@ -5039,6 +5270,13 @@
     "website": "https://dentalbrushtijuana.com",
     "occurrences": [
       {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "dental-brush",
+        "city": "Tijuana",
+        "country": "Mexico",
+        "cluster": "mexico-dental"
+      },
+      {
         "file": "src/lib/providers-medical-tourism.ts",
         "slug": "dental-brush-tijuana"
       }
@@ -5094,6 +5332,20 @@
       }
     ],
     "firstSeen": "2026-07-11"
+  },
+  "c_591891c2c6": {
+    "name": "Supreme Dental Clinic",
+    "website": "https://www.supremedentalmx.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "supreme-dental-clinic",
+        "city": "Los Algodones",
+        "country": "Mexico",
+        "cluster": "mexico-dental"
+      }
+    ],
+    "firstSeen": "2026-07-13"
   },
   "c_592f161c41": {
     "name": "Prime Men's Medical Austin",
@@ -5236,6 +5488,20 @@
     ],
     "firstSeen": "2026-07-11"
   },
+  "c_5ce219f1af": {
+    "name": "Marietta Dental Care",
+    "website": "https://www.mariettadentalcare.com.mx",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "marietta-dental-care",
+        "city": "Los Algodones",
+        "country": "Mexico",
+        "cluster": "mexico-dental"
+      }
+    ],
+    "firstSeen": "2026-07-13"
+  },
   "c_5daa27dacc": {
     "name": "BodySpec",
     "website": "https://www.bodyspec.com/dexa-scan-denver",
@@ -5319,6 +5585,20 @@
       }
     ],
     "firstSeen": "2026-07-11"
+  },
+  "c_5f72199423": {
+    "name": "Bernal Dental Group",
+    "website": "https://dentalbernal.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "bernal-dental-group",
+        "city": "Los Algodones",
+        "country": "Mexico",
+        "cluster": "mexico-dental"
+      }
+    ],
+    "firstSeen": "2026-07-13"
   },
   "c_5f9ec2819e": {
     "name": "MD Weight Loss and Spa",
@@ -5406,6 +5686,20 @@
       }
     ],
     "firstSeen": "2026-07-11"
+  },
+  "c_601102d718": {
+    "name": "Dr. Sandy Martinez Bariatrics",
+    "website": "https://www.drsandybariatrics.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "dr-sandy-martinez-bariatrics",
+        "city": "Tijuana",
+        "country": "Mexico",
+        "cluster": "mexico-bariatric"
+      }
+    ],
+    "firstSeen": "2026-07-13"
   },
   "c_6028afdee2": {
     "name": "ThinWorks Miami",
@@ -5507,6 +5801,13 @@
     "website": "https://drserkanaygin.com",
     "occurrences": [
       {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "dr-serkan-aygin-clinic",
+        "city": "Istanbul",
+        "country": "Turkey",
+        "cluster": "turkey-hair"
+      },
+      {
         "file": "src/lib/providers-medical-tourism.ts",
         "slug": "dr-serkan-aygin"
       }
@@ -5542,6 +5843,20 @@
       }
     ],
     "firstSeen": "2026-07-11"
+  },
+  "c_6323812e83": {
+    "name": "Hairneva Clinic",
+    "website": "https://www.hairneva.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "hairneva-clinic",
+        "city": "Istanbul",
+        "country": "Turkey",
+        "cluster": "turkey-hair"
+      }
+    ],
+    "firstSeen": "2026-07-13"
   },
   "c_633185ce59": {
     "name": "Set Point - Roseville, CA",
@@ -5804,6 +6119,20 @@
     ],
     "firstSeen": "2026-07-11"
   },
+  "c_674a127f6c": {
+    "name": "Asli Tarcan Clinic",
+    "website": "https://aslitarcanclinic.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "asli-tarcan-clinic",
+        "city": "Istanbul",
+        "country": "Turkey",
+        "cluster": "turkey-hair"
+      }
+    ],
+    "firstSeen": "2026-07-13"
+  },
   "c_676d6f3947": {
     "name": "Panama Express Dental Center",
     "website": "https://www.whatclinic.com/dentists/panama/panama-city/panama-express-dental-center",
@@ -5928,6 +6257,20 @@
     ],
     "firstSeen": "2026-07-11"
   },
+  "c_699ab28c57": {
+    "name": "Cancun Dental Specialists",
+    "website": "https://www.cancundentalspecialists.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "cancun-dental-specialists",
+        "city": "Cancun",
+        "country": "Mexico",
+        "cluster": "mexico-dental"
+      }
+    ],
+    "firstSeen": "2026-07-13"
+  },
   "c_69dd922eee": {
     "name": "Doctors Clinic Houston - Southwest Freeway",
     "website": "https://doctorsclinichouston.com",
@@ -6049,6 +6392,13 @@
     "name": "Hermest Hair Clinic",
     "website": "https://www.hermestclinic.com",
     "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "hermest-hair-clinic",
+        "city": "Istanbul",
+        "country": "Turkey",
+        "cluster": "turkey-hair"
+      },
       {
         "file": "src/lib/providers-medical-tourism.ts",
         "slug": "hermest-hair-clinic"
@@ -6184,6 +6534,13 @@
     "name": "Dental Destinations Cancun",
     "website": "https://dentaldestinationscancun.com",
     "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "dental-destinations-cancun",
+        "city": "Cancun",
+        "country": "Mexico",
+        "cluster": "mexico-dental"
+      },
       {
         "file": "src/lib/providers-medical-tourism.ts",
         "slug": "dental-destinations-cancun"
@@ -6916,6 +7273,20 @@
     ],
     "firstSeen": "2026-07-11"
   },
+  "c_77bce68d94": {
+    "name": "Sonria Dental Clinic",
+    "website": "https://sonriacr.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "sonria-dental-clinic",
+        "city": "Escazu",
+        "country": "Costa Rica",
+        "cluster": "costa-rica-dental"
+      }
+    ],
+    "firstSeen": "2026-07-13"
+  },
   "c_77c7b31d81": {
     "name": "Amaya Antiaging And Weight Loss Center",
     "website": "https://amayaclinic.com",
@@ -6947,6 +7318,20 @@
       }
     ],
     "firstSeen": "2026-07-11"
+  },
+  "c_77ea59e5ad": {
+    "name": "A1 Smile Design",
+    "website": "https://a1smiledesign.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "a1-smile-design",
+        "city": "Playa del Carmen",
+        "country": "Mexico",
+        "cluster": "mexico-dental"
+      }
+    ],
+    "firstSeen": "2026-07-13"
   },
   "c_78364f8302": {
     "name": "Abacep Testosterone and Weight Loss Clinic",
@@ -7351,6 +7736,13 @@
     "website": "https://smilehairclinic.com",
     "occurrences": [
       {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "smile-hair-clinic",
+        "city": "Istanbul",
+        "country": "Turkey",
+        "cluster": "turkey-hair"
+      },
+      {
         "file": "src/lib/providers-medical-tourism.ts",
         "slug": "smile-hair-clinic"
       }
@@ -7467,6 +7859,20 @@
       }
     ],
     "firstSeen": "2026-07-11"
+  },
+  "c_80a503e112": {
+    "name": "Dental Costa Rica",
+    "website": "https://www.dentalcostarica.cr",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "dental-costa-rica",
+        "city": "San Jose",
+        "country": "Costa Rica",
+        "cluster": "costa-rica-dental"
+      }
+    ],
+    "firstSeen": "2026-07-13"
   },
   "c_80bb3ee2f7": {
     "name": "Low T Center West Houston | TRT & Weight Loss Clinic",
@@ -7619,6 +8025,34 @@
       }
     ],
     "firstSeen": "2026-07-11"
+  },
+  "c_83bd7525f6": {
+    "name": "Cancun Dental Design",
+    "website": "https://www.cancundentaldesign.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "cancun-dental-design",
+        "city": "Cancun",
+        "country": "Mexico",
+        "cluster": "mexico-dental"
+      }
+    ],
+    "firstSeen": "2026-07-13"
+  },
+  "c_83d00142f7": {
+    "name": "Capilclinic",
+    "website": "https://www.capilclinic.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "capilclinic",
+        "city": "Istanbul",
+        "country": "Turkey",
+        "cluster": "turkey-hair"
+      }
+    ],
+    "firstSeen": "2026-07-13"
   },
   "c_83f0e20ffe": {
     "name": "BodySpec - Santa Monica",
@@ -7832,6 +8266,20 @@
       }
     ],
     "firstSeen": "2026-07-11"
+  },
+  "c_87aa362c91": {
+    "name": "Tecnifue International",
+    "website": "https://tecnifueinternational.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "tecnifue-international",
+        "city": "Istanbul",
+        "country": "Turkey",
+        "cluster": "turkey-hair"
+      }
+    ],
+    "firstSeen": "2026-07-13"
   },
   "c_87bcf07eb4": {
     "name": "Nashville Men's Health",
@@ -8137,6 +8585,20 @@
       }
     ],
     "firstSeen": "2026-07-11"
+  },
+  "c_8be9362f85": {
+    "name": "Este Medical Group",
+    "website": "https://www.estemedicalgroup.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "este-medical-group",
+        "city": "Istanbul",
+        "country": "Turkey",
+        "cluster": "turkey-hair"
+      }
+    ],
+    "firstSeen": "2026-07-13"
   },
   "c_8bfe236929": {
     "name": "Well Medical Arts",
@@ -8468,6 +8930,13 @@
     "website": "https://asmed.com",
     "occurrences": [
       {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "asmed",
+        "city": "Istanbul",
+        "country": "Turkey",
+        "cluster": "turkey-hair"
+      },
+      {
         "file": "src/lib/providers-medical-tourism.ts",
         "slug": "asmed-clinic"
       }
@@ -8693,6 +9162,34 @@
     ],
     "firstSeen": "2026-07-11"
   },
+  "c_9595aeaa4b": {
+    "name": "DentaVac",
+    "website": "https://dentavac.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "dentavac",
+        "city": "Escazu",
+        "country": "Costa Rica",
+        "cluster": "costa-rica-dental"
+      }
+    ],
+    "firstSeen": "2026-07-13"
+  },
+  "c_95bb00a0f9": {
+    "name": "Flikier Dental Institute",
+    "website": "https://www.dentalinstitutecr.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "flikier-dental-institute",
+        "city": "San Jose",
+        "country": "Costa Rica",
+        "cluster": "costa-rica-dental"
+      }
+    ],
+    "firstSeen": "2026-07-13"
+  },
   "c_95bbad6441": {
     "name": "Panamericana Family Clinic",
     "website": "https://www.panamericanaclinic.com",
@@ -8705,6 +9202,20 @@
       }
     ],
     "firstSeen": "2026-07-11"
+  },
+  "c_95c47f1173": {
+    "name": "Hair of Istanbul",
+    "website": "https://www.hairofistanbul.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "hair-of-istanbul",
+        "city": "Istanbul",
+        "country": "Turkey",
+        "cluster": "turkey-hair"
+      }
+    ],
+    "firstSeen": "2026-07-13"
   },
   "c_95cb68bcae": {
     "name": "Mobile IV Medics",
@@ -8826,6 +9337,13 @@
     "website": "https://prismadental.com",
     "occurrences": [
       {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "prisma-dental",
+        "city": "San Jose",
+        "country": "Costa Rica",
+        "cluster": "costa-rica-dental"
+      },
+      {
         "file": "src/lib/providers-medical-tourism.ts",
         "slug": "prisma-dental-costa-rica"
       }
@@ -8933,6 +9451,20 @@
       }
     ],
     "firstSeen": "2026-07-11"
+  },
+  "c_97f7480199": {
+    "name": "NIMCLINIC",
+    "website": "https://www.nimclinic.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "nimclinic",
+        "city": "Istanbul",
+        "country": "Turkey",
+        "cluster": "turkey-hair"
+      }
+    ],
+    "firstSeen": "2026-07-13"
   },
   "c_97fc706ea1": {
     "name": "Gameday Men's Health San Diego TRT, Peptide, and ED Clinic",
@@ -9050,6 +9582,13 @@
     "website": "https://mexicobariatriccenter.com",
     "occurrences": [
       {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "mexico-bariatric-center",
+        "city": "Tijuana",
+        "country": "Mexico",
+        "cluster": "mexico-bariatric"
+      },
+      {
         "file": "src/lib/providers-medical-tourism.ts",
         "slug": "mexico-bariatric-center"
       }
@@ -9163,6 +9702,13 @@
     "name": "Cosmedica",
     "website": "https://cosmedica.com",
     "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "cosmedica",
+        "city": "Istanbul",
+        "country": "Turkey",
+        "cluster": "turkey-hair"
+      },
       {
         "file": "src/lib/providers-medical-tourism.ts",
         "slug": "cosmedica-clinic"
@@ -9482,6 +10028,20 @@
     ],
     "firstSeen": "2026-07-11"
   },
+  "c_a03fd59837": {
+    "name": "Sule Hair Transplant",
+    "website": "https://sule-hairtransplant.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "sule-hair-transplant",
+        "city": "Istanbul",
+        "country": "Turkey",
+        "cluster": "turkey-hair"
+      }
+    ],
+    "firstSeen": "2026-07-13"
+  },
   "c_a04fd9915c": {
     "name": "MedNOW Clinics",
     "website": "https://www.mednowclinics.com/semaglutide-therapy",
@@ -9694,11 +10254,32 @@
     "website": "https://www.obesitycontrolcenter.com/",
     "occurrences": [
       {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "obesity-control-center",
+        "city": "Tijuana",
+        "country": "Mexico",
+        "cluster": "mexico-bariatric"
+      },
+      {
         "file": "src/lib/providers-medical-tourism.ts",
         "slug": "obesity-control-center-tijuana"
       }
     ],
     "firstSeen": "2026-07-11"
+  },
+  "c_a403195226": {
+    "name": "ConfiDental",
+    "website": "https://confidentalcr.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "confidental",
+        "city": "San Jose",
+        "country": "Costa Rica",
+        "cluster": "costa-rica-dental"
+      }
+    ],
+    "firstSeen": "2026-07-13"
   },
   "c_a443b973d8": {
     "name": "Thrive Wellness Center For Women",
@@ -9905,6 +10486,20 @@
     ],
     "firstSeen": "2026-07-11"
   },
+  "c_a76b29f448": {
+    "name": "Ocean Dental Cancun",
+    "website": "https://oceandentalcancun.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "ocean-dental-cancun",
+        "city": "Cancun",
+        "country": "Mexico",
+        "cluster": "mexico-dental"
+      }
+    ],
+    "firstSeen": "2026-07-13"
+  },
   "c_a7d94a662b": {
     "name": "DexaFit San Francisco",
     "website": "https://www.dexafit.com",
@@ -9979,10 +10574,31 @@
     ],
     "firstSeen": "2026-07-11"
   },
+  "c_a8903103b9": {
+    "name": "Costa Rica Dental Team",
+    "website": "https://costaricadentalteam.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "costa-rica-dental-team",
+        "city": "San Jose",
+        "country": "Costa Rica",
+        "cluster": "costa-rica-dental"
+      }
+    ],
+    "firstSeen": "2026-07-13"
+  },
   "c_a8d8e07e61": {
     "name": "Dr. Cinik Hair Transplant Clinic",
     "website": "https://drcinik.com",
     "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "dr-cinik-hair-transplant-clinic",
+        "city": "Istanbul",
+        "country": "Turkey",
+        "cluster": "turkey-hair"
+      },
       {
         "file": "src/lib/providers-medical-tourism.ts",
         "slug": "dr-cinik-clinic"
@@ -10140,6 +10756,20 @@
     ],
     "firstSeen": "2026-07-11"
   },
+  "c_ab14fc982f": {
+    "name": "Dental Work Mexico",
+    "website": "https://www.dentalworkmexico.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "dental-work-mexico",
+        "city": "Cancun",
+        "country": "Mexico",
+        "cluster": "mexico-dental"
+      }
+    ],
+    "firstSeen": "2026-07-13"
+  },
   "c_ab1f2bb442": {
     "name": "Instituto Bernabeu",
     "website": "https://www.institutobernabeu.com/en/",
@@ -10255,6 +10885,20 @@
     ],
     "firstSeen": "2026-07-11"
   },
+  "c_ade098b681": {
+    "name": "Longevita",
+    "website": "https://www.longevita.co.uk",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "longevita",
+        "city": "Istanbul",
+        "country": "Turkey",
+        "cluster": "turkey-hair"
+      }
+    ],
+    "firstSeen": "2026-07-13"
+  },
   "c_adf6a7bbcb": {
     "name": "Sesame (Online Allergy Consult)",
     "website": "https://sesamecare.com/service/online-allergy-consult",
@@ -10307,6 +10951,13 @@
     "name": "Nova Dental",
     "website": "https://novadentalcr.com",
     "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "nova-dental",
+        "city": "Escazu",
+        "country": "Costa Rica",
+        "cluster": "costa-rica-dental"
+      },
       {
         "file": "src/lib/providers-medical-tourism.ts",
         "slug": "nova-dental-costa-rica"
@@ -10372,6 +11023,20 @@
       }
     ],
     "firstSeen": "2026-07-11"
+  },
+  "c_af04db0bb1": {
+    "name": "Tijuana Bariatrics",
+    "website": "https://tijuanabariatrics.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "tijuana-bariatrics",
+        "city": "Tijuana",
+        "country": "Mexico",
+        "cluster": "mexico-bariatric"
+      }
+    ],
+    "firstSeen": "2026-07-13"
   },
   "c_af07314191": {
     "name": "BodySpec - San Diego",
@@ -10487,6 +11152,20 @@
       }
     ],
     "firstSeen": "2026-07-11"
+  },
+  "c_b222833d62": {
+    "name": "Bariatrics MX",
+    "website": "https://bariatricsmx.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "bariatrics-mx",
+        "city": "Tijuana",
+        "country": "Mexico",
+        "cluster": "mexico-bariatric"
+      }
+    ],
+    "firstSeen": "2026-07-13"
   },
   "c_b2354f1c4b": {
     "name": "RevIVe Medspa & Wellness",
@@ -10651,6 +11330,20 @@
     ],
     "firstSeen": "2026-07-11"
   },
+  "c_b518361542": {
+    "name": "LIMARP",
+    "website": "https://www.limarp.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "limarp",
+        "city": "Tijuana",
+        "country": "Mexico",
+        "cluster": "mexico-bariatric"
+      }
+    ],
+    "firstSeen": "2026-07-13"
+  },
   "c_b533a070a6": {
     "name": "Carbon Health (Virtual Care)",
     "website": "https://carbonhealth.com",
@@ -10688,6 +11381,20 @@
     ],
     "firstSeen": "2026-07-11"
   },
+  "c_b5eed3a167": {
+    "name": "Mexico Bariatric Services",
+    "website": "https://www.mexicobariatricservices.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "mexico-bariatric-services",
+        "city": "Tijuana",
+        "country": "Mexico",
+        "cluster": "mexico-bariatric"
+      }
+    ],
+    "firstSeen": "2026-07-13"
+  },
   "c_b6135d5455": {
     "name": "Renew Vitality Testosterone Clinic of Torrance",
     "website": "https://www.vitalityhrt.com/location/testosterone-clinic-of-torrance-ca/?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_term=vitalityhrt&utm_content=torrance-ca",
@@ -10718,6 +11425,13 @@
     "name": "Sani Dental Group",
     "website": "https://sanidentalgroup.com",
     "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "sani-dental-group",
+        "city": "Los Algodones",
+        "country": "Mexico",
+        "cluster": "mexico-dental"
+      },
       {
         "file": "src/lib/providers-medical-tourism.ts",
         "slug": "sani-dental-group"
@@ -11005,6 +11719,20 @@
     ],
     "firstSeen": "2026-07-11"
   },
+  "c_bd77adb8a8": {
+    "name": "Pompeii Surgical",
+    "website": "https://www.pompeiisurgical.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "pompeii-surgical",
+        "city": "Tijuana",
+        "country": "Mexico",
+        "cluster": "mexico-bariatric"
+      }
+    ],
+    "firstSeen": "2026-07-13"
+  },
   "c_bde4326d93": {
     "name": "Woodlands Wellness & Cosmetic Center",
     "website": "https://woodlandswellness.com",
@@ -11052,6 +11780,34 @@
       }
     ],
     "firstSeen": "2026-07-11"
+  },
+  "c_bec994506b": {
+    "name": "Dr. Jalil Illan Weight Loss Center",
+    "website": "https://drjalil.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "dr-jalil-illan-weight-loss-center",
+        "city": "Tijuana",
+        "country": "Mexico",
+        "cluster": "mexico-bariatric"
+      }
+    ],
+    "firstSeen": "2026-07-13"
+  },
+  "c_bede3930f2": {
+    "name": "Dentist in Playa del Carmen",
+    "website": "https://dentistinplayadelcarmen.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "dentist-in-playa-del-carmen",
+        "city": "Playa del Carmen",
+        "country": "Mexico",
+        "cluster": "mexico-dental"
+      }
+    ],
+    "firstSeen": "2026-07-13"
   },
   "c_bee059ab20": {
     "name": "Northwest Women's Center",
@@ -11115,6 +11871,20 @@
       }
     ],
     "firstSeen": "2026-07-11"
+  },
+  "c_bf7331db06": {
+    "name": "Dental Del Rio",
+    "website": "https://dentaldelrioalgodones.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "dental-del-rio",
+        "city": "Los Algodones",
+        "country": "Mexico",
+        "cluster": "mexico-dental"
+      }
+    ],
+    "firstSeen": "2026-07-13"
   },
   "c_bfa5bab032": {
     "name": "Clinica Medica Fuqua",
@@ -11194,6 +11964,13 @@
     "name": "Pacific Implant Center",
     "website": "https://pacificimplantcenters.com",
     "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "pacific-implant-center",
+        "city": "Tijuana",
+        "country": "Mexico",
+        "cluster": "mexico-dental"
+      },
       {
         "file": "src/lib/providers-medical-tourism.ts",
         "slug": "pacific-implant-center"
@@ -11779,6 +12556,13 @@
     "website": "https://renewbariatrics.com",
     "occurrences": [
       {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "renew-bariatrics",
+        "city": "Tijuana",
+        "country": "Mexico",
+        "cluster": "mexico-bariatric"
+      },
+      {
         "file": "src/lib/providers-medical-tourism.ts",
         "slug": "renew-bariatrics"
       }
@@ -11899,6 +12683,20 @@
       }
     ],
     "firstSeen": "2026-07-11"
+  },
+  "c_ceafa7238f": {
+    "name": "Estepera Clinic",
+    "website": "https://www.estepera.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "estepera-clinic",
+        "city": "Istanbul",
+        "country": "Turkey",
+        "cluster": "turkey-hair"
+      }
+    ],
+    "firstSeen": "2026-07-13"
   },
   "c_cf09374731": {
     "name": "Natural Bio Health",
@@ -12608,6 +13406,13 @@
     "website": "https://www.algodonesdentalcenter.com/",
     "occurrences": [
       {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "algodones-dental-center",
+        "city": "Los Algodones",
+        "country": "Mexico",
+        "cluster": "mexico-dental"
+      },
+      {
         "file": "src/lib/providers-medical-tourism.ts",
         "slug": "algodones-dental-center"
       }
@@ -13006,6 +13811,20 @@
     ],
     "firstSeen": "2026-07-11"
   },
+  "c_e1aa3f43b7": {
+    "name": "Costa Rica Dental",
+    "website": "https://costaricadental.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "costa-rica-dental",
+        "city": "San Jose",
+        "country": "Costa Rica",
+        "cluster": "costa-rica-dental"
+      }
+    ],
+    "firstSeen": "2026-07-13"
+  },
   "c_e1f0a0e93c": {
     "name": "Roseville Trim and Slim",
     "website": "http://www.rosevilletrimandslim.com",
@@ -13068,6 +13887,20 @@
       }
     ],
     "firstSeen": "2026-07-11"
+  },
+  "c_e31553fb1c": {
+    "name": "Goodness Dental",
+    "website": "https://www.goodnessdental.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "goodness-dental",
+        "city": "Escazu",
+        "country": "Costa Rica",
+        "cluster": "costa-rica-dental"
+      }
+    ],
+    "firstSeen": "2026-07-13"
   },
   "c_e316593634": {
     "name": "Desert Wellness Weight Loss",
@@ -13243,6 +14076,20 @@
     ],
     "firstSeen": "2026-07-11"
   },
+  "c_e63a4a4669": {
+    "name": "Clinic Mono",
+    "website": "https://clinicmono.com.tr",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "clinic-mono",
+        "city": "Istanbul",
+        "country": "Turkey",
+        "cluster": "turkey-hair"
+      }
+    ],
+    "firstSeen": "2026-07-13"
+  },
   "c_e664db11a2": {
     "name": "Endocrinology Clinics of Tx Pa",
     "website": "http://www.endoclinicstx.com",
@@ -13281,6 +14128,20 @@
       }
     ],
     "firstSeen": "2026-07-11"
+  },
+  "c_e6ba4bf0dc": {
+    "name": "VIDA Wellness and Beauty",
+    "website": "https://www.vidawellnessandbeauty.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "vida-wellness-and-beauty",
+        "city": "Tijuana",
+        "country": "Mexico",
+        "cluster": "mexico-bariatric"
+      }
+    ],
+    "firstSeen": "2026-07-13"
   },
   "c_e736978c1e": {
     "name": "GENNET",
@@ -13431,6 +14292,20 @@
     ],
     "firstSeen": "2026-07-11"
   },
+  "c_ea6191c513": {
+    "name": "Heva Clinic",
+    "website": "https://www.dentalhairclinicturkey.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "heva-clinic",
+        "city": "Istanbul",
+        "country": "Turkey",
+        "cluster": "turkey-hair"
+      }
+    ],
+    "firstSeen": "2026-07-13"
+  },
   "c_eac0e0080e": {
     "name": "Weight No More",
     "website": "http://www.weightnomore.com",
@@ -13461,6 +14336,13 @@
     "name": "Vera Clinic",
     "website": "https://veraclinic.net",
     "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "vera-clinic",
+        "city": "Istanbul",
+        "country": "Turkey",
+        "cluster": "turkey-hair"
+      },
       {
         "file": "src/lib/providers-medical-tourism.ts",
         "slug": "vera-clinic"
@@ -13552,6 +14434,20 @@
       }
     ],
     "firstSeen": "2026-07-11"
+  },
+  "c_ec89898b31": {
+    "name": "Endobariatric",
+    "website": "https://www.endobariatric.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "endobariatric",
+        "city": "Piedras Negras",
+        "country": "Mexico",
+        "cluster": "mexico-bariatric"
+      }
+    ],
+    "firstSeen": "2026-07-13"
   },
   "c_ecab03c5bb": {
     "name": "TestoThera | Fulshear | Testosterone & Weight Loss Clinic",
@@ -13839,6 +14735,20 @@
     ],
     "firstSeen": "2026-07-11"
   },
+  "c_f0f99bc253": {
+    "name": "Star Dental Implant Center",
+    "website": "https://stardentalimplant.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "star-dental-implant-center",
+        "city": "Escazu",
+        "country": "Costa Rica",
+        "cluster": "costa-rica-dental"
+      }
+    ],
+    "firstSeen": "2026-07-13"
+  },
   "c_f0fd03a8db": {
     "name": "Hormone Wellness MD",
     "website": "https://hormonewellnessmd.com/",
@@ -14052,6 +14962,20 @@
     ],
     "firstSeen": "2026-07-11"
   },
+  "c_f4af4a0581": {
+    "name": "Dental Solutions Algodones",
+    "website": "https://dentalsolutionsalgodones.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "dental-solutions-algodones",
+        "city": "Los Algodones",
+        "country": "Mexico",
+        "cluster": "mexico-dental"
+      }
+    ],
+    "firstSeen": "2026-07-13"
+  },
   "c_f4c08a3a07": {
     "name": "NYC Performance Lab",
     "website": "https://www.nycperformancelab.com/dexa-scan-3d-body-composition-analysis",
@@ -14254,6 +15178,13 @@
     "website": "https://www.estenove.com",
     "occurrences": [
       {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "estenove",
+        "city": "Istanbul",
+        "country": "Turkey",
+        "cluster": "turkey-hair"
+      },
+      {
         "file": "src/lib/providers-medical-tourism.ts",
         "slug": "estenove-clinic"
       }
@@ -14346,6 +15277,20 @@
       }
     ],
     "firstSeen": "2026-07-11"
+  },
+  "c_f9dce24c47": {
+    "name": "New Smile Dental Group",
+    "website": "https://www.newsmilecostarica.com",
+    "occurrences": [
+      {
+        "file": "scripts/ingest/pricing/destination_clinics.json",
+        "slug": "new-smile-dental-group",
+        "city": "San Jose",
+        "country": "Costa Rica",
+        "cluster": "costa-rica-dental"
+      }
+    ],
+    "firstSeen": "2026-07-13"
   },
   "c_f9f06cab68": {
     "name": "Max Super Speciality Hospital, Saket (Orthopedics)",

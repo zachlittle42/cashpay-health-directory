@@ -85,6 +85,8 @@ const DESTINATIONS = {
       { title: 'Mexico Trip Planning Guide', href: '/guides/mexico-medical-tourism-planner' },
       { title: 'Gastric Sleeve in Mexico: Safety Guide', href: '/guides/gastric-sleeve-mexico-safety' },
       { title: 'Mexico Dental Guide', href: '/guides/mexico-dental-guide' },
+      { title: 'Verified Mexico Dental & Implant Prices', href: '/guides/mexico-dental-implant-prices' },
+      { title: 'Verified Mexico Bariatric Surgery Prices', href: '/guides/mexico-bariatric-surgery-prices' },
     ],
   },
 
@@ -399,7 +401,10 @@ const DESTINATIONS = {
       { procedure: 'All-on-4 Implants', usPrice: '$20,000-30,000', costaRicaPrice: '$8,500-12,000' },
       { procedure: 'Zirconia Veneer', usPrice: '$1,000-2,000', costaRicaPrice: '$375-450' },
     ],
-    guideLinks: [],
+    guideLinks: [
+      { title: 'Verified Costa Rica Dental Prices', href: '/guides/costa-rica-dental-prices' },
+      { title: 'Costa Rica Dental Guide', href: '/guides/costa-rica-dental-guide' },
+    ],
   },
 
   spain: {

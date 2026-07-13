@@ -520,7 +520,10 @@ export default function MexicoDentalGuide() {
             Browse our directory of Mexico dental providers and compare pricing.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link href="/destinations/mexico" className="inline-block rounded-lg bg-green-600 px-6 py-3 font-medium text-white hover:bg-green-700">
+            <Link href="/guides/mexico-dental-implant-prices" className="inline-block rounded-lg bg-green-600 px-6 py-3 font-medium text-white hover:bg-green-700">
+              See Verified Mexico Dental Prices
+            </Link>
+            <Link href="/destinations/mexico" className="inline-block rounded-lg border-2 border-green-600 px-6 py-3 font-medium text-green-600 hover:bg-green-50">
               Mexico Destination Guide
             </Link>
             <Link href="/dental" className="inline-block rounded-lg border-2 border-green-600 px-6 py-3 font-medium text-green-600 hover:bg-green-50">

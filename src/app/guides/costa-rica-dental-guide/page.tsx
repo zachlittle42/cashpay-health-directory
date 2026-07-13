@@ -393,7 +393,10 @@ export default function CostaRicaDentalGuide() {
             Browse our directory of Costa Rica dental providers and compare pricing.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link href="/destinations/costa-rica" className="inline-block rounded-lg bg-green-600 px-6 py-3 font-medium text-white hover:bg-green-700">
+            <Link href="/guides/costa-rica-dental-prices" className="inline-block rounded-lg bg-green-600 px-6 py-3 font-medium text-white hover:bg-green-700">
+              See Verified Costa Rica Dental Prices
+            </Link>
+            <Link href="/destinations/costa-rica" className="inline-block rounded-lg border-2 border-green-600 px-6 py-3 font-medium text-green-600 hover:bg-green-50">
               Costa Rica Destination Guide
             </Link>
             <Link href="/dental" className="inline-block rounded-lg border-2 border-green-600 px-6 py-3 font-medium text-green-600 hover:bg-green-50">

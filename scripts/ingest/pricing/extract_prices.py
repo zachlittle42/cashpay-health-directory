@@ -34,9 +34,20 @@ SERVICE_KEYS_BY_VERTICAL = {
     "weightloss": {"semaglutide-program", "tirzepatide-program", "glp1-program",
                    "weight-loss-program", "consult-fee", "other-weight-service"},
     "labs": {"lab-panel", "single-test", "membership", "other-lab"},
+    "destination": {"dental-implant-single", "all-on-4", "all-on-6", "crown",
+                    "veneer-per-tooth", "full-mouth-package", "gastric-sleeve",
+                    "gastric-bypass", "hair-transplant-package", "other-procedure"},
 }
 SERVICE_KEYS = SERVICE_KEYS_BY_VERTICAL["dexa"]
 PRICE_TYPES = {"standard", "intro", "floor", "package"}
+# priceType is also vertical-aware: destination (medical tourism) sanctions
+# per-unit (per-implant/per-graft) and range (printed low-high) per its contract.
+PRICE_TYPES_BY_VERTICAL = {
+    "dexa": PRICE_TYPES,
+    "weightloss": PRICE_TYPES,
+    "labs": PRICE_TYPES,
+    "destination": {"standard", "per-unit", "floor", "package", "range"},
+}
 
 # Feed caps: body-comp pages are small; caps guard against a giant homepage. The
 # quote check runs against the FULL crawled md (a superset), so a cap never
@@ -149,7 +160,7 @@ def _coerce_num(v):
     return None
 
 
-def verify_prices(clinic, raw_prices, pages_md, service_keys=None):
+def verify_prices(clinic, raw_prices, pages_md, service_keys=None, price_types=None):
     """The fabrication guard, factored out so BOTH the in-process LLM path and
     EXTERNALLY-produced rows (e.g. subagent extractors reading the dumped markdown)
     pass through identical verification.
@@ -164,6 +175,7 @@ def verify_prices(clinic, raw_prices, pages_md, service_keys=None):
     citation URL re-anchored to the page the quote was actually found on.
     """
     keys = service_keys or SERVICE_KEYS
+    allowed_ptypes = price_types or PRICE_TYPES
     prices, drops = [], []
     valid_urls = set(pages_md)
     for pr in raw_prices or []:
@@ -177,7 +189,7 @@ def verify_prices(clinic, raw_prices, pages_md, service_keys=None):
         if sk not in keys:
             drops.append({"reason": "bad-serviceKey", "value": sk, "quote": quote[:120]})
             continue
-        if ptype not in PRICE_TYPES:
+        if ptype not in allowed_ptypes:
             ptype = "standard"
 
         # deterministic verbatim verification (the fabrication guard)
@@ -226,6 +238,15 @@ def verify_prices(clinic, raw_prices, pages_md, service_keys=None):
             row["medsIncluded"] = pr["medsIncluded"]
         if pr.get("_note"):
             row["_note"] = pr["_note"]
+        # Currency: preserve EXACTLY what the extractor recorded (destination prices
+        # are USD/EUR/TRY/MXN). Never invent USD. A missing/blank currency stays
+        # None and is flagged _noCurrency for the auditor.
+        cur = pr.get("currency")
+        if isinstance(cur, str) and cur.strip():
+            row["currency"] = cur.strip()
+        else:
+            row["currency"] = None
+            row["_noCurrency"] = True
         prices.append(row)
     return prices, drops
 

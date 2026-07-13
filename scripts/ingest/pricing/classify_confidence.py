@@ -107,6 +107,11 @@ def classify_row(price_row: dict, clinic: dict, registry: set):
         clinic_price["serviceLabel"] = price_row["serviceLabel"]
     if isinstance(price_row.get("medsIncluded"), bool):
         clinic_price["medsIncluded"] = price_row["medsIncluded"]
+    # Currency preserved verbatim from the extractor (None stays None + _noCurrency).
+    if "currency" in price_row:
+        clinic_price["currency"] = price_row.get("currency")
+    if price_row.get("_noCurrency"):
+        clinic_price["_noCurrency"] = True
     if price_row.get("_note"):
         clinic_price["_note"] = price_row["_note"]
     return clinic_price, penalties

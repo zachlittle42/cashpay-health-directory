@@ -34,6 +34,7 @@ FIELD_ORDER = [
     "low",
     "high",
     "unit",
+    "currency",
     "priceType",
     "medsIncluded",
     "source",

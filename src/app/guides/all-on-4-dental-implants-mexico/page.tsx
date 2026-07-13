@@ -495,12 +495,20 @@ export default function AllOn4MexicoGuide() {
             <p className="text-gray-600 mb-6">
               Compare top-rated dental clinics in Tijuana, Cancun, and Los Algodones.
             </p>
-            <Link
-              href="/dental"
-              className="inline-block rounded-lg bg-green-600 px-8 py-4 text-lg font-medium text-white hover:bg-green-700 transition-colors"
-            >
-              View Dental Clinics →
-            </Link>
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
+              <Link
+                href="/guides/mexico-dental-implant-prices"
+                className="inline-block rounded-lg bg-green-600 px-8 py-4 text-lg font-medium text-white hover:bg-green-700 transition-colors"
+              >
+                See Verified Mexico Implant Prices →
+              </Link>
+              <Link
+                href="/dental"
+                className="inline-block rounded-lg border-2 border-green-600 px-8 py-4 text-lg font-medium text-green-600 hover:bg-green-50 transition-colors"
+              >
+                View Dental Clinics
+              </Link>
+            </div>
           </div>
 
           {/* Disclaimer */}

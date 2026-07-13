@@ -44,6 +44,27 @@ _INTENT_RE = re.compile(
     re.I)
 _SERVICES_RE = re.compile(r'(/services?\b|\bservices?\b|scan|dexa|body[- ]comp)', re.I)
 
+# --- destination / medical-tourism intent (ADDITIVE) --------------------------
+# International destination clinics (dental, bariatric, hair) publish prices under
+# packages/price-list/procedure landing pages, often in Spanish (precios, costos,
+# paquetes) or Turkish (fiyat, fiyatlar, ucret). These OR into the score tiers in
+# _intent_score without changing any existing DEXA/labs/weightloss behavior.
+_INTENT_DEST_RE = re.compile(
+    r'(/packages?\b|\bpackages?\b|/price-?lists?\b|price-?list'
+    r'|/all-?on-?[468]\b|all-?on-?[468]|/dental-?implants?\b|/implants?\b'
+    r'|/gastric-?(?:sleeve|bypass)\b|/hair-?transplant\b'
+    # Spanish
+    r'|/precios?\b|\bprecios?\b|/costos?\b|\bcostos?\b|/paquetes?\b|\bpaquetes?\b|/tarifas?\b'
+    # Turkish
+    r'|/fiyat(?:lar|lari)?\b|\bfiyat(?:lar|lari)?\b|/ucret(?:ler)?\b|/paket(?:ler)?\b)',
+    re.I)
+# Destination procedure/treatment landing pages (score-1 catch, additive)
+_SERVICES_DEST_RE = re.compile(
+    r'(/treatments?\b|\btreatments?\b|/procedures?\b|\bprocedures?\b'
+    r'|/dental-?tourism\b|/hair-?transplant\b|/bariatric\b|/weight-?loss-?surgery\b'
+    r'|/tratamientos?\b|/procedimientos?\b|/tedavi(?:ler)?\b|/sac-?ekimi\b)',
+    re.I)
+
 # Never follow obvious non-pricing junk even if the brand name ("dexa", "body")
 # leaks into the path — privacy/terms/blog/media/auth/cart pages and binary assets.
 _JUNK_RE = re.compile(
@@ -84,11 +105,13 @@ def _intent_score(anchor: str, url: str) -> int:
     hay_url = url.lower()
     hay_anchor = (anchor or "").lower()
     path = urlparse(url).path.lower()
-    if _INTENT_RE.search(path) or _INTENT_RE.search(hay_anchor):
+    if (_INTENT_RE.search(path) or _INTENT_RE.search(hay_anchor)
+            or _INTENT_DEST_RE.search(path) or _INTENT_DEST_RE.search(hay_anchor)):
         return 3
-    if _INTENT_RE.search(hay_url):
+    if _INTENT_RE.search(hay_url) or _INTENT_DEST_RE.search(hay_url):
         return 2
-    if _SERVICES_RE.search(path) or _SERVICES_RE.search(hay_anchor):
+    if (_SERVICES_RE.search(path) or _SERVICES_RE.search(hay_anchor)
+            or _SERVICES_DEST_RE.search(path) or _SERVICES_DEST_RE.search(hay_anchor)):
         return 1
     return 0
 

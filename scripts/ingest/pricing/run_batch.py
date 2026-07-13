@@ -105,6 +105,7 @@ VERTICALS = {
     "dexa": _clinics.load_dexa_clinics,
     "weightloss": _clinics.load_weightloss_clinics,
     "labs": _clinics.load_labs_providers,
+    "destination": _clinics.load_destination_clinics,
 }
 
 
@@ -487,6 +488,7 @@ def run_assemble_external(repo, vertical, out_dir, crawl_concurrency=6):
     registry = set(_clinics._load_registry(repo).keys())
     clinics, _q = VERTICALS[vertical](repo)
     service_keys = extract_prices.SERVICE_KEYS_BY_VERTICAL.get(vertical)
+    price_types = extract_prices.PRICE_TYPES_BY_VERTICAL.get(vertical)
     by_id = {}
     for c in clinics:
         by_id.setdefault(c["id"], c)
@@ -516,7 +518,8 @@ def run_assemble_external(repo, vertical, out_dir, crawl_concurrency=6):
         clinics_seen += 1
         pages_md = _load_dumped_pages(md_root / clinic_id)
         prices, drops = extract_prices.verify_prices(clinic, raw_prices, pages_md,
-                                                     service_keys=service_keys)
+                                                     service_keys=service_keys,
+                                                     price_types=price_types)
         for dr in drops:
             drops_by_reason[dr.get("reason", "unknown")] += 1
             failures.append({"clinicId": clinic_id, "type": "extraction-drop", **dr})

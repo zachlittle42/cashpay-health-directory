@@ -368,6 +368,54 @@ def _record_spans(type_name):
     return f
 
 # =============================================================================
+# JSON seed sources (destination medical-tourism clinics live in a JSON seed,
+# not a TS data file, but must be FIRST-CLASS in the main registry). Ids are
+# minted with the identical compute_entity_id(website, name); we never write the
+# JSON here — we only fold its occurrences into the registry so id_map.json is
+# the single spine and `--check` stays stable (deterministic recompute).
+# =============================================================================
+
+# (rel_path, family) JSON seeds; each row: {id, slug, name, website, city?, country?, cluster?}
+JSON_SEED_TARGETS = [
+    ("scripts/ingest/pricing/destination_clinics.json", "destination"),
+]
+
+
+def process_json_seed(repo, rel, occurrences, stats, drift, family):
+    """Fold a JSON clinic seed's rows into `occurrences` (and drift/stats). The
+    seed already carries `id`; a stored id that disagrees with compute_entity_id
+    is DRIFT (same contract as the TS path). Never writes the seed."""
+    path = repo / rel
+    doc = json.loads(path.read_text(encoding="utf-8"))
+    rows = doc.get("clinics") if isinstance(doc, dict) else doc
+    fam = stats.setdefault(family, {"rows": 0, "minted": 0, "present": 0, "drift": 0})
+    for r in rows or []:
+        name = r.get("name") or ""
+        if not name:
+            continue
+        website = r.get("website") or ""
+        fam["rows"] += 1
+        cid, _fb = compute_entity_id(website, name)
+        occ = {"file": rel, "slug": r.get("slug") or ""}
+        if r.get("city"):
+            occ["city"] = r["city"]
+        if r.get("country"):
+            occ["country"] = r["country"]
+        if r.get("cluster"):
+            occ["cluster"] = r["cluster"]
+        occurrences.append((cid, _fb, website, name, occ))
+        existing = r.get("id")
+        if existing is None:
+            fam["minted"] += 1          # seed rows normally carry an id already
+        elif existing == cid:
+            fam["present"] += 1
+        else:
+            fam["drift"] += 1
+            drift.append({"file": rel, "slug": r.get("slug", ""), "existing": existing,
+                          "expected": cid, "name": name, "website": website})
+
+
+# =============================================================================
 # Main
 # =============================================================================
 
@@ -414,6 +462,13 @@ def main():
     except Drift as e:
         print("FATAL: %s" % e)
         sys.exit(3)
+
+    # ---- JSON clinic seeds (destination etc.): fold into the same registry ----
+    for (rel, family) in JSON_SEED_TARGETS:
+        if not (repo / rel).exists():
+            print("WARN: missing JSON seed %s (skipped)" % rel)
+            continue
+        process_json_seed(repo, rel, occurrences, stats, drift, family)
 
     # ---- Build registry from the (post-backfill) occurrences ----
     prior = {}

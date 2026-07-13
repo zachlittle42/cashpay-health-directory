@@ -90,6 +90,76 @@ def load_dexa_clinics(repo: Path):
     return load_clinics(repo, "DexaClinic", "src/data/dexa-clinics-*.ts")
 
 
+# --- DESTINATION (medical-tourism) vertical -----------------------------------
+# Unlike the other verticals, destination clinics are seeded from a checked-in
+# JSON file (scripts/ingest/pricing/destination_clinics.json) rather than the
+# src TS data files, so mint_ids.py (which only scans TS) does not carry them.
+# They are self-minted: each row's `id` is verified against the recomputed
+# compute_entity_id(website, name) (drift guard) AND cross-checked against the
+# sidecar registry destination-id-map.json, which is produced with the identical
+# hash function. Additive — existing verticals are untouched.
+DESTINATION_SEED = "scripts/ingest/pricing/destination_clinics.json"
+DESTINATION_REGISTRY = "scripts/ingest/pricing/destination-id-map.json"
+
+
+def load_destination_clinics(repo: Path):
+    """Load medical-tourism destination clinics from the JSON seed. Returns
+    (clinics, quarantined). A row is QUARANTINED if its in-file id disagrees with
+    the recomputed compute_entity_id(website, name), or is absent from the sidecar
+    destination-id-map.json — never silently keyed to a guessed id."""
+    repo = Path(repo).expanduser().resolve()
+    seed_path = repo / DESTINATION_SEED
+    if not seed_path.exists():
+        return [], []
+    doc = json.loads(seed_path.read_text(encoding="utf-8"))
+    seed_rows = doc.get("clinics", doc) if isinstance(doc, dict) else doc
+
+    reg_path = repo / DESTINATION_REGISTRY
+    registry = {}
+    if reg_path.exists():
+        try:
+            registry = json.loads(reg_path.read_text(encoding="utf-8"))
+        except Exception:
+            registry = {}
+
+    clinics, quarantined = [], []
+    for r in seed_rows:
+        name = r.get("name") or ""
+        website = r.get("website") or ""
+        if not name:
+            continue
+        in_file_id = r.get("id")
+        computed_id, _fb = mint_ids.compute_entity_id(website, name)
+        row = {
+            "id": in_file_id,
+            "computedId": computed_id,
+            "name": name,
+            "website": website,
+            "slug": r.get("slug", ""),
+            "city": r.get("city", ""),
+            "state": r.get("country", ""),          # country lands in `state` for manifest parity
+            "citySlug": r.get("citySlug", ""),
+            "stateSlug": "",
+            "category": r.get("cluster", ""),        # cluster carried as category
+            "cluster": r.get("cluster", ""),
+            "country": r.get("country", ""),
+            "sourceOfListing": r.get("sourceOfListing", ""),
+            "file": DESTINATION_SEED,
+        }
+        if not in_file_id:
+            row["quarantineReason"] = "missing-id-in-seed"
+            quarantined.append(row)
+        elif in_file_id != computed_id:
+            row["quarantineReason"] = f"id-drift (file={in_file_id} computed={computed_id})"
+            quarantined.append(row)
+        elif registry and in_file_id not in registry:
+            row["quarantineReason"] = "id-not-in-destination-registry"
+            quarantined.append(row)
+        else:
+            clinics.append(row)
+    return clinics, quarantined
+
+
 def load_weightloss_clinics(repo: Path):
     return load_clinics(repo, "WeightLossClinic", "src/data/weightloss-clinics-*.ts")
 

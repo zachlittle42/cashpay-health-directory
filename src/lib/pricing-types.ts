@@ -6,7 +6,7 @@
 // carries a verbatim citation and an asOf date so nothing renders without
 // provenance. See wiki/centurion/gtm/vitalityscout-pricing-pipeline.md §2.
 
-export type PriceType = 'standard' | 'intro' | 'floor' | 'package';
+export type PriceType = 'standard' | 'intro' | 'floor' | 'package' | 'per-unit' | 'range';
 export type PriceSource = 'clinic-site' | 'call' | 'claimed' | 'estimate';
 
 export interface ClinicPrice {
@@ -17,6 +17,7 @@ export interface ClinicPrice {
   low?: number;                // numeric compare/sort; intro/floor never populate the headline
   high?: number;
   unit?: string;               // 'scan' | 'month' | 'test' | 'package'
+  currency?: string;           // ISO code as printed ('USD' | 'EUR' | 'TRY' | 'MXN'); medical-tourism prices are multi-currency. Null when the page did not state one.
   priceType: PriceType;        // probe-driven: intro/floor render only WITH a qualifier
   medsIncluded?: boolean;      // GLP-1 memberships (med included vs not); unused for DEXA
   source: PriceSource;

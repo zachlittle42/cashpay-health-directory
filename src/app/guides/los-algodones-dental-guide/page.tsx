@@ -487,8 +487,14 @@ export default function LosAlgodonesGuide() {
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Link
-                href="/guides/mexico-dental-guide"
+                href="/guides/mexico-dental-implant-prices"
                 className="inline-block rounded-lg bg-white px-6 py-3 font-semibold text-cyan-600 hover:bg-cyan-50 transition-colors"
+              >
+                Verified Mexico Dental Prices
+              </Link>
+              <Link
+                href="/guides/mexico-dental-guide"
+                className="inline-block rounded-lg border-2 border-white px-6 py-3 font-semibold text-white hover:bg-white/10 transition-colors"
               >
                 Complete Mexico Dental Guide
               </Link>

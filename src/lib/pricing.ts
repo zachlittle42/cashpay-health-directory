@@ -11,6 +11,7 @@ import { ClinicPrice } from './pricing-types';
 import { DEXA_PRICING } from '@/data/pricing/dexa-pricing';
 import { LABS_PRICING } from '@/data/pricing/labs-pricing';
 import { WEIGHTLOSS_PRICING } from '@/data/pricing/weightloss-pricing';
+import { DESTINATION_PRICING } from '@/data/pricing/destination-pricing';
 
 export interface CityPricingStats {
   n: number;       // distinct clinics with a standard dexa-scan price
@@ -21,7 +22,12 @@ export interface CityPricingStats {
 
 // Every verified pricing store, merged for per-clinic lookups. Clinic ids are
 // globally unique across verticals (Foundation #1), so a merge never collides.
-const ALL_PRICING: ClinicPrice[] = [...DEXA_PRICING, ...LABS_PRICING, ...WEIGHTLOSS_PRICING];
+const ALL_PRICING: ClinicPrice[] = [
+  ...DEXA_PRICING,
+  ...LABS_PRICING,
+  ...WEIGHTLOSS_PRICING,
+  ...DESTINATION_PRICING,
+];
 
 // serviceKeys whose STANDARD rows are numerically comparable / aggregatable.
 // Per-vertical single-service keys: dexa-scan (DEXA), lab-panel + single-test
