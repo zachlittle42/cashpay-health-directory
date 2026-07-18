@@ -53,6 +53,11 @@ export function initPostHog(): void {
     api_host: POSTHOG_HOST,
     capture_pageview: 'history_change',
     autocapture: true,
+    // Click/scroll heatmap capture (PostHog Heatmaps). Was never enabled —
+    // turned on 2026-07-17 so the recovered traffic (~300+ pv/day) builds
+    // real heatmap data on the money pages. Coordinates only; no PII beyond
+    // the existing masking posture.
+    capture_heatmaps: true,
     persistence: 'localStorage+cookie',
     respect_dnt: true,
     mask_personal_data_properties: true,
