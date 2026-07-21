@@ -1355,6 +1355,19 @@
     ],
     "firstSeen": "2026-07-11"
   },
+  "c_154564b3cf": {
+    "name": "MYBFF Med Spa",
+    "website": "https://mybffmedspa.com/",
+    "occurrences": [
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "mybff-med-spa-san-antonio",
+        "city": "San Antonio",
+        "state": "Texas"
+      }
+    ],
+    "firstSeen": "2026-07-21"
+  },
   "c_1547750bb0": {
     "name": "Athena Testosterone and Weight Loss",
     "website": "https://athenatestosterone.com",
@@ -1708,6 +1721,19 @@
     ],
     "firstSeen": "2026-07-11"
   },
+  "c_19d28a10f3": {
+    "name": "U Med Spa",
+    "website": "https://www.umedspa.com/",
+    "occurrences": [
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "u-med-spa-dallas",
+        "city": "Dallas",
+        "state": "Texas"
+      }
+    ],
+    "firstSeen": "2026-07-21"
+  },
   "c_1a10b11be1": {
     "name": "Marek Health",
     "website": "https://marekhealth.com",
@@ -1831,6 +1857,19 @@
       }
     ],
     "firstSeen": "2026-07-11"
+  },
+  "c_1bda7ea776": {
+    "name": "NAKEDMD",
+    "website": "https://www.nakedmd.com/",
+    "occurrences": [
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "nakedmd-dallas",
+        "city": "Dallas",
+        "state": "Texas"
+      }
+    ],
+    "firstSeen": "2026-07-21"
   },
   "c_1be79b0064": {
     "name": "Texas Center for Lifestyle Medicine",
@@ -2063,6 +2102,19 @@
     ],
     "firstSeen": "2026-07-11"
   },
+  "c_1eee0229e3": {
+    "name": "The Lab Medspa",
+    "website": "https://www.thelabmedspa.com/",
+    "occurrences": [
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "the-lab-medspa-dallas",
+        "city": "Dallas",
+        "state": "Texas"
+      }
+    ],
+    "firstSeen": "2026-07-21"
+  },
   "c_1f080fb89e": {
     "name": "HealthGains Atlanta",
     "website": "https://healthgains.com/locations/georgia/atlanta-ga/bioidentical-hormone-therapy-clinic/",
@@ -2178,6 +2230,19 @@
     ],
     "firstSeen": "2026-07-11"
   },
+  "c_201d2d9483": {
+    "name": "Medrein Health",
+    "website": "https://medreinhealth.com/",
+    "occurrences": [
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "medrein-health-fort-worth",
+        "city": "Fort Worth",
+        "state": "Texas"
+      }
+    ],
+    "firstSeen": "2026-07-21"
+  },
   "c_20777301d7": {
     "name": "The Turek Clinic - Dr. Paul Turek",
     "website": "https://www.theturekclinic.com",
@@ -2271,6 +2336,19 @@
       }
     ],
     "firstSeen": "2026-07-11"
+  },
+  "c_219c4530c9": {
+    "name": "Aesthetic Collective",
+    "website": "https://ac-plano.com/",
+    "occurrences": [
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "aesthetic-collective-dallas",
+        "city": "Dallas",
+        "state": "Texas"
+      }
+    ],
+    "firstSeen": "2026-07-21"
   },
   "c_219cdca5d6": {
     "name": "River Oaks Gynecology and Aesthetics",
@@ -3245,6 +3323,19 @@
     ],
     "firstSeen": "2026-07-11"
   },
+  "c_2e4249a8cd": {
+    "name": "Hidden Hills Med Spa",
+    "website": "https://www.hiddenhillsmedspa.com/",
+    "occurrences": [
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "hidden-hills-med-spa-san-antonio",
+        "city": "San Antonio",
+        "state": "Texas"
+      }
+    ],
+    "firstSeen": "2026-07-21"
+  },
   "c_2e58618ecc": {
     "name": "Serene Bold Health Clinic - Psychiatric | Medical | Weight Loss",
     "website": "http://sereneboldhealthclinic.com/",
@@ -3434,6 +3525,19 @@
       }
     ],
     "firstSeen": "2026-07-11"
+  },
+  "c_3178ddd3a1": {
+    "name": "Cutella Med Spa",
+    "website": "https://cutellamedspa.com/",
+    "occurrences": [
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "cutella-med-spa-san-antonio",
+        "city": "San Antonio",
+        "state": "Texas"
+      }
+    ],
+    "firstSeen": "2026-07-21"
   },
   "c_31d8745bb5": {
     "name": "Dexa Body Atlanta",
@@ -3627,6 +3731,19 @@
       }
     ],
     "firstSeen": "2026-07-11"
+  },
+  "c_34efe13757": {
+    "name": "Fort Worth MedSpa",
+    "website": "https://www.fortworthmedspa.com/",
+    "occurrences": [
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "fort-worth-medspa-fort-worth",
+        "city": "Fort Worth",
+        "state": "Texas"
+      }
+    ],
+    "firstSeen": "2026-07-21"
   },
   "c_34faf3958a": {
     "name": "Fitnescity (Dallas)",
@@ -4441,6 +4558,32 @@
     ],
     "firstSeen": "2026-07-11"
   },
+  "c_405c3cdea0": {
+    "name": "Hanami Medspa",
+    "website": "https://www.hanamimedspa.com/",
+    "occurrences": [
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "hanami-medspa-fort-worth",
+        "city": "Fort Worth",
+        "state": "Texas"
+      }
+    ],
+    "firstSeen": "2026-07-21"
+  },
+  "c_40a4cefe70": {
+    "name": "The Aesthetics IQ",
+    "website": "https://theaestheticsiq.com/",
+    "occurrences": [
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "the-aesthetics-iq-fort-worth",
+        "city": "Fort Worth",
+        "state": "Texas"
+      }
+    ],
+    "firstSeen": "2026-07-21"
+  },
   "c_40eb4d7a81": {
     "name": "Revive Low T Clinic",
     "website": "https://revivelowt.com/seattle",
@@ -4794,6 +4937,19 @@
         "file": "src/data/medspa-clinics-texas-independents.ts",
         "slug": "m-spa-face-body-houston",
         "city": "Houston",
+        "state": "Texas"
+      }
+    ],
+    "firstSeen": "2026-07-21"
+  },
+  "c_46d695bd8a": {
+    "name": "Kalos Medical Spa",
+    "website": "https://www.kalosmedicalspa.com/",
+    "occurrences": [
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "kalos-medical-spa-fort-worth",
+        "city": "Fort Worth",
         "state": "Texas"
       }
     ],
@@ -6257,6 +6413,19 @@
     ],
     "firstSeen": "2026-07-21"
   },
+  "c_5ca6dc9a13": {
+    "name": "The Heights Plastic Surgery Med Spa",
+    "website": "https://theheightsplasticmedspa.com/",
+    "occurrences": [
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "the-heights-plastic-surgery-med-spa-san-antonio",
+        "city": "San Antonio",
+        "state": "Texas"
+      }
+    ],
+    "firstSeen": "2026-07-21"
+  },
   "c_5cc2a900df": {
     "name": "Sleep Doctor",
     "website": "https://sleepdoctor.com/products/home-sleep-apnea-test",
@@ -6281,6 +6450,19 @@
       }
     ],
     "firstSeen": "2026-07-13"
+  },
+  "c_5d8a83f11d": {
+    "name": "Jovem Med Spa",
+    "website": "https://jovemmedspa.com/",
+    "occurrences": [
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "jovem-med-spa-san-antonio",
+        "city": "San Antonio",
+        "state": "Texas"
+      }
+    ],
+    "firstSeen": "2026-07-21"
   },
   "c_5daa27dacc": {
     "name": "BodySpec",
@@ -6520,6 +6702,19 @@
     ],
     "firstSeen": "2026-07-21"
   },
+  "c_60731ed5a9": {
+    "name": "Cloud9 Medspa",
+    "website": "https://cloudninemedspadfw.com/",
+    "occurrences": [
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "cloud9-medspa-fort-worth",
+        "city": "Fort Worth",
+        "state": "Texas"
+      }
+    ],
+    "firstSeen": "2026-07-21"
+  },
   "c_608714edfa": {
     "name": "Slim Studio Austin",
     "website": "https://slimstudioaustin.com",
@@ -6601,6 +6796,19 @@
       }
     ],
     "firstSeen": "2026-07-11"
+  },
+  "c_617d628046": {
+    "name": "A Nurses Touch Skin Care Spa",
+    "website": "https://anursestouchfortworth.com/",
+    "occurrences": [
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "a-nurses-touch-skin-care-spa-fort-worth",
+        "city": "Fort Worth",
+        "state": "Texas"
+      }
+    ],
+    "firstSeen": "2026-07-21"
   },
   "c_6182147e1d": {
     "name": "Glamour Plastic Surgery and Med Spa",
@@ -7340,6 +7548,19 @@
     ],
     "firstSeen": "2026-07-11"
   },
+  "c_6c71db6771": {
+    "name": "San Antonio Med Spa",
+    "website": "https://samedspa.com/",
+    "occurrences": [
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "san-antonio-med-spa-san-antonio",
+        "city": "San Antonio",
+        "state": "Texas"
+      }
+    ],
+    "firstSeen": "2026-07-21"
+  },
   "c_6ce743bd08": {
     "name": "Evolve Men's Health Dallas",
     "website": "https://evolvemenshealth.com",
@@ -8028,6 +8249,19 @@
     ],
     "firstSeen": "2026-07-11"
   },
+  "c_743c6e5711": {
+    "name": "Highland Medical Aesthetics",
+    "website": "https://highlandlongevity.com/",
+    "occurrences": [
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "highland-medical-aesthetics-fort-worth",
+        "city": "Fort Worth",
+        "state": "Texas"
+      }
+    ],
+    "firstSeen": "2026-07-21"
+  },
   "c_74a7058832": {
     "name": "Hillcroft Physicians PA",
     "website": "https://www.hillcroftphysicians.com/?utm_source=google&utm_medium=organic&utm_campaign=GoogleBusinessProfile",
@@ -8072,6 +8306,19 @@
       }
     ],
     "firstSeen": "2026-07-11"
+  },
+  "c_751a4104a5": {
+    "name": "The Derm Lounge",
+    "website": "https://thedermlounge.com/",
+    "occurrences": [
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "the-derm-lounge-dallas",
+        "city": "Dallas",
+        "state": "Texas"
+      }
+    ],
+    "firstSeen": "2026-07-21"
   },
   "c_7527c34dab": {
     "name": "DR. VIGOR - Testosterone and ED Experts",
@@ -8187,6 +8434,19 @@
       }
     ],
     "firstSeen": "2026-07-11"
+  },
+  "c_7708a419b9": {
+    "name": "Skin Damsel",
+    "website": "https://skindamsel.com/",
+    "occurrences": [
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "skin-damsel-dallas",
+        "city": "Dallas",
+        "state": "Texas"
+      }
+    ],
+    "firstSeen": "2026-07-21"
   },
   "c_771f6b5984": {
     "name": "Tucson Men's Health",
@@ -8478,6 +8738,19 @@
     ],
     "firstSeen": "2026-07-11"
   },
+  "c_795c2a252d": {
+    "name": "Forever29 MedSpa",
+    "website": "https://www.forever29medspa.com/",
+    "occurrences": [
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "forever29-medspa-fort-worth",
+        "city": "Fort Worth",
+        "state": "Texas"
+      }
+    ],
+    "firstSeen": "2026-07-21"
+  },
   "c_7985e226a3": {
     "name": "Low T Center The Woodlands | Men's Health & TRT Clinic",
     "website": "https://lowtcenter.com/locations/the-woodlands/?utm_source=TheWoodlandsGBP&utm_medium=organic&utm_campaign=GKPTraffic",
@@ -8644,6 +8917,19 @@
         "file": "src/data/medspa-clinics-texas-independents.ts",
         "slug": "chehr-laser-medical-spa-houston",
         "city": "Houston",
+        "state": "Texas"
+      }
+    ],
+    "firstSeen": "2026-07-21"
+  },
+  "c_7bfc5b157e": {
+    "name": "Lily Med Spa",
+    "website": "https://lilymedspa.com/",
+    "occurrences": [
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "lily-med-spa-dallas",
+        "city": "Dallas",
         "state": "Texas"
       }
     ],
@@ -9026,6 +9312,19 @@
       }
     ],
     "firstSeen": "2026-07-11"
+  },
+  "c_82420344ed": {
+    "name": "Eterna Cosmetic Surgery",
+    "website": "https://www.eternacosmeticsurgery.com/",
+    "occurrences": [
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "eterna-cosmetic-surgery-san-antonio",
+        "city": "San Antonio",
+        "state": "Texas"
+      }
+    ],
+    "firstSeen": "2026-07-21"
   },
   "c_8268b9ca71": {
     "name": "Excelsis Health",
@@ -9547,6 +9846,19 @@
     ],
     "firstSeen": "2026-07-11"
   },
+  "c_896972f46f": {
+    "name": "Rejuve Med Spa",
+    "website": "https://www.rejuvemedspa.com/",
+    "occurrences": [
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "rejuve-med-spa-dallas",
+        "city": "Dallas",
+        "state": "Texas"
+      }
+    ],
+    "firstSeen": "2026-07-21"
+  },
   "c_8993d1ed35": {
     "name": "Dr. Cu00e9sar Barrera u2013 L'essence Clinique Bogotu00e1",
     "website": "https://doctorbarrera.com/en/home-2/",
@@ -9618,6 +9930,19 @@
       }
     ],
     "firstSeen": "2026-07-11"
+  },
+  "c_8a4b4c7697": {
+    "name": "Esthetica Medspa San Antonio",
+    "website": "https://estheticamedspa.com/",
+    "occurrences": [
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "esthetica-medspa-san-antonio-san-antonio",
+        "city": "San Antonio",
+        "state": "Texas"
+      }
+    ],
+    "firstSeen": "2026-07-21"
   },
   "c_8ad1d3ac31": {
     "name": "Amir Salim MD PA",
@@ -9919,6 +10244,19 @@
     ],
     "firstSeen": "2026-07-11"
   },
+  "c_8ebf19c34e": {
+    "name": "Ellevate Aesthetics",
+    "website": "https://www.ellevateaesthetics.com/",
+    "occurrences": [
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "ellevate-aesthetics-dallas",
+        "city": "Dallas",
+        "state": "Texas"
+      }
+    ],
+    "firstSeen": "2026-07-21"
+  },
   "c_8f148232c6": {
     "name": "TeleSlim Clinic Houston",
     "website": "https://teleslimclinichouston.com",
@@ -10010,6 +10348,19 @@
     ],
     "firstSeen": "2026-07-21"
   },
+  "c_9065e5b29d": {
+    "name": "Calista Skin and Laser Center",
+    "website": "https://calistalaser.com/",
+    "occurrences": [
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "calista-skin-and-laser-center-fort-worth",
+        "city": "Fort Worth",
+        "state": "Texas"
+      }
+    ],
+    "firstSeen": "2026-07-21"
+  },
   "c_90ada8b9fd": {
     "name": "Innovation Beauty MedSpa",
     "website": "https://innovationbeautylc.com/",
@@ -10060,6 +10411,19 @@
     ],
     "firstSeen": "2026-07-11"
   },
+  "c_90d96d55cc": {
+    "name": "SkinSpaMed",
+    "website": "https://www.skinspamed.com/",
+    "occurrences": [
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "skinspamed-dallas",
+        "city": "Dallas",
+        "state": "Texas"
+      }
+    ],
+    "firstSeen": "2026-07-21"
+  },
   "c_90d9998d2b": {
     "name": "Gameday Men's Health Buckhead",
     "website": "https://gamedaymenshealth.com/buckhead",
@@ -10083,6 +10447,19 @@
       }
     ],
     "firstSeen": "2026-07-11"
+  },
+  "c_91495b2997": {
+    "name": "Nova Aesthetics",
+    "website": "https://novaaesthetics.com/",
+    "occurrences": [
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "nova-aesthetics-san-antonio",
+        "city": "San Antonio",
+        "state": "Texas"
+      }
+    ],
+    "firstSeen": "2026-07-21"
   },
   "c_9157b5d6da": {
     "name": "The Skin Renewal Center",
@@ -11267,6 +11644,19 @@
     ],
     "firstSeen": "2026-07-11"
   },
+  "c_9ea83a71c0": {
+    "name": "Oasis Med Spa and Laser Center",
+    "website": "https://oasismedspaandlasercenter.com/",
+    "occurrences": [
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "oasis-med-spa-and-laser-center-dallas",
+        "city": "Dallas",
+        "state": "Texas"
+      }
+    ],
+    "firstSeen": "2026-07-21"
+  },
   "c_9eab55a39b": {
     "name": "Europe IVF",
     "website": "https://europeivf.com/en/",
@@ -12138,6 +12528,19 @@
     ],
     "firstSeen": "2026-07-11"
   },
+  "c_a9ad8275b3": {
+    "name": "Magnolia Medical and Aesthetics",
+    "website": "https://www.magnoliamedskin.com/",
+    "occurrences": [
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "magnolia-medical-and-aesthetics-san-antonio",
+        "city": "San Antonio",
+        "state": "Texas"
+      }
+    ],
+    "firstSeen": "2026-07-21"
+  },
   "c_a9e4256c0f": {
     "name": "Immunity Therapy Center",
     "website": "https://immunitytherapycenter.com",
@@ -12288,6 +12691,19 @@
       }
     ],
     "firstSeen": "2026-07-11"
+  },
+  "c_ace3aaabdf": {
+    "name": "I Love My Look",
+    "website": "https://ilovemylook.com/",
+    "occurrences": [
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "i-love-my-look-fort-worth",
+        "city": "Fort Worth",
+        "state": "Texas"
+      }
+    ],
+    "firstSeen": "2026-07-21"
   },
   "c_ad09a795e4": {
     "name": "Dr Ricki Pollycove MD",
@@ -12469,6 +12885,19 @@
     ],
     "firstSeen": "2026-07-11"
   },
+  "c_aed71bf60d": {
+    "name": "Skin Balance and Rejuvenation MedSpa",
+    "website": "https://www.skinbalancemedspa.com/",
+    "occurrences": [
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "skin-balance-and-rejuvenation-medspa-fort-worth",
+        "city": "Fort Worth",
+        "state": "Texas"
+      }
+    ],
+    "firstSeen": "2026-07-21"
+  },
   "c_aeff10c2ad": {
     "name": "Dr. Alan Gonzalez Plastic Surgery",
     "website": "https://alangonzalez.com",
@@ -12544,6 +12973,19 @@
     ],
     "firstSeen": "2026-07-11"
   },
+  "c_afcb155eb6": {
+    "name": "Glam House Aesthetic and Wellness",
+    "website": "https://www.glamhousemedspa.com/",
+    "occurrences": [
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "glam-house-aesthetic-and-wellness-san-antonio",
+        "city": "San Antonio",
+        "state": "Texas"
+      }
+    ],
+    "firstSeen": "2026-07-21"
+  },
   "c_b03c47fe67": {
     "name": "Newport Beach Wellness and Weight Loss",
     "website": "https://www.nbweightloss.com",
@@ -12569,6 +13011,19 @@
       }
     ],
     "firstSeen": "2026-07-11"
+  },
+  "c_b115ce2d1d": {
+    "name": "KAYO Aesthetics",
+    "website": "https://www.kayoaesthetics.com/",
+    "occurrences": [
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "kayo-aesthetics-fort-worth",
+        "city": "Fort Worth",
+        "state": "Texas"
+      }
+    ],
+    "firstSeen": "2026-07-21"
   },
   "c_b1a7971bc3": {
     "name": "Slim Clinical Houston",
@@ -12722,6 +13177,19 @@
       }
     ],
     "firstSeen": "2026-07-11"
+  },
+  "c_b3883b8107": {
+    "name": "SureMED Aesthetics",
+    "website": "https://www.suremedaes.com/",
+    "occurrences": [
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "suremed-aesthetics-dallas",
+        "city": "Dallas",
+        "state": "Texas"
+      }
+    ],
+    "firstSeen": "2026-07-21"
   },
   "c_b3917ec269": {
     "name": "Regenamex",
@@ -12984,6 +13452,32 @@
     ],
     "firstSeen": "2026-07-11"
   },
+  "c_b6d780f417": {
+    "name": "Bougie Aesthetics",
+    "website": "https://www.bougieaesthetics.net/",
+    "occurrences": [
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "bougie-aesthetics-fort-worth",
+        "city": "Fort Worth",
+        "state": "Texas"
+      }
+    ],
+    "firstSeen": "2026-07-21"
+  },
+  "c_b702379166": {
+    "name": "Starwood Med Spa",
+    "website": "https://starwoodmedspa.com/",
+    "occurrences": [
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "starwood-med-spa-dallas",
+        "city": "Dallas",
+        "state": "Texas"
+      }
+    ],
+    "firstSeen": "2026-07-21"
+  },
   "c_b749fc7f18": {
     "name": "Fountain Life",
     "website": "https://www.fountainlife.com",
@@ -13165,6 +13659,12 @@
         "slug": "dermatouch-rn",
         "city": "Houston",
         "state": "Texas"
+      },
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "dermatouch-rn-san-antonio",
+        "city": "San Antonio",
+        "state": "Texas"
       }
     ],
     "firstSeen": "2026-07-11"
@@ -13278,6 +13778,19 @@
       }
     ],
     "firstSeen": "2026-07-11"
+  },
+  "c_bcf57967d6": {
+    "name": "Alluring Aesthetics",
+    "website": "https://www.alluringaesthetics.com/",
+    "occurrences": [
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "alluring-aesthetics-san-antonio",
+        "city": "San Antonio",
+        "state": "Texas"
+      }
+    ],
+    "firstSeen": "2026-07-21"
   },
   "c_bd77adb8a8": {
     "name": "Pompeii Surgical",
@@ -13772,6 +14285,19 @@
     ],
     "firstSeen": "2026-07-21"
   },
+  "c_c428be49da": {
+    "name": "Skintech Medical Spa",
+    "website": "https://skintech-spa.com/",
+    "occurrences": [
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "skintech-medical-spa-fort-worth",
+        "city": "Fort Worth",
+        "state": "Texas"
+      }
+    ],
+    "firstSeen": "2026-07-21"
+  },
   "c_c4501f395b": {
     "name": "Reprofit International",
     "website": "https://reprofit.com",
@@ -13998,6 +14524,19 @@
     ],
     "firstSeen": "2026-07-11"
   },
+  "c_c7fe7a1bb9": {
+    "name": "Skinique Med Spa and Wellness",
+    "website": "https://www.skiniquemedspa.com/",
+    "occurrences": [
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "skinique-med-spa-and-wellness-fort-worth",
+        "city": "Fort Worth",
+        "state": "Texas"
+      }
+    ],
+    "firstSeen": "2026-07-21"
+  },
   "c_c85c5d9ba6": {
     "name": "Composition ID",
     "website": "https://www.compositionid.com/locations/washington-dc/services/dexa-scan/",
@@ -14063,6 +14602,19 @@
     ],
     "firstSeen": "2026-07-21"
   },
+  "c_c9de114ed0": {
+    "name": "Specialty MedSpa and Wellness",
+    "website": "https://www.specialtymedspa.com/",
+    "occurrences": [
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "specialty-medspa-and-wellness-dallas",
+        "city": "Dallas",
+        "state": "Texas"
+      }
+    ],
+    "firstSeen": "2026-07-21"
+  },
   "c_c9eeb5851d": {
     "name": "Dr. Jorge Badilla Plastic Surgery",
     "website": "https://www.jbmplasticsurgery.com",
@@ -14073,6 +14625,19 @@
       }
     ],
     "firstSeen": "2026-07-11"
+  },
+  "c_c9f9a8a4c8": {
+    "name": "Just Injected",
+    "website": "https://www.justinjected.com/",
+    "occurrences": [
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "just-injected-dallas",
+        "city": "Dallas",
+        "state": "Texas"
+      }
+    ],
+    "firstSeen": "2026-07-21"
   },
   "c_ca388a63df": {
     "name": "Austin Cosmetic Medspa",
@@ -15833,6 +16398,19 @@
     ],
     "firstSeen": "2026-07-11"
   },
+  "c_e4cf36f14d": {
+    "name": "Stadia Med Spa",
+    "website": "https://www.stadiamedspa.com/",
+    "occurrences": [
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "stadia-med-spa-san-antonio",
+        "city": "San Antonio",
+        "state": "Texas"
+      }
+    ],
+    "firstSeen": "2026-07-21"
+  },
   "c_e4ded21e2b": {
     "name": "Woolley Wellness Clinic |",
     "website": "https://woolleywellnessclinic.com",
@@ -16099,6 +16677,19 @@
     ],
     "firstSeen": "2026-07-11"
   },
+  "c_ea0a79d0a4": {
+    "name": "Laser Bar Medspa",
+    "website": "https://laserbarandaesthetics.com/",
+    "occurrences": [
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "laser-bar-medspa-dallas",
+        "city": "Dallas",
+        "state": "Texas"
+      }
+    ],
+    "firstSeen": "2026-07-21"
+  },
   "c_ea6191c513": {
     "name": "Heva Clinic",
     "website": "https://www.dentalhairclinicturkey.com",
@@ -16314,6 +16905,19 @@
         "file": "src/data/medspa-clinics-texas-independents.ts",
         "slug": "lumis-medspa-houston",
         "city": "Houston",
+        "state": "Texas"
+      }
+    ],
+    "firstSeen": "2026-07-21"
+  },
+  "c_ed98ca9ddf": {
+    "name": "Renew Beauty Med Spa",
+    "website": "https://renewbeautymedspa.com/",
+    "occurrences": [
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "renew-beauty-med-spa-dallas",
+        "city": "Dallas",
         "state": "Texas"
       }
     ],
@@ -16559,6 +17163,19 @@
     ],
     "firstSeen": "2026-07-11"
   },
+  "c_f082f58e7f": {
+    "name": "Solymar Med Spa",
+    "website": "https://solymarmedspa.com/",
+    "occurrences": [
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "solymar-med-spa-san-antonio",
+        "city": "San Antonio",
+        "state": "Texas"
+      }
+    ],
+    "firstSeen": "2026-07-21"
+  },
   "c_f09629c184": {
     "name": "AB Plastic Surgery",
     "website": "https://abplasticsurgerykorea.com/",
@@ -16709,6 +17326,19 @@
       }
     ],
     "firstSeen": "2026-07-11"
+  },
+  "c_f1a816818d": {
+    "name": "Sanjiva Med Spa",
+    "website": "https://sanjivamedspa.com/",
+    "occurrences": [
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "sanjiva-med-spa-dallas",
+        "city": "Dallas",
+        "state": "Texas"
+      }
+    ],
+    "firstSeen": "2026-07-21"
   },
   "c_f1e305268f": {
     "name": "Carlton Woods VIP Hormone Therapy, Weight Loss and Cognitive Therapy",
@@ -16912,6 +17542,19 @@
       }
     ],
     "firstSeen": "2026-07-11"
+  },
+  "c_f55aa38a1f": {
+    "name": "Neighborhood Wellness Clinic and Medical Spa",
+    "website": "https://neighborhoodwellnessclinic.com/",
+    "occurrences": [
+      {
+        "file": "src/data/medspa-clinics-dfwsa-independents.ts",
+        "slug": "neighborhood-wellness-clinic-and-medical-spa-san-antonio",
+        "city": "San Antonio",
+        "state": "Texas"
+      }
+    ],
+    "firstSeen": "2026-07-21"
   },
   "c_f59934e797": {
     "name": "Health, Beauty + Wellness Center of Austin | Sage Salon + Med Spa",

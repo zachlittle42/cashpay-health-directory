@@ -8,6 +8,7 @@ import MedicalDisclaimer from '@/components/MedicalDisclaimer';
 import Glp1PriceBadge from '@/components/Glp1PriceBadge';
 import Glp1ProgramAggregate from '@/components/Glp1ProgramAggregate';
 import PriceEstimateDisclaimer from '@/components/PriceEstimateDisclaimer';
+import SubjectiveBanner from '@/components/SubjectiveBanner';
 import { getWeightLossClinicsByCity, getWeightLossCitiesWithClinics } from '@/data/weightloss-clinics-index';
 import { WEIGHTLOSS_STATES } from '@/lib/weightloss-clinic-types';
 import { getGlp1ProgramStats, getGlp1ProgramAsOf, getGlp1ProgramPrice } from '@/lib/pricing';
@@ -268,6 +269,8 @@ export default async function CityWeightLoss({ params }: Props) {
       <MedicalDisclaimer />
       </SidebarShell>
       <Footer />
+      {/* Subjective house banner — SHIPS OFF (NEXT_PUBLIC_SH_UNITS !== 'on'). */}
+      <SubjectiveBanner family="weight-loss" />
     </main>
   );
 }

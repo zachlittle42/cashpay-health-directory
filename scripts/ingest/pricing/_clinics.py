@@ -233,6 +233,14 @@ def load_medspa_clinics(repo: Path):
     return indep + chains, indep_q + chains_q
 
 
+def load_medspa_dfwsa_clinics(repo: Path):
+    """SCOPED med-spa loader for the Dallas/Fort Worth/San Antonio independents batch
+    ONLY. Globs solely src/data/medspa-clinics-dfwsa-independents.ts so a crawl over
+    --vertical medspa-dfwsa never re-crawls the Houston/Austin (or chain) supply.
+    Same registry drift/absent quarantine as load_clinics. Returns (clinics, quarantined)."""
+    return load_clinics(repo, "MedspaClinic", "src/data/medspa-clinics-dfwsa-independents.ts")
+
+
 # Provider categories treated as "labs / at-home testing" for the labs vertical.
 LABS_CATEGORIES = {"labs"}
 

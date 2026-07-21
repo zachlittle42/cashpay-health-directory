@@ -9,6 +9,7 @@ import SidebarNav from '@/components/SidebarNav';
 import { buildCategoryListSchema, buildFAQSchema } from '@/lib/jsonLd';
 import MedicalDisclaimer from '@/components/MedicalDisclaimer';
 import LabsPriceComparison from '@/components/LabsPriceComparison';
+import SubjectiveBanner from '@/components/SubjectiveBanner';
 
 // DEXA-specific AEO content. Answers are grounded in the live provider data in
 // src/lib/providers-telehealth.ts (BodySpec $40-45/scan, DexaFit $100-150/scan).
@@ -644,6 +645,9 @@ export default function CategoryPage({
       </div>
 
       <Footer />
+      {/* Subjective house banner — glp1 category only, and SHIPS OFF
+          (NEXT_PUBLIC_SH_UNITS !== 'on'). */}
+      {categorySlug === 'glp1' && <SubjectiveBanner family="glp1" />}
     </main>
   );
 }

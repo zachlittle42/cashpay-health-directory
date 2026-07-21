@@ -19,11 +19,16 @@ import {
   texasMedspaIndependents,
   getTexasMedspaIndependentsByCity,
 } from './medspa-clinics-texas-independents';
+import {
+  dfwsaMedspaIndependents,
+  getDfwsaMedspaIndependentsByCity,
+} from './medspa-clinics-dfwsa-independents';
 
 export const allMedspaClinics: MedspaClinic[] = [
   ...californiaMedspaClinics,
   ...texasMedspaClinics,
   ...texasMedspaIndependents,
+  ...dfwsaMedspaIndependents,
 ];
 
 // Count cities from a clinic array (chains + independents share a citySlug at the
@@ -45,7 +50,7 @@ export function getMedspaClinicsByState(stateSlug: string): MedspaClinic[] {
     case 'california':
       return californiaMedspaClinics;
     case 'texas':
-      return [...texasMedspaClinics, ...texasMedspaIndependents];
+      return [...texasMedspaClinics, ...texasMedspaIndependents, ...dfwsaMedspaIndependents];
     default:
       return [];
   }
@@ -56,7 +61,11 @@ export function getMedspaClinicsByCity(stateSlug: string, citySlug: string): Med
     case 'california':
       return getCaliforniaMedspaClinicsByCity(citySlug);
     case 'texas':
-      return [...getTexasMedspaClinicsByCity(citySlug), ...getTexasMedspaIndependentsByCity(citySlug)];
+      return [
+        ...getTexasMedspaClinicsByCity(citySlug),
+        ...getTexasMedspaIndependentsByCity(citySlug),
+        ...getDfwsaMedspaIndependentsByCity(citySlug),
+      ];
     default:
       return [];
   }
@@ -70,7 +79,7 @@ export function getMedspaCitiesWithClinics(stateSlug: string): { city: string; c
       break;
     case 'texas':
       // Combine chain + independent supply so metro pages count both.
-      cities = citiesFromClinics([...texasMedspaClinics, ...texasMedspaIndependents]);
+      cities = citiesFromClinics([...texasMedspaClinics, ...texasMedspaIndependents, ...dfwsaMedspaIndependents]);
       break;
     default:
       cities = [];

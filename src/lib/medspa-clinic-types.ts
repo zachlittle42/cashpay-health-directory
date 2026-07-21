@@ -59,7 +59,7 @@ export interface StateMedspaClinics {
 // the data index) render pages; the rest are roadmap placeholders.
 export const MEDSPA_STATES = [
   { name: 'California', slug: 'california', cities: ['Los Angeles', 'San Diego', 'Orange County', 'San Francisco'] },
-  { name: 'Texas',      slug: 'texas',      cities: ['Houston', 'Dallas', 'Austin', 'San Antonio'] },
+  { name: 'Texas',      slug: 'texas',      cities: ['Houston', 'Dallas', 'Fort Worth', 'Austin', 'San Antonio'] },
   { name: 'Florida',    slug: 'florida',    cities: ['Miami', 'Orlando', 'Tampa'] },
   { name: 'New York',   slug: 'new-york',   cities: ['New York City'] },
   { name: 'Arizona',    slug: 'arizona',    cities: ['Phoenix', 'Scottsdale'] },

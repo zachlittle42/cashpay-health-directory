@@ -42,6 +42,10 @@ SERVICE_KEYS_BY_VERTICAL = {
     "medspa": {"botox-per-unit", "dysport-per-unit", "filler-per-syringe",
                "laser-hair-removal", "hydrafacial", "chemical-peel", "microneedling",
                "membership", "other-aesthetic"},
+    # geographic subset of medspa (DFW + San Antonio independents) — shares vocab.
+    "medspa-dfwsa": {"botox-per-unit", "dysport-per-unit", "filler-per-syringe",
+                     "laser-hair-removal", "hydrafacial", "chemical-peel", "microneedling",
+                     "membership", "other-aesthetic"},
 }
 SERVICE_KEYS = SERVICE_KEYS_BY_VERTICAL["dexa"]
 PRICE_TYPES = {"standard", "intro", "floor", "package"}
@@ -56,6 +60,7 @@ PRICE_TYPES_BY_VERTICAL = {
     # med-spa: per-unit is the prize (Botox/unit, filler/syringe); intro (new-client
     # special) is common; range/floor/package all appear on aesthetics price lists.
     "medspa": {"standard", "per-unit", "intro", "floor", "package", "range"},
+    "medspa-dfwsa": {"standard", "per-unit", "intro", "floor", "package", "range"},
 }
 
 # Feed caps: body-comp pages are small; caps guard against a giant homepage. The

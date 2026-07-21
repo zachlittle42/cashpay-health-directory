@@ -281,6 +281,67 @@ export function getGlp1ConsultFee(clinicId: string): ClinicPrice | undefined {
   return rows.reduce((a, b) => ((a.low ?? Infinity) <= (b.low ?? Infinity) ? a : b));
 }
 
+// --- Per-drug index guides (/guides/semaglutide-cost + tirzepatide-cost) ------
+// The two index guides target ONE program serviceKey in isolation
+// ('semaglutide-program' OR 'tirzepatide-program'), not the pooled GLP-1
+// aggregate. Same discipline as getGlp1ProgramStats: only standard-monthly rows
+// feed the numbers (intro hooks, "from" floors, prepay packages, and non-month
+// units are excluded by isStandardMonthlyProgram), one representative (cheapest)
+// price per clinic, and the medians SPLIT by meds-included status so a
+// membership-only price is never conflated with an all-in one. A serviceKey
+// outside GLP1_PROGRAM_KEYS yields empty buckets (isStandardMonthlyProgram gates
+// it), so these never silently pool the wrong rows.
+
+// Per-service aggregate, split by meds-included status — powers each index
+// headline. medsIncluded is the headline group; callers gate its visible line on
+// n >= 3 and the meds-billed-separately split line on n >= 2.
+export function getGlp1ServiceStats(serviceKey: string): Glp1ProgramStats {
+  const buckets: Record<MedsBucket, Map<string, number>> = {
+    medsIncluded: new Map(),
+    medsExtra: new Map(),
+    unknown: new Map(),
+  };
+  for (const p of WEIGHTLOSS_PRICING) {
+    if (p.serviceKey !== serviceKey) continue;
+    if (!isStandardMonthlyProgram(p)) continue;
+    const bucket = buckets[medsBucket(p)];
+    const low = p.low as number;
+    const cur = bucket.get(p.clinicId);
+    if (cur === undefined || low < cur) bucket.set(p.clinicId, low);
+  }
+  return {
+    medsIncluded: groupStat(buckets.medsIncluded),
+    medsExtra: groupStat(buckets.medsExtra),
+    unknown: { n: buckets.unknown.size },
+  };
+}
+
+// Latest asOf among a single service's qualifying monthly-standard rows — drives
+// the "verified {Month} {Year}" freshness stamp on the index page.
+export function getGlp1ServiceAsOf(serviceKey: string): string | undefined {
+  let latest: string | undefined;
+  for (const p of WEIGHTLOSS_PRICING) {
+    if (p.serviceKey !== serviceKey) continue;
+    if (!isStandardMonthlyProgram(p)) continue;
+    if (!latest || p.asOf > latest) latest = p.asOf;
+  }
+  return latest;
+}
+
+// One representative (cheapest) standard-monthly row per clinic for a single
+// program serviceKey — powers the index-page verified-price table. Sorted
+// cheapest-first; each returned row carries its own medsIncluded flag for the tag.
+export function getGlp1ServiceRows(serviceKey: string): ClinicPrice[] {
+  const perClinic = new Map<string, ClinicPrice>();
+  for (const p of WEIGHTLOSS_PRICING) {
+    if (p.serviceKey !== serviceKey) continue;
+    if (!isStandardMonthlyProgram(p)) continue;
+    const cur = perClinic.get(p.clinicId);
+    if (cur === undefined || (p.low as number) < (cur.low ?? Infinity)) perClinic.set(p.clinicId, p);
+  }
+  return Array.from(perClinic.values()).sort((a, b) => (a.low ?? 0) - (b.low ?? 0));
+}
+
 // --- Hormone therapy / TRT + HRT programs ------------------------------------
 // Hormone program prices are MONTHLY RECURRING and follow the GLP-1 rules: never
 // comparable to one-time prices, to non-month units, or across meds-included

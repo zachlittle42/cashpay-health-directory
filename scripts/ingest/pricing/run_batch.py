@@ -108,6 +108,7 @@ VERTICALS = {
     "labs": _clinics.load_labs_providers,
     "destination": _clinics.load_destination_clinics,
     "medspa": _clinics.load_medspa_clinics,
+    "medspa-dfwsa": _clinics.load_medspa_dfwsa_clinics,
 }
 
 
