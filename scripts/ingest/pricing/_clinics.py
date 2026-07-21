@@ -164,6 +164,75 @@ def load_weightloss_clinics(repo: Path):
     return load_clinics(repo, "WeightLossClinic", "src/data/weightloss-clinics-*.ts")
 
 
+def load_hormone_clinics(repo: Path):
+    return load_clinics(repo, "HormoneClinic", "src/data/hormone-clinics-*.ts")
+
+
+# --- MED-SPA vertical ---------------------------------------------------------
+# The med-spa supply is two sources, both crawled by --vertical medspa:
+#   1) INDEPENDENT per-location clinics — literal MedspaClinic[] rows in
+#      src/data/medspa-clinics-*-independents.ts (ids minted per website+name).
+#   2) The existing national CHAIN entities — a Record<string, ChainTemplate> in
+#      src/data/medspa-chains.ts (one crawlable website per chain). The runtime
+#      chain city-rows (medspa-clinics-texas.ts etc.) are function-generated, not
+#      literal objects, so the chain WEBSITE lives only on the template.
+# Both are cross-checked against id_map.json (drift/absent -> quarantine), exactly
+# like load_clinics — never keyed to a guessed id.
+MEDSPA_CHAINS_FILE = "src/data/medspa-chains.ts"
+
+
+def _load_medspa_chains(repo: Path):
+    repo = Path(repo).expanduser().resolve()
+    registry = _load_registry(repo)
+    path = repo / MEDSPA_CHAINS_FILE
+    clinics, quarantined = [], []
+    if not path.exists():
+        return clinics, quarantined
+    text = path.read_text(encoding="utf-8")
+    for (start, end) in mint_ids._record_spans("ChainTemplate")(text):
+        props = mint_ids._extract_string_props(text[start:end])
+        name = props.get("name") or ""
+        website = props.get("website") or ""
+        if not name:
+            continue
+        in_file_id = props.get("id")
+        computed_id, _fb, _w, _n = mint_ids._row_id(props)
+        row = {
+            "id": in_file_id,
+            "computedId": computed_id,
+            "name": name,
+            "website": website,
+            "slug": props.get("key", ""),
+            "city": "",                 # national chain — no single city
+            "state": "Texas",
+            "citySlug": "",
+            "stateSlug": "texas",
+            "category": "chain",
+            "file": MEDSPA_CHAINS_FILE,
+        }
+        if not in_file_id:
+            row["quarantineReason"] = "missing-id-in-file"
+            quarantined.append(row)
+        elif in_file_id != computed_id:
+            row["quarantineReason"] = f"id-drift (file={in_file_id} computed={computed_id})"
+            quarantined.append(row)
+        elif in_file_id not in registry:
+            row["quarantineReason"] = "id-not-in-registry"
+            quarantined.append(row)
+        else:
+            clinics.append(row)
+    return clinics, quarantined
+
+
+def load_medspa_clinics(repo: Path):
+    """Med-spa vertical loader: independents + existing chain entities. Reads BOTH
+    src/data/medspa-clinics-*-independents.ts AND src/data/medspa-chains.ts.
+    Returns (clinics, quarantined)."""
+    indep, indep_q = load_clinics(repo, "MedspaClinic", "src/data/medspa-clinics-*-independents.ts")
+    chains, chains_q = _load_medspa_chains(repo)
+    return indep + chains, indep_q + chains_q
+
+
 # Provider categories treated as "labs / at-home testing" for the labs vertical.
 LABS_CATEGORIES = {"labs"}
 

@@ -14,20 +14,38 @@ import {
 import {
   texasMedspaClinics,
   getTexasMedspaClinicsByCity,
-  getTexasMedspaCitiesWithClinics,
 } from './medspa-clinics-texas';
+import {
+  texasMedspaIndependents,
+  getTexasMedspaIndependentsByCity,
+} from './medspa-clinics-texas-independents';
 
 export const allMedspaClinics: MedspaClinic[] = [
   ...californiaMedspaClinics,
   ...texasMedspaClinics,
+  ...texasMedspaIndependents,
 ];
+
+// Count cities from a clinic array (chains + independents share a citySlug at the
+// metro level, so counts combine cleanly).
+function citiesFromClinics(
+  clinics: MedspaClinic[],
+): { city: string; citySlug: string; count: number }[] {
+  const map = new Map<string, { city: string; citySlug: string; count: number }>();
+  for (const c of clinics) {
+    const e = map.get(c.citySlug) || { city: c.city, citySlug: c.citySlug, count: 0 };
+    e.count++;
+    map.set(c.citySlug, e);
+  }
+  return Array.from(map.values());
+}
 
 export function getMedspaClinicsByState(stateSlug: string): MedspaClinic[] {
   switch (stateSlug) {
     case 'california':
       return californiaMedspaClinics;
     case 'texas':
-      return texasMedspaClinics;
+      return [...texasMedspaClinics, ...texasMedspaIndependents];
     default:
       return [];
   }
@@ -38,7 +56,7 @@ export function getMedspaClinicsByCity(stateSlug: string, citySlug: string): Med
     case 'california':
       return getCaliforniaMedspaClinicsByCity(citySlug);
     case 'texas':
-      return getTexasMedspaClinicsByCity(citySlug);
+      return [...getTexasMedspaClinicsByCity(citySlug), ...getTexasMedspaIndependentsByCity(citySlug)];
     default:
       return [];
   }
@@ -51,7 +69,8 @@ export function getMedspaCitiesWithClinics(stateSlug: string): { city: string; c
       cities = getCaliforniaMedspaCitiesWithClinics();
       break;
     case 'texas':
-      cities = getTexasMedspaCitiesWithClinics();
+      // Combine chain + independent supply so metro pages count both.
+      cities = citiesFromClinics([...texasMedspaClinics, ...texasMedspaIndependents]);
       break;
     default:
       cities = [];

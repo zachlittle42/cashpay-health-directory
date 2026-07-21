@@ -104,8 +104,10 @@ def _mock_llm_extract(markdown, prompt, model=None, return_usage=False):
 VERTICALS = {
     "dexa": _clinics.load_dexa_clinics,
     "weightloss": _clinics.load_weightloss_clinics,
+    "hormone": _clinics.load_hormone_clinics,
     "labs": _clinics.load_labs_providers,
     "destination": _clinics.load_destination_clinics,
+    "medspa": _clinics.load_medspa_clinics,
 }
 
 

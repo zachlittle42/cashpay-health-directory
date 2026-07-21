@@ -5,8 +5,11 @@ import Navigation from '@/components/Navigation';
 import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
 import MedicalDisclaimer from '@/components/MedicalDisclaimer';
+import MedspaPriceBadge from '@/components/MedspaPriceBadge';
+import PriceEstimateDisclaimer from '@/components/PriceEstimateDisclaimer';
 import { getMedspaClinicsByCity, getMedspaCitiesWithClinics } from '@/data/medspa-clinics-index';
 import { MEDSPA_STATES } from '@/lib/medspa-clinic-types';
+import { getMedspaClinicBadgeRows } from '@/lib/pricing';
 import { gridRobots } from '@/lib/indexability';
 
 interface Props {
@@ -53,6 +56,7 @@ export default async function CityMedspa({ params }: Props) {
   if (clinics.length === 0) notFound();
 
   const cityName = clinics[0].city;
+  const hasVerifiedPricing = clinics.some((c) => getMedspaClinicBadgeRows(c.id).length > 0);
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -98,7 +102,20 @@ export default async function CityMedspa({ params }: Props) {
 
       {/* All Providers */}
       <section className="mx-auto max-w-6xl px-4 py-12">
-        <h2 className="text-2xl font-bold text-gray-900 mb-8">Med-Spa &amp; Aesthetics Providers in {cityName}</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Med-Spa &amp; Aesthetics Providers in {cityName}</h2>
+        {hasVerifiedPricing && (
+          <div className="mb-8 space-y-1">
+            <p className="text-sm text-gray-600">
+              Prices marked <span className="font-medium text-green-700">verified from clinic site</span>{' '}
+              are quoted from the provider&apos;s own website and dated. See{' '}
+              <Link href="/guides/botox-cost-per-unit" className="text-rose-700 hover:underline">
+                Botox cost per unit
+              </Link>{' '}
+              for the verified per-unit table.
+            </p>
+            <PriceEstimateDisclaimer />
+          </div>
+        )}
         <div className="space-y-6">
           {clinics.map((clinic) => (
             <div key={clinic.slug} className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow">
@@ -125,8 +142,16 @@ export default async function CityMedspa({ params }: Props) {
                 </div>
 
                 <div className="md:text-right md:min-w-[200px]">
-                  <div className="text-lg font-bold text-rose-600 mb-1">{clinic.priceRange}</div>
-                  <div className="text-xs text-gray-400 mb-2">estimate — verify with provider</div>
+                  {getMedspaClinicBadgeRows(clinic.id).length > 0 ? (
+                    <div className="mb-2 md:flex md:flex-col md:items-end">
+                      <MedspaPriceBadge clinicId={clinic.id} />
+                    </div>
+                  ) : (
+                    <>
+                      <div className="text-lg font-bold text-rose-600 mb-1">{clinic.priceRange}</div>
+                      <div className="text-xs text-gray-400 mb-2">estimate — verify with provider</div>
+                    </>
+                  )}
                   {clinic.membership && <div className="text-sm text-gray-600 mb-2">{clinic.membership}</div>}
                   <div className="text-sm text-gray-500 mb-4">Best for: {clinic.bestFor}</div>
                   <a

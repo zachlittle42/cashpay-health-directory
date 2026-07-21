@@ -5,8 +5,12 @@ import Navigation from '@/components/Navigation';
 import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
 import MedicalDisclaimer from '@/components/MedicalDisclaimer';
+import HormonePriceBadge from '@/components/HormonePriceBadge';
+import HormoneProgramAggregate from '@/components/HormoneProgramAggregate';
+import PriceEstimateDisclaimer from '@/components/PriceEstimateDisclaimer';
 import { getHormoneClinicsByCity, getCitiesWithClinics } from '@/data/hormone-clinics-index';
 import { HORMONE_STATES } from '@/lib/hormone-clinic-types';
+import { getHormoneProgramStats, getHormoneProgramAsOf, getHormoneProgramPrice } from '@/lib/pricing';
 import { gridRobots } from '@/lib/indexability';
 
 interface Props {
@@ -76,6 +80,14 @@ export default async function CityHormoneTherapy({ params }: Props) {
   const womensClinics = clinics.filter(c => c.womenOnly);
   const bothClinics = clinics.filter(c => !c.menOnly && !c.womenOnly);
 
+  // Verified-pricing layer (standard monthly TRT/HRT program prices only). The
+  // meds-included aggregate renders at >= 3 priced clinics; the standing
+  // disclaimer renders once whenever the page carries any verified price.
+  const clinicIds = clinics.map((c) => c.id);
+  const programStats = getHormoneProgramStats(clinicIds);
+  const priceAsOf = getHormoneProgramAsOf(clinicIds);
+  const hasVerifiedPricing = clinics.some((c) => getHormoneProgramPrice(c.id));
+
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'MedicalWebPage',
@@ -136,7 +148,16 @@ export default async function CityHormoneTherapy({ params }: Props) {
 
       {/* All Clinics */}
       <section className="mx-auto max-w-6xl px-4 py-12">
-        <h2 className="text-2xl font-bold text-gray-900 mb-8">All Hormone Clinics in {cityName}</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">All Hormone Clinics in {cityName}</h2>
+
+        {(programStats.medsIncluded.n >= 3) || hasVerifiedPricing ? (
+          <div className="mb-8 space-y-2">
+            {programStats.medsIncluded.n >= 3 && (
+              <HormoneProgramAggregate stats={programStats} asOf={priceAsOf} placeLabel={cityName} />
+            )}
+            {hasVerifiedPricing && <PriceEstimateDisclaimer />}
+          </div>
+        ) : null}
 
         <div className="space-y-6">
           {clinics.map((clinic) => (
@@ -182,7 +203,13 @@ export default async function CityHormoneTherapy({ params }: Props) {
                 </div>
 
                 <div className="md:text-right md:min-w-[200px]">
-                  <div className="text-2xl font-bold text-green-600 mb-1">{clinic.priceRange}</div>
+                  {getHormoneProgramPrice(clinic.id) ? (
+                    <div className="mb-1">
+                      <HormonePriceBadge clinicId={clinic.id} />
+                    </div>
+                  ) : (
+                    <div className="text-2xl font-bold text-green-600 mb-1">{clinic.priceRange}</div>
+                  )}
                   {clinic.rating && (
                     <div className="text-sm text-gray-600 mb-3">
                       <span className="text-yellow-500">★</span> {clinic.rating} ({clinic.reviewCount} {clinic.reviewSource} reviews)

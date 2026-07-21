@@ -7,11 +7,13 @@
 // distort a "typical cost" figure. See
 // wiki/centurion/gtm/vitalityscout-pricing-pipeline.md §2.
 
-import { ClinicPrice } from './pricing-types';
+import { ClinicPrice, PriceType } from './pricing-types';
 import { DEXA_PRICING } from '@/data/pricing/dexa-pricing';
 import { LABS_PRICING } from '@/data/pricing/labs-pricing';
 import { WEIGHTLOSS_PRICING } from '@/data/pricing/weightloss-pricing';
 import { DESTINATION_PRICING } from '@/data/pricing/destination-pricing';
+import { HORMONE_PRICING } from '@/data/pricing/hormone-pricing';
+import { MEDSPA_PRICING } from '@/data/pricing/medspa-pricing';
 
 export interface CityPricingStats {
   n: number;       // distinct clinics with a standard dexa-scan price
@@ -27,6 +29,8 @@ const ALL_PRICING: ClinicPrice[] = [
   ...LABS_PRICING,
   ...WEIGHTLOSS_PRICING,
   ...DESTINATION_PRICING,
+  ...HORMONE_PRICING,
+  ...MEDSPA_PRICING,
 ];
 
 // serviceKeys whose STANDARD rows are numerically comparable / aggregatable.
@@ -275,6 +279,211 @@ export function getGlp1ConsultFee(clinicId: string): ClinicPrice | undefined {
   );
   if (rows.length === 0) return undefined;
   return rows.reduce((a, b) => ((a.low ?? Infinity) <= (b.low ?? Infinity) ? a : b));
+}
+
+// --- Hormone therapy / TRT + HRT programs ------------------------------------
+// Hormone program prices are MONTHLY RECURRING and follow the GLP-1 rules: never
+// comparable to one-time prices, to non-month units, or across meds-included
+// status. A "from" floor, a limited intro, and a multi-month prepay package are
+// all excluded from the monthly-standard pool. The aggregate SPLITS by whether
+// medication is included (a $199/mo all-in price and a $199/mo membership where
+// meds are billed separately are not the same product). Keys are the two program
+// serviceKeys — trt-program (men) and hrt-program (women) — NOT pellet-therapy
+// (per-insertion), consult-fee, or labs-panel (one-time). See the hormone batch
+// Gate-P1 audit + §2.
+
+const HORMONE_PROGRAM_KEYS = new Set<string>(['trt-program', 'hrt-program']);
+
+// A qualifying monthly program row: a program serviceKey, steady-state standard
+// price, priced per month. intro/floor/package and non-month units never feed
+// the aggregate — a hook, a "from" floor, or a prepay bundle is not a monthly rate.
+function isStandardMonthlyHormone(p: ClinicPrice): boolean {
+  return (
+    HORMONE_PROGRAM_KEYS.has(p.serviceKey) &&
+    p.priceType === 'standard' &&
+    p.unit === 'month' &&
+    typeof p.low === 'number'
+  );
+}
+
+export interface HormoneProgramStats {
+  medsIncluded: Glp1GroupStat; // price includes the medication (the headline group)
+  medsExtra: Glp1GroupStat;    // membership-only; medication billed separately
+  unknown: { n: number };      // page did not state meds inclusion — counted, never priced
+}
+
+// Hormone program aggregate over the passed clinic set (national when omitted),
+// SPLIT by meds-included status. One representative price per clinic (the
+// cheapest qualifying monthly-standard row). Callers gate the meds-included line
+// on n >= 3 and the meds-billed-separately split line on n >= 2.
+export function getHormoneProgramStats(clinicIds?: string[]): HormoneProgramStats {
+  const ids = clinicIds ? new Set(clinicIds) : null;
+  const buckets: Record<MedsBucket, Map<string, number>> = {
+    medsIncluded: new Map(),
+    medsExtra: new Map(),
+    unknown: new Map(),
+  };
+  for (const p of HORMONE_PRICING) {
+    if (ids && !ids.has(p.clinicId)) continue;
+    if (!isStandardMonthlyHormone(p)) continue;
+    const bucket = buckets[medsBucket(p)];
+    const low = p.low as number;
+    const cur = bucket.get(p.clinicId);
+    if (cur === undefined || low < cur) bucket.set(p.clinicId, low);
+  }
+  return {
+    medsIncluded: groupStat(buckets.medsIncluded),
+    medsExtra: groupStat(buckets.medsExtra),
+    unknown: { n: buckets.unknown.size },
+  };
+}
+
+// Latest asOf among qualifying monthly-standard hormone program rows (national
+// when clinicIds omitted) — drives the "verified {Month} {Year}" freshness stamp.
+export function getHormoneProgramAsOf(clinicIds?: string[]): string | undefined {
+  const ids = clinicIds ? new Set(clinicIds) : null;
+  let latest: string | undefined;
+  for (const p of HORMONE_PRICING) {
+    if (ids && !ids.has(p.clinicId)) continue;
+    if (!isStandardMonthlyHormone(p)) continue;
+    if (!latest || p.asOf > latest) latest = p.asOf;
+  }
+  return latest;
+}
+
+// The single headline monthly program price for a hormone clinic card: the
+// cheapest qualifying monthly-standard program row. Undefined when the clinic
+// publishes no steady-state monthly program price — the card keeps its estimate.
+export function getHormoneProgramPrice(clinicId: string): ClinicPrice | undefined {
+  const rows = getClinicPricing(clinicId).filter(isStandardMonthlyHormone);
+  if (rows.length === 0) return undefined;
+  return rows.reduce((a, b) => ((a.low ?? Infinity) <= (b.low ?? Infinity) ? a : b));
+}
+
+// intro/floor program rows for a hormone clinic — rendered ONLY with their
+// qualifier ("intro offer", "starting price"), never as the headline.
+export function getHormoneQualifiedPrices(clinicId: string): ClinicPrice[] {
+  return getClinicPricing(clinicId).filter(
+    (p) =>
+      HORMONE_PROGRAM_KEYS.has(p.serviceKey) &&
+      (p.priceType === 'intro' || p.priceType === 'floor'),
+  );
+}
+
+// Cheapest consult / visit fee for a hormone clinic — a secondary line, rendered
+// by the caller ONLY when the clinic also has a headline program price.
+export function getHormoneConsultFee(clinicId: string): ClinicPrice | undefined {
+  const rows = getClinicPricing(clinicId).filter(
+    (p) => p.serviceKey === 'consult-fee' && typeof p.low === 'number',
+  );
+  if (rows.length === 0) return undefined;
+  return rows.reduce((a, b) => ((a.low ?? Infinity) <= (b.low ?? Infinity) ? a : b));
+}
+
+// Every verified standard-monthly TRT-program row (national), one representative
+// price per clinic — powers the /guides/trt-cost verified-price table. Only
+// trt-program (not hrt-program), only steady-state monthly standard rows.
+export function getTrtProgramRows(): ClinicPrice[] {
+  const perClinic = new Map<string, ClinicPrice>();
+  for (const p of HORMONE_PRICING) {
+    if (p.serviceKey !== 'trt-program') continue;
+    if (p.priceType !== 'standard' || p.unit !== 'month' || typeof p.low !== 'number') continue;
+    const cur = perClinic.get(p.clinicId);
+    if (cur === undefined || (p.low as number) < (cur.low ?? Infinity)) perClinic.set(p.clinicId, p);
+  }
+  return Array.from(perClinic.values()).sort((a, b) => (a.low ?? 0) - (b.low ?? 0));
+}
+
+// National TRT-program aggregate (trt-program only, standard monthly, one price
+// per clinic) for the /guides/trt-cost headline. Returns null when < 1 clinic.
+export function getTrtProgramStats(): CityPricingStats | null {
+  const perClinic = new Map<string, number>();
+  for (const p of getTrtProgramRows()) perClinic.set(p.clinicId, p.low as number);
+  return statsFromClinicMap(perClinic);
+}
+
+// --- Med-spa / aesthetics per-unit + steady prices ---------------------------
+// Injectable and aesthetic prices are quoted per-unit (Botox/Dysport per unit),
+// per-syringe (filler), or per-treatment. The comparable "steady-state" set is
+// priceType standard OR per-unit (the per-unit analog of standard); intro,
+// floor, range, and package promotional rows never feed a median. Aggregation is
+// per-service (a botox-per-unit price never pools with a filler-per-syringe
+// price) and always per-clinic-deduped. See the medspa batch Gate-P1 audit + §2.
+
+const MEDSPA_STEADY_TYPES = new Set<PriceType>(['standard', 'per-unit']);
+
+function isMedspaSteady(p: ClinicPrice, serviceKey: string): boolean {
+  return (
+    p.serviceKey === serviceKey &&
+    MEDSPA_STEADY_TYPES.has(p.priceType) &&
+    typeof p.low === 'number'
+  );
+}
+
+// National per-service aggregate over verified steady-state med-spa prices, one
+// representative (cheapest) price per clinic. Callers gate the visible line on
+// stats.n >= 3. Used for the botox-cost-per-unit national median.
+export function getMedspaServiceStats(serviceKey: string): CityPricingStats | null {
+  const perClinic = new Map<string, number>();
+  for (const p of MEDSPA_PRICING) {
+    if (!isMedspaSteady(p, serviceKey)) continue;
+    const cur = perClinic.get(p.clinicId);
+    if (cur === undefined || (p.low as number) < cur) perClinic.set(p.clinicId, p.low as number);
+  }
+  return statsFromClinicMap(perClinic);
+}
+
+// Latest asOf among steady-state rows for a med-spa service (national).
+export function getMedspaServiceAsOf(serviceKey: string): string | undefined {
+  let latest: string | undefined;
+  for (const p of MEDSPA_PRICING) {
+    if (!isMedspaSteady(p, serviceKey)) continue;
+    if (!latest || p.asOf > latest) latest = p.asOf;
+  }
+  return latest;
+}
+
+// One representative (cheapest) steady-state row per clinic for a med-spa
+// service — powers the per-unit verified-price table. Sorted cheapest-first.
+export function getMedspaServiceRows(serviceKey: string): ClinicPrice[] {
+  const perClinic = new Map<string, ClinicPrice>();
+  for (const p of MEDSPA_PRICING) {
+    if (!isMedspaSteady(p, serviceKey)) continue;
+    const cur = perClinic.get(p.clinicId);
+    if (cur === undefined || (p.low as number) < (cur.low ?? Infinity)) perClinic.set(p.clinicId, p);
+  }
+  return Array.from(perClinic.values()).sort((a, b) => (a.low ?? 0) - (b.low ?? 0));
+}
+
+// The med-spa services shown on a clinic card badge, in priority order. Only the
+// curated named services (never the heterogeneous other-aesthetic catch-all).
+const MEDSPA_BADGE_SERVICES: { key: string; label: string }[] = [
+  { key: 'botox-per-unit', label: 'Botox' },
+  { key: 'dysport-per-unit', label: 'Dysport/neurotoxin' },
+  { key: 'filler-per-syringe', label: 'Filler' },
+  { key: 'laser-hair-removal', label: 'Laser hair removal' },
+  { key: 'microneedling', label: 'Microneedling' },
+  { key: 'hydrafacial', label: 'HydraFacial' },
+  { key: 'chemical-peel', label: 'Chemical peel' },
+  { key: 'membership', label: 'Membership' },
+];
+
+export interface MedspaBadgeRow { label: string; price: ClinicPrice; }
+
+// The verified anchor prices for a med-spa clinic card: the cheapest steady-state
+// row for each curated service the clinic prices, in priority order. Empty when
+// the clinic has no verified steady price in the curated set — the card then
+// keeps its estimate. intro/floor/range/package rows never appear here.
+export function getMedspaClinicBadgeRows(clinicId: string): MedspaBadgeRow[] {
+  const rows = getClinicPricing(clinicId);
+  const out: MedspaBadgeRow[] = [];
+  for (const svc of MEDSPA_BADGE_SERVICES) {
+    const matches = rows.filter((p) => isMedspaSteady(p, svc.key));
+    if (matches.length === 0) continue;
+    const cheapest = matches.reduce((a, b) => ((a.low ?? Infinity) <= (b.low ?? Infinity) ? a : b));
+    out.push({ label: svc.label, price: cheapest });
+  }
+  return out;
 }
 
 // Deterministic, locale-free formatting (SSR-stable, no hydration/CLS drift).

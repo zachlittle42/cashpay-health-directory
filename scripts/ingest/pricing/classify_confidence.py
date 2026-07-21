@@ -16,7 +16,7 @@ Confidence model (starts at BASE, each penalty subtracts, clamped to [FLOOR,CAP]
   numeric bound absent from quote -0.15
   package priceType               -0.05
 """
-ASOF = "2026-07-12"
+ASOF = "2026-07-21"
 
 BASE = 0.90
 CAP = 0.98

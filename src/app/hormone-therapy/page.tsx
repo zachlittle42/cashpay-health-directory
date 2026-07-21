@@ -3,7 +3,10 @@ import type { Metadata } from 'next';
 import Navigation from '@/components/Navigation';
 import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
+import HormoneProgramAggregate from '@/components/HormoneProgramAggregate';
+import PriceEstimateDisclaimer from '@/components/PriceEstimateDisclaimer';
 import { getStatesWithClinics, allHormoneClinics } from '@/data/hormone-clinics-index';
+import { getHormoneProgramStats, getHormoneProgramAsOf } from '@/lib/pricing';
 
 export const metadata: Metadata = {
   title: 'Hormone Therapy Clinics by State — Compare Local Providers',
@@ -56,6 +59,11 @@ export default function HormoneTherapyHub() {
   const mensClinics = allHormoneClinics.filter(c => c.menOnly).length;
   const womensClinics = allHormoneClinics.filter(c => c.womenOnly).length;
 
+  // National verified-pricing line (standard monthly TRT/HRT program prices,
+  // computed over the whole store — never hardcoded). Renders only at n >= 3.
+  const nationalStats = getHormoneProgramStats();
+  const nationalAsOf = getHormoneProgramAsOf();
+
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'MedicalWebPage',
@@ -95,6 +103,24 @@ export default function HormoneTherapyHub() {
           </div>
         </div>
       </section>
+
+      {/* National verified-pricing line — computed, gated at n >= 3 */}
+      {nationalStats.medsIncluded.n >= 3 && (
+        <section className="mx-auto max-w-4xl px-4 pt-8">
+          <div className="rounded-lg border border-gray-200 bg-gray-50 p-5 space-y-2">
+            <HormoneProgramAggregate stats={nationalStats} asOf={nationalAsOf} placeLabel="the US" />
+            <p className="text-sm text-gray-600">
+              A national baseline from clinics that publish a monthly program price. Most clinics
+              gate the number behind a consult — see the{' '}
+              <Link href="/guides/trt-cost" className="text-purple-700 hover:underline">
+                verified TRT cost breakdown
+              </Link>{' '}
+              for the per-clinic table.
+            </p>
+            <PriceEstimateDisclaimer />
+          </div>
+        </section>
+      )}
 
       {/* Quick Navigation */}
       <section className="mx-auto max-w-6xl px-4 py-8">

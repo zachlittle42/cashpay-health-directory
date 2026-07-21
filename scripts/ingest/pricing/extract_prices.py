@@ -33,10 +33,15 @@ SERVICE_KEYS_BY_VERTICAL = {
     "dexa": {"dexa-scan", "rmr-test", "vo2max-test", "body-comp-package", "other-body-comp"},
     "weightloss": {"semaglutide-program", "tirzepatide-program", "glp1-program",
                    "weight-loss-program", "consult-fee", "other-weight-service"},
+    "hormone": {"trt-program", "hrt-program", "pellet-therapy", "consult-fee",
+                "labs-panel", "other-hormone-service"},
     "labs": {"lab-panel", "single-test", "membership", "other-lab"},
     "destination": {"dental-implant-single", "all-on-4", "all-on-6", "crown",
                     "veneer-per-tooth", "full-mouth-package", "gastric-sleeve",
                     "gastric-bypass", "hair-transplant-package", "other-procedure"},
+    "medspa": {"botox-per-unit", "dysport-per-unit", "filler-per-syringe",
+               "laser-hair-removal", "hydrafacial", "chemical-peel", "microneedling",
+               "membership", "other-aesthetic"},
 }
 SERVICE_KEYS = SERVICE_KEYS_BY_VERTICAL["dexa"]
 PRICE_TYPES = {"standard", "intro", "floor", "package"}
@@ -45,8 +50,12 @@ PRICE_TYPES = {"standard", "intro", "floor", "package"}
 PRICE_TYPES_BY_VERTICAL = {
     "dexa": PRICE_TYPES,
     "weightloss": PRICE_TYPES,
+    "hormone": PRICE_TYPES,
     "labs": PRICE_TYPES,
     "destination": {"standard", "per-unit", "floor", "package", "range"},
+    # med-spa: per-unit is the prize (Botox/unit, filler/syringe); intro (new-client
+    # special) is common; range/floor/package all appear on aesthetics price lists.
+    "medspa": {"standard", "per-unit", "intro", "floor", "package", "range"},
 }
 
 # Feed caps: body-comp pages are small; caps guard against a giant homepage. The

@@ -86,6 +86,10 @@ CLINIC_TARGETS = [
     ("HormoneClinic",    "src/data/hormone-clinics-*.ts"),
     ("DexaClinic",       "src/data/dexa-clinics-*.ts"),
     ("StemCellClinic",   "src/data/stem-cell-clinics-*.ts"),
+    # Med-spa INDEPENDENTS are per-location entities (unlike the runtime-generated
+    # chain rows in MEDSPA_FILE); each gets its own id minted by website+name. The
+    # glob matches only *-independents files, never the chain-seeded state files.
+    ("MedspaClinic",     "src/data/medspa-clinics-*-independents.ts"),
 ]
 # Provider[] arrays live across these lib files (single Provider interface).
 PROVIDER_FILES = [
