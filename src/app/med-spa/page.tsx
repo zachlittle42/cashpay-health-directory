@@ -220,6 +220,62 @@ export default function MedSpaHub() {
               </div>
             </div>
           </Link>
+          <Link
+            href="/guides/botox-cost-per-unit"
+            className="block rounded-lg border border-rose-200 bg-rose-50 p-6 hover:shadow-md transition-shadow"
+          >
+            <div className="flex items-start gap-3">
+              <span className="text-2xl">💉</span>
+              <div>
+                <div className="font-semibold text-gray-900">Botox Cost Per Unit: Verified Prices</div>
+                <div className="mt-1 text-sm text-gray-600">
+                  Verified per-unit Botox prices by clinic, per-unit vs per-area, and how many units common areas take.
+                </div>
+              </div>
+            </div>
+          </Link>
+          <Link
+            href="/guides/ipl-vs-laser-hair-removal"
+            className="block rounded-lg border border-rose-200 bg-rose-50 p-6 hover:shadow-md transition-shadow"
+          >
+            <div className="flex items-start gap-3">
+              <span className="text-2xl">⚡</span>
+              <div>
+                <div className="font-semibold text-gray-900">IPL vs Laser Hair Removal</div>
+                <div className="mt-1 text-sm text-gray-600">
+                  How each works, cost per session, effectiveness by skin tone and hair color, and which to choose.
+                </div>
+              </div>
+            </div>
+          </Link>
+          <Link
+            href="/guides/laser-hair-removal-vs-electrolysis-cost"
+            className="block rounded-lg border border-rose-200 bg-rose-50 p-6 hover:shadow-md transition-shadow"
+          >
+            <div className="flex items-start gap-3">
+              <span className="text-2xl">⚡</span>
+              <div>
+                <div className="font-semibold text-gray-900">Laser Hair Removal vs Electrolysis Cost</div>
+                <div className="mt-1 text-sm text-gray-600">
+                  Total cost, permanence, sessions, and best candidates — which removal method is cheaper over a full course.
+                </div>
+              </div>
+            </div>
+          </Link>
+          <Link
+            href="/guides/coolsculpting-vs-emsculpt-cost"
+            className="block rounded-lg border border-rose-200 bg-rose-50 p-6 hover:shadow-md transition-shadow"
+          >
+            <div className="flex items-start gap-3">
+              <span className="text-2xl">❄️</span>
+              <div>
+                <div className="font-semibold text-gray-900">CoolSculpting vs Emsculpt Cost</div>
+                <div className="mt-1 text-sm text-gray-600">
+                  Fat reduction vs muscle building, cost per session and per full course, and which fits your goal.
+                </div>
+              </div>
+            </div>
+          </Link>
         </div>
       </section>
 

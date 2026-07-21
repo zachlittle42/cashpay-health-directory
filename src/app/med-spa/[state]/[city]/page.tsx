@@ -9,11 +9,61 @@ import MedspaPriceBadge from '@/components/MedspaPriceBadge';
 import PriceEstimateDisclaimer from '@/components/PriceEstimateDisclaimer';
 import { getMedspaClinicsByCity, getMedspaCitiesWithClinics } from '@/data/medspa-clinics-index';
 import { MEDSPA_STATES } from '@/lib/medspa-clinic-types';
-import { getMedspaClinicBadgeRows } from '@/lib/pricing';
+import { getMedspaClinicBadgeRows, formatPrice } from '@/lib/pricing';
+import { buildFAQSchema } from '@/lib/jsonLd';
 import { gridRobots } from '@/lib/indexability';
 
 interface Props {
   params: Promise<{ state: string; city: string }>;
+}
+
+// Verified per-unit Botox pricing across a city's clinic set: the count of
+// clinics with a verified per-unit Botox price and, at n >= 3, the median —
+// computed from the same one-representative-price-per-clinic rows the national
+// guide uses. Never hardcoded; only makes the meta description's price hook
+// truthful (and it self-suppresses when a city has no verified Botox price).
+function cityBotoxPricing(clinicIds: string[]): { count: number; medianLabel: string | null } {
+  const prices: number[] = [];
+  for (const id of clinicIds) {
+    const botox = getMedspaClinicBadgeRows(id).find((r) => r.label === 'Botox');
+    if (botox && typeof botox.price.low === 'number') prices.push(botox.price.low);
+  }
+  if (prices.length < 3) return { count: prices.length, medianLabel: null };
+  prices.sort((a, b) => a - b);
+  const mid = Math.floor(prices.length / 2);
+  const median = prices.length % 2 ? prices[mid] : (prices[mid - 1] + prices[mid]) / 2;
+  return { count: prices.length, medianLabel: formatPrice(median) };
+}
+
+// Parametric FAQ for every city page — targets the highest-volume question
+// queries (how much, lip filler, HydraFacial, near me). Ranges are typical US
+// cash-pay figures that mirror the /med-spa hub; per-city prices are framed as
+// "confirm at a consultation" so nothing is over-claimed.
+function buildCityMedspaFaq(cityName: string, clinicCount: number, verifiedBotoxCount: number) {
+  // The "providers below publish a per-unit price" claim is only true where the
+  // city actually has verified per-unit rows — suppress it elsewhere.
+  const verifiedLine =
+    verifiedBotoxCount >= 2
+      ? ` ${cityName} prices vary by injector and how many units you need; several providers below publish a per-unit price you can verify.`
+      : ` ${cityName} prices vary by injector and how many units you need.`;
+  return [
+    {
+      question: `How much does Botox cost in ${cityName}?`,
+      answer: `Botox is usually priced per unit — nationally about $10–$20 per unit, or roughly $300–$700 to treat one area like forehead lines or crow’s feet.${verifiedLine} Confirm the current rate at a consultation, and see our Botox cost per unit guide for verified prices.`,
+    },
+    {
+      question: `How much is laser hair removal in ${cityName}?`,
+      answer: `Laser hair removal usually runs about $50–$400 per session depending on the body area, and most people need a series of six or more sessions. Many national chains sell packages or unlimited plans that lower the per-session cost. Prices vary by ${cityName} provider, so confirm at a consultation.`,
+    },
+    {
+      question: `Where can I get lip filler or a HydraFacial near me in ${cityName}?`,
+      answer: `Many ${cityName} med spas below offer lip and dermal fillers (nationally about $600–$1,200 per syringe) and HydraFacial-style facials (typically about $150–$300 a session) alongside Botox and laser hair removal. Check each provider’s service list and confirm pricing directly before booking.`,
+    },
+    {
+      question: `How do I find a med spa near me in ${cityName}?`,
+      answer: `Browse the ${clinicCount} providers listed above serving the ${cityName} metro. Use each provider’s site to confirm the nearest ${cityName} location, current pricing, and provider credentials before you book.`,
+    },
+  ];
 }
 
 export async function generateStaticParams() {
@@ -37,9 +87,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!stateInfo) return { title: 'Not Found' };
   const clinics = getMedspaClinicsByCity(stateSlug, citySlug);
   const cityName = clinics.length > 0 ? clinics[0].city : formatCityName(citySlug);
+  // Lead with the verified-pricing hook + clinic count, and inject the computed
+  // per-city Botox median only when it exists (n >= 3) — otherwise fall back to
+  // truthful number-free framing so nothing is over-claimed.
+  const { count: botoxCount, medianLabel: botoxMedian } = cityBotoxPricing(clinics.map((c) => c.id));
+  const description = botoxMedian
+    ? `Compare ${clinics.length} med spas in ${cityName}, ${stateInfo.name} with verified Botox from ${botoxMedian}/unit — plus dermal fillers, laser hair removal & microneedling. Real cash-pay costs.`
+    : botoxCount > 0
+      ? `Compare ${clinics.length} med spas in ${cityName}, ${stateInfo.name} with verified per-unit Botox pricing — plus dermal fillers, laser hair removal & microneedling. Real cash-pay costs.`
+      : `Compare ${clinics.length} med spas in ${cityName}, ${stateInfo.name} — Botox, dermal fillers, laser hair removal & microneedling, with typical cash-pay costs.`;
   return {
     title: `Med Spas in ${cityName}: Botox, Fillers & Laser Hair Removal`,
-    description: `Find ${clinics.length}+ med-spa and aesthetics providers in ${cityName}, ${stateInfo.name}. Botox, dermal fillers, laser hair removal, microneedling, body contouring, and IV therapy — with typical cash-pay costs.`,
+    description,
     alternates: { canonical: `/med-spa/${stateSlug}/${citySlug}` },
     // Thin-content guard: noindex,follow below MIN_CLINICS_FOR_INDEX (see @/lib/indexability).
     ...gridRobots(clinics.length),
@@ -66,12 +125,19 @@ export default async function CityMedspa({ params }: Props) {
     author: { '@type': 'Organization', name: 'VitalityScout' },
     dateModified: '2026-06-13',
   };
+  const faqItems = buildCityMedspaFaq(
+    cityName,
+    clinics.length,
+    cityBotoxPricing(clinics.map((c) => c.id)).count,
+  );
+  const faqSchema = buildFAQSchema(faqItems);
 
   return (
     <main className="min-h-screen bg-white">
       <Navigation />
       <SidebarShell>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* Hero */}
       <section className="bg-gradient-to-b from-rose-50 to-white px-4 py-12">
@@ -165,6 +231,23 @@ export default async function CityMedspa({ params }: Props) {
                 </div>
               </div>
             </div>
+          ))}
+        </div>
+      </section>
+
+      {/* FAQ — question-query phrasings (how much, lip filler, HydraFacial, near me),
+          mirrored into FAQPage schema for PAA / AI-Overview capture */}
+      <section className="mx-auto max-w-4xl px-4 py-12">
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">Med Spas in {cityName}: Cost &amp; FAQ</h2>
+        <div>
+          {faqItems.map((item) => (
+            <details key={item.question} className="group border-b border-gray-200 py-5">
+              <summary className="flex cursor-pointer items-start justify-between text-base font-semibold text-gray-900 hover:text-rose-600">
+                <span className="pr-4">{item.question}</span>
+                <span className="text-rose-600 transition-transform group-open:rotate-180">▼</span>
+              </summary>
+              <p className="mt-3 text-sm text-gray-700">{item.answer}</p>
+            </details>
           ))}
         </div>
       </section>

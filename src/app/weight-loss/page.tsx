@@ -354,6 +354,8 @@ export default function WeightLossHub() {
 
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {[
+            { slug: 'semaglutide-cost', title: 'Semaglutide Cost: Verified Prices' },
+            { slug: 'tirzepatide-cost', title: 'Tirzepatide Cost: Verified Prices' },
             { slug: 'glp1-weight-loss-complete-guide', title: 'Complete GLP-1 Weight Loss Guide' },
             { slug: 'wegovy-vs-ozempic', title: 'Wegovy vs Ozempic' },
             { slug: 'mounjaro-vs-ozempic', title: 'Mounjaro vs Ozempic' },

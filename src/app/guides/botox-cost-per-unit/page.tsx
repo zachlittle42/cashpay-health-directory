@@ -23,6 +23,10 @@ const medianLabel = botox ? formatPrice(botox.median) : '—';
 const lowLabel = botox ? formatPrice(botox.low) : '—';
 const highLabel = botox ? formatPrice(botox.high) : '—';
 const nLabel = botox ? botox.n : 0;
+// Typical-session range derived from the verified per-unit median (20–40 units),
+// computed — never hardcoded — so the total-cost answer tracks the real median.
+const sessionLowLabel = botox ? formatPrice(Math.round(botox.median * 20)) : '—';
+const sessionHighLabel = botox ? formatPrice(Math.round(botox.median * 40)) : '—';
 
 export const metadata: Metadata = {
   title: {
@@ -37,6 +41,12 @@ export const metadata: Metadata = {
 const CLINIC_BY_ID = new Map(allMedspaClinics.map((c) => [c.id, c]));
 
 const FAQ_ITEMS = [
+  {
+    question: 'How much does Botox cost?',
+    answer:
+      `Botox is usually priced per unit. At the verified median of ${medianLabel}/unit, a typical 20 to 40 unit treatment runs about ${sessionLowLabel} to ${sessionHighLabel} a session; a smaller area like a lip flip or crow’s feet costs less. ` +
+      'Ask the clinic for your unit count and confirm the current price, since per-area flat fees and per-unit pricing are quoted differently.',
+  },
   {
     question: 'How much does Botox cost per unit?',
     answer:

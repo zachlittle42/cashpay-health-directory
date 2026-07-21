@@ -24,6 +24,20 @@ export const metadata: Metadata = {
     'TRT clinics',
     'DEXA scan near me',
   ],
+  openGraph: {
+    type: 'website',
+    siteName: 'VitalityScout',
+    url: 'https://vitalityscout.com',
+    title: 'VitalityScout — Verified Cash-Pay Health Prices',
+    description:
+      'Compare verified cash-pay prices for med-spa, hormone, GLP-1, lab, and imaging services. No insurance needed.',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'VitalityScout — Verified Cash-Pay Health Prices',
+    description:
+      'Compare verified cash-pay prices for med-spa, hormone, GLP-1, lab, and imaging services. No insurance needed.',
+  },
 };
 
 export default function RootLayout({

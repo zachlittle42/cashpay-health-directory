@@ -31,7 +31,11 @@ const highLabel = mi.n > 0 ? formatPrice(mi.high) : '—';
 
 export const metadata: Metadata = {
   title: {
-    absolute: `Semaglutide Cost (2026): Verified Monthly Program Prices — ${medianLabel}/mo Median`,
+    // Front-load the computed price so the CTR hook survives ~60-char SERP truncation.
+    absolute:
+      mi.n > 0
+        ? `Semaglutide Cost: ${medianLabel}/mo Median (2026 Verified Prices)`
+        : 'Semaglutide Cost (2026): Verified Monthly Program Prices',
   },
   alternates: { canonical: URL },
   description:
@@ -49,6 +53,12 @@ const FAQ_ITEMS = [
       `Across the ${mi.n} clinics we found that publish a monthly semaglutide-program price with the medication included, the median is ${medianLabel}/mo, ranging from ${lowLabel} to ${highLabel}/mo. ` +
       'A membership-only program that bills the medication separately can post a lower headline number, so we tag every price with whether the medication is included. ' +
       'Most clinics quote only after a consult. Confirm the current price and exactly what it includes with the clinic before you commit.',
+  },
+  {
+    question: 'How much does semaglutide cost without insurance?',
+    answer:
+      `Every price on this page is a cash-pay, self-pay number. These programs bill you directly, not insurance, so the median of ${medianLabel}/mo with the medication included is what semaglutide costs without insurance at the ${mi.n} clinics that publish a price. ` +
+      'Coverage varies and most plans do not cover compounded semaglutide, so the cash price is often the real out-of-pocket cost either way. Confirm the current price and what it includes with the clinic.',
   },
   {
     question: 'Why do semaglutide prices vary so much?',
@@ -282,6 +292,9 @@ export default function SemaglutideCostPage() {
             <h3 className="mb-3 font-bold text-gray-900">Find and compare weight-loss clinics</h3>
             <ul className="space-y-1 text-sm text-blue-700">
               <li><Link href="/guides/tirzepatide-cost" className="hover:underline">Tirzepatide cost: verified monthly program prices</Link></li>
+              <li><Link href="/guides/cheapest-way-to-get-semaglutide" className="hover:underline">Cheapest way to get semaglutide without insurance</Link></li>
+              <li><Link href="/guides/cheapest-glp1-without-insurance" className="hover:underline">Cheapest GLP-1 without insurance: price compare</Link></li>
+              <li><Link href="/guides/compounded-semaglutide" className="hover:underline">Compounded semaglutide: what it costs</Link></li>
               <li><Link href="/weight-loss" className="hover:underline">GLP-1 &amp; weight-loss clinics by state</Link></li>
               <li><Link href="/glp1" className="hover:underline">Compare telehealth GLP-1 options</Link></li>
               <li><Link href="/guides/glp1-weight-loss-complete-guide" className="hover:underline">GLP-1 complete guide: how they work, results, side effects</Link></li>

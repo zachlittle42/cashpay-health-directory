@@ -6,13 +6,51 @@ import Footer from '@/components/Footer';
 import HormoneProgramAggregate from '@/components/HormoneProgramAggregate';
 import PriceEstimateDisclaimer from '@/components/PriceEstimateDisclaimer';
 import { getStatesWithClinics, allHormoneClinics } from '@/data/hormone-clinics-index';
-import { getHormoneProgramStats, getHormoneProgramAsOf } from '@/lib/pricing';
+import { getHormoneProgramStats, getHormoneProgramAsOf, formatPrice } from '@/lib/pricing';
+import { buildFAQSchema } from '@/lib/jsonLd';
+
+// National verified-pricing line, computed over the store (never hardcoded) and
+// gated at n >= 3. Feeds the title, meta description, and the cost FAQ answer.
+const hrtStats = getHormoneProgramStats();
+const hrtMedianLabel =
+  hrtStats.medsIncluded.n >= 3 ? formatPrice(hrtStats.medsIncluded.median) : null;
 
 export const metadata: Metadata = {
-  title: 'Hormone Therapy Clinics by State — Compare Local Providers',
+  title: hrtMedianLabel
+    ? { absolute: `Hormone Replacement Therapy (HRT) Clinics Near You: ${hrtMedianLabel}/mo Median` }
+    : { absolute: 'Hormone Replacement Therapy (HRT) Clinics Near You: Compare by State' },
   alternates: { canonical: '/hormone-therapy' },
-  description: 'Browse and compare local hormone therapy clinics by state and city. Find in-person providers near you with prices, services, and reviews. Prefer online treatment? Compare national TRT telehealth providers on our TRT page.',
+  description: hrtMedianLabel
+    ? `Compare hormone replacement therapy (HRT) clinics near you. VitalityScout verified a ${hrtMedianLabel}/mo median across clinics that publish a price, plus TRT and hormone therapy cost by state.`
+    : 'Compare hormone replacement therapy (HRT & TRT) clinics near you. Find in-person providers by state and city plus telehealth options, with typical cash-pay costs.',
 };
+
+// Cost + near-me FAQ — targets "hormone therapy cost" and "hrt near me" question
+// queries, mirrors the sibling money pages (/trt, /guides/trt-cost) that already
+// ship FAQPage schema, and feeds the AI-Overview / PAA capture surface.
+const FAQ_ITEMS = [
+  {
+    question: 'How much does hormone replacement therapy cost per month?',
+    answer: hrtMedianLabel
+      ? `Across the clinics that publish a monthly hormone-program price, VitalityScout verified a median of ${hrtMedianLabel}/mo. National telehealth HRT and TRT programs commonly run about $99–$249/mo, and local clinics often more. The spread reflects what is bundled: a membership-only fee bills the medication separately, while an all-in program folds the hormones, supplies, and visits into one number. Most clinics quote only after a consult, so confirm the current figure and what it includes before committing.`
+      : 'National telehealth HRT and TRT programs commonly run about $99–$249/mo, and local clinics often more, depending on what is bundled. A membership-only fee bills the medication separately, while an all-in program folds the hormones, supplies, and visits into one number. Most clinics quote only after a consult, so confirm the current figure and what it includes before committing.',
+  },
+  {
+    question: 'How much does TRT cost vs HRT?',
+    answer:
+      'TRT (testosterone replacement, most common in men) and broader HRT (estrogen, progesterone, and testosterone optimization, common in perimenopause and menopause) overlap on price. Standard telehealth TRT commonly runs about $99–$249/mo; comprehensive HRT and bioidentical-pellet protocols can run higher because more hormones and in-office procedures are involved. See our verified TRT cost breakdown for the per-clinic table.',
+  },
+  {
+    question: 'How do I find hormone replacement therapy near me?',
+    answer:
+      'Browse the local clinics by state below to find in-person HRT and TRT providers near you, or compare national telehealth clinics that run at-home labs and ship medication to your door. In-person clinics make sense for pellet insertion, physical exams, and complex optimization; telehealth is usually the lower-friction, lower-cost path for standard testosterone or hormone replacement.',
+  },
+  {
+    question: 'Is telehealth or a local HRT clinic better?',
+    answer:
+      'Telehealth is usually cheaper and more convenient for standard hormone replacement: home labs, video visits, and medication shipped to you. A local clinic is worth it when you want pellets, peptides, in-person exams, or more personalized care for perimenopause and menopause. Many people start with telehealth and add a local clinic only if they need hands-on procedures. This page is information, not medical advice.',
+  },
+];
 
 // Services explained
 const hormoneServices = [
@@ -70,14 +108,16 @@ export default function HormoneTherapyHub() {
     name: 'Hormone Therapy Clinics Directory',
     description: 'Find TRT and HRT clinics across the United States. Compare telehealth and local options.',
     author: { '@type': 'Organization', name: 'VitalityScout' },
-    dateModified: '2026-02-01',
+    dateModified: '2026-07-21',
   };
+  const faqSchema = buildFAQSchema(FAQ_ITEMS);
 
   return (
     <main className="min-h-screen bg-white">
       <Navigation />
       <SidebarShell>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* Hero */}
       <section className="bg-gradient-to-b from-purple-50 to-white px-4 py-16">
@@ -358,7 +398,32 @@ export default function HormoneTherapyHub() {
               </p>
               <span className="text-sm font-medium text-purple-600">Read guide →</span>
             </Link>
+
+            <Link href="/guides/bioidentical-vs-traditional-hrt" className="block bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow">
+              <span className="text-3xl mb-3 block">⚖️</span>
+              <h3 className="font-bold text-gray-900 mb-2">Bioidentical vs Traditional HRT</h3>
+              <p className="text-sm text-gray-600 mb-3">
+                Bioidentical vs synthetic hormones compared — safety evidence, FDA-approved vs compounded, and the real cash-pay cost difference.
+              </p>
+              <span className="text-sm font-medium text-purple-600">Read guide →</span>
+            </Link>
           </div>
+        </div>
+      </section>
+
+      {/* FAQ — cost + near-me question queries, mirrored into FAQPage schema */}
+      <section className="mx-auto max-w-4xl px-4 py-12">
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">Hormone Therapy Cost &amp; Near-You FAQ</h2>
+        <div>
+          {FAQ_ITEMS.map((item) => (
+            <details key={item.question} className="group border-b border-gray-200 py-5">
+              <summary className="flex cursor-pointer items-start justify-between text-base font-semibold text-gray-900 hover:text-purple-600">
+                <span className="pr-4">{item.question}</span>
+                <span className="text-purple-600 transition-transform group-open:rotate-180">▼</span>
+              </summary>
+              <p className="mt-3 text-sm text-gray-700">{item.answer}</p>
+            </details>
+          ))}
         </div>
       </section>
 

@@ -11,6 +11,71 @@ export const metadata: Metadata = {
 };
 
 const guides = [
+  // Verified-price money guides + med-spa/HRT comparisons (2026-07-21): de-orphaned
+  // into the hub so the strongest cost/comparison pages accrue hub link equity.
+  {
+    slug: 'semaglutide-cost',
+    title: 'Semaglutide Cost (2026): Verified Monthly Program Prices',
+    description:
+      'Verified cash-pay semaglutide program prices — a real median across clinics that publish a monthly number, compounded vs brand, and how to find the lowest monthly cost.',
+    category: 'Cost Guide',
+    readTime: '11 min',
+    icon: '💉',
+  },
+  {
+    slug: 'tirzepatide-cost',
+    title: 'Tirzepatide Cost (2026): Verified Monthly Program Prices',
+    description:
+      'Verified cash-pay tirzepatide program prices — a real median across clinics that publish a monthly number, Zepbound/Mounjaro vs compounded, and how to find the lowest monthly cost.',
+    category: 'Cost Guide',
+    readTime: '11 min',
+    icon: '💉',
+  },
+  {
+    slug: 'botox-cost-per-unit',
+    title: 'Botox Cost Per Unit (2026): Verified Prices by Clinic',
+    description:
+      'Verified per-unit Botox prices across clinics that post a number — a real median, per-unit vs per-area pricing explained, and how many units common areas take.',
+    category: 'Cost Guide',
+    readTime: '9 min',
+    icon: '💉',
+  },
+  {
+    slug: 'bioidentical-vs-traditional-hrt',
+    title: 'Bioidentical vs Traditional HRT: The Cash-Pay Cost Difference (2026)',
+    description:
+      'Bioidentical vs traditional (synthetic) HRT compared — safety evidence, FDA-approved vs compounded, and the real cash-pay cost difference.',
+    category: 'Comparison',
+    readTime: '11 min',
+    icon: '⚖️',
+  },
+  {
+    slug: 'coolsculpting-vs-emsculpt-cost',
+    title: 'CoolSculpting vs Emsculpt Cost (2026): Fat vs Muscle, Priced',
+    description:
+      'CoolSculpting vs Emsculpt compared — fat reduction vs muscle building, cost per session and per full course, and which is right for your goal.',
+    category: 'Comparison',
+    readTime: '10 min',
+    icon: '❄️',
+  },
+  {
+    slug: 'ipl-vs-laser-hair-removal',
+    title: 'IPL vs Laser Hair Removal: Difference, Cost & Which Works (2026)',
+    description:
+      'IPL vs laser hair removal compared — how each works, cost per session, effectiveness by skin tone and hair color, and which to choose.',
+    category: 'Comparison',
+    readTime: '10 min',
+    icon: '⚡',
+  },
+  {
+    slug: 'laser-hair-removal-vs-electrolysis-cost',
+    title: 'Laser Hair Removal vs Electrolysis Cost (2026): Which Is Cheaper?',
+    description:
+      'Laser hair removal vs electrolysis on total cost, permanence, sessions and best candidates — which removal method is cheaper over a full course.',
+    category: 'Comparison',
+    readTime: '10 min',
+    icon: '⚡',
+  },
   // Category + procedure expansion (2026-06-25): imaging, mental health, derm, sleep, allergy, surgery + depth
   {
     slug: 'mri-cost-without-insurance',

@@ -119,8 +119,9 @@ export default function TrtCostPage() {
             </h1>
             {/* Direct-answer lead — leads with the computed median stat */}
             <p className="text-lg text-gray-700">
-              Verified monthly testosterone-therapy programs run a{' '}
-              <strong>median of {medianLabel}/mo</strong> across the {nLabel} clinics that actually
+              Verified monthly{' '}
+              <Link href="/trt" className="text-purple-700 hover:underline">testosterone-therapy programs</Link>{' '}
+              run a <strong>median of {medianLabel}/mo</strong> across the {nLabel} clinics that actually
               publish a price (range {lowLabel}&ndash;{highLabel}/mo, verified {asOfLabel}). The gap is
               what&apos;s bundled: membership-only fees bill the medication separately; all-in programs
               fold it in. Most clinics post no price and quote it only after a paid consult. Every
@@ -271,6 +272,7 @@ export default function TrtCostPage() {
           <div className="mt-12 rounded-lg border border-gray-200 bg-gray-50 p-6">
             <h3 className="mb-3 font-bold text-gray-900">Find and compare hormone clinics</h3>
             <ul className="space-y-1 text-sm text-blue-700">
+              <li><Link href="/trt" className="hover:underline">TRT overview: online clinics, candidacy &amp; how it works</Link></li>
               <li><Link href="/hormone-therapy" className="hover:underline">Hormone therapy clinics by state</Link></li>
               <li><Link href="/guides/trt-testosterone-therapy" className="hover:underline">Complete TRT guide: symptoms, options, what to expect</Link></li>
               <li><Link href="/guides/best-online-trt-clinics" className="hover:underline">Best online TRT clinics compared</Link></li>

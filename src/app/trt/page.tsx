@@ -420,6 +420,7 @@ export default function TrtHub() {
               <li><Link href="/guides/trt-cost" className="hover:underline">TRT cost: verified per-clinic monthly prices</Link></li>
               <li><Link href="/guides/trt-testosterone-therapy" className="hover:underline">Complete TRT guide: symptoms, options, what to expect</Link></li>
               <li><Link href="/guides/best-online-trt-clinics" className="hover:underline">Best online TRT clinics compared</Link></li>
+              <li><Link href="/guides/bioidentical-vs-traditional-hrt" className="hover:underline">Bioidentical vs traditional HRT: the cost difference</Link></li>
               <li><Link href="/hormone-therapy" className="hover:underline">Hormone therapy clinics by state</Link></li>
               <li><Link href="/labs" className="hover:underline">At-home hormone lab testing</Link></li>
             </ul>
