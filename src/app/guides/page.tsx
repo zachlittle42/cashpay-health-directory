@@ -1591,6 +1591,52 @@ const guides = [
     readTime: '10 min',
     icon: '🏃',
   },
+  // Cost-without-insurance keyword expansion, batch 3 (2026-07-31): ER visit, EKG/echo, ambulance, birth control, STD testing
+  {
+    slug: 'er-visit-cost-without-insurance',
+    title: 'ER Visit Cost Without Insurance (2026): What You Owe',
+    description:
+      'ER visit cost without insurance in 2026 — average bills and severity-level pricing, EMTALA and charity-care rights at nonprofit hospitals, the freestanding-ER trap, and how to negotiate the bill after the visit.',
+    category: 'Emergency Care',
+    readTime: '12 min',
+    icon: '🚨',
+  },
+  {
+    slug: 'ekg-cost-without-insurance',
+    title: 'EKG Cost Without Insurance (2026): EKG, Echo & Stress Tests',
+    description:
+      'EKG cost without insurance in 2026 — cash prices from ~$40-$99, echocardiogram and stress test pricing by setting, posted cardiology self-pay rates, and what consumer ECG devices can\'t do.',
+    category: 'Heart Testing',
+    readTime: '11 min',
+    icon: '🫀',
+  },
+  {
+    slug: 'ambulance-cost-without-insurance',
+    title: 'Ambulance Cost Without Insurance (2026): Ground & Air',
+    description:
+      'Ambulance cost without insurance in 2026 — ground BLS/ALS charges and mileage fees, air ambulance bills, why the No Surprises Act skips ground EMS, membership programs, and how to reduce the bill.',
+    category: 'Emergency Care',
+    readTime: '11 min',
+    icon: '🚑',
+  },
+  {
+    slug: 'birth-control-cost-without-insurance',
+    title: 'Birth Control Cost Without Insurance (2026): Cash Prices',
+    description:
+      'Birth control cost without insurance in 2026 — pills from ~$7/month via telehealth, OTC Opill at $19.99, IUD and implant cash prices, $0 Title X sliding-scale clinics, and the long-acting cost math.',
+    category: 'Women\'s Health',
+    readTime: '11 min',
+    icon: '💊',
+  },
+  {
+    slug: 'std-testing-cost-without-insurance',
+    title: 'STD Testing Cost Without Insurance (2026): Cash Prices',
+    description:
+      'STD testing cost without insurance in 2026 — 10-test panels from $139, individual test cash prices, free CDC and health department testing routes, and the privacy upside of paying cash.',
+    category: 'Lab Testing',
+    readTime: '11 min',
+    icon: '🧪',
+  },
 ];
 
 export default function GuidesIndex() {
