@@ -1,6 +1,12 @@
 # VitalityScout - Project Status & Development Sprints
 
-**Last Updated:** June 13, 2026
+**Last Updated:** July 31, 2026
+
+> **July 31, 2026:** Shipped the "[procedure] cost without insurance" keyword expansion —
+> 5 new sourced guides (`x-ray`, `blood-work`, `urgent-care`, `doctor-visit`,
+> `dental-cleaning` + `-cost-without-insurance`), following the pattern proven by
+> `/guides/mri-cost-without-insurance` (#2 page by visitors in Vercel analytics).
+> All registered in the guides index; sitemap auto-discovers. Guide count now 56.
 **Live Site:** https://vitalityscout.com
 **Status:** ✅ Live in Production
 

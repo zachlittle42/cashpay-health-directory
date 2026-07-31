@@ -1499,6 +1499,52 @@ const guides = [
     readTime: '20 min',
     icon: '🏥',
   },
+  // Cost-without-insurance keyword expansion (2026-07-31): x-ray, blood work, urgent care, doctor visit, dental cleaning
+  {
+    slug: 'x-ray-cost-without-insurance',
+    title: 'X-Ray Cost Without Insurance (2026): Cash-Pay Prices',
+    description:
+      'What an X-ray costs without insurance in 2026 — cash prices by body part, imaging center vs urgent care vs ER, self-pay networks with published rates from ~$24, and how to pay the least.',
+    category: 'Imaging',
+    readTime: '10 min',
+    icon: '🩻',
+  },
+  {
+    slug: 'blood-work-cost-without-insurance',
+    title: 'Blood Work Cost Without Insurance (2026): Cash Prices',
+    description:
+      'Blood work cost without insurance in 2026 — cash prices for CBC, CMP, lipid, A1c, and thyroid panels, why hospital labs charge 3-10x more, and where to order the same tests for less.',
+    category: 'Lab Testing',
+    readTime: '11 min',
+    icon: '🧪',
+  },
+  {
+    slug: 'urgent-care-cost-without-insurance',
+    title: 'Urgent Care Cost Without Insurance (2026): Real Prices',
+    description:
+      'Urgent care cost without insurance in 2026 — published self-pay rates at CareNow, GoHealth, ZoomCare and more, what X-rays, tests, and stitches add, and urgent care vs ER vs telehealth math.',
+    category: 'Local Services',
+    readTime: '11 min',
+    icon: '🏥',
+  },
+  {
+    slug: 'doctor-visit-cost-without-insurance',
+    title: 'Doctor Visit Cost Without Insurance (2026): Cash Prices',
+    description:
+      'Doctor visit cost without insurance in 2026 — office visit cash prices, $29-$89 telehealth options, direct primary care memberships, sliding-scale clinics, and the facility-fee trap.',
+    category: 'Telehealth',
+    readTime: '11 min',
+    icon: '🩺',
+  },
+  {
+    slug: 'dental-cleaning-cost-without-insurance',
+    title: 'Dental Cleaning Cost Without Insurance (2026): Prices',
+    description:
+      'Teeth cleaning cost without insurance in 2026 — routine cleaning and exam + X-ray bundles, deep cleaning by quadrant, $20 hygiene-school cleanings, and savings plans that cut 20-60%.',
+    category: 'Dental',
+    readTime: '10 min',
+    icon: '🦷',
+  },
 ];
 
 export default function GuidesIndex() {
