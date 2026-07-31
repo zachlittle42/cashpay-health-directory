@@ -1545,6 +1545,52 @@ const guides = [
     readTime: '10 min',
     icon: '🦷',
   },
+  // Cost-without-insurance keyword expansion, batch 2 (2026-07-31): colonoscopy, tooth extraction, dermatologist, eye exam, physical therapy
+  {
+    slug: 'colonoscopy-cost-without-insurance',
+    title: 'Colonoscopy Cost Without Insurance (2026): Cash Prices',
+    description:
+      'Colonoscopy cost without insurance in 2026 — surgery center vs hospital cash prices, flat-rate all-inclusive programs from ~$1,150, the four-bills trap, stool-test alternatives, and self-pay rights.',
+    category: 'Screening',
+    readTime: '11 min',
+    icon: '🔬',
+  },
+  {
+    slug: 'tooth-extraction-cost-without-insurance',
+    title: 'Tooth Extraction Cost Without Insurance (2026): Prices',
+    description:
+      'Tooth extraction cost without insurance in 2026 — simple vs surgical vs wisdom teeth pricing, sedation add-ons, $131 dental school flat fees, savings plans, and why the ER can\'t pull a tooth.',
+    category: 'Dental',
+    readTime: '11 min',
+    icon: '🦷',
+  },
+  {
+    slug: 'dermatologist-cost-without-insurance',
+    title: 'Dermatologist Cost Without Insurance (2026): Cash Prices',
+    description:
+      'Dermatologist cost without insurance in 2026 — in-person visit prices, online dermatology from $59, skin check, biopsy, and removal costs, plus the AAD\'s free skin cancer screenings.',
+    category: 'Dermatology',
+    readTime: '10 min',
+    icon: '🔎',
+  },
+  {
+    slug: 'eye-exam-cost-without-insurance',
+    title: 'Eye Exam Cost Without Insurance (2026): Cash Prices',
+    description:
+      'Eye exam cost without insurance in 2026 — retail chain prices from ~$39-$99, contact lens exam add-ons, $15-$25 online prescription renewals, and free exam programs like EyeCare America.',
+    category: 'Local Services',
+    readTime: '10 min',
+    icon: '👁️',
+  },
+  {
+    slug: 'physical-therapy-cost-without-insurance',
+    title: 'Physical Therapy Cost Without Insurance (2026): Prices',
+    description:
+      'Physical therapy cost without insurance in 2026 — cash session and evaluation rates, no-referral direct access in all 50 states, virtual PT from ~$70, and pro bono university clinics.',
+    category: 'Local Services',
+    readTime: '10 min',
+    icon: '🏃',
+  },
 ];
 
 export default function GuidesIndex() {

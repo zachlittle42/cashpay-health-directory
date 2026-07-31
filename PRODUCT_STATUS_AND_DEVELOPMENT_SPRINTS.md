@@ -3,10 +3,12 @@
 **Last Updated:** July 31, 2026
 
 > **July 31, 2026:** Shipped the "[procedure] cost without insurance" keyword expansion —
-> 5 new sourced guides (`x-ray`, `blood-work`, `urgent-care`, `doctor-visit`,
-> `dental-cleaning` + `-cost-without-insurance`), following the pattern proven by
-> `/guides/mri-cost-without-insurance` (#2 page by visitors in Vercel analytics).
-> All registered in the guides index; sitemap auto-discovers. Guide count now 56.
+> 10 new sourced guides across two batches (`x-ray`, `blood-work`, `urgent-care`,
+> `doctor-visit`, `dental-cleaning`, `colonoscopy`, `tooth-extraction`, `dermatologist`,
+> `eye-exam`, `physical-therapy` + `-cost-without-insurance`), following the pattern proven
+> by `/guides/mri-cost-without-insurance` (#2 page by visitors in Vercel analytics).
+> With the pre-existing MRI/CT/ultrasound/root-canal pages, the cluster is now 14 guides.
+> All registered in the guides index; sitemap auto-discovers. Guide count now 61.
 **Live Site:** https://vitalityscout.com
 **Status:** ✅ Live in Production
 
