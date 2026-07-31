@@ -139,7 +139,7 @@ export default function PhysicalTherapyCostWithoutInsurance() {
             </div>
 
             <p className="mt-4 text-sm text-gray-500">
-              Last updated: July 2026 • 10 min read
+              Last updated: July 2026 • Reviewed by the VitalityScout editorial team • 10 min read
             </p>
           </div>
         </section>

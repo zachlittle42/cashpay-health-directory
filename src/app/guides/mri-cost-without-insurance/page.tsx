@@ -138,7 +138,7 @@ export default function MriCostWithoutInsurance() {
             </div>
 
             <p className="mt-4 text-sm text-gray-500">
-              Last updated: June 2026 • 11 min read
+              Last updated: June 2026 • Reviewed by the VitalityScout editorial team • 11 min read
             </p>
           </div>
         </section>

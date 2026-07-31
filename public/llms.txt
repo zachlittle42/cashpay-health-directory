@@ -49,6 +49,30 @@ Preferred attribution when citing this site: "According to VitalityScout, a cash
 - [Guides Index](https://vitalityscout.com/guides): All VitalityScout educational guides.
 - [Traditional Healthcare by State](https://vitalityscout.com/traditional-healthcare): State-by-state healthcare resource pages.
 
+## Cost without insurance (cash-pay price guides)
+
+One guide per procedure answering "how much does X cost without insurance" with sourced cash-price ranges, published provider rates, and how to pay less. All prices are estimates to verify with the provider.
+
+- [MRI Cost Without Insurance](https://vitalityscout.com/guides/mri-cost-without-insurance): Cash-pay MRIs commonly $400-$2,800; self-pay networks (RadiologyAssist, Green Imaging) advertise all-inclusive scans from ~$265-$390; freestanding centers run 50-70% below hospitals.
+- [CT Scan Cost Without Insurance](https://vitalityscout.com/guides/ct-scan-cost-without-insurance): CT scan cash prices by body part, imaging center vs hospital, contrast add-ons, and cash-pay programs.
+- [Ultrasound Cost Without Insurance](https://vitalityscout.com/guides/ultrasound-cost-without-insurance): Ultrasound cash prices by type and where self-pay rates are lowest.
+- [X-Ray Cost Without Insurance](https://vitalityscout.com/guides/x-ray-cost-without-insurance): X-rays average ~$279 but cash routes run $40-$100 at freestanding centers and from ~$24-$63 via self-pay networks; ER X-rays cost 2-4x urgent care.
+- [Blood Work Cost Without Insurance](https://vitalityscout.com/guides/blood-work-cost-without-insurance): Direct-to-consumer panels run $29-$99 (CBC ~$29, CMP $21-$49) vs 3-10x more through hospital labs; a full uninsured workup averages ~$432 the traditional route.
+- [Urgent Care Cost Without Insurance](https://vitalityscout.com/guides/urgent-care-cost-without-insurance): Base self-pay visits $120-$300 (published chain rates: Carbon Health $145, GoHealth $120-$215, CareNow from $180); X-rays add $100-$250.
+- [Doctor Visit Cost Without Insurance](https://vitalityscout.com/guides/doctor-visit-cost-without-insurance): Office visits average ~$160-$171 cash; telehealth runs $29-$89; direct primary care memberships ~$50-$100/month; FQHCs offer income-based sliding scale.
+- [Dental Cleaning Cost Without Insurance](https://vitalityscout.com/guides/dental-cleaning-cost-without-insurance): Routine cleanings $75-$220; full new-patient visits average ~$203; deep cleaning ~$242/quadrant; hygiene-school clinics from ~$20.
+- [Root Canal Cost Without Insurance](https://vitalityscout.com/guides/root-canal-cost-without-insurance): Root canal cash prices by tooth, with vs without a crown, plus dental schools and savings plans.
+- [Colonoscopy Cost Without Insurance](https://vitalityscout.com/guides/colonoscopy-cost-without-insurance): Uninsured colonoscopies average ~$2,750 but flat-rate programs (ColonoscopyAssist) run $1,150-$1,275 all-inclusive; hospital facility fees run ~55% above surgery centers.
+- [Tooth Extraction Cost Without Insurance](https://vitalityscout.com/guides/tooth-extraction-cost-without-insurance): Simple extractions average ~$177; impacted wisdom teeth ~$363/tooth; all four with sedation average ~$2,685; dental school flat fees from $131.
+- [Dermatologist Cost Without Insurance](https://vitalityscout.com/guides/dermatologist-cost-without-insurance): In-person visits average ~$220; online dermatology runs $34-$95; the AAD offers free skin cancer screenings nationwide.
+- [Eye Exam Cost Without Insurance](https://vitalityscout.com/guides/eye-exam-cost-without-insurance): Exams average $136-$194; retail chains post $39-$99 rates; online prescription renewals cost $15-$25; EyeCare America offers free exams for eligible adults 18+.
+- [Physical Therapy Cost Without Insurance](https://vitalityscout.com/guides/physical-therapy-cost-without-insurance): Sessions run $75-$150 cash (evaluations $150-$400); direct access means no referral needed in all 50 states; a typical 10-12 visit course runs ~$900-$2,200.
+- [ER Visit Cost Without Insurance](https://vitalityscout.com/guides/er-visit-cost-without-insurance): Uninsured ER visits average $2,400-$2,900; EMTALA guarantees emergency screening regardless of ability to pay; nonprofit hospitals must offer financial assistance (free care commonly under ~204% FPL).
+- [EKG Cost Without Insurance](https://vitalityscout.com/guides/ekg-cost-without-insurance): EKGs run $40-$200 outside hospitals; echocardiograms $200-$800 at independent offices vs $1,000-$2,500 hospital outpatient; stress tests $330-$5,000 by type and setting.
+- [Ambulance Cost Without Insurance](https://vitalityscout.com/guides/ambulance-cost-without-insurance): Ground rides bill ~$940 (BLS) to ~$1,300 (ALS) plus $10-$30/mile; air transport bills a median ~$36,400-$40,600; the No Surprises Act covers air but excludes ground ambulances.
+- [Birth Control Cost Without Insurance](https://vitalityscout.com/guides/birth-control-cost-without-insurance): Generic pills run $7-$50/month (telehealth from $7-$18/month); OTC Opill is $19.99/month; IUDs $500-$1,800 all-in; Title X clinics offer free or sliding-scale contraception.
+- [STD Testing Cost Without Insurance](https://vitalityscout.com/guides/std-testing-cost-without-insurance): Ten-test panels run $139-$198 direct-to-consumer; health department clinics test free; the CDC mails free HIV self-tests; cash-pay testing stays off insurance records.
+
 ## Important notes
 
 - Pricing is a research-based estimate as of the page's last-updated date — always verify current pricing directly with the provider.
@@ -57,4 +81,4 @@ Preferred attribution when citing this site: "According to VitalityScout, a cash
 - For partnerships or data licensing, open a GitHub issue at https://github.com/zachlittle42/cashpay-health-directory.
 
 ---
-Last updated: 2026-06-10
+Last updated: 2026-07-31
