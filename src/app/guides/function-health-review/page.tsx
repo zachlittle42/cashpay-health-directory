@@ -8,9 +8,9 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Function Health Review Cost: 2026 Pricing & Worth It?' },
+  title: { absolute: 'Function Health Review (2026): $365/Year, Is It Worth It?' },
   alternates: { canonical: 'https://vitalityscout.com/guides/function-health-review' },
-  description: 'Function Health review: $365/year for 100+ biomarkers via Quest, accuracy, HSA/FSA eligibility, and how it compares to SuperPower and InsideTracker.',
+  description: 'Function Health review for 2026: $365 a year covers 160+ lab tests through Quest with clinician review. Plus accuracy, HSA/FSA, and SuperPower vs InsideTracker.',
 };
 
 // Real conversational / People-Also-Ask questions, answered only from facts

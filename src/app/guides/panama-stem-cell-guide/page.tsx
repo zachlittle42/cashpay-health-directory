@@ -6,9 +6,9 @@ import Footer from '@/components/Footer';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Panama Stem Cell Therapy Guide: Golden Cells, Costs & Clinics' },
+  title: { absolute: 'Stem Cell Institute Panama: Golden Cells Costs & Clinics' },
   alternates: { canonical: 'https://vitalityscout.com/guides/panama-stem-cell-guide' },
-  description: 'Complete guide to stem cell therapy in Panama. Stem Cell Institute, Golden Cells (umbilical cord MSCs), NFL athlete testimonials. Costs $25,000-60,000.',
+  description: 'Stem Cell Institute Panama guide: Golden Cells umbilical-cord MSCs, protocols from $25,000 to $60,000, what the price includes, FDA status, and trip logistics.',
 };
 
 export default function PanamaStemCellGuide() {

@@ -10,9 +10,9 @@ import { getDexaStatesWithClinics, allDexaClinics } from '@/data/dexa-clinics-in
 import { getNationalDexaStats, getStandardDexaAsOf } from '@/lib/pricing';
 
 export const metadata: Metadata = {
-  title: 'DEXA Scan Near You: Body Composition & Bone Density Clinics by City',
+  title: 'DEXA Scan Near Me: Body Fat & Bone Density',
   alternates: { canonical: '/dexa-scans' },
-  description: 'Find DEXA scan clinics near you. Compare BodySpec mobile units, DexaFit studios, and research-grade labs by city — body composition, body fat %, visceral fat, and bone density.',
+  description: 'Find a DEXA scan near you by state and city. Compare BodySpec mobile units, DexaFit studios and university labs for body fat, visceral fat and bone density.',
 };
 
 // National DEXA chains (real, multi-city operators). Used for the explainer

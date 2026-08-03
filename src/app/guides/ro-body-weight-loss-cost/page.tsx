@@ -7,9 +7,9 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Ro Body Weight Loss Cost (2026): Membership + GLP-1' },
+  title: { absolute: 'Ro Weight Loss Cost (2026): Ro Body Membership + GLP-1' },
   alternates: { canonical: 'https://vitalityscout.com/guides/ro-body-weight-loss-cost' },
-  description: 'Ro Body weight loss cost in 2026: membership $39 first month then $149/mo, what is included, and GLP-1 medication prices with and without insurance.',
+  description: 'Ro weight loss cost in 2026: Ro Body membership is $39 the first month then $149/mo, medication billed separately. Zepbound from $299/mo, Wegovy and Ozempic.',
 };
 
 // Real GSC long-tail questions we already earn impressions for, answered only

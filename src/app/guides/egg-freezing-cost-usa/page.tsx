@@ -8,10 +8,10 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Egg Freezing Cost USA (2026): Cycle, Meds & Storage' },
+  title: { absolute: 'Egg Freezing Cost USA (2026): $12,000-$20,000 per Cycle' },
   alternates: { canonical: 'https://vitalityscout.com/guides/egg-freezing-cost-usa' },
   description:
-    'Egg freezing cost in the USA: ~$12,000-20,000 all-in per cycle. Procedure, meds & storage, plus clinic vs startup (Cofertility, Kindbody) pricing.',
+    'Egg freezing cost in the USA in 2026: about $12,000-$20,000 all-in per cycle, including $3,000-$6,000 in meds and $500-$1,000 a year of storage after.',
 };
 
 // Real long-tail / PAA questions, answered only from facts stated on this page.

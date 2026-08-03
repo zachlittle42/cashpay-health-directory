@@ -7,9 +7,9 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: { absolute: 'MRI Cost Without Insurance (2026): Cash-Pay Price Guide' },
+  title: { absolute: 'MRI Cost Without Insurance (2026): $400-$2,800 Cash Prices' },
   alternates: { canonical: 'https://vitalityscout.com/guides/mri-cost-without-insurance' },
-  description: 'MRI cost without insurance in 2026 — cash prices by body part, why prices vary 5-10x, imaging centers vs hospitals, and how to find the lowest rate.',
+  description: 'MRI cost without insurance in 2026: cash prices run about $400 to $2,800 by body part, and freestanding imaging centers run 50-70% below hospital radiology.',
 };
 
 // Real PAA / long-tail questions, answered only from facts stated on this page.
