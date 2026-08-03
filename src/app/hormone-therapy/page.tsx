@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import Navigation from '@/components/Navigation';
 import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
+import MedicalDisclaimer from '@/components/MedicalDisclaimer';
 import HormoneProgramAggregate from '@/components/HormoneProgramAggregate';
 import PriceEstimateDisclaimer from '@/components/PriceEstimateDisclaimer';
 import { getStatesWithClinics, allHormoneClinics } from '@/data/hormone-clinics-index';
@@ -17,17 +18,20 @@ const hrtMedianLabel =
 
 export const metadata: Metadata = {
   title: hrtMedianLabel
-    ? { absolute: `Hormone Replacement Therapy (HRT) Clinics Near You: ${hrtMedianLabel}/mo Median` }
-    : { absolute: 'Hormone Replacement Therapy (HRT) Clinics Near You: Compare by State' },
+    ? { absolute: `Hormone Replacement Therapy Near You: ${hrtMedianLabel}/mo Median Cost` }
+    : { absolute: 'Hormone Replacement Therapy Near You: HRT & TRT Clinic Costs' },
   alternates: { canonical: '/hormone-therapy' },
   description: hrtMedianLabel
-    ? `Compare hormone replacement therapy (HRT) clinics near you. VitalityScout verified a ${hrtMedianLabel}/mo median across clinics that publish a price, plus TRT and hormone therapy cost by state.`
-    : 'Compare hormone replacement therapy (HRT & TRT) clinics near you. Find in-person providers by state and city plus telehealth options, with typical cash-pay costs.',
+    ? `Compare hormone replacement therapy clinics near you. VitalityScout verified a ${hrtMedianLabel}/mo median across HRT and TRT clinics that publish a price, by state.`
+    : 'Compare hormone replacement therapy clinics near you. Find HRT and TRT providers by state plus national telehealth, and what each monthly price includes.',
 };
 
-// Cost + near-me FAQ — targets "hormone therapy cost" and "hrt near me" question
-// queries, mirrors the sibling money pages (/trt, /guides/trt-cost) that already
-// ship FAQPage schema, and feeds the AI-Overview / PAA capture surface.
+// Cost + near-me FAQ — targets "hormone replacement therapy", "hrt for women",
+// "trt clinic", "hormone therapy near me", and "testosterone therapy cost",
+// phrased the way those queries are typed. Mirrors the sibling money pages
+// (/trt, /guides/trt-cost) that already ship FAQPage schema, and feeds the
+// AI-Overview / PAA capture surface. Every answer is drawn from content already
+// published on this site; every price answer keeps the verify-with-provider hedge.
 const FAQ_ITEMS = [
   {
     question: 'How much does hormone replacement therapy cost per month?',
@@ -36,14 +40,24 @@ const FAQ_ITEMS = [
       : 'National telehealth HRT and TRT programs commonly run about $99–$249/mo, and local clinics often more, depending on what is bundled. A membership-only fee bills the medication separately, while an all-in program folds the hormones, supplies, and visits into one number. Most clinics quote only after a consult, so confirm the current figure and what it includes before committing.',
   },
   {
-    question: 'How much does TRT cost vs HRT?',
+    question: 'How much does testosterone therapy cost?',
     answer:
-      'TRT (testosterone replacement, most common in men) and broader HRT (estrogen, progesterone, and testosterone optimization, common in perimenopause and menopause) overlap on price. Standard telehealth TRT commonly runs about $99–$249/mo; comprehensive HRT and bioidentical-pellet protocols can run higher because more hormones and in-office procedures are involved. See our verified TRT cost breakdown for the per-clinic table.',
+      'TRT (testosterone replacement, most common in men) and broader HRT (estrogen, progesterone, and testosterone optimization, common in perimenopause and menopause) overlap on price. Standard telehealth TRT commonly runs about $99–$249/mo; comprehensive HRT and bioidentical-pellet protocols can run higher because more hormones and in-office procedures are involved. Labs are frequently an added cost either way, and a low membership fee that excludes medication can cost more all-in than a mid-priced all-inclusive program. See our verified TRT cost breakdown for the per-clinic table.',
   },
   {
     question: 'How do I find hormone replacement therapy near me?',
     answer:
       'Browse the local clinics by state below to find in-person HRT and TRT providers near you, or compare national telehealth clinics that run at-home labs and ship medication to your door. In-person clinics make sense for pellet insertion, physical exams, and complex optimization; telehealth is usually the lower-friction, lower-cost path for standard testosterone or hormone replacement.',
+  },
+  {
+    question: 'What is HRT for women, and what does it cost?',
+    answer:
+      'For women in perimenopause and menopause, hormone replacement therapy usually means estradiol plus micronized progesterone, prescribed to manage symptoms such as hot flashes and sleep disruption. Per ACOG and The Menopause Society, the distinction that matters most is FDA-approved versus compounded: many FDA-approved products are already bioidentical, while custom compounded bioidentical therapy is not FDA-regulated for quality or dosing. FDA-approved options such as generic estradiol and micronized progesterone commonly run roughly $15–$75/mo cash and are often covered by insurance; compounded therapy and pellets are typically cash-pay and higher, often several hundred dollars per pellet insertion. These are typical ranges that vary by pharmacy, dose, and clinic. Which therapy is appropriate is a clinical decision for a licensed clinician.',
+  },
+  {
+    question: 'How do I choose a TRT clinic?',
+    answer:
+      'Judge a TRT clinic on monitoring and on what the price includes, not on the headline number. Ask whether baseline and follow-up bloodwork are included, who the prescribing clinician is and whether they are licensed in your state, whether the medication and injection supplies are in the monthly fee, and how side effects such as elevated hematocrit or estradiol are managed. Per the American Urological Association and Endocrine Society guidelines, testosterone therapy is for men with symptoms plus consistently low levels confirmed on two separate morning blood tests, with the AUA using a total testosterone threshold of 300 ng/dL. A clinic that will prescribe without confirmatory labs is a flag. This page is information, not medical advice.',
   },
   {
     question: 'Is telehealth or a local HRT clinic better?',
@@ -108,7 +122,7 @@ export default function HormoneTherapyHub() {
     name: 'Hormone Therapy Clinics Directory',
     description: 'Find TRT and HRT clinics across the United States. Compare telehealth and local options.',
     author: { '@type': 'Organization', name: 'VitalityScout' },
-    dateModified: '2026-07-21',
+    dateModified: '2026-08-03',
   };
   const faqSchema = buildFAQSchema(FAQ_ITEMS);
 
@@ -124,11 +138,14 @@ export default function HormoneTherapyHub() {
         <div className="mx-auto max-w-4xl text-center">
           <span className="text-5xl mb-4 block">💪</span>
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            Hormone Therapy Clinics
+            Hormone Replacement Therapy (HRT) &amp; TRT Clinics Near You
           </h1>
           <p className="text-xl text-gray-600 mb-6">
-            Find TRT and HRT clinics near you. Compare telehealth options with local in-person clinics
-            for testosterone replacement, bioidentical hormones, and comprehensive hormone optimization.
+            Testosterone therapy for men, HRT for women in perimenopause and menopause, and comprehensive
+            hormone optimization. Compare local clinics by state or national telehealth.
+            {hrtMedianLabel
+              ? ` VitalityScout verified a ${hrtMedianLabel}/mo median across the clinics that publish a monthly program price. Most publish none.`
+              : ' Most clinics publish no price at all and quote only after a consult.'}
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-sm">
             <span className="bg-purple-100 text-purple-800 px-4 py-2 rounded-full font-medium">
@@ -411,9 +428,63 @@ export default function HormoneTherapyHub() {
         </div>
       </section>
 
-      {/* FAQ — cost + near-me question queries, mirrored into FAQPage schema */}
+      {/* Cost & testing guides — in-context cluster links, mirroring the
+          /dexa-scans related-guides grid that earns this hub's sibling its CTR. */}
+      <section id="guides" className="mx-auto max-w-6xl px-4 py-12">
+        <h2 className="text-2xl font-bold text-gray-900 mb-2">Hormone Therapy Cost &amp; Testing Guides</h2>
+        <p className="text-gray-600 mb-8">
+          What each protocol costs cash-pay, how to test before you commit, and how the options compare.
+        </p>
+
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          {[
+            { slug: 'trt-cost', label: 'TRT Cost: Verified Per-Clinic Prices' },
+            { slug: 'hormone-pellet-therapy-cost', label: 'Hormone Pellet Therapy Cost' },
+            { slug: 'bioidentical-vs-traditional-hrt', label: 'Bioidentical vs Traditional HRT' },
+            { slug: 'online-menopause-treatment', label: 'Online Menopause Treatment & HRT' },
+            { slug: 'at-home-hormone-test', label: 'At-Home Hormone Test' },
+            { slug: 'at-home-testosterone-test', label: 'At-Home Testosterone Test' },
+            { slug: 'at-home-thyroid-test', label: 'At-Home Thyroid Test' },
+            { slug: 'trt-testosterone-therapy', label: 'Complete TRT Guide' },
+            { slug: 'best-online-trt-clinics', label: 'Best Online TRT Clinics' },
+          ].map((guide) => (
+            <Link
+              key={guide.slug}
+              href={`/guides/${guide.slug}`}
+              className="block bg-white rounded-lg border border-gray-200 p-4 hover:border-purple-400 hover:shadow-lg transition-all"
+            >
+              <span className="text-sm font-medium text-purple-600">{guide.label} →</span>
+            </Link>
+          ))}
+        </div>
+
+        <h3 className="text-lg font-bold text-gray-900 mt-10 mb-2">If you are also on a GLP-1</h3>
+        <p className="text-gray-600 mb-6">
+          Many people arrive at hormone therapy from a weight-loss program. These guides cover the overlap:
+          how much of GLP-1 weight loss comes from lean mass, and what the medications cost cash-pay.
+        </p>
+
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          {[
+            { slug: 'glp1-and-muscle-loss', label: 'GLP-1 & Muscle Loss: Protecting Lean Mass' },
+            { slug: 'glp1-weight-loss-complete-guide', label: 'GLP-1 Weight Loss: Complete Guide' },
+            { slug: 'semaglutide-cost', label: 'Semaglutide Cost' },
+          ].map((guide) => (
+            <Link
+              key={guide.slug}
+              href={`/guides/${guide.slug}`}
+              className="block bg-white rounded-lg border border-gray-200 p-4 hover:border-purple-400 hover:shadow-lg transition-all"
+            >
+              <span className="text-sm font-medium text-purple-600">{guide.label} →</span>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* FAQ — head-query phrasing (cost, near me, HRT for women, TRT clinic),
+          mirrored byte-for-byte into FAQPage schema */}
       <section className="mx-auto max-w-4xl px-4 py-12">
-        <h2 className="text-2xl font-bold text-gray-900 mb-6">Hormone Therapy Cost &amp; Near-You FAQ</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">Hormone Replacement Therapy FAQ: Cost, Clinics &amp; What to Ask</h2>
         <div>
           {FAQ_ITEMS.map((item) => (
             <details key={item.question} className="group border-b border-gray-200 py-5">
@@ -453,6 +524,7 @@ export default function HormoneTherapyHub() {
         </div>
       </section>
 
+      <MedicalDisclaimer />
       </SidebarShell>
       <Footer />
     </main>

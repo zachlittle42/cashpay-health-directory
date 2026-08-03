@@ -7,10 +7,10 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: { absolute: 'CT Scan Cost Without Insurance (2026): Cash-Pay Prices' },
+  title: { absolute: 'CT Scan Cost Without Insurance (2026): Prices by Body Part' },
   alternates: { canonical: 'https://vitalityscout.com/guides/ct-scan-cost-without-insurance' },
   description:
-    'CT scan cost without insurance in 2026 by body part — head, chest, abdomen — plus imaging center vs hospital pricing, cash-pay programs, and how to save.',
+    'CT scan cost without insurance in 2026: about $300-$1,000 at an imaging center vs $1,200-$3,275 at a hospital, plus head, chest and abdomen prices.',
 };
 
 // Real PAA / long-tail questions, answered only from facts stated on this page.

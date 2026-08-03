@@ -8,9 +8,9 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: { absolute: 'How to Read DEXA Scan Results: Body Comp & Bone Guide' },
+  title: { absolute: 'How to Read DEXA Scan Results: T-Scores, Body Fat, VAT' },
   alternates: { canonical: 'https://vitalityscout.com/guides/how-to-read-dexa-results' },
-  description: 'How to read DEXA scan results — body-fat %, lean mass, visceral fat (VAT), and T-scores vs Z-scores explained, with the real reference ranges to look for.',
+  description: 'How to read DEXA scan results: body-fat bands, visceral fat area (100-159 cm2 is increased risk), and T-score vs Z-score with the WHO -2.5 threshold.',
 };
 
 // Real conversational / People-Also-Ask questions, answered only from facts

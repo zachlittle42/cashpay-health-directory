@@ -7,10 +7,10 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Full Body MRI Scan Cost (2026): Prenuvo, Ezra, SimonMed' },
+  title: { absolute: 'Full Body MRI Scan Cost (2026): Prenuvo $2,499, Ezra $999' },
   alternates: { canonical: 'https://vitalityscout.com/guides/full-body-mri-scan-cost' },
   description:
-    'Full body MRI scan cost in 2026 — Prenuvo, Ezra and SimonMed cash prices compared, what each scans, the evidence and controversy, and is it worth it.',
+    'Full body MRI scan cost in 2026: Prenuvo $2,499, Ezra $999, SimonMed Core $899. What each scan covers, and the evidence on screening healthy adults.',
 };
 
 // Real PAA / long-tail questions, answered only from facts stated on this page.

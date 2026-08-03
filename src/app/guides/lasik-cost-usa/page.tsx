@@ -8,10 +8,10 @@ import MedicalDisclaimer from '@/components/MedicalDisclaimer';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: { absolute: 'LASIK Cost Without Insurance in the US (2026)' },
+  title: { absolute: 'LASIK Cost Without Insurance (2026): $2,250 Per Eye Average' },
   alternates: { canonical: 'https://vitalityscout.com/guides/lasik-cost-usa' },
   description:
-    'LASIK cost without insurance in the US: per-eye prices, LASIK vs PRK vs SMILE vs ICL, financing & HSA/FSA, and how to vet a surgeon before you book.',
+    'LASIK cost without insurance: about $2,250 per eye and $4,492 for both eyes, what a flat fee covers, LASIK vs PRK vs SMILE vs ICL, and HSA/FSA and financing.',
 };
 
 // Real conversational / People-Also-Ask questions, answered only from facts

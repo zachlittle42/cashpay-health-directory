@@ -6,9 +6,9 @@ import type { Metadata } from 'next';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Stem Cell Therapy in Mexico: Clinics, Costs & What to Know (2024)' },
+  title: { absolute: 'Stem Cell Therapy in Mexico: Costs From $3,500 & Clinics' },
   alternates: { canonical: 'https://vitalityscout.com/guides/mexico-stem-cell-guide' },
-  description: 'Complete guide to stem cell therapy in Mexico. Tijuana, Los Cabos, Cancun clinics. Costs from $3,500. What treatments are available, safety considerations, and how to choose a clinic.',
+  description: 'Stem cell therapy in Mexico costs $3,500 to $15,000 by treatment. Clinics in Tijuana, Los Cabos, Puerto Vallarta and Cancun, COFEPRIS rules, and how to vet one.',
 };
 
 export default function MexicoStemCellGuide() {

@@ -8,9 +8,9 @@ import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
-  title: { absolute: 'BodySpec Cost (2026): DEXA Scan Prices & Membership' },
+  title: { absolute: 'BodySpec DEXA Scan Cost (2026): From $40, Plans $39.95' },
   alternates: { canonical: 'https://vitalityscout.com/guides/bodyspec-dexa-scan-cost' },
-  description: 'What a BodySpec DEXA scan costs in 2026: one-time scans from ~$40 (baseline ~$59.95), $39.95/mo & $49.95/qtr memberships, and how it compares.',
+  description: 'BodySpec DEXA scan cost in 2026: one-time scans from about $40 ($59.95 baseline), memberships at $39.95/mo or $49.95/qtr, vs $150-$300 at a hospital.',
 };
 
 // Real conversational / People-Also-Ask questions, answered only from facts

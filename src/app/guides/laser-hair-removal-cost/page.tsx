@@ -6,9 +6,9 @@ import MedicalDisclaimer from '@/components/MedicalDisclaimer';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: { absolute: 'How Much Does Laser Hair Removal Cost? (2026)' },
+  title: { absolute: 'Laser Hair Removal Cost (2026): $50-$400 per Session' },
   alternates: { canonical: 'https://vitalityscout.com/guides/laser-hair-removal-cost' },
-  description: 'How much does laser hair removal cost in 2026? A clear guide to per-session and full-package pricing by body area, why it takes a series of sessions, and what affects price.',
+  description: 'How much does laser hair removal cost in 2026? About $50-$400 per session and $200-$2,500+ per package by body area, plus why it takes a series of visits.',
   keywords: ['laser hair removal cost', 'how much does laser hair removal cost', 'laser hair removal price', 'laser hair removal per session', 'Milan Laser cost', 'laser hair removal packages', 'laser hair removal cost by area', 'unlimited laser hair removal'],
 };
 

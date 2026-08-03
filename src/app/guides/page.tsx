@@ -11,6 +11,70 @@ export const metadata: Metadata = {
 };
 
 const guides = [
+  // GLP-1 intent cluster (2026-08-03): dosing / side-effects / comparison / medication-list
+  // pages targeting the 254-query, ~699K-imp/13wk Bing demand pocket with 0% prior coverage.
+  {
+    slug: 'glp1-medications-list',
+    title: 'GLP-1 Medications: The Complete 2026 List',
+    description:
+      'Every FDA-approved GLP-1 and dual GIP/GLP-1 medication in the US mapped generic name to brand names to approved indication to form: semaglutide (Ozempic, Wegovy, Rybelsus), tirzepatide (Mounjaro, Zepbound), liraglutide, dulaglutide, exenatide, and orforglipron (Foundayo).',
+    category: 'Telehealth',
+    readTime: '14 min',
+    icon: '💊',
+  },
+  {
+    slug: 'tirzepatide-dosing-guide',
+    title: 'Tirzepatide Dosing (2026): The FDA Label Schedules Explained',
+    description:
+      'What the FDA labels for Zepbound and Mounjaro specify about tirzepatide dosing — the 2.5 mg start, 4-week 2.5 mg escalation steps, maintenance ranges, the missed-dose rule, and vials vs pens vs KwikPens.',
+    category: 'Telehealth',
+    readTime: '13 min',
+    icon: '💊',
+  },
+{
+    slug: 'semaglutide-dosing-guide',
+    title: 'Semaglutide Dosing Guide (2026): Ozempic, Wegovy & Rybelsus Schedules',
+    description:
+      'The FDA label titration for every semaglutide product side by side: Ozempic 0.25 to 2 mg weekly, Wegovy 0.25 to 2.4 mg over 16 weeks, Rybelsus 3 to 14 mg daily, plus the oral tablets and what compounded semaglutide does not have.',
+    category: 'Procedure Guide',
+    readTime: '13 min',
+    icon: '💉',
+  },
+  {
+    slug: 'ozempic-side-effects',
+    title: 'Ozempic & Semaglutide Side Effects: FDA Label Data Explained',
+    description:
+      'Ozempic side effects exactly as the FDA label reports them — nausea 15.8-20.3% vs 6.1% on placebo, the boxed thyroid warning, how Wegovy and Rybelsus differ, and the shared GLP-1 class profile.',
+    category: 'Telehealth',
+    readTime: '13 min',
+    icon: '💊',
+  },
+  {
+    slug: 'tirzepatide-side-effects',
+    title: 'Tirzepatide Side Effects (2026): FDA Label Data Explained',
+    description:
+      'Tirzepatide side effects read straight from the Mounjaro and Zepbound FDA labels — per-dose rates for nausea (25-29%), diarrhea, vomiting and constipation, the thyroid C-cell boxed warning, the pancreatitis/gallbladder/kidney/hypoglycemia warnings, why the titration schedule exists, and when the label says to seek care.',
+    category: 'Telehealth',
+    readTime: '13 min',
+    icon: '💉',
+  },
+  {
+    slug: 'semaglutide-vs-tirzepatide',
+    title: 'Semaglutide vs Tirzepatide: Mechanism, Labels & Cost (2026)',
+    description:
+      'Semaglutide vs tirzepatide compared — GLP-1 vs dual GIP/GLP-1 mechanism, the brand-by-brand FDA indication map (Ozempic, Wegovy, Rybelsus, Mounjaro, Zepbound), head-to-head SURMOUNT-5 and SURPASS-2 results, label dosing, cost routes, and where investigational retatrutide fits.',
+    category: 'Comparison',
+    readTime: '14 min',
+    icon: '⚖️',
+  },
+  {
+    slug: 'glp1-pill-guide',
+    title: 'GLP-1 Pills (2026): Every FDA-Approved Oral Option',
+    description: 'The four FDA-approved GLP-1 pills — Ozempic tablets and Rybelsus for type 2 diabetes, the Wegovy pill and Foundayo (orforglipron) for weight management — with label indications, the dose ladders the FDA labels specify, the empty-stomach rules for oral semaglutide, and published self-pay prices.',
+    category: 'Telehealth',
+    readTime: '13 min',
+    icon: '💊',
+  },
   // Verified-price money guides + med-spa/HRT comparisons (2026-07-21): de-orphaned
   // into the hub so the strongest cost/comparison pages accrue hub link equity.
   {
