@@ -11,6 +11,62 @@ export const metadata: Metadata = {
 };
 
 const guides = [
+  // Brand-cost + savings-card batch (2026-08-21): GLP-1 brand cost pages (~120K imp/13wk
+  // coupon/savings cluster, zero prior coverage) + cash-pay procedure family additions.
+{
+    slug: 'zepbound-cost',
+    title: 'Zepbound Cost (2026): With Insurance, Without & Savings Card',
+    description:
+      'What Zepbound costs in 2026 — the LillyDirect self-pay ladder ($299 for 2.5 mg, $399 for 5 mg, $449 for 7.5-15 mg with a 45-day refill), what the Zepbound Savings Card terms actually promise and cap, who the government-insurance exclusion locks out, and the cheaper routes to compare.',
+    category: 'Cost Guide',
+    readTime: '12 min',
+    icon: '💉',
+  },
+  {
+    slug: 'wegovy-cost',
+    title: 'Wegovy Cost (2026): With Insurance, Without, and the Savings Offer',
+    description:
+      'What Wegovy costs in 2026 — the $1,349.02/package list price, NovoCare Pharmacy self-pay prices for the pen ($199 intro, then $349-$399/mo) and the new Wegovy tablets ($149-$299/mo by strength), the Wegovy Savings Offer and its $100/month cap, and why Medicare and Medicaid patients are excluded from the copay card.',
+    category: 'Cost Guide',
+    readTime: '12 min',
+    icon: '💊',
+  },
+{
+    slug: 'mounjaro-cost',
+    title: 'Mounjaro Cost (2026): Savings Card, Coupons & Cash Price',
+    description:
+      'What Mounjaro costs at every tier — the $1,079.77 list price, the Mounjaro Savings Card terms ($25 with coverage, $499 without), who the terms exclude, LillyDirect self-pay, and why Mounjaro is FDA-approved for type 2 diabetes only.',
+    category: 'Cost Guide',
+    readTime: '12 min',
+    icon: '💉',
+  },
+{
+    slug: 'ozempic-cost',
+    title: 'Ozempic Cost (2026): $25 With Card, $149-$499 Self-Pay',
+    description:
+      'What Ozempic actually costs in 2026 — the $1,027.51 list price, the Ozempic Savings Card’s $25/month offer and its $100 monthly cap, NovoCare self-pay pricing from $149/month for the pill to $499/month for the 2 mg pen, and why the weight-loss version is a different product.',
+    category: 'Cost Guide',
+    readTime: '12 min',
+    icon: '💉',
+  },
+{
+    slug: 'colonoscopy-cost-without-insurance',
+    title: 'Colonoscopy Cost Without Insurance (2026): Cash-Pay Prices',
+    description:
+      'Colonoscopy cost without insurance in 2026 — MDsave bundled self-pay prices ($1,243-$4,142), the hospital vs ambulatory surgery center facility-fee spread ($1,530 vs $989), the four bills a quote must cover, the screening-vs-diagnostic polyp gotcha, and how FIT and stool-DNA alternatives compare.',
+    category: 'Cost Guide',
+    readTime: '12 min',
+    icon: '🩺',
+  },
+  {
+    slug: 'urgent-care-cost-without-insurance',
+    title: 'Urgent Care Cost Without Insurance (2026): Visit Prices Explained',
+    description:
+      'Urgent care cost without insurance in 2026 — published self-pay visit prices from GoHealth ($120-$350) and AFC, what x-rays, labs and stitches add, and how urgent care compares to the ER, telehealth and retail clinics.',
+    category: 'Cost Guide',
+    readTime: '11 min',
+    icon: '🏥',
+  },
   // GLP-1 intent cluster (2026-08-03): dosing / side-effects / comparison / medication-list
   // pages targeting the 254-query, ~699K-imp/13wk Bing demand pocket with 0% prior coverage.
   {
