@@ -130,7 +130,7 @@ export default async function CityDexa({ params }: Props) {
       <section className="bg-gradient-to-b from-blue-50 to-white px-4 py-12">
         <div className="mx-auto max-w-4xl">
           <div className="flex flex-wrap gap-2 text-sm text-gray-500 mb-4">
-            <Link href="/dexa" className="hover:text-blue-600">DEXA Scans</Link>
+            <Link href="/dexa-scans" className="hover:text-blue-600">DEXA Scans</Link>
             <span>/</span>
             <Link href="/dexa-scans" className="hover:text-blue-600">Find Near You</Link>
             <span>/</span>
@@ -308,7 +308,7 @@ export default async function CityDexa({ params }: Props) {
               BodySpec vs DexaFit →
             </Link>
             <Link
-              href="/dexa"
+              href="/dexa-scans"
               className="inline-block px-4 py-2 border border-blue-300 text-blue-700 rounded-lg hover:bg-blue-100 font-medium"
             >
               Compare DEXA Nationally →

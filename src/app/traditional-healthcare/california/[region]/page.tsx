@@ -213,7 +213,7 @@ export default function CaliforniaRegionPage({
               At-Home Lab Testing
             </Link>
             <Link
-              href="/dexa"
+              href="/dexa-scans"
               className="inline-block rounded-lg bg-blue-600 px-6 py-3 font-medium text-white hover:bg-blue-700"
             >
               DEXA Scans

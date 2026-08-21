@@ -150,7 +150,10 @@ function buildDynamicUrls(): string[] {
   const urls: string[] = [];
 
   // [category] — every key in CATEGORIES renders a page (incl. "coming soon").
+  // 'dexa' excluded 2026-08-20: it 301s to /dexa-scans (intent consolidation) and
+  // redirected URLs don't belong in the sitemap.
   for (const category of Object.keys(CATEGORIES)) {
+    if (category === 'dexa') continue;
     urls.push(`/${category}`);
   }
 

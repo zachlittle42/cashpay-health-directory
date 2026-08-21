@@ -421,6 +421,46 @@ export default function FunctionHealthReview() {
               </div>
             </div>
           </Link>
+
+          <Link href="/price-index" className="block bg-white rounded-lg border border-gray-200 p-5 hover:shadow-lg transition-shadow">
+            <div className="flex items-center gap-3">
+              <span className="text-2xl">📊</span>
+              <div>
+                <div className="font-bold text-gray-900">Cash-Pay Price Index</div>
+                <div className="text-sm text-gray-600">Verified median prices across every category we track</div>
+              </div>
+            </div>
+          </Link>
+
+          <Link href="/guides/full-body-mri-scan-cost" className="block bg-white rounded-lg border border-gray-200 p-5 hover:shadow-lg transition-shadow">
+            <div className="flex items-center gap-3">
+              <span className="text-2xl">🧲</span>
+              <div>
+                <div className="font-bold text-gray-900">Full-Body MRI Scan Cost</div>
+                <div className="text-sm text-gray-600">What screening MRIs cost and who they fit</div>
+              </div>
+            </div>
+          </Link>
+
+          <Link href="/guides/lasik-cost-usa" className="block bg-white rounded-lg border border-gray-200 p-5 hover:shadow-lg transition-shadow">
+            <div className="flex items-center gap-3">
+              <span className="text-2xl">👁️</span>
+              <div>
+                <div className="font-bold text-gray-900">LASIK Cost in the US</div>
+                <div className="text-sm text-gray-600">Per-eye cash prices and how to compare quotes</div>
+              </div>
+            </div>
+          </Link>
+
+          <Link href="/guides/ro-body-weight-loss-cost" className="block bg-white rounded-lg border border-gray-200 p-5 hover:shadow-lg transition-shadow">
+            <div className="flex items-center gap-3">
+              <span className="text-2xl">⚖️</span>
+              <div>
+                <div className="font-bold text-gray-900">Ro Body Weight Loss Cost</div>
+                <div className="text-sm text-gray-600">What the Ro Body GLP-1 program costs per month</div>
+              </div>
+            </div>
+          </Link>
         </div>
       </section>
 

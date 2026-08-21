@@ -174,7 +174,7 @@ export default function LongevityPerformanceHub() {
             <div className="mb-1 font-semibold text-gray-900">At-Home Lab Testing</div>
             <div className="text-sm text-gray-600">The biomarkers behind longevity tracking</div>
           </Link>
-          <Link href="/dexa" className="rounded-lg border border-gray-200 p-6 hover:shadow-md transition-shadow">
+          <Link href="/dexa-scans" className="rounded-lg border border-gray-200 p-6 hover:shadow-md transition-shadow">
             <div className="mb-1 font-semibold text-gray-900">DEXA Body Composition</div>
             <div className="text-sm text-gray-600">Measure fat, muscle, and bone precisely</div>
           </Link>

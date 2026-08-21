@@ -8,6 +8,7 @@ import { Search, Menu, X } from 'lucide-react';
 
 const UTILITY_LINKS = [
   { href: '/guides', label: 'Guides' },
+  { href: '/price-index', label: 'Price Index' },
   { href: '/medical-tourism', label: 'Medical Tourism' },
   { href: '/traditional-healthcare', label: 'By State' },
 ];
