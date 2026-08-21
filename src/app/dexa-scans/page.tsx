@@ -8,6 +8,31 @@ import PriceAggregate from '@/components/PriceAggregate';
 import PriceEstimateDisclaimer from '@/components/PriceEstimateDisclaimer';
 import { getDexaStatesWithClinics, allDexaClinics } from '@/data/dexa-clinics-index';
 import { getNationalDexaStats, getStandardDexaAsOf } from '@/lib/pricing';
+import { buildFAQSchema } from '@/lib/jsonLd';
+
+// Ported from the retired /dexa category page (301 → here, 2026-08-20) so the
+// consolidated URL keeps the FAQ content Google was already surfacing there.
+// Answers grounded in live provider data (src/lib/providers-telehealth.ts);
+// prices are estimates to confirm with the provider. Visible FAQ mirrors this
+// schema exactly.
+const FAQ_ITEMS = [
+  {
+    question: 'How much does a DEXA scan cost without insurance?',
+    answer: 'A cash-pay DEXA body-composition scan typically costs about $40-150. Budget providers like BodySpec charge roughly $40-45 per scan (and lower with a membership), while full-service providers like DexaFit run about $100-150 per scan, sometimes bundled with VO2 max or RMR testing. Prices vary by city and location — confirm current pricing directly with the provider.',
+  },
+  {
+    question: 'Is a DEXA scan covered by insurance?',
+    answer: 'DEXA scans for bone-density (osteoporosis) screening are often covered when medically indicated, but DEXA scans ordered purely for body-composition or fitness tracking are generally not covered and are paid cash. Most body-composition scans listed here are cash-pay. Check with your insurer and the provider before booking.',
+  },
+  {
+    question: 'What does a DEXA scan measure?',
+    answer: 'A DEXA (DXA) scan measures body composition — total and regional body fat, lean muscle mass, visceral fat, and bone density. It is more precise than BMI or bathroom scales because it separates fat, muscle, and bone rather than estimating from weight and height.',
+  },
+  {
+    question: 'How often should I get a DEXA scan?',
+    answer: 'For body-composition tracking, many people scan once every 3-6 months to see meaningful changes in fat and muscle. Scanning more often than quarterly rarely shows change beyond normal measurement variation. Talk to a clinician about the right cadence for bone-density screening.',
+  },
+];
 
 export const metadata: Metadata = {
   title: 'DEXA Scan Near Me: Body Fat & Bone Density',
@@ -60,7 +85,12 @@ export default function DexaScansHub() {
     name: 'DEXA Scan Clinics Directory',
     description: 'Find DEXA scan and body-composition clinics near you across the United States.',
     author: { '@type': 'Organization', name: 'VitalityScout' },
-    dateModified: '2026-06-10',
+    dateModified: '2026-08-20',
+  };
+  const faqSchema = {
+    ...buildFAQSchema(FAQ_ITEMS),
+    '@id': 'https://vitalityscout.com/dexa-scans#faq',
+    url: 'https://vitalityscout.com/dexa-scans',
   };
 
   return (
@@ -68,6 +98,7 @@ export default function DexaScansHub() {
       <Navigation />
       <SidebarShell>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* Hero */}
       <section className="bg-gradient-to-b from-blue-50 to-white px-4 py-16">
@@ -93,10 +124,10 @@ export default function DexaScansHub() {
           </div>
           <div className="mt-8">
             <Link
-              href="/dexa"
+              href="/guides/cheapest-dexa-scan"
               className="inline-block text-sm font-medium text-blue-600 hover:text-blue-700"
             >
-              Or compare DEXA providers nationally on our /dexa page →
+              Not sure where to start? Read the cheapest-DEXA-scan guide →
             </Link>
           </div>
         </div>
@@ -144,7 +175,7 @@ export default function DexaScansHub() {
           </div>
         ) : (
           <p className="text-gray-600">City directories are being built. Check the national comparison on{' '}
-            <Link href="/dexa" className="text-blue-600 hover:underline">/dexa</Link> in the meantime.
+            <Link href="/dexa-scans" className="text-blue-600 hover:underline">/dexa</Link> in the meantime.
           </p>
         )}
 
@@ -197,7 +228,7 @@ export default function DexaScansHub() {
         </p>
 
         <div className="grid gap-6 md:grid-cols-3">
-          <Link href="/dexa" className="block bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow">
+          <Link href="/dexa-scans" className="block bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow">
             <span className="text-3xl mb-3 block">📊</span>
             <h3 className="font-bold text-gray-900 mb-2">DEXA Provider Comparison</h3>
             <p className="text-sm text-gray-600 mb-3">
@@ -257,6 +288,22 @@ export default function DexaScansHub() {
               </Link>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* FAQ — mirrors the FAQPage schema exactly */}
+      <section className="px-4 py-12 bg-gray-50">
+        <div className="mx-auto max-w-4xl">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">DEXA Scan FAQ</h2>
+          {FAQ_ITEMS.map((item) => (
+            <details key={item.question} className="group border-b border-gray-200 py-5">
+              <summary className="flex cursor-pointer items-start justify-between text-lg font-semibold text-gray-900 hover:text-blue-600">
+                <span className="pr-4">{item.question}</span>
+                <span className="text-blue-600 group-open:rotate-180 transition-transform">▼</span>
+              </summary>
+              <p className="mt-3 text-gray-700">{item.answer}</p>
+            </details>
+          ))}
         </div>
       </section>
 

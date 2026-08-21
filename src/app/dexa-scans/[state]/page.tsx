@@ -209,7 +209,7 @@ export default async function StateDexa({ params }: Props) {
               BodySpec vs DexaFit
             </Link>
             <Link
-              href="/dexa"
+              href="/dexa-scans"
               className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 text-sm font-medium"
             >
               Compare DEXA Nationally

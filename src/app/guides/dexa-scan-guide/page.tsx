@@ -294,7 +294,7 @@ export default function DexaScanGuide() {
             Compare BodySpec, DexaFit, and other providers. Filter by your city.
           </p>
           <Link
-            href="/dexa"
+            href="/dexa-scans"
             className="inline-block rounded-lg bg-green-600 px-8 py-4 text-lg font-medium text-white hover:bg-green-700"
           >
             View DEXA Providers →

@@ -7,9 +7,11 @@ interface EmailCaptureCardProps {
   title: string;
   description: string;
   source: string;
+  /** Button label. Default promotes the compounding offer: the monthly price report. */
+  cta?: string;
 }
 
-export default function EmailCaptureCard({ title, description, source }: EmailCaptureCardProps) {
+export default function EmailCaptureCard({ title, description, source, cta = 'Get the Free Price Report' }: EmailCaptureCardProps) {
   const [state, setState] = useState<FormState>({ success: false });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const hasTrackedStart = useRef(false);
@@ -104,7 +106,7 @@ export default function EmailCaptureCard({ title, description, source }: EmailCa
                 Sending...
               </>
             ) : (
-              'Get the Guide'
+              cta
             )}
           </button>
         </div>
@@ -114,7 +116,9 @@ export default function EmailCaptureCard({ title, description, source }: EmailCa
         <p className="mt-3 text-sm text-red-600">{state.error}</p>
       )}
 
-      <p className="mt-3 text-xs text-gray-500">No spam, unsubscribe anytime.</p>
+      <p className="mt-3 text-xs text-gray-500">
+        Includes the monthly Cash-Pay Price Report — verified median prices across clinics that publish pricing. No spam, unsubscribe anytime.
+      </p>
     </div>
   );
 }

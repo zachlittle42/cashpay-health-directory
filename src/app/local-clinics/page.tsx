@@ -92,7 +92,7 @@ export default function LocalClinicsHub() {
 
           <div className="grid gap-6 md:grid-cols-2">
             <Link
-              href="/dexa"
+              href="/dexa-scans"
               className="group bg-white rounded-lg border-2 border-gray-200 p-6 hover:border-green-400 hover:shadow-lg transition-all"
             >
               <div className="text-4xl mb-3">📊</div>
