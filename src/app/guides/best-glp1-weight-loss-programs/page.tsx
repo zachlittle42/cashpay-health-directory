@@ -358,7 +358,11 @@ export default function BestGlp1WeightLossPrograms() {
               rate around $20/month for the first three months, then about $74/month on a 12-month
               plan (up to ~$149/month if you go month-to-month). GLP-1 medication is billed separately,
               though some non-GLP-1 orals are included in the membership. Good fit if you want the
-              brand&apos;s coaching ecosystem plus help working your insurance.
+              brand&apos;s coaching ecosystem plus help working your insurance. See also:{' '}
+              <Link href="/guides/noom-vs-weightwatchers-cost" className="text-emerald-700 underline">
+                Noom vs WeightWatchers cost (2026)
+              </Link>
+              .
             </p>
 
             <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">Found — compounded value + insurance for visits</h3>

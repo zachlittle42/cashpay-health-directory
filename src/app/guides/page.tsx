@@ -235,9 +235,9 @@ const guides = [
   },
   {
     slug: 'online-therapy-cost',
-    title: 'Online Therapy Cost Without Insurance (2026 Guide)',
+    title: 'Online Therapy Cost (2026): BetterHelp $70-$100/Week',
     description:
-      'What online therapy costs without insurance in 2026 — BetterHelp (~$70-$100/wk), Talkspace (~$99/wk), Brightside ($95-$349/mo) & Open Path ($40-$70/session) on per-session vs subscription pricing, plus HSA/FSA and how to find affordable care.',
+      'What online therapy costs without insurance in 2026 — BetterHelp $70–$100/wk, Talkspace $69–$109/wk, Brightside $95–$349/mo, and Open Path $40–$70/session. Official prices as of September 2026.',
     category: 'Comparison',
     readTime: '11 min',
     icon: '🧠',
@@ -658,6 +658,15 @@ const guides = [
     category: 'Comparison',
     readTime: '12 min',
     icon: '💊',
+  },
+  {
+    slug: 'noom-vs-weightwatchers-cost',
+    title: 'Noom vs WeightWatchers Cost (2026): What You’ll Actually Pay',
+    description:
+      'WW Core $10/mo intro vs Noom Weight $70–$209 and Noom Med $79–$299/mo. Compare app-only vs GLP-1 programs with official prices as of September 2026.',
+    category: 'Comparison',
+    readTime: '12 min',
+    icon: '⚖️',
   },
   {
     slug: 'ro-body-weight-loss-cost',
@@ -1105,8 +1114,8 @@ const guides = [
   },
   {
     slug: 'cheapest-blood-test-panels',
-    title: 'Cheapest Blood Test Panels (2026): Prices Compared',
-    description: 'The cheapest blood test panels you can buy without a doctor — Ulta Lab Tests, Labcorp OnDemand, Quest Health, SuperPower & Function Health pricing compared by panel type, with cash-pay and HSA/FSA tips.',
+    title: 'Cheapest Blood Test Panels (2026): Ulta From $23',
+    description: 'The cheapest blood test panels you can buy without a doctor — Ulta from $22.95, Labcorp OnDemand $29–$169, Quest Health $29–$399, Superpower $349/yr, Function $365/yr. Official prices as of September 2026.',
     category: 'Comparison',
     readTime: '10 min',
     icon: '💉',
@@ -1171,8 +1180,8 @@ const guides = [
   },
   {
     slug: 'quest-vs-labcorp-pricing',
-    title: 'Quest Diagnostics vs Labcorp Prices: Self-Pay Cost Guide',
-    description: 'Quest (questhealth.com) vs Labcorp (OnDemand) self-pay lab pricing compared—starting costs, panels, locations, turnaround, and how to decide which is cheaper for your test.',
+    title: 'Quest vs Labcorp Prices (2026): Self-Pay From $29',
+    description: 'Quest Health vs Labcorp OnDemand self-pay lab prices compared — CBC from $29 at both, CMP $49, panels $99–$399. Official prices as of September 2026.',
     category: 'Comparison',
     readTime: '9 min',
     icon: '🧪',
@@ -1237,8 +1246,8 @@ const guides = [
   // Longevity, performance & wellness expansion (2026-06)
   {
     slug: 'cgm-without-diabetes',
-    title: 'Continuous Glucose Monitor Without Diabetes (2026)',
-    description: 'How healthy people use OTC continuous glucose monitors (Stelo, Lingo, Levels) to see how food, exercise, and sleep move their glucose — what you learn, accuracy caveats, and costs.',
+    title: 'CGM Without Diabetes (2026): Stelo $89/Mo, Lingo From $54',
+    description: 'OTC CGMs for people without diabetes — Stelo $89/mo, Lingo from $54/2 weeks, Levels app + Stelo, Nutrisense from $179/mo. Official prices as of September 2026.',
     category: 'Longevity',
     readTime: '10 min',
     icon: '📈',
@@ -1261,8 +1270,8 @@ const guides = [
   },
   {
     slug: 'betterhelp-vs-talkspace',
-    title: 'BetterHelp vs Talkspace vs Brightside (2026)',
-    description: 'Online therapy and psychiatry compared — medication vs therapy-only, insurance coverage, format, and pricing — to help you pick the right platform.',
+    title: 'BetterHelp vs Talkspace Cost (2026): $70/Wk vs $69/Wk',
+    description: 'BetterHelp $70–$100/wk vs Talkspace $69–$109/wk vs Brightside $95–$349/mo. Therapy vs psychiatry compared with official prices as of September 2026.',
     category: 'Comparison',
     readTime: '10 min',
     icon: '🧠',
