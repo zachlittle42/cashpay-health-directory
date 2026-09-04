@@ -584,6 +584,13 @@ export default function CheapestGlp1WithoutInsurance() {
       {/* Related Guides */}
       <section className="mx-auto max-w-4xl px-4 py-12">
         <h2 className="text-2xl font-bold text-gray-900 mb-6">Related Guides</h2>
+        <p className="text-gray-700 mb-6">
+          Comparing app-only programs to clinical GLP-1s? See{' '}
+          <Link href="/guides/noom-vs-weightwatchers-cost" className="text-emerald-700 underline">
+            Noom vs WeightWatchers cost (2026)
+          </Link>
+          .
+        </p>
 
         <div className="grid gap-4 md:grid-cols-2">
           <Link href="/guides/cheapest-way-to-get-semaglutide" className="block bg-white rounded-lg border border-gray-200 p-5 hover:shadow-lg transition-shadow">

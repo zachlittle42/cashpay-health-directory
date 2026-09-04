@@ -19,6 +19,11 @@
 - Guides index: de-orphaned existing cost/financing pages (Mexico/Costa Rica dental & bariatric prices, TRT cost, HSA/tax/paying cluster, insurance-abroad pages) plus the three new slugs
 - Scope limit: no sitewide hospital-average hub rewrites; honest US cash comparators (SCO knee $17,679, US sleeve bundles ~$9,995) only on the map page
 
+### 2026-09-04 Content batch 2 — monetization cluster (pending ship)
+- Refreshed official prices as of September 4, 2026 on Quest vs Labcorp, cheapest blood-test panels, online therapy cost, BetterHelp vs Talkspace, and CGM without diabetes
+- New money guide: `/guides/noom-vs-weightwatchers-cost` (WW Core/Core+/Med+ vs Noom Weight/Med; links to `/glp1` and existing GLP-1 cost guides)
+- Conversion CTAs use plain brand URLs only (no Impact IDs; no active-commission claims)
+
 ---
 
 ## 🧭 Current Reality (June 2026)

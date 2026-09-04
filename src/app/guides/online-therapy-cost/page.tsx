@@ -3,13 +3,18 @@ import type { Metadata } from 'next';
 import Navigation from '@/components/Navigation';
 import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
+import MedicalDisclaimer from '@/components/MedicalDisclaimer';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
+const PAGE_URL = 'https://vitalityscout.com/guides/online-therapy-cost';
+const AS_OF = 'September 4, 2026';
+
 export const metadata: Metadata = {
-  title: { absolute: 'Online Therapy Cost Without Insurance (2026 Guide)' },
-  alternates: { canonical: 'https://vitalityscout.com/guides/online-therapy-cost' },
-  description: 'Online therapy cost without insurance: BetterHelp, Talkspace, Brightside and Open Path on per-session vs subscription pricing, plus how to find cheap care.',
+  title: { absolute: 'Online Therapy Cost (2026): BetterHelp $70-$100/Week' },
+  alternates: { canonical: PAGE_URL },
+  description:
+    'Online therapy without insurance (2026): BetterHelp $70-$100/wk, Talkspace $69-$109/wk, Brightside $95-$349/mo, Open Path $40-$70. Confirm live prices.',
 };
 
 // Real PAA / long-tail questions, answered only from facts stated on this page.
@@ -18,11 +23,13 @@ export const metadata: Metadata = {
 const FAQ_ITEMS = [
   {
     question: 'How much does online therapy cost without insurance?',
-    answer: 'For subscription platforms, online therapy without insurance is commonly estimated at roughly $260-$400 per month. BetterHelp lists about $70-$100 per week (billed every 4 weeks), and Talkspace lists its video + messaging therapy plan at about $99 per week. A traditional out-of-pocket therapy session, by comparison, often runs $100-$200. Sliding-scale networks like Open Path Collective list sessions as low as $40-$70. These are estimates that change with plan, location, and current promotions — confirm the live price on each provider\'s own site before you sign up.',
+    answer:
+      `As of ${AS_OF}, BetterHelp's own site lists self-pay subscriptions at about $70-$100 per week (billed weekly or monthly). Talkspace's pricing page lists messaging therapy at $69/week, video + messaging at $99/week, and video + messaging + workshops at $109/week. Brightside's FAQ lists psychiatry at $95/month, therapy at $299/month, and combined at $349/month. Open Path Collective lists individual sessions at $40-$70 after a one-time $65 membership. These are published figures that change — confirm the live price on each provider's own site before you sign up.`,
   },
   {
     question: 'Is BetterHelp or Talkspace cheaper without insurance?',
-    answer: 'They price similarly. BetterHelp lists about $70-$100 per week (billed every 4 weeks), which works out to roughly $280-$400 per month. Talkspace lists its standard video + messaging therapy plan at about $99 per week (roughly $396 per month), with a messaging-only plan around $69 per week. The week-to-week winner usually depends on your exact plan tier and whichever is running a discount, not a durable price gap. Verify the current price on each platform before deciding.',
+    answer:
+      `They still price in the same band. As of ${AS_OF}, BetterHelp lists about $70-$100 per week. Talkspace lists messaging-only at $69/week and video + messaging at $99/week. The week-to-week winner depends on your exact plan tier and whichever is running a discount, not a durable price gap. Verify the current price on each platform before deciding.`,
   },
   {
     question: 'What is the cheapest way to get therapy without insurance?',
@@ -38,7 +45,8 @@ const FAQ_ITEMS = [
   },
   {
     question: 'Do online therapy services include medication, or just talk therapy?',
-    answer: 'It depends on the platform. BetterHelp and Talkspace are primarily talk-therapy services (Talkspace also offers separate psychiatry). Brightside Health offers psychiatry (medication management) from about $95 per month, therapy from about $299 per month, and a combined plan around $349 per month. A therapy plan does not by itself include prescriptions. Any medication decision is made by a licensed prescriber — confirm what a plan covers on the provider\'s site before enrolling.',
+    answer:
+      `It depends on the platform. BetterHelp is talk therapy (its site also mentions psychiatry through a separate UpLift option). Talkspace offers therapy subscriptions plus separate psychiatry. Brightside Health's FAQ lists psychiatry at $95 per month, therapy at $299 per month, and a combined plan at $349 per month as of ${AS_OF}. A therapy plan does not by itself include prescriptions. Any medication decision is made by a licensed prescriber — confirm what a plan covers on the provider's site before enrolling.`,
   },
 ];
 
@@ -61,24 +69,24 @@ export default function OnlineTherapyCost() {
     name: 'Online Therapy Cost Without Insurance: 2026 Price Guide',
     description:
       'What online therapy costs without insurance in 2026 — per-session vs subscription pricing across BetterHelp, Talkspace, Brightside, and Open Path Collective, plus HSA/FSA and how to find affordable care.',
-    url: 'https://vitalityscout.com/guides/online-therapy-cost',
-    mainEntity: { '@type': 'FAQPage', '@id': 'https://vitalityscout.com/guides/online-therapy-cost#faq' },
+    url: PAGE_URL,
+    mainEntity: { '@type': 'FAQPage', '@id': `${PAGE_URL}#faq` },
     inLanguage: 'en-US',
     medicalAudience: { '@type': 'MedicalAudience', audienceType: 'Patient' },
     about: { '@type': 'MedicalTherapy', name: 'Psychotherapy and online mental health care' },
     author: { '@type': 'Organization', name: 'VitalityScout', url: 'https://vitalityscout.com' },
     reviewedBy: { '@type': 'Organization', name: 'VitalityScout Editorial Team' },
-    lastReviewed: '2026-06-25',
-    dateModified: '2026-06-25',
+    lastReviewed: '2026-09-04',
+    dateModified: '2026-09-04',
     citation: [
-      { '@type': 'CreativeWork', name: 'Talkspace — out-of-pocket therapy plan pricing', url: 'https://www.talkspace.com/blog/blog-how-much-talkspace-costs/' },
-      { '@type': 'CreativeWork', name: 'Brightside Health — cash-pay (no insurance) pricing', url: 'https://www.brightside.com/online-care-no-insurance/' },
+      { '@type': 'CreativeWork', name: 'BetterHelp — published self-pay weekly range', url: 'https://www.betterhelp.com/' },
+      { '@type': 'CreativeWork', name: 'Talkspace — How Talkspace pricing works', url: 'https://www.talkspace.com/pricing' },
+      { '@type': 'CreativeWork', name: 'Brightside Health — FAQ self-pay plans', url: 'https://www.brightside.com/faq/' },
       { '@type': 'CreativeWork', name: 'Open Path Psychotherapy Collective — pricing and eligibility', url: 'https://openpathcollective.org/pricing-and-eligibility-for-affordable-therapy/' },
-      { '@type': 'CreativeWork', name: 'GoodRx — how much does therapy cost without insurance', url: 'https://www.goodrx.com/health-topic/mental-health/therapy-without-insurance' },
     ],
   };
 
-  const faqSchema = { ...buildFAQSchema(FAQ_ITEMS), '@id': 'https://vitalityscout.com/guides/online-therapy-cost#faq', url: 'https://vitalityscout.com/guides/online-therapy-cost' };
+  const faqSchema = { ...buildFAQSchema(FAQ_ITEMS), '@id': `${PAGE_URL}#faq`, url: PAGE_URL };
 
   return (
     <>
@@ -115,7 +123,7 @@ export default function OnlineTherapyCost() {
             </div>
 
             <h1 className="text-4xl font-bold text-gray-900 mb-4">
-              Online Therapy Cost Without Insurance: The 2026 Price Guide
+              Online Therapy Cost (2026): BetterHelp $70-$100/Week
             </h1>
 
             <p className="text-xl text-gray-600 mb-6">
@@ -127,18 +135,18 @@ export default function OnlineTherapyCost() {
             {/* Direct-answer lead: self-contained 40-80 word summary of the head query. */}
             <div className="rounded-lg border-l-4 border-blue-600 bg-blue-50 p-5">
               <p className="aeo-answer text-base text-gray-800">
-                Online therapy without insurance usually costs <strong>about $260-$400 per
-                month</strong> on subscription platforms — BetterHelp lists roughly{' '}
-                <strong>$70-$100/week</strong> and Talkspace about <strong>$99/week</strong> for
-                video + messaging. A traditional out-of-pocket session runs <strong>$100-$200</strong>,
-                while sliding-scale networks like <strong>Open Path Collective</strong> list sessions from{' '}
-                <strong>$40-$70</strong>. Prices are estimates that change often — verify on each
+                As of {AS_OF}, BetterHelp lists self-pay at <strong>$70-$100/week</strong>.
+                Talkspace lists <strong>$69/week</strong> messaging-only and{' '}
+                <strong>$99/week</strong> video + messaging. Brightside lists psychiatry at{' '}
+                <strong>$95/month</strong>, therapy at <strong>$299/month</strong>, and both at{' '}
+                <strong>$349/month</strong>. Open Path lists sessions at <strong>$40-$70</strong>{' '}
+                after a <strong>$65</strong> membership. These are published prices — verify on each
                 provider&apos;s site. This is information, not medical advice.
               </p>
             </div>
 
             <p className="mt-4 text-sm text-gray-500">
-              Last updated: June 2026 • 11 min read
+              Prices read from BetterHelp, Talkspace, Brightside, and Open Path on {AS_OF} • 11 min read
             </p>
           </div>
         </section>
@@ -152,9 +160,9 @@ export default function OnlineTherapyCost() {
               <div className="bg-white rounded-lg p-4 border border-gray-200">
                 <div className="font-bold text-blue-600 mb-2">Subscription platforms</div>
                 <ul className="space-y-1 text-gray-700">
-                  <li>• BetterHelp: ~$70-$100/week (billed every 4 weeks)</li>
-                  <li>• Talkspace: ~$99/week video + messaging</li>
-                  <li>• Brightside therapy: ~$299/month</li>
+                  <li>• BetterHelp: $70-$100/week (billed weekly or monthly)</li>
+                  <li>• Talkspace: $69-$109/week by plan</li>
+                  <li>• Brightside therapy: $299/month</li>
                   <li>• Weekly session + unlimited messaging</li>
                   <li>• HSA/FSA generally accepted</li>
                 </ul>
@@ -164,9 +172,9 @@ export default function OnlineTherapyCost() {
                 <ul className="space-y-1 text-gray-700">
                   <li>• Traditional session: ~$100-$200</li>
                   <li>• US out-of-pocket average: ~$174 (Milliman 2023)</li>
-                  <li>• Open Path: ~$40-$70/session</li>
-                  <li>• Open Path intern: ~$30/session</li>
-                  <li>• Open Path one-time fee: ~$65</li>
+                  <li>• Open Path: $40-$70/session</li>
+                  <li>• Open Path intern: $30/session</li>
+                  <li>• Open Path one-time fee: $65</li>
                 </ul>
               </div>
             </div>
@@ -261,37 +269,37 @@ export default function OnlineTherapyCost() {
                 <tbody>
                   <tr>
                     <td className="border border-gray-300 px-4 py-3 font-medium">BetterHelp</td>
-                    <td className="border border-gray-300 px-4 py-3">~$70-$100/week (~$280-$400/mo)</td>
+                    <td className="border border-gray-300 px-4 py-3">$70-$100/week (~$280-$400/mo)</td>
                     <td className="border border-gray-300 px-4 py-3">Weekly live session (chat/phone/video) + unlimited messaging</td>
                   </tr>
                   <tr className="bg-gray-50">
                     <td className="border border-gray-300 px-4 py-3 font-medium">Talkspace (messaging only)</td>
-                    <td className="border border-gray-300 px-4 py-3">~$69/week (~$276/mo)</td>
+                    <td className="border border-gray-300 px-4 py-3">$69/week (~$276/mo)</td>
                     <td className="border border-gray-300 px-4 py-3">Unlimited text/audio/video messaging, no scheduled live session</td>
                   </tr>
                   <tr>
                     <td className="border border-gray-300 px-4 py-3 font-medium">Talkspace (video + messaging)</td>
-                    <td className="border border-gray-300 px-4 py-3">~$99/week (~$396/mo)</td>
+                    <td className="border border-gray-300 px-4 py-3">$99/week (~$396/mo)</td>
                     <td className="border border-gray-300 px-4 py-3">Four 30-min live sessions/month + unlimited messaging</td>
                   </tr>
                   <tr className="bg-gray-50">
                     <td className="border border-gray-300 px-4 py-3 font-medium">Brightside (therapy)</td>
-                    <td className="border border-gray-300 px-4 py-3">~$299/month</td>
+                    <td className="border border-gray-300 px-4 py-3">$299/month</td>
                     <td className="border border-gray-300 px-4 py-3">Four video sessions/month + unlimited messaging</td>
                   </tr>
                   <tr>
                     <td className="border border-gray-300 px-4 py-3 font-medium">Brightside (psychiatry)</td>
-                    <td className="border border-gray-300 px-4 py-3">~$95/month (+ pharmacy copay)</td>
+                    <td className="border border-gray-300 px-4 py-3">$95/month (+ pharmacy copay)</td>
                     <td className="border border-gray-300 px-4 py-3">Psychiatric evaluation + medication management</td>
                   </tr>
                   <tr className="bg-gray-50">
                     <td className="border border-gray-300 px-4 py-3 font-medium">Brightside (therapy + psychiatry)</td>
-                    <td className="border border-gray-300 px-4 py-3">~$349/month</td>
+                    <td className="border border-gray-300 px-4 py-3">$349/month</td>
                     <td className="border border-gray-300 px-4 py-3">Medication management + four therapy sessions/month</td>
                   </tr>
                   <tr>
                     <td className="border border-gray-300 px-4 py-3 font-medium">Open Path Collective</td>
-                    <td className="border border-gray-300 px-4 py-3">~$40-$70/session (~$30 intern)</td>
+                    <td className="border border-gray-300 px-4 py-3">$40-$70/session ($30 intern)</td>
                     <td className="border border-gray-300 px-4 py-3">50-min session; one-time membership fee ~$65; income-eligible</td>
                   </tr>
                 </tbody>
@@ -300,36 +308,60 @@ export default function OnlineTherapyCost() {
 
             <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">BetterHelp</h3>
             <p className="text-gray-700 mb-4">
-              BetterHelp is the largest subscription teletherapy platform. Self-pay pricing is
-              listed at roughly <strong>$70-$100 per week, billed every four weeks</strong> — so a
-              monthly charge in the <strong>$280-$400</strong> range, with the exact number set by
-              your location, preferences, and therapist availability. A subscription typically
-              covers one weekly live session (chat, phone, or video) plus the ability to message
-              your counselor between sessions. BetterHelp has also begun expanding insurance
-              acceptance with select payers, and offers financial-assistance discounts for those
-              who qualify. It is therapy-only — no psychiatry or prescriptions.
+              BetterHelp is the largest subscription teletherapy platform. As of {AS_OF}, its own
+              site lists self-pay at roughly <strong>$70-$100 per week</strong>, billed weekly or
+              monthly — so a monthly charge in the <strong>$280-$400</strong> range, with the exact
+              number set by location, referral source, preferences, therapist availability, and
+              promotions. A subscription typically covers one weekly live session (chat, phone, or
+              video) plus messaging between sessions. BetterHelp now says many therapists accept
+              major insurance, with an <strong>average copay of about $23 per session</strong> for
+              eligible members. Financial-assistance discounts may apply. The core product is talk
+              therapy; psychiatry, if offered, is a separate path (BetterHelp has mentioned UpLift).
             </p>
+            <a
+              href="https://www.betterhelp.com/"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              className="mb-6 inline-block rounded bg-emerald-600 px-4 py-2 text-sm font-medium text-white hover:bg-emerald-700"
+            >
+              Visit BetterHelp →
+            </a>
 
             <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">Talkspace</h3>
             <p className="text-gray-700 mb-4">
-              Talkspace prices by tier. The <strong>messaging-only</strong> plan is listed at about{' '}
-              <strong>$69/week</strong>; the standard <strong>video + messaging</strong> plan, which
-              includes four 30-minute live sessions a month, is about <strong>$99/week</strong>; and a
-              higher tier with weekly workshops runs about <strong>$109/week</strong>. Billing
-              quarterly or biannually can lower the effective rate. Talkspace also offers psychiatry
-              separately, with an initial evaluation listed around <strong>$299</strong>. It accepts a
-              number of insurance plans, which can substantially reduce cost for the covered.
+              Talkspace&apos;s official pricing page (as of {AS_OF}) lists three self-pay therapy
+              tiers: <strong>messaging-only at $69/week</strong>; <strong>video + messaging at
+              $99/week</strong> (up to four 30-minute live sessions a month); and{' '}
+              <strong>video + messaging + workshops at $109/week</strong>. Billing monthly,
+              quarterly, or biannually can change the effective rate. Talkspace also offers
+              psychiatry separately. It is in-network with many plans and says most insured members
+              have a $0 copay — your plan decides.
             </p>
+            <a
+              href="https://www.talkspace.com/pricing"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              className="mb-6 inline-block rounded bg-emerald-600 px-4 py-2 text-sm font-medium text-white hover:bg-emerald-700"
+            >
+              Visit Talkspace →
+            </a>
 
             <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">Brightside Health</h3>
             <p className="text-gray-700 mb-4">
               Brightside is the one to look at if you may need medication as well as therapy. Its
-              self-pay tiers are listed as <strong>psychiatry from ~$95/month</strong> (plus your
-              pharmacy copay), <strong>therapy at ~$299/month</strong> for four video sessions and
-              unlimited messaging, and a <strong>combined plan at ~$349/month</strong> that bundles
-              both. The combined plan is priced below buying the two separately. Brightside notes you
-              can pay with HSA or FSA funds.
+              FAQ (as of {AS_OF}) lists <strong>psychiatry at $95/month</strong> (plus your
+              pharmacy copay), <strong>therapy at $299/month</strong> for four video sessions and
+              unlimited messaging, and a <strong>combined plan at $349/month</strong>. Extra
+              55-minute therapy sessions are listed at $59. You can pay with a card or HSA/FSA.
             </p>
+            <a
+              href="https://www.brightside.com/"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              className="mb-6 inline-block rounded bg-emerald-600 px-4 py-2 text-sm font-medium text-white hover:bg-emerald-700"
+            >
+              Visit Brightside →
+            </a>
 
             <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6 my-8">
               <h4 className="font-bold text-gray-900 mb-2">Therapy vs psychiatry is a cost fork</h4>
@@ -357,13 +389,21 @@ export default function OnlineTherapyCost() {
             <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">Open Path Collective</h3>
             <p className="text-gray-700 mb-4">
               Open Path Psychotherapy Collective is a nonprofit network built specifically for people
-              who lack adequate mental-health coverage or cannot afford market rates. Individual
-              sessions are listed at about <strong>$40-$70</strong> (and around <strong>$30</strong>
-              {' '}with a supervised student intern), based on a standard 50-minute session, after a
-              one-time membership fee of about <strong>$65</strong>. Couples and family sessions are
-              listed slightly higher. It is income-eligibility based, so check whether you qualify
-              before enrolling.
+              who lack adequate mental-health coverage or cannot afford market rates. As of {AS_OF},
+              individual sessions are listed at <strong>$40-$70</strong> (and <strong>$30</strong>
+              {' '}with a supervised student intern) for a standard 50-minute session, after a
+              one-time membership fee of <strong>$65</strong>. Couples and family sessions are
+              listed slightly higher. Household income must be below $100,000 (US). Check whether
+              you qualify before enrolling.
             </p>
+            <a
+              href="https://openpathcollective.org/"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              className="mb-6 inline-block rounded bg-emerald-600 px-4 py-2 text-sm font-medium text-white hover:bg-emerald-700"
+            >
+              Visit Open Path →
+            </a>
 
             <p className="text-gray-700 mb-4">
               Open Path is the clearest example of a broader truth: a real, licensed therapist on a
@@ -408,10 +448,11 @@ export default function OnlineTherapyCost() {
             </p>
 
             <p className="text-gray-700 mb-4">
-              On the insurance side, the picture is shifting. BetterHelp began expanding acceptance of
-              select insurers in 2026, and Talkspace and Brightside both contract with a range of plans.
-              If you do have coverage, a copay can come in well below any self-pay price — so it is worth
-              checking your plan even if you assumed therapy was out of reach.
+              On the insurance side, the picture is shifting. As of {AS_OF}, BetterHelp says many
+              therapists accept major carriers (average copay about $23 for eligible members),
+              Talkspace says most insured members have a $0 copay, and Brightside accepts insurance
+              in many states. If you do have coverage, a copay can come in well below any self-pay
+              price — check your plan even if you assumed therapy was out of reach.
             </p>
 
             <h2 id="considerations" className="text-2xl font-bold text-gray-900 mt-12 mb-6">Things to Know Before You Pay</h2>
@@ -475,7 +516,7 @@ export default function OnlineTherapyCost() {
             <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-6">
               <li><strong>Platform deep-dive:</strong> our <Link href="/guides/betterhelp-vs-talkspace" className="text-blue-600 hover:underline">BetterHelp vs Talkspace vs Brightside comparison</Link> covers features and format side by side</li>
               <li><strong>Online psychiatry &amp; medication:</strong> browse cash-pay options in the <Link href="/telehealth" className="text-blue-600 hover:underline">telehealth providers directory</Link></li>
-              <li><strong>Hormone-related mood symptoms:</strong> see our <Link href="/guides/online-menopause-treatment" className="text-blue-600 hover:underline">online menopause treatment guide</Link> if symptoms are tied to perimenopause</li>
+              <li><strong>Where therapy sits next to labs and GLP-1:</strong> the <Link href="/guides/cash-pay-healthcare-map" className="text-blue-600 hover:underline">cash-pay healthcare map</Link></li>
             </ul>
           </div>
 
@@ -485,12 +526,30 @@ export default function OnlineTherapyCost() {
             <p className="mb-6 text-blue-100">
               See online therapy and psychiatry options side by side, with transparent self-pay pricing.
             </p>
-            <Link
-              href="/mental-health"
-              className="inline-block rounded-lg bg-white px-6 py-3 font-semibold text-blue-600 hover:bg-blue-50 transition-colors"
-            >
-              Browse Mental Health Care
-            </Link>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link
+                href="/telehealth"
+                className="inline-block rounded-lg bg-white px-6 py-3 font-semibold text-blue-600 hover:bg-blue-50 transition-colors"
+              >
+                Browse Telehealth Options
+              </Link>
+              <a
+                href="https://www.betterhelp.com/"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                className="inline-block rounded-lg border-2 border-white px-6 py-3 font-semibold text-white hover:bg-white/10 transition-colors"
+              >
+                Visit BetterHelp →
+              </a>
+              <a
+                href="https://www.talkspace.com/pricing"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                className="inline-block rounded-lg border-2 border-white px-6 py-3 font-semibold text-white hover:bg-white/10 transition-colors"
+              >
+                Visit Talkspace →
+              </a>
+            </div>
           </div>
 
           {/* FAQ — visible block mirrors the FAQPage schema above exactly */}
@@ -521,10 +580,10 @@ export default function OnlineTherapyCost() {
           <div className="mt-8 border-t border-gray-200 pt-8">
             <h3 className="font-semibold text-gray-800 mb-4">Sources &amp; References</h3>
             <ul className="space-y-2 text-sm text-gray-600">
-              <li>• Talkspace — how much Talkspace costs (out-of-pocket plan pricing: messaging $69/wk, video + messaging $99/wk)</li>
-              <li>• Brightside Health — cash pay / no insurance pricing (psychiatry $95/mo, therapy $299/mo, combined $349/mo)</li>
-              <li>• Open Path Psychotherapy Collective — pricing &amp; eligibility ($40-$70/session, $30 intern, ~$65 membership)</li>
-              <li>• Therapyhelpers / Healthline — BetterHelp 2026 pricing (~$70-$100/week, billed every 4 weeks)</li>
+              <li>• <a href="https://www.betterhelp.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-blue-600 hover:underline">BetterHelp — published self-pay range $70-$100/week; insurance copay about $23 for eligible members</a></li>
+              <li>• <a href="https://www.talkspace.com/pricing" target="_blank" rel="noopener noreferrer nofollow" className="text-blue-600 hover:underline">Talkspace — official pricing ($69 / $99 / $109 per week)</a></li>
+              <li>• <a href="https://www.brightside.com/faq/" target="_blank" rel="noopener noreferrer nofollow" className="text-blue-600 hover:underline">Brightside Health FAQ — self-pay $95 / $299 / $349 per month</a></li>
+              <li>• <a href="https://openpathcollective.org/pricing-and-eligibility-for-affordable-therapy/" target="_blank" rel="noopener noreferrer nofollow" className="text-blue-600 hover:underline">Open Path — $40-$70/session, $30 intern, $65 membership</a></li>
               <li>• GoodRx &amp; Milliman (2023) — average out-of-pocket therapy cost (~$100-$200/session; ~$174 average)</li>
             </ul>
           </div>
@@ -537,6 +596,7 @@ export default function OnlineTherapyCost() {
             source="guide_online_therapy_cost"
           />
         </div>
+        <MedicalDisclaimer />
       </main>
       </SidebarShell>
       <Footer />
