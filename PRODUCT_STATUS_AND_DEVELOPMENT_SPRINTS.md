@@ -1,11 +1,17 @@
 # VitalityScout - Project Status & Development Sprints
 
-**Last Updated:** June 13, 2026
+**Last Updated:** September 4, 2026
 **Live Site:** https://vitalityscout.com
 **Status:** ✅ Live in Production
 
 > ⚠️ **Note:** The "Current State" and dated sprint sections below this banner are
 > historical (Dec 2024) and understate the site. The banner here reflects current reality.
+
+### 2026-09-04 SEO/content batch (pending ship)
+- New guides: `/guides/cash-pay-healthcare-map`, `/guides/donor-egg-ivf-abroad`, `/guides/turkey-dental-cost`
+- Permanent redirect: `/destinations` → `/medical-tourism` (no thin destinations index)
+- Guides index: de-orphaned existing cost/financing pages (Mexico/Costa Rica dental & bariatric prices, TRT cost, HSA/tax/paying cluster, insurance-abroad pages) plus the three new slugs
+- Scope limit: no sitewide hospital-average hub rewrites; honest US cash comparators (SCO knee $17,679, US sleeve bundles ~$9,995) only on the map page
 
 ---
 
