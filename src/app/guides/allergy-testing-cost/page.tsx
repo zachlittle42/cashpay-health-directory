@@ -4,7 +4,35 @@ import Navigation from '@/components/Navigation';
 import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
+import BrandCtaGrid from '@/components/BrandCtaGrid';
 import { buildFAQSchema } from '@/lib/jsonLd';
+
+const ALLERGY_BRANDS = [
+  {
+    name: 'Everlywell',
+    price: 'Food Allergy Test ~$149',
+    blurb: 'At-home IgE kit for 9 common food allergens, processed at a CLIA-certified lab. Confirm the current kit price and state availability on Everlywell.',
+    siteUrl: 'https://www.everlywell.com/products/food-allergy-test/',
+    profileHref: '/providers/everlywell',
+    profileLabel: 'Everlywell profile',
+  },
+  {
+    name: 'Quest Health',
+    price: 'Food panel ~$189 + $6',
+    blurb: 'Self-order IgE food panel at a Quest draw site, plus a listed physician fee. Verify the live panel price and allergen list on Quest Health.',
+    siteUrl: 'https://www.questhealth.com/product/food-allergy-panel-with-reflex-to-components/91682M.html',
+    profileHref: '/providers/quest-health',
+    profileLabel: 'Quest Health profile',
+  },
+  {
+    name: 'Labcorp OnDemand',
+    price: 'Indoor/outdoor ~$199',
+    blurb: 'Environmental IgE panel (dust mite, pet dander, pollens, mold) at a Labcorp PSC. Confirm current price and turnaround on Labcorp OnDemand.',
+    siteUrl: 'https://www.ondemand.labcorp.com/lab-tests/indoor-outdoor-allergy-test',
+    profileHref: '/providers/labcorp-ondemand',
+    profileLabel: 'Labcorp OnDemand profile',
+  },
+];
 
 export const metadata: Metadata = {
   title: { absolute: 'Allergy Testing Cost Without Insurance (2026 Price Guide)' },
@@ -369,6 +397,14 @@ export default function AllergyTestingCost() {
               </table>
             </div>
 
+            <BrandCtaGrid
+              title="Buy the named IgE panel — or compare cash-pay labs"
+              intro="These are the three brands already priced in the table. Match food vs environmental first, then verify the live checkout price. YorkTest is named above but does not have a VitalityScout provider profile."
+              brands={ALLERGY_BRANDS}
+              hubHref="/labs"
+              hubLabel="Compare cash-pay labs →"
+            />
+
             <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6 my-8">
               <h4 className="font-bold text-gray-900 mb-2">Food vs. environmental: pick the right panel</h4>
               <p className="text-gray-700">
@@ -505,6 +541,14 @@ export default function AllergyTestingCost() {
               <li><strong>Cash-pay lab options:</strong> browse the <Link href="/labs" className="text-blue-600 hover:underline">self-pay labs directory</Link></li>
             </ul>
           </div>
+
+          <BrandCtaGrid
+            title="Order a named panel, or shop the lab hub"
+            intro="Everlywell and Quest target food IgE. Labcorp OnDemand’s listed test is environmental. Confirm the current price and what allergens are included before you pay."
+            brands={ALLERGY_BRANDS}
+            hubHref="/labs"
+            hubLabel="Browse cash-pay labs →"
+          />
 
           {/* CTA Section */}
           <div className="mt-12 rounded-xl bg-gradient-to-r from-blue-500 to-indigo-500 p-8 text-center text-white">

@@ -5,7 +5,27 @@ import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
 import MedicalDisclaimer from '@/components/MedicalDisclaimer';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
+import BrandCtaGrid from '@/components/BrandCtaGrid';
 import { buildFAQSchema } from '@/lib/jsonLd';
+
+const FUNCTION_BRANDS = [
+  {
+    name: 'Function Health',
+    price: '~$365/year',
+    blurb: 'Membership covers 160+ lab tests a year through Quest, clinician review, and a dashboard. NY/NJ costs more. Confirm the current membership and two-year offer on Function before you join.',
+    siteUrl: 'https://www.functionhealth.com/pricing',
+    profileHref: '/providers/function-health',
+    profileLabel: 'Function profile',
+  },
+  {
+    name: 'SuperPower',
+    price: '~$199/year',
+    blurb: 'The cheaper membership alternative already compared below — one annual 100+ marker panel through Quest. Verify live pricing, especially NY/NJ.',
+    siteUrl: 'https://superpower.com',
+    profileHref: '/providers/superpower',
+    profileLabel: 'SuperPower profile',
+  },
+];
 
 export const metadata: Metadata = {
   title: { absolute: 'Function Health Review (2026): $365/Year, Is It Worth It?' },
@@ -232,6 +252,14 @@ export default function FunctionHealthReview() {
                 Function and your benefits administrator before assuming it qualifies.
               </p>
             </div>
+
+            <BrandCtaGrid
+              title="Function membership — check the live price"
+              intro="The citations below are Function’s own pricing pages. This block is the checkout path: open Function, or compare a cheaper membership / self-order panel on the labs hub."
+              brands={FUNCTION_BRANDS}
+              hubHref="/labs"
+              hubLabel="Compare cash-pay labs →"
+            />
           </div>
         </div>
       </section>
@@ -361,6 +389,16 @@ export default function FunctionHealthReview() {
         </div>
       </section>
 
+      <section className="mx-auto max-w-4xl px-4 py-8">
+        <BrandCtaGrid
+          title="Join Function, or price a cheaper panel first"
+          intro="If you only want a one-off basic panel, self-order through Quest, Labcorp OnDemand, or Ulta is usually cheaper. If you want 160+ markers plus clinician review, check Function’s current membership."
+          brands={FUNCTION_BRANDS}
+          hubHref="/labs"
+          hubLabel="Compare cash-pay labs →"
+        />
+      </section>
+
       {/* CTA to money page */}
       <section className="mx-auto max-w-4xl px-4 py-8">
         <div className="bg-gradient-to-r from-green-50 to-blue-50 border border-green-200 rounded-lg p-8 text-center">
@@ -368,12 +406,20 @@ export default function FunctionHealthReview() {
           <p className="text-gray-600 mb-6">
             Memberships are one route. See how direct-access labs and telehealth ordering stack up on price.
           </p>
-          <Link
-            href="/telehealth"
-            className="inline-block rounded-lg bg-green-600 px-8 py-4 text-lg font-medium text-white hover:bg-green-700"
-          >
-            Explore Telehealth &amp; Lab Options →
-          </Link>
+          <div className="flex flex-wrap justify-center gap-3">
+            <Link
+              href="/labs"
+              className="inline-block rounded-lg bg-green-600 px-8 py-4 text-lg font-medium text-white hover:bg-green-700"
+            >
+              Browse cash-pay labs →
+            </Link>
+            <Link
+              href="/telehealth"
+              className="inline-block rounded-lg border-2 border-green-600 px-8 py-4 text-lg font-medium text-green-700 hover:bg-green-50"
+            >
+              Telehealth hub
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -382,6 +428,16 @@ export default function FunctionHealthReview() {
         <h2 className="text-2xl font-bold text-gray-900 mb-6">Related Guides</h2>
 
         <div className="grid gap-4 md:grid-cols-2">
+          <Link href="/labs" className="block bg-white rounded-lg border border-gray-200 p-5 hover:shadow-lg transition-shadow">
+            <div className="flex items-center gap-3">
+              <span className="text-2xl">🧪</span>
+              <div>
+                <div className="font-bold text-gray-900">Cash-Pay Labs Hub</div>
+                <div className="text-sm text-gray-600">Function, SuperPower, Quest, Labcorp — side by side</div>
+              </div>
+            </div>
+          </Link>
+
           <Link href="/guides/cheapest-blood-test-panels" className="block bg-white rounded-lg border border-gray-200 p-5 hover:shadow-lg transition-shadow">
             <div className="flex items-center gap-3">
               <span className="text-2xl">💉</span>

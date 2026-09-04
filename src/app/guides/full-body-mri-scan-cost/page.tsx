@@ -4,7 +4,35 @@ import Navigation from '@/components/Navigation';
 import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
+import BrandCtaGrid from '@/components/BrandCtaGrid';
 import { buildFAQSchema } from '@/lib/jsonLd';
+
+const MRI_BRANDS = [
+  {
+    name: 'Prenuvo',
+    price: 'Whole body ~$2,499',
+    blurb: 'Premium whole-body screening MRI, plus focused and membership tiers. Confirm the current scan and membership price on Prenuvo — promotions change.',
+    siteUrl: 'https://www.prenuvo.com/pricing',
+    profileHref: '/providers/prenuvo',
+    profileLabel: 'Prenuvo profile',
+  },
+  {
+    name: 'Ezra',
+    price: 'MRI from ~$999',
+    blurb: 'Head-to-pelvis screening MRI, now part of Function Health. Function members are listed at a lower scan price. Verify live tiers on Ezra.',
+    siteUrl: 'https://www.ezra.com/pricing',
+    profileHref: '/providers/ezra',
+    profileLabel: 'Ezra profile',
+  },
+  {
+    name: 'Function Health',
+    price: 'Membership ~$365/yr',
+    blurb: 'Lab membership that also unlocks Ezra member MRI pricing. Compare the membership against a one-off scan before you bundle.',
+    siteUrl: 'https://www.functionhealth.com/pricing',
+    profileHref: '/providers/function-health',
+    profileLabel: 'Function profile',
+  },
+];
 
 export const metadata: Metadata = {
   title: { absolute: 'Full Body MRI Scan Cost (2026): Prenuvo $2,499, Ezra $999' },
@@ -318,6 +346,14 @@ export default function FullBodyMriScanCost() {
               </table>
             </div>
 
+            <BrandCtaGrid
+              title="Check Prenuvo, Ezra, or Function before you book"
+              intro="These are the brands already priced above. SimonMed Longevity is named in the table but does not have a dedicated screening-MRI provider profile — confirm that quote on simonmed.com. Whole-body screening of healthy adults is elective; discuss it with a clinician first."
+              brands={MRI_BRANDS}
+              hubHref="/imaging"
+              hubLabel="Compare cash-pay imaging →"
+            />
+
             <p className="text-gray-700 mb-4">
               <strong>The pattern:</strong> Ezra and SimonMed have pushed the entry price for a
               broad scan toward $899-$999, while Prenuvo holds a premium position at $2,499 for its
@@ -500,18 +536,34 @@ export default function FullBodyMriScanCost() {
             </ul>
           </div>
 
+          <BrandCtaGrid
+            title="Still comparing a scan?"
+            intro="Open Prenuvo or Ezra for the current cash scan price, or Function if you want the lab membership that discounts Ezra. Evidence does not support routine screening of healthy adults — verify price and talk to your clinician."
+            brands={MRI_BRANDS}
+            hubHref="/imaging"
+            hubLabel="Compare cash-pay imaging →"
+          />
+
           {/* CTA Section */}
           <div className="mt-12 rounded-xl bg-gradient-to-r from-blue-500 to-indigo-500 p-8 text-center text-white">
             <h3 className="text-2xl font-bold mb-3">Compare Cash-Pay Longevity &amp; Screening Options</h3>
             <p className="mb-6 text-blue-100">
               See imaging, body-composition and lab-testing options side by side, with transparent self-pay pricing.
             </p>
-            <Link
-              href="/longevity"
-              className="inline-block rounded-lg bg-white px-6 py-3 font-semibold text-blue-600 hover:bg-blue-50 transition-colors"
-            >
-              Explore Longevity &amp; Screening
-            </Link>
+            <div className="flex flex-wrap justify-center gap-3">
+              <Link
+                href="/longevity"
+                className="inline-block rounded-lg bg-white px-6 py-3 font-semibold text-blue-600 hover:bg-blue-50 transition-colors"
+              >
+                Explore Longevity &amp; Screening
+              </Link>
+              <Link
+                href="/dexa-scans"
+                className="inline-block rounded-lg border-2 border-white px-6 py-3 font-semibold text-white hover:bg-white/10 transition-colors"
+              >
+                DEXA scans
+              </Link>
+            </div>
           </div>
 
           {/* FAQ — visible block mirrors the FAQPage schema above exactly */}

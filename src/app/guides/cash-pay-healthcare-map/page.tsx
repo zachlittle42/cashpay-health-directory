@@ -242,6 +242,7 @@ export default function CashPayHealthcareMapGuide() {
             <p className="text-gray-700 mb-3 font-semibold">Best guides</p>
             <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-6">
               <li><Link href="/guides/urgent-care-cost-without-insurance" className="text-blue-600 hover:underline">Urgent care cost without insurance</Link></li>
+              <li><Link href="/guides/cash-pay-telehealth-visits" className="text-blue-600 hover:underline">Cash-pay telehealth visits vs urgent care</Link></li>
               <li><Link href="/guides/botox-cost-per-unit" className="text-blue-600 hover:underline">Botox cost per unit</Link></li>
             </ul>
 

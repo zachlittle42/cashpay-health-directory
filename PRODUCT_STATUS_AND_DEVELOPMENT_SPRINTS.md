@@ -7,6 +7,12 @@
 > ⚠️ **Note:** The "Current State" and dated sprint sections below this banner are
 > historical (Dec 2024) and understate the site. The banner here reflects current reality.
 
+### 2026-09-04 content batch 1 (CTA upgrades + TRT 2026 + cash telehealth)
+- CTA upgrades (no full rewrites) on ranking guides that named brands without conversion UI: `/guides/online-ed-treatment` (Hims/Ro/BlueChew), `/guides/ro-body-weight-loss-cost` (Ro Body + Hims), `/guides/allergy-testing-cost` (Everlywell/Quest/Labcorp), `/guides/full-body-mri-scan-cost` (Prenuvo/Ezra/Function), `/guides/function-health-review` (membership CTA + `/labs`)
+- Shared `BrandCtaGrid` matches mens-health/compare “Visit Site →” styling; `rel="nofollow sponsored noopener noreferrer"`; no Impact IDs
+- TRT 2026 refresh: `/guides/best-online-trt-clinics` title/H1/schema/FAQ/dateModified → 2026; published prices for Fountain, Marek, TRT Nation, Henry Meds, Hone, Maximus with all-in monthly math and as-of hedges
+- New guide: `/guides/cash-pay-telehealth-visits` — Sesame-shaped cash visit prices vs urgent care/ER ranges; registered on `/guides` and linked from `/telehealth` + cash-pay map “near you” bucket
+
 ### 2026-09-04 SEO/content batch (pending ship)
 - New guides: `/guides/cash-pay-healthcare-map`, `/guides/donor-egg-ivf-abroad`, `/guides/turkey-dental-cost`
 - Permanent redirect: `/destinations` → `/medical-tourism` (no thin destinations index)
