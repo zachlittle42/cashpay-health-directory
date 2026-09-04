@@ -67,6 +67,15 @@ const guides = [
     readTime: '11 min',
     icon: '🏥',
   },
+  {
+    slug: 'cash-pay-telehealth-visits',
+    title: 'Cash-Pay Telehealth Visits (2026): $29–$129 vs Urgent Care',
+    description:
+      'Cash-pay telehealth visits in 2026 — Sesame from ~$29–$37, Amazon from $29, Teladoc $89, PlushCare $129 cash — vs $120–$350 urgent care and when a virtual doctor is enough.',
+    category: 'Cost Guide',
+    readTime: '11 min',
+    icon: '💻',
+  },
   // GLP-1 intent cluster (2026-08-03): dosing / side-effects / comparison / medication-list
   // pages targeting the 254-query, ~699K-imp/13wk Bing demand pocket with 0% prior coverage.
   {
@@ -1433,8 +1442,9 @@ const guides = [
   },
   {
     slug: 'best-online-trt-clinics',
-    title: 'Best Online TRT Clinics Compared (2025)',
-    description: 'Fountain TRT vs Marek Health vs TRT Nation: pricing, services, and which clinic is best for your needs.',
+    title: 'Best Online TRT Clinics Compared (2026)',
+    description:
+      'Fountain (~$199 all-in), Henry Meds ($129), TRT Nation ($99.99 + $129 labs), Hone, Maximus, and Marek — 2026 published prices and all-in monthly math.',
     category: 'Comparison',
     readTime: '10 min',
     icon: '🏆',

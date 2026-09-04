@@ -4,7 +4,27 @@ import Navigation from '@/components/Navigation';
 import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
+import BrandCtaGrid from '@/components/BrandCtaGrid';
 import { buildFAQSchema } from '@/lib/jsonLd';
+
+const RO_BRANDS = [
+  {
+    name: 'Ro Body',
+    price: '$39 then $149/mo + meds',
+    blurb: 'Membership covers the program, coaching, and insurance concierge. Medication is billed separately. Confirm the live membership and drug price on Ro.',
+    siteUrl: 'https://ro.co/weight-loss',
+    profileHref: '/providers/ro-body',
+    profileLabel: 'Ro Body profile',
+  },
+  {
+    name: 'Hims / Hers',
+    price: 'Compound from ~$199/mo',
+    blurb: 'The comparison most people run next: a mainstream platform with compounded and brand GLP-1 paths. Verify current pricing on Hims.',
+    siteUrl: 'https://hims.com/weight-loss',
+    profileHref: '/providers/hims-hers-glp1',
+    profileLabel: 'Hims profile',
+  },
+];
 
 export const metadata: Metadata = {
   title: { absolute: 'Ro Weight Loss Cost (2026): Ro Body Membership + GLP-1' },
@@ -197,6 +217,14 @@ export default function RoBodyWeightLossCost() {
               </div>
             </div>
           </div>
+
+          <BrandCtaGrid
+            title="Check Ro’s current price, then compare"
+            intro="Ro Body is the program this guide prices. Hims is the alternative already named below. All-in cost is membership plus medication — verify both lines before you enroll."
+            brands={RO_BRANDS}
+            hubHref="/glp1"
+            hubLabel="Compare GLP-1 programs →"
+          />
 
           {/* Table of Contents */}
           <div className="bg-gray-50 rounded-lg p-6 mb-8">
@@ -413,7 +441,7 @@ export default function RoBodyWeightLossCost() {
               <li><strong>Brand-name access:</strong> Ro&apos;s strength is real Wegovy/Zepbound plus an insurance concierge, not the cheapest compounded option.</li>
               <li><strong>Cheapest cash GLP-1:</strong> if a low headline number is the goal, compare against the lowest-cost cash routes in our <Link href="/guides/cheapest-glp1-without-insurance" className="text-blue-600 hover:underline">cheapest GLP-1 without insurance guide</Link>.</li>
               <li><strong>The medication itself:</strong> for how GLP-1s work, results, and side effects regardless of provider, see the <Link href="/guides/glp1-weight-loss-complete-guide" className="text-blue-600 hover:underline">complete GLP-1 weight-loss guide</Link>.</li>
-              <li><strong>Provider detail:</strong> see our <Link href="/providers/ro-body" className="text-blue-600 hover:underline">Ro Body provider profile</Link> for services, coverage, and our take.</li>
+              <li><strong>Provider detail:</strong> see our <Link href="/providers/ro-body" className="text-blue-600 hover:underline">Ro Body provider profile</Link> for services, coverage, and our take, or the <Link href="/guides/hims-vs-ro-vs-calibrate" className="text-blue-600 hover:underline">Hims vs Ro vs Calibrate</Link> comparison.</li>
             </ul>
 
             <h2 id="worth-it" className="text-2xl font-bold text-gray-900 mt-12 mb-6">Is Ro Body Worth It?</h2>
@@ -451,18 +479,34 @@ export default function RoBodyWeightLossCost() {
             </p>
           </div>
 
+          <BrandCtaGrid
+            title="Start with Ro, or compare the alternatives already in this guide"
+            intro="Open Ro Body if you want brand-name Wegovy or Zepbound plus an insurance concierge. Open Hims if you are shopping the cheaper compounded headline. Then check all-in monthly math on the GLP-1 hub."
+            brands={RO_BRANDS}
+            hubHref="/glp1"
+            hubLabel="Compare GLP-1 programs →"
+          />
+
           {/* CTA Section */}
           <div className="mt-12 rounded-xl bg-gradient-to-r from-blue-500 to-indigo-500 p-8 text-center text-white">
             <h3 className="text-2xl font-bold mb-3">Compare Weight-Loss Programs &amp; GLP-1 Pricing</h3>
             <p className="mb-6 text-blue-100">
               See telehealth and local weight-loss providers side by side, with transparent cash-pay pricing.
             </p>
-            <Link
-              href="/weight-loss"
-              className="inline-block rounded-lg bg-white px-6 py-3 font-semibold text-blue-600 hover:bg-blue-50 transition-colors"
-            >
-              Browse Weight-Loss Providers
-            </Link>
+            <div className="flex flex-wrap justify-center gap-3">
+              <Link
+                href="/providers/ro-body"
+                className="inline-block rounded-lg bg-white px-6 py-3 font-semibold text-blue-600 hover:bg-blue-50 transition-colors"
+              >
+                Ro Body profile
+              </Link>
+              <Link
+                href="/weight-loss"
+                className="inline-block rounded-lg border-2 border-white px-6 py-3 font-semibold text-white hover:bg-white/10 transition-colors"
+              >
+                Browse Weight-Loss Providers
+              </Link>
+            </div>
           </div>
 
           {/* FAQ — visible block mirrors the FAQPage schema above exactly */}
