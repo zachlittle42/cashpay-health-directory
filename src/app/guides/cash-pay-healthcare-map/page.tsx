@@ -338,7 +338,7 @@ export default function CashPayHealthcareMapGuide() {
 
             <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">Sometimes worth the flight</h3>
             <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-6">
-              <li><strong>Fertility:</strong> <Link href="/fertility" className="text-blue-600 hover:underline">/fertility</Link> + <Link href="/guides/ivf-cost-by-country" className="text-blue-600 hover:underline">IVF cost by country</Link> (donor-egg cycles are the usual arbitrage — see the dedicated donor-egg guide)</li>
+              <li><strong>Fertility:</strong> <Link href="/fertility" className="text-blue-600 hover:underline">/fertility</Link> + <Link href="/guides/ivf-cost-by-country" className="text-blue-600 hover:underline">IVF cost by country</Link> (donor-egg cycles are the usual arbitrage — see the <Link href="/guides/donor-egg-ivf-abroad" className="text-blue-600 hover:underline">donor-egg IVF abroad guide</Link>)</li>
               <li><strong>Orthopedic:</strong> <Link href="/orthopedic" className="text-blue-600 hover:underline">/orthopedic</Link> + <Link href="/guides/knee-replacement-cost-by-country" className="text-blue-600 hover:underline">knee replacement cost by country</Link>. Compare any foreign quote to the SCO <strong>$17,679</strong> cash bundle before you fly.</li>
             </ul>
 
