@@ -297,6 +297,15 @@ const guides = [
     icon: '👁️',
   },
   {
+    slug: 'cash-pay-healthcare-map',
+    title: 'The Cash-Pay Healthcare Map: Every Price, One Page (2026)',
+    description:
+      'From $29 blood panels to $4,500 surgery in Mexico — one-page map of cash-pay healthcare: verified US prices, what’s worth a flight, and how not to get burned.',
+    category: 'Cost Guide',
+    readTime: '12 min',
+    icon: '🗺️',
+  },
+  {
     slug: 'cash-pay-surgery-guide',
     title: 'Cash Pay Surgery Cost: How Transparent Pricing Works',
     description:
@@ -387,6 +396,33 @@ const guides = [
     icon: '🦷',
   },
   {
+    slug: 'mexico-dental-implant-prices',
+    title: 'Mexico Dental Implant Prices (2026): Verified Cancun & Los Algodones Costs',
+    description:
+      'Verified All-on-4 arches across destination clinics run a median of $10,900 (n=22); single implants in Cancun and Los Algodones run ~$1,000 vs a $4,259 US all-in implant. Per-clinic prices quoted verbatim and dated.',
+    category: 'Dental Tourism',
+    readTime: '11 min',
+    icon: '🦷',
+  },
+  {
+    slug: 'costa-rica-dental-prices',
+    title: 'Costa Rica Dental Prices (2026): Verified Clinic Costs vs the US',
+    description:
+      'Verified single dental implants in San Jose run a median of ~$1,150 (n=6 clinics) vs a $2,143 US implant-fixture benchmark. Per-clinic prices quoted verbatim from clinic sites, dated, with US anchors cited.',
+    category: 'Dental Tourism',
+    readTime: '10 min',
+    icon: '🇨🇷',
+  },
+  {
+    slug: 'does-us-insurance-cover-dental-work-in-mexico',
+    title: 'Does US Dental Insurance Cover Work Done in Mexico? (2026)',
+    description:
+      'Sometimes, partially. A PPO with out-of-network benefits often reimburses a share of Mexico dental care; a DHMO usually pays nothing outside its network.',
+    category: 'Financing Guide',
+    readTime: '10 min',
+    icon: '🛡️',
+  },
+  {
     slug: 'root-canal-cost-without-insurance',
     title: 'Root Canal Cost Without Insurance (2026): By Tooth',
     description:
@@ -413,6 +449,24 @@ const guides = [
     category: 'Comparison',
     readTime: '13 min',
     icon: '⚖️',
+  },
+  {
+    slug: 'mexico-bariatric-surgery-prices',
+    title: 'Mexico Bariatric Surgery Prices (2026): Verified Gastric Sleeve & Bypass Costs',
+    description:
+      'Verified gastric-sleeve packages in Mexico run a median of $4,900 (n=12 all-inclusive); gastric bypass a median of $5,900. Per-clinic Tijuana prices quoted verbatim from clinic sites, dated, inclusions caveated.',
+    category: 'Medical Tourism',
+    readTime: '11 min',
+    icon: '🇲🇽',
+  },
+  {
+    slug: 'does-insurance-cover-bariatric-surgery-abroad',
+    title: 'Does US Insurance Cover Bariatric Surgery Abroad?',
+    description:
+      'US insurance almost never covers bariatric surgery abroad; plans require an in-network accredited US facility, so elective foreign surgery is self-pay.',
+    category: 'Financing Guide',
+    readTime: '10 min',
+    icon: '🛡️',
   },
   {
     slug: 'rhinoplasty-cost-by-country',
@@ -476,6 +530,15 @@ const guides = [
     category: 'Medical Tourism',
     readTime: '13 min',
     icon: '🌍',
+  },
+  {
+    slug: 'donor-egg-ivf-abroad',
+    title: 'Donor-Egg IVF Abroad (2026): Czech & Greece Costs vs the US',
+    description:
+      'Donor-egg IVF abroad in 2026: Czech and Greece clinic price lists (~€5,525–€6,900 sticker; ~$10–14.5k all-in) vs US donor cycles often $35k+. Anonymity rules, excluded extras, and how to read a quote.',
+    category: 'Medical Tourism',
+    readTime: '12 min',
+    icon: '🥚',
   },
   {
     slug: 'knee-replacement-cost-by-country',
@@ -649,6 +712,15 @@ const guides = [
     category: 'Medical Tourism',
     readTime: '13 min',
     icon: '🧳',
+  },
+  {
+    slug: 'gastric-sleeve-mexico-vs-glp1-program',
+    title: 'Gastric Sleeve in Mexico vs a GLP-1 Program: The Verified Math (2026)',
+    description:
+      'A gastric sleeve in Mexico is a verified $4,900 median one-time cost; a GLP-1 program a verified $262.50/month. The honest, cited comparison of cost, outcomes, and eligibility — not the $120k facilitator myth.',
+    category: 'Comparison',
+    readTime: '12 min',
+    icon: '⚖️',
   },
   // GSC gap-fill batch (2026-06-25): pages for queries we already earn impressions for
   {
@@ -1229,6 +1301,15 @@ const guides = [
     icon: '🦷',
   },
   {
+    slug: 'turkey-dental-cost',
+    title: 'Turkey Dental Cost (2026): Istanbul Implants, All-on-4 & Veneers',
+    description:
+      'Istanbul implants, All-on-4, and veneers vs the US and Los Algodones — teaser-price warnings (sub-$2,500 All-on-4), implant passports, and the two-trip prosthesis reality.',
+    category: 'Medical Tourism',
+    readTime: '11 min',
+    icon: '🇹🇷',
+  },
+  {
     slug: 'colombia-plastic-surgery-cost',
     title: 'Colombia Plastic Surgery Cost 2026: BBL, Lipo & Breast vs US',
     description: 'What plastic surgery costs in Colombia vs the US, procedure by procedure — BBL, liposuction, breast augmentation, tummy tuck — across Medellín, Bogotá, Cali & Cartagena, plus what is included and how to vet an accredited surgeon.',
@@ -1315,6 +1396,15 @@ const guides = [
     description: 'Symptoms of low T, treatment options, costs ($150-250/mo), benefits, risks, and how to get started with online TRT clinics.',
     category: 'Telehealth',
     readTime: '15 min',
+    icon: '💪',
+  },
+  {
+    slug: 'trt-cost',
+    title: 'TRT Cost (2026): Verified Testosterone Therapy Prices',
+    description:
+      'Verified monthly TRT programs — the median across clinics that publish a price, what membership-only vs all-in quotes include, and why most clinics gate the number behind a consult.',
+    category: 'Cost Guide',
+    readTime: '11 min',
     icon: '💪',
   },
   {
@@ -1610,6 +1700,42 @@ const guides = [
     category: 'Trip Planning',
     readTime: '10 min',
     icon: '🛡️',
+  },
+  {
+    slug: 'can-you-use-hsa-fsa-for-medical-care-abroad',
+    title: 'Can You Use an HSA or FSA for Medical Care Abroad?',
+    description:
+      'Yes. An HSA or FSA can pay for qualified medical or dental care abroad if it\'s legal, medically necessary, and not cosmetic. Travel is rarely eligible.',
+    category: 'Financing Guide',
+    readTime: '10 min',
+    icon: '💳',
+  },
+  {
+    slug: 'hsa-letter-of-medical-necessity-rules',
+    title: 'HSA Letter of Medical Necessity: When You Need One and What It Must Say',
+    description:
+      'An LMN is a signed provider statement showing why an item treats a specific condition. HSAs and FSAs require one for dual-purpose expenses.',
+    category: 'Financing Guide',
+    readTime: '10 min',
+    icon: '📄',
+  },
+  {
+    slug: 'medical-tourism-tax-deduction-rules',
+    title: 'Is Medical Tourism Tax Deductible? Schedule A Rules for Care Abroad (2026)',
+    description:
+      'Sometimes. Unreimbursed care abroad can count toward the Schedule A medical deduction — only the portion above 7.5% of AGI, and only if you itemize.',
+    category: 'Financing Guide',
+    readTime: '11 min',
+    icon: '🧾',
+  },
+  {
+    slug: 'paying-for-medical-tourism',
+    title: 'How to Pay for Medical Tourism: Methods, Currency, and Red Flags',
+    description:
+      'Pay a foreign clinic with a small deposit (10–30%) and put the balance on a credit card for dispute protection. Currency conversion adds 1–3%. Red flags inside.',
+    category: 'Financing Guide',
+    readTime: '10 min',
+    icon: '💳',
   },
   {
     slug: 'us-healthcare-by-region',
