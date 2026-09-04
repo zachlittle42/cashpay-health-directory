@@ -3,7 +3,29 @@ import Navigation from '@/components/Navigation';
 import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
 import MedicalDisclaimer from '@/components/MedicalDisclaimer';
+import BrandCtaGrid from '@/components/BrandCtaGrid';
 import type { Metadata } from 'next';
+
+const ED_BRANDS = [
+  {
+    name: 'Hims',
+    price: 'From ~$2/dose',
+    blurb: 'Broad men’s-health platform for generic sildenafil, tadalafil, and chewables after a clinician review. Headline prices are estimates — verify on Hims.',
+    siteUrl: 'https://www.hims.com',
+  },
+  {
+    name: 'Ro (Roman)',
+    price: '~$20–$90/mo',
+    blurb: 'Telehealth evaluation plus integrated pharmacy for generic and brand ED options. Confirm the current plan and per-dose price on Ro.',
+    siteUrl: 'https://ro.co',
+  },
+  {
+    name: 'BlueChew',
+    price: '~$20–$90/mo',
+    blurb: 'ED-only subscription for chewable sildenafil, tadalafil, and vardenafil after an online evaluation. Tier pricing changes — verify on BlueChew.',
+    siteUrl: 'https://bluechew.com',
+  },
+];
 
 export const metadata: Metadata = {
   title: { absolute: 'Online ED Treatment (2026): $20-$90/mo, Hims vs Ro vs BlueChew' },
@@ -215,6 +237,7 @@ export default function OnlineEDTreatmentGuide() {
                     <th className="border border-gray-300 px-4 py-3 text-left font-semibold">Platform</th>
                     <th className="border border-gray-300 px-4 py-3 text-left font-semibold">What It Offers</th>
                     <th className="border border-gray-300 px-4 py-3 text-left font-semibold">Price (est.)</th>
+                    <th className="border border-gray-300 px-4 py-3 text-left font-semibold">Next step</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -222,25 +245,45 @@ export default function OnlineEDTreatmentGuide() {
                     <td className="border border-gray-300 px-4 py-3 font-medium">Hims</td>
                     <td className="border border-gray-300 px-4 py-3">Broad men&apos;s health brand; online evaluation, generic and brand ED meds, subscription model, ongoing support</td>
                     <td className="border border-gray-300 px-4 py-3">~$20 - $90+ / mo depending on med &amp; plan</td>
+                    <td className="border border-gray-300 px-4 py-3">
+                      <a href="https://www.hims.com" target="_blank" rel="nofollow sponsored noopener noreferrer" className="font-medium text-emerald-700 hover:underline">Visit Site →</a>
+                    </td>
                   </tr>
                   <tr className="bg-gray-50">
                     <td className="border border-gray-300 px-4 py-3 font-medium">Ro</td>
                     <td className="border border-gray-300 px-4 py-3">Telehealth platform with clinician evaluation; generic and brand options, discreet delivery, follow-up care</td>
                     <td className="border border-gray-300 px-4 py-3">~$20 - $90+ / mo, varies by medication</td>
+                    <td className="border border-gray-300 px-4 py-3">
+                      <a href="https://ro.co" target="_blank" rel="nofollow sponsored noopener noreferrer" className="font-medium text-emerald-700 hover:underline">Visit Site →</a>
+                    </td>
                   </tr>
                   <tr>
                     <td className="border border-gray-300 px-4 py-3 font-medium">BlueChew</td>
                     <td className="border border-gray-300 px-4 py-3">Subscription focused on chewable formulations of generic sildenafil and tadalafil; online evaluation</td>
                     <td className="border border-gray-300 px-4 py-3">~$20 - $90 / mo by plan tier</td>
+                    <td className="border border-gray-300 px-4 py-3">
+                      <a href="https://bluechew.com" target="_blank" rel="nofollow sponsored noopener noreferrer" className="font-medium text-emerald-700 hover:underline">Visit Site →</a>
+                    </td>
                   </tr>
                   <tr className="bg-gray-50">
                     <td className="border border-gray-300 px-4 py-3 font-medium">Generic via pharmacy</td>
                     <td className="border border-gray-300 px-4 py-3">Prescription from your own doctor filled at a retail or online pharmacy; no subscription required</td>
                     <td className="border border-gray-300 px-4 py-3">Often lowest per-dose with discount programs</td>
+                    <td className="border border-gray-300 px-4 py-3">
+                      <Link href="/mens-health" className="font-medium text-blue-600 hover:underline">Compare clinics</Link>
+                    </td>
                   </tr>
                 </tbody>
               </table>
             </div>
+
+            <BrandCtaGrid
+              title="Compare the platforms named above"
+              intro="None of these brands have a dedicated VitalityScout provider profile for ED. Use the official site, then compare them side by side on the men’s-health hub. Prices are estimates — verify before you enroll."
+              brands={ED_BRANDS}
+              hubHref="/mens-health"
+              hubLabel="Compare online men’s health clinics →"
+            />
 
             <p className="text-gray-700 mb-4">
               The right choice depends on what you value: an all-in-one branded experience and convenience (Hims, Ro), a specific format like chewables (BlueChew), or the lowest possible price by using generics through a pharmacy with your existing doctor. Many men find generics offer the best value, since sildenafil and tadalafil are both available generically.
@@ -295,6 +338,14 @@ export default function OnlineEDTreatmentGuide() {
             </div>
           </div>
 
+          <BrandCtaGrid
+            title="Ready to pick a brand?"
+            intro="Open the official site for the platform you want, or compare Hims, Ro, and BlueChew on one page."
+            brands={ED_BRANDS}
+            hubHref="/mens-health"
+            hubLabel="Compare online men’s health clinics →"
+          />
+
           {/* CTA Section — money page repeat */}
           <div className="mt-12 rounded-xl bg-gradient-to-r from-blue-500 to-indigo-500 p-8 text-center text-white">
             <h3 className="text-2xl font-bold mb-3">Find the Right Online Clinic for You</h3>
@@ -321,6 +372,12 @@ export default function OnlineEDTreatmentGuide() {
               </li>
               <li>
                 <Link href="/hormone-therapy" className="text-blue-600 hover:underline">Hormone Therapy &amp; TRT &mdash; testosterone and men&apos;s hormonal health</Link>
+              </li>
+              <li>
+                <Link href="/trt" className="text-blue-600 hover:underline">TRT hub &mdash; online testosterone clinics compared</Link>
+              </li>
+              <li>
+                <Link href="/guides/cash-pay-healthcare-map" className="text-blue-600 hover:underline">Cash-pay healthcare map &mdash; where this sits vs labs, imaging, and surgery</Link>
               </li>
             </ul>
           </div>

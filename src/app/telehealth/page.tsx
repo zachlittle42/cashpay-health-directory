@@ -345,6 +345,16 @@ export default function TelehealthHub() {
                 </div>
               </div>
             </Link>
+
+            <Link href="/guides/cash-pay-telehealth-visits" className="bg-white rounded-lg border border-blue-200 p-6 hover:shadow-lg transition-shadow">
+              <div className="flex items-start gap-3">
+                <span className="text-3xl">💻</span>
+                <div>
+                  <div className="font-bold text-gray-900 mb-1">Cash-Pay Telehealth Visits (2026)</div>
+                  <div className="text-sm text-gray-600">What a virtual doctor costs vs $120–$350 urgent care</div>
+                </div>
+              </div>
+            </Link>
           </div>
         </div>
       </section>
