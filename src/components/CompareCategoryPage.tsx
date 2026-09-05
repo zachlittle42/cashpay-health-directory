@@ -3,6 +3,8 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import SidebarShell from '@/components/SidebarShell';
 import MedicalDisclaimer from '@/components/MedicalDisclaimer';
+import RelatedGuides from '@/components/RelatedGuides';
+import { getRelatedGuides } from '@/data/related-guides';
 import { buildFAQSchema } from '@/lib/jsonLd';
 import type {
   CompareCategory,
@@ -280,6 +282,13 @@ export default function CompareCategoryPage({
           </div>
         </div>
       </section>
+
+      {['mens-health', 'cgm', 'mental-health'].includes(category.slug) && (
+        <RelatedGuides
+          title="Cost guides in this category"
+          items={getRelatedGuides(`/${category.slug}`, 8)}
+        />
+      )}
 
       {category.requiresMedicalDisclaimer && <MedicalDisclaimer />}
       </SidebarShell>

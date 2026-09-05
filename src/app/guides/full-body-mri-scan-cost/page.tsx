@@ -5,6 +5,8 @@ import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import BrandCtaGrid from '@/components/BrandCtaGrid';
+import RelatedGuides from '@/components/RelatedGuides';
+import { getRelatedGuides } from '@/data/related-guides';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 const MRI_BRANDS = [
@@ -604,6 +606,8 @@ export default function FullBodyMriScanCost() {
             </ul>
           </div>
         </article>
+
+        <RelatedGuides items={getRelatedGuides('/guides/full-body-mri-scan-cost')} />
 
         <div className="mx-auto max-w-4xl px-4 py-8">
           <EmailCaptureCard

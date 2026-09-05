@@ -4,6 +4,8 @@ import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
 import MedicalDisclaimer from '@/components/MedicalDisclaimer';
 import BrandCtaGrid from '@/components/BrandCtaGrid';
+import RelatedGuides from '@/components/RelatedGuides';
+import { getRelatedGuides } from '@/data/related-guides';
 import type { Metadata } from 'next';
 
 const ED_BRANDS = [
@@ -382,6 +384,8 @@ export default function OnlineEDTreatmentGuide() {
             </ul>
           </div>
         </article>
+
+        <RelatedGuides items={getRelatedGuides('/guides/online-ed-treatment')} />
 
         <MedicalDisclaimer />
       </main>

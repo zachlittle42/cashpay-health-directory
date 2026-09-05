@@ -10,6 +10,8 @@ import { buildCategoryListSchema, buildFAQSchema } from '@/lib/jsonLd';
 import MedicalDisclaimer from '@/components/MedicalDisclaimer';
 import LabsPriceComparison from '@/components/LabsPriceComparison';
 import SubjectiveBanner from '@/components/SubjectiveBanner';
+import RelatedGuides from '@/components/RelatedGuides';
+import { getRelatedGuides } from '@/data/related-guides';
 
 // DEXA-specific AEO content. Answers are grounded in the live provider data in
 // src/lib/providers-telehealth.ts (BodySpec $40-45/scan, DexaFit $100-150/scan).
@@ -640,6 +642,13 @@ export default function CategoryPage({
       </section>
 
       {isDexa && <MedicalDisclaimer />}
+
+      {(categorySlug === 'labs' || categorySlug === 'glp1' || categorySlug === 'imaging') && (
+        <RelatedGuides
+          title="Cost guides in this category"
+          items={getRelatedGuides(`/${categorySlug}`, 8)}
+        />
+      )}
 
         </div>
       </div>

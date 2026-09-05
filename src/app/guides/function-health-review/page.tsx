@@ -6,6 +6,8 @@ import Footer from '@/components/Footer';
 import MedicalDisclaimer from '@/components/MedicalDisclaimer';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import BrandCtaGrid from '@/components/BrandCtaGrid';
+import RelatedGuides from '@/components/RelatedGuides';
+import { getRelatedGuides } from '@/data/related-guides';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 const FUNCTION_BRANDS = [
@@ -533,6 +535,8 @@ export default function FunctionHealthReview() {
           </ul>
         </div>
       </section>
+
+      <RelatedGuides items={getRelatedGuides('/guides/function-health-review')} />
 
       {/* Medical + affiliate disclosure */}
       <MedicalDisclaimer />
