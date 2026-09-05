@@ -1793,6 +1793,35 @@ const guides = [
     readTime: '20 min',
     icon: '🏥',
   },
+  // Medical-tourism money guides (2026-09-05 Batch B): All-on-4 Los Algodones,
+  // FUE Istanbul, gastric sleeve Tijuana — official clinic lists, no affiliate IDs.
+  {
+    slug: 'all-on-4-los-algodones-cost',
+    title: 'All-on-4 Los Algodones Cost (2026): Mexico vs US Cash Prices',
+    description:
+      'Full-arch All-on-4 in Los Algodones from $8,110–$12,450 per arch on named clinic lists vs Aspen US full-arch average $19,979. Temp prosthesis often in; flights not included. Official prices as of September 2026.',
+    category: 'Cost Guide',
+    readTime: '11 min',
+    icon: '🦷',
+  },
+  {
+    slug: 'fue-hair-transplant-istanbul-cost',
+    title: 'FUE Hair Transplant Istanbul Cost (2026): Graft Packages vs the US',
+    description:
+      'Istanbul FUE money page — Cosmedica Sapphire FUE €2,550 (up to 4,000 grafts) vs CareCredit US FUE average $6,344. Package inclusions and JCI vs Ministry of Health. Complements the clinics guide.',
+    category: 'Cost Guide',
+    readTime: '11 min',
+    icon: '💇',
+  },
+  {
+    slug: 'gastric-sleeve-tijuana-cost',
+    title: 'Gastric Sleeve Tijuana Cost (2026): Packages vs US Self-Pay',
+    description:
+      'Tijuana laparoscopic sleeve — ALO from $4,500 all-inclusive vs WeightWise US cash $9,995. JCI centers (LIMARP, OCC) quote after consult. Official prices as of September 2026.',
+    category: 'Cost Guide',
+    readTime: '11 min',
+    icon: '⚕️',
+  },
 ];
 
 export default function GuidesIndex() {
