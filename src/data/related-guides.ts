@@ -58,6 +58,11 @@ export const GUIDE_CLUSTERS: GuideCluster[] = [
         label: 'Online ED treatment',
         blurb: 'How telehealth ED visits work, generic vs brand, and typical monthly cost.',
       },
+      {
+        href: '/guides/hims-vs-ro-cost',
+        label: 'Hims vs Ro cost',
+        blurb: 'ED generics and GLP-1 membership prices, side by side.',
+      },
     ],
   },
   {
@@ -104,6 +109,11 @@ export const GUIDE_CLUSTERS: GuideCluster[] = [
         blurb: 'Membership plus medication — what Ro Body actually costs per month.',
       },
       {
+        href: '/guides/hims-vs-ro-cost',
+        label: 'Hims vs Ro cost',
+        blurb: 'Hims vs Ro membership and meds — ED plans plus GLP-1 membership.',
+      },
+      {
         href: '/guides/noom-vs-weightwatchers-cost',
         label: 'Noom vs WeightWatchers cost',
         blurb: 'App-only vs Med+ vs Noom Med, and when a GLP-1 clinic is cheaper.',
@@ -148,6 +158,11 @@ export const GUIDE_CLUSTERS: GuideCluster[] = [
       blurb: 'Function, SuperPower, Quest, and Labcorp side by side.',
     },
     guides: [
+      {
+        href: '/guides/function-vs-superpower-cost',
+        label: 'Function vs Superpower cost',
+        blurb: 'Annual lab memberships compared — $365 vs $349 and what each includes.',
+      },
       {
         href: '/guides/quest-vs-labcorp-pricing',
         label: 'Quest vs Labcorp pricing',
@@ -237,6 +252,11 @@ export const GUIDE_CLUSTERS: GuideCluster[] = [
         href: '/guides/cash-pay-telehealth-visits',
         label: 'Cash-pay telehealth visits',
         blurb: 'What a virtual doctor costs versus $120–$350 urgent care.',
+      },
+      {
+        href: '/guides/sesame-vs-mdlive-teladoc-cost',
+        label: 'Sesame vs MDLive vs Teladoc cost',
+        blurb: 'Cash visit prices: marketplace listings versus $89 self-pay brands.',
       },
       {
         href: '/guides/online-ed-treatment',

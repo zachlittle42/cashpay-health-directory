@@ -6,6 +6,8 @@ import Footer from '@/components/Footer';
 import MedicalDisclaimer from '@/components/MedicalDisclaimer';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import BrandCtaGrid from '@/components/BrandCtaGrid';
+import RelatedGuides from '@/components/RelatedGuides';
+import { getRelatedGuides } from '@/data/related-guides';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 const PAGE_URL = 'https://vitalityscout.com/guides/hims-vs-ro-cost';
@@ -496,17 +498,6 @@ export default function HimsVsRoCostPage() {
             hubLabel="Open the GLP-1 hub →"
           />
 
-          <div id="related" className="mt-12 border-t border-gray-200 pt-8">
-            <h3 className="font-semibold text-gray-800 mb-4">Related guides</h3>
-            <ul className="space-y-2 text-gray-700">
-              <li><Link href="/guides/online-ed-treatment" className="text-blue-600 hover:underline">How to get ED treatment online</Link></li>
-              <li><Link href="/guides/ro-body-weight-loss-cost" className="text-blue-600 hover:underline">Ro Body weight-loss cost</Link></li>
-              <li><Link href="/mens-health" className="text-blue-600 hover:underline">Men&apos;s health hub (ED &amp; hair)</Link></li>
-              <li><Link href="/glp1" className="text-blue-600 hover:underline">GLP-1 programs</Link></li>
-              <li><Link href="/guides/sesame-vs-mdlive-teladoc-cost" className="text-blue-600 hover:underline">Sesame vs MDLive vs Teladoc cash visits</Link></li>
-            </ul>
-          </div>
-
           <div className="mt-12 rounded-xl bg-gradient-to-r from-blue-500 to-indigo-500 p-8 text-center text-white">
             <h3 className="text-2xl font-bold mb-3">Confirm today&apos;s Hims or Ro price</h3>
             <p className="mb-6 text-blue-100">
@@ -572,6 +563,10 @@ export default function HimsVsRoCostPage() {
             </ul>
           </div>
         </article>
+
+        <div id="related">
+          <RelatedGuides items={getRelatedGuides('/guides/hims-vs-ro-cost')} />
+        </div>
 
         <MedicalDisclaimer />
 
