@@ -105,6 +105,36 @@ const guides = [
     readTime: '10 min',
     icon: '🧪',
   },
+  // Money-comparison Batch C (2026-09-05): WW Med+ vs Ro Body vs Noom Med,
+  // Fountain vs Henry Meds TRT, Ulta vs Quest vs Labcorp OnDemand —
+  // official cash prices, no affiliate IDs.
+  {
+    slug: 'weightwatchers-med-vs-ro-body-vs-noom-med',
+    title: 'WW Med+ vs Ro Body vs Noom Med (2026): GLP-1 Costs',
+    description:
+      'Clinical GLP-1 costs in 2026 — WW Med+ $25 then $74 (meds extra), Ro Body $39 then $74–$149 (meds extra), Noom Med from $79 then $179–$299 all-in. Official prices as of September 2026.',
+    category: 'Comparison',
+    readTime: '11 min',
+    icon: '💊',
+  },
+  {
+    slug: 'fountain-vs-henry-meds-trt',
+    title: 'Fountain vs Henry Meds TRT (2026): $199 vs $129',
+    description:
+      'Fountain vs Henry Meds TRT cash plans in 2026 — Fountain ~$199/mo all-in (“less than $7/day”), Henry Meds $129/mo compounded ($179 Kyzatrex). Official prices as of September 2026.',
+    category: 'Comparison',
+    readTime: '10 min',
+    icon: '⚖️',
+  },
+  {
+    slug: 'ulta-vs-quest-vs-labcorp-ondemand',
+    title: 'Ulta vs Quest vs Labcorp OnDemand (2026): Self-Pay Labs',
+    description:
+      'À la carte self-pay labs in 2026 — Ulta CBC/CMP/lipid/A1c $22.95 each; Quest and Labcorp CBC $29, CMP $49, lipid $59, A1c $39. Official prices as of September 2026.',
+    category: 'Comparison',
+    readTime: '10 min',
+    icon: '🧪',
+  },
   // GLP-1 intent cluster (2026-08-03): dosing / side-effects / comparison / medication-list
   // pages targeting the 254-query, ~699K-imp/13wk Bing demand pocket with 0% prior coverage.
   {
@@ -752,6 +782,15 @@ const guides = [
     icon: '💇',
   },
   {
+    slug: 'fue-hair-transplant-istanbul-cost',
+    title: 'FUE Hair Transplant Istanbul Cost (2026): Graft Packages vs the US',
+    description:
+      'Istanbul FUE money page — Cosmedica Sapphire FUE €2,550 (up to 4,000 grafts) vs CareCredit US FUE average $6,344. Package inclusions and JCI vs Ministry of Health. Complements the clinics guide.',
+    category: 'Cost Guide',
+    readTime: '11 min',
+    icon: '💇',
+  },
+  {
     slug: 'all-inclusive-bariatric-surgery-abroad',
     title: 'All-Inclusive Bariatric Surgery Abroad: What’s Bundled (2026)',
     description:
@@ -768,6 +807,15 @@ const guides = [
     category: 'Comparison',
     readTime: '12 min',
     icon: '⚖️',
+  },
+  {
+    slug: 'gastric-sleeve-tijuana-cost',
+    title: 'Gastric Sleeve Tijuana Cost (2026): Packages vs US Self-Pay',
+    description:
+      'Tijuana laparoscopic sleeve — ALO from $4,500 all-inclusive vs WeightWise US cash $9,995. JCI centers (LIMARP, OCC) quote after consult. Official prices as of September 2026.',
+    category: 'Cost Guide',
+    readTime: '11 min',
+    icon: '⚕️',
   },
   // GSC gap-fill batch (2026-06-25): pages for queries we already earn impressions for
   {
@@ -1471,6 +1519,15 @@ const guides = [
     icon: '🦷',
   },
   {
+    slug: 'all-on-4-los-algodones-cost',
+    title: 'All-on-4 Los Algodones Cost (2026): Mexico vs US Cash Prices',
+    description:
+      'Full-arch All-on-4 in Los Algodones from $8,110–$12,450 per arch on named clinic lists vs Aspen US full-arch average $19,979. Temp prosthesis often in; flights not included. Official prices as of September 2026.',
+    category: 'Cost Guide',
+    readTime: '11 min',
+    icon: '🦷',
+  },
+  {
     slug: 'hair-transplant-grafts-guide',
     title: 'How Many Hair Grafts Do I Need?',
     description: 'Norwood scale explained, graft estimates by hair loss stage, density calculations, and cost per graft by country.',
@@ -1792,35 +1849,6 @@ const guides = [
     category: 'Research',
     readTime: '20 min',
     icon: '🏥',
-  },
-  // Medical-tourism money guides (2026-09-05 Batch B): All-on-4 Los Algodones,
-  // FUE Istanbul, gastric sleeve Tijuana — official clinic lists, no affiliate IDs.
-  {
-    slug: 'all-on-4-los-algodones-cost',
-    title: 'All-on-4 Los Algodones Cost (2026): Mexico vs US Cash Prices',
-    description:
-      'Full-arch All-on-4 in Los Algodones from $8,110–$12,450 per arch on named clinic lists vs Aspen US full-arch average $19,979. Temp prosthesis often in; flights not included. Official prices as of September 2026.',
-    category: 'Cost Guide',
-    readTime: '11 min',
-    icon: '🦷',
-  },
-  {
-    slug: 'fue-hair-transplant-istanbul-cost',
-    title: 'FUE Hair Transplant Istanbul Cost (2026): Graft Packages vs the US',
-    description:
-      'Istanbul FUE money page — Cosmedica Sapphire FUE €2,550 (up to 4,000 grafts) vs CareCredit US FUE average $6,344. Package inclusions and JCI vs Ministry of Health. Complements the clinics guide.',
-    category: 'Cost Guide',
-    readTime: '11 min',
-    icon: '💇',
-  },
-  {
-    slug: 'gastric-sleeve-tijuana-cost',
-    title: 'Gastric Sleeve Tijuana Cost (2026): Packages vs US Self-Pay',
-    description:
-      'Tijuana laparoscopic sleeve — ALO from $4,500 all-inclusive vs WeightWise US cash $9,995. JCI centers (LIMARP, OCC) quote after consult. Official prices as of September 2026.',
-    category: 'Cost Guide',
-    readTime: '11 min',
-    icon: '⚕️',
   },
 ];
 
