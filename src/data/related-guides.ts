@@ -58,11 +58,6 @@ export const GUIDE_CLUSTERS: GuideCluster[] = [
         label: 'Online ED treatment',
         blurb: 'How telehealth ED visits work, generic vs brand, and typical monthly cost.',
       },
-      {
-        href: '/guides/cash-pay-telehealth-visits',
-        label: 'Cash-pay telehealth visits',
-        blurb: 'What a virtual doctor visit costs versus urgent care.',
-      },
     ],
   },
   {
