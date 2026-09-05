@@ -333,9 +333,9 @@ export default function CashPayHealthcareMapGuide() {
 
             <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">The big four</h3>
             <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-6">
-              <li><strong>Dental:</strong> <Link href="/dental" className="text-blue-600 hover:underline">/dental</Link> + <Link href="/guides/mexico-dental-implant-prices" className="text-blue-600 hover:underline">Mexico dental implant prices</Link></li>
-              <li><strong>Hair:</strong> <Link href="/hair_transplant" className="text-blue-600 hover:underline">/hair_transplant</Link> + <Link href="/guides/hair-transplant-turkey-cost" className="text-blue-600 hover:underline">hair transplant Turkey cost</Link></li>
-              <li><strong>Bariatric:</strong> <Link href="/bariatric" className="text-blue-600 hover:underline">/bariatric</Link> + <Link href="/guides/mexico-bariatric-surgery-prices" className="text-blue-600 hover:underline">Mexico bariatric surgery prices</Link></li>
+              <li><strong>Dental:</strong> <Link href="/dental" className="text-blue-600 hover:underline">/dental</Link> + <Link href="/guides/mexico-dental-implant-prices" className="text-blue-600 hover:underline">Mexico dental implant prices</Link> + <Link href="/guides/all-on-4-los-algodones-cost" className="text-blue-600 hover:underline">All-on-4 Los Algodones cost</Link></li>
+              <li><strong>Hair:</strong> <Link href="/hair_transplant" className="text-blue-600 hover:underline">/hair_transplant</Link> + <Link href="/guides/hair-transplant-turkey-cost" className="text-blue-600 hover:underline">hair transplant Turkey cost</Link> + <Link href="/guides/fue-hair-transplant-istanbul-cost" className="text-blue-600 hover:underline">FUE Istanbul cost</Link></li>
+              <li><strong>Bariatric:</strong> <Link href="/bariatric" className="text-blue-600 hover:underline">/bariatric</Link> + <Link href="/guides/mexico-bariatric-surgery-prices" className="text-blue-600 hover:underline">Mexico bariatric surgery prices</Link> + <Link href="/guides/gastric-sleeve-tijuana-cost" className="text-blue-600 hover:underline">gastric sleeve Tijuana cost</Link></li>
               <li><strong>Plastic surgery:</strong> <Link href="/plastic_surgery" className="text-blue-600 hover:underline">/plastic_surgery</Link> + <Link href="/guides/plastic-surgery-abroad-cost-comparison" className="text-blue-600 hover:underline">plastic surgery abroad cost comparison</Link></li>
             </ul>
 

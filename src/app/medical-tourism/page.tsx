@@ -132,6 +132,14 @@ export default function Page() {
               </tbody>
             </table>
           </div>
+          <p className="mt-4 text-sm text-gray-600">
+            New 2026 cost guides:{' '}
+            <Link href="/guides/all-on-4-los-algodones-cost" className="text-purple-700 hover:underline">All-on-4 Los Algodones</Link>
+            {' · '}
+            <Link href="/guides/fue-hair-transplant-istanbul-cost" className="text-purple-700 hover:underline">FUE Istanbul</Link>
+            {' · '}
+            <Link href="/guides/gastric-sleeve-tijuana-cost" className="text-purple-700 hover:underline">Gastric sleeve Tijuana</Link>
+          </p>
         </section>
 
         {/* Destinations with photos */}

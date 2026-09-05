@@ -7,6 +7,13 @@
 > ⚠️ **Note:** The "Current State" and dated sprint sections below this banner are
 > historical (Dec 2024) and understate the site. The banner here reflects current reality.
 
+### 2026-09-05 Batch B — medical-tourism money guides (All-on-4, FUE, sleeve)
+- New guides only: `/guides/all-on-4-los-algodones-cost`, `/guides/fue-hair-transplant-istanbul-cost`, `/guides/gastric-sleeve-tijuana-cost`
+- Official clinic / brand list prices as of September 5, 2026 (Sani, Algodones Dental Center, Dental Solutions, Aspen, Cosmedica, CareCredit, ALO Bariatrics, WeightWise; LIMARP/OCC as quote-only JCI filters)
+- Mid + bottom `BrandCtaGrid` Visit CTAs — plain clinic URLs / `/providers/*` only; no Impact/FlexOffers IDs; no commission claims
+- Quote/intro stub: `#quote` + `mailto:zach@centurionmovement.com` (labeled “not an instant quote”)
+- Registered on `/guides` index; light see-also on `/medical-tourism` and `/guides/cash-pay-healthcare-map`; `related-guides.ts` left to Batch A
+
 ### 2026-09-05 money-comparison guides (Hims vs Ro, Sesame vs MDLive/Teladoc, Function vs Superpower)
 - New guides only: `/guides/hims-vs-ro-cost`, `/guides/sesame-vs-mdlive-teladoc-cost`, `/guides/function-vs-superpower-cost`
 - Official cash prices as of September 5, 2026 (hims.com, ro.co, sesamecare.com, mdlive.com, teladochealth.com, functionhealth.com, superpower.com)
