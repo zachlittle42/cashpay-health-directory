@@ -1,11 +1,17 @@
 # VitalityScout - Project Status & Development Sprints
 
-**Last Updated:** September 4, 2026
+**Last Updated:** September 5, 2026
 **Live Site:** https://vitalityscout.com
 **Status:** ✅ Live in Production
 
 > ⚠️ **Note:** The "Current State" and dated sprint sections below this banner are
 > historical (Dec 2024) and understate the site. The banner here reflects current reality.
+
+### 2026-09-05 money-comparison guides (Hims vs Ro, Sesame vs MDLive/Teladoc, Function vs Superpower)
+- New guides only: `/guides/hims-vs-ro-cost`, `/guides/sesame-vs-mdlive-teladoc-cost`, `/guides/function-vs-superpower-cost`
+- Official cash prices as of September 5, 2026 (hims.com, ro.co, sesamecare.com, mdlive.com, teladochealth.com, functionhealth.com, superpower.com)
+- Visit CTAs mid + bottom via `BrandCtaGrid` — plain brand URLs / `/providers/*` only; no Impact/FlexOffers IDs
+- Registered on `/guides` index; existing guide pages and hub pages left untouched (parallel RelatedGuides PR)
 
 ### 2026-09-04 content batch 1 (CTA upgrades + TRT 2026 + cash telehealth)
 - CTA upgrades (no full rewrites) on ranking guides that named brands without conversion UI: `/guides/online-ed-treatment` (Hims/Ro/BlueChew), `/guides/ro-body-weight-loss-cost` (Ro Body + Hims), `/guides/allergy-testing-cost` (Everlywell/Quest/Labcorp), `/guides/full-body-mri-scan-cost` (Prenuvo/Ezra/Function), `/guides/function-health-review` (membership CTA + `/labs`)
