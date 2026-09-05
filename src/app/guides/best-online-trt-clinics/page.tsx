@@ -6,6 +6,8 @@ import Footer from '@/components/Footer';
 import MedicalDisclaimer from '@/components/MedicalDisclaimer';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import BrandCtaGrid from '@/components/BrandCtaGrid';
+import RelatedGuides from '@/components/RelatedGuides';
+import { getRelatedGuides } from '@/data/related-guides';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 const PAGE_URL = 'https://vitalityscout.com/guides/best-online-trt-clinics';
@@ -578,6 +580,8 @@ export default function BestOnlineTRTClinicsGuide() {
             </ul>
           </div>
         </article>
+
+        <RelatedGuides items={getRelatedGuides('/guides/best-online-trt-clinics')} />
 
         <MedicalDisclaimer />
 

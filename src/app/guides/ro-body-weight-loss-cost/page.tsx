@@ -5,6 +5,8 @@ import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import BrandCtaGrid from '@/components/BrandCtaGrid';
+import RelatedGuides from '@/components/RelatedGuides';
+import { getRelatedGuides } from '@/data/related-guides';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 const RO_BRANDS = [
@@ -546,6 +548,8 @@ export default function RoBodyWeightLossCost() {
             </ul>
           </div>
         </article>
+
+        <RelatedGuides items={getRelatedGuides('/guides/ro-body-weight-loss-cost')} />
 
         <div className="mx-auto max-w-4xl px-4 py-8">
           <EmailCaptureCard

@@ -5,6 +5,8 @@ import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
 import MedicalDisclaimer from '@/components/MedicalDisclaimer';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
+import RelatedGuides from '@/components/RelatedGuides';
+import { getRelatedGuides } from '@/data/related-guides';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 const PAGE_URL = 'https://vitalityscout.com/guides/cgm-without-diabetes';
@@ -501,6 +503,8 @@ export default function CGMWithoutDiabetesGuide() {
             </ul>
           </div>
         </article>
+
+        <RelatedGuides items={getRelatedGuides('/guides/cgm-without-diabetes')} />
 
         <div className="mx-auto max-w-4xl px-4 py-8">
           <EmailCaptureCard

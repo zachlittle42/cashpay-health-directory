@@ -3,6 +3,8 @@ import type { Metadata } from 'next';
 import Navigation from '@/components/Navigation';
 import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
+import RelatedGuides from '@/components/RelatedGuides';
+import { getRelatedGuides } from '@/data/related-guides';
 
 export const metadata: Metadata = {
   title: 'Telehealth & Cash-Pay Services | Labs, GLP-1, TRT',
@@ -358,6 +360,11 @@ export default function TelehealthHub() {
           </div>
         </div>
       </section>
+
+      <RelatedGuides
+        title="Cost guides in this category"
+        items={getRelatedGuides('/telehealth', 8)}
+      />
 
       {/* Centurion Coach Promo */}
       <section className="mx-auto max-w-4xl px-4 py-12">

@@ -4,6 +4,8 @@ import Image from 'next/image';
 import Navigation from '@/components/Navigation';
 import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
+import RelatedGuides from '@/components/RelatedGuides';
+import { getRelatedGuides } from '@/data/related-guides';
 import { Globe, ArrowRight, Plane, ShieldCheck, BadgeCheck, Tag } from 'lucide-react';
 import { DESTINATION_PHOTO_CREDITS } from '@/lib/destination-photo-credits';
 
@@ -204,6 +206,11 @@ export default function Page() {
             </div>
           </div>
         </section>
+
+        <RelatedGuides
+          title="Cost guides in this category"
+          items={getRelatedGuides('/medical-tourism', 8)}
+        />
 
         {/* Safety + trust */}
         <section className="mx-auto max-w-5xl px-4 py-12 sm:px-6">

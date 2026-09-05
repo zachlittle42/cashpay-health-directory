@@ -5,6 +5,8 @@ import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import MedicalDisclaimer from '@/components/MedicalDisclaimer';
+import RelatedGuides from '@/components/RelatedGuides';
+import { getRelatedGuides } from '@/data/related-guides';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 export const metadata: Metadata = {
@@ -336,6 +338,8 @@ export default function TurkeyDentalCostGuide() {
             </ul>
           </div>
         </article>
+
+        <RelatedGuides items={getRelatedGuides('/guides/turkey-dental-cost')} />
 
         <MedicalDisclaimer />
 
