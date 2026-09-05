@@ -7,6 +7,12 @@
 > ⚠️ **Note:** The "Current State" and dated sprint sections below this banner are
 > historical (Dec 2024) and understate the site. The banner here reflects current reality.
 
+### 2026-09-05 money-comparison Batch C (WW Med+ vs Ro Body vs Noom Med, Fountain vs Henry Meds, Ulta vs Quest vs Labcorp)
+- New guides only: `/guides/weightwatchers-med-vs-ro-body-vs-noom-med`, `/guides/fountain-vs-henry-meds-trt`, `/guides/ulta-vs-quest-vs-labcorp-ondemand`
+- Official cash prices as of September 5, 2026 (weightwatchers.com/us/plans, ro.co/weight-loss/pricing, noom.com/med/pricing, fountaintrt.com, henrymeds.com/treatments/trt, ultalabtests.com, questhealth.com, ondemand.labcorp.com)
+- Visit CTAs mid + bottom via `BrandCtaGrid` — plain brand URLs / `/providers/*` only; no Impact/FlexOffers IDs
+- Registered on `/guides` index; existing guide pages, hubs, and `related-guides.ts` left untouched (parallel batches)
+
 ### 2026-09-05 Batch B — medical-tourism money guides (All-on-4, FUE, sleeve)
 - New guides only: `/guides/all-on-4-los-algodones-cost`, `/guides/fue-hair-transplant-istanbul-cost`, `/guides/gastric-sleeve-tijuana-cost`
 - Official clinic / brand list prices as of September 5, 2026 (Sani, Algodones Dental Center, Dental Solutions, Aspen, Cosmedica, CareCredit, ALO Bariatrics, WeightWise; LIMARP/OCC as quote-only JCI filters)
