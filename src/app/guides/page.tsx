@@ -76,6 +76,35 @@ const guides = [
     readTime: '11 min',
     icon: '💻',
   },
+  // Money-comparison trio (2026-09-05): Hims vs Ro, Sesame vs MDLive/Teladoc,
+  // Function vs Superpower — official cash prices, no affiliate IDs.
+  {
+    slug: 'hims-vs-ro-cost',
+    title: 'Hims vs Ro Cost (2026): ED Plans + GLP-1 Membership',
+    description:
+      'Hims vs Ro (Roman) cash costs in 2026 — ED generics from $22/mo vs $4/dose, weight-loss membership $39 then $149 vs $39 then $74–$149. Meds extra. Official prices as of September 2026.',
+    category: 'Comparison',
+    readTime: '11 min',
+    icon: '⚖️',
+  },
+  {
+    slug: 'sesame-vs-mdlive-teladoc-cost',
+    title: 'Sesame vs MDLive vs Teladoc Cost (2026): Cash Visits',
+    description:
+      'Cash-pay telehealth visit costs in 2026 — Sesame from $34 (Plus from $37), MDLive urgent care up to $89, Teladoc self-pay $89. Official rates as of September 2026.',
+    category: 'Comparison',
+    readTime: '10 min',
+    icon: '💻',
+  },
+  {
+    slug: 'function-vs-superpower-cost',
+    title: 'Function vs Superpower Cost (2026): $365 vs $349/Year',
+    description:
+      'Function Health $365/year (160+ tests, 2x) vs Superpower $349/year (150+ tests, 2 draws). Superpower rose from ~$199. Official prices as of September 2026.',
+    category: 'Comparison',
+    readTime: '10 min',
+    icon: '🧪',
+  },
   // GLP-1 intent cluster (2026-08-03): dosing / side-effects / comparison / medication-list
   // pages targeting the 254-query, ~699K-imp/13wk Bing demand pocket with 0% prior coverage.
   {
