@@ -6,6 +6,8 @@ import Footer from '@/components/Footer';
 import MedicalDisclaimer from '@/components/MedicalDisclaimer';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import BrandCtaGrid from '@/components/BrandCtaGrid';
+import RelatedGuides from '@/components/RelatedGuides';
+import { getRelatedGuides } from '@/data/related-guides';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 const PAGE_URL = 'https://vitalityscout.com/guides/function-vs-superpower-cost';
@@ -455,16 +457,6 @@ export default function FunctionVsSuperpowerCostPage() {
             hubLabel="Open the labs hub →"
           />
 
-          <div id="related" className="mt-12 border-t border-gray-200 pt-8">
-            <h3 className="font-semibold text-gray-800 mb-4">Related guides</h3>
-            <ul className="space-y-2 text-gray-700">
-              <li><Link href="/guides/function-health-review" className="text-blue-600 hover:underline">Function Health review</Link></li>
-              <li><Link href="/guides/quest-vs-labcorp-pricing" className="text-blue-600 hover:underline">Quest vs Labcorp pricing</Link></li>
-              <li><Link href="/guides/cheapest-blood-test-panels" className="text-blue-600 hover:underline">Cheapest blood-test panels</Link></li>
-              <li><Link href="/labs" className="text-blue-600 hover:underline">Cash-pay labs hub</Link></li>
-            </ul>
-          </div>
-
           <div className="mt-12 rounded-xl bg-gradient-to-r from-blue-500 to-indigo-500 p-8 text-center text-white">
             <h3 className="text-2xl font-bold mb-3">Confirm today&apos;s annual lab price</h3>
             <p className="mb-6 text-blue-100">
@@ -526,6 +518,8 @@ export default function FunctionVsSuperpowerCostPage() {
             </ul>
           </div>
         </article>
+
+        <RelatedGuides items={getRelatedGuides('/guides/function-vs-superpower-cost')} />
 
         <MedicalDisclaimer />
 

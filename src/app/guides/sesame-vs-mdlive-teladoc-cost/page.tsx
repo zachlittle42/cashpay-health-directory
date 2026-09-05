@@ -6,6 +6,8 @@ import Footer from '@/components/Footer';
 import MedicalDisclaimer from '@/components/MedicalDisclaimer';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import BrandCtaGrid from '@/components/BrandCtaGrid';
+import RelatedGuides from '@/components/RelatedGuides';
+import { getRelatedGuides } from '@/data/related-guides';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
 const PAGE_URL = 'https://vitalityscout.com/guides/sesame-vs-mdlive-teladoc-cost';
@@ -473,16 +475,6 @@ export default function SesameVsMdliveTeladocCostPage() {
             hubLabel="Open the telehealth hub →"
           />
 
-          <div id="related" className="mt-12 border-t border-gray-200 pt-8">
-            <h3 className="font-semibold text-gray-800 mb-4">Related guides</h3>
-            <ul className="space-y-2 text-gray-700">
-              <li><Link href="/guides/cash-pay-telehealth-visits" className="text-blue-600 hover:underline">Cash-pay telehealth visits</Link></li>
-              <li><Link href="/telehealth" className="text-blue-600 hover:underline">Telehealth hub</Link></li>
-              <li><Link href="/guides/urgent-care-cost-without-insurance" className="text-blue-600 hover:underline">Urgent care cost without insurance</Link></li>
-              <li><Link href="/guides/hims-vs-ro-cost" className="text-blue-600 hover:underline">Hims vs Ro cost</Link></li>
-            </ul>
-          </div>
-
           <div className="mt-12 rounded-xl bg-gradient-to-r from-blue-500 to-indigo-500 p-8 text-center text-white">
             <h3 className="text-2xl font-bold mb-3">Confirm today&apos;s cash visit price</h3>
             <p className="mb-6 text-blue-100">
@@ -547,6 +539,8 @@ export default function SesameVsMdliveTeladocCostPage() {
             </ul>
           </div>
         </article>
+
+        <RelatedGuides items={getRelatedGuides('/guides/sesame-vs-mdlive-teladoc-cost')} />
 
         <MedicalDisclaimer />
 
