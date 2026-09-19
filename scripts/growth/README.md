@@ -112,7 +112,7 @@ Keep the returned GA4 reporting timezone. It was America/Chicago, which differs 
 
 ## Measurement cutover and lead scorecard
 
-This baseline predates the sprint's consent/privacy changes. Live delivery was verified September 19: use `2026-09-19T19:54:00Z` as the conservative schema-v2 funnel cutover and September 20 as the first complete UTC day. See [release evidence](../../docs/growth/release-2026-09-19.md). Begin a new consented PostHog denominator; do not read lower raw counts as lost traffic without checking GSC/Bing and consent coverage. Google Analytics/GTM are intentionally paused for this release.
+This baseline predates the sprint's consent/privacy changes. Live delivery was verified September 19: use `2026-09-19T19:54:00Z` as the conservative schema-v2 PostHog funnel cutover and September 20 as the first complete UTC day. See [release evidence](../../docs/growth/release-2026-09-19.md). Begin a new consented PostHog denominator; do not read lower raw counts as lost traffic without checking GSC/Bing and consent coverage. GA4 was subsequently re-enabled with sanitized explicit events and Enhanced Measurement disabled: its separate conservative boundary is `2026-09-19T23:22:00Z`. See [GA4 reactivation evidence](../../docs/growth/google-analytics-reactivation-2026-09-19.md). Keep the earlier Google pause separate, retain the GA4 reporting timezone, exclude QA where supported, and never sum GA4 and PostHog counts.
 
 Canonical provider_click and contact_received analytics events are consented behavioral observations. Operational contact delivery, provider acceptance, bookings and revenue need their own aggregate source of truth. Keep missing values null. Do not count both canonical events and legacy aliases as separate leads.
 

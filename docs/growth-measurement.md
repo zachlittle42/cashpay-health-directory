@@ -2,11 +2,13 @@
 
 Implemented September 17 and released September 19, 2026. Live PostHog pageview and provider-click delivery was verified at 19:53:42 UTC; use 19:54 UTC as the conservative funnel cutover and September 20 as the first complete UTC day. See the [release evidence](growth/release-2026-09-19.md). This verifies instrumentation, not human traffic, operational contact delivery, partnerships, bookings or revenue.
 
-## Release decision: PostHog
+## Release status: PostHog and Google Analytics
 
-The user chose **Use PostHog for this release** after the Google Analytics stream was inspected. The September 17, 2026 readback for stream `G-FLPFRH1862` showed Enhanced Measurement enabled, including automatic scroll, outbound, search, video, download, history-pageview and form-interaction events. An authorized attempt to disable the stream's Enhanced Measurement with the connected service account returned HTTP 403 `PERMISSION_DENIED`; the subsequent 23:41:18 UTC readback confirmed the settings were unchanged. Browser access also stopped at sign-in.
+Google Analytics was re-enabled September 19 after the owner authorized browser authentication. Enhanced Measurement is now disabled for stream `G-FLPFRH1862`, the production opt-in flag is `true`, and live sanitized pageviews/provider clicks were verified alongside PostHog. Use **2026-09-19T23:22:00Z** as the conservative GA4 reporting boundary, separately from PostHog's 19:54 UTC boundary. September 20 is the first complete UTC day afterward. See the [reactivation evidence](growth/google-analytics-reactivation-2026-09-19.md); preserve GA4's property reporting timezone and do not combine counts across instruments.
 
-Google is therefore disabled by default in this release: `NEXT_PUBLIC_ENABLE_GOOGLE_ANALYTICS` must equal the exact string `true` before either GA4/GTM scripts, consent initialization or the event queue can run. Existing Google IDs alone do not enable it. PostHog and consented Vercel metrics continue independently. Re-enable only after an authorized account editor disables Enhanced Measurement, a fresh read confirms that change, and controlled browser checks confirm sanitized events and no duplicate pageviews. Then set the flag for the intended deployment and rebuild; public environment variables are embedded at build time.
+The initial release used PostHog alone at the owner's request because the read-only Google reporting account could not edit Enhanced Measurement and browser access required sign-in. That paused interval remains historical coverage, not zero traffic or an account authentication failure.
+
+Google remains disabled by default in code: `NEXT_PUBLIC_ENABLE_GOOGLE_ANALYTICS` must equal the exact string `true` before either GA4/GTM scripts, consent initialization or the event queue can run. Existing Google IDs alone do not enable it. PostHog and consented Vercel metrics continue independently. Future reactivation must retain the verified Enhanced Measurement setting and controlled checks for sanitized events and duplicate pageviews. Public environment variables require rebuilding; changing the flag alone does not change a running deployment.
 
 ## Events and denominator
 
@@ -20,7 +22,7 @@ Google is therefore disabled by default in this release: `NEXT_PUBLIC_ENABLE_GOO
 
 Count distinct `lead_id` for `contact_received`. Historical `lead_email_capture` and `lead_inquiry` events are preserved as compatibility aliases with the same opaque `lead_id` and `legacy_alias: true`. `form_complete` and `email_capture` are diagnostic events. **Never add these event totals together to count contacts.** Earlier events may lack attribution; leave it unknown rather than assigning organic traffic from the page topic.
 
-The canonical browser events are sent once to PostHog. If Google is explicitly re-enabled after the checks above, each also uses one configured Google transport. A direct `NEXT_PUBLIC_GA4_ID` takes precedence over GTM; the application does not also load a GTM container in this mode. GA4 automatic initial pageviews are disabled and route pageviews are explicit. Remote Enhanced Measurement settings are not controlled by this code. In GTM-only mode the container must map the dataLayer events and must be audited for duplicate tags and URL/form autocapture. Configure GA4 key events and custom dimensions in the account; code alone cannot configure reporting.
+The canonical browser events are sent once to PostHog and, while Google is explicitly enabled, once through its configured transport. A direct `NEXT_PUBLIC_GA4_ID` takes precedence over GTM; the application does not also load a GTM container in this mode. GA4 automatic initial pageviews are disabled and route pageviews are explicit. Remote Enhanced Measurement settings are not controlled by this code. In GTM-only mode the container must map the dataLayer events and must be audited for duplicate tags and URL/form autocapture. GA4 key events and custom dimensions require account configuration; receipt of event parameters alone does not establish their availability in every report.
 
 ## Provider link contract
 
