@@ -56,12 +56,16 @@ const FAQ_ITEMS = [
 const BRANDS = [
   {
     name: 'Hims — ED',
+    providerId: 'hims',
+    category: 'ed',
     price: 'Generic from $22/mo',
     blurb: 'Sildenafil from $22/mo, tadalafil from $24/mo, chews from $30/mo. Visit + meds + shipping bundled. Confirm dose and plan length at checkout.',
     siteUrl: 'https://www.hims.com/erectile-dysfunction',
   },
   {
     name: 'Ro — ED',
+    providerId: 'ro',
+    category: 'ed',
     price: 'Sildenafil from $4/dose',
     blurb: 'Generic sildenafil from $4/dose ($32/mo at 8×25 mg). Tadalafil from $8/dose. Brand Viagra $90/dose. Free visit and 2-day shipping.',
     siteUrl: 'https://ro.co/erectile-dysfunction',

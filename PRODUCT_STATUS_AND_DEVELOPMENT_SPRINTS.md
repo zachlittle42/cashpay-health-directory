@@ -1,11 +1,23 @@
 # VitalityScout - Project Status & Development Sprints
 
-**Last Updated:** September 5, 2026
+**Last Updated:** September 17, 2026
 **Live Site:** https://vitalityscout.com
 **Status:** ✅ Live in Production
 
 > ⚠️ **Note:** The "Current State" and dated sprint sections below this banner are
 > historical (Dec 2024) and understate the site. The banner here reflects current reality.
+
+### 2026-09-17 ED growth and measurement implementation
+
+- Live baseline: ED earned 247 Bing clicks in four provider weekly buckets versus 7 previously; Google reports the ED URL discovered but not indexed. Exact source/date boundaries and a sanitized aggregate snapshot live in `docs/growth-baseline-2026-09-17.md` and `docs/growth/`.
+- Preserved the ED ranking URL and H1. Added official-source offer data, all-in fill examples, limitations and provider CTAs; new distinct BlueChew cost and sildenafil cost guides; methodology page; reciprocal cluster and homepage/hub discovery links.
+- Men's-health comparisons use the same offer data and remove duplicate Hims/Ro entries. MRI guide adds practical direct provider handoffs.
+- Added service-scoped approved referral configuration. Direct public provider URLs remain the default; no partnership or commission is represented as approved.
+- Measurement work separates consented provider clicks and received-contact events, strips contact values and whole URLs from analytics, and requires operational delivery before reporting form success. New consent handling requires a fresh post-deployment baseline.
+- Partner application packet and reporting runbook are prepared. Production configuration currently lacks a contact-delivery service/recipient and approved referral URLs; those remain activation dependencies.
+- Validation: 18 mocked regression tests pass. TypeScript and the full 930-page production build pass. Mobile/desktop browser review verified provider destinations, correct canonicals, expandable terms, no mobile page overflow, privacy controls and unavailable-form fallbacks. Existing provider-data lint warnings remain unchanged.
+- Google Analytics is deliberately paused for this release at the owner's request. Its remote Enhanced Measurement is enabled and the existing reporting credential cannot edit it; PostHog remains the consented funnel source. See `docs/growth-measurement.md` for reactivation.
+- The existing daily and weekly Hatchet schedules are enabled; their reporting prompts were migrated and synchronized to the worker. See `docs/growth/schedule-migration-2026-09-17.md` for verification and the deployment-cutover requirement.
 
 ### 2026-09-05 money-comparison Batch C (WW Med+ vs Ro Body vs Noom Med, Fountain vs Henry Meds, Ulta vs Quest vs Labcorp)
 - New guides only: `/guides/weightwatchers-med-vs-ro-body-vs-noom-med`, `/guides/fountain-vs-henry-meds-trt`, `/guides/ulta-vs-quest-vs-labcorp-ondemand`

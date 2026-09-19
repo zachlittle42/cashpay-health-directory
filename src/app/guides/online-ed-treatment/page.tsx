@@ -1,394 +1,135 @@
 import Link from 'next/link';
+import type { Metadata } from 'next';
 import Navigation from '@/components/Navigation';
 import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
 import MedicalDisclaimer from '@/components/MedicalDisclaimer';
-import BrandCtaGrid from '@/components/BrandCtaGrid';
+import EdProviderComparison from '@/components/EdProviderComparison';
 import RelatedGuides from '@/components/RelatedGuides';
 import { getRelatedGuides } from '@/data/related-guides';
-import type { Metadata } from 'next';
+import { buildFAQSchema } from '@/lib/jsonLd';
+import { BLUECHEW_PLANS, BLUECHEW_STANDARD_SHIPPING_CENTS, COST_PLUS_EXAMPLES, ED_SOURCES, ED_VERIFIED_AT, ED_VERIFIED_LABEL, edFillTotal, edMoney } from '@/lib/ed-offers';
 
-const ED_BRANDS = [
-  {
-    name: 'Hims',
-    price: 'From ~$2/dose',
-    blurb: 'Broad men’s-health platform for generic sildenafil, tadalafil, and chewables after a clinician review. Headline prices are estimates — verify on Hims.',
-    siteUrl: 'https://www.hims.com',
-  },
-  {
-    name: 'Ro (Roman)',
-    price: '~$20–$90/mo',
-    blurb: 'Telehealth evaluation plus integrated pharmacy for generic and brand ED options. Confirm the current plan and per-dose price on Ro.',
-    siteUrl: 'https://ro.co',
-  },
-  {
-    name: 'BlueChew',
-    price: '~$20–$90/mo',
-    blurb: 'ED-only subscription for chewable sildenafil, tadalafil, and vardenafil after an online evaluation. Tier pricing changes — verify on BlueChew.',
-    siteUrl: 'https://bluechew.com',
-  },
+const PAGE_URL = 'https://vitalityscout.com/guides/online-ed-treatment';
+const pharmacy = COST_PLUS_EXAMPLES.sildenafil;
+const bluechew = BLUECHEW_PLANS[0].packs[0];
+const FAQS = [
+  { question: 'How much does online ED treatment cost?', answer: 'The bill depends on the prescription and service. Hims advertises sildenafil from $22/month without specifying the starter quantity on its landing page. The published BlueChew six-tablet SIL 45 mg plan costs ' + edMoney(bluechew.medicationCents + BLUECHEW_STANDARD_SHIPPING_CENTS) + ' per monthly shipment including standard shipping, before tax. A Cost Plus 30-tablet sildenafil 50 mg fill is ' + edMoney(edFillTotal(pharmacy)) + ' with standard shipping, before tax and any separate clinician visit. These are different products and quantities, not equivalent treatment plans.' },
+  { question: 'Can I get ED medication online without a prescription?', answer: 'Sildenafil and tadalafil require a prescription. A clinician can assess whether treatment is appropriate online, but approval is not guaranteed. FDA advises using a state-licensed pharmacy that requires a prescription and provides access to a licensed pharmacist.' },
+  { question: 'Are ED chews and gummies FDA-approved generics?', answer: 'A compounded chew, gummy or combination is not an FDA-approved generic simply because it contains sildenafil or tadalafil. FDA-approved generics and compounded medicines have different regulatory status. Check the exact product with your clinician and pharmacy.' },
+  { question: 'Do I have to buy an ED subscription?', answer: 'You can ask a clinician to send an appropriate prescription to a separate pharmacy and pay for the fill. The visit and any tests may cost extra. For delivery subscriptions, check the initial charge, quantity, refill schedule and cancellation cutoff before enrolling.' },
 ];
 
 export const metadata: Metadata = {
-  title: { absolute: 'Online ED Treatment (2026): $20-$90/mo, Hims vs Ro vs BlueChew' },
-  alternates: { canonical: 'https://vitalityscout.com/guides/online-ed-treatment' },
-  description: 'Online ED treatment in 2026: generic sildenafil and tadalafil run about $20 to $90 a month. How the telehealth visit works, plus Hims, Ro and BlueChew compared.',
-  keywords: ['ED treatment online', 'erectile dysfunction telehealth', 'online ED medication', 'sildenafil online', 'tadalafil online', 'Hims ED', 'Ro ED', 'BlueChew', 'mens health telehealth', 'buy ED medication online'],
+  title: { absolute: 'Online ED Treatment (2026): Providers, Prices & Prescription Options' },
+  description: 'Compare Hims, Ro, BlueChew, Lemonaid and a separate pharmacy fill. See verified ED prices, quantities, shipping, renewal terms and compounded-drug distinctions.',
+  alternates: { canonical: PAGE_URL },
+  openGraph: { title: 'Online ED Treatment: Compare Providers and Real Costs', description: 'Published prices, what the bill includes, and the prescription checks that matter.', url: PAGE_URL, type: 'article' },
 };
 
 export default function OnlineEDTreatmentGuide() {
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
-    headline: 'How to Get ED Treatment Online (2026 Guide)',
-    description: 'A clinical, informational guide to getting erectile dysfunction treatment online in 2026, covering FDA-approved medications, telehealth platforms, costs, and safety.',
-    author: {
-      '@type': 'Organization',
-      name: 'VitalityScout'
-    },
-    publisher: {
-      '@type': 'Organization',
-      name: 'VitalityScout',
-      logo: {
-        '@type': 'ImageObject',
-        url: 'https://vitalityscout.com/logo.png'
-      }
-    },
-    datePublished: '2026-06-13',
-    dateModified: '2026-06-13',
-    mainEntityOfPage: 'https://vitalityscout.com/guides/online-ed-treatment',
-    articleSection: 'Mens Health Guides',
-    keywords: ['ED treatment', 'erectile dysfunction', 'telehealth', 'mens health', 'sildenafil', 'tadalafil']
+  const articleSchema = {
+    '@context': 'https://schema.org', '@type': 'Article',
+    headline: 'Online ED Treatment: Compare Providers, Prices and Prescription Options',
+    author: { '@type': 'Organization', name: 'VitalityScout research', url: 'https://vitalityscout.com' },
+    publisher: { '@type': 'Organization', name: 'VitalityScout' },
+    datePublished: '2026-06-13', dateModified: ED_VERIFIED_AT, mainEntityOfPage: PAGE_URL,
+    citation: Object.values(ED_SOURCES).map((source) => source.url),
   };
+  const breadcrumbs = { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://vitalityscout.com' },
+    { '@type': 'ListItem', position: 2, name: 'Guides', item: 'https://vitalityscout.com/guides' },
+    { '@type': 'ListItem', position: 3, name: 'Online ED Treatment', item: PAGE_URL },
+  ] };
 
   return (
     <>
       <Navigation />
       <SidebarShell>
-      <main className="min-h-screen bg-white">
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-
-        {/* Breadcrumb */}
-        <div className="bg-gray-50 border-b border-gray-200">
-          <div className="mx-auto max-w-4xl px-4 py-3">
-            <nav className="text-sm text-gray-600">
-              <Link href="/" className="hover:text-blue-600">Home</Link>
-              <span className="mx-2">→</span>
-              <Link href="/guides" className="hover:text-blue-600">Guides</Link>
-              <span className="mx-2">→</span>
-              <span className="text-gray-900">Online ED Treatment</span>
+        <main className="min-h-screen bg-white">
+          {[articleSchema, breadcrumbs, buildFAQSchema(FAQS)].map((schema, index) => <script key={index} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />)}
+          <div className="border-b border-gray-200 bg-gray-50">
+            <nav aria-label="Breadcrumb" className="mx-auto max-w-5xl px-4 py-3 text-sm text-gray-600">
+              <Link href="/">Home</Link><span className="mx-2">→</span><Link href="/guides">Guides</Link><span className="mx-2">→</span><span className="text-gray-900">Online ED treatment</span>
             </nav>
           </div>
-        </div>
-
-        {/* Hero */}
-        <section className="bg-gradient-to-b from-blue-50 to-white px-4 py-12">
-          <div className="mx-auto max-w-4xl">
-            <div className="mb-4">
-              <span className="rounded-full bg-blue-100 px-3 py-1 text-sm font-medium text-blue-700">
-                Men&apos;s Health
-              </span>
-            </div>
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">
-              How to Get ED Treatment Online: A 2026 Guide
-            </h1>
-            <p className="text-xl text-gray-600">
-              Erectile dysfunction is common and highly treatable. Here&apos;s a clear, clinical look at the FDA-approved medications, how telehealth evaluation and discreet delivery work, what it costs, and how to stay safe.
-            </p>
-            <p className="mt-4 text-sm text-gray-500">
-              Last updated: June 2026 • 11 min read
-            </p>
-          </div>
-        </section>
-
-        {/* Important Context */}
-        <div className="bg-yellow-50 border-b-2 border-yellow-200">
-          <div className="mx-auto max-w-4xl px-4 py-6">
-            <div className="flex items-start gap-4">
-              <div className="text-3xl">⚠️</div>
-              <div>
-                <h3 className="font-bold text-yellow-900 text-lg mb-2">Read This First</h3>
-                <p className="text-yellow-800 text-sm">
-                  ED medications are prescription drugs. The right option, dose, and whether they&apos;re safe for you must be decided by a licensed clinician who reviews your health history&mdash;not by a website. This guide is informational only, not medical advice, and all prices are general estimates.
-                </p>
+          <header className="bg-gradient-to-b from-blue-50 to-white px-4 py-12">
+            <div className="mx-auto max-w-5xl">
+              <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-blue-700">Men&apos;s health · Care and cost comparison</p>
+              <h1 className="max-w-4xl text-3xl font-bold leading-tight text-gray-900 sm:text-4xl">How to Get ED Treatment Online: A 2026 Guide</h1>
+              <p className="mt-5 max-w-3xl text-lg text-gray-700">Compare the medication, quantity and full bill before choosing a service. You can use a telehealth delivery plan or have a clinician send a prescription to a separate pharmacy.</p>
+              <p className="mt-4 text-sm text-gray-500">By VitalityScout research · Prices checked {ED_VERIFIED_LABEL}</p>
+              <div className="mt-6 max-w-3xl rounded-xl border border-blue-200 bg-white p-5">
+                <p className="aeo-answer text-gray-800"><strong>What does it cost?</strong> Public offers range from a pharmacy fill plus a separate consultation to recurring telehealth plans. For example, BlueChew&apos;s {bluechew.quantity}-tablet SIL plan is {edMoney(bluechew.medicationCents + BLUECHEW_STANDARD_SHIPPING_CENTS)} with standard shipping, while a {pharmacy.quantity}-tablet generic sildenafil pharmacy fill is {edMoney(edFillTotal(pharmacy))} before tax and consultation. The strength, formulation and quantity differ; a monthly headline alone cannot tell you which is better value.</p>
+                <a href="#platforms" className="mt-4 inline-flex rounded-lg bg-blue-700 px-4 py-2 font-semibold text-white hover:bg-blue-800">Compare the five options ↓</a>
               </div>
+              <p className="mt-5 max-w-3xl text-sm text-gray-600">A licensed clinician decides whether a prescription is appropriate and which medication and dose to use. This guide provides research and price comparisons, not a diagnosis or a medical review of your care.</p>
             </div>
-          </div>
-        </div>
+          </header>
 
-        {/* Content */}
-        <article className="mx-auto max-w-4xl px-4 py-12">
-          {/* Quick Facts Box */}
-          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-lg p-6 mb-8">
-            <h3 className="text-lg font-bold text-gray-900 mb-4">Online ED Treatment: Quick Facts</h3>
-            <div className="grid md:grid-cols-3 gap-4 text-sm">
-              <div className="bg-white rounded-lg p-4 border border-gray-200">
-                <div className="font-bold text-blue-600 mb-1">How You Get It</div>
-                <div className="text-gray-900 font-semibold">Online evaluation</div>
-                <div className="text-gray-600">Licensed clinician reviews, then prescribes</div>
+          <article className="mx-auto max-w-5xl px-4 pb-10">
+            <section id="platforms" className="scroll-mt-24">
+              <h2 className="text-2xl font-bold text-gray-900">Compare online ED providers and a pharmacy alternative</h2>
+              <p className="mt-3 text-gray-700">Start with the route you need: evaluation and delivery together, or a fill for a prescription you already have. Open each row&apos;s terms for the first charge, renewals, cancellation and original sources.</p>
+              <EdProviderComparison placement="online_ed_treatment_comparison" />
+              <p className="text-sm text-gray-600">Looking at particular brands? Read <Link href="/guides/hims-vs-ro-cost" className="text-blue-700 underline">Hims vs Ro cost</Link>, the <Link href="/guides/bluechew-cost" className="text-blue-700 underline">BlueChew plan and shipping breakdown</Link>, or <Link href="/guides/sildenafil-cost-without-insurance" className="text-blue-700 underline">sildenafil prices without insurance</Link>.</p>
+            </section>
+
+            <section id="cost" className="mt-12 max-w-4xl">
+              <h2 className="text-2xl font-bold text-gray-900">Compare what you pay now and at renewal</h2>
+              <p className="mt-4 text-gray-700">A provider&apos;s “from” price may require a particular quantity or billing period. Separate an introductory discount from the ongoing price, and compare the same prescribed drug, strength and formulation. More tablets are not automatically a better fit.</p>
+              <ol className="mt-4 list-decimal space-y-3 pl-5 text-gray-700">
+                <li><strong>Identify the product:</strong> medication, strength, tablet count and whether it is an FDA-approved generic or a compounded preparation.</li>
+                <li><strong>Write down the first payment:</strong> consultation + medicine + shipping + any fees and taxes. If several months are prepaid, record the full amount due today.</li>
+                <li><strong>Check the next shipment:</strong> refill quantity, interval, renewal price and whether promotional pricing ends.</li>
+                <li><strong>Check how to leave:</strong> Hims and Lemonaid ask for cancellation at least 48 hours before the next order/refill processing. Canceling a subscription does not necessarily refund a prepared prescription. <a href={ED_SOURCES.himsCancel.url} className="text-blue-700 underline">Hims policy</a>; <a href={ED_SOURCES.lemonaidCancel.url} className="text-blue-700 underline">Lemonaid policy</a>.</li>
+              </ol>
+              <div className="mt-6 rounded-xl border border-emerald-200 bg-emerald-50 p-5 text-gray-800">
+                <h3 className="font-semibold">A pharmacy-fill example</h3>
+                <p className="mt-2">Cost Plus lists {pharmacy.quantity} sildenafil {pharmacy.strength} tablets for {edMoney(pharmacy.medicationCents)}, including pharmacy labor. Add {edMoney(pharmacy.shippingCents)} standard shipping: <strong>{edMoney(edFillTotal(pharmacy))} before tax</strong>. Any clinician visit and tests cost extra. Thirty tablets describe the fill quantity, not how frequently you should take them. <a href={ED_SOURCES.costPlusSildenafil.url} className="text-blue-700 underline">Price calculator</a>.</p>
               </div>
-              <div className="bg-white rounded-lg p-4 border border-gray-200">
-                <div className="font-bold text-indigo-600 mb-1">Generic Cost</div>
-                <div className="text-gray-900 font-semibold">~$20 - $90 / mo</div>
-                <div className="text-gray-600">Generic sildenafil or tadalafil</div>
-              </div>
-              <div className="bg-white rounded-lg p-4 border border-gray-200">
-                <div className="font-bold text-amber-600 mb-1">Delivery</div>
-                <div className="text-gray-900 font-semibold">Discreet shipping</div>
-                <div className="text-gray-600">Plain packaging to your door</div>
-              </div>
-            </div>
-          </div>
+            </section>
 
-          {/* CTA — money page */}
-          <div className="mb-10 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 p-8 text-center text-white">
-            <h3 className="text-2xl font-bold mb-3">Ready to Compare Your Options?</h3>
-            <p className="mb-6 text-blue-100">
-              Browse vetted online men&apos;s health clinics, compare what they prescribe, and see real pricing side by side.
-            </p>
-            <Link
-              href="/mens-health"
-              className="inline-block rounded-lg bg-white px-6 py-3 font-semibold text-blue-700 hover:bg-blue-50 transition-colors"
-            >
-              Compare online men&apos;s health clinics →
-            </Link>
-          </div>
+            <section id="medications" className="mt-12 max-w-4xl">
+              <h2 className="text-2xl font-bold text-gray-900">Generic tablets and compounded products are different</h2>
+              <p className="mt-4 text-gray-700">FDA-approved generic medicines and compounded preparations are not the same category. A chew, gummy, sublingual tablet or combination containing sildenafil or tadalafil is not automatically an approved generic. Compounded drugs do not undergo FDA approval for safety, effectiveness and quality. Ask your clinician what is being prescribed and why that formulation is appropriate. <a href={ED_SOURCES.fdaCompounding.url} className="text-blue-700 underline">FDA explanation</a>.</p>
+              <p className="mt-4 text-gray-700">Hims and Ro offer generic tablets alongside compounded products; BlueChew&apos;s featured preparations are compounded. Different milligram strengths and combined ingredients should not be treated as equivalent doses for a price comparison. This guide does not provide dosing instructions.</p>
+            </section>
 
-          {/* Table of Contents */}
-          <div className="bg-gray-50 rounded-lg p-6 mb-8">
-            <h3 className="text-lg font-bold text-gray-900 mb-3">What This Guide Covers</h3>
-            <ul className="space-y-2 text-gray-700">
-              <li><a href="#what-is-ed" className="text-blue-600 hover:underline">1. What ED Is (and Why It&apos;s Common)</a></li>
-              <li><a href="#medications" className="text-blue-600 hover:underline">2. The FDA-Approved Oral Medications</a></li>
-              <li><a href="#how-telehealth-works" className="text-blue-600 hover:underline">3. How Online ED Treatment Works</a></li>
-              <li><a href="#platforms" className="text-blue-600 hover:underline">4. The Main Platforms Compared</a></li>
-              <li><a href="#cost" className="text-blue-600 hover:underline">5. What It Costs</a></li>
-              <li><a href="#safety" className="text-blue-600 hover:underline">6. Safety: What You Need to Know</a></li>
-            </ul>
-          </div>
+            <section id="how-telehealth-works" className="mt-12 max-w-4xl">
+              <h2 className="text-2xl font-bold text-gray-900">How an online ED visit works</h2>
+              <p className="mt-4 text-gray-700">You provide your medical history, medications and symptoms. The clinician may need a current blood-pressure reading, a video visit or further assessment. If treatment is appropriate, the prescription goes to a pharmacy. Confirm how to contact the clinician for follow-up and how refills work before you pay. <a href={ED_SOURCES.lemonaid.url} className="text-blue-700 underline">Lemonaid visit process</a>; <a href={ED_SOURCES.roSildenafil.url} className="text-blue-700 underline">Ro visit process</a>.</p>
+              <p className="mt-4 text-gray-700">An online form does not guarantee a prescription. If an in-person assessment or testing is needed, include that in your care and cost planning.</p>
+            </section>
 
-          <div className="prose prose-lg max-w-none">
-            <p className="lead text-xl text-gray-700 mb-8">
-              Erectile dysfunction (ED) &mdash; difficulty getting or keeping an erection firm enough for satisfying sex &mdash; is one of the most common health concerns men bring to a clinician, and it becomes more frequent with age. The good news is that it is also one of the most treatable. Today, a licensed clinician can evaluate you, prescribe an appropriate medication, and have it shipped discreetly to your door, all online.
-            </p>
+            <section id="what-is-ed" className="mt-12 max-w-4xl">
+              <h2 className="text-2xl font-bold text-gray-900">Treat the cause as well as the symptoms</h2>
+              <p className="mt-4 text-gray-700">ED involves difficulty getting or maintaining an erection. A clinician can assess possible health conditions, medication effects and psychological factors. NIDDK describes treatment of the underlying cause where possible, with options including lifestyle changes, counseling and medicines. Oral PDE5 inhibitors improve blood flow; they do not create automatic erections. <a href={ED_SOURCES.niddk.url} className="text-blue-700 underline">NIDDK treatment guide</a>; <a href={ED_SOURCES.niddkMedicines.url} className="text-blue-700 underline">patient guide (PDF)</a>.</p>
+            </section>
 
-            <h2 id="what-is-ed" className="text-2xl font-bold text-gray-900 mt-12 mb-6">What ED Is (and Why It&apos;s Common)</h2>
+            <section id="safety" className="mt-12 max-w-4xl scroll-mt-24">
+              <h2 className="text-2xl font-bold text-gray-900">Prescription and pharmacy checks</h2>
+              <ul className="mt-4 list-disc space-y-3 pl-5 text-gray-700">
+                <li><strong>Disclose all medicines and health conditions.</strong> Do not combine oral ED medicines with nitrates. Have your clinician assess other interactions and whether treatment is safe for you. <a href={ED_SOURCES.niddkMedicines.url} className="text-blue-700 underline">NIDDK medicine guidance</a>.</li>
+                <li><strong>Check the dispensing pharmacy.</strong> FDA advises looking for a prescription requirement, state licensure, a US address and phone number, and a pharmacist available for questions. Verify the pharmacy&apos;s license with the state board. <a href={ED_SOURCES.fdaPharmacy.url} className="text-blue-700 underline">FDA pharmacy checklist</a>.</li>
+                <li><strong>Get urgent help for serious symptoms.</strong> An erection lasting more than four hours or sudden vision or hearing loss needs prompt medical care. For chest pain or another medical emergency, call 911. <a href={ED_SOURCES.niddk.url} className="text-blue-700 underline">NIDDK warning signs</a>.</li>
+              </ul>
+            </section>
 
-            <p className="text-gray-700 mb-4">
-              ED simply means the consistent inability to achieve or maintain an erection sufficient for sexual activity. An occasional off night is normal and not the same thing &mdash; ED refers to a recurring pattern. It is extremely common, particularly as men get older, and it is rarely something to feel embarrassed about.
-            </p>
+            <section id="faq" className="mt-12 max-w-4xl">
+              <h2 className="text-2xl font-bold text-gray-900">Common questions</h2>
+              {FAQS.map((faq) => <details key={faq.question} className="border-b border-gray-200 py-5"><summary className="cursor-pointer font-semibold text-gray-900">{faq.question}</summary><p className="mt-3 text-gray-700">{faq.answer}</p></details>)}
+            </section>
 
-            <p className="text-gray-700 mb-4">
-              ED can have physical causes (such as blood-flow or vascular issues, diabetes, hormonal factors, or medication side effects), psychological causes (stress, anxiety, relationship factors), or a mix of both. Because the underlying cause shapes the right treatment, a proper evaluation matters &mdash; which is exactly why a clinician, not a checkout cart, should be the one prescribing.
-            </p>
-
-            <div className="bg-blue-50 border-l-4 border-blue-400 p-4 my-6">
-              <p className="text-gray-700">
-                <strong>Why this matters:</strong> ED is treatable for most men, but it can also be an early warning sign of an underlying condition &mdash; especially cardiovascular disease. Treating the symptom without understanding the cause means potentially missing something important. See the safety section below.
-              </p>
-            </div>
-
-            <h2 id="medications" className="text-2xl font-bold text-gray-900 mt-12 mb-6">The FDA-Approved Oral Medications</h2>
-
-            <p className="text-gray-700 mb-4">
-              The first-line treatment for most men is a class of oral medications called PDE5 inhibitors. They work by improving blood flow, but only in response to sexual stimulation &mdash; they are not an instant switch. The main FDA-approved options, listed by their generic names, are:
-            </p>
-
-            <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-6">
-              <li><strong>Sildenafil</strong> &mdash; the original and most widely known PDE5 inhibitor. Generally taken as needed before activity; tends to have a shorter window of effect.</li>
-              <li><strong>Tadalafil</strong> &mdash; known for a notably longer duration of effect, which is why some men prefer it; it can be prescribed in different patterns depending on the clinician&apos;s assessment.</li>
-              <li><strong>Vardenafil</strong> &mdash; another as-needed option with an onset and duration broadly similar to sildenafil.</li>
-            </ul>
-
-            <p className="text-gray-700 mb-4">
-              The practical difference between them mostly comes down to <strong>onset</strong> (how soon they take effect) and <strong>duration</strong> (how long the window lasts), along with how each interacts with food and your individual response. Sildenafil and vardenafil are typically used as shorter-window, as-needed options, while tadalafil is distinguished by a substantially longer duration. Which one fits you &mdash; and at what dose &mdash; is a decision for your prescriber, not something to self-select.
-            </p>
-
-            <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 my-6">
-              <p className="text-gray-700">
-                <strong>No dosing here on purpose:</strong> This guide deliberately does not give dosing instructions. Dose depends on your health, other medications, and clinical judgment. Follow the directions of the licensed clinician who prescribes for you.
-              </p>
-            </div>
-
-            <h2 id="how-telehealth-works" className="text-2xl font-bold text-gray-900 mt-12 mb-6">How Online ED Treatment Works</h2>
-
-            <p className="text-gray-700 mb-4">
-              Legitimate telehealth ED services follow a consistent, regulated flow. Understanding it helps you spot the platforms that do it right &mdash; and avoid the ones that cut corners.
-            </p>
-
-            <ul className="list-disc pl-6 space-y-3 text-gray-700 mb-6">
-              <li><strong>1. Online evaluation:</strong> You complete a detailed health questionnaire and, depending on the service and your state, may have a video or messaging consultation. A <strong>licensed clinician</strong> reviews your history, current medications, and any red flags.</li>
-              <li><strong>2. Prescription decision:</strong> If treatment is appropriate, the clinician issues a prescription for a specific medication and dose. If something needs further workup &mdash; or in-person care &mdash; a responsible service will tell you so rather than just sell you pills.</li>
-              <li><strong>3. Discreet shipping:</strong> The prescription is filled by a partner pharmacy and shipped in plain, unbranded packaging to your address, often on a recurring subscription so you don&apos;t run out.</li>
-              <li><strong>4. Follow-up:</strong> Good platforms offer ongoing clinician messaging to adjust treatment, manage side effects, or change medications.</li>
-            </ul>
-
-            <h2 id="platforms" className="text-2xl font-bold text-gray-900 mt-12 mb-6">The Main Platforms Compared</h2>
-
-            <p className="text-gray-700 mb-4">
-              Several telehealth companies have made online ED treatment mainstream. They differ in their model, product format, and pricing. You can also get generic ED medication through a traditional or online pharmacy with a prescription from your own doctor. The table below is a general overview &mdash; confirm current offerings and prices directly with each provider.
-            </p>
-
-            <div className="overflow-x-auto mb-8">
-              <table className="min-w-full border border-gray-300">
-                <thead className="bg-gray-100">
-                  <tr>
-                    <th className="border border-gray-300 px-4 py-3 text-left font-semibold">Platform</th>
-                    <th className="border border-gray-300 px-4 py-3 text-left font-semibold">What It Offers</th>
-                    <th className="border border-gray-300 px-4 py-3 text-left font-semibold">Price (est.)</th>
-                    <th className="border border-gray-300 px-4 py-3 text-left font-semibold">Next step</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td className="border border-gray-300 px-4 py-3 font-medium">Hims</td>
-                    <td className="border border-gray-300 px-4 py-3">Broad men&apos;s health brand; online evaluation, generic and brand ED meds, subscription model, ongoing support</td>
-                    <td className="border border-gray-300 px-4 py-3">~$20 - $90+ / mo depending on med &amp; plan</td>
-                    <td className="border border-gray-300 px-4 py-3">
-                      <a href="https://www.hims.com" target="_blank" rel="nofollow sponsored noopener noreferrer" className="font-medium text-emerald-700 hover:underline">Visit Site →</a>
-                    </td>
-                  </tr>
-                  <tr className="bg-gray-50">
-                    <td className="border border-gray-300 px-4 py-3 font-medium">Ro</td>
-                    <td className="border border-gray-300 px-4 py-3">Telehealth platform with clinician evaluation; generic and brand options, discreet delivery, follow-up care</td>
-                    <td className="border border-gray-300 px-4 py-3">~$20 - $90+ / mo, varies by medication</td>
-                    <td className="border border-gray-300 px-4 py-3">
-                      <a href="https://ro.co" target="_blank" rel="nofollow sponsored noopener noreferrer" className="font-medium text-emerald-700 hover:underline">Visit Site →</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border border-gray-300 px-4 py-3 font-medium">BlueChew</td>
-                    <td className="border border-gray-300 px-4 py-3">Subscription focused on chewable formulations of generic sildenafil and tadalafil; online evaluation</td>
-                    <td className="border border-gray-300 px-4 py-3">~$20 - $90 / mo by plan tier</td>
-                    <td className="border border-gray-300 px-4 py-3">
-                      <a href="https://bluechew.com" target="_blank" rel="nofollow sponsored noopener noreferrer" className="font-medium text-emerald-700 hover:underline">Visit Site →</a>
-                    </td>
-                  </tr>
-                  <tr className="bg-gray-50">
-                    <td className="border border-gray-300 px-4 py-3 font-medium">Generic via pharmacy</td>
-                    <td className="border border-gray-300 px-4 py-3">Prescription from your own doctor filled at a retail or online pharmacy; no subscription required</td>
-                    <td className="border border-gray-300 px-4 py-3">Often lowest per-dose with discount programs</td>
-                    <td className="border border-gray-300 px-4 py-3">
-                      <Link href="/mens-health" className="font-medium text-blue-600 hover:underline">Compare clinics</Link>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <BrandCtaGrid
-              title="Compare the platforms named above"
-              intro="None of these brands have a dedicated VitalityScout provider profile for ED. Use the official site, then compare them side by side on the men’s-health hub. Prices are estimates — verify before you enroll."
-              brands={ED_BRANDS}
-              hubHref="/mens-health"
-              hubLabel="Compare online men’s health clinics →"
-            />
-
-            <p className="text-gray-700 mb-4">
-              The right choice depends on what you value: an all-in-one branded experience and convenience (Hims, Ro), a specific format like chewables (BlueChew), or the lowest possible price by using generics through a pharmacy with your existing doctor. Many men find generics offer the best value, since sildenafil and tadalafil are both available generically.
-            </p>
-
-            <h2 id="cost" className="text-2xl font-bold text-gray-900 mt-12 mb-6">What It Costs</h2>
-
-            <p className="text-gray-700 mb-4">
-              Online ED treatment has become genuinely affordable, largely because sildenafil and tadalafil are available as generics. As a general estimate, <strong>generic sildenafil or tadalafil via telehealth runs roughly $20 to $90 per month</strong>, depending on the platform, the medication, the dose, and how many doses your plan includes.
-            </p>
-
-            <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-6">
-              <li><strong>Generics</strong> are the budget-friendly path and are clinically equivalent to brand-name versions.</li>
-              <li><strong>Brand-name</strong> medications cost considerably more and are usually unnecessary when a generic is available.</li>
-              <li><strong>Subscription plans</strong> bundle the evaluation, the medication, and shipping &mdash; convenient, but compare the per-dose cost.</li>
-              <li><strong>Pharmacy discount programs</strong> can sometimes beat subscription pricing if you have a prescription from your own doctor.</li>
-            </ul>
-
-            <div className="bg-blue-50 border-l-4 border-blue-400 p-4 my-6">
-              <p className="text-gray-700">
-                <strong>Budgeting tip:</strong> Compare cost <em>per dose</em>, not just the monthly headline price. A plan that looks cheap may include only a few doses, while another bundles more for a similar total. All figures here are estimates that change over time.
-              </p>
-            </div>
-
-            <h2 id="safety" className="text-2xl font-bold text-gray-900 mt-12 mb-6">Safety: What You Need to Know</h2>
-
-            <p className="text-gray-700 mb-4">
-              ED medications are safe and effective for most men when prescribed appropriately &mdash; but there are real safety considerations that make clinician oversight essential.
-            </p>
-
-            <ul className="list-disc pl-6 space-y-3 text-gray-700 mb-6">
-              <li><strong>ED can signal an underlying problem.</strong> Because erections depend on healthy blood flow, ED can be an early sign of cardiovascular disease or other conditions. Treating it as a standalone nuisance can mean missing something serious &mdash; see a clinician for a proper evaluation, not just a prescription.</li>
-              <li><strong>Never combine with nitrates.</strong> PDE5 inhibitors must not be taken with nitrate medications (used for chest pain/heart conditions) because the combination can cause a dangerous drop in blood pressure. This is one of the most important reasons your full medication list needs clinician review.</li>
-              <li><strong>Other interactions and conditions matter.</strong> Certain heart conditions, blood-pressure medications, and other drugs affect whether these medications are safe for you. Be honest and complete in your health questionnaire.</li>
-              <li><strong>Avoid sketchy no-evaluation sites.</strong> Steer well clear of any site that sells ED pills with no clinician evaluation, asks no health questions, or ships products of unknown origin. These bypass the safeguards that exist for good reason and may sell counterfeit or unsafe products.</li>
-            </ul>
-
-            <div className="bg-red-50 border-l-4 border-red-400 p-4 my-6">
-              <p className="text-gray-700">
-                <strong>Seek prompt care if:</strong> you experience chest pain, a sudden change in vision or hearing, or an erection lasting more than four hours. These are emergencies. And if ED is new or persistent, talk with a clinician about the underlying cause &mdash; it&apos;s about more than just the symptom.
-              </p>
-            </div>
-
-            <div className="bg-blue-50 rounded-lg p-6 my-8">
-              <h3 className="font-bold text-gray-900 mb-4 text-lg">The Bottom Line</h3>
-              <p className="text-gray-700 mb-4">
-                ED is common, treatable, and no longer something you have to handle in an awkward waiting room. Legitimate telehealth services connect you with a licensed clinician, prescribe an appropriate FDA-approved medication, and deliver it discreetly &mdash; often for a modest monthly cost when you use generics.
-              </p>
-              <p className="text-gray-700">
-                Choose a platform that includes a real clinician evaluation, compare cost per dose, and treat ED as a health signal worth understanding &mdash; not just a symptom to silence.
-              </p>
-            </div>
-          </div>
-
-          <BrandCtaGrid
-            title="Ready to pick a brand?"
-            intro="Open the official site for the platform you want, or compare Hims, Ro, and BlueChew on one page."
-            brands={ED_BRANDS}
-            hubHref="/mens-health"
-            hubLabel="Compare online men’s health clinics →"
-          />
-
-          {/* CTA Section — money page repeat */}
-          <div className="mt-12 rounded-xl bg-gradient-to-r from-blue-500 to-indigo-500 p-8 text-center text-white">
-            <h3 className="text-2xl font-bold mb-3">Find the Right Online Clinic for You</h3>
-            <p className="mb-6 text-blue-100">
-              Compare vetted telehealth men&apos;s health providers, what they prescribe, and how they price treatment.
-            </p>
-            <Link
-              href="/mens-health"
-              className="inline-block rounded-lg bg-white px-6 py-3 font-semibold text-blue-600 hover:bg-blue-50 transition-colors"
-            >
-              Compare online men&apos;s health clinics →
-            </Link>
-          </div>
-
-          {/* Related Links */}
-          <div className="mt-12 border-t border-gray-200 pt-8">
-            <h3 className="font-semibold text-gray-800 mb-4">Related Resources</h3>
-            <ul className="space-y-2 text-gray-700">
-              <li>
-                <Link href="/mens-health" className="text-blue-600 hover:underline">Men&apos;s Health Directory &mdash; compare online clinics &amp; pricing</Link>
-              </li>
-              <li>
-                <Link href="/telehealth" className="text-blue-600 hover:underline">Telehealth Directory &mdash; how virtual care works</Link>
-              </li>
-              <li>
-                <Link href="/hormone-therapy" className="text-blue-600 hover:underline">Hormone Therapy &amp; TRT &mdash; testosterone and men&apos;s hormonal health</Link>
-              </li>
-              <li>
-                <Link href="/trt" className="text-blue-600 hover:underline">TRT hub &mdash; online testosterone clinics compared</Link>
-              </li>
-              <li>
-                <Link href="/guides/cash-pay-healthcare-map" className="text-blue-600 hover:underline">Cash-pay healthcare map &mdash; where this sits vs labs, imaging, and surgery</Link>
-              </li>
-            </ul>
-          </div>
-        </article>
-
-        <RelatedGuides items={getRelatedGuides('/guides/online-ed-treatment')} />
-
-        <MedicalDisclaimer />
-      </main>
+            <section id="methodology" className="mt-12 max-w-4xl rounded-xl bg-gray-50 p-6">
+              <h2 className="text-lg font-bold text-gray-900">How we checked this comparison</h2>
+              <p className="mt-3 text-sm leading-relaxed text-gray-700">VitalityScout research checked public provider pricing and policy pages on {ED_VERIFIED_LABEL}, including the live BlueChew plan selector and Cost Plus price calculators. We did not purchase treatments or complete a medical intake. Unknown checkout terms remain labeled; no promotion is assumed. These examples cover common purchasing routes and are not an exhaustive market survey or endorsements. Clinical statements cite FDA and NIDDK materials; no clinician review is claimed.</p>
+              <p className="mt-3 text-sm text-gray-700">Each provider row links to its sources. Confirm your final quote, pharmacy, prescription and refill terms with the provider. Read our <Link href="/editorial-policy" className="text-blue-700 underline">editorial and comparison policy</Link> or <Link href="/mens-health" className="text-blue-700 underline">explore the men&apos;s health directory</Link>.</p>
+            </section>
+          </article>
+          <RelatedGuides items={getRelatedGuides('/guides/online-ed-treatment')} />
+          <MedicalDisclaimer />
+        </main>
       </SidebarShell>
       <Footer />
     </>

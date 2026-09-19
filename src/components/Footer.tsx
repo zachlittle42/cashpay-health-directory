@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import PrivacyPreferencesButton from '@/components/tracking/PrivacyPreferencesButton';
 
 export default function Footer() {
   return (
@@ -88,9 +89,11 @@ export default function Footer() {
               <p className="font-medium text-gray-700">VitalityScout</p>
               <p className="mt-1">Compare cash-pay health services. No insurance required.</p>
             </div>
-            <div className="flex gap-6 text-sm text-gray-500">
+            <div className="flex flex-wrap gap-x-6 gap-y-3 text-sm text-gray-500">
               <Link href="/faq" className="hover:text-gray-700">FAQ</Link>
               <Link href="/guides" className="hover:text-gray-700">Guides</Link>
+              <Link href="/editorial-policy" className="hover:text-gray-700">How we compare</Link>
+              <PrivacyPreferencesButton />
             </div>
           </div>
           <p className="mt-4 text-xs text-gray-500">

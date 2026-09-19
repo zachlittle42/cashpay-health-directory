@@ -1,7 +1,11 @@
 import Link from 'next/link';
+import { getReferralLink } from '@/lib/referral-links';
 
 export type BrandCta = {
   name: string;
+  /** Stable identifier used in the referral scorecard. */
+  providerId?: string;
+  category?: string;
   price?: string;
   blurb: string;
   siteUrl?: string;
@@ -28,7 +32,10 @@ export default function BrandCtaGrid({
       {title && <h3 className="text-lg font-bold text-gray-900 mb-2">{title}</h3>}
       {intro && <p className="text-sm text-gray-600 mb-4">{intro}</p>}
       <div className={`grid gap-4 ${brands.length > 2 ? 'md:grid-cols-2 lg:grid-cols-3' : 'md:grid-cols-2'}`}>
-        {brands.map((brand) => (
+        {brands.map((brand) => {
+          const id = brand.providerId || brand.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+          const referral = getReferralLink(id, brand.siteUrl || '', brand.category);
+          return (
           <div
             key={brand.name}
             className="rounded-lg border border-gray-200 p-5 hover:border-emerald-300 transition-colors"
@@ -43,9 +50,12 @@ export default function BrandCtaGrid({
             <div className="mt-4 flex flex-wrap gap-2">
               {brand.siteUrl && (
                 <a
-                  href={brand.siteUrl}
+                  href={referral.href}
+                  data-provider-id={referral.providerId}
+                  data-category={brand.category || 'guide'}
+                  data-placement="brand-card"
                   target="_blank"
-                  rel="nofollow sponsored noopener noreferrer"
+                  rel={referral.commercial ? 'nofollow sponsored noopener noreferrer' : 'noopener noreferrer'}
                   className="inline-block rounded bg-emerald-600 px-4 py-2 text-sm font-medium text-white hover:bg-emerald-700"
                 >
                   {brand.siteLabel || 'Visit Site →'}
@@ -61,7 +71,8 @@ export default function BrandCtaGrid({
               )}
             </div>
           </div>
-        ))}
+          );
+        })}
       </div>
       {hubHref && (
         <div className="mt-5 text-center">

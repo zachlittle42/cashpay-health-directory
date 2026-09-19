@@ -1,0 +1,570 @@
+{
+  "schemaVersion": 1,
+  "asOfDate": "2026-09-17",
+  "site": "https://vitalityscout.com/",
+  "collectionMode": "Live read-only API requests through existing configured reporting clients",
+  "privacy": {
+    "containsCredentials": false,
+    "containsContactRecords": false,
+    "containsDistinctIds": false,
+    "notes": "Only aggregate counts, public page paths, public search queries, referrer hosts, and URL inspection states are retained."
+  },
+  "google": {
+    "property": "sc-domain:vitalityscout.com",
+    "currentWindow": {
+      "startDate": "2026-08-18",
+      "endDate": "2026-09-14",
+      "dataState": "final"
+    },
+    "priorWindow": {
+      "startDate": "2026-07-21",
+      "endDate": "2026-08-17",
+      "dataState": "final"
+    },
+    "currentTotals": {
+      "clicks": 0,
+      "impressions": 644,
+      "ctrPercent": 0,
+      "averagePosition": 52.52
+    },
+    "priorTotals": {
+      "clicks": 1,
+      "impressions": 558,
+      "ctrPercent": 0.18,
+      "averagePosition": 67.04
+    },
+    "method": "Totals are dimensionless Search Analytics queries, not sums of query rows. Page/query reports can exclude anonymized queries and use different aggregation rules.",
+    "currentPageRowCount": 74,
+    "priorPageRowCount": 39,
+    "currentPriorityPages": [
+      {
+        "path": "/dexa",
+        "clicks": 0,
+        "impressions": 168,
+        "position": 66.67
+      },
+      {
+        "path": "/sleep",
+        "clicks": 0,
+        "impressions": 77,
+        "position": 64.27
+      },
+      {
+        "path": "/guides",
+        "clicks": 0,
+        "impressions": 52,
+        "position": 10.19
+      },
+      {
+        "path": "/guides/dexa-scan-cost-new-york",
+        "clicks": 0,
+        "impressions": 48,
+        "position": 5.08
+      },
+      {
+        "path": "/",
+        "clicks": 0,
+        "impressions": 36,
+        "position": 41.44
+      },
+      {
+        "path": "/dexa-scans",
+        "clicks": 0,
+        "impressions": 29,
+        "position": 43.66
+      },
+      {
+        "path": "/labs",
+        "clicks": 0,
+        "impressions": 17,
+        "position": 33.29
+      },
+      {
+        "path": "/guides/cheapest-blood-test-panels",
+        "clicks": 0,
+        "impressions": 16,
+        "position": 35.69
+      },
+      {
+        "path": "/guides/quest-vs-labcorp-pricing",
+        "clicks": 0,
+        "impressions": 13,
+        "position": 59.08
+      },
+      {
+        "path": "/guides/at-home-lab-testing-guide",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 4
+      }
+    ],
+    "noRowsForPriorityPages": [
+      "/guides/online-ed-treatment",
+      "/guides/mri-cost-without-insurance",
+      "/guides/full-body-mri-scan-cost",
+      "/guides/function-health-review"
+    ],
+    "inspectionDate": "2026-09-17",
+    "inspectionSampleSelection": "12 deliberately selected priority pages; not a random sample or whole-site indexed count.",
+    "inspectionSample": [
+      {
+        "path": "/",
+        "verdict": "PASS",
+        "coverageState": "Submitted and indexed",
+        "robotsTxtState": "ALLOWED",
+        "indexingState": "INDEXING_ALLOWED",
+        "pageFetchState": "SUCCESSFUL",
+        "lastCrawlTime": "2026-08-24T00:01:23Z",
+        "googleCanonical": "https://vitalityscout.com/",
+        "userCanonical": "https://vitalityscout.com/"
+      },
+      {
+        "path": "/guides/online-ed-treatment",
+        "verdict": "NEUTRAL",
+        "coverageState": "Discovered - currently not indexed",
+        "sitemap": [
+          "https://vitalityscout.com/sitemap.xml"
+        ]
+      },
+      {
+        "path": "/mens-health",
+        "verdict": "NEUTRAL",
+        "coverageState": "URL is unknown to Google"
+      },
+      {
+        "path": "/guides/mri-cost-without-insurance",
+        "verdict": "NEUTRAL",
+        "coverageState": "Discovered - currently not indexed",
+        "sitemap": [
+          "https://vitalityscout.com/sitemap.xml"
+        ]
+      },
+      {
+        "path": "/guides/full-body-mri-scan-cost",
+        "verdict": "NEUTRAL",
+        "coverageState": "Discovered - currently not indexed",
+        "sitemap": [
+          "https://vitalityscout.com/sitemap.xml"
+        ]
+      },
+      {
+        "path": "/guides/at-home-lab-testing-guide",
+        "verdict": "PASS",
+        "coverageState": "Submitted and indexed",
+        "robotsTxtState": "ALLOWED",
+        "indexingState": "INDEXING_ALLOWED",
+        "pageFetchState": "SUCCESSFUL",
+        "lastCrawlTime": "2026-07-28T17:53:00Z",
+        "googleCanonical": "https://vitalityscout.com/guides/at-home-lab-testing-guide",
+        "userCanonical": "https://vitalityscout.com/guides/at-home-lab-testing-guide"
+      },
+      {
+        "path": "/guides/quest-vs-labcorp-pricing",
+        "verdict": "PASS",
+        "coverageState": "Submitted and indexed",
+        "robotsTxtState": "ALLOWED",
+        "indexingState": "INDEXING_ALLOWED",
+        "pageFetchState": "SUCCESSFUL",
+        "lastCrawlTime": "2026-08-21T14:50:19Z",
+        "googleCanonical": "https://vitalityscout.com/guides/quest-vs-labcorp-pricing",
+        "userCanonical": "https://vitalityscout.com/guides/quest-vs-labcorp-pricing"
+      },
+      {
+        "path": "/guides/cheapest-blood-test-panels",
+        "verdict": "PASS",
+        "coverageState": "Submitted and indexed",
+        "robotsTxtState": "ALLOWED",
+        "indexingState": "INDEXING_ALLOWED",
+        "pageFetchState": "SUCCESSFUL",
+        "lastCrawlTime": "2026-08-29T02:04:48Z",
+        "googleCanonical": "https://vitalityscout.com/guides/cheapest-blood-test-panels",
+        "userCanonical": "https://vitalityscout.com/guides/cheapest-blood-test-panels"
+      },
+      {
+        "path": "/guides/blood-test-without-a-doctor",
+        "verdict": "NEUTRAL",
+        "coverageState": "Discovered - currently not indexed",
+        "sitemap": [
+          "https://vitalityscout.com/sitemap.xml"
+        ]
+      },
+      {
+        "path": "/guides/function-health-review",
+        "verdict": "NEUTRAL",
+        "coverageState": "Discovered - currently not indexed",
+        "sitemap": [
+          "https://vitalityscout.com/sitemap.xml"
+        ]
+      },
+      {
+        "path": "/labs",
+        "verdict": "PASS",
+        "coverageState": "Submitted and indexed",
+        "robotsTxtState": "ALLOWED",
+        "indexingState": "INDEXING_ALLOWED",
+        "pageFetchState": "SUCCESSFUL",
+        "lastCrawlTime": "2026-08-25T03:19:52Z",
+        "googleCanonical": "https://vitalityscout.com/labs",
+        "userCanonical": "https://vitalityscout.com/labs"
+      },
+      {
+        "path": "/dexa-scans",
+        "verdict": "PASS",
+        "coverageState": "Submitted and indexed",
+        "robotsTxtState": "ALLOWED",
+        "indexingState": "INDEXING_ALLOWED",
+        "pageFetchState": "SUCCESSFUL",
+        "lastCrawlTime": "2026-09-14T08:48:58Z",
+        "googleCanonical": "https://vitalityscout.com/dexa-scans",
+        "userCanonical": "https://vitalityscout.com/dexa-scans"
+      }
+    ]
+  },
+  "bing": {
+    "currentDailyWindow": {
+      "startDate": "2026-08-19",
+      "endDate": "2026-09-15",
+      "entries": 28,
+      "clicks": 936,
+      "impressions": 36714
+    },
+    "priorDailyWindow": {
+      "startDate": "2026-07-22",
+      "endDate": "2026-08-18",
+      "entries": 28,
+      "clicks": 349,
+      "impressions": 26577
+    },
+    "currentWeeklyBucketDates": [
+      "2026-08-21",
+      "2026-08-28",
+      "2026-09-04",
+      "2026-09-11"
+    ],
+    "priorWeeklyBucketDates": [
+      "2026-07-24",
+      "2026-07-31",
+      "2026-08-07",
+      "2026-08-14"
+    ],
+    "windowNote": "Bing GetPageStats and GetQueryStats return provider-defined date buckets. The four selected current/prior weekly labels are retained verbatim. They are not the daily 28-entry windows; do not divide page clicks by site daily-window clicks. Query/page coverage is incomplete, and some query rows have clicks above impressions; do not fit a CTR model from those rows.",
+    "currentPages": [
+      {
+        "path": "/guides/online-ed-treatment",
+        "clicks": 247,
+        "impressions": 2992,
+        "position": 4.37,
+        "ctrPercent": 8.26
+      },
+      {
+        "path": "/guides/ro-body-weight-loss-cost",
+        "clicks": 34,
+        "impressions": 5551,
+        "position": 6,
+        "ctrPercent": 0.61
+      },
+      {
+        "path": "/guides/lasik-cost-usa",
+        "clicks": 26,
+        "impressions": 788,
+        "position": 7,
+        "ctrPercent": 3.3
+      },
+      {
+        "path": "/guides/allergy-testing-cost",
+        "clicks": 19,
+        "impressions": 362,
+        "position": 3.26,
+        "ctrPercent": 5.25
+      },
+      {
+        "path": "/guides/function-health-review",
+        "clicks": 12,
+        "impressions": 8756,
+        "position": 7,
+        "ctrPercent": 0.14
+      },
+      {
+        "path": "/guides/mri-cost-without-insurance",
+        "clicks": 12,
+        "impressions": 1997,
+        "position": 5,
+        "ctrPercent": 0.6
+      },
+      {
+        "path": "/guides/full-body-mri-scan-cost",
+        "clicks": 3,
+        "impressions": 524,
+        "position": 5.61,
+        "ctrPercent": 0.57
+      },
+      {
+        "path": "/guides/are-at-home-blood-tests-accurate",
+        "clicks": 3,
+        "impressions": 46,
+        "position": 3.83,
+        "ctrPercent": 6.52
+      },
+      {
+        "path": "/guides/quest-vs-labcorp-pricing",
+        "clicks": 2,
+        "impressions": 72,
+        "position": 4.17,
+        "ctrPercent": 2.78
+      },
+      {
+        "path": "/guides/how-to-read-blood-test-results",
+        "clicks": 0,
+        "impressions": 560,
+        "position": 8.02,
+        "ctrPercent": 0
+      },
+      {
+        "path": "/guides/cheapest-blood-test-panels",
+        "clicks": 0,
+        "impressions": 5,
+        "position": 5,
+        "ctrPercent": 0
+      },
+      {
+        "path": "/guides/at-home-lab-testing-guide",
+        "clicks": 0,
+        "impressions": 1,
+        "position": 4,
+        "ctrPercent": 0
+      }
+    ],
+    "priorPriorityPages": [
+      {
+        "path": "/guides/online-ed-treatment",
+        "clicks": 7,
+        "impressions": 1014,
+        "position": 4.83,
+        "ctrPercent": 0.69
+      },
+      {
+        "path": "/guides/mri-cost-without-insurance",
+        "clicks": 38,
+        "impressions": 2364,
+        "position": 5.22,
+        "ctrPercent": 1.61
+      },
+      {
+        "path": "/guides/full-body-mri-scan-cost",
+        "clicks": 10,
+        "impressions": 509,
+        "position": 5.4,
+        "ctrPercent": 1.96
+      },
+      {
+        "path": "/guides/function-health-review",
+        "clicks": 18,
+        "impressions": 5407,
+        "position": 7,
+        "ctrPercent": 0.33
+      },
+      {
+        "path": "/guides/quest-vs-labcorp-pricing",
+        "clicks": 2,
+        "impressions": 146,
+        "position": 5.79,
+        "ctrPercent": 1.37
+      }
+    ],
+    "currentPriorityQueries": [
+      {
+        "query": "order ed pills online",
+        "clicks": 14,
+        "impressions": 71,
+        "position": 3.25
+      },
+      {
+        "query": "ed treatment online",
+        "clicks": 10,
+        "impressions": 30,
+        "position": 2
+      },
+      {
+        "query": "ed online treatment",
+        "clicks": 8,
+        "impressions": 25,
+        "position": 2.76
+      },
+      {
+        "query": "ed medicines online",
+        "clicks": 7,
+        "impressions": 13,
+        "position": 2
+      },
+      {
+        "query": "buy erectile dysfunction pills online",
+        "clicks": 6,
+        "impressions": 13,
+        "position": 2
+      },
+      {
+        "query": "cheapest online ed treatment",
+        "clicks": 5,
+        "impressions": 31,
+        "position": 3.42
+      },
+      {
+        "query": "sildenafil online",
+        "clicks": 3,
+        "impressions": 7,
+        "position": 2
+      },
+      {
+        "query": "function health",
+        "clicks": 7,
+        "impressions": 7712,
+        "position": 7
+      },
+      {
+        "query": "how to read a blood test",
+        "clicks": 0,
+        "impressions": 354,
+        "position": 8.96
+      },
+      {
+        "query": "mri cost without insurance",
+        "clicks": 0,
+        "impressions": 10,
+        "position": 2
+      },
+      {
+        "query": "how much does an mri cost without insurance",
+        "clicks": 1,
+        "impressions": 8,
+        "position": 2
+      }
+    ],
+    "crawlLatest": {
+      "date": "2026-09-13",
+      "inIndex": 792,
+      "crawledPages": 150,
+      "crawlErrors": 0
+    },
+    "indexNote": "Bing's count includes its URL variants/legacy inventory; it is not a Google indexed count."
+  },
+  "posthog": {
+    "window": {
+      "startInclusive": "2026-09-10T00:00:00Z",
+      "endExclusive": "2026-09-17T00:00:00Z",
+      "siteFilter": "vitality-web"
+    },
+    "pageviews": 1220,
+    "pageviewDistinctIds": 1047,
+    "sessions": 1169,
+    "events": [
+      {
+        "event": "$pageview",
+        "count": 1220,
+        "distinctIds": 1047
+      },
+      {
+        "event": "$pageleave",
+        "count": 957,
+        "distinctIds": 869
+      },
+      {
+        "event": "$autocapture",
+        "count": 214,
+        "distinctIds": 92
+      }
+    ],
+    "referrerPageviews": [
+      {
+        "host": "www.bing.com",
+        "count": 833
+      },
+      {
+        "host": "$direct",
+        "count": 191
+      },
+      {
+        "host": "duckduckgo.com",
+        "count": 105
+      },
+      {
+        "host": "search.yahoo.com",
+        "count": 42
+      },
+      {
+        "host": "www.google.com",
+        "count": 14
+      },
+      {
+        "host": "vitalityscout.com",
+        "count": 8
+      },
+      {
+        "host": "chatgpt.com",
+        "count": 5
+      },
+      {
+        "host": "r.search.yahoo.com",
+        "count": 3
+      }
+    ],
+    "priorityPages": [
+      {
+        "path": "/guides/online-ed-treatment",
+        "pageviews": 784,
+        "distinctIds": 704
+      },
+      {
+        "path": "/guides/function-health-review",
+        "pageviews": 22,
+        "distinctIds": 21
+      },
+      {
+        "path": "/guides/mri-cost-without-insurance",
+        "pageviews": 8,
+        "distinctIds": 8
+      },
+      {
+        "path": "/guides/mri-cost-without-insurance#by-body-part",
+        "pageviews": 1,
+        "distinctIds": 1
+      },
+      {
+        "path": "/guides/quest-vs-labcorp-pricing",
+        "pageviews": 8,
+        "distinctIds": 7
+      },
+      {
+        "path": "/guides/full-body-mri-scan-cost",
+        "pageviews": 3,
+        "distinctIds": 3
+      }
+    ],
+    "notes": "Distinct IDs are analytics identifiers, not verified people. Referrer counts are pageviews, not first-touch sessions. Query parameters were excluded from retained page paths. One MRI fragment variant remains separately counted to show observed URL grouping.",
+    "customConversionEventsObserved": false,
+    "conversionMeasurementStatus": "No custom events in this read; no verified contact-to-provider/booking/revenue baseline."
+  },
+  "ga4": {
+    "property": "525308720",
+    "startDate": "2026-09-10",
+    "endDate": "2026-09-16",
+    "timeZone": "America/Chicago",
+    "users": 14,
+    "pageviews": 17,
+    "sessions": 15,
+    "notes": "GA4 and PostHog reporting zones differ. The large count discrepancy needs instrumentation and consent audit; neither count proves human organic sessions."
+  },
+  "commercial": {
+    "providerClicks": null,
+    "contactsReceived": null,
+    "qualifiedLeads": null,
+    "bookedAppointments": null,
+    "revenue": null,
+    "notes": "Unavailable rather than zero. Prior August MRI contact captures did not prove organic attribution or qualified/booked care."
+  },
+  "measurementCutover": {
+    "status": "Sprint changes pending deployment at collection time",
+    "change": "Consent-gated PostHog, DNT/GPC handling, disabled automatic DOM/session capture, sanitized manual pageviews and canonical provider_click/contact_received events.",
+    "comparability": "This file is the pre-cutover analytics baseline. Start a new consented PostHog baseline after verified deployment; raw pre/post traffic and event conversion rates are not directly comparable. GSC/Bing are independent acquisition anchors.",
+    "contactDelivery": "No production Resend/database delivery path confirmed at collection time; unavailable commercial metrics remain null."
+  }
+}

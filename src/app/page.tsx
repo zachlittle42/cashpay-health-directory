@@ -37,6 +37,7 @@ const GROUP_CARD: Record<string, { hub: string; chip: string }> = {
 const PRIMARY_GROUPS = NAV_GROUPS.filter((g) => g.id !== 'resources');
 
 const POPULAR_SEARCHES = [
+  { l: 'ED treatment', h: '/guides/online-ed-treatment' },
   { l: 'DEXA scan', h: '/dexa' },
   { l: 'GLP-1', h: '/glp1' },
   { l: 'TRT', h: '/trt' },
@@ -71,6 +72,7 @@ const PHOTO_CREDITS = [
 ];
 
 const FEATURED_GUIDES = [
+  { h: '/guides/online-ed-treatment', emoji: '💊', t: 'Compare Online ED Treatment', d: 'Check actual offers, added fees, subscription terms and pharmacy alternatives.', c: 'hover:border-blue-400 group-hover:text-blue-600 text-blue-600' },
   { h: '/guides/glp1-weight-loss-complete-guide', emoji: '💊', t: 'GLP-1 Weight Loss Guide', d: 'How semaglutide works, expected results, and real costs.', c: 'hover:border-blue-400 group-hover:text-blue-600 text-blue-600' },
   { h: '/guides/hair-transplant-turkey-guide', emoji: '💇', t: 'Hair Transplant in Turkey', d: 'Safety checklist, choosing clinics, and what to expect.', c: 'hover:border-purple-400 group-hover:text-purple-600 text-purple-600' },
   { h: '/guides/mexico-medical-tourism-planner', emoji: '🇲🇽', t: 'Mexico Trip Planner', d: 'Border-crossing tips, packing list, and trip timeline.', c: 'hover:border-emerald-400 group-hover:text-emerald-600 text-emerald-600' },

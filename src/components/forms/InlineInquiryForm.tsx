@@ -1,7 +1,9 @@
 'use client';
 
-import { useState, useRef, useCallback } from 'react';
-import { submitInquiryForm, type FormState } from '@/lib/forms/actions';
+import Link from 'next/link';
+import { useId } from 'react';
+import { submitInquiryForm } from '@/lib/forms/actions';
+import { useContactForm } from './useContactForm';
 
 const CATEGORY_OPTIONS = [
   { value: '', label: 'Select a category...' },
@@ -27,49 +29,18 @@ export default function InlineInquiryForm({
   title = 'Get Personalized Recommendations',
   source,
 }: InlineInquiryFormProps) {
-  const [state, setState] = useState<FormState>({ success: false });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const hasTrackedStart = useRef(false);
+  const { state, isSubmitting, available, handleFocus, handleSubmit } = useContactForm(source, 'inquiry', submitInquiryForm);
+  const id = useId();
 
-  const handleFocus = useCallback(() => {
-    if (!hasTrackedStart.current) {
-      hasTrackedStart.current = true;
-      window.dataLayer?.push({
-        event: 'form_start',
-        form_type: 'inquiry',
-        form_source: source,
-      });
-    }
-  }, [source]);
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    const formData = new FormData(e.currentTarget);
-    formData.set('source', source);
-
-    try {
-      const utmData = typeof window !== 'undefined'
-        ? localStorage.getItem('vs_utm_params') || '{}'
-        : '{}';
-      formData.set('utm_data', utmData);
-    } catch {
-      formData.set('utm_data', '{}');
-    }
-
-    const result = await submitInquiryForm({ success: false }, formData);
-    setState(result);
-    setIsSubmitting(false);
-
-    if (result.success) {
-      window.dataLayer?.push({
-        event: 'form_complete',
-        form_type: 'inquiry',
-        form_source: source,
-      });
-    }
-  };
+  if (available !== true) {
+    return (
+      <div className="rounded-xl bg-white p-6 shadow-lg">
+        <h3 className="font-semibold text-gray-900">Compare your options</h3>
+        <p className="mt-2 text-sm text-gray-600">Personal inquiry support is not available right now. Our provider comparisons are open to everyone.</p>
+        <Link href="/telehealth" className="mt-3 inline-block text-blue-700 hover:underline">Browse providers →</Link>
+      </div>
+    );
+  }
 
   if (state.success) {
     return (
@@ -81,7 +52,7 @@ export default function InlineInquiryForm({
             </svg>
           </div>
           <h3 className="text-lg font-bold text-gray-900">Thank you!</h3>
-          <p className="mt-1 text-sm text-gray-600">We&apos;ll be in touch within 24 hours.</p>
+          <p className="mt-1 text-sm text-gray-600">Your inquiry reached our team. This does not book an appointment or send your details to a provider.</p>
         </div>
       </div>
     );
@@ -91,14 +62,15 @@ export default function InlineInquiryForm({
     <div className="rounded-xl bg-white p-6 shadow-lg md:p-8">
       <h3 className="text-xl font-bold text-gray-900 mb-6">{title}</h3>
 
+      <p className="mb-4 text-sm text-gray-600">Your inquiry goes to our team. Please leave out medical records and other sensitive details.</p>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div className="grid gap-4 sm:grid-cols-2">
           <div>
-            <label htmlFor="inquiry-name" className="mb-1 block text-sm font-medium text-gray-700">
+            <label htmlFor={`${id}-name`} className="mb-1 block text-sm font-medium text-gray-700">
               Name *
             </label>
             <input
-              id="inquiry-name"
+              id={`${id}-name`}
               type="text"
               name="name"
               required
@@ -109,11 +81,11 @@ export default function InlineInquiryForm({
           </div>
 
           <div>
-            <label htmlFor="inquiry-email" className="mb-1 block text-sm font-medium text-gray-700">
+            <label htmlFor={`${id}-email`} className="mb-1 block text-sm font-medium text-gray-700">
               Email *
             </label>
             <input
-              id="inquiry-email"
+              id={`${id}-email`}
               type="email"
               name="email"
               required
@@ -125,11 +97,11 @@ export default function InlineInquiryForm({
         </div>
 
         <div>
-          <label htmlFor="inquiry-category" className="mb-1 block text-sm font-medium text-gray-700">
+          <label htmlFor={`${id}-category`} className="mb-1 block text-sm font-medium text-gray-700">
             Category *
           </label>
           <select
-            id="inquiry-category"
+            id={`${id}-category`}
             name="category"
             required
             defaultValue={defaultCategory || ''}
@@ -145,11 +117,11 @@ export default function InlineInquiryForm({
         </div>
 
         <div>
-          <label htmlFor="inquiry-condition" className="mb-1 block text-sm font-medium text-gray-700">
+          <label htmlFor={`${id}-condition`} className="mb-1 block text-sm font-medium text-gray-700">
             What condition are you researching? <span className="text-gray-400">(optional)</span>
           </label>
           <input
-            id="inquiry-condition"
+            id={`${id}-condition`}
             type="text"
             name="condition"
             placeholder="e.g. knee osteoarthritis, weight loss"
@@ -159,11 +131,11 @@ export default function InlineInquiryForm({
         </div>
 
         <div>
-          <label htmlFor="inquiry-message" className="mb-1 block text-sm font-medium text-gray-700">
+          <label htmlFor={`${id}-message`} className="mb-1 block text-sm font-medium text-gray-700">
             Message <span className="text-gray-400">(optional)</span>
           </label>
           <textarea
-            id="inquiry-message"
+            id={`${id}-message`}
             name="message"
             rows={3}
             placeholder="Tell us more about what you're looking for..."

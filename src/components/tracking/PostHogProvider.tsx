@@ -1,24 +1,31 @@
 'use client';
-
 import { useEffect, useRef } from 'react';
-import { initPostHog } from '@/lib/posthog-analytics';
+import { usePathname } from 'next/navigation';
+import { stopAnalytics } from '@/lib/posthog-analytics';
+import { analyticsAllowed } from '@/lib/tracking/consent';
+import { captureFunnelEvent } from '@/lib/tracking/events';
+import { captureUTMParams, clearAttribution } from '@/lib/tracking/utm';
 
-/**
- * Client-side PostHog initializer. Mounts inside <body> in app/layout.tsx
- * alongside the existing tracking infrastructure.
- *
- * Honors Do-Not-Track via posthog-js's built-in `respect_dnt: true`. Cookie
- * consent banner is handled by the sibling CookieConsent component; PostHog
- * uses localStorage by default and respects browser DNT signals.
- */
 export default function PostHogProvider() {
-  const initialized = useRef(false);
-
+  const pathname = usePathname();
+  const lastPage = useRef<string>();
   useEffect(() => {
-    if (initialized.current) return;
-    initialized.current = true;
-    initPostHog();
-  }, []);
-
+    const sync = () => {
+      if (!analyticsAllowed()) {
+        lastPage.current = undefined;
+        stopAnalytics();
+        clearAttribution();
+        return;
+      }
+      captureUTMParams();
+      if (lastPage.current !== pathname) {
+        lastPage.current = pathname;
+        captureFunnelEvent('$pageview');
+      }
+    };
+    sync();
+    window.addEventListener('vs_consent_change', sync);
+    return () => window.removeEventListener('vs_consent_change', sync);
+  }, [pathname]);
   return null;
 }

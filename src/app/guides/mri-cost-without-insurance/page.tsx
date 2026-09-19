@@ -4,6 +4,7 @@ import Navigation from '@/components/Navigation';
 import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
+import BrandCtaGrid from '@/components/BrandCtaGrid';
 import RelatedGuides from '@/components/RelatedGuides';
 import { getRelatedGuides } from '@/data/related-guides';
 import { buildFAQSchema } from '@/lib/jsonLd';
@@ -395,6 +396,16 @@ export default function MriCostWithoutInsurance() {
                 separately.
               </p>
             </div>
+
+            <BrandCtaGrid
+              title="Get a quote for the scan on your clinician’s order"
+              intro="Use the same body part, contrast requirement and location for every quote. Ask whether the facility, radiologist interpretation, images and report are included. These links open the providers directly; VitalityScout does not book the scan."
+              brands={[
+                { name: 'RadiologyAssist', providerId: 'radiologyassist', category: 'mri', blurb: 'Check the self-pay network’s availability and total for your ordered scan.', siteUrl: 'https://radiologyassist.com/MRI.html', siteLabel: 'Check MRI options →' },
+                { name: 'Green Imaging', providerId: 'green-imaging', category: 'mri', blurb: 'Ask for the total cash price and the participating facility near you.', siteUrl: 'https://greenimaging.net/', siteLabel: 'Check imaging options →' },
+                { name: 'SimonMed', providerId: 'simonmed', category: 'mri', blurb: 'Request a cost estimate for the exact diagnostic MRI and location.', siteUrl: 'https://www.simonmed.com/cost-estimates/', siteLabel: 'Request a cost estimate →' },
+              ]}
+            />
 
             <h2 id="full-body" className="text-2xl font-bold text-gray-900 mt-12 mb-6">Full-Body MRI Is a Different Product</h2>
 

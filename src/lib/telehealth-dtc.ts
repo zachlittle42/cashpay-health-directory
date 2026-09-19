@@ -8,6 +8,7 @@
 // involving prescriptions set requiresMedicalDisclaimer.
 
 import type { CompareCategory, CompareProduct } from './compare-types';
+import { ED_OFFERS, ED_VERIFIED_AT } from './ed-offers';
 
 export type DtcCategorySlug =
   | 'mens-health'
@@ -25,26 +26,26 @@ export const DTC_CATEGORIES: Record<DtcCategorySlug, CompareCategory> = {
     shortLabel: "Men's Health",
     icon: '🧔',
     description:
-      'Compare online clinics that treat erectile dysfunction and hair loss with FDA-approved generics shipped to your door — Hims, Ro, BlueChew, and Keeps.',
+      'Compare online clinics for erectile dysfunction and hair loss. Check the product, full cost, subscription terms, and clinician requirements before choosing a service.',
     intro:
-      "Erectile dysfunction and male-pattern hair loss are the two services that built direct-to-consumer men's health. Both are treated with well-established, FDA-approved generic medications (sildenafil/tadalafil for ED; finasteride/minoxidil for hair), and telehealth makes them cheap, private, and shipped to your door after an online evaluation. This page compares the main platforms on price, what they treat, and who they fit — so you can skip the markup and the awkward visit.",
+      "Men's-health platforms offer different combinations of ED, hair-loss and other services. A provider can offer both FDA-approved medicines and compounded products; compounded products themselves are not FDA-approved. Compare the exact prescription and plan, and let a licensed clinician determine whether treatment is appropriate.",
     directAnswer:
-      'Online ED treatment typically costs about $20–$90 per month and online hair-loss treatment about $10–$40 per month, using FDA-approved generics like sildenafil/tadalafil (ED) and finasteride/minoxidil (hair). Broad platforms like Hims and Ro treat both plus other concerns; BlueChew specializes in chewable ED tablets; Keeps focuses on hair loss. All require a quick online evaluation by a licensed clinician. Prices are estimates — confirm on each provider’s site.',
-    priceRange: '$10–$90/mo',
+      'ED offers use different billing units: advertised monthly starting prices, a price per dose, or a pharmacy refill plus a separate consultation. Our detailed ED comparison checks quantities, shipping, first payments and recurring terms against linked provider sources. Hair-loss and hormone services below have separate pricing; they are not included in an ED offer.',
+    priceRange: 'Compare the full cost and billing period',
     requiresMedicalDisclaimer: true,
     relatedLinks: [
       {
         href: '/guides/online-ed-treatment',
         icon: '📖',
         title: 'How to Get ED Treatment Online',
-        desc: 'The FDA-approved options, how telehealth works, costs, and safety',
+        desc: 'Source-checked prices, subscriptions, pharmacy alternatives, and safety',
       },
     ],
     faqs: [
       {
         question: 'How much does online ED treatment cost without insurance?',
         answer:
-          'Generic sildenafil or tadalafil through telehealth typically runs about $20–$90 per month depending on the dose, quantity, and platform — far less than brand-name Viagra or Cialis. Chewable or subscription options vary. You pay a transparent cash price after a licensed clinician reviews your online intake. Prices are estimates; confirm with the provider.',
+          'There is no single comparable monthly price. Check the exact drug, strength and quantity, then add consultation, shipping and membership fees. Our ED guide separates advertised starting prices from fully specified pharmacy-fill examples and compounded subscription plans, with sources and verification dates.',
       },
       {
         question: 'Do I need a prescription, and is it legit?',
@@ -54,7 +55,7 @@ export const DTC_CATEGORIES: Record<DtcCategorySlug, CompareCategory> = {
       {
         question: 'Hims vs Ro vs BlueChew — what’s the difference?',
         answer:
-          'Hims and Ro are broad men’s-health platforms that treat ED, hair loss, and other concerns with a polished app and bundling. BlueChew specializes in chewable ED tablets (sildenafil, tadalafil, vardenafil) on a subscription. Keeps focuses specifically on hair loss and is often the cheapest for finasteride/minoxidil. The best pick depends on whether you want one service or a bundle.',
+          'Hims and Ro offer multiple services and both generic and compounded formulations. BlueChew offers compounded ED products through recurring plans. Keeps focuses on hair loss. The relevant comparison is the exact product and included services, rather than the brand name alone.',
       },
       {
         question: 'Does finasteride for hair loss have side effects?',
@@ -255,7 +256,7 @@ export const DTC_PRODUCTS: CompareProduct[] = [
       'BlueChew specializes in chewable ED tablets (sildenafil, tadalafil, and vardenafil) delivered on a monthly subscription after an online evaluation — a convenient, discreet ED-only option.',
     priceDisplay: '~$20–$90/mo',
     priceNote: 'Tiered by tablet count. Estimate — verify on site.',
-    fdaStatus: 'Rx · FDA-approved generics (chewable)',
+    fdaStatus: 'Rx · Compounded; not FDA-approved',
     prescriptionRequired: true,
     bestFor: 'ED-focused users who prefer chewables',
     keyFeatures: ['Chewable sildenafil/tadalafil/vardenafil', 'Monthly subscription', 'Discreet shipping', 'Online evaluation'],
@@ -518,7 +519,29 @@ export function getDtcCategory(slug: DtcCategorySlug): CompareCategory {
 }
 
 export function getDtcProductsByCategory(slug: DtcCategorySlug): CompareProduct[] {
-  return DTC_PRODUCTS.filter((p) => p.category === slug).sort(
+  // Imported June records duplicated the existing Hims and Ro listings. Keep
+  // stable provider IDs and reuse the source-checked ED offer for every summary.
+  const duplicateSlugs = new Set(['hims-mens-health', 'roman-mens-health']);
+  const edIds: Record<string, string> = { hims: 'hims', ro: 'ro', bluechew: 'bluechew', 'lemonaid-mens-health': 'lemonaid' };
+  return DTC_PRODUCTS.filter((p) => p.category === slug && !duplicateSlugs.has(p.slug)).map((product) => {
+    const offer = slug === 'mens-health' ? ED_OFFERS.find((item) => item.id === edIds[product.slug]) : undefined;
+    if (!offer) return product;
+    return {
+      ...product,
+      tagline: offer.product,
+      description: offer.format,
+      priceDisplay: offer.price,
+      priceNote: `${offer.priceDetail} ${offer.includes}`,
+      fdaStatus: offer.id === 'bluechew' ? 'Compounded; not FDA-approved' : 'Check the exact prescribed product',
+      bestFor: 'Compare the specified ED offer and its terms',
+      pros: [offer.includes],
+      cons: [offer.commitment, offer.unknowns],
+      url: offer.url,
+      referralType: 'direct_link' as const,
+      lastVerified: ED_VERIFIED_AT,
+      featured: false,
+    };
+  }).sort(
     (a, b) => Number(Boolean(b.featured)) - Number(Boolean(a.featured)),
   );
 }

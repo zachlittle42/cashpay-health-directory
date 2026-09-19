@@ -1,0 +1,68 @@
+# Growth measurement contract
+
+Implemented September 17, 2026. These changes define instrumented behavior; they do not establish live traffic, working account configuration, partnerships, bookings, or revenue. Deploy and verify real telemetry before using the new events in a weekly scorecard.
+
+## Release decision: PostHog
+
+The user chose **Use PostHog for this release** after the Google Analytics stream was inspected. The September 17, 2026 readback for stream `G-FLPFRH1862` showed Enhanced Measurement enabled, including automatic scroll, outbound, search, video, download, history-pageview and form-interaction events. An authorized attempt to disable the stream's Enhanced Measurement with the connected service account returned HTTP 403 `PERMISSION_DENIED`; the subsequent 23:41:18 UTC readback confirmed the settings were unchanged. Browser access also stopped at sign-in.
+
+Google is therefore disabled by default in this release: `NEXT_PUBLIC_ENABLE_GOOGLE_ANALYTICS` must equal the exact string `true` before either GA4/GTM scripts, consent initialization or the event queue can run. Existing Google IDs alone do not enable it. PostHog and consented Vercel metrics continue independently. Re-enable only after an authorized account editor disables Enhanced Measurement, a fresh read confirms that change, and controlled browser checks confirm sanitized events and no duplicate pageviews. Then set the flag for the intended deployment and rebuild; public environment variables are embedded at build time.
+
+## Events and denominator
+
+| Stage | Canonical event | Meaning |
+| --- | --- | --- |
+| Consented page visit | PostHog `$pageview`; GA4 `page_view` | A page was viewed after analytics consent. |
+| Provider action | `provider_click` | A visitor activated an explicitly marked external provider link. This is not a lead or a booking. |
+| Contact request | `contact_received` | The server received a valid form and the configured email service accepted its notification with a receipt ID. This is not confirmed inbox delivery, a newsletter subscription, provider acceptance, or a booking. |
+| Accepted lead | External confirmation only | A named provider accepted a referral under agreed qualification rules. No automatic event is implemented or inferred. |
+| Booking / payment | External confirmation only | A provider/network confirmed a booking or settled commission. No automatic event is implemented or inferred. |
+
+Count distinct `lead_id` for `contact_received`. Historical `lead_email_capture` and `lead_inquiry` events are preserved as compatibility aliases with the same opaque `lead_id` and `legacy_alias: true`. `form_complete` and `email_capture` are diagnostic events. **Never add these event totals together to count contacts.** Earlier events may lack attribution; leave it unknown rather than assigning organic traffic from the page topic.
+
+The canonical browser events are sent once to PostHog. If Google is explicitly re-enabled after the checks above, each also uses one configured Google transport. A direct `NEXT_PUBLIC_GA4_ID` takes precedence over GTM; the application does not also load a GTM container in this mode. GA4 automatic initial pageviews are disabled and route pageviews are explicit. Remote Enhanced Measurement settings are not controlled by this code. In GTM-only mode the container must map the dataLayer events and must be audited for duplicate tags and URL/form autocapture. Configure GA4 key events and custom dimensions in the account; code alone cannot configure reporting.
+
+## Provider link contract
+
+Use real stable identifiers, not the visible link text:
+
+```tsx
+<a href={providerUrl}
+   data-provider-id="hims"
+   data-category="mens-health"
+   data-placement="comparison-table">
+  Check current pricing
+</a>
+```
+
+Attributes can live on a containing card; the link may override category/placement. Use `data-link-purpose="source"` on editorial/source links inside such cards to exclude them. Internal links, email/phone links, unmarked citations, and source links do not count as provider referrals. Primary and middle-button activations are supported. Approved referral URLs come from the separate partner configuration; this tracker never invents affiliate parameters or puts contact details in a URL.
+
+## Attribution and privacy
+
+The first consented landing path, external referrer **hostname**, coarse channel, last acquisition source, and safe campaign labels persist for up to 30 days with a random journey ID. Internal navigation does not overwrite the first acquisition. A subsequent tagged/external acquisition updates the last touch. Only an observed search referrer is classified organic; search query data belongs in aggregate GSC/Bing reports, not visitor records.
+
+No full query strings, fragments, search terms, UTM term/content, email, names, messages, conditions, or form values enter funnel analytics. Analytics properties use a fixed vocabulary. PostHog automatic DOM/form capture, heatmaps, recording, person profiles, IP geolocation, and automatic raw-URL events are disabled; a final event filter removes SDK-added person/URL/referrer payloads. Google advertising signals are disabled. Analytics consent does not load Meta Pixel or grant advertising consent.
+
+Null/denied consent and browser DNT/GPC disable analytics and attribution storage. Withdrawal stops new capture, disables Google analytics, resets PostHog, and clears both current attribution and old UTM storage. Vercel Analytics and Speed Insights also wait for consent and remove query/fragment data from event URLs; the page referrer policy sends only an origin. Contact requests still work without analytics consent; they simply lack analytics attribution. Consent-selected measurements must not be described as all visitors or all contacts. Compare trends within a consistent instrument and consent regime; this migration also changes Vercel's coverage.
+
+## Contact delivery configuration
+
+Required server configuration:
+
+- `RESEND_API_KEY`: a working credential for the approved account.
+- `LEAD_NOTIFICATION_EMAIL`: an explicitly chosen, valid operational inbox. No recipient is assumed.
+- Optional `LEAD_FROM_EMAIL`: an approved sender in that account. Default sender is `VitalityScout <notifications@vitalityscout.com>` and requires that domain to be verified in Resend.
+
+Until both required values exist, the form components expose no contact inputs. Email offers link to the public `/price-index`; inquiries link to the provider directory. Availability means configuration is present, not that sender verification or delivery has been externally tested.
+
+A resolved Resend error, missing receipt ID, exception, or missing configuration is a failed submission. A PostHog event can never produce form success. Contact details go only in the operational notification body; analytics receives an opaque contact ID and consented acquisition fields after success. Repeating an unchanged submission uses the same notification idempotency key and attribution snapshot. If consent is withdrawn and a new journey starts before a retry succeeds, success telemetry is suppressed instead of connecting the old contact to that new journey. Changed form contents produce a new submission ID. No confirmation email or newsletter sequence is sent by this implementation; the UI does not promise one. Operational follow-up ownership, inbox monitoring and a newsletter process still need an owner.
+
+## Weekly scorecard and outcome reconciliation
+
+Report aggregate impressions/clicks/CTR/position by query and landing page from GSC and Bing, separately. In analytics report consented page visits, provider clicks by provider/placement, distinct contact requests, and attribution coverage. Use the same date window and filters for numerator and denominator. Inspect bot/internal/test filtering rather than assuming every historical analytics event was a person.
+
+For verified provider outcomes, maintain a separate operational reconciliation table with: opaque `lead_id` or partner-issued click ID, provider, status (`accepted`, `rejected`, `booked`, `paid`), confirmation source/reference, confirmation date, settled amount/currency and refunds. Leave unknown stages blank. Do not upload contact details or medical free text to analytics. No partner postback, conversion import, paid-outcome event, or payout assumption is shipped here. Add one only when a real provider agreement and authenticated confirmation source exist.
+
+## Verification
+
+Run `npm run test:growth` for mocked transport, consent, attribution, privacy, event and delivery checks. No test sends email or analytics externally. Then typecheck/build, inspect the important pages on mobile/desktop, and verify configured transport receipt with consent in a controlled production check. Do not submit a real contact or send test email without an approved recipient. Record the deployment date as a measurement change; historical rates are not directly comparable to consented funnel coverage.

@@ -6,6 +6,7 @@ import MedicalDisclaimer from '@/components/MedicalDisclaimer';
 import RelatedGuides from '@/components/RelatedGuides';
 import { getRelatedGuides } from '@/data/related-guides';
 import { buildFAQSchema } from '@/lib/jsonLd';
+import { getReferralLink } from '@/lib/referral-links';
 import type {
   CompareCategory,
   CompareProduct,
@@ -17,7 +18,8 @@ import type {
 // the `section` prop (hub link + cross-links). Visual accent (emerald) is shared
 // across all compare pages for a consistent "compare options" look.
 
-function ProductCard({ product }: { product: CompareProduct }) {
+function ProductCard({ product, category }: { product: CompareProduct; category: string }) {
+  const referral = getReferralLink(product.slug, product.url, category);
   return (
     <div className="rounded-lg border border-gray-200 p-6 hover:border-emerald-300 transition-colors">
       <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
@@ -81,12 +83,15 @@ function ProductCard({ product }: { product: CompareProduct }) {
             <p className="mt-2 text-xs font-medium text-amber-700">Prescription required</p>
           )}
           <a
-            href={product.url}
+            href={referral.href}
+            data-provider-id={referral.providerId}
+            data-category={category}
+            data-placement="comparison-card"
             target="_blank"
-            rel="nofollow sponsored noopener noreferrer"
+            rel={referral.commercial || product.referralType === 'affiliate_link' ? 'nofollow sponsored noopener noreferrer' : 'noopener noreferrer'}
             className="mt-3 inline-block rounded bg-emerald-600 px-4 py-2 text-sm font-medium text-white hover:bg-emerald-700"
           >
-            Visit Site →
+            Visit {product.name} →
           </a>
         </div>
       </div>
@@ -123,7 +128,7 @@ export default function CompareCategoryPage({
     description: category.description,
     url: `https://vitalityscout.com/${category.slug}`,
     inLanguage: 'en-US',
-    dateModified: '2026-06-13',
+    dateModified: products.map((product) => product.lastVerified).sort().at(-1),
     isPartOf: {
       '@type': 'WebSite',
       name: 'VitalityScout',
@@ -196,6 +201,11 @@ export default function CompareCategoryPage({
       {/* Intro */}
       <section className="mx-auto max-w-4xl px-4 pt-10">
         <p className="text-gray-700 leading-relaxed">{category.intro}</p>
+        {category.slug === 'mens-health' && (
+          <Link href="/guides/online-ed-treatment#platforms" className="mt-5 inline-block rounded-lg bg-emerald-700 px-5 py-3 font-semibold text-white hover:bg-emerald-800">
+            Compare ED offers, fees and subscription terms →
+          </Link>
+        )}
       </section>
 
       {/* Comparison table */}
@@ -209,10 +219,13 @@ export default function CompareCategoryPage({
                 <th className="px-4 py-3 font-semibold">Price</th>
                 <th className="px-4 py-3 font-semibold">Rx required</th>
                 <th className="px-4 py-3 font-semibold">Best for</th>
+                <th className="px-4 py-3 font-semibold">Next step</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-100">
-              {products.map((p) => (
+              {products.map((p) => {
+                const referral = getReferralLink(p.slug, p.url, category.slug);
+                return (
                 <tr key={p.slug} className="hover:bg-gray-50">
                   <td className="px-4 py-3">
                     <div className="font-medium text-gray-900">{p.name}</div>
@@ -223,8 +236,16 @@ export default function CompareCategoryPage({
                     {p.prescriptionRequired ? 'Yes' : 'No'}
                   </td>
                   <td className="px-4 py-3 text-gray-600">{p.bestFor}</td>
+                  <td className="px-4 py-3">
+                    <a href={referral.href} target="_blank" rel={referral.commercial || p.referralType === 'affiliate_link' ? 'nofollow sponsored noopener noreferrer' : 'noopener noreferrer'}
+                      data-provider-id={referral.providerId} data-category={category.slug} data-placement="comparison-table"
+                      className="inline-block py-2 font-medium text-emerald-700 hover:underline">
+                      Visit {p.name} →
+                    </a>
+                  </td>
                 </tr>
-              ))}
+                );
+              })}
             </tbody>
           </table>
         </div>
@@ -238,7 +259,7 @@ export default function CompareCategoryPage({
         <h2 className="mb-6 text-xl font-bold text-gray-900">The Options, Compared</h2>
         <div className="space-y-4">
           {products.map((p) => (
-            <ProductCard key={p.slug} product={p} />
+            <ProductCard key={p.slug} product={p} category={category.slug} />
           ))}
         </div>
       </section>

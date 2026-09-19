@@ -1,86 +1,58 @@
-/**
- * PostHog wrapper for vitality-web (cashpay-health-directory).
- * Mirrors the pattern in centurion-consumer-health-platform/web/src/lib/analytics.ts.
- *
- * Shares a single PostHog project with all surfaces; differentiated via
- * the $site super-property registered at init.
- */
 import posthog from 'posthog-js';
-
-const POSTHOG_KEY = process.env.NEXT_PUBLIC_POSTHOG_KEY;
-const POSTHOG_HOST = process.env.NEXT_PUBLIC_POSTHOG_HOST || 'https://us.posthog.com';
-const SITE_TAG = 'vitality-web';
+import { analyticsAllowed } from './tracking/consent';
+import { analyticsProperties, opaqueId, safePath } from './tracking/privacy';
 
 let isInitialized = false;
-
-const PII_KEY_BLOCKLIST = new Set([
-  'email', 'email_address', 'user_email',
-  'phone', 'phone_number', 'mobile',
-  'name', 'first_name', 'last_name', 'full_name', 'fullName', 'firstName', 'lastName',
-  'ssn', 'dob', 'date_of_birth', 'birth_date', 'birthdate',
-  'address', 'street', 'street_address', 'zip', 'zipcode', 'zip_code', 'postal_code',
-  'ip', 'ip_address',
-  'password', 'token', 'api_key',
-]);
-
-function stripPII(props?: Record<string, unknown>): Record<string, unknown> | undefined {
-  if (!props) return props;
-  const out: Record<string, unknown> = {};
-  const dropped: string[] = [];
-  for (const [key, value] of Object.entries(props)) {
-    if (PII_KEY_BLOCKLIST.has(key) || PII_KEY_BLOCKLIST.has(key.toLowerCase())) {
-      dropped.push(key);
-      continue;
-    }
-    out[key] = value;
-  }
-  if (dropped.length > 0 && process.env.NODE_ENV === 'development') {
-    console.warn(`[posthog] dropped PII-flavored keys: ${dropped.join(', ')}`);
-  }
-  return out;
-}
+const EVENTS = new Set(['$pageview', 'provider_click', 'outbound_click', 'cta_click', 'scroll_depth', 'form_start', 'form_complete', 'email_capture', 'contact_received', 'lead_email_capture', 'lead_inquiry', 'subjective_promo_view', 'subjective_promo_click']);
 
 export function initPostHog(): void {
-  if (isInitialized || typeof window === 'undefined') return;
-  if (!POSTHOG_KEY) {
-    if (process.env.NODE_ENV === 'development') {
-      console.warn('[posthog] NEXT_PUBLIC_POSTHOG_KEY not set — disabled.');
-    }
+  if (!analyticsAllowed()) return;
+  if (isInitialized) {
+    if (posthog.has_opted_out_capturing()) posthog.opt_in_capturing({ captureEventName: false });
     return;
   }
-
-  posthog.init(POSTHOG_KEY, {
-    api_host: POSTHOG_HOST,
-    capture_pageview: 'history_change',
-    autocapture: true,
-    // Click/scroll heatmap capture (PostHog Heatmaps). Was never enabled —
-    // turned on 2026-07-17 so the recovered traffic (~300+ pv/day) builds
-    // real heatmap data on the money pages. Coordinates only; no PII beyond
-    // the existing masking posture.
-    capture_heatmaps: true,
-    persistence: 'localStorage+cookie',
-    respect_dnt: true,
-    mask_personal_data_properties: true,
+  const key = process.env.NEXT_PUBLIC_POSTHOG_KEY;
+  if (!key) return;
+  posthog.init(key, {
+    api_host: process.env.NEXT_PUBLIC_POSTHOG_HOST || 'https://us.posthog.com',
+    capture_pageview: false, capture_pageleave: false,
+    autocapture: false, capture_heatmaps: false, disable_session_recording: true,
+    capture_exceptions: false, person_profiles: 'never', persistence: 'memory',
+    ip: false, respect_dnt: true, mask_personal_data_properties: true,
+    before_send: (event) => {
+      if (!event || !analyticsAllowed() || !EVENTS.has(event.event)) return null;
+      const clean = analyticsProperties(event.properties);
+      // Discard automatic URL, referrer, person, device, DOM and query properties.
+      event.properties = {
+        ...clean, $site: 'vitality-web', schema_version: 2,
+        distinct_id: event.properties.distinct_id, $session_id: event.properties.$session_id,
+        $process_person_profile: false, $geoip_disable: true,
+        $current_url: 'https://vitalityscout.com' + (safePath(clean.page_path) || '/'),
+        $pathname: safePath(clean.page_path) || '/',
+      };
+      return event;
+    },
   });
-  posthog.register({ $site: SITE_TAG });
   isInitialized = true;
 }
 
-export function safeCapture(event: string, properties?: Record<string, unknown>): void {
-  if (!isInitialized) {
-    if (process.env.NODE_ENV === 'development') {
-      console.log('[posthog]', event, stripPII(properties));
-    }
-    return;
-  }
-  posthog.capture(event, stripPII(properties));
-}
-
-export function identifyUser(distinctId: string, userProperties?: Record<string, unknown>): void {
+export function stopAnalytics(): void {
   if (!isInitialized) return;
-  posthog.identify(distinctId, stripPII(userProperties));
+  posthog.opt_out_capturing();
+  posthog.reset();
 }
 
-export function resetAnalytics(): void {
-  if (isInitialized) posthog.reset();
+export function safeCapture(event: string, properties?: Record<string, unknown>): void {
+  if (!analyticsAllowed() || !EVENTS.has(event)) return;
+  try {
+    initPostHog();
+    if (!isInitialized) return;
+    const clean = analyticsProperties(properties);
+    const journeyId = opaqueId(clean.journey_id);
+    posthog.capture(event, { ...clean, ...(journeyId ? { distinct_id: journeyId } : {}) });
+  } catch { /* Analytics must not interrupt navigation or a successful form. */ }
 }
+
+/** Contact details must never identify analytics profiles. */
+export function identifyUser(_distinctId: string, _properties?: Record<string, unknown>): void {}
+export function resetAnalytics(): void { if (isInitialized) posthog.reset(); }

@@ -1,7 +1,23 @@
 # VitalityScout - SEO & Growth Marketing Plan
 
-**Last Updated:** June 24, 2026
+**Last Updated:** September 17, 2026
 **Status:** Living Document - Update as content is created
+
+## Active growth plan — September 17, 2026
+
+The plan below supersedes the historical publishing priorities and unverified volume estimates later in this document. Our first repeatable acquisition opportunity is ED: the existing online-treatment guide received 247 Bing clicks in the four weekly buckets ending with September 11, versus 7 in the preceding four. Google currently reports the same URL as discovered but not indexed. See the [live baseline and exact windows](docs/growth-baseline-2026-09-17.md).
+
+**Days 1–30: make the existing demand useful and measurable.** Preserve `/guides/online-ed-treatment` and its core intent; publish source-linked offer comparisons with quantities, consultation/shipping costs, renewal limitations and clear provider handoffs. Support distinct BlueChew-price and sildenafil-without-insurance questions, with reciprocal links. Remove duplicate men's-health provider cards. Improve crawlable links from the homepage and hubs, and re-inspect the same Google sample after deployment. Add practical MRI provider handoffs. Verify consented provider-click and contact-delivery measurement before interpreting conversions.
+
+**Days 31–60: improve the bottleneck demonstrated by the scorecard.** If pages receive impressions but few clicks, inspect actual queries and competing snippets before editing titles. If qualified search visitors read but rarely choose a provider, test one clearer comparison or CTA at a time. If clicks leave the site but outcomes are unknown, prioritize approved partner reporting and reconciliation. Refresh the indexed labs/Quest comparison cluster with equivalent test baskets before adding more broad categories.
+
+**Days 61–90: expand the pattern that produces verified outcomes.** Choose the next narrow service using observed acquisition, useful provider coverage and an operational commercial path. Build source-maintained comparisons and differentiated guides around it. Retain changes that improve user decisions and measured outcomes; do not scale article count simply to meet a quota. Traffic, bookings and revenue are outcomes to establish, not promised targets.
+
+The weekly scorecard separates search clicks, consented provider clicks, operationally received contacts, provider-accepted leads, confirmed bookings and revenue. Unknown commercial metrics stay unavailable. The analytics consent change starts a new measurement baseline; pre/post raw PostHog counts are not directly comparable. [Reporting runbook](scripts/growth/README.md) · [Partner launch packet](docs/referral-partner-launch.md).
+
+**Activation dependencies:** approved referral URLs/agreements and partner outcome reporting; a verified contact-delivery service and recipient; a real clinician review before labeling clinical material medically reviewed. Until configured, provider links use their direct public destination and unavailable inquiry forms must not claim to receive contacts.
+
+## Historical roadmap and publishing log
 
 > **2026-06-24 progress (Batch 2, PR #20):** +40 guides (site now 113) via a 40-article dynamic workflow (write → adversarial review → fix+verify with live URL checks; 40/40 passed). Breakdown: 17 DEXA city cost guides built from already-verified clinic data (`dexa-scan-cost-{san-francisco,san-diego,orange-county,houston,austin,dallas,chicago,phoenix,seattle,las-vegas,miami,denver,washington-dc,nashville,raleigh,boston,atlanta}` — each reciprocal-linked to its `/dexa-scans` directory page); GLP-1 cost cluster (wegovy-vs-ozempic, mounjaro-vs-ozempic, ozempic-alternatives, cheapest-way-to-get-semaglutide, glp1-and-muscle-loss); at-home-labs depth (thyroid/testosterone/hormone tests, accuracy, how-to-read-results); DEXA explainers (cheapest-dexa-scan, how-to-read-dexa-results, how-often, vo2-max-test-cost, rmr-test-cost); med-tourism safety/cost companions; national-brand guides (BodySpec, DexaFit, Everlywell, Function Health, Marek Health). All AEO 8/8. Tracker: AgentKasten `agents/cmo/seo/CONTENT-BACKLOG.md`.
 >

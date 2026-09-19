@@ -60,6 +60,10 @@ export default function TelehealthHub() {
 
       {/* What Is Telehealth */}
       <section className="mx-auto max-w-4xl px-4 py-12">
+        <Link href="/guides/online-ed-treatment" className="mb-8 block rounded-lg border border-emerald-200 bg-emerald-50 p-5 text-emerald-900 hover:border-emerald-500">
+          <span className="block text-lg font-semibold">Compare online ED treatment</span>
+          <span className="mt-1 block text-sm">Hims, Ro, BlueChew, Lemonaid and a separate-pharmacy route: published prices, fees and recurring terms. →</span>
+        </Link>
         <div className="prose prose-lg max-w-none">
           <h2>What Is Cash-Pay Telehealth?</h2>
           <p>

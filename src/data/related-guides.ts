@@ -56,12 +56,22 @@ export const GUIDE_CLUSTERS: GuideCluster[] = [
       {
         href: '/guides/online-ed-treatment',
         label: 'Online ED treatment',
-        blurb: 'How telehealth ED visits work, generic vs brand, and typical monthly cost.',
+        blurb: 'Compare provider prices, prescription routes, fees and renewal terms.',
       },
       {
         href: '/guides/hims-vs-ro-cost',
         label: 'Hims vs Ro cost',
         blurb: 'ED generics and GLP-1 membership prices, side by side.',
+      },
+      {
+        href: '/guides/bluechew-cost',
+        label: 'BlueChew cost',
+        blurb: 'SIL and TAD prices by tablet count, shipping and renewal checks.',
+      },
+      {
+        href: '/guides/sildenafil-cost-without-insurance',
+        label: 'Sildenafil cost without insurance',
+        blurb: 'Separate the cash pharmacy fill, shipping and clinician visit.',
       },
     ],
   },

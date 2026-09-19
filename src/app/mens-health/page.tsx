@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://vitalityscout.com/mens-health' },
   title: "Best Online Men's Health: ED & Hair Loss Compared — 2026",
   description:
-    "Compare online men's health clinics for ED and hair loss — Hims, Ro, BlueChew, and Keeps. Pricing ($10–$90/mo), what they treat, and who each is best for. FDA-approved generics shipped to your door.",
+    "Compare online men's health services for ED and hair loss. Check published prices, prescription requirements, and the differences between generic tablets and compounded products.",
   keywords: [
     'online ED treatment',
     'erectile dysfunction telehealth',

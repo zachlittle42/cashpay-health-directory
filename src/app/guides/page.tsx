@@ -11,6 +11,22 @@ export const metadata: Metadata = {
 };
 
 const guides = [
+  {
+    slug: 'bluechew-cost',
+    title: 'BlueChew Cost: Plan Quantities, Shipping and Renewals',
+    description: 'Source-checked SIL and TAD plan prices, per-shipment totals, cancellation questions and the difference between compounded products and generic tablets.',
+    category: 'Cost Guide',
+    readTime: '6 min',
+    icon: '💊',
+  },
+  {
+    slug: 'sildenafil-cost-without-insurance',
+    title: 'Sildenafil Cost Without Insurance: Pharmacy vs Telehealth',
+    description: 'Compare a specified pharmacy fill with online clinic offers. See what strength, quantity, shipping and a separate consultation do to the total.',
+    category: 'Cost Guide',
+    readTime: '6 min',
+    icon: '💊',
+  },
   // Brand-cost + savings-card batch (2026-08-21): GLP-1 brand cost pages (~120K imp/13wk
   // coupon/savings cluster, zero prior coverage) + cash-pay procedure family additions.
 {

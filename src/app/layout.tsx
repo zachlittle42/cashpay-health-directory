@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
-import { Analytics } from '@vercel/analytics/react';
-import { SpeedInsights } from '@vercel/speed-insights/next';
+import VercelMetrics from '@/components/tracking/VercelMetrics';
 import TrackingScripts from '@/components/tracking/TrackingScripts';
 import CookieConsent from '@/components/tracking/CookieConsent';
 import UTMCapture from '@/components/tracking/UTMCapture';
@@ -10,6 +9,7 @@ import './globals.css';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://vitalityscout.com'),
+  referrer: 'strict-origin',
   title: {
     default: 'VitalityScout | Compare Cash-Pay Healthcare Providers',
     template: '%s | VitalityScout',
@@ -54,8 +54,7 @@ export default function RootLayout({
         <UTMCapture />
         <OutboundClickTracker />
         <PostHogProvider />
-        <Analytics />
-        <SpeedInsights />
+        <VercelMetrics />
       </body>
     </html>
   );

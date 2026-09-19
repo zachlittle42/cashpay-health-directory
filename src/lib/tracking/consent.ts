@@ -4,6 +4,15 @@
 
 export type ConsentState = 'granted' | 'denied' | null;
 
+/** Browser privacy preferences override stored analytics consent. */
+export function analyticsAllowed(): boolean {
+  if (typeof window === 'undefined' || typeof navigator === 'undefined') return false;
+  const browser = navigator as Navigator & { globalPrivacyControl?: boolean; msDoNotTrack?: string };
+  return getConsentState() === 'granted'
+    && browser.doNotTrack !== '1' && browser.msDoNotTrack !== '1'
+    && !browser.globalPrivacyControl;
+}
+
 const COOKIE_NAME = 'vs_consent';
 const COOKIE_EXPIRY_DAYS = 365;
 
@@ -20,7 +29,8 @@ export function getConsentState(): ConsentState {
 
   if (!match) return null;
 
-  const value = decodeURIComponent(match[1]);
+  let value: string;
+  try { value = decodeURIComponent(match[1]); } catch { return null; }
   if (value === 'granted' || value === 'denied') return value;
   return null;
 }
