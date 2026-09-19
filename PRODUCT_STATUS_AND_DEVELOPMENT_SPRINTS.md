@@ -1,6 +1,6 @@
 # VitalityScout - Project Status & Development Sprints
 
-**Last Updated:** September 17, 2026
+**Last Updated:** September 19, 2026
 **Live Site:** https://vitalityscout.com
 **Status:** ✅ Live in Production
 
@@ -15,7 +15,8 @@
 - Added service-scoped approved referral configuration. Direct public provider URLs remain the default; no partnership or commission is represented as approved.
 - Measurement work separates consented provider clicks and received-contact events, strips contact values and whole URLs from analytics, and requires operational delivery before reporting form success. New consent handling requires a fresh post-deployment baseline.
 - Partner application packet and reporting runbook are prepared. Production configuration currently lacks a contact-delivery service/recipient and approved referral URLs; those remain activation dependencies.
-- Validation: 18 mocked regression tests pass. TypeScript and the full 930-page production build pass. Mobile/desktop browser review verified provider destinations, correct canonicals, expandable terms, no mobile page overflow, privacy controls and unavailable-form fallbacks. Existing provider-data lint warnings remain unchanged.
+- Released September 19 in `b1e6e6b`, followed by PostHog transport correction `81e9494`. Live delivery verified one QA pageview and one provider click, with no checked contact fields or raw query strings. The new funnel baseline begins no earlier than September 19 at 19:54 UTC; see `docs/growth/release-2026-09-19.md`.
+- Validation: 19 regression tests, TypeScript and the full 930-page production build pass. Mobile/desktop browser review verified provider destinations, correct canonicals, expandable terms, no mobile page overflow, privacy controls and unavailable-form fallbacks. Existing provider-data lint warnings remain unchanged.
 - Google Analytics is deliberately paused for this release at the owner's request. Its remote Enhanced Measurement is enabled and the existing reporting credential cannot edit it; PostHog remains the consented funnel source. See `docs/growth-measurement.md` for reactivation.
 - The existing daily and weekly Hatchet schedules are enabled; their reporting prompts were migrated and synchronized to the worker. See `docs/growth/schedule-migration-2026-09-17.md` for verification and the deployment-cutover requirement.
 

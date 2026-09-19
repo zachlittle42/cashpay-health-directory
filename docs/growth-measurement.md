@@ -1,6 +1,6 @@
 # Growth measurement contract
 
-Implemented September 17, 2026. These changes define instrumented behavior; they do not establish live traffic, working account configuration, partnerships, bookings, or revenue. Deploy and verify real telemetry before using the new events in a weekly scorecard.
+Implemented September 17 and released September 19, 2026. Live PostHog pageview and provider-click delivery was verified at 19:53:42 UTC; use 19:54 UTC as the conservative funnel cutover and September 20 as the first complete UTC day. See the [release evidence](growth/release-2026-09-19.md). This verifies instrumentation, not human traffic, operational contact delivery, partnerships, bookings or revenue.
 
 ## Release decision: PostHog
 
