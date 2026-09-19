@@ -17,6 +17,7 @@ export function initPostHog(): void {
     api_host: process.env.NEXT_PUBLIC_POSTHOG_HOST || 'https://us.posthog.com',
     capture_pageview: false, capture_pageleave: false,
     autocapture: false, capture_heatmaps: false, disable_session_recording: true,
+    disable_surveys: true, disable_conversations: true, disable_product_tours: true,
     capture_exceptions: false, person_profiles: 'never', persistence: 'memory',
     ip: false, respect_dnt: true, mask_personal_data_properties: true,
     before_send: (event) => {
@@ -25,6 +26,9 @@ export function initPostHog(): void {
       // Discard automatic URL, referrer, person, device, DOM and query properties.
       event.properties = {
         ...clean, $site: 'vitality-web', schema_version: 2,
+        // The SDK puts its public project token inside properties. Retain the
+        // configured token when replacing that object or ingestion returns 401.
+        token: key,
         distinct_id: event.properties.distinct_id, $session_id: event.properties.$session_id,
         $process_person_profile: false, $geoip_disable: true,
         $current_url: 'https://vitalityscout.com' + (safePath(clean.page_path) || '/'),

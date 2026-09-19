@@ -21,7 +21,7 @@ const posthog = {
   has_opted_out_capturing: () => false,
   opt_in_capturing() {}, opt_out_capturing() {}, reset() {},
   capture(event, properties) {
-    const envelope = { event, properties: { ...properties, distinct_id: properties.distinct_id || id, $session_id: nextId, $current_url: 'https://vitalityscout.com/?private=redacted', $referrer: 'https://search.example/?private=redacted' } };
+    const envelope = { event, properties: { ...properties, token: process.env.NEXT_PUBLIC_POSTHOG_KEY, distinct_id: properties.distinct_id || id, $session_id: nextId, $current_url: 'https://vitalityscout.com/?private=redacted', $referrer: 'https://search.example/?private=redacted' } };
     const cleaned = initOptions.before_send(envelope);
     if (cleaned) captures.push(cleaned);
   },
@@ -149,6 +149,16 @@ for (const [label, consent, preferences] of [['unset', null, {}], ['denied', 'de
     assert.deepEqual(window.dataLayer, []);
   });
 }
+
+test('the final event filter retains SDK ingestion authentication without retaining private properties', () => {
+  load('lib/tracking/events.ts').captureFunnelEvent('provider_click', { provider_id: 'hims', destination_host: 'www.hims.com', email: 'synthetic@example.invalid' });
+  assert.equal(captures.length, 1);
+  assert.equal(captures[0].properties.token, 'synthetic-test-key');
+  assert.equal(captures[0].properties.email, undefined);
+  assert.equal(captures[0].properties.$referrer, undefined);
+  assert.equal(captures[0].properties.$current_url.includes('?'), false);
+  assert.equal(initOptions.disable_surveys, true);
+});
 
 for (const transport of ['ga4', 'gtm']) {
   test('the event bridge emits one canonical event per sink with ' + transport, () => {
