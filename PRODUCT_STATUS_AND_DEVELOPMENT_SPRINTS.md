@@ -1,11 +1,18 @@
 # VitalityScout - Project Status & Development Sprints
 
-**Last Updated:** September 19, 2026
+**Last Updated:** September 20, 2026
 **Live Site:** https://vitalityscout.com
 **Status:** ✅ Live in Production
 
 > ⚠️ **Note:** The "Current State" and dated sprint sections below this banner are
 > historical (Dec 2024) and understate the site. The banner here reflects current reality.
+
+### 2026-09-20 Google Analytics API access
+
+- Added a reusable, fixed-property CLI using the existing service-account credential and workflow dependencies. No new keys, copied secrets, MCP server or third-party connection is required.
+- Live status, aggregate report, realtime and no-write preview checks passed, along with 15 mocked CLI tests and the full 930-page site build. The CLI labels generic reports as not excluding QA activity.
+- Existing inherited Viewer access is confirmed. Property-only Editor access is staged for the existing account but remains unsaved pending the required access-expansion confirmation. The current CLI write operation is limited to disabling Enhanced Measurement with explicit `--apply` and independent readback.
+- Commands and verification: `docs/growth/google-analytics-api-access.md`.
 
 ### 2026-09-17 ED growth and measurement implementation
 

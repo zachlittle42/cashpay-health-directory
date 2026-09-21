@@ -1,5 +1,7 @@
 # Growth reporting runbook
 
+For reusable Google Analytics commands, run `npm run analytics:google -- status` or see the [CLI/API access guide](../../docs/growth/google-analytics-api-access.md). Commands are restricted to the VitalityScout property and reuse the existing reporting credential.
+
 The September 17 baseline was refreshed through live, read-only APIs. It is not the older September 2 report. The JSON in docs/growth contains aggregate facts; no credentials, distinct identifiers, or contact records.
 
 ## Reproduce the local scorecard

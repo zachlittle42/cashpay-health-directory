@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test:growth": "node --test tests/growth-funnel.test.cjs"
+    "test:growth": "node --test tests/growth-funnel.test.cjs",
+    "analytics:google": "node scripts/growth/google-analytics.mjs",
+    "test:analytics": "node --test tests/google-analytics-cli.test.mjs"
   },
   "dependencies": {
     "@prisma/client": "^5.10.0",
