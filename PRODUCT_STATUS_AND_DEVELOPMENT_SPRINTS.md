@@ -1,6 +1,6 @@
 # VitalityScout - Project Status & Development Sprints
 
-**Last Updated:** September 20, 2026
+**Last Updated:** September 21, 2026
 **Live Site:** https://vitalityscout.com
 **Status:** ✅ Live in Production
 
@@ -12,6 +12,7 @@
 - The consent gate introduced in `b1e6e6b` (first served by the `b7750c3` production deployment, Ready 2026-09-19T20:01:14Z) mounted Vercel Web Analytics and Speed Insights only after analytics consent. Vercel counted 1,401 visitors in the seven UTC days before September 20 and 2 across September 20-21, while Bing still recorded search clicks and Vercel usage sat near 11% of the Hobby event limit. That was a measurement-coverage change, not a traffic loss or a quota stop.
 - `VercelMetrics` now mounts both SDKs for every visit again; the sanitizer moved to `src/lib/tracking/vercel-metrics.ts` and is pinned by growth tests. The consent banner now states that anonymous, cookieless traffic counts always run and the decline choice is "Basic only". PostHog and GA4 remain consent-gated. What Vercel still receives (referrer, device, coarse geo) and the coverage-gap rule are in `docs/growth-measurement.md`.
 - Speed Insights stays dark until its project-level toggle (off since 2026-09-16) is re-enabled; on the Hobby plan that is free but its 10,000 data points/month may be why it went dark.
+- Restore deployed as `dpl_3Qv1ULT68nfsUCV5e9g7LunfsobH` (`996713a`), Ready 2026-09-22T04:47:56Z, and verified live: a no-consent visit sent a path-only Vercel pageview and no PostHog or Google request. Evidence and boundaries: `docs/growth/vercel-analytics-restore-2026-09-21.md`.
 
 ### 2026-09-20 Google Analytics API access
 
