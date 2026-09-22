@@ -20,11 +20,11 @@ export default function CookieConsent() {
     <div className="fixed inset-x-0 bottom-0 z-[9999] border-t border-gray-200 bg-white/95 backdrop-blur">
       <div className="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-3 sm:flex-row sm:items-center sm:justify-between sm:px-6">
         <p className="text-sm text-gray-600">
-          Allow analytics to help us improve our comparisons? Your contact details and form messages are excluded.
+          Allow analytics to help us improve our comparisons? Anonymous, cookieless traffic counts always run. This choice covers detailed funnel analytics and attribution; your contact details and form messages are excluded.
         </p>
         <div className="flex shrink-0 items-center gap-2">
           <button onClick={() => choose('denied')} className="rounded-lg px-3 py-1.5 text-sm font-medium text-gray-600 hover:bg-gray-100">
-            Necessary only
+            Basic only
           </button>
           <button onClick={() => choose('granted')} className="rounded-lg bg-blue-600 px-4 py-1.5 text-sm font-medium text-white hover:bg-blue-700">
             Allow analytics
