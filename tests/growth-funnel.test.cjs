@@ -150,6 +150,15 @@ for (const [label, consent, preferences] of [['unset', null, {}], ['denied', 'de
   });
 }
 
+test('Vercel traffic metrics report every visit regardless of consent, DNT or GPC, with path-only URLs', () => {
+  browser('denied', { doNotTrack: '1', globalPrivacyControl: true });
+  const { vercelBeforeSend } = load('lib/tracking/vercel-metrics.ts');
+  assert.deepEqual(vercelBeforeSend({ type: 'pageview', url: 'https://vitalityscout.com/guides/online-ed-treatment?utm_source=newsletter&private=redacted#private' }), { type: 'pageview', url: 'https://vitalityscout.com/guides/online-ed-treatment' });
+  assert.deepEqual(vercelBeforeSend({ type: 'vital', url: '/labs?q=private' }), { type: 'vital', url: 'https://vitalityscout.com/labs' });
+  assert.equal(vercelBeforeSend({ type: 'pageview', url: 'https://vitalityscout.com/weird%20path?x=1' }), null);
+  assert.equal(initCalls, 0); assert.equal(captures.length, 0); assert.equal(storageWrites, 0);
+});
+
 test('the final event filter retains SDK ingestion authentication without retaining private properties', () => {
   load('lib/tracking/events.ts').captureFunnelEvent('provider_click', { provider_id: 'hims', destination_host: 'www.hims.com', email: 'synthetic@example.invalid' });
   assert.equal(captures.length, 1);
