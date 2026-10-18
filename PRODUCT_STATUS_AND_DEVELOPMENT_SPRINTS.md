@@ -1,11 +1,19 @@
 # VitalityScout - Project Status & Development Sprints
 
-**Last Updated:** September 21, 2026
+**Last Updated:** October 18, 2026
 **Live Site:** https://vitalityscout.com
 **Status:** ✅ Live in Production
 
 > ⚠️ **Note:** The "Current State" and dated sprint sections below this banner are
 > historical (Dec 2024) and understate the site. The banner here reflects current reality.
+
+### 2026-10-18 SEO audit (partial)
+
+- Full write-up: [`docs/seo-audit-2026-10-18.md`](docs/seo-audit-2026-10-18.md); 42 machine-readable findings in `docs/seo-audit-2026-10-18-findings.json`. Four of ten lenses completed (indexation, quality, on-page, schema); five headline claims hand-verified; no adversarial pass.
+- Google's "Discovered – not indexed" is **not** a technical block: 20 live-sampled URLs are clean and the live sitemap matches the build. It is a crawl-priority / site-quality signal: about 229 of 797 indexable URLs dilute the site (thin 3–4-clinic city grids, single-city state pages, California med-spa chain stubs, 315 thin provider pages left out of the sitemap but indexable).
+- Trust/accuracy fixes queued: `reviewedBy` "Editorial Team" on 144 pages contradicts `/editorial-policy`; hardcoded `dateModified`; stale 2024/2025 years; 803 of 807 pages declare the homepage as `og:url`; publisher logo 404.
+- The ED guide's title lost its price/brand anchors in `b1e6e6b` (Sept 19), right after its Bing CTR breakout. Pull fresh Bing data for it before any further snippet change.
+- Next: the "Now" table in the audit, then raise the index bar in `src/lib/indexability.ts`. New guides only in sprints that also cut the indexable count.
 
 ### 2026-09-21 Vercel Analytics coverage restored
 
