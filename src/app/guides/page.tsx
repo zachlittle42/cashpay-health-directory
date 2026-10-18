@@ -69,6 +69,14 @@ const guides = [
     icon: '💇',
   },
   {
+    slug: 'direct-primary-care-cost',
+    title: 'Direct Primary Care Cost (2026): DPC Membership Prices',
+    description: 'DPC membership fees by age, what they cover and exclude, how DPC compares with concierge and app memberships, and the 2026 HSA rules.',
+    category: 'Local Services',
+    readTime: '12 min',
+    icon: '🩺',
+  },
+  {
     slug: 'invisalign-cost',
     title: 'Invisalign Cost Without Insurance (2026): Real Prices',
     description: 'Invisalign through a dentist vs dentist-network and direct-to-consumer aligners vs braces, retainers, financing, and who is not a good candidate.',

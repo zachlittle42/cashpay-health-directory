@@ -123,7 +123,7 @@ export default function CashPayTelehealthVisitsGuide() {
       { '@type': 'CreativeWork', name: 'Sesame — cash-pay telehealth marketplace', url: 'https://sesamecare.com' },
       { '@type': 'CreativeWork', name: 'Sesame Plus membership ($10.99/mo or $99/yr, $10 off visits)', url: 'https://sesamecare.com/join/membership' },
       { '@type': 'CreativeWork', name: 'PlushCare — membership and $129 cash visit pricing', url: 'https://plushcare.com/membership' },
-      { '@type': 'CreativeWork', name: 'Henry Meds / Amazon One Medical On-Demand — listed in VitalityScout provider data', url: 'https://health.amazon.com/onemedical' },
+      { '@type': 'CreativeWork', name: 'Amazon One Medical On-Demand — listed in VitalityScout provider data', url: 'https://health.amazon.com/onemedical' },
       { '@type': 'CreativeWork', name: 'Teladoc Health — self-pay urgent care', url: 'https://www.teladochealth.com' },
       { '@type': 'CreativeWork', name: 'VitalityScout — Urgent care cost without insurance', url: 'https://vitalityscout.com/guides/urgent-care-cost-without-insurance' },
     ],

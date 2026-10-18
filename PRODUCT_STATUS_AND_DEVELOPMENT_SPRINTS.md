@@ -7,6 +7,17 @@
 > ⚠️ **Note:** The "Current State" and dated sprint sections below this banner are
 > historical (Dec 2024) and understate the site. The banner here reflects current reality.
 
+### 2026-10-18 Index cuts + 9 national cash-pay cost guides
+
+- **Index bar raised** (`src/lib/indexability.ts`, now the single source of truth for page existence vs indexing): city grid pages index at ≥5 clinics (pages still exist at ≥3), state pages need ≥2 indexable cities, med-spa counts only independent clinics, and provider profiles are noindexed when off-mission (insurers, pharma, drug databases), not re-verified since 2025-07-01, or under 100 editorial words. Every affected page stays live as noindex,follow, so no URL 404s.
+- **New guides** (`/guides/…`): `hearing-aids-cost`, `vasectomy-cost`, `physical-therapy-cost`, `std-testing-cost`, `mammogram-cost`, `birth-control-cost`, `hair-loss-treatment-cost`, `invisalign-cost`, `direct-primary-care-cost`. Each guide was researched against provider pages, then independently re-verified (anchor prices confirmed or corrected; other numbers attributed to linked sources). Each carries a visible "Prices checked October 18, 2026" stamp and has no `reviewedBy` claims.
+- **Net effect on a clean build**: indexable pages 798 → 633, sitemap 480 → 394, zero noindexed URLs in the sitemap, and all 18 pages with recorded search/analytics traffic still indexable.
+- **Internal links**: five new RelatedGuides clusters (womens, primary-care, dental-care, cash-procedures, local-care), with hub cluster links enabled for dental, surgery, primary_care, womens-health and /local-clinics. Previously unclustered guides (LASIK, colonoscopy, US dental, sleep study) now get hub and sibling links.
+- **Consistency fixes**: STI prices in `everlywell-vs-letsgetchecked`; the Solis provider record no longer claims self-pay figures Solis has stopped publishing.
+- **Follow-ups**:
+  - The verifiers flagged repo prices that have drifted from what providers list today: Hims/Ro hair-loss prices in `src/lib/telehealth-dtc.ts`, plus small notes in `/guides/sesame-vs-mdlive-teladoc-cost`.
+  - A web-search budget (200 calls per turn, shared by all agents) limits how many guides one session can research. Run batches of 3–4 guides per turn.
+
 ### 2026-10-18 SEO audit (partial)
 
 - Full write-up: [`docs/seo-audit-2026-10-18.md`](docs/seo-audit-2026-10-18.md); 42 machine-readable findings in `docs/seo-audit-2026-10-18-findings.json`. Four of ten lenses completed (indexation, quality, on-page, schema); five headline claims hand-verified; no adversarial pass.

@@ -433,6 +433,11 @@ export const GUIDE_CLUSTERS: GuideCluster[] = [
     },
     guides: [
       {
+        href: '/guides/direct-primary-care-cost',
+        label: 'Direct primary care cost',
+        blurb: 'DPC monthly fees by age, concierge vs app memberships, and 2026 HSA rules.',
+      },
+      {
         href: '/guides/urgent-care-cost-without-insurance',
         label: 'Urgent care cost',
         blurb: 'Self-pay urgent care visit prices and what drives the bill.',
