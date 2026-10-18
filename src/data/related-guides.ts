@@ -59,6 +59,11 @@ export const GUIDE_CLUSTERS: GuideCluster[] = [
         blurb: 'Compare provider prices, prescription routes, fees and renewal terms.',
       },
       {
+        href: '/guides/hair-loss-treatment-cost',
+        label: 'Hair-loss treatment cost',
+        blurb: 'Finasteride, minoxidil and telehealth hair-loss plan prices compared.',
+      },
+      {
         href: '/guides/hims-vs-ro-cost',
         label: 'Hims vs Ro cost',
         blurb: 'ED generics and GLP-1 membership prices, side by side.',
@@ -172,6 +177,11 @@ export const GUIDE_CLUSTERS: GuideCluster[] = [
         href: '/guides/function-vs-superpower-cost',
         label: 'Function vs Superpower cost',
         blurb: 'Annual lab memberships compared — $365 vs $349 and what each includes.',
+      },
+      {
+        href: '/guides/std-testing-cost',
+        label: 'STD testing cost',
+        blurb: 'At-home kits, self-order lab panels and free or low-cost testing options.',
       },
       {
         href: '/guides/quest-vs-labcorp-pricing',
@@ -369,6 +379,11 @@ export const GUIDE_CLUSTERS: GuideCluster[] = [
         blurb: 'Prenuvo, Ezra, and SimonMed screening MRI prices.',
       },
       {
+        href: '/guides/mammogram-cost',
+        label: 'Mammogram cost',
+        blurb: 'Screening vs diagnostic, 2D vs 3D, and free screening programs.',
+      },
+      {
         href: '/guides/mri-cost-without-insurance',
         label: 'MRI cost without insurance',
         blurb: 'Cash prices by body part at freestanding imaging centers.',
@@ -382,6 +397,145 @@ export const GUIDE_CLUSTERS: GuideCluster[] = [
         href: '/guides/ultrasound-cost-without-insurance',
         label: 'Ultrasound cost without insurance',
         blurb: 'Typical cash-pay ultrasound ranges by exam type.',
+      },
+    ],
+  },
+  // Added 2026-10-18 with the national cash-pay cost-guide batch. Listed after
+  // the established clusters so existing spokes keep resolving to their
+  // primary cluster; these also give previously unclustered guides (LASIK,
+  // colonoscopy, US dental, sleep study, VO2 max) hub and sibling links.
+  {
+    id: 'womens',
+    hub: {
+      href: '/womens-health',
+      label: "Women's health hub",
+      blurb: 'Compare online menopause, HRT and birth-control options.',
+    },
+    guides: [
+      {
+        href: '/guides/birth-control-cost',
+        label: 'Birth control cost',
+        blurb: 'Opill, online prescribers, generic pills, IUDs and implants by cash price.',
+      },
+      {
+        href: '/guides/online-menopause-treatment',
+        label: 'Online menopause treatment',
+        blurb: 'How online menopause and HRT care works and what it costs.',
+      },
+    ],
+  },
+  {
+    id: 'primary-care',
+    hub: {
+      href: '/primary_care',
+      label: "Primary care hub",
+      blurb: 'Cash-pay primary care, memberships and telehealth visits.',
+    },
+    guides: [
+      {
+        href: '/guides/urgent-care-cost-without-insurance',
+        label: 'Urgent care cost',
+        blurb: 'Self-pay urgent care visit prices and what drives the bill.',
+      },
+      {
+        href: '/guides/cash-pay-telehealth-visits',
+        label: 'Cash-pay telehealth visits',
+        blurb: 'What a self-pay virtual visit costs across major services.',
+      },
+      {
+        href: '/guides/sesame-vs-mdlive-teladoc-cost',
+        label: 'Sesame vs MDLive vs Teladoc',
+        blurb: 'Visit prices and memberships compared.',
+      },
+    ],
+  },
+  {
+    id: 'dental-care',
+    hub: {
+      href: '/dental',
+      label: "Dental hub",
+      blurb: 'Compare US and abroad dental prices.',
+    },
+    guides: [
+      {
+        href: '/guides/invisalign-cost',
+        label: 'Invisalign cost',
+        blurb: 'Invisalign vs clear-aligner brands vs braces, by cash price.',
+      },
+      {
+        href: '/guides/dental-implant-cost-usa',
+        label: 'Dental implant cost (USA)',
+        blurb: 'Single-implant and full-mouth cash prices in the US.',
+      },
+      {
+        href: '/guides/root-canal-cost-without-insurance',
+        label: 'Root canal cost',
+        blurb: 'Self-pay root canal prices by tooth type.',
+      },
+      {
+        href: '/guides/veneers-cost-by-country',
+        label: 'Veneers cost by country',
+        blurb: 'US vs Mexico, Turkey and other destinations.',
+      },
+      {
+        href: '/guides/mexico-dental-implant-prices',
+        label: 'Mexico dental implant prices',
+        blurb: 'Verified clinic prices in Cancun and Los Algodones.',
+      },
+    ],
+  },
+  {
+    id: 'cash-procedures',
+    hub: {
+      href: '/surgery',
+      label: "Cash-pay surgery hub",
+      blurb: 'Bundled self-pay prices for common outpatient procedures.',
+    },
+    guides: [
+      {
+        href: '/guides/vasectomy-cost',
+        label: 'Vasectomy cost',
+        blurb: 'Cash and bundled vasectomy prices, what is included, and follow-up testing.',
+      },
+      {
+        href: '/guides/colonoscopy-cost-without-insurance',
+        label: 'Colonoscopy cost',
+        blurb: 'Self-pay colonoscopy prices and what the bundle covers.',
+      },
+      {
+        href: '/guides/lasik-cost-usa',
+        label: 'LASIK cost (USA)',
+        blurb: 'Per-eye LASIK prices without insurance.',
+      },
+    ],
+  },
+  {
+    id: 'local-care',
+    hub: {
+      href: '/local-clinics',
+      label: "Local clinics hub",
+      blurb: 'Cash-pay services you visit in person.',
+    },
+    guides: [
+      {
+        href: '/guides/physical-therapy-cost',
+        label: 'Physical therapy cost',
+        blurb: 'Per-visit cash rates, direct access, and how to compare PT clinics.',
+      },
+      {
+        href: '/guides/hearing-aids-cost',
+        label: 'Hearing aids cost',
+        blurb: 'OTC vs prescription hearing aids, Costco, and what each includes.',
+      },
+      {
+        href: '/guides/sleep-study-cost',
+        label: 'Sleep study cost',
+        blurb: 'Lab vs home sleep test cash prices.',
+      },
+      {
+        href: '/guides/vo2-max-test-cost',
+        label: 'VO2 max test cost',
+        blurb: 'Where to test and what it costs.',
       },
     ],
   },

@@ -3,6 +3,8 @@ import type { Metadata } from 'next';
 import Navigation from '@/components/Navigation';
 import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
+import RelatedGuides from '@/components/RelatedGuides';
+import { getRelatedGuides } from '@/data/related-guides';
 
 export const metadata: Metadata = {
   title: 'Local Cash-Pay Clinics | DEXA, VO2 Max, IV Therapy',
@@ -223,6 +225,7 @@ export default function LocalClinicsHub() {
       </section>
 
       </SidebarShell>
+      <RelatedGuides title="Cash-pay cost guides for in-person care" items={getRelatedGuides('/local-clinics', 8)} />
       <Footer />
     </main>
   );
