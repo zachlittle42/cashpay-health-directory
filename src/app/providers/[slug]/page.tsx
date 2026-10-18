@@ -7,6 +7,7 @@ import { getProviderBySlug, getTotalProviderCount, ALL_PROVIDERS } from '@/lib/p
 import { CATEGORIES } from '@/lib/types';
 import { buildProviderSchema } from '@/lib/jsonLd';
 import ProviderPricingSection from '@/components/ProviderPricingSection';
+import { providerRobots } from '@/lib/indexability';
 
 export function generateStaticParams() {
   // Prerender every provider (static editorial data — cheap at build). This
@@ -27,6 +28,9 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
     title: `${provider.name} — ${CATEGORIES[provider.category].name} Provider`,
     description: provider.description,
     alternates: { canonical: `/providers/${params.slug}` },
+    // Off-mission, stale (not re-verified since PROVIDER_VERIFIED_SINCE) or very
+    // thin profiles stay live but noindex,follow (see @/lib/indexability).
+    ...providerRobots(provider),
   };
 }
 

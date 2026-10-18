@@ -1,11 +1,13 @@
 // Med-Spa & Aesthetics Index — central hub for the /med-spa city directory.
 // Mirrors dexa-clinics-index.ts. Only wired states return clinics; the switch
-// default returns [] so unwired states never emit dead URLs. The thin-content
-// guard keeps cities with < MIN_CLINICS_FOR_INDEX out of the index.
+// default returns [] so unwired states never emit dead URLs. Cities with
+// < MIN_CLINICS_FOR_PAGE listings get no page at all; whether a page is
+// indexable is decided separately from its independent-clinic count (see
+// countMedspaIndependents and @/lib/indexability).
 // Last Updated: June 2026
 
 import { MedspaClinic, MEDSPA_STATES } from '@/lib/medspa-clinic-types';
-import { MIN_CLINICS_FOR_INDEX } from '@/lib/indexability';
+import { MIN_CLINICS_FOR_PAGE } from '@/lib/indexability';
 import {
   californiaMedspaClinics,
   getCaliforniaMedspaClinicsByCity,
@@ -43,6 +45,13 @@ function citiesFromClinics(
     map.set(c.citySlug, e);
   }
   return Array.from(map.values());
+}
+
+// National-chain entries are metro-level stubs pointing at a brand's location
+// finder, not local listings, so they never count toward indexability: a city
+// page is only worth indexing on the strength of its independent clinics.
+export function countMedspaIndependents(clinics: MedspaClinic[]): number {
+  return clinics.filter((c) => !c.chain).length;
 }
 
 export function getMedspaClinicsByState(stateSlug: string): MedspaClinic[] {
@@ -84,7 +93,7 @@ export function getMedspaCitiesWithClinics(stateSlug: string): { city: string; c
     default:
       cities = [];
   }
-  return cities.filter((c) => c.count >= MIN_CLINICS_FOR_INDEX);
+  return cities.filter((c) => c.count >= MIN_CLINICS_FOR_PAGE);
 }
 
 export function getMedspaStatesWithClinics(): { state: string; stateSlug: string; count: number; cities: string[] }[] {

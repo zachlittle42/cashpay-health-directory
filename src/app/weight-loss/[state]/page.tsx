@@ -11,7 +11,7 @@ import SubjectiveBanner from '@/components/SubjectiveBanner';
 import { getWeightLossClinicsByState, getWeightLossCitiesWithClinics, weightLossStateMetadata } from '@/data/weightloss-clinics-index';
 import { WEIGHTLOSS_STATES } from '@/lib/weightloss-clinic-types';
 import { getGlp1ProgramStats, getGlp1ProgramAsOf } from '@/lib/pricing';
-import { gridRobots } from '@/lib/indexability';
+import { stateGridRobots } from '@/lib/indexability';
 
 interface Props {
   params: Promise<{ state: string }>;
@@ -37,8 +37,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${stateInfo.name} GLP-1 & Weight Loss Clinics: ${clinics.length}+ Options`,
     description: `Find medical weight loss clinics in ${stateInfo.name}. Semaglutide, tirzepatide, and GLP-1 programs in ${stateInfo.cities.slice(0, 3).join(', ')}. Compare prices and reviews.`,
     alternates: { canonical: `/weight-loss/${stateSlug}` },
-    // Thin-content guard: noindex,follow below MIN_CLINICS_FOR_INDEX (see @/lib/indexability).
-    ...gridRobots(clinics.length),
+    // Thin-content guard: a state page is indexable only with >= MIN_INDEXABLE_CITIES_FOR_STATE
+    // indexable cities; otherwise noindex,follow so the city page ranks (see @/lib/indexability).
+    ...stateGridRobots(getWeightLossCitiesWithClinics(stateSlug).map((c) => c.count)),
   };
 }
 

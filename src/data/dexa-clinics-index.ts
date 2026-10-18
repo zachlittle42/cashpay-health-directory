@@ -5,7 +5,7 @@
 // Last Updated: June 2026
 
 import { DexaClinic, DEXA_STATES } from '@/lib/dexa-clinic-types';
-import { MIN_CLINICS_FOR_INDEX } from '@/lib/indexability';
+import { MIN_CLINICS_FOR_PAGE } from '@/lib/indexability';
 import {
   californiaDexaClinics,
   getCaliforniaDexaClinicsByCity,
@@ -124,7 +124,7 @@ export function getDexaClinicsByCity(stateSlug: string, citySlug: string): DexaC
 }
 
 // Get cities with clinics for a state. Applies the thin-content guard: a city
-// only surfaces (as a page / link) once it has >= MIN_CLINICS_FOR_INDEX entries.
+// only surfaces (as a page / link) once it has >= MIN_CLINICS_FOR_PAGE entries.
 export function getDexaCitiesWithClinics(stateSlug: string): { city: string; citySlug: string; count: number }[] {
   let cities: { city: string; citySlug: string; count: number }[];
   switch (stateSlug) {
@@ -162,7 +162,7 @@ export function getDexaCitiesWithClinics(stateSlug: string): { city: string; cit
     default:
       cities = [];
   }
-  return cities.filter((c) => c.count >= MIN_CLINICS_FOR_INDEX);
+  return cities.filter((c) => c.count >= MIN_CLINICS_FOR_PAGE);
 }
 
 // Get all states with clinic counts (for the hub grid). Only states with at

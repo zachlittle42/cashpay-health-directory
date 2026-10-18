@@ -5,9 +5,15 @@ import Navigation from '@/components/Navigation';
 import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
 import MedicalDisclaimer from '@/components/MedicalDisclaimer';
-import { getMedspaClinicsByState, getMedspaCitiesWithClinics, medspaStateMetadata } from '@/data/medspa-clinics-index';
+import {
+  getMedspaClinicsByState,
+  getMedspaClinicsByCity,
+  getMedspaCitiesWithClinics,
+  countMedspaIndependents,
+  medspaStateMetadata,
+} from '@/data/medspa-clinics-index';
 import { MEDSPA_STATES } from '@/lib/medspa-clinic-types';
-import { gridRobots } from '@/lib/indexability';
+import { stateGridRobots } from '@/lib/indexability';
 
 interface Props {
   params: Promise<{ state: string }>;
@@ -29,8 +35,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${stateInfo.name} Med Spas: Botox, Fillers & Laser by City`,
     description: `Find med-spa and aesthetics providers in ${stateInfo.name}. Botox, fillers, laser hair removal, and body contouring in ${stateInfo.cities.slice(0, 3).join(', ')}. Compare ${clinics.length}+ listings.`,
     alternates: { canonical: `/med-spa/${stateSlug}` },
-    // Thin-content guard: noindex,follow below MIN_CLINICS_FOR_INDEX (see @/lib/indexability).
-    ...gridRobots(clinics.length),
+    // Thin-content guard: a state page is indexable only with >= MIN_INDEXABLE_CITIES_FOR_STATE
+    // indexable cities; otherwise noindex,follow so the city page ranks (see @/lib/indexability).
+    ...stateGridRobots(getMedspaCitiesWithClinics(stateSlug).map((c) =>
+      countMedspaIndependents(getMedspaClinicsByCity(stateSlug, c.citySlug)),
+    )),
   };
 }
 
