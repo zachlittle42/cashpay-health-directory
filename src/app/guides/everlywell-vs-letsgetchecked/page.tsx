@@ -247,7 +247,7 @@ export default function EverlywellVsLetsGetCheckedGuide() {
             <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">Key Differences</h3>
 
             <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-6">
-              <li><strong>STI testing:</strong> LetsGetChecked has more comprehensive options and can prescribe treatment for some positive results</li>
+              <li><strong>STI testing:</strong> LetsGetChecked has more comprehensive options and can prescribe treatment for some positive results. STI panel prices above were re-checked October 18, 2026; our <Link href="/guides/std-testing-cost" className="text-blue-600 hover:underline">STD testing cost guide</Link> compares every option, including free clinics and self-order lab panels.</li>
               <li><strong>Food sensitivity:</strong> Everlywell is the only one offering these (though evidence for IgG food testing is debated)</li>
               <li><strong>Hormones:</strong> Everlywell has more variety, including cortisol, metabolism, and perimenopause panels</li>
               <li><strong>Male fertility:</strong> LetsGetChecked offers at-home sperm testing; Everlywell doesn&apos;t</li>
@@ -271,13 +271,13 @@ export default function EverlywellVsLetsGetCheckedGuide() {
                 <tbody>
                   <tr>
                     <td className="border border-gray-300 px-4 py-3 font-medium">Basic STI Panel</td>
-                    <td className="border border-gray-300 px-4 py-3">$99</td>
-                    <td className="border border-gray-300 px-4 py-3">$99</td>
+                    <td className="border border-gray-300 px-4 py-3">$69 (Chlamydia &amp; Gonorrhea)</td>
+                    <td className="border border-gray-300 px-4 py-3">$99 (Simple 2)</td>
                   </tr>
                   <tr className="bg-gray-50">
                     <td className="border border-gray-300 px-4 py-3 font-medium">Complete STI Panel</td>
-                    <td className="border border-gray-300 px-4 py-3">$199</td>
-                    <td className="border border-gray-300 px-4 py-3">$179</td>
+                    <td className="border border-gray-300 px-4 py-3">$169 (STD Test)</td>
+                    <td className="border border-gray-300 px-4 py-3">$249 (Complete 8)</td>
                   </tr>
                   <tr>
                     <td className="border border-gray-300 px-4 py-3 font-medium">Thyroid Test</td>

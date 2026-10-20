@@ -7,7 +7,7 @@ import Footer from '@/components/Footer';
 import MedicalDisclaimer from '@/components/MedicalDisclaimer';
 import { getHormoneClinicsByState, getCitiesWithClinics, stateMetadata } from '@/data/hormone-clinics-index';
 import { HORMONE_STATES } from '@/lib/hormone-clinic-types';
-import { gridRobots } from '@/lib/indexability';
+import { stateGridRobots } from '@/lib/indexability';
 
 interface Props {
   params: Promise<{ state: string }>;
@@ -33,8 +33,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${stateInfo.name} TRT & HRT Clinics: ${clinics.length}+ Hormone Therapy Options`,
     description: `Find hormone therapy clinics in ${stateInfo.name}. TRT for men, HRT for women. ${stateInfo.cities.slice(0, 3).join(', ')} and more. Compare prices, services, and reviews.`,
     alternates: { canonical: `/hormone-therapy/${stateSlug}` },
-    // Thin-content guard: noindex,follow below MIN_CLINICS_FOR_INDEX (see @/lib/indexability).
-    ...gridRobots(clinics.length),
+    // Thin-content guard: a state page is indexable only with >= MIN_INDEXABLE_CITIES_FOR_STATE
+    // indexable cities; otherwise noindex,follow so the city page ranks (see @/lib/indexability).
+    ...stateGridRobots(getCitiesWithClinics(stateSlug).map((c) => c.count)),
   };
 }
 

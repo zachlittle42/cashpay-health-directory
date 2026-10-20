@@ -304,7 +304,7 @@ export default function CompareCategoryPage({
         </div>
       </section>
 
-      {['mens-health', 'cgm', 'mental-health'].includes(category.slug) && (
+      {['mens-health', 'womens-health', 'cgm', 'mental-health'].includes(category.slug) && (
         <RelatedGuides
           title="Cost guides in this category"
           items={getRelatedGuides(`/${category.slug}`, 8)}

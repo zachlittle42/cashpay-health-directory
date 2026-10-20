@@ -643,7 +643,7 @@ export default function CategoryPage({
 
       {isDexa && <MedicalDisclaimer />}
 
-      {(categorySlug === 'labs' || categorySlug === 'glp1' || categorySlug === 'imaging') && (
+      {['labs', 'glp1', 'imaging', 'dental', 'surgery', 'primary_care'].includes(categorySlug) && (
         <RelatedGuides
           title="Cost guides in this category"
           items={getRelatedGuides(`/${categorySlug}`, 8)}

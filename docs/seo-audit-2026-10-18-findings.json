@@ -1,0 +1,991 @@
+{
+ "auditDate": "2026-10-18",
+ "auditedCommit": "ab5f870",
+ "status": "partial — 4 of 10 lenses complete; adversarial verification not run; quality-3, onpage-1, onpage-5, schema-1, schema-4 hand-verified",
+ "lenses": {
+  "quality": {
+   "summary": "Only about a third of VitalityScout's 797 servable indexable URLs clearly clear a low-authority YMYL quality bar: 266 clear it, 300 are borderline and need enrichment, and 229 dilute it (106 of those are submitted in the 480-URL sitemap). The guides are the asset. They are 27% of indexable URLs but hold 75% of the site's unique text, and they have almost no near-duplicates (mean pairwise 5-shingle Jaccard 0.012). The dilution comes from four templates: (1) state/city clinic grids that pass a 3-clinic bar with 33–96 truly unique words; (2) single-city state pages that near-duplicate their only city (30 pages, Jaccard 0.42–0.61); (3) med-spa pages built from national-chain stubs and four rotating description templates (LA vs San Diego masked Jaccard 0.974, 0 unique words); (4) 315 provider pages that are indexable but kept out of the sitemap, have a median of 118 unique words, have zero in-content outlinks, and include 74 still marked \"Last verified: December 2024\". The prior noindex of /traditional-healthcare/* and /health-systems/* was correct (median 93–191 words, 13–60 unique words), but sitewide nav slots still feed it and two other noindexed pages: 9.0% of internal link edges from indexable pages point at noindexed URLs. Causation for Google's \"Discovered – currently not indexed\" cannot be proven without fresh GSC data. The ED guide itself is substantive (1,262 unique words), so a site-level quality and crawl-demand drag from this inventory is the leading hypothesis, not the page itself.",
+   "strengths": [
+    "Guides are the site's quality core: 214 guides with median 1,964 words and median 1,262 strict-unique words. Mean pairwise 5-shingle Jaccard is 0.012, and only one templated pair (semaglutide-cost and tirzepatide-cost) reaches masked Jaccard 0.5 or higher. They hold 75% of the site's unique text, and all 13 guide URLs with observed Bing or Google traction are in this set. Preserve their URLs, especially /guides/online-ed-treatment.",
+    "Weight-loss and hormone-therapy listing descriptions are bespoke rather than templated: no repeated opener dominates even the 258 Texas hormone entries. They include addresses and phone numbers. Pages with 8 or more clinics carry about 945–1,056 non-boilerplate words.",
+    "DEXA city pages and cost guides publish dated, sourced price aggregates (e.g. 'Typical DEXA scan cost in Austin: $70 (range $39.95–$185, n=4 clinics, verified July 2026)'). This is the pattern to replicate on other grids and hubs.",
+    "The thin-content infrastructure exists and is wired correctly. src/lib/indexability.ts is the single source of truth, the sitemap imports the same threshold, and 0 of the 126 noindexed URLs appear in the sitemap. Raising the bar is a small, safe change.",
+    "Noindexing /traditional-healthcare/* and /health-systems/* was the right call (median 93–191 words, 13–60 unique words, 13 impressions and 0 clicks in 100 days), and noindex,follow is confirmed live on /traditional-healthcare/texas.",
+    "Destinations (max within-group Jaccard 0.088), FAQ pages, stem-cells pages, longevity regional pages and the 12 local-clinics region pages are distinct, with no near-duplicates.",
+    "Live spot checks via Vercel fetch (/med-spa/california/los-angeles, /providers/abbvie, /weight-loss/colorado, /traditional-healthcare/texas) match the build: 200, self-canonical, Link rel=canonical header present. So these build-based findings reflect production."
+   ],
+   "openQuestions": [
+    "Bing page-level stats for the 229 DILUTES URLs are not in the baseline, which keeps only the top 12 Bing pages. Before noindexing any group (city grids, providers, single-city states), the owner should export Bing GetPageStats for /weight-loss/*, /hormone-therapy/*, /dexa-scans/*, /med-spa/* and /providers/* to honour the guardrail of keeping URLs that earn clicks.",
+    "Without GSC credentials, we cannot see the Page-indexing report split by reason ('Crawled – currently not indexed' vs 'Discovered – currently not indexed') per template. That split is what would confirm or refute the site-level quality hypothesis; per-template sitemaps (quality-1) would make it visible going forward.",
+    "Were the 74 provider pages marked 'Last verified: December 2024' actually re-verified with only the label left stale, or are their prices really 22 months old?",
+    "The thresholds used here (e.g. at least 5 clinics, at least 250 or 600 unique words, masked Jaccard of 0.4 or 0.5) are heuristics for a low-authority YMYL site. Google publishes no word-count rule, so treat them as a prioritization tool and validate them against post-change indexing transitions.",
+    "Methodology note for other auditors: the shared texts.jsonl and inventory 'words' glue adjacent elements without spaces (e.g. 'TreatmentAllergy'), which undercounts words by roughly 20% (providers: 292 vs 356) and breaks shingle-based comparisons. The re-extracted spaced text is at /tmp/claude-0/-home-user-cashpay-health-directory/7cdb4e41-ce5f-5b38-abd4-c5de37c73a16/scratchpad/audit/work-quality/spaced.jsonl. Per-page metrics are in /tmp/claude-0/-home-user-cashpay-health-directory/7cdb4e41-ce5f-5b38-abd4-c5de37c73a16/scratchpad/audit/work-quality/results.json and tiers in /tmp/claude-0/-home-user-cashpay-health-directory/7cdb4e41-ce5f-5b38-abd4-c5de37c73a16/scratchpad/audit/work-quality/classification.json. The scripts are extract-spaced.mjs, analyze.mjs, containment.mjs, statecity.mjs, guides-masked.mjs and classify.mjs, all in /tmp/claude-0/-home-user-cashpay-health-directory/7cdb4e41-ce5f-5b38-abd4-c5de37c73a16/scratchpad/audit/work-quality/."
+   ],
+   "findings": [
+    {
+     "id": "quality-1",
+     "title": "Quality-weighted inventory: 266 of 797 indexable URLs clear the bar, 229 dilute it, and 22% of the sitemap is thin or duplicate",
+     "severity": "high",
+     "category": "index-bloat",
+     "evidence": "OBSERVED, from work-quality/classify.mjs, which applies explicit per-template thresholds to spaced re-extracted body text. Method: 5-word shingles, numbers normalized, own city/state/provider-name tokens masked. 'Strict unique' = tokens covered by no shingle that appears on any other prerendered page. Scope: 799 pages have no meta noindex; minus /_not-found and minus /dexa (301 to /dexa-scans in next.config.mjs:8) = 797 servable indexable URLs. Result: CLEARS 266, ENRICH 300, DILUTES 229, UTILITY 2. The 480 sitemap URLs = 266 CLEARS + 106 ENRICH + 106 DILUTES + 2 utility. Sitewide, only 43.5% of indexable body text is strict-unique (384,568 of 883,423 words). Share of URLs vs share of unique text: guides 26.9% vs 75.0%; providers 39.5% vs 9.7%; the 176 state/city grid URLs (weight-loss, hormone-therapy, dexa-scans, med-spa) 22% vs 4.3%. Sanity check: all 18 URLs with observed Bing or Google traction in docs/growth/baseline-2026-09-17.json land in CLEARS or ENRICH; none in DILUTES. Google reported page rows for only 74 URLs in Aug 18–Sep 14, against 797 indexable. /guides/online-ed-treatment (1,771 words, 1,262 unique, nearest-neighbour Jaccard 0.04) is 'Discovered – currently not indexed', so this page is not thin.",
+     "impact": "HYPOTHESIS: Google rations crawl and index for a young, low-authority YMYL host based partly on site-level quality. With about 529 of 797 URLs below or near the bar, and the most templated ones sitting in the sitemap and nav, Google is unlikely to prioritize crawling the strong guides. This fits the pattern of 5 of 12 sampled priority URLs being 'Discovered – not indexed' while Bing, which is less selective, indexes 792 URLs and sends 936 clicks per 28 days.",
+     "recommendation": "Apply quality-2 through quality-5 as reversible noindex,follow changes (no deletions). Target: cut indexable URLs from 797 to ≤568 and sitemap URLs from 480 to ≤374. Then promote ENRICH pages only after they pass the thresholds below. Split src/app/sitemap.ts into per-template sitemaps using generateSitemaps (guides, hubs, grids, destinations, providers-if-ever) so the GSC Sitemaps and Page-indexing reports show submitted vs indexed per template. Re-run the same 12-URL inspection sample 3–4 weeks after deploy and record state transitions. Before noindexing any group, export Bing page stats for it to honour the baseline guardrail: keep any URL with Bing clicks.",
+     "effort": "M",
+     "confidence": "medium",
+     "affectedCount": 797,
+     "affectedUrls": [
+      "/guides/online-ed-treatment",
+      "/guides/mri-cost-without-insurance",
+      "/guides/full-body-mri-scan-cost",
+      "/guides/function-health-review",
+      "/guides/blood-test-without-a-doctor"
+     ],
+     "handVerified": false
+    },
+    {
+     "id": "quality-2",
+     "title": "City grid pages with 3–4 clinics pass the MIN_CLINICS_FOR_INDEX=3 bar but carry about 33–96 unique words",
+     "severity": "high",
+     "category": "thin-content",
+     "evidence": "OBSERVED: src/lib/indexability.ts sets MIN_CLINICS_FOR_INDEX = 3, which is a pure clinic-count gate; its own TODO says the richer bar was never built. 54 indexable, in-sitemap city pages list only 3–4 clinics: 24 /weight-loss/*/*, 22 /hormone-therapy/*/*, 8 /dexa-scans/*/*. Medians for these bands: words 558 / 533 / 707; strict-unique words 33 / 34 / 96; share of tokens that is group boilerplate (shingles on ≥50% of group pages) 37% / 38% / 40%. Across all Texas and California city pages, 56–65% of each city page's shingles reappear verbatim on the parent state page (work-quality/statecity.mjs). Worst examples: /weight-loss/arizona/scottsdale (3 clinics, 354 words, 8 unique), /weight-loss/arizona/phoenix (3 clinics, 10 unique), /weight-loss/texas/dallas (3 clinics, 12 unique), /hormone-therapy/california/huntington-beach (3 clinics, 16 unique), /hormone-therapy/texas/dallas (4 clinics, 20 unique), /dexa-scans/california/orange-county (3 clinics, 410 words, 5 unique). Pages with 8 or more clinics are materially better (weight-loss median 121 unique and 945 non-boilerplate words; hormone-therapy 119 and 1,056). Coverage is also skewed: /weight-loss/texas lists Houston 67 but Dallas 3.",
+     "impact": "Each page is a city-swapped template around a few listing cards whose text is duplicated on the state page. This is the 'thin city grid' pattern the baseline doc says to avoid, and 54 such URLs are actively submitted.",
+     "recommendation": "In src/lib/indexability.ts, split the gate: index a city page only at ≥5 clinics, and require ≥8 clinics or ≥150 unique words for it to count as a ranking target. The sitemap already imports the same constant, so it updates in step. Result: noindex,follow the 54 pages with 3–4 clinics, which stay live and linked. For the 39 pages with 5–7 clinics (15 weight-loss, 14 hormone-therapy, 10 DEXA), add the DEXA-style dated price aggregate ('Typical X cost in {city}: $N (range, n clinics, verified Mon YYYY)') plus 2–3 city-specific FAQs drawn from the listings. Lift a page back over the bar automatically once its clinic count grows. Fill the big-metro gaps (Dallas, Los Angeles, Phoenix) before adding any new cities.",
+     "effort": "S",
+     "confidence": "high",
+     "affectedCount": 54,
+     "affectedUrls": [
+      "/weight-loss/arizona/scottsdale",
+      "/weight-loss/arizona/phoenix",
+      "/weight-loss/texas/dallas",
+      "/weight-loss/california/woodland-hills",
+      "/weight-loss/florida/tampa",
+      "/hormone-therapy/california/huntington-beach",
+      "/hormone-therapy/texas/dallas",
+      "/hormone-therapy/arizona/scottsdale",
+      "/hormone-therapy/california/los-angeles",
+      "/dexa-scans/california/orange-county",
+      "/dexa-scans/california/san-diego",
+      "/dexa-scans/georgia/atlanta"
+     ],
+     "handVerified": false
+    },
+    {
+     "id": "quality-3",
+     "title": "Med-spa city pages are chain-stub doorways built from four rotating description templates",
+     "severity": "high",
+     "category": "scaled-templated-content",
+     "evidence": "OBSERVED: /med-spa/california/{los-angeles,san-diego,orange-county,san-francisco} list only 4–5 national chains. Each card reads 'It operates location(s) in the {city} area — use the brand's location finder…' (template at src/data/medspa-chains.ts:159). Within the group, the masked Jaccard for LA vs San Diego is 0.974 (containment 0.99). All four pages have 0–4 strict-unique words and 91–99% group boilerplate. /med-spa/california is 83% boilerplate with 126 unique words. All 200 independent-clinic descriptions use one of four rotating sentence templates ('{name} provides med-spa and aesthetic treatments — botox and dermal fillers — to clients in {city}…', 'Serving {city} and the wider {city} area…', 'Located in {city} in the {city} metro…', '…is a med spa in {town}, serving the greater {city} area'): 150/150 in src/data/medspa-clinics-texas-independents.ts and 50/50 in src/data/medspa-clinics-dfwsa-independents.ts. Resulting pages: /med-spa/texas/fort-worth (16 providers, 82 unique words, 79% boilerplate), /dallas (101 unique, 82%), /san-antonio (86 unique, 78%). The H1 intro at src/app/med-spa/[state]/[city]/page.tsx:157 says 'Listings are national brands serving the metro' even on pages made of independents. gridRobots() counts chain stubs as clinics. Live check via Vercel fetch: /med-spa/california/los-angeles returns 200, self-canonical, no robots meta.",
+     "impact": "This is the clearest scaled, swapped-noun content on the site, the pattern Google's scaled-content-abuse policy targets. A site-level spam or helpful-content classification would hit the guides too. The template copy also contradicts itself on independent-clinic pages, which hurts trust.",
+     "recommendation": "Now: noindex,follow and remove from the sitemap the 4 California city pages, /med-spa/california, and /med-spa/texas/{dallas,fort-worth,san-antonio}. In src/app/med-spa/[state]/[city]/page.tsx, exclude national-chain entries from the count passed to gridRobots(). Fix the line-157 intro so it describes the actual mix of listings. Before re-indexing, rewrite each independent's description from verified, clinic-specific facts (injector credentials, published per-unit Botox price with date, services actually listed) and drop the four rotating templates. Keep /med-spa/texas/houston and /med-spa/texas/austin indexable while they are rewritten (709 and 360 unique words).",
+     "effort": "M",
+     "confidence": "high",
+     "affectedCount": 8,
+     "affectedUrls": [
+      "/med-spa/california/los-angeles",
+      "/med-spa/california/san-diego",
+      "/med-spa/california/orange-county",
+      "/med-spa/california/san-francisco",
+      "/med-spa/california",
+      "/med-spa/texas/dallas",
+      "/med-spa/texas/fort-worth",
+      "/med-spa/texas/san-antonio"
+     ],
+     "handVerified": true
+    },
+    {
+     "id": "quality-4",
+     "title": "315 provider pages are indexable but kept out of the sitemap; they are thin, dead ends, partly stale, and partly off-mission",
+     "severity": "high",
+     "category": "thin-content",
+     "evidence": "OBSERVED: /providers/* is 315 of 797 indexable URLs (39.5%) but only 9.7% of the site's unique text. Spaced word count median 356 (the shared inventory undercounts at 292 because texts.jsonl glues adjacent elements). Strict-unique words: p10 68, median 118, max 245; no provider page reaches 250. All 315 have 0 internal in-content outlinks, and 109 have exactly one in-content inbound link. 74 show 'Last verified: December 2024' and 'estimates … as of December 2024'. Live-confirmed on /providers/abbvie: 200, self-canonical, no noindex. The stale set includes the brands that the traffic-earning guides compare: ro-body, function-health, hims-hers-glp1, henry-meds-trt (43 unique words), fountain-trt, everlywell, letsgetchecked, superpower, marek-health, bodyspec, dexafit. 36 pages are off-mission for a cash-pay care directory (13 'Pharmaceutical Companies', 13 'Insurance Companies', 10 'Drug Registries'). src/app/sitemap.ts deliberately omits all providers ('to keep crawl budget on the money pages') while leaving them indexable and self-canonical, which sends mixed signals. Google still discovers them through category and destination listing links (318 from category hubs, 179 from destinations, 44 from guides). Same-entity overlaps with stronger guides: function-health vs /guides/function-health-review (8,756 Bing impressions), ro-body vs /guides/ro-body-weight-loss-cost (5,551), everlywell vs everlywell-review, marek-health vs marek-health-review, bodyspec vs bodyspec-dexa-scan-cost, dexafit vs dexafit-cost.",
+     "impact": "About 40% of the indexable surface is roughly 120-unique-word profile pages. Some show 22-month-old prices in a YMYL pricing context, contradict the 2026-verified guides on the same brand, and compete with the guides that actually earn traffic.",
+     "recommendation": "In src/app/providers/[slug]/page.tsx generateMetadata, return NOINDEX_FOLLOW for the 121 below-bar pages: all 36 off-mission entities, the 78 with fewer than 100 unique words, and any still verified in 2024 (7 more). The pages stay live for users and links. For the 6 brand-to-guide pairs above, noindex the provider page and add a prominent 'Full review / cost breakdown' link to the guide. For the remaining 194: re-verify, then raise each to ≥250 unique words (dated price table, what is included, eligibility and state availability, 2–3 alternatives) and add in-content links to the category hub and relevant guides. Put a provider in the sitemap only once it passes that bar. Remove the Insurance, Pharma and Drug-registry provider sets from the directory entirely if they are not part of the cash-pay mandate.",
+     "effort": "M",
+     "confidence": "high",
+     "affectedCount": 315,
+     "affectedUrls": [
+      "/providers/abbvie",
+      "/providers/henry-meds-trt",
+      "/providers/trt-nation",
+      "/providers/bumrungrad-orthopedic",
+      "/providers/bumrungrad-cardiac",
+      "/providers/narayana-health",
+      "/providers/ro-body",
+      "/providers/function-health",
+      "/providers/hims-hers-glp1",
+      "/providers/fountain-trt"
+     ],
+     "handVerified": false
+    },
+    {
+     "id": "quality-5",
+     "title": "30 single-city state pages near-duplicate their only city, and multi-city state hubs re-render every city's listings",
+     "severity": "high",
+     "category": "near-duplicate",
+     "evidence": "OBSERVED (work-quality/statecity.mjs): 30 indexable, in-sitemap state pages have exactly one city: 10 /weight-loss/*, 8 /hormone-therapy/*, 12 /dexa-scans/*. Their state-to-city 5-shingle Jaccard is 0.42–0.61, and 73–84% of each state page's shingles appear on its city page. Examples: /weight-loss/colorado vs /denver J 0.57 (state-in-city 0.83); /weight-loss/tennessee vs /nashville 0.61 (0.84); /hormone-therapy/washington-dc vs /washington 0.60 (0.84); /dexa-scans/florida vs /miami 0.50 (0.82). The 30 pages have a median of 653 words and 25 strict-unique words; worst are /dexa-scans/washington-dc (3 unique), /dexa-scans/massachusetts (8), /hormone-therapy/north-carolina (14), /weight-loss/colorado (16). Multi-city hubs dump every city's full cards: /hormone-therapy/texas has 20,229 words and 1,275,650 bytes of HTML; /weight-loss/texas 11,748 words and 670,686 bytes; /weight-loss/california 10,765 words. As a result, 56–65% of each Texas or California city page is duplicated on its state page. Live check: /weight-loss/colorado returns 200, self-canonical, no robots meta.",
+     "impact": "Two URLs compete for the same listing set in 30 markets, and in the big states the state page cannibalizes and dilutes every city page beneath it. The megapages also cost crawl and render budget (1.28 MB HTML).",
+     "recommendation": "In src/app/{weight-loss,hormone-therapy,dexa-scans}/[state]/page.tsx and the matching state loops in src/app/sitemap.ts, add a state rule to src/lib/indexability.ts: a state page is indexable only if it has ≥2 indexable cities. Otherwise use noindex,follow, link to the city, and drop it from the sitemap. That covers 30 URLs, and the city stays as the ranking URL. Rebuild multi-city state pages (TX, CA, AZ, FL) as summaries: per city, show the clinic count, the verified median price and the top 3 names, each linking to the city page, instead of full cards. Target: state-to-city containment below 0.2 and HTML under 300 KB.",
+     "effort": "M",
+     "confidence": "high",
+     "affectedCount": 34,
+     "affectedUrls": [
+      "/weight-loss/colorado",
+      "/weight-loss/tennessee",
+      "/weight-loss/new-york",
+      "/hormone-therapy/washington-dc",
+      "/hormone-therapy/north-carolina",
+      "/dexa-scans/washington-dc",
+      "/dexa-scans/massachusetts",
+      "/dexa-scans/florida",
+      "/hormone-therapy/texas",
+      "/weight-loss/texas",
+      "/weight-loss/california"
+     ],
+     "handVerified": false
+    },
+    {
+     "id": "quality-6",
+     "title": "Noindexing traditional-healthcare and health-systems was correct, but sitewide nav still sends equity into noindexed pages",
+     "severity": "medium",
+     "category": "internal-links-to-noindex",
+     "evidence": "OBSERVED: the noindex was justified. /traditional-healthcare/* (50 pages) has median 93 words, 13 strict-unique words and 60% boilerplate; /traditional-healthcare/*/* (45) median 191 words, 32 unique; /health-systems/* (21) median 190 words, 60 unique, 49% boilerplate. The layout.tsx comment records 13 impressions and 0 clicks in 100 days. Live: /traditional-healthcare/texas returns 'noindex, follow'. None of the 126 noindexed URLs is in the sitemap. Of the 13 sitewide nav and sidebar targets (excluding /search), 3 are noindexed: top-nav 'By State' goes to /traditional-healthcare (795 pages; src/components/Navigation.tsx:13); sidebar group labels go to /lose-weight and /balance-hormones (797 pages; GROUP_HREF in src/components/SidebarNav.tsx). The sidebar 'Care by State' link goes to /care-by-state (indexable, in the sitemap, 334 words), whose only content links are the 50 noindexed /traditional-healthcare/{state} pages plus /treat-see-doctor, even though its copy promises 'cash-pay clinics… near you'. The homepage links to /traditional-healthcare, /health-systems, /lose-weight and /balance-hormones. 21 hormone city pages link to noindexed /hormone-therapy/texas/san-antonio. Totals: 2,501 of 27,911 internal link edges from indexable pages (9.0%) target noindexed URLs. The best-linked URLs on the site are thin persona hubs (/test-diagnose, /live-longer, /look-better, /treat-see-doctor; 328–359 words; 796–797 inbound each), while substantive hubs get few: /mens-health 1,366 unique words, 84 inbound, 'unknown to Google'; /womens-health 2,017 unique, 78; /mental-health 1,870 unique, 14.",
+     "impact": "Google tends to treat links into long-term noindexed pages like nofollow, so these three nav slots on about 797 pages pass equity that never returns. Users and crawlers who choose 'By State' land in thin hospital lists rather than the indexable cash-pay state hubs.",
+     "recommendation": "Keep traditional-healthcare and health-systems noindexed. In SidebarNav GROUP_HREF, point 'lose-weight' to /weight-loss (or /glp1) and 'balance-hormones' to /hormone-therapy (or /trt). In Navigation.tsx:13, point 'By State' to /care-by-state. Rebuild /care-by-state to link to the indexable state hubs (the 14 states × weight-loss, hormone-therapy and dexa-scans after quality-5 pruning, /longevity/{california,florida,new-york,texas}, /med-spa/texas) rather than /traditional-healthcare/*. Drop the homepage links to the noindexed families. Make the 'Other {state} cities' modules skip noindexed cities. Give /mens-health, /womens-health and /mental-health a nav or sidebar slot.",
+     "effort": "S",
+     "confidence": "high",
+     "affectedCount": 4,
+     "affectedUrls": [
+      "/traditional-healthcare",
+      "/lose-weight",
+      "/balance-hormones",
+      "/care-by-state"
+     ],
+     "handVerified": false
+    },
+    {
+     "id": "quality-7",
+     "title": "DEXA has two URLs per metro (grid page plus cost guide) for 19 cities, plus 12 duplicate state pages",
+     "severity": "medium",
+     "category": "cannibalization",
+     "evidence": "OBSERVED: each of the 19 /dexa-scans/{state}/{city} grids (410–1,097 words) has a matching /guides/dexa-scan-cost-{city} (1,697–2,165 words) that lists the same clinics. H3 clinic-name overlap is 100% in 12 of 19 pairs (e.g. Austin 6/6, Chicago 6/6, NYC 6/6). The pair cross-link, but their text overlaps little (Jaccard 0.03–0.07), so they compete on intent ('DEXA scan {city}' vs 'DEXA scan cost {city}') rather than as copies. With the 12 single-city DEXA state pages, that makes 52 DEXA local URLs for 19 metros. The guides themselves are a template family: masked Jaccard 0.23–0.31 and heading-set Jaccard up to 0.84 (Boston vs Denver). /guides/dexa-scan-cost-new-york has only 294 strict-unique words. The only Google signal for this cluster is the guide: /guides/dexa-scan-cost-new-york had 48 impressions at average position 5.08 (Aug 18–Sep 14), while /dexa-scans is indexed.",
+     "impact": "Splitting the same metro intent across two or three URLs halves internal-link and relevance signals. The guide family's shared skeleton also risks a template-level devaluation.",
+     "recommendation": "Use one ranking URL per metro: keep the cost guide, since it is what Google surfaces and must be preserved. Set the 19 city grids to noindex,follow, or merge each grid's clinic cards into the guide's 'Where to Get a DEXA Scan in {city}' section and 301 grid to guide after the next inspection cycle. Repoint /dexa-scans 'Find near you' links to the guides. Noindex the 12 single-city DEXA states (quality-5). Rewrite each guide's intro, price-driver and FAQ sections with metro-specific facts until masked Jaccard against siblings is below 0.2 and unique words are at least 600; start with new-york, san-diego and boston.",
+     "effort": "M",
+     "confidence": "medium",
+     "affectedCount": 31,
+     "affectedUrls": [
+      "/dexa-scans/new-york/new-york-city",
+      "/guides/dexa-scan-cost-new-york",
+      "/dexa-scans/texas/austin",
+      "/guides/dexa-scan-cost-austin",
+      "/guides/dexa-scan-cost-boston",
+      "/guides/dexa-scan-cost-san-diego"
+     ],
+     "handVerified": false
+    },
+    {
+     "id": "quality-8",
+     "title": "Templated 'verified price' guide twins (semaglutide vs tirzepatide, TRT, dental 'prices') and overlapping intent clusters",
+     "severity": "medium",
+     "category": "near-duplicate",
+     "evidence": "OBSERVED (work-quality/guides-masked.mjs): across all 214 guides, masked near-duplication is rare; only one pair is at or above 0.5. That pair is /guides/semaglutide-cost vs /guides/tirzepatide-cost: masked Jaccard 0.717, heading Jaccard 0.83, raw containment 73.5% and 80.5%, with 118 and 83 strict-unique words. /guides/trt-cost (191 unique) is 49% contained in each of them. The same 'What X Actually Run(s)/Charge' template underlies thin companions: /guides/costa-rica-dental-prices (965 words, 286 unique, 41.7% contained in mexico-dental-implant-prices), /guides/mexico-dental-implant-prices (423 unique), /guides/mexico-bariatric-surgery-prices (453), and /guides/dental-implants-abroad-cost-comparison (2,551 words but 404 unique, 41.6% contained in full-mouth-dental-implants-cost-by-country). Overlapping intent clusters by title and H1: semaglutide cost appears across 6 guides (semaglutide-cost, cheapest-way-to-get-semaglutide, compounded-semaglutide, cheapest-glp1-without-insurance, ozempic-cost, wegovy-cost); Turkey hair-transplant cost across 4 (hair-transplant-turkey-cost, hair-transplant-turkey-guide, turkey-hair-transplant-clinics, fue-hair-transplant-istanbul-cost); Costa Rica dental 2; Spain IVF 3 (spain-ivf-cost, spain-fertility-ivf-guide, spain-vs-czech-ivf at 703 words). None of these URLs is in the baseline's Bing or Google traction lists.",
+     "impact": "These are the guide-level 'near-duplicate guides' the baseline warns about. They split relevance for a high-value GLP-1 cost cluster and add low-unique pages to the strongest template.",
+     "recommendation": "semaglutide-cost and tirzepatide-cost: either differentiate them (drug-specific dose-step pricing, compounded vs brand rules, Zepbound vials vs Mounjaro pens) until masked Jaccard is below 0.3 and each has at least 600 unique words, or merge both into /guides/cheapest-glp1-without-insurance with 301s and update the 15 and 14 in-content links. Merge costa-rica-dental-prices into costa-rica-dental-guide and dental-implants-abroad-cost-comparison into full-mouth-dental-implants-cost-by-country, with 301s, after confirming in Bing page stats that neither URL has clicks. Add a pre-publish check that fails any new guide whose masked 5-shingle Jaccard against an existing guide is 0.4 or higher, or whose primary query already maps to a guide.",
+     "effort": "M",
+     "confidence": "high",
+     "affectedCount": 7,
+     "affectedUrls": [
+      "/guides/semaglutide-cost",
+      "/guides/tirzepatide-cost",
+      "/guides/trt-cost",
+      "/guides/costa-rica-dental-prices",
+      "/guides/dental-implants-abroad-cost-comparison",
+      "/guides/mexico-dental-implant-prices",
+      "/guides/mexico-bariatric-surgery-prices"
+     ],
+     "handVerified": false
+    },
+    {
+     "id": "quality-9",
+     "title": "Thin and off-mission hubs are promoted from the footer; utility landing pages and two destinations are indexable stubs",
+     "severity": "medium",
+     "category": "thin-content",
+     "evidence": "OBSERVED: footer links (src/components/Footer.tsx) reach about 579–601 pages each. Thin examples: /vo2max has 130 words, 3 providers and 14 unique words, while /guides/vo2-max-test-cost has 1,705 words and 1,272 unique. Off-mission hubs /insurance, /pharma and /drug_registry (Footer.tsx:78-80) have 342–596 words and 105–143 unique words. Other thin category hubs: /orthopedic (447 words, 5 providers, 24 unique), /vision (465, 5, 30), /cardiac (536, 6, 40), /iv (384, 8, 67), /allergy (517, 8, 62). /guides/allergy-testing-cost meanwhile earns 19 Bing clicks at position 3.26. /beta and /centurioncoach (title 'Centurion Coach — AI-Powered Wellness Coaching App') have no robots meta and no canonical, are excluded from the sitemap via EXCLUDED_STATIC_ROUTES, and remain indexable. /destinations/dubai has 337 words and 123 unique; /destinations/cayman-islands 347 and 163. The other 12 destinations have 838–1,363 words.",
+     "impact": "Sitewide links concentrate equity on 130–600-word listing stubs and off-topic entity lists. Indexable non-directory landing pages blur the site's topical focus.",
+     "recommendation": "Noindex /insurance, /pharma, /drug_registry and their providers, and remove them from the footer. Noindex /beta and /centurioncoach (add robots: NOINDEX_FOLLOW in their page metadata). For /vo2max, /orthopedic, /vision, /cardiac, /iv and /allergy, either enrich to the hub bar (8 or more providers, a dated price aggregate, FAQ and a lead-in from the matching guide, about 400 or more unique words) or noindex until then. Meanwhile point the footer 'VO2 Max Testing' link at /guides/vo2-max-test-cost. Expand /destinations/dubai and /cayman-islands to the ~900-word destination template, or fold them into /medical-tourism.",
+     "effort": "M",
+     "confidence": "high",
+     "affectedCount": 13,
+     "affectedUrls": [
+      "/vo2max",
+      "/orthopedic",
+      "/vision",
+      "/cardiac",
+      "/iv",
+      "/allergy",
+      "/insurance",
+      "/pharma",
+      "/drug_registry",
+      "/beta",
+      "/centurioncoach",
+      "/destinations/dubai",
+      "/destinations/cayman-islands"
+     ],
+     "handVerified": false
+    },
+    {
+     "id": "quality-10",
+     "title": "Visible staleness on YMYL pricing pages: 30 guide titles still say 2024 or 2025 next to 2026-verified siblings",
+     "severity": "medium",
+     "category": "freshness-eeat",
+     "evidence": "OBSERVED (inventory titles): of 214 guides, 143 carry '2026' in the title, 16 carry '2024' and 14 carry '2025'. The 2024 titles include hair-transplant-turkey-guide, mexico-dental-guide, costa-rica-dental-guide, spain-fertility-ivf-guide, mexico-medical-tourism-planner, thailand-medical-tourism-guide, glp1-weight-loss-complete-guide, at-home-lab-testing-guide (which Google has indexed), dexa-scan-guide and medical-travel-insurance-guide. 2025 titles include compounded-semaglutide ('What You Need to Know in 2025') and trt-testosterone-therapy ('(2025)'). Often these sit beside a 2026 sibling on the same topic, e.g. hair-transplant-turkey-cost (2026) vs hair-transplant-turkey-guide (2024). Separately, 74 provider pages say 'Last verified: December 2024' (see quality-4).",
+     "impact": "For cash-price YMYL content, a 2024 year in the SERP title signals outdated prices and undercuts the site's 'verified, dated' positioning. It also creates internal inconsistency that a quality rater would notice.",
+     "recommendation": "Re-verify the prices and claims in those 30 guides, then update the title year, visible 'last reviewed' date and dateModified together. Never bump a year without re-verifying. Where a 2024 'complete guide' duplicates a 2026 cost guide on the same topic (Turkey hair transplant, Mexico dental, Spain IVF), merge it during re-verification rather than refreshing both. Generate title years from the page's verification date field, not hard-coded strings.",
+     "effort": "M",
+     "confidence": "high",
+     "affectedCount": 30,
+     "affectedUrls": [
+      "/guides/hair-transplant-turkey-guide",
+      "/guides/mexico-dental-guide",
+      "/guides/costa-rica-dental-guide",
+      "/guides/spain-fertility-ivf-guide",
+      "/guides/at-home-lab-testing-guide",
+      "/guides/glp1-weight-loss-complete-guide",
+      "/guides/compounded-semaglutide",
+      "/guides/trt-testosterone-therapy"
+     ],
+     "handVerified": false
+    },
+    {
+     "id": "quality-11",
+     "title": "Expand coverage through national cost guides and hub enrichment, not new city grids; several primary cash-pay services have no page",
+     "severity": "medium",
+     "category": "content-coverage",
+     "evidence": "OBSERVED: no indexable title or URL covers any of these primary US cash-pay services: hearing aids, vasectomy, physical therapy, chiropractic, Invisalign/orthodontics, mammogram, STD testing, birth control, hyperbaric oxygen, cryotherapy, acupuncture/massage, X-ray, PRP, finasteride/minoxidil hair-loss Rx, direct primary care/concierge, ADHD telehealth, teeth whitening, glasses/contacts. The format that works on this site is the national 'X cost without insurance' guide. Guides hold 75% of unique text, and every observed traction URL is a guide or hub: allergy-testing-cost at Bing position 3.26, lasik-cost-usa at 7.0 with 26 clicks, mri-cost-without-insurance at 5.0, and Google indexes the labs cluster. City grids show 4–8% unique text and have no observed traction in the baseline lists.",
+     "impact": "The owner's mandate (all primary cash-pay in-person, wellness and telehealth or e-commerce services) is partly unmet. Adding coverage as new grids would worsen the dilution this audit measured.",
+     "recommendation": "Sequence new guides next to clusters that already have traction or index coverage: (1) hair-loss Rx and birth-control telehealth cost, which share the Hims/Ro provider set with the ED page; (2) STD testing cost and mammogram/X-ray cost without insurance, extending the labs and imaging clusters Google already indexes; (3) direct primary care membership cost, enriching /primary_care; (4) clear aligners vs Invisalign cost, extending dental; (5) OTC hearing aids cost. Publishing gate: one guide per distinct query intent (map against existing guides first), at least 1,200 unique words, dated verified prices from 5 or more providers, and in-content links from the relevant indexed hub. Release new guides only in sprints that also cut the indexable count (quality-2 to quality-5), so total indexable inventory goes down while quality goes up.",
+     "effort": "L",
+     "confidence": "medium",
+     "affectedCount": 0,
+     "affectedUrls": [
+      "/primary_care",
+      "/labs",
+      "/imaging",
+      "/dental",
+      "/mens-health",
+      "/womens-health"
+     ],
+     "handVerified": false
+    }
+   ]
+  },
+  "onpage": {
+   "summary": "The basic on-page structure is solid: every page has exactly one H1, and none of the 798 indexable prerendered pages has a missing or duplicate meta description. Guide titles mostly lead with the query and carry real price anchors. The SERP-snippet layer has three problems with strong evidence behind them. (1) On Sep 19 (b1e6e6b), after the Bing window in which its CTR rose from 0.69% to 8.26%, the title and description of the #1 traffic page (/guides/online-ed-treatment) were replaced with a longer, generic version. This was not documented, and no data has been collected since. (2) The pages with the most impressions turn them into clicks very poorly: Function Health 0.14% at position 7, against LASIK's 3.30% at the same position; Ro 0.61%; MRI 0.60%, down from 1.61% at a stable position. Function's problem is mainly a brand-navigation query, so a title rewrite can only help so much. (3) Freshness is visibly decaying. 34 titles still say 2024 or 2025, and 126 pages show 'verified/updated December 2024' stamps. 153 titles hard-code '2026' across 152 source files, so they will all go stale on Jan 1, 2027. Template-level issues add to this: a ' | VitalityScout' suffix pushes 271 titles past 65 characters; 795 of 798 pages inherit the homepage og:title, og:description and og:url, with no og:image anywhere; and the category-hub and provider templates produce thin, sometimes misleading or duplicated snippets. Limits: no Bing or Google data exists after Sep 15, and no Bing query rows exist for Ro, LASIK, allergy or full-body MRI. CTR causes and the effect of the Sep 19 change are therefore hypotheses until fresh data is pulled.",
+   "strengths": [
+    "Exactly one H1 on every page, and no missing or duplicate meta descriptions across 798 indexable prerendered pages.",
+    "Guide titles use title.absolute without the brand suffix (average 56 characters; only 22 of 214 exceed 65). They lead with the query phrase and carry concrete price anchors, e.g. 'Quest vs Labcorp Prices (2026): Self-Pay From $29', where title and H1 match exactly.",
+    "Title, H1 and slug line up closely on all 8 pages with 300+ Bing impressions. The low CTR is not caused by a keyword mismatch.",
+    "The ED page is a freshness model to copy: a visible 'Prices checked September 17, 2026' byline, cited sources (ED_SOURCES), and Article dateModified tied to the ED_VERIFIED_AT constant in src/lib/ed-offers.ts. Do not change its URL or H1.",
+    "Priority guides show 'Last updated: June 2026' and carry MedicalWebPage + FAQPage JSON-LD.",
+    "The homepage WebSite JSON-LD declares name 'VitalityScout', which supports Google's separate site-name display, so the brand suffix can safely be dropped from long titles.",
+    "796 pages have correct self-canonicals, and the deliberate noindex on /traditional-healthcare/* and /health-systems/* keeps thin pages out of the index. Keep both.",
+    "The /dexa to /dexa-scans 308 consolidation (next.config.mjs:8) is in place."
+   ],
+   "openQuestions": [
+    "No Bing or Google data exists after Sep 15, 2026, so the effect of the Sep 19 ED title change cannot be measured. Pull Bing GetPageStats/GetQueryStats for /guides/online-ed-treatment for the Sep 19 to Oct 18 buckets before making further changes.",
+    "Which titles do Bing and Google actually display for the priority URLs (title rewriting), and what do the competing SERPs for 'mri cost without insurance' and 'ro weight loss' look like? A manual SERP review is needed before blaming titles for low MRI CTR, as the baseline doc warns.",
+    "Bing has no query rows for Ro, LASIK, allergy or full-body MRI. How much of Ro's 5,551 impressions come from brand-navigation queries such as 'ro weight loss' or 'ro body'?",
+    "Can verified offer data still support the '$20-$90/mo' range from the old ED title, or should the restored title rely only on brand names?",
+    "Does VitalityScout have referral or affiliate relationships with Function, Ro or Hims? That decides whether words like 'independent' may appear in snippets. The rewrites above deliberately leave it out.",
+    "Can the 74 provider records last verified in 2024-12 be re-verified, or should they be hidden or removed from price claims?"
+   ],
+   "findings": [
+    {
+     "id": "onpage-1",
+     "title": "The #1 traffic page's title and description were replaced after its CTR breakout; the change is undocumented and unmeasured",
+     "severity": "high",
+     "category": "serp-snippet",
+     "evidence": "OBSERVED: commit b1e6e6b (2026-09-19 12:40 -0700) changed src/app/guides/online-ed-treatment/page.tsx:24-25. Title went from 'Online ED Treatment (2026): $20-$90/mo, Hims vs Ro vs BlueChew' (62c, ~605px est. Arial 20px) to 'Online ED Treatment (2026): Providers, Prices & Prescription Options' (68c, ~618px, likely truncated on desktop). The description dropped 'Online ED treatment' and the price range. The old title was set Aug 3 (23d36a6). The Bing buckets Aug 21-Sep 11, when that old title was live, show 247 clicks / 2,992 impressions (8.26% CTR, position 4.37), against 7 / 1,014 (0.69%) in the Jul 24-Aug 14 buckets. Live fetch via Vercel MCP confirms the new title is in production. The H1 did not change ('How to Get ED Treatment Online: A 2026 Guide'). docs/growth/release-2026-09-19.md gives no reason for the snippet change. Observed queries are commercial and brand-agnostic: 'order ed pills online' 71 impr, 'ed treatment online' 30, 'cheapest online ed treatment' 31, 'sildenafil online' 7. Also OBSERVED: the page overrides only openGraph, so twitter:title and twitter:description are still the homepage text and og:site_name is missing. HYPOTHESIS: dropping the brand comparison and making the title longer could lower CTR on the only page with real traction. The Bing data cannot confirm or rule this out.",
+     "impact": "This page produces most site traffic: 247 Bing clicks per 4 weekly buckets and 784 of 1,220 weekly PostHog pageviews. A CTR regression here would be the biggest possible traffic loss, and so far nobody is monitoring for one.",
+     "recommendation": "Low-risk change: keep the URL, the H1 and the page's core intent. Restore the elements that were live during the traction window, using only verified figures. Title (57c, ~548px): 'Online ED Treatment (2026): Hims vs Ro vs BlueChew Prices'. Description (156c): 'Compare online ED treatment from Hims, Ro, BlueChew and Lemonaid vs a generic sildenafil pharmacy fill. Prescription required; prices checked Sept 17, 2026.' Leave '$20-$90/mo' out unless src/lib/ed-offers.ts supports it; current verified anchors are the $11.61 Cost Plus 30-tablet fill and BlueChew 6-tablet SIL $30 plus shipping. Add twitter {title, description} next to openGraph at lines 22-27. Pull Bing GetPageStats and GetQueryStats for this URL covering Sep 19 to now. Log every snippet change with its date in docs/growth so the weekly Bing buckets before and after can be compared. Set a revert rule: if CTR falls more than about 25% at a similar position over 2+ buckets, go back to the Aug 3 title.",
+     "effort": "S",
+     "confidence": "medium",
+     "affectedCount": 1,
+     "affectedUrls": [
+      "/guides/online-ed-treatment"
+     ],
+     "handVerified": true
+    },
+    {
+     "id": "onpage-2",
+     "title": "Pages with high impressions and very low CTR need intent-matched snippets, with a realistic view of brand-navigation queries",
+     "severity": "high",
+     "category": "serp-snippet",
+     "evidence": "OBSERVED (docs/growth/baseline-2026-09-17.json, Bing current page buckets, every page with 300+ impressions): Function Health review 8,756 impr / 12 clicks / 0.14% / pos 7. Ro weight-loss cost 5,551 / 34 / 0.61% / pos 6. ED 2,992 / 247 / 8.26% / pos 4.37. MRI without insurance 1,997 / 12 / 0.60% / pos 5. LASIK 788 / 26 / 3.30% / pos 7. How to read blood test results 560 / 0 / 0% / pos 8.02. Full-body MRI 524 / 3 / 0.57% / pos 5.61. Allergy testing 362 / 19 / 5.25% / pos 3.26. At the same position 7, LASIK converts 23x better than Function. The query row 'function health' (7,712 impr, 7 clicks, pos 7) is a bare brand-navigation query, about 88% of the page's impressions. 'how to read a blood test' has 354 impr at pos 8.96 and 0 clicks. The Aug 3 meta rewrites (23d36a6) put prices into titles. Afterwards CTR fell at stable positions on MRI (1.61% -> 0.60%; title 'Cash-Pay Price Guide' -> '$400-$2,800 Cash Prices'), full-body MRI (1.96% -> 0.57%; 'Prenuvo, Ezra, SimonMed' -> 'Prenuvo $2,499, Ezra $999') and Function (0.33% -> 0.14%). ED rose. Correlation only, and the prior buckets partly overlap the change. Ro, LASIK, allergy and full-body MRI have no query rows. Title, H1 and slug already match closely on all 8 pages. Also OBSERVED: /guides/function-health-review does not link to /guides/function-vs-superpower-cost, which has only 2 in-content inbound links.",
+     "impact": "About 20,500 impressions across these 8 pages earn 353 clicks, and 247 of those come from ED. Snippet changes are the cheapest available test for more clicks from rankings the site already holds. The baseline doc warns against blaming titles for low MRI CTR without checking the SERP first, so treat these rewrites as measured experiments.",
+     "recommendation": "Change one page per week and log the dates. Proposed rewrites (lengths are characters / estimated px):\n| URL | Bing impr/clicks/CTR/pos | Current title | Proposed title | Proposed description |\n|---|---|---|---|---|\n| /guides/function-health-review | 8,756/12/0.14%/7 | Function Health Review (2026): $365/Year, Is It Worth It? (57c) | Function Health Review (2026): Worth $365 vs Superpower? (56c/539px) | Function Health review: what $365/yr buys (160+ Quest lab tests), what costs extra, accuracy, HSA/FSA, and how it compares with Superpower and cheaper panels. (158c) |\n| /guides/ro-body-weight-loss-cost | 5,551/34/0.61%/6 | Ro Weight Loss Cost (2026): Ro Body Membership + GLP-1 (54c) | Ro Weight Loss Cost (2026): $149/mo Plus GLP-1 Medication (57c/550px) | Ro Body is $39 the first month, then $149/mo; GLP-1 medication is billed separately (Zepbound about $299-$449/mo cash). See all-in monthly totals vs Hims. (154c) |\n| /guides/online-ed-treatment | 2,992/247/8.26%/4.37 | see onpage-1 | Online ED Treatment (2026): Hims vs Ro vs BlueChew Prices (57c/548px) | see onpage-1 (156c) |\n| /guides/mri-cost-without-insurance | 1,997/12/0.60%/5 | MRI Cost Without Insurance (2026): $400-$2,800 Cash Prices (58c) | MRI Cost Without Insurance (2026): Prices by Body Part (54c/500px) | Cash MRI prices by body part: knee/extremity ~$400-$1,800, spine, brain, with vs without contrast, and imaging center vs hospital. How to get a real quote. (155c) |\n| /guides/lasik-cost-usa | 788/26/3.30%/7 | LASIK Cost Without Insurance (2026): $2,250 Per Eye Average (59c) | KEEP | KEEP (works; commercial-fit review later per baseline) |\n| /guides/how-to-read-blood-test-results | 560/0/0%/8.02 | How to Read Blood Test Results: CBC, CMP, A1c & More (52c) | How to Read a Blood Test: CBC, CMP & A1c Normal Ranges (54c/546px) | How to read a blood test line by line: what CBC, CMP, lipid, A1c and thyroid results mean, typical reference ranges, what H/L flags suggest, and next steps. (156c) |\n| /guides/full-body-mri-scan-cost | 524/3/0.57%/5.61 | Full Body MRI Scan Cost (2026): Prenuvo $2,499, Ezra $999 (57c) | Full Body MRI Cost (2026): Prenuvo vs Ezra vs SimonMed (54c/520px) | Full body MRI costs about $499-$2,499 cash. Prenuvo, Ezra (now Function) and SimonMed compared on coverage, scan time and price, plus what the evidence shows. (158c) |\n| /guides/allergy-testing-cost | 362/19/5.25%/3.26 | Allergy Testing Cost Without Insurance (2026 Price Guide) (57c) | KEEP | optional: Allergy testing without insurance: skin-prick ~$150-$400, allergist-ordered testing $200-$1,000, and at-home kits. What each detects and how accurate it is. (156c) |\nEdit the metadata objects at function-health-review/page.tsx:33, ro-body-weight-loss-cost/page.tsx:32, mri-cost-without-insurance/page.tsx:13, full-body-mri-scan-cost/page.tsx:40 and how-to-read-blood-test-results/page.tsx:11. Re-verify every price in a snippet first (see onpage-9). For Function, report the brand query separately from non-brand queries. Add a prominent in-content link to /guides/function-vs-superpower-cost, and do not expect a title to win much on a navigational 'function health' search.",
+     "effort": "S",
+     "confidence": "medium",
+     "affectedCount": 8,
+     "affectedUrls": [
+      "/guides/function-health-review",
+      "/guides/ro-body-weight-loss-cost",
+      "/guides/mri-cost-without-insurance",
+      "/guides/full-body-mri-scan-cost",
+      "/guides/how-to-read-blood-test-results",
+      "/guides/online-ed-treatment",
+      "/guides/lasik-cost-usa",
+      "/guides/allergy-testing-cost"
+     ],
+     "handVerified": false
+    },
+    {
+     "id": "onpage-3",
+     "title": "Stale years: 34 titles say 2024 or 2025, 126 pages show 'verified/updated Dec 2024' stamps, and 153 hard-coded '2026' titles go stale on Jan 1, 2027",
+     "severity": "high",
+     "category": "freshness",
+     "evidence": "OBSERVED in the built HTML (scratch script work-onpage/years.mjs). Titles: 20 indexable titles contain 2024 and 14 contain 2025, all 34 in the sitemap. Average body is 1,022 words, against 1,848 for all guides. Examples: /faq/glp1, /faq/labs, /faq/hair-transplant, /faq/medical-tourism ('(2024)'); /guides/at-home-lab-testing-guide ('(2024)', a Google-indexed page in the inspection sample); /guides/glp1-weight-loss-complete-guide; /guides/hair-transplant-turkey-guide; /guides/compounded-semaglutide (2025 in the title and H1); /guides/peptide-therapy-guide; /guides/trt-testosterone-therapy (2025). Visible stamps from 2024 or early 2025 appear on 126 indexable pages. On 74 /providers/* pages the template prints 'Last verified: December 2024', plus a disclaimer saying prices are 'estimates ... as of December 2024' (src/app/providers/[slug]/page.tsx:285,300; 74 lastVerified '2024-12' values vs 142 '2026-06' in src/lib/providers-*.ts). 36 guides show 'Last updated December 2024/January 2025'. 11 category hubs print 'Updated Dec 2024' on provider cards ([category]/page.tsx:86; /labs, /glp1, /dental, /fertility, /plastic_surgery, /trt, ...). 5 destination pages print 'Verified 2024-12-01'. Contradiction example: /guides/los-algodones-reviews is titled '(2026 Trust Guide)' but prints 'Provider data last verified: 2024-12-01' four times (page.tsx:229,246,262). Going forward, 153 of 797 titles hard-code '2026' (152 source files); 69 H1s and 94 descriptions also contain 2026. No year constant exists.",
+     "impact": "This is YMYL price content. A 2024 date in a title or a 'verified December 2024' stamp is a visible quality and trust signal for users and raters, and it probably lowers CTR next to fresher results (hypothesis). The same decay will hit 153 titles in about 10 weeks.",
+     "recommendation": "(a) Now: for the 34 titles with stale years, re-verify the content and set the year to 2026, or remove the year where the content has not been re-verified. Start with the indexed /guides/at-home-lab-testing-guide, then the 4 /faq/* pages. (b) Re-verify the 74 legacy provider records or hide the date. The provider and category templates should print 'Last verified' only when lastVerified is less than 12 months old, and otherwise show 'Pricing not re-verified since <date>' and leave the record out of price claims. (c) Add src/lib/seo-year.ts exporting a year derived from each page's verifiedAt, following the existing ED_VERIFIED_AT pattern in src/lib/ed-offers.ts. Titles should build their year from it, and a page should carry a year in its title only if its prices were verified within 6 months. (d) Add a build-time check (a script over .next/server/app/**/*.html or the metadata objects) that fails when a title contains a year earlier than the current one.",
+     "effort": "M",
+     "confidence": "high",
+     "affectedCount": 160,
+     "affectedUrls": [
+      "/guides/at-home-lab-testing-guide",
+      "/faq/glp1",
+      "/faq/labs",
+      "/faq/hair-transplant",
+      "/faq/medical-tourism",
+      "/guides/glp1-weight-loss-complete-guide",
+      "/guides/compounded-semaglutide",
+      "/guides/peptide-therapy-guide",
+      "/guides/trt-testosterone-therapy",
+      "/guides/los-algodones-reviews",
+      "/providers/abbvie",
+      "/labs",
+      "/glp1",
+      "/destinations/mexico"
+     ],
+     "handVerified": false
+    },
+    {
+     "id": "onpage-4",
+     "title": "Title length: 294 of 797 titles exceed 65 characters, mostly because of the brand suffix and programmatic templates",
+     "severity": "medium",
+     "category": "titles",
+     "evidence": "OBSERVED (work-onpage/titles.mjs; 797 = indexable prerendered pages minus /_not-found and /dexa, which 308s at next.config.mjs:8). 294 titles are longer than 65 characters, 454 longer than 60, 349 wider than about 580px and 291 wider than 600px (estimated Arial 20px). 578 titles end with ' | VitalityScout' from metadata.title.template in src/app/layout.tsx:15. 271 of the 294 long titles carry that suffix, and 224 would fit within 65 characters without it. By template: /providers/* 109 over 65 (max 111c: 'Amazon One Medical (On-Demand Care) — Online Doctor & Urgent Care Provider | VitalityScout'); /hormone-therapy/*/* 49 of 49 and /hormone-therapy/* 14 of 14 ('Phoenix TRT & HRT Clinics: 4 Hormone Therapy Options | VitalityScout'); /dexa-scans/* 14 of 14; /weight-loss/* and /weight-loss/*/* 20; /local-clinics/* 14 of 14; /med-spa/*/* 9 of 9; /faq/* 4 of 4; /guides/* 22 (guides use title.absolute and no suffix; max 78c). Nine hubs append ' — 2026 | VitalityScout', e.g. /recovery-tech at 90c / ~844px and /cgm at 84c. /beta repeats the brand ('VitalityScout | Research & Compare ... | VitalityScout'). /local-clinics has two pipes. The homepage WebSite JSON-LD already declares name 'VitalityScout', which Google uses for its separate site-name line. Simulation: appending the suffix only when the total stays at or under 60 characters cuts titles over 65 from 294 to 70 and titles over 575px from 369 to 110. What remains is 41 guides and 41 providers.",
+     "impact": "Truncation mostly cuts the brand or the last qualifier, which costs little. But Google tends to rewrite titles that are too long or templated, so the site loses control of the snippet (hypothesis). The 9 dash-year hubs and the 49 city TRT pages lose their differentiating words.",
+     "recommendation": "Title policy: the full title is 60 characters or fewer and about 575px or narrower. Put the query phrase first, then a concrete differentiator (price, count, named options). Add the brand only when it fits: create a seoTitle(base) helper in src/lib/seo.ts that returns base + ' | VitalityScout' when the total is 60 characters or fewer, and otherwise {absolute: base}. Use it in the generateMetadata of hormone-therapy/[state] (line 33), [state]/[city] (55), dexa-scans/[state] (33) and [city] (80), weight-loss/[state] (37) and [city] (56), med-spa/[state]/[city] (100), local-clinics/*, providers/[slug] (27) and [category] (44). Use a year only on price pages whose data has been verified (onpage-3). Write it as '(2026)' inside the title, never as a trailing '— 2026'. Shorten the templates, e.g. '{City} TRT & HRT Clinics: {n} Options' and 'DEXA Scan {City}: {n} Clinics & Prices'. Fix /beta (also see onpage-10).",
+     "effort": "M",
+     "confidence": "high",
+     "affectedCount": 294,
+     "affectedUrls": [
+      "/providers/amazon-one-medical",
+      "/hormone-therapy/arizona/phoenix",
+      "/dexa-scans/california",
+      "/recovery-tech",
+      "/cgm",
+      "/longevity-rx",
+      "/mens-health",
+      "/beta",
+      "/local-clinics"
+     ],
+     "handVerified": false
+    },
+    {
+     "id": "onpage-5",
+     "title": "Open Graph and Twitter tags: 795 of 798 pages inherit the homepage og:title, og:description and og:url, and no page has an image",
+     "severity": "medium",
+     "category": "social-meta",
+     "evidence": "OBSERVED in the built HTML (work-onpage/og.mjs) and confirmed live on /guides/function-health-review via the Vercel MCP fetch. Every template (home, top-level hubs, guides, providers, the state and city grids, destinations, faq) emits og:title 'VitalityScout — Verified Cash-Pay Health Prices', the same og:description, and og:url 'https://vitalityscout.com' (795 of 798). og:image appears on 0 of 798 pages and twitter:image on 0. twitter:card is 'summary_large_image' on all 798 even though there is no image. Only /guides/online-ed-treatment, /guides/bluechew-cost and /guides/sildenafil-cost-without-insurance set their own openGraph. Even those keep the homepage twitter:title and twitter:description and lose og:site_name, because Next.js merges metadata shallowly. Source: src/app/layout.tsx:27-41. No opengraph-image file exists in src/app, although images exist in public/home and public/destinations.",
+     "impact": "Google ranking impact is small: Google uses rel=canonical, which is correct. But a link shared on Facebook, LinkedIn, Slack or iMessage, or via AI chat previews, shows the homepage card, and Facebook treats og:url as the object ID, so every share counts toward the homepage. Social and referral clicks lose any page-specific preview.",
+     "recommendation": "In src/app/layout.tsx, remove url, title and description from the root openGraph and twitter objects. Keep siteName and type, and add a default images entry: either a 1200x630 /og-default.png, or src/app/opengraph-image.tsx built with next/og ImageResponse. Add a buildMetadata({title, description, path, type, image}) helper in src/lib/seo.ts that returns title, description, alternates.canonical, openGraph {title, description, url, siteName, type, images} and twitter {card, title, description}. Use it in every generateMetadata, starting with the guides and providers/[slug]/page.tsx:23-30. Optionally add per-guide images via app/guides/[slug]/opengraph-image.tsx that renders the H1 and a price anchor.",
+     "effort": "S",
+     "confidence": "high",
+     "affectedCount": 795,
+     "affectedUrls": [
+      "/",
+      "/guides/function-health-review",
+      "/providers/ab-plastic-surgery-seoul",
+      "/hormone-therapy/arizona/phoenix",
+      "/destinations/brazil",
+      "/allergy"
+     ],
+     "handVerified": true
+    },
+    {
+     "id": "onpage-6",
+     "title": "Category hub template: generic 'Compared — Pricing & Reviews' titles with no reviews, 38-68-character tagline descriptions, one-word H1s",
+     "severity": "medium",
+     "category": "templates",
+     "evidence": "OBSERVED: src/app/[category]/page.tsx:44 sets the title to `${cat.name} Compared — Pricing & Reviews` and :45 sets the description to cat.description, a short tagline from CATEGORIES in src/lib/types.ts:124+. The H1 is the bare category name. Results: /dental has title 'Dental Compared — Pricing & Reviews | VitalityScout', H1 'Dental' and description 'Implants, crowns, veneers, and full-mouth restoration' (53c). 19 live category hubs have descriptions under 70 characters (/plastic_surgery 38c, /iv 39c, /hair_transplant 39c, /vision 43c, /fertility 44c, /bariatric 47c, /vo2max 48c, /sleep 54c, /labs 68c, ...); together with 2 providers that accounts for 21 of the 22 sub-70 descriptions (the 22nd is /dexa, which redirects). The pages contain no user reviews or ratings: /labs has 0 star or rating mentions, and its 4 'review' hits are links to guide reviews. Google has started testing these hubs: /sleep 77 impr at pos 64.27, /labs 17 at pos 33.29 (indexed), /dexa (now redirected) 168 at pos 66.67. Underscore slugs (/hair_transplant, /primary_care, /plastic_surgery, /drug_registry) are kept as they are; this is not a recommendation to change them.",
+     "impact": "These hubs sit in the nav of every page, and Google is starting to show them. Their snippets match no query ('Sleep & Apnea Compared'), and 'Reviews' promises content that does not exist, which is an FTC and accuracy risk on YMYL pages and gives searchers a reason to bounce.",
+     "recommendation": "Add optional seoTitle, seoDescription (140-160 characters, with a price range and provider count) and h1 fields to CategoryInfo in src/lib/types.ts, and use them in [category]/page.tsx generateMetadata and in the H1. Remove 'Reviews' from the fallback template, e.g. `${cat.name} Prices: Compare ${n} Cash-Pay Options`. Examples: /labs 'At-Home Blood Test Prices: Compare 15 Lab Testing Services' (58c/~555px); /sleep 'Home Sleep Test Cost Without Insurance: Compare 10 Options' (58c/~564px); /primary_care 'Online Doctor & Urgent Care Prices: Compare 10 Services' (55c/~520px). Check the price ranges against the provider data before publishing. Use H1s such as 'Home Sleep Tests & Sleep Studies: Cash Prices'.",
+     "effort": "M",
+     "confidence": "high",
+     "affectedCount": 20,
+     "affectedUrls": [
+      "/labs",
+      "/sleep",
+      "/dental",
+      "/glp1",
+      "/fertility",
+      "/plastic_surgery",
+      "/hair_transplant",
+      "/primary_care",
+      "/imaging",
+      "/iv",
+      "/vision",
+      "/vo2max",
+      "/bariatric",
+      "/cardiac",
+      "/orthopedic",
+      "/surgery",
+      "/insurance",
+      "/pharma",
+      "/allergy",
+      "/drug_registry"
+     ],
+     "handVerified": false
+    },
+    {
+     "id": "onpage-7",
+     "title": "Five duplicate provider titles come from legacy 2024 records left beside their 2026 re-research; the provider title template also reads badly",
+     "severity": "medium",
+     "category": "duplicates",
+     "evidence": "OBSERVED: the 5 duplicate-title groups are /providers/banobagi + /providers/banobagi-plastic-surgery-seoul, /providers/clinica-tambre + -madrid, /providers/id-hospital + -seoul, /providers/jk-plastic-surgery + -seoul, and /providers/reprofit-international + -brno. Source: src/lib/providers-medical-tourism.ts keeps the legacy records (slugs at lines 1498, 1553, 1578, 3372, 3429; lastVerified '2024-12-01'; 199-213 words) in the same arrays as the 2026-06-11 records (lines 2152, 2182, 2212, 3510, 3626; 323-355 words). Two pairs even share an id: c_1fd221d21f (JK) and c_97de157438 (Tambre). Each clinic therefore appears twice on /destinations/south-korea, /plastic_surgery, /destinations/spain, /destinations/czech-republic and /fertility. Other duplicate H1s: Henry Meds (glp1/trt), PlushCare (primary-care/weight), 'TRT & HRT Clinics in Pasadena' (/hormone-therapy/california/pasadena vs /texas/pasadena), 'GLP-1 Weight Loss Clinics in Pasadena' (CA/TX), and 'in Washington' (/weight-loss/washington-dc/washington vs /weight-loss/washington). Template (providers/[slug]/page.tsx:27) `${name} — ${CATEGORIES[cat].name} Provider` produces awkward titles on 36 pages: 'Insurance Companies Provider' (13), 'Pharmaceutical Companies Provider' (13), 'Drug Registries Provider' (10).",
+     "impact": "Near-duplicate pages compete with each other, and the weaker 2024 version, with its stale 'Last verified: December 2024', can be the one that gets indexed. Showing the same clinic twice on hubs weakens trust in the directory.",
+     "recommendation": "Delete the 5 legacy records and add permanent redirects in next.config.mjs redirects(), e.g. { source: '/providers/banobagi', destination: '/providers/banobagi-plastic-surgery-seoul', permanent: true }, and likewise for the other 4. Add a build assertion that provider ids and names are unique per category. Change the provider title to `${name}${destinationCity ? ', ' + destinationCity : ''}: ${categorySingular} Prices & Services` with a singular label map (e.g. 'Insurance Company', 'Drug Manufacturer'), using seoTitle() from onpage-4. Add the state to city-grid H1s and titles when a city name exists in more than one state (Pasadena CA/TX, Washington DC vs WA).",
+     "effort": "S",
+     "confidence": "high",
+     "affectedCount": 15,
+     "affectedUrls": [
+      "/providers/banobagi",
+      "/providers/clinica-tambre",
+      "/providers/id-hospital",
+      "/providers/jk-plastic-surgery",
+      "/providers/reprofit-international",
+      "/hormone-therapy/texas/pasadena",
+      "/weight-loss/texas/pasadena",
+      "/weight-loss/washington"
+     ],
+     "handVerified": false
+    },
+    {
+     "id": "onpage-8",
+     "title": "282 meta descriptions run past 165 characters; the provider template pastes the full 230-421-character profile",
+     "severity": "medium",
+     "category": "meta-descriptions",
+     "evidence": "OBSERVED: 282 of 798 descriptions are longer than 165 characters (296 longer than 160). By template: /providers/* 226 of 315 (median 231c, max 421c on /providers/shes-plastic-surgery-busan, 53 longer than 300c), because providers/[slug]/page.tsx:28 uses provider.description verbatim. /guides/* 37 (max 269c /guides/semaglutide-cost, 268c /guides/tirzepatide-cost, 263c /guides/thailand-cosmetic-surgery-cost, 257c /guides/ozempic-cost). Hubs 15 (/trt 263c, /longevity-rx 251c, /supplements 226c, /recovery-tech 210c, /peptides 208c, /med-spa 204c, /mens-health 178c). No description is missing and all are unique. Long provider descriptions open with location and history ('Busan-based plastic surgery clinic operating since 2000 on Gwangbok-ro...') and leave out price and procedure.",
+     "impact": "Search engines truncate at roughly 155-165 characters. Price anchors and calls to action placed late in long guide descriptions get cut off, and provider snippets show biography instead of the price or procedure a searcher wants.",
+     "recommendation": "Add metaDescription(provider) in src/lib/seo.ts that builds 140-160 characters from structured fields: `${name} in ${destinationCity}: ${services.slice(0,3).join(', ')}. ${pricingDisplay}. ${accreditations?.[0] ?? ''}`. Trim at a sentence boundary and use it in providers/[slug]/page.tsx:28, keeping the long description in the body. Rewrite the 37 guide and 15 hub descriptions to 160 characters or fewer, keeping the first verified price within the first 120 characters. Add a build check that warns above 160 characters and below 110.",
+     "effort": "M",
+     "confidence": "high",
+     "affectedCount": 282,
+     "affectedUrls": [
+      "/providers/shes-plastic-surgery-busan",
+      "/guides/semaglutide-cost",
+      "/guides/tirzepatide-cost",
+      "/guides/ozempic-cost",
+      "/trt",
+      "/longevity-rx",
+      "/supplements"
+     ],
+     "handVerified": false
+    },
+    {
+     "id": "onpage-9",
+     "title": "The same competitor prices differ between pages, including on the page with the most impressions",
+     "severity": "medium",
+     "category": "content-accuracy",
+     "evidence": "OBSERVED: /guides/function-health-review (8,756 Bing impr) lists SuperPower at '~$199/year' (page.tsx:24; 'checked in June 2026'), and so does the /labs hub ('SuperPower — $199'). Meanwhile /guides/cheapest-blood-test-panels ('as of September 4, 2026, the homepage lists $349') and /guides/function-vs-superpower-cost (title 'Function vs Superpower Cost (2026): $365 vs $349/Year') say $349. /guides/full-body-mri-scan-cost has 'Ezra $999' in its title while the body calls Ezra 'now Function Health'. /guides/los-algodones-reviews carries a 2026 title over provider data verified 2024-12-01.",
+     "impact": "Contradictory prices on YMYL comparison pages hurt credibility with users, raters and AI answer engines. Prices placed in titles or descriptions make stale data more visible and add pressure to keep them right.",
+     "recommendation": "Store each competitor price used in more than one place in a single dated constant module, following the src/lib/ed-offers.ts pattern (e.g. src/lib/lab-membership-offers.ts with SUPERPOWER_ANNUAL_CENTS and a verifiedAt date). Import it into function-health-review, function-vs-superpower-cost, cheapest-blood-test-panels and the /labs card. Put a price in a title or description only when it comes from a constant verified within the last 90 days.",
+     "effort": "S",
+     "confidence": "high",
+     "affectedCount": 5,
+     "affectedUrls": [
+      "/guides/function-health-review",
+      "/labs",
+      "/guides/cheapest-blood-test-panels",
+      "/guides/function-vs-superpower-cost",
+      "/guides/full-body-mri-scan-cost"
+     ],
+     "handVerified": false
+    },
+    {
+     "id": "onpage-10",
+     "title": "Two orphan pages, /beta and /centurioncoach, are indexable without canonicals; /beta's title repeats the brand",
+     "severity": "low",
+     "category": "titles",
+     "evidence": "OBSERVED: /beta has title 'VitalityScout | Research & Compare Cash-Pay Healthcare Providers | VitalityScout' (80c), a 194c description, no canonical, no noindex, is not in the sitemap and has 0 inbound links. /centurioncoach has 'Centurion Coach — AI-Powered Wellness Coaching App | VitalityScout' (66c), no canonical, is not in the sitemap and has 4 inbound links. These are the 2 pages that separate the 798 non-noindexed pages from the 796 that have self-canonicals.",
+     "impact": "Minor. If discovered, /beta duplicates homepage intent and shows a sloppy double-brand snippet.",
+     "recommendation": "Give /beta (src/app/beta/page.tsx) robots { index: false } or a redirect to '/'. Give /centurioncoach a self-canonical and a title of 60 characters or fewer. Also change '/local-clinics' to 'Local Cash-Pay Clinics: DEXA, VO2 Max & IV Therapy' (no second pipe).",
+     "effort": "S",
+     "confidence": "high",
+     "affectedCount": 3,
+     "affectedUrls": [
+      "/beta",
+      "/centurioncoach",
+      "/local-clinics"
+     ],
+     "handVerified": false
+    }
+   ]
+  },
+  "indexation": {
+   "summary": "Nothing technical is stopping Google from indexing the site. Live checks on 20 URLs (the full 12-URL Google inspection sample, 5 random /providers/* pages and 3 random city pages) all came back 200, with no redirect, a self-referencing canonical in both the HTML and the Link header, no meta robots, no X-Robots-Tag, and the H1 and prices present in the server HTML. The live sitemap is byte-identical to the local build: 480 URLs, every one a 200 indexable self-canonical page. Pages Google has indexed and pages it has not look technically the same, so the 'Discovered – currently not indexed' state is a crawl-priority and site-quality problem. The biggest fixes are structural. First, shrink the low-value indexable inventory: 315 /providers/* pages are indexable and internally linked but left out of the sitemap, and many are thin, stale or off-topic. Second, stop the sitewide navigation sending link equity to noindexed hubs. Third, do the cheap owner actions in Search Console and Bing: request indexing, re-read the sitemap status, automate IndexNow. Smaller problems: www.vitalityscout.com is not attached to the Vercel project, so it cannot redirect to the apex. The sitemap has no lastmod even though 441 of its 480 pages carry a dateModified. /search is an indexable page rendered fresh for every query. /dexa is still linked from 48 pages. On coverage, from this lens: don't open new URL families (city grids, provider pages) until the priority URLs leave 'Discovered'. Expand by deepening clusters Google already indexes (labs, DEXA) and the pages with Bing traction.",
+   "strengths": [
+    "Live robots.txt returns 200, allows all, declares the sitemap and blocks no rendering assets. No X-Robots-Tag on any fetched URL.",
+    "Live sitemap.xml (480 URLs) is byte-identical to the build. Every URL is a 200 indexable self-canonical page, with no noindexed or redirected entries. The ≥3-clinic index bar is shared between the templates and the sitemap through src/lib/indexability.ts. There is no fake build-time lastmod.",
+    "Self-canonical rel=canonical on all indexable pages, plus a matching Link header. The .vercel.app production alias returns 308 to the apex (observed live).",
+    "Main content is server-rendered: H1, prices and provider lists are in the SSR HTML on all 20 sampled URLs. The client-side bailout template sits after </main> on all 925 pages.",
+    "Real 404 status across all route types (/[category], /providers/[slug], static), with no soft-404 templates. Case variants return 404, a trailing slash returns 308 to the non-slash URL, and no internal links carry query strings, so there are no duplicate URL variants.",
+    "/dexa and /destinations are permanent 308 redirects to /dexa-scans and /medical-tourism. /destinations has 0 internal links.",
+    "The noindex,follow pruning is deliberate and consistent: 95 traditional-healthcare pages, 21 health-systems pages, 7 thin grid cities and 2 persona hubs are all excluded from the sitemap and still crawlable.",
+    "Production is current with main (ab5f870). The ED guide's URL and H1 were preserved, as the baseline requires."
+   ],
+   "openQuestions": [
+    "The Google URL-inspection sample is 31 days old (Sep 17) and predates the Sep 19 home-page link to the ED guide. What is each of the 12 URLs' state now? No GSC credentials here.",
+    "What does the GSC Sitemaps report show for 'Last read' and discovered/indexed counts? /mens-health being 'unknown to Google' while in the sitemap suggests the sitemap has not been reprocessed recently.",
+    "How many referring domains does the site have? The crawl-demand/authority hypothesis cannot be tested without backlink data.",
+    "Do any /providers/* or /insurance|/pharma|/drug_registry URLs earn Bing impressions or clicks? Only the top 12 Bing pages are in the baseline. Check before noindexing.",
+    "What does www.vitalityscout.com actually return to a browser (Vercel DEPLOYMENT_NOT_FOUND 404 or a TLS error)? Egress to the domain is blocked here.",
+    "Has Bing Webmaster recorded a recent sitemap fetch, and which of the two IndexNow keys was used for the Sep 19 submission?"
+   ],
+   "findings": [
+    {
+     "id": "indexation-1",
+     "title": "Google's 'Discovered – not indexed' is not a technical block: all 20 live-sampled URLs are clean, so the gap is crawl priority / site quality",
+     "severity": "high",
+     "category": "crawl-prioritization",
+     "evidence": "OBSERVED via mcp__Vercel__web_fetch_vercel_url on 2026-10-18; raw results saved in /tmp/claude-0/-home-user-cashpay-health-directory/7cdb4e41-ce5f-5b38-abd4-c5de37c73a16/scratchpad/audit/work-indexation/live/ and parsed by analyze-live.mjs into live-analysis.json. Every row below: status 200, final URL equals the requested URL, rel=canonical is self (home is 'https://vitalityscout.com', and its Link header is the same URL with a trailing slash), meta robots none, X-Robots-Tag none, Link: <self>; rel=\"canonical\", H1 present in the server HTML, x-vercel-cache HIT, age 25-26 days, HTML identical to the local ab5f870 build once scripts are stripped. Columns are URL | Google state on Sep 17 | count of $ figures in the server HTML | server-HTML words. / | indexed | 0 | 369. /guides/online-ed-treatment | Discovered | 19 | 1619. /mens-health | unknown to Google | 65 | 1721. /guides/mri-cost-without-insurance | Discovered | 62 | 2477. /guides/full-body-mri-scan-cost | Discovered | 58 | 2840. /guides/at-home-lab-testing-guide | indexed | 9 | 768. /guides/quest-vs-labcorp-pricing | indexed | 87 | 2259. /guides/cheapest-blood-test-panels | indexed | 87 | 2289. /guides/blood-test-without-a-doctor | Discovered | 17 | 1546. /guides/function-health-review | Discovered | 32 | 1696. /labs | indexed | 30 | 844. /dexa-scans | indexed | 10 | 707. /providers/elevance-anthem | 1 | 259. /providers/instituto-de-benito-barcelona | 2 | 316. /providers/calibrate | shows '$199/mo' | not counted. /providers/phi-beauty-clinic-phuket | 8 | 404. /providers/reprofit-international | 1 | 213. /hormone-therapy/california/san-francisco | 6 | 724. /hormone-therapy/texas/pasadena | 4 | 523. /dexa-scans/texas/austin | 25 | 940. A BAILOUT_TO_CLIENT_SIDE_RENDERING template appears on all 925 prerendered pages, but it always sits after </main>, so main content is never client-only. Indexed and unindexed pages are technically indistinguishable: the indexed at-home-lab-testing guide has 768 words and the unindexed ED guide has 1,619. All six Discovered/unknown pages have existed since at least 2026-06-25 (git). The Sep 17 inspection lists only the sitemap as their discovery source, with no reported crawl. Context: commit b7fcbe3 (2026-07-09) recorded 'Google indexed 0/871 sitemap URLs'. The domain was added to Vercel on 2025-12-21. /mens-health is in the sitemap and linked from 84 pages, yet Google reported it as 'unknown'. HYPOTHESIS: Google's crawl demand is low because a young YMYL domain has weak authority (backlink data not available here) and a large share of thin, stale or off-topic indexable pages (see indexation-2 and indexation-10). The ED guide's home-page link was added on Sep 19 (b1e6e6b), two days after the inspection, so its current state is unknown.",
+     "impact": "Google brings 0 clicks per 28 days against Bing's 936. The pages with proven Bing demand (ED, position ~4.4, 247 clicks; MRI) are not in Google's index at all, so more technical tweaks will not move Google.",
+     "recommendation": "(1) Owner, in Search Console (no credentials in this environment): use URL Inspection to request indexing for /guides/online-ed-treatment, /mens-health, /guides/mri-cost-without-insurance, /guides/full-body-mri-scan-cost, /guides/blood-test-without-a-doctor and /guides/function-health-review. Six URLs fits within the daily quota. (2) Open GSC Sitemaps, record 'Last read' and the discovered count for https://vitalityscout.com/sitemap.xml, and resubmit it. (3) Re-run the same 12-URL inspection now with the existing reporting service account and log the state changes. Add sitemap lastDownloaded and the indexed count to the weekly scorecard in docs/growth-measurement.md. (4) Pull the site-level quality levers instead of more technical work: indexation-2 (providers), indexation-3 (navigation equity) and indexation-10 (thin hubs). (5) Freeze new URL families (city grids, provider pages) until at least the ED and MRI guides leave 'Discovered'.",
+     "effort": "M",
+     "confidence": "medium",
+     "affectedCount": 6,
+     "affectedUrls": [
+      "/guides/online-ed-treatment",
+      "/mens-health",
+      "/guides/mri-cost-without-insurance",
+      "/guides/full-body-mri-scan-cost",
+      "/guides/blood-test-without-a-doctor",
+      "/guides/function-health-review"
+     ],
+     "handVerified": false
+    },
+    {
+     "id": "indexation-2",
+     "title": "315 /providers/* pages send mixed signals: indexable and linked but left out of the sitemap, about 40% of the indexable inventory, and largely thin, stale or off-topic",
+     "severity": "high",
+     "category": "index-bloat",
+     "evidence": "OBSERVED: 315 provider pages are prerendered with self-canonicals and no noindex, yet src/app/sitemap.ts leaves them out. Rationale found in git: commit b7fcbe3 (2026-07-09) says 'providers/[slug]: prerender all 315 (were on-demand SSR, never crawled); removed from sitemap to focus crawl budget on money pages'. The sitemap.ts comment instead claims they carry 'unique editorial rather than directory-grid value'. They are still linked: inbound links min 1 / median 2 / max 48, with 179 links from /destinations/* plus links from category hubs. Leaving a linked URL out of the sitemap does not stop Google crawling it. They make up 315 of ~796 indexable URLs. Profile (prov.mjs, output in providers.json in the work dir): words min 157 / median 294 / max 532, with 164 under 300. 74 show 'Last verified: December 1, 2024'. 36 are off-mission reference listings: 13 'Insurance Companies', 13 'Pharmaceutical Companies', 10 'Drug Registries' (e.g. /providers/elevance-anthem, 259 words). Their hubs /insurance, /pharma and /drug_registry (239 words) are in the sitemap and linked from the footer on about 600 pages. 38 on-topic providers are also verified Dec 2024. Live /providers/calibrate: 'Prices shown are estimates based on our research as of December 2024'. No provider page has BreadcrumbList. The template uses a one-line custom footer ('315 providers and counting') instead of <Footer />. 168 providers fail at least one of: off-topic, under 300 words, verified in 2024. The remaining 147 are mostly Plastic Surgery (59), Dental (28) and Fertility (26). The Sep 17 baseline has no provider page in its Google or Bing page rows.",
+     "impact": "Hundreds of indexable, templated, partly 22-month-stale YMYL pages plausibly drag down Google's site-level quality judgment and crawl demand (hypothesis). Meanwhile the sitemap omission saves no meaningful crawling, because the pages are linked.",
+     "recommendation": "Make robots and the sitemap agree with one rule. Add isProviderIndexable(provider) to src/lib/indexability.ts. It returns false for the categories insurance, pharma and drug_registry, for missing pricing/'Our Take' content (or a word proxy under ~300), and for lastVerified older than 12 months. In src/app/providers/[slug]/page.tsx generateMetadata, return robots {index:false, follow:true} when it is false. In src/app/sitemap.ts, add the providers that pass (~147 today). Also noindex /insurance, /pharma and /drug_registry, drop them from the sitemap and remove the footer 'Healthcare Resources' column. Re-verify or noindex the 38 on-topic Dec-2024 providers. Add BreadcrumbList and the standard <Footer /> to the provider template. Before shipping, pull Bing GetPageStats for /providers/* to confirm none earn clicks. Use noindex rather than deletion, in line with the baseline guardrail against deleting groups of pages.",
+     "effort": "M",
+     "confidence": "high",
+     "affectedCount": 315,
+     "affectedUrls": [
+      "/providers/elevance-anthem",
+      "/providers/calibrate",
+      "/providers/reprofit-international",
+      "/insurance",
+      "/pharma",
+      "/drug_registry"
+     ],
+     "handVerified": false
+    },
+    {
+     "id": "indexation-3",
+     "title": "Sitewide navigation sends its strongest links to noindexed hubs, and 'Care by State' dead-ends in noindexed pages",
+     "severity": "high",
+     "category": "internal-links",
+     "evidence": "OBSERVED (inventory plus live /lose-weight check, which returns meta robots 'noindex, follow'). 924 of 925 prerendered pages link to /traditional-healthcare (top nav 'By State', src/components/Navigation.tsx:13), /lose-weight and /balance-hormones (sidebar section headers, src/components/SidebarNav.tsx:19-20). All three are noindex,follow. /care-by-state is also in the sitewide sidebar (923 inbound) and in the sitemap, but it has 156 words, and 50 of its 51 content links go to noindexed /traditional-healthcare/<state> pages. Its map also uses JS router.push to /traditional-healthcare/<slug> (src/components/UsStateMap.tsx:23-25). Of 27,109 unique page-to-target internal links from indexable pages, 2,501 (9.2%) point at noindexed pages. The indexable state grids get little: median inbound links for /dexa-scans/[state] is 2, for /dexa-scans/[state]/[city] 3, for /med-spa/[state] 5.5. The other sidebar hubs are thin too: /test-diagnose 313 words, /live-longer 283, /look-better 275, /treat-see-doctor 294.",
+     "impact": "The most-repeated internal links (about 900 pages each) feed pages Google is told not to index. Long-term noindex links lose their pass-through value, so money pages and indexable state/city grids get less internal PageRank and fewer discovery paths.",
+     "recommendation": "Navigation.tsx:13: point 'By State' at /care-by-state. SidebarNav.tsx:19-20: map the 'Lose Weight' and 'Balance Hormones' headers to indexable hubs such as /glp1 or /weight-loss and /trt or /hormone-therapy. The alternative is to make /lose-weight and /balance-hormones the indexable hubs with real content and repoint the duplicates; choose one. Rebuild /care-by-state as an indexable hub. For each state, link the indexable grids first (/weight-loss/<state>, /hormone-therapy/<state>, /dexa-scans/<state>, /med-spa/<state> and their ≥3-clinic cities) and the noindexed traditional-healthcare page second. Make the map's state targets plain <a href> to those indexable pages. Re-measure the noindex link share with the inventory script; target under 2%.",
+     "effort": "M",
+     "confidence": "high",
+     "affectedCount": 924,
+     "affectedUrls": [
+      "/traditional-healthcare",
+      "/lose-weight",
+      "/balance-hormones",
+      "/care-by-state"
+     ],
+     "handVerified": false
+    },
+    {
+     "id": "indexation-4",
+     "title": "www.vitalityscout.com is not attached to the Vercel project, so the middleware's www to apex 308 can never run",
+     "severity": "medium",
+     "category": "host-consolidation",
+     "evidence": "OBSERVED: https://cashpay-health-directory.vercel.app/ returned 308 to https://vitalityscout.com/ (the share param was added by the fetch tool), so that half of the fix works. For www: mcp__Vercel__list_project_domains(prj_cDE9EsHY4g0UfIs2JdsPmJq8jaqk) returns only vitalityscout.com and cashpay-health-directory.vercel.app. list_aliases(domain=www.vitalityscout.com) returns 0. DNS has a wildcard '*' ALIAS to cname.vercel-dns-017.com, so www resolves to Vercel, but no deployment owns it. web_fetch_vercel_url(https://www.vitalityscout.com/...) failed at stage lookup_deployment, status 404, 'The deployment could not be found'. The middleware comment (src/middleware.ts) assumes www is served and redirected. The raw browser response for www (Vercel 404 or a TLS error) could not be observed because egress to the domain is blocked.",
+     "impact": "Any visitor, bookmark or external backlink using www gets an error instead of a 308, losing traffic and link equity. The size of the loss is unknown because there is no backlink data.",
+     "recommendation": "In Vercel, Project > Settings > Domains, add www.vitalityscout.com with 'Redirect to vitalityscout.com' and a 308 status. Optionally do the same for beta.vitalityscout.com if the /beta rewrite in middleware is still wanted. Then verify www returns 308 with Location https://vitalityscout.com/<path>.",
+     "effort": "S",
+     "confidence": "medium",
+     "affectedCount": 1,
+     "affectedUrls": [
+      "https://www.vitalityscout.com/"
+     ],
+     "handVerified": false
+    },
+    {
+     "id": "indexation-5",
+     "title": "The sitemap is valid but carries no lastmod even though 441 of 480 pages already have a JSON-LD dateModified; priority and changefreq are uniform",
+     "severity": "medium",
+     "category": "sitemap",
+     "evidence": "OBSERVED: live /sitemap.xml returns 200, application/xml, x-vercel-cache HIT, age 26 days, no X-Robots-Tag. It has 480 <loc>, byte-identical to .next/server/app/sitemap.xml.body. All 480 are prerendered, indexable and self-canonical, and none is noindexed or redirected. There are 0 <lastmod>. changefreq/priority pairs: weekly/0.8 on 227 URLs, monthly/0.6 on 144, monthly/0.7 on 58, weekly/0.9 on 30, monthly/0.8 on 20, weekly/1 on 1. Of the 480 sitemap pages, 441 have a JSON-LD dateModified (19 distinct dates, not build-time stamps). Some lag the real edit: /guides/mri-cost-without-insurance shows dateModified 2026-06-25 but its source changed on 2026-09-19 (git); the ED guide correctly shows 2026-09-17.",
+     "impact": "Google ignores priority and changefreq. Without lastmod, Google and Bing get no recrawl hint when priority pages change (e.g. the Sep 19 ED/MRI updates), which slows re-evaluation of unindexed pages.",
+     "recommendation": "Create one per-page 'lastReviewed' source, for example exported from each guide's metadata or a map in src/lib/. Use it for both the JSON-LD dateModified and lastModified in src/app/sitemap.ts, so the dates stay accurate and update only on substantive edits. Fix the MRI guide's date. changefreq and priority can be dropped (harmless either way). Keep the current rule that noindexed and redirected URLs never enter the sitemap.",
+     "effort": "S",
+     "confidence": "high",
+     "affectedCount": 480,
+     "handVerified": false
+    },
+    {
+     "id": "indexation-6",
+     "title": "IndexNow is ad hoc while Bing drives almost all traffic: two key files, one recorded manual ping, nothing on deploy",
+     "severity": "medium",
+     "category": "bing-indexnow",
+     "evidence": "OBSERVED: public/4017d7ed5db00a6391d105d883ec2112.txt (added 8ebd179, 2026-07-21) and public/47bfd1b01dec4c2b8aad20aab81e68a7.txt (added 1a8463a, 2026-08-02) both return 200 live. Searching the repo for 'indexnow' finds no script, workflow or hook. The only submission on record is docs/growth/release-2026-09-19.md: 9 paths accepted with HTTP 200 at 2026-09-19 19:46:22 UTC. The Bing baseline shows 936 clicks per 28 days (prior 349) and 792 indexed URLs on Sep 13. The last production deploy was dpl_FNKbYyDg6xNFh165k364XydL3291 (ab5f870, 2026-09-22), and nothing has been committed since then (26 days).",
+     "impact": "The engine that actually sends traffic (Bing, plus DuckDuckGo and Yahoo via Bing) only learns about updates when someone remembers to ping. That is a missed cheap win for the growth loop.",
+     "recommendation": "Add scripts/indexnow-ping.mjs. It should fetch the live sitemap after each production deploy, diff it against the previous deploy's URL plus lastmod set (stored as a build artifact, or by checking git-changed routes), and POST changed URLs to https://api.indexnow.org/indexnow with one key and keyLocation. Run it from a GitHub Action on push to main after Vercel reports Ready, or from a Vercel deploy hook. Delete one of the two key files. In Bing Webmaster, confirm the sitemap shows a recent 'Last crawled' date.",
+     "effort": "S",
+     "confidence": "high",
+     "affectedCount": 2,
+     "affectedUrls": [
+      "/4017d7ed5db00a6391d105d883ec2112.txt",
+      "/47bfd1b01dec4c2b8aad20aab81e68a7.txt"
+     ],
+     "handVerified": false
+    },
+    {
+     "id": "indexation-7",
+     "title": "/search is an indexable page rendered fresh for every query, with no meta robots and no HTML canonical",
+     "severity": "low",
+     "category": "crawl-traps",
+     "evidence": "OBSERVED live: https://vitalityscout.com/search returns 200 with cache-control 'private, no-cache, no-store', x-vercel-cache MISS and x-matched-path /search. It has no <meta name=robots> and no <link rel=canonical> (only the middleware Link header to /search). Title 'Search Results | VitalityScout' with the generic sitewide description. src/app/search/page.tsx renders results from searchParams.q on the server, and its metadata is only {title}. It is linked from 924 pages (nav). SearchBar.tsx:14 and SearchAutocomplete.tsx:79 use router.push('/search?q=…'), so no ?q= links appear in the HTML. Excluded from the sitemap (correct).",
+     "impact": "Low today. Any external link to /search?q=<anything> creates a crawlable 200 page that is rendered on every hit, which Google's guidelines say should be kept out of the index.",
+     "recommendation": "In src/app/search/page.tsx, set metadata robots {index:false, follow:true} and alternates.canonical '/search'. Keep it out of the sitemap. Don't block it in robots.txt, because that would hide the noindex.",
+     "effort": "S",
+     "confidence": "high",
+     "affectedCount": 1,
+     "affectedUrls": [
+      "/search"
+     ],
+     "handVerified": false
+    },
+    {
+     "id": "indexation-8",
+     "title": "404s return a real 404 status, but they carry a self-canonical Link header, use the bare Next default page, and 4 internal links point at missing pages",
+     "severity": "low",
+     "category": "error-handling",
+     "evidence": "OBSERVED live, all with a true 404 status (no soft 404s): /oncology (x-matched-path /[category], meta robots noindex), /guides/this-page-does-not-exist-xyz (x-matched-path /404, two <title> tags: '404: This page could not be found.' and the site default), /providers/nonexistent-provider-xyz (meta noindex) and /Guides/Online-ED-Treatment (no case-variant duplicate). Every 404 still carries 'Link: <https://vitalityscout.com/<path>>; rel=\"canonical\"', because src/middleware.ts sets the header on every GET. The body is Next's default 'This page could not be found.' with no navigation, and the dynamic-route 404s render an empty <body> before hydration. Broken internal targets from link-targets-not-prerendered.json: /oncology (from /destinations/india), /hair-transplant (from /guides/hair-transplant-grafts-guide), and /centurioncoach/privacy and /centurioncoach/terms (from /centurioncoach).",
+     "impact": "Minor. A canonical on an error page is a contradictory signal, and the dead-end 404 wastes crawler and visitor paths.",
+     "recommendation": "Add src/app/not-found.tsx with <Navigation />, <Footer /> and links to the main hubs. That also fixes the duplicate title. In middleware, either drop the Link header (the HTML canonical is enough) or limit it to known route prefixes. Fix the links: /oncology to /cardiac or the relevant guide in the India destination data, and /hair-transplant to /hair_transplant. Remove or create the /centurioncoach legal pages.",
+     "effort": "S",
+     "confidence": "high",
+     "affectedCount": 4,
+     "affectedUrls": [
+      "/oncology",
+      "/hair-transplant",
+      "/centurioncoach/privacy",
+      "/centurioncoach/terms"
+     ],
+     "handVerified": false
+    },
+    {
+     "id": "indexation-9",
+     "title": "The /dexa to /dexa-scans permanent redirect still has 48 internal links pointing at the old URL",
+     "severity": "low",
+     "category": "redirects",
+     "evidence": "OBSERVED: .next/routes-manifest.json has /dexa to /dexa-scans and /destinations to /medical-tourism, both statusCode 308, plus a trailing-slash 308. Live fetches of /dexa and /destinations landed on /dexa-scans and /medical-tourism with self-canonicals; the fetch tool follows redirects, so the 308 code comes from the manifest. Live /vo2max/ resolved to /vo2max. In inventory allLinksOut, 48 prerendered pages link /dexa (including /, /labs, /iv, /vo2max, /test-diagnose and all 33 /dexa-scans/* pages) and 0 link /destinations. Sources: src/lib/nav-tree.ts:14, src/components/home/CategoryGrid.tsx:37, src/app/page.tsx:41 and :58, and the providers/[slug] back link `/${provider.category}` for bodyspec and dexafit (category 'dexa').",
+     "impact": "Each internal hop through a redirect wastes crawl and dilutes signals to the DEXA page Google has already indexed. It also keeps the retired /dexa URL in circulation; /dexa had 168 Google impressions before the consolidation.",
+     "recommendation": "Change those four hrefs to /dexa-scans. In src/app/providers/[slug]/page.tsx, map category 'dexa' to '/dexa-scans' for the back link. Keep the 308 in next.config.mjs.",
+     "effort": "S",
+     "confidence": "high",
+     "affectedCount": 48,
+     "affectedUrls": [
+      "/",
+      "/labs",
+      "/test-diagnose",
+      "/providers/bodyspec",
+      "/providers/dexafit"
+     ],
+     "handVerified": false
+    },
+    {
+     "id": "indexation-10",
+     "title": "Thin hubs, an orphan page and stale 'Coming Soon' copy in sitemap pages read as low-quality or soft-404 signals; two utility pages are indexable with no canonical",
+     "severity": "medium",
+     "category": "soft-404-quality",
+     "evidence": "OBSERVED (inventory and texts.jsonl). Sitemap pages under 300 words: /vo2max 91 words (linked from the footer on 579 pages), /care-by-state 156, /for-clinics 196 (0 inbound links, an orphan), /drug_registry 239, /destinations/dubai 241, /longevity/california 245, /longevity/texas 269, /longevity/florida 273, /look-better 275, /iv 276, /live-longer 283, /treat-see-doctor 294, /local-clinics 298, plus 5 city grids at 281-292 words. Copy contradicted by live pages: src/app/dexa-scans/page.tsx:183-185 says 'More Cities Coming Soon… expanding city coverage to Austin, Dallas, New York City, Denver, and Seattle', yet all five city pages are in the sitemap. src/app/weight-loss/page.tsx:443-445 and src/app/hormone-therapy/page.tsx:316-318 say 'expanding coverage to California, New York', yet /weight-loss/california, /weight-loss/new-york, /hormone-therapy/california and /hormone-therapy/new-york exist. /longevity/texas lists 'Next Health Houston (Coming 2025)'. /beta (0 inbound) and /centurioncoach (an off-topic promo for a coaching app) are indexable with no canonical and are not in the sitemap.",
+     "impact": "For a YMYL site in a low-crawl-demand state, visibly stale or empty hubs that the whole site links to undermine Google's quality and freshness judgment (hypothesis). Some of these pages work as soft-404 candidates.",
+     "recommendation": "Remove or rewrite the three stale 'Coming Soon' blocks so they link the live cities and states. Enrich /vo2max, /care-by-state (see indexation-3) and /iv to a real comparison standard, or set noindex,follow and drop them from the sitemap until they meet it. Add /for-clinics to EXCLUDED_STATIC_ROUTES in src/app/sitemap.ts, or link it from the footer. Set noindex on /beta and /centurioncoach via their page metadata. Update or noindex the /longevity/<state> pages.",
+     "effort": "M",
+     "confidence": "high",
+     "affectedCount": 20,
+     "affectedUrls": [
+      "/vo2max",
+      "/care-by-state",
+      "/for-clinics",
+      "/drug_registry",
+      "/dexa-scans",
+      "/weight-loss",
+      "/hormone-therapy",
+      "/longevity/texas",
+      "/beta",
+      "/centurioncoach"
+     ],
+     "handVerified": false
+    }
+   ]
+  },
+  "schema": {
+   "summary": "The structured data is syntactically clean: 0 JSON-LD parse errors across 803 pages with markup, and every @type and property validates against schema.org (schema-dts 2.1.0) except TravelGuide, which is not a schema.org type, and one stray property. No aggregateRating or Review markup exists anywhere. Structured data does not explain Google's indexing gap: the \"Discovered – currently not indexed\" URLs have not been fetched yet, so no markup on them has been read. Treat this lens as trust and hygiene work, not as an indexing lever. The serious problems are about accuracy, which matters on health (YMYL) pages: 144 MedicalWebPage blocks claim reviewedBy \"VitalityScout Editorial Team\", which the site's own /editorial-policy contradicts. All 315 /providers/* pages, including Pfizer, UnitedHealthcare and the FDA's own databases, are typed MedicalBusiness (a LocalBusiness subtype), and 129 of them have no address at all. Template-wide hardcoded dateModified values disagree with the \"verified Jul 2026\" dates shown on the same pages. Beyond accuracy, there are gaps in the site-level entity setup: there is no Organization node, the Article publisher logo returns 404 in production, no Article has an image, and BreadcrumbList is on 43 of about 799 indexable pages even though 242 pages already show a breadcrumb trail.",
+   "strengths": [
+    "Zero aggregateRating, Review or Rating nodes in any JSON-LD, despite 880 third-party rating fields in src/data. This complies with Google's review-snippet rules; keep it that way.",
+    "0 JSON-LD parse errors across 803 pages with markup. Every @type and property validates against the schema.org vocabulary (schema-dts 2.1.0) except TravelGuide, SearchAction query-input (a Google extension, fine) and one medicalSpecialty.",
+    "183 of 200 FAQPage blocks mirror the visible Q&A verbatim, mostly through the shared buildFAQSchema in src/lib/jsonLd.ts (172 files).",
+    "The Price Index Dataset and the ED guide take their dates from data (indexAsOf, ED_VERIFIED_AT). The ED guide's Article author 'VitalityScout research' matches /editorial-policy. Use these as the model for every template.",
+    "146 pages carry citation arrays (845 sources) that match visible 'Sources & References' sections. All 140 MedicalWebPage.mainEntity -> FAQPage @id references resolve on-page.",
+    "No affiliate or tracking parameters in any of the 997 external URLs in the JSON-LD; schema URLs point to official provider pages.",
+    "Live production serves the same JSON-LD as the local build (checked /providers/pfizer). Middleware adds a Link rel=canonical header, and the home WebSite name is consistent ('VitalityScout')."
+   ],
+   "openQuestions": [
+    "Is there a real, named person (the owner as editor, or a licensed clinician) willing to be shown as author or reviewer with a bio page? Without one, Person author and reviewedBy markup must stay off per /editorial-policy.",
+    "Are there official brand profiles (LinkedIn, X, Crunchbase) to list in Organization.sameAs?",
+    "Should the 36 non-provider entities (13 insurers, 13 pharma companies, 10 drug or government databases) stay as /providers/* pages in a cash-pay directory at all? Removing or noindexing them is simpler than re-typing them.",
+    "No GSC credentials are available, so I could not check the Enhancements reports (Breadcrumbs, FAQ, Dataset, Unparsable structured data) or whether Google has parsed markup on the 6 indexed sample URLs. That data would confirm the impact of schema-4, schema-5 and schema-6.",
+    "The repo clone is shallow (history from 2026-06-25). Earlier dates were checked only for the weight-loss city template via the GitHub API; true first-publish dates for the 29 round-dated guides need GitHub history."
+   ],
+   "findings": [
+    {
+     "id": "schema-1",
+     "title": "reviewedBy 'VitalityScout Editorial Team' and lastReviewed on 144 YMYL pages are invisible, unbacked, and contradict the site's own editorial policy",
+     "severity": "high",
+     "category": "structured-data-trust / E-E-A-T",
+     "evidence": "OBSERVED: 144 MedicalWebPage blocks carry reviewedBy {Organization 'VitalityScout Editorial Team'} plus lastReviewed (141 guide page.tsx files, plus src/app/[category]/page.tsx:160-161 (/dexa), src/app/trt/page.tsx:103-104 and src/app/price-index/page.tsx:319-320); find them with `grep -rln reviewedBy src`. On all 145 pages that have lastReviewed, it equals dateModified, so it records the authoring date, not a separate review. The phrase 'Editorial Team' appears in the visible body text of 0 pages (texts.jsonl). No Person reviewer exists anywhere (hasAuthorPerson = 0). /editorial-policy (published 2026-09-17) states: '\"VitalityScout research\" ... does not mean the page has been reviewed by a clinician. A clinical review is identified only when an actual reviewer and credentials are displayed.' The newer ED guide follows that policy (Article, author 'VitalityScout research', no reviewedBy). The 141 older guides do not; these include priority URLs /guides/mri-cost-without-insurance, /guides/full-body-mri-scan-cost and /guides/quest-vs-labcorp-pricing.",
+     "impact": "On a MedicalWebPage, reviewedBy plus lastReviewed claims a medical review took place. Google's structured-data policies forbid marking up content that is not visible and content that misrepresents the page. On YMYL pages this is the kind of signal that can lead to a manual action or a site-level loss of trust. It also contradicts the site's published policy, which raters and AI answer engines can read. There is no rich-result upside to keeping it, because MedicalWebPage has no Google search feature.",
+     "recommendation": "Delete reviewedBy and lastReviewed from all 144 blocks now. Keep dateModified. The fix is a mechanical edit across the files `grep -rln reviewedBy src` returns, plus [category], trt and price-index. Re-add them only for a real, named reviewer who is shown on the page, as the editorial policy requires. For example: \"reviewedBy\":{\"@type\":\"Person\",\"name\":\"<real name>, MD\",\"url\":\"https://vitalityscout.com/reviewers/<slug>\",\"hasCredential\":{\"@type\":\"EducationalOccupationalCredential\",\"credentialCategory\":\"MD\"}},\"lastReviewed\":\"<actual review date>\". Also show a visible 'Medically reviewed by …' line, generated from the same data. Until then, use the ED guide's pattern: author 'VitalityScout research', no reviewedBy.",
+     "effort": "S",
+     "confidence": "high",
+     "affectedCount": 144,
+     "affectedUrls": [
+      "/guides/mri-cost-without-insurance",
+      "/guides/full-body-mri-scan-cost",
+      "/guides/quest-vs-labcorp-pricing",
+      "/guides/best-at-home-lab-tests",
+      "/price-index",
+      "/trt",
+      "/dexa"
+     ],
+     "handVerified": true
+    },
+    {
+     "id": "schema-2",
+     "title": "All 315 /providers/* pages use MedicalBusiness (a LocalBusiness subtype), including pharma companies, insurers, FDA/NIH databases and telehealth brands; 129 have no address",
+     "severity": "high",
+     "category": "structured-data-semantics",
+     "evidence": "OBSERVED: src/lib/jsonLd.ts buildProviderSchema() hardcodes '@type':'MedicalBusiness' for every provider. Provider data (transpiled from src/lib/providers*.ts) breaks down as: 13 insurers (UnitedHealthcare, Aetna…), 13 pharma companies (Pfizer, Eli Lilly…), 10 drug registries (Drugs@FDA, FDA Orange Book, DailyMed, ClinicalTrials.gov, GoodRx…), 74 telehealth_national/state_limited brands, 21 hybrid, 40 in_person_local, and 180 in_person_destination clinics (179 outside the US). Of the 315 MedicalBusiness nodes, 129 have no address, 186 have no streetAddress, and 7 have no addressCountry. Example: /providers/panama-city-surgery-center has addressLocality 'Panama City' with no country, but the data says 'Panama City, FL', so it can be confused with Panama City, Panama, a destination the site covers. Live https://vitalityscout.com/providers/pfizer serves {\"@type\":\"MedicalBusiness\",\"name\":\"Pfizer\",\"hasCredential\":[{\"credentialCategory\":\"FDA approved\"}…],\"priceRange\":\"Varies by drug\"}. The node also has no @id and no WebPage wrapper, and the VitalityScout page itself is not described. 11 priceRange strings are over 100 characters (max 175). /telehealth also types the site's own directory as a MedicalBusiness ('Telehealth Services Directory').",
+     "impact": "This is a correctness and trust problem, not a ranking lever. Google's LocalBusiness markup expects a physical business with an address. These nodes are ignored or flagged, and they describe a pharma company or a government database as a local medical business. The 315 pages are about 40% of the indexable URL set, so the inaccuracy repeats at scale on thin pages (avg 292 words) that are already weak.",
+     "recommendation": "Change buildProviderSchema to choose the type from category and deliveryModel. Add an optional `schemaType` override field to Provider in src/lib/types.ts. Mapping: insurance and pharma (26) → 'Corporation'. drug_registry (10) → no business type; use a WebPage whose about is {\"@type\":\"Dataset\" or \"WebSite\",\"name\":…,\"publisher\":{\"@type\":\"GovernmentOrganization\",\"name\":\"U.S. Food and Drug Administration\"}}, or drop these from /providers entirely. Telehealth (about 65) → 'MedicalOrganization'. Multi-location US chains such as BodySpec, RadNet and IV franchises (about 28) → 'MedicalOrganization'. Destination clinics → 'Dentist' (about 42), 'Hospital' (about 22, names containing Hospital), 'MedicalClinic' (about 116). Use ISO addressCountry codes and fill addressRegion for US cities. Wrap each node in an @graph like this: {\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https://vitalityscout.com/providers/pfizer#webpage\",\"url\":\"https://vitalityscout.com/providers/pfizer\",\"name\":\"Pfizer — Pharma Provider\",\"isPartOf\":{\"@id\":\"https://vitalityscout.com/#website\"},\"about\":{\"@id\":\"https://vitalityscout.com/providers/pfizer#entity\"},\"dateModified\":\"<provider.lastVerified>\"},{\"@type\":\"Corporation\",\"@id\":\"https://vitalityscout.com/providers/pfizer#entity\",\"name\":\"Pfizer\",\"url\":\"https://www.pfizer.com\",\"description\":\"…\"}]}. Put accreditations in hasCredential only as {\"@type\":\"EducationalOccupationalCredential\",\"name\":\"JCI accreditation\",\"recognizedBy\":{\"@type\":\"Organization\",\"name\":\"Joint Commission International\"}}, and only when the accreditation has been verified. Drop credentials like 'FDA approved' attached to a company.",
+     "effort": "M",
+     "confidence": "high",
+     "affectedCount": 315,
+     "affectedUrls": [
+      "/providers/pfizer",
+      "/providers/united-healthcare",
+      "/providers/fda-drugs",
+      "/providers/dailymed",
+      "/providers/panama-city-surgery-center",
+      "/providers/fountain-life",
+      "/telehealth"
+     ],
+     "handVerified": false
+    },
+    {
+     "id": "schema-3",
+     "title": "Hardcoded template dateModified values contradict visible 'verified' dates and git history; 55 sitemap URLs carry pre-2026 dates",
+     "severity": "high",
+     "category": "freshness-integrity",
+     "evidence": "OBSERVED (git history is shallow, back to 2026-06-25; older history from the GitHub API): (a) src/app/weight-loss/[state]/[city]/page.tsx:95 and [state]/page.tsx:82 hardcode dateModified '2026-02-01'. The same value appears on 69 weight-loss and 63 hormone-therapy pages. The weight-loss city template was created 2026-02-02 and received verified pricing on 2026-07-12 (+29 lines) and 2026-07-21. /weight-loss/texas/houston shows 'verified from clinic site · Jul 2026' while its JSON-LD says 2026-02-01. (b) med-spa (12 pages) hardcode 2026-06-13, but the city template changed on 2026-07-21 (+85 and +28 lines) and /med-spa/texas/dallas shows 'Jul 2026'. dexa-scans (33 pages) hardcode 2026-06-10, but the template changed on 2026-07-12 (+30). (c) src/app/destinations/[destination]/page.tsx:928 hardcodes '2024-12-21' on 14 pages, but the template gained provider tables on 2026-06-25 (+69) and 2026-07-13. (d) /guides/compounded-semaglutide has schema datePublished = dateModified = 2025-01-01 and visible 'Last updated: January 2025', yet its text describes the FDA's February 2025 shortage resolution, so the date is demonstrably wrong. In total, 55 sitemap URLs (36 guides, 14 destinations, 5 longevity) declare dateModified before 2026, and 29 guides use round placeholder datePublished values (16× '2024-12-01', 13× '2025-01-01'). By contrast, guide-level hardcoded dates track commits to within ±2 days (only 14 of 213 have a substantive commit after the declared date).",
+     "impact": "Mismatched dates on YMYL pricing pages weaken trust. Google uses structured and visible dates in snippets and to judge freshness. Stale 2024 dates on medical-tourism and GLP-1 pages tell searchers the content is out of date. Hardcoded constants also mean the dates never move when the data does. The sitemap has no <lastmod> (sitemap.json), so the site sends no reliable freshness signal anywhere.",
+     "recommendation": "Add src/lib/page-dates.ts and make it the single source for dateModified in JSON-LD, the visible 'Updated' line, and sitemap <lastmod> (src/app/sitemap.ts). For city, state and destination templates, compute the max of clinic lastVerified and pricing asOf for that page's rows. src/app/price-index/page.tsx already does this with indexAsOf; copy that pattern. For guides, keep explicit dates, but add a CI check that fails when a guide's page.tsx changes by 15 or more lines without a dateModified bump. Fix compounded-semaglutide's dates, then review it for content. Leave untouched 2024 pages honestly dated, but queue them for content refresh rather than bumping dates without a real change.",
+     "effort": "M",
+     "confidence": "high",
+     "affectedCount": 187,
+     "affectedUrls": [
+      "/weight-loss/texas/houston",
+      "/hormone-therapy/texas/houston",
+      "/med-spa/texas/dallas",
+      "/dexa-scans/arizona/phoenix",
+      "/destinations/mexico",
+      "/guides/compounded-semaglutide",
+      "/guides/glp1-weight-loss-complete-guide",
+      "/longevity/california"
+     ],
+     "handVerified": false
+    },
+    {
+     "id": "schema-4",
+     "title": "No sitewide Organization entity; Article publisher logo URL returns 404 in production; three different names for the publisher",
+     "severity": "medium",
+     "category": "entity / knowledge-graph",
+     "evidence": "OBSERVED: no top-level Organization node exists on any page, including / (home has only WebSite+SearchAction) and src/app/layout.tsx. The site has 440 inline name-only Organization objects with no @id, using three names: 'VitalityScout', 'VitalityScout research', 'VitalityScout Editorial Team'. 22 Articles set publisher.logo to https://vitalityscout.com/logo.png. Fetching it live with mcp__Vercel__web_fetch_vercel_url returned status 404, served by the /[category] route (x-matched-path /[category]) with meta robots noindex. public/ contains no logo file (only the inline SVG in src/components/Logo.tsx). No og:image exists on any guide. There are no sameAs or social profiles, and no About or Contact page among the 925 prerendered URLs. /editorial-policy has 572 inbound links but no JSON-LD.",
+     "impact": "Google cannot connect the brand entity, logo and publishing principles across pages. The Article logo enhancement fails because the logo URL is a broken image. Search results get no brand logo and no knowledge-panel signals. For a new YMYL publisher with Google at 0 clicks, a clear and consistent publisher entity is one of the few low-cost trust signals available.",
+     "recommendation": "Export LogoMark as public/logo.png (512×512, which meets Google's minimum of 112 px). Emit on the home page (src/app/page.tsx): {\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://vitalityscout.com/#organization\",\"name\":\"VitalityScout\",\"url\":\"https://vitalityscout.com\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://vitalityscout.com/logo.png\",\"width\":512,\"height\":512},\"publishingPrinciples\":\"https://vitalityscout.com/editorial-policy\",\"description\":\"Independent directory comparing published US cash-pay healthcare prices.\"},{\"@type\":\"WebSite\",\"@id\":\"https://vitalityscout.com/#website\",\"name\":\"VitalityScout\",\"url\":\"https://vitalityscout.com\",\"inLanguage\":\"en-US\",\"publisher\":{\"@id\":\"https://vitalityscout.com/#organization\"}}]}. Add sameAs only for real profiles. Replace every inline publisher and author Organization with {\"@id\":\"https://vitalityscout.com/#organization\"} (author can stay 'VitalityScout research' as a named Organization with the same url). Give /editorial-policy an AboutPage node.",
+     "effort": "S",
+     "confidence": "high",
+     "affectedCount": 803,
+     "affectedUrls": [
+      "/",
+      "/editorial-policy",
+      "/guides/peptide-therapy-guide",
+      "/guides/botox-cost-guide",
+      "https://vitalityscout.com/logo.png"
+     ],
+     "handVerified": true
+    },
+    {
+     "id": "schema-5",
+     "title": "FAQPage on 200 pages earns no Google rich results; 17 pages have schema Q&A that differs from the visible Q&A",
+     "severity": "medium",
+     "category": "faq-schema",
+     "evidence": "OBSERVED (faqcheck.mjs over all 200 FAQPage pages, not just a sample): 183 pages mirror every question and answer verbatim (1,108 questions in total; most built with buildFAQSchema in src/lib/jsonLd.ts). 12 guides hand-write a separate faqJsonLd that does not match the visible FAQ: 35 of 57 questions are not on the page as written, and the answers are longer. Example: /guides/hungary-dental-cost Q1 schema answer is 530 characters, while the visible answer is about 230 characters with different wording. Affected guides: brazil-plastic-surgery-cost, colombia-plastic-surgery-cost, costa-rica-cosmetic-surgery-cost, czech-ivf-cost, hungary-dental-cost, korea-plastic-surgery-cost, los-algodones-reviews, panama-dental-cost, spain-ivf-cost, stem-cell-knees-mexico, stem-cell-therapy-cost, thailand-cosmetic-surgery-cost. The 5 /faq pages (src/app/faq/page.tsx and the glp1, hair-transplant, labs, medical-tourism subpages) pass condensed answer strings to buildFAQSchema that differ from the richer visible <details> answers (38 answers). Duplication across pages is low: 15 questions repeat, mostly the DEXA city guides.",
+     "impact": "Since August 2023, Google shows FAQ rich results only for well-known government and health authority sites. As of mid-2026 that limit still applies as far as I know, and VitalityScout does not qualify, so the Google benefit is about zero. The remaining value is with Bing, which drives 936 clicks per 28 days, and with AI answer extraction. That value is real but small, and it depends on the markup matching the page. On the 17 drifting pages, the structured data includes text that is not visible, which breaks Google's content guidelines and grows with every edit.",
+     "recommendation": "Keep FAQPage where it mirrors the page exactly, since it costs little and helps Bing. Fix the 17 pages by keeping one `const FAQS=[{question,answer}]` array per page and rendering both the visible list and buildFAQSchema(FAQS) from it. A shared <FaqSection items={FAQS}/> component that outputs both makes drift impossible. Add a build-time check that every Question.name appears in the rendered HTML. Do not add FAQ blocks to new templates purely for schema, and do not expect Google FAQ snippets in reporting.",
+     "effort": "S",
+     "confidence": "high",
+     "affectedCount": 17,
+     "affectedUrls": [
+      "/guides/hungary-dental-cost",
+      "/guides/brazil-plastic-surgery-cost",
+      "/guides/stem-cell-knees-mexico",
+      "/guides/stem-cell-therapy-cost",
+      "/guides/los-algodones-reviews",
+      "/faq",
+      "/faq/glp1"
+     ],
+     "handVerified": false
+    },
+    {
+     "id": "schema-6",
+     "title": "BreadcrumbList on only 43 of about 799 indexable pages, though 242 pages already render a visible multi-level trail",
+     "severity": "medium",
+     "category": "breadcrumbs",
+     "evidence": "OBSERVED (bc.mjs over the built HTML): 43 pages have BreadcrumbList JSON-LD, each written inline in its own page.tsx; there is no shared component in src/components or src/lib. 242 indexable pages render a visible trail without the markup: 84 guides with a 'Home / Guides / …' text trail, 3 guides with aria breadcrumbs (e.g. /guides/bluechew-cost), 55 /weight-loss/*/*, 49 /hormone-therapy/*/*, 19 /dexa-scans/*/*, 9 /med-spa/*/*, 14 /local-clinics/*, and 9 compare hubs (/mens-health, /cgm, /skincare…). Another 354 pages have only a '← Back to X' link: 315 providers, 14 destinations, 21 guides and 4 /faq pages. About 64 guides have no trail at all.",
+     "impact": "BreadcrumbList is one of the few Google rich results this site is eligible for. It shows on desktop results; since January 2025 mobile results show only the domain. It also gives Google and Bing an explicit hierarchy, which matters while Google is still deciding which of 480 sitemap URLs to crawl. 315 provider pages that are absent from the sitemap would gain a machine-readable parent.",
+     "recommendation": "Create src/components/Breadcrumbs.tsx taking items:{name,href}[]. It should render the visible <nav aria-label=\"Breadcrumb\"> and the matching JSON-LD from the same array: {\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://vitalityscout.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Weight Loss\",\"item\":\"https://vitalityscout.com/weight-loss\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Texas\",\"item\":\"https://vitalityscout.com/weight-loss/texas\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"Houston\"}]}. Roll it out to these templates first: src/app/providers/[slug]/page.tsx (Home > {category.name} > {provider.name}), weight-loss, hormone-therapy, dexa-scans and med-spa [state] and [city], destinations/[destination], CompareCategoryPage.tsx, then the guides. Replace the 43 inline copies.",
+     "effort": "M",
+     "confidence": "high",
+     "affectedCount": 596,
+     "affectedUrls": [
+      "/weight-loss/texas/houston",
+      "/providers/pfizer",
+      "/destinations/mexico",
+      "/guides/all-inclusive-bariatric-surgery-abroad",
+      "/mens-health"
+     ],
+     "handVerified": false
+    },
+    {
+     "id": "schema-7",
+     "title": "Destination pages use a non-existent schema.org type (TravelGuide) with stale 2024 dates and no images",
+     "severity": "medium",
+     "category": "invalid-type",
+     "evidence": "OBSERVED: src/app/destinations/[destination]/page.tsx:923 emits '@type':'TravelGuide' on all 14 /destinations/* pages. Validated against the schema.org vocabulary (schema-dts 2.1.0, validate.cjs), TravelGuide is the only unknown type on the site; schema.org has Guide, TouristDestination and TouristTrip, but no TravelGuide. The node has only name, description, about Country, author, and dateModified '2024-12-21'. No image is set, even though public/destinations/*.jpg holds 14 destination photos. The visible tables say 'Verified 2024'.",
+     "impact": "Validators and search engines drop nodes with an unknown type, so these 14 sitemap URLs effectively have no structured data. They are the hubs for 156 destination clinic listings.",
+     "recommendation": "Replace it with: {\"@context\":\"https://schema.org\",\"@type\":\"MedicalWebPage\",\"@id\":\"https://vitalityscout.com/destinations/mexico#webpage\",\"url\":\"https://vitalityscout.com/destinations/mexico\",\"name\":\"Mexico Medical Tourism Guide\",\"about\":{\"@type\":\"TouristDestination\",\"name\":\"Mexico\",\"containedInPlace\":{\"@type\":\"Country\",\"name\":\"Mexico\"}},\"image\":\"https://vitalityscout.com/destinations/mexico.jpg\",\"author\":{\"@id\":\"https://vitalityscout.com/#organization\"},\"isPartOf\":{\"@id\":\"https://vitalityscout.com/#website\"},\"dateModified\":\"<max provider lastVerified / destination pricing asOf>\"}. An alternative is '@type':'Article'. Add BreadcrumbList (Home > Medical Tourism > Mexico).",
+     "effort": "S",
+     "confidence": "high",
+     "affectedCount": 14,
+     "affectedUrls": [
+      "/destinations/mexico",
+      "/destinations/turkey",
+      "/destinations/india",
+      "/destinations/thailand"
+     ],
+     "handVerified": false
+    },
+    {
+     "id": "schema-8",
+     "title": "Article markup on 56 guides has no image and no Person author; 29 use placeholder datePublished values",
+     "severity": "medium",
+     "category": "article-schema",
+     "evidence": "OBSERVED: 56 Article blocks plus 11 MedicalWebPage blocks with a headline have image = 0. Authors are Organization only: 64× 'VitalityScout' and 3× 'VitalityScout research'. Publishers: 45 name-only, plus 22 with the 404 logo (see schema-4). datePublished counts: 2024-12-01 ×16, 2025-01-01 ×13, 2025-01-03 ×1; for the post-graft guides bluechew-cost and sildenafil-cost-without-insurance, datePublished 2026-09-17 is 2 days before their first commit (2026-09-19). No og:image exists on any guide HTML.",
+     "impact": "Article has no required properties, but missing image and publisher logo limit Google's article enhancements and Discover eligibility. For YMYL, a named, accountable author is a primary E-E-A-T signal, and the site currently names none. Never invent one.",
+     "recommendation": "Add a 1200×630 image per guide, using Next's app/guides/[slug]/opengraph-image.tsx or a static asset. Reference it as \"image\":[\"https://vitalityscout.com/guides/<slug>/opengraph-image\"] and set the matching og:image. If the owner or a real editor will be named, add {\"@type\":\"Person\",\"@id\":\"https://vitalityscout.com/authors/<slug>#person\",\"name\":\"<real name>\",\"url\":\"https://vitalityscout.com/authors/<slug>\",\"jobTitle\":\"Editor\"} with a real bio page. Otherwise keep the Organization author, consistent with the editorial policy. Replace the round placeholder datePublished values with true first-publish dates from git or GitHub history.",
+     "effort": "M",
+     "confidence": "high",
+     "affectedCount": 67,
+     "affectedUrls": [
+      "/guides/online-ed-treatment",
+      "/guides/peptide-therapy-guide",
+      "/guides/trt-testosterone-therapy",
+      "/guides/glp1-weight-loss-complete-guide"
+     ],
+     "handVerified": false
+    },
+    {
+     "id": "schema-9",
+     "title": "Price Index Dataset is valid but missing license, distribution and spatialCoverage",
+     "severity": "low",
+     "category": "dataset",
+     "evidence": "OBSERVED: /price-index carries a Dataset (@id …/price-index#dataset) with name, description, creator, publisher, creditText, isAccessibleForFree, temporalCoverage '2026-07-21', measurementTechnique and 10 PropertyValue variableMeasured entries. It has no license, distribution (DataDownload), spatialCoverage, keywords or version. The dates are data-derived (indexAsOf), which is good, but the latest is still 2026-07-21, about 3 months before today.",
+     "impact": "This page is eligible for Google Dataset Search, and the index is the most citable asset for links and AI answers. Without a license and a download, it ranks lower in Dataset Search and is less reusable.",
+     "recommendation": "In src/app/price-index/page.tsx add: \"license\":\"https://creativecommons.org/licenses/by/4.0/\" (or the owner's chosen terms), \"spatialCoverage\":{\"@type\":\"Country\",\"name\":\"United States\"}, \"keywords\":[\"cash-pay prices\",\"GLP-1 cost\",\"DEXA scan cost\"], \"version\":\"<indexAsOf>\", and \"distribution\":[{\"@type\":\"DataDownload\",\"encodingFormat\":\"text/csv\",\"contentUrl\":\"https://vitalityscout.com/price-index.csv\"}], generated at build from the same store. Set creator and publisher to {\"@id\":\"https://vitalityscout.com/#organization\"}. Refresh the index so temporalCoverage moves forward.",
+     "effort": "S",
+     "confidence": "high",
+     "affectedCount": 1,
+     "affectedUrls": [
+      "/price-index"
+     ],
+     "handVerified": false
+    },
+    {
+     "id": "schema-10",
+     "title": "132 city grid pages use bare MedicalWebPage, although they hold real addresses and verified prices; third-party ratings must never become aggregateRating",
+     "severity": "low",
+     "category": "local-directory-schema",
+     "evidence": "OBSERVED: /weight-loss/*/* (55), /hormone-therapy/*/* (49), /dexa-scans/*/* (19) and /med-spa/*/* (9) emit only MedicalWebPage {name, description, author, dateModified}, with no about, url or item list. The data has real visible street addresses: WeightLossClinic.address is required (src/lib/weightloss-clinic-types.ts:10), e.g. '7373 Old Katy Rd #150, Houston, TX 77024' shown on /weight-loss/texas/houston. Med-spa and DEXA addresses are optional by design ('we do NOT fabricate local business addresses', src/lib/medspa-clinic-types.ts:8). The data also has 880 rating fields, with reviewSource 'Google' ×98 and 'Yelp' ×1, shown visibly as stars; none are in JSON-LD today.",
+     "impact": "This is the one template where local-business markup would be accurate. An ItemList of addressed MedicalClinic entities improves entity understanding for Bing, Google and AI engines on the city 'near me' pages. It is not a rich-result guarantee, since Google's carousels do not cover clinics. Copying the Google or Yelp star ratings into aggregateRating would break Google's review-snippet rules (no ratings aggregated from other sites) and risk a manual action.",
+     "recommendation": "In the four [city] templates, add an ItemList of clinics that have an address: {\"@type\":\"ItemList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"item\":{\"@type\":\"MedicalClinic\",\"name\":\"…\",\"url\":\"<clinic.website>\",\"telephone\":\"<if present>\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"7373 Old Katy Rd #150\",\"addressLocality\":\"Houston\",\"addressRegion\":\"TX\",\"postalCode\":\"77024\",\"addressCountry\":\"US\"}}}]}. Store address components as structured fields rather than parsing strings. Skip chains without an address. Add a lint rule or test that fails if 'aggregateRating' or 'ratingValue' ever appears in JSON-LD.",
+     "effort": "M",
+     "confidence": "medium",
+     "affectedCount": 132,
+     "affectedUrls": [
+      "/weight-loss/texas/houston",
+      "/hormone-therapy/texas/houston",
+      "/dexa-scans/arizona/phoenix",
+      "/med-spa/california/los-angeles"
+     ],
+     "handVerified": false
+    },
+    {
+     "id": "schema-11",
+     "title": "Minor hygiene: duplicate WebSite on /beta with a conflicting SearchAction, an obsolete sitelinks SearchAction, non-numeric Offer prices on /dexa, and ItemLists pointing to external URLs",
+     "severity": "low",
+     "category": "hygiene",
+     "evidence": "OBSERVED: /beta (indexable, no HTML canonical, 0 inbound links, not in the sitemap, title 'VitalityScout | … | VitalityScout') emits a second WebSite node for vitalityscout.com whose SearchAction targets /traditional-healthcare?search={…}, a noindexed section. The home SearchAction targets /search?q=, which returns 200 live. Google retired the sitelinks search box in November 2024. /dexa (indexable, not in the sitemap) has Offer.priceSpecification.price set to strings like '$40-45/scan' instead of numbers, and its FAQ duplicates /dexa-scans. The 9 compare hubs (/mens-health, /cgm, /skincare, /womens-health, /mental-health, /supplements, /recovery-tech, /peptides, /longevity-rx) use ItemList ListItems whose url points to external brand sites (64 items). The only other validation issue is MedicalBusiness.medicalSpecialty on /telehealth, a property MedicalBusiness does not have. No tracking or affiliate parameters were found among the 997 external URLs in the JSON-LD.",
+     "impact": "Low individually. The /beta WebSite node competes with the home page's site-name and entity signals. Malformed Offer prices fail validation if Offer or Product features are ever targeted.",
+     "recommendation": "Noindex /beta or delete its JSON-LD (src/app/beta/page.tsx). Keep or drop the home SearchAction; it does no harm but has no Google value. On /dexa, use \"priceSpecification\":{\"@type\":\"PriceSpecification\",\"minPrice\":40,\"maxPrice\":45,\"priceCurrency\":\"USD\"}, or remove the offers (src/app/[category]/page.tsx:162-167), and settle the /dexa vs /dexa-scans canonical overlap. In CompareCategoryPage.tsx, change ListItems to {\"position\":n,\"item\":{\"@type\":\"Organization\"|\"Product\",\"name\":…,\"url\":<brand url>}}. Change the /telehealth about node to a Thing or Service, not a MedicalBusiness.",
+     "effort": "S",
+     "confidence": "high",
+     "affectedCount": 13,
+     "affectedUrls": [
+      "/beta",
+      "/",
+      "/dexa",
+      "/mens-health",
+      "/cgm",
+      "/telehealth"
+     ],
+     "handVerified": false
+    }
+   ]
+  }
+ }
+}

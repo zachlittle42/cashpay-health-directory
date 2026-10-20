@@ -4,22 +4,26 @@ import path from 'path';
 import { CATEGORIES } from '@/lib/types';
 import { HORMONE_STATES } from '@/lib/hormone-clinic-types';
 import { WEIGHTLOSS_STATES } from '@/lib/weightloss-clinic-types';
-import { getCitiesWithClinics, getHormoneClinicsByState } from '@/data/hormone-clinics-index';
-import { getWeightLossCitiesWithClinics, getWeightLossClinicsByState } from '@/data/weightloss-clinics-index';
+import { getCitiesWithClinics } from '@/data/hormone-clinics-index';
+import { getWeightLossCitiesWithClinics } from '@/data/weightloss-clinics-index';
 import { DEXA_STATES } from '@/lib/dexa-clinic-types';
-import { getDexaCitiesWithClinics, getDexaClinicsByState } from '@/data/dexa-clinics-index';
+import { getDexaCitiesWithClinics } from '@/data/dexa-clinics-index';
 import { MEDSPA_STATES } from '@/lib/medspa-clinic-types';
-import { getMedspaCitiesWithClinics, getMedspaClinicsByState } from '@/data/medspa-clinics-index';
-import { MIN_CLINICS_FOR_INDEX } from '@/lib/indexability';
+import {
+  getMedspaCitiesWithClinics,
+  getMedspaClinicsByCity,
+  countMedspaIndependents,
+} from '@/data/medspa-clinics-index';
+import { gridIndexable, stateGridIndexable } from '@/lib/indexability';
 import { BAYAREA_REGIONS } from '@/lib/bayarea-clinics-data';
 import { SOCAL_REGIONS } from '@/lib/socal-clinics-data';
 
 const baseUrl = 'https://vitalityscout.com';
 
-// Grid pages (weight-loss / hormone-therapy / dexa-scans / med-spa) below
-// MIN_CLINICS_FOR_INDEX are noindexed by their own template's generateMetadata,
+// Grid pages (weight-loss / hormone-therapy / dexa-scans / med-spa) that fall
+// below the index bar are noindexed by their own template's generateMetadata,
 // so the sitemap must not advertise them either (a sitemap should never list a
-// noindexed URL). The threshold is imported from @/lib/indexability so the
+// noindexed URL). Both read the same helpers in @/lib/indexability, so the
 // sitemap and the templates can never drift apart.
 
 // Routes that exist as static pages but should NOT be advertised to crawlers
@@ -143,8 +147,8 @@ function priorityForStatic(route: string): number {
 // ---------------------------------------------------------------------------
 // 2 + 3. DYNAMIC ROUTE ENUMERATION (data-backed, never emits dead URLs)
 // providers/[slug] are omitted (prerendered but non-directory). Grid state/city
-// URLs below MIN_CLINICS_FOR_INDEX clinics are omitted to match the templates'
-// thin-content noindex, so the sitemap never advertises a noindexed URL.
+// URLs below the index bar are omitted to match the templates' thin-content
+// noindex, so the sitemap never advertises a noindexed URL.
 // ---------------------------------------------------------------------------
 function buildDynamicUrls(): string[] {
   const urls: string[] = [];
@@ -183,57 +187,58 @@ function buildDynamicUrls(): string[] {
     urls.push(`/local-clinics/southern-california/${region.slug}`);
   }
 
-  // hormone-therapy/[state] + [state]/[city]. State + city URLs with < 3 clinics
-  // are noindexed by the template, so skip them here too (city.count is the
-  // clinic count for that city).
+  // Grid verticals: list exactly what the templates index. A city is listed
+  // only when gridIndexable(clinic count), and a state only when
+  // stateGridIndexable(its cities' counts) — the same helpers the templates'
+  // generateMetadata uses, so the sitemap never advertises a noindexed URL.
+
+  // hormone-therapy/[state] + [state]/[city]
   for (const state of HORMONE_STATES) {
-    if (getHormoneClinicsByState(state.slug).length >= MIN_CLINICS_FOR_INDEX) {
+    // getCitiesWithClinics returns [] for unwired states → no dead URLs.
+    const cities = getCitiesWithClinics(state.slug);
+    if (stateGridIndexable(cities.map((c) => c.count))) {
       urls.push(`/hormone-therapy/${state.slug}`);
     }
-    // getCitiesWithClinics returns [] for unwired states → no dead URLs.
-    for (const city of getCitiesWithClinics(state.slug)) {
-      if (city.count < MIN_CLINICS_FOR_INDEX) continue;
-      urls.push(`/hormone-therapy/${state.slug}/${city.citySlug}`);
+    for (const city of cities) {
+      if (gridIndexable(city.count)) urls.push(`/hormone-therapy/${state.slug}/${city.citySlug}`);
     }
   }
 
   // weight-loss/[state] + [state]/[city]
   for (const state of WEIGHTLOSS_STATES) {
-    if (getWeightLossClinicsByState(state.slug).length >= MIN_CLINICS_FOR_INDEX) {
+    const cities = getWeightLossCitiesWithClinics(state.slug);
+    if (stateGridIndexable(cities.map((c) => c.count))) {
       urls.push(`/weight-loss/${state.slug}`);
     }
-    // getWeightLossCitiesWithClinics returns [] for unwired states → no dead URLs.
-    for (const city of getWeightLossCitiesWithClinics(state.slug)) {
-      if (city.count < MIN_CLINICS_FOR_INDEX) continue;
-      urls.push(`/weight-loss/${state.slug}/${city.citySlug}`);
+    for (const city of cities) {
+      if (gridIndexable(city.count)) urls.push(`/weight-loss/${state.slug}/${city.citySlug}`);
     }
   }
 
   // dexa-scans/[state] + [state]/[city]
   for (const state of DEXA_STATES) {
-    if (getDexaClinicsByState(state.slug).length >= MIN_CLINICS_FOR_INDEX) {
+    const cities = getDexaCitiesWithClinics(state.slug);
+    if (stateGridIndexable(cities.map((c) => c.count))) {
       urls.push(`/dexa-scans/${state.slug}`);
     }
-    // getDexaCitiesWithClinics returns [] for unwired/empty states → no dead URLs.
-    for (const city of getDexaCitiesWithClinics(state.slug)) {
-      if (city.count < MIN_CLINICS_FOR_INDEX) continue;
-      urls.push(`/dexa-scans/${state.slug}/${city.citySlug}`);
+    for (const city of cities) {
+      if (gridIndexable(city.count)) urls.push(`/dexa-scans/${state.slug}/${city.citySlug}`);
     }
   }
 
-  // med-spa/[state] + [state]/[city]. Only wired states (with >=1 shippable
-  // city) have a real page — the [state] route notFound()s otherwise. City
-  // pages are already pre-filtered to >= 3 clinics by getMedspaCitiesWithClinics,
-  // but keep the guard explicit so the threshold lives in one place.
+  // med-spa/[state] + [state]/[city]. Only independent clinics count toward the
+  // index bar (national-chain stubs are not local listings), matching the
+  // med-spa templates.
   for (const state of MEDSPA_STATES) {
-    const medspaCities = getMedspaCitiesWithClinics(state.slug);
-    if (medspaCities.length === 0) continue;
-    if (getMedspaClinicsByState(state.slug).length >= MIN_CLINICS_FOR_INDEX) {
+    const cities = getMedspaCitiesWithClinics(state.slug).map((c) => ({
+      citySlug: c.citySlug,
+      count: countMedspaIndependents(getMedspaClinicsByCity(state.slug, c.citySlug)),
+    }));
+    if (stateGridIndexable(cities.map((c) => c.count))) {
       urls.push(`/med-spa/${state.slug}`);
     }
-    for (const city of medspaCities) {
-      if (city.count < MIN_CLINICS_FOR_INDEX) continue;
-      urls.push(`/med-spa/${state.slug}/${city.citySlug}`);
+    for (const city of cities) {
+      if (gridIndexable(city.count)) urls.push(`/med-spa/${state.slug}/${city.citySlug}`);
     }
   }
 

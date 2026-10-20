@@ -7,7 +7,7 @@ import Footer from '@/components/Footer';
 import MedicalDisclaimer from '@/components/MedicalDisclaimer';
 import MedspaPriceBadge from '@/components/MedspaPriceBadge';
 import PriceEstimateDisclaimer from '@/components/PriceEstimateDisclaimer';
-import { getMedspaClinicsByCity, getMedspaCitiesWithClinics } from '@/data/medspa-clinics-index';
+import { getMedspaClinicsByCity, getMedspaCitiesWithClinics, countMedspaIndependents } from '@/data/medspa-clinics-index';
 import { MEDSPA_STATES } from '@/lib/medspa-clinic-types';
 import { getMedspaClinicBadgeRows, formatPrice } from '@/lib/pricing';
 import { buildFAQSchema } from '@/lib/jsonLd';
@@ -100,8 +100,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `Med Spas in ${cityName}: Botox, Fillers & Laser Hair Removal`,
     description,
     alternates: { canonical: `/med-spa/${stateSlug}/${citySlug}` },
-    // Thin-content guard: noindex,follow below MIN_CLINICS_FOR_INDEX (see @/lib/indexability).
-    ...gridRobots(clinics.length),
+    // Thin-content guard: only independent clinics count toward the index bar —
+    // national-chain stubs are not local listings (see @/lib/indexability).
+    ...gridRobots(countMedspaIndependents(clinics)),
   };
 }
 
