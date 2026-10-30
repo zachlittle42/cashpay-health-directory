@@ -26,6 +26,15 @@
 - The ED guide's title lost its price/brand anchors in `b1e6e6b` (Sept 19), right after its Bing CTR breakout. Pull fresh Bing data for it before any further snippet change.
 - Next: the "Now" table in the audit, then raise the index bar in `src/lib/indexability.ts`. New guides only in sprints that also cut the indexable count.
 
+### 2026-10-30 Turkey and South Korea medical-tourism journeys rebuilt
+
+- `/destinations/turkey` and `/destinations/south-korea` now render a sourced six-question hub (what people go for, the clinics, prices, what to expect, travel, how to book) from dossiers in `src/lib/destinations/dossiers/`. Each dossier carries 12 (Turkey) and 17 (Korea) provider records stating only what the provider's own pages, the government registry and the press say: registration or licence status, named surgeons and anesthesiologists, published prices, regulator actions and exact booking channels. Nothing is ranked.
+- New components: `DestinationHub`, `JourneyRail` and `JourneyNext` (rail on every Turkey/Korea guide), `src/lib/destinations/journeys.ts`. The Medical Tourism sidebar group is restructured into Start Here, Turkey, South Korea, Other Destinations and By Procedure. Other destinations keep the legacy template.
+- Four new guides: Korea health screening cost (five published hospital menus), Korea dermatology cost (nine published Seoul clinic menus), how to verify a Korean clinic, how to verify a Turkish clinic's health-tourism licence. Existing guides were not rewritten; seven stale "(2024)/(2025)" titles were de-yeared, one broken link fixed, and the Turkey visa box corrected.
+- `npm run test:destinations` enforces that every journey link resolves, every source is https and dated, every number-bearing row cites a source, each dossier has at least 8 clinic profiles with booking channels, and no data-vintage stamps are stale.
+- Research reports with numbered sources are in `docs/research/medical-tourism-2026-10/`. Known data limits: Korea procedure prices outside published menus are agency ranges; Turkey package prices are clinic marketing; Smile Hair Clinic and Hermest could not be matched by brand to the Ministry of Health PDFs; JCI counts were not verified against the JCI directory.
+- Facts to re-check before 2027: Korea K-ETA waiver (expires 2026-12-31), Turkey TÜSKA accreditation deadline (end 2026), Dentakay implant prices (valid to 2026-12-31), Ppeum event prices (expired 2026-10-31).
+
 ### 2026-09-21 Vercel Analytics coverage restored
 
 - The consent gate introduced in `b1e6e6b` (first served by the `b7750c3` production deployment, Ready 2026-09-19T20:01:14Z) mounted Vercel Web Analytics and Speed Insights only after analytics consent. Vercel counted 1,401 visitors in the seven UTC days before September 20 and 2 across September 20-21, while Bing still recorded search clicks and Vercel usage sat near 11% of the Hobby event limit. That was a measurement-coverage change, not a traffic loss or a quota stop.

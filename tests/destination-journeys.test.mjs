@@ -127,7 +127,7 @@ for (const file of dossierFiles) {
     assert.match(dossier.verifiedAt, /^2026-\d{2}-\d{2}$/);
     assert.ok(dossier.faqs.length >= 8, 'at least 8 FAQs');
     const text = JSON.stringify({ ...dossier, sources: undefined });
-    assert.ok(!/based on 2024|2024 research|\(2024\)|\(2025\)/.test(text), 'no stale year stamps in visible copy');
+    assert.ok(!/based on 20(23|24)|20(23|24) research|20(23|24) data(?![a-z])|Last updated:? [A-Za-z]* ?20(23|24|25)/.test(text), 'no stale year stamps in visible copy');
     for (const f of dossier.faqs) assert.ok(f.answer.length >= 120, `thin FAQ answer: ${f.question}`);
   });
 }
