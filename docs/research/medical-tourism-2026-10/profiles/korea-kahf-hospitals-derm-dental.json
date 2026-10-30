@@ -1,0 +1,891 @@
+{
+ "clinics": [
+  {
+   "name": "CHA Fertility Center Seoul Station (CHA University)",
+   "district": "Jung-gu (Seoul Station)",
+   "type": "clinic",
+   "url": "https://seoul.chamc.co.kr/en/aboutus/introduction.aspx",
+   "specialties": [
+    "IVF and IUI",
+    "Recurrent miscarriage clinic",
+    "Male infertility (robotic and minimally invasive surgery)",
+    "Genetic clinic",
+    "Egg and sperm banking (Social Bio Bank)"
+   ],
+   "namedDoctors": "The English staff page (dated 1 March 2026) names 14 fertility physicians including Yoon Tae Ki, Kim You Shin, Kim Hye Ok, Kim Myung Joo, Hwang Yu Im, Yu Eun Jeong, Hur Yun Jung, Kim Ji Hye, Jo Eun-hye and Choi Ji-yeon (infertility and IVF), and Choi Hyun Ji, Kim Eun Jung and Kim Dae Keun (male infertility). Five anesthesiologists are named: Cho Kyung Sook, Sung Nak Soon, Choi Yun Young, Han Soo Jin and Kim Esther. The page lists specialties only; no degrees, board certifications or society memberships are stated.",
+   "credentials": "On the Medical Korea registered list (checked October 30, 2026) as 'CHA Fertility Center - Seoul Station'. On the Medical Korea KAHF accredited page (checked October 30, 2026) as 'CHA University Fertility Center Seoul Station' with KAHF entries for 2017, 2019 and 2021. The center opened in February 2016 on the 2nd and 3rd floors of Seoul Square, per Medical Times. The clinic site claims no other accreditations. Anesthesiologists are listed on staff.",
+   "cautions": "No regulator action, court case or press-reported incident found for the Seoul Station center. Note that 'CHA Fertility Center' in Los Angeles, which faced 2019 embryo mix-up lawsuits reported by NBC News, is a separate US facility and should not be confused with the Seoul clinic [cha-press-nbc].",
+   "publishedPrices": "Not published on its site (checked October 30, 2026). No marketplace range recorded.",
+   "booking": {
+    "channels": "Phone +82-2-2002-0399 (footer) or +82-2-2002-0300 (header); fax +82-2-2002-0427; email seoulcha@chamc.co.kr; web contact form with file attachment at seoul.chamc.co.kr/en/appointments/appointments.aspx. The site says coordinators reply within 24 hours via mobile messenger but does not name the app. Hours are not stated.",
+    "consult": "First visit uses the center's Basic Questionnaire (separate Word forms for men and women) downloaded from the appointments page. Consultation fee, deposit terms and response time are not published.",
+    "languages": "Site in Korean, English, Chinese, Russian, Mongolian and Japanese; on-site global coordinators and a VIP room for foreign patients.",
+    "includes": "Free valet parking and discounted hotel rooms with kitchen units through hotel alliances (stated on site).",
+    "bookingUrl": "https://seoul.chamc.co.kr/en/appointments/appointments.aspx"
+   },
+   "sourceIds": [
+    "cha-site",
+    "cha-staff",
+    "cha-appt",
+    "cha-press-medicaltimes",
+    "cha-press-nbc",
+    "medkorea-portal",
+    "kahf-list"
+   ]
+  },
+  {
+   "name": "HanGil Eye Hospital",
+   "district": "Incheon (Bupyeong-gu)",
+   "type": "eye",
+   "url": "https://hangileye.co.kr/I_eng/02_inter/rev.html",
+   "specialties": [
+    "Cataract and refractive surgery (LASIK)",
+    "Cornea",
+    "Retina",
+    "Glaucoma",
+    "Oculoplastic and orbital surgery",
+    "Pediatric ophthalmology and strabismus"
+   ],
+   "namedDoctors": "The English doctors page lists the Cornea, Cataract and Refractive Surgery Center staff: KyuHyung Jeong (Chairman, MD PhD, Catholic University of Korea), KeeYong Choi and BeomJin Cho (Heads of Medical Dept, MD PhD, Seoul National University), Jae Hyong Park (MD PhD, Catholic University of Korea), SangMok Lee (MD PhD, Seoul National University), YoonJung Ku (MD, Ewha Womans University), TaeKeun Yoo (MD, Yonsei University), KaHye Lee (MD, Dongguk University), plus Inkwon Chung, HaRim So and three residents. Degrees are shown; board certification is not stated. Anesthesiology and Pain Medicine is listed as a department but no anesthesiologist is named. Other centers' doctors do not appear on the page.",
+   "credentials": "Not found in the Medical Korea registered-hospital search under this name (checked October 30, 2026; the search returned facilitators and unrelated clinics). Listed on the Medical Korea KAHF accredited page (checked October 30, 2026) as 'HanGil Eye Hospital' with KAHF (2017~2027) and KOIHA (2011~2027). Korea Biomedical Review (2017) reports it was founded in March 1985 and in June 2011 became the first eye hospital in Korea to receive both Healthcare Organization Accreditation and Eye Hospital Designation from the Ministry of Health and Welfare. The hospital's own English pages state no accreditations in text.",
+   "publishedPrices": "Not published on its site (checked October 30, 2026). The Korean site links to a non-covered fee lookup, which was not readable.",
+   "booking": {
+    "channels": "International Medical Center phone +82-32-717-5726; email hangileye1004@gmail.com; call center 1577-7117 (Korean); online consultation form at hangileye.co.kr/I_eng/02_inter/rev_1.html. Hours Monday to Friday 08:30 to 17:00, Saturday 08:30 to 13:00, closed Sunday (Korea time). KakaoTalk and WhatsApp are not listed.",
+    "consult": "Send a copy of your ID or passport before inquiring, plus records and test results from your home provider. Steps: request, pre-appointment consultation, confirmation, visit, registration, doctor. Fee, deposit and response time are not published.",
+    "languages": "English site plus Russian and Chinese versions. Non-medical interpretation is routed through BBB Korea (1588-5644). Korea Biomedical Review (2017) says Russian or English translators are available on request and most international patients came from CIS countries.",
+    "bookingUrl": "https://hangileye.co.kr/I_eng/02_inter/rev_1.html"
+   },
+   "sourceIds": [
+    "hangil-intl",
+    "hangil-doctors",
+    "hangil-press-koreabiomed",
+    "kahf-list",
+    "medkorea-portal"
+   ]
+  },
+  {
+   "name": "Sejong Hospital (Bucheon Sejong Hospital and Incheon Sejong Hospital)",
+   "district": "Bucheon, Gyeonggi-do and Gyeyang-gu, Incheon",
+   "type": "hospital",
+   "url": "https://international.sejongh.co.kr/",
+   "specialties": [
+    "Cardiology and cardiac surgery (CABG, TAVI, heart transplant)",
+    "Pediatric and congenital heart disease",
+    "Stroke and cerebrovascular",
+    "Spine and joint",
+    "Bariatric and metabolic surgery",
+    "Comprehensive health screening"
+   ],
+   "namedDoctors": "Not named on the international site; the doctor directory pages load only a search box and department list (Cardiovascular Center, Heart Transplant Center, Cardiology, Cardiovascular and Thoracic Surgery). Anesthesiologists not named.",
+   "credentials": "On the Medical Korea registered list (checked October 30, 2026) as 'Incheon Sejong Hospital'; the Bucheon hospital was not found under its own name in the registered search. Both appear on the Medical Korea KAHF accredited page (checked October 30, 2026) as 'Sejong Hospital(bucheon)' and 'Sejong Hospital(Incheon)', each showing KOIHA and KAHF. The international site reports a Ministry of Justice designation as a 2025 Excellent Medical Tourism Institution, which allows e-visa invitations. Medigate News (September 2026) reports Bucheon Sejong performs about 1,000 heart surgeries a year. The English hospital site en.sejongh.co.kr presented an expired TLS certificate on October 30, 2026.",
+   "publishedPrices": "Not published on its site (checked October 30, 2026).",
+   "booking": {
+    "channels": "Incheon Sejong Hospital +82-32-240-8000; Bucheon Sejong Hospital +82-1599-6677; email sejonghimc@gmail.com; online form at international.sejongh.co.kr/center/request. The site states availability 24 hours a day, 365 days a year. WhatsApp and KakaoTalk are not listed.",
+    "consult": "The request form asks for name, date of birth, phone, email, private insurance name, reason for visit, nationality and Korean NHI status, with an optional medical-records upload. Response time, fees and deposit terms are not published.",
+    "languages": "English, Chinese, Russian and Mongolian site versions; bilingual medical coordinators.",
+    "includes": "Visa and entry guidance, transportation support, hotel reservation and VIP ward are listed as services; the English reservation page (not readable on October 30, 2026 because of the certificate) was reported in search snippets to describe free pick-up.",
+    "bookingUrl": "https://international.sejongh.co.kr/center/request"
+   },
+   "sourceIds": [
+    "sejong-intl",
+    "sejong-request",
+    "sejong-press-medigate",
+    "medkorea-portal",
+    "kahf-list"
+   ]
+  },
+  {
+   "name": "Busan St. Mary's Hospital",
+   "district": "Busan (Nam-gu)",
+   "type": "hospital",
+   "url": "https://bsm.or.kr/eng/04_international/0101.asp",
+   "specialties": [
+    "General hospital with 24-hour emergency center",
+    "Gastroenterology",
+    "Spine center",
+    "Women's center",
+    "Health promotion (screening) center",
+    "Hospice and palliative care"
+   ],
+   "namedDoctors": "Byungwoo Yoon, MD, PhD, otolaryngologist, is named as Chief Doctor of the International Medical Center. No other doctors or anesthesiologists are named on the English international pages.",
+   "credentials": "On the Medical Korea registered list (checked October 30, 2026) as 'Busan St Mary Hospital'. On the Medical Korea KAHF accredited page (checked October 30, 2026) as 'Busan ST. Mary's Hospital' showing KOIHA and KAHF. Catholic-affiliated (Diocese of Busan listed as family site). The English site states no accreditations in text; year founded and bed count are not stated on the pages read. Medical Korea describes it as the only general hospital in Nam-gu and a local emergency medical institution.",
+   "publishedPrices": "Not published on its site (checked October 30, 2026).",
+   "booking": {
+    "channels": "International Medical Center +82-51-933-7066; hospital main line +82-51-933-7777; fax +82-51-932-8600; video-call line for deaf patients +82-70-7947-3389. Medical Korea lists busan.stmary@gmail.com. Hours Monday to Friday 8:30 to 17:30, Saturday 8:30 to 12:30 (Korea time); emergency center 24 hours. No web form, KakaoTalk or WhatsApp listed.",
+    "consult": "Register at the 1st-floor International Medical Center with ID or passport, then consultation, examination, payment and prescription. Admission is arranged through the center after a doctor's decision. Fees and deposit terms are not published; the site lists overseas-insurance direct billing and a 24/7 on-call service.",
+    "languages": "English interpretation and coordinators; Korean sign-language interpretation office.",
+    "bookingUrl": "https://www.bsm.or.kr/eng/04_international/0201.asp"
+   },
+   "sourceIds": [
+    "bsm-intl",
+    "bsm-process",
+    "bsm-about",
+    "medkorea-portal",
+    "kahf-list"
+   ]
+  },
+  {
+   "name": "Chonnam National University Hwasun Hospital",
+   "district": "Hwasun-gun, Jeollanam-do (Gwangju area)",
+   "type": "hospital",
+   "url": "https://www.cnuhh.com/cnuhh_eng/sub.cs?m=17",
+   "specialties": [
+    "Cancer treatment (17 organ-specific cancer centers)",
+    "Radiation oncology and medical oncology",
+    "Hematologic cancer",
+    "Cardiology and cardiothoracic surgery",
+    "Health screening center"
+   ],
+   "namedDoctors": "Not named on the English international pages. The Korean main page mentions hospital director Lee Wan-sik and physicians Na Guk-ju (cardiothoracic and vascular surgery) and Jung Ik-ju (medical oncology) in news and testimonial items, without credentials.",
+   "credentials": "On the Medical Korea registered list (checked October 30, 2026) as 'Chonnam National University Hwasun Hospital'. On the Medical Korea KAHF accredited page (checked October 30, 2026) with KOIHA (2022-2026) and KAHF 2023. A 2019 Gwangju News article written by the hospital's press team says the hospital opened in 2004, opened the first international medical center in the Honam region in 2011, and received JCI accreditation in 2010; the JCI claim was not checked against JCI's own directory and does not appear on the English site read. National university hospital.",
+   "publishedPrices": "Not published on its site (checked October 30, 2026). The overseas-patient page says a financial consultation with an estimate is part of the pre-visit step.",
+   "booking": {
+    "channels": "Medical coordinator phone +82-61-379-7892 (English) and +82-61-379-7895 (Russian line per 2019 article); fax +82-61-379-7894; coordinator email cnuhh.imc@gmail.com (the page's mailto link contains a typo, so type the address); general email cnuhh@cnuh.com; online appointment request at cnuhh.com/cnuhh_eng/medical/reservation/request.cs?m=16. Hours Monday to Friday 08:30 to 17:30 Korea time.",
+    "consult": "Email, fax or submit the Patient Request Form with records; the hospital reviews, plans treatment, gives an estimate and payment options, then handles visa, reservation and transport. Deposit terms, fees and response time are not published. Payment by English receipt, itemized bill or direct billing.",
+    "languages": "English, Chinese, Russian, Arabic and Mongolian site versions; interpretation described as 24/7 for inpatients.",
+    "includes": "Optional international patient meal plan; follow-up and re-visit scheduling listed.",
+    "bookingUrl": "https://www.cnuhh.com/cnuhh_eng/medical/reservation/request.cs?m=16"
+   },
+   "sourceIds": [
+    "cnuhh-eng",
+    "cnuhh-overseas",
+    "cnuhh-press-gwangjunews",
+    "medkorea-portal",
+    "kahf-list"
+   ]
+  },
+  {
+   "name": "Kyungpook National University Chilgok Hospital",
+   "district": "Daegu (Buk-gu, Chilgok)",
+   "type": "hospital",
+   "url": "https://en.knuch.kr/main/",
+   "specialties": [
+    "Regional cancer center",
+    "Geriatric care center",
+    "Children's hospital",
+    "General tertiary care"
+   ],
+   "namedDoctors": "Not named on the English international pages read. Lee Kyu-yup, M.D., Ph.D. is named as director of the parent hospital's International Healthcare Business Center.",
+   "credentials": "On the Medical Korea registered list (checked October 30, 2026) as 'Kyungpook National University Chilgok Hospital'. On the Medical Korea KAHF accredited page (checked October 30, 2026) with KOIHA (2023-2027) and Accreditation as a Medical Institution for International Patients (2025~2029). The English site states 'KNUCH officially obtained KAHF'. Branch of Kyungpook National University Hospital, a national university hospital founded in 1907. The English site's TLS certificate failed verification on October 30, 2026, so pages were read by ignoring certificate checks.",
+   "cautions": "In May 2023 the Ministry of Health and Welfare sanctioned Kyungpook National University Hospital (a corrective order, a 220 million won subsidy cut and a 16.7 million won fine) for improper triage and refusing emergency care in the March 2023 death of a Daegu teenager; the report names the parent hospital and does not say whether the Chilgok campus was involved [knuch-press-imaeil].",
+   "publishedPrices": "Not published on its site (checked October 30, 2026).",
+   "booking": {
+    "channels": "International Healthcare Business Center phone +82-53-200-2043 or +82-53-200-2045 (English), +82-53-200-2042 (Russian); email knuch-ihbc@knuh.kr; hours Monday to Friday 8:30 to 17:30 Korea time. No web form, KakaoTalk or WhatsApp listed.",
+    "consult": "Not published; the site offers an inquiries contact only.",
+    "languages": "English and Russian site versions and phone lines.",
+    "bookingUrl": "https://en.knuch.kr/main/"
+   },
+   "sourceIds": [
+    "knuch-en",
+    "knuh-global",
+    "knuch-press-imaeil",
+    "medkorea-portal",
+    "kahf-list"
+   ]
+  },
+  {
+   "name": "Donghoon Advanced Lengthening Reconstruction Institute, DALRI (Dr. Donghoon Lee)",
+   "district": "Seongnam, Gyeonggi-do (Wirye, Sujeong-gu)",
+   "type": "clinic",
+   "url": "https://www.drdonghoon.com/",
+   "specialties": [
+    "Cosmetic stature lengthening (PRECICE, LON, LATN, external fixation)",
+    "Limb length discrepancy",
+    "Deformity correction (bowlegs, knock-knee, rotational)",
+    "Revision surgery (nonunion, infection, contracture)"
+   ],
+   "namedDoctors": "Donghoon Lee, representative doctor and director, orthopedic surgeon (per LinkedIn). The site lists no medical school, board certification or society membership for him; the Medical Staff page shows photos only. The site says anesthesia is given by 'a professional anesthesiologist from Severance Hospital' who is not named.",
+   "credentials": "On the Medical Korea registered list (checked October 30, 2026) as 'Donghoon Advanced Lengthening Reconstruction Institute'. On the Medical Korea KAHF accredited page (checked October 30, 2026) showing KAHF. Site says established 2009 and occupies floors 3 to 5 of an office tower (Superstar Tower). Stated safety set-up: external anesthesiologist, nurses with over five years' experience, EOS low-dose 3D imaging, blood test, EKG, chest X-ray and urine test pre-op, UPS backup power, operating room described to US Federal Standard 209D, CPR team described as part of a 'university hospital coordinated system'. No ICU is described. Self-reported zero rates of deep infection and nonunion are unverified.",
+   "cautions": "Structural: this is a clinic-level facility in an office building rather than a general hospital, and the site does not describe ICU access or a named transfer hospital. Cosmetic limb lengthening is an elective procedure with serious documented complications; in September 2025 Euronews reported UK doctors and the NHS warning against having it abroad [dalri-press-euronews]. The warning is general and does not name DALRI. No regulator action or court case naming DALRI was found.",
+   "publishedPrices": "Published on its site (seen October 30, 2026, no effective date shown; KRW 1,330 = $1): femur lengthening with PRECICE KRW 117,420,000 (about $88,300); tibia lengthening with PRECICE KRW 131,760,000 (about $99,100); tibia lengthening with LON KRW 52,800,000 (about $39,700); second surgery to remove the external fixator KRW 5,940,000 (about $4,500). Listed inclusions: surgery and anesthesia fees, medications, two implants, 3 to 7 nights in a 4-bed room, three cryotherapy and one rehab session. Excluded: initial consultation and pre-op assessment, room upgrade, extra procedures or rehab, accommodation, prescriptions and supplies such as walkers and crutches.",
+   "booking": {
+    "channels": "Phone +82-31-626-0011; appointment line +82-70-5168-9001; online consultation form with file upload at drdonghoon.com/online-consultation/qa/; email shown on site is obscured by Cloudflare protection (Medical Korea lists info@drdonghoon.com). No WhatsApp, KakaoTalk or LINE id shown.",
+    "consult": "Online consultation form with file uploads; the site does not list required X-rays or a consultation fee. Deposit terms and payment methods are not published.",
+    "languages": "Site in Korean, English, Chinese, Japanese, Mongolian, Russian, Thai, Vietnamese, Arabic and Indonesian.",
+    "bookingUrl": "https://drdonghoon.com/online-consultation/qa/"
+   },
+   "sourceIds": [
+    "dalri-site",
+    "dalri-cost",
+    "dalri-director",
+    "dalri-preop",
+    "dalri-press-euronews",
+    "medkorea-portal",
+    "kahf-list"
+   ]
+  },
+  {
+   "name": "Kim Byoung Joon LEDAS Varicose Vein Clinic (Dr. Kim Byoung Joon)",
+   "district": "Busan (Busanjin-gu, Seomyeon)",
+   "type": "clinic",
+   "url": "http://www.kbjledas.com/en",
+   "specialties": [
+    "Varicose vein surgery (minimally invasive, non-incision)",
+    "Endovenous laser treatment",
+    "Ultrasound-guided sclerotherapy",
+    "Re-operation for recurrence",
+    "Hand vein and KT syndrome clinic"
+   ],
+   "namedDoctors": "Kim Byoung Joon, representative doctor. The clinic is registered as a thoracic surgery clinic (흉부외과) and he is described in listings as a thoracic surgeon; the site itself states no degree or board certification. No anesthesiologist named.",
+   "credentials": "On the Medical Korea registered list (checked October 30, 2026) as 'Kim Byoung Joon LEDAS Varicose Vein Clinic'. On the Medical Korea KAHF accredited page (checked October 30, 2026) showing 'KAHF; JCI'. The clinic site reports JCI accreditation in 2015 with renewals in 2019, 2022 and December 2025 (clinic-stated; not checked on JCI's directory), KAHF in 2019, 2021 and 2023, and Global Healthcare Accreditation (GHA) in 2023, the last also announced by press release in February 2024. Site says varicose vein practice since 2001 and the current clinic opened in 2004 (floors 11 to 13 of an office building).",
+   "cautions": "Site counters of 47,902 patients and 29,888 surgeries are self-reported, and third-party listings quote conflicting totals. No regulator action, court case or press-reported incident found.",
+   "publishedPrices": "Not published on its site (checked October 30, 2026); the site links to a Korean non-covered fee guide that was not readable.",
+   "booking": {
+    "channels": "English line +82-70-4895-5086 (site says English consultation available 24/7); clinic phone +82-51-634-8275; email kbjledaspm@gmail.com; online consultation form at kbjledas.com/en/contact/consultation; KakaoTalk chat pf.kakao.com/_nvyhG/chat (Korean site). Hours weekdays 9:00 to 18:00, lunch 12:30 to 13:30, closed every second Wednesday, second Saturday and Sundays (Korea time).",
+    "consult": "Online form or phone; the English site lists sections on treatment process, hospitalization and settlement but does not state required documents, fees, deposit or response time.",
+    "languages": "Korean, English, Russian, Chinese, Vietnamese, Japanese and Mongolian site versions; press release says a coordinator speaking English, Chinese and Russian accompanies patients.",
+    "bookingUrl": "http://www.kbjledas.com/en/contact/consultation"
+   },
+   "sourceIds": [
+    "ledas-en",
+    "ledas-kr",
+    "ledas-press-prnasia",
+    "medkorea-portal",
+    "kahf-list"
+   ]
+  },
+  {
+   "name": "Chosun University Hospital",
+   "district": "Gwangju (Dong-gu)",
+   "type": "hospital",
+   "url": "http://hosp.chosun.ac.kr/",
+   "specialties": [
+    "University general hospital",
+    "Cancer center (multidisciplinary, 13 cancer types)",
+    "Robotic surgery (da Vinci Xi)",
+    "Health promotion (screening) center",
+    "Emergency care"
+   ],
+   "namedDoctors": "Not readable on the hospital site (connection refused on October 30, 2026). Gwangju News (March 2023) names Kim Kyung-jong as hospital director and Ryu Seong-yeop as chief of surgery, without credentials.",
+   "credentials": "On the Medical Korea registered list (checked October 30, 2026) as 'Chosun University Hospital' (website hosp.chosun.ac.kr, +82-62-220-3770). On the Medical Korea KAHF accredited page (checked October 30, 2026) showing KOIHA and KAHF. The hospital site refused connections on October 30, 2026, so facts come from the registry and a 2023 Gwangju News profile, which says the hospital was founded in 1971 and runs an International Medical Center, a Gwangju Clinic in Cambodia (2014) and a Middle East training clinic (2018).",
+   "publishedPrices": "Not published (site unreadable on October 30, 2026).",
+   "booking": {
+    "channels": "International Health Care Center +82-62-220-3770 (also the registry number); customer service 1811-7474 (Korean); health promotion center +82-62-220-3030; emergency +82-62-220-3119. Email and messaging ids not found.",
+    "consult": "Gwangju News (2023) describes pre-visit non-contact consultations through an International Cooperation Advisory Group and a concierge service from Incheon to Gwangju. Fees, documents and deposit terms are not published.",
+    "languages": "Not stated on sources read; a 2023 profile mentions overseas partner institutions but no language list.",
+    "bookingUrl": "http://hosp.chosun.ac.kr/"
+   },
+   "sourceIds": [
+    "chosun-press-gwangjunews",
+    "medkorea-portal",
+    "kahf-list"
+   ]
+  },
+  {
+   "name": "Seoul St. Mary's Hospital (The Catholic University of Korea)",
+   "district": "Seocho-gu (Banpo)",
+   "type": "hospital",
+   "url": "https://www.cmcseoul.or.kr/en.ourservices.international_health_care.sp",
+   "specialties": [
+    "Tertiary general hospital (1,370 beds per Medical Korea)",
+    "International primary and urgent care",
+    "Hematology (Catholic Hematology Hospital)",
+    "Neurosurgery and skull base surgery",
+    "Visa and travel medicine",
+    "Health promotion center"
+   ],
+   "namedDoctors": "International Health Care Center physicians named on site: Dr. Ji Yeon Lee (Director; US-trained, American Board certified in internal medicine 2008 and rheumatology 2011), Dr. Jin-Ju Ok (primary care, trained in France and Korea, Certificate in Travel Health), Dr. Seung Jae Kim (board-certified family medicine), Dr. Jeeyong Lim (board-certified emergency medicine), Dr. Jae-Sung Park (board-certified neurosurgeon, skull base surgery, joined 2015), Dr. Rapovka (Russian cardiovascular surgeon, coordinates Russian patients). Anesthesiologists not named.",
+   "credentials": "On the Medical Korea registered list (checked October 30, 2026) as 'The Catholic University of Korea, Seoul St. Marys Hospital'. Not on the Medical Korea 26-entry KAHF accredited page (checked October 30, 2026). The international center page states JCI accreditation since 2010 (hospital-stated; not checked on JCI's directory). English-speaking physician in the 24-hour emergency center per site.",
+   "cautions": "In 2009 the Ministry of Health and Welfare and the National Health Insurance Service sought recoupment and fines of about 16.9 billion won from the Catholic University's St. Mary's Hospital over 'arbitrary non-covered' billing of cancer patients; the Seoul Administrative Court cancelled the health-insurance portion in October 2009 and the government appealed [cmc-press-medicaltimes]. This is a billing dispute from 2009, not a patient-safety finding, and no recent action was found.",
+   "publishedPrices": "Not published on its site (checked October 30, 2026).",
+   "booking": {
+    "channels": "Phone +82-2-2258-5745 or 5746; fax +82-2-2258-5752; email ihcc@catholic.ac.kr; online appointment form at cmcseoul.or.kr/en.appointments.appointment.sp (asks for passport number, nationality, NHI status, department, requested date). Clinic hours Monday to Friday 8:30 to 17:00 Korea time; emergency center 24 hours.",
+    "consult": "Request at least one day in advance; replies go to the email given. Walk-ins accepted for primary and urgent care. Fees, deposit terms and response time are not published.",
+    "languages": "English, Russian, Arabic, Japanese, French, Chinese and Korean staff; documents in English, Russian, Japanese and French.",
+    "includes": "Direct billing listed for TRICARE Overseas, Aetna, AFSPA, Cigna, GBG Tie-care, GeoBlue, GMC, IMA, MetLife, MSH China and UnitedHealthcare, subject to current contracts.",
+    "bookingUrl": "https://www.cmcseoul.or.kr/en.appointments.appointment.sp"
+   },
+   "sourceIds": [
+    "cmc-ihcc",
+    "cmc-appt",
+    "cmc-press-medicaltimes",
+    "medkorea-portal"
+   ]
+  },
+  {
+   "name": "Seoul National University Hospital, International Healthcare Center",
+   "district": "Jongno-gu (Daehak-ro)",
+   "type": "hospital",
+   "url": "https://snuh.org/global/en/patients/EN02002001.do",
+   "specialties": [
+    "National tertiary hospital, all specialties",
+    "Cancer screening and treatment",
+    "Chronic disease care",
+    "Medical and visa examinations",
+    "Vaccinations and travel medicine"
+   ],
+   "namedDoctors": "Not named on the international pages read; an 'Our Doctors' page exists but was not read. Anesthesiologists not named.",
+   "credentials": "On the Medical Korea registered list (checked October 30, 2026) as 'Seoul National University Hospital'. Not on the Medical Korea 26-entry KAHF accredited page (checked October 30, 2026). The International Healthcare Center was founded on June 1, 1999 (site). The site states no accreditations on the pages read. Note that the SNUH Gangnam Center (screening) is a separate registered entry and is already profiled.",
+   "publishedPrices": "Not published on its site (checked October 30, 2026). For overseas referrals the center replies with a treatment plan and fee estimate.",
+   "booking": {
+    "channels": "Phone +82-2-2072-0505 (for patients without Korean NHI); email international@snuh.org; fax +82-2-2072-0785; online registration form at snuh.org/global/en/patients/appointmentMain.do; language lines: Chinese china@snuh.org and Mongolian medmongolia@snuh.org via +82-2-2072-4918 (WeChat and KakaoTalk), Russian russian@snuh.org, Arabic arab@snuh.org (+82-2-2072-1817). Hours Monday to Friday 9:00 to 17:30 Korea time.",
+    "consult": "Overseas patients send records to referral staff; a specialist prepares a treatment plan and the center returns the plan with a fee estimate before travel. Two-step consult on arrival (IHC physician, then specialist). The site warns email replies can be slow and recommends phone or messenger. Deposit terms are not published; cashless billing with embassies and international insurers is offered and English receipts on request.",
+    "languages": "English, Chinese, Mongolian, Russian and Arabic.",
+    "bookingUrl": "https://snuh.org/global/en/patients/appointmentMain.do"
+   },
+   "sourceIds": [
+    "snuh-ihc",
+    "snuh-appt",
+    "medkorea-portal"
+   ]
+  },
+  {
+   "name": "Wooridul Spine Hospital",
+   "district": "Gangnam-gu (Cheongdam, Hakdong-ro)",
+   "type": "hospital",
+   "url": "http://www.wooridul.com/service/main",
+   "specialties": [
+    "Minimally invasive and endoscopic spine surgery",
+    "Herniated disc and spinal stenosis",
+    "Cervical and thoracic spine",
+    "Non-surgical spine care and rehabilitation",
+    "Telemedicine second opinion"
+   ],
+   "namedDoctors": "The English specialists page lists 29 doctors by name and department, including Dr. Sang-Ho Lee (neurosurgery, chairman), Dr. Sang-Ha Shin (neurosurgery, hospital director), Dr. Junseok Bae, Dr. Han Joong Keum, Dr. Jeong Hoon Choi and Dr. Yongsoo Choi (neurosurgery), Dr. Gene Cheh (spinal surgery), and anesthesiologists Dr. Wonsok Chang, Dr. Gyu Dae Shim, Dr. Ji Hoon Chung and Dr. Eun Kyung Lee. Board certifications are not stated on the list page.",
+   "credentials": "On the Medical Korea registered list (checked October 30, 2026) as 'Wooridul Spine Hospital' (Gangnam) with separate entries for the Gimpo Airport, Busan and Daegu hospitals. Not on the Medical Korea 26-entry KAHF accredited page (checked October 30, 2026). The site lists Ministry of Health and Welfare designation as a spine specialty hospital, Ministry healthcare accreditation (4th cycle) and Ministry certification as a healthcare provider for international patients. Founded 1982; International Patient Center established 2006 (site). JCI is not claimed on the hospital's own pages, although marketplace listings say so.",
+   "cautions": "Structural: Wooridul is a multi-site network (Cheongdam, Gimpo Airport, Busan, Daegu, Gwangju, Dubai, Abu Dhabi) and the Korean site warns that other hospitals using 'Woori' or 'Wooridul' without its logo are unrelated. No regulator action, court case or press-reported incident found.",
+   "publishedPrices": "Not published on its site (checked October 30, 2026).",
+   "booking": {
+    "channels": "Phone +82-2-513-8777 ext. 8452, Monday to Friday 9:00 to 18:00 Korea time; WhatsApp +82-10-5089-5233 (wa.me/821050895233); appointment form at wooridul.com/service/appointment (choose lumbar, cervical or thoracic, then patient details, in-person or telemedicine, insurance status). Email not shown for the Gangnam center; branch emails listed on the appointment page.",
+    "consult": "Form or coordinator contact; the site offers a Second Opinion and Video Consultation service described in a Telemedicine User Guide PDF. Required imaging, fees and deposit terms are not published. Patients with contracted international insurance must obtain a Guarantee of Payment or pay out of pocket.",
+    "languages": "English, Russian and Arabic coordinators.",
+    "includes": "Dedicated coordinator, visa guidance, airport pickup and accommodation booking; marketplace listings say transfers are free for inpatients (not confirmed on the hospital site).",
+    "bookingUrl": "http://www.wooridul.com/service/appointment"
+   },
+   "sourceIds": [
+    "wooridul-wipc",
+    "wooridul-appt",
+    "wooridul-doctors",
+    "wooridul-kr",
+    "medkorea-portal"
+   ]
+  },
+  {
+   "name": "Gangnam Severance Hospital (Yonsei University Health System)",
+   "district": "Gangnam-gu (Dogok)",
+   "type": "hospital",
+   "url": "https://gs.severance.healthcare/gs-en/ihc/overview.do",
+   "specialties": [
+    "University tertiary hospital, all specialties",
+    "Fast-track program for international patients",
+    "Visa examination center",
+    "Health screening"
+   ],
+   "namedDoctors": "The IHC medical staff page on the Gangnam Severance domain shows the Yonsei Severance International Health Care Center physicians (John A. Linton, M.D., director since 1991, US and Korean board-certified in family medicine; Chan Shin Park, M.D., internal medicine; Kyu Yeun Kim, M.D., pediatrics; Sue Kim, M.D. and Bora Yoo, M.D., family medicine). The same list appears on other Severance-network domains, so confirm which doctors actually see patients at the Gangnam site. Anesthesiologists not named.",
+   "credentials": "On the Medical Korea registered list (checked October 30, 2026) as 'Gangnam Severance Hospital'. Not on the Medical Korea 26-entry KAHF accredited page (checked October 30, 2026). The International Health Care Center opened August 1, 2004 (site). JCI accreditation is claimed only in marketplace listings and was not seen on the hospital's own English pages or checked on JCI's directory.",
+   "cautions": "In 2018 the Ministry of Health and Welfare barred the hospital's obstetrics and gynecology department from recruiting residents for two years after a professor's sexual harassment of a resident, per Sateconomy [gs-press-sateconomy]. In 2026 the Gangnam district office fined the outside contractor running the staff cafeteria 37.2 million won after a food-poisoning outbreak; this concerned food hygiene, not medical care. No medical malpractice action found.",
+   "publishedPrices": "Not published on its site (checked October 30, 2026). The center provides an estimated cost on request before consent.",
+   "booking": {
+    "channels": "Treatment appointment phone +82-2-2019-3600 or 3690; email gnseverance2@yuhs.ac; Visa Examination Center +82-2-2019-1207, VISA@YUHS.AC; online treatment appointment at gs.severance.healthcare/gs-en/appointment/status-treatment.do. Hours not listed on the contact page.",
+    "consult": "Fast-track steps: send treatment plan and cost estimate request, registration, specialist review, reply to patient (and travel agency if used), advance scheduling, visit, follow-up by email. Fees, deposit and response time are not published. Overseas-insurance hospital costs can be billed directly; outpatients often pay and claim.",
+    "languages": "English, Japanese, Russian and Chinese interpretation; other languages on request.",
+    "bookingUrl": "https://gs.severance.healthcare/gs-en/appointment/status-treatment.do"
+   },
+   "sourceIds": [
+    "gs-ihc",
+    "gs-contact",
+    "gs-fasttrack",
+    "gs-staff",
+    "gs-press-sateconomy",
+    "medkorea-portal"
+   ]
+  },
+  {
+   "name": "Toxnfill Clinic (톡스앤필)",
+   "district": "Gangnam-gu (main branch) with branches in Myeong-dong, Hongdae, Apgujeong, Konkuk Univ., Songdo, Jeju and elsewhere",
+   "type": "clinic",
+   "url": "https://eng.toxnfill.com/",
+   "specialties": [
+    "Botulinum toxin and fillers",
+    "Laser lifting (Thermage FLX, Ulthera, Shurink)",
+    "Skin boosters (Rejuran, Juvelook)",
+    "Thread lifting",
+    "Laser hair removal",
+    "Acne, pore and pigmentation lasers"
+   ],
+   "namedDoctors": "Not named on the English or Korean sites; branch pages list business representatives, not physicians. The English site names 'YI, DONG JIN' as site owner and lists dermatology and plastic surgery as departments. Anesthesiologists not named.",
+   "credentials": "Branches are registered individually on the Medical Korea registered list (checked October 30, 2026): 'toxnfill clinic myeong-dong' (Seoul), 'Toxnfill Konkuk Univ. Branch' (Seoul), 'Toxnfill clinic' (Incheon Songdo), 'Toxnfill clinic' (Jeju), 'TOXNFILL CLINIC BUSAN SEOMYEON' and 'kleam clinic' (Hongdae domain). The Gangnam main branch was not seen in the first page of results. Not on the Medical Korea 26-entry KAHF accredited page (checked October 30, 2026). No accreditations claimed on site.",
+   "cautions": "Structural: Toxnfill is a franchise brand. The Korean site recruits franchisees through BBG Networks Co., Ltd. (itself registered with Medical Korea as a facilitator, not a clinic), and each branch is a separate business with its own representative and registration number, so staffing and standards can differ by branch. The English site says 38 branches while listing 13; the Korean site lists 34 operating. No regulator action, court case or press-reported incident naming the brand was found.",
+   "publishedPrices": "Not published on its site (checked October 30, 2026); the English site shows monthly event banners without prices. Marketplace range (indicative): aggregator sites quote toxin from under $30 per area at high-volume chains, which is unverified.",
+   "booking": {
+    "channels": "WhatsApp +82-10-3012-2038 (header) and +82-10-6379-4842 (footer and main mobile line); online consultation form at eng.toxnfill.com/consulting.php; each branch lists its own mobile number; Korean call center 1661-4842. KakaoTalk, LINE and email not listed on the English site. Hours not listed.",
+    "consult": "Online form or WhatsApp; no fee, deposit or response time is published. Walk-in style aesthetic clinic; tax refund noted by third-party listings for the Myeong-dong branch.",
+    "languages": "English, Korean, Japanese, Chinese, Vietnamese, Thai and Indonesian site versions.",
+    "bookingUrl": "https://eng.toxnfill.com/consulting.php"
+   },
+   "sourceIds": [
+    "toxnfill-en",
+    "toxnfill-kr",
+    "medkorea-portal"
+   ]
+  },
+  {
+   "name": "Renewme Skin Clinic (리뉴미피부과)",
+   "district": "Seocho-gu (Seocho) with branches in Jamsil, Hongje, Dongdaemun and Bundang",
+   "type": "clinic",
+   "url": "http://www.rnmeskin.com/",
+   "specialties": [
+    "Medical dermatology (acne, rosacea, eczema, warts)",
+    "Pigmentation and melasma lasers",
+    "Lifting (Thermage FLX, Ultherapy, Morpheus8)",
+    "Botox and fillers",
+    "Scar and keloid treatment",
+    "Laser hair removal"
+   ],
+   "namedDoctors": "Not named on the site read on October 30, 2026; the site refers to 'dermatology specialist' care generally. Anesthesiologists not applicable or named.",
+   "credentials": "On the Medical Korea registered list (checked October 30, 2026) as 'RENEWME SKIN CLINIC' (279 Hyoryeong-ro, Seocho-gu), 'RENEWME SKIN CLINIC' (114 Olympic-ro, Songpa-gu) and 'Renewme Skin Clinic' (Bundang-gu, Seongnam). Not on the Medical Korea 26-entry KAHF accredited page (checked October 30, 2026). No accreditations claimed on site; year founded not stated.",
+   "cautions": "Structural: five-branch chain; the site shows no physician names so you cannot confirm who will treat you before arrival. Online reviews are mixed, including a few hostile forum posts about pricing for foreigners, which are unverified consumer opinions. No regulator action, court case or press-reported incident found.",
+   "publishedPrices": "Not published on its site (checked October 30, 2026); a Korean non-covered fee notice is linked but was not readable.",
+   "booking": {
+    "channels": "Seocho branch +82-2-588-2304; Jamsil +82-2-413-2303; Bundang +82-31-711-6711; Hongje +82-2-394-8275; Dongdaemun +82-2-2275-5085; KakaoTalk channel and online forms (medical, cost, photo and appointment consultations) on the site. Hours Monday and Friday 10:00 to 20:00, Tuesday to Thursday 10:00 to 19:00, Saturday 9:30 to 16:00, lunch 13:00 to 14:00 weekdays, closed Sunday and holidays (Korea time). Email, WhatsApp and LINE not listed.",
+    "consult": "Photo or online consultation, then in-person consultation before any treatment is prescribed. Fees, deposit and response time are not published.",
+    "languages": "Site offers English, Chinese and Japanese menus; third-party listings say English-speaking doctors and English and Chinese interpreters are available, which was not confirmed on the site.",
+    "bookingUrl": "http://www.rnmeskin.com/"
+   },
+   "sourceIds": [
+    "renewme-site",
+    "medkorea-portal"
+   ]
+  },
+  {
+   "name": "Yonsei University Dental Hospital (Yonsei University Health System)",
+   "district": "Seodaemun-gu (Sinchon)",
+   "type": "dental",
+   "url": "https://dental.severance.healthcare/dental-en/about/overview.do",
+   "specialties": [
+    "University dental hospital, all dental specialties",
+    "Implants and prosthodontics",
+    "Oral and maxillofacial surgery",
+    "Orthodontics",
+    "Periodontics"
+   ],
+   "namedDoctors": "Dental clinicians are not named on the English international pages; a Find a Doctor directory exists. The 'IHC medical staff' page on the dental domain reproduces the Severance Hospital International Health Care Center physician list (John A. Linton, M.D. and colleagues, family medicine and internal medicine), not dentists.",
+   "credentials": "On the Medical Korea registered list (checked October 30, 2026) as 'Yonsei University Dental Hospital' (+82-2-2228-8633). Not on the Medical Korea 26-entry KAHF accredited page (checked October 30, 2026). Founded 1915 as a dental clinic at Severance Hospital (site). No accreditations stated on the pages read. Note that the international-patient pages on the dental domain describe Severance Hospital's International Health Care Center and its contacts rather than a dental-specific desk.",
+   "cautions": "Structural: the dental hospital's English international pages are shared Severance templates, so phone numbers and staff listed there belong to the main hospital's International Health Care Center; use the dental hospital's own number from Medical Korea to reach dental scheduling. No regulator action, court case or press-reported incident found.",
+   "publishedPrices": "Not published on its site (checked October 30, 2026). The billing page says an estimated treatment cost is available on request before consent.",
+   "booking": {
+    "channels": "Dental hospital number per Medical Korea +82-2-2228-8633 (KAHF-section listing shows +82-2-2228-8998); Severance International Health Care Center +82-2-2228-5800 or 5810, appointment center +82-2-2228-1009, email ihcc@yuhs.ac, fax +82-2-362-6835; online treatment appointment at dental.severance.healthcare/sev-en/appointment/status-treatment.do. Hours not listed.",
+    "consult": "Bring medical records and any MRI or CT images; for direct billing, confirm coverage with your insurer first. Consultation fee, deposit terms and response time are not published.",
+    "languages": "Interpretation listed for Russian, Chinese, Japanese, Arabic and Mongolian, with English-speaking specialists; fast-track service for foreign patients.",
+    "includes": "Direct billing listed for 18 partners including Aetna, Cigna, Tricare and International SOS, subject to contract.",
+    "bookingUrl": "https://dental.severance.healthcare/sev-en/appointment/status-treatment.do"
+   },
+   "sourceIds": [
+    "yudh-overview",
+    "yudh-contact",
+    "yudh-billing",
+    "medkorea-portal"
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "id": "medkorea-portal",
+   "label": "Medical Korea registered medical institutions list",
+   "url": "https://www.medicalkorea.or.kr/en/registeredhospitals",
+   "publisher": "Korea Health Industry Development Institute (Medical Korea)",
+   "date": "2026-10",
+   "kind": "official"
+  },
+  {
+   "id": "kahf-list",
+   "label": "Medical Korea KAHF accredited medical institutions page (26 entries)",
+   "url": "https://www.medicalkorea.or.kr/en/kahfAccreditedHospitals",
+   "publisher": "Korea Health Industry Development Institute (Medical Korea)",
+   "date": "2026-10-30",
+   "kind": "official"
+  },
+  {
+   "id": "cha-site",
+   "label": "CHA Fertility Center Seoul Station, English introduction",
+   "url": "https://seoul.chamc.co.kr/en/aboutus/introduction.aspx",
+   "publisher": "CHA Fertility Center Seoul Station",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "cha-staff",
+   "label": "CHA Fertility Center Seoul Station, medical staff (as of 1 March 2026)",
+   "url": "https://seoul.chamc.co.kr/en/staff/staff.aspx",
+   "publisher": "CHA Fertility Center Seoul Station",
+   "date": "2026-03-01",
+   "kind": "clinic"
+  },
+  {
+   "id": "cha-appt",
+   "label": "CHA Fertility Center Seoul Station, appointments page",
+   "url": "https://seoul.chamc.co.kr/en/appointments/appointments.aspx",
+   "publisher": "CHA Fertility Center Seoul Station",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "cha-press-medicaltimes",
+   "label": "CHA opens Seoul Station fertility center (Korean)",
+   "url": "https://www.medicaltimes.com/Main/view.html?ID=1102707",
+   "publisher": "Medical Times",
+   "date": "2016-02",
+   "kind": "press"
+  },
+  {
+   "id": "cha-press-nbc",
+   "label": "Couple says fertility clinic mixed their embryos (CHA Fertility Center, Los Angeles)",
+   "url": "https://www.nbcnews.com/news/us-news/couple-says-fertility-clinic-mixed-their-embryos-put-them-through-n1028396",
+   "publisher": "NBC News",
+   "date": "2019-07",
+   "kind": "press"
+  },
+  {
+   "id": "hangil-intl",
+   "label": "HanGil Eye Hospital, English International Medical Center appointment page",
+   "url": "https://hangileye.co.kr/I_eng/02_inter/rev.html",
+   "publisher": "HanGil Eye Hospital",
+   "date": "2023-05-03",
+   "kind": "clinic"
+  },
+  {
+   "id": "hangil-doctors",
+   "label": "HanGil Eye Hospital, English Departments & Doctors page",
+   "url": "https://hangileye.co.kr/I_eng/03_center/center_1.html",
+   "publisher": "HanGil Eye Hospital",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "hangil-press-koreabiomed",
+   "label": "HanGil Eye Hospital profile (government-designated foreign-patient hospitals series)",
+   "url": "https://www.koreabiomed.com/news/articleView.html?idxno=1417",
+   "publisher": "Korea Biomedical Review",
+   "date": "2017-09-26",
+   "kind": "press"
+  },
+  {
+   "id": "sejong-intl",
+   "label": "Sejong Hospital International Healthcare Center site",
+   "url": "https://international.sejongh.co.kr/",
+   "publisher": "Hyewon Medical Foundation Sejong Hospital",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "sejong-request",
+   "label": "Sejong Hospital international consultation request form",
+   "url": "https://international.sejongh.co.kr/center/request",
+   "publisher": "Hyewon Medical Foundation Sejong Hospital",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "sejong-press-medigate",
+   "label": "Bucheon Sejong Hospital performs about 1,000 heart surgeries a year (Korean)",
+   "url": "https://www.medigatenews.com/news/3872349106",
+   "publisher": "Medigate News",
+   "date": "2026-09-01",
+   "kind": "press"
+  },
+  {
+   "id": "bsm-intl",
+   "label": "Busan St. Mary's Hospital, International Medical Center (English)",
+   "url": "https://bsm.or.kr/eng/04_international/0101.asp",
+   "publisher": "Busan St. Mary's Hospital",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "bsm-process",
+   "label": "Busan St. Mary's Hospital, procedure for international patients (English)",
+   "url": "https://www.bsm.or.kr/eng/04_international/0201.asp",
+   "publisher": "Busan St. Mary's Hospital",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "bsm-about",
+   "label": "Busan St. Mary's Hospital, introduction (English)",
+   "url": "https://bsm.or.kr/eng/05_introduction/0101.asp",
+   "publisher": "Busan St. Mary's Hospital",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "cnuhh-eng",
+   "label": "Chonnam National University Hwasun Hospital, English main page",
+   "url": "https://www.cnuhh.com/cnuhh_eng/main.cs",
+   "publisher": "Chonnam National University Hwasun Hospital",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "cnuhh-overseas",
+   "label": "Chonnam National University Hwasun Hospital, Patients from Overseas",
+   "url": "https://www.cnuhh.com/cnuhh_eng/sub.cs?m=17",
+   "publisher": "Chonnam National University Hwasun Hospital",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "cnuhh-press-gwangjunews",
+   "label": "Advanced Medical Care for International Patients: Chonnam National University Hwasun Hospital",
+   "url": "https://gwangjunewsgic.com/community/health/hwasun-hospital",
+   "publisher": "Gwangju News (Gwangju International Center)",
+   "date": "2019-07-04",
+   "kind": "press"
+  },
+  {
+   "id": "knuch-en",
+   "label": "Kyungpook National University Chilgok Hospital, English site",
+   "url": "https://en.knuch.kr/main/",
+   "publisher": "Kyungpook National University Chilgok Hospital",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "knuh-global",
+   "label": "Kyungpook National University Hospital, International Healthcare Business Center",
+   "url": "https://global.knuh.kr/eng/content/01intro/02_01.asp",
+   "publisher": "Kyungpook National University Hospital",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "knuch-press-imaeil",
+   "label": "Ministry sanctions four Daegu hospitals over emergency refusal after teen's death (Korean)",
+   "url": "https://www.imaeil.com/page/view/2023050406210371153",
+   "publisher": "Maeil Shinmun",
+   "date": "2023-05-04",
+   "kind": "press"
+  },
+  {
+   "id": "dalri-site",
+   "label": "DALRI (Donghoon Advanced Limb Lengthening Reconstruction Institute), English home",
+   "url": "https://www.drdonghoon.com/",
+   "publisher": "DALRI",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "dalri-cost",
+   "label": "DALRI stature lengthening surgery price list",
+   "url": "https://drdonghoon.com/lengthening/surgery-cost/",
+   "publisher": "DALRI",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "dalri-director",
+   "label": "DALRI, message from Dr. Donghoon Lee",
+   "url": "https://drdonghoon.com/about-us/message-from-dr-donghoon/",
+   "publisher": "DALRI",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "dalri-preop",
+   "label": "DALRI, pre-operative tests and anesthesia",
+   "url": "https://drdonghoon.com/online-consultation/safety-system/pre-operative-tests/",
+   "publisher": "DALRI",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "dalri-press-euronews",
+   "label": "UK doctor sounds alarm over cosmetic leg lengthening surgery",
+   "url": "https://euronews.com/health/2025/09/09/cosmetic-leg-lengthening-surgery-uk-doctor-sounds-alarm-over-extremely-painful-procedure",
+   "publisher": "Euronews",
+   "date": "2025-09-09",
+   "kind": "press"
+  },
+  {
+   "id": "ledas-en",
+   "label": "LEDAS Varicose Vein Clinic, English site",
+   "url": "https://www.kbjledas.com/en",
+   "publisher": "Kim Byoung Joon LEDAS Varicose Vein Clinic",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "ledas-kr",
+   "label": "Kim Byoung Joon LEDAS Thoracic Surgery Clinic, Korean site",
+   "url": "https://www.kbjledas.com/",
+   "publisher": "Kim Byoung Joon LEDAS Varicose Vein Clinic",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "ledas-press-prnasia",
+   "label": "Kim Byoung Joon LEDAS Varicose Vein Clinic becomes first Korean varicose vein clinic certified by GHA (press release)",
+   "url": "https://en.prnasia.com/story/436812-0.shtml",
+   "publisher": "PR Newswire Asia (clinic press release)",
+   "date": "2024-02",
+   "kind": "press"
+  },
+  {
+   "id": "chosun-press-gwangjunews",
+   "label": "Chosun University Hospital: On to Become a Global Smart Hospital",
+   "url": "https://gwangjunewsgic.com/features/profile/chosun-university-hospital-2/",
+   "publisher": "Gwangju News (Gwangju International Center)",
+   "date": "2023-03-02",
+   "kind": "press"
+  },
+  {
+   "id": "cmc-ihcc",
+   "label": "Seoul St. Mary's Hospital, International Health Care Center",
+   "url": "https://www.cmcseoul.or.kr/en.ourservices.international_health_care.sp",
+   "publisher": "The Catholic University of Korea Seoul St. Mary's Hospital",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "cmc-appt",
+   "label": "Seoul St. Mary's Hospital, English appointment request",
+   "url": "https://www.cmcseoul.or.kr/en.appointments.appointment.sp",
+   "publisher": "The Catholic University of Korea Seoul St. Mary's Hospital",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "cmc-press-medicaltimes",
+   "label": "Court cancels 11.6 billion won recoupment and fine against St. Mary's Hospital in arbitrary non-covered billing case (Korean)",
+   "url": "https://medicaltimes.com/Main/view.html?ID=87592",
+   "publisher": "Medical Times",
+   "date": "2009-10",
+   "kind": "press"
+  },
+  {
+   "id": "snuh-ihc",
+   "label": "Seoul National University Hospital, International Healthcare Center",
+   "url": "https://snuh.org/global/en/patients/EN02002001.do",
+   "publisher": "Seoul National University Hospital",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "snuh-appt",
+   "label": "Seoul National University Hospital, international appointment page",
+   "url": "https://snuh.org/global/en/patients/appointmentMain.do",
+   "publisher": "Seoul National University Hospital",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "wooridul-wipc",
+   "label": "Wooridul International Patient Center",
+   "url": "https://www.wooridul.com/service/main",
+   "publisher": "Wooridul Spine Hospital",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "wooridul-appt",
+   "label": "Wooridul International Patient Center, appointment request",
+   "url": "https://www.wooridul.com/service/appointment",
+   "publisher": "Wooridul Spine Hospital",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "wooridul-doctors",
+   "label": "Wooridul Spine Hospital, spine specialists",
+   "url": "https://www.wooridul.com/medical/specialists",
+   "publisher": "Wooridul Spine Hospital",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "wooridul-kr",
+   "label": "Wooridul Spine Hospital, Korean main site",
+   "url": "https://www.wooridul.co.kr/",
+   "publisher": "Wooridul Spine Hospital",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "gs-ihc",
+   "label": "Gangnam Severance Hospital, International Health Care Center overview",
+   "url": "https://gs.severance.healthcare/gs-en/ihc/overview.do",
+   "publisher": "Gangnam Severance Hospital (Yonsei University Health System)",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "gs-contact",
+   "label": "Gangnam Severance Hospital, English contact page",
+   "url": "https://gs.severance.healthcare/gs-en/patients/contact.do",
+   "publisher": "Gangnam Severance Hospital (Yonsei University Health System)",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "gs-fasttrack",
+   "label": "Gangnam Severance Hospital, Fast-Track Program",
+   "url": "https://gs.severance.healthcare/gs-en/ihc/fast-track.do",
+   "publisher": "Gangnam Severance Hospital (Yonsei University Health System)",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "gs-staff",
+   "label": "Gangnam Severance Hospital, IHC medical staff page",
+   "url": "https://gs.severance.healthcare/gs-en/ihc/staff.do",
+   "publisher": "Gangnam Severance Hospital (Yonsei University Health System)",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "gs-press-sateconomy",
+   "label": "Gangnam Severance OB/GYN barred from recruiting residents after sexual harassment case (Korean)",
+   "url": "https://www.sateconomy.co.kr/news/view/179589131884856",
+   "publisher": "Sateconomy",
+   "date": "2018",
+   "kind": "press"
+  },
+  {
+   "id": "toxnfill-en",
+   "label": "Toxnfill Clinic, English site",
+   "url": "https://eng.toxnfill.com/",
+   "publisher": "Toxnfill",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "toxnfill-kr",
+   "label": "Toxnfill Clinic, Korean main site (branch list, franchise recruitment)",
+   "url": "https://www.toxnfill.com/",
+   "publisher": "Toxnfill",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "renewme-site",
+   "label": "Renewme Skin Clinic, main site",
+   "url": "https://rnmeskin.com/",
+   "publisher": "Renewme Skin Clinic",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "yudh-overview",
+   "label": "Yonsei University Dental Hospital, English overview",
+   "url": "https://dental.severance.healthcare/dental-en/about/overview.do",
+   "publisher": "Yonsei University Dental Hospital",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "yudh-contact",
+   "label": "Yonsei University Dental Hospital, English contact page",
+   "url": "https://dental.severance.healthcare/dental-en/patients/contact.do",
+   "publisher": "Yonsei University Dental Hospital",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "yudh-billing",
+   "label": "Yonsei University Dental Hospital, billing and insurance page",
+   "url": "https://dental.severance.healthcare/dental-en/ihc/billing.do",
+   "publisher": "Yonsei University Dental Hospital",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  }
+ ]
+}

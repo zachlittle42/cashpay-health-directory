@@ -36,6 +36,7 @@ export const TURKEY_JOURNEY: DestinationJourney = {
       question: 'Which clinics are licensed, name their surgeon and publish prices?',
       links: [
         { href: '/destinations/turkey#clinics', label: 'Clinics and hospital groups, with what is documented', blurb: 'Licensing, named surgeons, published prices and booking channels.' },
+        { href: '/destinations/turkey/directory', label: 'Every Ministry-authorized facility, by province', blurb: 'The full government list, searchable by name, district and licence type.' },
         { href: '/guides/turkey-hair-transplant-clinics', label: 'Turkey hair transplant clinics compared', blurb: 'Published package prices, techniques and credentials side by side.' },
         { href: '/guides/how-to-verify-turkey-clinic-license', label: 'How to verify a Turkish clinic', blurb: 'Check the Ministry of Health health-tourism authorization step by step.' },
         { href: '/hair_transplant', label: 'Hair transplant provider profiles', blurb: 'Researched clinics with price displays.' },
@@ -114,6 +115,7 @@ export const SOUTH_KOREA_JOURNEY: DestinationJourney = {
       question: 'Which clinics are registered, name their surgeon and publish prices?',
       links: [
         { href: '/destinations/south-korea#clinics', label: 'Clinics and hospitals, with what is documented', blurb: 'Registration, accreditation, named surgeons, published prices and booking channels.' },
+        { href: '/destinations/south-korea/directory', label: 'Every registered institution, by region', blurb: 'The full Medical Korea list, searchable by name, district and institution type.' },
         { href: '/guides/how-to-verify-korea-clinic', label: 'How to verify a Korean clinic', blurb: 'The registry lookup, named-surgeon consent and the camera law.' },
         { href: '/plastic_surgery', label: 'Plastic surgery provider profiles', blurb: 'Researched clinics with price displays.' },
         { href: '/dental', label: 'Dental provider profiles', blurb: 'Seoul dental hospitals alongside other destinations.' },

@@ -6,6 +6,8 @@ import MedicalDisclaimer from '@/components/MedicalDisclaimer';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 import { JOURNEYS } from '@/lib/destinations/journeys';
+import { getRegistry, formatCount, clinicAnchor } from '@/lib/registries';
+import { formatAsOf } from '@/components/registries/RegistryFrame';
 import type { DestinationDossier, Source, Step } from '@/lib/destinations/types';
 import type { Provider } from '@/lib/types';
 import {
@@ -43,12 +45,24 @@ const TYPE_LABEL: Record<string, string> = {
   dental: 'Dental',
   eye: 'Eye',
 };
+const TYPE_LABEL_PLURAL: Record<string, string> = {
+  hospital: 'Hospitals and hospital groups',
+  clinic: 'Clinics',
+  'screening center': 'Screening centers',
+  dental: 'Dental',
+  eye: 'Eye',
+};
+const TYPE_ORDER = ['hospital', 'clinic', 'dental', 'eye', 'screening center'];
 
 export default function DestinationHub({ dossier, providers }: { dossier: DestinationDossier; providers: Provider[] }) {
   const d = dossier;
   const journey = JOURNEYS[d.slug];
   const pageUrl = `${SITE}/destinations/${d.slug}`;
   const sourceIndex = new Map<string, number>(d.sources.map((s, i) => [s.id, i + 1]));
+  const registry = getRegistry(d.slug);
+  const clinicGroups = TYPE_ORDER
+    .map((type) => ({ type, clinics: d.clinics.filter((c) => c.type === type).sort((a, b) => a.name.localeCompare(b.name)) }))
+    .filter((g) => g.clinics.length > 0);
 
   const Cite = ({ ids }: { ids?: string[] }) => {
     if (!ids || !ids.length) return null;
@@ -249,59 +263,102 @@ export default function DestinationHub({ dossier, providers }: { dossier: Destin
         <section className="bg-gray-50 px-4 py-12">
           <div className="mx-auto max-w-5xl">
             <SectionHeading id="clinics" eyebrow="Question 2" title={`Which clinics in ${d.displayName}?`} intro={d.clinicsBar} />
-            <div className="space-y-4">
-              {d.clinics.map((c) => (
-                <article key={c.name} className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6">
-                  <div className="flex flex-wrap items-start justify-between gap-3">
-                    <div>
-                      <h3 className="text-lg font-bold text-gray-900">
-                        {c.url ? <a href={c.url} target="_blank" rel="noopener noreferrer" className="hover:text-purple-700 hover:underline">{c.name}</a> : c.name}
-                        <Cite ids={c.sourceIds} />
-                      </h3>
-                      <p className="text-sm text-gray-500">{c.district} · {TYPE_LABEL[c.type]}</p>
-                    </div>
-                    <div className="flex flex-wrap gap-1.5">
-                      {c.specialties.slice(0, 5).map((s) => (
-                        <span key={s} className="rounded-full bg-purple-50 px-2.5 py-1 text-xs font-medium text-purple-800">{s}</span>
-                      ))}
-                    </div>
+            {registry && (
+              <div className="mb-6 rounded-2xl border border-purple-200 bg-white p-5">
+                <p className="text-xs font-bold uppercase tracking-wide text-purple-700">The whole field, not a shortlist</p>
+                <p className="mt-1 text-gray-800">
+                  <strong>{formatCount(registry.meta.total)}</strong> facilities are on the {registry.config.listName} as of {formatAsOf(registry.meta.asOf)}<Cite ids={[registry.config.sourceId]} />. The {d.clinics.length} profiles below are the ones we have researched to the documented bar. They are a subset, not the only legitimate options, and appearing on the list is a legal minimum rather than a quality mark.
+                </p>
+                <div className="mt-3 flex flex-wrap gap-x-5 gap-y-2 text-sm">
+                  <Link href={`/destinations/${d.slug}/directory`} className="inline-flex items-center gap-1 font-semibold text-purple-700 hover:underline">
+                    Browse all {formatCount(registry.meta.total)} by {registry.config.regionNoun} and type <ArrowRight className="h-4 w-4" aria-hidden />
+                  </Link>
+                  <Link href={`/destinations/${d.slug}/directory/search`} className="font-medium text-purple-700 hover:underline">Check a clinic name</Link>
+                  <a href={registry.config.lookup.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 font-medium text-purple-700 hover:underline">
+                    Official lookup <ExternalLink className="h-3.5 w-3.5" aria-hidden />
+                  </a>
+                </div>
+              </div>
+            )}
+            <nav aria-label="Clinic groups" className="mb-4 flex flex-wrap gap-2 text-xs">
+              {clinicGroups.map((g) => (
+                <a key={g.type} href={`#clinics-${g.type.replace(/\s+/g, '-')}`} className="rounded-full border border-gray-200 bg-white px-2.5 py-1 text-gray-700 hover:border-purple-300 hover:text-purple-700">
+                  {TYPE_LABEL_PLURAL[g.type]} <span className="text-gray-400">{g.clinics.length}</span>
+                </a>
+              ))}
+            </nav>
+            <p className="mb-6 text-xs text-gray-500">Open a provider to see the full record: named doctors, registration and credentials, published prices, how to book, and any caution. Within each group the order is alphabetical.</p>
+            <div className="space-y-8">
+              {clinicGroups.map((g) => (
+                <div key={g.type} id={`clinics-${g.type.replace(/\s+/g, '-')}`} className="scroll-mt-28">
+                  <h3 className="mb-3 text-lg font-bold text-gray-900">{TYPE_LABEL_PLURAL[g.type]} <span className="text-sm font-normal text-gray-500">{g.clinics.length}</span></h3>
+                  <div className="space-y-3">
+                    {g.clinics.map((c) => (
+                      <details key={c.name} id={clinicAnchor(c.name)} className="group scroll-mt-28 rounded-2xl border border-gray-200 bg-white open:border-purple-200 open:shadow-sm">
+                        <summary className="cursor-pointer list-none p-5 sm:p-6 [&::-webkit-details-marker]:hidden">
+                          <div className="flex flex-wrap items-start justify-between gap-3">
+                            <div className="min-w-0">
+                              <p className="text-lg font-bold text-gray-900">
+                                {c.name}
+                                <Cite ids={c.sourceIds} />
+                              </p>
+                              <p className="text-sm text-gray-500">{c.district} · {TYPE_LABEL[c.type]}{c.cautions ? ' · ' : ''}{c.cautions && <span className="inline-flex items-center gap-1 text-amber-700"><AlertTriangle className="h-3.5 w-3.5" aria-hidden /> caution noted</span>}</p>
+                            </div>
+                            <div className="flex flex-wrap items-center gap-1.5">
+                              {c.specialties.slice(0, 4).map((sp) => (
+                                <span key={sp} className="rounded-full bg-purple-50 px-2.5 py-1 text-xs font-medium text-purple-800">{sp}</span>
+                              ))}
+                              <span className="ml-1 text-xs font-medium text-purple-700 group-open:hidden">Open record ↓</span>
+                              <span className="ml-1 hidden text-xs font-medium text-purple-700 group-open:inline">Close ↑</span>
+                            </div>
+                          </div>
+                        </summary>
+                        <div className="px-5 pb-5 sm:px-6 sm:pb-6">
+                          {c.url && (
+                            <a href={c.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-sm font-medium text-purple-700 hover:underline">
+                              Provider website <ExternalLink className="h-3.5 w-3.5" aria-hidden />
+                            </a>
+                          )}
+                          <dl className="mt-4 grid gap-3 text-sm sm:grid-cols-2">
+                                                    <div className="rounded-lg bg-gray-50 p-3">
+                                                      <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500">Named doctors</dt>
+                                                      <dd className="mt-1 text-gray-800">{c.namedDoctors}</dd>
+                                                    </div>
+                                                    <div className="rounded-lg bg-gray-50 p-3">
+                                                      <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500">Registration and credentials</dt>
+                                                      <dd className="mt-1 text-gray-800">{c.credentials}</dd>
+                                                    </div>
+                                                    <div className="rounded-lg bg-gray-50 p-3">
+                                                      <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500">Published prices</dt>
+                                                      <dd className="mt-1 text-gray-800">{c.publishedPrices}</dd>
+                                                    </div>
+                                                    <div className="rounded-lg bg-gray-50 p-3">
+                                                      <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500">How to book</dt>
+                                                      <dd className="mt-1 text-gray-800">
+                                                        <span className="block"><strong>Channels:</strong> {c.booking.channels}</span>
+                                                        <span className="mt-1 block"><strong>Consultation:</strong> {c.booking.consult}</span>
+                                                        {c.booking.deposit && <span className="mt-1 block"><strong>Deposit:</strong> {c.booking.deposit}</span>}
+                                                        {c.booking.languages && <span className="mt-1 block"><strong>Languages:</strong> {c.booking.languages}</span>}
+                                                        {c.booking.includes && <span className="mt-1 block"><strong>Package includes:</strong> {c.booking.includes}</span>}
+                                                        {c.booking.bookingUrl && (
+                                                          <a href={c.booking.bookingUrl} target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex items-center gap-1 font-medium text-purple-700 hover:underline">
+                                                            Booking page <ExternalLink className="h-3.5 w-3.5" aria-hidden />
+                                                          </a>
+                                                        )}
+                                                      </dd>
+                                                    </div>
+                                                  </dl>
+                                                  {c.cautions && (
+                                                    <p className="mt-3 flex items-start gap-2 rounded-lg border border-amber-200 bg-amber-50 p-3 text-sm text-amber-900">
+                                                      <AlertTriangle className="mt-0.5 h-4 w-4 shrink-0" aria-hidden />
+                                                      <span>{c.cautions}</span>
+                                                    </p>
+                                                  )}
+                        </div>
+                      </details>
+                    ))}
                   </div>
-                  <dl className="mt-4 grid gap-3 text-sm sm:grid-cols-2">
-                    <div className="rounded-lg bg-gray-50 p-3">
-                      <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500">Named doctors</dt>
-                      <dd className="mt-1 text-gray-800">{c.namedDoctors}</dd>
-                    </div>
-                    <div className="rounded-lg bg-gray-50 p-3">
-                      <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500">Registration and credentials</dt>
-                      <dd className="mt-1 text-gray-800">{c.credentials}</dd>
-                    </div>
-                    <div className="rounded-lg bg-gray-50 p-3">
-                      <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500">Published prices</dt>
-                      <dd className="mt-1 text-gray-800">{c.publishedPrices}</dd>
-                    </div>
-                    <div className="rounded-lg bg-gray-50 p-3">
-                      <dt className="text-xs font-semibold uppercase tracking-wide text-gray-500">How to book</dt>
-                      <dd className="mt-1 text-gray-800">
-                        <span className="block"><strong>Channels:</strong> {c.booking.channels}</span>
-                        <span className="mt-1 block"><strong>Consultation:</strong> {c.booking.consult}</span>
-                        {c.booking.deposit && <span className="mt-1 block"><strong>Deposit:</strong> {c.booking.deposit}</span>}
-                        {c.booking.languages && <span className="mt-1 block"><strong>Languages:</strong> {c.booking.languages}</span>}
-                        {c.booking.includes && <span className="mt-1 block"><strong>Package includes:</strong> {c.booking.includes}</span>}
-                        {c.booking.bookingUrl && (
-                          <a href={c.booking.bookingUrl} target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex items-center gap-1 font-medium text-purple-700 hover:underline">
-                            Booking page <ExternalLink className="h-3.5 w-3.5" aria-hidden />
-                          </a>
-                        )}
-                      </dd>
-                    </div>
-                  </dl>
-                  {c.cautions && (
-                    <p className="mt-3 flex items-start gap-2 rounded-lg border border-amber-200 bg-amber-50 p-3 text-sm text-amber-900">
-                      <AlertTriangle className="mt-0.5 h-4 w-4 shrink-0" aria-hidden />
-                      <span>{c.cautions}</span>
-                    </p>
-                  )}
-                </article>
+                </div>
               ))}
             </div>
 

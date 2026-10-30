@@ -1,0 +1,763 @@
+{
+  "clinics": [
+    {
+      "name": "Dr. Cinik Hair Transplant & Plastic Surgery (Dr. Muhammet Emrah Cinik)",
+      "district": "Istanbul (Şişli, Fulya/Gayrettepe)",
+      "type": "clinic",
+      "url": "https://www.drcinik.com/",
+      "specialties": [
+        "FUE and DHI hair transplant",
+        "beard and eyebrow transplant",
+        "plastic surgery",
+        "dental"
+      ],
+      "namedDoctors": "Dr. Muhammet Emrah Cinik is listed as founder and lead hair transplant surgeon; Eda Cinik is medical director. Other physicians appear by first name only (Dr. Servet, Dr. Ertan, Dr. Eser, Dr. Erol, Dr. Mahmut) with no specialty or registration details. The site does not state whether Dr. Cinik personally performs extraction, channel opening or implantation, or whether technicians perform some steps. No ISHRS membership is claimed on the site and no listing for him was found in the ISHRS directory (October 2026). Anesthesiologist not named.",
+      "credentials": "On the Ministry of Health authorized-facility list (October 2026) as 'Özel Dr. Cinik Tıp Merkezi' (Gayrettepe Mah. Mevlüt Pehlivan Cad. No:23, Şişli); a second entry 'Özel Cinik Polikliniği' in Beşiktaş is also listed. The clinic site gives Fulya, Mevlüt Pehlivan Sk. No:19. No accreditation named on the site; it shows unlabelled award logos and claims '15+ years'. Year founded not stated.",
+      "cautions": "In July 2025 a 38-year-old British patient, Martyn Latchman, died after falling ill at the Dr. Cinik clinic in Beşiktaş while being prepared for a second hair transplant; the clinic said pre-operative tests were done under an anesthesiologist and that he became unwell before the procedure began. The Istanbul provincial health directorate opened an investigation and the body went to the Council of Forensic Medicine; no cause of death or inquest outcome had been published as of October 2026 (cinik-press-turkishminute, cinik-press-lbc). The site does not say who performs each surgical step.",
+      "publishedPrices": "Not published on its site. The site says quotes are personalised after a free consultation and graft analysis (October 2026).",
+      "booking": {
+        "channels": "WhatsApp and phone +90 549 641 37 01; email info@drcinik.com; booking page https://drcinik.com/book; request form on the home page.",
+        "consult": "Free online consultation; a patient coordinator replies after the form is submitted and a graft analysis is made from photos. Response time, fee and deposit terms are not published.",
+        "languages": "English, German, French, Spanish, Italian, Arabic site versions.",
+        "includes": "All-inclusive package described as procedure, medications, aftercare, hotel and VIP airport transfers.",
+        "bookingUrl": "https://drcinik.com/book"
+      },
+      "sourceIds": [
+        "moh-pdfs",
+        "cinik-site",
+        "cinik-press-turkishminute",
+        "cinik-press-lbc"
+      ]
+    },
+    {
+      "name": "Dr. Resul Yaman Hair Clinic (Dr. Resul Yaman)",
+      "district": "Istanbul (Bağcılar, Güneşli)",
+      "type": "clinic",
+      "url": "https://resulyaman.com/",
+      "specialties": [
+        "FUE hair transplant",
+        "eyebrow and beard transplant",
+        "repair of previous transplants"
+      ],
+      "namedDoctors": "Dr. Resul Yaman (medical degree Istanbul University Cerrahpaşa 2005 per the IAHRS profile; the clinic site states 18 years of hair transplant experience and no specialty). The site says Dr. Yaman creates the hairline and 'performs all essential procedures himself' and 'personally manages the implantation direction, density, and angles'. It does not explicitly say who performs graft extraction. The IAHRS profile says he is an ISHRS member; no listing was found in the ISHRS find-a-doctor directory (October 2026). Anesthesiologist not named.",
+      "credentials": "On the Ministry of Health authorized-facility list (October 2026) as 'Özel Yaman Tıp Merkezi' (Hürriyet Mah. Atatürk Cad. No:45/A, Bağcılar), matched by address: the clinic contact page gives Hürriyet Mah. Atatürk Cad. No:45, Güneşli, and the site calls the facility 'Yaman Surgical Medical Center'. The site states an International Health Tourism Authorization Certificate and a HealthTürkiye listing (not independently verified). Year founded not stated.",
+      "publishedPrices": "Not published on its site. A hair transplant cost page exists but shows no figures (October 2026). Marketplace range (indicative): MediHair listed 'below $3,000' in 2023.",
+      "booking": {
+        "channels": "Phone and WhatsApp +90 545 600 12 34; email info@resulyaman.com; free consultation form https://resulyaman.com/free-consultation/.",
+        "consult": "Free online consultation from photos of the scalp and donor area; the clinic says blood tests, ECG and other tests are done before surgery. Response time, fee and deposit terms are not published.",
+        "includes": "Airport pickup, hotel near the facility, city transfers, pre-surgery tests, medication guidance, first-year follow-up (per the site).",
+        "bookingUrl": "https://resulyaman.com/free-consultation/"
+      },
+      "sourceIds": [
+        "moh-pdfs",
+        "yaman-site",
+        "yaman-contact",
+        "yaman-iahrs",
+        "yaman-medihair"
+      ]
+    },
+    {
+      "name": "Dr. Bayer Clinic (Dr. Yetkin Bayer)",
+      "district": "Istanbul (Beşiktaş, Kuruçeşme)",
+      "type": "clinic",
+      "specialties": [
+        "FUE hair transplant",
+        "stem cell and PRP hair treatments",
+        "aesthetic procedures",
+        "dental"
+      ],
+      "namedDoctors": "Dr. Yetkin Bayer is the only named practitioner in the listings found. Marketplace listings describe him as a hair transplant surgeon with 23 to 27 years of experience and credit him with an 'oblique canal opening' technique; no specialty, medical school or ISHRS membership is given, and no ISHRS directory listing was found (October 2026). Not stated who performs extraction, channel opening or implantation.",
+      "credentials": "On the Ministry of Health authorized-facility list (October 2026) as 'Özel Dr. Bayer Polikliniği' (Kuruçeşme Mah. Ahmet Adnan Saygun Cad. No:69 B, Beşiktaş), matched by the address given on WhatClinic. No official clinic website could be reached (dryetkinbayer.com and drbayerclinic.com did not resolve in October 2026); facts come from marketplace listings. No accreditation seen. MediHair gives a founding year of 2000.",
+      "cautions": "No clinic-run website was found, so prices, doctor credentials and who performs the surgery could only be read from medical-tourism marketplaces. Two different street numbers on Adnan Saygun Caddesi appear across listings.",
+      "publishedPrices": "Not published on its site (no site found). Marketplace range (indicative): Bookimed listed hair transplant from about $1,300 to $2,600 and MediHair $3,000 to $5,000 (seen October 2026).",
+      "booking": {
+        "channels": "Through marketplace listings only (Bookimed, WhatClinic); no direct phone, WhatsApp or email was found.",
+        "consult": "Not published."
+      },
+      "sourceIds": [
+        "moh-pdfs",
+        "bayer-bookimed",
+        "bayer-whatclinic",
+        "bayer-medihair"
+      ]
+    },
+    {
+      "name": "Civas Hair Transplant Clinic (Dr. Ekrem Civas)",
+      "district": "Ankara (Çankaya, Ümit Mahallesi)",
+      "type": "clinic",
+      "url": "https://www.civashairtransplant.com/",
+      "specialties": [
+        "FUE hair transplant",
+        "ARTAS robotic extraction",
+        "eyebrow and beard transplant",
+        "dermatology"
+      ],
+      "namedDoctors": "Dr. Ekrem Civas, MD, MBA, dermatologist; ISHRS Fellow member (FISHRS, 2015) and ABHRS Diplomate (2011), member since 2004 per the ISHRS directory; Clinical Associate Professor of Dermatology (2021). Dr. Ümit Akpınar, dermatologist, is listed at the same clinic on Bookimed. The Bookimed listing says the doctors 'stay involved throughout each procedure' and that the ARTAS robot handles extraction; it does not state whether the doctor personally performs extraction, channel opening and implantation or whether technicians do some steps. Clinic site blocked automated reading (HTTP 403).",
+      "credentials": "Not matched by brand name or address on the Ministry list (October 2026); ask the clinic for its legal entity name. The ISHRS directory and Bookimed give the address as Ümit Mah. Meksika Cad. 2479. Sok. Nokta İş Merkezi No:2 D:7-8, Çankaya; no Ministry entry at that address was found. Clinic site blocked automated reading; facts from the ISHRS directory and marketplace. Founded 2003 per Bookimed.",
+      "publishedPrices": "Not published on its site (site blocked automated reading). Bookimed lists all procedures as 'price on request' (October 2026).",
+      "booking": {
+        "channels": "Phone +90 546 437 0738 (from the ISHRS directory); contact form on civashairtransplant.com; ISHRS 'Email a Doctor' form.",
+        "consult": "Not published."
+      },
+      "sourceIds": [
+        "moh-pdfs",
+        "civas-ishrs",
+        "civas-bookimed",
+        "civas-site"
+      ]
+    },
+    {
+      "name": "Dr. Özlem Biçer Hair Transplant Clinic (Dr. Özlem Biçer)",
+      "district": "Istanbul (Ataşehir, Barbaros)",
+      "type": "clinic",
+      "url": "https://www.ozlembicer.com/en",
+      "specialties": [
+        "FUE hair transplant",
+        "beard transplant",
+        "eyebrow transplant",
+        "female hair transplant"
+      ],
+      "namedDoctors": "Dr. Özlem Biçer, MD; ISHRS Full Member (joined 2018) and ABHRS Diplomate per the ISHRS directory; the site says 'member of American Board' and ISHRS. The site states 'all hair transplantation procedures are personally performed by Dr. Biçer' and 'only one patient a day', but the beard section says procedures are done 'with her experienced medical team'; the site does not break down who does extraction, channel opening and implantation. Anesthesiologist not named.",
+      "credentials": "On the Ministry of Health authorized-facility list (October 2026) as 'Özel Dr. Özlem Biçer Muayenehanesi' (Barbaros Mah. Menekşe Sok. Deluxia Suit Sitesi K:17 D:209, Ataşehir), which matches the ISHRS directory address. Listed as a private practice (Muayenehane), not a medical centre. No accreditation claimed. Site says active in hair restoration since 1998.",
+      "publishedPrices": "Not published on its site (October 2026).",
+      "booking": {
+        "channels": "WhatsApp and phone +90 530 414 13 13; email info@ozlembicer.com; contact form https://www.ozlembicer.com/en/contact-us; landline +90 216 576 2052 per ISHRS.",
+        "consult": "Three steps on the site: WhatsApp contact with a patient consultant, a one-on-one online consultation with Dr. Biçer, then a treatment plan; fee, response time and deposit terms not published.",
+        "bookingUrl": "https://www.ozlembicer.com/en/contact-us"
+      },
+      "sourceIds": [
+        "moh-pdfs",
+        "bicer-site",
+        "bicer-ishrs"
+      ]
+    },
+    {
+      "name": "AHD Clinic (Dr. Hakan Doğanay)",
+      "district": "Antalya (Muratpaşa, Güzeloba)",
+      "type": "clinic",
+      "url": "https://www.ahdclinic.com/",
+      "specialties": [
+        "FUE and DHI hair transplant",
+        "beard transplant",
+        "eyebrow transplant"
+      ],
+      "namedDoctors": "Dr. Hakan Doğanay, founder, experience 'starting back in 2003'; no medical specialty or degree stated. The prices page is explicit: in the 'Dr. Doğanay plan' he does the consultation and hairline design, 'FUE extraction by AHD technicians, supervised by Dr. Doğanay', and implantation 'performed solely by Dr. Doğanay himself'; in the cheaper 'AHD Team' packages both FUE extraction and DHI implantation are done by technicians under his supervision. The site shows ISHRS, AHLA and IAHRS logos; the American Hair Loss Association lists him as a recommended surgeon; no listing was found in the ISHRS find-a-doctor directory (October 2026). Anesthesiologist not named.",
+      "credentials": "On the Ministry of Health authorized-facility list (October 2026) as 'Özel AHD Polikliniği' (Güzeloba Mah. Rauf Denktaş Cad. No:4/101-102, Muratpaşa), matching the address on the clinic's prices page. The site claims Ministry of Health licensing with regular inspections; no licence number given. Founded 2003 per the site.",
+      "cautions": "Technicians perform extraction in every plan and also implantation in the standard packages; only the per-graft plan has the doctor implanting (ahd-prices). Turkey's hair-transplant unit regulation sets a transition period for assistant staff to 31 December 2026 and a national standard for non-physician assistant practitioners took effect 9 February 2026 (tr-hair-regulation-2026).",
+      "publishedPrices": "On the clinic prices page (seen October 2026): Dr. Doğanay plan EUR 3 per graft (about $3.45, EUR 1 = $1.15 approximate rate, October 2026); AHD Team packages EUR 3,300 up to 2,500 grafts (about $3,795), EUR 3,300 to 4,000 for 2,500 to 4,000 grafts (about $3,795 to $4,600), EUR 4,000 to 4,500 for 4,000 to 6,000 grafts (about $4,600 to $5,175). Transport, accommodation and medical kit stated as free. Credit card and cash accepted.",
+      "booking": {
+        "channels": "WhatsApp and phone +90 533 154 18 58; contact form https://www.ahdclinic.com/contact/; no email published.",
+        "consult": "Free consultation from photos; the site says it evaluates suitability and may decline unsuitable patients. Response time and deposit terms not published.",
+        "includes": "Airport, hotel and clinic transfers, accommodation, post-op medical kit, WhatsApp aftercare.",
+        "bookingUrl": "https://www.ahdclinic.com/contact/"
+      },
+      "sourceIds": [
+        "moh-pdfs",
+        "ahd-site",
+        "ahd-prices",
+        "ahd-ahla",
+        "tr-hair-regulation-2026"
+      ]
+    },
+    {
+      "name": "HLC HairLine Clinic (Dr. Özgür Öztan)",
+      "district": "Ankara (Çankaya, Gaziosmanpaşa)",
+      "type": "clinic",
+      "url": "https://www.fue-hlc.com/",
+      "specialties": [
+        "Manual FUE hair transplant",
+        "body hair transplant",
+        "repair cases"
+      ],
+      "namedDoctors": "Dr. Özgür Öztan, MD, ISHRS Fellow member (FISHRS 2022), ABHRS Diplomate (2021), ISHRS member since 2012, Ankara University medical graduate (2000), President of FUE Europe per the ISHRS directory; co-director Gökhan Doğan (not a physician by title). The site states 'Every part of the FUE Hair Transplant procedure will personally be performed by our hair surgeons' and that it 'does not allow medical assistants or other members of the staff to carry out fundamental parts of a procedure'. Other surgeons are not named on the English home page. Anesthesiologist not named.",
+      "credentials": "On the Ministry of Health authorized-facility list (October 2026) as 'Özel HLC Cerrahi Tıp Merkezi' (Kazım Özalp Mah. Uğur Mumcu Cad. No:6, Çankaya), matching the ISHRS directory address. Listed as a private medical centre (Tıp Merkezi). No accreditation claimed on the site. Operating since 2002 per the site (an image says 2003).",
+      "publishedPrices": "Not published on its site (October 2026). Marketplace range (indicative): MediHair lists $3,000 to $5,000.",
+      "booking": {
+        "channels": "Online consultation form https://www.fue-hlc.com/online-consultation/; phone +90 532 416 38 59 (from the ISHRS directory); no email or WhatsApp on the home page.",
+        "consult": "Online consultation form with photos; the site says physicians take responsibility for patient evaluation and only accept eligible candidates. Fee, response time and deposit terms not published.",
+        "bookingUrl": "https://www.fue-hlc.com/online-consultation/"
+      },
+      "sourceIds": [
+        "moh-pdfs",
+        "hlc-site",
+        "hlc-ishrs",
+        "hlc-medihair"
+      ]
+    },
+    {
+      "name": "Elithair (Dr. Abdulaziz Balwi)",
+      "district": "Istanbul (Kağıthane, Cendere)",
+      "type": "clinic",
+      "url": "https://www.elithair.com/",
+      "specialties": [
+        "DHI and Sapphire FUE hair transplant",
+        "beard and eyebrow transplant",
+        "PRP"
+      ],
+      "namedDoctors": "Dr. Abdulaziz Balwi, medical director, listed with a 2010 Ege University degree and aesthetic and hair certificates; Dr. Imad Mustafa (general practitioner); Dr. Hazal Jafari (dermatology). The site says 'over 20 highly qualified surgeons' work on site, that team members are each 'specialized in a single step' and that a senior surgeon supervises each step; it does not state which steps doctors perform and which technicians perform. An anesthesiologist is mentioned but not named. No ISHRS directory listing for Dr. Balwi was found (October 2026).",
+      "credentials": "On the Ministry of Health authorized-facility list (October 2026) as 'Özel Elit Klinik Tıp Merkezi' (Hamidiye Mah. Cendere Cad. No:103/3-1, Kağıthane), matching the Cendere Cad. T4 Blok No:103/3 address on WhatClinic; the site itself calls the facility 'Elit Clinic' and gives only the Kağıthane/Sarıyer area. Site states ISO 9001:2015 from TÜV Thüringen (certificate 151002611856) and Ministry of Health certification; ISO was not checked at the certifier. Year founded not stated; the site claims over 150,000 patients.",
+      "cautions": "High-volume model: more than 300 staff on site and procedures split into single steps per team member, with the doctor-versus-technician split not stated on the site (elithair-clinic). Turkey's February 2026 national standard for non-physician assistant practitioners ties their numbers to the number of hair transplant rooms (tr-hair-regulation-2026).",
+      "publishedPrices": "On the clinic site (seen October 2026): 'Elithair All-Inclusive' from $3,899, with the site comparing other Turkish clinics at $3,799 to $4,199 and 'budget clinics' at $1,599 to $2,299. Final price depends on graft count.",
+      "booking": {
+        "channels": "Phone +1 267 551 5557 (US) and +44 20 3966 0128 (UK); email contact@elithairtransplant.com; free hair analysis form https://www.elithair.com/hair-analysis/; contact page https://www.elithair.com/information/contact/. No WhatsApp number published.",
+        "consult": "Free photo-based hair analysis with a recommendation promised within 24 hours, then a call with a coordinator on graft count, method and price. Deposit terms not published.",
+        "includes": "DHI or NEO FUE, 'Sleep-Deep' anesthesia, six pre-tests, VIP transfers, accommodation (site says both 3 nights in a 4-star hotel and rooms inside the clinic), aftercare kit, one PRP session, medication, app.",
+        "bookingUrl": "https://www.elithair.com/hair-analysis/"
+      },
+      "sourceIds": [
+        "moh-pdfs",
+        "elithair-site",
+        "elithair-clinic",
+        "elithair-contact",
+        "elithair-whatclinic",
+        "tr-hair-regulation-2026"
+      ]
+    },
+    {
+      "name": "Clinicana Hair Transplant & Esthetic Surgeries (Prof. Dr. Soner Tatlıdede)",
+      "district": "Istanbul (Beyoğlu, Hacıahmet; surgery at Acıbadem Taksim Hospital, Şişli)",
+      "type": "clinic",
+      "url": "https://www.clinicana.com/",
+      "specialties": [
+        "FUE and DHI hair transplant",
+        "beard and eyebrow transplant",
+        "cosmetic surgery",
+        "exosome and PRP add-ons"
+      ],
+      "namedDoctors": "Prof. Dr. Soner Tatlıdede, professor of plastic surgery, named as leading the protocols; Dr. Melda Koyuncu, dermatologist; Eyad Attar, medical director (title not stated as physician). Dr. Arslan Musbeh, named in some third-party listings, does not appear on the site. The site does not state who performs extraction, channel opening and implantation and advises asking the clinic directly. Anesthesiologist not named.",
+      "credentials": "Not matched by brand name or address on the Ministry list (October 2026); ask the clinic for its legal entity name. The footer address Hacıahmet Mah. Kurtuluş Deresi Cad. No:15-21 İç Kapı 94, Beyoğlu, is an office; the site says the procedure takes place at Acıbadem Taksim Hospital, which is on the Ministry hospital list as 'Özel Acıbadem Taksim Hastanesi'. Badges for RealSelf, an ISO logo and a 2016 customer service award are shown without details. Year founded not stated.",
+      "cautions": "The brand itself is not on the Ministry facility list; its legitimacy rests on the host hospital. The site does not say who performs each surgical step.",
+      "publishedPrices": "On the clinic cost page (seen October 2026, EUR 1 = $1.15 approximate rate, October 2026): Basic EUR 2,500 (about $2,875, no hotel or transfers); Standard EUR 2,850 (about $3,278, 2 hotel nights); Premium EUR 3,000 (about $3,450, 3 nights); Premium Mega DHI EUR 4,500 (about $5,175); Exosome EUR 3,950 (about $4,543); Stem Cell VIP EUR 5,500 (about $6,325, general anesthesia). GBP, USD and TRY accepted.",
+      "booking": {
+        "channels": "Phone +90 549 300 60 69; email info@clinicana.com; contact form on the site with service selection; WhatsApp icon shown without a number.",
+        "consult": "Free consultation; the site says no deposit and no advance payment, with payment in person by cash, card or bank transfer after the plan is confirmed. Two in-person consultations before surgery in the Premium plans.",
+        "deposit": "None; the site states 'No deposit. No advance payment.'",
+        "includes": "Procedure at Acıbadem Taksim Hospital, blood tests, medication; hotel with breakfast, VIP transfers, aftercare kit, translator and monthly WhatsApp photo check-ins in Standard and above.",
+        "bookingUrl": "https://www.clinicana.com/"
+      },
+      "sourceIds": [
+        "moh-pdfs",
+        "clinicana-site",
+        "clinicana-prices"
+      ]
+    },
+    {
+      "name": "Diamond Hair Clinic (Dr. Mehmet Demircioğlu)",
+      "district": "Istanbul (Şişli, Fulya)",
+      "type": "clinic",
+      "url": "https://diamondhairclinic.com/",
+      "specialties": [
+        "Sapphire FUE hair transplant",
+        "hairline design",
+        "small-volume practice"
+      ],
+      "namedDoctors": "Dr. Mehmet Demircioğlu, founder and 'hair restoration surgeon' (specialty and medical school not stated; the About section links to Istanbul University and the World FUE Institute). The site says he is personally involved in 'hairline design, surgical planning, and recipient area incisions' (channel opening) and reviews every photo set himself; it does not state who performs donor extraction or graft implantation. Capacity stated as one patient per day and at most ten per month. No ISHRS directory listing found (October 2026). Anesthesiologist not named.",
+      "credentials": "Not matched by brand name or address on the Ministry list (October 2026); ask the clinic for its legal entity name. ProvenExpert gives the address as Fulya, Mevlüt Pehlivan Sk. No:12, Şişli; the Ministry list has a polyclinic under a different name at that building, so the legal entity could not be confirmed. The site does not name the facility where surgery is done. Founded 2012 per the site. No accreditation claimed.",
+      "cautions": "Extraction and implantation roles are not stated on the site; the surgical facility is not named.",
+      "publishedPrices": "Not published on its site (the cost page returned 404 in October 2026; a EUR 2,000 to 3,000 figure on the site is a hypothetical in a quiz, not a price).",
+      "booking": {
+        "channels": "WhatsApp +90 546 840 41 75; contact form https://diamondhairclinic.com/contact-us/; no email or landline published.",
+        "consult": "Send photos of hairline, temples, crown and donor area plus age, medications and previous transplants; the doctor reviews and issues a report with graft estimate, plan, price and hotel and transfer details. Fee and deposit terms not published.",
+        "includes": "Sapphire FUE, needle-free anesthesia, medications, six-month care set, transfers, three hotel nights.",
+        "bookingUrl": "https://diamondhairclinic.com/contact-us/"
+      },
+      "sourceIds": [
+        "moh-pdfs",
+        "diamond-site",
+        "diamond-provenexpert"
+      ]
+    },
+    {
+      "name": "Teo Clinic (Dr. Teoman Doğan)",
+      "district": "Istanbul (Şişli, Harbiye/Nişantaşı; surgery at American Hospital)",
+      "type": "clinic",
+      "url": "https://drteomandogan.com/",
+      "specialties": [
+        "Primary and revision rhinoplasty",
+        "deep plane facelift",
+        "lip lift",
+        "facial fat grafting"
+      ],
+      "namedDoctors": "Dr. Teoman Doğan, MD PhD, plastic surgeon with a PhD in anatomy; the site shows a Turkish medical specialization certificate and states membership of ASPS, ISAPS and 'the Rhinoplasty Society'. Türk Plastik Rekonstrüktif ve Estetik Cerrahi Derneği and EBOPRAS board certification are not mentioned. Anesthesiologist not named.",
+      "credentials": "On the Ministry of Health authorized-facility list (October 2026) as 'Uzm. Dr. Teoman Doğan Muayenehanesi' (Harbiye Mah. Teşvikiye Cad. No:25 İç Kapı 2, Şişli), matching the consulting-room address on the site. Surgery is stated to take place at American Hospital Istanbul (on the Ministry hospital list as 'Özel V.K.V. Amerikan Hastanesi'; the site describes it as JCI-accredited). The site shows a Health Tourism Authorization Certificate badge. Practice led since 2002 per the site.",
+      "publishedPrices": "On the clinic pricing page, 'last reviewed on 30 September 2026', in USD: primary rhinoplasty $12,000 (up to $15,000 in complex cases); revision rhinoplasty from $15,000; deep plane facelift $30,000; deep plane neck lift $15,000; lip lift $10,000; rhinoplasty plus lip lift $23,000. Prices cover hospital, operating room, anesthesia and medical care; travel and hotel are separate.",
+      "booking": {
+        "channels": "WhatsApp and phone +90 542 353 69 10; email contact@teo.clinic; no web form.",
+        "consult": "Photo review first, then an in-person or video consultation covering anatomy, breathing and expectations, ending with a plan and itemised quote. Consultation fee and deposit terms not stated; a payment options page lists cards, bank transfer, Western Union, KoronaPay and instalments.",
+        "languages": "English, Turkish, Arabic, German (per the site)."
+      },
+      "sourceIds": [
+        "moh-pdfs",
+        "teo-site",
+        "teo-pricing"
+      ]
+    },
+    {
+      "name": "Prof. Dr. Şükrü Yazar Clinic (Prof. Dr. Şükrü Yazar)",
+      "district": "Istanbul (Şişli, Nişantaşı; surgery at Acıbadem Maslak and Altunizade)",
+      "type": "clinic",
+      "url": "https://www.sukruyazar.com/",
+      "specialties": [
+        "Rhinoplasty",
+        "facial aesthetic surgery",
+        "breast surgery",
+        "reconstructive microsurgery"
+      ],
+      "namedDoctors": "Prof. Dr. Şükrü Yazar, plastic, reconstructive and aesthetic surgery specialist, professor since 2013; the site states he holds the Turkish Board and European Board (EBOPRAS) certificates and has been president of the Türk Plastik Rekonstrüktif ve Estetik Cerrahi Derneği since 26 October 2024; memberships in ASRM, WSRM and EURAPS. ISAPS not mentioned. Anesthesiologist not named.",
+      "credentials": "On the Ministry of Health authorized-facility list (October 2026) as 'Özel Prof. Dr. Şükrü Yazar Muayenehanesi' (Harbiye Mah. Valikonağı Cad. Marmara Apt. No:16/1 D:2, Şişli), matching the site footer. Surgery is stated to take place at Acıbadem Maslak and Acıbadem Altunizade hospitals, both on the Ministry hospital list ('Özel Acıbadem Maslak Hastanesi', 'Özel Acıbadem Altunizade Hastanesi'); the site describes both as JCI-accredited.",
+      "publishedPrices": "Not published on its site. The site says Turkish regulation does not allow Ministry-approved facilities to publish prices online; a price is given after examination (October 2026).",
+      "booking": {
+        "channels": "Phone +90 535 876 05 30; email info@sukruyazar.com; appointment and contact forms on the site; a chat widget uses +90 541 334 34 84. Hours shown as 24/7.",
+        "consult": "First consultation stated as free; the team schedules an in-person or online preliminary meeting and Prof. Yazar sets the plan. Deposit terms not published.",
+        "languages": "Turkish, English, German site versions."
+      },
+      "sourceIds": [
+        "moh-pdfs",
+        "yazar-site"
+      ]
+    },
+    {
+      "name": "Clinic Dr. Barış Çakır (Doç. Dr. Mehmet Barış Çakır)",
+      "district": "Istanbul (Şişli, Teşvikiye/Nişantaşı; surgery at American Hospital)",
+      "type": "clinic",
+      "url": "https://www.bariscakir.com/",
+      "specialties": [
+        "Rhinoplasty",
+        "revision rhinoplasty",
+        "facial aesthetic surgery"
+      ],
+      "namedDoctors": "Doç. Dr. (Associate Professor) Mehmet Barış Çakır, plastic, reconstructive and aesthetic surgery specialist. Board certification, Türk Plastik Rekonstrüktif ve Estetik Cerrahi Derneği, EBOPRAS, ISAPS and Rhinoplasty Society of Europe are not mentioned on the site. Anesthesiologist not named.",
+      "credentials": "On the Ministry of Health authorized-facility list (October 2026) as 'Doç. Dr. Mehmet Barış Çakır Muayenehanesi' (Harbiye Mah. Güneş Apt. Teşvikiye Cd. No:3 D:2, Şişli), matching the site address Teşvikiye Caddesi No:3/2, Güneş Apartmanı. Surgery stated to take place at Amerikan Hastanesi (American Hospital), on the Ministry hospital list as 'Özel V.K.V. Amerikan Hastanesi'.",
+      "publishedPrices": "Not published on its site (October 2026).",
+      "booking": {
+        "channels": "Phone +90 532 645 65 33; email shown only as an obfuscated link; contact section at https://www.bariscakir.com/#iletisim. No WhatsApp or form URL published.",
+        "consult": "Personal consultation covering expectations, health history, nasal structure and facial proportions; the site says digital nose design is not a guarantee of the surgical result. Fee, response time and deposit terms not published."
+      },
+      "sourceIds": [
+        "moh-pdfs",
+        "cakir-site"
+      ]
+    },
+    {
+      "name": "Dr. HE Obesity Clinic (Prof. Dr. Hasan Erdem)",
+      "district": "Istanbul (Pendik, Kurtköy)",
+      "type": "clinic",
+      "url": "https://drheobesityclinic.com/",
+      "specialties": [
+        "Gastric sleeve",
+        "gastric bypass",
+        "gastric balloon",
+        "revision bariatric surgery"
+      ],
+      "namedDoctors": "Prof. Dr. Hasan Erdem, general surgeon (specialization at Bezmialem Vakıf Gureba Hospital, 2008, per a third-party profile). No IFSO or other society membership is stated on the site. Other surgeons and anesthesiologists are not named.",
+      "credentials": "The clinic's own address, Kurtköy Mah. Ankara Cd. 390/3, Pendik, is the Ministry-listed address of 'Özel Kurtköy Ersoy Hastanesi' (on the Ministry hospital list, October 2026), and Bookimed says the clinic is situated in that hospital; the brand 'Dr. HE Obesity Clinic' is not itself a Ministry entry. 'Prof. Dr. Hasan Erdem Muayenehanesi' (Altunizade, Üsküdar) is on the Ministry private-practice list. The site does not name the hospital. Bookimed lists ISO and JCI claims that were not verified. Founded 2016 per Bookimed.",
+      "cautions": "The site does not name the operating hospital; the match to Kurtköy Ersoy Hospital rests on the shared street address and a marketplace listing. No regulator action or press-reported incident naming the clinic was found (October 2026).",
+      "publishedPrices": "Not published on its site (the prices page returned 404 in October 2026). Marketplace range (indicative): Bookimed listed gastric sleeve at about $3,700 to $4,400 and an all-inclusive package around EUR 3,590 to 3,690 (about $4,129 to $4,244, EUR 1 = $1.15 approximate rate, October 2026).",
+      "booking": {
+        "channels": "Phone and WhatsApp +90 543 374 30 38; 'Get Information Now' form on the site; email obfuscated.",
+        "consult": "Free treatment plan offered through the form; consultation steps, response time and deposit terms not published.",
+        "languages": "English, German, Arabic, Russian, French, Bulgarian, Spanish, Malay, Kurdish, Greek, Italian site versions.",
+        "includes": "Sleeve and bypass packages: pre-op exams, surgery, medication and diet plan, 5 to 6 nights accommodation, post-op support, VIP transport; balloon package 2 hotel nights."
+      },
+      "sourceIds": [
+        "moh-pdfs",
+        "drhe-site",
+        "drhe-bookimed"
+      ]
+    },
+    {
+      "name": "Prof. Dr. Toygar Toydemir Obesity and Metabolic Surgery (Prof. Dr. Toygar Toydemir)",
+      "district": "Istanbul (Şişli, Teşvikiye/Nişantaşı)",
+      "type": "clinic",
+      "url": "https://www.toygartoydemir.com/en/",
+      "specialties": [
+        "Gastric sleeve",
+        "gastric bypass",
+        "gastric balloon",
+        "duodenal switch",
+        "revision bariatric surgery",
+        "reflux surgery"
+      ],
+      "namedDoctors": "Prof. Dr. Toygar Toydemir, general surgeon; Ege University medical graduate, general surgery training at Şişli Etfal Training and Research Hospital, reflux surgery training with Prof. Mehmet Ali Yerdel (2009 to 2011), revisional bariatric surgery at Lenox Hill Hospital, New York with Dr. Mitchell Roslin (2013), professor of general surgery since 2020. IFSO or other society memberships are not stated. Anesthesiologist not named.",
+      "credentials": "On the Ministry of Health authorized-facility list (October 2026) as 'Uzm. Dr. Toygar Toydemir Muayenehanesi' (Teşvikiye Mh. Sinoplu Şehit Cemal Sk. No:12B D:1, Şişli), matching the site address. Listed as a private practice (Muayenehane), so operations take place elsewhere; the site does not name the operating hospital, so its Ministry status could not be checked.",
+      "cautions": "Operating hospital not named on the site; ask which hospital will be used and check it against the Ministry hospital list.",
+      "publishedPrices": "Not published on its site. Blog posts titled with 'cost' show no figures (October 2026).",
+      "booking": {
+        "channels": "Phone and WhatsApp +90 532 586 96 00; contact form on the site ('Free Appointment'); email obfuscated. Hours Monday to Friday 09:00 to 18:00, Saturday 09:00 to 15:00, Turkey time.",
+        "consult": "Form with name, phone and procedure; the site says the team contacts you right away. Fee, deposit and package terms not published.",
+        "languages": "Turkish, English, German, Bulgarian site versions."
+      },
+      "sourceIds": [
+        "moh-pdfs",
+        "toydemir-site",
+        "toydemir-en"
+      ]
+    },
+    {
+      "name": "Clinic Mono (medical tourism agency, İzmir)",
+      "district": "İzmir (Bayraklı, Folkart Towers)",
+      "type": "clinic",
+      "url": "https://www.clinicmono.com/",
+      "specialties": [
+        "Gastric sleeve and bypass arranged through contracted surgeons",
+        "cosmetic surgery",
+        "dental",
+        "hair transplant"
+      ],
+      "namedDoctors": "Clinic Mono describes itself as an authorized health tourism agency and lists 'doctors and surgeons we cooperate with': M.D. Eren Ersöz, M.D. Deniz Yıldırım, Assoc. Prof. Dr. Çağlar Ertekin, M.D. Alper Temiz, M.D. Nazmi Yoğurtçu, M.D. Ergin Erdoğan, M.D. Serbay Gürel and dentists Çağrı Dereli and Burak Anıl Sarp. The site does not say which of these performs bariatric surgery or in which hospital. It states Turkish Board and European Board plastic surgery certification badges without tying them to a named surgeon.",
+      "credentials": "Not matched by brand name or address on the Ministry list (October 2026); ask the clinic for its legal entity name. The Folkart Towers address is not on the facility list (only unrelated private practices in the same towers appear); as an intermediary agency it would fall under the USHAŞ/TÜRSAB health-tourism intermediary authorization, which the site cites as 'Ministry of Health 11898 International Health Tourism Accredited' (not verified). The operating hospital for bariatric surgery is not named, so its Ministry status could not be checked.",
+      "cautions": "This is an agency, not a licensed facility: surgeries are performed by contracted surgeons in hospitals the site does not name. In 2020 a UK patient, Abimbola Bamgbose, died after a package booked through Mono Cosmetic Surgery in İzmir; a newspaper correction stated the surgery was not performed by Mono itself and the family's lawyers alleged negligence (mono-press-jep, mono-press-thecable). Trustpilot showed the company's rating as unavailable for breaching guidelines (October 2026).",
+      "publishedPrices": "Not published on its site; the site says it builds tailored all-inclusive packages (October 2026).",
+      "booking": {
+        "channels": "WhatsApp and phone +44 7418 347960 and +90 544 852 45 26; 'Get a Free Consultation' forms on the site; email obfuscated; social channels.",
+        "consult": "Free online consultation by text, call or video, 24/7 per the site. The Booking Fee and Advance Payment pages were empty when read in October 2026, so deposit terms are not published.",
+        "languages": "English, German, Spanish, Swedish, Arabic, French site versions.",
+        "includes": "Stay at the 'Mono Aftercare Villa' with consultant and household staff, VIP airport pickup, personal assistant, patient rights department; flights excluded."
+      },
+      "sourceIds": [
+        "moh-pdfs",
+        "mono-site",
+        "mono-press-jep",
+        "mono-press-thecable"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "moh-pdfs",
+      "label": "T.C. Sağlık Bakanlığı, Uluslararası Sağlık Turizmi Yetkili Sağlık Tesisleri (hospitals, medical centres, polyclinics, private practices)",
+      "url": "https://shgmturizmdb.saglik.gov.tr/TR-76664/yetkili-saglik-tesisleri.html",
+      "publisher": "T.C. Sağlık Bakanlığı",
+      "date": "2026-10-05",
+      "kind": "official"
+    },
+    {
+      "id": "tr-hair-regulation-2026",
+      "label": "Saç Ekimi Alanında Yeni Dönem: Hekim Dışı Sağlık Personeline Yetki (national standard for assistant practitioners, 9 February 2026)",
+      "url": "https://www.saglikpersonelihaber.net/sac-ekimi-alaninda-yeni-donem-hekim-disi-saglik-personeline-yetki-saglik-bakanligi",
+      "publisher": "Sağlık Personeli Haber",
+      "date": "2026-02",
+      "kind": "press"
+    },
+    {
+      "id": "cinik-site",
+      "label": "Dr. Cinik home page",
+      "url": "https://www.drcinik.com/",
+      "publisher": "Dr. Cinik",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "cinik-press-turkishminute",
+      "label": "British man dies after falling ill at Istanbul hair transplant clinic",
+      "url": "https://turkishminute.com/2025/08/04/british-man-dies-after-falling-ill-at-istanbul-hair-transplant-clinic/",
+      "publisher": "Turkish Minute",
+      "date": "2025-08-04",
+      "kind": "press"
+    },
+    {
+      "id": "cinik-press-lbc",
+      "label": "Brit tourist dead after Turkey hair transplant",
+      "url": "https://www.lbc.co.uk/news/uk/brit-tourist-dead-turkey-hair-transplant",
+      "publisher": "LBC",
+      "date": "2025-08",
+      "kind": "press"
+    },
+    {
+      "id": "yaman-site",
+      "label": "Dr. Resul Yaman Hair Clinic home page",
+      "url": "https://resulyaman.com/",
+      "publisher": "Dr. Resul Yaman Hair Clinic",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "yaman-contact",
+      "label": "Dr. Resul Yaman Hair Clinic contact page",
+      "url": "https://resulyaman.com/contact/",
+      "publisher": "Dr. Resul Yaman Hair Clinic",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "yaman-iahrs",
+      "label": "IAHRS profile: Resul Yaman",
+      "url": "https://www.iahrs.org/hair-transplant/resul-yaman",
+      "publisher": "International Alliance of Hair Restoration Surgeons",
+      "date": "2026",
+      "kind": "marketplace"
+    },
+    {
+      "id": "yaman-medihair",
+      "label": "MediHair clinic profile: Dr. Resul Yaman",
+      "url": "https://medihair.com/en/clinic/dr-resul-yaman/",
+      "publisher": "MediHair",
+      "date": "2023",
+      "kind": "marketplace"
+    },
+    {
+      "id": "bayer-bookimed",
+      "label": "Bookimed: Dr. Bayer Clinic Beauty & Aesthetic",
+      "url": "https://health.bookimed.com/clinic/dr-bayer-clinics-beauty-aesthetic",
+      "publisher": "Bookimed",
+      "date": "2026",
+      "kind": "marketplace"
+    },
+    {
+      "id": "bayer-whatclinic",
+      "label": "WhatClinic: Dr Yetkin Bayer, Beşiktaş",
+      "url": "https://www.whatclinic.com/hair-loss/turkey/istanbul-province/istanbul/besiktas/dr-yetkin-bayer",
+      "publisher": "WhatClinic",
+      "date": "2026",
+      "kind": "marketplace"
+    },
+    {
+      "id": "bayer-medihair",
+      "label": "MediHair clinic profile: Dr. Yetkin Bayer",
+      "url": "https://medihair.com/en/clinic/dr-yetkin-bayer/",
+      "publisher": "MediHair",
+      "date": "2026",
+      "kind": "marketplace"
+    },
+    {
+      "id": "civas-ishrs",
+      "label": "ISHRS find-a-doctor: Ekrem Civas, MD, MBA, FISHRS",
+      "url": "https://ishrs.org/doctor/48947/",
+      "publisher": "International Society of Hair Restoration Surgery",
+      "date": "2026-10-30",
+      "kind": "official"
+    },
+    {
+      "id": "civas-bookimed",
+      "label": "Bookimed: Civas Hair Transplant",
+      "url": "https://us-uk.bookimed.com/clinic/civas-hair-transplant/",
+      "publisher": "Bookimed",
+      "date": "2026",
+      "kind": "marketplace"
+    },
+    {
+      "id": "civas-site",
+      "label": "Civas Hair Transplant home page (blocked automated reading, HTTP 403)",
+      "url": "https://www.civashairtransplant.com/",
+      "publisher": "Civas Hair Transplant",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "bicer-site",
+      "label": "Dr. Özlem Biçer Hair Transplant Clinic home page",
+      "url": "https://www.ozlembicer.com/",
+      "publisher": "Dr. Özlem Biçer",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "bicer-ishrs",
+      "label": "ISHRS find-a-doctor: Ozlem Bicer, MD",
+      "url": "https://ishrs.org/doctor/ozlem-bicer/",
+      "publisher": "International Society of Hair Restoration Surgery",
+      "date": "2026-10-30",
+      "kind": "official"
+    },
+    {
+      "id": "ahd-site",
+      "label": "AHD Clinic home page",
+      "url": "https://www.ahdclinic.com/",
+      "publisher": "AHD Clinic",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "ahd-prices",
+      "label": "AHD Clinic hair transplant cost page",
+      "url": "https://www.ahdclinic.com/hair-transplant-cost-turkey/",
+      "publisher": "AHD Clinic",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "ahd-ahla",
+      "label": "American Hair Loss Association recommended surgeon: Hakan Doganay",
+      "url": "https://www.americanhairloss.org/hair-transplant-surgeons/hakan-doganay/",
+      "publisher": "American Hair Loss Association",
+      "date": "2026",
+      "kind": "marketplace"
+    },
+    {
+      "id": "hlc-site",
+      "label": "HLC HairLine Clinic home page",
+      "url": "https://www.fue-hlc.com/",
+      "publisher": "HLC HairLine Clinic",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "hlc-ishrs",
+      "label": "ISHRS find-a-doctor: Ozgur Oztan, MD, FISHRS",
+      "url": "https://ishrs.org/doctor/51125/",
+      "publisher": "International Society of Hair Restoration Surgery",
+      "date": "2026-10-30",
+      "kind": "official"
+    },
+    {
+      "id": "hlc-medihair",
+      "label": "MediHair clinic profile: Dr. Ozgur Oztan, HLC Clinic",
+      "url": "https://medihair.com/en/clinic/dr-ozgur-oztan-hlc-clinic/",
+      "publisher": "MediHair",
+      "date": "2026",
+      "kind": "marketplace"
+    },
+    {
+      "id": "elithair-site",
+      "label": "Elithair home page (prices and doctors)",
+      "url": "https://www.elithair.com/",
+      "publisher": "Elithair",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "elithair-clinic",
+      "label": "Elithair clinic page",
+      "url": "https://www.elithair.com/clinic/",
+      "publisher": "Elithair",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "elithair-contact",
+      "label": "Elithair contact page",
+      "url": "https://www.elithair.com/information/contact/",
+      "publisher": "Elithair",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "elithair-whatclinic",
+      "label": "WhatClinic: Elithair, Şişli (address)",
+      "url": "https://www.whatclinic.com/hair-loss/turkey/istanbul-province/istanbul/sisli/elithair",
+      "publisher": "WhatClinic",
+      "date": "2026",
+      "kind": "marketplace"
+    },
+    {
+      "id": "clinicana-site",
+      "label": "Clinicana home page",
+      "url": "https://www.clinicana.com/",
+      "publisher": "Clinicana",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "clinicana-prices",
+      "label": "Clinicana hair transplant Turkey cost page",
+      "url": "https://www.clinicana.com/hair-transplant-turkey-cost/",
+      "publisher": "Clinicana",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "diamond-site",
+      "label": "Diamond Hair Clinic home page",
+      "url": "https://diamondhairclinic.com/",
+      "publisher": "Diamond Hair Clinic",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "diamond-provenexpert",
+      "label": "ProvenExpert: Diamond Hair Clinic, Dr. Mehmet Demircioglu (address)",
+      "url": "https://www.provenexpert.com/cs-cz/hair-transplant-turkey-reviews-cost-price-package-fue-dhi-diamond-hair-clinic-dr-mehmet-demircioglu",
+      "publisher": "ProvenExpert",
+      "date": "2026",
+      "kind": "marketplace"
+    },
+    {
+      "id": "teo-site",
+      "label": "Teoman Dogan, MD PhD home page",
+      "url": "https://drteomandogan.com/",
+      "publisher": "Teo Clinic",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "teo-pricing",
+      "label": "Teo Clinic pricing page (last reviewed 30 September 2026)",
+      "url": "https://drteomandogan.com/pricing/",
+      "publisher": "Teo Clinic",
+      "date": "2026-09-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "yazar-site",
+      "label": "Prof. Dr. Şükrü Yazar clinic site",
+      "url": "https://www.sukruyazar.com/",
+      "publisher": "Prof. Dr. Şükrü Yazar",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "cakir-site",
+      "label": "Dr. Barış Çakır clinic site",
+      "url": "https://www.bariscakir.com/",
+      "publisher": "Doç. Dr. Barış Çakır",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "drhe-site",
+      "label": "Dr. HE Obesity Clinic home page",
+      "url": "https://drheobesityclinic.com/",
+      "publisher": "Dr. HE Obesity Clinic",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "drhe-bookimed",
+      "label": "Bookimed: Dr. HE Obesity Clinic (location in Kurtköy Ersoy Hospital, prices)",
+      "url": "https://us-uk.bookimed.com/clinic/dr-he-obesity-clinic",
+      "publisher": "Bookimed",
+      "date": "2026",
+      "kind": "marketplace"
+    },
+    {
+      "id": "toydemir-site",
+      "label": "Prof. Dr. Toygar Toydemir site (Turkish)",
+      "url": "https://www.toygartoydemir.com/",
+      "publisher": "Prof. Dr. Toygar Toydemir",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "toydemir-en",
+      "label": "Prof. Dr. Toygar Toydemir site (English)",
+      "url": "https://www.toygartoydemir.com/en/",
+      "publisher": "Prof. Dr. Toygar Toydemir",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "mono-site",
+      "label": "Clinic Mono home page",
+      "url": "https://www.clinicmono.com/",
+      "publisher": "Clinic Mono",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "mono-press-jep",
+      "label": "Jersey Evening Post report and correction on the death of Abimbola Bamgbose after surgery arranged via Mono Cosmetic Surgery, İzmir",
+      "url": "https://jerseyeveningpost.com/?p=2669555",
+      "publisher": "Jersey Evening Post",
+      "date": "2021",
+      "kind": "press"
+    },
+    {
+      "id": "mono-press-thecable",
+      "label": "TheCable Lifestyle: UK social worker dies after cosmetic surgery package in Turkey",
+      "url": "https://lifestyle.thecable.ng/?p=234769",
+      "publisher": "TheCable",
+      "date": "2021",
+      "kind": "press"
+    }
+  ]
+}

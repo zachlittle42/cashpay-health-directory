@@ -39,6 +39,12 @@ function routeExists(href) {
     const types = fs.readFileSync(path.join(root, 'src/lib/types.ts'), 'utf8');
     if (new RegExp(`^\\s{2}${parts[0].replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&')}: \\{`, 'm').test(types)) return true;
   }
+  // /destinations/[destination]/directory — registry directories (src/lib/registries)
+  if (parts[0] === 'destinations' && parts.length === 3 && parts[2] === 'directory') {
+    if (!fs.existsSync(path.join(appDir, 'destinations/[destination]/directory/page.tsx'))) return false;
+    const reg = fs.readFileSync(path.join(root, 'src/lib/registries/index.ts'), 'utf8');
+    return reg.includes(`slug: '${parts[1]}'`);
+  }
   // /destinations/[destination]
   if (parts[0] === 'destinations' && parts.length === 2) {
     const data = fs.readFileSync(path.join(appDir, 'destinations/[destination]/page.tsx'), 'utf8');
