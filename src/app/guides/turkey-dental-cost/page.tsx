@@ -2,6 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import Navigation from '@/components/Navigation';
 import SidebarShell from '@/components/SidebarShell';
+import { JourneyRail, JourneyNext } from '@/components/destinations/JourneyRail';
 import Footer from '@/components/Footer';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import MedicalDisclaimer from '@/components/MedicalDisclaimer';
@@ -90,6 +91,7 @@ export default function TurkeyDentalCostGuide() {
       <Navigation />
       <SidebarShell>
       <main className="min-h-screen bg-white">
+        <JourneyRail currentPath="/guides/turkey-dental-cost" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
@@ -350,6 +352,7 @@ export default function TurkeyDentalCostGuide() {
             source="guide_turkey_dental_cost"
           />
         </div>
+        <JourneyNext currentPath="/guides/turkey-dental-cost" />
       </main>
       </SidebarShell>
       <Footer />

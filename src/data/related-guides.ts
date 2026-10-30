@@ -316,6 +316,44 @@ export const GUIDE_CLUSTERS: GuideCluster[] = [
     ],
   },
   {
+    id: 'turkey',
+    hub: {
+      href: '/destinations/turkey',
+      label: 'Turkey medical tourism guide',
+      blurb: 'Costs, licensing, safety record and trip planning in one place.',
+    },
+    guides: [
+      { href: '/guides/hair-transplant-turkey-cost', label: 'Hair transplant Turkey cost', blurb: 'FUE and DHI package prices by graft count versus US surgery.' },
+      { href: '/guides/turkey-hair-transplant-clinics', label: 'Turkey hair transplant clinics compared', blurb: 'Published prices, techniques and credentials side by side.' },
+      { href: '/guides/hair-transplant-turkey-guide', label: 'Hair transplant in Turkey: complete guide', blurb: 'Techniques, what to expect and a vetting checklist.' },
+      { href: '/guides/fue-hair-transplant-istanbul-cost', label: 'FUE Istanbul cost', blurb: 'Per-graft and package math for Istanbul.' },
+      { href: '/guides/turkey-dental-cost', label: 'Turkey dental cost', blurb: 'Implants, All-on-4, crowns and veneers in Istanbul and Antalya.' },
+      { href: '/guides/rhinoplasty-turkey-cost', label: 'Rhinoplasty Turkey cost', blurb: 'Istanbul nose-surgery prices and inclusions.' },
+      { href: '/guides/gastric-bypass-turkey-cost', label: 'Gastric bypass Turkey cost', blurb: 'Bariatric packages and the longer stay they need.' },
+      { href: '/guides/how-to-verify-turkey-clinic-license', label: 'How to verify a Turkish clinic', blurb: 'Check the Ministry of Health authorization step by step.' },
+      { href: '/guides/is-plastic-surgery-in-turkey-safe', label: 'Is plastic surgery in Turkey safe?', blurb: 'What the complication reports show and how to lower risk.' },
+      { href: '/guides/turkey-hair-transplant-trip-planner', label: 'Turkey hair transplant trip planner', blurb: 'Day-by-day Istanbul timeline, packing and budget.' },
+      { href: '/guides/turkey-vs-mexico-medical-tourism', label: 'Turkey vs Mexico', blurb: 'Which destination wins for hair, dental and bariatric.' },
+    ],
+  },
+  {
+    id: 'south-korea',
+    hub: {
+      href: '/destinations/south-korea',
+      label: 'South Korea medical tourism guide',
+      blurb: 'Costs, the foreign-patient registration system, safety and planning.',
+    },
+    guides: [
+      { href: '/guides/korea-plastic-surgery-cost', label: 'Korea plastic surgery cost', blurb: 'Rhinoplasty, eyelid, contouring and breast prices versus the US.' },
+      { href: '/guides/plastic-surgery-korea-guide', label: 'Plastic surgery in Korea: Gangnam guide', blurb: 'How Gangnam clinics work, consultations and recovery.' },
+      { href: '/guides/korea-dermatology-cost', label: 'Korea dermatology and skin treatment cost', blurb: 'Laser, Ultherapy, skin boosters and clinic packages.' },
+      { href: '/guides/korea-health-screening-cost', label: 'Korea health screening cost', blurb: 'Comprehensive check-up packages at major hospitals.' },
+      { href: '/guides/how-to-verify-korea-clinic', label: 'How to verify a Korean clinic', blurb: 'Foreign-patient registration lookup, ghost doctors and the CCTV law.' },
+      { href: '/guides/rhinoplasty-cost-by-country', label: 'Rhinoplasty cost by country', blurb: 'Korea against Turkey, Mexico and the US.' },
+      { href: '/guides/plastic-surgery-abroad-cost-comparison', label: 'Plastic surgery abroad compared', blurb: 'Korea, Thailand, Colombia, Brazil and Turkey.' },
+    ],
+  },
+  {
     id: 'tourism',
     hub: {
       href: '/medical-tourism',

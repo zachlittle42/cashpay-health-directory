@@ -45,3 +45,6 @@ __pycache__/
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# playwright MCP screenshots/snapshots (local verification only)
+/.playwright-mcp/

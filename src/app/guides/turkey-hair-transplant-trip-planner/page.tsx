@@ -2,9 +2,10 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import Navigation from '@/components/Navigation';
 import SidebarShell from '@/components/SidebarShell';
+import { JourneyRail, JourneyNext } from '@/components/destinations/JourneyRail';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Turkey Hair Transplant Trip Planner: 7-Day Istanbul Guide (2024)' },
+  title: { absolute: 'Turkey Hair Transplant Trip Planner: 7-Day Istanbul Guide' },
   alternates: { canonical: 'https://vitalityscout.com/guides/turkey-hair-transplant-trip-planner' },
   description: 'Complete planning guide for your hair transplant trip to Istanbul. Flights, hotels, packing list, day-by-day timeline, and recovery tips.',
 };
@@ -27,7 +28,8 @@ export default function TurkeyTripPlanner() {
     <div className="min-h-screen bg-white">
       <Navigation />
       <SidebarShell>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+            <JourneyRail currentPath="/guides/turkey-hair-transplant-trip-planner" />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <header className="border-b border-gray-200 px-4 py-4">
         <div className="mx-auto max-w-4xl">
           <Link href="/" className="text-sm text-blue-600 hover:underline">
@@ -71,9 +73,9 @@ export default function TurkeyTripPlanner() {
         <div className="prose prose-lg max-w-none">
           <h2>No Visa Required!</h2>
           <div className="bg-green-50 border border-green-200 rounded-lg p-6 my-6">
-            <h4 className="text-green-900 mt-0 mb-2">Updated Turkey Entry (2024)</h4>
+            <h4 className="text-green-900 mt-0 mb-2">Turkey entry rules for US citizens</h4>
             <p className="text-sm text-green-800 mb-0">
-              <strong>US citizens no longer need a visa</strong> to visit Turkey for tourism stays up to 90 days. This is a recent policy change—you previously needed an e-visa ($50). Just bring your passport (valid for 6+ months) and you&apos;re good to go!
+              <strong>US citizens no longer need a visa</strong> to visit Turkey for tourism stays up to 90 days. The e-visa requirement for US passport holders was lifted in December 2023. Just bring your passport (valid for 6+ months) and you&apos;re good to go!
             </p>
           </div>
 
@@ -315,6 +317,8 @@ export default function TurkeyTripPlanner() {
           </div>
         </div>
       </article>
+
+        <JourneyNext currentPath="/guides/turkey-hair-transplant-trip-planner" />
 
       </SidebarShell>
       <footer className="border-t border-gray-200 px-4 py-8">

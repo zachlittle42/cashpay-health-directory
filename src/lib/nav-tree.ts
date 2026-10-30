@@ -1,5 +1,7 @@
 // Canonical site navigation tree — single source for the sidebar + top mega-menu.
 // Generated from the 2026-06-26 IA assessment (consumer-goal spine, traffic-weighted).
+// Medical Tourism group restructured 2026-10-30 around per-destination journeys
+// (Turkey, South Korea) — see src/lib/destinations/journeys.ts.
 // RULE: no URL changes; every trafficked page stays prominent. Edit the IA spec, regenerate.
 
 export interface NavItem { label: string; url: string; trafficCritical?: boolean }
@@ -133,11 +135,31 @@ export const NAV_GROUPS: NavGroup[] = [
   {
     id: 'medical-tourism', label: 'Medical Tourism', icon: 'Globe',
     subsections: [
-      { label: 'By Destination', items: [
+      { label: 'Start Here', items: [
         { label: 'Medical Tourism Hub', url: '/medical-tourism' },
+        { label: 'Medical Travel Insurance', url: '/guides/medical-travel-insurance-guide' },
+        { label: 'Paying for Care Abroad', url: '/guides/paying-for-medical-tourism' },
+        { label: 'Medical Tourism FAQ', url: '/faq/medical-tourism' },
+      ] },
+      { label: 'Turkey', items: [
+        { label: 'Turkey Guide (Start)', url: '/destinations/turkey', trafficCritical: true },
+        { label: 'Hair Transplant Cost', url: '/guides/hair-transplant-turkey-cost' },
+        { label: 'Hair Transplant Clinics', url: '/guides/turkey-hair-transplant-clinics', trafficCritical: true },
+        { label: 'Dental Cost', url: '/guides/turkey-dental-cost' },
+        { label: 'Rhinoplasty & Plastic Surgery', url: '/guides/rhinoplasty-turkey-cost' },
+        { label: 'Is It Safe? How to Verify a Clinic', url: '/guides/how-to-verify-turkey-clinic-license' },
+        { label: 'Trip Planner', url: '/guides/turkey-hair-transplant-trip-planner' },
+      ] },
+      { label: 'South Korea', items: [
+        { label: 'South Korea Guide (Start)', url: '/destinations/south-korea', trafficCritical: true },
+        { label: 'Plastic Surgery Cost', url: '/guides/korea-plastic-surgery-cost', trafficCritical: true },
+        { label: 'Dermatology & Skin Cost', url: '/guides/korea-dermatology-cost' },
+        { label: 'Health Screening Cost', url: '/guides/korea-health-screening-cost' },
+        { label: 'How to Verify a Clinic', url: '/guides/how-to-verify-korea-clinic' },
+        { label: 'Gangnam Clinics Guide', url: '/guides/plastic-surgery-korea-guide' },
+      ] },
+      { label: 'Other Destinations', items: [
         { label: 'Mexico', url: '/destinations/mexico' },
-        { label: 'Turkey', url: '/destinations/turkey', trafficCritical: true },
-        { label: 'South Korea', url: '/destinations/south-korea' },
         { label: 'Thailand', url: '/destinations/thailand' },
         { label: 'India', url: '/destinations/india' },
         { label: 'Costa Rica', url: '/destinations/costa-rica' },
@@ -158,10 +180,7 @@ export const NAV_GROUPS: NavGroup[] = [
         { label: 'Fertility Abroad', url: '/fertility', trafficCritical: true },
         { label: 'Stem Cells Mexico', url: '/stem-cells/mexico' },
         { label: 'Stem Cells Panama', url: '/stem-cells/panama', trafficCritical: true },
-      ] },
-      { label: 'Plan & Compare', items: [
         { label: 'US vs Mexico Stem Cells', url: '/guides/us-vs-mexico-stem-cells', trafficCritical: true },
-        { label: 'Medical Tourism FAQ', url: '/faq/medical-tourism' },
       ] },
     ],
   },

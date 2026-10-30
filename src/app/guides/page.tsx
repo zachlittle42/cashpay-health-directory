@@ -11,6 +11,39 @@ export const metadata: Metadata = {
 };
 
 const guides = [
+  // Turkey and South Korea journey guides (2026-10-30)
+  {
+    slug: 'korea-health-screening-cost',
+    title: 'Korea Health Screening Cost (2026): Published Check-Up Package Prices',
+    description: 'Seoul National University Hospital from $980, Samsung from ₩1.87M, Asan from ₩1.75M, Seoul St. Mary’s from ₩1.3M, KMI from ₩300,000: every tier, what it includes, and how to book from the US.',
+    category: 'Medical Tourism',
+    readTime: '11 min',
+    icon: '🩺',
+  },
+  {
+    slug: 'korea-dermatology-cost',
+    title: 'Korea Dermatology & Skin Treatment Cost (2026): Published Seoul Clinic Prices',
+    description: 'Rejuran, Ultherapy, Thermage, Shurink, Korean Botox, pico toning and boosters priced from nine published Seoul menus, with VAT rules, the ended tourist refund and same-price pledges.',
+    category: 'Medical Tourism',
+    readTime: '10 min',
+    icon: '✨',
+  },
+  {
+    slug: 'how-to-verify-korea-clinic',
+    title: 'How to Verify a Korean Clinic Before Plastic Surgery or Treatment in Seoul',
+    description: 'The Medical Korea registry lookup, mandatory malpractice insurance, naming the operating surgeon, the anesthesia question, the operating-room camera law and who handles disputes.',
+    category: 'Medical Tourism',
+    readTime: '9 min',
+    icon: '🛡️',
+  },
+  {
+    slug: 'how-to-verify-turkey-clinic-license',
+    title: 'How to Verify a Turkish Clinic’s Health Tourism License (2026)',
+    description: 'Find the clinic and agency on the Ministry of Health lists, confirm the hair-transplant-unit and 2025 complication-insurance rules, name the surgeon, and know who does what in the operating room.',
+    category: 'Medical Tourism',
+    readTime: '10 min',
+    icon: '🛡️',
+  },
   // National cash-pay cost guides (2026-10-18 batch)
   {
     slug: 'hearing-aids-cost',

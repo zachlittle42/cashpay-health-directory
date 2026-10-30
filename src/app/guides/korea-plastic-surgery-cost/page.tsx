@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Navigation from '@/components/Navigation';
 import SidebarShell from '@/components/SidebarShell';
+import { JourneyRail, JourneyNext } from '@/components/destinations/JourneyRail';
 import Footer from '@/components/Footer';
 import MedicalDisclaimer from '@/components/MedicalDisclaimer';
 import type { Metadata } from 'next';
@@ -88,6 +89,7 @@ export default function KoreaPlasticSurgeryCostGuide() {
       <Navigation />
       <SidebarShell>
       <main className="min-h-screen bg-white">
+        <JourneyRail currentPath="/guides/korea-plastic-surgery-cost" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
@@ -411,6 +413,7 @@ export default function KoreaPlasticSurgeryCostGuide() {
             source="guide_korea_plastic_surgery_cost"
           />
         </div>
+        <JourneyNext currentPath="/guides/korea-plastic-surgery-cost" />
       </main>
       </SidebarShell>
       <Footer />

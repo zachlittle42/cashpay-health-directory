@@ -29,8 +29,8 @@ const COST_TABLE = [
 
 const DESTINATIONS = [
   { slug: 'mexico', name: 'Mexico', flag: '🇲🇽', knownFor: 'Dental · Bariatric · Stem cells' },
-  { slug: 'turkey', name: 'Turkey', flag: '🇹🇷', knownFor: 'Hair transplant · Dental' },
-  { slug: 'south-korea', name: 'South Korea', flag: '🇰🇷', knownFor: 'Plastic surgery' },
+  { slug: 'turkey', name: 'Turkey', flag: '🇹🇷', knownFor: 'Hair transplant · Dental · Rhinoplasty' },
+  { slug: 'south-korea', name: 'South Korea', flag: '🇰🇷', knownFor: 'Plastic surgery · Dermatology · Health screening' },
   { slug: 'thailand', name: 'Thailand', flag: '🇹🇭', knownFor: 'Cosmetic · Dental · Orthopedic' },
   { slug: 'india', name: 'India', flag: '🇮🇳', knownFor: 'Cardiac · Orthopedic · Fertility' },
   { slug: 'costa-rica', name: 'Costa Rica', flag: '🇨🇷', knownFor: 'Dental · Cosmetic' },
