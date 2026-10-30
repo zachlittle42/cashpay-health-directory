@@ -1,10 +1,11 @@
 import Link from 'next/link';
 import Navigation from '@/components/Navigation';
 import SidebarShell from '@/components/SidebarShell';
+import { JourneyRail, JourneyNext } from '@/components/destinations/JourneyRail';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Hair Transplant in Turkey: Complete Safety & Cost Guide (2024)' },
+  title: { absolute: 'Hair Transplant in Turkey: Complete Safety & Cost Guide' },
   alternates: { canonical: 'https://vitalityscout.com/guides/hair-transplant-turkey-guide' },
   description: 'Everything you need to know about getting a hair transplant in Istanbul. FUE vs DHI techniques, costs, safety, choosing a clinic, and what to expect.',
 };
@@ -34,7 +35,8 @@ export default function HairTransplantTurkeyGuide() {
     <main className="min-h-screen bg-white">
       <Navigation />
       <SidebarShell>
-      <script
+            <JourneyRail currentPath="/guides/hair-transplant-turkey-guide" />
+            <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
@@ -472,6 +474,7 @@ export default function HairTransplantTurkeyGuide() {
       </article>
 
       {/* Footer */}
+        <JourneyNext currentPath="/guides/hair-transplant-turkey-guide" />
       </SidebarShell>
       <footer className="border-t border-gray-200 px-4 py-8">
         <div className="mx-auto max-w-4xl text-center">

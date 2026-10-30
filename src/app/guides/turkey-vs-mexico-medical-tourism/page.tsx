@@ -1,10 +1,11 @@
 import Link from 'next/link';
 import Navigation from '@/components/Navigation';
 import SidebarShell from '@/components/SidebarShell';
+import { JourneyRail, JourneyNext } from '@/components/destinations/JourneyRail';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Turkey vs Mexico for Medical Tourism: Which Is Better? (2024)' },
+  title: { absolute: 'Turkey vs Mexico for Medical Tourism: Which Is Better?' },
   alternates: { canonical: 'https://vitalityscout.com/guides/turkey-vs-mexico-medical-tourism' },
   description: 'Compare medical tourism in Turkey vs Mexico. Hair transplants, dental, bariatric surgery. Which country is right for your procedure?',
 };
@@ -27,7 +28,8 @@ export default function TurkeyVsMexicoMedicalTourism() {
     <main className="min-h-screen bg-white">
       <Navigation />
       <SidebarShell>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+            <JourneyRail currentPath="/guides/turkey-vs-mexico-medical-tourism" />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <header className="border-b border-gray-200 px-4 py-4">
         <div className="mx-auto max-w-4xl">
           <Link href="/guides" className="text-sm text-blue-600 hover:underline">
@@ -399,6 +401,8 @@ export default function TurkeyVsMexicoMedicalTourism() {
           </p>
         </div>
       </article>
+
+        <JourneyNext currentPath="/guides/turkey-vs-mexico-medical-tourism" />
 
       </SidebarShell>
       <footer className="border-t border-gray-200 px-4 py-8">

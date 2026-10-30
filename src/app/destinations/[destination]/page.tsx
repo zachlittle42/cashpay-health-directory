@@ -4,6 +4,8 @@ import SidebarShell from '@/components/SidebarShell';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { getProvidersByDestination } from '@/lib/providers-medical-tourism';
+import DestinationHub from '@/components/destinations/DestinationHub';
+import { DOSSIERS } from '@/lib/destinations/dossiers';
 
 // =============================================================================
 // DESTINATION DATA
@@ -895,6 +897,17 @@ export function generateStaticParams() {
 }
 
 export function generateMetadata({ params }: { params: { destination: string } }): Metadata {
+  const dossier = DOSSIERS[params.destination];
+  if (dossier) {
+    const url = `https://vitalityscout.com/destinations/${dossier.slug}`;
+    return {
+      title: { absolute: dossier.metaTitle },
+      description: dossier.metaDescription,
+      alternates: { canonical: url },
+      openGraph: { title: dossier.metaTitle, description: dossier.metaDescription, url, type: 'article' },
+      twitter: { card: 'summary', title: dossier.metaTitle, description: dossier.metaDescription },
+    };
+  }
   const destination = DESTINATIONS[params.destination as DestinationSlug];
   if (!destination) return { title: 'Destination Not Found' };
 
@@ -910,6 +923,12 @@ export default function DestinationPage({
 }: {
   params: { destination: string };
 }) {
+  // Destinations with a sourced dossier (Turkey, South Korea) render the journey hub.
+  const dossier = DOSSIERS[params.destination];
+  if (dossier) {
+    return <DestinationHub dossier={dossier} providers={getProvidersByDestination(params.destination)} />;
+  }
+
   const destination = DESTINATIONS[params.destination as DestinationSlug];
 
   if (!destination) {

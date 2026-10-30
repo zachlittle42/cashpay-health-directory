@@ -2,6 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import Navigation from '@/components/Navigation';
 import SidebarShell from '@/components/SidebarShell';
+import { JourneyRail, JourneyNext } from '@/components/destinations/JourneyRail';
 import Footer from '@/components/Footer';
 import MedicalDisclaimer from '@/components/MedicalDisclaimer';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
@@ -186,7 +187,8 @@ export default function TurkeyHairTransplantClinics() {
     <main className="min-h-screen bg-white">
       <Navigation />
       <SidebarShell>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+            <JourneyRail currentPath="/guides/turkey-hair-transplant-clinics" />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* Breadcrumb */}
@@ -591,6 +593,8 @@ export default function TurkeyHairTransplantClinics() {
           source="guide_turkey_hair_transplant_clinics"
         />
       </div>
+
+        <JourneyNext currentPath="/guides/turkey-hair-transplant-clinics" />
 
       </SidebarShell>
       <Footer />

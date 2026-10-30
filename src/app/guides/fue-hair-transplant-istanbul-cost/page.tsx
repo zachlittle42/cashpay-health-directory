@@ -2,6 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import Navigation from '@/components/Navigation';
 import SidebarShell from '@/components/SidebarShell';
+import { JourneyRail, JourneyNext } from '@/components/destinations/JourneyRail';
 import Footer from '@/components/Footer';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import BrandCtaGrid from '@/components/BrandCtaGrid';
@@ -127,6 +128,7 @@ export default function FueHairTransplantIstanbulCostPage() {
       <Navigation />
       <SidebarShell>
       <main className="min-h-screen bg-white">
+        <JourneyRail currentPath="/guides/fue-hair-transplant-istanbul-cost" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
@@ -390,6 +392,7 @@ export default function FueHairTransplantIstanbulCostPage() {
             source="guide_fue_hair_transplant_istanbul_cost"
           />
         </div>
+        <JourneyNext currentPath="/guides/fue-hair-transplant-istanbul-cost" />
       </main>
       </SidebarShell>
       <Footer />

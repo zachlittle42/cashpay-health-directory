@@ -2,6 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import Navigation from '@/components/Navigation';
 import SidebarShell from '@/components/SidebarShell';
+import { JourneyRail, JourneyNext } from '@/components/destinations/JourneyRail';
 import Footer from '@/components/Footer';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
@@ -95,7 +96,8 @@ export default function GastricBypassTurkeyCost() {
     <main className="min-h-screen bg-white">
       <Navigation />
       <SidebarShell>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+            <JourneyRail currentPath="/guides/gastric-bypass-turkey-cost" />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* Breadcrumb */}
@@ -548,6 +550,8 @@ export default function GastricBypassTurkeyCost() {
           source="guide_gastric_bypass_turkey_cost"
         />
       </div>
+
+        <JourneyNext currentPath="/guides/gastric-bypass-turkey-cost" />
 
       </SidebarShell>
       <Footer />

@@ -1,10 +1,11 @@
 import Link from 'next/link';
 import Navigation from '@/components/Navigation';
 import SidebarShell from '@/components/SidebarShell';
+import { JourneyRail, JourneyNext } from '@/components/destinations/JourneyRail';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Plastic Surgery in Korea: Gangnam Clinics, Costs, Complete Guide (2024)' },
+  title: { absolute: 'Plastic Surgery in Korea: Gangnam Clinics, Costs, Complete Guide' },
   alternates: { canonical: 'https://vitalityscout.com/guides/plastic-surgery-korea-guide' },
   description: 'Complete guide to plastic surgery in South Korea. Rhinoplasty $3,000-9,000, double eyelid $1,500-3,500. Top Gangnam clinics, what to expect, recovery tips.',
 };
@@ -27,7 +28,8 @@ export default function PlasticSurgeryKoreaGuide() {
     <main className="min-h-screen bg-white">
       <Navigation />
       <SidebarShell>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+            <JourneyRail currentPath="/guides/plastic-surgery-korea-guide" />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <header className="border-b border-gray-200 px-4 py-4">
         <div className="mx-auto max-w-4xl">
           <Link href="/guides" className="text-sm text-blue-600 hover:underline">
@@ -508,6 +510,8 @@ export default function PlasticSurgeryKoreaGuide() {
           </ul>
         </div>
       </article>
+
+        <JourneyNext currentPath="/guides/plastic-surgery-korea-guide" />
 
       </SidebarShell>
       <footer className="border-t border-gray-200 px-4 py-8">

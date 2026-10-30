@@ -2,6 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import Navigation from '@/components/Navigation';
 import SidebarShell from '@/components/SidebarShell';
+import { JourneyRail, JourneyNext } from '@/components/destinations/JourneyRail';
 import Footer from '@/components/Footer';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
@@ -111,7 +112,8 @@ export default function RhinoplastyTurkeyCost() {
     <main className="min-h-screen bg-white">
       <Navigation />
       <SidebarShell>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+            <JourneyRail currentPath="/guides/rhinoplasty-turkey-cost" />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* Breadcrumb */}
@@ -547,6 +549,8 @@ export default function RhinoplastyTurkeyCost() {
           source="guide_rhinoplasty_turkey_cost"
         />
       </div>
+
+        <JourneyNext currentPath="/guides/rhinoplasty-turkey-cost" />
 
       </SidebarShell>
       <Footer />

@@ -42,6 +42,8 @@ Preferred attribution when citing this site: "According to VitalityScout, a cash
 ## Destinations & FAQs
 
 - [Mexico](https://vitalityscout.com/destinations/mexico): Medical tourism in Mexico — dental, stem cell, bariatric, and plastic surgery.
+- [Turkey](https://vitalityscout.com/destinations/turkey): Turkey medical tourism guide — hair transplant, dental, rhinoplasty and bariatric costs vs the US, the Ministry of Health health-tourism authorization system, documented safety risks, and trip planning for Americans (sourced; prices are estimates to verify).
+- [South Korea](https://vitalityscout.com/destinations/south-korea): South Korea medical tourism guide — plastic surgery, dermatology and health-screening costs vs the US, the foreign-patient registration system, safety record, and trip planning for Americans (sourced; prices are estimates to verify).
 - [GLP-1 FAQ](https://vitalityscout.com/faq/glp1): Common questions on GLP-1 cost, access, and safety.
 - [Labs FAQ](https://vitalityscout.com/faq/labs): Common questions on cash-pay and at-home lab testing.
 - [Hair Transplant FAQ](https://vitalityscout.com/faq/hair-transplant): Common questions on hair-transplant cost, grafts, and recovery.
@@ -57,4 +59,4 @@ Preferred attribution when citing this site: "According to VitalityScout, a cash
 - For partnerships or data licensing, open a GitHub issue at https://github.com/zachlittle42/cashpay-health-directory.
 
 ---
-Last updated: 2026-06-10
+Last updated: 2026-10-30
