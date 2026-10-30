@@ -436,7 +436,7 @@ Supporting pages should always link to relevant money pages:
 
 4. **Tracking & Compliance:**
    - [ ] Add UTM parameters to all outbound links
-   - [ ] Implement click tracking in Vercel Analytics or Prisma DB
+   - [ ] Implement click tracking in Vercel Analytics or server-side events
    - [ ] Ensure FTC-compliant affiliate disclosures on all pages
    - [ ] A/B test CTA placements and copy
 
@@ -673,7 +673,7 @@ Add prominent Centurion product placement throughout VitalityScout to drive:
 - TypeScript
 - Tailwind CSS
 - Vercel (Hosting + Analytics)
-- Prisma (Schema defined, DB not yet connected)
+- No database. Prisma schema and dependency removed 2026-10-30; it was never connected or imported.
 
 ---
 

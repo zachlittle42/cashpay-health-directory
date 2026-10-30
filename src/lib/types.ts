@@ -1,4 +1,4 @@
-// Provider types matching Prisma schema
+// Provider types for the static directory data in src/lib/providers-*.ts
 
 export type Category =
   // Telehealth (US-based, no travel)

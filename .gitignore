@@ -31,10 +31,13 @@ yarn-error.log*
 !.env.example
 .env*.local
 
-# python (scraping pipeline)
+# python (scraping pipeline): local-only venv, data and keys
 __pycache__/
 *.pyc
-scripts/scraping/.env
+/scripts/scraping/
+
+# business data lives outside the deploy repo
+/*.csv
 
 # vercel
 .vercel
