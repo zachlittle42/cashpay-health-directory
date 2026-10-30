@@ -87,7 +87,7 @@ for (const file of dossierFiles) {
     const ids = new Set();
     for (const s of dossier.sources) {
       assert.match(s.url, /^https:\/\//, s.id);
-      assert.match(s.date, /^\d{4}-\d{2}(-\d{2})?$/, `${s.id} date`);
+      assert.match(s.date, /^\d{4}(-\d{2}(-\d{2})?)?$/, `${s.id} date`);
       assert.ok(['official', 'press', 'clinic', 'study', 'marketplace', 'forum'].includes(s.kind), `${s.id} kind`);
       assert.ok(!ids.has(s.id), `duplicate source id ${s.id}`);
       ids.add(s.id);

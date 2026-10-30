@@ -230,9 +230,9 @@ export default function DestinationHub({ dossier, providers }: { dossier: Destin
           <div className="grid gap-4 md:grid-cols-2">
             {d.treatments.map((t) => (
               <div key={t.name} className="flex flex-col rounded-2xl border border-gray-200 bg-white p-5">
-                <div className="flex items-start justify-between gap-3">
+                <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between sm:gap-3">
                   <h3 className="text-lg font-bold text-gray-900">{t.name}</h3>
-                  {t.demand && <span className="shrink-0 rounded-full bg-purple-50 px-2.5 py-1 text-xs font-semibold text-purple-800">{t.demand}<Cite ids={t.sourceIds} /></span>}
+                  {t.demand && <span className="self-start whitespace-nowrap rounded-full bg-purple-50 px-2.5 py-1 text-xs font-semibold text-purple-800 sm:shrink-0">{t.demand}<Cite ids={t.sourceIds} /></span>}
                 </div>
                 <p className="mt-2 text-sm leading-relaxed text-gray-700">{t.whyHere}{!t.demand && <Cite ids={t.sourceIds} />}</p>
                 <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-gray-500">
