@@ -54,6 +54,8 @@ export interface RegistryConfig {
   categories: { slug: string; label: string; blurb: string }[];
   /** Regions above this many rows split into per-category pages. */
   splitAbove: number;
+  /** Category pages above this many rows split again into per-district pages. */
+  districtSplitAbove: number;
   /** Dossier source id for the registry, so the hub can cite it. */
   sourceId: string;
 }
@@ -88,6 +90,7 @@ const TURKEY_CONFIG: RegistryConfig = {
     { slug: 'other', label: 'Other facilities', blurb: 'Dialysis, home care and other licensed facility types.' },
   ],
   splitAbove: 300,
+  districtSplitAbove: 400,
   sourceId: 'moh-pdfs',
 };
 
@@ -113,6 +116,7 @@ const KOREA_CONFIG: RegistryConfig = {
     { slug: 'other', label: 'Other', blurb: 'Other registered institution types.' },
   ],
   splitAbove: 300,
+  districtSplitAbove: 400,
   sourceId: 'medkorea-portal',
 };
 
@@ -180,19 +184,56 @@ export function orderedCategories(slug: string, present: Iterable<string>): stri
   });
 }
 
+export const NO_DISTRICT = 'District not stated';
+
+/** URL slug for a district name (accent-folded). */
+export function districtSlug(district: string): string {
+  return fold(district || NO_DISTRICT).replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'x';
+}
+
+export interface DistrictSummary { district: string; slug: string; count: number }
+
+/** Districts inside one region+category, largest first; the unnamed bucket last. */
+export function districtSummaries(slug: string, regionSlug: string, category: string): DistrictSummary[] {
+  const map = new Map<string, DistrictSummary>();
+  for (const r of rowsFor(slug, regionSlug, category)) {
+    const d = r.district || NO_DISTRICT;
+    const key = districtSlug(d);
+    const cur = map.get(key) || { district: d, slug: key, count: 0 };
+    cur.count += 1;
+    map.set(key, cur);
+  }
+  return Array.from(map.values()).sort((a, b) => {
+    if (a.district === NO_DISTRICT) return 1;
+    if (b.district === NO_DISTRICT) return -1;
+    return b.count - a.count || a.district.localeCompare(b.district);
+  });
+}
+
+/** True when a region's category list is big enough to split by district. */
+export function categorySplit(slug: string, regionSlug: string, category: string): boolean {
+  const reg = getRegistry(slug);
+  const s = regionSummary(slug, regionSlug);
+  return !!reg && !!s && s.split && (s.byCategory[category] || 0) > reg.config.districtSplitAbove;
+}
+
+export function rowsForDistrict(slug: string, regionSlug: string, category: string, dSlug: string): RegistryRow[] {
+  return rowsFor(slug, regionSlug, category).filter((r) => districtSlug(r.district || NO_DISTRICT) === dSlug);
+}
+
 /** Group rows by district, largest first, then alphabetical by name inside. */
 export function groupByDistrict(rows: RegistryRow[]): { district: string; rows: RegistryRow[] }[] {
   const map = new Map<string, RegistryRow[]>();
   for (const r of rows) {
-    const key = r.district || 'District not stated';
+    const key = r.district || NO_DISTRICT;
     if (!map.has(key)) map.set(key, []);
     map.get(key)!.push(r);
   }
   return Array.from(map.entries())
     .map(([district, rs]) => ({ district, rows: rs.sort((a, b) => a.name.localeCompare(b.name)) }))
     .sort((a, b) => {
-      if (a.district === 'District not stated') return 1;
-      if (b.district === 'District not stated') return -1;
+      if (a.district === NO_DISTRICT) return 1;
+      if (b.district === NO_DISTRICT) return -1;
       return b.rows.length - a.rows.length || a.district.localeCompare(b.district);
     });
 }
@@ -235,6 +276,8 @@ export function profiledRowIds(slug: string): Map<string, string> {
     }
   }
   if (!patterns.length) return out;
+  // Longest phrase wins, so "gangnam severance hospital" beats "severance hospital".
+  patterns.sort((a, b) => b.re.source.length - a.re.source.length);
   for (const r of reg.rows) {
     const name = fold(r.name);
     const hit = patterns.find((p) => p.re.test(name));
@@ -253,6 +296,11 @@ export function registryDirectoryPaths(minRows: number): string[] {
       if (s.split) {
         for (const [cat, n] of Object.entries(s.byCategory)) {
           if (n >= minRows) out.push(`/destinations/${slug}/directory/${s.regionSlug}/${cat}`);
+          if (categorySplit(slug, s.regionSlug, cat)) {
+            for (const d of districtSummaries(slug, s.regionSlug, cat)) {
+              if (d.count >= minRows && d.district !== NO_DISTRICT) out.push(`/destinations/${slug}/directory/${s.regionSlug}/${cat}/${d.slug}`);
+            }
+          }
         }
       }
     }

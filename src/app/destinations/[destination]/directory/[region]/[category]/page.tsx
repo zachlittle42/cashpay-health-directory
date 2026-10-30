@@ -5,6 +5,7 @@ import { RegistryFrame, RegistryRows, formatAsOf } from '@/components/registries
 import RegistryFilter from '@/components/registries/RegistryFilter';
 import {
   REGISTRY_SLUGS, getRegistry, regionSummaries, regionSummary, rowsFor, formatCount, categoryLabel, profiledRowIds, orderedCategories,
+  categorySplit, districtSummaries, NO_DISTRICT,
 } from '@/lib/registries';
 import { gridRobots } from '@/lib/indexability';
 
@@ -53,6 +54,8 @@ export default function CategoryPage({ params }: { params: { destination: string
   const profiled = profiledRowIds(config.slug);
   const profiledHere = rows.filter((r) => profiled.has(r.id)).length;
   const siblings = orderedCategories(config.slug, Object.keys(summary.byCategory)).filter((c) => c !== params.category);
+  const split = categorySplit(config.slug, summary.regionSlug, params.category);
+  const districts = split ? districtSummaries(config.slug, summary.regionSlug, params.category) : [];
 
   return (
     <RegistryFrame
@@ -77,8 +80,28 @@ export default function CategoryPage({ params }: { params: { destination: string
               </Link>
             ))}
           </nav>
-          <RegistryFilter listId="rows" total={rows.length} />
-          <RegistryRows registry={reg} rows={rows} listId="rows" profiled={profiled} />
+          {split ? (
+            <div>
+              <h2 className="text-xl font-bold text-gray-900">By district</h2>
+              <p className="mt-1 mb-4 text-sm text-gray-600">{formatCount(rows.length)} {label.toLowerCase()} is too many for one page, so the list is split by district. Open a district for every facility there, or <Link href={`${base}/search`} className="font-medium text-purple-700 hover:underline">search by name or street</Link>.</p>
+              <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                {districts.map((d) => (
+                  <li key={d.slug} className="rounded-xl border border-gray-200 bg-white p-4">
+                    {d.district === NO_DISTRICT ? (
+                      <span className="flex items-baseline justify-between gap-2 font-semibold text-gray-500"><span>{d.district}</span><span>{formatCount(d.count)}</span></span>
+                    ) : (
+                      <Link href={`${base}/${summary.regionSlug}/${params.category}/${d.slug}`} className="flex items-baseline justify-between gap-2 font-semibold text-gray-900 hover:text-purple-700 hover:underline"><span>{d.district}</span><span className="text-purple-700">{formatCount(d.count)}</span></Link>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : (
+            <>
+              <RegistryFilter listId="rows" total={rows.length} />
+              <RegistryRows registry={reg} rows={rows} listId="rows" profiled={profiled} />
+            </>
+          )}
         </div>
       </section>
     </RegistryFrame>

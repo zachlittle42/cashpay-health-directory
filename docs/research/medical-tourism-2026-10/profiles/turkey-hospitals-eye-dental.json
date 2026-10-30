@@ -1,0 +1,788 @@
+{
+  "clinics": [
+    {
+      "name": "Medical Park Hospitals Group (MLP Care)",
+      "district": "Istanbul (Kadıköy, Göztepe campus) plus 12 other Turkish cities",
+      "type": "hospital",
+      "url": "https://www.medicalpark.com.tr/en",
+      "specialties": [
+        "Oncology",
+        "Cardiology and cardiac surgery",
+        "Organ transplant",
+        "Orthopedics",
+        "IVF",
+        "Bariatric surgery"
+      ],
+      "namedDoctors": "Not named on the group's international pages read in October 2026 (medicalpark.com.tr blocked automated reading; mlpcare.com pages name no physicians).",
+      "credentials": "On the Ministry of Health authorized-facility list (October 2026) as 'Özel Medicalpark Göztepe Hastanesi' (Kadıköy, Istanbul), 'Özel Medicalpark Bahçelievler Hastanesi', 'Özel Medicalpark Antalya Hastane Kompleksi' and 16 further Medicalpark / VM Medicalpark hospital entries. Parent company MLP Care states on its site that the group operates 38 hospitals with more than 7,000 beds under the Medical Park and Liv Hospital brands, founded 1993 in Sultangazi, Istanbul, and that it went public in 2017. The hospital-network page lists 24 Medical Park / VM Medical Park sites. MLP Care's history page states Medical Park Göztepe and Bahçelievler earned JCI accreditation in 2007; JCI claimed on clinic site; JCI directory not reachable (jointcommission.org returned 403 to automated reading, October 2026). The medicalpark.com.tr site blocked automated reading, so facts come from mlpcare.com and search snippets.",
+      "cautions": "In November 2022 the Health Ministry suspended operations of Medical Park Tokat for seven days after relatives filmed two intensive-care nurses mistreating a paralysed patient; the Health Professions Board barred one nurse from the profession for three years and ordered retraining for both (Cumhuriyet, 23 November 2022, medicalpark-press-cumhuriyet). The group's hospitals are run by one listed company, not franchised.",
+      "publishedPrices": "Not published on its site.",
+      "booking": {
+        "channels": "MLP Care head office phone +90 212 227 55 55 (Flatofis, Haliç Otakçılar Cad. No:78, Eyüp, Istanbul); international-patient pages on medicalpark.com.tr/en could not be read by automated tools in October 2026. No WhatsApp or email was found on readable pages.",
+        "consult": "Not published on readable pages.",
+        "languages": "Not stated on readable pages.",
+        "bookingUrl": "https://www.medicalpark.com.tr/en"
+      },
+      "sourceIds": [
+        "moh-pdfs",
+        "medicalpark-mlpcare-about",
+        "medicalpark-mlpcare-network",
+        "medicalpark-press-cumhuriyet"
+      ]
+    },
+    {
+      "name": "Liv Hospital (MLP Care)",
+      "district": "Istanbul (Beşiktaş, Ulus) with Vadistanbul, Bahçeşehir and Topkapı campuses; also Ankara, Samsun, Gaziantep",
+      "type": "hospital",
+      "url": "https://www.livhospital.com/en/international-patients",
+      "specialties": [
+        "Oncology",
+        "Robotic surgery",
+        "Cardiology",
+        "Orthopedics",
+        "Plastic surgery",
+        "Check-up"
+      ],
+      "namedDoctors": "Not named on international page.",
+      "credentials": "On the Ministry of Health authorized-facility list (October 2026) as 'Özel Liv Hospital Ulus Hastanesi' (Beşiktaş, Istanbul), 'Özel Liv Hospital Vadi İstanbul Hastanesi', 'Özel Liv Hospital Ankara Hastanesi', 'Özel Liv Hospital Samsun Hastanesi' and 'Özel Liv Hospital Gaziantep Hastanesi'. Liv's site lists seven Turkish hospitals plus Liv Bona Dea in Baku; parent MLP Care's network page lists 7 Liv hospitals (Ulus opened 2013). The site carries a JCI banner without naming which hospital is accredited; JCI claimed on clinic site; JCI directory not reachable (jointcommission.org returned 403 to automated reading, October 2026). The international-patients page contains unfinished template text (Lorem Ipsum in the FAQ), so confirm details by phone.",
+      "publishedPrices": "Not published on its site. The international page says you receive a quote for treatment, accommodation and aftercare before travel.",
+      "booking": {
+        "channels": "Call centre 444 4 548 (Turkey); online application form and contact form on livhospital.com/en; Medical Second Opinion form. No WhatsApp number or email shown on the international page.",
+        "consult": "Submit the online application form; the page says Liv staff will contact you, arrange a treatment plan and reservations, and send a quote before you travel. Documents to send, response time and deposit terms are not published.",
+        "languages": "Website in Turkish, English, German, French and Russian; staff languages not stated.",
+        "bookingUrl": "https://www.livhospital.com/en/international-patients"
+      },
+      "sourceIds": [
+        "moh-pdfs",
+        "liv-site",
+        "liv-intl-page",
+        "medicalpark-mlpcare-network"
+      ]
+    },
+    {
+      "name": "Medicana Health Group",
+      "district": "Istanbul (Beylikdüzü, Medicana International Istanbul) with Ataşehir, Ataköy, Zincirlikuyu, Çamlıca, Bahçelievler, Kadıköy and Avcılar hospitals; also Ankara, İzmir, Bursa, Konya, Samsun, Sivas",
+      "type": "hospital",
+      "url": "https://www.medicanainternational.com/",
+      "specialties": [
+        "Bone marrow transplant",
+        "Kidney transplant",
+        "Oncology",
+        "Cardiac surgery",
+        "Plastic surgery",
+        "IVF"
+      ],
+      "namedDoctors": "The international site names Prof. Yılören Tanıdır (urology, Medicana Ataşehir), Prof. Cafer Adigüzel (hematology and bone marrow transplant, Medicana Ataşehir) and Serkan Selvi, M.D. (internal medicine, Medicana Ataköy). No society certifications stated; anesthesiologists not named.",
+      "credentials": "On the Ministry of Health authorized-facility list (October 2026) as 'Özel Medicana İnternetional İstanbul Hastanesi' (Beylikdüzü, Istanbul; the list misspells International), 'Özel Medicana Ataşehir Hastanesi', 'Özel Medicana Ataköy Hastanesi', 'Özel Medicana Zincirlikuyu Hastanesi', 'Özel Medicana International Ankara Hastanesi', 'Özel Medicana International İzmir Hastanesi' and 10 further Medicana entries. The group's corporate page states 16 hospitals (the homepage says 19+), with activity since 1992. Its quality-policy page states JCI accreditation for Medicana International Istanbul (2010, re-accredited 2013 and 2016), Medicana Bahçelievler (2008, 2011), Medicana International Ankara (2010) and Medicana Çamlıca (2007, 2010), plus AACI accreditation for Ataşehir (2022) and International Istanbul (2023); JCI claimed on clinic site; JCI directory not reachable (jointcommission.org returned 403 to automated reading, October 2026).",
+      "cautions": "In June 2022 bianet reported that a 71-year-old COPD patient died in the intensive care unit of Medicana International İzmir and that the family learned of the death a day later when they visited; the family filed a CİMER complaint. An İzmir criminal judgeship of peace then blocked access to 17 news items about the death at the hospital's request; the block was later lifted after a Constitutional Court ruling (bianet, medicana-press-bianet, medicana-press-bianet-censor).",
+      "publishedPrices": "Not published on its site.",
+      "booking": {
+        "channels": "Phone +90 850 460 1010 (Turkey) and +44 1962 587821 (UK office); WhatsApp +1 518 255 8924; contact form https://www.medicanainternational.com/en/contact-us; 'Let Us Call You' and Medical Second Opinion forms. Email shown on the site is obfuscated.",
+        "consult": "Medical Second Opinion form accepts reports for review. Fee, response time and deposit terms are not published.",
+        "languages": "Website in English, Arabic, Russian, Macedonian, Albanian, Georgian, German, Bosnian, French, Romanian and Turkish; staff languages not stated.",
+        "bookingUrl": "https://www.medicanainternational.com/en/contact-us"
+      },
+      "sourceIds": [
+        "moh-pdfs",
+        "medicana-intl-site",
+        "medicana-quality-policy",
+        "medicana-press-bianet",
+        "medicana-press-bianet-censor"
+      ]
+    },
+    {
+      "name": "Group Florence Nightingale Hospitals",
+      "district": "Istanbul (Şişli, Istanbul Florence Nightingale Hospital) with Gayrettepe, Kadıköy and Ataşehir hospitals",
+      "type": "hospital",
+      "url": "https://www.groupflorence.com/",
+      "specialties": [
+        "Oncology",
+        "Cardiac surgery",
+        "Organ transplant",
+        "Neurosurgery",
+        "Orthopedics",
+        "Check-up"
+      ],
+      "namedDoctors": "Not named on international page; the page says physician credentials are available on request.",
+      "credentials": "On the Ministry of Health authorized-facility list (October 2026) as 'Özel İstanbul Florence Nightingale Hastanesi' (Şişli, Istanbul), 'Özel Gayrettepe Florence Nightingale Hastanesi', 'Özel Kadıköy Florence Nightingale Hastanesi' and 'Özel Ataşehir Florence Nightıngale Hastanesi'. The group's international page states it was founded in 1989 and runs four general hospitals and two medical centres in Istanbul, and that Istanbul Florence Nightingale Hospital has been JCI-accredited since 2013 and is in its fifth accreditation cycle; JCI claimed on clinic site; JCI directory not reachable (jointcommission.org returned 403 to automated reading, October 2026). The Şişli and Gayrettepe hospitals are listed by the Ministry as foundation-university hospitals (Demiroğlu Bilim University).",
+      "publishedPrices": "Not published on its site, except check-up packages described as 'Silver, Gold & Platinum from $540' (groupflorence.com, October 2026). Quotes are issued in USD, EUR or GBP; the page states post-discharge medication, complications outside the plan, ICU transfer and extended stays are billed separately at standard rates.",
+      "booking": {
+        "channels": "Phone and WhatsApp +90 549 712 6060; 24/7 call centre 444 0 436 (Turkey); contact form https://www.groupflorence.com/contact/; appointment form /appointment/; Medical Second Opinion online tool. Representative offices listed in London, Plovdiv, Prishtina, Tbilisi and Baku.",
+        "consult": "Send medical reports via the online form or WhatsApp; the page says a personalised treatment plan and quotation usually follow within 48 hours. Second opinions and coordinator services are stated to be free. Deposit terms not published.",
+        "languages": "Website in Turkish, English, Bulgarian, Azerbaijani, Russian, Romanian and French; the page says native-speaking interpreters are provided and most physicians speak English.",
+        "includes": "Page lists airport and hotel transfers, interpreter, visa and invitation letter help, local SIM card, accommodation assistance and follow-up online consultations.",
+        "bookingUrl": "https://www.groupflorence.com/contact/"
+      },
+      "sourceIds": [
+        "moh-pdfs",
+        "florence-site",
+        "florence-intl-page",
+        "florence-groupflorence"
+      ]
+    },
+    {
+      "name": "American Hospital Istanbul (Vehbi Koç Foundation / Koç Healthcare)",
+      "district": "Istanbul (Şişli, Nişantaşı)",
+      "type": "hospital",
+      "url": "https://www.kochealthcareinternational.org/",
+      "specialties": [
+        "Comprehensive cancer program",
+        "IVF and reproductive health",
+        "Robotic and endoscopic surgery",
+        "Women's health",
+        "Digestive health",
+        "Pediatrics"
+      ],
+      "namedDoctors": "Not named on international page.",
+      "credentials": "On the Ministry of Health authorized-facility list (October 2026) as 'Özel V.K.V. Amerikan Hastanesi' (Teşvikiye Mah. Güzelbahçe Sok. No:20, Şişli, Istanbul). The hospital site says it has passed its 100th anniversary and that it is a member of the Mayo Clinic Care Network; the Koç Healthcare International site lists seven facilities (American Hospital, İzmir, Antalya and Bodrum American Hospitals, American Outpatient Medical Center, Koç University Hospital, Anatolia Hospital). The international site refers to 'trusted accreditations' and 'international quality certificates' but names no accreditor on the pages read; JCI not seen on its site in October 2026. Site states an ITIJ Medical Provider of the Year award in 2025.",
+      "publishedPrices": "Not published on its site. Inquiry and second opinion are labelled free.",
+      "booking": {
+        "channels": "Koç Healthcare International phone +90 212 311 20 00; email contact@kochealthcare.org; inquiry form https://www.kochealthcareinternational.org/booking/send-an-inquiry; live support page; hospital call centre +90 212 444 3 777. Regional offices listed in Skopje, Connecticut (USA), Sarajevo, Belgrade, Prishtina, Podgorica, Tirana, Constanta, Tbilisi and Baku. No WhatsApp shown.",
+        "consult": "Four-step process on the site: send medical history and goals through the inquiry form; a multidisciplinary team returns recommended specialists, hospital, estimated timeline; the team then arranges appointments, travel and accommodation; structured aftercare follows. Response time and deposit terms not published.",
+        "languages": "Not stated on international page (site in English and Turkish).",
+        "bookingUrl": "https://www.kochealthcareinternational.org/booking/send-an-inquiry"
+      },
+      "sourceIds": [
+        "moh-pdfs",
+        "american-site",
+        "american-kochealthcare-intl",
+        "american-kochealthcare"
+      ]
+    },
+    {
+      "name": "Anadolu Medical Center (Anadolu Sağlık Merkezi)",
+      "district": "Gebze, Kocaeli (about 65 km from Istanbul) with an Ataşehir, Istanbul outpatient clinic",
+      "type": "hospital",
+      "url": "https://www.anadolumedicalcenter.com/patient-guide/international-patient-services",
+      "specialties": [
+        "Oncology and radiation oncology",
+        "Bone marrow transplant",
+        "Cardiac surgery",
+        "Robotic surgery",
+        "IVF",
+        "Check-up"
+      ],
+      "namedDoctors": "The oncology section names Prof. Altan Kır (thoracic surgery), Prof. Bülent Karagöz, Prof. Necdet Üskent, Prof. Şeref Kömürcü and Prof. Yeşim Yıldırım (medical oncology), Prof. Hale Başak Çağlar (radiation oncology), Prof. İlker Tinay (urology), Assoc. Prof. Eda Tanrıkulu Şimşek, Mehmet Doğu Canoğlu MD and Rashad Rzazade MD (radiation oncology), Sinan Karaaslan MD (medical oncology). Society certifications not stated; anesthesiologists not named.",
+      "credentials": "On the Ministry of Health authorized-facility list (October 2026) as 'Özel Anadolu Sağlık Merkezi Hastanesi' (Cumhuriyet Mah. 2255 Cad. No:3, Gebze, Kocaeli) and 'Özel Anadolu Sağlık Ataşehir Tıp Merkezi'. The site states 'strategic cooperation with Johns Hopkins Medicine', JCI accreditation, Planetree Gold person-centred-care certification, membership of the Association of European Cancer Institutes and ESMO designation, and an International Health Tourism Authorization Certificate; JCI claimed on clinic site; JCI directory not reachable (jointcommission.org returned 403 to automated reading, October 2026). The site describes the operator as a foundation enterprise. Founding year and bed count are not rendered on the pages read.",
+      "publishedPrices": "Not published on its site.",
+      "booking": {
+        "channels": "Main phone +90 262 678 50 00; language-specific international lines: +90 262 678 28 22 (Russian/English), +90 262 678 54 08 (Georgian/Russian), +90 262 678 55 07 (Romanian/English), +90 262 678 28 13 (French), +90 262 678 54 69 (Arabic), +90 262 679 41 03 (English), +90 262 678 57 64 (Bulgarian/English), +90 262 678 52 97 (Persian/English); Medical Second Opinion form https://www.anadolumedicalcenter.com/medical-second-view-form. Email is obfuscated on the page; no WhatsApp shown.",
+        "consult": "Second-opinion form accepts test results and diagnoses for review. What to send, response time, fee and deposit terms are not published.",
+        "languages": "Russian, English, Georgian, Romanian, French, Arabic, Bulgarian and Persian per the dedicated phone lines.",
+        "includes": "On-campus Anadolu Titanic Comfort Hotel (40 rooms, 82 beds) is described for patients and relatives; transfer and interpreter inclusions not itemised.",
+        "bookingUrl": "https://www.anadolumedicalcenter.com/medical-second-view-form"
+      },
+      "sourceIds": [
+        "moh-pdfs",
+        "anadolu-site",
+        "anadolu-intl-page"
+      ]
+    },
+    {
+      "name": "Medipol Mega University Hospital (Medipol Health Group)",
+      "district": "Istanbul (Bağcılar)",
+      "type": "hospital",
+      "url": "https://medipol.com.tr/en/patient-services/international-patient-center",
+      "specialties": [
+        "Oncology",
+        "Organ transplant",
+        "Cardiology and cardiac surgery",
+        "Neurosurgery",
+        "Orthopedics",
+        "Dental hospital"
+      ],
+      "namedDoctors": "Not named on international page (medipol.com.tr blocked automated reading in October 2026).",
+      "credentials": "On the Ministry of Health authorized-facility list (October 2026) as 'Özel Medipol Mega Hastaneler Kompleksi' (Göztepe Mah. 2309 Sok. No:6, Bağcılar, Istanbul), with 'İstanbul Medipol Üniversitesi Sağlık Uygulama ve Araştırma Merkezi', 'Özel İstanbul Medipol Hastanesi', 'Özel Medipol Bahçelievler Hastanesi' and 'Özel Medipol Acıbadem Bölge Hastanesi' also listed. The hospital's own international-patient page (seen in search snippets) states it is JCI-accredited as an academic medical centre and that the international department operates around the clock; JCI claimed on clinic site; JCI directory not reachable (jointcommission.org returned 403 to automated reading, October 2026). Site blocked automated reading; facts from search snippets of medipol.com.tr pages. Bed counts quoted by brokers range from 470 to 810 and are not confirmed on the hospital site.",
+      "publishedPrices": "Not published on its site.",
+      "booking": {
+        "channels": "International patient services phone 444 70 44 (Turkey); international WhatsApp +90 549 794 13 45 (both from medipol.com.tr news and international-patient-center pages seen in search snippets); email shown on the site is obfuscated.",
+        "consult": "Not published on readable pages.",
+        "languages": "Not stated on readable pages.",
+        "bookingUrl": "https://medipol.com.tr/en/patient-services/international-patient-center"
+      },
+      "sourceIds": [
+        "moh-pdfs",
+        "medipol-intl-center",
+        "medipol-news-intl"
+      ]
+    },
+    {
+      "name": "Koç University Hospital (Koç Healthcare)",
+      "district": "Istanbul (Zeytinburnu, Topkapı)",
+      "type": "hospital",
+      "url": "https://www.kochealthcareinternational.org/",
+      "specialties": [
+        "Oncology",
+        "Cardiovascular surgery",
+        "Neurosurgery",
+        "Pediatrics (PICU and NICU)",
+        "Robotic surgery",
+        "Transplant"
+      ],
+      "namedDoctors": "Not named on international page; the hospital site has a 'Find a Physician' directory.",
+      "credentials": "On the Ministry of Health authorized-facility list (October 2026) as 'Koç Üniversitesi Hastanesi' (Topkapı Davutpaşa Cad. No:4, Zeytinburnu, Istanbul), type foundation-university hospital. The hospital's corporate page states it opened in September 2014 on the Koç University Health Sciences Campus in Topkapı; its 'in numbers' page states 371 inpatient beds, 55 intensive-care beds (426 total) and 23 operating rooms. No accreditation is named on the hospital pages read; JCI not seen on its site in October 2026. The site states an ITIJ Medical Provider of the Year award in 2025.",
+      "publishedPrices": "Not published on its site.",
+      "booking": {
+        "channels": "Via Koç Healthcare International: phone +90 212 311 20 00, email contact@kochealthcare.org, inquiry form https://www.kochealthcareinternational.org/booking/send-an-inquiry. Hospital general line +90 850 250 8 250 and contact form https://www.kuh.ku.edu.tr/contact. No WhatsApp shown.",
+        "consult": "Same four-step inquiry process as Koç Healthcare International (medical history sent through the form, multidisciplinary review, travel arrangement, aftercare). Response time and deposit terms not published.",
+        "languages": "Not stated on international page (site in English and Turkish).",
+        "bookingUrl": "https://www.kochealthcareinternational.org/booking/send-an-inquiry"
+      },
+      "sourceIds": [
+        "moh-pdfs",
+        "koc-kuh-site",
+        "koc-kuh-corporate",
+        "koc-kuh-numbers",
+        "american-kochealthcare-intl"
+      ]
+    },
+    {
+      "name": "Hisar Hospital Intercontinental",
+      "district": "Istanbul (Ümraniye)",
+      "type": "hospital",
+      "url": "https://www.hisarhospital.com/",
+      "specialties": [
+        "Robotic surgery",
+        "Cardiology and cardiovascular surgery",
+        "Integrated oncology",
+        "Orthopedics",
+        "Urology",
+        "Eye"
+      ],
+      "namedDoctors": "Not named on international page; the site links a doctor directory at /doktorlarimiz.",
+      "credentials": "On the Ministry of Health authorized-facility list (October 2026) as 'Özel Hisar Intercontinental Hospital Hastanesi' (Saray Mah. Site Yolu Cad. No:7, Ümraniye, Istanbul); sister hospital 'Özel Hisar Çamlıca Hastanesi' also listed. The site states service since 2005, two hospitals, 80 departments and more than 100 specialist physicians, and claims JCI accreditation, ISO 9001, ISO 27001 and the Ministry's Health Türkiye international health-tourism designation; JCI claimed on clinic site; JCI directory not reachable (jointcommission.org returned 403 to automated reading, October 2026). Bed count not stated on the site (a broker quotes 170, unconfirmed). The English international page returned 404 in October 2026.",
+      "publishedPrices": "Not published on its site.",
+      "booking": {
+        "channels": "Call centre 444 5 888 (Turkey); contact page https://www.hisarhospital.com/iletisim; 'Sizi Arayalım' call-back and 'Doktora Sorun' forms. Email is obfuscated on the site; no WhatsApp shown.",
+        "consult": "Not published. The oncology unit offers a second opinion and personalised plan after tumour-board review.",
+        "languages": "Not stated; the site is Turkish with an English section.",
+        "bookingUrl": "https://www.hisarhospital.com/iletisim"
+      },
+      "sourceIds": [
+        "moh-pdfs",
+        "hisar-site",
+        "hisar-site-en"
+      ]
+    },
+    {
+      "name": "Lokman Hekim Health Group",
+      "district": "Ankara (Çankaya, Akay Hospital; Keçiören, Etlik Hospital; Sincan, University Hospital) with Istanbul (Pendik) and Van hospitals",
+      "type": "hospital",
+      "url": "https://www.lokmanhekim.com.tr/",
+      "specialties": [
+        "Kidney and liver transplant",
+        "Cardiology",
+        "Orthopedics",
+        "Obstetrics (Baby-Friendly Hospital)",
+        "Dental hospital",
+        "Oral and maxillofacial surgery"
+      ],
+      "namedDoctors": "Site names Prof. Dr. Atilla Stephan Ataç (chief physician, Söğütözü dental hospital, pedodontics), Prof. Dr. Mustafa Ercüment Önder (oral and maxillofacial surgery), Prof. Dr. Mehmet Emin Şimşek (orthopedics, LHÜ Ankara Hospital), Dr. Çağlar Koç (cardiology), Prof. Dr. Tayfun Alaçam (endodontics). Society certifications not stated; anesthesiologists not named.",
+      "credentials": "On the Ministry of Health authorized-facility list (October 2026) as 'Özel Lokman Hekim Akay Hastanesi' (Kavaklıdere, Çankaya, Ankara), 'Özel Lokman Hekim Etlik Hastanesi', 'Özel Lokman Hekim Üniversitesi Sağlık Uygulama ve Araştırma Merkezi' (Sincan), 'Lokman Hekim Üniversitesi Ağız ve Diş Sağlığı Uygulama ve Araştırma Merkezi', 'Özel Lokman Hekim İstanbul Hastanesi' (Pendik), 'Özel Lokman Hekim Van Hastanesi' and 'Özel Lokman Hekim Esnaf Hastanesi' (Fethiye). The site lists ten centres including Erbil (Iraq) and Bishkek (Kyrgyzstan) and claims more than 30 years of operation, JCI accreditation (hospital not specified), a Health Tourism Authorization Certificate, Baby-Friendly Hospital status and an organ transplant centre; JCI claimed on clinic site; JCI directory not reachable (jointcommission.org returned 403 to automated reading, October 2026). The site is Turkish-only and gives no international-patient contact.",
+      "publishedPrices": "Not published on its site (a blog references birth-package prices without figures).",
+      "booking": {
+        "channels": "No international phone, WhatsApp or email found on the site in October 2026; 'Online Görüşme' links are placeholders. An online 'İkinci Görüş' (second opinion) service is listed. Ask the hospital directly for its international desk.",
+        "consult": "Not published.",
+        "languages": "Not stated; site in Turkish.",
+        "bookingUrl": "https://www.lokmanhekim.com.tr/"
+      },
+      "sourceIds": [
+        "moh-pdfs",
+        "lokman-site",
+        "lokman-site-endo"
+      ]
+    },
+    {
+      "name": "Dünyagöz Hospitals Group",
+      "district": "Istanbul (Etiler, Ataşehir, Bağcılar and other branches) plus Ankara, Antalya, İzmir and other cities",
+      "type": "eye",
+      "url": "https://dunyagoz.com/en/health-tourism/health-tourism",
+      "specialties": [
+        "LASIK and SMILE laser vision correction",
+        "Cataract and multifocal lenses",
+        "Retina",
+        "Cornea and keratoconus",
+        "Glaucoma",
+        "Pediatric ophthalmology"
+      ],
+      "namedDoctors": "Not named on international page (dunyagoz.com blocked automated reading in October 2026).",
+      "credentials": "On the Ministry of Health authorized-facility list (October 2026) as 'Özel Dünyagöz Tıp Merkezi/Bağcılar' (Istanbul), 'Özel Dünyagöz Hastanesi İzmir', 'Özel Dünyagöz Hastanesi Konya', 'Özel Dünyagöz Hastanesi Gaziantep' and Dünyagöz medical centres in Sakarya, Samsun and Çorlu; the Istanbul Etiler and Ataşehir hospitals were not matched by brand name on the list, so ask for their legal entity names. The group's corporate page (search snippet) states 29 locations in Turkey and abroad with the newest in Tashkent (October 2023) and 28 years of experience; it states its hospitals hold Ministry of Health and JCI accreditation; JCI claimed on clinic site; JCI directory not reachable (jointcommission.org returned 403 to automated reading, October 2026). Site blocked automated reading; facts from search snippets of dunyagoz.com pages.",
+      "cautions": "A patient complaint on Şikayetvar describes an unrefunded fee after surgery at the Suadiye branch; this is a single unverified consumer post, not a regulator or press finding (dunyagoz-forum-sikayetvar).",
+      "publishedPrices": "Not published on its site (as far as readable in October 2026).",
+      "booking": {
+        "channels": "WhatsApp +90 850 222 44 69 (from the English site in search snippets); health-tourism page https://dunyagoz.com/en/health-tourism/health-tourism. Email and form details could not be read.",
+        "consult": "Not published on readable pages.",
+        "languages": "Website in English, French, Dutch and other languages; staff languages not stated.",
+        "bookingUrl": "https://dunyagoz.com/en/health-tourism/health-tourism"
+      },
+      "sourceIds": [
+        "moh-pdfs",
+        "dunyagoz-corporate",
+        "dunyagoz-health-tourism",
+        "dunyagoz-forum-sikayetvar"
+      ]
+    },
+    {
+      "name": "Birinci Eye Hospital (Birinci Göz Hastanesi)",
+      "district": "Istanbul (Beylikdüzü)",
+      "type": "eye",
+      "url": "https://birincisaglikgrubu.com/sayfa/birinci-goz-hastanesi/",
+      "specialties": [
+        "SMILE Pro and iLASIK laser vision correction",
+        "Cataract and multifocal lenses",
+        "Keratoconus and cross-linking",
+        "Corneal transplant",
+        "Retina and vitrectomy",
+        "Glaucoma"
+      ],
+      "namedDoctors": "Site names Prof. Dr. Faik Oruçoğlu, Op. Dr. M. Necdet Cinhüseyinoğlu, Dr. Öğr. Üyesi Ökkeş Baz, Op. Dr. Fuat Karakaya, Op. Dr. Bülent Yemişçi, Op. Dr. Kazım Şen, Op. Dr. Cevat Rezanavaz, Op. Dr. E. Sibel Öncü, Op. Dr. Halil İbrahim Ateşoğlu (FEBO) and Doç. Dr. Osman Okan Olcaysü, all ophthalmologists. Anesthesiologists not named.",
+      "credentials": "On the Ministry of Health authorized-facility list (October 2026) as 'Özel Birinci Göz Hastanesi' (Cumhuriyet Mah. Atatürk Blv. No:5, Beylikdüzü, Istanbul). The site states eye care since 2011 and more than 40,000 operations; no JCI, ISO or other accreditation is named on the site. The hospital's own domain (birincigoz.com) is parked for sale and the group site's TLS certificate had expired in October 2026; facts were read from the page source.",
+      "cautions": "Do not confuse with 'Özel Birinci Hastanesi', a separate Beylikdüzü general hospital placed under trustee administration in the 2024 'newborn gang' prosecution; the eye hospital was not named in that case in the sources read (birinci-press-milliyet).",
+      "publishedPrices": "Not published on its site.",
+      "booking": {
+        "channels": "Call centre 0850 711 11 00 (Monday to Saturday 08:30 to 19:00 Turkey time); email randevu@birincigozhastanesi.com; WhatsApp button on site (number not shown in page text); appointment form at /iletisim/. Site in Turkish and English.",
+        "consult": "Not published.",
+        "languages": "Turkish and English website; patient testimonials mention transfer, interpreter and accommodation for international patients, but the site does not itemise them.",
+        "bookingUrl": "https://birincisaglikgrubu.com/iletisim/"
+      },
+      "sourceIds": [
+        "moh-pdfs",
+        "birinci-site",
+        "birinci-press-milliyet"
+      ]
+    },
+    {
+      "name": "Batıgöz Health Group",
+      "district": "İzmir (Konak, Şair Eşref Blv.; Balçova) with an Istanbul (Üsküdar, Altunizade) centre",
+      "type": "eye",
+      "url": "https://www.batigoz.com/en/health-tourism",
+      "specialties": [
+        "Laser vision correction",
+        "Cataract",
+        "Glaucoma",
+        "Retina",
+        "Keratoconus",
+        "Oculoplastics"
+      ],
+      "namedDoctors": "Not named on international page (batigoz.com blocked automated reading in October 2026). Broker directories list İzmir physicians, which are not relied on here.",
+      "credentials": "On the Ministry of Health authorized-facility list (October 2026) as 'Özel Batıgöz Göz Sağlığı Dal Merkezi' (Şair Eşref Blv. 1371 Sok. No:9, Konak, İzmir), 'Özel Batıgöz Cerrahi Tıp Merkezi' (Balçova, İzmir) and 'Özel Batıgöz Sağlığı Tıp Merkezi' (Altunizade, Üsküdar, Istanbul); note these are licensed as medical centres, not hospitals. The corporate page (search snippet) states the group was set up in İzmir in 2004 and runs 7 centres in Turkey and 5 abroad; the health-tourism page states about 200 international patients a month. No JCI or ISO claim was seen in the readable snippets. Site blocked automated reading; facts from search snippets of batigoz.com pages.",
+      "publishedPrices": "Not published on its site (as far as readable in October 2026).",
+      "booking": {
+        "channels": "Health-tourism page https://www.batigoz.com/en/health-tourism; the page says international patient consultants greet patients in their own language. Phone, WhatsApp and email could not be read by automated tools.",
+        "consult": "Not published on readable pages.",
+        "languages": "Not stated beyond 'own language' consultants.",
+        "bookingUrl": "https://www.batigoz.com/en/health-tourism"
+      },
+      "sourceIds": [
+        "moh-pdfs",
+        "batigoz-corporate",
+        "batigoz-health-tourism"
+      ]
+    },
+    {
+      "name": "DentSpa",
+      "district": "Istanbul (Şişli, Fulya)",
+      "type": "dental",
+      "url": "https://dentspa.com/",
+      "specialties": [
+        "Dental implants and All-on-4",
+        "Zirconia crowns and veneers",
+        "Smile makeover",
+        "Periodontology",
+        "Oral and maxillofacial surgery"
+      ],
+      "namedDoctors": "Site names Bürkan Berkay Baş (prosthodontic specialist), Serdar Yılmaz and Şükran Baycan (oral and maxillofacial surgeons), Madina Gulverdiyeva (prosthodontic specialist), Damla Öztürk (periodontology specialist) and Tugçe Akin (prosthodontist). Anesthesiologists not named.",
+      "credentials": "On the Ministry of Health authorized-facility list (October 2026) as 'Özel Dentspa Ağız ve Diş Sağlığı Polikliniği' (Teşvikiye Mah. Hakkı Yeten Cad. Terrace Fulya Center 1 No:11, Şişli, Istanbul), licensed as a dental polyclinic. The site claims Global Healthcare Accreditation (described as Turkey's first GHA-accredited dental clinic), a Straumann award in 2025, and shows Turkish Dental Association, USHAŞ, Ministry of Health, TÜRSAB and ISO logos; none verified on the accreditors' own lists. It claims 25+ years of experience; founding year not stated.",
+      "publishedPrices": "Not published on its site. The FAQ says approximate prices are given by a medical advisor on contact.",
+      "booking": {
+        "channels": "'Book a Consultation Now' form and 'Chat with our professional team' link on dentspa.com; contact page https://dentspa.com/?page_id=25130; WhatsApp mentioned for aftercare but the number is not shown in page text; no phone or email shown.",
+        "consult": "Online consultation about goals, then an initial treatment plan; the FAQ says the first consultation and an X-ray are free. Booking requires a 'small deposit' of unstated amount. Response time not published.",
+        "deposit": "A 'small deposit' at booking; amount not stated.",
+        "languages": "Site says staff speak English, Turkish, French and Arabic, with limited Spanish, Russian, Italian and German.",
+        "includes": "Airport transport to the clinic is described in the booking steps.",
+        "bookingUrl": "https://dentspa.com/?page_id=25130"
+      },
+      "sourceIds": [
+        "moh-pdfs",
+        "dentspa-site"
+      ]
+    },
+    {
+      "name": "Hospitadent Dental Group",
+      "district": "Istanbul (Şişli, Mecidiyeköy) with 18 further Turkish branches including Antalya and Bodrum, plus Frankfurt and Den Haag",
+      "type": "dental",
+      "url": "https://www.hospitadent.com/en",
+      "specialties": [
+        "Dental implants",
+        "Zirconia crowns and veneers",
+        "Orthodontics",
+        "Pediatric dentistry",
+        "Oral surgery"
+      ],
+      "namedDoctors": "Site lists 24 dentists including Dr. Abdurrahman Turgut, Dr. Aynur Tüzüntürk, Dr. Dt. Güney Berksu Duman, Dr. Dt. Onur Topalan, Dr. Hüseyin Çölgeçen, Dr. Mehmet Nuri Yüksek and Dr. Musa Erdem; specialties and society certifications are not stated against names. Anesthesiologists not named.",
+      "credentials": "On the Ministry of Health authorized-facility list (October 2026) as 'Özel Hospitadent Ağız ve Diş Sağlığı Merkezi' (Fulya Mah. Akıncıbayırı Sok. No:8, Mecidiyeköy, Istanbul) plus 'Özel Hospitadent Ağız ve Diş Sağlığı Polikliniği' in Antalya (Muratpaşa) and Ankara and 'Özel Hospitadent Bodrum Ağız ve Diş Sağlığı Polikliniği'; other Istanbul branches were not matched by brand name, so ask for their legal entity names. The site states operation since 2006 and lists 21 branches (19 Turkey, 1 Germany, 1 Netherlands). No JCI or ISO claim on the pages read; a 'Health Türkiye' award badge is shown. The site hosts a franchise application form, so some branches may be franchise-operated.",
+      "publishedPrices": "Not published on its site.",
+      "booking": {
+        "channels": "Call centre 444 99 22 (Turkey); WhatsApp +90 553 102 99 22; email info@hospitadent.com; Den Haag +31 70 270 0700; Frankfurt +49 69 6610 2131; branch pages at https://www.hospitadent.com/en/branches. No patient intake form found.",
+        "consult": "Not published.",
+        "languages": "Not stated (site in English and Turkish).",
+        "bookingUrl": "https://www.hospitadent.com/en/contact"
+      },
+      "sourceIds": [
+        "moh-pdfs",
+        "hospitadent-site",
+        "hospitadent-branches",
+        "hospitadent-contact"
+      ]
+    },
+    {
+      "name": "Antlara Dental",
+      "district": "Antalya (Muratpaşa, Lara)",
+      "type": "dental",
+      "url": "https://www.antlaradental.com/",
+      "specialties": [
+        "Dental implants (Straumann, Nobel Biocare stated)",
+        "Zirconia and E-max veneers",
+        "Crowns and bridges",
+        "Smile design",
+        "Oral surgery"
+      ],
+      "namedDoctors": "Site names Dr. Dilek Aksu Güler (co-founder), Dr. Alp Tolga Cintav, Dr. Hakan Akman, Dr. Uğur Ağar, Dr. İsmail Kılıç, Dr. Furkan Altınel, Dr. Furkan Yağcıoğlu and Uzm. Dt. Sercan Yılmaz (specialist dentist); Fırat Güler is CEO and co-founder without a dental title. Society certifications not stated; anesthesiologists not named.",
+      "credentials": "On the Ministry of Health authorized-facility list (October 2026) as 'Özel Antlara Ağız ve Diş Sağlığı Polikliniği' (Zümrütova Mah. Sinanoğlu Cad. No:53/A, Muratpaşa, Antalya), licensed as a dental polyclinic. The site states founding in 2005 and an International Health Tourism Authorization Certificate, and lists offices in Brussels and London. A March 2026 press release issued by the clinic says it has a written complaints process aligned to UK GDC principles. No JCI or ISO claim seen.",
+      "publishedPrices": "Not published on its site; 'Fiyat Al' (get a price) links go to WhatsApp or the contact form.",
+      "booking": {
+        "channels": "WhatsApp +90 541 120 42 08; phone +90 530 202 68 68 and +90 242 324 57 79; email smile@antlaradental.com; contact form https://www.antlaradental.com/iletisim.html#contact.",
+        "consult": "Send photos of your teeth by WhatsApp for an initial evaluation, or use the online appointment link. Fee, response time and deposit terms not published.",
+        "languages": "Site says the foreign-patient relations team speaks English, German, Russian and Arabic; website also in Dutch and Polish.",
+        "bookingUrl": "https://www.antlaradental.com/iletisim.html#contact"
+      },
+      "sourceIds": [
+        "moh-pdfs",
+        "antlara-site",
+        "antlara-press-release"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "moh-pdfs",
+      "label": "Ministry of Health authorized health-tourism facility lists (four PDFs)",
+      "url": "https://shgmturizmdb.saglik.gov.tr/TR-76664/yetkili-saglik-tesisleri.html",
+      "publisher": "T.C. Sağlık Bakanlığı",
+      "date": "2026-10-05",
+      "kind": "official"
+    },
+    {
+      "id": "medicalpark-mlpcare-about",
+      "label": "MLP Care, About Us",
+      "url": "https://www.mlpcare.com/about-us",
+      "publisher": "MLP Sağlık Hizmetleri A.Ş.",
+      "date": "2026-10",
+      "kind": "clinic"
+    },
+    {
+      "id": "medicalpark-mlpcare-network",
+      "label": "MLP Care, Global Hospital Network: Türkiye",
+      "url": "https://mlpcare.com/global-hospital-network/turkiye",
+      "publisher": "MLP Sağlık Hizmetleri A.Ş.",
+      "date": "2026-10",
+      "kind": "clinic"
+    },
+    {
+      "id": "medicalpark-press-cumhuriyet",
+      "label": "Bakan Koca duyurdu: Medical Park hastanesindeki skandalda 2 sağlık personelinden biri 3 yıl süreyle meslekten men edildi",
+      "url": "https://www.cumhuriyet.com.tr/turkiye/son-dakika-bakan-koca-duyurdu-medical-park-hastanesindeki-skandalda-2-saglik-personelinden-biri-3-yil-sureyle-2005521",
+      "publisher": "Cumhuriyet",
+      "date": "2022-11-23",
+      "kind": "press"
+    },
+    {
+      "id": "liv-site",
+      "label": "Liv Hospital English homepage",
+      "url": "https://www.livhospital.com/en",
+      "publisher": "Liv Hospital",
+      "date": "2026-10",
+      "kind": "clinic"
+    },
+    {
+      "id": "liv-intl-page",
+      "label": "Liv Hospital, International Patients",
+      "url": "https://www.livhospital.com/en/international-patients",
+      "publisher": "Liv Hospital",
+      "date": "2026-10",
+      "kind": "clinic"
+    },
+    {
+      "id": "medicana-intl-site",
+      "label": "Medicana International homepage",
+      "url": "https://www.medicanainternational.com/",
+      "publisher": "Medicana Health Group",
+      "date": "2026-10",
+      "kind": "clinic"
+    },
+    {
+      "id": "medicana-quality-policy",
+      "label": "Medicana, Our Quality Policy (accreditations list)",
+      "url": "https://www.medicanainternational.com/en/our-corporate/our-quality-policy",
+      "publisher": "Medicana Health Group",
+      "date": "2026-10",
+      "kind": "clinic"
+    },
+    {
+      "id": "medicana-press-bianet",
+      "label": "Patient dies in ICU, family learns it by chance",
+      "url": "https://bianet.org/english/human-rights/263963-patient-dies-in-icu-family-learns-it-by-chance-your-father-apparently-died",
+      "publisher": "bianet",
+      "date": "2022-06-30",
+      "kind": "press"
+    },
+    {
+      "id": "medicana-press-bianet-censor",
+      "label": "Censorship on bianet article lifted after top court ruling",
+      "url": "https://bianet.org/haber/censorship-on-bianet-article-lifted-after-top-court-ruling-293264",
+      "publisher": "bianet",
+      "date": "2024",
+      "kind": "press"
+    },
+    {
+      "id": "florence-site",
+      "label": "Group Florence Nightingale Hospitals English homepage",
+      "url": "https://www.florence.com.tr/en",
+      "publisher": "Group Florence Nightingale Hospitals",
+      "date": "2026-10",
+      "kind": "clinic"
+    },
+    {
+      "id": "florence-intl-page",
+      "label": "Group Florence Nightingale, International Patients",
+      "url": "https://www.florence.com.tr/en-us/international-patients",
+      "publisher": "Group Florence Nightingale Hospitals",
+      "date": "2026-10",
+      "kind": "clinic"
+    },
+    {
+      "id": "florence-groupflorence",
+      "label": "Group Florence international patient site",
+      "url": "https://www.groupflorence.com/",
+      "publisher": "Group Florence Nightingale Hospitals",
+      "date": "2026-10",
+      "kind": "clinic"
+    },
+    {
+      "id": "american-site",
+      "label": "American Hospital Istanbul English homepage",
+      "url": "https://www.amerikanhastanesi.org/en",
+      "publisher": "Vehbi Koç Foundation American Hospital",
+      "date": "2026-10",
+      "kind": "clinic"
+    },
+    {
+      "id": "american-kochealthcare-intl",
+      "label": "Koç Healthcare International (international patient program)",
+      "url": "https://www.kochealthcareinternational.org/",
+      "publisher": "Koç Healthcare",
+      "date": "2026-10",
+      "kind": "clinic"
+    },
+    {
+      "id": "american-kochealthcare",
+      "label": "Koç Healthcare corporate site",
+      "url": "https://www.kochealthcare.org/en",
+      "publisher": "Koç Healthcare",
+      "date": "2026-10",
+      "kind": "clinic"
+    },
+    {
+      "id": "anadolu-site",
+      "label": "Anadolu Medical Center homepage",
+      "url": "https://www.anadolumedicalcenter.com/",
+      "publisher": "Anadolu Sağlık Merkezi",
+      "date": "2026-10",
+      "kind": "clinic"
+    },
+    {
+      "id": "anadolu-intl-page",
+      "label": "Anadolu Medical Center, International Patient Services",
+      "url": "https://www.anadolumedicalcenter.com/patient-guide/international-patient-services",
+      "publisher": "Anadolu Sağlık Merkezi",
+      "date": "2026-10",
+      "kind": "clinic"
+    },
+    {
+      "id": "medipol-intl-center",
+      "label": "Medipol, International Patient Center (seen in search snippets; site blocked fetching)",
+      "url": "https://medipol.com.tr/en/patient-services/international-patient-center",
+      "publisher": "Medipol Sağlık Grubu",
+      "date": "2026-10",
+      "kind": "clinic"
+    },
+    {
+      "id": "medipol-news-intl",
+      "label": "Medipol international patient admissions have started (seen in search snippets)",
+      "url": "https://medipol.com.tr/en/news/medipol-international-patient-admissions-have-started",
+      "publisher": "Medipol Sağlık Grubu",
+      "date": "2026-10",
+      "kind": "clinic"
+    },
+    {
+      "id": "koc-kuh-site",
+      "label": "Koç University Hospital English homepage",
+      "url": "https://www.kuh.ku.edu.tr/en",
+      "publisher": "Koç University Hospital",
+      "date": "2026-10",
+      "kind": "clinic"
+    },
+    {
+      "id": "koc-kuh-corporate",
+      "label": "Koç University Hospital, Corporate",
+      "url": "https://www.kuh.ku.edu.tr/corporate",
+      "publisher": "Koç University Hospital",
+      "date": "2026-10",
+      "kind": "clinic"
+    },
+    {
+      "id": "koc-kuh-numbers",
+      "label": "Koç University Hospital in Numbers",
+      "url": "https://www.kuh.ku.edu.tr/koc-university-hospital-in-numbers",
+      "publisher": "Koç University Hospital",
+      "date": "2025-10-24",
+      "kind": "clinic"
+    },
+    {
+      "id": "hisar-site",
+      "label": "Hisar Hospital homepage (Turkish)",
+      "url": "https://www.hisarhospital.com/",
+      "publisher": "Hisar Hospital Intercontinental",
+      "date": "2026-10",
+      "kind": "clinic"
+    },
+    {
+      "id": "hisar-site-en",
+      "label": "Hisar Hospital English section",
+      "url": "https://www.hisarhospital.com/en/",
+      "publisher": "Hisar Hospital Intercontinental",
+      "date": "2026-10",
+      "kind": "clinic"
+    },
+    {
+      "id": "lokman-site",
+      "label": "Lokman Hekim Sağlık Grubu homepage",
+      "url": "https://www.lokmanhekim.com.tr/",
+      "publisher": "Lokman Hekim Engürüsağ A.Ş.",
+      "date": "2026-10",
+      "kind": "clinic"
+    },
+    {
+      "id": "lokman-site-endo",
+      "label": "Lokman Hekim endodontics page (names dental faculty)",
+      "url": "https://www.lokmanhekim.com.tr/en",
+      "publisher": "Lokman Hekim Engürüsağ A.Ş.",
+      "date": "2026-10",
+      "kind": "clinic"
+    },
+    {
+      "id": "dunyagoz-corporate",
+      "label": "Dünyagöz Corporate (seen in search snippets; site blocked fetching)",
+      "url": "https://www.dunyagoz.com/en/corporate",
+      "publisher": "Dünya Göz Hastanesi San. ve Tic. A.Ş.",
+      "date": "2026-10",
+      "kind": "clinic"
+    },
+    {
+      "id": "dunyagoz-health-tourism",
+      "label": "Dünyagöz Health Tourism (seen in search snippets)",
+      "url": "https://dunyagoz.com/en/health-tourism/health-tourism",
+      "publisher": "Dünya Göz Hastanesi San. ve Tic. A.Ş.",
+      "date": "2026-10",
+      "kind": "clinic"
+    },
+    {
+      "id": "dunyagoz-forum-sikayetvar",
+      "label": "Dünya Göz Hastanesi Suadiye complaint",
+      "url": "https://www.sikayetvar.com/dunya-goz-hastanesi/dunya-goz-hastanesi-suadiyede-goz-ameliyati-sonrasi-yasananlar",
+      "publisher": "Şikayetvar",
+      "date": "2025",
+      "kind": "forum"
+    },
+    {
+      "id": "birinci-site",
+      "label": "Birinci Göz Hastanesi page on Birinci Sağlık Grubu site",
+      "url": "https://birincisaglikgrubu.com/sayfa/birinci-goz-hastanesi/",
+      "publisher": "Birinci Sağlık Grubu",
+      "date": "2026-10",
+      "kind": "clinic"
+    },
+    {
+      "id": "birinci-press-milliyet",
+      "label": "Yenidoğan Çetesi soruşturmasından peş peşe haberler: 13 hastane ve 3 şirkete kayyum atandı",
+      "url": "https://www.milliyet.com.tr/gundem/yenidogan-cetesi-sorusturmasindan-pes-pese-haberler-13-hastane-ve-3-sirkete-de-kayyum-atandi-7246126",
+      "publisher": "Milliyet",
+      "date": "2024-11",
+      "kind": "press"
+    },
+    {
+      "id": "batigoz-corporate",
+      "label": "Batıgöz Corporate (seen in search snippets; site blocked fetching)",
+      "url": "https://www.batigoz.com/en/corporate",
+      "publisher": "Batıgöz Sağlık Grubu",
+      "date": "2026-10",
+      "kind": "clinic"
+    },
+    {
+      "id": "batigoz-health-tourism",
+      "label": "Batıgöz Health Tourism (seen in search snippets)",
+      "url": "https://www.batigoz.com/en/health-tourism",
+      "publisher": "Batıgöz Sağlık Grubu",
+      "date": "2026-10",
+      "kind": "clinic"
+    },
+    {
+      "id": "dentspa-site",
+      "label": "DentSpa homepage and FAQ",
+      "url": "https://dentspa.com/",
+      "publisher": "DentSpa",
+      "date": "2026-10",
+      "kind": "clinic"
+    },
+    {
+      "id": "hospitadent-site",
+      "label": "Hospitadent English homepage",
+      "url": "https://www.hospitadent.com/en",
+      "publisher": "Hospitadent",
+      "date": "2026-10",
+      "kind": "clinic"
+    },
+    {
+      "id": "hospitadent-branches",
+      "label": "Hospitadent Branches",
+      "url": "https://www.hospitadent.com/en/branches",
+      "publisher": "Hospitadent",
+      "date": "2026-10",
+      "kind": "clinic"
+    },
+    {
+      "id": "hospitadent-contact",
+      "label": "Hospitadent Contact",
+      "url": "https://www.hospitadent.com/en/contact",
+      "publisher": "Hospitadent",
+      "date": "2026-10",
+      "kind": "clinic"
+    },
+    {
+      "id": "antlara-site",
+      "label": "Antlara Dental homepage",
+      "url": "https://www.antlaradental.com/",
+      "publisher": "Antlara Dental",
+      "date": "2026-10",
+      "kind": "clinic"
+    },
+    {
+      "id": "antlara-press-release",
+      "label": "Antlara Dental is standardising clinical practices based on GDC principles (clinic press release)",
+      "url": "https://tools.prnewswire.com/en-us/live/20823/release/20260305EN02223",
+      "publisher": "PR Newswire (issued by Antlara Dental)",
+      "date": "2026-03-05",
+      "kind": "press"
+    }
+  ]
+}

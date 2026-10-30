@@ -7,7 +7,7 @@ import MedicalDisclaimer from '@/components/MedicalDisclaimer';
 import { JourneyRail } from '@/components/destinations/JourneyRail';
 import { ExternalLink, ShieldCheck } from 'lucide-react';
 import type { Registry, RegistryRow } from '@/lib/registries';
-import { formatCount, groupByDistrict, clinicAnchor } from '@/lib/registries';
+import { formatCount, groupByDistrict, clinicAnchor, districtSlug } from '@/lib/registries';
 
 const SITE = 'https://vitalityscout.com';
 
@@ -118,7 +118,7 @@ export function RegistryRows({
       {groups.length > 1 && (
         <nav aria-label="Districts" className="mb-6 flex flex-wrap gap-2 text-xs">
           {groups.map((g) => (
-            <a key={g.district} href={`#${listId}-${slugify(g.district)}`} className="rounded-full border border-gray-200 bg-white px-2.5 py-1 text-gray-700 hover:border-purple-300 hover:text-purple-700">
+            <a key={g.district} href={`#${listId}-${districtSlug(g.district)}`} className="rounded-full border border-gray-200 bg-white px-2.5 py-1 text-gray-700 hover:border-purple-300 hover:text-purple-700">
               {g.district} <span className="text-gray-400">{g.rows.length}</span>
             </a>
           ))}
@@ -126,7 +126,7 @@ export function RegistryRows({
       )}
       <div className="space-y-8">
         {groups.map((g) => (
-          <section key={g.district} data-district id={`${listId}-${slugify(g.district)}`} className="scroll-mt-28">
+          <section key={g.district} data-district id={`${listId}-${districtSlug(g.district)}`} className="scroll-mt-28">
             <h2 className="mb-3 text-lg font-bold text-gray-900">{g.district} <span className="text-sm font-normal text-gray-500">{formatCount(g.rows.length)}</span></h2>
             <ul className="divide-y divide-gray-100 rounded-xl border border-gray-200 bg-white">
               {g.rows.map((r) => {
@@ -158,8 +158,4 @@ export function RegistryRows({
 
 export function fold(s: string): string {
   return s.replace(/ı/g, 'i').replace(/İ/g, 'I').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
-}
-
-export function slugify(s: string): string {
-  return fold(s).replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'x';
 }
