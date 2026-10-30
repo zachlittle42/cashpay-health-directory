@@ -27,6 +27,22 @@ The existing workflows/.env supplies GSC_SA_KEY_FILE or GA_SA_KEY_FILE, BING_WMT
 
 The reporting clients were callable September 17. Read-only network requests required sandbox escalation on this machine. A later authentication failure is missing access, not a zero-traffic observation.
 
+## Access verification, October 30 2026
+
+All five read paths were exercised live on this machine with existing credentials; nothing was changed.
+
+- Search Console: the service account is a verified `siteOwner` of sc-domain:vitalityscout.com, so the auth gate in gsc-client.ts is clear. Ad-hoc probe scripts must run from inside ~/Documents/agent-os/workflows (or with its node_modules on NODE_PATH); google-auth-library is not installed in this repository.
+- GA4: `npm run analytics:google -- status` and `realtime` succeed.
+- Bing: GetUserSites, GetRankAndTrafficStats and GetCrawlStats succeed with BING_WMT_API_KEY. Data lags two to three days.
+- PostHog: project query endpoint succeeds with the personal API key. `/api/users/@me/` returns 403 for this key; that is a scope limit, not a broken key.
+- Vercel Web Analytics: the Vercel MCP connector returns "404 Web Analytics not found" for the visits count and aggregate endpoints. The same endpoints succeed through the logged-in CLI, so the 404 is a connector limitation rather than a plan or project limitation:
+
+  ```sh
+  vercel api "/v1/query/web-analytics/visits/count?projectId=prj_cDE9EsHY4g0UfIs2JdsPmJq8jaqk&teamId=team_KN88AGVgyt3mzJHkynL0Ecdt&since=<ms>&until=<ms>" --method GET
+  ```
+
+  Pass millisecond timestamps; the endpoint rounds to UTC day boundaries.
+
 ## Exact Google request shapes
 
 Use a three-day lag, final data, equal 28-day windows. The September 17 baseline used Aug 18–Sep 14 and Jul 21–Aug 17. For each window request:

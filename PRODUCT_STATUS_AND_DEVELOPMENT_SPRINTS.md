@@ -184,7 +184,7 @@ telehealth / personal products for health, wellness, longevity, and performance.
 
 ### SEO Status ✅
 - **Google Search Console:** Verified, sitemap submitted
-- **Bing Webmaster:** Pending setup
+- **Bing Webmaster:** Verified; API reporting live (see `scripts/growth/README.md`)
 - **Schema Markup:** 12 top pages (hubs + guides)
 - **Indexing:** In progress (expect 24-72 hours for initial indexing)
 
