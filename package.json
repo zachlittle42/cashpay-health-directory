@@ -10,7 +10,7 @@
     "test:growth": "node --test tests/growth-funnel.test.cjs",
     "analytics:google": "node scripts/growth/google-analytics.mjs",
     "test:analytics": "node --test tests/google-analytics-cli.test.mjs",
-    "test:destinations": "node --test tests/destination-journeys.test.mjs"
+    "test:destinations": "node --test tests/destination-journeys.test.mjs tests/registries.test.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "^1.6.1",

@@ -148,6 +148,7 @@ export const NAV_GROUPS: NavGroup[] = [
         { label: 'Dental Cost', url: '/guides/turkey-dental-cost' },
         { label: 'Rhinoplasty & Plastic Surgery', url: '/guides/rhinoplasty-turkey-cost' },
         { label: 'Is It Safe? How to Verify a Clinic', url: '/guides/how-to-verify-turkey-clinic-license' },
+        { label: 'All Authorized Facilities (Directory)', url: '/destinations/turkey/directory' },
         { label: 'Trip Planner', url: '/guides/turkey-hair-transplant-trip-planner' },
       ] },
       { label: 'South Korea', items: [
@@ -156,6 +157,7 @@ export const NAV_GROUPS: NavGroup[] = [
         { label: 'Dermatology & Skin Cost', url: '/guides/korea-dermatology-cost' },
         { label: 'Health Screening Cost', url: '/guides/korea-health-screening-cost' },
         { label: 'How to Verify a Clinic', url: '/guides/how-to-verify-korea-clinic' },
+        { label: 'All Registered Institutions (Directory)', url: '/destinations/south-korea/directory' },
         { label: 'Gangnam Clinics Guide', url: '/guides/plastic-surgery-korea-guide' },
       ] },
       { label: 'Other Destinations', items: [

@@ -14,7 +14,8 @@ import {
   getMedspaClinicsByCity,
   countMedspaIndependents,
 } from '@/data/medspa-clinics-index';
-import { gridIndexable, stateGridIndexable } from '@/lib/indexability';
+import { gridIndexable, stateGridIndexable, MIN_CLINICS_FOR_INDEX } from '@/lib/indexability';
+import { registryDirectoryPaths } from '@/lib/registries';
 import { BAYAREA_REGIONS } from '@/lib/bayarea-clinics-data';
 import { SOCAL_REGIONS } from '@/lib/socal-clinics-data';
 
@@ -170,6 +171,11 @@ function buildDynamicUrls(): string[] {
   for (const slug of DESTINATION_SLUGS) {
     urls.push(`/destinations/${slug}`);
   }
+
+  // destinations/[destination]/directory[/region[/category]] — official registry
+  // directories (Turkey, South Korea). Region and category pages below the grid
+  // index bar are noindexed by their templates and omitted here to match.
+  urls.push(...registryDirectoryPaths(MIN_CLINICS_FOR_INDEX));
 
   // traditional-healthcare/* and health-systems/[slug] are intentionally NOT
   // enumerated. The whole family is deindexed (noindex,follow via the

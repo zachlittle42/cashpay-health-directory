@@ -73,6 +73,10 @@ export interface ClinicProfile {
     bookingUrl?: string;
   };
   sourceIds: string[];
+  /** Phrases that identify this provider's rows on the official registry (src/data/registries):
+   *  matched accent- and case-insensitively as whole words in the published facility name
+   *  ("memorial" badges every Memorial hospital). Omit when the brand could not be matched. */
+  registryMatch?: string[];
 }
 
 /** Q3: a cost row. */
