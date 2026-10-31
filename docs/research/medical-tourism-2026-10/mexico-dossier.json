@@ -1,0 +1,1403 @@
+{
+  "keyFacts": [
+    {
+      "value": "1M+",
+      "label": "Americans estimated to travel to Mexico for elective care each year (Patients Beyond Borders estimate, reported 2023; no official US or Mexican count exists)",
+      "sourceIds": [
+        "axios-pbb-2023",
+        "animal-politico-2023"
+      ]
+    },
+    {
+      "value": "~1.2M",
+      "label": "Foreign patients per year received by Mexico over the past decade, ranking second worldwide behind Thailand (Mexico Business News, 2023; unattributed industry figure)",
+      "sourceIds": [
+        "mbn-2023"
+      ]
+    },
+    {
+      "value": "6.77M",
+      "label": "Pedestrian entries into the US at San Ysidro in 2024, the busiest land port on the border (US Bureau of Transportation Statistics)",
+      "sourceIds": [
+        "bts-2025",
+        "bts-2024"
+      ]
+    },
+    {
+      "value": "6 states",
+      "label": "Mexican states under a US Level 4 Do Not Travel advisory in the June 2026 reissue, including Tamaulipas (Matamoros, Nuevo Progreso, Reynosa)",
+      "sourceIds": [
+        "rmn-advisory-2026",
+        "fox-l4-2026"
+      ]
+    }
+  ],
+  "treatmentsIntro": "Mexico is the closest and most-used medical travel destination for Americans, and most of the traffic is for cash-pay services that US insurance covers poorly or not at all: dentistry, weight-loss surgery, cosmetic surgery, prescription drugs, and fertility care. Demand is concentrated along the border (Tijuana, Los Algodones, Nuevo Progreso, Ciudad Juarez) and in a handful of larger cities (Guadalajara, Monterrey, Mexico City, Cancun). Bancomext ranks Sonora, Baja California, Baja California Sur, Mexico City, Chihuahua, Jalisco and Nuevo Leon as the states with the most health tourism, and the United States generates roughly 70 percent of Mexico's health tourism income.",
+  "treatments": [
+    {
+      "name": "Dental (implants, crowns, All-on-4, veneers)",
+      "whyHere": "The largest single category by patient count. Los Algodones, a town of a few thousand people across from Yuma, Arizona, has several hundred dental clinics and is reachable on foot through the Andrade port of entry. Tijuana, Nuevo Progreso (across from Weslaco, Texas) and Ciudad Juarez also serve walk-in dental patients. Marketplace listings put a single implant with crown at roughly $750 to $1,800 against $3,000 to $6,000 in the US.",
+      "demand": "Press estimates for Los Algodones alone range from hundreds of thousands to over a million visitors a year; none is an official count.",
+      "typicalStay": "Same-day for cleanings and crowns; 3 to 5 days for implant placement, then a second trip 4 to 6 months later for the final restoration",
+      "sourceIds": [
+        "sani-placidway",
+        "dentaltown-2025",
+        "placidway-nuevo-progreso",
+        "ada-mouthhealthy"
+      ]
+    },
+    {
+      "name": "Bariatric surgery (gastric sleeve, bypass, revisions)",
+      "whyHere": "Tijuana is the main hub, with dozens of surgeons operating in private hospitals and clinics a few miles from the San Ysidro crossing; Guadalajara, Monterrey and Cancun also market packages. All-inclusive sleeve packages are listed at roughly $4,200 to $7,800 in Tijuana versus about $10,000 to $25,000 self-pay in the US. The American Society for Metabolic and Bariatric Surgery says extensive travel for bariatric surgery should be discouraged unless follow-up is arranged at home.",
+      "demand": "A 2025 Surgical Endoscopy series from a US academic center near the border documents a growing stream of returning patients with complications and incomplete records.",
+      "typicalStay": "4 to 7 nights in Tijuana (1 to 2 hospital nights plus recovery hotel), then clearance to travel home",
+      "sourceIds": [
+        "bookimed-tijuana-sleeve",
+        "bettercare-sleeve",
+        "asmbs-mt",
+        "surg-endosc-2025"
+      ]
+    },
+    {
+      "name": "Plastic and cosmetic surgery (BBL, tummy tuck, mommy makeover, breast, rhinoplasty, facelift)",
+      "whyHere": "Tijuana and Guadalajara have the largest concentration of surgeons marketing to Americans, with Monterrey, Mexico City and Cancun behind them. Clinic price lists show tummy tucks around $5,000 to $6,800 and BBL packages from about $4,500, against 2024 US surgeon fees of $8,000 to $13,500 for a tummy tuck and $7,000 to $11,500 for buttock fat grafting (surgeon fee only). This category produced the deadliest documented incident in Mexican medical tourism, the 2023 Matamoros fungal meningitis outbreak, which followed cosmetic surgery under epidural anesthesia.",
+      "typicalStay": "7 to 14 nights; surgeons quoted by the American Society of Plastic Surgeons advise staying near the surgeon at least 4 to 5 days and ideally longer before any flight",
+      "sourceIds": [
+        "lifot-pricelist",
+        "layyn-pricelist",
+        "asps-fees-2024",
+        "cid-matamoros-2024",
+        "asps-bbl-travel-2023"
+      ]
+    },
+    {
+      "name": "Stem cell and regenerative clinics",
+      "whyHere": "Tijuana, Guadalajara, Cancun and Puerto Vallarta host clinics selling stem cell injections for knees, autoimmune disease, anti-aging and neurological conditions. These products are not FDA-approved for any of those uses; the only FDA-approved stem cell products are cord-blood hematopoietic cells for blood disorders. COFEPRIS has stated it has not authorized any clinical protocol supporting a stem cell treatment for COVID-19, and Mexico does not maintain a public list of approved stem cell therapies. Treat every clinic claim as unproven.",
+      "typicalStay": "1 to 3 days; marketplace listings quote $2,500 to $7,000 per knee",
+      "sourceIds": [
+        "fda-regen-2024",
+        "cofepris-stem-covid",
+        "placidway-stemcell-knee"
+      ]
+    },
+    {
+      "name": "Pharmacy and prescription medications",
+      "whyHere": "Border pharmacies in Tijuana, Los Algodones, Nuevo Progreso and Ciudad Juarez, and resort pharmacies in Cancun and Cabo, sell brand and generic drugs at a fraction of US cash prices, often without a prescription. A 2023 UCLA study of 40 pharmacies in four northern cities found 11 (27.5 percent) selling counterfeit pills, with pills sold as oxycodone containing fentanyl or heroin and pills sold as Adderall containing methamphetamine. The State Department issued a pill warning in March 2023 and Mexican authorities later closed 23 pharmacies at Caribbean resorts. CBP generally allows a personal supply of up to 90 days in labeled original packaging with a valid US prescription; FDA's position is that personal importation is generally not permitted, with discretionary exceptions.",
+      "typicalStay": "Day trip",
+      "sourceIds": [
+        "ucla-pharmacies-2023",
+        "statedept-pills-2023",
+        "fox-pharmacies-closed-2023",
+        "gigafact-cbp-meds-2025"
+      ]
+    },
+    {
+      "name": "IVF and fertility",
+      "whyHere": "Cancun, Mexico City, Guadalajara and Tijuana clinics market IVF to US couples. Marketplace listings put a standard Cancun cycle at about $4,000 to $7,000 before medications, against a US clinic fee of about $12,400 excluding drugs (ASRM, as reported by GoodRx) and $15,000 to $30,000 for a full cycle with medications and testing. Mexico has no federal assisted-reproduction law equivalent to US SART reporting, so success rates are self-reported by clinics.",
+      "typicalStay": "Two trips, or one stay of roughly 2 to 3 weeks for stimulation, retrieval and transfer",
+      "sourceIds": [
+        "bookimed-cancun-ivf",
+        "goodrx-ivf"
+      ]
+    },
+    {
+      "name": "Alternative and 'integrative' cancer clinics (warning)",
+      "whyHere": "Tijuana and Rosarito have hosted alternative cancer clinics for US and Canadian patients since the 1960s, selling treatments that the peer-reviewed literature describes as unconventional, unproved and disproved. Baja California health authorities have periodically shut clinics down, including the one where Coretta Scott King died in 2006, which officials said was unlicensed as a health facility. No US oncology society endorses these clinics, and patients commonly spend tens of thousands of dollars while delaying proven treatment.",
+      "typicalStay": "Clinics sell 2 to 4 week inpatient programs",
+      "sourceIds": [
+        "pubmed-tijuana-cancer-1991",
+        "calhealthline-crackdown",
+        "nbc-cancer-clinics-2006"
+      ]
+    },
+    {
+      "name": "LASIK, orthopedics and executive health check-ups",
+      "whyHere": "Tijuana and Mexicali ophthalmology clinics list LASIK at about $1,000 to $1,800 per eye against a commonly cited US average near $2,250 per eye. Private hospital groups in Tijuana, Monterrey, Guadalajara and Mexico City (Hospital Angeles, Christus Muguerza, Medica Sur and others) sell joint replacement and executive physicals; check-up packages in Tijuana are listed from roughly $950 to $2,500. These are smaller niches than dental, bariatric and cosmetic.",
+      "typicalStay": "LASIK 2 to 3 days; check-up 1 to 2 days; joint replacement 7 to 10 days",
+      "sourceIds": [
+        "bookimed-mexico-lasik",
+        "lasikplus-us-cost",
+        "bookimed-tijuana-checkup"
+      ]
+    }
+  ],
+  "howItWorks": [
+    {
+      "title": "COFEPRIS licenses the facility, not the doctor",
+      "body": "Mexico's federal health regulator, the Comision Federal para la Proteccion contra Riesgos Sanitarios (COFEPRIS), and its state counterparts (COEPRIS) regulate clinics, hospitals, pharmacies and surgical centers. A hospital or surgical facility needs a licencia sanitaria; lower-risk establishments file an aviso de funcionamiento at least 30 days before opening. COFEPRIS does not run a public search tool for facility licenses in the way the US runs hospital lookups; it publishes PDF lists of establishments found operating irregularly, and in April 2026 it launched a public viewer for medicine registrations. Ask the clinic for its licencia sanitaria number and the name of the responsable sanitario, and ask to see the document.",
+      "sourceIds": [
+        "cofepris-irregular-list-2024",
+        "cofepris-medicines-viewer-2026"
+      ],
+      "link": {
+        "label": "COFEPRIS on gob.mx",
+        "url": "https://www.gob.mx/cofepris"
+      }
+    },
+    {
+      "title": "Consejo de Salubridad General certification is the Mexican hospital quality mark",
+      "body": "The Consejo de Salubridad General (CSG) runs Mexico's voluntary hospital certification, now under the MOCEBPASS model, with manuals revised in 2025 and 2026. Its certification commission is required by its own rules to publish a prontuario of certified establishments and their validity dates. Certified facilities are a small minority of Mexican hospitals; a 2019 study found under 1 percent of establishments certified in 2017. Several large private hospitals in Tijuana, Monterrey, Guadalajara and Mexico City also hold Joint Commission International accreditation, which ASMBS and CDC both treat as a reasonable minimum for surgery abroad. A small surgical clinic will usually hold neither.",
+      "sourceIds": [
+        "csg-rules-dof-2024",
+        "consultorsalud-csg-2025",
+        "asmbs-mt",
+        "cdc-medical-tourism"
+      ]
+    },
+    {
+      "title": "Verify the doctor's cedula profesional and specialty cedula with SEP",
+      "body": "Every licensed physician and dentist in Mexico holds a cedula profesional issued by the Secretaria de Educacion Publica. A general medical degree and a specialty (for example cirugia plastica or cirugia general) each have their own cedula. The public Registro Nacional de Profesionistas lets you search by name or cedula number, and since September 2025 issues a downloadable Constancia de Situacion Profesional with a QR code. Ask for the surgeon's full legal name and both cedula numbers before you pay a deposit, and confirm that the specialty cedula matches the operation you are buying. Dentists hold a cedula as cirujano dentista plus a specialty cedula (implantology, periodontics, prosthodontics, oral surgery); Mexico has no national dental board lookup, so the SEP registry and the clinic's COFEPRIS notice are the only public checks, and the ADA's consumer guidance says to arrange US follow-up before travel.",
+      "sourceIds": [
+        "ada-mouthhealthy",
+        "expansion-cedula-2024",
+        "sep-cedula-portal"
+      ],
+      "link": {
+        "label": "Registro Nacional de Profesionistas (SEP)",
+        "url": "https://cedulaprofesional.sep.gob.mx/"
+      }
+    },
+    {
+      "title": "Board certification: CMCPER for plastic surgery, CMCOEM for bariatric",
+      "body": "A cedula proves training; board certification proves an exam and periodic recertification. For plastic surgery the body is the Consejo Mexicano de Cirugia Plastica, Estetica y Reconstructiva (CMCPER), which publishes a directory of certified surgeons on its website and recertifies every five years. For bariatric surgery it is the Colegio Mexicano de Cirugia para la Obesidad y Enfermedades Metabolicas (CMCOEM), which lists certified surgeons online; most bariatric surgeons also hold Consejo Mexicano de Cirugia General certification. Many surgeons marketing cosmetic surgery to Americans hold only a general-surgery or general-practice cedula. If the name is not in the CMCPER directory, assume the surgeon is not a board-certified plastic surgeon.",
+      "sourceIds": [
+        "cmcper-site",
+        "cmcoem-directory",
+        "advancestudy-cmcper-guide"
+      ],
+      "link": {
+        "label": "CMCPER certified surgeon directory",
+        "url": "https://cmcper.org/"
+      }
+    },
+    {
+      "title": "What US agencies have said: CDC, FDA and the State Department",
+      "body": "CDC's medical tourism page lists wound and bloodstream infections, drug-resistant organisms, counterfeit medicines, language barriers and clots from flying as the main risks, and advises delaying air travel 10 to 14 days after major surgery. CDC and Mexican authorities investigated the 2023 Matamoros fungal meningitis outbreak at River Side Surgical Center and Clinica K-3, where 185 US residents were exposed through epidural anesthesia during cosmetic procedures. The State Department issued a counterfeit pill alert in March 2023 and keeps Tamaulipas at Level 4 Do Not Travel and Baja California at Level 3 Reconsider Travel in its June 2026 reissue. FDA's regenerative medicine alert, updated April 2024, says no stem cell or exosome product is approved for orthopedic, neurological, autoimmune or anti-aging use.",
+      "sourceIds": [
+        "cdc-medical-tourism",
+        "cid-matamoros-2024",
+        "statedept-pills-2023",
+        "rmn-advisory-2026",
+        "fda-regen-2024"
+      ]
+    },
+    {
+      "title": "Facilitators and 'medical tourism companies' are unregulated brokers",
+      "body": "Most Americans reach Tijuana bariatric and cosmetic surgeons through facilitators and marketplaces that bundle surgery, hotel and shuttle into one price and take a commission. They are not licensed in Mexico or the US, do not carry malpractice liability, and their 'verified' or 'certified' badges are marketing terms, not regulatory status. Tijuana's own city government found that nearly half of the businesses buying medical fast-lane passes were pretending to be medical providers and removed them in 2025. Use a facilitator for logistics if you like, but verify the surgeon and facility yourself and pay the clinic directly where possible.",
+      "sourceIds": [
+        "aol-fastlane-fake-providers",
+        "asmbs-mt"
+      ]
+    },
+    {
+      "title": "Recourse: CONAMED, Mexican courts, and the limits of US law",
+      "body": "A US malpractice suit against a Mexican doctor is rarely practical; US courts generally lack jurisdiction and Mexican judgments are small by US standards. Mexico's Comision Nacional de Arbitraje Medico (CONAMED) offers free conciliation and arbitration for complaints against public or private providers, with an online filing portal, a phone line (55 5420 7000 or 800 711 0658) and email. It can broker refunds or corrective treatment but does not award US-style damages, and ASMBS warns that compensation for complications abroad may be difficult or impossible to obtain. Some clinics sell complication insurance; read the policy, because many exclude the most common problems.",
+      "sourceIds": [
+        "conamed-razon-2022",
+        "conamed-gob",
+        "asmbs-mt"
+      ],
+      "link": {
+        "label": "CONAMED complaint portal",
+        "url": "https://www.cavi-conamed.salud.gob.mx/vun/formatoweb.php?rd=007"
+      }
+    },
+    {
+      "title": "Paying with HSA or FSA funds and deducting the cost",
+      "body": "IRS Publication 502 does not restrict deductible medical and dental expenses to US providers, so qualifying care in Mexico can count toward the medical expense deduction above 7.5 percent of adjusted gross income, and HSA administrators generally reimburse the same categories of expense. Cosmetic surgery that is not medically necessary is excluded everywhere, so a BBL or veneers do not qualify in Mexico any more than in the US. Keep itemized receipts in English or with a translation. Travel and lodging for care have their own limits in Publication 502.",
+      "sourceIds": [
+        "irs-p502-2025",
+        "thomsonreuters-p502-hsa"
+      ]
+    }
+  ],
+  "pricesNote": "Mexico prices below are from clinic price lists and marketplace listings dated 2024 to 2026 and are labelled as such; Mexico has no official price registry. Packages usually include surgeon, anesthesia, facility, one or two hospital nights and ground transfers but exclude flights, extra nights, revisions and complication care. US prices are published national ranges from the named source; ASPS figures are surgeon fees only and exclude anesthesia and facility, which can double the total. Exchange-rate moves change peso-denominated quotes, but most border clinics quote in US dollars.",
+  "procedures": [
+    {
+      "procedure": "Single dental implant with crown",
+      "usPrice": "$3,000 to $6,000",
+      "localPrice": "$750 to $1,800",
+      "typicalStay": "2 trips, 3 to 5 days each",
+      "sourceIds": [
+        "dentaltown-2025",
+        "sani-placidway",
+        "bookimed-sani"
+      ],
+      "note": "Los Algodones (Sani Dental Group price list via Placidway; Bookimed listing $8,110 All-on-4 updated April 2024)"
+    },
+    {
+      "procedure": "All-on-4 full arch (per arch)",
+      "usPrice": "$15,000 to $30,000",
+      "localPrice": "$7,000 to $13,000",
+      "typicalStay": "5 to 7 days, second trip 4 to 6 months later",
+      "sourceIds": [
+        "newmouth-implants",
+        "sani-placidway",
+        "bookimed-sani"
+      ],
+      "note": "Los Algodones and Tijuana; marketplace range"
+    },
+    {
+      "procedure": "Porcelain or zirconia crown",
+      "usPrice": "$1,000 to $2,500 (included in US single-implant totals above)",
+      "localPrice": "$195 to $450",
+      "typicalStay": "2 to 3 days",
+      "sourceIds": [
+        "dentaltown-2025",
+        "bookimed-sani"
+      ],
+      "note": "Los Algodones; Bookimed lists PFM crown $195, other clinics from $250"
+    },
+    {
+      "procedure": "Porcelain veneer (per tooth)",
+      "usPrice": "$925 to $2,500",
+      "localPrice": "$350 to $550",
+      "typicalStay": "4 to 6 days",
+      "sourceIds": [
+        "dentaltown-2025",
+        "placidway-nuevo-progreso"
+      ],
+      "note": "Los Algodones and Nuevo Progreso; marketplace range, US range from dental cost guides"
+    },
+    {
+      "procedure": "Gastric sleeve",
+      "usPrice": "$9,350 to $24,000 self-pay (national average about $14,900; one hospital's published self-pay price $14,995)",
+      "localPrice": "$4,200 to $7,800 all-inclusive",
+      "typicalStay": "4 to 7 nights",
+      "sourceIds": [
+        "bettercare-sleeve",
+        "bailey-selfpay",
+        "bookimed-tijuana-sleeve",
+        "medicaltourismco-tijuana-sleeve"
+      ],
+      "note": "Tijuana; MedicalTourismCo lists $4,395 to $4,995 verified June 2026"
+    },
+    {
+      "procedure": "Gastric bypass",
+      "usPrice": "$16,995 (one hospital's published self-pay) to $35,000",
+      "localPrice": "$5,200 to $9,000",
+      "typicalStay": "5 to 7 nights",
+      "sourceIds": [
+        "bailey-selfpay",
+        "placidway-tijuana-wls-2025"
+      ],
+      "note": "Tijuana; marketplace range"
+    },
+    {
+      "procedure": "Brazilian butt lift (fat grafting)",
+      "usPrice": "$7,000 to $11,500 surgeon fee only (ASPS 2024)",
+      "localPrice": "$4,500 to $10,000 package",
+      "typicalStay": "10 to 14 nights",
+      "sourceIds": [
+        "asps-fees-2024",
+        "lifot-pricelist",
+        "placidway-tijuana-ps-prices"
+      ],
+      "note": "Tijuana; Lifot lists lipo plus BBL at $4,500"
+    },
+    {
+      "procedure": "Tummy tuck (abdominoplasty)",
+      "usPrice": "$8,000 to $13,500 surgeon fee only (ASPS 2024)",
+      "localPrice": "$5,000 to $6,800",
+      "typicalStay": "10 to 14 nights",
+      "sourceIds": [
+        "asps-fees-2024",
+        "layyn-pricelist",
+        "lifot-pricelist"
+      ],
+      "note": "Tijuana and Guadalajara clinic price lists"
+    },
+    {
+      "procedure": "Mommy makeover",
+      "usPrice": "Roughly $15,000 to $25,000 combining ASPS tummy tuck and breast surgeon fees plus facility",
+      "localPrice": "$8,000 to $12,000 package",
+      "typicalStay": "12 to 14 nights",
+      "sourceIds": [
+        "asps-fees-2024",
+        "placidway-tijuana-ps-prices"
+      ],
+      "note": "Tijuana; marketplace range"
+    },
+    {
+      "procedure": "Breast augmentation",
+      "usPrice": "$4,575 to $8,000 surgeon fee only (ASPS 2024)",
+      "localPrice": "$4,000 to $6,500 including implants",
+      "typicalStay": "7 to 10 nights",
+      "sourceIds": [
+        "asps-fees-2024",
+        "layyn-pricelist",
+        "placidway-tijuana-ps-prices"
+      ],
+      "note": "Tijuana; Layyn lists $5,500"
+    },
+    {
+      "procedure": "Rhinoplasty",
+      "usPrice": "$7,500 to $12,500 surgeon fee only (ASPS 2024)",
+      "localPrice": "$3,000 to $7,000",
+      "typicalStay": "7 to 10 nights",
+      "sourceIds": [
+        "asps-fees-2024",
+        "layyn-pricelist"
+      ],
+      "note": "Tijuana and Guadalajara; Layyn lists from $3,000"
+    },
+    {
+      "procedure": "Facelift",
+      "usPrice": "$11,395 average surgeon fee (ASPS 2023)",
+      "localPrice": "$5,000 to $7,000",
+      "typicalStay": "10 to 14 nights",
+      "sourceIds": [
+        "asps-fees-2023",
+        "lifot-pricelist",
+        "layyn-pricelist"
+      ],
+      "note": "Tijuana and Guadalajara clinic price lists"
+    },
+    {
+      "procedure": "Stem cell injection, one knee (unproven, not FDA-approved)",
+      "usPrice": "$5,156 average at US clinics (2018 survey; range $1,150 to $12,000)",
+      "localPrice": "$2,500 to $7,000",
+      "typicalStay": "1 to 3 days",
+      "sourceIds": [
+        "upi-stemcell-2018",
+        "placidway-stemcell-knee",
+        "fda-regen-2024"
+      ],
+      "note": "Tijuana; no evidence of benefit, see safety section"
+    },
+    {
+      "procedure": "LASIK (both eyes)",
+      "usPrice": "About $4,500 (about $2,250 per eye, commonly cited US average)",
+      "localPrice": "$2,000 to $3,600 (about $1,000 to $1,800 per eye)",
+      "typicalStay": "2 to 3 days",
+      "sourceIds": [
+        "lasikplus-us-cost",
+        "bookimed-mexico-lasik"
+      ],
+      "note": "Tijuana; marketplace range"
+    },
+    {
+      "procedure": "IVF cycle (standard, without medications)",
+      "usPrice": "About $12,400 clinic fee (ASRM via GoodRx); $15,000 to $30,000 with medications and testing",
+      "localPrice": "$4,000 to $7,000 (average $5,500)",
+      "typicalStay": "2 to 3 weeks or two trips",
+      "sourceIds": [
+        "goodrx-ivf",
+        "bookimed-cancun-ivf"
+      ],
+      "note": "Cancun; Bookimed listing updated August 2025; medications about $1,500 to $3,000 extra"
+    },
+    {
+      "procedure": "Executive health check-up",
+      "usPrice": "Typically $2,500 to $5,000+ at US executive health programs (no national survey; varies by program)",
+      "localPrice": "$950 to $2,500",
+      "typicalStay": "1 to 2 days",
+      "sourceIds": [
+        "bookimed-tijuana-checkup"
+      ],
+      "note": "Tijuana (Hospital Angeles and others); Bookimed 2024 listings; US figure is a planning range, not a sourced average"
+    }
+  ],
+  "process": [
+    {
+      "title": "1. First contact and the 'patient coordinator'",
+      "body": "You fill in a web form or WhatsApp message and a coordinator, usually employed by a facilitator or the clinic's sales team rather than a clinician, replies the same day with a quote and a deposit request. Use this stage to collect the surgeon's full legal name, cedula numbers, board certification, the hospital or clinic name and address, and what the price includes. Do not pay a deposit until you have verified the credentials yourself using the SEP and board directories.",
+      "sourceIds": [
+        "sep-cedula-portal",
+        "cmcper-site"
+      ]
+    },
+    {
+      "title": "2. Remote consultation and pre-op screening",
+      "body": "Good clinics require a video consult with the operating surgeon, a medical history, photos, and recent labs or an EKG for anyone over 40 or with risk factors. Bariatric patients are usually asked for BMI, comorbidities and a pre-op liquid diet; many Tijuana programs accept BMIs the ASMBS would not consider for surgery. Cosmetic patients should be told about nicotine cessation and BMI limits. A clinic that will book surgery without ever putting you in front of the surgeon is a warning sign.",
+      "sourceIds": [
+        "asmbs-mt",
+        "cdc-medical-tourism"
+      ]
+    },
+    {
+      "title": "3. Arrival, transfer and admission",
+      "body": "Most Tijuana packages include a driver who meets you at San Diego airport or the San Ysidro pedestrian crossing and takes you across. Los Algodones patients park in Andrade, California and walk across. On arrival you sign Spanish and English consent forms, pay the balance (often in cash or wire), and have same-day labs. Ask for a copy of every form you sign and confirm the anesthesia provider is an anesthesiologist, not a nurse or technician. The Matamoros outbreak was traced to epidural anesthesia practices at two clinics.",
+      "sourceIds": [
+        "cid-matamoros-2024",
+        "discoverbaja-fmm"
+      ]
+    },
+    {
+      "title": "4. Surgery and the hospital stay",
+      "body": "A sleeve typically means one to two hospital nights; a tummy tuck or BBL one night or outpatient discharge to a recovery house. Check whether the facility has an intensive care unit, a blood bank and 24-hour physician coverage, or a written transfer agreement with a hospital that does. ASMBS specifically flags the absence of ICU and interventional radiology as the reason major complications abroad become fatal.",
+      "sourceIds": [
+        "asmbs-mt"
+      ]
+    },
+    {
+      "title": "5. Recovery days before you travel",
+      "body": "Plan to stay in the city for the number of days your surgeon sets, not the number the package includes. CDC advises delaying air travel 10 to 14 days after major surgery; surgeons quoted by ASPS say at least four to five days near the surgeon after a BBL and ideally longer; bariatric programs commonly advise waiting several weeks before a long flight. Driving home across the border within a day or two of surgery is what makes Tijuana attractive, but it also means the first week of complications happens in the US without your surgeon.",
+      "sourceIds": [
+        "cdc-medical-tourism",
+        "asps-bbl-travel-2023",
+        "nhs-dvt-travel"
+      ]
+    },
+    {
+      "title": "6. Records and medications to take home",
+      "body": "Before leaving, obtain the operative report, anesthesia record, implant or staple-line details (brand, size, lot numbers), pathology, discharge summary and a medication list, in English if possible. ASMBS and CDC both say US surgeons may refuse to treat you, or will have to repeat imaging, without an operative report. Ask for a direct phone number for the surgeon, not the coordinator.",
+      "sourceIds": [
+        "asmbs-mt",
+        "cdc-medical-tourism"
+      ]
+    },
+    {
+      "title": "7. Follow-up in the United States",
+      "body": "Arrange a US primary care physician or specialist before you leave home, and tell them what you are doing. Bariatric patients need lifelong nutritional follow-up and labs; cosmetic patients need wound checks at one and two weeks; implant patients need the restorative phase months later. Complications that present at a US emergency department are usually billed to you or your insurer at full price, and the Montefiore series found the average cost of treating a cosmetic tourism complication was about $18,000.",
+      "sourceIds": [
+        "asps-mt-2017",
+        "asmbs-mt",
+        "ada-mouthhealthy"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "title": "Outcomes for uncomplicated cases are comparable; the gap is in what happens when something goes wrong",
+      "body": "No peer-reviewed study shows that a sleeve, implant or tummy tuck performed by a properly credentialed Mexican surgeon in a certified hospital has worse primary outcomes than the same operation in the US. The documented difference is in complication management: ASMBS lists lack of ICU, imaging and interventional radiology, travel-related clots, and absent follow-up as the reasons the same complication is more dangerous abroad. The US surgeon surveys that report high complication counts sample only patients who came back with problems and cannot measure overall risk.",
+      "sourceIds": [
+        "asmbs-mt",
+        "asaps-survey-2020"
+      ]
+    },
+    {
+      "title": "Bariatric: leaks, strictures and clots present after you get home",
+      "body": "A 2025 Surgical Endoscopy review from a US academic center about 30 miles from the border, covering 2014 to 2024, documents bariatric tourism patients returning with little structured post-operative care, incomplete documentation and potentially life-threatening complications, tracked through ED visits, ICU days, re-interventions and deaths. Emergency physicians in rural Southern California have published case reports of severe leaks after Mexican surgery presenting to under-resourced hospitals, and a 2024 review describes thrombotic complications specific to bariatric tourism. Expect any revision or leak repair in the US to be out of pocket unless your insurer agrees in advance.",
+      "sourceIds": [
+        "surg-endosc-2025",
+        "ed-case-reports-bariatric",
+        "pmc-thrombotic-bariatric-2024"
+      ]
+    },
+    {
+      "title": "Cosmetic: infection is the dominant complication and revisions are rarely free",
+      "body": "In the Montefiore series published by ASPS, 30 of 42 returning cosmetic tourism patients had infections, including atypical mycobacteria, 11 had abscesses, 8 had wound dehiscence, 20 were hospitalized and 13 needed surgery; of 18 interviewed, 8 were unhappy with their result. In the Aesthetic Society member survey, more than half of responding surgeons had treated 2 to 5 cosmetic tourism complications in the prior year. Clinics advertise 'free revisions' but you pay to travel back, and revision is at the original surgeon's discretion.",
+      "sourceIds": [
+        "asps-mt-2017",
+        "asaps-survey-2020"
+      ]
+    },
+    {
+      "title": "Dental: implants need a second trip and the failure you worry about is months away",
+      "body": "Implant integration takes 3 to 6 months, so a Los Algodones implant is at least two trips and any failure appears after you are home. The ADA's consumer guidance stresses that significant procedures need follow-up to confirm healing and function, and that infection, bleeding and swelling need monitoring. A US dentist can legally decline to restore an implant system they do not stock, so ask which implant brand is used (Nobel Biocare, Straumann and other international systems are common at the larger Los Algodones groups) and get the lot and size in writing.",
+      "sourceIds": [
+        "ada-mouthhealthy",
+        "bookimed-sani"
+      ]
+    }
+  ],
+  "safety": {
+    "verdict": "Mexico's safety record for American medical tourists has two distinct problems: clinical safety at the unregulated end of the market, and cartel violence in specific states. The 2023 Matamoros fungal meningitis outbreak and the same month's kidnapping of four Americans travelling for a tummy tuck both happened in Tamaulipas, a Level 4 Do Not Travel state, while Tijuana and Los Algodones in Baja California sit at Level 3. Documented harm clusters around small cosmetic and bariatric clinics with non-specialist surgeons, counterfeit pharmacy pills, and unproven stem cell and cancer clinics, not around certified hospitals.",
+    "points": [
+      {
+        "title": "Matamoros fungal meningitis outbreak, 2023",
+        "body": "Between 1 January and 13 May 2023, US residents who had cosmetic procedures under epidural anesthesia at River Side Surgical Center and Clinica K-3 in Matamoros, Tamaulipas, developed Fusarium solani meningitis. CDC identified 185 potentially exposed US residents in 22 states; by 7 July 2023 there were 10 confirmed, 10 probable and 11 suspected cases with 8 deaths, and the CDC-reported death toll reached 11 by August 2023. A UTHealth Houston cohort published in the New England Journal of Medicine followed 13 patients of whom 9 died, with the fungus resistant to every approved antifungal tested. The source was never confirmed and both clinics were closed. A separate 2022 to 2023 outbreak in Durango exposed 1,801 patients and killed 40.",
+        "sourceIds": [
+          "cid-matamoros-2024",
+          "krgv-toll-2023",
+          "newsweek-nejm",
+          "idweek-matamoros-2023"
+        ]
+      },
+      {
+        "title": "Kidnapping and violence by state",
+        "body": "On 3 March 2023 four Americans who drove from South Carolina to Matamoros for a tummy tuck were shot at and abducted by cartel gunmen; two were killed and a Mexican bystander also died. The State Department's June 2026 reissue keeps Tamaulipas (Matamoros, Nuevo Progreso, Reynosa, Nuevo Laredo), Sinaloa, Guerrero, Michoacan, Colima and Zacatecas at Level 4 Do Not Travel; Baja California (Tijuana, Los Algodones, Mexicali), Jalisco (Guadalajara), Chihuahua (Ciudad Juarez), Sonora (Nogales) and Guanajuato at Level 3 Reconsider Travel; Quintana Roo (Cancun), Nuevo Leon (Monterrey), Baja California Sur and Mexico City at Level 2; Yucatan at Level 1. Check the live advisory before booking, because levels change.",
+        "sourceIds": [
+          "kidnap-matamoros-2023",
+          "rmn-advisory-2026",
+          "fox-l4-2026"
+        ]
+      },
+      {
+        "title": "Cosmetic surgery deaths by non-plastic surgeons",
+        "body": "Tijuana has had a string of US patient deaths after liposuction and BBL at clinics where the operator was not a certified plastic surgeon; in the January 2021 death of Keuana Weaver the FBI joined the investigation and reporting noted the doctor was not qualified as a plastic surgeon. Baja California's COEPRIS suspended 23 aesthetic clinics in 2022 and another 23 in 2023 for omissions and bad practice, and Tamaulipas suspended 13 in Reynosa and Matamoros. Fat embolism during BBL is a known cause of death in every country; the mitigation is a board-certified plastic surgeon in an accredited facility, which the CMCPER directory lets you check.",
+        "sourceIds": [
+          "amspa-tijuana-fbi",
+          "zeta-coepris-2023",
+          "milenio-coepris-tamaulipas",
+          "cmcper-site"
+        ]
+      },
+      {
+        "title": "Bariatric complications arriving at US hospitals",
+        "body": "US border-region surgeons report a steady flow of leaks, abscesses and strictures in patients who had surgery in Tijuana days earlier, often without an operative report. The 2025 Surgical Endoscopy series and published emergency department case reports document ICU admissions and deaths. ASMBS says short post-operative stays abroad do not prevent complications after return, and that US surgeons may be reluctant to assume care. US insurers frequently deny coverage for complications of a non-approved elective surgery abroad.",
+        "sourceIds": [
+          "surg-endosc-2025",
+          "ed-case-reports-bariatric",
+          "asmbs-mt"
+        ]
+      },
+      {
+        "title": "Counterfeit pills in pharmacies",
+        "body": "UCLA researchers who tested pills from 40 pharmacies in four northern Mexican cities in 2023 found counterfeits at 11 of them (27.5 percent): eight pills sold as oxycodone contained fentanyl, three contained heroin, and nine sold as Adderall contained methamphetamine, and the researchers could not tell counterfeits from genuine pills by appearance or location. Counterfeit sellers clustered in tourist areas with English-language signs. The State Department warned travellers in March 2023 and Mexico closed 23 resort pharmacies. Buy only from large chain pharmacies, never buy opioids, benzodiazepines or stimulants, and bring a US prescription.",
+        "sourceIds": [
+          "ucla-pharmacies-2023",
+          "statedept-pills-2023",
+          "fox-pharmacies-closed-2023"
+        ]
+      },
+      {
+        "title": "Stem cell and alternative cancer clinics",
+        "body": "FDA states that no stem cell or exosome product is approved for orthopedic, neurological, autoimmune, heart, lung, vision or anti-aging use, and that marketed products may carry significant safety risks. COFEPRIS has said it has not authorized any clinical protocol for stem cell treatment of COVID-19, and Mexican stem cell clinics operate in a regulatory gap rather than under an approval. Tijuana's alternative cancer clinics have been documented in the oncology literature since 1991 as selling unproved and disproved therapies, and Baja authorities have closed clinics, including the unlicensed one where Coretta Scott King died in 2006.",
+        "sourceIds": [
+          "fda-regen-2024",
+          "cofepris-stem-covid",
+          "pubmed-tijuana-cancer-1991",
+          "nbc-cancer-clinics-2006"
+        ]
+      },
+      {
+        "title": "Travel clots after surgery",
+        "body": "Surgery and long sitting both raise venous thromboembolism risk, and the risk stays elevated for four to six weeks after major surgery. CDC advises delaying air travel 10 to 14 days after major surgery; an NHS guideline suggests at least four weeks after a general anesthetic over 30 minutes; ASPS-quoted surgeons warn that sitting on fresh BBL grafts for hours on a plane can kill the transferred fat and that clots can form days or weeks after travel. A 2024 review specifically describes thrombotic complications in bariatric tourists.",
+        "sourceIds": [
+          "cdc-medical-tourism",
+          "nhs-dvt-travel",
+          "asps-bbl-travel-2023",
+          "pmc-thrombotic-bariatric-2024"
+        ]
+      },
+      {
+        "title": "The US system absorbs the cost of complications",
+        "body": "The Montefiore series estimated the cost of treating medical tourism complications to the US system at about $1.3 billion a year, with the average complication costing about $18,000 and most paid by Medicaid. For the patient, that means a US hospital bill, or a denied claim, on top of the money saved abroad. Buy a complication insurance policy that names the procedure and covers US treatment, or hold the cash reserve to cover one.",
+        "sourceIds": [
+          "asps-mt-2017",
+          "cdc-medical-tourism"
+        ]
+      }
+    ]
+  },
+  "redFlags": [
+    "The surgeon's name is not in the CMCPER directory (plastic surgery) or the CMCOEM certified-surgeon list (bariatric), or the clinic will not give you the cedula numbers to check in the SEP registry.",
+    "The clinic or surgeon is in Tamaulipas (Matamoros, Nuevo Progreso, Reynosa, Nuevo Laredo) or any other Level 4 Do Not Travel state.",
+    "You are quoted a price and asked for a deposit before any clinician has spoken to you, or payment is demanded in cash or by wire to an individual with no itemized invoice.",
+    "The coordinator cannot name the hospital and its address or who gives the anesthesia, or the surgery will happen in a clinic with no ICU, no blood bank and no written transfer agreement; small-clinic epidural anesthesia was the Matamoros outbreak vector.",
+    "You are accepted for bariatric surgery at a BMI, age or health status a US program would decline, with no pre-op workup.",
+    "The package schedules your flight or border crossing within 48 hours of a tummy tuck, BBL, sleeve or bypass.",
+    "'Free revision' or 'lifetime guarantee' promises with no written terms, or complication insurance that excludes infection and leak.",
+    "Reviews exist only on the clinic's own site, the facilitator's site or paid marketplaces, and the surgeon's before-and-after photos cannot be matched to a named, dated case.",
+    "Stem cell, exosome, 'immunotherapy' or alternative cancer clinics claiming cures, 'FDA-registered' status, or COFEPRIS 'approval' for a cell therapy; neither agency approves such treatments.",
+    "A pharmacy offering oxycodone, Xanax, Adderall or other controlled drugs without a prescription, or selling single loose pills with English signage in a tourist zone."
+  ],
+  "planning": {
+    "entry": {
+      "title": "Passport, FMM and crossing on foot",
+      "body": "US citizens need a valid passport book or card. Everyone over age two entering Mexico by land needs a Forma Migratoria Multiple (FMM) from the Instituto Nacional de Migracion; it is free for stays of seven days or less by land and 983 pesos (about $50) for longer stays as of 1 January 2026, and there is no longer a border free zone exemption. At San Ysidro/El Chaparral, which is open 24 hours, you walk through the INM building to get the FMM stamped before exiting into Tijuana. For Los Algodones, park in Andrade, California (about 10 minutes from Yuma; the lot is on Quechan tribal land and charges a daily fee) and walk across; the port is open 6 am to 10 pm. Nuevo Progreso is a walk across the Progreso International Bridge from Progreso, Texas, but it is in Level 4 Tamaulipas. Returning to the US, pedestrians queue at the CBP building; expect 30 minutes to 2 hours at San Ysidro. Tijuana's city government sells single-use Fast Lane (medical lane) passes through licensed clinics and hospitals for an expedited return lane at San Ysidro and Otay Mesa (Otay lane roughly 8 am to 8 pm); the program was purged of fake providers in 2025, so a clinic that cannot issue a legitimate pass is a signal worth noting.",
+      "sourceIds": [
+        "discoverbaja-fmm",
+        "bts-2025",
+        "placidway-nuevo-progreso",
+        "nbcsd-otay-medical-lane-2023",
+        "aol-fastlane-fake-providers",
+        "elimparcial-fastlane-2025"
+      ],
+      "link": {
+        "label": "FMM rules explained (Discover Baja)",
+        "url": "https://www.discoverbaja.com/fmm-faqs"
+      }
+    },
+    "flights": {
+      "title": "Flying in: San Diego plus CBX, or direct to TIJ, GDL, MEX, CUN",
+      "body": "Most Tijuana patients fly to San Diego (SAN) and are driven across, or fly into Tijuana (TIJ) and use the Cross Border Xpress (CBX), an enclosed pedestrian bridge from the Tijuana terminal to a US-side building in Otay Mesa. CBX tickets are sold separately from the airfare at about $30 one way and $50 to $60 round trip in 2026, with advance online discounts, and you need your boarding pass plus passport to use it; Aeromexico, Volaris and Viva Aerobus sell CBX as an add-on using the code TJX. Guadalajara (GDL), Mexico City (MEX), Monterrey (MTY) and Cancun (CUN) have direct flights from most large US airports. Book a changeable return ticket; surgeons set the date you may fly, not the airline.",
+      "sourceIds": [
+        "cbx-posta-2026",
+        "cbx-official"
+      ],
+      "link": {
+        "label": "Cross Border Xpress",
+        "url": "https://www.crossborderxpress.com/en/"
+      }
+    },
+    "whereToStay": {
+      "title": "Recovery houses, hospital-adjacent hotels, and the Zona Rio",
+      "body": "Tijuana bariatric and cosmetic packages usually include two to four nights in a 'recovery house' or a partner hotel in the Zona Rio or near the hospital, with a nurse on call. Ask who staffs it overnight and how far it is from the hospital. In Los Algodones most patients sleep in Yuma and walk over daily; a few clinics run their own guest houses. For Guadalajara and Cancun, international hospital groups have patient-services desks that book nearby hotels. Keep your surgeon's and the hospital's direct numbers, not only the coordinator's WhatsApp.",
+      "sourceIds": [
+        "bookimed-tijuana-sleeve",
+        "asmbs-mt"
+      ]
+    },
+    "payment": {
+      "title": "Dollars, cards, wires and HSA cards",
+      "body": "Border clinics quote in US dollars and most accept Visa, Mastercard and wire transfer; some discount for cash. Pay the clinic, not an individual, and get an itemized invoice that names the surgeon, facility and what is included, because that invoice is what you need for an HSA or FSA reimbursement, for the IRS medical expense deduction, and for any CONAMED complaint. Tell your card issuer you will be in Mexico, and expect a foreign transaction fee unless your card waives it. Do not carry more than $10,000 in cash without declaring it to CBP on return.",
+      "sourceIds": [
+        "irs-p502-2025",
+        "conamed-razon-2022"
+      ]
+    },
+    "stayAndFlyHome": {
+      "title": "How long to stay and when you can fly",
+      "body": "Stay as long as your surgeon requires, not as long as the package pays for. CDC advises delaying air travel 10 to 14 days after major surgery. ASPS-quoted surgeons recommend at least four to five days near the surgeon after a BBL, and warn that sitting on fresh grafts for a flight can kill them. Bariatric programs commonly advise waiting several weeks before a long flight, and an NHS guideline suggests at least four weeks after a general anesthetic longer than 30 minutes; the highest clot risk is in the first two weeks. Dental implant and LASIK patients can usually travel the next day. On any flight after surgery, walk every hour, hydrate, and wear properly fitted compression stockings; if you cannot sit upright for takeoff the airline can refuse to carry you.",
+      "sourceIds": [
+        "cdc-medical-tourism",
+        "asps-bbl-travel-2023",
+        "nhs-dvt-travel"
+      ]
+    },
+    "aftercareAtHome": {
+      "title": "Who sees you in the US and what they will need",
+      "body": "Arrange a US physician before you leave and hand them the operative report, anesthesia record, implant details, pathology and discharge summary from Mexico, in English. ASMBS says routine care after surgery done elsewhere is at the local surgeon's discretion and that surgeons may be reluctant to accept patients without records. Know the warning signs you must act on: fever, worsening abdominal pain or rapid heart rate after a sleeve (leak); redness, drainage or fever after cosmetic surgery (infection); calf swelling or shortness of breath at any time (clot). Go to an emergency department for those, and tell them where and when you had surgery. Report infections and device problems to FDA MedWatch and, if the clinic will not respond, file with CONAMED.",
+      "sourceIds": [
+        "asmbs-mt",
+        "cdc-medical-tourism",
+        "conamed-razon-2022"
+      ]
+    }
+  },
+  "booking": [
+    {
+      "title": "1. Decide whether a certified hospital or a stand-alone clinic is acceptable to you",
+      "body": "ASMBS and CDC both point to Joint Commission International accreditation or a national equivalent (the CSG certificate in Mexico) as the floor for surgery abroad. Large Tijuana, Monterrey, Guadalajara and Mexico City hospitals hold these; small cosmetic and bariatric clinics do not. The price difference is real, and so is the ICU.",
+      "sourceIds": [
+        "asmbs-mt",
+        "cdc-medical-tourism",
+        "csg-rules-dof-2024"
+      ]
+    },
+    {
+      "title": "2. Shortlist surgeons by credential, then by price",
+      "body": "Collect the surgeon's full name and cedula numbers from each clinic, check them in the SEP Registro Nacional de Profesionistas, then check the CMCPER directory (plastic), the CMCOEM certified-surgeon list (bariatric), or the relevant specialty council. Drop anyone who fails any check. Only then compare prices.",
+      "sourceIds": [
+        "sep-cedula-portal",
+        "cmcper-site",
+        "cmcoem-directory"
+      ],
+      "link": {
+        "label": "SEP cedula lookup",
+        "url": "https://cedulaprofesional.sep.gob.mx/"
+      }
+    },
+    {
+      "title": "3. Check the state's advisory level and the clinic's exact address",
+      "body": "Confirm the clinic is not in a Level 4 state and read the state-specific text of the US travel advisory for where you are going. Look the address up on a map and confirm it is a hospital or licensed surgical center, not a converted house.",
+      "sourceIds": [
+        "statedept-mexico-advisory",
+        "rmn-advisory-2026",
+        "fox-l4-2026"
+      ],
+      "link": {
+        "label": "US State Department Mexico advisory",
+        "url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/mexico-travel-advisory.html"
+      }
+    },
+    {
+      "title": "4. Have a real consultation with the operating surgeon",
+      "body": "Insist on a video call with the surgeon, not the coordinator. Ask how many of your exact procedure they do per year, their leak or infection rate, who gives anesthesia, what hospital backs them up, and what happens if you need ICU care. Send your history and labs. Get the written plan.",
+      "sourceIds": [
+        "asmbs-mt"
+      ]
+    },
+    {
+      "title": "5. Get the itemized quote and the complication terms in writing",
+      "body": "The quote should list surgeon fee, anesthesia, facility, hospital nights, implants or devices by brand, pre-op tests, transfers, recovery nights, medications, and follow-up visits, plus the price of each extra night and of a revision. Ask whether complication insurance is included, who the insurer is, and read the exclusions. Ask about the refund policy if pre-op tests disqualify you.",
+      "sourceIds": [
+        "asmbs-mt",
+        "asps-mt-2017"
+      ]
+    },
+    {
+      "title": "6. Book travel you can change, and tell your US doctor",
+      "body": "Buy a changeable return, and if flying into Tijuana add a CBX ticket. Book one or two more recovery nights than the package includes. Make a US follow-up appointment before you leave and ask your physician what records they want.",
+      "sourceIds": [
+        "cbx-posta-2026",
+        "cdc-medical-tourism"
+      ]
+    },
+    {
+      "title": "7. Pay the clinic, keep every document",
+      "body": "Pay the facility directly where possible, by card or wire, against an itemized invoice. Keep the invoice, consent forms, operative report, anesthesia record, implant cards and discharge summary. These are what an HSA administrator, the IRS, a US surgeon and CONAMED will each ask for.",
+      "sourceIds": [
+        "irs-p502-2025",
+        "conamed-razon-2022"
+      ]
+    }
+  ],
+  "vetChecklist": [
+    "Surgeon's full legal name, general medical cedula number and specialty cedula number, verified yourself at cedulaprofesional.sep.gob.mx.",
+    "Board certification confirmed in the public directory: CMCPER for plastic surgery, CMCOEM or Consejo Mexicano de Cirugia General for bariatric, the relevant consejo for other specialties.",
+    "Name and address of the hospital or surgical center, its COFEPRIS licencia sanitaria number, and whether it holds CSG certification or JCI accreditation.",
+    "Written confirmation that the facility has an ICU, blood bank and 24-hour physician coverage (or a signed transfer agreement with a hospital that does) and that anesthesia is given by a certified anesthesiologist.",
+    "Itemized quote listing every inclusion and the cost of each extra night, revision, and complication treatment.",
+    "Complication insurance policy document with insurer name, coverage amount, covered procedures and exclusions.",
+    "Your surgeon's required minimum stay before you may drive or fly home, in writing.",
+    "Commitment to provide the operative report, anesthesia record, pathology, device or implant brand and lot numbers, and discharge summary in English on discharge, plus the surgeon's direct phone or WhatsApp for post-operative questions.",
+    "Current US State Department advisory level for the state, checked the week you travel.",
+    "A US physician who has agreed to see you after you return, booked before you leave."
+  ],
+  "faqs": [
+    {
+      "question": "How many Americans go to Mexico for medical care each year?",
+      "answer": "Nobody counts officially. Patients Beyond Borders estimates more than 1 million Americans a year travel to Mexico for elective care, and Mexican industry sources cite about 1.2 million foreign patients a year. Mexico's own tourism statistics do not break out medical travel, and a 2023 Mexican analysis notes there are no official figures."
+    },
+    {
+      "question": "Is Tijuana safe for medical tourism right now?",
+      "answer": "Baja California is at Level 3 Reconsider Travel in the State Department's June 2026 reissue because of crime and kidnapping, with most violence tied to organized crime rather than visitors. The medical districts (Zona Rio, hospital zone near the border) see heavy daily US traffic. Use clinic transport, stay in known areas, and avoid driving at night."
+    },
+    {
+      "question": "Is Los Algodones safe?",
+      "answer": "Los Algodones is in Baja California, Level 3 in the June 2026 advisory. It is a small walkable town across from Yuma whose economy is dental tourism, with heavy daytime pedestrian traffic through the Andrade port, which closes at 10 pm. Standard precautions apply; the clinical risks are the same as for any dental work abroad."
+    },
+    {
+      "question": "What happened in Matamoros in 2023?",
+      "answer": "US patients who had cosmetic surgery under epidural anesthesia at two Matamoros clinics developed Fusarium solani fungal meningitis. CDC identified 185 exposed Americans and its death count reached 11 by August 2023. The same month, four Americans driving to Matamoros for a tummy tuck were kidnapped and two were killed. Tamaulipas remains Level 4 Do Not Travel."
+    },
+    {
+      "question": "How do I check if a Mexican surgeon is really a plastic surgeon?",
+      "answer": "Ask for the surgeon's full legal name and cedula numbers, confirm them in the SEP Registro Nacional de Profesionistas, then look the name up in the CMCPER directory of certified plastic surgeons. If the name is not there, the surgeon is not a board-certified plastic surgeon in Mexico, whatever the website says."
+    },
+    {
+      "question": "How much does a gastric sleeve cost in Tijuana versus the US?",
+      "answer": "Tijuana all-inclusive sleeve packages are listed at roughly $4,200 to $7,800 in 2025 and 2026 marketplace and clinic listings. US self-pay ranges from about $9,350 to $24,000, with one hospital publishing $14,995. The Tijuana price excludes flights, extra nights, revisions and any complication treated in the US."
+    },
+    {
+      "question": "What does the American Society for Metabolic and Bariatric Surgery say about surgery in Mexico?",
+      "answer": "ASMBS says extensive travel for bariatric surgery should be discouraged unless follow-up and continuity of care are arranged at home, and if you go anyway to choose a JCI-accredited facility or bariatric center of excellence, verify board certification, carry your records home, and understand that compensation for complications may be impossible to obtain."
+    },
+    {
+      "question": "Do I need a visa or permit to cross into Tijuana or Los Algodones?",
+      "answer": "US citizens need a passport book or card and an FMM tourist permit from Mexican immigration. The FMM is free for land stays of seven days or less and 983 pesos for longer as of 2026. There is no exemption for the border zone. Get it stamped at the INM window as you walk in."
+    },
+    {
+      "question": "What is CBX and how much does it cost?",
+      "answer": "Cross Border Xpress is an enclosed pedestrian bridge from Tijuana airport's terminal to a US-side building in Otay Mesa, San Diego, for ticketed TIJ passengers only. In 2026 a ticket runs about $30 one way and $50 to $60 round trip, cheaper booked online in advance. You need your boarding pass, passport and the CBX ticket."
+    },
+    {
+      "question": "How soon can I fly home after surgery in Mexico?",
+      "answer": "CDC advises delaying air travel 10 to 14 days after major surgery. Plastic surgeons quoted by ASPS say at least four to five days near the surgeon after a BBL and ideally longer. Bariatric programs commonly advise several weeks before a long flight. Dental implant and LASIK patients can usually travel the next day. Your surgeon's written clearance governs."
+    },
+    {
+      "question": "Can I use my HSA or FSA for treatment in Mexico?",
+      "answer": "IRS Publication 502 does not limit qualifying medical and dental expenses to US providers, so eligible care in Mexico can be reimbursed from an HSA and counted toward the medical deduction. Cosmetic surgery that is not medically necessary is excluded anywhere. Keep an itemized invoice; your HSA administrator may ask for it."
+    },
+    {
+      "question": "Can I bring prescription drugs back from a Mexican pharmacy?",
+      "answer": "CBP generally allows a personal supply of about 90 days in labeled original packaging with a valid US prescription, declared at the border; FDA's formal position is that personal importation is usually not permitted. Never buy opioids, benzodiazepines or stimulants in Mexico: a 2023 UCLA study found fentanyl and methamphetamine in counterfeit pills at 27.5 percent of pharmacies tested."
+    },
+    {
+      "question": "Are stem cell treatments in Mexico legal or approved?",
+      "answer": "They are sold in a regulatory gap. FDA has approved no stem cell or exosome product for orthopedic, neurological, autoimmune or anti-aging use and warns of serious safety risks. COFEPRIS has stated it has authorized no stem cell protocol for COVID-19 and publishes no list of approved cell therapies. Clinic claims of approval are marketing."
+    },
+    {
+      "question": "What can I do if something goes wrong?",
+      "answer": "Get treated first, in the nearest emergency department. Then file a complaint with CONAMED, Mexico's free medical arbitration commission, online or by phone; it can broker refunds or corrective treatment but not US-style damages. A US malpractice suit is rarely practical. Complication insurance bought in advance is the only reliable financial protection."
+    },
+    {
+      "question": "Does US health insurance cover complications from surgery in Mexico?",
+      "answer": "Often not. Insurers frequently deny claims for complications of elective surgery they did not authorize, and ASMBS tells patients to confirm complication coverage with their insurer or a supplemental policy before travelling. US hospitals will treat emergencies but will bill you. The Montefiore series put the average complication treatment cost at about $18,000."
+    }
+  ],
+  "sources": [
+    {
+      "id": "axios-pbb-2023",
+      "label": "Mexico's allure for medical tourism (Patients Beyond Borders estimate of 1M+ Americans)",
+      "url": "https://www.axios.com/local/dallas/2023/04/21/mexico-medical-tourism",
+      "publisher": "Axios",
+      "date": "2023-04-21",
+      "kind": "press"
+    },
+    {
+      "id": "animal-politico-2023",
+      "label": "El turismo medico en Mexico (no official figures exist)",
+      "url": "https://grupoanimal.mx/opinion/el-turismo-medico-en-mexico",
+      "publisher": "Animal Politico",
+      "date": "2023",
+      "kind": "press"
+    },
+    {
+      "id": "mbn-2023",
+      "label": "Mexico Ranks Second as Health Tourism Destination (1.2M foreign patients a year; Bancomext state ranking)",
+      "url": "https://mexicobusiness.news/health/news/mexico-ranks-second-health-tourism-destination",
+      "publisher": "Mexico Business News",
+      "date": "2023-11-29",
+      "kind": "press"
+    },
+    {
+      "id": "bts-2024",
+      "label": "Border Crossing Data Annual Release 2023-2024 (San Ysidro busiest port)",
+      "url": "https://www.bts.gov/newsroom/border-crossing-data-annual-release-2023-2024",
+      "publisher": "US Bureau of Transportation Statistics",
+      "date": "2025",
+      "kind": "official"
+    },
+    {
+      "id": "bts-2025",
+      "label": "Border Crossing Data Annual Release 2025 (San Ysidro pedestrians 6,766,420 in 2024; Otay Mesa 2,821,230)",
+      "url": "https://www.bts.gov/newsroom/border-crossing-data-annual-release-2025",
+      "publisher": "US Bureau of Transportation Statistics",
+      "date": "2026",
+      "kind": "official"
+    },
+    {
+      "id": "statedept-mexico-advisory",
+      "label": "Mexico Travel Advisory (live page; could not be fetched by this research run, 403)",
+      "url": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/mexico-travel-advisory.html",
+      "publisher": "US Department of State",
+      "date": "2026",
+      "kind": "official"
+    },
+    {
+      "id": "rmn-advisory-2026",
+      "label": "US Issues Travel Advisory for Mexico Ahead of 2026 World Cup, Classifies States by Risk Level (state-by-state levels)",
+      "url": "https://www.rivieramayanews.mx/us-issues-travel-advisory-for-mexico-ahead-of-2026-world-cup-classifies-states-by-risk-level/",
+      "publisher": "Riviera Maya News",
+      "date": "2026-06-10",
+      "kind": "press"
+    },
+    {
+      "id": "fox-l4-2026",
+      "label": "Six Mexican states remain Level 4 Do Not Travel: Colima, Guerrero, Michoacan, Sinaloa, Tamaulipas, Zacatecas",
+      "url": "https://www.foxnews.com/travel/americans-warned-popular-travel-routes-this-summer-could-carry-crime-kidnapping-risks",
+      "publisher": "Fox News",
+      "date": "2026",
+      "kind": "press"
+    },
+    {
+      "id": "cdc-medical-tourism",
+      "label": "Medical Tourism: risks, recommendations, delay air travel 10-14 days after major surgery",
+      "url": "https://wwwnc.cdc.gov/travel/page/medical-tourism",
+      "publisher": "US Centers for Disease Control and Prevention",
+      "date": "2024",
+      "kind": "official"
+    },
+    {
+      "id": "cid-matamoros-2024",
+      "label": "Update on Outbreak of Fungal Meningitis Among US Residents Who Received Epidural Anesthesia at Two Clinics in Matamoros, Mexico (185 exposed, 31 cases, 8 deaths as of 7 July 2023; Durango outbreak 1,801 exposed, 40 deaths)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10957502",
+      "publisher": "Clinical Infectious Diseases (CDC authors)",
+      "date": "2024-06-14",
+      "kind": "study"
+    },
+    {
+      "id": "idweek-matamoros-2023",
+      "label": "Outbreak of Fungal Meningitis in US Patients who Received Surgical Procedures under Epidural Anesthesia in Matamoros, Mexico (IDWeek abstract)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10677721/",
+      "publisher": "Open Forum Infectious Diseases",
+      "date": "2023-11",
+      "kind": "study"
+    },
+    {
+      "id": "krgv-toll-2023",
+      "label": "Death toll of fungal meningitis infection linked to Matamoros clinics climbs to 11 (CDC count)",
+      "url": "https://www.krgv.com/news/death-toll-of-fungal-meningitis-infection-linked-to-matamoras-clinics-climbs-to-11/",
+      "publisher": "KRGV",
+      "date": "2023-08-05",
+      "kind": "press"
+    },
+    {
+      "id": "newsweek-nejm",
+      "label": "Americans die of fungal infection after medical procedures in Mexico (UTHealth NEJM report: 13 patients, 9 deaths)",
+      "url": "https://www.newsweek.com/americans-die-fungal-infection-during-medical-procedures-mexico-1868278",
+      "publisher": "Newsweek",
+      "date": "2024",
+      "kind": "press"
+    },
+    {
+      "id": "kidnap-matamoros-2023",
+      "label": "2 Kidnapped Americans Found Dead in Mexico, 2 Others Alive (group travelled for a tummy tuck in Matamoros)",
+      "url": "https://www.latinorebels.com/2023/03/07/americansdeadinmexico",
+      "publisher": "Latino Rebels / AP",
+      "date": "2023-03-07",
+      "kind": "press"
+    },
+    {
+      "id": "asmbs-mt",
+      "label": "Medical Tourism: ASMBS guidance for patients considering bariatric surgery abroad",
+      "url": "https://asmbs.org/patients/medical-tourism",
+      "publisher": "American Society for Metabolic and Bariatric Surgery",
+      "date": "2015",
+      "kind": "study"
+    },
+    {
+      "id": "asps-mt-2017",
+      "label": "Medical Tourism for Cosmetic Surgery: High Risk of Complications, High Costs for Treatment (Montefiore series, 42 patients, $1.3B/yr)",
+      "url": "https://www.plasticsurgery.org/news/press-releases/medical-tourism-for-cosmetic-surgery-high-risk-of-complications-high-costs-for-treatment",
+      "publisher": "American Society of Plastic Surgeons",
+      "date": "2017-06-28",
+      "kind": "study"
+    },
+    {
+      "id": "asaps-survey-2020",
+      "label": "Report on Current Experience of ASAPS Membership and Management of Cosmetic Tourism Complications",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7671244/",
+      "publisher": "Aesthetic Surgery Journal Open Forum",
+      "date": "2020",
+      "kind": "study"
+    },
+    {
+      "id": "asps-bbl-travel-2023",
+      "label": "Boarding groups: Added complications from traveling after a Brazilian butt lift",
+      "url": "https://plasticsurgery.org/news/articles/boarding-groups-added-complications-from-traveling-after-a-brazilian-butt-lift",
+      "publisher": "American Society of Plastic Surgeons",
+      "date": "2023-06-09",
+      "kind": "study"
+    },
+    {
+      "id": "asps-fees-2024",
+      "label": "2024 Cosmetic Procedures Average Cost (surgeon fee ranges)",
+      "url": "https://www.plasticsurgery.org/documents/news/statistics/2024/cosmetic-procedures-average-cost-2024.pdf",
+      "publisher": "American Society of Plastic Surgeons",
+      "date": "2025",
+      "kind": "study"
+    },
+    {
+      "id": "asps-fees-2023",
+      "label": "2023 Cosmetic Procedures Average Cost (facelift $11,395)",
+      "url": "https://plasticsurgery.org/Documents/News/Statistics/2023/cosmetic-procedures-average-cost-2023.pdf",
+      "publisher": "American Society of Plastic Surgeons",
+      "date": "2024",
+      "kind": "study"
+    },
+    {
+      "id": "surg-endosc-2025",
+      "label": "Getting more than what you pay for? Managing complications of bariatric tourism at an academic center near the US-Mexico border (2014-2024)",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12222374/",
+      "publisher": "Surgical Endoscopy",
+      "date": "2025",
+      "kind": "study"
+    },
+    {
+      "id": "ed-case-reports-bariatric",
+      "label": "Complications from bariatric medical tourism: Lessons for the emergency physician from selected case reports",
+      "url": "https://escholarship.org/uc/item/75s6n138",
+      "publisher": "eScholarship, University of California",
+      "date": "2023",
+      "kind": "study"
+    },
+    {
+      "id": "pmc-thrombotic-bariatric-2024",
+      "label": "Thrombotic complications following bariatric surgery: how medical tourism poses challenges to comprehensive care in obesity medicine",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11549127/",
+      "publisher": "PubMed Central",
+      "date": "2024",
+      "kind": "study"
+    },
+    {
+      "id": "sep-cedula-portal",
+      "label": "Registro Nacional de Profesionistas (cedula lookup; Constancia de Situacion Profesional added September 2025)",
+      "url": "https://cedulaprofesional.sep.gob.mx/",
+      "publisher": "Secretaria de Educacion Publica",
+      "date": "2025",
+      "kind": "official"
+    },
+    {
+      "id": "expansion-cedula-2024",
+      "label": "Como verificar una cedula profesional",
+      "url": "https://expansion.mx/ciencia-y-salud/2024/11/08/verificar-cedula-profesional",
+      "publisher": "Expansion",
+      "date": "2024-11-08",
+      "kind": "press"
+    },
+    {
+      "id": "cmcper-site",
+      "label": "Consejo Mexicano de Cirugia Plastica, Estetica y Reconstructiva (certified surgeon directory; site blocked automated fetch)",
+      "url": "https://cmcper.org/",
+      "publisher": "CMCPER",
+      "date": "2026",
+      "kind": "official"
+    },
+    {
+      "id": "advancestudy-cmcper-guide",
+      "label": "How to See if a Mexican Plastic Surgeon is Certified (CMCPER directory, five-year recertification)",
+      "url": "https://advancestudy.org/?p=452521",
+      "publisher": "AdvanceStudy",
+      "date": "2025",
+      "kind": "press"
+    },
+    {
+      "id": "cmcoem-directory",
+      "label": "CMCOEM cirujanos certificados (certified bariatric surgeon list)",
+      "url": "https://www.cmcoem.org.mx/?q=cirujanos-certificados",
+      "publisher": "Colegio Mexicano de Cirugia para la Obesidad y Enfermedades Metabolicas",
+      "date": "2026",
+      "kind": "official"
+    },
+    {
+      "id": "conamed-gob",
+      "label": "Comision Nacional de Arbitraje Medico",
+      "url": "https://www.gob.mx/conamed",
+      "publisher": "Gobierno de Mexico",
+      "date": "2026",
+      "kind": "official"
+    },
+    {
+      "id": "conamed-razon-2022",
+      "label": "Asi puedes presentar una queja por la prestacion de servicios de salud (CONAMED portal, phones, free, public and private)",
+      "url": "https://www.razon.com.mx/mexico/2022/03/31/malos-tratos-durante-la-consultaasi-puedes-presentar-una-queja-por-la-prestacion-de-servicios-de-salud/",
+      "publisher": "La Razon",
+      "date": "2022-03-31",
+      "kind": "press"
+    },
+    {
+      "id": "csg-rules-dof-2024",
+      "label": "Normas de organizacion y funcionamiento de la Comision para la Certificacion de Establecimientos de Atencion Medica (prontuario of certified establishments)",
+      "url": "https://imssbienestar.gob.mx/assets/doc/juridico/01_normatividad/03_acuerdosylineamientos/NORMAS%20DE%20ORGANIZACI%C3%93N%20Y%20FUNCIONAMIENTO%20DE%20LA%20COMISI%C3%93N%20PARA%20LA%20CERTIFICACI%C3%93N%20DE%20ESTABLECIMIENTOS%20DE%20ATENCI%C3%93N%20M%C3%89DICA..pdf",
+      "publisher": "Consejo de Salubridad General / Diario Oficial de la Federacion",
+      "date": "2024",
+      "kind": "official"
+    },
+    {
+      "id": "consultorsalud-csg-2025",
+      "label": "CSG aprueba nuevos manuales MOCEBPASS y logotipo para establecimientos certificados",
+      "url": "https://consultorsalud.com.mx/?p=309520",
+      "publisher": "Consultorsalud",
+      "date": "2025-10-09",
+      "kind": "press"
+    },
+    {
+      "id": "cofepris-irregular-list-2024",
+      "label": "COFEPRIS listado de establecimientos con irregularidades (sin aviso de funcionamiento)",
+      "url": "https://www.gob.mx/cms/uploads/attachment/file/909743/Consulta_el_listado_05-04-2024.pdf",
+      "publisher": "COFEPRIS",
+      "date": "2024-04-05",
+      "kind": "official"
+    },
+    {
+      "id": "cofepris-medicines-viewer-2026",
+      "label": "COFEPRIS lanza visor publico de registros sanitarios de medicamentos",
+      "url": "https://consultorsalud.com.mx/?p=314511",
+      "publisher": "Consultorsalud",
+      "date": "2026-04-23",
+      "kind": "press"
+    },
+    {
+      "id": "cofepris-stem-covid",
+      "label": "Alertan por tratamientos con celulas madre para curar COVID-19 (COFEPRIS: no authorized stem cell protocol)",
+      "url": "https://www.unotv.com/nacional/alertan-por-tratamientos-con-celulas-madre-para-curar-covid-19/",
+      "publisher": "Uno TV",
+      "date": "2021",
+      "kind": "press"
+    },
+    {
+      "id": "fda-regen-2024",
+      "label": "Consumer Alert on Regenerative Medicine Products Including Stem Cells and Exosomes",
+      "url": "https://www.fda.gov/vaccines-blood-biologics/consumers-biologics/consumer-alert-regenerative-medicine-products-including-stem-cells-and-exosomes",
+      "publisher": "US Food and Drug Administration",
+      "date": "2024-04-09",
+      "kind": "official"
+    },
+    {
+      "id": "ucla-pharmacies-2023",
+      "label": "Counterfeit pills sold in Mexican pharmacies found to contain fentanyl, heroin, and methamphetamine (40 pharmacies, 27.5% selling counterfeits)",
+      "url": "https://www.uclahealth.org/news/release/counterfeit-pills-sold-mexican-pharmacies-found-contain",
+      "publisher": "UCLA Health",
+      "date": "2023-02",
+      "kind": "study"
+    },
+    {
+      "id": "statedept-pills-2023",
+      "label": "US warns about counterfeit pills being sold in Mexico that often contain fentanyl (State Department alert)",
+      "url": "https://www.nbcsandiego.com/news/national-international/us-warns-about-counterfeit-pills-being-sold-in-mexico-that-often-contain-fentanyl/3190186/",
+      "publisher": "NBC San Diego / AP",
+      "date": "2023-03",
+      "kind": "press"
+    },
+    {
+      "id": "fox-pharmacies-closed-2023",
+      "label": "Mexico cracks down on 23 pill-pushing pharmacies at Caribbean resorts after US travel warning",
+      "url": "https://www.foxnews.com/us/mexico-cracks-down-23-pill-pushing-pharmacies-us-travel-warning.amp",
+      "publisher": "Fox News / AP",
+      "date": "2023",
+      "kind": "press"
+    },
+    {
+      "id": "gigafact-cbp-meds-2025",
+      "label": "Fact brief: bringing medicine from Mexico into the US (CBP 90-day personal supply)",
+      "url": "https://gigafact.org/fact-briefs/gigafact-fact-brief-medicine-from-mexico-outside-of-us",
+      "publisher": "Gigafact",
+      "date": "2025-05-06",
+      "kind": "press"
+    },
+    {
+      "id": "amspa-tijuana-fbi",
+      "label": "Death of Woman on Operating Table After Botched Tijuana Plastic Surgery is Under FBI Investigation (Keuana Weaver, 2021)",
+      "url": "https://americanmedspa.org/news/death-of-woman-on-operating-table-after-botched-tijuana-plastic-surgery-is-under-fbi-investigation",
+      "publisher": "American Med Spa Association",
+      "date": "2021",
+      "kind": "press"
+    },
+    {
+      "id": "zeta-coepris-2023",
+      "label": "23 clinicas suspendidas en BC por la COEPRIS en 2023",
+      "url": "https://zetatijuana.com/2023/12/23-clinicas-suspendidas-en-bc-por-la-coepris-en-2023/",
+      "publisher": "Zeta Tijuana",
+      "date": "2023-12",
+      "kind": "press"
+    },
+    {
+      "id": "milenio-coepris-tamaulipas",
+      "label": "Coepris cierra 13 clinicas esteticas por irregularidades en Reynosa y Matamoros",
+      "url": "https://amp.milenio.com/estados/coepris-suspende-clinicas-cirugias-esteticas-reynosa-matamoros",
+      "publisher": "Milenio",
+      "date": "2023",
+      "kind": "press"
+    },
+    {
+      "id": "pubmed-tijuana-cancer-1991",
+      "label": "Questionable cancer practices in Tijuana and other Mexican border clinics",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/1878788/",
+      "publisher": "CA: A Cancer Journal for Clinicians",
+      "date": "1991",
+      "kind": "study"
+    },
+    {
+      "id": "calhealthline-crackdown",
+      "label": "Baja California Health Department Begins Shutting Down Alternative Treatment Centers",
+      "url": "https://californiahealthline.org/morning-breakout/baja-california-health-department-begins-shutting-down-alternative-treatment-centers",
+      "publisher": "California Healthline",
+      "date": "2001",
+      "kind": "press"
+    },
+    {
+      "id": "nbc-cancer-clinics-2006",
+      "label": "Late-stage cancer patients flock to Mexico (Coretta Scott King death; clinic closed as unlicensed)",
+      "url": "https://www.nbcnews.com/id/wbna11165624",
+      "publisher": "NBC News / AP",
+      "date": "2006-02",
+      "kind": "press"
+    },
+    {
+      "id": "ada-mouthhealthy",
+      "label": "Dental care and travel (ADA consumer guidance on treatment abroad)",
+      "url": "https://www.mouthhealthy.org/all-topics-a-z/travel",
+      "publisher": "American Dental Association",
+      "date": "2024",
+      "kind": "official"
+    },
+    {
+      "id": "dentaltown-2025",
+      "label": "Dental Implants in 2025: Costs, Timelines, Coverage (US single implant $3,000-$6,000)",
+      "url": "https://dentaltown.com/blog/post/23541/dental-implants-in-2025-costs-timelines-coverage-smart-ways-to-save",
+      "publisher": "Dentaltown",
+      "date": "2025",
+      "kind": "press"
+    },
+    {
+      "id": "newmouth-implants",
+      "label": "Types of Dental Implants and How Much Each One Costs (All-on-4 $15,000-$30,000 per arch)",
+      "url": "https://www.newmouth.com/dentistry/restorative/implants/cost/",
+      "publisher": "NewMouth",
+      "date": "2025",
+      "kind": "press"
+    },
+    {
+      "id": "sani-placidway",
+      "label": "Sani Dental Group price list (implant with Straumann abutment $750)",
+      "url": "https://www.placidway.com/price-list/1785/Sani-Dental-Group",
+      "publisher": "PlacidWay (clinic price list)",
+      "date": "2025",
+      "kind": "clinic"
+    },
+    {
+      "id": "bookimed-sani",
+      "label": "Sani Dental Group Main Clinic, Los Algodones (All-on-4 $8,110; PFM crown $195; updated April 2024)",
+      "url": "https://us-uk.bookimed.com/clinic/sani-dental-group-main-clinic/procedure=all-on-4-dental-implants/",
+      "publisher": "Bookimed",
+      "date": "2024-04",
+      "kind": "marketplace"
+    },
+    {
+      "id": "placidway-nuevo-progreso",
+      "label": "Medical Tourism in Nuevo Progreso, Mexico (walkable from Progreso bridge; dental savings claims)",
+      "url": "https://www.placidway.com/article/6041/Medical-Tourism-in-Nuevo-Progreso-Mexico-Why-Its-the-Ideal-Destination-for-Affordable-Healthcare",
+      "publisher": "PlacidWay",
+      "date": "2025",
+      "kind": "marketplace"
+    },
+    {
+      "id": "bookimed-tijuana-sleeve",
+      "label": "Gastric sleeve clinics in Tijuana ($4,200-$7,800 typical, 2025-2026)",
+      "url": "https://de.bookimed.com/clinics/country=mexico/city=tijuana/procedure=sleeve-resection/",
+      "publisher": "Bookimed",
+      "date": "2026",
+      "kind": "marketplace"
+    },
+    {
+      "id": "medicaltourismco-tijuana-sleeve",
+      "label": "Gastric sleeve Tijuana ($4,395-$4,995, verified 30 June 2026)",
+      "url": "https://www.medicaltourismco.com/clinics/gastric-sleeve/mexico/tijuana/",
+      "publisher": "Medical Tourism Corporation",
+      "date": "2026-06-30",
+      "kind": "marketplace"
+    },
+    {
+      "id": "placidway-tijuana-wls-2025",
+      "label": "Weight Loss Surgery in Tijuana Mexico Cost in 2025 (bypass $5,200-$9,000)",
+      "url": "https://www.placidway.com/article/2199/Weight-Loss-Surgery-in-Tijuana-Mexico-Cost-in-2025",
+      "publisher": "PlacidWay",
+      "date": "2025",
+      "kind": "marketplace"
+    },
+    {
+      "id": "bettercare-sleeve",
+      "label": "How much does gastric sleeve surgery cost? (US self-pay $9,350-$24,000, average about $14,900)",
+      "url": "https://bettercare.com/costs/gastric-sleeve-cost",
+      "publisher": "Bettercare",
+      "date": "2025",
+      "kind": "press"
+    },
+    {
+      "id": "bailey-selfpay",
+      "label": "Bailey Bariatrics self-pay pricing (sleeve $14,995; bypass $16,995)",
+      "url": "https://baileymedicalcenter.com/locations/bailey-bariatrics/get-started/self-pay-pricing/",
+      "publisher": "Bailey Medical Center (US hospital)",
+      "date": "2025",
+      "kind": "clinic"
+    },
+    {
+      "id": "lifot-pricelist",
+      "label": "Lifot Cosmetic Surgery Tijuana price list (lipo plus BBL $4,500; tummy tuck; facelift)",
+      "url": "https://www.placidway.com/price-list/323750/Lifot-Cosmetic-Surgery",
+      "publisher": "PlacidWay (clinic price list)",
+      "date": "2025",
+      "kind": "clinic"
+    },
+    {
+      "id": "layyn-pricelist",
+      "label": "Layyn Medical Group Tijuana and Guadalajara price list (rhinoplasty from $3,000; breast augmentation $5,500)",
+      "url": "https://www.placidway.com/price-list/323984/LAYYN-MEDICAL-GROUP",
+      "publisher": "PlacidWay (clinic price list)",
+      "date": "2025",
+      "kind": "clinic"
+    },
+    {
+      "id": "placidway-tijuana-ps-prices",
+      "label": "What are the prices for plastic surgery in Tijuana? (mommy makeover $8,000-$12,000; breast augmentation $4,000-$6,500)",
+      "url": "https://www.placidway.com/answer-detail/568427/What-are-the-prices-for-plastic-surgery-in-Tijuana",
+      "publisher": "PlacidWay",
+      "date": "2025",
+      "kind": "marketplace"
+    },
+    {
+      "id": "placidway-stemcell-knee",
+      "label": "Stem Cell Therapy for Knee Osteoarthritis in Mexico (Tijuana $2,500-$7,000 per knee; promotional)",
+      "url": "https://www.placidway.com/article/5912/Stem-Cell-Therapy-for-Knee-Osteoarthritis-in-Mexico-A-Complete-Guide",
+      "publisher": "PlacidWay",
+      "date": "2025",
+      "kind": "marketplace"
+    },
+    {
+      "id": "upi-stemcell-2018",
+      "label": "Stem cell clinics pitch pricey, bogus cures for knee pain (US average $5,156 per injection, 65 clinics)",
+      "url": "https://www.upi.com/Health_News/2018/03/07/Stem-cell-clinics-pitch-pricey-bogus-cures-for-knee-pain/9201520440802/",
+      "publisher": "UPI / HealthDay",
+      "date": "2018-03-07",
+      "kind": "press"
+    },
+    {
+      "id": "bookimed-cancun-ivf",
+      "label": "IVF clinics in Cancun ($4,000-$7,000, average $5,500; updated 8 August 2025)",
+      "url": "https://us-uk.bookimed.com/clinics/country=mexico/city=cancun/procedure=in-vitro-fertilisation-ivf/",
+      "publisher": "Bookimed",
+      "date": "2025-08-08",
+      "kind": "marketplace"
+    },
+    {
+      "id": "goodrx-ivf",
+      "label": "How much does IVF cost? (ASRM $12,400 excluding medications; $15,000-$30,000 full cycle)",
+      "url": "https://goodrx.com/conditions/fertility/ivf-costs",
+      "publisher": "GoodRx",
+      "date": "2025",
+      "kind": "press"
+    },
+    {
+      "id": "bookimed-mexico-lasik",
+      "label": "Laser eye surgery clinics in Mexico (updated 28 July 2025)",
+      "url": "https://pl.bookimed.com/clinics/country=mexico/procedure=laser-eye-surgery",
+      "publisher": "Bookimed",
+      "date": "2025-07-28",
+      "kind": "marketplace"
+    },
+    {
+      "id": "lasikplus-us-cost",
+      "label": "How much does LASIK cost without insurance? (US average about $2,246 per eye)",
+      "url": "https://www.lasikplus.com/lasik-resources/how-much-does-lasik-cost-without-insurance/",
+      "publisher": "LasikPlus",
+      "date": "2025",
+      "kind": "clinic"
+    },
+    {
+      "id": "bookimed-tijuana-checkup",
+      "label": "Medical check-up clinics in Tijuana (male check-up from $950; premium from $2,500)",
+      "url": "https://bookimed.com/clinics/country=mexico/city=tijuana/direction=check-up/",
+      "publisher": "Bookimed",
+      "date": "2024",
+      "kind": "marketplace"
+    },
+    {
+      "id": "irs-p502-2025",
+      "label": "Publication 502, Medical and Dental Expenses (2025)",
+      "url": "https://www.irs.gov/pub/irs-prior/p502--2025.pdf",
+      "publisher": "Internal Revenue Service",
+      "date": "2025",
+      "kind": "official"
+    },
+    {
+      "id": "thomsonreuters-p502-hsa",
+      "label": "IRS issues 2022 versions of Publications 502 and 503 (Pub 502 defines medical expenses for HSA purposes but not reimbursement rules)",
+      "url": "https://tax.thomsonreuters.com/blog/irs-issues-2022-versions-of-publications-502-and-503-for-medical-and-dependent-care-expenses/",
+      "publisher": "Thomson Reuters",
+      "date": "2023",
+      "kind": "press"
+    },
+    {
+      "id": "discoverbaja-fmm",
+      "label": "FMM Tourist Permit FAQs (free for 7 days or less by land; 983 pesos from 1 January 2026; no free zone)",
+      "url": "https://www.discoverbaja.com/fmm-faqs",
+      "publisher": "Discover Baja Travel Club",
+      "date": "2026",
+      "kind": "press"
+    },
+    {
+      "id": "cbx-official",
+      "label": "Cross Border Xpress",
+      "url": "https://www.crossborderxpress.com/en/",
+      "publisher": "CBX",
+      "date": "2026",
+      "kind": "official"
+    },
+    {
+      "id": "cbx-posta-2026",
+      "label": "Tijuana: cuanto cuesta cruzar por CBX en 2026 y como comprar tu boleto (about $29.99 one way, $59.99 round trip)",
+      "url": "https://www.posta.com.mx/bcs/tijuana-cuanto-cuesta-cruzar-por-cbx-en-2026-y-como-comprar-tu-boleto/vl2199101",
+      "publisher": "Posta",
+      "date": "2026-05-05",
+      "kind": "press"
+    },
+    {
+      "id": "nbcsd-otay-medical-lane-2023",
+      "label": "New fast lane opens in Otay Mesa port of entry to serve those with medical appointments",
+      "url": "https://www.nbcsandiego.com/news/local/new-fast-lane-opens-in-otay-mesa-port-of-entry-to-serve-those-with-medical-appointments-investors/3060839/",
+      "publisher": "NBC San Diego",
+      "date": "2023",
+      "kind": "press"
+    },
+    {
+      "id": "aol-fastlane-fake-providers",
+      "label": "City removes fake medical providers from fast-lane program at border crossing (48 percent of businesses removed)",
+      "url": "https://www.aol.com/city-removes-fake-medical-providers-174340342.html",
+      "publisher": "AOL / Border Report",
+      "date": "2025",
+      "kind": "press"
+    },
+    {
+      "id": "elimparcial-fastlane-2025",
+      "label": "Esperan que depuracion del Fast Lane elimine venta indiscriminada de pases",
+      "url": "https://www.elimparcial.com/tij/tijuana/2025/06/18/esperan-que-depuracion-del-fast-lane-elimine-venta-indiscriminada-de-pases/",
+      "publisher": "El Imparcial",
+      "date": "2025-06-18",
+      "kind": "press"
+    },
+    {
+      "id": "nhs-dvt-travel",
+      "label": "Surgery, travel and deep vein thrombosis (wait at least four weeks after a general anaesthetic over 30 minutes)",
+      "url": "https://www.nnuh.nhs.uk/publication/download/surgery-travel-and-deep-vein-thrombosis-8",
+      "publisher": "Norfolk and Norwich University Hospitals NHS",
+      "date": "2023",
+      "kind": "official"
+    }
+  ]
+}

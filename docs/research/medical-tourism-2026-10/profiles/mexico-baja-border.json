@@ -1,0 +1,1132 @@
+{
+  "clinics": [
+    {
+      "name": "Oasis of Hope Hospital",
+      "district": "Tijuana (Playas de Tijuana)",
+      "type": "hospital",
+      "url": "https://www.oasisofhope.com/how-to-become-a-patient/",
+      "specialties": [
+        "Alternative and integrative cancer treatment",
+        "Dendritic cell and NK cell therapies",
+        "Metabolic and nutritional therapy",
+        "Conventional chemotherapy alongside unproven therapies"
+      ],
+      "namedDoctors": "Dr. Francisco Contreras (Director, President and Chairman; described on the site as an oncologist and surgeon), Dr. Francisco Cecena (Director of Oncology), Dra. Paulina Larraga (Medical Director), Dr. Carlos Gutierrez (Admissions Physician), Dra. Samantha Ramos (Attending Physician). No board certification, cédula or society membership is shown for any of them on the site. No anesthesiologist is named. Treatment takes place in the clinic's own hospital building at Paseo Playas de Tijuana 19; whether that building is CSG-certified could not be confirmed (see credentials).",
+      "credentials": "CSG: Not on the CSG certified list (checked October 30, 2026 against the Consejo de Salubridad General 'Establecimientos de Atención Médica con Certificado Vigente' PDF consolidated to September 1, 2026, which lists 15 establishments nationwide and none in Baja California or Sonora; the earlier list of May 2, 2024 with 86 establishments carried only Hospital Velmar, Ensenada, expiring December 2, 2025, and PRO-MED Grupo Médico, Mexicali, expiring April 28, 2025, for Baja California); no third-party source claims CSG certification for Oasis of Hope. COFEPRIS: no licencia sanitaria number is published on the site; no COFEPRIS alert naming the hospital was found in a search on October 30, 2026. JCI: the Joint Commission directory returned HTTP 403 to automated reading on October 30, 2026; the site does not claim JCI. No accreditation of any kind is named on the site. Founded 1963 by Ernesto Contreras (site and Wikipedia). SEP cédula lookup: not checked (interactive form).",
+      "cautions": "The hospital's cell therapies (dendritic cell, LAK, tumor lysate, TIL, NK cell) and its metabolic programme are not FDA-approved cancer treatments and the site displays no regulatory disclaimer; it instead publishes stage IV survival percentages against a 'national average' without methodology, patient numbers or time frame (oasis-site). Wikipedia, citing The Guardian, Cancer Research UK, Memorial Sloan Kettering and Quackwatch, records that the founder was placed on the American Cancer Society's 'unproven methods' list in 1971, that Memorial Sloan Kettering lists 'Contreras Therapy' among regimens that 'show no evidence of efficacy', that the hospital historically used laetrile/amygdalin, which a Cochrane review associates with cyanide poisoning, and that Cancer Research UK's Richard Sullivan said 'the Tijuana clinics are essentially set up to deceive' (oasis-wikipedia). In the UK, Nottingham Trading Standards instructed the affiliated Oasis of Hope UK office to remove cancer claims from its website under the Cancer Act 1939 (oasis-goodthinking). No deaths, lawsuits, CDC/FDA notices or COFEPRIS suspensions naming the Tijuana hospital were found in press searches on October 30, 2026. Patient fundraising pages describe treatment estimates of about $56,000 with $29,000 required up front, and follow-up weeks budgeted at about $10,000; these are individual patient budgets, not published rates (oasis-gofundme).",
+      "publishedPrices": "Not published on its site. The admissions page promises 'A transparent estimate of treatment costs' after a free consultation. Indicative only: patient GoFundMe pages (2020s, undated) cite a $56,000 total with $29,000 up front, and $10,000 per follow-up week.",
+      "booking": {
+        "channels": "Phone +1 (619) 690-8450 (a toll-free (888) 500-4673 appears only in page metadata); contact form https://www.oasisofhope.com/contact-us/; address Paseo Playas de Tijuana 19, Fracc. Playas de Tijuana. No email or WhatsApp published. Hours not published.",
+        "consult": "Free 45-minute Zoom consultation, then submit medical records (CMP, CBC, urinalysis, CT/MRI/PET reports, pathology report, tumor markers, oncology notes) and a Medical Questionnaire; the medical team returns a treatment recommendation and a cost estimate. Deposit terms and response time are not published.",
+        "languages": "English and Spanish (site in English; Tijuana facility).",
+        "bookingUrl": "https://www.oasisofhope.com/contact-us/"
+      },
+      "sourceIds": [
+        "oasis-site",
+        "oasis-admissions",
+        "oasis-contact",
+        "oasis-wikipedia",
+        "oasis-goodthinking",
+        "oasis-gofundme",
+        "csg-list",
+        "cofepris",
+        "jci-directory",
+        "csg-list-2024"
+      ]
+    },
+    {
+      "name": "Hospital CER / CER Bariatrics (Dr. José Alberto Carlos Rivas)",
+      "district": "Tijuana (Zona Río)",
+      "type": "hospital",
+      "url": "https://www.cerbariatrics.com/",
+      "specialties": [
+        "Bariatric surgery (sleeve, bypass, revisions)",
+        "Plastic and reconstructive surgery",
+        "Post-weight-loss body contouring"
+      ],
+      "namedDoctors": "Dr. José Alberto Carlos Rivas ('Dr. Alberto Carlos'): the CER Bariatrics page states he is certified by the Consejo Mexicano de Cirugía General (2012), board-certified in bariatric surgery by the Colegio Mexicano de Cirugía para la Obesidad y Enfermedades Metabólicas (CMCOEM), and a Fellow of the American College of Surgeons (2020), with a link to facs.org/profile/56114824; medical degree Universidad Autónoma de Nayarit 2006, general surgery residency IMSS Centro Médico Nacional del Noroeste 2008 to 2012. No cédula number is shown. Dr. Luis Suárez is listed by name only. Plastic surgeons are not named on the CER Plastic Surgery page (patients' reviews mention Dr. Eduardo Ochoa, Dr. Elsy and Dr. Montufar). No anesthesiologist is named on either site. Surgery takes place inside Hospital CER, Av. Diego Rivera 2386, Zona Río, which the operator describes as a surgical-specialty hospital rather than a general hospital. CSG status of Hospital CER: not confirmed (see credentials).",
+      "credentials": "CSG: Not on the CSG certified list (checked October 30, 2026 against the Consejo de Salubridad General 'Establecimientos de Atención Médica con Certificado Vigente' PDF consolidated to September 1, 2026, which lists 15 establishments nationwide and none in Baja California or Sonora; the earlier list of May 2, 2024 with 86 establishments carried only Hospital Velmar, Ensenada, expiring December 2, 2025, and PRO-MED Grupo Médico, Mexicali, expiring April 28, 2025, for Baja California); no source claims CSG certification for Hospital CER. COFEPRIS: no licencia sanitaria number is shown on cerbariatrics.com or cerplasticsurgery.com; no COFEPRIS alert naming CER was found (search October 30, 2026). The hospital's own site cerhospital.com returned HTTP 503 and then 406 to automated reading on October 30, 2026; facts come from the CER Bariatrics and CER Plastic Surgery brand sites and third-party listings. One directory gives 100 beds and 85 doctors but is inconsistent with other listings; ICU capacity is not stated anywhere seen. Hospital established 2008 per a third-party profile (not confirmed on an official page). JCI: not claimed. CMCPER directory: blocked by a Cloudflare challenge on October 30, 2026, so plastic surgeon board status is unverified.",
+      "cautions": "Structural: both consumer-facing brands are marketing entities. The CER Plastic Surgery footer states 'we are not a medical provider, and as such, we do not offer medical services or treatment', and CER Bariatrics says it provides 'access to' certified surgeons (cer-plastic-site, cer-bariatrics-site). Plastic surgeons are not named on the plastic surgery site, and no anesthesiologist is named on either brand site. The hospital is described as dedicated to surgical specialties, so ICU and emergency depth could not be confirmed. No deaths, lawsuits or COFEPRIS suspensions naming Hospital CER were found in English or Spanish press searches on October 30, 2026.",
+      "publishedPrices": "Not published on its site. Both brand sites say 'Request a quote' or 'Get Your Free Quote' and advertise savings 'up to 70%' without listing prices. Marketplace range (indicative): Tijuana all-inclusive gastric sleeve packages at other providers are listed at roughly $4,000 to $5,500 in 2025 to 2026 aggregator pages.",
+      "booking": {
+        "channels": "CER Bariatrics: online case form 'Start My Free Evaluation' at https://www.cerbariatrics.com/ (no phone, email or WhatsApp on the page); patient portal; Facebook support group. CER Plastic Surgery: phone +1 619-841-9001, virtual consultation form at https://www.cerplasticsurgery.com/, email obscured on page. Hospital address Av. Diego Rivera 2386, Zona Río, Tijuana.",
+        "consult": "Submit a case online for review; 'Submitting your case does not commit you to surgery.' Quote and inclusions are confirmed with a coordinator. Fee, response time and deposit terms are not published. Financing offered subject to third-party approval.",
+        "languages": "English and Spanish.",
+        "bookingUrl": "https://www.cerbariatrics.com/"
+      },
+      "sourceIds": [
+        "cer-bariatrics-site",
+        "cer-dr-carlos",
+        "cer-plastic-site",
+        "cer-tocdoc",
+        "csg-list",
+        "cofepris",
+        "cmcper-dir",
+        "csg-list-2024"
+      ]
+    },
+    {
+      "name": "Hospital Angeles Tijuana (Grupo Angeles)",
+      "district": "Tijuana (Zona Río)",
+      "type": "hospital",
+      "url": "https://hospitalangeles.com/",
+      "specialties": [
+        "Multispecialty private hospital",
+        "Spine surgery",
+        "Oncology",
+        "Cardiology",
+        "Plastic surgery (independent surgeons with privileges)"
+      ],
+      "namedDoctors": "Not named on the group's international page for Tijuana. The group site hospitalangeles.com lists Hospital Angeles Tijuana in its hospital roster but has no Tijuana-specific page, doctor list or contact. Surgeries are performed by independent physicians with privileges in the hospital's own operating rooms. CSG status: claimed only by marketplaces (see credentials).",
+      "credentials": "CSG: Not on the CSG certified list (checked October 30, 2026 against the Consejo de Salubridad General 'Establecimientos de Atención Médica con Certificado Vigente' PDF consolidated to September 1, 2026, which lists 15 establishments nationwide and none in Baja California or Sonora; the earlier list of May 2, 2024 with 86 establishments carried only Hospital Velmar, Ensenada, expiring December 2, 2025, and PRO-MED Grupo Médico, Mexicali, expiring April 28, 2025, for Baja California). The medical-tourism marketplace Bookimed displays a 'Consejo de Salubridad General certificate' for Hospital Angeles Tijuana without an expiry date; this is a marketplace claim, not an official-list match (angeles-bookimed). COFEPRIS: the group site links a 'Permiso COFEPRIS' PDF at hospitalangeles.com/pdf/permiso-COFEPRIS.pdf but no number is displayed on the page. JCI: the group's own JCI page names only Pedregal, Lomas, Puebla, Universidad, Acoxpa and Centro Sur (Querétaro) as Gold Seal hospitals; Tijuana is not named (angeles-jci-page). The Joint Commission directory itself returned HTTP 403 to automated reading on October 30, 2026. Address Paseo de los Héroes 10999, Zona Urbana Río, 22010 (angels-initiative directory). Founding year, bed count and ICU size: not published on the group site. The old Tijuana domain hospitalangelestijuana.com.mx does not resolve.",
+      "cautions": "No deaths, lawsuits, COFEPRIS suspensions or CDC/FDA notices naming Hospital Angeles Tijuana were found in English or Spanish press searches on October 30, 2026. Structural: the group website has no Tijuana-specific international-patient page, phone or email, so first contact runs through a generic form or through third-party facilitators and marketplaces, one of which carries a patient review warning about 'less timely and reliable customer service once they get your money' (angeles-bookimed).",
+      "publishedPrices": "Not published on its site. Marketplace range (indicative): Bookimed lists procedure prices for Hospital Angeles Tijuana (for example liposuction and angioplasty) on request; no dated list was seen.",
+      "booking": {
+        "channels": "Group contact form https://hospitalangeles.com/contacto (Spanish and English site). No Tijuana phone, WhatsApp or email is published on the group site. Street address Paseo de los Héroes 10999, Zona Urbana Río, Tijuana 22010.",
+        "consult": "Not published. The group site offers a general message form only; consult fees, records needed, response time and deposit terms are not stated.",
+        "languages": "Spanish; English site toggle.",
+        "bookingUrl": "https://hospitalangeles.com/contacto"
+      },
+      "sourceIds": [
+        "angeles-group-site",
+        "angeles-bookimed",
+        "angeles-angels-initiative",
+        "csg-list",
+        "cofepris",
+        "jci-directory",
+        "csg-list-2024",
+        "angeles-jci-page"
+      ]
+    },
+    {
+      "name": "LIMARP International Center of Excellence for Obesity (Dr. Liza María Pompa González)",
+      "district": "Tijuana (Aviación, Blvd. Agua Caliente)",
+      "type": "clinic",
+      "url": "https://www.limarp.com/",
+      "specialties": [
+        "Bariatric surgery (sleeve, bypass, revisions)",
+        "Bariatric anesthesia",
+        "Internal medicine pre-operative evaluation",
+        "Nutrition follow-up"
+      ],
+      "namedDoctors": "Dr. Liza María Pompa González (founder 2008; site states she is a Fellow of the American College of Surgeons and the first woman certified as an SRC 'Master Surgeon' in bariatric surgery); Dr. Guillermo López Espinosa (general and bariatric surgeon, SRC 'Surgeon of Excellence'); Dr. Josué Torres Chávez (chief of anesthesiology, 'Master in specialized bariatric anesthesia'); Dr. Eduardo Vázquez De La Mora (internal medicine); RN Blanca Cuevas García. The site does not show cédula numbers or state Consejo Mexicano de Cirugía General or CMCOEM certification by name. Surgery is performed in LIMARP's own facility at Blvd. Agua Caliente 4558-601 (the 'Our Hospital' page returned 404 on October 30, 2026, so bed and ICU counts are unconfirmed). The site displays a CSG certificate image; official-list match could not be made (see credentials).",
+      "credentials": "SRC: listed on surgicalreview.org as 'LIMARP- International Center of Excellence for Obesity', Center of Excellence in Metabolic and Bariatric Surgery, accredited since 2012, naming both surgeons (limarp-src, page dated October 2, 2019). CSG: Not on the CSG certified list (checked October 30, 2026 against the Consejo de Salubridad General 'Establecimientos de Atención Médica con Certificado Vigente' PDF consolidated to September 1, 2026, which lists 15 establishments nationwide and none in Baja California or Sonora; the earlier list of May 2, 2024 with 86 establishments carried only Hospital Velmar, Ensenada, expiring December 2, 2025, and PRO-MED Grupo Médico, Mexicali, expiring April 28, 2025, for Baja California); the clinic site displays a Consejo de Salubridad General certificate image, so this is a clinic claim, not an official-list match. Also displayed on the site: ISO 9001:2015, Global Healthcare Accreditation (GHA), and Baja California state medical-tourism catalog certifications. COFEPRIS: no licencia sanitaria number shown; no COFEPRIS alert found (search October 30, 2026). JCI: not claimed. Founded 2008.",
+      "cautions": "No deaths, lawsuits, COFEPRIS suspensions or complaint patterns naming LIMARP were found in English or Spanish press searches on October 30, 2026. Structural: the clinic's own hospital page was unreachable, so ICU capacity and transfer arrangements could not be confirmed; prices are quoted only after contact.",
+      "publishedPrices": "Not published on its site. The 'Cost & Financing' page returned 404 on October 30, 2026; the site describes all-inclusive packages covering treatment, follow-up, accommodation and airport transport without figures. Marketplace range (indicative): Bookimed lists LIMARP with prices on request.",
+      "booking": {
+        "channels": "Phone (619) 270-8823 (US line) and +52 664 686 2542; email contact@limarp.com; contact form at https://www.limarp.com/. No WhatsApp published. Address Blvd. Agua Caliente 4558-601, Aviación, Tijuana.",
+        "consult": "Step 1 on the site is to contact by form or phone; the site does not publish what the first consult requires, any fee, response time or deposit terms. Typical stay stated as two to three days.",
+        "languages": "English and Spanish.",
+        "includes": "Packages described as including bariatric treatment, follow-up care, accommodation and round-trip ground transport from the airport to the hotel.",
+        "bookingUrl": "https://www.limarp.com/"
+      },
+      "sourceIds": [
+        "limarp-site",
+        "limarp-src",
+        "csg-list",
+        "cofepris",
+        "csg-list-2024"
+      ]
+    },
+    {
+      "name": "ALO Bariatrics (Dr. Alejandro López Ortega)",
+      "district": "Tijuana (surgery at Dreams Hospital; also Guadalajara and Puerto Vallarta)",
+      "type": "clinic",
+      "url": "https://www.alobariatrics.com/",
+      "specialties": [
+        "Gastric sleeve",
+        "Gastric bypass",
+        "Duodenal switch",
+        "Revision bariatric surgery"
+      ],
+      "namedDoctors": "Dr. Alejandro López Ortega (Medical Director; site lists FACS, ASMBS, IFSO and CMCOEM and says he has performed over 20,000 bariatric surgeries since 2005); Dr. David Javier Orozco (Tijuana); Dr. Armando Joya Munguía (Puerto Vallarta, FACS); Dr. Luis Fernando Pérez Corona (Guadalajara). The FAQ says all are board-certified members of ASMBS, IFSO and CMCOEM; no cédula numbers or Consejo Mexicano de Cirugía General certificate numbers are shown, and the surgeons page returned 404 on October 30, 2026. No anesthesiologist is named; packages list 'Surgeon, anesthesiologist & medical team fees'. Tijuana surgery is performed at Dreams Hospital, with lodging at the Tijuana Marriott. CSG status of Dreams Hospital: not confirmed; no source found describing Dreams Hospital's certification.",
+      "credentials": "CSG: Not on the CSG certified list (checked October 30, 2026 against the Consejo de Salubridad General 'Establecimientos de Atención Médica con Certificado Vigente' PDF consolidated to September 1, 2026, which lists 15 establishments nationwide and none in Baja California or Sonora; the earlier list of May 2, 2024 with 86 establishments carried only Hospital Velmar, Ensenada, expiring December 2, 2025, and PRO-MED Grupo Médico, Mexicali, expiring April 28, 2025, for Baja California); no source claims CSG certification for Dreams Hospital. COFEPRIS: no licencia sanitaria number shown; no COFEPRIS alert naming ALO or Dreams Hospital found (search October 30, 2026). The site lists affiliations 'ASMBS, IFSO, AAAASF, and FACS' without certificate numbers. A 2021 press release marked the company's tenth anniversary (alo-pr). JCI: not claimed. SEP cédula: not checked.",
+      "cautions": "Structural: the surgeon operates in several cities and at partner hospitals; the Tijuana hospital (Dreams Hospital) has no findable public profile, accreditation record or ICU description, so patients should ask for the hospital's licencia sanitaria and ICU arrangements in writing. No deaths, lawsuits or COFEPRIS suspensions naming ALO Bariatrics or Dr. López were found in English or Spanish press searches on October 30, 2026.",
+      "publishedPrices": "Published on its site (USD, seen October 30, 2026, labelled 'approximate and may vary'): Tijuana gastric sleeve from $4,500; gastric bypass from $5,900; duodenal switch from $7,200. Guadalajara and Puerto Vallarta sleeve from $5,000, bypass from $6,600, duodenal switch from $7,600. 'Success Program' from $4,500.",
+      "booking": {
+        "channels": "Phone +1 (619) 332-0981; call/text/WhatsApp +1 (619) 653-6739; WhatsApp link wa.me/16196536750; USA +1 (619) 735-7804; Mexico +52 (33) 3472-5254; quote form 'Get Your Free Personalized Quote' at https://www.alobariatrics.com/; email obfuscated on page.",
+        "consult": "Free personalized quote via form; the site does not publish what the first consult needs, response time or deposit terms. Financing page offered.",
+        "languages": "English and Spanish.",
+        "includes": "Hospital stay in a private room, airport pickup and ground transport, surgeon/anesthesiologist/team fees, in-hospital post-op treatment, pre-op labs and EKG, coordinator, 24/7 post-op support line, nutrition counselling.",
+        "bookingUrl": "https://www.alobariatrics.com/"
+      },
+      "sourceIds": [
+        "alo-site",
+        "alo-pr",
+        "csg-list",
+        "cofepris",
+        "csg-list-2024"
+      ]
+    },
+    {
+      "name": "Mexico Bariatric Center (SOURCiS, Inc., facilitator; surgery at Hospital Azar)",
+      "district": "Tijuana (Aviación, Blvd. Salinas; US office Folsom, California)",
+      "type": "clinic",
+      "url": "https://www.mexicobariatriccenter.com/",
+      "specialties": [
+        "Gastric sleeve",
+        "Gastric bypass",
+        "Duodenal switch",
+        "Revision bariatric surgery",
+        "Plastic surgery coordination"
+      ],
+      "namedDoctors": "Bariatric: Dr. Alejandro Gutiérrez ('Chief Bariatric Surgeon'), Dr. Miguel Montalvo, Dr. Jacqui Osuna, Dr. Jesús Ceja, plus Dr. Zapata, Dr. Fredy and Dr. Azucena listed by surname or first name only. Plastic: Dr. Peter López, Dr. Daniela León, Dr. Navarro, Dr. Ignacio Del Carmen, Dr. Jorge Chang. The site describes the network as 'Double Board-Certified in Bariatrics (CMCOEM)' with FACS and IFSO membership but attaches no certificate or cédula number to any individual. No anesthesiologist is named. Surgery is performed at Hospital Azar, Blvd. Salinas 11050, Aviación, Tijuana, which the site says 'officially opened its doors in 2024'; the cost page lists 'Accredited Hospital with ICU' without naming the accreditor. CSG status of Hospital Azar: not confirmed.",
+      "credentials": "Operator: SOURCiS, Inc. DBA Mexico Bariatric Center, 193 Blue Ravine Rd Ste 140, Folsom, CA 95630; the legal disclaimer states it 'is a medical tourism facilitator, and not a healthcare provider'. CSG: Not on the CSG certified list (checked October 30, 2026 against the Consejo de Salubridad General 'Establecimientos de Atención Médica con Certificado Vigente' PDF consolidated to September 1, 2026, which lists 15 establishments nationwide and none in Baja California or Sonora; the earlier list of May 2, 2024 with 86 establishments carried only Hospital Velmar, Ensenada, expiring December 2, 2025, and PRO-MED Grupo Médico, Mexicali, expiring April 28, 2025, for Baja California); no source names a CSG certificate for Hospital Azar. COFEPRIS: no licencia sanitaria number shown; no COFEPRIS alert naming the brand or Hospital Azar found (search October 30, 2026). Site claims an A+ BBB rating, Medical Tourism Association certification and HONcode compliance (claims not verified against the issuers). JCI: not claimed. SEP cédula: not checked.",
+      "cautions": "Structural: broker-run brand with a rotating roster of surgeons and a hospital that opened in 2024; the facilitator disclaims provider status, so clinical responsibility sits with the Mexican surgeon and hospital. The site publishes a '99.3% safety rate' and '30,606 lives transformed' as self-reported figures without methodology (mbc-site). A consumer-complaint site hosts reviews of SOURCiS alleging a refund offer conditioned on a non-disclosure agreement barring negative reviews and BBB complaints, and a duodenal switch complicated by vein damage and bleeding; these are unverified self-reported accounts from around 2022 (mbc-complaintsboard). No deaths, lawsuits or regulator actions naming Mexico Bariatric Center or Hospital Azar were found in press searches on October 30, 2026. Price exclusions: airfare, higher BMI (about 49 and above), hiatal hernia repair and prior abdominal surgery carry extra charges.",
+      "publishedPrices": "Published on its site (USD): gastric sleeve 'starting at $4,495*', footnote 'Prices are subject to change. Not valid on blackout dates', page marked 'Last Updated: 2025' with a post timestamp of September 16, 2026 (mbc-cost). Deposit $395 after health-questionnaire approval (mbc-site). The 'Our Costs and Packages' and deposit-policy pages returned 404 on October 30, 2026.",
+      "booking": {
+        "channels": "US toll-free 855-768-7247; Tijuana +52 664 905 3362; US fax 1-855-453-2329; online Health Questionnaire, 'Book Your Surgery' and 'Make a Payment' forms at https://www.mexicobariatriccenter.com/. No email or WhatsApp published.",
+        "consult": "Complete the online health questionnaire; once approved, a $395 deposit 'saves your surgery date'. Refund and cancellation terms are on a separate policy page that was not reachable on October 30, 2026.",
+        "deposit": "$395 after questionnaire approval.",
+        "languages": "English and Spanish; US-based coordinators and a US surgeon liaison.",
+        "includes": "Private ground transport from San Diego, hospital with ICU, 2 nights in a 4.5-star hotel, discounted complication coverage, FMLA forms, nutrition programme, online support group. Excludes airfare, high-BMI and hiatal hernia surcharges.",
+        "bookingUrl": "https://www.mexicobariatriccenter.com/"
+      },
+      "sourceIds": [
+        "mbc-site",
+        "mbc-cost",
+        "mbc-complaintsboard",
+        "csg-list",
+        "cofepris",
+        "csg-list-2024"
+      ]
+    },
+    {
+      "name": "Obesity Control Center (Dr. Ariel Ortiz)",
+      "district": "Tijuana (Zona Río, inside Hospital CYNTAR)",
+      "type": "clinic",
+      "url": "https://www.obesitycontrolcenter.com/",
+      "specialties": [
+        "Gastric sleeve",
+        "Gastric bypass",
+        "Revision bariatric surgery",
+        "Plastic surgery after weight loss"
+      ],
+      "namedDoctors": "Dr. Ariel Ortiz (Medical Director / Director of Bariatric Surgery; site lists 'MD, FACS, FASMBS'; the footer gives 'Dr. Ariel Ortiz Lagardere, Cedula Profesional / Mexican Medical Licence No. 3181627, Universidad Autónoma de Baja California'); Dr. Arturo Martínez (Chief of Surgery, assistant professor of general surgery at UABC); also listed without credentials: Dr. César Quiroz Guadarrama, Dr. Juan Roberto González Santamaría, Dr. Oscar Uribe Núñez, Dr. Héctor Acosta, Dr. Josué Enrique Treviño Miranda, Dr. Juan Cuéllar (plastic surgery). Consejo Mexicano de Cirugía General or CMCOEM certification is not named on the page. No anesthesiologist is named. Surgery takes place in Hospital CYNTAR, Paseo de los Héroes 9111 #100, Zona Río; the site says OCC is 'licensed to provide care and treatment as a hospital'. CSG status: not confirmed.",
+      "credentials": "The site claims Joint Commission International accreditation 'three times', Global Healthcare Accreditation, 'Quality Management Solutions' and 'International Center of Excellence'. JCI: the Joint Commission directory returned HTTP 403 to automated reading on October 30, 2026, so the claim is unverified against the accreditor. CSG: Not on the CSG certified list (checked October 30, 2026 against the Consejo de Salubridad General 'Establecimientos de Atención Médica con Certificado Vigente' PDF consolidated to September 1, 2026, which lists 15 establishments nationwide and none in Baja California or Sonora; the earlier list of May 2, 2024 with 86 establishments carried only Hospital Velmar, Ensenada, expiring December 2, 2025, and PRO-MED Grupo Médico, Mexicali, expiring April 28, 2025, for Baja California). COFEPRIS: the footer shows 'Permiso de Publicidad Número 233300201A0601' (an advertising permit, not a licencia sanitaria) and Dr. Ortiz's cédula 3181627; no licencia sanitaria number is shown and no COFEPRIS alert naming OCC was found (search October 30, 2026). The footer states 'OBESITY CONTROL CENTER is a scheduling facilitator. We are not a healthcare provider' and 'ALL OCC Physicians are not licensed to practice medicine outside of the Mexican territory'. SEP cédula: not checked.",
+      "cautions": "Death: Zeta Tijuana reported that Jennifer Louise Breen, 52, died on February 4, 2023 in a room at the Tijuana Marriott one day after surgery at Obesity Control Center; the state health regulator COEPRIS said she did not die at the clinic and that a verification report on the clinic was pending (zeta-2023-tres-mujeres, zeta-2023-dos-mujeres). The same reporting says only Hospital Arcángeles (a different facility) was suspended. No later outcome of the Breen investigation was found in press searches on October 30, 2026. Structural: the consumer brand describes itself as a scheduling facilitator, not a healthcare provider, and the surgeons' Mexican-only licensure is stated on the site (occ-site).",
+      "publishedPrices": "Not published on its site. The cost page returned 404 on October 30, 2026; the site offers financing via Affirm, Afterpay, Klarna and PayPal without stating amounts. Marketplace range (indicative): aggregator pages list OCC gastric sleeve packages in the $5,000 to $7,000 range (undated).",
+      "booking": {
+        "channels": "US and Canada toll-free 866-675-9912 (office hours Mon to Fri 8:00 to 17:00 Pacific; 'Doctors are On Call 24/7'); fax 619-330-2077; contact form https://www.obesitycontrolcenter.com/contact/; accessibility line (866) 376-7849. No WhatsApp or email published.",
+        "consult": "Not published beyond the contact form; consult fee, records needed, response time and deposit terms are not stated. Site advertises five years of follow-up care and a private driver.",
+        "languages": "English and Spanish.",
+        "includes": "'All-Inclusive Concierge Service' described as airport transfers, border guidance and 'five-star accommodations'; no itemized list.",
+        "bookingUrl": "https://www.obesitycontrolcenter.com/contact/"
+      },
+      "sourceIds": [
+        "occ-site",
+        "zeta-2023-tres-mujeres",
+        "zeta-2023-dos-mujeres",
+        "csg-list",
+        "cofepris",
+        "jci-directory",
+        "csg-list-2024"
+      ]
+    },
+    {
+      "name": "Renew Bariatrics (surgery at SER Hospital and Obesity Surgical Center, Tijuana)",
+      "district": "Tijuana (Zona Río; also Cancún)",
+      "type": "clinic",
+      "url": "https://renewbariatrics.com/",
+      "specialties": [
+        "Gastric sleeve",
+        "Gastric bypass",
+        "SADI-S duodenal switch",
+        "Gastric balloon",
+        "Revision bariatric surgery"
+      ],
+      "namedDoctors": "Dr. Héctor Pérez (listed with IFSO), Dr. Jorge Green, Dr. René Armenta, Dr. Antonio Cueva; each described as 'Double board-certified bariatric surgeon' without naming the boards, certificate numbers or cédulas. Dr. Jaime Ponce de León, named in the task brief, does not appear on the site. No anesthesiologist is named ('Expert care from bariatric surgeons and anesthesiologists'). Tijuana surgery is performed at SER Hospital and at Obesity Surgical Center; Cancún surgery at Hospital Joya Cancún. CSG status of SER Hospital and Obesity Surgical Center: not confirmed.",
+      "credentials": "Company says it is 'Proudly based in Mexico with offices in Tijuana and Cancún' and describes itself as a bariatric surgery provider that coordinates care; it does not state whether surgeons are employees or independent. CSG: Not on the CSG certified list (checked October 30, 2026 against the Consejo de Salubridad General 'Establecimientos de Atención Médica con Certificado Vigente' PDF consolidated to September 1, 2026, which lists 15 establishments nationwide and none in Baja California or Sonora; the earlier list of May 2, 2024 with 86 establishments carried only Hospital Velmar, Ensenada, expiring December 2, 2025, and PRO-MED Grupo Médico, Mexicali, expiring April 28, 2025, for Baja California); no source names a CSG certificate for SER Hospital or Obesity Surgical Center. COFEPRIS: no licencia sanitaria number shown; no COFEPRIS alert naming Renew or either hospital found (search October 30, 2026). JCI: not claimed. SEP cédula: not checked.",
+      "cautions": "Structural: multi-surgeon, multi-hospital coordinating brand; the two Tijuana hospitals are small private facilities without findable accreditation records, so ask which hospital and which surgeon in writing. No deaths, lawsuits or COFEPRIS suspensions naming Renew Bariatrics, SER Hospital or Obesity Surgical Center were found in English or Spanish press searches on October 30, 2026.",
+      "publishedPrices": "Published on its site (USD, all-inclusive, seen October 30, 2026): gastric sleeve $4,899; gastric bypass $6,299; SADI-S $6,899; gastric balloon from $3,999; TORe from $8,599; mini bypass, ESG and revisions by custom quote.",
+      "booking": {
+        "channels": "Toll-free (844) 736-3963, stated as 24/7 from the US or Canada; Mexico +52 (664) 414-6642; quote/consultation form at https://renewbariatrics.com/; email obfuscated on page; no WhatsApp published. Tijuana office Blvd. Rodolfo Sánchez 10488, Zona Urbana Río, 22010.",
+        "consult": "Online quote or consultation request; fully self-pay with HSA/FSA, financing, personal loans or 401(k) withdrawal described. Deposit amount and refund terms are on a separate policy page not captured; not published on the pages read.",
+        "languages": "English and Spanish, 24/7 per footer.",
+        "includes": "Ground transport, bilingual coordinator, private hospital room, labs, surgery, follow-up, post-op medication and tests, surgeon and anesthesiologist fees, nutrition counselling, FMLA forms, 2 hospital nights plus 1 hotel night, one companion.",
+        "bookingUrl": "https://renewbariatrics.com/contact-us/"
+      },
+      "sourceIds": [
+        "renew-site",
+        "renew-contact",
+        "csg-list",
+        "cofepris",
+        "csg-list-2024"
+      ]
+    },
+    {
+      "name": "BeLiteWeight (Global Rodzmed S.C. / Global Help LLC, scheduling service; surgeon Dr. José Rodríguez Villarreal)",
+      "district": "Tijuana (hospital not named on site)",
+      "type": "clinic",
+      "url": "https://www.beliteweight.com/",
+      "specialties": [
+        "Gastric sleeve",
+        "Gastric bypass",
+        "Revision bariatric surgery"
+      ],
+      "namedDoctors": "Dr. José Rodríguez Villarreal, F.A.C.S. (only credential stated: Fellow of the American College of Surgeons); Dr. Leticia Solís, anesthesiologist (no certification stated). No cédula numbers, Consejo Mexicano de Cirugía General or CMCOEM status shown. The site does not name the hospital or city where surgery occurs, referring only to 'internationally accredited facilities' and 'Full-service hospitals'. CSG status: cannot be assessed because no facility is named.",
+      "credentials": "Operating entity 'Global Rodzmed S.C./Global Help LLC (DBA BeLiteWeight)'; the site states it 'is a scheduling service not a medical facility or healthcare provider' and that its information 'does not create any physician-patient relationship'. No street address published. CSG: Not on the CSG certified list (checked October 30, 2026 against the Consejo de Salubridad General 'Establecimientos de Atención Médica con Certificado Vigente' PDF consolidated to September 1, 2026, which lists 15 establishments nationwide and none in Baja California or Sonora; the earlier list of May 2, 2024 with 86 establishments carried only Hospital Velmar, Ensenada, expiring December 2, 2025, and PRO-MED Grupo Médico, Mexicali, expiring April 28, 2025, for Baja California), and no hospital is named to check. COFEPRIS: no licence number shown; no COFEPRIS alert naming BeLiteWeight found (search October 30, 2026). JCI: not claimed. SEP cédula: not checked.",
+      "cautions": "Structural: facilitator that does not publish the surgical hospital, its address or the surgeon's Mexican board status; patients must obtain the hospital name and licencia sanitaria before paying. No deaths, lawsuits or regulator actions naming BeLiteWeight were found in press searches on October 30, 2026.",
+      "publishedPrices": "Not published on its site. The site says 'pricing may vary' and routes to a 'Pricing Inquiry'. Marketplace range (indicative): Tijuana all-inclusive sleeve packages at comparable brokers list at $4,000 to $5,500 (2025 to 2026 aggregator pages).",
+      "booking": {
+        "channels": "Phone 1-800-215-6497; 'Book An Appointment' form and 'Get a Quote' at https://www.beliteweight.com/; free 15-minute consultation; SMS consent on form. No email, WhatsApp or street address published.",
+        "consult": "Free 15-minute phone consultation then pricing inquiry; records needed, response time and deposit terms are not published. A cancellation and refund policy page exists but its terms were not captured.",
+        "languages": "English (US-facing site).",
+        "bookingUrl": "https://www.beliteweight.com/"
+      },
+      "sourceIds": [
+        "blw-site",
+        "csg-list",
+        "cofepris",
+        "csg-list-2024"
+      ]
+    },
+    {
+      "name": "Tijuana Bariatrics (tijuanabariatrics.com; Dr. Martín Orduño, Dr. Juan Pedro Fernández, Dr. Luis Cázares)",
+      "district": "Tijuana (hospital not named on site)",
+      "type": "clinic",
+      "url": "https://www.tijuanabariatrics.com/",
+      "specialties": [
+        "Single-incision gastric sleeve",
+        "Gastric sleeve",
+        "Gastric bypass and mini bypass",
+        "Dental and nutrition add-ons"
+      ],
+      "namedDoctors": "Dr. Martín Orduño ('expert in advanced laparoscopic techniques'), Dr. Juan Pedro (JP) Fernández, FACS, Dr. Luis Cázares, Dr. Luis Suárez (navigation only); Julio Serecero DDS and Linda Cardona (nutritionist). Four certification badges are shown as images without text; no cédula, Consejo Mexicano de Cirugía General or CMCOEM certificate numbers are stated. Dr. Fernando García, named in the task brief as this brand's surgeon, does not appear on the site as read on October 30, 2026; a 2013 video and a Doctoralia profile for Dr. Fernando García Govea (general surgeon, Tijuana) are the only links found. No anesthesiologist is named. The site does not name the hospital, referring to 'state-of-the-art bariatric surgery centers'; a treatment-registry listing describes the related 'Tijuana Bariatric Center' as a bariatric day-surgery centre founded 2011. CSG status: cannot be assessed because no facility is named.",
+      "credentials": "CSG: Not on the CSG certified list (checked October 30, 2026 against the Consejo de Salubridad General 'Establecimientos de Atención Médica con Certificado Vigente' PDF consolidated to September 1, 2026, which lists 15 establishments nationwide and none in Baja California or Sonora; the earlier list of May 2, 2024 with 86 establishments carried only Hospital Velmar, Ensenada, expiring December 2, 2025, and PRO-MED Grupo Médico, Mexicali, expiring April 28, 2025, for Baja California), and no hospital is named. COFEPRIS: no licence number shown; no COFEPRIS alert naming the brand found (search October 30, 2026). The about-us, surgeons and hospital pages all returned 404 on October 30, 2026, so facts come from the home page. JCI: not claimed. SEP cédula: not checked.",
+      "cautions": "Structural: the surgical facility is not named on the site and the surgeon roster appears to have changed from the Dr. Fernando García era, so the brand name does not identify who operates; ask for the surgeon's name, cédula and the hospital's licencia sanitaria in writing. Prices are promoted as 'all-inclusive' without itemization. No deaths, lawsuits or COFEPRIS suspensions naming Tijuana Bariatrics were found in press searches on October 30, 2026.",
+      "publishedPrices": "Published on its site (USD, seen October 30, 2026): single-incision sleeve 'All-inclusive for only $5,150 $4,650' (discounted figure shown); gastric sleeve 'All-inclusive Holiday Price: $4,150'; bypass and mini bypass 'All-Inclusive for only $5,900'. Inclusions not itemized.",
+      "booking": {
+        "channels": "Toll-free (800) 308-3607; phone, SMS and WhatsApp (956) 334-7790; email info@tijuanabariatrics.com; contact form and free virtual consultation form at https://www.tijuanabariatrics.com/.",
+        "consult": "Free virtual consultation with a 'board-certified bariatric surgeon' by request form; records needed, response time and deposit terms are not published. Airport pickup in San Diego described.",
+        "languages": "English and Spanish.",
+        "bookingUrl": "https://www.tijuanabariatrics.com/"
+      },
+      "sourceIds": [
+        "tjb-site",
+        "tjb-registry",
+        "tjb-garcia-doctoralia",
+        "csg-list",
+        "cofepris",
+        "csg-list-2024"
+      ]
+    },
+    {
+      "name": "Hospital BC / Hospital BCN (Dr. Jalil Illan Fraijo)",
+      "district": "Tijuana (Col. Buena Vista, Sta. Isabel 219)",
+      "type": "hospital",
+      "url": "https://www.hospitalbc.com/",
+      "specialties": [
+        "Bariatric surgery (sleeve, bypass, robotic sleeve)",
+        "Plastic surgery after weight loss",
+        "Revision bariatric surgery"
+      ],
+      "namedDoctors": "Dr. Jalil Illan Fraijo: the hospital site lists FACS, ASMBS and IFSO membership, SRC 'Master Surgeon' recognition, and 'Board-Certified' without naming the board; Bookimed adds 'FASMBS'. No cédula or Consejo Mexicano de Cirugía General/CMCOEM certificate number is shown. 'Three board-certified bariatric surgeons' and a 'bariatric anesthesiologist' are referenced on third-party listings but not named. Surgery takes place in the hospital's own operating rooms (the site gives both '2' and '4' operating rooms) with an ICU listed; bed count not stated. CSG status: not confirmed.",
+      "credentials": "SRC: surgicalreview.org lists 'Hospital B C', Tijuana, as an SRC-Accredited Center of Excellence in Metabolic & Bariatric Surgery with Dr. Jalil Illan as Surgeon of Excellence (page dated October 18, 2019) (hbc-src). JCI: the hospital site states it 'has been certified by the Joint Commission International'; the Joint Commission directory returned HTTP 403 to automated reading on October 30, 2026, so this is unverified against the accreditor. CSG: Not on the CSG certified list (checked October 30, 2026 against the Consejo de Salubridad General 'Establecimientos de Atención Médica con Certificado Vigente' PDF consolidated to September 1, 2026, which lists 15 establishments nationwide and none in Baja California or Sonora; the earlier list of May 2, 2024 with 86 establishments carried only Hospital Velmar, Ensenada, expiring December 2, 2025, and PRO-MED Grupo Médico, Mexicali, expiring April 28, 2025, for Baja California). COFEPRIS: no licence number shown; no COFEPRIS alert naming Hospital BC found (search October 30, 2026). The surgeon's personal domain drjalilillan.com did not resolve on October 30, 2026.",
+      "cautions": "Marketing claims on the site include a '0 Mortality rate' and savings of '30% to 80%' without supporting data (hbc-site). Structural: inconsistent operating-room counts and hours on the site; no anesthesiologist or second surgeon is named. No deaths, lawsuits or COFEPRIS suspensions naming Hospital BC or Dr. Illan were found in English or Spanish press searches on October 30, 2026.",
+      "publishedPrices": "Not published on its site. Marketplace range (indicative): Bookimed lists gastric sleeve, bypass and robotic sleeve as 'Price on request' with a last price update of March 29, 2025; another aggregator cites sleeve packages 'starting at $4,900 all-inclusive' (undated).",
+      "booking": {
+        "channels": "Bariatrics phone (619) 900-7634; plastics phone (619) 900-7808; email info@hospitalbc.com and plastics@hospitalbc.com; appointment form at https://www.hospitalbc.com/; hours stated as Mon to Fri 7:00 to 18:00 and weekends 8:00 to 13:00 in one section and Mon to Fri 8:00 to 17:00, Sat 8:00 to 13:00 in another. No WhatsApp published. Address Sta. Isabel 219, Col. Buena Vista, Tijuana 22415.",
+        "consult": "Not published; the site offers an appointment form only, and deposit terms are not stated. Bookimed describes free bilingual assistance 24/7.",
+        "languages": "English and Spanish.",
+        "bookingUrl": "https://www.hospitalbc.com/"
+      },
+      "sourceIds": [
+        "hbc-site",
+        "hbc-src",
+        "hbc-bookimed",
+        "csg-list",
+        "cofepris",
+        "jci-directory",
+        "csg-list-2024"
+      ]
+    },
+    {
+      "name": "VIDA Wellness and Beauty / Cosmed Clinic (Dr. Alejandro Quiroz, Dr. Juan Carlos Fuentes, Dr. Carlos Castañeda)",
+      "district": "Tijuana (Fracc. El Paraíso, Calle Brasilia 1)",
+      "type": "clinic",
+      "url": "https://www.vidawellnessandbeauty.com/",
+      "specialties": [
+        "Plastic surgery (face, breast, body, BBL)",
+        "Bariatric surgery",
+        "Dermatology and aesthetic medicine",
+        "Dental"
+      ],
+      "namedDoctors": "Plastic surgeons listed: Dr. Alejandro J. Quiroz, Dr. Juan Carlos Fuentes, Dr. Carlos E. Castañeda Reichert, Dr. Francisco Bucio, Dr. Enrique Quirós Lim, Dra. Samaria Mejía; the sister brand Cosmed Clinic (cosmedclinic.com, same phone family) lists Quiroz, Fuentes, Castañeda, Bucio, Quirós Lim, Dr. Alberto de la Fuente García and Dr. Javier Saldaña. Bariatric: Dra. Gabriela Rodríguez Ruiz, 'MD PhD FACS'. The home page says only 'Board Certified Plastic Surgeons'; CMCPER certificate numbers and cédulas are not shown on the pages read (the team page returned 404 on October 30, 2026). Third-party profiles: Dr. Quiroz is listed by The Aesthetic Society with 27 years of membership and by RealSelf; Dr. Castañeda's Doctoralia profile records plastic surgery training in Guadalajara after UABC medical school; neither third-party page states CMCPER status. No anesthesiologist is named. Surgery takes place in VIDA's own ambulatory facility, which the site says is AAAASF-accredited; an ambulatory clinic is not a hospital and CSG certification of the facility is not claimed.",
+      "credentials": "CMCPER directory: blocked by a Cloudflare challenge on October 30, 2026, so board status of the surgeons is unverified. CSG: Not on the CSG certified list (checked October 30, 2026 against the Consejo de Salubridad General 'Establecimientos de Atención Médica con Certificado Vigente' PDF consolidated to September 1, 2026, which lists 15 establishments nationwide and none in Baja California or Sonora; the earlier list of May 2, 2024 with 86 establishments carried only Hospital Velmar, Ensenada, expiring December 2, 2025, and PRO-MED Grupo Médico, Mexicali, expiring April 28, 2025, for Baja California); not claimed by the clinic. AAAASF: claimed on the clinic site ('The AAAASF has accredited VIDA Wellness and Beauty with the gold standard for outpatient procedures'); not verified against the accreditor's list. COFEPRIS: no licence number shown; no COFEPRIS alert naming VIDA or Cosmed found (search October 30, 2026). SEP cédula: not checked.",
+      "cautions": "Structural: surgery, including combined 'mommy makeover' procedures and bariatric surgery, is performed in an ambulatory (outpatient) facility rather than a hospital with an ICU; ask in writing how overnight stays and transfers are handled. The price page displays 'Average costs in *2012' and loads no figures (vida-prices). No deaths, lawsuits or COFEPRIS suspensions naming VIDA Wellness and Beauty or Cosmed Clinic were found in English or Spanish press searches on October 30, 2026.",
+      "publishedPrices": "Not published in usable form on its site: the prices page shows 'Loading' placeholders and the note 'Average costs in *2012'. Financing described: no down payment, terms 24 to 84 months, from 7.99% APR. Marketplace range (indicative): a RealSelf patient reported $15,900 for a face, neck and brow lift with Dr. Quiroz (undated).",
+      "booking": {
+        "channels": "US +1 (619) 738-2144 (prices page gives (619) 610-1667); Mexico +52 (664) 748-0003; email info@vidawellnessandbeauty.com; free virtual consultation form and contact page at https://www.vidawellnessandbeauty.com/; Cosmed: US (619) 494-2215, MX +52 664 414 9011. Hours Mon to Fri 8:00 to 17:00, Sat 8:00 to 13:00. No WhatsApp published. Address Calle Brasilia 1, Fracc. El Paraíso, Tijuana.",
+        "consult": "Free virtual consultation by form; records or photos required, fee, response time and deposit terms are not published.",
+        "languages": "English and Spanish.",
+        "bookingUrl": "https://www.vidawellnessandbeauty.com/"
+      },
+      "sourceIds": [
+        "vida-site",
+        "vida-prices",
+        "cosmed-site",
+        "vida-quiroz-aesthetic-society",
+        "vida-castaneda-doctoralia",
+        "cmcper-dir",
+        "csg-list",
+        "cofepris",
+        "csg-list-2024"
+      ]
+    },
+    {
+      "name": "Sani Dental Group",
+      "district": "Los Algodones (C. Álamo 287 and C. Tercera 203-D; also Cancún and Playa del Carmen)",
+      "type": "dental",
+      "url": "https://www.sanidentalgroup.com/",
+      "specialties": [
+        "Dental implants and All-on-4",
+        "Crowns and veneers",
+        "Dentures",
+        "Maxillofacial surgery"
+      ],
+      "namedDoctors": "Dr. Hermes Somonte, 'D.D.S. & Maxillofacial Surgeon', is the only dentist named on the home page; patient reviews mention Dr. Sofía, Dr. Diego, Dr. Christian Estrada and Carlos Jiménez. No cédula numbers are shown on the pages read (the dentists page returned 404 on October 30, 2026). Treatment is in the group's own clinics.",
+      "credentials": "CSG certification does not apply to dental clinics of this type (CSG certifies hospitals and medical establishments; no dental clinic in Los Algodones claims it). COFEPRIS: a COFEPRIS logo is displayed among accreditation logos but no licence number is shown; no COFEPRIS alert naming Sani Dental found (search October 30, 2026). The site shows logos for ZAGA, BBB, ADA, MTA, AMP, CMIB, CMITM, ITI and SIISDET without explanation or membership numbers; none verified against the issuers. SEP cédula: not checked.",
+      "cautions": "Written warranty is replacement or repair only, 'with no cash refund', void if another office touches the work, excludes travel costs, and the 5-year implant extension requires a yearly in-person check-up (sani-warranty). No complaints patterns, lawsuits or regulator actions naming Sani Dental Group were found in press searches on October 30, 2026. Patient reviews on the Algodones Dental Center site (a separate facilitator) reference continuing treatment at 'SANI DENTAL', indicating facilitator referrals into Sani.",
+      "publishedPrices": "Published on its site (USD, 'Base Price or Starting At', no date shown, seen October 30, 2026): titanium implant $890; Straumann BLX implant $1,350; implant crown with abutment $720; All-on-4 with acrylic hybrid $8,110; All-on-4 Nobel $8,950; All-on-4 Straumann $9,710; zirconia crown $490; E-max crown $395; PFM crown $230; porcelain veneer $450; root canal $340; full acrylic denture $320. Disclaimer: 'This estimate should not be considered as an official price for your treatment.'",
+      "booking": {
+        "channels": "Phone +1 928-257-4284 (all locations); contact form with name, email, phone and destination at https://www.sanidentalgroup.com/; 'Schedule a Visit' link. No email address or WhatsApp published. Los Algodones addresses C. Álamo 287 (main) and C. Tercera 203-D (Platinum).",
+        "consult": "Not published beyond the form; no consult fee, deposit or response time stated.",
+        "languages": "English and Spanish.",
+        "includes": "Written warranty: 2 years on porcelain/zirconia/acrylic prostheses, implants, resin fillings and root canals; 4 years on amalgam; 5 years on gold/metal prostheses; up to 5 years on Nobel Biocare or Straumann implants with annual check-ups.",
+        "bookingUrl": "https://www.sanidentalgroup.com/"
+      },
+      "sourceIds": [
+        "sani-site",
+        "sani-prices",
+        "sani-warranty",
+        "cofepris"
+      ]
+    },
+    {
+      "name": "Dental Solutions Los Algodones",
+      "district": "Los Algodones (C. Tercera 160)",
+      "type": "dental",
+      "url": "https://www.dentalsolutionsalgodones.com/",
+      "specialties": [
+        "Dental implants and All-on-4",
+        "Crowns and veneers",
+        "Dentures",
+        "Root canals"
+      ],
+      "namedDoctors": "Not named on the site except 'Dr. Bojorquez' in a patient testimonial; the dentists page returned 404 on October 30, 2026. The site says 'resident doctors' have over 10 years' experience. No cédula numbers shown.",
+      "credentials": "CSG certification does not apply to dental clinics of this type. COFEPRIS: no licence number shown; no COFEPRIS alert naming the clinic found (search October 30, 2026). Site says 'We are members of the American Dental Association' and shows MEDIGO, WhatClinic and AAID logos without membership numbers; none verified against the issuers. SEP cédula: not checked.",
+      "cautions": "No written warranty terms appear on the site; the price page states only that patients receive written quotes and 'Los Algodones Dental Prices are subject to change without prior notice' (dsa-prices). Prices on the same page are internally inconsistent (implant $750 versus $850; All-on-4 'around $8,900' versus $9,900; root canal $220 versus $250). No complaints patterns, lawsuits or regulator actions naming the clinic were found in press searches on October 30, 2026.",
+      "publishedPrices": "Published on its site (USD, headline '[2026]', one bullet says '2025 dental pricing', seen October 30, 2026): titanium implant $850; implant crown with abutment $500 (zirconia $700); All-on-4 with Nobel Biocare implants and acrylic bridge $9,900; All-on-4 final denture acrylic $3,999, metal-porcelain or zirconia $5,999; PFM crown $200; full porcelain crown $399; zirconia crown $499; porcelain veneer $399; root canal $250; immediate full denture $299; final full denture $399; partial denture $499.",
+      "booking": {
+        "channels": "Phone +1 (928) 328-1121; email info@dentalsolutionsalgodones.com; 'Get a FREE Estimate' and 'Make an Appointment' forms at https://www.dentalsolutionsalgodones.com/; Facebook. Hours Mon to Sat 9:00 to 16:00. No WhatsApp published. Address C. Tercera 160, Vicente Guerrero (Los Algodones) 21970.",
+        "consult": "Free estimate by form; a '4% discount' is advertised; deposit and response time not published.",
+        "languages": "English and Spanish.",
+        "bookingUrl": "https://www.dentalsolutionsalgodones.com/"
+      },
+      "sourceIds": [
+        "dsa-site",
+        "dsa-prices",
+        "cofepris"
+      ]
+    },
+    {
+      "name": "Simply Dental (dentistalgodones.com)",
+      "district": "Los Algodones (Av. B 192)",
+      "type": "dental",
+      "url": "https://dentistalgodones.com/",
+      "specialties": [
+        "Dental implants and All-on-4",
+        "Crowns, bridges and veneers",
+        "Pediatric dentistry",
+        "In-house dental lab"
+      ],
+      "namedDoctors": "Seventeen first names appear as team photos without surnames, specialties or cédulas, among them Danilo Gaspar, Iván Gaspar, César Herrera, Luis Aguilar, Nicolás Llinás, Octavio Reyes and Benjamín Flores; 'Dra. Laura' is labelled pediatric dentist and 'Mónica Cital' is called a prosthodontist in a testimonial. No cédula numbers shown.",
+      "credentials": "CSG certification does not apply to dental clinics of this type. COFEPRIS: no licence number shown; no COFEPRIS alert naming the clinic found (search October 30, 2026). No formal accreditation is listed on the site; a marketplace shows an 'American Dental Association certificate' image (unverified). The former domain simplydental.mx redirects to dentistalgodones.com. SEP cédula: not checked.",
+      "cautions": "No price list and no written warranty terms are published on the site; the 'free CT scan' offer applies only if treatment proceeds at the clinic (simply-site). One marketplace page shows the clinic as not accepting new requests, and a 2019 marketplace review called it the most expensive of three estimates obtained (simply-bookimed). No complaints patterns, lawsuits or regulator actions were found in press searches on October 30, 2026.",
+      "publishedPrices": "Not published on its site. Marketplace range (indicative): Bookimed lists a dental implant at $1,300 and All-on-4 at $10,500, last updated March 29, 2025.",
+      "booking": {
+        "channels": "Phone 480 463 9814; WhatsApp +1 442 297 9076; contact page https://dentistalgodones.com/contact/; Facebook, Instagram, YouTube. Address Av. B 192, Vicente Guerrero, Los Algodones.",
+        "consult": "Free evaluation plus CT scan (CT free only if treatment proceeds); deposit and response time not published.",
+        "languages": "English and Spanish.",
+        "bookingUrl": "https://dentistalgodones.com/contact/"
+      },
+      "sourceIds": [
+        "simply-site",
+        "simply-bookimed",
+        "cofepris"
+      ]
+    },
+    {
+      "name": "Algodones Dental Center (unit of Medical Tourism Corporation, facilitator)",
+      "district": "Los Algodones (C. Álamo 289)",
+      "type": "dental",
+      "url": "https://www.algodonesdentalcenter.com/",
+      "specialties": [
+        "Dental implants and All-on-4",
+        "Zirconia crowns and veneers",
+        "Dentures"
+      ],
+      "namedDoctors": "Not named: the site states 'No dentists have been selected yet'; patient reviews mention 'Dr Mendoza' and 'Nilza Márquez' and reference continuing care at 'SANI DENTAL'. No cédula numbers shown. The footer identifies the brand as 'a unit of Medical Tourism Corporation', a US facilitator; the treating clinic is therefore a partner practice rather than the brand itself.",
+      "credentials": "CSG certification does not apply to dental clinics of this type. COFEPRIS: no licence number shown; no COFEPRIS alert naming the brand found (search October 30, 2026). Memberships are listed inconsistently across the page (ADA, ITI, ICOI in one place; ADA, ITI, AAID, AMCBM in another; ADM, ADA, ICOI in a third) with no certificates or numbers. SEP cédula: not checked.",
+      "cautions": "Structural: facilitator brand with no named dentists; the address C. Álamo 289 sits next to Sani Dental Group's main clinic at C. Álamo 287 and reviews reference Sani, so confirm in writing which clinic and dentist will treat you. Warranty appears only as FAQ text, not as a separate signed document (adc-site). No complaints patterns, lawsuits or regulator actions were found in press searches on October 30, 2026.",
+      "publishedPrices": "Published on its site (USD, 'Price List [2026]', no effective date, seen October 30, 2026): single titanium implant $790; All-on-4 per arch $8,110; zirconia crown $490; porcelain veneer $450; porcelain full denture $450; packages All-on-4 Nobel Prettau $13,499, All-on-4 Straumann half mouth $14,299, porcelain veneers half mouth $3,999.",
+      "booking": {
+        "channels": "Phone +1 (928) 597-8967; email info@algodonesdentalcenter.com; 'Get Free Consultation' form and 'book-call' page at https://www.algodonesdentalcenter.com/. Hours Mon to Fri 8:15 to 17:00, Sat 9:00 to 15:00. No WhatsApp published.",
+        "consult": "Free consultation; 'A dentist reviews your case before any work begins.' Deposit terms not published.",
+        "languages": "English and Spanish.",
+        "includes": "FAQ warranty: 2 years on porcelain/zirconia/acrylic repairs, resin fillings, implant failure and root canal failure (100% credit toward re-treatment); 4 years on amalgam; 5 years on gold/metal prostheses; excludes trauma, improper care and poor oral habits.",
+        "bookingUrl": "https://www.algodonesdentalcenter.com/"
+      },
+      "sourceIds": [
+        "adc-site",
+        "cofepris"
+      ]
+    },
+    {
+      "name": "Dental Alvarez (Dr. Ricardo Álvarez)",
+      "district": "Tijuana (Zona Río, Av. Misión de Loreto 3045)",
+      "type": "dental",
+      "url": "https://dentalalvarez.com/",
+      "specialties": [
+        "Implantology",
+        "Orthodontics",
+        "Periodontics",
+        "Pediatric and cosmetic dentistry"
+      ],
+      "namedDoctors": "Ten dentists are named with licence numbers (the site labels them 'License No.', which correspond to SEP cédula profesional numbers): Dr. Ricardo Álvarez, implantologist, 1131162; Dr. Hilda Rodríguez, general dentist and implantologist, 1304430; Dr. Yuri Avilés, orthodontist, 14499373; Dr. Carlos Estrada, orthodontist, 9679917; Dr. Raymundo Ledesma, periodontics and implantology, 8595834; Dr. Ericka Castillo, pediatric dentist, 6835404; Dr. Alejandro Sánchez, general and cosmetic, 7893908; Dr. José Polanco, general and cosmetic, 14003985; Dr. Horacio Zarrabal, general, 12564149; Dr. Andrés López, general and cosmetic, 13591506. Cédula numbers were not independently verified in the SEP lookup (interactive form not checked).",
+      "credentials": "COFEPRIS: the footer displays 'Clave de Autorización COFEPRIS' 2302025036X00519 (dental-alvarez-site); no COFEPRIS alert naming the clinic found (search October 30, 2026). CSG certification does not apply to dental clinics of this type. No international accreditation claimed; site says 'Specialized and Certified Dentists' without naming boards. Accepts US PPO insurance (United Healthcare, GEHA, Aetna, Cigna, MetLife logos). SEP cédula: numbers published by the clinic, not re-checked.",
+      "cautions": "No written warranty terms appear on the home or contact pages. Hours are listed inconsistently on the site. The prices page returned 404 on October 30, 2026. No complaints patterns, lawsuits or regulator actions naming Dental Alvarez were found in press searches on October 30, 2026.",
+      "publishedPrices": "Not published in readable form on October 30, 2026 (prices page 404); the home page claims savings of 50% to 70% versus US prices without figures.",
+      "booking": {
+        "channels": "USA (619) 734-0233; Mexico (664) 900-7282; appointment request forms at https://dentalalvarez.com/contact-us/; email protected by a script and not readable; no WhatsApp published. Hours Mon to Thu 8:00 to 17:30, Sat 8:00 to 13:00 (header shows Mon to Fri 8:30 to 17:30, Sat 8:00 to 15:00). Spanish site es.dentalalvarez.com.",
+        "consult": "Appointment request by form; consult fee, deposit and response time not published.",
+        "languages": "English and Spanish.",
+        "bookingUrl": "https://dentalalvarez.com/contact-us/"
+      },
+      "sourceIds": [
+        "dental-alvarez-site",
+        "dental-alvarez-contact",
+        "cofepris",
+        "sep-cedula"
+      ]
+    },
+    {
+      "name": "BioDental Care (Dr. Trejo)",
+      "district": "Tijuana (Zona Río, Paseo del Centenario 10310, 11th floor)",
+      "type": "dental",
+      "url": "https://www.biodentalcare.com/",
+      "specialties": [
+        "Dental implants and All-on-4",
+        "Crowns and veneers",
+        "Root canals",
+        "Dentures"
+      ],
+      "namedDoctors": "Only 'Dr. Trejo' is named ('Dr. Trejo and staff'); no specialty or cédula shown; staff Antonio, Alex and Michele are thanked in reviews without roles. The doctors page returned 404 on October 30, 2026.",
+      "credentials": "CSG certification does not apply to dental clinics of this type. COFEPRIS: no licence number shown; no COFEPRIS alert naming the clinic found (search October 30, 2026). No accreditation claimed; the site says 'Our doctors have the same training and credentials as any other dentist'. SEP cédula: not checked.",
+      "cautions": "Structural: the clinic operates on the 11th floor of an office tower; no written warranty terms are published; the single named dentist has no stated specialty or licence number on the site (bio-site). No complaints patterns, lawsuits or regulator actions were found in press searches on October 30, 2026.",
+      "publishedPrices": "Published on its site (USD, price list page dated September 29, 2025, seen October 30, 2026): implant body $900; abutment $350; implant crown E-max or zirconia $500; zirconia crown $500; E-max crown $500; veneer $480; anterior root canal $350; root canal with post, build-up and zirconia crown $880; immediate denture $350; complete denture $650. Home page: All-on-4 $8,500; crowns or veneers $480.",
+      "booking": {
+        "channels": "Phone and text 619-754-8508; online appointment booking at https://www.biodentalcare.com/; Google Maps, Facebook, Yelp, Instagram. Hours Mon to Fri 9:00 to 18:00, Sat 9:00 to 15:00. No email or WhatsApp published.",
+        "consult": "Online booking; consult fee, deposit and response time not published.",
+        "languages": "English and Spanish.",
+        "bookingUrl": "https://www.biodentalcare.com/"
+      },
+      "sourceIds": [
+        "bio-site",
+        "bio-prices",
+        "cofepris"
+      ]
+    },
+    {
+      "name": "Hospital Hispano Americano",
+      "district": "Mexicali",
+      "type": "hospital",
+      "specialties": [
+        "Multispecialty private hospital",
+        "Spine surgery",
+        "Obstetrics and gynecology",
+        "Bariatric surgery (listed by marketplaces)"
+      ],
+      "namedDoctors": "Not named on an official page: the hospital's domain hispanoamericano.com.mx failed TLS handshake and then served a Telmex 'página bajo construcción' placeholder on October 30, 2026, so facts come from search snippets and marketplace listings. Bookimed lists Dr. Raúl Ernesto Garnier Campillo with inconsistent credentials (Consejo Mexicano de Cirugía General and American College of Surgeons in one listing; Consejo Mexicano de Cirugía Pediátrica in another). No anesthesiologist named. Surgery would be in the hospital's own operating rooms.",
+      "credentials": "Site blocked automated reading; facts from search snippets. CSG: Not on the CSG certified list (checked October 30, 2026 against the Consejo de Salubridad General 'Establecimientos de Atención Médica con Certificado Vigente' PDF consolidated to September 1, 2026, which lists 15 establishments nationwide and none in Baja California or Sonora; the earlier list of May 2, 2024 with 86 establishments carried only Hospital Velmar, Ensenada, expiring December 2, 2025, and PRO-MED Grupo Médico, Mexicali, expiring April 28, 2025, for Baja California). Marketplace listings describe the hospital as 'ISO and CSG-accredited' and founded 2007, and display an ISO certificate image; these are marketplace claims, not official-list matches (hha-bookimed). COFEPRIS: no licence number seen; no COFEPRIS alert naming the hospital found (search October 30, 2026). JCI: not claimed.",
+      "cautions": "The hospital's own website was offline or under construction on October 30, 2026, so international-patient contact, surgeon roster and prices could not be confirmed from the source. Bariatric prices on marketplaces (sleeve about $5,500, balloon about $3,300) date from around April 2022 and other listings show 'on request' (hha-bookimed). Mexicali context: Zeta Tijuana reported a bariatric death at Hospital de la Familia, Mexicali in February 2023 and an FGE seizure of MV Hospital, Mexicali in January 2025; neither is Hospital Hispano Americano (zeta-2023-tres-mujeres, zeta-2025-fge).",
+      "publishedPrices": "Not published on its site (site unreachable). Marketplace range (indicative): Bookimed, about April 2022, sleeve gastrectomy about $5,500, gastric band $5,000 to $6,000, intragastric balloon about $3,300.",
+      "booking": {
+        "channels": "Not published on a reachable official page; marketplaces route enquiries through their own forms (https://us-uk.bookimed.com/clinic/hospital-hispano-americano/).",
+        "consult": "Not published.",
+        "languages": "Spanish; English via marketplaces."
+      },
+      "sourceIds": [
+        "hha-bookimed",
+        "zeta-2023-tres-mujeres",
+        "zeta-2025-fge",
+        "csg-list",
+        "cofepris",
+        "csg-list-2024"
+      ]
+    },
+    {
+      "name": "Hospital Almater",
+      "district": "Mexicali",
+      "type": "hospital",
+      "url": "https://almater.mx/",
+      "specialties": [
+        "Multispecialty private hospital",
+        "Oncology",
+        "Cardiology",
+        "Bariatric and plastic surgery (independent surgeons)"
+      ],
+      "namedDoctors": "Not named on the hospital site, which lists only specialties (cardiology, oncology, angiology, pediatrics, neurology). The medicaltourism.com listing names US surgeons Andrew Elkwood MD FACS and Matthew Kaufman MD FACS (nerve and breast reconstruction) and fertility physicians Dr. Sam Najmabadi and Dr. José Luis Rivas Aguilar; bariatric surgeons who operate there are listed only on aggregators. No anesthesiologist named. Surgery is in the hospital's own operating rooms.",
+      "credentials": "CSG: Not on the CSG certified list (checked October 30, 2026 against the Consejo de Salubridad General 'Establecimientos de Atención Médica con Certificado Vigente' PDF consolidated to September 1, 2026, which lists 15 establishments nationwide and none in Baja California or Sonora; the earlier list of May 2, 2024 with 86 establishments carried only Hospital Velmar, Ensenada, expiring December 2, 2025, and PRO-MED Grupo Médico, Mexicali, expiring April 28, 2025, for Baja California); the hospital site claims no certification and the medicaltourism.com listing shows 'No items found' under accreditations (almater-mt). COFEPRIS: no licence number shown; no COFEPRIS alert naming Almater found (search October 30, 2026). Age: site says 'Más de 38 años'; listing says 'more than 25 years'. JCI: not claimed. Beds and ICU: not published.",
+      "cautions": "No accreditation is claimed or found; the hospital publishes no international-patient page, no surgeon roster and no prices. No deaths, lawsuits or COFEPRIS suspensions naming Hospital Almater were found in English or Spanish press searches on October 30, 2026.",
+      "publishedPrices": "Not published on its site; financing 'Credialmater' up to 50% over 12 to 36 months is described without figures.",
+      "booking": {
+        "channels": "Emergencies (686) 523 8000; primary care (686) 523 8050; national line 1-800 ALMATER; emails info@almater.com, unidadambulatoria@almater.com, oncologia@almater.com; site https://almater.mx/. No WhatsApp or international line published.",
+        "consult": "Not published.",
+        "languages": "Spanish; English via facilitators."
+      },
+      "sourceIds": [
+        "almater-site",
+        "almater-mt",
+        "csg-list",
+        "cofepris",
+        "csg-list-2024"
+      ]
+    },
+    {
+      "name": "Hospital Velmar",
+      "district": "Ensenada (Fracc. Playa Ensenada, Arenas 151)",
+      "type": "hospital",
+      "url": "https://www.hospitalvelmar.com/",
+      "specialties": [
+        "Multispecialty private hospital",
+        "Bariatric surgery (independent surgeons)",
+        "Cardiology",
+        "Internal medicine"
+      ],
+      "namedDoctors": "Hospital site names Dr. Ricardo Cabrera F. (cardiology), Dr. Joel Velasco A. (pediatric surgery) and Dr. Antonio Cañizares M. (internal medicine) without board certifications; no bariatric or plastic surgeon is named on the site. A Doctoralia listing places bariatric surgeon Dr. Julio Adán Campos Badillo at the hospital's address (third-party, certification not stated). No anesthesiologist named. Surgery is in the hospital's own operating rooms. CSG status: certified until December 2, 2025 on the 2024 list; not on the current list (see credentials).",
+      "credentials": "CSG: on the Consejo de Salubridad General list of May 2, 2024 as 'Hospital Velmar', razón social Impulsora de Salud de Baja California, S.A. de C.V., Privada, Ensenada, standard 'Hospital', certificate expiring 02/12/2025 (csg-list-2024). Not on the CSG certified list consolidated to September 1, 2026, which lists 15 establishments nationwide and none in Baja California (checked October 30, 2026) (csg-list). The hospital site still says it is 'el único hospital certificado de Ensenada' without naming the certifier or a date (velmar-site). COFEPRIS: no licencia sanitaria number shown; no COFEPRIS alert naming the hospital found (search October 30, 2026). JCI: not claimed. Founding year, beds and ICU: not published.",
+      "cautions": "The site's 'only certified hospital in Ensenada' claim is not supported by the current CSG list; the certificate on the 2024 list expired December 2, 2025 and no renewal appears as of September 1, 2026 (csg-list, csg-list-2024). Bariatric packages are sold through brokers rather than the hospital site. No deaths, lawsuits or COEPRIS suspensions naming Hospital Velmar were found in English or Spanish press searches on October 30, 2026.",
+      "publishedPrices": "Not published on its site apart from an annual membership of MXN 1,500 plus IVA (about $80 at MXN 18.7 = $1). Marketplace range (indicative): PlacidWay broker packages list a gastric bypass at Hospital Velmar from $9,699 and a sleeve from $6,899 (undated).",
+      "booking": {
+        "channels": "Phone (646) 173 4500; email contacto@hospitalvelmar.com and relacionespublicas@hospitalvelmar.com; site https://www.hospitalvelmar.com/. No WhatsApp, international line or English page published.",
+        "consult": "Not published.",
+        "languages": "Spanish; English via brokers."
+      },
+      "sourceIds": [
+        "velmar-site",
+        "velmar-placidway",
+        "csg-list",
+        "csg-list-2024",
+        "cofepris"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "csg-list",
+      "label": "Consejo de Salubridad General, Establecimientos de Atención Médica con Certificado Vigente (consolidated to September 1, 2026; 15 establishments, none in Baja California or Sonora)",
+      "url": "https://www.gob.mx/cms/uploads/attachment/file/1100853/EAM_con_certificado_vigente__01_septiembre_2026_.pdf",
+      "publisher": "Consejo de Salubridad General",
+      "date": "2026-09-01",
+      "kind": "official"
+    },
+    {
+      "id": "csg-list-2024",
+      "label": "Consejo de Salubridad General, establecimientos con certificado vigente, May 2, 2024 (86 establishments; Baja California: Hospital Velmar Ensenada to 2025-12-02, PRO-MED Mexicali CAPCE to 2025-04-28)",
+      "url": "https://www.gob.mx/cms/uploads/attachment/file/920198/INF_PUB_CERT_02_05_2024_86_EAM.pdf",
+      "publisher": "Consejo de Salubridad General",
+      "date": "2024-05-02",
+      "kind": "official"
+    },
+    {
+      "id": "csg-page",
+      "label": "Consejo de Salubridad General, Establecimientos de Atención Médica Certificados (article page linking the lists)",
+      "url": "https://www.gob.mx/csg/articulos/establecimientos-de-atencion-medica",
+      "publisher": "Consejo de Salubridad General",
+      "date": "2026-10-30",
+      "kind": "official"
+    },
+    {
+      "id": "cofepris",
+      "label": "COFEPRIS, Comisión Federal para la Protección contra Riesgos Sanitarios",
+      "url": "https://www.gob.mx/cofepris",
+      "publisher": "COFEPRIS",
+      "date": "2026-10-30",
+      "kind": "official"
+    },
+    {
+      "id": "cmcper-dir",
+      "label": "Consejo Mexicano de Cirugía Plástica, Estética y Reconstructiva, directory of certified surgeons (Cloudflare challenge blocked reading)",
+      "url": "https://cmcper.org/",
+      "publisher": "CMCPER",
+      "date": "2026-10-30",
+      "kind": "official"
+    },
+    {
+      "id": "sep-cedula",
+      "label": "SEP Registro Nacional de Profesionistas, cédula lookup",
+      "url": "https://www.cedulaprofesional.sep.gob.mx/",
+      "publisher": "Secretaría de Educación Pública",
+      "date": "2026-10-30",
+      "kind": "official"
+    },
+    {
+      "id": "jci-directory",
+      "label": "Joint Commission International accredited organizations, Mexico (HTTP 403 to automated reading)",
+      "url": "https://www.jointcommission.org/en/who-we-are/accredited-organizations/?c=Mexico",
+      "publisher": "Joint Commission International",
+      "date": "2026-10-30",
+      "kind": "official"
+    },
+    {
+      "id": "oasis-site",
+      "label": "Oasis of Hope Hospital home page",
+      "url": "https://www.oasisofhope.com/",
+      "publisher": "Oasis of Hope Hospital",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "oasis-admissions",
+      "label": "Oasis of Hope, How to become a patient",
+      "url": "https://www.oasisofhope.com/how-to-become-a-patient/",
+      "publisher": "Oasis of Hope Hospital",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "oasis-contact",
+      "label": "Oasis of Hope, Contact us",
+      "url": "https://www.oasisofhope.com/contact-us/",
+      "publisher": "Oasis of Hope Hospital",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "oasis-wikipedia",
+      "label": "Oasis of Hope Hospital (Wikipedia, with cited Guardian, Cancer Research UK, MSKCC and Cochrane sources)",
+      "url": "https://en.wikipedia.org/wiki/Oasis_of_Hope_Hospital",
+      "publisher": "Wikipedia",
+      "date": "2026-10-30",
+      "kind": "press"
+    },
+    {
+      "id": "oasis-goodthinking",
+      "label": "Trading Standards instruct Oasis of Hope UK to remove cancer claims from website",
+      "url": "https://goodthinkingsociety.org/trading-standards-instruct-oasis-of-hope-uk-to-remove-cancer-claims-from-website/",
+      "publisher": "Good Thinking Society",
+      "date": "2019",
+      "kind": "press"
+    },
+    {
+      "id": "oasis-gofundme",
+      "label": "Patient fundraising page citing Oasis of Hope treatment estimate ($56,000 total, $29,000 up front)",
+      "url": "https://www.gofundme.com/f/jenayoder",
+      "publisher": "GoFundMe",
+      "date": "2023",
+      "kind": "forum"
+    },
+    {
+      "id": "cer-bariatrics-site",
+      "label": "CER Bariatrics home page",
+      "url": "https://www.cerbariatrics.com/",
+      "publisher": "CER Bariatrics",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "cer-dr-carlos",
+      "label": "CER Bariatrics, Dr. Alberto Carlos profile",
+      "url": "https://www.cerbariatrics.com/dr-alberto-carlos/",
+      "publisher": "CER Bariatrics",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "cer-plastic-site",
+      "label": "CER Plastic Surgery home page",
+      "url": "https://www.cerplasticsurgery.com/",
+      "publisher": "CER Plastic Surgery",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "cer-tocdoc",
+      "label": "Hospital CER listing with Dr. José Alberto Carlos Rivas",
+      "url": "https://www.tocdoc.com/node/40776",
+      "publisher": "TocDoc",
+      "date": "2026-10-30",
+      "kind": "marketplace"
+    },
+    {
+      "id": "angeles-group-site",
+      "label": "Grupo Angeles hospitals home page (lists Hospital Angeles Tijuana)",
+      "url": "https://hospitalangeles.com/",
+      "publisher": "Hospitales Angeles",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "angeles-bookimed",
+      "label": "Hospital Angeles Tijuana marketplace listing showing CSG and AMCPER certificate images",
+      "url": "https://us-uk.bookimed.com/clinic/hospital-angeles-tijuana/",
+      "publisher": "Bookimed",
+      "date": "2025",
+      "kind": "marketplace"
+    },
+    {
+      "id": "angeles-angels-initiative",
+      "label": "Hospital Angeles Tijuana address entry",
+      "url": "https://es.angels-initiative.com/content/hospital-angeles-tijuana-0",
+      "publisher": "Angels Initiative",
+      "date": "2026-10-30",
+      "kind": "official"
+    },
+    {
+      "id": "limarp-site",
+      "label": "LIMARP home page",
+      "url": "https://www.limarp.com/",
+      "publisher": "LIMARP",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "limarp-src",
+      "label": "SRC: LIMARP International Center of Excellence for Obesity",
+      "url": "https://surgicalreview.org/limarp-international-center-of-excellence-for-obesity",
+      "publisher": "Surgical Review Corporation",
+      "date": "2019-10-02",
+      "kind": "official"
+    },
+    {
+      "id": "alo-site",
+      "label": "ALO Bariatrics home page and FAQ",
+      "url": "https://www.alobariatrics.com/",
+      "publisher": "ALO Bariatrics",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "alo-pr",
+      "label": "ALO Bariatrics ten-year anniversary press release",
+      "url": "https://business.sherbrookerecord.com/sherbrookerecord/news/read/41459318/a_decade_of_stellar_results",
+      "publisher": "Sherbrooke Record (press release wire)",
+      "date": "2021",
+      "kind": "press"
+    },
+    {
+      "id": "mbc-site",
+      "label": "Mexico Bariatric Center home page",
+      "url": "https://www.mexicobariatriccenter.com/",
+      "publisher": "SOURCiS, Inc. DBA Mexico Bariatric Center",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "mbc-cost",
+      "label": "Mexico Bariatric Center, gastric sleeve surgery cost",
+      "url": "https://www.mexicobariatriccenter.com/gastric-sleeve-surgery-cost/",
+      "publisher": "SOURCiS, Inc. DBA Mexico Bariatric Center",
+      "date": "2026-09-16",
+      "kind": "clinic"
+    },
+    {
+      "id": "mbc-complaintsboard",
+      "label": "SOURCiS (Mexico Bariatric Center) consumer complaints",
+      "url": "https://www.complaintsboard.com/sourcis-b154549",
+      "publisher": "ComplaintsBoard",
+      "date": "2022",
+      "kind": "forum"
+    },
+    {
+      "id": "occ-site",
+      "label": "Obesity Control Center home page",
+      "url": "https://www.obesitycontrolcenter.com/",
+      "publisher": "Obesity Control Center",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "zeta-2023-tres-mujeres",
+      "label": "Tres mujeres mueren por cirugía bariátrica en BC; sólo un hospital suspendido",
+      "url": "https://zetatijuana.com/2023/02/tres-mujeres-mueren-por-cirugia-bariatrica-en-bc-solo-un-hospital-suspendido/",
+      "publisher": "Zeta Tijuana",
+      "date": "2023-02-13",
+      "kind": "press"
+    },
+    {
+      "id": "zeta-2023-dos-mujeres",
+      "label": "En Tijuana y Mexicali mueren dos mujeres tras cirugía bariátrica",
+      "url": "https://zetatijuana.com/2023/02/en-tijuana-y-mexicali-mueren-dos-mujeres-tras-cirugia-bariatrica/",
+      "publisher": "Zeta Tijuana",
+      "date": "2023-02",
+      "kind": "press"
+    },
+    {
+      "id": "zeta-2025-fge",
+      "label": "FGE investiga muerte de mujeres por cirugía estética y bariátrica en Tijuana y Mexicali",
+      "url": "https://zetatijuana.com/2025/01/fge-investiga-muerte-de-mujeres-por-cirugia-estetica-y-bariatrica-en-tijuana-y-mexicali/",
+      "publisher": "Zeta Tijuana",
+      "date": "2025-01-20",
+      "kind": "press"
+    },
+    {
+      "id": "renew-site",
+      "label": "Renew Bariatrics home page",
+      "url": "https://renewbariatrics.com/",
+      "publisher": "Renew Bariatrics",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "renew-contact",
+      "label": "Renew Bariatrics, Contact us",
+      "url": "https://renewbariatrics.com/contact-us/",
+      "publisher": "Renew Bariatrics",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "blw-site",
+      "label": "BeLiteWeight home page",
+      "url": "https://www.beliteweight.com/",
+      "publisher": "Global Rodzmed S.C. / Global Help LLC DBA BeLiteWeight",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "tjb-site",
+      "label": "Tijuana Bariatrics home page",
+      "url": "https://www.tijuanabariatrics.com/",
+      "publisher": "Tijuana Bariatrics",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "tjb-registry",
+      "label": "Tijuana Bariatric Center report (day-surgery centre, founded 2011)",
+      "url": "https://thetreatmentregistry.com/clinics/tijuana-bariatric-center/report",
+      "publisher": "The Treatment Registry",
+      "date": "2025",
+      "kind": "marketplace"
+    },
+    {
+      "id": "tjb-garcia-doctoralia",
+      "label": "Dr. Fernando García Govea profile",
+      "url": "https://www.doctoralia.com.mx/perfil/fernando-garcia-govea",
+      "publisher": "Doctoralia",
+      "date": "2026-10-30",
+      "kind": "marketplace"
+    },
+    {
+      "id": "hbc-site",
+      "label": "Hospital BC / Hospital BCN home page",
+      "url": "https://www.hospitalbc.com/",
+      "publisher": "Hospital BC",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "hbc-src",
+      "label": "SRC: Hospital BC, SRC-Accredited Center of Excellence in Metabolic and Bariatric Surgery",
+      "url": "https://surgicalreview.org/hospital-bc",
+      "publisher": "Surgical Review Corporation",
+      "date": "2019-10-18",
+      "kind": "official"
+    },
+    {
+      "id": "hbc-bookimed",
+      "label": "Dr. Jalil Illan Fraijo (Hospital BC) marketplace listing",
+      "url": "https://us-uk.bookimed.com/clinic/m/dr-jalil-illan-fraijo-hospital-bc/",
+      "publisher": "Bookimed",
+      "date": "2025-03-29",
+      "kind": "marketplace"
+    },
+    {
+      "id": "vida-site",
+      "label": "VIDA Wellness and Beauty home page",
+      "url": "https://www.vidawellnessandbeauty.com/",
+      "publisher": "VIDA Wellness and Beauty",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "vida-prices",
+      "label": "VIDA Wellness and Beauty prices page ('Average costs in *2012')",
+      "url": "https://www.vidawellnessandbeauty.com/prices/",
+      "publisher": "VIDA Wellness and Beauty",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "cosmed-site",
+      "label": "Cosmed Clinic home page",
+      "url": "https://www.cosmedclinic.com/",
+      "publisher": "Cosmed Clinic",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "vida-quiroz-aesthetic-society",
+      "label": "Alejandro J. Quiroz, MD, Aesthetic Society member listing",
+      "url": "https://www.theaestheticsociety.org/select-surgeon/alejandro-j-quiroz-md",
+      "publisher": "The Aesthetic Society",
+      "date": "2026-10-30",
+      "kind": "official"
+    },
+    {
+      "id": "vida-castaneda-doctoralia",
+      "label": "Dr. Carlos Castañeda Reichert profile",
+      "url": "https://www.doctoralia.com.mx/perfil/carlos-castaneda-2",
+      "publisher": "Doctoralia",
+      "date": "2026-10-30",
+      "kind": "marketplace"
+    },
+    {
+      "id": "sani-site",
+      "label": "Sani Dental Group home page",
+      "url": "https://www.sanidentalgroup.com/",
+      "publisher": "Sani Dental Group",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "sani-prices",
+      "label": "Sani Dental Group price list",
+      "url": "https://www.sanidentalgroup.com/price-list/",
+      "publisher": "Sani Dental Group",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "sani-warranty",
+      "label": "Sani Dental Group warranty",
+      "url": "https://www.sanidentalgroup.com/warranty/",
+      "publisher": "Sani Dental Group",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "dsa-site",
+      "label": "Dental Solutions Los Algodones home page",
+      "url": "https://www.dentalsolutionsalgodones.com/",
+      "publisher": "Dental Solutions Los Algodones",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "dsa-prices",
+      "label": "Dental Solutions Los Algodones price list",
+      "url": "https://www.dentalsolutionsalgodones.com/price-list/",
+      "publisher": "Dental Solutions Los Algodones",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "simply-site",
+      "label": "Simply Dental Los Algodones home page",
+      "url": "https://dentistalgodones.com/",
+      "publisher": "Simply Dental",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "simply-bookimed",
+      "label": "Simply Dental marketplace listing",
+      "url": "https://us-uk.bookimed.com/clinic/simply-dental/",
+      "publisher": "Bookimed",
+      "date": "2025-03-29",
+      "kind": "marketplace"
+    },
+    {
+      "id": "adc-site",
+      "label": "Algodones Dental Center home page and FAQ",
+      "url": "https://www.algodonesdentalcenter.com/",
+      "publisher": "Medical Tourism Corporation",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "dental-alvarez-site",
+      "label": "Dental Alvarez home page (dentist licence numbers, COFEPRIS clave)",
+      "url": "https://www.dentalalvarez.com/",
+      "publisher": "Dental Alvarez",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "dental-alvarez-contact",
+      "label": "Dental Alvarez, Contact us",
+      "url": "https://dentalalvarez.com/contact-us/",
+      "publisher": "Dental Alvarez",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "bio-site",
+      "label": "BioDental Care home page",
+      "url": "https://www.biodentalcare.com/",
+      "publisher": "BioDental Care",
+      "date": "2025-11-09",
+      "kind": "clinic"
+    },
+    {
+      "id": "bio-prices",
+      "label": "BioDental Care price list",
+      "url": "https://www.biodentalcare.com/price-list/",
+      "publisher": "BioDental Care",
+      "date": "2025-09-29",
+      "kind": "clinic"
+    },
+    {
+      "id": "hha-bookimed",
+      "label": "Hospital Hispano Americano marketplace listing (ISO and CSG claims, 2022 prices)",
+      "url": "https://us-uk.bookimed.com/clinic/hospital-hispano-americano/",
+      "publisher": "Bookimed",
+      "date": "2022-04",
+      "kind": "marketplace"
+    },
+    {
+      "id": "almater-site",
+      "label": "Hospital Almater home page",
+      "url": "https://almater.mx/",
+      "publisher": "Hospital Almater",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "almater-mt",
+      "label": "Almater Hospital SA de CV provider listing",
+      "url": "https://www.medicaltourism.com/providers/almater-hospital-sa-de-cv",
+      "publisher": "MedicalTourism.com",
+      "date": "2026-10-30",
+      "kind": "marketplace"
+    },
+    {
+      "id": "angeles-jci-page",
+      "label": "Hospitales Angeles, Joint Commission International page (names six hospitals; Tijuana not named)",
+      "url": "https://hospitalangeles.com/joint-commission-international",
+      "publisher": "Hospitales Angeles",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "velmar-site",
+      "label": "Hospital Velmar home page",
+      "url": "https://www.hospitalvelmar.com/",
+      "publisher": "Hospital Velmar",
+      "date": "2026-10-30",
+      "kind": "clinic"
+    },
+    {
+      "id": "velmar-placidway",
+      "label": "Hospital Velmar gastric bypass package listing",
+      "url": "https://www.placidway.com/package/6630/Hospital-Velmar-Gastric-Bypass-Package-in-Ensenada-Mexico",
+      "publisher": "PlacidWay",
+      "date": "2026",
+      "kind": "marketplace"
+    }
+  ]
+}

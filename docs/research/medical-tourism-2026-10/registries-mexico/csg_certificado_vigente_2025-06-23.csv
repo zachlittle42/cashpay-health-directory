@@ -1,0 +1,44 @@
+row,model,commercial_name,legal_entity,sector,city_municipality,state,standard,certificate_expires
+1,SiNaCEAM,SERME Unidad Mérida,"Servicios Médicos y de Equipamiento, S.A. de C.V.",Privada,Mérida,Yucatán,Hemodiálisis,2025-07-20
+2,SiNaCEAM,Clínica de Primer Nivel de Ciudad del Carmen,Petróleos Mexicanos,Pública,Cd. del Carmen,Campeche,CAPCE,2025-08-24
+3,SiNaCEAM,Galvanes-UMAPS,Instituto de Salud Pública del Estado de Guanajuato,Pública,San Miguel de Allende,Guanajuato,CAPCE,2025-08-24
+4,SiNaCEAM,Hospital MAC Aguascalientes,"Centro Hospitalario MAC, S.A. de C.V.",Privada,Aguascalientes,Aguascalientes,Hospital,2025-08-24
+5,SiNaCEAM,Sanatorio Durango,"Nuevo Sanatorio Durango, S.A. de C.V.",Privada,Cuauhtémoc,Ciudad de México,Hospital,2025-08-24
+6,SiNaCEAM,Hospital CAMI,"Centro de Atención Medica Integral, S.A. de C.V.",Privada,Venustiano Carranza,Ciudad de México,Hospital,2025-08-24
+7,SiNaCEAM,Centro Médico ABC Campus Observatorio,"The American British Cowdray Medical Center, I.A.P.",Privada,Álvaro Obregón,Ciudad de México,Hospital,2025-08-24
+8,SiNaCEAM,Centro Médico ABC Campus Santa Fe,"The American British Cowdray Medical Center, I.A.P.",Privada,Cuajimalpa,Ciudad de México,Hospital,2025-08-24
+9,SiNaCEAM,Hospital San José-Valle Real,"Hospital Real San José, S. C.",Privada,Zapopan,Jalisco,Hospital,2025-08-24
+10,SiNaCEAM,Hospital Real San José,"Hospital Real San José, S. C.",Privada,Zapopan,Jalisco,Hospital,2025-08-24
+11,SiNaCEAM,Hospital Clínica Nova,"Servicios Integrales Nova de Monterrey, S.A. de C.V.",Privada,San Nicolás de los Garza,Nuevo León,Hospital,2025-08-24
+12,SiNaCEAM,Hospital Marina Mazatlán,"Hospital Marina Mazatlán, S.A. de C.V.",Privada,Mazatlán,Sinaloa,Hospital,2025-08-24
+13,SiNaCEAM,Hospital Velmar,"Impulsora de Salud de Baja California, S.A. de C.V.",Privada,Ensenada,Baja California,Hospital,2025-12-02
+14,SiNaCEAM,10 de mayo - CAISES,Instituto de Salud Pública del Estado de Guanajuato,Pública,León,Guanajuato,CAPCE,2026-03-31
+15,SiNaCEAM,Santiago de Cuenda UMAPS,Instituto de Salud Pública del Estado de Guanajuato,Pública,Santa Cruz de Juventino Rosas,Guanajuato,CAPCE,2026-03-31
+16,SiNaCEAM,Servicios Médicos y de Hemodiálisis Pachuca,"Despacho Jurídico Empresarial Die, S.A. de C.V.",Privada,Pachuca de Soto,Hidalgo,Hemodiálisis,2026-03-31
+17,SiNaCEAM,SERME Unidad Tuxtepec,"Servicios Médicos y de Equipamiento, S.A. de C.V.",Privada,San Juan Bautista Tuxtepec,Oaxaca,Hemodiálisis,2026-03-31
+18,SiNaCEAM,Centro Estatal del Adulto Mayor,"Instituto de Servicios de Salud, Rehabilitación y Educación Especial e Integral del Estado de Coahuila",Pública,Saltillo,Coahuila,Hospital,2026-03-31
+19,SiNaCEAM,Hospital Escandón,"Fundación María Ana Mier de Escandón, I.A.P.",Privada,Miguel Hidalgo,Ciudad de México,Hospital,2026-03-31
+20,SiNaCEAM,Hospital Siena,"Diagnóstico Integral y Medicina Moderna, S.A. de C.V.",Privada,León,Guanajuato,Hospital,2026-03-31
+21,SiNaCEAM,Hospital Lomas Providencia,"Lomas Providencia Unidad Médica, S.A. de C.V.",Privada,Guadalajara,Jalisco,Hospital,2026-03-31
+22,SiNaCEAM,Hospital Ángeles Puebla,"Operadora de Hospitales Ángeles, S.A. de C.V.",Privada,Puebla,Puebla,Hospital,2026-03-31
+23,SiNaCEAM,Clínica Costamed,"Centro Médico de Cozumel, S.A. de C.V.",Privada,Solidaridad (Playa del Carmen),Quintana Roo,Hospital,2026-03-31
+24,SiNaCEAM,Hospital No. 14 Matehuala,IMSS BIENESTAR,Pública,Matehuala,San Luis Potosí,Hospital,2026-03-31
+25,MUEC,Centro de la Columna Vertebral Puebla,"Sojasa Puebla, S. C.",Privado,Puebla,Puebla,Ambulatorio,2026-08-29
+26,MUEC,Clínica de Hemodiálisis SERME Texcoco,Servicios Médicos y de Equipamiento S.A. de C.V.,Privado,Texcoco de Mora,Estado de México,Ambulatorio,2026-08-29
+27,MUEC,Clínica de Hemodiálisis SERME Metepec,Servicios Médicos y de Equipamiento S.A. de C.V.,Privado,Metepec,Estado de México,Ambulatorio,2026-08-29
+28,MUEC,Clínica de Hemodiálisis SERME Zumpango,Servicios Médicos y de Equipamiento S.A. de C.V.,Privado,Zumpango de Ocampo,Estado de México,Ambulatorio,2026-08-29
+29,MUEC,Plan de Vigas,Instituto de Salud del Estado de México,Público,Almoloya de Alquisiras,Estado de México,Ambulatorio,2026-08-29
+30,MUEC,Col. Darío Martínez,Instituto de Salud del Estado de México,Público,Valle de Chalco Solidaridad,Estado de México,Ambulatorio,2026-08-29
+31,MUEC,SENETO Nefrología - Sucursal Metepec,"Servicios Especializados en Nefrología Toluca, S.C.",Privado,Metepec,Estado de México,Ambulatorio,2026-08-29
+32,MUEC,Unidad de Medicina Familiar No. 34,Instituto Mexicano del Seguro Social,Público,Guadalajara,Jalisco,Ambulatorio,2026-08-29
+33,MUEC,La Erre UMAPS,Instituto de Salud Pública del Estado de Guanajuato,Público,Dolores Hidalgo,Guanajuato,Ambulatorio,2026-08-29
+34,MUEC,CAISES Benito Juárez,Instituto de Salud Pública del Estado de Guanajuato,Público,Irapuato,Guanajuato,Ambulatorio,2026-08-29
+35,MUEC,San Andrés del Cubo - UMAPS,Instituto de Salud Pública del Estado de Guanajuato,Público,San Felipe,Guanajuato,Ambulatorio,2026-08-29
+36,MUEC,CAISES Apaseo el Grande,Instituto de Salud Pública del Estado de Guanajuato,Público,Apaseo el Grande,Guanajuato,Ambulatorio,2026-08-29
+37,MUEC,Clínica de Hemodiálisis SERME Tehuacán,Servicios Médicos y de Equipamiento S.A. de C.V.,Privado,Tehuacán,Puebla,Ambulatorio,2026-08-29
+38,MUEC,Unidad de Medicina Familiar No. 18,Instituto Mexicano del Seguro Social,Público,Tijuana,Baja California,Ambulatorio,2026-08-29
+39,MUEC,Hospital Boutique Riobamba,Arquitectura y Proyectos Sustentables MZ S.A de C.V.,Privado,Gustavo A. Madero,Ciudad de México,Hospital,2026-08-29
+40,MUEC,Hospital San Patricio Especialidades Quirúrgicas,Clínica del Fracturado S.A. de C.V.,Privado,Benito Juárez,Ciudad de México,Hospital,2026-08-29
+41,MUEC,Centro Médico Dalinde,INTER HOSP S.A DE C.V.,Privado,Cuauhtémoc,Ciudad de México,Hospital,2026-08-29
+42,MUEC,Médica Sur,MÉDICA SUR S.A.B. DE C.V.,Privado,Tlalpan,Ciudad de México,Hospital,2026-08-29
+43,MUEC,"UMAE Hospital de Gineco-Obstetricia No. 4 ""Luis Castelazo Ayala""",Instituto Mexicano del Seguro Social,Público,Álvaro Obregón,Ciudad de México,Hospital,2026-08-29

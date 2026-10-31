@@ -7,6 +7,7 @@ import MedicalDisclaimer from '@/components/MedicalDisclaimer';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
+import { JourneyRail, JourneyNext } from '@/components/destinations/JourneyRail';
 export const metadata: Metadata = {
   title: { absolute: 'Is Stem Cell Therapy in Mexico Safe? Risks & Red Flags' },
   alternates: { canonical: 'https://vitalityscout.com/guides/is-stem-cell-therapy-in-mexico-safe' },
@@ -149,6 +150,7 @@ export default function IsStemCellTherapyInMexicoSafe() {
             </span>
           </div>
 
+          <div className="mb-4"><JourneyRail currentPath="/guides/is-stem-cell-therapy-in-mexico-safe" /></div>
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
             Is Stem Cell Therapy in Mexico Safe?
           </h1>
@@ -501,6 +503,7 @@ export default function IsStemCellTherapyInMexicoSafe() {
       </section>
 
       {/* Medical + affiliate disclosure */}
+      <div className="mx-auto max-w-5xl px-4 pb-8"><JourneyNext currentPath="/guides/is-stem-cell-therapy-in-mexico-safe" /></div>
       <MedicalDisclaimer />
 
       <div className="mx-auto max-w-4xl px-4 py-8">

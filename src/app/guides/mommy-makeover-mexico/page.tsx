@@ -4,8 +4,9 @@ import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
 import type { Metadata } from 'next';
 
+import { JourneyRail, JourneyNext } from '@/components/destinations/JourneyRail';
 export const metadata: Metadata = {
-  title: { absolute: 'Mommy Makeover in Mexico: Complete Cost & Safety Guide (2025)' },
+  title: { absolute: 'Mommy Makeover in Mexico: Complete Cost & Safety Guide' },
   alternates: { canonical: 'https://vitalityscout.com/guides/mommy-makeover-mexico' },
   description: 'Mommy makeover surgery in Mexico: costs ($5,500-14,000 vs $20,000+ in US), what\'s included, choosing a surgeon, recovery, and everything you need to know.',
   keywords: ['mommy makeover Mexico', 'mommy makeover Tijuana', 'tummy tuck Mexico', 'breast lift Mexico', 'plastic surgery Mexico', 'mommy makeover cost'],
@@ -56,6 +57,7 @@ export default function MommyMakeoverMexicoGuide() {
               <span className="mx-2">→</span>
               <span className="text-gray-900">Mommy Makeover Mexico</span>
             </nav>
+            <div className="mx-auto max-w-5xl px-4 pt-4"><JourneyRail currentPath="/guides/mommy-makeover-mexico" /></div>
           </div>
         </div>
 
@@ -510,6 +512,7 @@ export default function MommyMakeoverMexicoGuide() {
         </article>
       </main>
       </SidebarShell>
+      <div className="mx-auto max-w-5xl px-4 pb-8"><JourneyNext currentPath="/guides/mommy-makeover-mexico" /></div>
       <Footer />
     </>
   );

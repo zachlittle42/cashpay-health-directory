@@ -102,7 +102,7 @@ export default function DirectoryPage({ params }: { params: { destination: strin
       <section className="bg-gray-50 px-4 py-10">
         <div className="mx-auto max-w-5xl">
           <h2 className="text-2xl font-bold text-gray-900">By {config.regionNoun}</h2>
-          <p className="mt-1 text-sm text-gray-600">{regions.length} {config.regionNoun === 'province' ? 'provinces' : 'regions'} have at least one listed facility. Open one to see every facility there, grouped by district.</p>
+          <p className="mt-1 text-sm text-gray-600">{regions.length} {`${config.regionNoun}s`} have at least one listed facility. Open one to see every facility there, grouped by district.</p>
           <ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {regions.map((r) => (
               <li key={r.regionSlug} className="rounded-xl border border-gray-200 bg-white p-4">

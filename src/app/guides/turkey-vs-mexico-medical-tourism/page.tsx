@@ -28,7 +28,7 @@ export default function TurkeyVsMexicoMedicalTourism() {
     <main className="min-h-screen bg-white">
       <Navigation />
       <SidebarShell>
-            <JourneyRail currentPath="/guides/turkey-vs-mexico-medical-tourism" />
+            <JourneyRail currentPath="/guides/turkey-vs-mexico-medical-tourism" destinationSlug="turkey" />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <header className="border-b border-gray-200 px-4 py-4">
         <div className="mx-auto max-w-4xl">
@@ -402,7 +402,7 @@ export default function TurkeyVsMexicoMedicalTourism() {
         </div>
       </article>
 
-        <JourneyNext currentPath="/guides/turkey-vs-mexico-medical-tourism" />
+        <JourneyNext currentPath="/guides/turkey-vs-mexico-medical-tourism" destinationSlug="turkey" />
 
       </SidebarShell>
       <footer className="border-t border-gray-200 px-4 py-8">

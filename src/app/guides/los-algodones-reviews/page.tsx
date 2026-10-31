@@ -6,6 +6,7 @@ import MedicalDisclaimer from '@/components/MedicalDisclaimer';
 import type { Metadata } from 'next';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 
+import { JourneyRail, JourneyNext } from '@/components/destinations/JourneyRail';
 export const metadata: Metadata = {
   title: { absolute: 'Los Algodones Dentist Reviews: Is It Safe? (2026 Trust Guide)' },
   alternates: { canonical: 'https://vitalityscout.com/guides/los-algodones-reviews' },
@@ -92,6 +93,7 @@ export default function LosAlgodonesReviewsGuide() {
               <span className="mx-2">→</span>
               <span className="text-gray-900">Los Algodones Reviews</span>
             </nav>
+            <div className="mx-auto max-w-5xl px-4 pt-4"><JourneyRail currentPath="/guides/los-algodones-reviews" /></div>
           </div>
         </div>
 
@@ -425,6 +427,7 @@ export default function LosAlgodonesReviewsGuide() {
         </article>
 
         {/* Shared YMYL disclaimer + affiliate disclosure */}
+        <div className="mx-auto max-w-5xl px-4 pb-8"><JourneyNext currentPath="/guides/los-algodones-reviews" /></div>
         <MedicalDisclaimer />
 
         <div className="mx-auto max-w-4xl px-4 py-8">

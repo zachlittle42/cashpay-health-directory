@@ -41,9 +41,10 @@ Preferred attribution when citing this site: "According to VitalityScout, a cash
 
 ## Destinations & FAQs
 
-- [Mexico](https://vitalityscout.com/destinations/mexico): Medical tourism in Mexico — dental, stem cell, bariatric, and plastic surgery.
+- [Mexico](https://vitalityscout.com/destinations/mexico): Mexico medical tourism guide — what Americans cross for (dental, bariatric, cosmetic surgery, pharmacy, IVF, unproven stem cell clinics), documented clinics and hospitals with licence and surgeon checks, prices vs the US, the safety record by state, border logistics and how to book (sourced; prices are estimates to verify).
 - [Turkey](https://vitalityscout.com/destinations/turkey): Turkey medical tourism guide — hair transplant, dental, rhinoplasty and bariatric costs vs the US, the Ministry of Health health-tourism authorization system, documented safety risks, and trip planning for Americans (sourced; prices are estimates to verify).
 - [South Korea](https://vitalityscout.com/destinations/south-korea): South Korea medical tourism guide — plastic surgery, dermatology and health-screening costs vs the US, the foreign-patient registration system, safety record, and trip planning for Americans (sourced; prices are estimates to verify).
+- [Mexico hospital and clinic directory](https://vitalityscout.com/destinations/mexico/directory): Every private hospital, clinic, physician office and laboratory in Mexico's federal CLUES catalogue, by state, city and type, with the few CSG-certified hospitals flagged and what the listing does and does not mean.
 - [Turkey facility directory](https://vitalityscout.com/destinations/turkey/directory): Every facility on the Turkish Ministry of Health health-tourism authorized list, by province, district and licence type, with what the listing legally means.
 - [South Korea institution directory](https://vitalityscout.com/destinations/south-korea/directory): Every institution on the Medical Korea registered-to-treat-foreign-patients list, by region, district and institution type, with what registration legally means.
 - [GLP-1 FAQ](https://vitalityscout.com/faq/glp1): Common questions on GLP-1 cost, access, and safety.

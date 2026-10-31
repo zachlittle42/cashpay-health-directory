@@ -3,8 +3,9 @@ import Navigation from '@/components/Navigation';
 import SidebarShell from '@/components/SidebarShell';
 import type { Metadata } from 'next';
 
+import { JourneyRail, JourneyNext } from '@/components/destinations/JourneyRail';
 export const metadata: Metadata = {
-  title: { absolute: 'Mexico Dental Guide: Tijuana, Los Algodones, Cancun Costs (2024)' },
+  title: { absolute: 'Mexico Dental Guide: Tijuana, Los Algodones, Cancun Costs' },
   alternates: { canonical: 'https://vitalityscout.com/guides/mexico-dental-guide' },
   description: 'Complete guide to dental work in Mexico. Implants from $750, All-on-4 from $7,500. Compare Tijuana vs Los Algodones, find safe clinics, plan your trip.',
 };
@@ -44,6 +45,7 @@ export default function MexicoDentalGuide() {
               Dental Guide
             </span>
           </div>
+          <div className="mb-4"><JourneyRail currentPath="/guides/mexico-dental-guide" /></div>
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
             Mexico Dental Tourism: The Complete Guide
           </h1>
@@ -552,6 +554,7 @@ export default function MexicoDentalGuide() {
         </div>
       </article>
 
+      <div className="mx-auto max-w-5xl px-4 pb-8"><JourneyNext currentPath="/guides/mexico-dental-guide" /></div>
       </SidebarShell>
       <footer className="border-t border-gray-200 px-4 py-8">
         <div className="mx-auto max-w-4xl text-center">

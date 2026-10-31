@@ -5,6 +5,7 @@ import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
+import { JourneyRail, JourneyNext } from '@/components/destinations/JourneyRail';
 const URL = 'https://vitalityscout.com/guides/does-us-insurance-cover-dental-work-in-mexico';
 
 export const metadata: Metadata = {
@@ -74,6 +75,7 @@ export default function DoesUsInsuranceCoverDentalWorkInMexicoPage() {
           </div>
         </nav>
 
+        <div className="mx-auto max-w-5xl px-4 pt-4"><JourneyRail currentPath="/guides/does-us-insurance-cover-dental-work-in-mexico" /></div>
         <section className="bg-gradient-to-b from-blue-50 to-white px-4 py-10">
           <div className="mx-auto max-w-4xl">
             <div className="mb-3">
@@ -315,6 +317,7 @@ export default function DoesUsInsuranceCoverDentalWorkInMexicoPage() {
           </div>
         </article>
       </SidebarShell>
+      <div className="mx-auto max-w-5xl px-4 pb-8"><JourneyNext currentPath="/guides/does-us-insurance-cover-dental-work-in-mexico" /></div>
       <Footer />
     </main>
   );
