@@ -56,7 +56,7 @@ export default function SearchPage({ params, searchParams }: { params: { destina
             <RegistryRows registry={reg} rows={rows} listId="rows" profiled={profiled} />
           ) : (
             <p className="text-sm text-gray-600">
-              Browse instead: <Link href={base} className="font-medium text-purple-700 hover:underline">all {config.regionNoun === 'province' ? 'provinces' : 'regions'}</Link>, or read <Link href={config.verifyGuideHref} className="font-medium text-purple-700 hover:underline">how to verify a clinic</Link>.
+              Browse instead: <Link href={base} className="font-medium text-purple-700 hover:underline">all {`${config.regionNoun}s`}</Link>, or read <Link href={config.verifyGuideHref} className="font-medium text-purple-700 hover:underline">how to verify a clinic</Link>.
             </p>
           )}
         </div>
