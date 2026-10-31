@@ -4,8 +4,9 @@ import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
 import type { Metadata } from 'next';
 
+import { JourneyRail, JourneyNext } from '@/components/destinations/JourneyRail';
 export const metadata: Metadata = {
-  title: { absolute: 'All-on-4 Dental Implants in Mexico: Complete Guide (2025)' },
+  title: { absolute: 'All-on-4 Dental Implants in Mexico: Complete Guide' },
   alternates: { canonical: 'https://vitalityscout.com/guides/all-on-4-dental-implants-mexico' },
   description: 'Everything you need to know about All-on-4 dental implants in Mexico: costs ($8,000-12,000 vs $20,000+ in US), top clinics, what to expect, and how to plan your trip.',
   keywords: ['All-on-4 dental implants Mexico', 'full mouth dental implants Mexico', 'dental implants Tijuana', 'dental implants Cancun', 'dental tourism Mexico', 'All-on-4 cost'],
@@ -56,6 +57,7 @@ export default function AllOn4MexicoGuide() {
               <span className="mx-2">→</span>
               <span className="text-gray-900">All-on-4 Mexico</span>
             </nav>
+            <div className="mx-auto max-w-5xl px-4 pt-4"><JourneyRail currentPath="/guides/all-on-4-dental-implants-mexico" /></div>
           </div>
         </div>
 
@@ -534,6 +536,7 @@ export default function AllOn4MexicoGuide() {
         </article>
       </main>
       </SidebarShell>
+      <div className="mx-auto max-w-5xl px-4 pb-8"><JourneyNext currentPath="/guides/all-on-4-dental-implants-mexico" /></div>
       <Footer />
     </>
   );

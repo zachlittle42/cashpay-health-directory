@@ -140,6 +140,7 @@ export function RegistryRows({
                       <p className="text-xs text-gray-500">{r.typeLabel}</p>
                     </div>
                     <p className="mt-0.5 text-gray-600">{r.address}{r.phone ? ` · ${r.phone}` : ''}</p>
+                    {r.note && <span className="mt-1 mr-2 inline-flex items-center rounded-full border border-green-200 bg-green-50 px-2 py-0.5 text-xs font-medium text-green-800">{r.note}</span>}
                     {profile && (
                       <Link href={`${hubHref}#${clinicAnchor(profile)}`} className="mt-1 inline-flex items-center gap-1 rounded-full bg-purple-50 px-2 py-0.5 text-xs font-medium text-purple-800 hover:underline">
                         Researched profile: {profile}

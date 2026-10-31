@@ -3,8 +3,9 @@ import Navigation from '@/components/Navigation';
 import SidebarShell from '@/components/SidebarShell';
 import type { Metadata } from 'next';
 
+import { JourneyRail, JourneyNext } from '@/components/destinations/JourneyRail';
 export const metadata: Metadata = {
-  title: { absolute: 'Mexico vs Costa Rica for Dental Work: Which Is Better? (2024)' },
+  title: { absolute: 'Mexico vs Costa Rica for Dental Work: Which Is Better?' },
   alternates: { canonical: 'https://vitalityscout.com/guides/mexico-vs-costa-rica-dental' },
   description: 'Honest comparison of dental tourism in Mexico vs Costa Rica. Costs, quality, safety, convenience. Which is right for your dental work?',
 };
@@ -46,6 +47,7 @@ export default function MexicoVsCostaRicaDental() {
               Comparison
             </span>
           </div>
+          <div className="mb-4"><JourneyRail currentPath="/guides/mexico-vs-costa-rica-dental" /></div>
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
             Mexico vs Costa Rica for Dental Work
           </h1>
@@ -271,6 +273,7 @@ export default function MexicoVsCostaRicaDental() {
         </div>
       </article>
 
+      <div className="mx-auto max-w-5xl px-4 pb-8"><JourneyNext currentPath="/guides/mexico-vs-costa-rica-dental" /></div>
       </SidebarShell>
       <footer className="border-t border-gray-200 px-4 py-8">
         <div className="mx-auto max-w-4xl text-center">

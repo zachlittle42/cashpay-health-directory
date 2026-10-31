@@ -6,6 +6,7 @@ import MedicalDisclaimer from '@/components/MedicalDisclaimer';
 import type { Metadata } from 'next';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 
+import { JourneyRail, JourneyNext } from '@/components/destinations/JourneyRail';
 export const metadata: Metadata = {
   title: { absolute: 'Stem Cell Therapy for Knees Abroad: Cost, Mexico & What to Know (2026)' },
   alternates: { canonical: 'https://vitalityscout.com/guides/stem-cell-knees-mexico' },
@@ -91,6 +92,7 @@ export default function StemCellKneesMexicoGuide() {
               <span className="mx-2">→</span>
               <span className="text-gray-900">Stem Cells for Knees Abroad</span>
             </nav>
+            <div className="mx-auto max-w-5xl px-4 pt-4"><JourneyRail currentPath="/guides/stem-cell-knees-mexico" /></div>
           </div>
         </div>
 
@@ -382,6 +384,7 @@ export default function StemCellKneesMexicoGuide() {
         </article>
 
         {/* Shared YMYL disclaimer + affiliate disclosure */}
+        <div className="mx-auto max-w-5xl px-4 pb-8"><JourneyNext currentPath="/guides/stem-cell-knees-mexico" /></div>
         <MedicalDisclaimer />
 
         <div className="mx-auto max-w-4xl px-4 py-8">

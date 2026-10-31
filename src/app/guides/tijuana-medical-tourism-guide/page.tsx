@@ -6,6 +6,7 @@ import Footer from '@/components/Footer';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
+import { JourneyRail, JourneyNext } from '@/components/destinations/JourneyRail';
 export const metadata: Metadata = {
   title: { absolute: 'Tijuana Medical Tourism: Dental, Bariatric & Stem Cell Guide' },
   alternates: { canonical: 'https://vitalityscout.com/guides/tijuana-medical-tourism-guide' },
@@ -118,6 +119,7 @@ export default function TijuanaMedicalTourismGuide() {
             <span className="mx-2">→</span>
             <span className="text-gray-900">Tijuana Guide</span>
           </nav>
+          <div className="mx-auto max-w-5xl px-4 pt-4"><JourneyRail currentPath="/guides/tijuana-medical-tourism-guide" /></div>
         </div>
       </div>
 
@@ -596,6 +598,7 @@ export default function TijuanaMedicalTourismGuide() {
       </div>
 
       </SidebarShell>
+      <div className="mx-auto max-w-5xl px-4 pb-8"><JourneyNext currentPath="/guides/tijuana-medical-tourism-guide" /></div>
       <Footer />
     </main>
   );

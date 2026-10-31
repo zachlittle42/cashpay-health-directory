@@ -9,6 +9,7 @@
 
 import turkey from '@/data/registries/turkey.json';
 import korea from '@/data/registries/south-korea.json';
+import mexico from '@/data/registries/mexico.json';
 import { DOSSIERS } from '@/lib/destinations/dossiers';
 
 export interface RegistryRow {
@@ -24,6 +25,8 @@ export interface RegistryRow {
   phone: string;
   website?: string;
   email?: string;
+  /** Short official flag shown as a badge, e.g. "CSG certificate valid to 2028-11-23". */
+  note?: string;
 }
 
 export interface RegistryMeta {
@@ -120,9 +123,36 @@ const KOREA_CONFIG: RegistryConfig = {
   sourceId: 'medkorea-portal',
 };
 
+
+const MEXICO_CONFIG: RegistryConfig = {
+  slug: 'mexico',
+  displayName: 'Mexico',
+  listName: 'federal CLUES catalogue of private health establishments',
+  regulator: 'Dirección General de Información en Salud (DGIS), Secretaría de Salud',
+  regionNoun: 'state',
+  means:
+    'The establishment holds a CLUES code, the federal identifier every health facility in Mexico is assigned, and the state health services report it as a private-sector unit in operation of the type shown: an inpatient hospital, an outpatient clinic, a physician office, a laboratory or a regenerative-medicine unit. The type matters: only an inpatient hospital is registered to keep you overnight.',
+  doesNotMean:
+    'A CLUES entry is not a licence check and not a quality mark. Most dental offices and many cosmetic "clinics" are absent because they operate on a COFEPRIS notice without inpatient beds (Los Algodones, with hundreds of dental clinics, has one entry). A listed hospital may hold no current Consejo de Salubridad General certificate; only 15 establishments nationwide did as of September 1, 2026, and those are flagged here.',
+  lookup: { label: 'DGIS CLUES catalogue (monthly Excel download, Spanish)', url: 'http://www.dgis.salud.gob.mx/contenidos/intercambio/clues_gobmx.html' },
+  verifyGuideHref: '/guides/is-stem-cell-therapy-in-mexico-safe',
+  categories: [
+    { slug: 'hospital', label: 'Hospitals (inpatient)', blurb: 'Private establishments registered to admit patients overnight. Surgery under general anesthesia for a visitor should happen here, not in an office suite.' },
+    { slug: 'clinic', label: 'Clinics (outpatient)', blurb: 'Multi-physician outpatient units without registered inpatient beds.' },
+    { slug: 'physician-office', label: 'Private physician offices', blurb: 'Single-physician consulting rooms (consultorio particular) that report a CLUES; most do not.' },
+    { slug: 'outpatient-other', label: 'Other outpatient units', blurb: 'Outpatient establishments whose type the state did not specify, including some imaging and specialty centers.' },
+    { slug: 'laboratory', label: 'Laboratories', blurb: 'Clinical laboratories.' },
+    { slug: 'regenerative', label: 'Regenerative-medicine units and stem-cell banks', blurb: 'The only CLUES types that correspond to stem-cell activity. A COFEPRIS licence to bank cells is not approval of any treatment, and none of these therapies is FDA-approved.' },
+  ],
+  splitAbove: 300,
+  districtSplitAbove: 400,
+  sourceId: 'clues-catalog',
+};
+
 const REGISTRIES: Record<string, Registry> = {
   turkey: { config: TURKEY_CONFIG, meta: turkey.meta as RegistryMeta, rows: turkey.rows as RegistryRow[] },
   'south-korea': { config: KOREA_CONFIG, meta: korea.meta as RegistryMeta, rows: korea.rows as RegistryRow[] },
+  mexico: { config: MEXICO_CONFIG, meta: mexico.meta as RegistryMeta, rows: mexico.rows as RegistryRow[] },
 };
 
 export const REGISTRY_SLUGS = Object.keys(REGISTRIES);

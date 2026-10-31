@@ -9,6 +9,7 @@ import { buildFAQSchema } from '@/lib/jsonLd';
 import { formatAsOfMonth } from '@/lib/pricing';
 import { getDestinationStat, getDestinationAsOf, clinicIdsInCluster, fmtUsd } from '@/lib/destination-pricing';
 
+import { JourneyRail, JourneyNext } from '@/components/destinations/JourneyRail';
 const URL = 'https://vitalityscout.com/guides/mexico-bariatric-surgery-prices';
 const CLUSTER = 'mexico-bariatric';
 
@@ -86,6 +87,7 @@ export default function MexicoBariatricSurgeryPricesPage() {
           </div>
         </nav>
 
+        <div className="mx-auto max-w-5xl px-4 pt-4"><JourneyRail currentPath="/guides/mexico-bariatric-surgery-prices" /></div>
         <section className="bg-gradient-to-b from-emerald-50 to-white px-4 py-10">
           <div className="mx-auto max-w-4xl">
             <div className="mb-3 flex items-center gap-3">
@@ -231,6 +233,7 @@ export default function MexicoBariatricSurgeryPricesPage() {
           </div>
         </article>
       </SidebarShell>
+      <div className="mx-auto max-w-5xl px-4 pb-8"><JourneyNext currentPath="/guides/mexico-bariatric-surgery-prices" /></div>
       <Footer />
     </main>
   );

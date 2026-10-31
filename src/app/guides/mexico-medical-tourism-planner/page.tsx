@@ -3,8 +3,9 @@ import Navigation from '@/components/Navigation';
 import SidebarShell from '@/components/SidebarShell';
 import type { Metadata } from 'next';
 
+import { JourneyRail, JourneyNext } from '@/components/destinations/JourneyRail';
 export const metadata: Metadata = {
-  title: { absolute: 'Mexico Medical Tourism: Complete Trip Planning Guide (2024)' },
+  title: { absolute: 'Mexico Medical Tourism: Complete Trip Planning Guide' },
   alternates: { canonical: 'https://vitalityscout.com/guides/mexico-medical-tourism-planner' },
   description: 'Step-by-step guide to planning medical tourism in Mexico. Border crossing, Tijuana vs Los Algodones, what to pack, and trip timeline.',
 };
@@ -43,6 +44,7 @@ export default function MexicoTripPlanner() {
               Trip Planning Guide
             </span>
           </div>
+          <div className="mb-4"><JourneyRail currentPath="/guides/mexico-medical-tourism-planner" /></div>
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
             Planning Your Medical Trip to Mexico
           </h1>
@@ -502,6 +504,7 @@ export default function MexicoTripPlanner() {
         </div>
       </article>
 
+      <div className="mx-auto max-w-5xl px-4 pb-8"><JourneyNext currentPath="/guides/mexico-medical-tourism-planner" /></div>
       </SidebarShell>
       <footer className="border-t border-gray-200 px-4 py-8">
         <div className="mx-auto max-w-4xl text-center">

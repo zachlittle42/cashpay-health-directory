@@ -4,8 +4,9 @@ import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
 import type { Metadata } from 'next';
 
+import { JourneyRail, JourneyNext } from '@/components/destinations/JourneyRail';
 export const metadata: Metadata = {
-  title: { absolute: 'Los Algodones Dental Guide: Complete 2025 Trip Planner' },
+  title: { absolute: 'Los Algodones Dental Guide: Complete Trip Planner' },
   alternates: { canonical: 'https://vitalityscout.com/guides/los-algodones-dental-guide' },
   description: 'Complete Los Algodones dental tourism guide. 350+ clinics, 50-70% savings, how to choose a dentist, border crossing, and trip planning for "Molar City."',
   keywords: ['Los Algodones dental', 'Molar City', 'Mexico dental tourism', 'Los Algodones dentist', 'cheap dental work Mexico', 'dental implants Mexico', 'dental crowns Mexico'],
@@ -56,6 +57,7 @@ export default function LosAlgodonesGuide() {
               <span className="mx-2">→</span>
               <span className="text-gray-900">Los Algodones Dental Guide</span>
             </nav>
+            <div className="mx-auto max-w-5xl px-4 pt-4"><JourneyRail currentPath="/guides/los-algodones-dental-guide" /></div>
           </div>
         </div>
 
@@ -528,6 +530,7 @@ export default function LosAlgodonesGuide() {
         </article>
       </main>
       </SidebarShell>
+      <div className="mx-auto max-w-5xl px-4 pb-8"><JourneyNext currentPath="/guides/los-algodones-dental-guide" /></div>
       <Footer />
     </>
   );

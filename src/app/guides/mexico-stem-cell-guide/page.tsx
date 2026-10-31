@@ -5,6 +5,7 @@ import Footer from '@/components/Footer';
 import type { Metadata } from 'next';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 
+import { JourneyRail, JourneyNext } from '@/components/destinations/JourneyRail';
 export const metadata: Metadata = {
   title: { absolute: 'Stem Cell Therapy in Mexico: Costs From $3,500 & Clinics' },
   alternates: { canonical: 'https://vitalityscout.com/guides/mexico-stem-cell-guide' },
@@ -40,6 +41,7 @@ export default function MexicoStemCellGuide() {
               <span className="mx-2">→</span>
               <span className="text-gray-900">Mexico Stem Cell Guide</span>
             </nav>
+            <div className="mx-auto max-w-5xl px-4 pt-4"><JourneyRail currentPath="/guides/mexico-stem-cell-guide" /></div>
           </div>
         </div>
 
@@ -539,6 +541,7 @@ export default function MexicoStemCellGuide() {
 
       </main>
       </SidebarShell>
+      <div className="mx-auto max-w-5xl px-4 pb-8"><JourneyNext currentPath="/guides/mexico-stem-cell-guide" /></div>
       <Footer />
     </>
   );

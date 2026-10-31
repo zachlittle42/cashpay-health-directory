@@ -8,6 +8,7 @@ import BrandCtaGrid from '@/components/BrandCtaGrid';
 import RelatedGuides from '@/components/RelatedGuides';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
+import { JourneyRail, JourneyNext } from '@/components/destinations/JourneyRail';
 const PAGE_URL = 'https://vitalityscout.com/guides/all-on-4-los-algodones-cost';
 const AS_OF = 'September 5, 2026';
 
@@ -148,6 +149,7 @@ export default function AllOn4LosAlgodonesCostPage() {
               <span className="mx-2">→</span>
               <span className="text-gray-900">All-on-4 Los Algodones Cost</span>
             </nav>
+            <div className="mx-auto max-w-5xl px-4 pt-4"><JourneyRail currentPath="/guides/all-on-4-los-algodones-cost" /></div>
           </div>
         </div>
 
@@ -397,6 +399,7 @@ export default function AllOn4LosAlgodonesCostPage() {
           </div>
         </article>
 
+        <div className="mx-auto max-w-5xl px-4 pb-8"><JourneyNext currentPath="/guides/all-on-4-los-algodones-cost" /></div>
         <RelatedGuides title="Related tourism cost guides" items={RELATED} />
 
         <div className="mx-auto max-w-4xl px-4 py-8">

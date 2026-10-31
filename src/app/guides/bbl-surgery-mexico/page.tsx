@@ -4,8 +4,9 @@ import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
 import type { Metadata } from 'next';
 
+import { JourneyRail, JourneyNext } from '@/components/destinations/JourneyRail';
 export const metadata: Metadata = {
-  title: { absolute: 'BBL Surgery in Mexico: Complete Safety & Cost Guide (2025)' },
+  title: { absolute: 'BBL Surgery in Mexico: Complete Safety & Cost Guide' },
   alternates: { canonical: 'https://vitalityscout.com/guides/bbl-surgery-mexico' },
   description: 'BBL Brazilian Butt Lift surgery in Mexico: costs ($3,500-7,000), safety data, mortality rates, choosing surgeons, and what you must know before traveling.',
   keywords: ['BBL Mexico', 'Brazilian Butt Lift Mexico', 'BBL surgery cost', 'BBL safety', 'BBL Tijuana', 'plastic surgery Mexico', 'BBL mortality rate'],
@@ -56,6 +57,7 @@ export default function BBLMexicoGuide() {
               <span className="mx-2">→</span>
               <span className="text-gray-900">BBL Surgery Mexico</span>
             </nav>
+            <div className="mx-auto max-w-5xl px-4 pt-4"><JourneyRail currentPath="/guides/bbl-surgery-mexico" /></div>
           </div>
         </div>
 
@@ -497,6 +499,7 @@ export default function BBLMexicoGuide() {
         </article>
       </main>
       </SidebarShell>
+      <div className="mx-auto max-w-5xl px-4 pb-8"><JourneyNext currentPath="/guides/bbl-surgery-mexico" /></div>
       <Footer />
     </>
   );

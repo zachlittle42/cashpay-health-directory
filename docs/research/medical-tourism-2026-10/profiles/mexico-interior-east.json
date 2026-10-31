@@ -1,0 +1,431 @@
+{
+  "clinics": [
+    {
+      "name": "Hospital Galenia",
+      "district": "Cancún (Supermanzana 12, Av. Tulum at Nizuc)",
+      "type": "hospital",
+      "url": "https://www.hospitalgalenia.com/turismo-medico",
+      "specialties": ["Oncology", "Cardiology and hemodynamics", "Neurology", "Orthopedics", "Maternity", "Adult, pediatric and neonatal ICU"],
+      "namedDoctors": "The site has a doctor directory with individual profiles; some list English as a spoken language. No surgeons or anesthesiologists are named on the medical-tourism page itself. Surgery takes place in the hospital's own operating rooms (quirófanos) with adult, pediatric and neonatal ICUs on site.",
+      "credentials": "CSG: the hospital displays the Consejo de Salubridad General 'Certificación de Establecimientos de Atención Médica' seal on its medical-tourism page; the CSG certified-establishment list at csg.gob.mx could not be opened on October 30, 2026 (page returned 404 or blank), so validity dates are unverified. JCI: claimed on the hospital site; the JCI directory blocked automated reading (HTTP 403) on October 30, 2026, so the claim is as stated by the hospital. Also claims Accreditation Canada International and the SECTUR 'Distintivo Turismo de Salud'. Member of Consorcio Mexicano de Hospitales and Asociación Nacional de Hospitales Privados (hospital site). Cash-pay patients can request complication insurance through a Novamar Insurance arrangement and financing through United Medical Credit (hospital site). Year founded not stated on the site.",
+      "cautions": "In August 2022 COFEPRIS closed the hospital's blood bank, saying it was operating without a sanitary licence and taking blood samples without meeting health criteria; the press report did not say whether it later reopened (galenia-press-poresto). No deaths, lawsuits or US agency notices naming the hospital were found in press searches.",
+      "publishedPrices": "Not published on its site. The medical-tourism page states procedures are paid out of pocket and lists insurers it bills (AXA, GNP, MetLife, Allianz, BUPA, AXA Assistance).",
+      "booking": {
+        "channels": "Medical tourism office (Dirección Comercial y Turismo Médico): phone +52 998 891 5200 ext. 632; email medicaltourism@hospitalgalenia.com; general line +52 998 891 5200 and info@hospitalgalenia.com; contact form on the medical-tourism page. No WhatsApp listed. Hours not stated.",
+        "consult": "Not published. The page offers only the form, phone and email. An estimate is requested by describing the procedure to the medical-tourism office; no document list or response time is stated.",
+        "languages": "Spanish and English site; individual doctors list English.",
+        "bookingUrl": "https://www.hospitalgalenia.com/turismo-medico"
+      },
+      "sourceIds": ["csg-list", "jci-directory", "cofepris", "galenia-site", "galenia-tourism", "galenia-press-poresto"]
+    },
+    {
+      "name": "Hospiten Cancún",
+      "district": "Cancún (Av. Bonampak 10, Supermanzana 10, Hotel Zone edge)",
+      "type": "hospital",
+      "url": "https://hospiten.com/en/hospitals/hospiten-cancun",
+      "specialties": ["General and digestive surgery", "Orthopedics and traumatology", "Cardiology and interventional cardiology", "Plastic and reconstructive surgery", "Gynecology and obstetrics", "Intensive care"],
+      "namedDoctors": "Not named on the international page. Hospiten Cancún is a 34-bed hospital with 10 ICU beds, 2 operating rooms, 18 consulting rooms and 8 emergency bays (hospital page). Surgery takes place in the hospital's own operating rooms.",
+      "credentials": "CSG: no CSG certification is claimed on the Cancún page; the CSG list at csg.gob.mx could not be opened on October 30, 2026. JCI: not claimed for Cancún. The page says the hospital follows international medical protocols; group-level EFQM, IDIS, AENOR and IQNet logos appear in the footer without stating they apply to Cancún. Hospiten is a Spanish hospital group (Tenerife) that bought three Amerimed hospitals in Puerto Vallarta, San José del Cabo and Cabo San Lucas in November 2014 (hospiten-amerimed-alimarket). Year the Cancún hospital opened is not stated.",
+      "publishedPrices": "Not published on its site. An imaging campaign mentions preferential rates without figures. An online payment portal is linked.",
+      "booking": {
+        "channels": "Phone +52 998 881 3700 (option 1 for appointments); email cancun@hospiten.com; appointments email cceecancun@hospiten.com; online appointment form and booking portal citaonline.hospiten.com. No WhatsApp listed. Hours not stated.",
+        "consult": "Not published. For insured patients the site asks for ID, insurance card, prior authorization and medical reports; cash-pay estimate process is not described. The group's services page says an interpreting service is available in several languages.",
+        "languages": "Spanish and English site; interpreting service stated at group level.",
+        "bookingUrl": "https://hospiten.com/en/hospitals/hospiten-cancun"
+      },
+      "sourceIds": ["csg-list", "jci-directory", "hospiten-cancun-site", "hospiten-amerimed-alimarket"]
+    },
+    {
+      "name": "Hospital Amerimed Cancún",
+      "district": "Cancún (Av. Tulum Sur 260, Supermanzana 7, Centro)",
+      "type": "hospital",
+      "url": "https://amerimedcancun.com/",
+      "specialties": ["Emergency medicine (24/7)", "Maternity", "General medical and surgical specialties", "Check-ups", "Physiotherapy (Therapik)"],
+      "namedDoctors": "Not named on the hospital site. The site says staff are bilingual and the hospital operates 24 hours. Surgery takes place in the hospital.",
+      "credentials": "CSG: no certification is claimed on the hospital site; the CSG list at csg.gob.mx could not be opened on October 30, 2026. JCI: not claimed on the site (a third-party directory shows JCI for Amerimed Cozumel, not Cancún; unverified). The site footer is dated 2021 and the hospital has no stated international-patient department. Amerimed sold its Pacific-coast hospitals to Hospiten in 2014 (hospiten-amerimed-alimarket); the Cancún hospital still operates under the Amerimed name. Year founded not stated on the site (a 2016 US news report said the chain was founded in 1996).",
+      "cautions": "In August 2016, Becker's Hospital Review, citing the Indianapolis Star, reported that the family of an Indiana tourist treated at Amerimed Cancún for blocked arteries said the hospital would not release her until most of a bill of about $53,000 was paid; a lawyer for the hospital said it never refuses to release a non-paying patient for financial reasons, and the US Consulate in Mérida said a hospital cannot legally stop a patient leaving over an unpaid bill (amerimed-press-beckers). Local Indianapolis coverage put the total demanded at about $111,000 and said the family still owed about $35,000 after leaving (amerimed-press-wrtv). Structural caveat for any Cancún emergency admission: US insurance and Medicaid are generally not accepted and large upfront payments were demanded in this case.",
+      "publishedPrices": "Maternity packages shown on the site as $21,000 for cesarean and $28,000 for vaginal delivery with the currency shown only as '$' (presumably MXN; not converted). No other prices published.",
+      "booking": {
+        "channels": "Phone +52 998 881 3400; email contacto@amerimedhospitals.com; no WhatsApp or international-patient line listed. Hours: hospital open 24/7.",
+        "consult": "Not published. The site has an insurers section but no estimate process for foreign cash-pay patients.",
+        "languages": "Bilingual staff stated (Spanish and English).",
+        "bookingUrl": "https://amerimedcancun.com/"
+      },
+      "sourceIds": ["csg-list", "jci-directory", "amerimed-site", "amerimed-press-beckers", "amerimed-press-wrtv", "hospiten-amerimed-alimarket"]
+    },
+    {
+      "name": "Médica Sur",
+      "district": "Mexico City (Tlalpan, Puente de Piedra 150, Toriello Guerra)",
+      "type": "hospital",
+      "url": "https://www.medicasur.com.mx/medicina-internacional/",
+      "specialties": ["Oncology and radiotherapy", "Cardiology and hemodynamics", "Neurology and neurosurgery", "Gastroenterology and hepatology", "Orthopedics", "Transplants"],
+      "namedDoctors": "Not named on the international page, which did not load content when read on October 30, 2026 (Spanish-language page showed only a loading message). Surgery takes place in the hospital's own facilities.",
+      "credentials": "CSG: the hospital states it has been certified by the Consejo de Salubridad General since 1998 (2023 annual report) and its homepage says since 2000; the CSG list at csg.gob.mx could not be opened on October 30, 2026, so current validity is unverified. JCI: the 2023 annual report states JCI accreditation since 2014 with re-accreditations in 2017, 2020 and 2023, valid for the 2023 to 2026 period; the JCI directory blocked automated reading (HTTP 403) on October 30, 2026. Member of the Mayo Clinic Care Network since 2013 (annual report). Publicly listed company on the Mexican Stock Exchange. Hospital bed count given as 143 in the 2023 report.",
+      "cautions": "A 2015 Mexican press report described a negligence lawsuit after a patient admitted for uterine fibroid surgery suffered seizures and severe brain damage; the hospital denied malpractice (medicasur-press-siglo-2015). No recent deaths, lawsuits or US agency notices naming the hospital were found in press searches. The international-medicine page did not load for automated reading, so contact details below are general lines.",
+      "publishedPrices": "Not published on its site. A 'Paquetes y promociones' section is linked but showed no amounts when read.",
+      "booking": {
+        "channels": "Switchboard +52 55 5424 7200; emergencies 800 999 8743 (Mexico); email contactanos@medicasur.org.mx; international-medicine page https://www.medicasur.com.mx/medicina-internacional/ (content did not load). No WhatsApp or dedicated international email found.",
+        "consult": "Not published. A job posting seen in search results describes an 'ejecutivo de medicina internacional' role that handles requests from foreign patients, but the process and documents required are not stated.",
+        "languages": "Site is in Spanish; English-language support not stated.",
+        "bookingUrl": "https://www.medicasur.com.mx/medicina-internacional/"
+      },
+      "sourceIds": ["csg-list", "jci-directory", "medicasur-site", "medicasur-annual-2023", "medicasur-press-siglo-2015"]
+    },
+    {
+      "name": "Centro Médico ABC (The American British Cowdray Medical Center)",
+      "district": "Mexico City (Campus Observatorio, Álvaro Obregón; Campus Santa Fe, Cuajimalpa)",
+      "type": "hospital",
+      "url": "https://centromedicoabc.com/en/international-patients/",
+      "specialties": ["Cancer Center", "Cardiovascular Center", "Neurology", "Orthopedics and traumatology", "Transplant", "Pediatrics"],
+      "namedDoctors": "Not named on the international page; the site has a doctor finder by specialty and campus. Surgery takes place in the hospital's own facilities at either campus.",
+      "credentials": "CSG: not mentioned on the pages read; a third-party directory snippet says the hospital holds CSG certification, unverified; the CSG list at csg.gob.mx could not be opened on October 30, 2026. JCI: the homepage shows a JCI logo without a year; a May 2021 press report said both campuses received JCI accreditation 'for the fifth year in a row' (abc-press-pulse-2021); the JCI directory blocked automated reading (HTTP 403) on October 30, 2026. The international page cites Magnet nursing recognition (stated as the first in Mexico) and quality marks for the clinical laboratory and food handling. Year founded not stated on the pages read.",
+      "cautions": "In November 2025 Mexican outlet Eje Central reported a civil lawsuit against three physicians linked to Centro Médico ABC (a bariatric surgeon, an endoscopist and an anesthesiologist) alleging skipped pre-operative studies, procedures performed partly outside authorized hospital facilities and inadequate anesthesia; the hospital and doctors had not commented at publication, and the report noted the hospital had declared its CONAMED complaint data confidential (abc-press-ejecentral-2025). The international-patient contact form showed a 'contact form not found' error when read.",
+      "publishedPrices": "Walk-in consultation (ConsultABC) MXN 900 including VAT, 8:00 to 20:00 daily, excluding medications (seen October 30, 2026). No procedure or package prices published. Interest-free installment promotions listed were marked valid until December 31, 2025.",
+      "booking": {
+        "channels": "Medical Tourism Advisor +52 55 5230 8034, Monday to Friday 9:00 to 17:00 and weekends 10:00 to 18:00 (Mexico City time); campus switchboards +52 55 5230 8000 (Observatorio) and +52 55 1103 1600 (Santa Fe); international-patient contact form asking for country of residence and insurance status. No WhatsApp or email for international patients listed.",
+        "consult": "Not published. The form asks for subject, country and whether you hold international or travel insurance; no document list, fee or response time stated.",
+        "languages": "English and Spanish site; staff languages not stated.",
+        "bookingUrl": "https://centromedicoabc.com/en/international-patients/"
+      },
+      "sourceIds": ["csg-list", "jci-directory", "abc-site", "abc-intl", "abc-press-pulse-2021", "abc-press-ejecentral-2025"]
+    },
+    {
+      "name": "TecSalud (Hospital Zambrano Hellion; Hospital San José closing)",
+      "district": "Monterrey (San Pedro Garza García, Av. Batallón de San Patricio 112)",
+      "type": "hospital",
+      "url": "https://tecsalud.mx/guide-for-patients",
+      "specialties": ["Cardiology (AHA chest pain center)", "Oncology", "Neurology", "Orthopedics", "Bariatric and metabolic surgery", "ECMO and critical care"],
+      "namedDoctors": "Not named on the international pages. Surgery takes place in Hospital Zambrano Hellion's own facilities. TecSalud is the health system of Tecnológico de Monterrey.",
+      "credentials": "CSG: not claimed on the pages read; the CSG list at csg.gob.mx could not be opened on October 30, 2026. JCI: a 2016 interview reported that the TecSalud hospitals obtained JCI accreditation in 2012 (tecsalud-press-mbn-2016); the current site pages read list AHA Comprehensive Chest Pain Center certification, ELSO recognition, Pathway to Excellence nursing, and laboratory programs (PACAL, LICON) but not JCI; the JCI directory blocked automated reading (HTTP 403) on October 30, 2026, so current JCI status is unverified. Clinical documentation and consent forms are available in English (tecsalud-guide).",
+      "cautions": "On October 17, 2025 TecSalud announced that Hospital San José in central Monterrey will close, with services consolidated at Hospital Zambrano Hellion over a gradual transition; patients booking 'Hospital San José' should confirm where care will be delivered (tecsalud-press-posta-2025). No deaths, lawsuits or US agency notices naming the hospitals were found in press searches.",
+      "publishedPrices": "Not published on its site.",
+      "booking": {
+        "channels": "Phone +52 81 8888 0000 (general); 'Pacientes Foráneos e Internacionales' section and pre-admission form on tecsalud.mx; no international email or WhatsApp listed on the pages read.",
+        "consult": "Not published. The patient guide refers out-of-town and international patients to the Patient Care Services Office; interpreters available on request. No estimate process, fee or deposit terms stated.",
+        "languages": "Spanish and English; interpreters on request (tecsalud-guide).",
+        "bookingUrl": "https://tecsalud.mx/guide-for-patients"
+      },
+      "sourceIds": ["csg-list", "jci-directory", "tecsalud-site", "tecsalud-guide", "tecsalud-press-mbn-2016", "tecsalud-press-posta-2025"]
+    },
+    {
+      "name": "CHRISTUS Muguerza Hospital Alta Especialidad",
+      "district": "Monterrey (Col. Obispado, Av. Hidalgo 2525)",
+      "type": "hospital",
+      "url": "https://christusmuguerza.com.mx/international-services",
+      "specialties": ["Cardiology", "Oncology", "Neurosurgery", "Orthopedics", "Transplants", "Bariatric surgery (at Hospital Sur)"],
+      "namedDoctors": "Not named on the international-services page. The group lists Monterrey hospitals Alta Especialidad, Conchita, Sur, Vidriera, San Nicolás and Clínica San Pedro, plus hospitals in Saltillo, Reynosa (Tamaulipas), Chihuahua, Puebla and Mérida (christus-intl). Surgery takes place in the group's own hospitals.",
+      "credentials": "CSG: the site says all its hospitals are certified by a government institution without naming the CSG or giving dates; the CSG list at csg.gob.mx could not be opened on October 30, 2026. JCI: the site states Alta Especialidad was the first hospital in Mexico to receive JCI accreditation (Gold Seal), year not given on the page; a third-party profile says since 2007; the JCI directory blocked automated reading (HTTP 403) on October 30, 2026, so current status is as claimed. CHRISTUS Muguerza is a joint venture with CHRISTUS Health (Texas). The Alta Especialidad hospital marked its 90th anniversary in 2024 per local press seen in search results.",
+      "cautions": "The group's Reynosa hospital is in Tamaulipas, a US State Department Level 4 'Do Not Travel' state (state-dept-mexico; state-dept-press-rmn). No deaths, lawsuits or US agency notices naming the Monterrey hospitals were found in press searches.",
+      "publishedPrices": "Not published on its site. The 2026 bariatric brochure for Hospital Sur quotes surgery 'starting at $7,500 USD' (see the separate bariatric profile).",
+      "booking": {
+        "channels": "International-services contact form (name, email, phone, hospital unit, message), answered by 'an expert'; switchboard +52 81 8399 3400; contact center +52 81 8399 3477 and +52 81 2409 2425 listed on press pages. No international email or WhatsApp listed.",
+        "consult": "Not published. The page says to contact the team for payment methods and terms; it accepts cards and has agreements with national and international insurers.",
+        "languages": "English pages available; staff languages not stated.",
+        "bookingUrl": "https://christusmuguerza.com.mx/international-services"
+      },
+      "sourceIds": ["csg-list", "jci-directory", "christus-intl", "christus-english", "state-dept-mexico", "state-dept-press-rmn"]
+    },
+    {
+      "name": "Hospital CMQ (City Center, Premiere and Riviera Nayarit)",
+      "district": "Puerto Vallarta (Basilio Badillo 365, Zona Romántica; Av. Francisco Villa 1749; Bucerías, Nayarit)",
+      "type": "hospital",
+      "url": "https://hospitalcmq.com/",
+      "specialties": ["Emergency medicine", "Cardiology (TAVI, ablation)", "Orthopedics", "General surgery", "Oncology", "ICU, NICU and ECMO"],
+      "namedDoctors": "Not named on the English site; it states more than 20 on-site specialists and bilingual staff. Surgery takes place in the hospitals' own operating rooms. Plastic surgeons such as Dr. Enrique Escalona state they operate at CMQ Basilio Badillo and CMQ Premiere (see separate profile).",
+      "credentials": "CSG: not claimed on the site; the CSG list at csg.gob.mx could not be opened on October 30, 2026. JCI: not claimed. Seals displayed: ELSO, Red Global de Hospitales Verdes y Saludables, Distintivo H, Punto Limpio, Distintivo M and Código Infarto. Founded 1982 (City Center hospital). The site states it bills US and Canadian insurance.",
+      "cautions": "A 2013 local report described the death of a Puerto Vallarta resident after a boating collision; relatives said CMQ withheld emergency care because a MXN 25,000 deposit could not be paid by card or cash, while the hospital said he was stabilized and transferred to the public Regional Hospital (cmq-press-pvangels-2013). No recent deaths, lawsuits or US agency notices naming CMQ were found in press searches. Jalisco is a US State Department Level 3 'Reconsider Travel' state (state-dept-press-rmn).",
+      "publishedPrices": "Not published on its site.",
+      "booking": {
+        "channels": "City Center +52 322 223 1919; Premiere +52 322 226 6500; Riviera Nayarit +52 329 298 0717; WhatsApp +52 322 147 0044 (site link). No email listed. Emergency rooms 24/7.",
+        "consult": "Not published. The site has insurance and billing pages but no estimate process for cash-pay foreigners.",
+        "languages": "English, Spanish and French site; bilingual staff stated.",
+        "bookingUrl": "https://hospitalcmq.com/"
+      },
+      "sourceIds": ["csg-list", "jci-directory", "cmq-site", "cmq-press-pvangels-2013", "state-dept-press-rmn"]
+    },
+    {
+      "name": "Endobariatric / Endohospital (Dr. Guillermo Alvarez)",
+      "district": "Piedras Negras, Coahuila (Abasolo 629, Colonia Centro; 8 blocks from the Eagle Pass, Texas border)",
+      "type": "clinic",
+      "url": "https://www.endobariatric.com/",
+      "specialties": ["Gastric sleeve (only procedure offered)", "Bariatric surgery"],
+      "namedDoctors": "Dr. Guillermo Alvarez, general and bariatric surgeon; the site states SRC Master Surgeon in Metabolic and Bariatric Surgery since 2012 and international membership of ASMBS, IFSO and SAGES. ASMBS lists him as an International Member practicing at Endobariatric and Endohospital in Piedras Negras, with residency and fellowship at CHRISTUS Muguerza Alta Especialidad (endo-asmbs). Surgical Review Corporation lists Endohospital as a Center of Excellence in Metabolic and Bariatric Surgery and Dr. Alvarez as a Surgeon of Excellence (endo-src). His cédula profesional and Mexican board (Consejo Mexicano de Cirugía General / CMCOEM) are not shown on the site. Anesthesiologist not named. Surgery takes place at Endohospital, a dedicated single-specialty facility; its CSG status is not stated.",
+      "credentials": "CSG: Endohospital does not claim CSG certification and the CSG list at csg.gob.mx could not be opened on October 30, 2026. COFEPRIS licence number: not shown on the site. SRC Center of Excellence accreditation seen on surgicalreview.org (endo-src). Cédula: not checked (SEP lookup site returned 404 / connection refused on October 30, 2026). The site states more than 20,000 sleeves performed and 4 to 5 surgeries per day (self-reported); experience figures on the site conflict (19 years vs 18+ years).",
+      "cautions": "On September 12, 2025 Mexican broadcaster N+ reported that Coahuila prosecutors opened an investigation into the death of a 50-year-old woman from Sabinas after bariatric surgery at an unnamed clinic in Piedras Negras; the report did not name the clinic or surgeon, and no source found links it to Endobariatric (endo-press-nmas-2025). Structural caveats: single-surgeon, single-procedure facility rather than a full hospital; ICU capability is not described on the site. Coahuila is a US State Department Level 2 state (state-dept-press-rmn).",
+      "publishedPrices": "Gastric sleeve regular price $8,900 USD, with a promotional price of $4,999 USD shown as a limited monthly offer and Klarna installments (seen October 30, 2026 on the homepage; the cost page returned 404). What the price includes is not stated on the pages read.",
+      "booking": {
+        "channels": "US toll-free 1-800-381-8115; clinic +52 878 141 0620; emails Brandi@endobariatric.com and Rosie@endobariatric.com; contact form at https://www.endobariatric.com/contact-us/; US mailing address PO Box 6529, Eagle Pass, TX 78853. Hours Monday to Friday 9:00 to 13:00 and 15:00 to 19:00, Saturday 9:00 to 13:00 (time zone not stated). No WhatsApp listed.",
+        "consult": "Free consultation offered; the team says it usually replies the same day and within 24 hours. Deposit and refund terms are not published on the pages read.",
+        "languages": "English-language site and US-based patient coordinators.",
+        "bookingUrl": "https://www.endobariatric.com/contact-us/"
+      },
+      "sourceIds": ["csg-list", "cofepris", "sep-cedula", "endo-site", "endo-contact", "endo-asmbs", "endo-src", "endo-press-nmas-2025", "state-dept-press-rmn"]
+    },
+    {
+      "name": "CHRISTUS Muguerza Hospital Sur bariatric program (Drs. Jerónimo Monterrubio and Alain García Hernández)",
+      "district": "Monterrey (Hospital Sur, about 25 minutes from Monterrey airport per the brochure)",
+      "type": "hospital",
+      "url": "https://christusmuguerza.com.mx/wp-content/uploads/2026/03/Bariactrics-CHRISTUSMUGUERZA-Sur-2026.pdf",
+      "specialties": ["Gastric sleeve", "Gastric bypass", "Remote pre-evaluation and follow-up for international patients"],
+      "namedDoctors": "Dr. Jerónimo Monterrubio, general and bariatric surgeon, stated certified by the Consejo Mexicano de Cirugía General, the Consejo Mexicano de Cirugía de la Obesidad y Enfermedades Metabólicas and CONACEM, and SRC Master Surgeon and Surgeon of Excellence; Dr. Alain García Hernández, general and bariatric surgeon, stated certified by the same two Mexican councils with fellowship training at Tecnológico de Monterrey (christus-bariatric-pdf). Cédula numbers are not shown. Anesthesiologist not named. Surgery takes place at CHRISTUS Muguerza Hospital Sur, which the brochure calls 'a certified hospital' without naming the certifier.",
+      "credentials": "CSG: the group says all its hospitals are government-certified without naming the CSG; the CSG list at csg.gob.mx could not be opened on October 30, 2026. JCI: claimed by the group for Alta Especialidad, not for Hospital Sur. Dr. Monterrubio appears on surgicalreview.org as an SRC designee (seen in search results, 2019). Cédula: not checked (SEP lookup unavailable on October 30, 2026).",
+      "publishedPrices": "Brochure dated March 2026: 'surgeries starting at $7,500 USD, depending on your evaluation and the recommended procedure'. Inclusions are not itemized; typical stay 5 to 7 days including pre-operative evaluation, surgery, recovery and initial follow-up.",
+      "booking": {
+        "channels": "Message or form via the international-services page https://christusmuguerza.com.mx/international-services; switchboard +52 81 8399 3400. The brochure promises a reply in under 24 hours. No direct email or WhatsApp printed in the brochure.",
+        "consult": "Remote review of medical history to determine candidacy, then a surgeon recommendation and a pre-travel test list; labs and final assessment on arrival. Fee, deposit and refund terms are not published.",
+        "languages": "English brochure; concierge team for international patients.",
+        "includes": "Not itemized. Concierge help with dates, transport, lodging and transfers; remote follow-up with surgeon and nutrition team after returning home.",
+        "bookingUrl": "https://christusmuguerza.com.mx/international-services"
+      },
+      "sourceIds": ["csg-list", "sep-cedula", "christus-bariatric-pdf", "christus-intl"]
+    },
+    {
+      "name": "Dr. Rodrigo Prieto Aldape Bariatric and Metabolic Surgery Center",
+      "district": "Guadalajara (address not published on sources read)",
+      "type": "clinic",
+      "specialties": ["Gastric sleeve", "Gastric bypass", "Revision bariatric surgery", "Anti-reflux surgery"],
+      "namedDoctors": "Dr. Rodrigo Prieto Aldape, gastrointestinal and bariatric surgeon; a marketplace listing states certification by the Mexican Board of General Surgery and CMCOEM (Colegio Mexicano de Cirugía para la Obesidad y Enfermedades Metabólicas) and a master's degree in medical sciences, and describes him as former chief of the bariatric unit at Hospital Civil de Guadalajara (prieto-bookimed). No own website was found, so cédula, board certificate numbers, the operating hospital and the anesthesiologist could not be confirmed. Facility and its CSG status: not stated.",
+      "credentials": "No clinic website found on October 30, 2026; all facts come from a marketplace listing supplied by the clinic. CSG: not applicable to a surgeon's practice; the hospital used is not named. COFEPRIS licence: not shown. Cédula: not checked (SEP lookup unavailable on October 30, 2026). CMCOEM membership as claimed, not verified against the college.",
+      "cautions": "Structural caveat: profile rests on marketplace self-description with no verifiable own site, hospital name or licence; experience figures across listings conflict (17, 18 and 21 years). Jalisco is a US State Department Level 3 'Reconsider Travel' state (state-dept-press-rmn).",
+      "publishedPrices": "Not published on its own site (none found). Marketplace range (indicative): laparoscopic gastric sleeve package $6,100 USD on Bookimed, listed as including accommodation and transfer, prices last updated March 29, 2025.",
+      "booking": {
+        "channels": "Only through the Bookimed marketplace listing (free consultation request, WhatsApp/Telegram via the platform). No direct phone, email or WhatsApp found.",
+        "consult": "Not published. Bookimed assigns a coordinator and provides a cost estimate; deposit stated as not required on the platform.",
+        "languages": "English and Spanish (marketplace listing)."
+      },
+      "sourceIds": ["csg-list", "sep-cedula", "prieto-bookimed", "state-dept-press-rmn"]
+    },
+    {
+      "name": "Cancun Plastic Surgery (Dr. Rafael Velasco Marín)",
+      "district": "Cancún (surgery at Hospital Joya, Hotel Zone km 13)",
+      "type": "clinic",
+      "url": "https://cancunplasticsurgery.com/",
+      "specialties": ["Breast augmentation", "Mommy makeover", "Liposculpture", "Facial procedures"],
+      "namedDoctors": "Dr. Rafael Velasco Marín, described on the site as a specialist in general and plastic surgery and member of the Mexican Association of Plastic Surgery (AMCPER); no cédula number or CMCPER board certificate is shown on the site, though a marketplace listing describes him as board certified (cps-whatclinic). Anesthesiologist not named. The site says he operates exclusively at Hospital Joya Cancún, a private hospital in the Hotel Zone; Joya's CSG status was not found in searches.",
+      "credentials": "CMCPER directory: cmcper.org blocked automated reading (HTTP 403) on October 30, 2026, so board status is unverified. Cédula: not checked (SEP lookup unavailable). CSG: applies to the hospital, not the practice; Hospital Joya Cancún does not appear to claim CSG or JCI in sources found. The site says clinical updates and nursing care are managed natively in English. Year founded not stated; the site cites more than 30 years of experience.",
+      "cautions": "Site statements are inconsistent on facility: 'operates exclusively at Hospital Joya' versus 'partners with leading hospitals and clinics'. No deaths, lawsuits or regulator actions naming the surgeon or practice were found in press searches.",
+      "publishedPrices": "On its site, seen October 30, 2026: minor facial procedures from $2,853 USD; full mommy makeover from $16,653 USD; liposculpture pricing behind a link. Marketplace range (indicative): consultation $57 to $86 USD and breast implants from $6,087 USD on WhatClinic.",
+      "booking": {
+        "channels": "Phone +52 998 411 3730; WhatsApp chat button on the site; online consultation form (name and email required); email obfuscated on the page. Hours not stated.",
+        "consult": "Free virtual consultation; no photo or history requirements stated; deposit terms not published.",
+        "languages": "English (default) and Spanish.",
+        "bookingUrl": "https://cancunplasticsurgery.com/"
+      },
+      "sourceIds": ["cmcper-dir", "sep-cedula", "csg-list", "cps-site", "cps-whatclinic"]
+    },
+    {
+      "name": "Dr. Enrique Escalona, plastic surgeon",
+      "district": "Puerto Vallarta (operates at Hospital CMQ Basilio Badillo 365, CMQ Premiere Av. Francisco Villa 1749, and Punta Mita Hospital)",
+      "type": "clinic",
+      "specialties": ["Facelift and eyelid surgery", "Gynecomastia surgery", "Body contouring", "Injectables"],
+      "namedDoctors": "Dr. Enrique Escalona, described in a September 2024 sponsored-style article as a bilingual, board-certified plastic surgeon from Guadalajara with certificate No. 2410; the certifying body is not named in the article (presumably CMCPER, unverified). No own website or cédula found. Anesthesiologist not named. Surgery stated to take place at Hospital CMQ Basilio Badillo, CMQ Premiere and Punta Mita Hospital; CMQ does not claim CSG certification on its site.",
+      "credentials": "CMCPER directory: cmcper.org blocked automated reading (HTTP 403) on October 30, 2026, so certificate No. 2410 is unverified. Cédula: not checked (SEP lookup unavailable). No own website found on October 30, 2026; facts come from one local-press article and the CMQ hospital site.",
+      "cautions": "Structural caveat: no own website, prices or written consent/aftercare information available; the only descriptive source is promotional. Jalisco is a US State Department Level 3 'Reconsider Travel' state (state-dept-press-rmn).",
+      "publishedPrices": "Not published (no own site). The article gives no prices.",
+      "booking": {
+        "channels": "WhatsApp +52 332 162 4856; Instagram @dr.enriqueescalona. No email, website or phone line found.",
+        "consult": "Not published.",
+        "languages": "Bilingual (Spanish and English) per the article."
+      },
+      "sourceIds": ["cmcper-dir", "sep-cedula", "escalona-gaypv", "cmq-site", "state-dept-press-rmn"]
+    },
+    {
+      "name": "Hospital Innovare (plastic-surgery hospital; Dr. Lázaro Cárdenas Camarena practices at this address)",
+      "district": "Zapopan, Jalisco (Av. Verona 7412, Villa Verona)",
+      "type": "hospital",
+      "specialties": ["Plastic and aesthetic surgery", "Body contouring", "Breast surgery", "Facial surgery", "Facial feminization"],
+      "namedDoctors": "The hospital's own website could not be found or loaded on October 30, 2026 (innovare.mx returned an error; hospitalinnovare.com does not resolve). Marketplace listings name Dr. Israel Villalobos Blasquez (plastic surgeon, diploma image from 2020 shown) among surgeons operating there and describe the facility as having 10 operating rooms and 43 private rooms (innovare-bookimed). Dr. Lázaro Cárdenas Camarena, a widely published plastic surgeon, lists his office at the same address (Av. Verona 7412) on WhatClinic and is described on Bookimed as mentoring surgeons at Hospital Innovare, but no own international page for him was found (innovare-whatclinic-cardenas). Cédulas and CMCPER certificate numbers not shown. Anesthesiologists not named. ICU: not described.",
+      "credentials": "CSG: a marketplace listing shows a Consejo de Salubridad General logo for the hospital; the CSG list at csg.gob.mx could not be opened on October 30, 2026, so this is unverified. COFEPRIS: a marketplace listing shows a sanitary licence image dated 2014 without a readable number. CMCPER directory blocked automated reading (HTTP 403). Cédula: not checked. Founded 2014 per marketplace listing.",
+      "cautions": "Structural caveats: no reachable official site, so prices, surgeon roster and licence number could not be confirmed; marketplace listings mark the hospital as 'not accepting new requests'. No deaths, lawsuits or COFEPRIS actions naming Hospital Innovare were found in Spanish press searches. Jalisco is a US State Department Level 3 'Reconsider Travel' state (state-dept-press-rmn).",
+      "publishedPrices": "Not published on an own site (none reachable). Marketplace range (indicative): abdominoplasty about $3,800 to $6,000 USD on Bookimed, last updated April 2022; most procedures listed as 'price on request'.",
+      "booking": {
+        "channels": "Only marketplace channels found (Bookimed, WhatClinic). No direct phone, email or WhatsApp confirmed.",
+        "consult": "Marketplace listings describe an online consultation followed by a mandatory in-person evaluation at the hospital; fee and deposit terms not published.",
+        "languages": "Not stated."
+      },
+      "sourceIds": ["csg-list", "cofepris", "cmcper-dir", "innovare-bookimed", "innovare-whatclinic-cardenas", "state-dept-press-rmn"]
+    },
+    {
+      "name": "Cancun Dental Specialists (Dr. Irma Gavaldon)",
+      "district": "Cancún (Hotel Zone, Blvd. Kukulcán km 11.5, Plaza Flamingo)",
+      "type": "dental",
+      "url": "https://cancundentalspecialists.com/",
+      "specialties": ["Dental implants and All-on-4", "Prosthodontics", "Periodontics", "Endodontics", "Cosmetic dentistry"],
+      "namedDoctors": "Dr. Irma Gavaldon, DDS, MS, AEGD, founder and head of medical tourism, stated licensed in Mexico, California and Michigan; the site lists about 14 further dentists by name and specialty (prosthodontics, periodontics, endodontics, restorative), including Drs. Antonio Barrios, Andrea Pichardo, Julian Guerrero, Erika Barreras, Thelma Esquivel and Adriana Garcia. No cédula numbers shown. Treatment is in the clinic's own facility (no hospital involved).",
+      "credentials": "CSG certification does not apply to a dental office of this type (CSG certifies hospitals and selected establishment categories; confirmed from the CSG program descriptions, list itself unreachable on October 30, 2026). COFEPRIS licence number: not shown on the site. Cédulas: not checked (SEP lookup unavailable). The site claims 'Rated Top Cancun Dental Clinic for 5 Years in a Row' without naming the rating body. Open about 12 years per the site; founding year not stated.",
+      "cautions": "Trustpilot shows a TrustScore of 3.1 for the clinic with few reviews (cds-trustpilot). No regulator actions, lawsuits or BBB patterns naming the clinic were found. Guarantees are not stated on the site.",
+      "publishedPrices": "On its site, seen October 30, 2026: root canal about $250 USD per tooth; regular cleaning $60; deep cleaning $100; teeth whitening $100; Zoom whitening $200; cleaning and whitening prices stated to include a panoramic X-ray, consultation and CBCT. The full 'Treatment Prices' page returned 404 when read.",
+      "booking": {
+        "channels": "US toll-free 1 888 231 8041; Canada toll-free 1 587 287 4279; patient care 1 888 247 1263; office +52 998 313 0107; direct +52 998 387 0240; email contact@cancundentalspecialists.com; online form (reason for contact, preferred call time and method). Hours Monday to Friday 8:00 to 16:00, Saturday 8:00 to 12:00 (Cancún time). No WhatsApp listed.",
+        "consult": "Free in-person consultation for visitors in Cancún; phone consultations available. No deposit terms published.",
+        "languages": "English and Spanish.",
+        "bookingUrl": "https://cancundentalspecialists.com/"
+      },
+      "sourceIds": ["csg-list", "cofepris", "sep-cedula", "cds-site", "cds-trustpilot"]
+    },
+    {
+      "name": "Dentaris Cancún",
+      "district": "Cancún (Hotel Zone, Av. Bonampak 38 Local 12)",
+      "type": "dental",
+      "url": "https://www.dentaris.com.mx/",
+      "specialties": ["Implants and prosthodontics", "Orthodontics", "Periodontics", "Endodontics", "Cosmetic dentistry"],
+      "namedDoctors": "Joaquín Berrón, DDS (prosthodontist and implant surgeon); Carmen Chávez, DDS (general dentist); Eduardo Salcido, DDS (orthodontist and pediatric dentist); Ana Duran, DDS (cosmetic dentist); Cecilia Rodriguez, DDS (periodontist); Paola Mora, DDS (endodontist). No cédula numbers shown. ICOI, AAP, ADA and Asociación Mexicana de Endodoncia logos appear without explanation. Treatment is in the clinic's own facility.",
+      "credentials": "CSG certification does not apply to a dental office of this type (CSG list unreachable on October 30, 2026). COFEPRIS licence number: not shown on the site. Cédulas: not checked (SEP lookup unavailable). The site states 30 years of experience and 'two-time award winner' without naming the awards; founding year not stated. A sister clinic operates in Playa del Carmen per search results.",
+      "publishedPrices": "Not published on its site (the prices page returned 404 when read on October 30, 2026).",
+      "booking": {
+        "channels": "Phone +52 998 887 2579; WhatsApp +52 998 129 8396; email info@dentaris.com.mx; contact page https://www.dentaris.com.mx/contact. Hours not listed.",
+        "consult": "Not published beyond 'contact us for a consultation'.",
+        "languages": "English and Spanish site.",
+        "bookingUrl": "https://www.dentaris.com.mx/contact"
+      },
+      "sourceIds": ["csg-list", "cofepris", "sep-cedula", "dentaris-site", "dentaris-contact"]
+    },
+    {
+      "name": "Rio Grande Dental (Dr. Jessica Nitardy), formerly publicized as Rio Dental",
+      "district": "Ciudad Juárez, Chihuahua (Av. de la Raza 3900, about 15 minutes from El Paso, Texas)",
+      "type": "dental",
+      "url": "http://www.riograndedental.co/",
+      "specialties": ["Dental implants and All-on-4", "Crowns (e.max, zirconia, gold)", "Dentures", "Sedation dentistry"],
+      "namedDoctors": "Dr. Jessica Nitardy, DDS, graduate of Universidad Autónoma de Ciudad Juárez with stated US post-doctoral training; marketplace listings cite more than 21 years in practice. The clinic states it offers anesthesiologist-administered sedation but names no anesthesiologist. No cédula shown. Treatment is in the clinic's own facility.",
+      "credentials": "The historic domain riodental.com was parked for sale when read on October 30, 2026; the practice now presents as Rio Grande Dental at riograndedental.co (not fetched; URL from the clinic's About.me page). A 2008 Reuters/NBC report described Rio Dental as owned by an American, Joe Andel, and his Mexican dentist wife, with El Paso airport pickup and US-made crowns (rgd-press-nbc-2008); whether today's Rio Grande Dental is the same business could not be confirmed. CSG certification does not apply to a dental office. COFEPRIS licence number: not shown. Cédula: not checked. A marketplace listing claims an 'American Dental Association certificate', unverified.",
+      "cautions": "Naming ambiguity between 'Rio Dental' and 'Rio Grande Dental' and a parked original domain; confirm the clinic, address and shuttle directly before travel. Chihuahua is a US State Department Level 3 'Reconsider Travel' state (state-dept-press-rmn). No regulator actions, lawsuits or injury reports naming the clinic were found.",
+      "publishedPrices": "Not published on an own site read. Marketplace range (indicative): dentist consultation $40 USD and single dental implant $1,098 USD on Bookimed, last updated April 29, 2024; Flymedi shows 'from EUR 5,400' for an unspecified treatment, recorded February 16, 2026.",
+      "booking": {
+        "channels": "Free round-trip transportation from El Paso hotels and airport stated on marketplace and About.me listings; booking via Flymedi quiz or WhatsApp coordinator, or Bookimed. No direct clinic phone or email was found on the pages read.",
+        "consult": "Not published.",
+        "languages": "English and Spanish (Dr. Nitardy is described as living in El Paso).",
+        "bookingUrl": "http://www.riograndedental.co/"
+      },
+      "sourceIds": ["csg-list", "cofepris", "sep-cedula", "rgd-aboutme", "rgd-flymedi", "rgd-bookimed", "rgd-press-nbc-2008", "state-dept-press-rmn"]
+    },
+    {
+      "name": "Dr. Ernesto Villarreal Dental Clinic (Nuevo Progreso dental district)",
+      "district": "Nuevo Progreso, Tamaulipas (Calle Sonora 106, two blocks from the Progreso, Texas bridge)",
+      "type": "dental",
+      "specialties": ["Crowns and bridges", "Implants", "Dentures", "Root canals", "Veneers"],
+      "namedDoctors": "Dr. Ernesto Villarreal, DDS (marketplace listing); no cédula or specialty board shown. The clinics named in the research brief (Dr. Rick Dental, Aroma Dental, Nuevo Progreso Dental) could not be found online on October 30, 2026; WhatClinic lists about 60 to 68 dental offices in the town, most within three blocks of the bridge (np-whatclinic-list). Treatment is in the office itself.",
+      "credentials": "No own website found; facts from a WhatClinic listing. CSG certification does not apply to a dental office. COFEPRIS licence number: not shown. Cédula: not checked (SEP lookup unavailable on October 30, 2026). Hours Monday to Saturday 9:00 to 17:00 per the listing.",
+      "cautions": "Tamaulipas is a US State Department Level 4 'Do Not Travel' state (state-dept-mexico; state-dept-press-rmn). In 2023 the CDC issued Health Alert Network notices about a multistate fungal meningitis outbreak among US patients who had cosmetic procedures under epidural anesthesia at two clinics in Matamoros, Tamaulipas (River Side Surgical Center and Clinica K-3), with cases ranging to death; that outbreak involved surgical clinics, not dental offices, and did not name Nuevo Progreso (cdc-han-matamoros). Structural caveats: walk-in border dentistry with no reachable website, published prices or licence; care continuity after returning home depends on the office's informal follow-up.",
+      "publishedPrices": "Not published (no own site). Marketplace range (indicative) for Nuevo Progreso as a town on WhatClinic, October 2026: consultations $22 to $44 USD, porcelain crowns from about $150, single implants from about $800 to $950 USD.",
+      "booking": {
+        "channels": "Phone number shown only behind a WhatClinic 'show phone number' button; WhatClinic enquiry form. No email, WhatsApp or website found.",
+        "consult": "Not published; most Nuevo Progreso offices take walk-ins per directory descriptions.",
+        "languages": "Not stated on the listing; the town's clinics market in English to US and Canadian visitors."
+      },
+      "sourceIds": ["csg-list", "cofepris", "sep-cedula", "villarreal-whatclinic", "np-whatclinic-list", "state-dept-mexico", "state-dept-press-rmn", "cdc-han-matamoros"]
+    },
+    {
+      "name": "GIOSTAR Mexico (Global Institute of Stem Cell Therapy and Research)",
+      "district": "Playa del Carmen (Av. 10 Lote 1 Local 46, Playacar) with stated clinics in Cancún and Los Algodones",
+      "type": "clinic",
+      "url": "https://giostarmexico.com/",
+      "specialties": ["Mesenchymal stem cell infusions (not FDA-approved)", "Neurological and autoimmune conditions marketed", "Orthopedic injections"],
+      "namedDoctors": "Dr. Anand Srivastava, PhD (co-founder and chairman, San Diego; not a physician); Dr. Cristina Santana, MD (medical director, Playa del Carmen, UNAM); Dr. Daniel Garza and Dr. Evelyn García (regenerative and aesthetic medicine) per the Mexico site and marketplace listings. No cédula numbers shown. Treatments are given in the clinic's own premises, not a hospital; CSG certification does not apply.",
+      "credentials": "COFEPRIS: the Mexico site says its clinics are COFEPRIS-licensed but shows no numbers; a marketplace listing shows licence numbers 19-TR-23-008-0002 (described as stem cell bank) and 19-TR-23-008-0001 (stem cell transplant) for Playa del Carmen, and Bookimed shows licence images dated 2019 and 2024; none were verified against COFEPRIS's registry, which was not fetchable, and the Bookimed page also displays 2019 licences issued to a different company (Sani Dental Group). COFEPRIS permits the handling of cells under a licence for cell banks and transplant establishments; a licence to operate does not mean a therapy is proven. These therapies are not approved by the US FDA for the conditions marketed. No COFEPRIS alert or suspension naming GIOSTAR was found. The company's US headquarters is in San Diego.",
+      "cautions": "A California patient sued the US entity in 2020 (Mendez v. Global Institute of Stem Cell Therapy and Research USA et al.), alleging stem cell treatment given to a cancer patient without proper cell matching; outcome not confirmed. Los Angeles Times columnist Michael Hiltzik reported that the company acknowledged exaggerating a co-founder's academic appointments and that two listed advisers denied any connection, and questioned its clinical-trial claims; a stem cell scientist's blog summarizing this found no ClinicalTrials.gov listings for GIOSTAR (giostar-ipscell). Marketplace listings mark the Mexico clinic as 'not accepting new requests'. The Mexico site contains no FDA or efficacy disclaimer. Structural caveat: outpatient clinic in a retail plaza; no ICU or hospital backup described.",
+      "publishedPrices": "Not published on its site (cost blog linked without figures). Marketplace range (indicative), Bookimed, last updated March 29, 2025: neuropathy $14,870 USD; multiple sclerosis $17,000; autism $8,000 to $15,600; cerebral palsy $15,000 to $24,000.",
+      "booking": {
+        "channels": "US phone +1 619 866 6000; email info@giostarmexico.com; online appointment form and 'Book Discovery Call' link on giostarmexico.com. Hours shown inconsistently (8:00 to 16:00 or 9:00 to 17:00 Pacific, Saturday 9:00 to 14:00). No WhatsApp listed.",
+        "consult": "Free first consultation and phone call stated on a marketplace listing; medical records review implied. Deposit terms not published.",
+        "languages": "English site; Spanish-speaking clinical staff.",
+        "bookingUrl": "https://giostarmexico.com/"
+      },
+      "sourceIds": ["cofepris", "csg-list", "giostar-mx-site", "giostar-mtc", "giostar-bookimed", "giostar-ipscell"]
+    },
+    {
+      "name": "CellsTime Clinique",
+      "district": "Zapopan, Jalisco (Real de Acueducto 300, 15th floor, Puerta de Hierro district)",
+      "type": "clinic",
+      "specialties": ["Mesenchymal stem cell infusions (not FDA-approved)", "Intra-articular injections for osteoarthritis", "Autoimmune and neurological conditions marketed", "Exosomes and growth factors"],
+      "namedDoctors": "Dr. Ana Lugo (regenerative medicine), Dr. Irydia Pellegrini (orthopedics and traumatology, trained at Hospital Civil Fray Antonio Alcalde) and Dr. Alexis Trejo (stem cell and aesthetic medicine, Universidad de Guadalajara) per a marketplace listing; no cédula numbers shown. Cells are stated to come from an exclusive supplier laboratory called Lcells using placental cells; no independent information about Lcells was found. Treatments are given in an office tower suite, not a hospital; CSG certification does not apply.",
+      "credentials": "No own website found on October 30, 2026; facts come from a MedicalTourismCo listing that is a paid partnership. COFEPRIS: the listing shows licence 21-R-14-039-0002 labelled as a sanitary licence for regenerative medicine services; not verified against COFEPRIS's registry (not fetchable). A COFEPRIS licence authorizes an establishment to operate; it is not evidence that the therapies work. These therapies are not approved by the US FDA for the conditions marketed. Branches in Puerto Vallarta and Tijuana are claimed. No COFEPRIS alert or suspension naming the clinic was found.",
+      "cautions": "The listing states mesenchymal stem cell therapy has 'no known contraindications' and is 'a safe option' without citing evidence, and markets treatment for conditions including autism, ALS, multiple sclerosis, diabetes and Lyme disease for which no stem cell therapy is FDA-approved. Structural caveats: no own website, no direct clinic phone, office-tower premises, no hospital backup described. Jalisco is a US State Department Level 3 'Reconsider Travel' state (state-dept-press-rmn).",
+      "publishedPrices": "Not published on an own site (none found). Marketplace listing (indicative), MedicalTourismCo, USD: osteoarthritis (knee, hip, shoulder, spine, hand) $4,500; rheumatoid arthritis $7,000; herniated discs $7,000; multiple sclerosis, ALS, Crohn's, Lyme $9,000; autism $5,700; type 1 and 2 diabetes $7,000; alopecia and erectile dysfunction $4,500.",
+      "booking": {
+        "channels": "Only via the MedicalTourismCo listing form and its US support line +1 800 661 2126 / info@medicaltourismco.com. Clinic hours listed Monday to Friday 10:00 to 19:00, Saturday 10:00 to 14:00. No direct clinic phone, email or WhatsApp found.",
+        "consult": "Not published.",
+        "languages": "Not stated."
+      },
+      "sourceIds": ["cofepris", "csg-list", "cellstime-mtc", "state-dept-press-rmn"]
+    }
+  ],
+  "sources": [
+    { "id": "csg-list", "label": "Consejo de Salubridad General, certified-establishment list (page not reachable October 30, 2026)", "url": "https://www.csg.gob.mx/", "publisher": "Consejo de Salubridad General", "date": "2026-10-30", "kind": "official" },
+    { "id": "cofepris", "label": "COFEPRIS (Comisión Federal para la Protección contra Riesgos Sanitarios)", "url": "https://www.gob.mx/cofepris", "publisher": "Gobierno de México", "date": "2026-10-30", "kind": "official" },
+    { "id": "cmcper-dir", "label": "CMCPER directory of certified plastic surgeons (blocked automated reading, HTTP 403, October 30, 2026)", "url": "https://cmcper.org/", "publisher": "Consejo Mexicano de Cirugía Plástica, Estética y Reconstructiva", "date": "2026-10-30", "kind": "official" },
+    { "id": "sep-cedula", "label": "SEP cédula profesional lookup (returned 404 / connection refused, October 30, 2026)", "url": "https://www.cedulaprofesional.sep.gob.mx/", "publisher": "Secretaría de Educación Pública", "date": "2026-10-30", "kind": "official" },
+    { "id": "jci-directory", "label": "JCI accredited organizations directory (blocked automated reading, HTTP 403, October 30, 2026)", "url": "https://www.jointcommissioninternational.org/who-we-are/accredited-organizations/", "publisher": "Joint Commission International", "date": "2026-10-30", "kind": "official" },
+    { "id": "state-dept-mexico", "label": "Mexico Travel Advisory (Tamaulipas Level 4), issued May 29, 2026", "url": "https://travel.state.gov/en/international-travel/travel-advisories/mexico.html", "publisher": "US Department of State", "date": "2026-05-29", "kind": "official" },
+    { "id": "state-dept-press-rmn", "label": "US issues travel advisory for Mexico ahead of 2026 World Cup, state-by-state levels", "url": "https://www.rivieramayanews.mx/us-issues-travel-advisory-for-mexico-ahead-of-2026-world-cup-classifies-states-by-risk-level/", "publisher": "Riviera Maya News", "date": "2026-06-10", "kind": "press" },
+    { "id": "cdc-han-matamoros", "label": "CDC HAN 00492: fungal meningitis outbreak in US patients after epidural anesthesia at two Matamoros clinics", "url": "https://cdc.gov/han/2023/han00492.html", "publisher": "US Centers for Disease Control and Prevention", "date": "2023-06-01", "kind": "official" },
+
+    { "id": "galenia-site", "label": "Hospital Galenia homepage", "url": "https://www.hospitalgalenia.com/", "publisher": "Hospital Galenia", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "galenia-tourism", "label": "Hospital Galenia, Turismo Médico page (contacts, accreditations, insurers)", "url": "https://www.hospitalgalenia.com/turismo-medico", "publisher": "Hospital Galenia", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "galenia-press-poresto", "label": "Cofepris suspende banco de sangre del Hospital Galenia de Cancún", "url": "https://www.poresto.com/quintana-roo/2022/8/12/cofepris-suspende-banco-de-sangre-del-hospital-galenia-de-cancun.html", "publisher": "Por Esto!", "date": "2022-08-12", "kind": "press" },
+
+    { "id": "hospiten-cancun-site", "label": "Hospiten Cancún hospital page (contacts, beds, specialties)", "url": "https://hospiten.com/en/hospitals/hospiten-cancun", "publisher": "Hospiten", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "hospiten-amerimed-alimarket", "label": "Hospiten compra tres hospitales en México al grupo local Amerimed", "url": "https://www.alimarket.es/sanidad/noticia/170383/hospiten-compra-tres-hospitales-en-mexico-al-grupo-local-amerimed", "publisher": "Alimarket Sanidad", "date": "2014-11-18", "kind": "press" },
+
+    { "id": "amerimed-site", "label": "Hospital Amerimed Cancún website", "url": "https://amerimedcancun.com/", "publisher": "Amerimed Hospitals", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "amerimed-press-beckers", "label": "Indiana woman held by Cancún hospital for $53k bill", "url": "https://www.beckershospitalreview.com/finance/indiana-woman-held-by-cancun-hospital-for-53k-bill.html", "publisher": "Becker's Hospital Review", "date": "2016-08", "kind": "press" },
+    { "id": "amerimed-press-wrtv", "label": "Lafayette grandma home after Cancun hospital ordeal", "url": "https://www.wrtv.com/news/local-news/lafayette-grandma-home-after-cancun-hospital-ordeal", "publisher": "WRTV Indianapolis", "date": "2016-08-11", "kind": "press" },
+
+    { "id": "medicasur-site", "label": "Médica Sur homepage (CSG since 2000, JCI since 2014, contacts)", "url": "https://www.medicasur.com.mx/", "publisher": "Médica Sur", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "medicasur-annual-2023", "label": "Médica Sur 2023 Annual Report (JCI 2023-2026, CSG since 1998, Mayo Clinic Care Network)", "url": "https://inversionistas.medicasur.com.mx/site/uploads/en/documents/annual_reports/medica_sur_informe_anual_2023_en.pdf", "publisher": "Médica Sur S.A.B. de C.V.", "date": "2024", "kind": "clinic" },
+    { "id": "medicasur-press-siglo-2015", "label": "Demandan a Médica Sur", "url": "https://www.elsiglodetorreon.com.mx/noticia/2015/demandan-a-medica-sur.html", "publisher": "El Siglo de Torreón", "date": "2015", "kind": "press" },
+
+    { "id": "abc-site", "label": "Centro Médico ABC English homepage (campuses, ConsultABC price, logos)", "url": "https://centromedicoabc.com/en/", "publisher": "Centro Médico ABC", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "abc-intl", "label": "Centro Médico ABC International Patients page", "url": "https://centromedicoabc.com/en/international-patients/", "publisher": "Centro Médico ABC", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "abc-press-pulse-2021", "label": "ABC Medical Center gets JCI accreditation for fifth year", "url": "https://pulsenewsmexico.com/2021/05/21/abc-medical-center-gets-jci-accreditation-for-fifth-year/", "publisher": "Pulse News Mexico", "date": "2021-05-21", "kind": "press" },
+    { "id": "abc-press-ejecentral-2025", "label": "Investigan a tres médicos del Centro Médico ABC por presunta negligencia clínica", "url": "https://www.ejecentral.com.mx/nuestro-eje/investigan-a-tres-medicos-del-centro-medico-abc-por-presunta-negligencia-clinica", "publisher": "Eje Central", "date": "2025-11-11", "kind": "press" },
+
+    { "id": "tecsalud-site", "label": "TecSalud English homepage (Zambrano Hellion, certifications)", "url": "https://tecsalud.mx/en", "publisher": "TecSalud", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "tecsalud-guide", "label": "TecSalud guide for patients (languages, interpreters, certifications)", "url": "https://tecsalud.mx/guide-for-patients", "publisher": "TecSalud", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "tecsalud-press-mbn-2016", "label": "Focus on quality for patients (TecSalud JCI certification obtained 2012)", "url": "https://mexicobusiness.news/health/news/focus-quality-patients", "publisher": "Mexico Business News", "date": "2016", "kind": "press" },
+    { "id": "tecsalud-press-posta-2025", "label": "TecSalud anuncia cierre del Hospital San José en Monterrey para centralizar atención", "url": "https://www.posta.com.mx/nuevo-leon/tecsalud-anuncia-cierre-hospital-san-jose-en-monterrey-para-centralizar-atencion/vl2112099", "publisher": "POSTA", "date": "2025-10-17", "kind": "press" },
+
+    { "id": "christus-intl", "label": "CHRISTUS Muguerza International Services page", "url": "https://christusmuguerza.com.mx/international-services", "publisher": "CHRISTUS Muguerza", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "christus-english", "label": "CHRISTUS Muguerza English page (first JCI-accredited hospital in Mexico claim)", "url": "https://christusmuguerza.com.mx/english", "publisher": "CHRISTUS Muguerza", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "christus-bariatric-pdf", "label": "Bariatric Surgery in Monterrey brochure, CHRISTUS Muguerza Hospital Sur (surgeons, from $7,500 USD)", "url": "https://christusmuguerza.com.mx/wp-content/uploads/2026/03/Bariactrics-CHRISTUSMUGUERZA-Sur-2026.pdf", "publisher": "CHRISTUS Muguerza", "date": "2026-03", "kind": "clinic" },
+
+    { "id": "cmq-site", "label": "Hospital CMQ English homepage (locations, seals, WhatsApp)", "url": "https://hospitalcmq.com/", "publisher": "Hospital CMQ", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "cmq-press-pvangels-2013", "label": "Monetary Medicine: The Private Hospital Flat Line in Vallarta", "url": "https://pvangels.com/news/1303/monetary-medicine-the-private-hospital-flat-line-in-vallarta", "publisher": "PV Angels (reprinted from Gay PV Magazine)", "date": "2013-04-22", "kind": "press" },
+
+    { "id": "endo-site", "label": "Endobariatric homepage (prices, surgeon, Endohospital)", "url": "https://www.endobariatric.com/", "publisher": "Endobariatric", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "endo-contact", "label": "Endobariatric contact page", "url": "https://www.endobariatric.com/contact-us/", "publisher": "Endobariatric", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "endo-asmbs", "label": "ASMBS provider profile: Guillermo Alvarez, MD", "url": "https://asmbs.org/provider/guillermo-alvarez-md-wARw", "publisher": "American Society for Metabolic and Bariatric Surgery", "date": "2026-10-30", "kind": "official" },
+    { "id": "endo-src", "label": "SRC: Endohospital, Center of Excellence in Metabolic and Bariatric Surgery", "url": "https://www.surgicalreview.org/endohospital", "publisher": "Surgical Review Corporation", "date": "2026-10-30", "kind": "official" },
+    { "id": "endo-press-nmas-2025", "label": "Investigan muerte de mujer por presuntas complicaciones tras cirugía bariátrica en Piedras Negras (clinic not named)", "url": "https://www.nmas.com.mx/coahuila/salud/muere-mujer-tras-cirugia-bariatrica-en-clinica-de-piedras-negras/", "publisher": "N+ (Televisa)", "date": "2025-09-12", "kind": "press" },
+
+    { "id": "prieto-bookimed", "label": "Bookimed doctor listing: Rodrigo Prieto Aldape (certifications, prices)", "url": "https://us-uk.bookimed.com/doctor/rodrigo-prieto-aldape/", "publisher": "Bookimed", "date": "2025-03-29", "kind": "marketplace" },
+
+    { "id": "cps-site", "label": "Cancun Plastic Surgery (Dr. Rafael Velasco Marín) homepage", "url": "https://cancunplasticsurgery.com/", "publisher": "Cancun Plastic Surgery", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "cps-whatclinic", "label": "WhatClinic listing: Cancun Plastic Surgery", "url": "https://www.whatclinic.com/cosmetic-plastic-surgery/mexico/cancun/cancun-plastic-surgery", "publisher": "WhatClinic", "date": "2026", "kind": "marketplace" },
+
+    { "id": "escalona-gaypv", "label": "Plastic Surgery by Dr Enrique Escalona (certificate No. 2410, hospitals, WhatsApp)", "url": "https://gaypv.com/blog/lifestyletrending/plastic-surgery-by-dr-enrique-escalona/", "publisher": "GAYPV", "date": "2024-09-26", "kind": "press" },
+
+    { "id": "innovare-bookimed", "label": "Bookimed listing: Hospital Innovare, Guadalajara (licence images, surgeons, capacity)", "url": "https://us-uk.bookimed.com/clinic/m/hospital-innovare", "publisher": "Bookimed", "date": "2025-03-29", "kind": "marketplace" },
+    { "id": "innovare-whatclinic-cardenas", "label": "WhatClinic Zapopan plastic surgery listings (Dr. Lázaro Cárdenas Camarena, Av. Verona 7412)", "url": "https://whatclinic.com/cosmetic-plastic-surgery/mexico/zapopan?page=1", "publisher": "WhatClinic", "date": "2026", "kind": "marketplace" },
+
+    { "id": "cds-site", "label": "Cancun Dental Specialists homepage (dentists, prices, contacts)", "url": "https://cancundentalspecialists.com/", "publisher": "Cancun Dental Specialists", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "cds-trustpilot", "label": "Trustpilot: Cancun Dental Specialists reviews", "url": "https://ie.trustpilot.com/review/cancundentalspecialists.com", "publisher": "Trustpilot", "date": "2026", "kind": "forum" },
+
+    { "id": "dentaris-site", "label": "Dentaris Cancún homepage (dentists, logos)", "url": "https://www.dentaris.com.mx/", "publisher": "Dentaris", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "dentaris-contact", "label": "Dentaris Cancún contact page (phone, WhatsApp, email)", "url": "https://www.dentaris.com.mx/contact", "publisher": "Dentaris", "date": "2026-10-30", "kind": "clinic" },
+
+    { "id": "rgd-aboutme", "label": "Rio Grande Dental About.me page (Dr. Jessica Nitardy, website URL, shuttle)", "url": "https://about.me/RioGrandeDental", "publisher": "Rio Grande Dental", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "rgd-flymedi", "label": "Flymedi listing: Rio Grande Dental (prices recorded February 16, 2026)", "url": "https://www.flymedi.com/rio-grande-dental/638?tId=394", "publisher": "Flymedi", "date": "2026-02-16", "kind": "marketplace" },
+    { "id": "rgd-bookimed", "label": "Bookimed listing: Rio Grande Dental, dental implant price", "url": "https://us-uk.bookimed.com/clinic/rio-grande-dental/procedure=dental-implant/", "publisher": "Bookimed", "date": "2024-04-29", "kind": "marketplace" },
+    { "id": "rgd-press-nbc-2008", "label": "Searching for the perfect smile in Mexico (Rio Dental, Ciudad Juárez)", "url": "https://www.nbcnews.com/id/wbna22953912", "publisher": "Reuters via NBC News", "date": "2008-02-01", "kind": "press" },
+
+    { "id": "villarreal-whatclinic", "label": "WhatClinic listing: Dr. Ernesto Villarreal Dental Clinic, Nuevo Progreso", "url": "https://www.whatclinic.com/dentists/mexico/nuevo-progreso/dr-ernesto-villarreal-dental-clinic", "publisher": "WhatClinic", "date": "2026-10-30", "kind": "marketplace" },
+    { "id": "np-whatclinic-list", "label": "WhatClinic: Dentists in Nuevo Progreso (clinic count and indicative prices)", "url": "https://www.whatclinic.com/dentists/mexico/nuevo-progreso", "publisher": "WhatClinic", "date": "2026-10", "kind": "marketplace" },
+
+    { "id": "giostar-mx-site", "label": "GIOSTAR Mexico website (locations, doctors, contacts)", "url": "https://giostarmexico.com/", "publisher": "GIOSTAR Mexico", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "giostar-mtc", "label": "MedicalTourismCo listing: GIOSTAR Playa del Carmen (COFEPRIS licence numbers, doctors)", "url": "https://www.medicaltourismco.com/clinic/mexico/playa-del-carmen-mexico/giostar-playa-del-carmen-mexico/", "publisher": "MedicalTourismCo", "date": "2026-10-30", "kind": "marketplace" },
+    { "id": "giostar-bookimed", "label": "Bookimed listing: GIOSTAR Stem Cell Therapy Mexico (licence images, prices)", "url": "https://us-uk.bookimed.com/clinic/giostar-stem-cell-therapy-mexico/direction=stem-cells/", "publisher": "Bookimed", "date": "2025-03-29", "kind": "marketplace" },
+    { "id": "giostar-ipscell", "label": "The Niche (Paul Knoepfler): Giostar review, Mendez lawsuit, LA Times reporting", "url": "https://ipscell.com/?p=25008", "publisher": "The Niche / ipscell.com", "date": "2022-07-05", "kind": "press" },
+
+    { "id": "cellstime-mtc", "label": "MedicalTourismCo listing: CellsTime Clinique, Guadalajara (licence 21-R-14-039-0002, prices, doctors)", "url": "https://www.medicaltourismco.com/clinic/mexico/guadalajara/cellstime-clinic-guadalajara-mexico/", "publisher": "MedicalTourismCo", "date": "2026-10-30", "kind": "marketplace" }
+  ]
+}

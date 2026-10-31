@@ -141,6 +141,17 @@ export const NAV_GROUPS: NavGroup[] = [
         { label: 'Paying for Care Abroad', url: '/guides/paying-for-medical-tourism' },
         { label: 'Medical Tourism FAQ', url: '/faq/medical-tourism' },
       ] },
+      { label: 'Mexico', items: [
+        { label: 'Mexico Guide (Start)', url: '/destinations/mexico', trafficCritical: true },
+        { label: 'Tijuana Guide', url: '/guides/tijuana-medical-tourism-guide' },
+        { label: 'Los Algodones Dental', url: '/guides/los-algodones-dental-guide', trafficCritical: true },
+        { label: 'Gastric Sleeve Cost', url: '/guides/gastric-sleeve-tijuana-cost', trafficCritical: true },
+        { label: 'Dental Implant Prices', url: '/guides/mexico-dental-implant-prices' },
+        { label: 'BBL & Plastic Surgery', url: '/guides/bbl-surgery-mexico' },
+        { label: 'Stem Cells: Is It Safe?', url: '/guides/is-stem-cell-therapy-in-mexico-safe' },
+        { label: 'All Registered Hospitals (Directory)', url: '/destinations/mexico/directory' },
+        { label: 'Trip Planner', url: '/guides/mexico-medical-tourism-planner' },
+      ] },
       { label: 'Turkey', items: [
         { label: 'Turkey Guide (Start)', url: '/destinations/turkey', trafficCritical: true },
         { label: 'Hair Transplant Cost', url: '/guides/hair-transplant-turkey-cost' },
@@ -161,7 +172,6 @@ export const NAV_GROUPS: NavGroup[] = [
         { label: 'Gangnam Clinics Guide', url: '/guides/plastic-surgery-korea-guide' },
       ] },
       { label: 'Other Destinations', items: [
-        { label: 'Mexico', url: '/destinations/mexico' },
         { label: 'Thailand', url: '/destinations/thailand' },
         { label: 'India', url: '/destinations/india' },
         { label: 'Costa Rica', url: '/destinations/costa-rica' },

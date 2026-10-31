@@ -7,6 +7,7 @@ import SubjectiveBridgeUnit from '@/components/SubjectiveBridgeUnit';
 import { buildFAQSchema } from '@/lib/jsonLd';
 import { getDestinationStat, fmtUsd } from '@/lib/destination-pricing';
 
+import { JourneyRail, JourneyNext } from '@/components/destinations/JourneyRail';
 const URL = 'https://vitalityscout.com/guides/gastric-sleeve-mexico-vs-glp1-program';
 
 // Candidate ownership-disclosure wording per monetization-plan §5 / §6-D2. NOT
@@ -83,6 +84,7 @@ export default function GastricSleeveVsGlp1Page() {
           </div>
         </nav>
 
+        <div className="mx-auto max-w-5xl px-4 pt-4"><JourneyRail currentPath="/guides/gastric-sleeve-mexico-vs-glp1-program" /></div>
         <section className="bg-gradient-to-b from-blue-50 to-white px-4 py-10">
           <div className="mx-auto max-w-4xl">
             <h1 className="mb-4 text-4xl font-bold text-gray-900">
@@ -376,6 +378,7 @@ export default function GastricSleeveVsGlp1Page() {
           </div>
         </article>
       </SidebarShell>
+      <div className="mx-auto max-w-5xl px-4 pb-8"><JourneyNext currentPath="/guides/gastric-sleeve-mexico-vs-glp1-program" /></div>
       <Footer />
     </main>
   );

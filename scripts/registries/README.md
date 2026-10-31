@@ -30,6 +30,20 @@ python3 scripts/registries/build-korea.py rows.json 2026-10-30   # as-of = porta
 npm run test:destinations
 ```
 
+## Mexico (federal CLUES catalogue, private sector)
+
+Source: http://www.dgis.salud.gob.mx/contenidos/intercambio/clues_gobmx.html (monthly
+`ESTABLECIMIENTO_SALUD_YYYYMM.xlsx`, also served over https from gobi.salud.gob.mx).
+
+```bash
+# 1. download the xlsx, convert to CSV (openpyxl), then extract the private sector:
+python3 -I docs/research/medical-tourism-2026-10/registries-mexico/clues_private.py clues_all.csv clues_private_SMP.csv
+# 2. CSG certified-establishment CSV: parse the latest "EAM con certificado vigente" PDF from csg.gob.mx
+#    into commercial_name,legal_entity,sector,address,city_municipality,state,standard,certificate_expires
+python3 scripts/registries/build-mexico.py clues_private_SMP.csv csg_certificado_vigente.csv 2026-09-30
+npm run test:destinations
+```
+
 ## After a refresh
 
 - `profiledRowIds()` in `src/lib/registries/index.ts` badges rows whose published

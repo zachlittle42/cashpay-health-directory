@@ -3,8 +3,9 @@ import Navigation from '@/components/Navigation';
 import SidebarShell from '@/components/SidebarShell';
 import type { Metadata } from 'next';
 
+import { JourneyRail, JourneyNext } from '@/components/destinations/JourneyRail';
 export const metadata: Metadata = {
-  title: { absolute: 'Gastric Sleeve in Mexico: Safety Guide, Costs & What to Expect (2024)' },
+  title: { absolute: 'Gastric Sleeve in Mexico: Safety Guide, Costs & What to Expect' },
   alternates: { canonical: 'https://vitalityscout.com/guides/gastric-sleeve-mexico-safety' },
   description: 'Is bariatric surgery in Tijuana safe? Complete guide to gastric sleeve in Mexico including safety data, choosing a surgeon, costs, and recovery.',
 };
@@ -43,6 +44,7 @@ export default function GastricSleeveGuide() {
               Medical Tourism Guide
             </span>
           </div>
+          <div className="mb-4"><JourneyRail currentPath="/guides/gastric-sleeve-mexico-safety" /></div>
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
             Gastric Sleeve in Mexico: Safety & Complete Guide
           </h1>
@@ -294,6 +296,7 @@ export default function GastricSleeveGuide() {
         </div>
       </article>
 
+      <div className="mx-auto max-w-5xl px-4 pb-8"><JourneyNext currentPath="/guides/gastric-sleeve-mexico-safety" /></div>
       </SidebarShell>
       <footer className="border-t border-gray-200 px-4 py-8">
         <div className="mx-auto max-w-4xl text-center">

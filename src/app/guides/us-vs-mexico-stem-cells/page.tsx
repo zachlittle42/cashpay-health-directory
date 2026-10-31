@@ -6,6 +6,7 @@ import Footer from '@/components/Footer';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 import { buildFAQSchema } from '@/lib/jsonLd';
 
+import { JourneyRail, JourneyNext } from '@/components/destinations/JourneyRail';
 export const metadata: Metadata = {
   title: { absolute: 'US vs Mexico Stem Cell Therapy: Cost, Legality & Safety Comparison' },
   alternates: { canonical: 'https://vitalityscout.com/guides/us-vs-mexico-stem-cells' },
@@ -97,6 +98,7 @@ export default function USvsMexicoStemCells() {
             <span className="text-4xl">🇲🇽</span>
           </div>
 
+          <div className="mb-4"><JourneyRail currentPath="/guides/us-vs-mexico-stem-cells" /></div>
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
             US vs Mexico for Stem Cell Therapy
           </h1>
@@ -533,6 +535,7 @@ export default function USvsMexicoStemCells() {
       </div>
 
       </SidebarShell>
+      <div className="mx-auto max-w-5xl px-4 pb-8"><JourneyNext currentPath="/guides/us-vs-mexico-stem-cells" /></div>
       <Footer />
     </main>
   );
