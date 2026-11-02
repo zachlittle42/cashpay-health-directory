@@ -73,7 +73,7 @@ export default function CategoryPage({ params }: { params: { destination: string
     >
       <section className="px-4 pb-12">
         <div className="mx-auto max-w-5xl">
-          <nav aria-label="Other licence types" className="mb-6 flex flex-wrap gap-2 text-sm">
+          <nav aria-label={`Other ${config.categoryNoun}s`} className="mb-6 flex flex-wrap gap-2 text-sm">
             {siblings.map((c) => (
               <Link key={c} href={`${base}/${summary.regionSlug}/${c}`} className="rounded-full border border-gray-200 bg-white px-3 py-1 text-gray-800 hover:border-purple-300 hover:text-purple-700">
                 {categoryLabel(config.slug, c)} <span className="text-gray-400">{formatCount(summary.byCategory[c])}</span>
@@ -82,8 +82,8 @@ export default function CategoryPage({ params }: { params: { destination: string
           </nav>
           {split ? (
             <div>
-              <h2 className="text-xl font-bold text-gray-900">By district</h2>
-              <p className="mt-1 mb-4 text-sm text-gray-600">{formatCount(rows.length)} {label.toLowerCase()} is too many for one page, so the list is split by district. Open a district for every facility there, or <Link href={`${base}/search`} className="font-medium text-purple-700 hover:underline">search by name or street</Link>.</p>
+              <h2 className="text-xl font-bold text-gray-900">By {config.districtNoun}</h2>
+              <p className="mt-1 mb-4 text-sm text-gray-600">{formatCount(rows.length)} {label.toLowerCase()} is too many for one page, so the list is split by {config.districtNoun}. Open one for every facility there, or <Link href={`${base}/search`} className="font-medium text-purple-700 hover:underline">search by name or street</Link>.</p>
               <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                 {districts.map((d) => (
                   <li key={d.slug} className="rounded-xl border border-gray-200 bg-white p-4">

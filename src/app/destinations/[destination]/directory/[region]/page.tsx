@@ -45,7 +45,7 @@ export default function RegionPage({ params }: { params: { destination: string; 
       title={`${summary.region}: every government-listed medical facility`}
       intro={
         <p>
-          <strong>{formatCount(summary.count)}</strong> facilities in {summary.region} appear on the {config.listName} as of {formatAsOf(meta.asOf)}, across {districts.filter((d) => d.district !== 'District not stated').length} districts.
+          <strong>{formatCount(summary.count)}</strong> facilities in {summary.region} appear on the {config.listName} as of {formatAsOf(meta.asOf)}, across {districts.filter((d) => d.district !== 'District not stated').length} {config.districtNoun === 'affiliation' ? 'affiliations' : `${config.districtNoun === 'municipality' ? 'municipalities' : 'districts'}`}.
           {profiledHere > 0 && <> {profiledHere} of these rows belong to a provider with a researched profile on the <Link href={`/destinations/${config.slug}#clinics`} className="font-medium text-purple-700 hover:underline">{config.displayName} guide</Link>.</>}
           {' '}Names are shown as the regulator publishes them.
         </p>
@@ -53,7 +53,7 @@ export default function RegionPage({ params }: { params: { destination: string; 
     >
       <section className="px-4 pb-12">
         <div className="mx-auto max-w-5xl">
-          <h2 className="text-xl font-bold text-gray-900">By licence type</h2>
+          <h2 className="text-xl font-bold text-gray-900">By {config.categoryNoun}</h2>
           <ul className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {cats.map((c) => {
               const info = config.categories.find((x) => x.slug === c);
@@ -75,8 +75,8 @@ export default function RegionPage({ params }: { params: { destination: string; 
 
           {summary.split ? (
             <div className="mt-10">
-              <h2 className="text-xl font-bold text-gray-900">Districts</h2>
-              <p className="mt-1 text-sm text-gray-600">{summary.region} is large enough that the list is split by licence type above. Districts with the most listed facilities:</p>
+              <h2 className="text-xl font-bold text-gray-900">{config.districtNoun === 'affiliation' ? 'Affiliations' : config.districtNoun === 'municipality' ? 'Municipalities' : 'Districts'}</h2>
+              <p className="mt-1 text-sm text-gray-600">{summary.region} is large enough that the list is split by {config.categoryNoun} above. Groups with the most listed facilities:</p>
               <ul className="mt-3 flex flex-wrap gap-2 text-sm">
                 {districts.slice(0, 24).map((d) => (
                   <li key={d.district} className="rounded-full border border-gray-200 bg-white px-3 py-1 text-gray-800">{d.district} <span className="text-gray-400">{formatCount(d.rows.length)}</span></li>

@@ -48,6 +48,10 @@ export interface RegistryConfig {
   regulator: string;
   /** "province" for Turkey, "region" for Korea (city or province). */
   regionNoun: string;
+  /** What the sub-region grouping is: "district", "municipality", "affiliation". */
+  districtNoun: string;
+  /** What the category axis is: "licence type", "certificate class", "capacity class". */
+  categoryNoun: string;
   /** What appearing on the list legally means, one or two sentences. */
   means: string;
   /** What it does not mean. */
@@ -73,6 +77,8 @@ export interface Registry {
 
 const TURKEY_CONFIG: RegistryConfig = {
   slug: 'turkey',
+  districtNoun: 'district',
+  categoryNoun: 'licence type',
   displayName: 'Turkey',
   listName: 'Ministry of Health health-tourism authorized facility list',
   regulator: 'Republic of Türkiye Ministry of Health, Health Tourism Department',
@@ -101,6 +107,8 @@ const TURKEY_CONFIG: RegistryConfig = {
 
 const KOREA_CONFIG: RegistryConfig = {
   slug: 'south-korea',
+  districtNoun: 'district',
+  categoryNoun: 'institution type',
   displayName: 'South Korea',
   listName: 'Medical Korea registered-institution list',
   regulator: 'Korea Health Industry Development Institute (KHIDI) for the Ministry of Health and Welfare',
@@ -128,6 +136,8 @@ const KOREA_CONFIG: RegistryConfig = {
 
 const MEXICO_CONFIG: RegistryConfig = {
   slug: 'mexico',
+  districtNoun: 'municipality',
+  categoryNoun: 'facility type',
   displayName: 'Mexico',
   listName: 'federal CLUES catalogue of private health establishments',
   regulator: 'Dirección General de Información en Salud (DGIS), Secretaría de Salud',
@@ -153,6 +163,8 @@ const MEXICO_CONFIG: RegistryConfig = {
 
 const THAILAND_CONFIG: RegistryConfig = {
   slug: 'thailand',
+  districtNoun: 'affiliation',
+  categoryNoun: 'certificate class',
   displayName: 'Thailand',
   listName: 'Healthcare Accreditation Institute (HA Thailand) certificate-status list',
   regulator: 'Healthcare Accreditation Institute (Public Organization), under the Ministry of Public Health',
@@ -177,6 +189,8 @@ const THAILAND_CONFIG: RegistryConfig = {
 
 const COLOMBIA_CONFIG: RegistryConfig = {
   slug: 'colombia',
+  districtNoun: 'municipality',
+  categoryNoun: 'capacity class',
   displayName: 'Colombia',
   listName: 'REPS national register of private health-provider sites',
   regulator: 'Ministerio de Salud y Protección Social (REPS, Registro Especial de Prestadores de Servicios de Salud)',
