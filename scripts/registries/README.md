@@ -44,6 +44,25 @@ python3 scripts/registries/build-mexico.py clues_private_SMP.csv csg_certificado
 npm run test:destinations
 ```
 
+## Thailand (HA Thailand certificate status)
+
+Source: https://www.ha.or.th/EN/Hospitals/Certificate%20Status (server-rendered list, 10 per page, Thai names).
+
+```bash
+python3 -I docs/research/medical-tourism-2026-10/registries-thailand/scrape_ha.py out/   # writes ha_accredited_facilities.csv
+python3 scripts/registries/build-thailand.py out/ha_accredited_facilities.csv 2026-08-31  # as-of = HA data date
+```
+
+## Colombia (REPS private IPS sites)
+
+Source: https://www.datos.gov.co/d/c36g-9fc2 (prestadores + sedes, CSV export) and
+https://www.datos.gov.co/d/s2ru-bqt6 (2022 capacity). The Ministry portal itself blocks non-Colombian connections.
+
+```bash
+python3 -I docs/research/medical-tourism-2026-10/registries-colombia/build_private_ips_sedes.py sedes.csv capacidad.csv reps_private_ips_sedes.csv
+python3 scripts/registries/build-colombia.py reps_private_ips_sedes.csv capacidad.csv 2026-03-12   # as-of = FechaCorte
+```
+
 ## After a refresh
 
 - `profiledRowIds()` in `src/lib/registries/index.ts` badges rows whose published

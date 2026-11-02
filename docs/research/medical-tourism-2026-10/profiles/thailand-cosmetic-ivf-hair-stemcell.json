@@ -1,0 +1,368 @@
+{
+  "clinics": [
+    {
+      "name": "Preecha Aesthetic Institute (PAI)",
+      "district": "Bangkok (Watthana, Thong Lo / Sukhumvit 55)",
+      "type": "clinic",
+      "url": "https://www.pai.co.th/",
+      "specialties": ["Gender-affirming surgery (penile skin inversion vaginoplasty, orchiectomy)", "Facial feminization", "Breast and body contouring", "Facial plastic surgery"],
+      "namedDoctors": "Asst. Prof. Dr. Preecha Tiewtranon MD (site: chairman of the Society of Plastic and Reconstructive Surgeons of Thailand, member of the Society of Aesthetic Plastic Surgeons of Thailand; former chairman of the plastic surgery unit, Chulalongkorn), Asst. Prof. Dr. Sirachai Jindarak MD, Asst. Prof. Dr. Prayuth Chokrungvaranont MD, Asst. Prof. Dr. Apichai Angspatt MD, Dr. Sutin Khobunsongserm MD, Dr. Burin Wangjiraniran MD (shown as FRCS on one page and FRCST on another). The site says all surgeons are board-certified but names no board; Thai Board of Plastic Surgery is not stated by name. No anesthesiologist is named.",
+      "credentials": "Clinic, not a hospital. Site says general-anesthesia operations are done at two affiliated accredited private hospitals in Bangkok; the hospital page captions photos as Phyathai 2 Hospital and Vimut Hospital but does not state which performs surgery. Clinic operating rooms are described as equipped for local anesthesia. No MoPH clinic licence number published. Site gives conflicting founding dates (established 1980 in header; PAI established 2002 in founder text; Chollada Clinic 1978). HA Thailand accreditation-status directory checked 30 October 2026: it covers hospitals, not clinics, and its keyword search is form-driven so PAI's partner hospitals could not be matched by automated reading. JCI directory redirected to jointcommission.org and returned 403 on 30 October 2026. checkmd.tmc.or.th returned 403 to automated reading on 30 October 2026, so surgeons were not verified there.",
+      "cautions": "Site states 'The first successful gender surgery Thailand since 1975' and other pioneer claims that cannot be independently verified. English-language press search found no reported death, lawsuit or regulator action tied to PAI; Thai-language court records were not searched.",
+      "publishedPrices": "Not published on its site. Marketplace range (indicative), Thaiger Deals listing seen October 2026: male-to-female SRS THB 312,000 to 451,200 ($8,667 to $12,533 at 36 THB = $1); female-to-male THB 161,000 ($4,472). Most other procedures listed as 'inquire with the clinic'.",
+      "booking": {
+        "channels": "Form at https://www.pai.co.th/appointment/ (name, email, subject, message, file upload); email consult@pai.co.th; phone +66 2 715 0111; fax +66 2 715 0113; LINE link lin.ee/6xVTTz8; Facebook, Instagram, YouTube. No WhatsApp listed. Hours not published.",
+        "consult": "Not published. The appointment form asks you to 'send them back to PAI' with an upload field but does not say what to attach. No consultation fee, deposit, response time, or SRS eligibility requirements (letters, age, hormone duration) are stated on the site.",
+        "languages": "Site in English and Simplified Chinese.",
+        "bookingUrl": "https://www.pai.co.th/appointment/"
+      },
+      "sourceIds": ["pai-site", "pai-about", "pai-hospital", "pai-appointment", "pai-market-thaiger", "ha-list", "jci-directory", "tmc-checkmd"]
+    },
+    {
+      "name": "Kamol Cosmetic Hospital (Dr. Kamol Pansritum)",
+      "district": "Bangkok (Wang Thonglang, Lat Phrao 94)",
+      "type": "hospital",
+      "url": "https://kamolhospital.com/",
+      "specialties": ["Gender-affirming surgery (vaginoplasty incl. peritoneal, phalloplasty, metoidioplasty)", "Facial feminization", "Voice feminization", "Breast augmentation", "Body contouring"],
+      "namedDoctors": "Dr. Kamol Pansritum MD, chief plastic surgeon; Dr. Vipaphan Watson MD; Dr. Navin Klongkitkarnkha MD; Dr. Wichai Surawongsin MD; Dr. Sanipreeya Yingtaweesithikul MD; Dr. Akaradech Attainsee MD; Dr. Janjira Paengnoi MD; Dr. Tharatip Likkasittipan MD (all listed as plastic surgeons). Site says 'board-certified surgeons' without naming a board; Dr. Kamol's own doctor page lists procedures only. A third-party directory records Thai Board of General Surgery diplomas (1992, 1997) and an MD from Khon Kaen University (1986); Thai Board of Plastic Surgery is not stated anywhere seen. No anesthesiologist is named.",
+      "credentials": "Self-described purpose-built cosmetic and gender-affirming surgery hospital at 1223 Lat Phrao 94, with an 11-bed recovery room and several operating rooms described on the facilities page; no bed count, ICU, or hospital licence number published. Site states 'As a JCI-accredited facility'; JCI directory returned 403 on 30 October 2026, so the claim is 'JCI claimed on hospital site; directory not reachable'. Not matched on the HA Thailand accreditation-status directory first page on 30 October 2026 (keyword search could not be driven by automated reading). checkmd.tmc.or.th returned 403 on 30 October 2026. Founding year not stated; site says 'over 30 years of expertise'. Former address was inside Bangkok Hospital Laksi Square.",
+      "cautions": "February 2016: the Department of Health Service Support inspected Kamol Cosmetic Hospital after a social-media figure who was found not to be a doctor brought a former singer there for a 'Face Off' procedure; Dr. Kamol told inspectors he was not involved in advertising the service and the department said it was still gathering evidence (kamol-press-nation). No later regulator action was found in English-language press.",
+      "publishedPrices": "Not published on its site. Marketplace range (indicative), Thaiger Deals listing seen October 2026: female-to-male gender surgery THB 336,000 to 724,500 ($9,333 to $20,125 at 36 THB = $1); MyMediTravel lists FtM at $9,337. Figures conflict across aggregators.",
+      "booking": {
+        "channels": "Phone +66 2 559 0155; WhatsApp +66 81 558 6969; email customercare@kamolhospital.com; contact form with a 'WhatsApp / Skype / Line etc.' field. Hours not published.",
+        "consult": "Site offers 'Book a free consultation, no commitment'. Pre-arrival page: a psychological evaluation is required before SRS and 'A letter from psychiatrist must be presented after the evaluation' (number of letters not stated); lab panel of CBC, electrolytes, anti-HIV, hepatitis screen, chest X-ray and likely EKG. Minimum age, hormone duration, real-life experience, BMI, deposit and payment terms are not stated on the pages read. Third-party listings cite minimum age 20 (parental consent at 18 to 19) and one year HRT plus one year RLE for metoidioplasty, which the hospital site did not confirm.",
+        "languages": "Site in English, Thai, Japanese, Simplified Chinese, Spanish, Italian, French, Portuguese, Korean, Arabic, Russian; 'over 10 languages' of support claimed."
+      },
+      "sourceIds": ["kamol-site", "kamol-facilities", "kamol-prearrival", "kamol-doctor-page", "kamol-tgmap", "kamol-press-nation", "kamol-market-thaiger", "ha-list", "jci-directory", "tmc-checkmd"]
+    },
+    {
+      "name": "Suporn Clinic (Dr. Suporn Watanyusakul; Dr. Chayamote 'Bank' Chayangsu; Dr. 'Prae')",
+      "district": "Chonburi (Mueang, Bangplasoi, Sukhumvit Road)",
+      "type": "clinic",
+      "url": "https://supornclinic.com/",
+      "specialties": ["Gender-affirming vaginoplasty (non-penile-inversion technique)", "Facial feminization", "Breast augmentation"],
+      "namedDoctors": "Dr. Suporn Watanyusakul MD (Chiang Mai University medicine 1979-1985; general surgery Chonburi Hospital 1985-1990; plastic and reconstructive surgery Chulalongkorn 1990-1992, 'certified 1992'; site says certified by the Medical Council of Thailand, no board named). Dr. Chayamote Chayangsu MD ('Dr. Bank'): Diploma of the Thai Board of Plastic Surgery 2014, Diploma of the Thai Board of General Surgery 2011, Royal College of Surgeons of Thailand 2012, Society of Plastic and Reconstructive Surgeons of Thailand 2015, Society of Aesthetic Plastic Surgeons of Thailand 2016. The 2027 calendar also names 'Dr. Prae' (a third-party page identifies her as Navipa Dusitanond), whose profile was not on the doctors page read. No anesthesiologist is named; the protocols page says clearance requires 'consent of the anesthesiologist at Aikchol hospital' while the hospital page says operations are at Samitivej Chonburi Hospital.",
+      "credentials": "Clinic at 938 Sukhumvit Road, Chonburi 20000; general-anesthesia surgery is done at a partner hospital. The hospital page names Samitivej Chonburi Hospital (SCH), about 5 km from the clinic, with inpatient, ICU and emergency departments and 'HA Hospital Accreditation' listed as a feature; the protocols page still refers to Aikchol Hospital, so the two pages conflict. HA Thailand accreditation-status directory checked 30 October 2026: Samitivej Chonburi was not on the first results page and the keyword search could not be driven by automated reading, so HA level and expiry are not confirmed here. No clinic licence number published. checkmd.tmc.or.th returned 403 on 30 October 2026. Technique presented to the Royal College of Surgeons of Thailand in 2002; clinic founding year not stated.",
+      "cautions": "Structural caveats stated by the clinic: no SRS under age 18, written parental or guardian approval and a gender dysphoria diagnosis for patients under 20, patients must be under 55 on the surgery date, and 'Dr Suporn does not undertake elective surgery on HIV+ (positive) patients'. Patients must stay at least 24 and preferably 30 days in Thailand. Surgery dates are released in a once-a-year window (2027 dates released 11 September 2026) and the surgeon cannot be switched after confirmation. Forum posts from 2017 to 2019 said Dr. Suporn was semi-retired; the current calendar lists only Dr. Bank and Dr. Prae. No press-reported death, lawsuit or regulator action was found.",
+      "publishedPrices": "Not published on its site; quotations are given per case in THB on request. Fees stated: notarization via the Thai Medical Council THB 2,500 ($69 at 36 THB = $1); full notarization with notary public THB 6,000 ($167). Forum posts (not clinic figures) have cited roughly $15,500 for SRS in earlier years.",
+      "booking": {
+        "channels": "Email admin@supornclinic.com (English only); phone +66 38 273360 (clinic generally does not take phone messages); fax +66 38 273370. No LINE or WhatsApp listed. Thailand time GMT+7.",
+        "consult": "Complete and return the client profile form before the clinic will consider an application; SRS patients must send and bring original signed diagnosis or referral documents from psychosexual professionals (MD or PhD); full medical check-up report from your own doctor. Clinic says it follows WPATH guidelines 'as far as is considered reasonable'. Stop injected hormones 4 weeks and oral hormones 1 week before travel; stop smoking and heavy drinking at least 1 month before. Final clearance depends on admission tests and the anesthesiologist's consent.",
+        "deposit": "Minimum 20% of the quoted price within 14 days of requesting a date; balance no later than 30 days before surgery; inter-bank transfer only (no cash, cheques or cards). Cancellation more than 90 days out: full refund; under 7 days: 100% forfeited. Surgery must be completed within 2 years of the first scheduled date.",
+        "languages": "English; Japanese-language site section. Notarized documents are issued in English only."
+      },
+      "sourceIds": ["suporn-site", "suporn-protocols", "suporn-admin", "suporn-doctors", "suporn-hospital", "suporn-calendar", "suporn-contact", "ha-list", "tmc-checkmd"]
+    },
+    {
+      "name": "Dr. Chettawut Plastic Surgery Center at WIH International Hospital (Dr. Chettawut Tulayaphanich, now Dr. Chettasak Tulayapanich)",
+      "district": "Bangkok (Bang Na, Debaratna Road)",
+      "type": "hospital",
+      "url": "https://www.chet-plasticsurgery.com/",
+      "specialties": ["Gender-affirming vaginoplasty", "Facial feminization", "Breast augmentation", "Body contouring"],
+      "namedDoctors": "Dr. Chettawut Tulayaphanich MD, who the site says now practises as Dr. Chettasak Tulayapanich, founder and CEO of WIH International Hospital. Site: 'Board Certified for Plastic and Reconstructive Surgery' (board not named), craniofacial and maxillofacial surgery, former head of plastic surgery at Nopparat Rajathanee Hospital; member of WPATH, Society of Plastic and Reconstructive Surgeons of Thailand, Society of Aesthetic Plastic Surgeons of Thailand, Royal College of Surgeons of Thailand. Site states he is the only surgeon operating from start to end. No anesthesiologist is named.",
+      "credentials": "Surgery is in WIH International Hospital, 1798 Debaratna Road, Bang Na, Bangkok 10260, which the surgeon founded; the hospital site publishes no licence number, bed count or accreditation (no HA or JCI claim). An older directory address placed the practice at Vibhavadi II Hospital. Not found on the HA Thailand accreditation-status directory first page on 30 October 2026 (keyword search not drivable by automated reading). checkmd.tmc.or.th returned 403 on 30 October 2026. Founding year not stated; practice claims results 'since 1995'.",
+      "cautions": "The surgeon's name on the site differs between pages (Chettawut Tulayaphanich vs. Chettasak Tulayapanich); confirm the Medical Council registration under the current name. English-language press search for 'Chettawut' and 'WIH International Hospital' found no death, lawsuit or regulator action.",
+      "publishedPrices": "Only one figure on its site, undated, seen October 2026: 'extra charge of 32,000 THB' ($889 at 36 THB = $1) for an additional groin skin graft when needed. SRS base price not published. Historical forum posts cited THB 333,000 for SRS in the 2010s.",
+      "booking": {
+        "channels": "Email info@wihhospital.com; phone +66 2 078 8919; WhatsApp +66 95 650 3892; LINE @WIHhospital; YouTube, TikTok, Instagram. Hours not published.",
+        "consult": "Email-based: send the health information form and photos (4 facial views for FFS, 3 views for breast or body, JPEG 350 to 700 KB). Dr. Chettawut selects the surgery date after you give a preferred month. Lab tests 4 to 6 weeks before surgery (CBC, anti-HIV, creatinine, PT/PTT, fasting glucose, chest X-ray; EKG from age 42; stress test over 60), results reviewed at least 3 weeks before surgery. WPATH letters, minimum age and hormone duration are not stated on the pages read. No consultation fee stated.",
+        "deposit": "20% by international wire within 7 days of agreeing the date; balance by wire no later than 4 weeks before travel. Cancellation terms not published.",
+        "languages": "Not stated."
+      },
+      "sourceIds": ["chet-site", "chet-faq", "chet-scheduling", "chet-srs", "wih-site", "ha-list", "tmc-checkmd"]
+    },
+    {
+      "name": "Pratunam Polyclinic (Dr. Thep Vechavisit)",
+      "district": "Bangkok (Ratchathewi, Pratunam, Rajaprarop Road)",
+      "type": "clinic",
+      "specialties": ["Gender-affirming surgery", "Breast augmentation", "Liposuction and abdominoplasty", "Facial cosmetic surgery"],
+      "namedDoctors": "Dr. Thep Vechavisit (also spelled Thep Vejvisith). No board certification is claimed by a clinic site; no official clinic website was found in October 2026, only an archival patient-made page. A January 2006 note to the Society of Plastic and Reconstructive Surgeons of Thailand (plasticsurgery.or.th) stated he 'is NOT a national board certified plastic surgeon in Thailand'. He told the Sydney Morning Herald (27 August 2006) he is a registered Thai doctor who did a two-month cosmetic surgery course through New York University. No anesthesiologist named; a 2006 reader report said he performed sedation himself.",
+      "credentials": "Clinic (polyclinic) at 425/4 Rajaprarop Road, opposite the Indra Regent Hotel; no hospital affiliation stated and a 2006 reader report said Thai hospitals did not grant him privileges. No MoPH licence number found. Not applicable to the HA hospital list (clinic). checkmd.tmc.or.th returned 403 on 30 October 2026, so his current Medical Council registration status could not be verified here. All facts come from an archival directory page last reviewed 21 June 2025 and 2005 to 2006 press; current operating status is unknown.",
+      "cautions": "The Society of Plastic and Reconstructive Surgeons of Thailand stated in January 2006 that he is not a national board certified plastic surgeon (thep-tgmap). The Sydney Morning Herald (27 August 2006) and Associated Press (20 August 2006) reported he publicly discussed a prospective patient (John Mark Karr), raising confidentiality concerns (thep-tgmap). The archival directory advises readers to consider other surgeons and reports unverified reader complaints of complications. The brief's phrase 'Bangkok Plastic Surgery' for Dr. Thep did not match any site found; the bangkokplasticsurgery.com domain belongs to Dr. Pichet Rodchareon.",
+      "publishedPrices": "Not published on any clinic site found. Historical 2006 reader-submitted price list (indicative only, not current): sex change $1,625; abdominoplasty $1,250; breast augmentation $1,125; rhinoplasty $300. Bangkok Recorder (September 2005) reported $1,600 with a six-day hospital stay.",
+      "booking": {
+        "channels": "Phone numbers from the archival page: +66 2 254 5333, +66 2 255 7767, +66 2 254 5888. Email not readable. No current website, WhatsApp or LINE found.",
+        "consult": "Not published."
+      },
+      "sourceIds": ["thep-tgmap", "tmc-checkmd"]
+    },
+    {
+      "name": "Asia Cosmetic Hospital (Asia Cosmetic Hospital Co., Ltd.; Dr. Tanongsak Panyawirunroj)",
+      "district": "Nonthaburi (Mueang Nonthaburi, Rattanathibet Road, Bang Krasor)",
+      "type": "hospital",
+      "url": "https://www.asiacosmeticthailand.com/",
+      "specialties": ["Breast augmentation", "Liposuction and body contouring", "Facial plastic surgery", "Gender-affirming surgery", "Bariatric surgery (per marketplace listing)"],
+      "namedDoctors": "Dr. Tanongsak Panyawirunroj: Diploma of the Thai Board of General Surgery 2005 (Siriraj) and Diploma of the Thai Board of Plastic Surgery 2007 (Siriraj residency 2005-2007), ISAPS member 2015-2016, described as ASPS-endorsed. Dr. Akkrarash Vongjirad listed with no credentials shown. Five further doctors appear only as image filenames. No anesthesiologist is named.",
+      "credentials": "Self-described hospital established 8 August 2012 (a marketplace page says 2013); the site also labels itself 'Asia Clinic' and 'Cosmetic / Plastic Surgery Center', and the hospital page shows operating and patient rooms without bed counts or a licence number. A Turkish-language section says it works 'with JCI standards'; no JCI certificate shown and the JCI directory returned 403 on 30 October 2026. Not matched on the HA Thailand accreditation-status directory first page on 30 October 2026. checkmd.tmc.or.th returned 403 on 30 October 2026. Three different street addresses appear on the site.",
+      "cautions": "Site makes unsupported safety claims such as liposuction being '100% safe'. The facility's licence category (hospital vs. clinic) is not stated on the site and should be confirmed with the Department of Health Service Support. English-language press search found no death, lawsuit or regulator action naming this hospital.",
+      "publishedPrices": "Not published on its site. Only fee stated (undated, seen October 2026): surgeon consultation fee USD 100 if you do not book surgery, waived when you reserve and pay the deposit at the same time.",
+      "booking": {
+        "channels": "WhatsApp +66 92 720 6393 (listed as 24/7); phones +66 91 770 7039, +66 86 398 4177; Thai hotline 1106; online consultation form at https://www.asiacosmeticthailand.com/online-consultation/; email obfuscated on page. No LINE listed.",
+        "consult": "Online form; USD 100 consultation fee unless booking. Staff reconfirm by phone, email or SMS one day before surgery and cancel the booking if they cannot reach you.",
+        "deposit": "Minimum 30% of the charged amount, non-refundable, paid per body part. Rescheduling under 7 days 10%, under 1 day 30%. Cancellation more than 7 days before 30%, under 7 days 50%, under 1 day 100%. If pre-surgery tests find you unfit, 30% is charged.",
+        "languages": "English site, Thai site (asia-clinic.com), Turkish section.",
+        "bookingUrl": "https://www.asiacosmeticthailand.com/online-consultation/"
+      },
+      "sourceIds": ["asia-site", "asia-doctor", "asia-agreement", "asia-hospital", "ha-list", "jci-directory", "tmc-checkmd"]
+    },
+    {
+      "name": "Nida Esth' International (Nida Esthetic Co., Ltd.)",
+      "district": "Bangkok (Pathum Wan, Siam Square Soi 9)",
+      "type": "clinic",
+      "url": "https://www.nidaskincosmetic.com/",
+      "specialties": ["Fat grafting and breast augmentation with own fat", "Liposuction", "Facial plastic surgery", "Non-surgical aesthetics and skin"],
+      "namedDoctors": "Pol. Col. Dr. Piya Rungruxsiri, plastic surgeon: MD Chulalongkorn 1994; diplomas in general surgery and plastic surgery from Chulalongkorn Hospital; site lists a 'plastic surgery certificate issued by the Medical Council of Thailand' (Thai Board of Plastic Surgery not named by that title; year not given); member of the Royal College of Surgeons of Thailand, Society of Plastic Surgeons of Thailand, Plastic and Aesthetic Surgery Society of Thailand; surgeon at Police General Hospital 2002-2013; at Nida Esth' since 2013. Dr. Sunida Yuthayotin, described as an 'American Board-certified beauty specialist' (board not named). Thai page says anesthesiologists are on staff but none is named.",
+      "credentials": "Outpatient aesthetic clinic (ศูนย์บริการทางการแพทย์) at 432/6-7 Siam Square Soi 9, Pathum Wan; affiliated hospitals shown only as unnamed logos. No MoPH clinic licence number published; no accreditation claimed. Founded 1998 (Thai text) or 1999 (English text). Not applicable to the HA hospital list (clinic). checkmd.tmc.or.th returned 403 on 30 October 2026.",
+      "publishedPrices": "Not published on its site. Payment page states payment in USD or THB only; bank transfer, cash, or credit card for Thailand residents only; payer covers bank fees.",
+      "booking": {
+        "channels": "Phone +66 2 252 2121, +66 2 251 2552; email info@nida-esth.com; LINE @Nida_Esth; WhatsApp +66 85 966 5333; Facebook Messenger, Instagram; online form at /make-an-appointment. Hours shown inconsistently: roughly Sun-Mon 09:00-17:00, Tue-Sat 09:00-18:00 or 19:00 (Bangkok time).",
+        "consult": "Online questionnaire at /contact/consultation. Consultation fee, deposit amount, response time not published; refund policy page exists but terms were not read.",
+        "languages": "Thai and English."
+      },
+      "sourceIds": ["nida-site", "nida-drpiya", "nida-payment", "tmc-checkmd"]
+    },
+    {
+      "name": "Masterpiece Hospital (Masterpiece Surgery Hospital; MASTER Style PCL)",
+      "district": "Bangkok (Dusit, Sukhothai Road)",
+      "type": "hospital",
+      "url": "https://www.masterpiecehospital.com/en",
+      "specialties": ["Facial plastic surgery", "Breast augmentation", "Body contouring", "Hair transplant", "Injectables and lasers"],
+      "namedDoctors": "English site names Dr. Rawiwat Maschamadol as head of the medical team and 'Dr. Sae'; the Thai doctor-team page lists about 30 doctors by nickname and name (for example นพ.โฆษิต เอี้ยวฉาย, นพ.ถนอม บรรณประเสริฐ, พญ.กุลธิดา ลุสวัสดิ์) with no specialty or board certification shown. Thai Board of Plastic Surgery not stated for any doctor on the pages read. No anesthesiologist is named.",
+      "credentials": "Cosmetic surgery hospital at 99/19 Sukhothai Road, Dusit, Bangkok 10300, operated by a company listed on the SET's mai market since January 2023; 2023 investor reporting said it was expanding to 17 operating rooms. Awards page lists an AACI accreditation certificate (International Accreditation Standards for Healthcare Organizations V5.0) and AACI ISO 9001 certificate, ISO 27001 registration, and many vendor awards; no HA or JCI claim and no MoPH hospital licence number published. Not matched on the HA Thailand accreditation-status directory first page on 30 October 2026. checkmd.tmc.or.th returned 403 on 30 October 2026. Founding year not stated.",
+      "cautions": "The parent company has acquired several aesthetic clinics (reported in 2023 to include Rattinan), so branded clinics in the group may be separately licensed. English and Thai press search found no reported death, complaint or regulator action naming the hospital; results were investor-relations items only.",
+      "publishedPrices": "Not published on its site; a promotions page exists but prices were not shown in the text read.",
+      "booking": {
+        "channels": "Phone +66 61 194 4542, +66 62 554 3204; LINE @140hqpid; contact page https://www.masterpiecehospital.com/contact-us-masterpiece/; email obfuscated. Service every day 08:00-20:00 Bangkok time. No WhatsApp listed.",
+        "consult": "Thai site says a physical assessment and consultation precede treatment. Fee, deposit and response time not published.",
+        "languages": "Thai and English."
+      },
+      "sourceIds": ["master-en", "master-doctors", "master-awards", "master-press-mitihoon", "ha-list", "tmc-checkmd"]
+    },
+    {
+      "name": "Rattinan Clinic (Rattinan Medical Center)",
+      "district": "Bangkok (Bang Rak, Silom Soi 3)",
+      "type": "clinic",
+      "url": "https://www.rattinan.com/en/",
+      "specialties": ["Liposuction and body contouring", "Breast surgery", "Facial plastic surgery", "Bariatric and endoscopic surgery", "Gynecomastia"],
+      "namedDoctors": "Plastic surgeons listed as 'Board-Certified Plastic & Reconstructive Surgeon' (board not named by title): Jatuporn Suesat MD, Ditsayanin Thaweethanatsit MD, Sunisa Thongprayoon MD, Witthawat Naeowong MD. Founders Dr. Suthipong Treeratana (surgery and body shaping) and Dr. Rattinan Treeratana. Also Dr. Panot Yimcharoen (endoscopic, GI and weight-loss surgery), an ENT and dermatology/aesthetic physicians. Anesthesiologists named: Chanathip Ajavananda MD and Kornkanok Pabu MD, both 'Board-Certified Anesthesiologist'.",
+      "credentials": "Clinic (not a hospital) in the Sithiworakit Building, 12th floor, Silom Soi 3; founded 1999. Site states Ministry of Public Health-certified operating rooms, an ISO 14644-1 clean room, continuous AACI accreditation and an AACI Excellence Award 2025, and publishes a MoPH advertising licence number ฆสพ.สบส.4139/2568; no clinic licence number (ใบอนุญาตสถานพยาบาล) was seen. Reported in 2023 as acquired by the operator of Masterpiece Hospital. Not applicable to the HA hospital list (clinic). checkmd.tmc.or.th returned 403 on 30 October 2026.",
+      "publishedPrices": "Not published on its site: the English site links a 'Price List' but the page returned 404 on 30 October 2026; the Thai site says 'clear pricing, no later surcharges' without figures.",
+      "booking": {
+        "channels": "WhatsApp +66 82 163 9400 (international patients); email international@rattinan.com; free consultation form at https://www.rattinan.com/en/book-free-consultation/; Monday to Sunday 09:00-19:00 Bangkok time. No LINE id or landline shown on the English contact page.",
+        "consult": "Free doctor consultation and free pre-screening advertised; deposit and cancellation terms not published.",
+        "languages": "Thai and English.",
+        "bookingUrl": "https://www.rattinan.com/en/book-free-consultation/"
+      },
+      "sourceIds": ["rattinan-th", "rattinan-en", "rattinan-contact", "master-press-mitihoon", "tmc-checkmd"]
+    },
+    {
+      "name": "Phuket Plastic Surgery Institute (PPSI) at Bangkok Hospital Siriroj (Dr. Sanguan Kunaporn)",
+      "district": "Phuket (Mueang, Chalermprakiat Rama 9 Road)",
+      "type": "clinic",
+      "url": "https://www.phuketpsi.com/",
+      "specialties": ["Gender-affirming surgery (including sigmoid colon vaginoplasty)", "Facial plastic surgery", "Breast surgery", "Body contouring"],
+      "namedDoctors": "Dr. Sanguan Kunaporn, director (a marketplace profile states Thai Board of Plastic and Reconstructive Surgery 1991 as clinic-provided; the PPSI site itself names no board; ISAPS national secretary 2010-2014 per IMCAS); Dr. Singto Siriwiroj; Dr. Pongsatorn Sanguanchua ('Dr. Jib'). No anesthesiologist is named. The former Phuket International Hospital site (phuket-plasticsurgery.com) refused connections on 30 October 2026.",
+      "credentials": "Hospital-based plastic surgery institute inside Bangkok Hospital Siriroj (formerly Phuket International Hospital), 44 Chalermprakiat Rama 9 Road, Phuket 83000, part of BDMS. Site claims 'JCI-accredited safety standards' and ISAPS compliance; JCI directory returned 403 on 30 October 2026 so this is 'JCI claimed on site; directory not reachable'. Not matched on the HA Thailand accreditation-status directory first page on 30 October 2026. checkmd.tmc.or.th returned 403 on 30 October 2026. Founding year not stated; site mentions a '10th Anniversary PPSI' package.",
+      "cautions": "Dr. Sanguan announced in 2018 that he would begin handing his practice to two new surgeons, named on a third-party page as Chayamote Chayangsu (Dr. Bank) and Navipa Dusitanond (Dr. Prae), who now appear on the Suporn Clinic calendar; the current PPSI site lists different associate surgeons, so confirm who will operate (ppsi-tgmap).",
+      "publishedPrices": "Not published on its site.",
+      "booking": {
+        "channels": "Phone +66 76 361 888; LINE via linktr.ee/ppsi.phuket; online appointment page on the site; email obfuscated. No WhatsApp listed.",
+        "consult": "Not published; SRS requirements (letters, age, hormone duration) are not stated on the site.",
+        "languages": "English, Simplified Chinese, Russian, Thai."
+      },
+      "sourceIds": ["ppsi-site", "ppsi-tgmap", "ppsi-flymedi", "ha-list", "jci-directory", "tmc-checkmd"]
+    },
+    {
+      "name": "Bangkok Plastic Surgery (Dr. Pichet Rodchareon)",
+      "district": "Bangkok (Din Daeng, Inthamara Soi 20, Suthisarn Road)",
+      "type": "clinic",
+      "url": "https://www.bangkokplasticsurgery.com/",
+      "specialties": ["Gender-affirming surgery", "Facial feminization", "Breast and buttock implants", "Body contouring"],
+      "namedDoctors": "Dr. Pichet Rodchareon MD; site says 'a board certified Plastic surgeon' and 'Diplomate in Plastic Surgery, BKK Thailand' without naming the Thai Board; plastic surgery training at Chulalongkorn; ISAPS active member; ASPS international member 2019. No anesthesiologist is named; an FAQ quotes 'surgeon and anesthesiologist fees'.",
+      "credentials": "Clinic at 422-426/1 Inthamara Soi 20, Din Daeng 10400. The site refers to a one-night stay in 'a grand hospital accommodation' but does not name the hospital where surgery occurs. No MoPH clinic licence number or accreditation published. Site content is dated (copyright 2016). Not applicable to the HA hospital list (clinic). checkmd.tmc.or.th returned 403 on 30 October 2026.",
+      "cautions": "Site FAQ describes SRS as 'the easy job' and the risk as 'very low', which are unsupported statements; cash-only or card-with-surcharge payment at the clinic with no written cancellation policy. No press-reported incident or regulator action was found.",
+      "publishedPrices": "One figure on its site, undated (page dated 2016), seen October 2026: 'surgeon and anesthesiologist fees is 3,500 us $' for a gluteus implant package. No THB price list.",
+      "booking": {
+        "channels": "24-hour hotline +66 81 933 1010; office +66 2 690 8000 (staff 09:00-19:00 Bangkok time); WhatsApp +66 81 933 1010; LINE lin.ee/bmEZwkl; email pichet@bangkokplasticsurgery.com; Japanese contact +66 89 999 0123, pochanee@bangkokplasticsurgery.com.",
+        "consult": "Online form; site says resubmit if no reply within 72 hours. No consultation fee stated.",
+        "deposit": "No deposit required; booking is held with flight itinerary and hotel reservation. Full payment before surgery in cash (USD or THB) at the clinic, or Visa/Mastercard with a 3% surcharge; cheques and bank transfers not accepted.",
+        "languages": "Site selector lists English, Spanish, Arabic, Chinese, French, German, Italian, Japanese, Korean."
+      },
+      "sourceIds": ["pichet-site", "pichet-profile", "pichet-payment", "tmc-checkmd"]
+    },
+    {
+      "name": "Yoskarn Clinic (Prof. Somyos Kunachak)",
+      "district": "Bangkok (Pathum Wan, Ratchadamri Road)",
+      "type": "clinic",
+      "url": "https://laser-surgery-bangkok.com/",
+      "specialties": ["Facial plastic surgery and facial feminization", "Rhinoplasty", "Laser and skin", "Hair transplant", "Body contouring"],
+      "namedDoctors": "Prof. Somyos Kunachak MD, DTM&H, FRCOT: site lists board certification in facial plastic and reconstructive surgery, otolaryngology head and neck surgery, and family medicine; Diplomate of the American Board of Cosmetic Surgery (1993-2025); trained at Ramathibodi Hospital, Mahidol University. Thai Board of Plastic Surgery is not claimed. Also listed: Assoc. Prof. Chalermkiat Raweepakawat, Dr. Monsiya Pongchomporn, Dr. Chawin Chamnanwong, Dr. Prawit Bunyot, Asst. Prof. Kritsada Kowitwiboon, with no certifications shown. No anesthesiologist is named.",
+      "credentials": "Self-described 'one stop plastic surgery clinic' at 293 Bangkok Bazaar, Ratchadamri Road, Bangkok 10330; no affiliated hospital named; no MoPH licence number or accreditation published; founded 'more than 30 years ago'. yoskarnclinic.com redirects to laser-surgery-bangkok.com. Not applicable to the HA hospital list (clinic). checkmd.tmc.or.th returned 403 on 30 October 2026.",
+      "cautions": "The lead surgeon's primary board is otolaryngology and facial plastic surgery, not the Thai Board of Plastic Surgery, which matters for body procedures listed on the site. No press-reported incident or regulator action was found.",
+      "publishedPrices": "Not published on its site; the site says 'Honest & Clear Pricing' without figures.",
+      "booking": {
+        "channels": "Phone +66 94 558 9575; call center +66 2 253 8901; WhatsApp wa.me/66945589575; LINE lin.ee/hyENHUR; appointment form https://laser-surgery-bangkok.com/appointment/. No email shown.",
+        "consult": "Not published.",
+        "languages": "English site, Thai (yoskarn.co.th), Chinese (yoskarn.cn).",
+        "bookingUrl": "https://laser-surgery-bangkok.com/appointment/"
+      },
+      "sourceIds": ["yoskarn-site", "yoskarn-surgeon", "tmc-checkmd"]
+    },
+    {
+      "name": "Superior A.R.T. (Oogonia Co., Ltd.)",
+      "district": "Bangkok (Ratchathewi, Makkasan, New Petchburi Road)",
+      "type": "clinic",
+      "url": "https://thaisuperiorart.com/",
+      "specialties": ["IVF and ICSI", "PGT-A and PGT-M", "Egg freezing", "IUI"],
+      "namedDoctors": "Not named on the FAQ or plan-your-visit pages read; no board certifications listed.",
+      "credentials": "Fertility clinic at 1126/2 Vanit Building II, lobby floor, New Petchburi Road, Makkasan, Ratchathewi 10400, operating since 2007; no accreditation claimed and no MoPH clinic licence number published on the pages read. Not applicable to the HA hospital list (clinic). checkmd.tmc.or.th returned 403 on 30 October 2026. Legal rules as stated by the clinic: IVF 'can be provided only to a married heterosexual couple' (de facto couples only where local law permits); a certified copy of proof of marriage in English is required to start IVF or IUI; the clinic does not offer surrogacy and says it is permitted in Thailand only under very strict conditions. The clinic does not cite the 2015 ART Act by name and does not state a position on sex selection; it says PGT-A 'allows us to select the most suitable embryo'.",
+      "cautions": "FAQ publishes unsourced success-rate claims (IVF and ICSI 'about 60%', IUI '10-15%'). Thailand's Marriage Equality Act took effect 22 January 2025, which may change the 'heterosexual couple' wording quoted above; confirm current eligibility with the clinic.",
+      "publishedPrices": "On its site, undated (site copyright 2021), seen October 2026, at 36 THB = $1: Worry Free all-inclusive IVF/ICSI with PGT-A package THB 495,000 ($13,750) for one stimulation and one FET; full IVF/PGT-A cycle THB 350,000 to 430,000 ($9,722 to $11,944) excluding pre-IVF tests of about THB 30,000 ($833); another FAQ gives THB 350,000 to 450,000 ($9,722 to $12,500); FET cycle THB 60,000 to 70,000 ($1,667 to $1,944) plus about THB 15,000 ($417) medication; doctor consultation THB 1,000 ($28) plus THB 100 facility fee, ultrasound THB 1,000; remote consult THB 3,000 ($83) per 30 minutes; cryopreservation THB 20,000 ($556) for up to 10 samples plus THB 2,500 ($69) per sample per year.",
+      "booking": {
+        "channels": "Phone +66 2 035 1400 (book before 16:00, at least 1 day ahead; packages ext. 415, 416, 418); mobile/Viber +66 63 904 8899; WhatsApp +66 63 905 3095; LINE lin.ee/wgLWdWT; Messenger m.me/thaisuperiorart; email services@thaisuperiorart.com; callback form at https://thaisuperiorart.com/plan-your-visit/.",
+        "consult": "Submit the callback form; bring passports or Thai ID, registration and medical history forms, and certified proof of marriage in English. Deposit terms not published.",
+        "languages": "English, Thai, Simplified Chinese; WeChat mentioned.",
+        "bookingUrl": "https://thaisuperiorart.com/plan-your-visit/"
+      },
+      "sourceIds": ["superior-faq", "superior-visit", "tmc-checkmd"]
+    },
+    {
+      "name": "Jetanin Hospital (Jetanin Institute for Assisted Reproduction)",
+      "district": "Bangkok (Pathum Wan, Soi Chidlom, Ploenchit Road)",
+      "type": "hospital",
+      "url": "https://jetanin.com/international-patients",
+      "specialties": ["IVF and ICSI", "PGT-A and PGT-M", "Egg freezing", "Sperm and embryo banking"],
+      "namedDoctors": "Eight doctors, each listed as 'Obstetrician and Gynecologist, Reproductive Medicine': Pol. Gen. Dr. Jongjate Aojanepong, Dr. Somjate Manipalviratn, Sqn. Ldr. Pinyo Hunsajarupan, Dr. Kriengchai Sajjachareonpong, Dr. Piyaphan Punyatanasakchai, Dr. Yoko Tawaratsumida, Dr. Sirisuk Ouitrakul, Pol. Maj. Dr. Tepchongchit Aojanepong. No Thai Board certification is stated by name.",
+      "credentials": "Fertility hospital at 5 Soi Chidlom, Ploenchit Road, Lumphini, Pathum Wan 10330, 'over 30 years' in operation; no HA, JCI or ISO claim in site text (unlabelled logos only, including ESHRE); no MoPH hospital licence number published. Not matched on the HA Thailand accreditation-status directory first page on 30 October 2026 (keyword search not drivable by automated reading). checkmd.tmc.or.th returned 403 on 30 October 2026. The site pages read do not state the 2015 ART Act rules (married-couple requirement, no surrogacy for foreigners, no sex selection); ask the clinic in writing.",
+      "publishedPrices": "Not published on its site; a payment portal exists without a price list. The Thaiger Deals marketplace listing shows IVF, ICSI, egg freezing and IMSI as 'inquire with the clinic'.",
+      "booking": {
+        "channels": "Phone +66 2 655 5300; fax +66 2 655 5313; WhatsApp +66 82 280 0192 (international counselor); LINE lin.ee/TqGWyZw; free consultation form on the site; email obfuscated. Hours not published (a directory lists Monday to Saturday).",
+        "consult": "Free consultation form; documents, deposit and length of stay not published on the international page.",
+        "languages": "English, Thai, Traditional Chinese."
+      },
+      "sourceIds": ["jetanin-site", "jetanin-intl", "jetanin-doctors", "ha-list", "tmc-checkmd"]
+    },
+    {
+      "name": "SAFE Fertility Group PCL (Gaysorn Amarin head office)",
+      "district": "Bangkok (Pathum Wan, Ploenchit Road); branches Ramindra, Sriracha, Phuket, Khon Kaen",
+      "type": "clinic",
+      "url": "https://www.safefertilitygroup.com/en/services/international-patients-ivf-thailand",
+      "specialties": ["ICSI with PGTseq-A", "Egg freezing", "Frozen embryo transfer", "IUI", "Couples health check"],
+      "namedDoctors": "Not named on the pages read; medical team page exists at /en/specialist/medical-team.",
+      "credentials": "Public company listed on the Stock Exchange of Thailand (SET: SAFE); head office Gaysorn Amarin, 17th floor, 496-502 Ploenchit Road, Lumpini, Pathum Wan 10330; 'since 2007'. Site states accreditation by the Reproductive Technology Accreditation Committee (RTAC, Australia and New Zealand), described as the first in Thailand, and ISO 9001:2015; no HA or JCI claim; no MoPH clinic licence number published. Not applicable to the HA hospital list (clinic). checkmd.tmc.or.th returned 403 on 30 October 2026. The international-patients page states social egg freezing is available to single women without marital-status restriction; a partner listing (third party) states a marriage certificate translated into Thai and legally certified is required for IVF and ICSI. The site pages read do not cite the 2015 ART Act, surrogacy or sex-selection rules.",
+      "publishedPrices": "Package prices are published only as PDF downloads on https://www.safefertilitygroup.com/en/packages (IVF and ICSI, egg freezing, IUI, FET, health check, VIP), whose figures could not be read; the page notes prices may vary by branch. Third-party (AustCham Thailand) promotion seen October 2026: ICSI THB 219,000 ($6,083 at 36 THB = $1), normal price THB 269,000 ($7,472), including freezing of 1 to 3 embryos, valid for stimulation starting by 31 December 2025 (expired).",
+      "booking": {
+        "channels": "WhatsApp +66 81 102 1000; call center +66 81 102 1000; phone +66 2 252 3833; LINE lin.ee/3KX5adM; inquiry form https://www.safefertilitygroup.com/en/contact-safe; Facebook, Instagram.",
+        "consult": "Consultation and fertility screening first; a personal assistant provides a pre-screening checklist; bring passport and prior medical records. Typical stay 10 to 14 days, usually split into about 7 to 10 days for egg collection and 4 to 5 days for transfer. Deposit terms not published.",
+        "languages": "English, Thai, Chinese site; support described in English, Chinese, Japanese, Vietnamese and more.",
+        "bookingUrl": "https://www.safefertilitygroup.com/en/contact-safe"
+      },
+      "sourceIds": ["safe-home", "safe-intl", "safe-packages", "safe-austcham", "tmc-checkmd"]
+    },
+    {
+      "name": "Absolute Hair Clinic",
+      "district": "Bangkok (Khlong San, Krung Thonburi Road)",
+      "type": "clinic",
+      "url": "https://absolutehairclinic.com/en/",
+      "specialties": ["FUE hair transplant", "FUT hair transplant", "PRP and laser for hair loss", "Medical treatment for hair loss"],
+      "namedDoctors": "Dr. Kongkiat Laorwong: American Board of Hair Restoration Surgery (ABHRS) diplomate and Fellow of the International Society of Hair Restoration Surgery (FISHRS) per certificate images and alt text. Assoc. Prof. Dr. Ratchathorn Panchaprateep: 'Board-certified dermatologist' (board not named), ABHRS diplomate, faculty of Chulalongkorn University dermatology, 2019 ISHRS Platinum Follicle Award. Thai page states 'the doctor performs every case; the team is not left to do it themselves' (แพทย์ผู้เชี่ยวชาญเป็นผู้ผ่าตัดเองทุกกรณี). No anesthesiologist named; local anesthesia plus a sleeping medication is described.",
+      "credentials": "Clinic at 134/2 Krung Thonburi Road, Khlong Ton Sai, Khlong San, Bangkok 10600; open 09:00-18:00 daily. No MoPH clinic licence number or accreditation published; founding year not stated. Not applicable to the HA hospital list (clinic). checkmd.tmc.or.th returned 403 on 30 October 2026. The www host presents a certificate for the bare domain only (TLS mismatch on 30 October 2026).",
+      "publishedPrices": "Thai FUE page, undated (links a '2023 update' price article), seen October 2026: 'starting price about THB 30,000' ($833 at 36 THB = $1) depending on graft count; no per-graft figure in the text read. A third-party registry says the site lists per-graft prices including medication, follow-up and one PRP session.",
+      "booking": {
+        "channels": "Phone +66 95 142 8241, +66 65 987 4666; LINE @Absolutehair (lin.ee/6rkX6Yv); email consultabsolutehairclinic@gmail.com; Facebook, Instagram, YouTube; contact page https://absolutehairclinic.com/contact-us/. No WhatsApp listed.",
+        "consult": "Not published (fee, deposit, photo requirements).",
+        "languages": "Thai, English, Japanese."
+      },
+      "sourceIds": ["absolute-site", "absolute-fue", "tmc-checkmd"]
+    },
+    {
+      "name": "The Regeneration Center (stem cell clinic)",
+      "district": "Bangkok (Watthana, 725 Sukhumvit Road, S-Metro / Metropolis Tower)",
+      "type": "clinic",
+      "url": "https://www.stemcellthailand.org/",
+      "specialties": ["Mesenchymal stem cell infusions marketed for autoimmune, neurological, orthopedic, cardiac, lung, kidney and liver conditions", "Anti-aging / 'age management'", "Cancer immunotherapy claims"],
+      "namedDoctors": "Not named on the international page; site refers only to an 'internationally trained medical team'. No anesthesiologist applicable.",
+      "credentials": "Established 2007 per site. Site states 'All four medical facilities are GMP-approved and fully licensed (including cell banking)' and that its team is 'fully licensed to perform regenerative medicine in the Kingdom of Thailand', linking to the Thai FDA site but publishing no licence number, approval reference or facility licence. Not applicable to the HA hospital list (clinic). checkmd.tmc.or.th returned 403 on 30 October 2026. Regulatory context: under Ministry of Public Health standards reported by The Nation on 31 October 2024, stem cell treatment in Thai medical facilities is permitted only for Medical Council-specified uses, mainly hematopoietic stem cell transplants for blood disorders (leukaemia, lymphoma, aplastic anaemia, multiple myeloma, thalassemia, congenital immunodeficiency); 'any stem cell injections beyond the treatments specified by the Medical Council' are illegal, and over 400 cases a year are prosecuted over exaggerated clinic stem cell claims. None of these treatments are approved by the US FDA.",
+      "cautions": "The conditions this clinic markets (stroke, ALS, Parkinson's, COPD, lupus, Type 1 diabetes, 'reversing' GI disease, cancer immunotherapy) fall outside the blood-disorder indications Thai regulators say are permitted, and the site cites no Thai FDA or Medical Council approval for them (stemcell-nation). Discover Magazine reported a patient death in Thailand after stem cells were injected into the kidneys, and the Nation article cites the related pathology study (stemcell-nation). These therapies are not FDA-approved; consult your physician.",
+      "publishedPrices": "Not published on its site; the site says recommendations are individualized rather than preset packages. Marketplace range (indicative), Bookimed 2025: stem cell rejuvenation in Bangkok average $7,813, range $1,800 to $25,000.",
+      "booking": {
+        "channels": "Email info@stemcellthailand.org; WhatsApp wa.me/66808069391; Thailand phone +66 80 806 9391; UK +44 20 3286 1444; USA/Canada +1 347 450 8424; Australia/NZ +61 27 908 9664; online 'Request evaluation' form. No LINE listed.",
+        "consult": "Online evaluation request with medical records; fees, deposit and response time not published.",
+        "languages": "English, Arabic, French."
+      },
+      "sourceIds": ["stemcell-site", "stemcell-nation", "stemcell-market-bookimed", "tmc-checkmd"]
+    }
+  ],
+  "sources": [
+    { "id": "ha-list", "label": "HA Thailand (Healthcare Accreditation Institute) accreditation-status directory", "url": "https://www.ha.or.th/TH/Hospitals/%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%99%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%A3%E0%B8%AD%E0%B8%87", "publisher": "Healthcare Accreditation Institute (สรพ.)", "date": "2026-10-30", "kind": "official" },
+    { "id": "jci-directory", "label": "JCI accredited organizations directory (returned 403 to automated reading)", "url": "https://www.jointcommissioninternational.org/who-we-are/accredited-organizations/", "publisher": "Joint Commission International", "date": "2026-10-30", "kind": "official" },
+    { "id": "tmc-checkmd", "label": "Thai Medical Council doctor lookup (returned 403 to automated reading)", "url": "https://checkmd.tmc.or.th/", "publisher": "Medical Council of Thailand", "date": "2026-10-30", "kind": "official" },
+    { "id": "hss-moph", "label": "Department of Health Service Support portal (licensed-facility check at hosp.hss.moph.go.th returned 403; complaint centre crm.hss.moph.go.th; call centre 02-193-7002)", "url": "https://hss.moph.go.th/index2.php", "publisher": "Department of Health Service Support, Ministry of Public Health", "date": "2026-10-30", "kind": "official" },
+    { "id": "pai-site", "label": "PAI homepage", "url": "https://www.pai.co.th/", "publisher": "Preecha Aesthetic Institute", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "pai-about", "label": "PAI about page: surgical team", "url": "https://www.pai.co.th/about/", "publisher": "Preecha Aesthetic Institute", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "pai-hospital", "label": "PAI affiliated hospital page", "url": "https://www.pai.co.th/hospital/", "publisher": "Preecha Aesthetic Institute", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "pai-appointment", "label": "PAI appointment and contact page", "url": "https://www.pai.co.th/appointment/", "publisher": "Preecha Aesthetic Institute", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "pai-market-thaiger", "label": "Thaiger Deals listing: Preecha Aesthetic Institute prices", "url": "https://deals.thethaiger.com/shop/preecha-aesthetic-institute-h450", "publisher": "The Thaiger (deals marketplace)", "date": "2026-10", "kind": "marketplace" },
+    { "id": "kamol-site", "label": "Kamol Cosmetic Hospital homepage", "url": "https://kamolhospital.com/", "publisher": "Kamol Cosmetic Hospital", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "kamol-facilities", "label": "Kamol Hospital facilities page", "url": "https://kamolhospital.com/facilities-2/", "publisher": "Kamol Cosmetic Hospital", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "kamol-prearrival", "label": "Kamol Trip: pre-arrival requirements", "url": "https://kamolhospital.com/kamol-trip/pre-arrival/", "publisher": "Kamol Cosmetic Hospital", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "kamol-doctor-page", "label": "Kamol Hospital doctor page: Dr. Kamol Pansritum", "url": "https://kamolhospital.com/doctors/dr-kamol-pansritum/", "publisher": "Kamol Cosmetic Hospital", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "kamol-tgmap", "label": "Transgender Map: Kamol Pansritum (training and board diplomas)", "url": "https://www.transgendermap.com/medical/surgery/thailand/kamol-pansritum/", "publisher": "Transgender Map", "date": "2025-06-21", "kind": "forum" },
+    { "id": "kamol-press-nation", "label": "Eminent plastic surgeon denies links with 'Face Off' services (HSS inspection of Kamol Cosmetic Hospital)", "url": "https://www.nationthailand.com/in-focus/30279557", "publisher": "The Nation (Thailand)", "date": "2016-02-17", "kind": "press" },
+    { "id": "kamol-market-thaiger", "label": "Thaiger Deals listing: Kamol Hospital prices", "url": "https://deals.thethaiger.com/shop/kamol-hospital-h567", "publisher": "The Thaiger (deals marketplace)", "date": "2026-10", "kind": "marketplace" },
+    { "id": "suporn-site", "label": "Suporn Clinic homepage", "url": "https://supornclinic.com/", "publisher": "Suporn Clinic", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "suporn-protocols", "label": "Suporn Clinic surgery protocols (eligibility, HIV, age, stay)", "url": "https://supornclinic.com/surgery-protocols/", "publisher": "Suporn Clinic", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "suporn-admin", "label": "Suporn Clinic patient administration (deposit, payment, cancellation, fees)", "url": "https://supornclinic.com/patient-administration/", "publisher": "Suporn Clinic", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "suporn-doctors", "label": "Suporn Clinic doctors page (Thai Board of Plastic Surgery 2014 for Dr. Chayangsu)", "url": "https://supornclinic.com/doctors/", "publisher": "Suporn Clinic", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "suporn-hospital", "label": "Suporn Clinic partner hospital page (Samitivej Chonburi Hospital)", "url": "https://supornclinic.com/hospital/", "publisher": "Suporn Clinic", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "suporn-calendar", "label": "Suporn Clinic surgery calendar (2027 release window, Dr. Bank and Dr. Prae)", "url": "https://supornclinic.com/calendar/", "publisher": "Suporn Clinic", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "suporn-contact", "label": "Suporn Clinic contact page", "url": "https://supornclinic.com/contact/", "publisher": "Suporn Clinic", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "chet-site", "label": "Dr. Chettawut Plastic Surgery Center homepage (surgeon profile)", "url": "https://www.chet-plasticsurgery.com/", "publisher": "Dr. Chettawut Plastic Surgery Center / WIH International Hospital", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "chet-faq", "label": "Chettawut SRS FAQ (groin graft THB 32,000, surgery duration)", "url": "https://www.chet-plasticsurgery.com/frequent-asked-questions-of-sex-reassignment-surgery/", "publisher": "Dr. Chettawut Plastic Surgery Center", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "chet-scheduling", "label": "Chettawut scheduling page (deposit, labs, photos)", "url": "https://www.chet-plasticsurgery.com/scheduling-surgery-with-chettawut-plastic-surgery-center/", "publisher": "Dr. Chettawut Plastic Surgery Center", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "chet-srs", "label": "Chettawut SRS service page (WhatsApp contact)", "url": "https://www.chet-plasticsurgery.com/sex-reassignment-surgery/", "publisher": "Dr. Chettawut Plastic Surgery Center", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "wih-site", "label": "WIH International Hospital homepage (address, contacts)", "url": "https://www.wihhospital.com/", "publisher": "WIH International Hospital", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "thep-tgmap", "label": "Transgender Map archival page: Thep Vechavisit (2006 society statement, press, 2006 price list)", "url": "https://www.transgendermap.com/physical/vaginoplasty/thep-vechavisit.html", "publisher": "Transgender Map", "date": "2025-06-21", "kind": "forum" },
+    { "id": "asia-site", "label": "Asia Cosmetic Hospital homepage", "url": "https://www.asiacosmeticthailand.com/", "publisher": "Asia Cosmetic Hospital Co., Ltd.", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "asia-doctor", "label": "Asia Cosmetic Hospital: Dr. Tanongsak Panyawirunroj profile (Thai Board of Plastic Surgery 2007)", "url": "https://www.asiacosmeticthailand.com/dr-tanongsak-panyawirunroj/", "publisher": "Asia Cosmetic Hospital Co., Ltd.", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "asia-agreement", "label": "Asia Cosmetic Hospital payment agreement (consult fee, deposit, cancellation)", "url": "https://www.asiacosmeticthailand.com/ach-agreement/", "publisher": "Asia Cosmetic Hospital Co., Ltd.", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "asia-hospital", "label": "Asia Cosmetic Hospital facility page", "url": "https://www.asiacosmeticthailand.com/our-hospital/", "publisher": "Asia Cosmetic Hospital Co., Ltd.", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "nida-site", "label": "Nida Esth' International homepage", "url": "https://www.nidaskincosmetic.com/", "publisher": "Nida Esthetic Co., Ltd.", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "nida-drpiya", "label": "Nida Esth': Dr. Piya Rungruxsiri profile", "url": "https://www.nidaskincosmetic.com/dr-piya", "publisher": "Nida Esthetic Co., Ltd.", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "nida-payment", "label": "Nida Esth' terms of payment", "url": "https://www.nidaskincosmetic.com/terms-of-payment", "publisher": "Nida Esthetic Co., Ltd.", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "master-en", "label": "Masterpiece Hospital English homepage", "url": "https://www.masterpiecehospital.com/en", "publisher": "Masterpiece Hospital", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "master-doctors", "label": "Masterpiece Hospital doctor team (Thai)", "url": "https://www.masterpiecehospital.com/doctor-team/", "publisher": "Masterpiece Hospital", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "master-awards", "label": "Masterpiece Hospital awards and certifications (AACI, ISO)", "url": "https://www.masterpiecehospital.com/awards/", "publisher": "Masterpiece Hospital", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "master-press-mitihoon", "label": "MASTER (Masterpiece Hospital operator) acquisitions incl. Rattinan; 17 operating rooms", "url": "https://www.mitihoon.com/2023/06/23/389067/", "publisher": "Mitihoon", "date": "2023-06-23", "kind": "press" },
+    { "id": "rattinan-th", "label": "Rattinan Clinic Thai homepage (doctors, anesthesiologists, advertising licence number)", "url": "https://www.rattinan.com/", "publisher": "Rattinan Clinic", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "rattinan-en", "label": "Rattinan Clinic English homepage", "url": "https://www.rattinan.com/en/", "publisher": "Rattinan Clinic", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "rattinan-contact", "label": "Rattinan Clinic English contact page", "url": "https://www.rattinan.com/en/contact-us/", "publisher": "Rattinan Clinic", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "ppsi-site", "label": "Phuket Plastic Surgery Institute homepage", "url": "https://www.phuketpsi.com/", "publisher": "Phuket Plastic Surgery Institute / Bangkok Hospital Siriroj", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "ppsi-tgmap", "label": "Transgender Map: Sanguan Kunaporn (2018 handover to Dr. Bank and Dr. Prae)", "url": "https://www.transgendermap.com/medical/surgery/thailand/sanguan-kunaporn/", "publisher": "Transgender Map", "date": "2025-06-21", "kind": "forum" },
+    { "id": "ppsi-flymedi", "label": "Flymedi profile: Dr. Sanguan Kunaporn (clinic-provided Thai Board 1991)", "url": "https://www.flymedi.com/doctors/sanguan-kunaporn/5007", "publisher": "Flymedi", "date": "2026-10", "kind": "marketplace" },
+    { "id": "pichet-site", "label": "Bangkok Plastic Surgery (Dr. Pichet) homepage and FAQ", "url": "https://www.bangkokplasticsurgery.com/", "publisher": "Bangkok Plastic Surgery", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "pichet-profile", "label": "Dr. Pichet Rodchareon profile page", "url": "https://www.bangkokplasticsurgery.com?page_id=40", "publisher": "Bangkok Plastic Surgery", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "pichet-payment", "label": "Bangkok Plastic Surgery terms of payment", "url": "https://www.bangkokplasticsurgery.com?page_id=1602", "publisher": "Bangkok Plastic Surgery", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "yoskarn-site", "label": "Yoskarn Clinic homepage", "url": "https://laser-surgery-bangkok.com/", "publisher": "Yoskarn Clinic", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "yoskarn-surgeon", "label": "Yoskarn Clinic: about our surgeon (Prof. Somyos Kunachak)", "url": "https://laser-surgery-bangkok.com/?about-our-surgeon,261", "publisher": "Yoskarn Clinic", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "superior-faq", "label": "Superior A.R.T. FAQ (legal requirements, prices)", "url": "https://thaisuperiorart.com/faq/", "publisher": "Superior A.R.T. (Oogonia Co., Ltd.)", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "superior-visit", "label": "Superior A.R.T. plan your visit", "url": "https://thaisuperiorart.com/plan-your-visit/", "publisher": "Superior A.R.T. (Oogonia Co., Ltd.)", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "jetanin-site", "label": "Jetanin Hospital homepage", "url": "https://www.jetanin.com/", "publisher": "Jetanin Hospital", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "jetanin-intl", "label": "Jetanin international patients page", "url": "https://jetanin.com/international-patients", "publisher": "Jetanin Hospital", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "jetanin-doctors", "label": "Jetanin doctors page", "url": "https://jetanin.com/doctors/", "publisher": "Jetanin Hospital", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "safe-home", "label": "SAFE Fertility Group English homepage (RTAC, ISO 9001, SET: SAFE)", "url": "https://www.safefertilitygroup.com/en/home", "publisher": "SAFE Fertility Group PCL", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "safe-intl", "label": "SAFE Fertility Group international patients page", "url": "https://www.safefertilitygroup.com/en/services/international-patients-ivf-thailand", "publisher": "SAFE Fertility Group PCL", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "safe-packages", "label": "SAFE Fertility Group packages page (PDF price lists)", "url": "https://www.safefertilitygroup.com/en/packages", "publisher": "SAFE Fertility Group PCL", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "safe-austcham", "label": "AustCham Thailand: SAFE Fertility Clinic special ICSI offer (THB 219,000, to 31 Dec 2025)", "url": "https://www.austchamthailand.com/resources/advance-blog/safe-fertility-clinic-special-icsi-offer", "publisher": "Australian-Thai Chamber of Commerce", "date": "2025", "kind": "marketplace" },
+    { "id": "absolute-site", "label": "Absolute Hair Clinic homepage (doctors, address, contacts)", "url": "https://absolutehairclinic.com/", "publisher": "Absolute Hair Clinic", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "absolute-fue", "label": "Absolute Hair Clinic FUE page (starting price, doctor performs)", "url": "https://absolutehairclinic.com/follicular-unit-extraction/", "publisher": "Absolute Hair Clinic", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "stemcell-site", "label": "The Regeneration Center homepage", "url": "https://www.stemcellthailand.org/", "publisher": "The Regeneration Center", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "stemcell-nation", "label": "Caution should be the watchword for patients seeking stem cell therapy (Medical Council permitted uses; 400+ prosecutions a year)", "url": "https://www.nationthailand.com/blogs/health-wellness/40042864", "publisher": "The Nation (Thailand)", "date": "2024-10-31", "kind": "press" },
+    { "id": "stemcell-market-bookimed", "label": "Bookimed: stem cell rejuvenation therapy prices, Bangkok", "url": "https://us-uk.bookimed.com/clinics/country=thailand/city=bangkok/procedure=stem-cell-rejuvenation-therapy/", "publisher": "Bookimed", "date": "2025-03-04", "kind": "marketplace" },
+    { "id": "press-tiny-ubiribo", "label": "Probe launched into Briton's penis enlargement death (unnamed central Bangkok clinic; ministry inspection)", "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/09/10/probe-launched-into-britons-penis-enlargement-death", "publisher": "The Star (Malaysia) / AFP", "date": "2026-09-10", "kind": "press" },
+    { "id": "press-thanapol-jail", "label": "Bangkok cosmetic surgeon Thanapol Thongprasert sentenced to 5 years over 2018 facelift death; clinic unlicensed", "url": "https://thethaiger.com/?p=379712", "publisher": "The Thaiger", "date": "2020-12-24", "kind": "press" },
+    { "id": "press-sp-clinic-2014", "label": "British woman dies during corrective cosmetic surgery in Bangkok; Dr. Sompob Sansiri charged; clinic closed 60 days by HSS", "url": "https://globalnews.ca/news/1633004/british-woman-dies-while-undergoing-cosmetic-surgery-in-thailand", "publisher": "Global News / AP", "date": "2014-10-24", "kind": "press" },
+    { "id": "press-pattaya-mail-2026", "label": "Fatal beauty clinic case exposes gaps in Thailand's aesthetic industry (Nakhon Pathom clinic death; OCPB investigation)", "url": "https://www.pattayamail.com/thailandnews/fatal-beauty-clinic-case-exposes-dangerous-gaps-in-thailands-aesthetic-industry-545531", "publisher": "Pattaya Mail", "date": "2026-04-24", "kind": "press" },
+    { "id": "press-tourist-fee-2026", "label": "Health Ministry backs THB450 tourist fee as hospitals face billions in unpaid bills", "url": "https://www.nationthailand.com/news/40071967", "publisher": "The Nation (Thailand)", "date": "2026-10-07", "kind": "press" }
+  ]
+}

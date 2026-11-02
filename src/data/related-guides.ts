@@ -347,6 +347,26 @@ export const GUIDE_CLUSTERS: GuideCluster[] = [
     ],
   },
   {
+    id: 'thailand',
+    hub: { href: '/destinations/thailand', label: 'Thailand medical tourism guide', blurb: 'What people go for, the hospitals, prices, safety record and how to book, with sources.' },
+    guides: [
+      { href: '/guides/thailand-medical-tourism-guide', label: 'Thailand medical tourism guide', blurb: 'How the big Bangkok hospitals work for a foreign patient.' },
+      { href: '/guides/thailand-cosmetic-surgery-cost', label: 'Cosmetic surgery Thailand cost', blurb: 'Published hospital prices versus the US.' },
+      { href: '/guides/plastic-surgery-abroad-cost-comparison', label: 'Plastic surgery abroad compared', blurb: 'Thailand against Korea, Colombia, Brazil and Turkey.' },
+      { href: '/guides/medical-travel-insurance-guide', label: 'Medical travel insurance', blurb: 'What complication cover exists and what it excludes.' },
+    ],
+  },
+  {
+    id: 'colombia',
+    hub: { href: '/destinations/colombia', label: 'Colombia medical tourism guide', blurb: 'What people go for, the clinics, prices, the safety record and how to book, with sources.' },
+    guides: [
+      { href: '/guides/colombia-plastic-surgery-cost', label: 'Colombia plastic surgery cost', blurb: 'BBL, liposuction and breast prices versus the US.' },
+      { href: '/guides/colombia-stem-cell-guide', label: 'Colombia stem cell therapy guide', blurb: 'What Medellín clinics charge and what the evidence says.' },
+      { href: '/guides/plastic-surgery-abroad-cost-comparison', label: 'Plastic surgery abroad compared', blurb: 'Colombia against Korea, Thailand, Brazil and Turkey.' },
+      { href: '/guides/medical-travel-insurance-guide', label: 'Medical travel insurance', blurb: 'What complication cover exists and what it excludes.' },
+    ],
+  },
+  {
     id: 'turkey',
     hub: {
       href: '/destinations/turkey',

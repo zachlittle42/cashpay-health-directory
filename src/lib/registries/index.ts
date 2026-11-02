@@ -10,6 +10,8 @@
 import turkey from '@/data/registries/turkey.json';
 import korea from '@/data/registries/south-korea.json';
 import mexico from '@/data/registries/mexico.json';
+import thailand from '@/data/registries/thailand.json';
+import colombia from '@/data/registries/colombia.json';
 import { DOSSIERS } from '@/lib/destinations/dossiers';
 
 export interface RegistryRow {
@@ -46,6 +48,10 @@ export interface RegistryConfig {
   regulator: string;
   /** "province" for Turkey, "region" for Korea (city or province). */
   regionNoun: string;
+  /** What the sub-region grouping is: "district", "municipality", "affiliation". */
+  districtNoun: string;
+  /** What the category axis is: "licence type", "certificate class", "capacity class". */
+  categoryNoun: string;
   /** What appearing on the list legally means, one or two sentences. */
   means: string;
   /** What it does not mean. */
@@ -71,6 +77,8 @@ export interface Registry {
 
 const TURKEY_CONFIG: RegistryConfig = {
   slug: 'turkey',
+  districtNoun: 'district',
+  categoryNoun: 'licence type',
   displayName: 'Turkey',
   listName: 'Ministry of Health health-tourism authorized facility list',
   regulator: 'Republic of Türkiye Ministry of Health, Health Tourism Department',
@@ -99,6 +107,8 @@ const TURKEY_CONFIG: RegistryConfig = {
 
 const KOREA_CONFIG: RegistryConfig = {
   slug: 'south-korea',
+  districtNoun: 'district',
+  categoryNoun: 'institution type',
   displayName: 'South Korea',
   listName: 'Medical Korea registered-institution list',
   regulator: 'Korea Health Industry Development Institute (KHIDI) for the Ministry of Health and Welfare',
@@ -126,6 +136,8 @@ const KOREA_CONFIG: RegistryConfig = {
 
 const MEXICO_CONFIG: RegistryConfig = {
   slug: 'mexico',
+  districtNoun: 'municipality',
+  categoryNoun: 'facility type',
   displayName: 'Mexico',
   listName: 'federal CLUES catalogue of private health establishments',
   regulator: 'Dirección General de Información en Salud (DGIS), Secretaría de Salud',
@@ -149,10 +161,63 @@ const MEXICO_CONFIG: RegistryConfig = {
   sourceId: 'clues-catalog',
 };
 
+const THAILAND_CONFIG: RegistryConfig = {
+  slug: 'thailand',
+  districtNoun: 'affiliation',
+  categoryNoun: 'certificate class',
+  displayName: 'Thailand',
+  listName: 'Healthcare Accreditation Institute (HA Thailand) certificate-status list',
+  regulator: 'Healthcare Accreditation Institute (Public Organization), under the Ministry of Public Health',
+  regionNoun: 'province',
+  means:
+    'The hospital appears on the national accreditation body’s own status list with the certificate shown: Advanced HA, standard HA accreditation, a developmental step on the way to accreditation, a program-specific certificate, or no current certificate. HA is voluntary, and a current HA certificate means the hospital passed an external survey of its quality systems within the validity period shown.',
+  doesNotMean:
+    'HA status is not the operating licence; that is issued by the Department of Health Service Support, whose database is not open outside Thailand. A hospital with no current HA certificate may still be fully licensed, and most stand-alone cosmetic clinics are not on this list at all because it covers hospitals. Names are published in Thai; the website domain is the English identifier.',
+  lookup: { label: 'HA Thailand certificate status (Thai and English pages)', url: 'https://www.ha.or.th/EN/Hospitals/Certificate%20Status' },
+  verifyGuideHref: '/guides/thailand-medical-tourism-guide',
+  categories: [
+    { slug: 'advanced-ha', label: 'Advanced HA', blurb: 'The highest HA level. A small group of hospitals, mostly large Bangkok private and university hospitals.' },
+    { slug: 'ha', label: 'HA accredited', blurb: 'Hospitals holding a current standard HA accreditation or re-accreditation.' },
+    { slug: 'program', label: 'Program-specific certificates', blurb: 'Disease-specific (PDSC) or district-health certificates rather than whole-hospital accreditation.' },
+    { slug: 'developmental', label: 'Developmental step', blurb: 'Hospitals at step 1 or 2 of the HA process. Not yet accredited.' },
+    { slug: 'none', label: 'No current certificate', blurb: 'Listed by HA Thailand with no certificate currently in force.' },
+  ],
+  splitAbove: 300,
+  districtSplitAbove: 400,
+  sourceId: 'ha-list',
+};
+
+const COLOMBIA_CONFIG: RegistryConfig = {
+  slug: 'colombia',
+  districtNoun: 'municipality',
+  categoryNoun: 'capacity class',
+  displayName: 'Colombia',
+  listName: 'REPS national register of private health-provider sites',
+  regulator: 'Ministerio de Salud y Protección Social (REPS, Registro Especial de Prestadores de Servicios de Salud)',
+  regionNoun: 'department',
+  means:
+    'The site (sede) belongs to a private institutional provider (IPS) inscribed in REPS under the mandatory habilitación system (Resolución 3100 de 2019). Inscription is a legal precondition to offer any health service in Colombia, and each site must display its distintivo de habilitación per service. Where the 2022 capacity report lists operating rooms or beds for the site, that is shown.',
+  doesNotMean:
+    'Habilitación is a self-declared registration verified by inspection, not an accreditation (that is Icontec, held by about 64 institutions). This list does not show which services a site is habilitado for; the services table is only on the Ministry portal, which blocks access from outside Colombia. Independent professionals (54,657 sites) are not included. A clinic can be in REPS and still be the subject of a closure order.',
+  lookup: { label: 'REPS consulta de prestadores (Ministry portal, Spanish; may require a Colombian connection)', url: 'https://prestadores.minsalud.gov.co/habilitacion/' },
+  verifyGuideHref: '/guides/colombia-plastic-surgery-cost',
+  categories: [
+    { slug: 'surgical', label: 'Sites with operating rooms', blurb: 'Private IPS sites that reported at least one operating room (quirófano or sala de cirugía) in the November 2022 capacity report. Surgery under general anesthesia should happen at one of these.' },
+    { slug: 'inpatient', label: 'Inpatient sites without operating rooms', blurb: 'Reported beds but no operating room in 2022.' },
+    { slug: 'outpatient', label: 'Outpatient sites', blurb: 'Reported consulting rooms or procedure rooms only in 2022, including most dental clinics.' },
+    { slug: 'not-reported', label: 'Capacity not reported', blurb: 'In REPS as of March 2026 but absent from the 2022 capacity report, so usually opened or re-registered after 2022. Ask the clinic for its distintivo and services.' },
+  ],
+  splitAbove: 300,
+  districtSplitAbove: 400,
+  sourceId: 'reps',
+};
+
 const REGISTRIES: Record<string, Registry> = {
   turkey: { config: TURKEY_CONFIG, meta: turkey.meta as RegistryMeta, rows: turkey.rows as RegistryRow[] },
   'south-korea': { config: KOREA_CONFIG, meta: korea.meta as RegistryMeta, rows: korea.rows as RegistryRow[] },
   mexico: { config: MEXICO_CONFIG, meta: mexico.meta as RegistryMeta, rows: mexico.rows as RegistryRow[] },
+  thailand: { config: THAILAND_CONFIG, meta: thailand.meta as RegistryMeta, rows: thailand.rows as RegistryRow[] },
+  colombia: { config: COLOMBIA_CONFIG, meta: colombia.meta as RegistryMeta, rows: colombia.rows as RegistryRow[] },
 };
 
 export const REGISTRY_SLUGS = Object.keys(REGISTRIES);
@@ -302,7 +367,8 @@ export function profiledRowIds(slug: string): Map<string, string> {
   for (const c of dossier.clinics) {
     for (const n of c.registryMatch ?? []) {
       const esc = fold(n).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-      patterns.push({ re: new RegExp(`(^|[^a-z0-9])${esc}([^a-z0-9]|$)`), name: c.name });
+      // Unicode-aware word boundaries so Thai and accented names match whole words only.
+      patterns.push({ re: new RegExp(`(^|[^\\p{L}\\p{N}])${esc}([^\\p{L}\\p{N}]|$)`, 'u'), name: c.name });
     }
   }
   if (!patterns.length) return out;

@@ -82,13 +82,13 @@ export default function DistrictPage({ params }: { params: { destination: string
     >
       <section className="px-4 pb-12">
         <div className="mx-auto max-w-5xl">
-          <nav aria-label="Other districts" className="mb-6 flex flex-wrap gap-2 text-sm">
+          <nav aria-label={`Other ${config.districtNoun}s`} className="mb-6 flex flex-wrap gap-2 text-sm">
             {siblings.map((x) => (
               <Link key={x.slug} href={`${base}/${summary.regionSlug}/${params.category}/${x.slug}`} className="rounded-full border border-gray-200 bg-white px-3 py-1 text-gray-800 hover:border-purple-300 hover:text-purple-700">
                 {x.district} <span className="text-gray-400">{formatCount(x.count)}</span>
               </Link>
             ))}
-            <Link href={`${base}/${summary.regionSlug}/${params.category}`} className="rounded-full border border-purple-200 bg-purple-50 px-3 py-1 font-medium text-purple-800 hover:underline">All districts</Link>
+            <Link href={`${base}/${summary.regionSlug}/${params.category}`} className="rounded-full border border-purple-200 bg-purple-50 px-3 py-1 font-medium text-purple-800 hover:underline">All {config.districtNoun === 'affiliation' ? 'affiliations' : config.districtNoun === 'municipality' ? 'municipalities' : 'districts'}</Link>
           </nav>
           <RegistryFilter listId="rows" total={rows.length} />
           <RegistryRows registry={reg} rows={rows} listId="rows" profiled={profiled} />

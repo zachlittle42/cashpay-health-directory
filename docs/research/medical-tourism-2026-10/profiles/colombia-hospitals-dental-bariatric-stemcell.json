@@ -1,0 +1,424 @@
+{
+  "clinics": [
+    {
+      "name": "Hospital Pablo Tobón Uribe",
+      "district": "Medellín (Robledo, Calle 78B No. 69-240)",
+      "type": "hospital",
+      "url": "https://hptu.org/en/pages/oficina-internacional",
+      "specialties": ["High-complexity hospital care", "Multispecialty inpatient and surgical care", "International patient office"],
+      "namedDoctors": "Not named on international page. The international office names its staff: Gloria Lucía Lema (médica jefe; Spanish, English, French, Portuguese), Paula Alejandra Silva (médica administrativa; Spanish, English), Karla Vanessa Mena (executive; Spanish, English), Sofía Moreno Lombana (support nurse; Spanish, English), plus appointment and administrative staff.",
+      "credentials": "Icontec national accreditation list (acreditacionensalud.org.co PDF dated October 2026, checked October 30, 2026): listed as Hospital Pablo Tobón Uribe, código de habilitación del prestador 500102104, sede acreditada 0500102104-1 at Calle 78B No. 69-240, Medellín, status 'Acreditado con excelencia', cycle V, date 2022-02-01, private, recognised Hospital Universitario. REPS public consultation (prestadores.minsalud.gov.co) blocked automated reading on October 30, 2026; provider code taken from the Icontec list. JCI: the hospital's international page shows JCI and Icontec logos; a 2020 Gobernación de Antioquia decree states the hospital has held JCI accreditation since 2015 and national accreditation since 2005 (excellence from 2008). The JCI accredited-organizations directory blocked automated reading, so current JCI status is not independently confirmed. The international office states more than 20 years of operation.",
+      "cautions": "Press reported emergency-department over-occupancy (185 percent) in August 2024 and a hospital emergency declaration for emergency-room overflow in March 2025 (hptu-press-eltiempo). Capacity pressure in emergencies does not relate to scheduled international care but is a structural caveat.",
+      "publishedPrices": "Not published on its site. Budgets are given individually after case review. The office states that payment for any procedure must be made in full before it is performed, that services not specified in the budget are billed separately, and that the final invoice may vary.",
+      "booking": {
+        "channels": "Email int@hptu.org.co; phone +57 604 445 9425 and +57 604 445 9412; WhatsApp +57 317 401 3663; English-language attention Monday to Friday 7:30 to 17:30 Colombia time (UTC-5). Hospital PBX +57 604 445 9000.",
+        "consult": "Send personal data, clinical history and recent exams to the office for evaluation. Insured patients share policy details and confirm coverage before travel; uninsured patients agree a payment method. If accepted, the patient receives a confirmation and a treatment budget. The office advises buying flights only after appointments are scheduled; typical stays run 5 to 8 business days.",
+        "deposit": "No deposit percentage published. Full payment before the procedure by cash, international transfer or direct bank payment; payment must be announced in advance for currency reporting.",
+        "languages": "Spanish, English, French, Portuguese (by staff member).",
+        "includes": "Not stated. The office offers recommendations for lodging and transport on request.",
+        "bookingUrl": "https://hptu.org/en/pages/oficina-internacional"
+      },
+      "sourceIds": ["hptu-intl", "hptu-decreto", "hptu-press-eltiempo", "icontec-list", "reps", "jci-directory"]
+    },
+    {
+      "name": "Clínica Las Américas Auna",
+      "district": "Medellín (Belén, Diagonal 75B No. 2A-80/140)",
+      "type": "hospital",
+      "url": "https://www.lasamericas.com.co/oficina-internacional",
+      "specialties": ["Oncology (Instituto de Cancerología)", "Clinical laboratory and blood bank", "High-complexity multispecialty care"],
+      "namedDoctors": "Not named on international page.",
+      "credentials": "Icontec national accreditation list (October 2026 PDF, checked October 30, 2026): not listed under Clínica Las Américas or Promotora Médica Las Américas. REPS consultation blocked automated reading on October 30, 2026; no REPS code shown on site. NIT 800067065-9 (Promotora Médica Las Américas S.A.). The international office's certifications page lists INVIMA Good Clinical Practice certification (Resolution 2019042216, 2019), INVIMA Good Manufacturing Practice resolutions (2017), AABB re-accreditation of the blood bank (2022), CAP re-certification of the laboratory (2022), EFQM certification of clinical units (since 2021), New Health Foundation palliative-care certification (2020) and an MD Anderson Sister Institution agreement (since 2011). No JCI or Icontec hospital accreditation is claimed on that page. Part of the Auna group (Peru, Colombia, Mexico).",
+      "publishedPrices": "Not published on its site.",
+      "booking": {
+        "channels": "Emails soporteinternacional@lasamericas.com.co and pacientesinternacionales@lasamericas.com.co; PBX +57 604 342 1010 ext. 2470; WhatsApp +57 311 609 8842; US toll-free 1 800 625 4759; Curaçao +5999 820 5013; fax +57 604 341 2946; web form at https://www.lasamericas.com.co/oficina-internacional/contactenos.",
+        "consult": "Not published. The office states it replies with the appointment location, scheduling, instructions for medical exams and the name of the person who will accompany the patient. No quote process, documents list, response time or deposit terms are published. Lodging and accompaniment are referred to the third-party service Salud Sin Fronteras.",
+        "languages": "Not stated (site in Spanish only).",
+        "bookingUrl": "https://www.lasamericas.com.co/oficina-internacional/contactenos"
+      },
+      "sourceIds": ["lasamericas-intl", "lasamericas-contact", "lasamericas-cert", "icontec-list", "reps"]
+    },
+    {
+      "name": "Clínica El Rosario",
+      "district": "Medellín (El Poblado, Sede El Tesoro, Carrera 20 No. 2 Sur-185; also Sede Centro, Carrera 41 No. 62-5)",
+      "type": "hospital",
+      "url": "https://www.clinicaelrosario.com/pacientes/paciente-internacional/",
+      "specialties": ["Multispecialty clinic", "Urology", "Stroke care (WSO Angels award shown)"],
+      "namedDoctors": "Not named on international page. A medical directory exists on the site but was not read.",
+      "credentials": "Icontec national accreditation list (October 2026 PDF, checked October 30, 2026): listed as 'Clínica El Rosario - Sede El Tesoro', código de habilitación del prestador 500102092, sede 0500102092-02 at Carrera 20 No. 2 Sur-185, Medellín, status 'Acreditado', date 2023-10-18. Only the El Tesoro site is listed; the Sede Centro is not. REPS consultation blocked automated reading on October 30, 2026. No JCI claim found on the site. The site shows a Galardón Nacional Hospital Seguro and a WSO Angels Awards Platinum (Q2 2026). The international page says the clinic belongs to the Medellín Health City cluster and the 'Medellín Sin Fronteras' group.",
+      "cautions": "El Tiempo reported in June 2023 that the clinic closed its maternal and perinatal services to avoid a total closure, a financial caveat (rosario-press-eltiempo).",
+      "publishedPrices": "Not published on its site.",
+      "booking": {
+        "channels": "Commercial director Erica Alexandra Agudelo González, dcomercial@clinicaelrosario.com, phone +57 604 295 9000 ext. 9035; WhatsApp +57 304 409 9765; appointments citas@clinicaelrosario.com (the mailto link points to clinicaelrosario@clinicaelrosario.com); Sede El Tesoro +57 604 326 9299.",
+        "consult": "Not published. No quote process, documents list, deposit or response time is stated.",
+        "languages": "Not stated (site in Spanish).",
+        "bookingUrl": "https://www.clinicaelrosario.com/pacientes/paciente-internacional/"
+      },
+      "sourceIds": ["rosario-intl", "rosario-home", "rosario-press-eltiempo", "icontec-list", "reps"]
+    },
+    {
+      "name": "Clínica Medellín (Grupo Quirónsalud)",
+      "district": "Medellín (El Poblado, Calle 7 No. 39-290; Sede Occidente, Carrera 65B No. 30-95)",
+      "type": "hospital",
+      "url": "https://www.clinicamedellin.com/contactanos/international-patients-pacientes-internacionales/",
+      "specialties": ["Multispecialty private clinic", "Two hospital sites"],
+      "namedDoctors": "Not named on international page.",
+      "credentials": "Icontec national accreditation list (October 2026 PDF, checked October 30, 2026): not listed. REPS consultation blocked automated reading on October 30, 2026; no REPS code shown on site. No JCI accreditation is claimed; 'Joint Commission International' appears on the site only as a link under suppliers. The recognitions page lists an Applus+ 'Protocolo Seguro COVID-19' certification (2020), Galardón Nacional Hospital Seguro (2012), a Fenalco social-responsibility certificate (2011) and an América Economía ranking (2014). Operates under the Quirónsalud group brand.",
+      "cautions": "In April 2024 a urologist was killed in his consulting room at the clinic and the suspected attacker was found dead inside the building; El Tiempo covered it on April 18 and 19, 2024 (cmedellin-press-eltiempo). This was a security incident, not a reported care complaint.",
+      "publishedPrices": "Not published on its site.",
+      "booking": {
+        "channels": "Bilingual international request form (name, phone, mobile, city, country, email, other contact, comments) at the URL above; switchboards +57 604 444 6152 (Sede Occidente) and +57 604 311 2800 (Sede El Poblado). No email or WhatsApp published for international patients.",
+        "consult": "Not published.",
+        "languages": "Form instructions in Spanish and English.",
+        "bookingUrl": "https://www.clinicamedellin.com/contactanos/international-patients-pacientes-internacionales/"
+      },
+      "sourceIds": ["cmedellin-intl", "cmedellin-sedes", "cmedellin-recon", "cmedellin-press-eltiempo", "icontec-list", "reps"]
+    },
+    {
+      "name": "Fundación Valle del Lili",
+      "district": "Cali (south Cali, Carrera 98 No. 18-49; also Sede Limonar and Alfaguara/Jamundí sites)",
+      "type": "hospital",
+      "url": "https://valledellili.org/pacientes-internacionales/",
+      "specialties": ["High-complexity university hospital", "Multispecialty inpatient and surgical care", "International office with 24/7 support"],
+      "namedDoctors": "Not named on international page.",
+      "credentials": "Icontec national accreditation list (October 2026 PDF, checked October 30, 2026): listed as Fundación Valle del Lili, código de habilitación del prestador 7600102870, main sede 7600102870-01 at KR 98 No. 18-49, with Sede Alfaguara, Sede Limonar and Sede Avenida La Estación also listed, status 'Acreditado'; El País (Cali) reported the 'acreditación de excelencia' extended to all its sites. The site's certifications page lists Acreditación en Salud – Excelencia, Joint Commission International, Hospital Universitario, Newsweek World's Best Hospitals 2024 and an Icontec carbon-footprint certificate. The JCI directory blocked automated reading, so JCI status rests on the hospital's own statement. REPS consultation blocked on October 30, 2026; NIT 890324177-5 shown on site.",
+      "publishedPrices": "Not published on its site.",
+      "booking": {
+        "channels": "International office email oficinainternacional@fvl.org.co; phone +57 602 331 9090 ext. 3242; WhatsApp +57 312 603 0388; online inquiry form (name, phone with country code, email, country, service, payment type, insurer). Office described as bilingual with 24/7 support.",
+        "consult": "Contact the office for a detailed quote for the services required. No document list or response time is published. Insured patients: the insurer sends a guarantee letter to the office email. Emergency care without insurance requires an initial advance payment; the amount is not stated.",
+        "deposit": "Not published beyond the 'anticipo inicial' for uninsured emergencies.",
+        "languages": "Described as bilingual; languages not named.",
+        "bookingUrl": "https://valledellili.org/pacientes-internacionales/"
+      },
+      "sourceIds": ["fvl-intl", "fvl-cert", "fvl-press-elpais", "icontec-list", "reps", "jci-directory"]
+    },
+    {
+      "name": "Clínica Imbanaco (Grupo Quirónsalud), formerly Centro Médico Imbanaco",
+      "district": "Cali",
+      "type": "hospital",
+      "url": "https://www.imbanaco.com/es_CO/pacientes-internacionales",
+      "specialties": ["High-complexity multispecialty clinic", "International office"],
+      "namedDoctors": "Not named; site blocked automated reading.",
+      "credentials": "Site blocked automated reading (HTTP 403 on October 30, 2026); facts from search snippets and press. Icontec national accreditation list (October 2026 PDF, checked October 30, 2026): no entry found for Imbanaco, although an undated Quirónsalud press release describes the clinic as accredited by Icontec as 'Institución de Salud con Excelencia'; this discrepancy is unresolved. JCI: a Quirónsalud press release seen in search results reports renewal of the clinic's JCI accreditation and calls it one of five Colombian hospitals holding it; a May 2026 expat guide repeats the JCI claim; the JCI directory blocked automated reading. Ownership: Spanish group Quirónsalud (Fresenius-Helios) agreed in December 2019 to buy the clinic. A 2017 sustainability report describes an international office with a director, an administrative coordinator and three bilingual nurses. REPS consultation blocked on October 30, 2026.",
+      "publishedPrices": "Not published (site not readable).",
+      "booking": {
+        "channels": "Not retrievable; the clinic's site blocked automated reading. The clinic reports an Oficina Internacional at its Cali headquarters.",
+        "consult": "Not published."
+      },
+      "sourceIds": ["imbanaco-quiron-jci", "imbanaco-press-elpais", "imbanaco-encolombia", "medellinguru-hospitals", "icontec-list", "reps", "jci-directory"]
+    },
+    {
+      "name": "Fundación Santa Fe de Bogotá",
+      "district": "Bogotá (Usaquén, Calle 119 No. 7-75)",
+      "type": "hospital",
+      "url": "https://fundacionsantafedebogota.com/servicios-en-salud/paciente-internacional",
+      "specialties": ["Oncology", "Neurosciences", "Cardiology and intensive care", "Robotic surgery"],
+      "namedDoctors": "Not named for international patients. The international page shows a doctor card with a placeholder image, so it should not be treated as a verified profile.",
+      "credentials": "Icontec national accreditation list (October 2026 PDF, checked October 30, 2026): listed as Fundación Santa Fe de Bogotá, código de habilitación del prestador 1100105618, sede 1100105618-01 at CL 119 No. 7-75, status 'Acreditado con excelencia', cycle V, date 2024-09-03, recognised Hospital Universitario. JCI: the hospital states JCI accreditation since 2009/2010 with reaccreditation in 2025 and 21 (elsewhere 19) JCI-certified clinical care programs; a JCI-published success story describes its certifications. The JCI directory blocked automated reading. The site also lists Magnet, Planetree, ISO 14001:2015 (Icontec, valid to January 2027) and an Icontec ESG seal. REPS consultation blocked on October 30, 2026.",
+      "publishedPrices": "Not published on its site.",
+      "booking": {
+        "channels": "Email internacional@fsfb.org.co; WhatsApp +57 311 296 1151; phone +57 320 420 4201 (both stated as 24/7); online form (name, document type and number, email, phone). In-person international office Monday to Friday 6:30 to 18:00 and Saturday 8:00 to 12:00 Colombia time. Main line +57 601 603 0303.",
+        "consult": "Fill in the international patient form; the team states it replies within 48 hours with next steps. No supporting documents are listed. Deposit terms not published.",
+        "languages": "Described as bilingual; languages not named.",
+        "includes": "Help with appointments, insurer coordination, accommodation (list of partner hotels) and transport.",
+        "bookingUrl": "https://fundacionsantafedebogota.com/servicios-en-salud/paciente-internacional"
+      },
+      "sourceIds": ["fsfb-intl", "fsfb-jci-pdf", "icontec-list", "reps", "jci-directory"]
+    },
+    {
+      "name": "Fundación Cardioinfantil – LaCardio",
+      "district": "Bogotá (Usaquén, Calle 163A No. 13B-60)",
+      "type": "hospital",
+      "url": "https://www.lacardio.org/centro-internacional/",
+      "specialties": ["Cardiology and cardiovascular surgery", "Pediatric cardiology", "Echocardiography (IAC accredited)", "Multispecialty hospital"],
+      "namedDoctors": "Not named on international page. Centro Internacional staff: Jennifer Jalilie (head; Spanish, English), Laura González (medical coordinator; Spanish, English, French), Edwin Lizarazo (nursing coordinator; Spanish, English).",
+      "credentials": "Icontec national accreditation list (October 2026 PDF, checked October 30, 2026): listed as Fundación Cardioinfantil – Instituto de Cardiología, código de habilitación del prestador 1100109111, sedes 1100109111-01 (CL 163A No. 13B-60) and -03 (KR 13B No. 161-85), status 'Acreditado con Excelencia', cycle IV, date 2023-05-23. JCI: the site states accreditation since 2013 (another page says 2014), re-accredited 2020, 'four JCI accreditations'; JCI directory blocked automated reading. Also lists IAC echocardiography accreditation (2020/2024), Icontec ESG Verified seal (December 2024), LEED Gold for the Torre de Especialistas, Hospital Universitario recognition (2015/2016). Founded 1973; 350 beds per its 2019 timeline. REPS consultation blocked on October 30, 2026.",
+      "publishedPrices": "Not published on its site.",
+      "booking": {
+        "channels": "Centro Internacional reception recepcioncentrointl@lacardio.org, WhatsApp +57 316 019 0102; Jennifer Jalilie jjalilie@lacardio.org, +57 317 367 5492; Laura González lagonzalez@lacardio.org, +57 317 363 3561; Edwin Lizarazo elizarazo@lacardio.org, +57 317 435 0553; appointment line +57 601 482 4445; PBX +57 601 744 2000.",
+        "consult": "No formal quote process is described. The page lists documents to arrange at home: valid passport, visa if applicable, round-trip tickets, medical exams, medical history, current medications and prescriptions. Deposit terms not published.",
+        "languages": "Spanish, English, French (by staff member).",
+        "includes": "Hotel recommendations near the hospital; suite-type rooms mentioned.",
+        "bookingUrl": "https://www.lacardio.org/centro-internacional/"
+      },
+      "sourceIds": ["lacardio-intl", "lacardio-acred", "lacardio-historia", "icontec-list", "reps", "jci-directory"]
+    },
+    {
+      "name": "Clínica del Country",
+      "district": "Bogotá (Chapinero, Carrera 16 No. 82-57; also Clínica La Colina, Calle 167 No. 72-07)",
+      "type": "hospital",
+      "url": "https://www.clinicadelcountry.com/",
+      "specialties": ["Oncology center", "Robotic surgery", "Bariatric surgery", "Multispecialty hospital"],
+      "namedDoctors": "Not named; no international patient page found on the site.",
+      "credentials": "Icontec national accreditation list (October 2026 PDF, checked October 30, 2026): listed as Clínica del Country IPS, código de habilitación del prestador 1100109599, sede 1100109599-01 at CRA 16 No. 82-57 (plus Sede San Sebastián and Unidad Médica Nueva), status 'Acreditado con excelencia', cycle IV, date 2025-08-11. The site claims 'Acreditación en Salud con Excelencia otorgada por el ICONTEC'. No JCI claim found. REPS consultation blocked on October 30, 2026.",
+      "cautions": "An El Tiempo opinion column by Claudia Palacios dated August 27, 2025 ('La Country me usó como conejillo') criticised the author's experience at the clinic; only the headline was seen (country-press-eltiempo).",
+      "publishedPrices": "Not published on its site.",
+      "booking": {
+        "channels": "No international office published. PBX +57 601 390 5099 (24 hours); +57 601 390 4887; WhatsApp for appointments +57 333 033 4054; complaints quejasyfelicitaciones@clinicadelcountry.com.",
+        "consult": "Not published.",
+        "bookingUrl": "https://www.clinicadelcountry.com/contacto"
+      },
+      "sourceIds": ["country-home", "country-contact", "country-press-eltiempo", "icontec-list", "reps"]
+    },
+    {
+      "name": "Hospital Universitario San Ignacio",
+      "district": "Bogotá (Chapinero, Carrera 7 No. 40-62)",
+      "type": "hospital",
+      "url": "https://www.husi.org.co/web/sipe/pacientes_internacionales",
+      "specialties": ["University hospital (Pontificia Universidad Javeriana)", "High-complexity multispecialty care", "Private and international patient service (SIPE)"],
+      "namedDoctors": "Not named on international page; a specialist directory is linked.",
+      "credentials": "Icontec national accreditation list (October 2026 PDF, checked October 30, 2026): listed as Hospital Universitario San Ignacio, código de habilitación del prestador 1100109456, sede 1100109456-01 at CRA 7 No. 40-62 plus several outpatient sites, status 'Acreditado', cycle III, date 2024-08-02. Hospital Universitario recognition renewed in March 2026 per El Tiempo. No JCI claim found. NIT 860.015.536-1. REPS consultation blocked on October 30, 2026.",
+      "cautions": "The Superintendencia Nacional de Salud opened inspection and surveillance actions on the hospital in September 2024 (El Tiempo, September 13, 2024; husi-press-eltiempo). The outcome was not seen.",
+      "publishedPrices": "Not published on its site.",
+      "booking": {
+        "channels": "SIPE office email ContactoSIPE@husi.org.co; phone +57 601 756 0860; mobile and WhatsApp +57 310 227 4733; main lines +57 1 594 6161 ext. 4916/4912; online form with request type 'Paciente Internacional' (name, document type including passport, country, city, phone, email). Office hours Monday to Thursday 6:30 to 17:00, Friday 6:30 to 16:00 Colombia time; priority attention for SIPE patients 24 hours at the main entrance.",
+        "consult": "Not published. The page says to state the need and the office will provide information. No deposit terms published.",
+        "languages": "Site has Spanish and English versions; interpreter services not described.",
+        "includes": "Private rooms on the ninth floor described.",
+        "bookingUrl": "https://www.husi.org.co/web/sipe/contactenos"
+      },
+      "sourceIds": ["husi-intl", "husi-contact", "husi-press-eltiempo", "icontec-list", "reps"]
+    },
+    {
+      "name": "Clínica Portoazul Auna",
+      "district": "Barranquilla (Corredor Universitario, Carrera 30 No. 1-850)",
+      "type": "hospital",
+      "url": "https://www.clinicaportoazul.com/pacientes-internacionales-auna/",
+      "specialties": ["Neurosurgery", "Hemato-oncology", "Cardiovascular unit", "International office"],
+      "namedDoctors": "Not named on international page.",
+      "credentials": "Icontec national accreditation list (October 2026 PDF, checked October 30, 2026): not listed. No JCI or Icontec accreditation claimed on the international page; a Supersalud 'vigilado' logo is shown. Part of the Auna group. REPS consultation blocked on October 30, 2026; no REPS code shown. The page claims more than 1,400 international patients per year (self-reported).",
+      "publishedPrices": "Not published on its site.",
+      "booking": {
+        "channels": "WhatsApp +57 313 496 4544; phones +57 605 385 5500 and +57 321 859 2178; online form at https://www.clinicaportoazul.com/formulario-pacientes-internacionales/. No email published. International office described as 24/7.",
+        "consult": "Not published; the page directs patients to the form or an advisor. No documents, response time or deposit terms stated.",
+        "languages": "Bilingual nurses, doctors and administrative staff claimed; languages not named.",
+        "includes": "Pre-trip planning, insurer paperwork, air and ground transport help, hotels with preferential rates.",
+        "bookingUrl": "https://www.clinicaportoazul.com/formulario-pacientes-internacionales/"
+      },
+      "sourceIds": ["portoazul-intl", "portoazul-form", "icontec-list", "reps"]
+    },
+    {
+      "name": "Clínica Reina Sofía (Clínica Colsanitas)",
+      "district": "Bogotá (Usaquén, Carrera 31 No. 125A-23 / Carrera 21 No. 127-03)",
+      "type": "hospital",
+      "specialties": ["Thoracic and general surgery", "Gynecology and obstetrics", "Neurology", "Urology", "Pediatrics and emergency care"],
+      "namedDoctors": "Not named; clinic sites could not be read.",
+      "credentials": "Clinic site unreachable on October 30, 2026 (clinicareinasofia.com.co did not resolve; clinicacolsanitas.com served a bot-protection page); facts from the Icontec list, press and a marketplace listing. Icontec national accreditation list (October 2026 PDF): listed as Clínica Colsanitas – Clínica Reina Sofía, código de habilitación del prestador 1100109186, sedes 1100109186-08 (CR 21 No. 127-03, date 2023-10-20), -78 Medicina Avanzada 125 (KR 20 No. 124-64) and -55 Pediátrica y Mujer (AC 127 No. 20-56, date 2026-02-18), status 'Acreditado', cycle IV. JCI: Consultorsalud reported on February 19, 2024 that the clinic received the JCI Gold Seal after a December 2023 survey and that it first received Icontec accreditation in 2011; the JCI directory blocked automated reading. Part of Clínica Colsanitas. REPS consultation blocked on October 30, 2026.",
+      "publishedPrices": "Not published (site not readable).",
+      "booking": {
+        "channels": "Not retrievable; no international office page could be opened. The marketplace listing gives no phone.",
+        "consult": "Not published."
+      },
+      "sourceIds": ["reinasofia-press-consultorsalud", "reinasofia-doctoralia", "icontec-list", "reps", "jci-directory"]
+    },
+    {
+      "name": "Dental Tourism Colombia (Medellín clinic of Dr. Johana Ossa; network in Cartagena, Bogotá and Cali)",
+      "district": "Medellín (Laureles, Carrera 73B No. 39B-115, Suite 201)",
+      "type": "dental",
+      "url": "https://www.dentaltourismcolombia.com/medellin-dentist",
+      "specialties": ["Porcelain veneers", "Dental implants and All-on-4/All-on-6", "Crowns and bridges", "Full-mouth restoration"],
+      "namedDoctors": "Medellín: Dr. Johana Ossa, dental surgery and oral rehabilitation (Universidad Cooperativa de Colombia), stated 23+ years. Network dentists: Dr. Julio Oliver, Cartagena (endodontics and master's in oral rehabilitation, University of Cartagena; implantology, Universidad Veracruzana; stated 28+ years; Edificio Nautilus, Bocagrande); Dr. Liliana Porras, Bogotá (Universidad El Bosque; NYU rehabilitation and aesthetic dentistry; stated 31+ years; Carrera 19A No. 90-53); Dr. Juan Fernando Uribe, Cali. No tarjeta profesional numbers or specialty board certifications are shown.",
+      "credentials": "REPS consultation blocked automated reading on October 30, 2026; no REPS code or legal entity name appears on the site (brand 'Dental Tourism Colombia, Est. 2017'). The company is a coordination brand: each dentist works from a separate clinic in Medellín, Cartagena, Bogotá or Cali. No accreditation claims. ReTHUS check not possible without ID numbers.",
+      "cautions": "Warranty coverage 'is not automatic': the company decides whether an issue qualifies, and it excludes travel costs, treatment by another dentist and refunds. Composite veneers carry no warranty.",
+      "publishedPrices": "USD prices on its cost page labelled '2026 Prices' (seen October 30, 2026): composite veneer $200; porcelain veneer $420 (20 veneers $6,900); zirconia crown $560; complete titanium implant $1,385; All-on-4 acrylic bridge $6,900 per arch; All-on-6 acrylic $9,580; molar root canal $240; full denture $370; IV sedation $470 to $555; online consultation free. City pages differ: Bogotá porcelain veneer $490 and crown $590; Cartagena titanium implant phase 1 $850 plus crown and abutment $650. Prices are stated as averages subject to evaluation.",
+      "booking": {
+        "channels": "WhatsApp +57 314 362 9351; contact form https://www.dentaltourismcolombia.com/contact; free consultation page https://www.dentaltourismcolombia.com/free-quote; hours Monday to Friday 8:00 to 18:00, Saturday 8:00 to 14:00 Colombia time (UTC-5).",
+        "consult": "Free online consultation; patients send their case for review. Deposit, payment and cancellation terms are not published.",
+        "languages": "English-speaking support stated.",
+        "includes": "Warranty 1 year on porcelain work, 3 years on implants; complimentary local transport for qualifying patients.",
+        "bookingUrl": "https://www.dentaltourismcolombia.com/free-quote"
+      },
+      "sourceIds": ["dtc-home", "dtc-cost", "dtc-medellin", "dtc-cartagena", "dtc-bogota", "dtc-warranty", "reps"]
+    },
+    {
+      "name": "Dentica by Cristina Suaza Dental Spa (Dr. Cristina Suaza)",
+      "district": "Bogotá (Chapinero/El Country, Carrera 19A No. 82-85, Country Medical Center, Office 201)",
+      "type": "dental",
+      "specialties": ["Oral and maxillofacial surgery", "Dental implants", "TMJ disorders", "General and cosmetic dentistry"],
+      "namedDoctors": "Dr. Cristina Suaza, described as an oral and maxillofacial surgeon, active member of the Asociación Colombiana de Cirugía Oral y Maxilofacial (ACCOMF) and AOCMF Latin America, per the WhatClinic listing. No tarjeta profesional number shown.",
+      "credentials": "Own website not located; all facts from a marketplace listing (WhatClinic), so treat as unverified. The listing claims memberships of ICOI and AOCMF and an 'Institute for Accreditation of Health Care Providers (Colombia)' entry that could not be identified. REPS consultation blocked automated reading on October 30, 2026; no REPS code shown.",
+      "cautions": "Marketplace-sourced profile only; the listing's price table is internally inconsistent (the same item appears with different amounts).",
+      "publishedPrices": "Not published on its site (site not found). Marketplace range (indicative, WhatClinic, seen October 30, 2026, at 1 USD = 4,100 COP): consultation from COP 180,000 ($44); dental implant from COP 2,520,000 ($615); cleaning from COP 283,000 ($69); root canal from COP 700,000 ($171); laser whitening from COP 1,000,000 ($244).",
+      "booking": {
+        "channels": "Via the WhatClinic listing only; phone hidden behind the marketplace. No email or WhatsApp seen.",
+        "consult": "Not published.",
+        "languages": "English, French, Spanish (per listing).",
+        "includes": "Listing mentions airport and hotel pickup, translation and accommodation help.",
+        "bookingUrl": "https://www.whatclinic.com/dentists/colombia/bogota/dentica-by-cristina-suaza-dental-spa"
+      },
+      "sourceIds": ["dentica-whatclinic", "whatclinic-bogota", "reps"]
+    },
+    {
+      "name": "Odontología Avanzada (Dr. Jorge Luis Maciá)",
+      "district": "Cartagena (Bocagrande, Av. San Martín, Edificio Seguros Bolívar, Local 6)",
+      "type": "dental",
+      "specialties": ["Prosthodontics and oral rehabilitation", "Dental implants", "Cosmetic dentistry", "Endodontics"],
+      "namedDoctors": "Dr. Jorge Luis Maciá Barraza, founder, listed under prosthodontics; Dr. Ricardo Montes (cosmetic dentistry); Dr. Roberto Olivo (endodontics); Dr. John Leottau and Dr. Lucy Corrales listed without credentials. All per the WhatClinic listing; no university or tarjeta profesional shown.",
+      "credentials": "Own website not located; all facts from a marketplace listing (WhatClinic), so treat as unverified. The listing claims 30 years of practice and labels some work 'guaranteed for 1 year'. No accreditation claims. REPS consultation blocked automated reading on October 30, 2026; no REPS code shown.",
+      "cautions": "Marketplace-sourced profile only.",
+      "publishedPrices": "Not published on its site (site not found). Marketplace range (indicative, WhatClinic, seen October 30, 2026, at 1 USD = 4,100 COP): consultation COP 127,048 ($31); dental implant from COP 3,176,210 ($775); crowns COP 1,088,249 to 1,741,198 ($265 to $425); whitening from COP 794,052 ($194); root canals COP 412,907 to 571,718 ($101 to $139).",
+      "booking": {
+        "channels": "Via the WhatClinic listing only; phone hidden behind the marketplace.",
+        "consult": "Not published.",
+        "languages": "English and Spanish (per listing).",
+        "bookingUrl": "https://www.whatclinic.com/dentists/colombia/cartagena/odontologia-avanzadajorge-macia"
+      },
+      "sourceIds": ["macia-whatclinic", "whatclinic-cartagena", "reps"]
+    },
+    {
+      "name": "Bypass Gastrico (Dr. Camilo Díaz)",
+      "district": "Bogotá (Chapinero, Carrera 16 No. 82-51, beside Clínica del Country)",
+      "type": "clinic",
+      "specialties": ["Bariatric surgery (gastric bypass, sleeve)", "Laparoscopic surgery"],
+      "namedDoctors": "Dr. Camilo Díaz, surgeon, Universidad Nacional de Colombia (1993); courses at Hackensack University (2000) and Cleveland Clinic Florida (2006 to 2010); listed memberships: ASMBS, IFSO, Asociación Colombiana de Cirugía, Asociación Colombiana de Obesidad y Cirugía Bariátrica, International Society of Surgery. Per the WhatClinic listing. Anesthesiologist not named.",
+      "credentials": "Own website not located (bypassgastrico.com.co redirected to an unrelated gambling site on October 30, 2026); all facts from a marketplace listing. The hospital where surgery is performed is not stated; the address is an office beside Clínica del Country. REPS consultation blocked automated reading on October 30, 2026; no REPS code shown. ASMBS and IFSO are membership societies, not accreditations.",
+      "cautions": "Marketplace-sourced profile only; surgical facility and anesthesia arrangements unverified.",
+      "publishedPrices": "Not published. Marketplace range (indicative): a Colombian price guide dated April 2026 gives private-clinic ranges of COP 25,000,000 to 45,000,000 for gastric sleeve ($6,100 to $11,000 at 1 USD = 4,100 COP) and COP 30,000,000 to 55,000,000 for Roux-en-Y bypass ($7,300 to $13,400); a medical-tourism broker article dated January 11, 2026 quotes $4,500 to $6,500 for sleeve and $6,000 to $8,000 for bypass nationally. Neither is tied to this surgeon.",
+      "booking": {
+        "channels": "Via the WhatClinic listing only; phone hidden behind the marketplace.",
+        "consult": "Not published.",
+        "bookingUrl": "https://www.whatclinic.com/bariatric-surgery/colombia/bogota/bypass-gastrico"
+      },
+      "sourceIds": ["diaz-whatclinic", "bariatric-cuantomecuesta", "bariatric-mtp", "reps"]
+    },
+    {
+      "name": "Dr. Daguer Obesidad (Dr. Ricardo Daguer)",
+      "district": "Barranquilla (Continental Medical Center, Carrera 49C No. 80-125, Consultorio 104)",
+      "type": "clinic",
+      "specialties": ["Bariatric surgery", "Laparoscopic general surgery"],
+      "namedDoctors": "Dr. Ricardo Daguer, general surgeon with stated 15+ years; training listed at Benemérita Universidad Autónoma de Puebla (Mexico) and the University of Panama; memberships listed: Sociedad Colombiana de Cirugía, Latin American endoscopic surgery society, trauma societies. Per the WhatClinic listing. Anesthesiologist not named.",
+      "credentials": "Own website not located; all facts from a marketplace listing. The facility where surgery is performed is not stated. REPS consultation blocked automated reading on October 30, 2026; no REPS code shown. No accreditation claims.",
+      "cautions": "Marketplace-sourced profile only; surgical facility unverified.",
+      "publishedPrices": "Not published. See the national indicative ranges cited for Bypass Gastrico (bariatric-cuantomecuesta, April 2026: sleeve COP 25,000,000 to 45,000,000, $6,100 to $11,000 at 1 USD = 4,100 COP).",
+      "booking": {
+        "channels": "Via the WhatClinic listing only; phone hidden behind the marketplace.",
+        "consult": "Not published.",
+        "bookingUrl": "https://www.whatclinic.com/bariatric-surgery/colombia/barranquilla/dr-daguer-obesidad"
+      },
+      "sourceIds": ["daguer-whatclinic", "bariatric-cuantomecuesta", "reps"]
+    },
+    {
+      "name": "BioXcellerator",
+      "district": "Medellín (El Poblado, El Tesoro Torre Médica 2, Office 944, Carrera 25A No. 1A Sur-45)",
+      "type": "clinic",
+      "url": "https://www.bioxcellerator.com.co/",
+      "specialties": ["Wharton's jelly mesenchymal stem cell infusions", "IV nutrient formulations", "Hyperbaric oxygen, ozone and PRP", "Clinical research in regenerative medicine"],
+      "namedDoctors": "Karolynn Halpert, MD (founder and general manager; emergency medicine, master's in health administration); Leonardo Ramírez, MD (medical director; emergency medicine); Lucas López Quiceno, MD, MSc (scientific director; epidemiology); Valentina Mesa Pietralunga, MD (IV drips, hyperbaric and ozone; training in functional medicine and homotoxicology); Andrea Gómez Montero, MD, MSc (epidemiology; regulatory liaison with INVIMA); Luz Adriana Palacio, MD, MSc; Juan Pablo Vélez, MD and Juan Pablo Reyes, MD (general practitioners). A Medellín Health City cluster guide names Víctor Gómez Calderín as scientific director. No anesthesiologist named.",
+      "credentials": "Self-stated REPS habilitación code 0500116565 and NIT 901.074.877-8 on the Colombian site; REPS public consultation blocked automated reading on October 30, 2026, so the code is unverified. The company states INVIMA certification in Good Clinical Practice for research and an in-house ethics committee; the cluster guide also lists it as an IPS and research centre with GCP certification. El Colombiano reported on October 7, 2020 that INVIMA approved (Resolución 2020029493) a clinical trial of mesenchymal stem cells for COVID-19 run with Clínica Somer, with BioXcellerator supplying cultured umbilical-cord cells. INVIMA's position: a November 2016 INVIMA presentation concluded that advanced cell therapies do not fit Colombia's existing categories (medicines, anatomical components, medical devices) and called for a specific regulation and GMP standards for processing labs; no later INVIMA authorization pathway for commercial stem cell treatments was found. The first page of INVIMA's health-alert index (October 30, 2026) showed no alert naming the company; a keyword search of the alert archive could not be run. The main .com site blocked automated reading (HTTP 403).",
+      "cautions": "The cell products are not FDA-approved and Colombia has no specific marketing authorization for commercial mesenchymal stem cell therapies (invima-2016). Clinical benefit claims for the IV formulations on the site are presented without cited studies. A medical-tourism blog claims the company received an FTC COVID-19 warning letter; the FTC's coronavirus warning-letter page does not list the company, so that claim is unverified (ftc-covid-letters). No press report of a death, lawsuit or sanction was found in the searches run (biox-press-elcolombiano, biox-cmhc).",
+      "publishedPrices": "Not published on its site. A medical-tourism marketplace article (May 2026) gives Medellín market ranges of $4,500 to $6,500 for a 100-million-cell IV protocol and $8,000 to $12,000 for 200-million-plus cells; these are marketplace ranges (indicative), not the clinic's prices.",
+      "booking": {
+        "channels": "Phone +57 604 604 1815; email contacto@bioxcellerator.com (variants shown); PQRS form on site; office hours Monday to Friday 7:00 to 19:00 Colombia time. Cluster guide lists victor.gomez@bioxcellerator.com and +57 300 320 3966.",
+        "consult": "Not published. The site lists a returns policy document (PL-DIR-026) without showing its terms, and PQRS response times of 24 to 72 hours by risk level.",
+        "languages": "Not stated on the Colombian site.",
+        "bookingUrl": "https://www.bioxcellerator.com.co/"
+      },
+      "sourceIds": ["biox-site-co", "biox-cmhc", "biox-press-elcolombiano", "biox-placidway", "invima-2016", "invima-alerts", "ftc-covid-letters", "reps"]
+    },
+    {
+      "name": "Stem Cells Colombia (Dr. Diana Reyes)",
+      "district": "Medellín (El Poblado, Incodol Sede Balsos, Carrera 25 No. 9A Sur-162, Consultorio 3)",
+      "type": "clinic",
+      "url": "https://stemcellscolombia.com/",
+      "specialties": ["Umbilical-cord (Wharton's jelly) stem cell injections for joints and spine", "IV stem cell protocols", "Aesthetic and longevity packages", "Plastic surgery packages combined with stem cells"],
+      "namedDoctors": "Dr. Diana Reyes: MD Universidad CES (2011), anesthesiology Universidad CES (2017), fellowship in pain and palliative care Universidad CES (2019); ISSCA stem cell application certificate (2024); FEDELAT interventional pain accreditation (2022). Dr. Esteban Toro performs joint and spine applications with her (no credentials listed). Dr. Felipe Salgado leads pre- and post-treatment consultations (no credentials listed). Also listed by name only: Dr. Andrés Martínez, Dr. Luisa Mejía, Dr. Zaida Cabezas, Dr. Marcela Tabares, Dr. Alejandro Carvajal. No tarjeta profesional numbers shown.",
+      "credentials": "Legal entity not named (brand 'Stemcells Colombia'); no REPS code shown; REPS consultation blocked automated reading on October 30, 2026. Procedures take place in a consulting room and operating room at Incodol Sede Balsos, a third-party facility whose habilitación was not checked. The cell supplier or laboratory is not named; the site states Wharton's jelly cells at passage 3 to 4 with a per-vial certificate. INVIMA is not mentioned; the site says the therapy 'is not approved by the FDA, but in Colombia it is legal'. INVIMA's 2016 presentation found no specific regulatory category for advanced cell therapies in Colombia (invima-2016).",
+      "cautions": "Not FDA-approved and no Colombian marketing authorization pathway for commercial stem cell products (invima-2016). Self-reported '8,000+ procedures' and ratings are unverified. The clinic bundles plastic surgery (facelift, mommy makeover) with stem cell add-ons, and the surgeons for those packages are not named.",
+      "publishedPrices": "USD starting prices on its pricing page (copyright 2026, seen October 30, 2026): knee or shoulder from $1,999 (50 million cells); hip $2,199; spine, neck and back $4,900 (includes one Marriott night and transfers); IV whole body $4,000 (100 million cells, 3 days); autoimmune, neurological or diabetes protocols $4,000; Longevity Protocol $6,999 (3 nights hotel, full-body MRI, DEXA); face $1,399; P-Shot $2,299; mommy makeover with facial rejuvenation $15,999; deep plane facelift $20,999. Flights and meals excluded; hotel and transfers excluded unless listed.",
+      "booking": {
+        "channels": "WhatsApp +57 310 881 9333; email info@stemcellscolombia.com; booking page https://stemcellscolombia.com/book/; hours Monday to Friday 10:00 to 18:00, Saturday 10:00 to 14:00 (GMT-5). English-speaking coordinator stated.",
+        "consult": "Free case review by a coordinator and a doctor; medical studies optional; plan and price confirmed in writing before travel. Deposit and refund terms not published.",
+        "languages": "English and Spanish.",
+        "includes": "Varies by package; see prices.",
+        "bookingUrl": "https://stemcellscolombia.com/book/"
+      },
+      "sourceIds": ["scc-home", "scc-pricing", "scc-reyes", "scc-about", "scc-book", "invima-2016", "reps"]
+    },
+    {
+      "name": "Lumm Medical",
+      "district": "Medellín (Edificio Nock Reserved Residences, Carrera 32 No. 12A-11, Office 801)",
+      "type": "clinic",
+      "url": "https://lumm.co/en/",
+      "specialties": ["Regenerative medicine for osteoarthritis and sports injuries", "Mesenchymal stem cells, autologous fibroblasts, PRP", "Aesthetic and 'healthspan' therapies", "In-house cell laboratory"],
+      "namedDoctors": "Dr. Alejandro Ramírez Restrepo, medical director, sports medicine specialist (Universidad de Antioquia), listed as an independent provider; Dra. Luz Marina Restrepo, scientific director, biologist with a doctorate from Paris and head of a tissue-engineering and cell-therapy group at Universidad de Antioquia; Dra. Libia Hincapié, plastic surgeon trained in Málaga, Spain, listed as an independent provider; Dra. Manuela Velásquez, PhD in immunology (Universidad de Antioquia), laboratory coordinator. No tarjeta profesional numbers shown.",
+      "credentials": "Legal entity, NIT and REPS code not shown; REPS consultation blocked automated reading on October 30, 2026. The site states that medical evaluation, diagnosis and procedures are provided by allied independent physicians and that Lumm coordinates the patient experience. It describes an in-house laboratory operating under 'GMP standards' with more than 15 characterization tests per batch and a per-patient quality certificate, but names no certifying body and makes no INVIMA statement. It states it does not treat cancer, advanced neurodegenerative disease, type 1 diabetes or severe autoimmune disease.",
+      "cautions": "No Colombian marketing authorization pathway exists for commercial mesenchymal stem cell products (invima-2016). The independent-provider structure means the treating physician, not Lumm, is the responsible provider. Laboratory claims are self-reported.",
+      "publishedPrices": "Not published on its site; costs are presented after medical evaluation.",
+      "booking": {
+        "channels": "WhatsApp +57 323 290 8617 (Colombia) and +1 930 212 2882 (US); 15-minute exploratory call booking link; email patientcare@lumm.co (decoded from an obfuscated link, unverified); PQRS page https://lumm.co/pqrs/.",
+        "consult": "Free 15-minute exploratory call (virtual or in person), then medical evaluation; deposit terms not published.",
+        "languages": "Spanish and English site versions.",
+        "bookingUrl": "https://lumm.co/contacto/"
+      },
+      "sourceIds": ["lumm-home", "lumm-nosotros", "invima-2016", "reps"]
+    }
+  ],
+  "sources": [
+    { "id": "reps", "label": "REPS – Registro Especial de Prestadores de Servicios de Salud (public consultation; blocked automated reading October 30, 2026)", "url": "https://prestadores.minsalud.gov.co/habilitacion/", "publisher": "Ministerio de Salud y Protección Social", "date": "2026-10-30", "kind": "official" },
+    { "id": "rethus", "label": "ReTHUS public consultation (requires ID number; not usable per clinician)", "url": "https://web.sispro.gov.co/THS/Cliente/ConsultasPublicas/ConsultaPublicaDeTHxIdentificacion.aspx", "publisher": "Ministerio de Salud y Protección Social / SISPRO", "date": "2026-10-30", "kind": "official" },
+    { "id": "icontec-list", "label": "Listado de IPS acreditadas en salud, octubre de 2026 (PDF)", "url": "https://acreditacionensalud.org.co/wp-content/uploads/2026/10/IPS-ACREDITADAS-OCTUBRE-2026-2.pdf", "publisher": "Icontec – Acreditación en Salud", "date": "2026-10", "kind": "official" },
+    { "id": "jci-directory", "label": "JCI accredited organizations directory (blocked automated reading October 30, 2026)", "url": "https://www.jointcommission.org/en/who-we-are/accredited-organizations/", "publisher": "Joint Commission International", "date": "2026-10-30", "kind": "official" },
+    { "id": "hptu-intl", "label": "HPTU Oficina Internacional page", "url": "https://hptu.org/en/pages/oficina-internacional", "publisher": "Hospital Pablo Tobón Uribe", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "hptu-decreto", "label": "Decreto 2020070002507 (Gobernación de Antioquia) describing HPTU accreditations", "url": "https://antioquia.gov.co/images/normativa/decretos/2020/2020070002507.pdf", "publisher": "Gobernación de Antioquia", "date": "2020", "kind": "official" },
+    { "id": "hptu-press-eltiempo", "label": "El Tiempo topic page: Hospital Pablo Tobón Uribe (emergency over-occupancy 2024, 2025)", "url": "https://www.eltiempo.com/noticias/hospital-pablo-tobon-uribe", "publisher": "El Tiempo", "date": "2025-03-29", "kind": "press" },
+    { "id": "lasamericas-intl", "label": "Oficina Internacional – Clínica Las Américas Auna", "url": "https://www.lasamericas.com.co/oficina-internacional", "publisher": "Clínica Las Américas Auna", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "lasamericas-contact", "label": "Oficina Internacional – Cómo contactarnos", "url": "https://www.lasamericas.com.co/oficina-internacional/paso-a-paso/como-contactarnos", "publisher": "Clínica Las Américas Auna", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "lasamericas-cert", "label": "Oficina Internacional – Certificaciones y acreditaciones", "url": "https://www.lasamericas.com.co/oficina-internacional/sobre-nosotros/certificaciones-y-acreditaciones", "publisher": "Clínica Las Américas Auna", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "rosario-intl", "label": "Clínica El Rosario – Paciente internacional", "url": "https://www.clinicaelrosario.com/pacientes/paciente-internacional/", "publisher": "Clínica El Rosario", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "rosario-home", "label": "Clínica El Rosario home page (sedes, contacts, recognitions)", "url": "https://www.clinicaelrosario.com/", "publisher": "Clínica El Rosario", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "rosario-press-eltiempo", "label": "El Tiempo topic page: Clínica El Rosario (closure of maternal-perinatal services, June 2023)", "url": "https://www.eltiempo.com/noticias/clinica-el-rosario", "publisher": "El Tiempo", "date": "2023-06-22", "kind": "press" },
+    { "id": "cmedellin-intl", "label": "Clínica Medellín – International Patients form", "url": "https://www.clinicamedellin.com/contactanos/international-patients-pacientes-internacionales/", "publisher": "Clínica Medellín (Grupo Quirónsalud)", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "cmedellin-sedes", "label": "Clínica Medellín – Sedes", "url": "https://www.clinicamedellin.com/institucion/sedes/", "publisher": "Clínica Medellín (Grupo Quirónsalud)", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "cmedellin-recon", "label": "Clínica Medellín – Reconocimientos", "url": "https://www.clinicamedellin.com/institucion/reconocimientos/", "publisher": "Clínica Medellín (Grupo Quirónsalud)", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "cmedellin-press-eltiempo", "label": "El Tiempo topic page: Clínica Medellín (killing of urologist in consulting room, April 2024)", "url": "https://www.eltiempo.com/noticias/clinica-medellin", "publisher": "El Tiempo", "date": "2024-04-19", "kind": "press" },
+    { "id": "fvl-intl", "label": "Fundación Valle del Lili – Pacientes internacionales", "url": "https://valledellili.org/pacientes-internacionales/", "publisher": "Fundación Valle del Lili", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "fvl-cert", "label": "Fundación Valle del Lili – Certificaciones", "url": "https://valledellili.org/certificaciones-fundacion-valle-del-lili/", "publisher": "Fundación Valle del Lili", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "fvl-press-elpais", "label": "El País (Cali): Fundación Valle del Lili recibe acreditación de excelencia para todas sus sedes", "url": "https://www.elpais.com.co/fundacion-valle-del-lili/fundacion-valle-del-lili-recibe-acreditacion-de-excelencia-para-todas-sus-sedes-1538.html", "publisher": "El País (Cali)", "date": "2024", "kind": "press" },
+    { "id": "imbanaco-quiron-jci", "label": "Quirónsalud press release: Clínica Imbanaco ratifica su excelencia asistencial con la renovación de la máxima certificación de la Joint Commission (seen in search results; page blocked automated reading)", "url": "https://www.quironsalud.com/es/comunicacion/actualidad/clinica-imbanaco-ratifica-excelencia-asistencial-renovacion", "publisher": "Quirónsalud", "date": "2026", "kind": "press" },
+    { "id": "imbanaco-press-elpais", "label": "El País (Cali): Centro Médico Imbanaco pasará a manos de un grupo español", "url": "https://www.elpais.com.co/economia/centro-medico-imbanaco-pasara-a-manos-de-un-grupo-espanol.html", "publisher": "El País (Cali)", "date": "2019-12-23", "kind": "press" },
+    { "id": "imbanaco-encolombia", "label": "Imbanaco sustainability report excerpt: international office staffing", "url": "https://encolombia.com/economia/economiacolombiana/sector-salud/informe-sostenibilidad/fortalecimiento-infraestructura-procesos/", "publisher": "Encolombia", "date": "2017", "kind": "press" },
+    { "id": "medellinguru-hospitals", "label": "Top 10 Colombia Hospitals for Expats: A 2026 Guide (promotional; names JCI for Imbanaco)", "url": "https://medellinguru.com/top-10-colombia-hospitals-for-expats-a-guide/", "publisher": "Medellín Guru", "date": "2026-05-25", "kind": "marketplace" },
+    { "id": "fsfb-intl", "label": "Fundación Santa Fe de Bogotá – Paciente internacional", "url": "https://fundacionsantafedebogota.com/servicios-en-salud/paciente-internacional", "publisher": "Fundación Santa Fe de Bogotá", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "fsfb-jci-pdf", "label": "JCI success story: Fundación Santa Fe de Bogotá (undated; references 2016 and 2019 awards)", "url": "https://www.jointcommissioninternational.org/-/media/jci/jci-documents/accreditation/resources/santa-fe-de-bogota_success-story.pdf", "publisher": "Joint Commission International", "date": "2019", "kind": "official" },
+    { "id": "lacardio-intl", "label": "LaCardio – Centro Internacional", "url": "https://www.lacardio.org/centro-internacional/", "publisher": "Fundación Cardioinfantil – LaCardio", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "lacardio-acred", "label": "LaCardio – Acreditaciones, premios y reconocimientos", "url": "https://www.lacardio.org/acreditaciones-y-premios/", "publisher": "Fundación Cardioinfantil – LaCardio", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "lacardio-historia", "label": "LaCardio – Historia (founded 1973; 350 beds; JCI timeline)", "url": "https://www.lacardio.org/historia/", "publisher": "Fundación Cardioinfantil – LaCardio", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "country-home", "label": "Clínica del Country home page (Icontec excellence claim)", "url": "https://www.clinicadelcountry.com/", "publisher": "Clínica del Country", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "country-contact", "label": "Clínica del Country – Contacto", "url": "https://www.clinicadelcountry.com/contacto", "publisher": "Clínica del Country", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "country-press-eltiempo", "label": "El Tiempo topic page: Clínica del Country (opinion column August 27, 2025)", "url": "https://www.eltiempo.com/noticias/clinica-del-country", "publisher": "El Tiempo", "date": "2025-08-27", "kind": "press" },
+    { "id": "husi-intl", "label": "HUSI – SIPE Pacientes Internacionales", "url": "https://www.husi.org.co/web/sipe/pacientes_internacionales", "publisher": "Hospital Universitario San Ignacio", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "husi-contact", "label": "HUSI – SIPE Contáctenos", "url": "https://www.husi.org.co/web/sipe/contactenos", "publisher": "Hospital Universitario San Ignacio", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "husi-press-eltiempo", "label": "El Tiempo topic page: Hospital Universitario San Ignacio (Supersalud inspection, September 13, 2024)", "url": "https://www.eltiempo.com/noticias/hospital-universitario-san-ignacio", "publisher": "El Tiempo", "date": "2024-09-13", "kind": "press" },
+    { "id": "portoazul-intl", "label": "Clínica Portoazul Auna – Pacientes Internacionales", "url": "https://www.clinicaportoazul.com/pacientes-internacionales-auna/", "publisher": "Clínica Portoazul Auna", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "portoazul-form", "label": "Clínica Portoazul Auna – Formulario pacientes internacionales", "url": "https://www.clinicaportoazul.com/formulario-pacientes-internacionales/", "publisher": "Clínica Portoazul Auna", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "reinasofia-press-consultorsalud", "label": "Consultorsalud: Clínica Reina Sofía recibe acreditación de Joint Commission International", "url": "https://consultorsalud.com/clinica-reina-sofia-acreditacion-joint-comission/", "publisher": "Consultorsalud", "date": "2024-02-19", "kind": "press" },
+    { "id": "reinasofia-doctoralia", "label": "Doctoralia listing: Clínica Reina Sofía (address, specialties)", "url": "https://www.doctoralia.co/clinicas/clinica-reina-sofia", "publisher": "Doctoralia", "date": "2026-10-30", "kind": "marketplace" },
+    { "id": "dtc-home", "label": "Dental Tourism Colombia home page (dentists, warranty FAQ, WhatsApp)", "url": "https://dentaltourismcolombia.com/", "publisher": "Dental Tourism Colombia", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "dtc-cost", "label": "Dental Tourism Colombia – Dental Prices in Colombia (2026 Prices)", "url": "https://dentaltourismcolombia.com/cost", "publisher": "Dental Tourism Colombia", "date": "2026", "kind": "clinic" },
+    { "id": "dtc-medellin", "label": "Dental Tourism Colombia – Medellín dentist (Dr. Johana Ossa)", "url": "https://dentaltourismcolombia.com/dentists", "publisher": "Dental Tourism Colombia", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "dtc-cartagena", "label": "Dental Tourism Colombia – Cartagena dentist (Dr. Julio Oliver) with city prices", "url": "https://www.dentaltourismcolombia.com/cartagena-dentist", "publisher": "Dental Tourism Colombia", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "dtc-bogota", "label": "Dental Tourism Colombia – Bogotá dentist (Dr. Liliana Porras) with city prices", "url": "https://www.dentaltourismcolombia.com/bogota-dentist", "publisher": "Dental Tourism Colombia", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "dtc-warranty", "label": "Dental Tourism Colombia – Dental work warranty", "url": "https://www.dentaltourismcolombia.com/dental-work-warranty", "publisher": "Dental Tourism Colombia", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "dentica-whatclinic", "label": "WhatClinic listing: Dentica by Cristina Suaza Dental Spa, Bogotá", "url": "https://www.whatclinic.com/dentists/colombia/bogota/dentica-by-cristina-suaza-dental-spa", "publisher": "WhatClinic", "date": "2026-10-30", "kind": "marketplace" },
+    { "id": "whatclinic-bogota", "label": "WhatClinic: Dentists in Bogotá (listing with COP prices)", "url": "https://www.whatclinic.com/dentists/colombia/bogota", "publisher": "WhatClinic", "date": "2026-10-30", "kind": "marketplace" },
+    { "id": "macia-whatclinic", "label": "WhatClinic listing: Odontología Avanzada – Jorge Macia, Cartagena", "url": "https://www.whatclinic.com/dentists/colombia/cartagena/odontologia-avanzadajorge-macia", "publisher": "WhatClinic", "date": "2026-10-30", "kind": "marketplace" },
+    { "id": "whatclinic-cartagena", "label": "WhatClinic: Dentists in Cartagena (listing with COP prices)", "url": "https://www.whatclinic.com/dentists/colombia/cartagena", "publisher": "WhatClinic", "date": "2026-10-30", "kind": "marketplace" },
+    { "id": "diaz-whatclinic", "label": "WhatClinic listing: Bypass Gastrico (Dr. Camilo Díaz), Bogotá", "url": "https://www.whatclinic.com/bariatric-surgery/colombia/bogota/bypass-gastrico", "publisher": "WhatClinic", "date": "2026-10-30", "kind": "marketplace" },
+    { "id": "daguer-whatclinic", "label": "WhatClinic listing: Dr. Daguer Obesidad, Barranquilla", "url": "https://www.whatclinic.com/bariatric-surgery/colombia/barranquilla/dr-daguer-obesidad", "publisher": "WhatClinic", "date": "2026-10-30", "kind": "marketplace" },
+    { "id": "bariatric-cuantomecuesta", "label": "Cuánto me cuesta: Cirugía bariátrica en Colombia, precios actualizados abril 2026 (indicative COP ranges)", "url": "https://cuantomecuesta.com/co/cirugia-bariatrica/", "publisher": "cuantomecuesta.com", "date": "2026-04", "kind": "marketplace" },
+    { "id": "bariatric-mtp", "label": "Medical Tourism Packages: Cirugía bariátrica en Colombia (broker price ranges)", "url": "https://www.medicaltourismpackages.com/es/cirugia-bariatrica-en-colombia/", "publisher": "Medical Tourism Packages", "date": "2026-01-11", "kind": "marketplace" },
+    { "id": "biox-site-co", "label": "BioXcellerator Colombia site (team, services, REPS code, INVIMA GCP statement, policies)", "url": "https://www.bioxcellerator.com.co/", "publisher": "BioXcellerator", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "biox-cmhc", "label": "Guía de empresas, Cluster Medellín Health City (BioXcellerator entry; undated PDF)", "url": "https://www.camaramedellin.com.co/Portals/0/Documentos/Cluster%20Medell%C3%ADn%20Health%20City/CMHC_GuiaEmpresa_ESP.pdf", "publisher": "Cámara de Comercio de Medellín para Antioquia", "date": "2023", "kind": "official" },
+    { "id": "biox-press-elcolombiano", "label": "El Colombiano: Antioquia iniciará ensayo clínico con células madre para tratar coronavirus (INVIMA approval, BioXcellerator and Clínica Somer)", "url": "https://www.elcolombiano.com/antioquia/antioquia-iniciara-ensayo-clinico-con-celulas-madre-para-tratar-coronavirus-AM13791098", "publisher": "El Colombiano", "date": "2020-10-07", "kind": "press" },
+    { "id": "biox-placidway", "label": "PlacidWay article on Medellín stem cell longevity protocols (marketplace price ranges; names several clinics)", "url": "https://www.placidway.com/article/7839/The-City-of-Eternal-Youth-How-Medellin-is-Capturing-the-Elite-North-American-Market-for-Full-Body-Stem-Cell-Longevity-Protocols", "publisher": "PlacidWay", "date": "2026-05-01", "kind": "marketplace" },
+    { "id": "invima-2016", "label": "INVIMA presentation: Perspectiva de terapias avanzadas en el marco normativo (Cartagena seminar, November 2016)", "url": "https://www.invima.gov.co/biblioteca/preview/126615", "publisher": "INVIMA", "date": "2016-11", "kind": "official" },
+    { "id": "invima-alerts", "label": "INVIMA alertas sanitarias index (first page checked October 30, 2026; no stem cell clinic alerts seen)", "url": "https://www.invima.gov.co/alertas-sanitarias", "publisher": "INVIMA", "date": "2026-10-30", "kind": "official" },
+    { "id": "ftc-covid-letters", "label": "FTC coronavirus enforcement warning letters (BioXcellerator not listed)", "url": "https://www.ftc.gov/coronavirus/enforcement/warning-letters", "publisher": "US Federal Trade Commission", "date": "2026-10-30", "kind": "official" },
+    { "id": "scc-home", "label": "Stem Cells Colombia home page", "url": "https://stemcellscolombia.com/", "publisher": "Stem Cells Colombia", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "scc-pricing", "label": "Stem Cells Colombia – Pricing", "url": "https://stemcellscolombia.com/pricing/", "publisher": "Stem Cells Colombia", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "scc-reyes", "label": "Stem Cells Colombia – Dr. Diana Reyes profile", "url": "https://stemcellscolombia.com/team/dr-diana-reyes/", "publisher": "Stem Cells Colombia", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "scc-about", "label": "Stem Cells Colombia – About (facility, team list)", "url": "https://stemcellscolombia.com/about/", "publisher": "Stem Cells Colombia", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "scc-book", "label": "Stem Cells Colombia – Book your consultation", "url": "https://stemcellscolombia.com/book/", "publisher": "Stem Cells Colombia", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "lumm-home", "label": "Lumm Medical home page (address, lab claims, independent-provider notice, WhatsApp)", "url": "https://lumm.co/", "publisher": "Lumm Medical", "date": "2026-10-30", "kind": "clinic" },
+    { "id": "lumm-nosotros", "label": "Lumm Medical – Nosotros (team)", "url": "https://lumm.co/nosotros/", "publisher": "Lumm Medical", "date": "2026-10-30", "kind": "clinic" }
+  ]
+}

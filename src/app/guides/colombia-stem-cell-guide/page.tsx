@@ -4,6 +4,7 @@ import Navigation from '@/components/Navigation';
 import SidebarShell from '@/components/SidebarShell';
 import Footer from '@/components/Footer';
 
+import { JourneyRail, JourneyNext } from '@/components/destinations/JourneyRail';
 export const metadata: Metadata = {
   title: { absolute: 'Colombia Stem Cell Therapy Guide: BioXcellerator, Medellin Clinics' },
   alternates: { canonical: 'https://vitalityscout.com/guides/colombia-stem-cell-guide' },
@@ -40,6 +41,7 @@ export default function ColombiaStemCellGuide() {
             </span>
           </div>
 
+          <div className="mb-4"><JourneyRail currentPath="/guides/colombia-stem-cell-guide" /></div>
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
             Stem Cell Therapy in Colombia: Complete Guide
           </h1>
@@ -520,6 +522,7 @@ export default function ColombiaStemCellGuide() {
       </section>
 
       </SidebarShell>
+      <div className="mx-auto max-w-5xl px-4 pb-8"><JourneyNext currentPath="/guides/colombia-stem-cell-guide" /></div>
       <Footer />
     </main>
   );

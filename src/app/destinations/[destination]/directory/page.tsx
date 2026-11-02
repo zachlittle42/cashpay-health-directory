@@ -79,8 +79,8 @@ export default function DirectoryPage({ params }: { params: { destination: strin
       {/* By type */}
       <section className="px-4 pb-10">
         <div className="mx-auto max-w-5xl">
-          <h2 className="text-2xl font-bold text-gray-900">By facility type</h2>
-          <p className="mt-1 text-sm text-gray-600">The licence type tells you what a facility may legally do on its own premises. It is the first thing to match against the procedure you are booking.</p>
+          <h2 className="text-2xl font-bold text-gray-900">By {config.categoryNoun}</h2>
+          <p className="mt-1 text-sm text-gray-600">The {config.categoryNoun} is the first thing to match against the procedure you are booking: it says what the list itself records about each facility.</p>
           <dl className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {cats.map((c) => {
               const info = config.categories.find((x) => x.slug === c);

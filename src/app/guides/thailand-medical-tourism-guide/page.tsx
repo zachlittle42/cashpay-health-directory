@@ -3,8 +3,9 @@ import Navigation from '@/components/Navigation';
 import SidebarShell from '@/components/SidebarShell';
 import type { Metadata } from 'next';
 
+import { JourneyRail, JourneyNext } from '@/components/destinations/JourneyRail';
 export const metadata: Metadata = {
-  title: { absolute: 'Thailand Medical Tourism: Complete Guide to Bangkok Hospitals (2024)' },
+  title: { absolute: 'Thailand Medical Tourism: Complete Guide to Bangkok Hospitals' },
   alternates: { canonical: 'https://vitalityscout.com/guides/thailand-medical-tourism-guide' },
   description: 'Plan your medical trip to Thailand. Bumrungrad, Samitivej, BNH hospital reviews. Costs, what to expect, and step-by-step trip planning for Americans.',
 };
@@ -44,6 +45,7 @@ export default function ThailandMedicalTourismGuide() {
               Destination Guide
             </span>
           </div>
+          <div className="mb-4"><JourneyRail currentPath="/guides/thailand-medical-tourism-guide" /></div>
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
             Thailand Medical Tourism: Complete Guide
           </h1>
@@ -512,6 +514,7 @@ export default function ThailandMedicalTourismGuide() {
         </div>
       </article>
 
+      <div className="mx-auto max-w-5xl px-4 pb-8"><JourneyNext currentPath="/guides/thailand-medical-tourism-guide" /></div>
       </SidebarShell>
       <footer className="border-t border-gray-200 px-4 py-8">
         <div className="mx-auto max-w-4xl text-center">

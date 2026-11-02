@@ -6,6 +6,7 @@ import MedicalDisclaimer from '@/components/MedicalDisclaimer';
 import type { Metadata } from 'next';
 import EmailCaptureCard from '@/components/forms/EmailCaptureCard';
 
+import { JourneyRail, JourneyNext } from '@/components/destinations/JourneyRail';
 export const metadata: Metadata = {
   title: { absolute: 'Colombia Plastic Surgery Cost 2026: BBL, Lipo & Breast vs US' },
   alternates: { canonical: 'https://vitalityscout.com/guides/colombia-plastic-surgery-cost' },
@@ -101,6 +102,7 @@ export default function ColombiaPlasticSurgeryCostGuide() {
               <span className="mx-2">→</span>
               <span className="text-gray-900">Colombia Plastic Surgery Cost</span>
             </nav>
+            <div className="mx-auto max-w-5xl px-4 pt-4"><JourneyRail currentPath="/guides/colombia-plastic-surgery-cost" /></div>
           </div>
         </div>
 
@@ -439,6 +441,7 @@ export default function ColombiaPlasticSurgeryCostGuide() {
         </article>
 
         {/* Shared YMYL disclaimer + affiliate disclosure */}
+        <div className="mx-auto max-w-5xl px-4 pb-8"><JourneyNext currentPath="/guides/colombia-plastic-surgery-cost" /></div>
         <MedicalDisclaimer />
 
         <div className="mx-auto max-w-4xl px-4 py-8">

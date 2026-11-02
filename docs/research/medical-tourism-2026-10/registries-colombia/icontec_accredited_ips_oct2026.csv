@@ -1,0 +1,61 @@
+n,razon_social,codigos_prestador,sedes_acreditadas,n_sedes,ciudades,fechas_otorgamiento,ciclo,status,hospital_universitario_flag
+1,Fundación Cardiovascular de Colombia,6827600289,6827600289-10,1,Piedecuesta;Medellín,2022 02 01;2024-09-03,V,Acreditado con excelencia,X
+2,Uribe C.P.O. S.A. Centro Policlínico del Olaya,500102104,0500102104-1;100109178-02;100109178-03;100109178-04;100109178-07,5,"Bogotá;Bogotá,",,V,Acreditado con excelencia,X
+3,Clínica del Occidente,1100109178,100109178-09;100109178-14;100109178-18;110019666-01,4,"Bogotá;Bogotá,",2022-08-25,V,Acreditado,
+4,S.A. Hospital Universitario,1100105618;1100109666,1100105618-01;1100105618-05;1100105618-13;110019666-06,4,"Bogotá;Bogotá,",2023-12-04;2024-09-27,V,Acreditado con excelencia,
+5,Fundación Santa Fe de Bogotá,2517502157;7600102870;7636402870,2517502157-04;7600102870-01;7636402870-09;7636402870-10,4,"Bogotá;Chía;Cali;Jamundí;Bogotá,",2023-10-04,V,Acreditado con excelencia,X
+6,Fundación Valle del Lili Centro Dermatológico,7600102870,1100102654-01;7600102870-11;7600102870-12;7600102870-13,4,"Bogotá;Cali;Jamundí;Bogotá,",2023-10-04,V,Acreditado con excelencia,
+7,Federico Lleras Acosta ESE Laboratorio Clínico,1100102654,0800100105-01;0800100105-02;1100102654-02,3,,2023-06-29;2026 02 19,V,Acreditado,X
+8,Continental S.A.S. Cardioinfantil - Instituto,0800100105;1300102075;4700101328;857300707,0800100105-04;0800100105-06;0800100105-07;0800100105-08;0800100105-12;0800100105-13;0857300707-1;1100109111-01;1300102075-1;1300102075-4;4700101328-1,11,"Bogotá;Barranquilla;Puerto Colombia;Santa Marta;Cartagena;Bogotá,",2023-05-23,IV,Acreditado con excelencia,
+9,de Cardiologia - La Cardio Fundación Hospitalaria,1100109111,1100109111-03;1100109111-05,2,Medellín,2025-03-12,IV,Acreditado con excelencia,X
+10,San Vicente de Paúl,500102175,500102175-01,1,Floridablanca,2022-07-28;2023-06-24,IV,Acreditado con excelencia,X
+11,Oftalmológica de Santander FOSCAL Hospital Universitario,6827601666,6800101666-17;6800101666-18,2,Pasto;Bucaramanga,,IV,Acreditado,
+12,Departamental de Nariño ESE,52001011020,1100108258-01;52001011020-1,2,"Bogotá;Bogotá,",2023-09-28;2024 04 08,IV,Acreditado,
+13,Instituto Roosevelt Clínica Colsanitas-,1100108258,1100108258-06;1100109186-08;2575403808-01,3,"Bogotá;Soacha;Bogotá,",2023-10-20,IV,Acreditado con excelencia,X
+14,Reina Sofía E.S.E. HOSPITAL CIVIL DE,1100109186,1100109186-55;1100109186-78,2,"Bogotá;Ipiales;Bogotá,",2025-12-13;2026-02-18,,,
+15,IPIALES,1100109523;5235600356,1100109523-01;1100109523-04;1100109523-06;1100109523-08;5235600356-01,5,"Bogotá;Bogotá,",2024 09 04,IV,Acreditado,
+16,Virrey Solis IPS Virrey Solis IPS Administradora el,500114276;7600110304,0500114276-01;0500114276-09;0500114276-10;1100109523-09;1100109523-10;1100109523-11;1100109523-12;1100109523-13;1100109523-14;1100109523-18;1100109523-21;1100109523-22;1100109523-24;1100109523-25;1100109523-26;1100109523-27;1100109523-28;1100109523-29;1100109523-30;1100109599-01;1100109599-03;1100109599-05;2575401988-01;2575401988-03;2575401988-04;2575401988-05;7600110304-04,27,"Medellín;Bogotá;Chía;Cali;Soacha;Bogotá,",2024 09 04;2024-12-11;2025-08-11,,Acreditado con excelencia,
+17,Country SAS - Clínica       1 del Country Fundación Hospital Infantil,1100109599,1100109599-07;1100109599-10;1100109599-13,3,"Bogotá;Bogotá,",2022-02-11,IV,Acreditado con excelencia,
+18,Universitario de San       1 José Fundación Clínica,1100116133,1100116133-01,1,"Bogotá;Bogotá,",,III,Acreditado,X
+19,Shaio Clínica Universidad de,1100106447,1100106447-01,1,,2022-07-17,III,Acreditado,
+20,"la Sabana             2 Fundación Javeriana de Servicios Médicos Odontológicos Interuniversitarios ""Carlos Márquez      ",1100109199;2517500059,1100109199-01;1100109199-04;1100109199-07;1100109199-12;2517500059-01,5,"Bogotá;Chía;Bogotá,",2022-10-18,III,Acreditado,X
+21,IPS Sociedad de Cirugía de Bogotá- Hospital de,500118616;800104327,0500118616-01;0800104327-01;1100109199-13,3,"Bogotá;Barranquilla;Bogotá,",2023-09-28,III,Acreditado,X
+22,San José Hospital  Infantil los,1100108679,1100108679-01,1,,2023 04 17,III,Acreditado,X
+23,Cardiovascular Ángeles de Hospital Susana López de Valencia ESE,5200100283,1900100023-01;5200100283-01,2,Pasto;Popayán,2023 03 30,III,Acreditado con excelencia,
+24,Hospital Universitario,1900100023,1100109456-08;1100109456-09;1900100023-02,3,"Bogotá;Bogotá,",,III,Acreditado,
+25,Servicios Especiales de Salud SES Hospial,1100109456,1100109456-10;1100109456-11;1100109456-12,3,Manizales,2020-10-30,III,Acreditado,X
+26,Universitario de Caldas. Medicina Intensiva del,1700100103,1700100103-01,1,Honda,2025-06-27,II,Acreditado,X
+27,Tolima S.A. Fundación San Vicente,7334901262,7334901262-01,1,Rionegro,2026-02-12,III,Acreditado,
+28,de Paúl Rionegro Universidad Pontificia Bolivariana- Clínica,0561512044,0561512044-01,1,Medellín;Rionegro,2022-07-18,,Acreditado,
+30,Fundación Hospital de la Misericordia Red de Salud del,1100105681;1100109224,1100109224-01;7600103958-02;7600103958-03;7600103958-06;7600103958-07;7600103958-09,6,"Bogotá;Cali;Bogotá,",2023-10-20;2024-09-03,II;V,Acreditado con excelencia,X
+32,Centro - HOSPITAL PRIMITIVO IGLESIAS E.S.E Clínica Universitaria,7600103958,7600103958-10;7600103958-11;7600103958-12;7600103958-14;7600103958-15;7600103958-16;7600103958-18;7600103958-19;7600103958-20;7600103958-21,10,"Bogotá;Cali;Bogotá,",2023-10-20;2024-04-18,II,Acreditado,
+33,Cardiovascular de          1,1100109186,1100109186-30,1,"Bogotá;Bogotá,",2022-12-11,II,Acreditado,
+34,Clínica los Nogales        1 Clínica,1100125297,1100125297-01,1,Cali,,II,Acreditado con excelencia,
+35,Neurocardiovascular         7 DIME Laboratorio Higuera,7600100438,6800101559-03;6800101559-04;7600100438-01,3,Bucaramanga,2023-03-02;2024-09-26,II,Acreditado,
+36,Escalante Subred Integrada de Servicios de Salud SUR E.S.E,1100130294;6800101559,1100130294-14;6800101559-05;6800101559-07;6800101559-08,4,Floridablanca,2025 06 17,I;II,Acreditado,
+37,Hospital General de Cardiovascular  de,,1100130294-15;1100130294-17;1100130294-18;1100130294-28;1100130294-36;1100130294-41;1100130294-46;1100130294-49,8,"Medellín;Bogotá;Bogotá,",2023-04-28;2025 06 17,III,Acreditado,
+38,Medellín - Luz Castro ColombiaESE de Gutiérrez Organización Clínica,0500102144,0500102144-01,1,Medellín,2023-03-03;2024-09-03,V,Acreditado,X
+39,Bonnadona - Prevenir SAS Hospitalaria Juan Empresa Social del,0800100544,0800100544-01;1100118642-02,2,"Bogotá;Duitama;Bogotá,",2023-11-28,III,Acreditado con excelencia,
+41,Estado Salud del Tundama Hospital Departamental Psiquiátrico,1523800685,1523800685-01,1,Cali,2024 02 27;2024-05-27,II,Acreditado,
+42,Universitario del Valle ESE Hospital San Vicente de,7600103609,7600103609-01,1,Nemocón,2024-11-21,II,Acreditado,X
+43,Paul de Nemocón ESE Fundación Hospital San,2548600037,2548600037-01,1,Pasto;Nemocón,2024 07 26,II,Acreditado,
+44,Pedro de Dios E.S.E Instituto Nacional de,5200100557,5200100557-01,1,"Bogotá;Armenia;Bogotá,",2021-09-17;2021-12-16,,Acreditado,
+46,Cancerología E.S.E. Los Comuneros,1100106065,1100106065-01,1,,,I,Acreditado,
+47,Hospital Universitario de Bucaramanga Sociedad  Médica,6800103418,6800103418-01,1,Bucaramanga,2026 04 30,I,Acreditado,
+48,Rionegra S.A. SOMER        05 S.A. Instituto Colombiano,0561502129,0561502129-01,1,Rionegro,,II,Acreditado con excelencia,
+49,del Sistema Nervioso-      11 Clinica Montserrat Subred Integrada de,1100107440;1100130296,1100107440-02;1100130296-03;1100130296-25;1100130296-26;1100130296-27;1100130296-28;1100130296-29;1100130296-30;1100130296-31,9,,2022 05 19,I,Acreditado,X
+50,Servicios de Salud Suroccidente ESE Instituto Cancerologico,1100130296;5200100861,1100130296-32;1100130296-34;1100130296-42;1100130296-43;1100130296-44;1100130296-46;1100130296-49;1100130296-52;1100130296-53,9,"Bogotá;Bogotá,",2025-02-13,I;VI,Acreditado,
+51,Cardiovascular de  Nariño LTDAde Clinica el Rosario- Sede el Tesoro Hospital Universitario,500102092;7600103799,5200100861-01,1,Cali;Pasto,2023-06-21;2024-09-03,I;VI,Acreditado con excelencia,X
+53,Evaristo Garcia E.S.E Hospital departamental Tomas Uribe Uribe de,7683404652,7600103799-01,1,,2023-10-18,I,Acreditado,X
+54,Tulúa ESE Hospital Univesitario de,6800100792,7683404652-01,1,Bucaramanga,2023-11-15,I,Acreditado,
+55,Santander ESE,,0800102344-01;0800102344-02;6800100792-01,3,Barranquilla,2024-02-14;2024-04-10,I,Acreditado,X
+56,Salud Social Caja De Compensacion Familiar,0800102344,0800102344-04;0800102344-06;6600100217-09,3,Barranquilla;Pereira,2025-11-19,I,Acreditado,
+57,De Risaralda Comfamiliar Risaralda,6600100217,6600100217-10,1,"Bogotá;Pereira;Bogotá,",2024 05 22,I,Acreditado,
+58,Neumológica Colombiana,0800101937;1100110251,1100110251-01,1,Barranquilla,2024-08-14,I,Acreditado,
+59,Clínica del Caribe S.A. Corporación UN,0800101937,,0,,2024-10-16,I,Acreditado,
+60,Hospital Universitario Nacional Empresa Social del,1100127605,1100127605-01;5200101457-18,2,Pasto,2025-03-12,I,Acreditado,
+61,Estado Pasto Salud Clinica Colsanitas SA,5200101457,5200101457-23,1,Barranquilla;Pasto,2025 06 17,I,Acreditado con excelencia,
+62,Clinica Iberoamerica Red de Salud del Norte,800101374,0800101374-11;7600103956-01;7600103956-08;7600103956-09;7600103956-12,5,Cali;Barranquilla,2025 07 16,I,Acreditado,
+63,Empresa Social del        7 Estado EMPRESA SOCIAL DEL,7600103956,7600103956-15;7600103956-17;7600103956-19;7600103956-20,4,,2025 07 16,I;II,Acreditado,
+64,ESTADO SALUD YOPAL E.S.E HOSPITAL JOSE DE POYAN Fundación Centro de Tratamiento e,8500100144,8500100144-08,1,"Bogotá;Yopal;Bogotá,",2026-02-18,,Acreditado,
+66,Investigación sobre el cáncer -Luis Carlos,1100138537,1100138537-01,1,"Bogotá;Bogotá,",2026 10 21,I,Acreditado,

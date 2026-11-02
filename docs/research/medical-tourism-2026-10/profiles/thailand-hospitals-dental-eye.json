@@ -1,0 +1,1134 @@
+{
+ "clinics": [
+  {
+   "name": "Bumrungrad International Hospital",
+   "district": "Bangkok (Watthana, Sukhumvit Soi 3)",
+   "type": "hospital",
+   "url": "https://www.bumrungrad.com/en/medical-travel-guides/patient-finance-insurance-information",
+   "specialties": [
+    "Health check-ups",
+    "Cardiology",
+    "Oncology",
+    "Orthopedics",
+    "Plastic surgery",
+    "Complex tertiary care"
+   ],
+   "namedDoctors": "Not named on international page. The factsheet states over 1,500 physicians and dentists; individual profiles are in the site's doctor directory. Thai Medical Council checkmd lookup returned HTTP 403 on 30 October 2026, so doctor registrations were not verified there.",
+   "credentials": "HA Thailand: listed as 'บำรุงราษฎร์ อินเตอร์เนชั่นแนล' (Bangkok, private) with Advanced HA (ขั้นก้าวหน้า), accredited 23 May 2025 to 22 May 2029, per HA Thailand open-data accreditation dataset (data as of 31 August 2026, file updated 3 September 2026), checked 30 October 2026. JCI: hospital site states first JCI accreditation in Asia in 2002, 7th reaccreditation in 2024, plus Certificates of Distinction for heart failure and breast cancer programs in 2025. JCI directory not reachable (HTTP 403 on 30 October 2026), so JCI status is as claimed on the hospital site. Also claimed on site: Global Healthcare Accreditation 2017 and 2024, College of American Pathologists 2016, Thailand Quality Class 2008. Main building opened 1997; 580 inpatient beds; over 620,000 international patients a year; listed on the Stock Exchange of Thailand. MoPH facility licence number: not published on the pages read.",
+   "publishedPrices": "Check-up package prices are published only as an image or PDF on the check-up packages page (program names such as Comprehensive, Executive, Holistic, Vitality Plus Cancer Genes; prices 'valid until 31 December 2026', per person, doctor fee included); the figures could not be read as text, so none are quoted here. Surgical package prices (LASIK, knee, cardiac) were not seen on the pages read. Estimates are described as 'a possible range of costs only' and exclude medicines, complications and ICU days.",
+   "booking": {
+    "channels": "Main line +66 2066 8888 (24 hours); outpatient appointments +66 2011 2222; third-party payor +66 2011 2289; emails admission@bumrungrad.com, ipdoffice@bumrungrad.com, opdpatient@bumrungrad.com, VOB@bumrungrad.com (insurance); inquiry form at bumrungrad.com/en/contact-us/inquiry; online booking at bumrungrad.com/en/book-appointment; teleconsultation via 'Bumrungrad Anywhere'; no WhatsApp or LINE listed. International referral offices listed at bumrungrad.com/en/contact-us/international-referral-offices.",
+    "consult": "Written estimate on request before care; costs of high-cost treatment are discussed before care begins; itemized bills on request. Consultation fee and response time not published.",
+    "deposit": "Full deposit required for all procedures including CT, MRI and PET; initial deposit based on the estimate for general medicine admissions; during admission expenses are updated every 3 days and additional deposit may be requested; excess deposit refunded after the procedure. Insured patients must pay a full deposit if no guarantee letter arrives within 48 hours of admission. Cash, cards, Alipay, WeChat, wire transfer, Western Union and emailed e-payment links accepted; credit-card refunds take 3 to 4 weeks; cash refund of a card payment carries a 2 to 3 percent commission plus 7 percent VAT.",
+    "languages": "Over 130 interpreters (languages not listed); site in English, Thai, Arabic, Chinese, Japanese, Burmese, Khmer, Bengali, German and others.",
+    "includes": "Medical Coordination Office described as a complimentary service for international patients.",
+    "bookingUrl": "https://www.bumrungrad.com/en/book-appointment"
+   },
+   "sourceIds": [
+    "ha-list",
+    "jci-directory",
+    "bumrungrad-finance",
+    "bumrungrad-contact",
+    "bumrungrad-accreditation",
+    "bumrungrad-factsheet",
+    "bumrungrad-checkup"
+   ]
+  },
+  {
+   "name": "Bangkok Hospital (BDMS headquarters, Soi Soonvijai)",
+   "district": "Bangkok (Huai Khwang, Soi Soonvijai 7, New Petchburi Road)",
+   "type": "hospital",
+   "url": "https://www.bangkokhospital.com/en/bangkok/center-clinic/international-medical-service/international-medical-services/content-section-1",
+   "specialties": [
+    "Cardiology (Bangkok Heart Hospital)",
+    "Neurology and orthopedics (Bangkok International Hospital)",
+    "Oncology (Wattanosoth)",
+    "Health check-ups",
+    "Robotic knee replacement"
+   ],
+   "namedDoctors": "Not named on international page. Doctor directory at bangkokhospital.com/en/bangkok/doctor. Thai Medical Council checkmd lookup returned HTTP 403 on 30 October 2026, so doctor registrations were not verified there.",
+   "credentials": "HA Thailand: campus entities listed with Advanced HA (ขั้นก้าวหน้า): 'กรุงเทพ' general hospital 19 December 2025 to 18 December 2029; 'กรุงเทพอินเตอร์เนชั่นแนล' brain and bone specialty hospital 19 December 2025 to 18 December 2029; Bangkok Heart Hospital same dates; per HA Thailand open-data accreditation dataset (data as of 31 August 2026, file updated 3 September 2026), checked 30 October 2026. JCI: hospital site states a sixth consecutive JCI accreditation covering 18 February 2023 to 17 February 2026 plus current CCPC certifications (primary stroke 2008 to 2027, acute coronary syndrome 2021 to 2027, lung cancer 2024 to 2027, orthogeriatric 2024 to 2027); the page did not show a 2026 renewal as of 30 October 2026. JCI directory not reachable (HTTP 403 on 30 October 2026), so JCI status is as claimed on the hospital site. Parent group BDMS is listed on the Stock Exchange of Thailand. Founded year, beds and MoPH licence number not stated on the pages read.",
+   "publishedPrices": "Prices in THB at 1 USD = 36 THB. Robotic total knee replacement, one side, implant included, 4 nights: THB 460,000 ($12,778), usable 31 July to 31 October 2026, at Bangkok International Hospital (Brain x Bone), Soi Soonvijai. Standard total knee replacement excluding implant seen in search results at THB 310,000 one side ($8,611) and THB 500,000 two sides ($13,889). International Medical Services page lists gastroscopy plus colonoscopy packages THB 20,000 to 44,000 ($556 to $1,222) and meningococcal vaccine THB 4,990 per dose ($139). Hospital reserves the right to change prices without notice.",
+   "booking": {
+    "channels": "International Medical Services, 4th floor R Building: +66 2310 3000, +66 2310 3256, +66 2755 1256; email info@bangkokhospital.com; Expat Care Center +66 2310 3254; local short number 1719; web chat on contact page; appointment form at bangkokhospital.com/en/bangkok/appointment. No WhatsApp or LINE id published on the pages read; several phone links on the site rendered as 'undefined'.",
+    "consult": "Not published. The 'Pricing and Payment' page contained only an online-payment image on 30 October 2026.",
+    "deposit": "Not published for the headquarters campus (the Chiang Mai branch publishes a deposit rule; see that profile).",
+    "languages": "International service team offers language assistance; specific languages not listed for the headquarters page.",
+    "bookingUrl": "https://www.bangkokhospital.com/en/bangkok/appointment"
+   },
+   "sourceIds": [
+    "ha-list",
+    "jci-directory",
+    "bgh-jci",
+    "bgh-ims",
+    "bgh-tkr-package",
+    "bgh-expat",
+    "bgh-contact"
+   ]
+  },
+  {
+   "name": "Samitivej Sukhumvit Hospital",
+   "district": "Bangkok (Watthana, Sukhumvit Soi 49)",
+   "type": "hospital",
+   "url": "http://www.samitivejhospitals.com/patients-outside-thailand",
+   "specialties": [
+    "Health check-ups",
+    "Pediatrics (Samitivej Children's Hospital)",
+    "Orthopedics",
+    "Japanese Medical Center",
+    "Longevity and brain health screening"
+   ],
+   "namedDoctors": "Not named on international page. Doctor search at samitivejhospitals.com/find-doctor. Thai Medical Council checkmd lookup returned HTTP 403 on 30 October 2026, so doctor registrations were not verified there.",
+   "credentials": "HA Thailand: listed as 'สมิติเวช สุขุมวิท' (Bangkok, private) with standard HA accreditation (ขั้นมาตรฐาน), 13 February 2024 to 12 February 2027, per HA Thailand open-data accreditation dataset (data as of 31 August 2026, file updated 3 September 2026), checked 30 October 2026. JCI: the about page claims JCI hospital accreditation at group level without a year or hospital name; the international page itself does not claim JCI. JCI directory not reachable (HTTP 403 on 30 October 2026), so JCI status is as claimed on the hospital site. Group founded June 1979; 275 beds; part of BDMS. MoPH licence number not published on pages read.",
+   "publishedPrices": "Prices in THB at 1 USD = 36 THB, from the Sukhumvit annual check-up page seen 30 October 2026: Basic check-up THB 3,500 promotion / THB 7,500 list ($97 / $208); Men under 40 THB 9,500 / 17,500 ($264 / $486); Men over 50 THB 31,000 / 48,000 ($861 / $1,333); Women over 50 THB 38,000 / 58,000 ($1,056 / $1,611); Longevity and brain health check-up for men over 50 THB 56,500 / 83,800 ($1,569 / $2,328). Promotion stated as available through 15 November 2026 with service usable to 31 January 2027, and 'available to Thai nationals and foreigners residing in Thailand only'. Surgical package prices not seen.",
+   "booking": {
+    "channels": "Call center +66 2022 2222; inquiry form at samitivejhospitals.com/contact-inquiry; appointment form at samitivejhospitals.com/appointment/step1; Facebook Messenger m.me/Samitivej; LINE lin.ee/XbALYJl; general email info@samitivej.co.th (seen in search results); International Insurance Department +66 2022 8806. No WhatsApp listed.",
+    "consult": "Correspondence team helps find a physician before travel; estimate process, fee and response time not published. Insurance page says most international patients use 'pay and claim' with paperwork provided at discharge.",
+    "deposit": "Not published on the pages read (the Financial and Billing Matters link returned 404).",
+    "languages": "Complimentary interpretation 'in many languages'; site in Thai, English, Malay, Arabic, Indonesian, Chinese, Japanese and Korean.",
+    "bookingUrl": "https://www.samitivejhospitals.com/appointment/step1"
+   },
+   "sourceIds": [
+    "ha-list",
+    "jci-directory",
+    "svh-intl",
+    "svh-about",
+    "svh-checkup",
+    "svh-insurance"
+   ]
+  },
+  {
+   "name": "BNH Hospital",
+   "district": "Bangkok (Bang Rak, Convent Road, Silom)",
+   "type": "hospital",
+   "url": "https://www.bnhhospital.com/en/",
+   "specialties": [
+    "Health check-ups",
+    "Women's health and genomics screening",
+    "Spine",
+    "Visa medical exams"
+   ],
+   "namedDoctors": "Not named on international page. Thai Medical Council checkmd lookup returned HTTP 403 on 30 October 2026, so doctor registrations were not verified there.",
+   "credentials": "HA Thailand: listed as 'บีเอ็นเอช' (Bangkok, private, medium general hospital) with standard HA accreditation (ขั้นมาตรฐาน), 18 February 2026 to 17 February 2029, per HA Thailand open-data accreditation dataset (data as of 31 August 2026, file updated 3 September 2026), checked 30 October 2026; the HA detail page shows continuous accreditation since 2008. JCI: not claimed on the BNH pages read on 30 October 2026; third-party directories describe BNH as JCI accredited. JCI directory not reachable (HTTP 403 on 30 October 2026), so JCI status is as claimed on the hospital site. Founded 1898 as a nursing home under royal patronage; legal entity BNH Medical Centre Ltd; BDMS logo in footer. MoPH licence number not published.",
+   "publishedPrices": "Prices in THB at 1 USD = 36 THB, from the BNH M BRACE package store seen 30 October 2026: BNH Annual Check-up Package THB 10,900 to 77,900 ($303 to $2,164); Anytime 24-hour check-up THB 1,690 to 6,500 ($47 to $181); gastroscopy and colonoscopy THB 19,000 to 39,000 ($528 to $1,083); SPOT-MAS 10-cancer screening THB 17,500 ($486); low-dose CT lung screening THB 6,500 ($181); cervical screening Pap plus HPV DNA THB 3,200 ($89). Validity dates and residency eligibility not stated. Surgical package prices not seen.",
+   "booking": {
+    "channels": "Phone +66 2 022 0700; WhatsApp wa.me/message/U3AS2ZIJJXIGB1; LINE lin.ee/ySXeMLt; contact form bnhhospital.com/contact-us/; email obfuscated on site (info@bnh.co.th appears in a chamber-of-commerce listing seen in search results).",
+    "consult": "Not published.",
+    "languages": "Site in English, Thai, Chinese, Japanese, Burmese and Indonesian.",
+    "bookingUrl": "https://www.bnhhospital.com/contact-us/"
+   },
+   "sourceIds": [
+    "ha-list",
+    "bnh-ha-detail",
+    "jci-directory",
+    "bnh-site",
+    "bnh-packages"
+   ]
+  },
+  {
+   "name": "Vejthani Hospital",
+   "district": "Bangkok (Bang Kapi, Lat Phrao 111)",
+   "type": "hospital",
+   "url": "https://www.vejthani.com/patient-services/hospital-services-facilities/international-service-center/",
+   "specialties": [
+    "Orthopedics and joint replacement",
+    "Spine",
+    "Gastroenterology",
+    "Health check-ups",
+    "Cardiology"
+   ],
+   "namedDoctors": "Not named on international page. Thai Medical Council checkmd lookup returned HTTP 403 on 30 October 2026, so doctor registrations were not verified there.",
+   "credentials": "HA Thailand: listed as 'เวชธานี' (Bangkok, private) with no current accreditation level (ไม่มีขั้น); last recorded accreditation 12 March 2007 to 11 March 2009, per HA Thailand open-data accreditation dataset (data as of 31 August 2026, file updated 3 September 2026), checked 30 October 2026. JCI: hospital site describes itself as a JCI-accredited international hospital with JCI Clinical Care Program Certifications for type 2 diabetes, hepatitis B, knee replacement and lumbar decompression and fixation; no first-accreditation year stated. JCI directory not reachable (HTTP 403 on 30 October 2026), so JCI status is as claimed on the hospital site. Founded 1994; over 200 inpatient beds; over 300 specialists. MoPH licence number not published.",
+   "publishedPrices": "Prices in THB at 1 USD = 36 THB, from the GI package page seen 30 October 2026: gastroscopy with IV sedation THB 17,500 ($486); colonoscopy with IV sedation THB 25,000 ($694); both together THB 34,000 ($944); endoscopic ultrasound THB 95,000 ($2,639). Search results showed a kids' check-up at THB 6,900 to 12,990 valid to 30 November 2026 and a general check-up program at THB 4,900 to 62,000 ($136 to $1,722). Knee replacement is advertised at a 'special price' without a figure; marketplace range (indicative) THB 355,000 to 460,000 for unilateral total knee replacement.",
+   "booking": {
+    "channels": "English hotline and WhatsApp +66 85 223 8888, email service@vejthani.com (another page gives patientcare@vejthani.com); Arabic +66 84 875 6622 (WhatsApp); Russian +66 85 230 5555 (Telegram); Chinese +66 84 751 6222 (WeChat vejthani-china); Bangladeshi +66 85 485 2333; Myanmar +66 81 984 5111; Vietnamese +66 97 291 3351; Cambodian +66 89 201 9000; Ethiopian +66 90 907 2560; Facebook Messenger m.me/VejthaniExpatsBangkok; main switchboard +66 2734 0000. No LINE id listed.",
+    "consult": "Pre-arrival treatment plan, pre-registration, visa invitation letter and airport pickup offered; estimate fee, response time and deposit terms not published.",
+    "languages": "Arabic, Amharic, Bangla, Burmese, Chinese, Khmer, Russian, Vietnamese and English.",
+    "includes": "Airport pickup, hotel-to-hospital transport, visa extension assistance."
+   },
+   "sourceIds": [
+    "ha-list",
+    "jci-directory",
+    "vejthani-intl",
+    "vejthani-about",
+    "vejthani-checkup"
+   ]
+  },
+  {
+   "name": "Phyathai 2 International Hospital",
+   "district": "Bangkok (Phaya Thai, Phahonyothin Road)",
+   "type": "hospital",
+   "url": "https://www.phyathai.com/en/pyt2",
+   "specialties": [
+    "Cardiology",
+    "Orthopedics",
+    "Neurology",
+    "Health check-ups",
+    "Expatriate program"
+   ],
+   "namedDoctors": "Not named on international page. Thai Medical Council checkmd lookup returned HTTP 403 on 30 October 2026, so doctor registrations were not verified there.",
+   "credentials": "HA Thailand: listed as 'พญาไท 2' (Bangkok, private) with Advanced HA (ขั้นก้าวหน้า), 23 January 2026 to 22 January 2030, per HA Thailand open-data accreditation dataset (data as of 31 August 2026, file updated 3 September 2026), checked 30 October 2026. JCI: the hospital's own English pages read on 30 October 2026 do not name JCI; the site's machine-readable summary file states Phyathai 2 is the only branch in the group accredited by JCI, and a 2023 group brochure shows a JCI 6th edition logo. JCI directory not reachable (HTTP 403 on 30 October 2026), so JCI status is as claimed on the hospital site. Established 22 July 1987; 550 beds; part of BDMS. MoPH licence number not published.",
+   "cautions": "In March 2017, 52 members of the hospital's 'Phyathai Ultimate Trust Card' lifetime-care program complained to the Consumer Protection Board after the hospital cancelled the contracts, saying it lacked an insurance licence; the hospital offered refunds with 10 percent annual interest plus a 50 percent lifetime discount. Outcome not reported in the source (pyt2-press-thaipublica).",
+   "publishedPrices": "Not published on its site in text form; check-up programs appear only as banner titles without prices on the pages read.",
+   "booking": {
+    "channels": "Phone 1772 (press 9 for English, per a chamber listing) and 02 617 2444; LINE page.line.me/035uwaqf; appointment form phyathai.com/en/appointment; international one-stop email onestop@phyathai.com (from a January 2023 brochure; verify). No WhatsApp listed.",
+    "consult": "Not published.",
+    "languages": "Translator and coordinator service, visa procedures, airport and hotel pickup, international insurance desk, halal food and Muslim prayer room listed in the 2023 brochure; site in English, Thai, Chinese, Japanese, Khmer and Arabic.",
+    "bookingUrl": "https://www.phyathai.com/en/appointment"
+   },
+   "sourceIds": [
+    "ha-list",
+    "jci-directory",
+    "pyt2-site",
+    "pyt2-llms",
+    "pyt2-mfa-pdf",
+    "pyt2-press-thaipublica"
+   ]
+  },
+  {
+   "name": "Praram 9 Hospital",
+   "district": "Bangkok (Huai Khwang, Rama IX Road)",
+   "type": "hospital",
+   "url": "https://praram9.com/en/about/coordinating-foreign-medical",
+   "specialties": [
+    "Kidney transplant and nephrology",
+    "Cardiology",
+    "Orthopedics",
+    "Health check-ups"
+   ],
+   "namedDoctors": "Not named on international page. Thai Medical Council checkmd lookup returned HTTP 403 on 30 October 2026, so doctor registrations were not verified there.",
+   "credentials": "HA Thailand: listed as 'พระราม 9' (Bangkok, private) with no current accreditation level (ไม่มีขั้น); last recorded accreditation 12 March 2007 to 11 March 2010, per HA Thailand open-data accreditation dataset (data as of 31 August 2026, file updated 3 September 2026), checked 30 October 2026. JCI: the about and international pages read on 30 October 2026 do not state JCI accreditation (they only link to JCI's patient-safety reporting); search-result snippets from the hospital's history page state JCI accreditation since 2010 with a 2025 renewal. JCI directory not reachable (HTTP 403 on 30 October 2026), so JCI status is as claimed on the hospital site. Listed company (SET Awards 2026 sustainability recognition). Founded year, beds and MoPH licence number not stated on pages read.",
+   "cautions": "On 31 October 2024 the hospital issued a statement of condolence and pledged a fact-finding review after a staff pharmacist died by suicide; social-media posts alleged workplace pressure from a supervisor. No regulator action was reported in the sources (praram9-press-kaohoon, praram9-press-dailynews). This concerned an employee, not a patient.",
+   "publishedPrices": "Not published on its site for international patients on the pages read; room rates are listed per night but were not captured.",
+   "booking": {
+    "channels": "Phone 1270 (Thailand); LINE lin.ee/vR9xrQs; Facebook Messenger m.me/Praram9Hospital.International (seen in search results); contact form praram9.com/en/contact; email obfuscated on site. No WhatsApp listed.",
+    "consult": "Translators available every day 07:00 to 17:00 local time; estimate process and deposit not published.",
+    "languages": "English, Mandarin, Burmese, Khmer, Japanese, Arabic.",
+    "bookingUrl": "https://praram9.com/en/contact"
+   },
+   "sourceIds": [
+    "ha-list",
+    "jci-directory",
+    "praram9-about",
+    "praram9-intl",
+    "praram9-press-kaohoon",
+    "praram9-press-dailynews"
+   ]
+  },
+  {
+   "name": "MedPark Hospital",
+   "district": "Bangkok (Khlong Toei, Rama IV Road)",
+   "type": "hospital",
+   "url": "https://www.medparkhospital.com/en-US/contact-us",
+   "specialties": [
+    "Cardiology",
+    "Oncology",
+    "Orthopedics",
+    "Health check-ups",
+    "Complex tertiary care"
+   ],
+   "namedDoctors": "Not named on international page. Thai Medical Council checkmd lookup returned HTTP 403 on 30 October 2026, so doctor registrations were not verified there.",
+   "credentials": "HA Thailand: listed as 'เมดพาร์ค' (Bangkok, private) with standard HA accreditation (ขั้นมาตรฐาน), 23 April 2024 to 22 April 2027, per HA Thailand open-data accreditation dataset (data as of 31 August 2026, file updated 3 September 2026), checked 30 October 2026. JCI: hospital news dated 21 April 2026 states a second consecutive JCI accreditation valid 27 February 2026 to 26 February 2029 (first accreditation announced 1 May 2023). JCI directory not reachable (HTTP 403 on 30 October 2026), so JCI status is as claimed on the hospital site. Opened 2020 to 2021 per site wording ('operating for only five years'). MoPH licence number not published.",
+   "publishedPrices": "Prices in THB at 1 USD = 36 THB, from the check-up program page seen 30 October 2026: Platinum Health Checkup (ages 45 to 60) from THB 29,500 ($819, flash sale); Privilege Health Checkup (60+) from THB 40,770 ($1,133); coronary calcium scoring THB 5,200 ($144); colonoscopy screening THB 23,100 ($642); gastroscopy THB 17,200 ($478); low-dose CT lung screening THB 7,500 ($208). A Chinese-language version of the page states package prices are valid for Thai nationals and expatriates residing in Thailand only. Surgical package prices not seen.",
+   "booking": {
+    "channels": "Phone +66 2 023 3333; email access@medparkhospital.com; LINE lin.ee/GAi7Qey; 'Leave a message' form on contact page; appointment request at medparkhospital.com/en-US/appointment; Health Screening Center 7th floor, 07:00 to 16:00, appointment required via call center. No WhatsApp listed.",
+    "consult": "Not published.",
+    "languages": "Site in English, Thai, Japanese, Chinese and Arabic; a Bangladeshi patient help desk was reported in press.",
+    "bookingUrl": "https://www.medparkhospital.com/en-US/appointment"
+   },
+   "sourceIds": [
+    "ha-list",
+    "jci-directory",
+    "medpark-contact",
+    "medpark-jci-2026",
+    "medpark-checkup"
+   ]
+  },
+  {
+   "name": "Bangkok Hospital Phuket",
+   "district": "Phuket (Mueang, Hongyok Utis Road)",
+   "type": "hospital",
+   "url": "https://www.bangkokhospital.com/en/phuket/visit/facilities-bpk",
+   "specialties": [
+    "Emergency and trauma for tourists",
+    "Orthopedics",
+    "Cardiology",
+    "Health check-ups"
+   ],
+   "namedDoctors": "Not named on international page. Thai Medical Council checkmd lookup returned HTTP 403 on 30 October 2026, so doctor registrations were not verified there.",
+   "credentials": "HA Thailand: listed as 'กรุงเทพภูเก็ต' (Phuket, private, large general hospital) with standard HA accreditation (ขั้นมาตรฐาน), 29 October 2025 to 28 October 2028, per HA Thailand open-data accreditation dataset (data as of 31 August 2026, file updated 3 September 2026), checked 30 October 2026. JCI: hospital site states it is HA accredited and 'the first hospital in Phuket to receive international accreditation from JCI', no year given. JCI directory not reachable (HTTP 403 on 30 October 2026), so JCI status is as claimed on the hospital site. 200 beds; member of BDMS. MoPH licence number not published.",
+   "publishedPrices": "Not published on its site on the pages read.",
+   "booking": {
+    "channels": "Local short number 1719; legacy contact page listed +66 76 254 425, +66 76 361 000 and +66 76 655 000 (seen in search results); email obfuscated and rendered as 'undefined' on the current contact page; feedback form at bangkokhospital.com/en/phuket/contact; appointment form at bangkokhospital.com/en/phuket/appointment. No WhatsApp or LINE listed.",
+    "consult": "Not published.",
+    "languages": "Interpreter services, embassy coordination, insurer coordination and online payment listed; languages not named.",
+    "bookingUrl": "https://www.bangkokhospital.com/en/phuket/appointment"
+   },
+   "sourceIds": [
+    "ha-list",
+    "jci-directory",
+    "bpk-facilities",
+    "bpk-contact",
+    "bpk-legacy-contact"
+   ]
+  },
+  {
+   "name": "Bangkok Hospital Pattaya",
+   "district": "Chonburi (Pattaya, Sukhumvit Road)",
+   "type": "hospital",
+   "url": "https://www.bangkokhospital.com/en/pattaya/page/international-services-bph",
+   "specialties": [
+    "Emergency care for tourists",
+    "Orthopedics",
+    "Cardiology",
+    "Hemodialysis",
+    "Health check-ups"
+   ],
+   "namedDoctors": "Not named on international page. Thai Medical Council checkmd lookup returned HTTP 403 on 30 October 2026, so doctor registrations were not verified there.",
+   "credentials": "HA Thailand: listed as 'กรุงเทพพัทยา' (Chonburi, private, large general hospital) with standard HA accreditation (ขั้นมาตรฐาน), 22 August 2023 to 21 August 2026; the dataset is current to 31 August 2026 and shows no renewal yet, so status may be in renewal, per HA Thailand open-data accreditation dataset (data as of 31 August 2026, file updated 3 September 2026), checked 30 October 2026. JCI: hospital awards page lists JCI in 2022 with no other years. JCI directory not reachable (HTTP 403 on 30 October 2026), so JCI status is as claimed on the hospital site. 400 beds; over 100 full-time doctors; member of BDMS. MoPH licence number not published.",
+   "publishedPrices": "Not published on its site on the pages read.",
+   "booking": {
+    "channels": "Local short number 1719; hemodialysis center +66 3825 9986; main phone link rendered as 'undefined' on the contact page; feedback form at bangkokhospital.com/en/pattaya/contact; appointment form at bangkokhospital.com/en/pattaya/appointment. No email, WhatsApp or LINE published on the pages read.",
+    "consult": "Not published.",
+    "languages": "Interpreters in over 20 languages including Arabic, Chinese, Dutch, English, Finnish, French, German, Italian, Japanese, Korean, Norwegian, Russian, Spanish and Swedish.",
+    "includes": "Airport pickup, hotel call service with doctor visits, embassy and immigration liaison, currency exchange counter.",
+    "bookingUrl": "https://www.bangkokhospital.com/en/pattaya/appointment"
+   },
+   "sourceIds": [
+    "ha-list",
+    "jci-directory",
+    "bph-intl",
+    "bph-awards",
+    "bph-contact"
+   ]
+  },
+  {
+   "name": "Bangkok Hospital Chiang Mai",
+   "district": "Chiang Mai (Mueang, Nong Pa Khrang)",
+   "type": "hospital",
+   "url": "https://www.bangkokhospital.com/en/chiangmai/page/faq-bcm",
+   "specialties": [
+    "Emergency care",
+    "Orthopedics",
+    "Cardiology",
+    "Health check-ups"
+   ],
+   "namedDoctors": "Not named on international page. Thai Medical Council checkmd lookup returned HTTP 403 on 30 October 2026, so doctor registrations were not verified there.",
+   "credentials": "HA Thailand: listed as 'กรุงเทพเชียงใหม่' (Chiang Mai, private, large general hospital) with no accreditation level and no dates (ไม่มีขั้น), per HA Thailand open-data accreditation dataset (data as of 31 August 2026, file updated 3 September 2026), checked 30 October 2026. JCI: not claimed on the pages read. JCI directory not reachable (HTTP 403 on 30 October 2026), so JCI status is as claimed on the hospital site. Member of BDMS. Founded year, beds and MoPH licence number not stated on pages read.",
+   "publishedPrices": "Not published on its site in text form on the pages read (packages page exists at bangkokhospital.com/en/chiangmai/package).",
+   "booking": {
+    "channels": "Contact center 052 089 888 (24 hours); international third-party payer desk 052 089 844; estimator team 052 089 721; local short number 1719; Facebook facebook.com/bangkokhospitalchiangmai; email obfuscated on site. Address 88/8-9 Moo 6 Nong Pa Khrang, Mueang Chiang Mai 50000. No WhatsApp or LINE listed.",
+    "consult": "Estimator team answers cost questions by phone; estimates are not final and the billed amount can change with procedures performed.",
+    "deposit": "Deposit based on room category is required at admission; for surgery or procedures the total estimated amount is due before the procedure.",
+    "languages": "Thai and English standard; case coordinators in Mandarin, Japanese, Korean, Burmese, French and others; interpreters can attend appointments.",
+    "bookingUrl": "https://www.bangkokhospital.com/en/chiangmai/appointment"
+   },
+   "sourceIds": [
+    "ha-list",
+    "jci-directory",
+    "bcm-faq",
+    "bcm-contact"
+   ]
+  },
+  {
+   "name": "Bangkok Hospital Siriroj (formerly Phuket International Hospital)",
+   "district": "Phuket (Mueang, Chalermprakiat Ror 9 bypass road)",
+   "type": "hospital",
+   "url": "https://www.bangkokhospital.com/en/siriroj/about-us/our-story-bsi",
+   "specialties": [
+    "Emergency care for tourists",
+    "Orthopedics",
+    "Cosmetic surgery",
+    "Health check-ups"
+   ],
+   "namedDoctors": "Not named on international page. Thai Medical Council checkmd lookup returned HTTP 403 on 30 October 2026, so doctor registrations were not verified there.",
+   "credentials": "HA Thailand: listed as 'กรุงเทพสิริโรจน์' (Phuket, private, large general hospital) with no current accreditation level (ไม่มีขั้น); last recorded accreditation 1 November 2006 to 31 October 2007, per HA Thailand open-data accreditation dataset (data as of 31 August 2026, file updated 3 September 2026), checked 30 October 2026. JCI: hospital site states JCI accreditation and reports a third JCI survey on 18 to 22 November 2019 with three-year validity; the page was updated September 2025 but shows no later survey date. JCI directory not reachable (HTTP 403 on 30 October 2026), so JCI status is as claimed on the hospital site. Founded 1982; renamed from Siriroj International Hospital in September 2019; member of BDMS. Beds and MoPH licence number not stated.",
+   "publishedPrices": "Not published on its site on the pages read.",
+   "booking": {
+    "channels": "Local short number 1719; phone +66 76 361 888 and ambulance +66 76 210 935 per a third-party Phuket listing (not confirmed on the hospital site, where phone links rendered as 'undefined'); feedback form at bangkokhospital.com/en/siriroj/contact; appointment form at bangkokhospital.com/en/siriroj/appointment. No email, WhatsApp or LINE published.",
+    "consult": "Not published.",
+    "bookingUrl": "https://www.bangkokhospital.com/en/siriroj/appointment"
+   },
+   "sourceIds": [
+    "ha-list",
+    "jci-directory",
+    "bsi-story",
+    "bsi-jci-news",
+    "bsi-phuketnews",
+    "bsi-windowonphuket"
+   ]
+  },
+  {
+   "name": "Chiang Mai Ram Hospital",
+   "district": "Chiang Mai (Mueang, Bunreungrit Road)",
+   "type": "hospital",
+   "url": "https://www.chiangmairam.com/",
+   "specialties": [
+    "Health check-ups",
+    "Cardiology screening",
+    "Endoscopy",
+    "General surgery"
+   ],
+   "namedDoctors": "Not named on international page. Thai Medical Council checkmd lookup returned HTTP 403 on 30 October 2026, so doctor registrations were not verified there.",
+   "credentials": "HA Thailand: listed as 'เชียงใหม่ ราม' (Chiang Mai, private) with no current accreditation level (ไม่มีขั้น); last recorded accreditation 14 August 2018 to 13 August 2021, per HA Thailand open-data accreditation dataset (data as of 31 August 2026, file updated 3 September 2026), checked 30 October 2026. JCI: not claimed on the hospital's home page read on 30 October 2026; a marketplace listing describes it as JCI accredited. JCI directory not reachable (HTTP 403 on 30 October 2026), so JCI status is as claimed on the hospital site. The site is Thai-language only and no English international page was found; about page returned 404. Founded year, beds and MoPH licence number not stated.",
+   "publishedPrices": "Prices in THB at 1 USD = 36 THB, from the hospital's package store seen 30 October 2026: Standard check-up under 39 THB 3,300 ($92); Advance Men 40 to 49 THB 8,000 ($222); Premium Women 50+ THB 21,500 ($597); heart check-up with calcium score THB 11,999 ($333); gastroscopy THB 18,000 ($500); colonoscopy THB 28,000 ($778); low-dose CT chest THB 4,000 ($111). No validity dates stated. Marketplace range (indicative): hip replacement about $13,243 and colonoscopy $822 to $1,151 (price update 29 March 2025).",
+   "booking": {
+    "channels": "Phone 052 004 699; email chiangmairam@chiangmairam.com; LINE page.line.me/jmu4687m; Facebook, Instagram, TikTok. Address Ram 8, Bunreungrit Road, Si Phum, Mueang Chiang Mai 50200. No WhatsApp listed.",
+    "consult": "Not published.",
+    "languages": "Not stated on site; marketplace listing claims English-speaking staff and on-call interpreters."
+   },
+   "sourceIds": [
+    "ha-list",
+    "jci-directory",
+    "cmr-site",
+    "cmr-healthhub",
+    "cmr-bookimed"
+   ]
+  },
+  {
+   "name": "Yanhee International Hospital",
+   "district": "Bangkok (Bang Phlat, Charan Sanit Wong Road)",
+   "type": "hospital",
+   "url": "https://www.yanhee.net/about-us/",
+   "specialties": [
+    "Cosmetic and plastic surgery",
+    "Gender affirmation surgery",
+    "Bariatric and weight management",
+    "Dermatology",
+    "General hospital services"
+   ],
+   "namedDoctors": "Plastic surgery department lists Dr. Duangkamon Chiranakorn, Dr. Chokchai Amornsawadwattana, Dr. Kittichai Sipiyarak, Dr. Krairit Tiyakul, Dr. Kriangkrai Thantavivattana, Dr. Orawan Kosumsupamala, Dr. Pinai Jirathitiwong and Dr. Pitch Paiboonkasemsutthi by name and specialty only; individual board certification is not shown. The about page states the hospital has 18 board-certified plastic surgeons who are all members of the Society of Plastic and Reconstructive Surgeons of Thailand. Anesthesiologists are not named. Surgery takes place in a licensed 400-bed hospital rather than a clinic. Thai Medical Council checkmd lookup returned HTTP 403 on 30 October 2026, so doctor registrations were not verified there.",
+   "credentials": "HA Thailand: listed as 'ยันฮี' (Bangkok, private, large general hospital) with no current accreditation level (ไม่มีขั้น); last recorded accreditation 12 January 2016 to 11 January 2019, per HA Thailand open-data accreditation dataset (data as of 31 August 2026, file updated 3 September 2026), checked 30 October 2026. The hospital's about page nonetheless lists HA among its accreditations without a year. JCI: claimed on site (Gold Seal logo) with no year. JCI directory not reachable (HTTP 403 on 30 October 2026), so JCI status is as claimed on the hospital site. ISO maintained since 2000 per site. Founded 1984 as Yanhee Polyclinic; 400 beds. MoPH licence number not published.",
+   "publishedPrices": "Prices in THB at 1 USD = 36 THB, from the plastic surgery price page seen 30 October 2026: breast augmentation THB 116,000 to 305,000 ($3,222 to $8,472), for example round Mentor implants under 400 cc THB 125,000 with 1 night; rhinoplasty with standard implant THB 30,000 ($833), rib-graft rhinoplasty THB 220,000 ($6,111); mid-facelift THB 165,000 ($4,583) with 2 nights; VASER liposuction THB 66,000 per area ($1,833); tummy tuck THB 126,000 ($3,500) for body weight under 70 kg, 3 nights; upper or lower blepharoplasty THB 33,500 to 37,500 ($931 to $1,042); male-to-female gender affirmation surgery THB 420,000 to 820,000 ($11,667 to $22,778) with 9 nights; female-to-male mastectomy THB 111,000 ($3,083). The site says packages typically include doctor fees, medicines, room, nursing, food and operating room, that prices are subject to change without notice and are confirmed only after a doctor consultation, and that stays for multiple cosmetic procedures are capped at 7 nights.",
+   "booking": {
+    "channels": "Phone +66 2 879 0300; email info@yanhee.net; WhatsApp icon shown but number not printed; appointment form on site; paid video consultation offered via yanhee.net/pricing-packages/video-consultation-payment/. No LINE id listed.",
+    "consult": "Complimentary virtual consultation offered; paid video consultation price covers consultation only. Deposit terms not published.",
+    "languages": "Free translator services; English-speaking coordinators; site in 11 languages including English, Chinese, Burmese, Vietnamese, Korean, Khmer, Arabic, Japanese, Bangla and Russian."
+   },
+   "sourceIds": [
+    "ha-list",
+    "jci-directory",
+    "yanhee-about",
+    "yanhee-prices-plastic",
+    "yanhee-doctors",
+    "yanhee-pricing"
+   ]
+  },
+  {
+   "name": "Bangkok International Dental Center (BIDC)",
+   "district": "Bangkok (Din Daeng, Ratchadaphisek Soi 7)",
+   "type": "dental",
+   "url": "https://www.bangkokdentalcenter.com/",
+   "specialties": [
+    "Dental implants and All-on-4",
+    "Crowns and veneers",
+    "Orthodontics",
+    "Root canal"
+   ],
+   "namedDoctors": "Site names Assist. Prof. Dr. Preeda Pungpapong DDS MSc, Assoc. Prof. Dr. Chatchai Kunavisarut DDS MSc, Dr. Peerapat Kaweewongprasert DDS MSD FICD, Dr. Wanvadee Shewinvanakitkul DDS MSD (orthodontist), Dr. Kittichote Boonsri DDS MSc (implants), Assist. Prof. Dr. Boworn Klongnoi DDS MD, and others; the site says the team includes American Board and Thai Board certified specialists but does not match certifications to names. No Thai Dental Council registry lookup was performed.",
+   "credentials": "Not a hospital, so not on the HA list (checked HA Thailand open-data accreditation dataset (data as of 31 August 2026). JCI: site states 'Thailand's first internationally accredited JCI center, since 2012' and a 100 percent score on its latest survey (year not shown). JCI directory not reachable (HTTP 403 on 30 October 2026), so JCI status is as claimed on the hospital site. ISO 9001:2015 by Intertek claimed. Branches at Siam Paragon, EmQuartier, Phuket (Patong) and Chiang Mai. Founded year and clinic licence number not stated.",
+   "publishedPrices": "Prices in THB at 1 USD = 36 THB from the fees page, 'package rates applicable till 31 October 2026': single implant fixture THB 35,000 to 70,000 ($972 to $1,944) plus implant crown THB 25,000 ($694); All-on-4 or ProArch full jaw from THB 290,000 ($8,056); zirconia crown THB 20,000 to 21,000 ($556 to $583); IPS e.max veneer THB 16,000 to 17,000 ($444 to $472); root canal THB 11,000 to 17,000 ($306 to $472); Zoom whitening THB 9,500 ($264); consultation free; panoramic X-ray THB 1,400 ($39); 3D CT THB 5,500 to 10,500. A THB 150 to 250 per-visit sterilization fee is charged separately. Tables on the page are inconsistent in places.",
+   "booking": {
+    "channels": "Phone +66 2 692 4433 or +66 2 694 6400; mobile and WhatsApp +66 83 272 2235; LINE @bidcdental; email contact@bangkokdentalcenter.com; enquiry form at bangkokdentalcenter.com/dental-clinics-contacts/dental-bangkok-enquiry/.",
+    "consult": "Dentist check-up and consultation listed as free; treatment plan after exam; complex cases may cost more. Deposit terms not published.",
+    "includes": "Warranty (Bangkok clinic only): crowns, bridges and dentures 2 years; porcelain veneers and inlays 1 year; implant fixtures 5 years; implant prosthetics 2 years. Requires check-ups every 6 to 12 months; no refunds; a failed first implant is replaced free but bone grafts are charged.",
+    "languages": "English and Thai; Japanese and Chinese sites linked.",
+    "bookingUrl": "https://bangkokdentalcenter.com/dental-clinics-contacts/dental-bangkok-enquiry/"
+   },
+   "sourceIds": [
+    "ha-list",
+    "jci-directory",
+    "bidc-site",
+    "bidc-fees",
+    "bidc-warranty"
+   ]
+  },
+  {
+   "name": "Bangkok Smile Dental Group",
+   "district": "Bangkok (multiple branches: Sukhumvit Soi 5, Asok, Silom, Phra Khanong, Ari, Bang Na and others)",
+   "type": "dental",
+   "url": "https://www.bangkoksmiledental.com/",
+   "specialties": [
+    "Dental implants and All-on-4",
+    "Veneers",
+    "Crowns",
+    "Whitening"
+   ],
+   "namedDoctors": "Site names Dr. Meghna Burad, Dr. Benyarat Pangsrisomboon, Dr. Arpisha Dhonavanik and Dr. Nattakan Nirattaradorn without individual credentials. No Thai Dental Council registry lookup was performed.",
+   "credentials": "Not a hospital, so not on the HA list. Site claims ISO 9001:2008 certification (an old standard version; no year given) and no JCI. Branch structure: the Phuket branch (Sea Smile) runs a separate site. Founded year and clinic licence number not stated.",
+   "publishedPrices": "Prices in THB at 1 USD = 36 THB from the price list page (exchange-rate note dated 25 September 2026): single implant from THB 55,000 ($1,528) per tooth, Straumann Roxolid THB 80,000 to 85,000 ($2,222 to $2,361); porcelain-fused-to-metal crown THB 12,000 to 13,000 ($333 to $361); zirconia crown THB 18,000 to 20,000 ($500 to $556); e.max veneer THB 11,000 to 13,000 ($306 to $361); All-on-4 from THB 270,000 per jaw ($7,500), Straumann THB 320,000 ($8,889); Zoom whitening promotion THB 9,000 ($250). Promotions shown with a 31 December 2026 end date. Root canal and consultation prices not listed; all prices described as estimates confirmed after a treatment plan.",
+   "booking": {
+    "channels": "Phone +66 2 105 4288; email contact@bangkoksmiledental.com; LINE; online contact form; 'free online consult'. No WhatsApp listed on the main site.",
+    "consult": "Free online consultation; promotions require advance reservation by email and cannot be combined. Deposit terms not published.",
+    "includes": "All-on-4 implants guaranteed 5 years; All-on-4 acrylic bridge 6 months; other warranty terms not stated.",
+    "languages": "Site in English, Thai, Chinese and Japanese."
+   },
+   "sourceIds": [
+    "ha-list",
+    "bsd-site",
+    "bsd-prices"
+   ]
+  },
+  {
+   "name": "Thantakit International Dental Center",
+   "district": "Bangkok (Huai Khwang, New Petchburi Road; second office at All Seasons Place, Wireless Road)",
+   "type": "dental",
+   "url": "https://www.thantakit.com/",
+   "specialties": [
+    "Dental implants",
+    "Orthodontics and Invisalign",
+    "Crowns and veneers",
+    "Root canal"
+   ],
+   "namedDoctors": "Dr. Thiti Sirikrai (MSc Orthodontics, Saint Louis University, USA; Invisalign Diamond Provider); Dr. Thara Sirikrai (Certificate in Implant Dentistry, New York University; Vice President, Thai Association of Dental Implantology); Dr. Piyaorn Janevittayaphan and Dr. Chinda Numkarunarunrote (Higher Graduate Diplomas, Mahidol University). Thai Dental Council board status not shown. No registry lookup was performed.",
+   "credentials": "Not a hospital, so not on the HA list. No JCI or ISO claim on site. Site states founded 1945 and describes itself as Thailand's longest established dental center. Clinic licence number not stated.",
+   "publishedPrices": "Prices in THB at 1 USD = 36 THB from the price page (no effective date; page footer 2026): single implant with zirconia crown THB 65,000 to 105,000 ($1,806 to $2,917) by brand; All-on-4 THB 340,000 to 440,000 ($9,444 to $12,222); e.max or zirconia crown THB 25,000 ($694); e.max veneer THB 18,000 ($500); root canal THB 11,000 to 17,000 ($306 to $472); Zoom whitening THB 12,000 ($333), promotion THB 9,900; consultation THB 1,000 to 2,000 ($28 to $56); panoramic X-ray THB 1,400. A 10 percent discount for cash or bank transfer applies to implants, crowns, veneers and orthodontics but not to agent bookings.",
+   "booking": {
+    "channels": "Head office +66 2 718 0777 and +66 80 309 8008; All Seasons Place +66 2 685 3444; WhatsApp wa.me/66803098008; LINE @thantakitdental; enquiry form on site; email obfuscated.",
+    "consult": "Initial consultation required, THB 1,000 to 2,000; deposit terms not published; cash, cards and bank transfer accepted.",
+    "includes": "Warranty: titanium implant fixtures 5 years; implant prosthetics, crowns, bridges and porcelain veneers 2 years; requires recall visits at least every 6 months; excludes accidents, gum disease, work by other dentists and travel costs.",
+    "languages": "English; Thai site version."
+   },
+   "sourceIds": [
+    "ha-list",
+    "thantakit-site",
+    "thantakit-prices",
+    "thantakit-warranty"
+   ]
+  },
+  {
+   "name": "Dental Hospital Bangkok (Sukhumvit 77, formerly Sukhumvit 49)",
+   "district": "Bangkok (Watthana, Soi On Nut 1/1, Sukhumvit 77)",
+   "type": "dental",
+   "url": "https://www.dentalhospitalbangkok.com/",
+   "specialties": [
+    "Implants and All-on-4",
+    "Microscopic endodontics",
+    "Orthodontics and Invisalign",
+    "Oral and maxillofacial surgery",
+    "Pediatric dentistry"
+   ],
+   "namedDoctors": "Not named on the site; it states 95 dental specialists and 70 dental assistants. No Thai Dental Council registry lookup was performed.",
+   "credentials": "Not on the HA hospital list under a dental hospital name (checked HA Thailand open-data accreditation dataset (data as of 31 August 2026). No JCI, HA or ISO claim on site. Site states it opened in 1990 at 88/88 Sukhumvit 49 and relocated on 1 March 2018 to a six-storey building at Sukhumvit 77 (T77 community) with 34 treatment rooms, an operating room and admitting rooms; it describes itself as a 'private modern dental clinic'. The site's https certificate is misconfigured, so content was read over plain http on 30 October 2026. Licence number not stated.",
+   "publishedPrices": "Not published on its site. The site states Thais and non-Thais are charged the same fees and that cash and credit cards are accepted with no card surcharge.",
+   "booking": {
+    "channels": "Phone +66 2 092 2000; patient relations +66 2 092 2011 to 2016; email dental@dhbkk.com; hours Monday to Sunday 09:00 to 20:00 with 24-hour emergency on call. No WhatsApp, LINE or online form seen.",
+    "consult": "First visit includes oral exam, panoramic X-ray or CT and treatment plan, then referral to specialists; fee not stated. Deposit terms not published.",
+    "languages": "English site and Japanese page; 60 percent of patients stated to be foreigners."
+   },
+   "sourceIds": [
+    "ha-list",
+    "dhb-site"
+   ]
+  },
+  {
+   "name": "Sea Smile Dental Clinic (Bangkok Smile Dental Group, Phuket)",
+   "district": "Phuket (Kathu, Patong Beach, Rat Uthit 200 Pee Road)",
+   "type": "dental",
+   "url": "https://www.thaidentalcenter.com/",
+   "specialties": [
+    "Dental implants and All-on-4",
+    "Veneers",
+    "Crowns",
+    "Whitening"
+   ],
+   "namedDoctors": "Dr. Paruhat Prommontri, Dr. Paweenthas Wongsuwan, Dr. Thitima Navasakuljinda and Dr. Pimjai Promchai named without individual credentials. No registry lookup was performed.",
+   "credentials": "Not a hospital, so not on the HA list. No ISO or JCI claim on its own site (the parent Bangkok Smile site claims ISO 9001:2008). Zoom Best Practice award 2023 mentioned. Founded year and clinic licence number not stated.",
+   "publishedPrices": "Prices in THB at 1 USD = 36 THB from the fees page (exchange-rate note dated 25 September 2026): single implant from THB 55,000 ($1,528) Neo Biotech, from THB 65,000 ($1,806) AstraTech or Zimmer, THB 80,000 to 85,000 Straumann; porcelain crown THB 12,000 to 13,000 ($333 to $361); zirconia crown THB 18,000 to 20,000; e.max veneer THB 11,000 to 13,000; All-on-4 from THB 270,000 per jaw ($7,500); Zoom whitening promotion THB 9,000. One All-on-4 promotion was marked valid only to 30 September 2025. Root canal and consultation prices not listed.",
+   "booking": {
+    "channels": "Phone +66 2 105 4288 (shared Bangkok Smile line); WhatsApp wa.me/66639697655; email dentist@thaidentalcenter.com; appointment and 'free consult' forms on site; Facebook. No LINE listed.",
+    "consult": "Free online consultation offered; deposit terms not published.",
+    "includes": "Guarantee: crowns, bridges and porcelain veneers 2 years; composite fillings 6 months; dentures 3 years; implant fixtures 5 years (excluding bone grafts); implant crowns 2 years. Requires 6-monthly recall; excludes tobacco-related damage and work by other dentists; refunds decided case by case.",
+    "languages": "Not stated."
+   },
+   "sourceIds": [
+    "ha-list",
+    "seasmile-site",
+    "seasmile-prices",
+    "seasmile-guarantee"
+   ]
+  },
+  {
+   "name": "Rutnin Eye Hospital",
+   "district": "Bangkok (Watthana, Sukhumvit Soi 21 Asoke)",
+   "type": "eye",
+   "url": "https://www.rutnin.com/en/home/index.php",
+   "specialties": [
+    "Retina and vitreous",
+    "Cataract",
+    "Refractive surgery",
+    "Glaucoma",
+    "Pediatric ophthalmology"
+   ],
+   "namedDoctors": "Not named on the pages read; the doctor directory is a JavaScript search that returned no names to automated reading. Site states more than 39 ophthalmologists with degrees from Thailand, Canada and the United States. Founder Professor Dr. Uthai Rutnin MD FACS. Thai Medical Council checkmd lookup returned HTTP 403 on 30 October 2026, so doctor registrations were not verified there.",
+   "credentials": "HA Thailand: listed as 'จักษุรัตนิน' (Bangkok, private, small specialty hospital) with no accreditation level and no dates (ไม่มีขั้น), per HA Thailand open-data accreditation dataset (data as of 31 August 2026, file updated 3 September 2026), checked 30 October 2026. No JCI, HA or ISO claim on the site pages read. Site states over 60 years of experience (Instagram handle references 1964). MoPH licence number not published.",
+   "publishedPrices": "Not published on its site in text form; the Package and Promotion page showed no prices to automated reading on 30 October 2026.",
+   "booking": {
+    "channels": "Phone +66 2056 3333; fax +66 2056 3311; email contact@rutnin.com; LINE lin.ee/9sZ4aoc; online booking at rutnin.com/en/appointment/step-1.php; outpatient hours Monday to Saturday 08:00 to 20:00, Sunday 08:00 to 19:00, public holidays 08:00 to 17:00. No WhatsApp listed.",
+    "consult": "Not published; no dedicated international patient page.",
+    "languages": "Site in English, Thai, Arabic, Khmer and Burmese.",
+    "bookingUrl": "https://www.rutnin.com/en/appointment/step-1.php"
+   },
+   "sourceIds": [
+    "ha-list",
+    "rutnin-site",
+    "rutnin-contact",
+    "rutnin-about"
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "id": "ha-list",
+   "label": "HA Thailand: accreditation and status of hospitals, HA levels 1-3 and Advanced HA (open data CSV)",
+   "url": "https://data.ha.or.th/dataset/04_0101-ha-1-3-advanced-ha",
+   "publisher": "Healthcare Accreditation Institute (Public Organization)",
+   "date": "2026-10-30",
+   "kind": "official"
+  },
+  {
+   "id": "jci-directory",
+   "label": "JCI accredited organizations directory (blocked, HTTP 403)",
+   "url": "https://www.jointcommissioninternational.org/who-we-are/accredited-organizations/",
+   "publisher": "Joint Commission International",
+   "date": "2026-10-30",
+   "kind": "official"
+  },
+  {
+   "id": "tmc-checkmd",
+   "label": "Thai Medical Council doctor lookup (blocked, HTTP 403)",
+   "url": "https://checkmd.tmc.or.th/",
+   "publisher": "Medical Council of Thailand",
+   "date": "2026-10-30",
+   "kind": "official"
+  },
+  {
+   "id": "hss-moph",
+   "label": "Department of Health Service Support, Ministry of Public Health",
+   "url": "https://hss.moph.go.th/",
+   "publisher": "Ministry of Public Health Thailand",
+   "date": "2026-10-30",
+   "kind": "official"
+  },
+  {
+   "id": "bumrungrad-finance",
+   "label": "Patient finance and insurance information",
+   "url": "https://www.bumrungrad.com/en/medical-travel-guides/patient-finance-insurance-information",
+   "publisher": "Bumrungrad International Hospital",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "bumrungrad-contact",
+   "label": "Contact us",
+   "url": "https://www.bumrungrad.com/en/contact-us",
+   "publisher": "Bumrungrad International Hospital",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "bumrungrad-accreditation",
+   "label": "Recognitions for quality and safety",
+   "url": "https://bumrungrad.com/en/about-us/international-hospital-accreditation",
+   "publisher": "Bumrungrad International Hospital",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "bumrungrad-factsheet",
+   "label": "Bumrungrad factsheet",
+   "url": "https://bumrungrad.com/en/about-us/bumrungrad-factsheet",
+   "publisher": "Bumrungrad International Hospital",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "bumrungrad-checkup",
+   "label": "Health check-up packages",
+   "url": "https://www.bumrungrad.com/en/health-check-up-center-bangkok-thailand-jci-best/check-up-packages",
+   "publisher": "Bumrungrad International Hospital",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "bgh-jci",
+   "label": "Bangkok Hospital Headquarters attains sixth JCI accreditation and CCPC",
+   "url": "https://www.bangkokhospital.com/en/bangkok/about-us/awards-accreditations/joint-commission-international-gold-seal-of-approval",
+   "publisher": "Bangkok Hospital",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "bgh-ims",
+   "label": "International Medical Services, Bangkok Hospital headquarters",
+   "url": "https://www.bangkokhospital.com/en/bangkok/center-clinic/international-medical-service/international-medical-services/content-section-1",
+   "publisher": "Bangkok Hospital",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "bgh-tkr-package",
+   "label": "Robotic total knee replacement, one side, implant included, package page",
+   "url": "https://www.bangkokhospital.com/en/bangkok/package/robotic-total-knee-replacement-tkr-1-side-include-implant-en",
+   "publisher": "Bangkok Hospital",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "bgh-expat",
+   "label": "Expat Care Center page with headquarters contacts",
+   "url": "https://bangkokhospital.com/expat",
+   "publisher": "Bangkok Hospital",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "bgh-contact",
+   "label": "Contact information, head office",
+   "url": "https://www.bangkokhospital.com/en/bangkok/contact/head-office",
+   "publisher": "Bangkok Hospital",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "svh-intl",
+   "label": "Patients outside Thailand",
+   "url": "https://www.samitivejhospitals.com/patients-outside-thailand",
+   "publisher": "Samitivej Hospitals",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "svh-about",
+   "label": "About Samitivej Sukhumvit Hospital",
+   "url": "https://www.samitivejhospitals.com/about-us/hospital",
+   "publisher": "Samitivej Hospitals",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "svh-checkup",
+   "label": "Annual health check-up packages, Samitivej Sukhumvit",
+   "url": "https://www.samitivejhospitals.com/package/detail/annual-health-check-up-packages-samitivej-sukhumvit",
+   "publisher": "Samitivej Hospitals",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "svh-insurance",
+   "label": "Medical insurance for patients outside Thailand",
+   "url": "https://www.samitivejhospitals.com/patients-outside-thailand/planning-your-trip/insurance/",
+   "publisher": "Samitivej Hospitals",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "bnh-site",
+   "label": "BNH Hospital home page (English)",
+   "url": "https://www.bnhhospital.com/en/",
+   "publisher": "BNH Hospital",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "bnh-packages",
+   "label": "BNH health packages (M BRACE store)",
+   "url": "https://mbrace.bnhhospital.com/en/product-category/health-packages/",
+   "publisher": "BNH Hospital",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "bnh-ha-detail",
+   "label": "HA certificate status detail page for BNH Hospital",
+   "url": "https://www.ha.or.th/EN/Hospitals/Certificate%20Status/Details/580",
+   "publisher": "Healthcare Accreditation Institute (Public Organization)",
+   "date": "2026-10-30",
+   "kind": "official"
+  },
+  {
+   "id": "vejthani-intl",
+   "label": "International Service Center",
+   "url": "https://www.vejthani.com/patient-services/hospital-services-facilities/international-service-center/",
+   "publisher": "Vejthani Hospital",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "vejthani-about",
+   "label": "About us",
+   "url": "https://www.vejthani.com/about-us/",
+   "publisher": "Vejthani Hospital",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "vejthani-checkup",
+   "label": "Check-up and GI screening package page",
+   "url": "https://www.vejthani.com/?p=47047",
+   "publisher": "Vejthani Hospital",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "pyt2-site",
+   "label": "Phyathai 2 hospital page",
+   "url": "https://www.phyathai.com/en/pyt2",
+   "publisher": "Phyathai Hospital Group",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "pyt2-llms",
+   "label": "Phyathai site summary file stating Phyathai 2 is the group's only JCI-accredited branch",
+   "url": "https://www.phyathai.com/llms-full.txt",
+   "publisher": "Phyathai Hospital Group",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "pyt2-mfa-pdf",
+   "label": "Phyathai Hospital brochure hosted by Ministry of Foreign Affairs, January 2023",
+   "url": "https://image.mfa.go.th/mfa/0/uK8Kxy2oDV/Phyathai_Hospital_January_2023.pdf",
+   "publisher": "Ministry of Foreign Affairs Thailand (hosting Phyathai brochure)",
+   "date": "2023-01",
+   "kind": "clinic"
+  },
+  {
+   "id": "pyt2-press-thaipublica",
+   "label": "Phyathai Ultimate Trust Card members complain to Consumer Protection Board after lifetime contracts cancelled",
+   "url": "https://thaipublica.org/?p=117022",
+   "publisher": "ThaiPublica",
+   "date": "2017-03-12",
+   "kind": "press"
+  },
+  {
+   "id": "praram9-about",
+   "label": "About Praram 9 Hospital",
+   "url": "https://praram9.com/en/about",
+   "publisher": "Praram 9 Hospital",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "praram9-intl",
+   "label": "Serving international medical patients",
+   "url": "https://praram9.com/en/about/coordinating-foreign-medical",
+   "publisher": "Praram 9 Hospital",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "praram9-press-kaohoon",
+   "label": "Praram 9 Hospital statement of condolence over pharmacist death, pledges fact-finding",
+   "url": "https://www.kaohoon.com/news/709257",
+   "publisher": "Kaohoon",
+   "date": "2024-10-31",
+   "kind": "press"
+  },
+  {
+   "id": "praram9-press-dailynews",
+   "label": "Young pharmacist's suicide and workplace pressure allegations",
+   "url": "https://www.dailynews.co.th/news/4028287/",
+   "publisher": "Daily News",
+   "date": "2024-10-31",
+   "kind": "press"
+  },
+  {
+   "id": "medpark-contact",
+   "label": "Contact us",
+   "url": "https://www.medparkhospital.com/en-US/contact-us",
+   "publisher": "MedPark Hospital",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "medpark-jci-2026",
+   "label": "MedPark Hospital achieves second consecutive JCI accreditation",
+   "url": "https://www.medparkhospital.com/en-US/news/jci-accreditation-certificate-2026",
+   "publisher": "MedPark Hospital",
+   "date": "2026-04-21",
+   "kind": "clinic"
+  },
+  {
+   "id": "medpark-checkup",
+   "label": "Check-up programs",
+   "url": "https://medparkhospital.com/en/content/check-up-program",
+   "publisher": "MedPark Hospital",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "bpk-facilities",
+   "label": "Facilities and services, Bangkok Hospital Phuket",
+   "url": "https://www.bangkokhospital.com/en/phuket/visit/facilities-bpk",
+   "publisher": "Bangkok Hospital Phuket",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "bpk-contact",
+   "label": "Contact information, Bangkok Hospital Phuket",
+   "url": "https://www.bangkokhospital.com/en/phuket/contact/head-office",
+   "publisher": "Bangkok Hospital Phuket",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "bpk-legacy-contact",
+   "label": "Legacy phukethospital.com contact page (now redirects to bangkokhospital.com)",
+   "url": "https://www.phukethospital.com/contact/",
+   "publisher": "Bangkok Hospital Phuket",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "bph-intl",
+   "label": "International services, Bangkok Hospital Pattaya",
+   "url": "https://www.bangkokhospital.com/en/pattaya/page/international-services-bph",
+   "publisher": "Bangkok Hospital Pattaya",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "bph-awards",
+   "label": "Awards and accreditations, Bangkok Hospital Pattaya",
+   "url": "https://www.bangkokhospital.com/en/pattaya/about-us/awards-accreditations-bph",
+   "publisher": "Bangkok Hospital Pattaya",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "bph-contact",
+   "label": "Contact information, Bangkok Hospital Pattaya",
+   "url": "https://www.bangkokhospital.com/en/pattaya/contact/head-office",
+   "publisher": "Bangkok Hospital Pattaya",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "bcm-faq",
+   "label": "FAQ, Bangkok Hospital Chiang Mai (deposits, estimates, interpreters)",
+   "url": "https://www.bangkokhospital.com/en/chiangmai/page/faq-bcm",
+   "publisher": "Bangkok Hospital Chiang Mai",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "bcm-contact",
+   "label": "Contact information, Bangkok Hospital Chiang Mai",
+   "url": "https://www.bangkokhospital.com/en/chiangmai/contact/head-office",
+   "publisher": "Bangkok Hospital Chiang Mai",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "bsi-story",
+   "label": "Our story, Bangkok Hospital Siriroj",
+   "url": "https://www.bangkokhospital.com/en/siriroj/about-us/our-story-bsi",
+   "publisher": "Bangkok Hospital Siriroj",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "bsi-jci-news",
+   "label": "Bangkok Hospital Siriroj receives JCI accreditation for the third time",
+   "url": "https://www.bangkokhospital.com/en/siriroj/content/bangkok-hospital-siriroj-in-phuket-receives-jci-accreditation-for-the-3rd-time-bsi",
+   "publisher": "Bangkok Hospital Siriroj",
+   "date": "2025-09-19",
+   "kind": "clinic"
+  },
+  {
+   "id": "bsi-phuketnews",
+   "label": "Phuket's oldest private hospital rebrands as Bangkok Hospital Siriroj",
+   "url": "https://mail.thephuketnews.com/phuket-oldest-private-hospital-rebrands-as-bangkok-hospital-siriroj-73050.php",
+   "publisher": "The Phuket News",
+   "date": "2019-09",
+   "kind": "press"
+  },
+  {
+   "id": "bsi-windowonphuket",
+   "label": "Bangkok Hospital Siriroj listing with address and phone",
+   "url": "https://www.windowonphuket.com/health-and-beauty/1701/bangkok-hospital-siriroj",
+   "publisher": "Window on Phuket",
+   "date": "2026",
+   "kind": "marketplace"
+  },
+  {
+   "id": "cmr-site",
+   "label": "Chiang Mai Ram Hospital home page (Thai)",
+   "url": "https://www.chiangmairam.com/",
+   "publisher": "Chiang Mai Ram Hospital",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "cmr-healthhub",
+   "label": "Chiang Mai Ram package store with THB prices",
+   "url": "https://cmr-healthhub.com/",
+   "publisher": "Chiang Mai Ram Hospital",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "cmr-bookimed",
+   "label": "Chiang Mai Ram Hospital listing",
+   "url": "https://en.bookimed.com/clinic/chiangmai-ram-hospital",
+   "publisher": "Bookimed",
+   "date": "2025-03-29",
+   "kind": "marketplace"
+  },
+  {
+   "id": "yanhee-about",
+   "label": "About us",
+   "url": "https://www.yanhee.net/about-us/",
+   "publisher": "Yanhee International Hospital",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "yanhee-prices-plastic",
+   "label": "Plastic surgery prices",
+   "url": "https://www.yanhee.net/pricing-packages/plastic-surgery-prices/",
+   "publisher": "Yanhee International Hospital",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "yanhee-doctors",
+   "label": "Find a doctor",
+   "url": "https://www.yanhee.net/doctors/",
+   "publisher": "Yanhee International Hospital",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "yanhee-pricing",
+   "label": "Pricing and packages index",
+   "url": "https://www.yanhee.net/pricing-packages/",
+   "publisher": "Yanhee International Hospital",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "bidc-site",
+   "label": "Bangkok International Dental Center home page",
+   "url": "https://www.bangkokdentalcenter.com/",
+   "publisher": "Bangkok International Dental Center",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "bidc-fees",
+   "label": "Dental fees (package rates to 31 October 2026)",
+   "url": "https://bangkokdentalcenter.com/fees/",
+   "publisher": "Bangkok International Dental Center",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "bidc-warranty",
+   "label": "Dental warranty terms",
+   "url": "https://bangkokdentalcenter.com/fees/dental-warranty/",
+   "publisher": "Bangkok International Dental Center",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "bsd-site",
+   "label": "Bangkok Smile Dental Group home page",
+   "url": "https://www.bangkoksmiledental.com/",
+   "publisher": "Bangkok Smile Dental Group",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "bsd-prices",
+   "label": "Price list",
+   "url": "https://www.bangkoksmiledental.com/prices.php",
+   "publisher": "Bangkok Smile Dental Group",
+   "date": "2026-09-25",
+   "kind": "clinic"
+  },
+  {
+   "id": "thantakit-site",
+   "label": "Thantakit International Dental Center home page",
+   "url": "https://www.thantakit.com/",
+   "publisher": "Thantakit International Dental Center",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "thantakit-prices",
+   "label": "Price list",
+   "url": "https://www.thantakit.com/prices",
+   "publisher": "Thantakit International Dental Center",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "thantakit-warranty",
+   "label": "Premium care warranty",
+   "url": "https://www.thantakit.com/dental-work-warranty/",
+   "publisher": "Thantakit International Dental Center",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "dhb-site",
+   "label": "Dental Hospital Bangkok home, about, services and contact pages (TLS certificate broken; read over plain http)",
+   "url": "https://www.dentalhospitalbangkok.com/",
+   "publisher": "Dental Hospital Bangkok",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "seasmile-site",
+   "label": "Sea Smile Dental Clinic Phuket home page",
+   "url": "https://www.thaidentalcenter.com/",
+   "publisher": "Sea Smile Dental Clinic",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "seasmile-prices",
+   "label": "Fees and prices",
+   "url": "https://www.thaidentalcenter.com/fees-prices.php",
+   "publisher": "Sea Smile Dental Clinic",
+   "date": "2026-09-25",
+   "kind": "clinic"
+  },
+  {
+   "id": "seasmile-guarantee",
+   "label": "Smile guarantee terms",
+   "url": "https://www.thaidentalcenter.com/guarantee.php",
+   "publisher": "Sea Smile Dental Clinic",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "rutnin-site",
+   "label": "Rutnin Eye Hospital English home page",
+   "url": "https://www.rutnin.com/en/home/index.php",
+   "publisher": "Rutnin Eye Hospital",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "rutnin-contact",
+   "label": "Contact us",
+   "url": "https://www.rutnin.com/en/contact/",
+   "publisher": "Rutnin Eye Hospital",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  },
+  {
+   "id": "rutnin-about",
+   "label": "About Rutnin",
+   "url": "https://www.rutnin.com/en/about/",
+   "publisher": "Rutnin Eye Hospital",
+   "date": "2026-10-30",
+   "kind": "clinic"
+  }
+ ]
+}
