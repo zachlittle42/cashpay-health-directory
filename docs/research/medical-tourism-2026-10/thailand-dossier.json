@@ -1,0 +1,637 @@
+{
+  "keyFacts": [
+    {
+      "value": "About 3.07 million",
+      "label": "Foreign patient visits to Thai hospitals forecast for 2024 by Kasikorn Research. The figure counts visits, not people, and roughly half the revenue comes from expatriates living in Thailand. Thailand has no single official annual count of medical tourists; the Tourism Authority of Thailand's narrower 2025 figure of about 580,000 visitors who stated medical treatment as their purpose is the most conservative published number.",
+      "sourceIds": ["kresearch2023", "mtw"]
+    },
+    {
+      "value": "64.8%",
+      "label": "Share of Bumrungrad International Hospital's 2025 revenue from non-Thai patients, across about 604,000 international patient episodes from more than 180 countries. The United States was one of its top three revenue countries in 2025, alongside Qatar and Myanmar. Thailand does not publish a national count of American patients.",
+      "sourceIds": ["bh-ir"]
+    },
+    {
+      "value": "63",
+      "label": "Thai medical institutions accredited by Joint Commission International as of February 2025, per the US Commercial Service. Thailand's own Healthcare Accreditation Institute (HA) runs a separate national program and publishes a searchable certificate register but no headline total.",
+      "sourceIds": ["tradegov", "ha-status"]
+    },
+    {
+      "value": "Level 1",
+      "label": "US State Department advisory for Thailand as of the July 7, 2026 update (Exercise Normal Precautions), with increased caution advised near the Thai-Cambodian border after the 2025 fighting and, in the June 2025 version, Level 2 for Yala, Pattani, Narathiwat and parts of Songkhla in the Deep South. None of the main medical-travel cities (Bangkok, Phuket, Chiang Mai, Pattaya) is in a flagged area.",
+      "sourceIds": ["state-advisory", "nation-stateupgrade", "malaymail-ceasefire"]
+    }
+  ],
+  "treatmentsIntro": "Thailand's international patient business is concentrated in large private hospital groups in Bangkok, with Phuket, Chiang Mai and Pattaya serving smaller volumes, mostly in dentistry, cosmetic procedures, check-ups and long-stay wellness. The government's 2025 to 2034 Medical Hub strategy names aesthetic medicine, IVF, gender-affirming care and dental services as the four international service lines it is actively promoting. Thailand does not publish demand figures by procedure, so the demand notes below come from hospital disclosures, industry research and government statements rather than an official register.",
+  "treatments": [
+    {
+      "name": "Cosmetic surgery (breast, rhinoplasty, facelift, body contouring)",
+      "whyHere": "Bangkok hosts both JCI-accredited hospitals with plastic surgery departments and a large number of standalone clinics. Yanhee Hospital publishes a full baht price list for implants, rhinoplasty, facelifts and liposuction, which is unusual in medical tourism and makes comparison shopping possible. Phuket and Pattaya also have cosmetic clinics, but Pattaya in particular has been the site of repeated raids on unlicensed injectors in 2025 and 2026.",
+      "demand": "No official figure. The Ministry of Public Health's Medical Hub strategy lists health and aesthetic medicine as one of four priority international service lines.",
+      "typicalStay": "Yanhee's packages include 1 to 3 hospital nights depending on procedure. The American Society of Plastic Surgeons advises waiting 5 to 7 days before flying after body procedures and 7 to 10 days after facial procedures, so plan 10 to 14 days in Thailand.",
+      "sourceIds": ["yanhee-prices", "asps-briefing", "nation-hub", "pattayamail-botox-apr2026"]
+    },
+    {
+      "name": "Gender-affirming surgery and facial feminization",
+      "whyHere": "Bangkok has a decades-old cluster of surgeons and private hospitals performing vaginoplasty, facial feminization and related procedures, and the government has named gender-affirming care as a priority export service. A 2021 to 2022 survey cited by The Nation put the average private-hospital cost at about 300,000 baht for male-to-female surgery and about 1,000,000 baht for female-to-male procedures.",
+      "demand": "No official patient count is published. Medical Tourism Watch notes gender-affirming care is on Thailand's official priority list but that no patient count exists.",
+      "typicalStay": "Le Petit Journal reports 5 to 7 nights in hospital for vaginoplasty. Surgeons set their own in-country minimums, often several weeks, which you should get in writing.",
+      "sourceIds": ["nation-hub", "lepetitjournal-gas", "mtw"]
+    },
+    {
+      "name": "Dental (implants, crowns, veneers, All-on-4)",
+      "whyHere": "Bangkok and Phuket hospital dental centers publish price lists. Bangkok Hospital's headquarters lists implants with crown from 65,000 to 133,700 baht by system and veneers at 16,000 to 18,000 baht for 2026; Bangkok Hospital Phuket listed Korean implants at 55,000 and European implants at 80,000 baht for 2025. The Medical Hub strategy says Thai dental care is priced 60 to 70 percent below major competitors. Chiang Mai also has a dental cluster serving foreigners.",
+      "demand": "No official figure. Dental services are one of the four named priority lines in the 2025 to 2034 strategy.",
+      "typicalStay": "Veneers and crowns can be done in one visit of about a week. Implants normally need two trips several months apart unless the clinic uses an immediate-load protocol; ask which applies to you.",
+      "sourceIds": ["bh-dental-hq", "bh-dental-phuket", "nation-oct2026"]
+    },
+    {
+      "name": "Executive health check-ups",
+      "whyHere": "Bangkok's large private hospitals sell bundled screening packages with published prices. Bangkok Hospital's branches listed a 33-item women's check-up in Chiang Mai at 15,900 baht and a Phuket screening package at 4,090 baht for 2026; Bumrungrad publishes a package menu valid to 31 December 2026 but lists prices only in a downloadable comparison sheet. Medical Tourism Watch reports an average 2024 stay of 12.5 days for health tourists who combine screening with wellness.",
+      "demand": "No official figure.",
+      "typicalStay": "1 to 2 days for the check-up itself, with results usually in 24 to 48 hours.",
+      "sourceIds": ["bh-checkup-cm", "bh-phuket-checkup", "bumrungrad-checkup", "mtw"]
+    },
+    {
+      "name": "Cardiac care (bypass, angioplasty, valve)",
+      "whyHere": "Bangkok's JCI-accredited hospitals (Bumrungrad, Bangkok Hospital, Samitivej, MedPark) run full cardiac programs. MedPark's own 2025 estimate puts bypass surgery at 25,000 to 37,000 US dollars in Thailand against 50,000 to 100,000 in Western countries; this is a hospital estimate, not an official statistic.",
+      "demand": "No official figure. Middle Eastern and regional patients dominate hospital-reported cardiac volumes.",
+      "typicalStay": "Hospital stays of about a week are typical for open-heart surgery. Airlines and the UK Civil Aviation Authority treat recent chest surgery as a fitness-to-fly issue, so expect your surgeon to require 2 to 3 weeks in Thailand and a clearance letter.",
+      "sourceIds": ["medpark-mt", "caa-fit", "bh-ir"]
+    },
+    {
+      "name": "Orthopedics (knee and hip replacement)",
+      "whyHere": "Bangkok Hospital's Udon Thani branch lists a one-knee total replacement package at 230,000 baht for 2026, and marketplace listings for Samitivej Thonburi show 350,000 to 400,000 baht for knee and 250,000 to 300,000 for hip replacement. Bumrungrad's last public knee package (2020) was 315,000 baht including implant. By comparison, the average US hospital cash price for a knee replacement was 14,885 US dollars in hospital price-transparency files as of May 2026, so the gap is narrower than for cosmetic surgery.",
+      "demand": "No official figure.",
+      "typicalStay": "Bumrungrad's own pre-travel screening flags joint replacement within the previous 12 weeks as a blood-clot risk for flying. Plan at least 2 to 3 weeks in Thailand and a surgeon's fit-to-fly letter.",
+      "sourceIds": ["bh-knee-udon", "samitivej-thaiger", "mycarecost-knee", "bumrungrad-travel"]
+    },
+    {
+      "name": "IVF and ICSI",
+      "whyHere": "Bangkok fertility clinics publish package prices: SAFE Fertility offered an ICSI package at 219,000 baht (normal price 269,000) for stimulation starting by 31 December 2025, open to international patients, and MedPark lists an IVF/ICSI package at 280,000 baht for Thai nationals and resident expatriates. Thailand's 2015 assisted reproduction law bans commercial surrogacy, sex selection and the sale of eggs and sperm, and limits treatment to legally married couples.",
+      "demand": "No official figure. IVF is one of the four named priority lines in the Medical Hub strategy.",
+      "typicalStay": "Ovarian stimulation through egg retrieval typically runs about two weeks; a frozen transfer may mean a second trip. Get the clinic's protocol in writing.",
+      "sourceIds": ["safe-ivf", "medpark-ivf", "stasi-art", "nation-hub"]
+    },
+    {
+      "name": "LASIK and SMILE vision correction",
+      "whyHere": "Bangkok Hospital's headquarters sells a ReLEx SMILE package for both eyes at 88,000 baht (list 140,000) valid to 31 December 2026, but the online price is restricted to Thai citizens and resident expatriates. Marketplace listings put SMILE at the specialist TRSC center at about 4,000 US dollars. US clinics typically charge 1,500 to 5,000 US dollars per eye.",
+      "demand": "No official figure.",
+      "typicalStay": "Usually 3 to 5 days: a screening day, surgery, and a next-day check.",
+      "sourceIds": ["bh-smile", "bookimed-trsc", "lasik-com"]
+    },
+    {
+      "name": "Hair transplant",
+      "whyHere": "Bangkok clinics price FUE per graft. An October 2026 Thailand guide lists a market range of 40 to 160 baht per graft, with Hairsmith Clinic at 80 baht per graft and a 1,000-graft minimum (from 59,000 baht). US procedures run about 6,000 to 15,000 US dollars or more.",
+      "demand": "No official figure.",
+      "typicalStay": "3 to 5 days, including a post-operative wash and check.",
+      "sourceIds": ["hairsmith-tsk", "withcherry-hair"]
+    },
+    {
+      "name": "Stem cell and unproven regenerative treatments (status: largely illegal)",
+      "whyHere": "Thailand is marketed abroad as a stem cell destination, but Ministry of Public Health rules allow stem cell treatment only for uses approved by the Medical Council, which are hematopoietic (blood-forming) transplants for blood disorders and cancers such as leukemia, lymphoma and thalassemia. The Nation reported in October 2024 that any injections beyond those uses, as openly advertised by clinics, are illegal and that more than 400 cases a year are prosecuted over exaggerated stem cell claims.",
+      "demand": "No official figure. Enforcement cases, not patient counts, are what the government reports.",
+      "typicalStay": "Not applicable. VitalityScout does not recommend travelling for unapproved stem cell therapy.",
+      "sourceIds": ["nation-stemcell"]
+    }
+  ],
+  "howItWorks": [
+    {
+      "title": "Who licenses hospitals and clinics",
+      "body": "Private hospitals and clinics are licensed by the Department of Health Service Support (HSS) in the Ministry of Public Health under the Sanatorium Act B.E. 2541 (1998), which English-language press also calls the Hospital Act or Healthcare Facilities Act. Running an unlicensed facility carries up to 5 years in prison and a 100,000 baht fine. In April 2026 the Medical Council of Thailand publicly urged people to check a clinic's licence in the HSS online register before treatment and to report facilities that do not appear to hotline 1426.",
+      "sourceIds": ["pattayamail-licence", "thairath-aug2026", "khaosod-jul2026"],
+      "link": { "label": "HSS licensed-facility search (Thai)", "url": "https://hosp.hss.moph.go.th/" }
+    },
+    {
+      "title": "Who licenses doctors and dentists",
+      "body": "Physicians are registered by the Medical Council of Thailand under the Medical Professions Act B.E. 2525 (1982); practising without a licence carries up to 3 years in prison. The Council runs a public register you can search by name, and its secretary-general said in 2026 that patients should verify both the doctor and the clinic. Dentists are registered separately by the Dental Council under the Dental Professions Act B.E. 2537 (1994), which has a Find a Dentist lookup. Both registers are primarily in Thai, so ask the clinic for the practitioner's Thai name and licence number and check it yourself or have the hospital's international department show you the entry.",
+      "sourceIds": ["pattayamail-licence", "thairath-aug2026", "dental-council", "tmc"],
+      "link": { "label": "Dental Council of Thailand dentist lookup", "url": "https://dentalcouncil.or.th/FindDentist" }
+    },
+    {
+      "title": "Accreditation: HA Thailand and JCI",
+      "body": "Thailand has a national accreditation body, the Healthcare Accreditation Institute (HA), whose standards are accredited by ISQua and whose certificate register lists each hospital's level and expiry date. Separately, 63 Thai institutions held Joint Commission International (JCI) accreditation as of February 2025, the fourth-largest national total in the world. Neither accreditation covers standalone cosmetic clinics, which are where most enforcement actions occur.",
+      "sourceIds": ["ha-status", "ha-isqua", "tradegov"],
+      "link": { "label": "HA Thailand certificate status register", "url": "https://www.ha.or.th/EN/Hospitals/Certificate%20Status" }
+    },
+    {
+      "title": "What is illegal: stem cells, surrogacy, sex selection",
+      "body": "Stem cell treatment is legal only for Medical Council-approved blood-disorder transplants; clinics advertising stem cells for joints, anti-aging or neurological disease are operating illegally and more than 400 such cases are prosecuted each year. The Protection of Children Born through Assisted Reproductive Technologies Act B.E. 2558 (2015) bans commercial surrogacy, sex selection and the trade in eggs and sperm, limits treatment to legally married couples, and restricts surrogacy to Thai intended parents (or couples married at least three years where one spouse is Thai) with a related surrogate.",
+      "sourceIds": ["nation-stemcell", "stasi-art"]
+    },
+    {
+      "title": "What US agencies and societies say",
+      "body": "The CDC's June 2026 analysis in Emerging Infectious Diseases reviewed 2014 to 2024 consultations and found postsurgical infections in 20 of 34 travel-related cosmetic cases, 12 involving nontuberculous mycobacteria, and four deaths; it urges patients to discuss risks with a US clinician before travelling. The American Society of Plastic Surgeons' briefing paper warns that infection is the most common complication seen in returning patients, that US law does not cover surgery performed abroad, and sets out waits of 5 to 7 days before flying after body procedures and 7 to 10 days after facial procedures. ASPS also notes that even a successful lawsuit abroad may be impossible to enforce.",
+      "sourceIds": ["cdc-eid-release", "asps-briefing", "asps-legal"]
+    },
+    {
+      "title": "Facilitators and hospital international departments",
+      "body": "Large Bangkok hospitals run their own international patient departments that handle quotes, visa letters, airport pickup and insurance guarantees, so a third-party facilitator is optional for hospital-based care. Marketplaces such as Bookimed list clinic prices but are paid by clinics, and the prices they show are often years old. Treat any facilitator who steers you to a clinic rather than a licensed hospital, or who cannot name the operating surgeon, as a reason to walk away.",
+      "sourceIds": ["bumrungrad-finance", "bh-phuket-intl", "bookimed-ffs"]
+    },
+    {
+      "title": "If something goes wrong: complaints and courts",
+      "body": "Complaints about a doctor go to the Medical Council of Thailand, which investigates and can discipline the practitioner; complaints about a facility go to HSS (hotline 1426). Civil claims run through Thai courts under the Civil and Commercial Code, and since 2008 patients have been able to use the Consumer Case Procedure Act, which Thai legal commentary describes as making it easier for injured patients to sue providers. Proceedings are in Thai, take years, and you would need a Thai lawyer; ASPS notes that even a judgment can be hard to enforce. For crime or scams the Tourist Police hotline is 1155, staffed 24 hours in English and seven other languages.",
+      "sourceIds": ["tilleke-malpractice", "asps-legal", "tourist-police", "pattayamail-licence"]
+    },
+    {
+      "title": "US insurance, HSAs and taxes",
+      "body": "Standard US health plans do not cover planned elective care abroad, and travel insurers routinely exclude trips taken to obtain medical treatment along with any complications from it; a few specialist complications-only policies exist but none pay for the operation itself. HSA distributions are qualified if they pay for medical care as defined in Internal Revenue Code section 213(d), and IRS Publication 969 states no geographic restriction; IRS Publication 502 excludes cosmetic surgery unless it corrects a congenital abnormality, injury or disfiguring disease, caps medical lodging at 50 US dollars per night, and allows transportation that is primarily for and essential to medical care. Keep itemized receipts and a physician's letter.",
+      "sourceIds": ["compare-travel-ins", "irs-969", "irs-502"]
+    }
+  ],
+  "pricesNote": "Thai prices are quoted in baht from hospital-published package pages and price lists wherever they exist; the few marketplace figures are labelled as such and tend to be stale. US dollar equivalents below assume roughly 34 baht per dollar, the rate implied by the Bookimed and Medical Tourism Watch conversions used here; check the live rate. Several Thai hospital online prices (Bangkok Hospital's SMILE package and MedPark's IVF package) are restricted to Thai citizens and resident expatriates, and international patients may be quoted more. US figures are surgeon fees only (ASPS, Aesthetic Society) or hospital self-pay averages from federally mandated price-transparency files (MyCareCost); neither includes travel, and hospital cash prices exclude surgeon and anesthesia fees unless stated. Thai packages generally exclude complications, extra nights, ICU and take-home medication beyond what is listed.",
+  "procedures": [
+    {
+      "procedure": "Breast augmentation (implants)",
+      "usPrice": "$4,575 to $8,000 surgeon fee (ASPS 2024); $4,617 average (Aesthetic Society 2022)",
+      "localPrice": "125,000 to 305,000 THB (about $3,700 to $9,000) including 1 night, by implant brand (Yanhee published list)",
+      "typicalStay": "10 to 14 days (ASPS: wait 5 to 7 days before flying)",
+      "sourceIds": ["asps-cost-2024", "aesthetic-society", "yanhee-prices", "asps-briefing"],
+      "note": "Bangkok. Yanhee's price range runs from Mentor round smooth implants (125,000) to Motiva Ergonomix II Zen (305,000)."
+    },
+    {
+      "procedure": "Rhinoplasty",
+      "usPrice": "$7,500 to $12,500 surgeon fee (ASPS 2024)",
+      "localPrice": "30,000 to 220,000 THB (about $900 to $6,500): implant-only augmentation 30,000 to 50,000; full nose reshaping 105,000 with 2 nights; ultrasonic 145,000; rib graft 220,000 (Yanhee published list)",
+      "typicalStay": "10 to 14 days (ASPS: wait 7 to 10 days before flying after facial surgery)",
+      "sourceIds": ["asps-cost-2024", "yanhee-prices", "asps-briefing"],
+      "note": "Bangkok. The lowest Thai figures are silicone implant augmentation, not a structural rhinoplasty, so compare like with like."
+    },
+    {
+      "procedure": "Facelift",
+      "usPrice": "$11,395 average surgeon fee (ASPS 2023); $9,679 (Aesthetic Society 2022)",
+      "localPrice": "165,000 to 260,000 THB (about $4,900 to $7,600) with 2 nights (Yanhee published list)",
+      "typicalStay": "14 days (ASPS: 7 to 10 days before flying)",
+      "sourceIds": ["asps-cost-2023", "aesthetic-society", "yanhee-prices", "asps-briefing"],
+      "note": "Bangkok. MedPark's hospital estimate for facelifts in Thailand is $4,000 to $8,000."
+    },
+    {
+      "procedure": "Liposuction",
+      "usPrice": "$2,764 average surgeon fee per procedure (Aesthetic Society 2022)",
+      "localPrice": "55,000 to 74,000 THB per site (about $1,600 to $2,200) with 1 night; VASER 66,000 to 74,000 per site (Yanhee published list)",
+      "typicalStay": "10 days (ASPS: 5 to 7 days before flying)",
+      "sourceIds": ["aesthetic-society", "yanhee-prices", "asps-briefing"],
+      "note": "Bangkok. Thai prices are per body area and large areas may be billed as two sites."
+    },
+    {
+      "procedure": "Tummy tuck (abdominoplasty)",
+      "usPrice": "$7,465 average surgeon fee (Aesthetic Society 2022)",
+      "localPrice": "126,000 THB (about $3,700) with 3 nights for patients under 70 kg, plus 18,000 THB per 10 kg above that (Yanhee published list)",
+      "typicalStay": "14 days (ASPS: 5 to 7 days before flying; abdominal surgery carries added clot risk on long flights)",
+      "sourceIds": ["aesthetic-society", "yanhee-prices", "asps-briefing", "cdc-dvt"],
+      "note": "Bangkok. Abdominoplasty was one of the two most common procedures in the Harvard complication series of returning medical tourists."
+    },
+    {
+      "procedure": "Facial feminization surgery (full plan)",
+      "usPrice": "About $40,000 to $70,000 (Bookimed US clinic data, marketplace)",
+      "localPrice": "About 714,000 to 1,020,000 THB ($21,000 to $30,000) for a full plan (Bookimed Thailand, marketplace, October 2025); no Thai hospital publishes a package price",
+      "typicalStay": "At least 10 days before flying (ASPS facial guidance); surgeons typically require longer, confirm in writing",
+      "sourceIds": ["bookimed-ffs", "asps-briefing"],
+      "note": "Bangkok. Marketplace range only; individual surgeon quotes vary from under $10,000 for partial plans to over $45,000."
+    },
+    {
+      "procedure": "Gender-affirming vaginoplasty",
+      "usPrice": "About $25,000 to $57,000 depending on insurance (Le Petit Journal, July 2026)",
+      "localPrice": "About 300,000 THB (about $9,000) average at private hospitals, 2021 to 2022 survey cited by The Nation; $7,000 to $15,000 by technique (Le Petit Journal)",
+      "typicalStay": "5 to 7 nights in hospital, then an in-country recovery period set by the surgeon",
+      "sourceIds": ["nation-hub", "lepetitjournal-gas"],
+      "note": "Bangkok. Female-to-male procedures averaged about 1,000,000 THB in the same survey."
+    },
+    {
+      "procedure": "Single dental implant with crown",
+      "usPrice": "$3,000 to $4,500 typical (Forbes Advisor via Dentaltown, 2025); up to $7,000 (GoodRx)",
+      "localPrice": "55,000 THB Korean system or 80,000 THB European system per unit (Bangkok Hospital Phuket 2025 list); 65,000 to 133,700 THB including crown by Straumann or Astra system (Bangkok Hospital HQ 2026 list)",
+      "typicalStay": "Two trips, or one trip of about 10 days if immediate loading is suitable",
+      "sourceIds": ["dentaltown-implants", "bh-dental-phuket", "bh-dental-hq"],
+      "note": "Phuket and Bangkok. Bone graft adds 20,000 to 30,000 THB and sinus lift 40,000 to 50,000 at Bangkok Hospital Phuket."
+    },
+    {
+      "procedure": "Porcelain veneer (per tooth)",
+      "usPrice": "No reliable national US figure found in this research",
+      "localPrice": "12,000 to 15,000 THB (Bangkok Hospital Phuket 2025); 16,000 to 18,000 THB (Bangkok Hospital HQ 2026)",
+      "typicalStay": "5 to 7 days",
+      "sourceIds": ["bh-dental-phuket", "bh-dental-hq"],
+      "note": "Phuket and Bangkok. Composite veneers were 7,000 THB in Phuket."
+    },
+    {
+      "procedure": "All-on-4 full-arch implants (per arch)",
+      "usPrice": "$15,000 to $35,000 per arch (Dentaltown 2025)",
+      "localPrice": "250,000 to 320,000 THB with acrylic bridge (Bangkok Hospital Phuket 2025); 250,000 to 590,000 THB (Bangkok Hospital HQ 2026, Straumann group systems)",
+      "typicalStay": "Usually two trips; ask the clinic for its protocol",
+      "sourceIds": ["dentaltown-implants", "bh-dental-phuket", "bh-dental-hq"],
+      "note": "Phuket and Bangkok. MedPark's hospital estimate is $10,000 to $15,000 per jaw."
+    },
+    {
+      "procedure": "Total knee replacement (one knee)",
+      "usPrice": "$14,885 average hospital cash price, $26,817 average list price, 1,034 hospitals (MyCareCost, May 2026, excludes surgeon fees)",
+      "localPrice": "230,000 THB (about $6,800) package at Bangkok Hospital Udon, 2026; 350,000 to 400,000 THB at Samitivej Thonburi (marketplace listing); Bumrungrad's last public package was 315,000 THB including implant (2020)",
+      "typicalStay": "2 to 3 weeks minimum with surgeon clearance; Bumrungrad's travel screening flags joint replacement within 12 weeks as a clot risk",
+      "sourceIds": ["mycarecost-knee", "bh-knee-udon", "samitivej-thaiger", "norcham-knee", "bumrungrad-travel"],
+      "note": "Bangkok and provincial Bangkok Hospital branches. The Udon package page does not state nights or implant brand; get both in writing."
+    },
+    {
+      "procedure": "Total hip replacement",
+      "usPrice": "$14,380 average hospital cash price, $25,947 list, 983 hospitals (MyCareCost, May 2026, excludes surgeon fees)",
+      "localPrice": "250,000 to 300,000 THB (about $7,400 to $8,800) at Samitivej Thonburi (marketplace listing, undated)",
+      "typicalStay": "2 to 3 weeks minimum with surgeon clearance",
+      "sourceIds": ["mycarecost-hip", "samitivej-thaiger", "bumrungrad-travel"],
+      "note": "Bangkok. No Thai hospital hip package with a published price was found for 2026; request a written estimate."
+    },
+    {
+      "procedure": "Coronary artery bypass (CABG)",
+      "usPrice": "Medicare pays $30,481 to $55,632 per inpatient stay by DRG; uninsured initial bills typically $150,000 to $250,000 before discounts (CoveredUSA, May 2026)",
+      "localPrice": "$25,000 to $37,000 (MedPark hospital estimate for Thailand, 2025); no published package found",
+      "typicalStay": "About 1 week in hospital, then 2 to 3 weeks before a long flight with written clearance",
+      "sourceIds": ["coveredusa-cabg", "medpark-mt", "caa-fit"],
+      "note": "Bangkok. Cardiac surgery is quoted case by case; expect a deposit of the full estimate."
+    },
+    {
+      "procedure": "Comprehensive health check-up",
+      "usPrice": "No standardized US price; executive physicals are priced by each hospital",
+      "localPrice": "4,090 THB promotional screening (Bangkok Hospital Phuket, to 28 Feb 2027); 15,900 THB for a 33-item women's check-up (Bangkok Hospital Chiang Mai, 2026); 7,000 to 15,000 THB at Samitivej Thonburi (marketplace); Bumrungrad publishes a package menu valid to 31 Dec 2026",
+      "typicalStay": "1 to 2 days",
+      "sourceIds": ["bh-phuket-checkup", "bh-checkup-cm", "samitivej-thaiger", "bumrungrad-checkup"],
+      "note": "Bangkok, Phuket, Chiang Mai. Package item counts vary widely; compare the test list, not the headline price."
+    },
+    {
+      "procedure": "LASIK or ReLEx SMILE (both eyes)",
+      "usPrice": "$1,500 to $5,000 per eye (LASIK.com, October 2026)",
+      "localPrice": "88,000 THB (about $2,600) SMILE package, list 140,000, Bangkok Hospital HQ, valid to 31 Dec 2026 but online price limited to Thai citizens and resident expatriates; about $4,023 at TRSC (Bookimed marketplace)",
+      "typicalStay": "3 to 5 days",
+      "sourceIds": ["lasik-com", "bh-smile", "bookimed-trsc"],
+      "note": "Bangkok. International patients should ask Bangkok Hospital for its foreigner price rather than relying on the e-coupon figure."
+    },
+    {
+      "procedure": "IVF with ICSI (one cycle)",
+      "usPrice": "$12,400 average base cycle excluding drugs (ASRM via GoodRx); $15,000 to $30,000 all-in with medication",
+      "localPrice": "219,000 THB (about $6,400) ICSI package including stimulation drugs and freezing of 1 to 3 embryos, SAFE Fertility, stimulation by 31 Dec 2025, open to international patients; 280,000 THB IVF/ICSI package at MedPark for Thai nationals and resident expatriates",
+      "typicalStay": "About 2 weeks for stimulation through retrieval; a frozen transfer may need a second trip",
+      "sourceIds": ["goodrx-ivf", "safe-ivf", "medpark-ivf", "stasi-art"],
+      "note": "Bangkok. Thai law requires a marriage certificate and prohibits sex selection and donor egg or sperm purchase."
+    },
+    {
+      "procedure": "Hair transplant (FUE)",
+      "usPrice": "$6,000 to $15,000 or more (Cherry, August 2026); roughly $4 to $10 per graft",
+      "localPrice": "40 to 160 THB per graft market range; Hairsmith Clinic 80 THB per graft with 1,000-graft minimum, from 59,000 THB (about $1,700) (Thailand Starter Kit, October 2026)",
+      "typicalStay": "3 to 5 days",
+      "sourceIds": ["withcherry-hair", "hairsmith-tsk"],
+      "note": "Bangkok. Confirm whether the quote is per graft or per package and who performs the extraction, since technician-only clinics are a known problem in this field."
+    }
+  ],
+  "process": [
+    {
+      "title": "First contact and records",
+      "body": "Email or message the hospital's international patient department with recent records, imaging and photographs where relevant. Large Bangkok hospitals reply with a written estimate from the treating doctor; Bumrungrad's policy states that estimates show a possible range, not the actual cost, and exclude medicines, complications and ICU days.",
+      "sourceIds": ["bumrungrad-finance"]
+    },
+    {
+      "title": "Verify the facility and the practitioner",
+      "body": "Before paying anything, check the clinic or hospital in the HSS licensed-facility register and the doctor in the Medical Council register (or dentist in the Dental Council lookup). The Medical Council's secretary-general urged exactly this in April 2026 and said unlisted facilities should be reported to 1426.",
+      "sourceIds": ["pattayamail-licence", "dental-council"]
+    },
+    {
+      "title": "Quote, deposit and payment terms",
+      "body": "Expect to pay a deposit before elective surgery or admission. Bumrungrad requires a full deposit from self-pay patients for procedures and updates inpatient charges every three days, with additional deposits possible; Bangkok Hospital Phuket asks for about 80 percent of the estimate unless an insurer issues a guarantee letter. Accepted methods include cash, Visa, MasterCard, JCB, UnionPay, American Express and wire transfer, with the patient paying bank fees. Credit card cash refunds can carry a 2 to 3 percent commission plus 7 percent VAT.",
+      "sourceIds": ["bumrungrad-finance", "bh-phuket-intl"]
+    },
+    {
+      "title": "Pre-travel medical clearance in the US",
+      "body": "See your US physician before booking. The CDC advises discussing risks with a clinician before travelling for procedures, and its Yellow Book lists recent surgery as a venous thromboembolism risk factor on flights over four hours. Carry a letter listing diagnoses, medications and allergies.",
+      "sourceIds": ["cdc-eid-release", "cdc-dvt"]
+    },
+    {
+      "title": "Arrival, consultation and consent",
+      "body": "Plan at least one full day between landing and surgery. The surgeon who will operate should examine you in person, confirm the plan and price, and sign the consent with you. Ask to see the operating room and the recovery ward, and confirm who gives anesthesia. The Harvard series of returning medical tourists included four women who received breast implants they had not consented to.",
+      "sourceIds": ["asps-prs2018", "asps-briefing"]
+    },
+    {
+      "title": "Surgery and the hospital stay",
+      "body": "Thai hospital packages state included nights (Yanhee lists 1 night for implants, 2 for facelifts, 3 for a tummy tuck). Extra nights, ICU and complications are billed separately, and Bumrungrad will ask for a further deposit if charges exceed the estimate. Keep every receipt and ask for the operative report, implant card and discharge summary in English before you leave the ward.",
+      "sourceIds": ["yanhee-prices", "bumrungrad-finance"]
+    },
+    {
+      "title": "Recovery in Thailand and the flight home",
+      "body": "ASPS advises no sunbathing, alcohol, swimming, water sports, long bus tours or exercise after surgery, and waits of 5 to 7 days before flying after body procedures and 7 to 10 days after facial procedures. The UK Civil Aviation Authority gives 10 days after abdominal surgery. The CDC notes travel-related clot risk is highest in the first one to two weeks after a flight and recommends compression stockings and movement for higher-risk travellers; your surgeon may prescribe an anticoagulant for the flight.",
+      "sourceIds": ["asps-briefing", "caa-fit", "cdc-dvt"]
+    },
+    {
+      "title": "Follow-up at home",
+      "body": "Arrange a US clinician to see you within a week of return and give them the operative report. ASPS warns that local surgeons may not know the original techniques and that revisions are harder and often give poorer results; infections after cosmetic travel, including slow-growing mycobacterial infections, may not show for weeks. Any sign of infection, fever, drainage or sudden chest pain needs same-day care.",
+      "sourceIds": ["asps-briefing", "cdc-eid-release"]
+    }
+  ],
+  "results": [
+    {
+      "title": "Accredited hospitals report outcomes; clinics mostly do not",
+      "body": "JCI and HA accreditation require quality systems, infection control and credential checks, and Thailand's largest groups publish patient volumes and revenue in investor filings. There is no Thai public outcomes registry by procedure or clinic, and standalone cosmetic clinics publish none, so claimed success rates cannot be independently verified. Ask the surgeon for their own annual volume and complication rate in writing.",
+      "sourceIds": ["tradegov", "ha-isqua", "bh-ir"]
+    },
+    {
+      "title": "Infection is the complication that follows people home",
+      "body": "The CDC's 2026 review of travel-related cosmetic procedure consultations found postsurgical infections in 20 of 34 cases, 12 with suspected or confirmed nontuberculous mycobacteria, and four deaths. ASPS says infection is the most common complication seen in returning patients, followed by scarring, hematoma and unsatisfactory results. The Australian Gold Coast series, all 12 patients operated on in Thailand, found infected breast implants to be the most common reason for admission, with an average inpatient stay of about six days.",
+      "sourceIds": ["cdc-eid-release", "asps-briefing", "eplasty-2015"]
+    },
+    {
+      "title": "Revisions cost more at home than the original surgery saved",
+      "body": "In the Brigham and Women's series of 78 returning medical-tourism patients, 12 were hospitalized, three still had surgical drains in, three had hernias after abdominoplasty, and most costs fell on public insurance. The Gold Coast hospital spent an average of AUD 12,598 per patient treating complications of Thai cosmetic surgery, with one case exceeding AUD 33,000. Thai hospitals do not cover revision surgery unless the package says so, and travel insurance excludes it.",
+      "sourceIds": ["asps-prs2018", "eplasty-2015", "compare-travel-ins"]
+    },
+    {
+      "title": "Legal recourse is real on paper and slow in practice",
+      "body": "You can complain to the Medical Council of Thailand, which investigates practitioners, and sue in Thai courts, where the 2008 Consumer Case Procedure Act was intended to make patient claims easier. Proceedings are in Thai and take years, and ASPS cautions that US courts rarely have jurisdiction over foreign providers and that even a judgment may be unenforceable. Realistically, your protection is choosing an accredited hospital and a registered surgeon, not the courts.",
+      "sourceIds": ["tilleke-malpractice", "asps-legal"]
+    }
+  ],
+  "safety": {
+    "verdict": "Thailand's accredited private hospitals are among the most established in international medicine, and the country sits at the US State Department's lowest advisory level. The documented harm to foreigners comes overwhelmingly from unlicensed injectors and standalone clinics, from the long flight home after surgery, and from Thai roads. Stay inside the licensed hospital system, verify every licence yourself, and do not combine surgery with a holiday.",
+    "points": [
+      {
+        "title": "March 2026: a British visitor died after a filler injection at a Bangkok clinic",
+        "body": "Igho Ubiribo, 43, a British-Nigerian businessman, died on 6 March 2026 hours after receiving 40 ml of hyaluronic acid penile filler at a central Bangkok clinic; a London coroner attributed death to a pulmonary embolism caused by the filler. In September 2026 Thailand's health minister ordered an investigation, officials visited the clinic to check its licence and protocols, and Bangkok police opened a parallel inquiry. The clinic said its doctor had advised splitting the dose over two sessions.",
+        "sourceIds": ["euronews-ubiribo", "thestar-ubiribo", "nst-coroner"]
+      },
+      {
+        "title": "Unlicensed cosmetic clinics are raided every few months, including in Pattaya and Phuket",
+        "body": "Documented actions include five bogus doctors arrested in raids on eight unregistered cosmetic clinics in Bangkok and Chiang Mai (March 2024); an unlicensed Pattaya clinic that mainly treated foreigners, raided in November 2025 with two suspected fake doctors fleeing; a Russian woman arrested in March 2026 for running a beauty clinic from a Pattaya condominium; an undercover Botox sting at an unlicensed North Pattaya clinic in April 2026; two women with vocational and high-school qualifications arrested in July 2026 for injecting Botox and fillers from their homes in Bangkok and Samut Prakan; and four unlicensed dentists and a nurse posing as a doctor arrested in August 2026. Pattaya Mail also reported a Phuket raid on a Russian-run filler clinic operating from a villa.",
+        "sourceIds": ["bp-mar2024", "pattayanews-nov2025", "khaosod-mar2026", "pattayamail-botox-apr2026", "khaosod-jul2026", "thairath-aug2026"]
+      },
+      {
+        "title": "Stem cell clinics advertise treatments that are illegal in Thailand",
+        "body": "Ministry of Public Health rules permit stem cell therapy only for Medical Council-approved hematopoietic transplants for blood disorders and cancers. The Nation reported in October 2024 that clinics continue to advertise stem cells for other conditions online, that these injections are illegal, and that more than 400 cases a year are prosecuted for exaggerated claims. A Thai clinic's claimed stem cell treatment of a Canadian child drew the comment from a Toronto pathologist that it did not improve her condition at all.",
+        "sourceIds": ["nation-stemcell"]
+      },
+      {
+        "title": "Complications surface after you land in the US",
+        "body": "The CDC's 2026 Emerging Infectious Diseases review found that outbreaks tied to cosmetic travel are hard to detect because patients scatter across states after returning, and that 12 of 20 infections involved nontuberculous mycobacteria, which can take weeks to appear and months of antibiotics to treat. In the Harvard series, 62 percent of patients treated for medical-tourism complications were on Massachusetts Medicaid, meaning the cost shifted to US public insurance. Travel insurers exclude complications of planned treatment abroad, and US health plans may treat them as uncovered elective sequelae.",
+        "sourceIds": ["cdc-eid-release", "asps-prs2018", "compare-travel-ins"]
+      },
+      {
+        "title": "State Department: Level 1 overall, Deep South and Cambodian border excepted",
+        "body": "The US upgraded Thailand to Level 1 on 9 June 2025 while keeping Yala, Pattani, Narathiwat and parts of Songkhla at Level 2 for insurgent-related unrest; the 7 July 2026 update kept Level 1 and added increased caution near the Thai-Cambodian border after fighting in July and December 2025 that killed dozens and displaced close to a million people before a 27 December 2025 ceasefire. None of these areas is a medical-travel destination, but the live advisory should be checked before booking because the page could not be opened directly during this research.",
+        "sourceIds": ["nation-stateupgrade", "state-advisory", "malaymail-ceasefire"]
+      },
+      {
+        "title": "Roads kill more visitors than clinics do",
+        "body": "WHO's 2023 Global Status Report puts Thailand's road death rate at 25.4 per 100,000 people (18,218 deaths in 2021, about 50 a day), ninth-highest of 175 countries, with motorcyclists 83.8 percent of deaths. The CDC tells travellers to avoid motorbikes and motorbike taxis, use seatbelted vehicles and official taxis, and not travel at night in rural areas. A fresh surgical wound and a motorbike do not mix.",
+        "sourceIds": ["who-roads", "cdc-thailand"]
+      },
+      {
+        "title": "Dengue, measles and leptospirosis are current health notices",
+        "body": "Thailand reported 51,795 dengue cases and 46 deaths in 2025 through 31 October, per WHO data relayed by the UK's TravelHealthPro. The CDC's Thailand page carries a Level 1 measles notice and flags increased leptospirosis after flooding, recommends hepatitis A and B and typhoid vaccination for most travellers, and notes rabid dogs are present. Dengue is a particular concern after surgery because it causes fever and low platelets, which can be confused with or worsen a surgical complication.",
+        "sourceIds": ["travelhealthpro", "cdc-thailand"]
+      },
+      {
+        "title": "Hospital bills: deposits first, and no embassy will pay",
+        "body": "Private hospitals require deposits from self-pay patients before admission, update bills every few days and may hold discharge until paid; the UK government's Thailand healthcare guidance says a cash deposit is usual and that treatment is rarely free even in an emergency, and the US Embassy has stated it will not pay medical bills. Thailand's UCEP rule guarantees emergency care for the first 72 hours without a deposit, after which normal billing applies. An October 2025 Pattaya Mail case described an uninsured 73-year-old Scot running up 21,000 baht a day in a provincial hospital with a medical evacuation quoted at 85,000 pounds.",
+        "sourceIds": ["bumrungrad-finance", "govuk-health", "rfa-ucep", "pattayamail-brit"]
+      }
+    ]
+  },
+  "redFlags": [
+    "The clinic or hospital does not appear in the Department of Health Service Support online register at hosp.hss.moph.go.th, or staff cannot produce the facility licence number.",
+    "The person doing your procedure cannot be found in the Medical Council of Thailand register, or the clinic names a brand or a coordinator rather than an operating surgeon.",
+    "Injectables (Botox, fillers, vitamin drips) are offered in a condominium, villa, salon, hotel room or at a promotional price of a few thousand baht; every 2025 and 2026 raid above involved exactly these settings.",
+    "Stem cell, exosome or regenerative injections are promised for joints, anti-aging, autism or neurological disease. These are illegal in Thailand outside approved blood-disorder transplants.",
+    "A fertility clinic offers sex selection, donor eggs for sale or surrogacy to a foreign couple. All three are banned under the 2015 ART Act.",
+    "The quote is a round all-inclusive number with no itemization of surgeon, anesthesia, implant brand, nights, medication and follow-up, or the package is marketed as valid only for Thai citizens and expatriates but quoted to you anyway.",
+    "You are encouraged to combine surgery with beach time, island hopping or a motorbike rental in the same trip, or to fly home within a few days of a facial or abdominal procedure.",
+    "A facilitator or marketplace quotes a price from a listing that is more than a year old, or cannot say which hospital and which surgeon the price belongs to.",
+    "The clinic resists giving you the operative report, implant card and discharge summary in English, or says records will be emailed later.",
+    "No one asks for your medical history, medication list or a pre-operative blood test, or the surgeon you meet on the day is not the one you were quoted."
+  ],
+  "planning": {
+    "entry": {
+      "title": "Entry and visas for US citizens (as of October 2026)",
+      "body": "Since 15 September 2026, US passport holders arriving for tourism get a 30-day visa exemption, down from 60 days; the change was published in the Royal Gazette on 31 August 2026. The stay can be extended once by 30 days at an immigration office for 1,900 baht, at the officer's discretion. For treatment longer than 60 days, apply online at thaievisa.go.th for a Non-Immigrant O medical treatment visa (US$80, single entry, valid 90 days) with a hospital appointment letter and bank statements showing at least US$4,000 for each of the last three months. Carry proof of onward travel and your hospital letter.",
+      "sourceIds": ["travelpirates-visa", "4stogo-visa", "lepetitjournal-visa", "thaiemb-dc-omt"],
+      "link": { "label": "Royal Thai Embassy, Washington: Non-Immigrant O medical treatment visa", "url": "https://washingtondc.thaiembassy.org/en/page/non-o-medical-treatment" }
+    },
+    "flights": {
+      "title": "Flights",
+      "body": "Los Angeles to Bangkok Suvarnabhumi is about 17 hours nonstop (13,292 km) on United, the only carrier operating the route nonstop in October 2026 listings; most other itineraries connect through Seoul, Hong Kong, Tokyo or Taipei and take 19 to 24 hours. Fares seen in autumn 2026 ranged from about US$865 round trip on one-stop Cathay Pacific itineraries to US$2,012 on Thai Airways for November 2026 to January 2027 travel, with promotional one-stop fares under US$600 appearing on deal sites. Phuket and Chiang Mai are a further 1 to 1.5 hour domestic flight from Bangkok.",
+      "sourceIds": ["airconnect", "thaiairways", "cathay"]
+    },
+    "whereToStay": {
+      "title": "Where to stay",
+      "body": "Bangkok's main international hospitals sit in two clusters: Bumrungrad on Sukhumvit Soi 3, Samitivej Sukhumvit on Soi 49, MedPark on Rama IV, and Bangkok Hospital off Phetchaburi Road, all with hotels and serviced apartments within walking distance. Yanhee is across the river in Bang Phlat. Book a room with an elevator, a step-free shower and a refrigerator for medication, and avoid party districts. In Phuket, Bangkok Hospital Phuket and Bangkok Hospital Siriroj are in Phuket Town, not on the beaches. Medical travellers to Thailand stayed an average of 12.5 days in 2024 per industry data, which is a reasonable minimum for any surgery.",
+      "sourceIds": ["bumrungrad-finance", "bh-phuket-intl", "mtw"]
+    },
+    "payment": {
+      "title": "Paying",
+      "body": "Hospitals accept cash in baht, major credit and debit cards (Visa, MasterCard, JCB, UnionPay, American Express), cashier's cheques and international wire transfers, with the patient bearing exchange and bank fees; Bumrungrad also takes Alipay, WeChat Pay and Western Union. Self-pay patients pay a deposit before elective procedures and admissions, roughly 80 percent of the estimate at Bangkok Hospital Phuket and the full estimate at Bumrungrad, with charges re-billed every three days during a stay. Tell your card issuer about a large foreign charge in advance, and ask the hospital whether it charges a card surcharge. Refunds to cards can take three to four weeks.",
+      "sourceIds": ["bumrungrad-finance", "bh-phuket-intl"]
+    },
+    "stayAndFlyHome": {
+      "title": "When you can fly home",
+      "body": "ASPS: 5 to 7 days after liposuction or breast augmentation, 7 to 10 days after facelift, eyelid surgery, rhinoplasty or laser work. UK CAA: 10 days after open abdominal surgery, about 24 hours after laparoscopy, one week after intra-ocular procedures. Joint replacement and cardiac surgery have no fixed rule; Bumrungrad's travel screening treats major surgery or joint replacement within 12 weeks as a clot-risk factor, so expect 2 to 3 weeks and a written fit-to-fly letter from your surgeon. Dental work, LASIK and hair transplants usually allow flying within a few days. The CDC classifies any flight over 4 hours as long-haul for clot risk and advises properly fitted below-knee compression stockings for higher-risk travellers.",
+      "sourceIds": ["asps-briefing", "caa-fit", "bumrungrad-travel", "cdc-dvt"]
+    },
+    "aftercareAtHome": {
+      "title": "Aftercare in the US",
+      "body": "Line up a US physician before you leave who agrees to see you on return, and bring the operative report, implant card, medication list and photographs. Tell any US clinician that you had surgery abroad; the CDC notes that mycobacterial wound infections after cosmetic travel are slow to appear and easy to miss. Thai hospitals will do video follow-ups but cannot treat you at home, and ASPS warns that revision by a surgeon who did not do the original operation gives poorer results. Keep all receipts for any HSA or Schedule A claim.",
+      "sourceIds": ["cdc-eid-release", "asps-briefing", "irs-502"]
+    }
+  },
+  "booking": [
+    {
+      "title": "Decide hospital or clinic, then shortlist",
+      "body": "For anything under general anesthesia, shortlist only facilities that appear in the HSS register and hold HA or JCI accreditation. For dental, LASIK, hair and injectables, a licensed clinic can be appropriate, but the facility licence and the practitioner's registration are still mandatory checks.",
+      "sourceIds": ["pattayamail-licence", "tradegov", "ha-status"],
+      "link": { "label": "HSS licensed-facility search", "url": "https://hosp.hss.moph.go.th/" }
+    },
+    {
+      "title": "Request written quotes from at least two hospitals",
+      "body": "Send the same records to each international patient department and ask for an itemized estimate naming the surgeon, implant or device brand, included nights, anesthesia, medication, follow-up visits and what happens if a complication extends the stay. Bumrungrad's own policy says estimates are a range and exclude complications and ICU, so ask for the upper bound.",
+      "sourceIds": ["bumrungrad-finance"]
+    },
+    {
+      "title": "Verify the surgeon independently",
+      "body": "Ask for the surgeon's Thai name and Medical Council licence number and look it up, and ask how many of your procedure they perform a year. For plastic surgery, ASPS offers referrals to its international member surgeons, which is one way to find board-certified Thai plastic surgeons.",
+      "sourceIds": ["pattayamail-licence", "asps-briefing"]
+    },
+    {
+      "title": "Book a video consultation with the operating surgeon",
+      "body": "Confirm that the person you speak to is the one who will operate, agree the plan, and ask about anesthesia staffing, blood-clot prevention and the hospital's protocol if you need readmission after discharge.",
+      "sourceIds": ["asps-briefing"]
+    },
+    {
+      "title": "Sort out visa, insurance and money",
+      "body": "A 30-day visa exemption covers most trips; apply for the Non-Immigrant O medical visa if treatment will exceed 60 days. Buy travel insurance for the non-medical parts of the trip and read the exclusion for travel undertaken to obtain treatment; consider a specialist complications policy if one is available to US residents. Arrange how you will pay the deposit and confirm card limits.",
+      "sourceIds": ["travelpirates-visa", "thaiemb-dc-omt", "compare-travel-ins", "bumrungrad-finance"],
+      "link": { "label": "Thailand e-Visa portal", "url": "https://www.thaievisa.go.th/" }
+    },
+    {
+      "title": "Book flights and lodging around recovery, not the reverse",
+      "body": "Build in at least one day before surgery and the ASPS or CAA waiting period after it, then a buffer. Choose lodging near the hospital, and book a changeable return ticket in case your surgeon will not clear you to fly.",
+      "sourceIds": ["asps-briefing", "caa-fit"]
+    },
+    {
+      "title": "Get the pre-operative paperwork done at home",
+      "body": "See your US doctor for clearance and medication review, carry a letter with diagnoses and allergies, update hepatitis A and B, typhoid, MMR and routine vaccines per CDC Thailand guidance, and bring copies of all records on paper and on your phone.",
+      "sourceIds": ["cdc-thailand", "cdc-eid-release"]
+    },
+    {
+      "title": "Confirm the follow-up plan before you pay the balance",
+      "body": "Before discharge, obtain the operative report, implant card, discharge summary and prescriptions in English, the surgeon's direct contact for video follow-up, and the hospital's written policy on complications arising after you leave. Then pay, and keep every receipt.",
+      "sourceIds": ["bumrungrad-finance", "asps-briefing"]
+    }
+  ],
+  "vetChecklist": [
+    "Facility licence number and the matching entry in the HSS register at hosp.hss.moph.go.th.",
+    "Operating surgeon's full Thai name, Medical Council of Thailand registration, and specialty board (or Dental Council registration for dentists).",
+    "Hospital accreditation status: HA Thailand certificate level and expiry from the ha.or.th register, and JCI status if claimed.",
+    "Itemized written estimate naming surgeon fee, anesthesia, facility, implant or device brand and model, included nights, medication and follow-up visits, plus the stated upper bound.",
+    "Who administers anesthesia and whether an anesthesiologist is present throughout, in writing.",
+    "The hospital's written policy on complications, readmission and revision, including what is charged if you need extra nights or ICU.",
+    "Deposit amount, payment methods, card surcharges and the refund timeline for unused deposit.",
+    "Minimum in-country recovery time and the surgeon's fit-to-fly criteria for your procedure, in writing.",
+    "What records you will receive at discharge (operative report, implant card, discharge summary, imaging) and in which language.",
+    "For IVF: marriage certificate requirement, embryo storage terms and fees, and confirmation that no sex selection or donor purchase is involved; for any regenerative or stem cell offer: the specific Medical Council approval, which will not exist outside blood-disorder transplants."
+  ],
+  "faqs": [
+    {
+      "question": "How many Americans go to Thailand for medical care each year?",
+      "answer": "Nobody publishes a reliable number. Thailand counts foreign patient visits (about 3.07 million forecast for 2024, including resident expatriates), not medical tourists by nationality. Bumrungrad reports the United States among its top three revenue countries in 2025, and the Thai Embassy in Washington says US patients were the third-largest source region in 2023."
+    },
+    {
+      "question": "Is Thailand safe to travel to for surgery right now?",
+      "answer": "The US State Department rates Thailand Level 1, Exercise Normal Precautions, as of July 2026, with higher caution only for the Deep South border provinces and the Thai-Cambodian border. Bangkok, Phuket, Chiang Mai and Pattaya are not in flagged areas. The documented medical risks come from unlicensed clinics and from flying too soon after surgery."
+    },
+    {
+      "question": "Do I need a visa?",
+      "answer": "US citizens get a 30-day visa exemption on arrival for tourism since 15 September 2026, extendable once by 30 days for 1,900 baht. If treatment will run longer than 60 days, apply online for a Non-Immigrant O medical treatment visa (US$80) with a hospital appointment letter and bank statements."
+    },
+    {
+      "question": "How do I check that a clinic is licensed?",
+      "answer": "Search the Department of Health Service Support register at hosp.hss.moph.go.th by facility name or licence number, which the Medical Council of Thailand urged the public to do in April 2026. If the facility is not there, do not go, and report it to hotline 1426. Check the doctor separately in the Medical Council register and dentists at dentalcouncil.or.th."
+    },
+    {
+      "question": "How much cheaper is it really?",
+      "answer": "It depends on the procedure. Yanhee's published facelift price of 165,000 to 260,000 baht is roughly 4,900 to 7,600 US dollars against an ASPS average US surgeon fee of 11,395 dollars. For a knee replacement the gap is smaller: 230,000 baht (about 6,800 dollars) at a Bangkok Hospital branch versus an average US hospital cash price of 14,885 dollars before surgeon fees."
+    },
+    {
+      "question": "Will my US health insurance or travel insurance cover it?",
+      "answer": "Almost never. US plans do not cover planned elective care abroad, and travel insurers exclude trips taken to obtain treatment and any complications from it. A few specialist complications-only policies exist, but they do not pay for the procedure. Expect to self-fund and to pay a hospital deposit before admission."
+    },
+    {
+      "question": "Can I use my HSA?",
+      "answer": "HSA funds can pay for qualified medical care as defined in IRS Code section 213(d), and Publication 969 sets no geographic limit. Cosmetic surgery does not qualify unless it corrects a congenital abnormality, injury or disfiguring disease. Keep itemized receipts and a physician's letter; medical lodging is deductible only up to 50 dollars a night."
+    },
+    {
+      "question": "How soon can I fly home?",
+      "answer": "ASPS says 5 to 7 days after body procedures like liposuction or breast implants and 7 to 10 days after facial surgery. The UK aviation regulator gives 10 days after abdominal surgery. Joint replacement and heart surgery usually mean 2 to 3 weeks and a written clearance, since recent surgery raises clot risk on flights over four hours."
+    },
+    {
+      "question": "Is stem cell therapy legal in Thailand?",
+      "answer": "Only for Medical Council-approved blood-forming stem cell transplants for conditions such as leukemia and thalassemia. Injections for joints, anti-aging or neurological disease are illegal, and Thai authorities prosecute more than 400 cases a year over exaggerated stem cell claims. Clinics advertising them to foreigners are breaking Thai law."
+    },
+    {
+      "question": "Can a foreign couple do IVF in Thailand, and what about surrogacy or choosing the baby's sex?",
+      "answer": "Legally married heterosexual couples can have IVF, and clinics such as SAFE Fertility publish packages open to international patients. Commercial surrogacy, sex selection and buying eggs or sperm are banned under the 2015 ART Act, and surrogacy is restricted to Thai intended parents using a related surrogate."
+    },
+    {
+      "question": "What happens if there is a complication after I get home?",
+      "answer": "You pay for it. The CDC's 2026 review found infections, including slow-growing mycobacterial ones, in most travel-related cosmetic cases it reviewed, and US series show returning patients needing hospitalization, drain removal and hernia repair. Thai hospitals do not cover revision or treatment abroad unless the contract says so, and ASPS notes that revisions by a different surgeon tend to give poorer results."
+    },
+    {
+      "question": "What legal recourse do I have if a Thai doctor harms me?",
+      "answer": "You can file a complaint with the Medical Council of Thailand, which can discipline the doctor, and sue in Thai courts, including under the 2008 Consumer Case Procedure Act. Cases run in Thai, take years and need a local lawyer. ASPS warns US courts rarely have jurisdiction and foreign judgments are hard to enforce, so prevention matters more than remedy."
+    },
+    {
+      "question": "Do Thai hospitals demand payment up front?",
+      "answer": "Yes for self-pay patients. Bumrungrad requires a full deposit for procedures and re-bills every three days; Bangkok Hospital Phuket asks for about 80 percent of the estimate unless your insurer issues a guarantee letter. Emergency care is guaranteed for 72 hours without a deposit under the UCEP rule, after which normal billing applies. The US Embassy does not pay medical bills."
+    },
+    {
+      "question": "Are the prices on hospital websites the price I will pay?",
+      "answer": "Not always. Some online packages, including Bangkok Hospital's 88,000 baht SMILE offer and MedPark's 280,000 baht IVF package, are limited to Thai citizens and resident expatriates. Hospitals state that estimates are ranges excluding complications, ICU and some medication. Ask the international department for a written quote in your name."
+    },
+    {
+      "question": "Which city should I choose?",
+      "answer": "Bangkok has the JCI-accredited hospital groups and nearly all cardiac, orthopedic, fertility and gender-affirming surgery. Phuket and Chiang Mai are reasonable for dental work, check-ups and recovery stays through Bangkok Hospital's branches. Pattaya has been the site of repeated raids on unlicensed cosmetic injectors in 2025 and 2026 and offers no advantage for a medical traveller."
+    }
+  ],
+  "sources": [
+    { "id": "kresearch2023", "label": "Medical tourism outlook: 3.07 million foreign patient visits and THB57 billion revenue forecast for 2024", "url": "https://www.kasikornresearch.com/en/analysis/k-econ/business/Pages/Medical-Tourism-CIS3442-27-10-2023.aspx", "publisher": "Kasikorn Research Center", "date": "2023-10-27", "kind": "press" },
+    { "id": "mtw", "label": "Global medical tourism statistics, Thailand section (TAT 580,000 medical tourists 2025; disputed MoPH figures; 12.5-day average stay)", "url": "https://medicaltourismwatch.com/global-medical-tourism-statistics/", "publisher": "Medical Tourism Watch", "date": "2026-09-15", "kind": "press" },
+    { "id": "vtt", "label": "Thailand tourism statistics 2026 (32.97 million arrivals 2025; about 953,000 US arrivals)", "url": "https://www.visitthailandtoday.com/thailand-tourism-statistics", "publisher": "Visit Thailand Today", "date": "2026-10-12", "kind": "press" },
+    { "id": "tradegov", "label": "Thailand healthcare market intelligence: 63 JCI-accredited institutions as of February 2025", "url": "https://www.trade.gov/market-intelligence/thailand-healthcare-songklanagarind-hospital", "publisher": "US International Trade Administration", "date": "2025-02-19", "kind": "official" },
+    { "id": "bh-ir", "label": "Bumrungrad company profile: 604,000 international episodes, 64.8 percent overseas revenue, top countries 2025", "url": "https://investor.bumrungrad.com/company_profile.html", "publisher": "Bumrungrad Hospital PCL investor relations", "date": "2026", "kind": "clinic" },
+    { "id": "thaiemb-dc-mt", "label": "Travel experts say Thailand is transforming medical tourism (2.86 million international health tourists 2023; US third-largest source region)", "url": "https://washingtondc.thaiembassy.org/en/content/2025031103", "publisher": "Royal Thai Embassy, Washington DC", "date": "2025-03-11", "kind": "official" },
+    { "id": "medpark-mt", "label": "Thailand medical tourism: top 8 treatments 2025 (hospital cost estimates)", "url": "https://www.medparkhospital.com/en-US/news/thailand-medical-tourism", "publisher": "MedPark Hospital", "date": "2026-10-14", "kind": "clinic" },
+    { "id": "nation-hub", "label": "Thailand eyes global top spot for gender-affirming surgery; 2025-2034 strategy approved; average costs 300,000 and 1,000,000 baht", "url": "https://www.nationthailand.com/business/economy/40050394", "publisher": "The Nation Thailand", "date": "2025-05-24", "kind": "press" },
+    { "id": "nation-oct2026", "label": "Medical hub policy update: dental care 60 to 70 percent below competitors; Praram 9 foreign share 29 percent", "url": "https://www.nationthailand.com/health-wellness/40071874", "publisher": "The Nation Thailand", "date": "2026-10-05", "kind": "press" },
+    { "id": "nation-stateupgrade", "label": "US State Department upgrades Thailand to Level 1; Yala, Pattani, Narathiwat and parts of Songkhla stay Level 2", "url": "https://www.nationthailand.com/news/tourism/40051310", "publisher": "The Nation Thailand", "date": "2025-06-16", "kind": "press" },
+    { "id": "state-advisory", "label": "Thailand Travel Advisory (July 7, 2026 update: Level 1; increased caution near Thai-Cambodian border)", "url": "https://travel.state.gov/en/international-travel/travel-advisories/thailand.html", "publisher": "US Department of State", "date": "2026-07-07", "kind": "official" },
+    { "id": "malaymail-ceasefire", "label": "Thailand, Cambodia pledge to stop fighting with ceasefire agreement", "url": "https://www.malaymail.com/news/world/2025/12/27/thailand-cambodia-pledge-to-stop-fighting-with-noon-ceasefire-agreement/203397", "publisher": "Malay Mail (AFP)", "date": "2025-12-27", "kind": "press" },
+    { "id": "cdc-thailand", "label": "Thailand traveler health page: notices, vaccines, malaria, dengue, rabies, road safety", "url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/thailand", "publisher": "US Centers for Disease Control and Prevention", "date": "2026", "kind": "official" },
+    { "id": "cdc-dvt", "label": "CDC Yellow Book 2026: Deep vein thrombosis and pulmonary embolism in travelers", "url": "https://www.cdc.gov/yellow-book/hcp/travel-air-sea/deep-vein-thrombosis-and-pulmonary-embolism.html", "publisher": "US Centers for Disease Control and Prevention", "date": "2026", "kind": "official" },
+    { "id": "cdc-eid-release", "label": "CDC highlights adverse outcomes linked to travel-related cosmetic procedures (Emerging Infectious Diseases, 2014-2024 data)", "url": "https://cdc.gov/media/releases/2026/cdc-highlights-adverse-outcomes-linked-to-travel-related-cosmetic-procedures.html", "publisher": "US Centers for Disease Control and Prevention", "date": "2026-06-02", "kind": "official" },
+    { "id": "travelhealthpro", "label": "Dengue in Thailand: 51,795 cases and 46 deaths in 2025 as of 31 October (WHO SEARO data)", "url": "https://travelhealthpro.org.uk/updates.php?base=5037", "publisher": "TravelHealthPro (UK NaTHNaC)", "date": "2025-12-04", "kind": "official" },
+    { "id": "who-roads", "label": "Road safety in Thailand: 25.4 deaths per 100,000, 18,218 deaths 2021, 83.8 percent motorcyclists", "url": "https://www.who.int/thailand/our-work/road-safety", "publisher": "World Health Organization Thailand", "date": "2023", "kind": "official" },
+    { "id": "travelpirates-visa", "label": "Thailand cuts visa-free stay for Americans to 30 days from September 15, 2026", "url": "https://www.travelpirates.com/captains-log/thailand-visa-free-stay-americans-30-days", "publisher": "TravelPirates", "date": "2026-09-15", "kind": "press" },
+    { "id": "4stogo-visa", "label": "Royal Gazette (31 August 2026) decrees 30-day visa exemption for 60 countries from 15 September 2026; 1,900 baht extension", "url": "https://4stogo.com/blog/posts/thailand-cut-visa-free-stay-30-days-royal-gazette-2026", "publisher": "4sToGo (visa service)", "date": "2026-09-01", "kind": "marketplace" },
+    { "id": "lepetitjournal-visa", "label": "15 September 2026: visa exemption reduced to 30 days in Thailand", "url": "https://lepetitjournal.com/thailande/15-septembre-2026-reduction-exemption-visa-30-jours-thailande-452263", "publisher": "Le Petit Journal Thaïlande", "date": "2026-09-01", "kind": "press" },
+    { "id": "thaiemb-dc-omt", "label": "Non-Immigrant O medical treatment visa: requirements, US$80 fee, 90-day validity", "url": "https://washingtondc.thaiembassy.org/en/page/non-o-medical-treatment", "publisher": "Royal Thai Embassy, Washington DC", "date": "2026-07-01", "kind": "official" },
+    { "id": "pattayamail-licence", "label": "Thailand urges public to check clinic licenses online (hosp.hss.moph.go.th; hotline 1426; Medical Council quoted)", "url": "https://www.pattayamail.com/thailandnews/thailand-urges-public-to-check-clinic-licenses-online-to-avoid-illegal-treatment-risks-546274", "publisher": "Pattaya Mail (NNT)", "date": "2026-04-29", "kind": "press" },
+    { "id": "tmc", "label": "Medical Council of Thailand (physician register; site primarily in Thai, direct lookup page was not reachable during this research)", "url": "https://www.tmc.or.th/", "publisher": "Medical Council of Thailand", "date": "2026", "kind": "official" },
+    { "id": "dental-council", "label": "Dental Council of Thailand English site with Find a Dentist lookup", "url": "https://dentalcouncil.or.th/en/", "publisher": "Dental Council of Thailand", "date": "2026", "kind": "official" },
+    { "id": "ha-status", "label": "HA Thailand certificate status register (searchable list of accredited facilities with levels and expiry dates)", "url": "https://www.ha.or.th/EN/Hospitals/Certificate%20Status", "publisher": "Healthcare Accreditation Institute (Public Organization)", "date": "2026", "kind": "official" },
+    { "id": "ha-isqua", "label": "HAI confirmed as one of 18 organizations accredited across all three ISQua EEA programs (August 2025)", "url": "https://www.ha.or.th/en/Posts/Post%20News/Details/1539", "publisher": "Healthcare Accreditation Institute (Public Organization)", "date": "2025-08", "kind": "official" },
+    { "id": "khaosod-jul2026", "label": "Two fake beauty doctors arrested in Bangkok and Samut Prakan raids (Botox and filler from homes)", "url": "https://www.khaosodenglish.com/news/2026/07/06/two-fake-beauty-doctors-arrested-in-bangkok-raids/", "publisher": "Khaosod English", "date": "2026-07-06", "kind": "press" },
+    { "id": "thairath-aug2026", "label": "Four unlicensed dentists and a fake doctor arrested; penalties under Dental Professions, Medical Professions and Healthcare Facilities Acts", "url": "https://en.thairath.co.th/news/crime/2944359", "publisher": "Thairath Online", "date": "2026-08-20", "kind": "press" },
+    { "id": "pattayamail-botox-apr2026", "label": "Undercover sting exposes illegal Botox clinic in North Pattaya", "url": "https://www.pattayamail.com/news/undercover-sting-exposes-illegal-botox-clinic-in-north-pattaya-543271", "publisher": "Pattaya Mail", "date": "2026-04-11", "kind": "press" },
+    { "id": "khaosod-mar2026", "label": "Russian woman arrested for illegal cosmetic procedures run from a Pattaya condominium", "url": "https://www.khaosodenglish.com/news/crimecourtscalamity/2026/03/11/russian-woman-arrested-for-illegal-cosmetic-procedures-in-pattaya/", "publisher": "Khaosod English", "date": "2026-03-11", "kind": "press" },
+    { "id": "pattayanews-nov2025", "label": "Police raid unlicensed Pattaya medical clinic that primarily treated foreigners; two alleged fake doctors flee", "url": "https://thepattayanews.com/2025/11/12/police-raid-unlicensed-pattaya-medical-clinic-and-two-allegedly-fake-doctors-flee-in-cars-clinic-primarily-treated-foreigners/", "publisher": "The Pattaya News", "date": "2025-11-12", "kind": "press" },
+    { "id": "bp-mar2024", "label": "Five bogus doctors arrested in raids on eight unregistered cosmetic clinics in Bangkok and Chiang Mai", "url": "https://www.bangkokpost.com/thailand/general/2758733/five-bogus-doctors-arrested-in-clinic-raids", "publisher": "Bangkok Post", "date": "2024-03-15", "kind": "press" },
+    { "id": "euronews-ubiribo", "label": "Thailand investigates after British influencer dies following penis enlargement procedure", "url": "https://euronews.com/2026/09/09/thailand-investigates-after-british-influencer-dies-following-penis-enlargement-operation", "publisher": "Euronews", "date": "2026-09-09", "kind": "press" },
+    { "id": "thestar-ubiribo", "label": "Influencer Igho 'Tiny' Ubiribo dies after genital enlargement procedure in Bangkok", "url": "https://www.thestar.com.my/lifestyle/entertainment/2026/09/07/influencer-igho-039tiny039-ubiribo-dies-after-genital-enlargement-procedure-in-bangkok", "publisher": "The Star (Malaysia)", "date": "2026-09-07", "kind": "press" },
+    { "id": "nst-coroner", "label": "London coroner links Igho Ubiribo's death to penile filler injections", "url": "https://www.nst.com.my/amp/lifestyle/groove/2026/09/1527450/showbiz-london-coroner-links-influencer-igho-tiny-ubiribos-death", "publisher": "New Straits Times", "date": "2026-09", "kind": "press" },
+    { "id": "nation-stemcell", "label": "Caution should be the watchword for patients seeking stem cell therapy (permitted uses; 400+ prosecutions a year)", "url": "https://www.nationthailand.com/blogs/health-wellness/40042864", "publisher": "The Nation Thailand", "date": "2024-10-31", "kind": "press" },
+    { "id": "stasi-art", "label": "Protection for Children Born Through Assisted Reproductive Technologies Act, B.E. 2558: The Changing Profile of Surrogacy in Thailand", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5753847", "publisher": "Clinical Medicine Insights: Reproductive Health (A. Stasi)", "date": "2017", "kind": "study" },
+    { "id": "asps-briefing", "label": "Briefing paper: Cosmetic surgery tourism (risks, flying waits of 5-7 and 7-10 days, vetting advice)", "url": "https://www.plasticsurgery.org/news/briefing-papers/briefing-paper-cosmetic-surgery-tourism", "publisher": "American Society of Plastic Surgeons", "date": "2026", "kind": "study" },
+    { "id": "asps-legal", "label": "Medical tourism can put patients in legal limbo", "url": "https://www.plasticsurgery.org/news/press-releases/medical-tourism-can-put-patients-in-legal-limbo", "publisher": "American Society of Plastic Surgeons", "date": "2018-09-26", "kind": "study" },
+    { "id": "asps-prs2018", "label": "Plastic surgery abroad can lead to severe complications after returning to the US (Brigham and Women's series of 78 patients)", "url": "https://www.plasticsurgery.org/news/press-releases/plastic-surgery-abroad-can-lead-to-severe-complications-after-returning-to-the-us", "publisher": "American Society of Plastic Surgeons / Plastic and Reconstructive Surgery", "date": "2018-03-29", "kind": "study" },
+    { "id": "eplasty-2015", "label": "The real cost of cosmetic tourism: cost analysis of complications presenting to a public hospital (12 patients, all operated on in Thailand)", "url": "https://www.hmpgloballearningnetwork.com/site/eplasty/real-cost-cosmetic-tourism-cost-analysis-study-cosmetic-tourism-complications", "publisher": "ePlasty (Livingston et al., Gold Coast University Hospital)", "date": "2015-07-28", "kind": "study" },
+    { "id": "asps-cost-2024", "label": "2024 cosmetic procedures average cost (surgeon fee ranges: breast augmentation $4,575-8,000; rhinoplasty $7,500-12,500)", "url": "https://www.plasticsurgery.org/documents/news/statistics/2024/cosmetic-procedures-average-cost-2024.pdf", "publisher": "American Society of Plastic Surgeons", "date": "2024", "kind": "study" },
+    { "id": "asps-cost-2023", "label": "2023 cosmetic procedures average cost (facelift $11,395 surgeon fee)", "url": "https://plasticsurgery.org/Documents/News/Statistics/2023/cosmetic-procedures-average-cost-2023.pdf", "publisher": "American Society of Plastic Surgeons", "date": "2023", "kind": "study" },
+    { "id": "aesthetic-society", "label": "Average plastic surgery costs (2022 Aesthetic Plastic Surgery National Databank)", "url": "https://prod.theaestheticsociety.org/patient-resources/cost/average-plastic-surgery-costs", "publisher": "The Aesthetic Society", "date": "2022", "kind": "study" },
+    { "id": "mycarecost-knee", "label": "Knee replacement cost: average cash price $14,885 and list $26,817 across 1,034 US hospitals (price transparency files)", "url": "https://mycarecost.com/knee-replacement-cost", "publisher": "MyCareCost", "date": "2026-05", "kind": "marketplace" },
+    { "id": "mycarecost-hip", "label": "Hip replacement cost: average cash price $14,380 and list $25,947 across 983 US hospitals", "url": "https://mycarecost.com/hip-replacement-cost", "publisher": "MyCareCost", "date": "2026-05", "kind": "marketplace" },
+    { "id": "coveredusa-cabg", "label": "CABG cost: Medicare DRG payments and uninsured bill ranges", "url": "https://coveredusa.org/en/blog/cabg-cost-cpt-33533-drg-233", "publisher": "CoveredUSA", "date": "2026-05-26", "kind": "press" },
+    { "id": "goodrx-ivf", "label": "How much does IVF cost? (ASRM $12,400 base cycle; FertilityIQ $20,000+; $15,000-30,000 all-in)", "url": "https://goodrx.com/conditions/fertility/ivf-costs", "publisher": "GoodRx", "date": "2025", "kind": "press" },
+    { "id": "dentaltown-implants", "label": "Dental implants in 2025: costs, timelines, coverage (single implant $3,000-4,500; All-on-4 $15,000-35,000 per arch)", "url": "https://dentaltown.com/blog/post/23541/dental-implants-in-2025-costs-timelines-coverage-smart-ways-to-save", "publisher": "Dentaltown", "date": "2025-09-26", "kind": "press" },
+    { "id": "lasik-com", "label": "Cost of LASIK: $1,500 to $5,000 per eye in the US", "url": "https://www.lasik.com/cost-of-lasik/", "publisher": "LASIK.com", "date": "2026-10-21", "kind": "marketplace" },
+    { "id": "withcherry-hair", "label": "Hair transplant cost: full 2026 US pricing breakdown ($6,000 to $15,000 or more)", "url": "https://withcherry.com/blog/hair-transplant-cost", "publisher": "Cherry", "date": "2026-08-06", "kind": "marketplace" },
+    { "id": "lepetitjournal-gas", "label": "Thailand: gender-affirming surgery costs about five times less than in the United States", "url": "https://lepetitjournal.com/thailande/comprendre-thailande/thailande-changer-sexe-coute-cinq-fois-moins-cher-etats-unis-449565", "publisher": "Le Petit Journal Thaïlande", "date": "2026-07-21", "kind": "press" },
+    { "id": "bookimed-ffs", "label": "Facial feminization surgery clinics in Thailand: $21,000 to $30,000 (714,000 to 1,020,000 THB)", "url": "https://us-uk.bookimed.com/clinics/country=thailand/procedure=facial-feminization-surgery/", "publisher": "Bookimed (marketplace)", "date": "2025-10-02", "kind": "marketplace" },
+    { "id": "bookimed-trsc", "label": "ReLEx SMILE at TRSC International Eye and Vision Center, about $4,023", "url": "https://ua.bookimed.com/clinic/trsc-international-eye-and-vision-center/procedure=relex-smile", "publisher": "Bookimed (marketplace)", "date": "2025", "kind": "marketplace" },
+    { "id": "yanhee-prices", "label": "Yanhee Hospital plastic surgery price list (baht, with included hospital nights)", "url": "https://www.yanhee.net/pricing-packages/plastic-surgery-prices/", "publisher": "Yanhee International Hospital", "date": "2026", "kind": "clinic" },
+    { "id": "bh-dental-hq", "label": "Dental treatment fees 2026, Bangkok Hospital Headquarters (implants, crowns, veneers, All-on-4)", "url": "https://www.bangkokhospital.com/en/bangkok/package/dental-treatment-fees", "publisher": "Bangkok Hospital", "date": "2026", "kind": "clinic" },
+    { "id": "bh-dental-phuket", "label": "Dental treatment cost 2025, Bangkok Hospital Phuket", "url": "https://www.bangkokhospital.com/en/phuket/page/dental-treatment-cost-bpk", "publisher": "Bangkok Hospital Phuket", "date": "2025", "kind": "clinic" },
+    { "id": "bh-knee-udon", "label": "Knee replacement surgery package (1 side), 230,000 baht, Bangkok Hospital Udon, 2026", "url": "https://www.bangkokhospital.com/en/udon/package/knee-replacement-surgery-package-1-side", "publisher": "Bangkok Hospital Udon", "date": "2026", "kind": "clinic" },
+    { "id": "bh-smile", "label": "ReLEx SMILE LASIK package, 88,000 baht (list 140,000), Bangkok Hospital Headquarters, valid to 31 Dec 2026, Thai citizens and expatriates only", "url": "https://www.bangkokhospital.com/en/bangkok/package/lasik-relex-smile", "publisher": "Bangkok Hospital", "date": "2026", "kind": "clinic" },
+    { "id": "bh-checkup-cm", "label": "Festive Health Check Female 33 Items, 15,900 baht, Bangkok Hospital Chiang Mai", "url": "https://www.bangkokhospital.com/en/chiangmai/package/festive-health-check-female-33-items", "publisher": "Bangkok Hospital Chiang Mai", "date": "2026", "kind": "clinic" },
+    { "id": "bh-phuket-checkup", "label": "Round Off 2026 with a Boost to Your Health, 4,090 baht (list 11,250), Bangkok Hospital Phuket, valid to 28 Feb 2027", "url": "https://www.bangkokhospital.com/en/phuket/package/round-off-2026-with-a-boost-to-your-health", "publisher": "Bangkok Hospital Phuket", "date": "2026", "kind": "clinic" },
+    { "id": "samitivej-thaiger", "label": "Samitivej Thonburi Hospital listed prices: knee 350,000-400,000, hip 250,000-300,000, check-ups 7,000-15,000 baht", "url": "https://deals.thethaiger.com/shop/samitivej-thonburi-hospital-h444", "publisher": "The Thaiger Deals (marketplace)", "date": "2026", "kind": "marketplace" },
+    { "id": "norcham-knee", "label": "Total knee replacement package including implant, 315,000 baht, Bumrungrad (valid to 31 Dec 2020)", "url": "https://www.norcham.com/total-knee-replacement-package-includes-implant-at-bumrungrad-hospital/", "publisher": "Norwegian-Thai Chamber of Commerce (Bumrungrad offer)", "date": "2020-09-24", "kind": "clinic" },
+    { "id": "medpark-ivf", "label": "IVF/ICSI fertility treatment package, 280,000 baht, Thai nationals and resident expatriates", "url": "https://www.medparkhospital.com/en-US/online-store/ivf-icsi-package", "publisher": "MedPark Hospital", "date": "2024-11-01", "kind": "clinic" },
+    { "id": "safe-ivf", "label": "SAFE Fertility Clinic special ICSI offer: 219,000 baht (normal 269,000), stimulation by 31 Dec 2025, open to international patients", "url": "https://www.austchamthailand.com/resources/advance-blog/safe-fertility-clinic-special-icsi-offer", "publisher": "SAFE Fertility Center via AustCham Thailand", "date": "2025-11-11", "kind": "clinic" },
+    { "id": "hairsmith-tsk", "label": "Hair transplant in Thailand: 40-160 baht per graft; Hairsmith Clinic 80 baht per graft, 1,000-graft minimum", "url": "https://www.thailandstarterkit.com/de/gesundheit/haartransplantation-thailand/", "publisher": "Thailand Starter Kit", "date": "2026-10-26", "kind": "press" },
+    { "id": "bumrungrad-finance", "label": "Patient finance and insurance information: deposits, estimates, payment methods, refunds", "url": "https://www.bumrungrad.com/en/medical-travel-guides/patient-finance-insurance-information", "publisher": "Bumrungrad International Hospital", "date": "2026", "kind": "clinic" },
+    { "id": "bumrungrad-travel", "label": "Travel advice and assessment before medical and surgical care (screening for surgery or joint replacement within 12 weeks; DVT measures)", "url": "https://bumrungrad.com/getattachment/e0056177-7162-4520-87e4-977a0177e7cf/Travel-Advice-and-Assessment-before-Medical-and-Surgical-Care-(4).pdf", "publisher": "Bumrungrad International Hospital", "date": "2023", "kind": "clinic" },
+    { "id": "bumrungrad-checkup", "label": "Health check-up packages menu, prices valid until 31 December 2026 (prices in downloadable comparison sheet)", "url": "https://www.bumrungrad.com/en/health-check-up-center-bangkok-thailand-jci-best/check-up-packages", "publisher": "Bumrungrad International Hospital", "date": "2026", "kind": "clinic" },
+    { "id": "bh-phuket-intl", "label": "International patient services: deposits of about 80 percent of estimate, guarantee of payment, accepted payments", "url": "https://www.bangkokhospital.com/en/phuket/page/international-patient-services-bpk", "publisher": "Bangkok Hospital Phuket", "date": "2026", "kind": "clinic" },
+    { "id": "govuk-health", "label": "Healthcare and medical services in Thailand (deposits, passports, embassy cannot pay bills)", "url": "https://www.gov.uk/guidance/healthcare-and-medical-services-in-thailand", "publisher": "UK Foreign, Commonwealth and Development Office", "date": "2026-08-26", "kind": "official" },
+    { "id": "pattayamail-brit", "label": "Latest unfortunate case of Brit unable to pay his medical bills (21,000 baht a day; evacuation quoted at 85,000 pounds)", "url": "https://www.pattayamail.com/latestnews/news/latest-unfortunate-case-of-brit-unable-to-pay-his-medical-bills-520901", "publisher": "Pattaya Mail", "date": "2025-10-01", "kind": "press" },
+    { "id": "rfa-ucep", "label": "No deposit, no treatment: UCEP 72-hour emergency rule and deposit practices at Thai hospitals", "url": "https://www.rfa.org/english/myanmar/2025/04/14/myanmar-thailand-health-care-migrants/", "publisher": "Radio Free Asia", "date": "2025-04-14", "kind": "press" },
+    { "id": "compare-travel-ins", "label": "Travel insurance and overseas medical procedures: elective and cosmetic surgery abroad excluded", "url": "https://www.comparetravelinsurance.com.au/travel-insurance-tips/travel-insurance-overseas-medical-procedure", "publisher": "Compare Travel Insurance (Australia)", "date": "2024-02-28", "kind": "press" },
+    { "id": "irs-502", "label": "Publication 502 (2025), Medical and Dental Expenses: 7.5 percent AGI floor, cosmetic surgery exclusion, $50 lodging cap, transportation rules", "url": "https://www.irs.gov/publications/p502", "publisher": "US Internal Revenue Service", "date": "2025", "kind": "official" },
+    { "id": "irs-969", "label": "Publication 969 (2025), Health Savings Accounts: qualified medical expenses defined by IRC section 213(d)", "url": "https://www.irs.gov/publications/p969", "publisher": "US Internal Revenue Service", "date": "2025", "kind": "official" },
+    { "id": "tilleke-malpractice", "label": "Overview of medical malpractice legislation (Consumer Case Procedure Act and draft malpractice law)", "url": "https://www.tilleke.com/insights/overview-medical-malpractice-legislation/", "publisher": "Tilleke & Gibbins (Bangkok Post Corporate Counsellor)", "date": "2011-04-28", "kind": "press" },
+    { "id": "tourist-police", "label": "Tourist Police hotline 1155, 24 hours in eight languages", "url": "https://www.touristpolice.go.th/post/tpbnews2025110903", "publisher": "Royal Thai Police, Tourist Police Bureau", "date": "2025-11", "kind": "official" },
+    { "id": "airconnect", "label": "Los Angeles to Bangkok route: 13,292 km, about 17h nonstop on United, recent fares", "url": "https://airconnect.live/en/routes/LAX-BKK", "publisher": "AirConnect", "date": "2026-10-22", "kind": "marketplace" },
+    { "id": "thaiairways", "label": "Flights from the United States to Thailand: LAX-BKK round trip economy from US$2,012 (Nov 2026 to Jan 2027)", "url": "https://www.thaiairways.com/flights/en-us/flights-from-united-states-to-thailand", "publisher": "Thai Airways International", "date": "2026", "kind": "marketplace" },
+    { "id": "cathay", "label": "Los Angeles to Bangkok with Cathay Pacific, fares from US$865 round trip (one stop)", "url": "https://flights.cathaypacific.com/destinations/en_NL/flights-from-los-angeles-to-bangkok", "publisher": "Cathay Pacific", "date": "2026", "kind": "marketplace" },
+    { "id": "caa-fit", "label": "Am I fit to fly? Surgical conditions (10 days after abdominal surgery; 24 hours after laparoscopy; 1 week after intra-ocular procedures)", "url": "https://www.caa.co.uk/passengers/before-you-fly/am-i-fit-to-fly/guidance-for-health-professionals/surgical-conditions/", "publisher": "UK Civil Aviation Authority", "date": "2026", "kind": "official" }
+  ]
+}

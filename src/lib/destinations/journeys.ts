@@ -252,8 +252,81 @@ export const MEXICO_JOURNEY: DestinationJourney = {
   ],
 };
 
+export const THAILAND_JOURNEY: DestinationJourney = {
+  slug: 'thailand',
+  displayName: 'Thailand',
+  flag: '🇹🇭',
+  hubHref: '/destinations/thailand',
+  stages: [
+    { id: 'treatments', label: 'What people go for', question: 'Which treatments is Thailand actually good for, and is mine one of them?', links: [
+      { href: '/destinations/thailand#treatments', label: 'Treatments people fly to Thailand for', blurb: 'Cosmetic and gender-affirming surgery, dental, check-ups, cardiac, orthopedic and IVF, with the official volumes.' },
+      { href: '/guides/thailand-medical-tourism-guide', label: 'Thailand medical tourism guide: Bangkok hospitals', blurb: 'How the big Bangkok hospitals work for a foreign patient.' },
+    ] },
+    { id: 'clinics', label: 'The clinics', question: 'Which hospitals and clinics are licensed, accredited, and name their surgeons?', links: [
+      { href: '/destinations/thailand#clinics', label: 'Hospitals and clinics, with what is documented', blurb: 'HA and JCI status, licence, named surgeons and anesthesiologists, published prices and booking channels.' },
+      { href: '/destinations/thailand/directory', label: 'Every hospital on the HA Thailand status list, by province', blurb: 'Accreditation level and expiry for public and private hospitals, with websites.' },
+      { href: '/plastic_surgery', label: 'Plastic surgery provider profiles', blurb: 'Researched surgeons and hospitals abroad.' },
+      { href: '/dental', label: 'Dental provider profiles', blurb: 'Bangkok and Phuket clinics alongside other destinations.' },
+    ] },
+    { id: 'prices', label: 'Prices', question: 'What will it cost, all in, versus staying home?', links: [
+      { href: '/destinations/thailand#prices', label: 'Thailand vs US price table', blurb: 'Every major procedure with sources, hospital and typical stay.' },
+      { href: '/guides/thailand-cosmetic-surgery-cost', label: 'Cosmetic surgery Thailand cost', blurb: 'Published hospital prices versus the US.' },
+      { href: '/guides/plastic-surgery-abroad-cost-comparison', label: 'Plastic surgery abroad compared', blurb: 'Thailand against Korea, Colombia, Brazil and Turkey.' },
+      { href: '/guides/rhinoplasty-cost-by-country', label: 'Rhinoplasty cost by country', blurb: 'Where Thailand sits on price.' },
+    ] },
+    { id: 'expect', label: 'What to expect', question: 'What does the process look like, what results are realistic, and what goes wrong?', links: [
+      { href: '/destinations/thailand#expect', label: 'Process, results and the safety record', blurb: 'From video consult to final result, and the documented incidents.' },
+    ] },
+    { id: 'travel', label: 'Travel & logistics', question: 'Entry rules, the long flight, where to stay, how long, and when you can fly home.', links: [
+      { href: '/destinations/thailand#travel', label: 'Travel and logistics for Americans', blurb: 'Visa exemption and the medical visa, flights, Bangkok and Phuket stays, paying, and flying after surgery.' },
+      { href: '/guides/medical-travel-insurance-guide', label: 'Medical travel insurance', blurb: 'What complication cover exists and what it excludes.' },
+      { href: '/guides/paying-for-medical-tourism', label: 'Paying for medical tourism', blurb: 'Deposits, cards, currency and financing.' },
+    ] },
+    { id: 'book', label: 'How to book', question: 'How do I actually get a consultation, a quote and a date, safely?', links: [
+      { href: '/destinations/thailand#book', label: 'How to book, step by step', blurb: 'From first message to confirmed date, with what to get in writing.' },
+    ] },
+  ],
+};
+
+export const COLOMBIA_JOURNEY: DestinationJourney = {
+  slug: 'colombia',
+  displayName: 'Colombia',
+  flag: '🇨🇴',
+  hubHref: '/destinations/colombia',
+  stages: [
+    { id: 'treatments', label: 'What people go for', question: 'Which treatments is Colombia actually good for, and is mine one of them?', links: [
+      { href: '/destinations/colombia#treatments', label: 'Treatments people fly to Colombia for', blurb: 'Plastic surgery, dental, bariatric, hair and the stem cell market, by city.' },
+    ] },
+    { id: 'clinics', label: 'The clinics', question: 'Which clinics are habilitadas, operated by a real plastic surgeon, and in a licensed operating room?', links: [
+      { href: '/destinations/colombia#clinics', label: 'Clinics and hospitals, with what is documented', blurb: 'REPS habilitación, SCCP membership, named anesthesiologists, published prices and booking channels.' },
+      { href: '/destinations/colombia/directory', label: 'Every private provider site in REPS, by department', blurb: 'The national register, with operating-room and bed counts where reported.' },
+      { href: '/plastic_surgery', label: 'Plastic surgery provider profiles', blurb: 'Researched surgeons and groups abroad.' },
+      { href: '/dental', label: 'Dental provider profiles', blurb: 'Medellín and Bogotá clinics alongside other destinations.' },
+    ] },
+    { id: 'prices', label: 'Prices', question: 'What will it cost, all in, versus staying home?', links: [
+      { href: '/destinations/colombia#prices', label: 'Colombia vs US price table', blurb: 'Every major procedure with sources, city and typical stay.' },
+      { href: '/guides/colombia-plastic-surgery-cost', label: 'Colombia plastic surgery cost', blurb: 'BBL, liposuction and breast prices versus the US.' },
+      { href: '/guides/colombia-stem-cell-guide', label: 'Colombia stem cell therapy guide', blurb: 'What Medellín clinics charge and what the evidence says.' },
+      { href: '/guides/plastic-surgery-abroad-cost-comparison', label: 'Plastic surgery abroad compared', blurb: 'Colombia against Korea, Thailand, Brazil and Turkey.' },
+    ] },
+    { id: 'expect', label: 'What to expect', question: 'What does the process look like, what results are realistic, and what goes wrong?', links: [
+      { href: '/destinations/colombia#expect', label: 'Process, results and the safety record', blurb: 'The documented deaths, the garage-clinic problem, and what a safe process looks like.' },
+    ] },
+    { id: 'travel', label: 'Travel & logistics', question: 'Entry rules, flights, where to stay, personal safety, and when you can fly home.', links: [
+      { href: '/destinations/colombia#travel', label: 'Travel and logistics for Americans', blurb: 'Visa-free entry, flights to Medellín, Bogotá and Cali, recovery houses, paying, and flying after surgery.' },
+      { href: '/guides/medical-travel-insurance-guide', label: 'Medical travel insurance', blurb: 'What complication cover exists and what it excludes.' },
+      { href: '/guides/paying-for-medical-tourism', label: 'Paying for medical tourism', blurb: 'Deposits, cards, currency and financing.' },
+    ] },
+    { id: 'book', label: 'How to book', question: 'How do I actually get a consultation, a quote and a date, safely?', links: [
+      { href: '/destinations/colombia#book', label: 'How to book, step by step', blurb: 'From first message to confirmed date, with what to get in writing.' },
+    ] },
+  ],
+};
+
 export const JOURNEYS: Record<string, DestinationJourney> = {
   mexico: MEXICO_JOURNEY,
+  thailand: THAILAND_JOURNEY,
+  colombia: COLOMBIA_JOURNEY,
   turkey: TURKEY_JOURNEY,
   'south-korea': SOUTH_KOREA_JOURNEY,
 };
